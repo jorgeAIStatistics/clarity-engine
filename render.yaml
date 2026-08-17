@@ -1,0 +1,19 @@
+# Render Blueprint — one-click deploy config for the Clarity Engine API.
+# In Render: New > Blueprint, point at your repo, and it reads this file.
+services:
+  - type: web
+    name: clarity-engine-api
+    runtime: python
+    plan: free                # free tier: fine for demo; spins down when idle
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --timeout 120 --workers 2
+    envVars:
+      - key: CLARITY_DAILY_CAP
+        value: "20"           # circuit breaker: max new generations/day
+      - key: CLARITY_CONTACT_EMAIL
+        value: "you@example.com"   # <- put your email (NCBI courtesy)
+      # ANTHROPIC_API_KEY: set this in the Render dashboard (Secret), NOT here,
+      # so the key never lives in your repo. Leave UNSET to run zero-cost
+      # (grading works; population-classifier + effect extraction are skipped).
+      - key: PYTHONUNBUFFERED
+        value: "1"
