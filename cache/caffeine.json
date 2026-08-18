@@ -1,9 +1,9 @@
 {
-  "name": "caffeine",
+  "name": "Caffeine",
   "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 120,
+  "study_count": 110,
   "claims": [
     {
       "outcome": "cognition",
@@ -11,59 +11,9 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 26,
+      "n_studies": 24,
       "grade_reasons": [
-        "Consistency: based on a pooled meta-analysis / systematic review (formal consistency assessment); effect-direction agreement assumed from the pooled result."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
-        "human": 90,
-        "overall": 90,
-        "ceiling": 90,
-        "n_human_studies": 23,
-        "n_animal_studies": 2,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:28899506",
-        "PMID:18681988",
-        "PMID:18006208",
-        "PMID:40314930",
-        "PMID:33800853",
-        "PMID:41661604",
-        "PMID:38542677",
-        "PMID:34234088",
-        "PMID:33201262",
-        "PMID:21040626",
-        "PMID:32753637",
-        "PMID:35670369",
-        "PMID:39002811",
-        "PMID:20182052",
-        "PMID:41032459",
-        "PMID:39948152",
-        "PMID:28088820",
-        "PMID:33734725",
-        "PMID:39213264",
-        "PMID:40693646",
-        "PMID:7675951",
-        "PMID:38823543",
-        "PMID:32800866",
-        "PMID:29982422",
-        "PMID:37815006",
-        "PMID:40597402"
-      ],
-      "summary": "For cognition, caffeine is well-supported by human trials (26 studies)."
-    },
-    {
-      "outcome": "muscle strength",
-      "tier": "Strong",
-      "certainty": "high",
-      "score": 90,
-      "has_human_evidence": true,
-      "n_studies": 25,
-      "grade_reasons": [
-        "Consistency: based on a pooled meta-analysis / systematic review (formal consistency assessment); effect-direction agreement assumed from the pooled result."
+        "Consistency: 4 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
         "mechanistic": 30,
@@ -76,9 +26,123 @@
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:28899506",
+        "PMID:18681988",
+        "PMID:18006208",
+        "PMID:40314930",
+        "PMID:33800853",
+        "PMID:41661604",
+        "PMID:38542677",
+        "PMID:33201262",
+        "PMID:21040626",
+        "PMID:32753637",
+        "PMID:35670369",
+        "PMID:39002811",
+        "PMID:20182052",
+        "PMID:41032459",
+        "PMID:39948152",
+        "PMID:33734725",
+        "PMID:39213264",
+        "PMID:40693646",
+        "PMID:7675951",
+        "PMID:38823543",
+        "PMID:32800866",
+        "PMID:29982422",
+        "PMID:37815006",
+        "PMID:40597402"
+      ],
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "40314930",
+            "metric": "smd",
+            "value": 0.33,
+            "ci_low": 0.13,
+            "ci_high": 0.54,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "attention switching task accuracy (h2: SMD, 0.33; 95% CI, 0.13, 0.54)"
+          },
+          {
+            "pmid": "41661604",
+            "metric": "mean_diff",
+            "value": 0.11,
+            "ci_low": 0.01,
+            "ci_high": 0.21,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "highest vs lowest quartile of caffeinated coffee intake",
+            "direction": "benefit",
+            "quote": "those in the highest quartile had a higher mean TICS score (mean difference, 0.11 [95% CI, 0.01 to 0.21])"
+          },
+          {
+            "pmid": "39213264",
+            "metric": "mean_diff",
+            "value": -1.39,
+            "ci_low": -2.78,
+            "ci_high": 0.002,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Matcha consumption led to significant improvements in social acuity score (difference; -1.39, 95% confidence interval; -2.78, 0.002)"
+          }
+        ],
+        "n_not_reported": 21,
+        "n_total": 24
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
+      },
+      "headline_effect": {
+        "metric": "smd",
+        "value": 0.33,
+        "ci_low": 0.13,
+        "ci_high": 0.54,
+        "ci_estimated": false,
+        "n_studies_pooled": null,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "40314930",
+        "quote": "attention switching task accuracy (h2: SMD, 0.33; 95% CI, 0.13, 0.54)"
+      },
+      "summary": "For cognition, Caffeine is well-supported by human trials (24 studies)."
+    },
+    {
+      "outcome": "muscle strength",
+      "tier": "Strong",
+      "certainty": "high",
+      "score": 90,
+      "has_human_evidence": true,
+      "n_studies": 22,
+      "grade_reasons": [
+        "Consistency: 7 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 90,
+        "overall": 90,
+        "ceiling": 90,
+        "n_human_studies": 20,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
         "PMID:29527137",
         "PMID:29422383",
-        "PMID:34234088",
         "PMID:39246027",
         "PMID:33759701",
         "PMID:34444656",
@@ -91,48 +155,139 @@
         "PMID:35565718",
         "PMID:36432607",
         "PMID:32681596",
-        "PMID:39170391",
         "PMID:41829971",
         "PMID:3779343",
         "PMID:28409508",
         "PMID:38759491",
         "PMID:40806040",
         "PMID:36840816",
-        "PMID:36771289",
         "PMID:20019636",
         "PMID:25029005"
       ],
-      "summary": "For muscle strength, caffeine is well-supported by human trials (25 studies)."
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "38674836",
+            "metric": "mean_diff",
+            "value": 7.09,
+            "ci_low": 0.0,
+            "ci_high": 14.18,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "The acute ingestion of caffeine capsules significantly improved muscle strength (WMD, 7.09,"
+          },
+          {
+            "pmid": "41213157",
+            "metric": "mean_diff",
+            "value": -31,
+            "ci_low": -62.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs control",
+            "direction": "harm",
+            "quote": "Total protein synthesis, as measured by puromycin incorporation, decreased 31% in TTD6 cells with 4 mM caffeine"
+          },
+          {
+            "pmid": "36432607",
+            "metric": "mean_diff",
+            "value": 5.9,
+            "ci_low": 0.0,
+            "ci_high": 11.8,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Bench press (CF8: 100.1 \u00b1 1.9 kg; PLA: 94.2 \u00b1 2.5 kg)"
+          },
+          {
+            "pmid": "28409508",
+            "metric": "mean_diff",
+            "value": 12,
+            "ci_low": 0.0,
+            "ci_high": 24.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "caffeine vs baseline/placebo",
+            "direction": "benefit",
+            "quote": "The delta ([C1+C2/2]-[B+P/2]) were PD=0 (P>0.05), HS=12 (P=0.04)"
+          },
+          {
+            "pmid": "20019636",
+            "metric": "smd",
+            "value": 0.19,
+            "ci_low": 0.0,
+            "ci_high": 0.38,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "caffeine ingestion was found to result in a small beneficial effect on MVC strength (overall ES = 0.19, P = 0.0003)"
+          }
+        ],
+        "n_not_reported": 17,
+        "n_total": 22
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
+      },
+      "headline_effect": {
+        "metric": "smd",
+        "value": 0.19,
+        "ci_low": 0.0,
+        "ci_high": 0.38,
+        "ci_estimated": true,
+        "n_studies_pooled": 27,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "derived",
+        "source": "meta_analysis",
+        "pmid": "20019636",
+        "quote": "caffeine ingestion was found to result in a small beneficial effect on MVC strength (overall ES = 0.19, P = 0.0003)"
+      },
+      "summary": "For muscle strength, Caffeine is well-supported by human trials (22 studies)."
     },
     {
       "outcome": "cardiovascular",
-      "tier": "Strong",
-      "certainty": "high",
-      "score": 90,
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 17,
+      "n_studies": 15,
       "grade_reasons": [
-        "Consistency: based on a pooled meta-analysis / systematic review (formal consistency assessment); effect-direction agreement assumed from the pooled result."
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
-        "human": 90,
-        "overall": 90,
-        "ceiling": 90,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
         "n_human_studies": 11,
         "n_animal_studies": 4,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:35581338",
         "PMID:36680443",
         "PMID:39806963",
         "PMID:41236610",
         "PMID:6702647",
         "PMID:34274079",
         "PMID:17405163",
-        "PMID:40447551",
         "PMID:8354027",
         "PMID:8172489",
         "PMID:18359892",
@@ -143,7 +298,89 @@
         "PMID:35114026",
         "PMID:9213197"
       ],
-      "summary": "For cardiovascular, caffeine is well-supported by human trials (17 studies)."
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "6702647",
+            "metric": "mean_diff",
+            "value": 9,
+            "ci_low": 0.0,
+            "ci_high": 18.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "harm",
+            "quote": "The average systolic/diastolic blood pressure increased 9/10 mm Hg."
+          },
+          {
+            "pmid": "17405163",
+            "metric": "odds_ratio",
+            "value": 1.3,
+            "ci_low": 1.0,
+            "ci_high": 1.6,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs no caffeine intake",
+            "direction": "harm",
+            "quote": "For tetralogy of Fallot, nonsignificant elevations in risk were observed for moderate (but not high) caffeine intake overall and among nonsmokers (ORs of 1.3 to 1.5)."
+          },
+          {
+            "pmid": "8354027",
+            "metric": "mean_diff",
+            "value": 10.8,
+            "ci_low": 0.0,
+            "ci_high": 21.6,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "harm",
+            "quote": "The combination of caffeine and nicotine increased systolic and diastolic blood pressure by 10.8 +/- 2.0 and 12.4 +/- 1.9 mm Hg, respectively."
+          },
+          {
+            "pmid": "8198655",
+            "metric": "mean_diff",
+            "value": 10.6,
+            "ci_low": 0.0,
+            "ci_high": 21.2,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline (before caffeine)",
+            "direction": "harm",
+            "quote": "maternal pulse (85.1 vs 74.2 beats/min)"
+          },
+          {
+            "pmid": "9213197",
+            "metric": "mean_diff",
+            "value": 2093,
+            "ci_low": 0.0,
+            "ci_high": 4186.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "caffeine + nicotine vs baseline",
+            "direction": "harm",
+            "quote": "the rate of increase of the first derivative of left ventricular pressure (dP/dt) increased from 1,101 +/- 111 to 3,194 +/- 872 (p < 0.003)"
+          }
+        ],
+        "n_not_reported": 10,
+        "n_total": 15
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
+      },
+      "headline_effect": null,
+      "summary": "For cardiovascular, Caffeine has moderate human evidence (15 studies)."
     },
     {
       "outcome": "mood / depression",
@@ -151,9 +388,9 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 24,
+      "n_studies": 23,
       "grade_reasons": [
-        "Consistency: based on a pooled meta-analysis / systematic review (formal consistency assessment); effect-direction agreement assumed from the pooled result."
+        "Consistency: 2 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
         "mechanistic": 30,
@@ -162,7 +399,7 @@
         "overall": 90,
         "ceiling": 90,
         "n_human_studies": 16,
-        "n_animal_studies": 6,
+        "n_animal_studies": 7,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -181,7 +418,6 @@
         "PMID:26860412",
         "PMID:31095992",
         "PMID:27073610",
-        "PMID:32178222",
         "PMID:40827859",
         "PMID:26056314",
         "PMID:21824504",
@@ -191,30 +427,40 @@
         "PMID:37121724",
         "PMID:11037035"
       ],
-      "summary": "For mood / depression, caffeine is well-supported by human trials (24 studies)."
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 23,
+        "n_total": 23
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For mood / depression, Caffeine is well-supported by human trials (23 studies)."
     },
     {
       "outcome": "stress / anxiety",
-      "tier": "Strong",
-      "certainty": "high",
-      "score": 90,
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 28,
+      "n_studies": 26,
       "grade_reasons": [
-        "Consistency: based on a pooled meta-analysis / systematic review (formal consistency assessment); effect-direction agreement assumed from the pooled result."
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
-        "human": 90,
-        "overall": 90,
-        "ceiling": 90,
-        "n_human_studies": 11,
-        "n_animal_studies": 10,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 15,
+        "n_animal_studies": 11,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:34610163",
         "PMID:37916247",
         "PMID:19540270",
         "PMID:20113918",
@@ -230,7 +476,6 @@
         "PMID:26874560",
         "PMID:31772712",
         "PMID:31675672",
-        "PMID:3085227",
         "PMID:27073610",
         "PMID:27746260",
         "PMID:40962814",
@@ -243,7 +488,57 @@
         "PMID:42491907",
         "PMID:41956451"
       ],
-      "summary": "For stress / anxiety, caffeine is well-supported by human trials (28 studies)."
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "35334898",
+            "metric": "odds_ratio",
+            "value": 1.13,
+            "ci_low": 1.03,
+            "ci_high": 1.23,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "highest vs lowest tertile of caffeine intake (women)",
+            "direction": "harm",
+            "quote": "Women in the highest tertile of caffeine intake showed significantly higher odds for high trait anxiety compared to those in the lowest tertile (reference), even after adjustment for potential confounders (OR: 1.13; 95% CI: 1.03\u22121.23)."
+          },
+          {
+            "pmid": "33857194",
+            "metric": "odds_ratio",
+            "value": 1.86,
+            "ci_low": 1.17,
+            "ci_high": 2.96,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "females vs males",
+            "direction": "harm",
+            "quote": "Females (AOR = 1.86, 95%CI = 1.17-2.96), those who foresee better remuneration (AOR = 2.85, 95%CI = 1.82-4.49), and those who use non-prescription drugs (AOR = 2.13, 95%CI = 1.38-3.28) were more likely to have anxiety."
+          }
+        ],
+        "n_not_reported": 24,
+        "n_total": 26
+      },
+      "pooled": {
+        "verified": {
+          "value": 1.139,
+          "ci_low": 1.04,
+          "ci_high": 1.238,
+          "n_studies": 2
+        },
+        "exploratory": {
+          "value": 1.139,
+          "ci_low": 1.04,
+          "ci_high": 1.238,
+          "n_studies": 2
+        },
+        "note": null
+      },
+      "headline_effect": null,
+      "summary": "For stress / anxiety, Caffeine has moderate human evidence (26 studies)."
     }
   ],
   "effects_established": [
@@ -258,5 +553,5 @@
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1786995128.280396
+  "_cached_at": 1787057525.724546
 }
