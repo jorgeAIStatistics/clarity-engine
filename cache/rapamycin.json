@@ -1320,34 +1320,38 @@
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
   "explanation": {
-    "what_it_is": "Rapamycin is a macrolide antibiotic originally derived from soil bacteria, now used at low doses as an immunosuppressant and potential longevity agent. It works by inhibiting mTOR, a central cellular growth-control pathway that regulates metabolism, protein synthesis, and cell division.",
-    "how_it_works": "Rapamycin binds to and inhibits mTOR (mechanistic target of rapamycin), a master regulator that normally tells cells to grow and divide when nutrients are abundant. By dampening mTOR signaling, rapamycin essentially tells cells to enter a state of mild stress \u2014 triggering autophagy (cellular 'cleaning'), reducing unnecessary protein production, and shifting metabolism toward efficiency rather than growth. This shift is thought to mimic some benefits of calorie restriction and fasting, which are known to extend lifespan in animals. In humans, this mechanism influences immune tolerance, metabolic rate, and inflammatory tone.",
-    "proven_benefits": [
+    "what_it_is": "Rapamycin (also called sirolimus) is a macrolide antibiotic originally isolated from soil bacteria on Easter Island. It works by inhibiting mTOR, a master metabolic sensor protein that regulates cell growth, nutrient use, and autophagy. People take it orally as a tablet or liquid, and it is widely used clinically as an immunosuppressant in organ transplant recipients; it is also being studied off-label for aging-related outcomes.",
+    "how_it_works": "Rapamycin binds to and inhibits mTORC1, a protein complex that normally tells cells to grow and divide when nutrients are abundant. By blocking mTOR, rapamycin essentially puts cells into a conserving mode: they activate autophagy (cellular self-cleaning), reduce energy-expensive protein synthesis, and shift metabolism toward fat burning. This mimics some of the cellular changes seen during caloric restriction. Because mTOR is involved in immune cell activation, T-cell proliferation, and inflammatory signaling, inhibiting it can dampen excessive immune responses while paradoxically enhancing certain protective immune functions\u2014particularly in older adults and transplant patients. The same pathway also influences glucose metabolism and energy balance, suggesting effects on weight and blood sugar.",
+    "outcome_detail": [
       {
-        "benefit": "Immune function",
-        "grade": "Strong",
-        "note": "Rapamycin demonstrates robust effects on immune regulation in human studies, though its use typically requires medical supervision due to immunosuppressive side effects."
-      },
-      {
-        "benefit": "Weight and fat loss",
-        "grade": "Moderate",
-        "note": "Human evidence supports modest improvements in body composition, likely through shifts in metabolic efficiency and reduced energy storage signaling."
-      }
-    ],
-    "promising_benefits": [
-      {
-        "benefit": "Inflammation reduction",
+        "outcome": "inflammation",
         "grade": "Preliminary",
-        "note": "Early human evidence (35 studies) suggests rapamycin may lower systemic inflammation markers, but effects remain inconsistent and require further validation."
+        "what_studies_show": "One small human study (n=19, 2024) measured gene expression markers related to metabolism and inflammation after rapamycin treatment. The remaining evidence comes from 34 animal studies (2024\u20132026) showing that rapamycin reduces inflammatory markers and pathways in models of cardiac autoimmunity, liver disease, arthritis, and age-related inflammation. For example, studies found that rapamycin preserved cardiac function in autoimmune myocarditis and lowered age-related inflammation via the endolysosomal system.",
+        "why_this_grade": "The human evidence is extremely limited\u2014only one verified study with ~19 participants\u2014making the effect estimate imprecise and unstable. While animal models consistently support an anti-inflammatory effect, animal data alone cannot establish clinical efficacy in humans. Much more human research is needed before inflammation reduction can be called a proven benefit."
       },
       {
-        "benefit": "Blood sugar control",
+        "outcome": "immune function",
+        "grade": "Strong",
+        "what_studies_show": "Three independent meta-analyses (2023\u20132024) involving over 1,200 human participants converge on rapamycin's immune benefits, including improved resilience against infection and enhanced regulatory T-cell function. A 2014 randomized controlled trial in elderly participants showed mTOR inhibition improved immune function. Additional human studies, including case reports and real-world transplant data (2020, 2026), document restoration of T-cell function in immunodeficiency patients and successful long-term transplant outcomes with rapamycin-based regimens.",
+        "why_this_grade": "Multiple independent meta-analyses in humans provide high-confidence, replicated evidence across large populations. The consistency of findings across systematic reviews, combined with adequately powered trials, meets the standard for a Strong grade. Immune function is rapamycin's most clinically established effect, particularly in transplantation and in aging-related immune resilience."
+      },
+      {
+        "outcome": "blood sugar",
         "grade": "Emerging",
-        "note": "Initial human studies hint at potential metabolic benefits, but evidence is still preliminary and clinical significance remains unclear."
+        "what_studies_show": "Four human studies (2000\u20132023, ~315 participants combined) show mixed signals: two clinical trials from 2000\u20132002 in transplant recipients reported improved blood sugar control and lipid profiles; more recent unclassified studies (2019, 2023) examined insulin dynamics and gluconeogenesis in specialized populations. Notably, 23 animal studies (2019\u20132026) explore mechanisms linking mTOR inhibition to glucose metabolism and hyperglycemia-related pathways.",
+        "why_this_grade": "Human evidence is modest in size and heterogeneous (spanning 23 years, mixed transplant and non-transplant settings), making effect estimates unstable and imprecise. The mechanism is plausible, and animal studies are numerous, but clinical benefit in blood sugar control has not yet been consistently demonstrated in humans. This outcome is preliminary and requires larger, focused human trials."
+      },
+      {
+        "outcome": "weight / fat loss",
+        "grade": "Moderate",
+        "what_studies_show": "A 2023 randomized controlled trial (n=218) found that mTOR inhibition induced sex-specific body weight loss and affected energy homeostasis; this is the primary human evidence. One additional human study (2017) examined metabolic effects in lung cancer cachexia. Animal studies (33 of 35 total, 2025\u20132026) consistently show that rapamycin or related mTOR inhibition reduces fat accumulation, improves hepatic steatosis, and modulates mitochondrial function in obesity models.",
+        "why_this_grade": "Only two human studies provide verified data on weight/fat loss, with a combined sample of ~254 participants\u2014modest in size and not yet replicated in independent populations. The 2023 RCT is adequately powered for its cohort but represents limited human evidence overall. Animal models strongly support the mechanism, which elevates this to Moderate rather than Emerging, but larger and more diverse human trials are needed to establish consistent, real-world efficacy."
       }
     ],
-    "emerging_research": "Recent work explores rapamycin's role in aging hallmarks \u2014 autophagy, cellular senescence, and metabolic flexibility \u2014 with some animal studies suggesting lifespan extension. A few human trials are investigating low-dose rapamycin in aging cohorts, but results on longevity itself are not yet available. Most clinical data comes from transplant recipients at higher doses; optimal dosing and long-term safety for healthy aging remain open questions.",
-    "caveats": "Rapamycin is a prescription medication requiring medical oversight; it carries real risks of immunosuppression, dyslipidemia, and organ toxicity, especially at higher doses. Low-dose use ('rapamycin for aging') is investigational and not approved by regulatory agencies for longevity; safety and efficacy in healthy people are not yet established. Quality and sourcing are critical if obtained outside clinical settings.",
+    "evidence_base": "Rapamycin's evidence base is heavily weighted toward animal studies: across all four outcomes, animals comprise 112 of 128 total studies (87%). Human evidence is concentrated in immune function (8 human studies, 3 meta-analyses) and weight loss (2 human studies), while inflammation and blood sugar rely almost entirely on animal models or very small human samples. Most human data comes from transplant populations, where rapamycin is standard care; off-label longevity studies in non-immunosuppressed people are sparse. The research spans 2000\u20132026, with most relevant work from 2023 onward, reflecting recent interest in mTOR inhibition for aging. This distribution suggests rapamycin's mechanisms are well-characterized biochemically, but its clinical benefits in healthy, aging populations remain incompletely proven.",
+    "emerging_research": "Recent work (2024\u20132026) is exploring rapamycin's role in specific age-related conditions: cardiac autoimmunity, metabolic-associated liver disease (MASLD), senescence pathways in arthritis, and mitochondrial function in obesity. Studies are also investigating combination approaches\u2014for example, sequential delivery with ginkgetin to orchestrate inflammation and autophagy simultaneously. A promising 2026 animal study linked mTOR's downstream target S6K to age-related inflammation and lifespan via the endolysosomal system, offering a potential mechanistic link between cellular cleaning and longevity. These directions are early but increasingly mechanistically detailed.",
+    "open_questions": "Critical unknowns remain: optimal dosing and duration for non-transplant, healthy aging populations are not established\u2014most human data comes from constant low-dose immunosuppression in transplant patients, a very different context. Long-term safety and efficacy in older adults without organ disease has not been rigorously tested. Blood sugar effects in non-transplant populations and weight loss in diverse genetic and metabolic backgrounds require much larger, controlled human trials. Finally, whether the cellular benefits observed in animal models (autophagy, mitochondrial function, senescence delay) translate to meaningful lifespan or healthspan extension in humans is completely unproven.",
+    "caveats": "Rapamycin is a potent immunosuppressant and requires medical supervision; off-label use outside transplantation is experimental and carries infection risk, especially in older adults or those with existing immune compromise. Quality and dosing vary significantly between pharmaceutical-grade and research-grade sources; the compound has a narrow therapeutic window. It can interact with other medications, particularly those metabolized by CYP3A4, and may cause metabolic side effects (hyperglycemia, dyslipidemia) in some users\u2014ironically, the opposite of its desired effect. Anyone considering rapamycin for longevity should consult a physician familiar with mTOR biology and transplant medicine.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
