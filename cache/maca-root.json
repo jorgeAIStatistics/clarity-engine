@@ -1,19 +1,20 @@
 {
   "name": "Maca Root",
   "category": "herb",
-  "overall_score": 73,
+  "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 15,
+  "study_count": 16,
   "claims": [
     {
-      "outcome": "testosterone / hormones",
+      "outcome": "sexual function",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 5,
+      "n_studies": 7,
       "grade_reasons": [
-        "Imprecision: small verified sample (~10 participants across measured studies)."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
         "mechanistic": 30,
@@ -21,18 +22,44 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 4,
+        "n_human_studies": 4,
+        "n_animal_studies": 3,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:20691074",
+        "PMID:24931003",
         "PMID:12525260",
-        "PMID:25097281",
-        "PMID:31215433",
-        "PMID:39944348",
-        "PMID:16239088"
+        "PMID:19260845",
+        "PMID:38518815",
+        "PMID:24333960",
+        "PMID:11297856"
       ],
       "studies": [
+        {
+          "pmid": "20691074",
+          "title": "Maca (L. meyenii) for improving sexual function: a systematic review.",
+          "year": "2010",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "24931003",
+          "title": "Maca reduces blood pressure and depression, in a pilot study in postmenopausal women.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "19260845",
+          "title": "Subjective effects of Lepidium meyenii (Maca) extract on well-being and sexual performances in patients with mild erectile dysfunction: a randomised, double-bli",
+          "year": "2009",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
         {
           "pmid": "12525260",
           "title": "Effect of Lepidium meyenii (Maca), a root with aphrodisiac and fertility-enhancing properties, on serum reproductive hormone levels in adult healthy men.",
@@ -42,17 +69,99 @@
           "n": null
         },
         {
-          "pmid": "39944348",
-          "title": "The effects of",
-          "year": "2025",
+          "pmid": "38518815",
+          "title": "A novel approach of using Maca root as a radioprotector in a rat testicular damage model focusing on GRP78/CHOP/Caspase-3 pathway.",
+          "year": "2024",
           "design": "Animal",
           "population": "animal",
           "n": null
         },
         {
-          "pmid": "31215433",
-          "title": "Effects of combined extracts of Lepidium meyenii and Allium tuberosum Rottl. on erectile dysfunction.",
-          "year": "2019",
+          "pmid": "24333960",
+          "title": "Lepidium meyenii (Maca) enhances the serum levels of luteinising hormone in female rats.",
+          "year": "2014",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "11297856",
+          "title": "Lepidium meyenii Walp. improves sexual behaviour in male rats independently from its action on spontaneous locomotor activity.",
+          "year": "2001",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For sexual function, Maca Root has moderate human evidence (7 studies)."
+    },
+    {
+      "outcome": "testosterone / hormones",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 5,
+      "grade_reasons": [
+        "Imprecision: small verified sample (~10 participants across 1 measured studies)."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 2,
+        "n_animal_studies": 3,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:24931003",
+        "PMID:12525260",
+        "PMID:38518815",
+        "PMID:24333960",
+        "PMID:25097281"
+      ],
+      "studies": [
+        {
+          "pmid": "24931003",
+          "title": "Maca reduces blood pressure and depression, in a pilot study in postmenopausal women.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "12525260",
+          "title": "Effect of Lepidium meyenii (Maca), a root with aphrodisiac and fertility-enhancing properties, on serum reproductive hormone levels in adult healthy men.",
+          "year": "2003",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "38518815",
+          "title": "A novel approach of using Maca root as a radioprotector in a rat testicular damage model focusing on GRP78/CHOP/Caspase-3 pathway.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "24333960",
+          "title": "Lepidium meyenii (Maca) enhances the serum levels of luteinising hormone in female rats.",
+          "year": "2014",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -64,14 +173,6 @@
           "design": "Animal",
           "population": "animal",
           "n": 10
-        },
-        {
-          "pmid": "16239088",
-          "title": "Lepidium meyenii (Maca) does not exert direct androgenic activities.",
-          "year": "2006",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
         }
       ],
       "effects": {
@@ -85,130 +186,47 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For testosterone / hormones, Maca Root has moderate human evidence (5 studies)."
-    },
-    {
-      "outcome": "inflammation",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 6,
-      "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 0,
-        "overall": 55,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 5,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:37107174",
-        "PMID:32951476",
-        "PMID:25667964",
-        "PMID:38056538",
-        "PMID:39944348",
-        "PMID:33320645"
-      ],
-      "studies": [
-        {
-          "pmid": "39944348",
-          "title": "The effects of",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38056538",
-          "title": "Maca roots: A potential therapeutic in the management of metabolic disorders through the modulation of metabolic biochemical markers in rats fed high-fat high-c",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "32951476",
-          "title": "Maca modulates fat and liver energy metabolism markers insulin, IRS1, leptin, and SIRT1 in rats fed normal and high-fat diets.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "25667964",
-          "title": "Flavonolignans and other constituents from Lepidium meyenii with activities in anti-inflammation and human cancer cell lines.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37107174",
-          "title": "Anti-Inflammation and Anti-Melanogenic Effects of Maca Root Extracts Fermented Using",
-          "year": "2023",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "33320645",
-          "title": "",
-          "year": "2020",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For inflammation, Maca Root has only preliminary or animal evidence (6 studies)."
+      "summary": "For testosterone / hormones, Maca Root shows early but unsettled evidence (5 studies)."
     },
     {
       "outcome": "mood / depression",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
       "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "mechanistic": 25,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:29568754"
+        "PMID:24931003",
+        "PMID:19260845"
       ],
       "studies": [
         {
-          "pmid": "29568754",
-          "title": "Monoamine Oxidase-A Inhibition and Associated Antioxidant Activity in Plant Extracts with Potential Antidepressant Actions.",
-          "year": "2018",
-          "design": "In vitro",
-          "population": "animal",
+          "pmid": "24931003",
+          "title": "Maca reduces blood pressure and depression, in a pilot study in postmenopausal women.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "19260845",
+          "title": "Subjective effects of Lepidium meyenii (Maca) extract on well-being and sexual performances in patients with mild erectile dysfunction: a randomised, double-bli",
+          "year": "2009",
+          "design": "RCT",
+          "population": "human",
           "n": null
         }
       ],
@@ -223,53 +241,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For mood / depression, Maca Root has only preliminary or animal evidence (1 studies)."
-    },
-    {
-      "outcome": "cardiovascular",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:34765511"
-      ],
-      "studies": [
-        {
-          "pmid": "34765511",
-          "title": "",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cardiovascular, Maca Root has only preliminary or animal evidence (1 studies)."
+      "summary": "For mood / depression, Maca Root has moderate human evidence (2 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -293,7 +265,7 @@
       },
       "study_ids": [
         "PMID:24931003",
-        "PMID:38056538"
+        "PMID:32951476"
       ],
       "studies": [
         {
@@ -305,9 +277,9 @@
           "n": null
         },
         {
-          "pmid": "38056538",
-          "title": "Maca roots: A potential therapeutic in the management of metabolic disorders through the modulation of metabolic biochemical markers in rats fed high-fat high-c",
-          "year": "2024",
+          "pmid": "32951476",
+          "title": "Maca modulates fat and liver energy metabolism markers insulin, IRS1, leptin, and SIRT1 in rats fed normal and high-fat diets.",
+          "year": "2023",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -328,58 +300,16 @@
     }
   ],
   "effects_established": [
-    "testosterone / hormones",
+    "sexual function",
+    "mood / depression",
     "blood sugar"
   ],
   "effects_promising": [
-    "inflammation",
-    "mood / depression",
-    "cardiovascular"
+    "testosterone / hormones"
   ],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "explanation": {
-    "what_it_is": "Maca root (Lepidium meyenii) is a cruciferous plant native to the Peruvian Andes that has been used for centuries in traditional medicine. It contains a mix of glucosinolates, alkaloids, amino acids, and flavonolignans. People typically consume it as a dried powder, extract, or capsule.",
-    "how_it_works": "Maca appears to work through multiple pathways rather than a single mechanism. Its glucosinolates and other phytochemicals may modulate hormone signaling and metabolic pathways, though an in vitro study found it does not directly bind androgen receptors the way synthetic androgens do. Some compounds in maca, particularly flavonolignans, show anti-inflammatory and antioxidant activity in laboratory and animal studies. The plant may also influence monoamine oxidase activity, which could theoretically affect mood-related neurotransmitters, though this remains unproven in humans. Overall, maca's effects appear indirect and multi-system rather than through a single targeted mechanism.",
-    "outcome_detail": [
-      {
-        "outcome": "testosterone / hormones",
-        "grade": "Moderate",
-        "what_studies_show": "One 2003 randomized controlled trial in humans examined the effect of Lepidium meyenii on serum reproductive hormones, though the sample size was very small (approximately 10 participants across measured studies). Animal studies from 2014, 2019, and 2025 reported changes in serum hormone levels in rats and other models, while a 2006 in vitro study found maca does not directly activate androgen receptors in cell culture.",
-        "why_this_grade": "The single small human trial provides direct evidence, but the sample is too small to establish robust efficacy. The four animal studies are suggestive but do not reliably predict human outcomes. Together, this yields a Moderate grade\u2014promising but not conclusive, with substantial imprecision limiting confidence."
-      },
-      {
-        "outcome": "inflammation",
-        "grade": "Preliminary",
-        "what_studies_show": "Five animal and in vitro studies (2023, 2023, 2024, 2015, and 2025) reported anti-inflammatory markers in cell cultures and animal models, including modulation of metabolic and immune-related pathways. No human studies measuring inflammatory outcomes in people were identified.",
-        "why_this_grade": "All evidence comes from animal or cell-based research with no human data. Animal models do not reliably translate to human inflammation or disease. Sample sizes in the abstracts could not be verified, adding imprecision. This is graded Preliminary because we cannot yet say whether maca reduces inflammation in actual people."
-      },
-      {
-        "outcome": "mood / depression",
-        "grade": "Preliminary",
-        "what_studies_show": "A single 2018 in vitro study reported that maca extracts inhibit monoamine oxidase-A, an enzyme involved in degrading mood-related neurotransmitters, and showed antioxidant activity. This mechanism is plausible for mood support, but the study was conducted in cell cultures, not in people.",
-        "why_this_grade": "Only one animal/cell study exists, with no human trials. Cell-culture findings often fail to translate to human mood or clinical depression. This remains preliminary and unproven in humans."
-      },
-      {
-        "outcome": "cardiovascular",
-        "grade": "Preliminary",
-        "what_studies_show": "One 2021 animal study examined cardiovascular effects of maca. No human trials measuring heart health, blood pressure, or vascular function were identified.",
-        "why_this_grade": "A single animal study cannot establish cardiovascular benefit in humans. This outcome is graded Preliminary due to lack of human evidence and the known difficulty of translating animal cardiovascular findings to people."
-      },
-      {
-        "outcome": "blood sugar",
-        "grade": "Moderate",
-        "what_studies_show": "A 2015 randomized controlled trial (pilot study) in postmenopausal women reported that maca reduced blood pressure and depression symptoms, though the sample size could not be verified from the abstract. A 2024 animal study reported effects on metabolic markers including insulin and related glucose-regulation pathways in rats.",
-        "why_this_grade": "One human RCT provides direct evidence, but the sample was small and specific to one population (postmenopausal women), and the published information does not allow verification of exact sample size or precision. The supporting animal study is suggestive but does not strengthen the human evidence. This yields a Moderate grade\u2014clinically interesting but limited by small sample size and uncertainty about generalizability."
-      }
-    ],
-    "evidence_base": "Maca research is dominated by animal and in vitro studies, with only two human trials identified (one on hormones, one on blood sugar). Both human studies were small and had methodological limitations that prevent strong claims. Most studies are recent (2014 onward), with a cluster from 2023\u20132025, suggesting growing research interest. However, the overall human evidence base remains thin, so confidence in maca's clinical effects is limited by the lack of larger, longer, well-controlled trials in diverse populations.",
-    "emerging_research": "Recent animal studies (2023\u20132025) have expanded focus from sexual function and hormones toward metabolic disorders, suggesting researchers are investigating maca as a potential agent for blood sugar control and metabolic health. Some newer work has examined fermented maca extracts and their anti-inflammatory and anti-melanogenic properties. These directions are early and animal-focused, and human translation remains uncertain.",
-    "open_questions": "Optimal dosing and extract type remain unclear\u2014studies have used various forms (powders, ethanol extracts, fermented preparations) without a clear standard. Long-term safety and efficacy in humans are unknown; most human data comes from short interventions. The effects in men, younger populations, and non-menopausal women are largely unstudied. Whether maca's effects on hormones or mood translate to meaningful clinical improvements in humans requires larger, longer human trials.",
-    "_generated": true,
-    "_model": "claude-haiku-4-5-20251001"
-  },
-  "_cached_at": 1787092440.3116229
+  "_cached_at": 1787506441.2376351
 }

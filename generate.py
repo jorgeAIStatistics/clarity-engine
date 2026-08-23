@@ -48,6 +48,41 @@ def _pick_headline_effect(pooled_from_meta):
     }
 
 
+def _study_records(studies):
+    """
+    Compact per-study records for the trials table. Everything here was parsed
+    from PubMed or classified upstream — nothing synthesized. Honest-gaps rule:
+    sample_size is included ONLY when it was verified from the abstract (None
+    otherwise, rendered as an em-dash by the UI, never guessed). Sorted human
+    evidence first, then by design strength, then recency.
+    """
+    _DESIGN_LABEL = {
+        "meta_analysis": "Meta-analysis", "systematic_review": "Systematic review",
+        "rct": "RCT", "trial": "Clinical trial", "observational": "Observational",
+        "case_report": "Case report", "animal": "Animal", "in_vitro": "In vitro",
+        "unknown": "Unclassified",
+    }
+    recs = []
+    for s in studies:
+        if not s.get("pmid"):
+            continue
+        n = s.get("sample_size")
+        recs.append({
+            "pmid": str(s["pmid"]),
+            "title": (s.get("title") or "").strip()[:160],
+            "year": s.get("year") or "",
+            "design": _DESIGN_LABEL.get(s.get("design"), "Unclassified"),
+            "population": s.get("population") or "unknown",
+            "n": int(n) if isinstance(n, (int, float)) and n > 0 else None,
+        })
+    _rank = {"Meta-analysis": 0, "Systematic review": 1, "RCT": 2, "Clinical trial": 3,
+             "Observational": 4, "Case report": 5, "Animal": 6, "In vitro": 7, "Unclassified": 8}
+    recs.sort(key=lambda r: (0 if r["population"] == "human" else 1,
+                             _rank.get(r["design"], 9),
+                             -(int(r["year"]) if r["year"].isdigit() else 0)))
+    return recs
+
+
 def _format_effects(effects_list):
     """
     Shape effects for the profile JSON. Only effects that passed the gate
@@ -118,6 +153,7 @@ def build_profile(topic, category, claim_bundles, overall):
                 "note": layers["note"],
             },
             "study_ids": [f"PMID:{p}" for p in pmids],
+            "studies": _study_records(cb["studies"]),
             "effects": _format_effects(cb.get("effects", [])),
             "pooled": cb.get("pooled", {"verified": None, "exploratory": None}),
             "headline_effect": _pick_headline_effect(cb.get("pooled_from_meta", [])),
@@ -134,7 +170,7 @@ def build_profile(topic, category, claim_bundles, overall):
 
     total_studies = sum(c["n_studies"] for c in claims)
 
-    return {
+    profile = {
         "name": topic,
         "category": category,
         "overall_score": score,
@@ -153,6 +189,53 @@ def build_profile(topic, category, claim_bundles, overall):
         "generated_by": "clarity-engine-v2",
         "reviewed_by": "auto",  # flip to "expert" after your review
     }
+    # Grounded explanation (rich prose, efficacy tied to the grades). Cached by
+    # compound; costs ~half a cent once, free after. None if no API key.
+    # PubChem: hard factual chemistry (formula, weight, IUPAC name, structure).
+    # Anchors the "what it is" section with verifiable facts instead of relying
+    # entirely on generated prose. None for mixtures (whey, collagen) — honest.
+    try:
+        import pubchem as _pubchem
+        _chem = _pubchem.fetch(topic)
+        if _chem:
+            profile["chemistry"] = _chem
+    except Exception as e:
+        print(f"  [generate] pubchem lookup skipped: {type(e).__name__}")
+
+    # Skipped by default during catalog generation: these two calls are ~52% of
+    # wall time and the add_explanations.py / add_appraisals.py passes produce
+    # them anyway. Set CLARITY_INLINE_PROSE=1 for a single-command full profile.
+    _inline_prose = os.environ.get("CLARITY_INLINE_PROSE", "") == "1"
+    try:
+        if not _inline_prose:
+            raise StopIteration
+        import explain as _explain
+        _ex = _explain.explain(profile)
+        if _ex:
+            profile["explanation"] = _ex
+        else:
+            print("  [generate] no explanation attached (see [explain] message above, "
+                  "or ANTHROPIC_API_KEY not set)")
+    except StopIteration:
+        pass
+    except Exception as e:
+        print(f"  [generate] explanation step failed: {type(e).__name__}: {e}")
+
+    # Critical appraisal — the "how this could be wrong" layer. Adversarial read
+    # of the evidence STRUCTURE, grounded in the study records. Never speculative.
+    try:
+        if not _inline_prose:
+            raise StopIteration
+        import appraise as _appraise
+        _ap = _appraise.appraise(profile)
+        if _ap:
+            profile["appraisal"] = _ap
+    except StopIteration:
+        pass
+    except Exception as e:
+        print(f"  [generate] appraisal step failed: {type(e).__name__}: {e}")
+
+    return profile
 
 
 def _write_prose(topic, claim_bundle):

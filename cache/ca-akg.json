@@ -1,42 +1,50 @@
 {
   "name": "Ca-AKG",
   "category": "longevity",
-  "overall_score": 22,
-  "tier": "Preliminary",
-  "study_count": 1,
+  "overall_score": 47,
+  "tier": "Emerging",
+  "study_count": 2,
   "claims": [
     {
-      "outcome": "muscle strength",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
+      "outcome": "skin / appearance",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~120 participants); effect estimate may be unstable.",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Imprecision: modest verified sample (~130 participants across 2 of 2 studies); effect estimate may be unstable."
       ],
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
-        "human": 22,
-        "overall": 22,
-        "ceiling": 22,
+        "mechanistic": 25,
+        "preclinical": 35,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
         "n_human_studies": 1,
-        "n_animal_studies": 0,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:37217632"
+        "PMID:37217632",
+        "PMID:21451208"
       ],
       "studies": [
         {
           "pmid": "37217632",
           "title": "Alpha-ketoglutarate supplementation and BiologicaL agE in middle-aged adults (ABLE)-intervention study protocol.",
           "year": "2023",
-          "design": "Unclassified",
+          "design": "Clinical trial",
           "population": "human",
           "n": 120
+        },
+        {
+          "pmid": "21451208",
+          "title": "Alpha-ketoglutarate stabilizes redox homeostasis and improves arterial elasticity in aged mice.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": 10
         }
       ],
       "effects": {
@@ -50,34 +58,37 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For muscle strength, Ca-AKG has only preliminary or animal evidence (1 studies)."
+      "summary": "For skin / appearance, Ca-AKG shows early but unsettled evidence (2 studies)."
     }
   ],
   "effects_established": [],
-  "effects_promising": [],
-  "effects_emerging": [
-    "muscle strength"
+  "effects_promising": [
+    "skin / appearance"
   ],
+  "effects_emerging": [],
   "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "explanation": {
-    "what_it_is": "Calcium alpha-ketoglutarate (Ca-AKG) is a salt form of alpha-ketoglutarate, a naturally occurring compound in human cells that plays a central role in energy metabolism and cellular signaling. It is produced endogenously during the citric acid cycle but can also be taken as a oral supplement. People typically consume it as a capsule or powder to potentially support cellular health and longevity-related processes.",
-    "how_it_works": "Alpha-ketoglutarate is a key metabolic hub \u2014 it feeds directly into the citric acid cycle (the primary energy-generating pathway in mitochondria) and serves as a nitrogen-carrying substrate for amino acid synthesis and protein turnover. It also acts as a co-factor for numerous enzymes involved in collagen cross-linking, DNA repair, and epigenetic regulation (through histone and DNA methylation). By supplementing AKG, the theory is that cells can better maintain energy production, support protein quality control, and enhance the cellular cleanup processes (autophagy) that decline with age.",
-    "outcome_detail": [
-      {
-        "outcome": "muscle strength",
-        "grade": "Preliminary",
-        "what_studies_show": "A 2023 intervention study protocol (ABLE study) in middle-aged adults (n\u2248120) examined alpha-ketoglutarate supplementation and biological age markers. This is a human trial, but the outcome of muscle strength itself has been addressed in only this single study to date, making it impossible to assess consistency or confirm effect stability across different populations or study designs.",
-        "why_this_grade": "The evidence is graded Preliminary because there is only one human study on this outcome, providing imprecision due to the modest sample size (~120 participants) and preventing assessment of consistency across independent trials. A single study, even if well-conducted, cannot establish reliable efficacy for a health claim."
-      }
-    ],
-    "evidence_base": "The current evidence base for Ca-AKG in humans is extremely limited \u2014 to date, only one human study directly addresses muscle strength. The broader Ca-AKG literature includes mechanistic and animal work supporting the theoretical plausibility of age-related benefits, but human clinical trials are sparse. This means confidence in any health claim is low and largely depends on basic science reasoning rather than replicated human evidence. Further well-designed randomized controlled trials in diverse adult populations are needed before firm conclusions can be drawn.",
-    "emerging_research": "The ABLE intervention study (2023) is part of a growing interest in metabolism-focused anti-aging approaches, specifically examining whether AKG supplementation can measurably shift biological age markers beyond simple chronological aging. Parallel research in animal models and cellular systems continues to explore AKG's role in autophagy, mitochondrial function, and epigenetic clock reversal. These directions are promising in theory but remain preliminary in humans and should not yet be taken as established benefits.",
-    "open_questions": "The optimal dosing regimen for Ca-AKG in humans is not yet established, nor is there clarity on whether effects differ by age, sex, baseline fitness, or metabolic status. Long-term safety and efficacy beyond the timeframe of available studies are unknown. It is also unclear whether oral AKG supplementation meaningfully raises tissue AKG levels or whether effects depend on timing, food intake, or individual absorption capacity.",
-    "caveats": "Ca-AKG is a research compound with limited human evidence; claims of efficacy for muscle strength or longevity are not yet substantiated in humans and should be considered investigational. Quality and purity of commercial supplements vary widely and are not regulated as rigorously as pharmaceuticals in most countries. Individuals with kidney disease or those on medications affecting nitrogen metabolism should consult a healthcare provider before supplementing, as AKG is involved in amino acid and ammonia metabolism.",
-    "_generated": true,
-    "_model": "claude-haiku-4-5-20251001"
+  "chemistry": {
+    "cid": 51,
+    "formula": "C5H6O5",
+    "weight": "146.10",
+    "iupac_name": "2-oxopentanedioic acid",
+    "smiles": null,
+    "inchikey": "KPGXRSRHYNQIFN-UHFFFAOYSA-N",
+    "xlogp": -0.9,
+    "image_url": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=51&t=l",
+    "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/51",
+    "matched_query": "alpha-ketoglutaric acid",
+    "source": "PubChem",
+    "synonyms": [
+      "2-Oxopentanedioic acid",
+      "328-50-7",
+      "2-oxoglutaric acid",
+      "alpha-ketoglutaric acid",
+      "2-oxoglutarate",
+      "Oxoglutaric acid"
+    ]
   },
-  "_cached_at": 1787092670.82047
+  "_cached_at": 1787506542.906147
 }

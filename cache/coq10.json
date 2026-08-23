@@ -1,54 +1,42 @@
 {
   "name": "CoQ10",
   "category": "supplement",
-  "overall_score": 95,
-  "tier": "Strong",
-  "study_count": 75,
+  "overall_score": 79,
+  "tier": "Moderate",
+  "study_count": 12,
   "claims": [
     {
       "outcome": "cardiovascular",
-      "tier": "Strong",
-      "certainty": "high",
-      "score": 90,
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 14,
+      "n_studies": 2,
       "grade_reasons": [
-        "Consistency: 3 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+        "Limited human evidence: 0 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 90,
-        "overall": 90,
-        "ceiling": 90,
-        "n_human_studies": 9,
-        "n_animal_studies": 5,
+        "mechanistic": 25,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:25282031",
-        "PMID:38281937",
-        "PMID:35507785",
-        "PMID:35941510",
-        "PMID:41158831",
-        "PMID:36668724",
-        "PMID:40116591",
-        "PMID:35348726",
-        "PMID:38124174",
-        "PMID:28864378",
-        "PMID:38987784",
-        "PMID:31019028",
-        "PMID:41392137",
-        "PMID:30021394"
+        "PMID:36337001",
+        "PMID:41158831"
       ],
       "studies": [
         {
-          "pmid": "35941510",
-          "title": "Efficacy and Safety of Coenzyme Q10 Supplementation in the Treatment of Polycystic Ovary Syndrome: a Systematic Review and Meta-analysis.",
-          "year": "2023",
+          "pmid": "36337001",
+          "title": "Effects of Coenzyme Q10 Supplementation on Lipid Profiles in Adults: A Meta-analysis of Randomized Controlled Trials.",
+          "year": "2022",
           "design": "Meta-analysis",
           "population": "human",
-          "n": 1021
+          "n": 2794
         },
         {
           "pmid": "41158831",
@@ -57,101 +45,152 @@
           "design": "Systematic review",
           "population": "human",
           "n": 389
-        },
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For cardiovascular, CoQ10 has moderate human evidence (2 studies)."
+    },
+    {
+      "outcome": "cholesterol / lipids",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:36337001"
+      ],
+      "studies": [
         {
-          "pmid": "35348726",
-          "title": "Coenzyme Q10 as Adjunctive Therapy for Cardiovascular Disease and Hypertension: A Systematic Review.",
+          "pmid": "36337001",
+          "title": "Effects of Coenzyme Q10 Supplementation on Lipid Profiles in Adults: A Meta-analysis of Randomized Controlled Trials.",
           "year": "2022",
-          "design": "Systematic review",
+          "design": "Meta-analysis",
           "population": "human",
-          "n": 1067
-        },
+          "n": 2794
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For cholesterol / lipids, CoQ10 has moderate human evidence (1 studies)."
+    },
+    {
+      "outcome": "muscle strength",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 7,
+      "grade_reasons": [
+        "Precision: ~132 participants verified across 2 of 7 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 7,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:16434667",
+        "PMID:25545331",
+        "PMID:34891216",
+        "PMID:21698649",
+        "PMID:9208260",
+        "PMID:19644406",
+        "PMID:23306418"
+      ],
+      "studies": [
         {
-          "pmid": "38281937",
-          "title": "Coenzyme Q10 mitigates macrophage mediated inflammation in heart following myocardial infarction via the NLRP3/IL1\u03b2 pathway.",
-          "year": "2024",
+          "pmid": "34891216",
+          "title": "The effect of 8 weeks of physical training on muscle performance and maximal fat oxidation rates in patients treated with simvastatin and coenzyme Q10 supplemen",
+          "year": "2022",
           "design": "RCT",
           "population": "human",
-          "n": 61
+          "n": null
         },
         {
-          "pmid": "38987784",
-          "title": "Six-month supplementation with high dose coenzyme Q10 improves liver steatosis, endothelial, vascular and myocardial function in patients with metabolic-dysfunc",
-          "year": "2024",
+          "pmid": "25545331",
+          "title": "A randomized trial of coenzyme Q10 in patients with confirmed statin myopathy.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": 120
+        },
+        {
+          "pmid": "23306418",
+          "title": "Impact of coenzyme Q-10 on parameters of cardiorespiratory fitness and muscle performance in older athletes taking statins.",
+          "year": "2012",
           "design": "RCT",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "30021394",
-          "title": "Effect of Monacolin K and COQ10 supplementation in hypertensive and hypercholesterolemic subjects with metabolic syndrome.",
-          "year": "2018",
+          "pmid": "19644406",
+          "title": "The effects of coenzyme Q10 supplementation on performance during repeated bouts of supramaximal exercise in sedentary men.",
+          "year": "2010",
           "design": "RCT",
           "population": "human",
-          "n": 104
+          "n": null
         },
         {
-          "pmid": "25282031",
-          "title": "The effect of coenzyme Q10 on morbidity and mortality in chronic heart failure: results from Q-SYMBIO: a randomized double-blind trial.",
-          "year": "2014",
+          "pmid": "9208260",
+          "title": "Coenzyme Q10 treatment in mitochondrial encephalomyopathies. Short-term double-blind, crossover study.",
+          "year": "1997",
           "design": "RCT",
           "population": "human",
-          "n": 420
+          "n": null
         },
         {
-          "pmid": "40116591",
-          "title": "Trends in Coenzyme Q10 Supplement Use and Associations With All-Cause and Cardiovascular Mortality: A Population-Based Cohort Study.",
-          "year": "2025",
-          "design": "Unclassified",
+          "pmid": "21698649",
+          "title": "CINRG pilot trial of coenzyme Q10 in steroid-treated Duchenne muscular dystrophy.",
+          "year": "2011",
+          "design": "Clinical trial",
           "population": "human",
-          "n": null
+          "n": 12
         },
         {
-          "pmid": "35507785",
-          "title": "Coenzyme Q10 for Diabetes and Cardiovascular Disease: Useful or Useless?",
-          "year": "2023",
-          "design": "Unclassified",
+          "pmid": "16434667",
+          "title": "Coenzyme Q10 deficiency and isolated myopathy.",
+          "year": "2006",
+          "design": "Case report",
           "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41392137",
-          "title": "Endothelial mitochondrial-derived vesicles (EMDVs) with retinal targeted homing properties dynamically modulate the eIF2\u03b1-ATF4-CHOP signaling pathway and effici",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36668724",
-          "title": "Evaluation of Coenzyme Q10 (CoQ10) Deficiency and Therapy in Mouse Models of Cardiomyopathy.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38124174",
-          "title": "Mitochondrion-targeted carboxymethyl chitosan hybrid nanoparticles loaded with Coenzyme Q10 protect cardiac grafts against cold ischaemia\u2012reperfusion injury in ",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31019028",
-          "title": "Chronic hypoxia-induced",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "28864378",
-          "title": "Potential Cardiovascular and Renal Protective Effects of Vitamin D and Coenzyme Q",
-          "year": "2017",
-          "design": "Animal",
-          "population": "animal",
           "n": null
         }
       ],
@@ -166,57 +205,31 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cardiovascular, CoQ10 is well-supported by human trials (14 studies)."
+      "summary": "For muscle strength, CoQ10 has moderate human evidence (7 studies)."
     },
     {
       "outcome": "inflammation",
-      "tier": "Strong",
-      "certainty": "high",
-      "score": 90,
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 28,
+      "n_studies": 2,
       "grade_reasons": [
-        "Consistency: 4 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+        "Limited human evidence: 0 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 90,
-        "overall": 90,
-        "ceiling": 90,
-        "n_human_studies": 9,
-        "n_animal_studies": 19,
+        "mechanistic": 25,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:40579479",
         "PMID:37118903",
-        "PMID:39581576",
-        "PMID:40398356",
-        "PMID:38281937",
-        "PMID:38960007",
-        "PMID:40902893",
-        "PMID:41026372",
-        "PMID:41419454",
-        "PMID:36640727",
-        "PMID:40954280",
-        "PMID:35866224",
-        "PMID:37225987",
-        "PMID:38096523",
-        "PMID:36319818",
-        "PMID:38124174",
-        "PMID:39908875",
-        "PMID:33946176",
-        "PMID:32700556",
-        "PMID:33418245",
-        "PMID:33191175",
-        "PMID:30156030",
-        "PMID:31813234",
-        "PMID:28125601",
-        "PMID:17173569",
-        "PMID:37511276",
-        "PMID:34008150",
-        "PMID:40553170"
+        "PMID:38220408"
       ],
       "studies": [
         {
@@ -228,220 +241,12 @@
           "n": 1517
         },
         {
-          "pmid": "34008150",
-          "title": "Effects of coenzyme Q10 supplementation on inflammation, angiogenesis, and oxidative stress in breast cancer patients: a systematic review and meta-analysis of ",
-          "year": "2021",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "28125601",
-          "title": "Effects of Coenzyme Q10 on Markers of Inflammation: A Systematic Review and Meta-Analysis.",
-          "year": "2017",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 428
-        },
-        {
-          "pmid": "41026372",
-          "title": "Modulating inflammation and oxidative stress in rheumatoid arthritis: a systematic review of nutraceutical interventions.",
-          "year": "2025",
+          "pmid": "38220408",
+          "title": "Coenzyme Q10 supplementation in rheumatic diseases: A systematic review.",
+          "year": "2024",
           "design": "Systematic review",
           "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "38281937",
-          "title": "Coenzyme Q10 mitigates macrophage mediated inflammation in heart following myocardial infarction via the NLRP3/IL1\u03b2 pathway.",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": 61
-        },
-        {
-          "pmid": "38960007",
-          "title": "Selenoprotein P increases upon selenium and coenzyme Q",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "30156030",
-          "title": "Coenzyme Q10 in acute influenza.",
-          "year": "2019",
-          "design": "Observational",
-          "population": "human",
-          "n": 50
-        },
-        {
-          "pmid": "40902893",
-          "title": "FSP1 reduces exogenous coenzyme Q10 and inhibits ferroptosis to alleviate intestinal ischemia-reperfusion injury.",
-          "year": "2026",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40579479",
-          "title": "Senescent macrophages induce ferroptosis in skeletal muscle and accelerate osteoarthritis-related muscle atrophy.",
-          "year": "2025",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40954280",
-          "title": "Early-life inflammation increases aggressive behavior in adult male mice through an astrocyte-neuron signaling.",
-          "year": "2026",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40398356",
-          "title": "A CoQ10 analog ameliorates cognitive impairment and early brain injury after subarachnoid hemorrhage by regulating ferroptosis and neuroinflammation.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "41419454",
-          "title": "Hypoxic tumor exosomes suppress macrophage inflammation and ferroptosis via NDUFV2 to enhance bystander tumor radioresistance.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40553170",
-          "title": "MitoQ alleviates mitochondria damage in sepsis-acute lung injury in a citrate synthase dependent manner.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39581576",
-          "title": "Dexmedetomidine inhibits ferroptosis and attenuates sepsis-induced acute kidney injury via activating the Nrf2/SLC7A11/FSP1/CoQ10 pathway.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36640727",
-          "title": "CoQ10 alleviates hepatic ischemia reperfusion injury via inhibiting NLRP3 activity and promoting Tregs infiltration.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35866224",
-          "title": "Dexamethasone as an anti-cancer or hepatotoxic.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38096523",
-          "title": "COQ10 PROVIDES CARDIOPROTECTION AGAINST THE TOXIC EFFECTS OF TRASTUZUMAB AND DOXORUBICIN IN RAT MODEL.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36319818",
-          "title": "CoQ",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38124174",
-          "title": "Mitochondrion-targeted carboxymethyl chitosan hybrid nanoparticles loaded with Coenzyme Q10 protect cardiac grafts against cold ischaemia\u2012reperfusion injury in ",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "33946176",
-          "title": "MitoQ Is Able to Modulate Apoptosis and Inflammation.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "32700556",
-          "title": "Coenzyme Q10 ameliorates inflammation, oxidative stress, and testicular histopathology in rats exposed to heat stress.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "33191175",
-          "title": "Mitoquinone ameliorates cigarette smoke-induced airway inflammation and mucus hypersecretion in mice.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31813234",
-          "title": "Mitochondria-targeted antioxidant mitoquinone attenuates liver inflammation and fibrosis in cirrhotic rats.",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37225987",
-          "title": "A Pseudomonas aeruginosa small RNA regulates chronic and acute infection.",
-          "year": "2023",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "17173569",
-          "title": "Anti-inflammatory effects of CoQ10 and colorless carotenoids.",
-          "year": "2006",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39908875",
-          "title": "Protective effects of CoQ10 and L-carnitine against antidepressant-induced mitochondrial dysfunction and teratogenicity in chicken embryos.",
-          "year": "2025",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37511276",
-          "title": "Acetyl-L-Carnitine and Liposomal Co-Enzyme Q",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "33418245",
-          "title": "Coenzyme Q10 attenuates inflammation and fibrosis implicated in radiation enteropathy through suppression of NF-kB/TGF-\u03b2/MMP-9 pathways.",
-          "year": "2021",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
+          "n": 483
         }
       ],
       "effects": {
@@ -455,426 +260,40 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For inflammation, CoQ10 is well-supported by human trials (28 studies)."
-    },
-    {
-      "outcome": "stress / anxiety",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 17,
-      "grade_reasons": [
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 14,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:40833470",
-        "PMID:41711287",
-        "PMID:39072940",
-        "PMID:41339998",
-        "PMID:39303989",
-        "PMID:42217685",
-        "PMID:39836283",
-        "PMID:26567514",
-        "PMID:32685997",
-        "PMID:26143539",
-        "PMID:34978671",
-        "PMID:42084749",
-        "PMID:34664527",
-        "PMID:41962635",
-        "PMID:25684537",
-        "PMID:31387429",
-        "PMID:23800343"
-      ],
-      "studies": [
-        {
-          "pmid": "40833470",
-          "title": "The effect of coenzyme Q10 supplementation on depressive symptoms and anxiety: a systematic review and meta-analysis of randomized controlled trials.",
-          "year": "2025",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 400
-        },
-        {
-          "pmid": "34664527",
-          "title": "The effects of coenzyme Q10 supplementation on metabolic profiles and parameters of mental health in women with polycystic ovary syndrome.",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "31387429",
-          "title": "Coenzyme Q10 supplementation alleviates pain in pregabalin-treated fibromyalgia patients",
-          "year": "2019",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41711287",
-          "title": "Coenzyme Q10 Mitigates Anxiety- and Depression-Like Behaviors in a Fetal Alcohol Spectrum Disorder Model by Suppressing Hippocampal Astrocytic Reactivity, Oxida",
-          "year": "2026",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "42084749",
-          "title": "Enhanced Neurophysiological Benefits of Magnesium-Acetyl-Taurate Over Magnesium-L-Threonate: A Comparative pre-clinical Study on Bioavailability, Synaptic Plast",
-          "year": "2026",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "41962635",
-          "title": "Ubiquinol ameliorates social disruption-induced behavioral changes via modulating inflammatory responses and PPAR\u03b1 activation.",
-          "year": "2026",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "41339998",
-          "title": "Coenzyme Q10 Ameliorates Fibromyalgia-like Symptoms and Cognitive Deficits by Enhancing Hippocampal PGC-1\u03b1/FNDC5/BDNF Pathway in Reserpine-Treated Rats.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39303989",
-          "title": "Coenzyme Q10 and vitamin E alleviate heat stress-induced mood disturbances in male mice: Modulation of inflammatory pathways and the HPA axis.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39836283",
-          "title": "Mitigation of Neuroinflammation and Oxidative Stress in Rotenone-Induced Parkinson Mouse Model through Liposomal Coenzyme-Q10 Intervention: A Comprehensive In-v",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39072940",
-          "title": "Effectiveness and mechanisms of combined use of antioxidant nutrients in protecting against oxidative stress-induced neuronal loss and related neurological defi",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "34978671",
-          "title": "Potential Protective Effect of Coenzyme Q10 on Doxorubicin-Induced Neurotoxicity and Behavioral Disturbances in Rats.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "32685997",
-          "title": "Relevance of Mitochondrial Dysfunction in the Reserpine-Induced Experimental Fibromyalgia Model.",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "26567514",
-          "title": "Selective Mitochondrial Targeting Exerts Anxiolytic Effects In Vivo.",
-          "year": "2016",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "26143539",
-          "title": "Maternal stress predicts altered biogenesis and the profile of mitochondrial proteins in the frontal cortex and hippocampus of adult offspring rats.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "25684537",
-          "title": "Administration of CoQ10 analogue ameliorates dysfunction of the mitochondrial respiratory chain in a mouse model of Angelman syndrome.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "23800343",
-          "title": "Hypothalamic and amygdalar cell lines differ markedly in mitochondrial rather than nuclear encoded gene expression.",
-          "year": "2013",
-          "design": "Animal",
-          "population": "animal",
-          "n": 31
-        },
-        {
-          "pmid": "42217685",
-          "title": "MitoQ attenuates maternal immune activation-induced mitochondrial and ER stress programs and ameliorates psychiatric-like behavioral deficits.",
-          "year": "2026",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For stress / anxiety, CoQ10 has moderate human evidence (17 studies)."
-    },
-    {
-      "outcome": "immune function",
-      "tier": "Strong",
-      "certainty": "high",
-      "score": 90,
-      "has_human_evidence": true,
-      "n_studies": 16,
-      "grade_reasons": [
-        "Consistency: 2 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 90,
-        "overall": 90,
-        "ceiling": 90,
-        "n_human_studies": 8,
-        "n_animal_studies": 8,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:38703861",
-        "PMID:37648857",
-        "PMID:38281937",
-        "PMID:41573538",
-        "PMID:40906190",
-        "PMID:39418210",
-        "PMID:40937851",
-        "PMID:37385350",
-        "PMID:35090963",
-        "PMID:41026372",
-        "PMID:40904599",
-        "PMID:39792315",
-        "PMID:37650267",
-        "PMID:32543055",
-        "PMID:8503942",
-        "PMID:39847432"
-      ],
-      "studies": [
-        {
-          "pmid": "38703861",
-          "title": "Biomarkers of mitochondrial dysfunction in autism spectrum disorder: A systematic review and meta-analysis.",
-          "year": "2024",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41026372",
-          "title": "Modulating inflammation and oxidative stress in rheumatoid arthritis: a systematic review of nutraceutical interventions.",
-          "year": "2025",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "38281937",
-          "title": "Coenzyme Q10 mitigates macrophage mediated inflammation in heart following myocardial infarction via the NLRP3/IL1\u03b2 pathway.",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": 61
-        },
-        {
-          "pmid": "39418210",
-          "title": "Modulation of Metabolomic Profile in Sepsis According to the State of Immune Activation.",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": 1394
-        },
-        {
-          "pmid": "8503942",
-          "title": "The activities of coenzyme Q10 and vitamin B6 for immune responses.",
-          "year": "1993",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39847432",
-          "title": "A Pilot Trial of Nicotinamide Riboside and Coenzyme Q10 on Inflammation and Oxidative Stress in CKD.",
-          "year": "2025",
-          "design": "Unclassified",
-          "population": "human",
-          "n": 25
-        },
-        {
-          "pmid": "37650267",
-          "title": "Modified Korean MIND Diet: A Nutritional Intervention for Improved Cognitive Function in Elderly Women through Mitochondrial Respiration, Inflammation Suppressi",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "32543055",
-          "title": "COQ8B nephropathy: Early detection and optimal treatment.",
-          "year": "2020",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41573538",
-          "title": "NDUFS4, a mitochondrial complex I subunit, is essential for T-cell metabolic fitness and immune function.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40906190",
-          "title": "Bidirectional Hypoxic Extracellular Vesicle Signaling Between M\u00fcller Glia and Retinal Pigment Epithelium Regulates Retinal Metabolism and Barrier Function.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39792315",
-          "title": "A multidimensional pan-cancer analysis of NDUFA4L2 and verification of the oncogenic value in colon cancer.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37648857",
-          "title": "Metabolic programs of T cell tissue residency empower tumour immunity.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35090963",
-          "title": "Protection from benzene-induced immune dysfunction in mice.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40937851",
-          "title": "Fungal mitochondria govern both gliotoxin biosynthesis and self-protection.",
-          "year": "2025",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40904599",
-          "title": "Machine learning-based model identifies a novel cuproptosis-related mitochondrial gene signature with a key role in the prognosis and treatment of lung adenocar",
-          "year": "2025",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37385350",
-          "title": "Coenzyme Q10 exhibits anti-inflammatory and immune-modulatory thereby decelerating the occurrence of experimental cerebral malaria.",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For immune function, CoQ10 is well-supported by human trials (16 studies)."
+      "summary": "For inflammation, CoQ10 has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
     "cardiovascular",
-    "inflammation",
-    "stress / anxiety",
-    "immune function"
+    "cholesterol / lipids",
+    "muscle strength",
+    "inflammation"
   ],
   "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "explanation": {
-    "what_it_is": "Coenzyme Q10 (CoQ10, also called ubiquinone) is a fat-soluble molecule naturally produced in nearly every cell of your body, where it plays a central role in energy production. It exists in two forms: ubiquinone (oxidized) and ubiquinol (reduced), the latter being more readily absorbed. CoQ10 is found in small amounts in foods like fatty fish, organ meats, and nuts, but supplemental forms\u2014available as capsules, tablets, or powders\u2014typically deliver much higher doses than diet alone.",
-    "how_it_works": "CoQ10 sits in the inner membrane of mitochondria, the cell's powerhouse, where it shuttles electrons in the electron transport chain\u2014the biochemical process that generates ATP, the energy currency all cells need to function. Beyond energy production, CoQ10 acts as a potent antioxidant, neutralizing free radicals that damage cell membranes and DNA. It also helps regulate gene expression related to inflammation and immune signaling, which is why it influences inflammatory pathways throughout the body. When mitochondrial function is impaired\u2014whether by aging, statin medications, or disease\u2014CoQ10 levels often drop, and supplementation can help restore that deficit.",
-    "outcome_detail": [
-      {
-        "outcome": "cardiovascular",
-        "grade": "Strong",
-        "what_studies_show": "A 2022 systematic review of 1,067 participants and a 2023 meta-analysis on polycystic ovary syndrome (n=1021) converge on improved cardiovascular outcomes, including blood pressure reduction and endothelial function. A 2024 RCT (n=61) showed CoQ10 reduced NLRP3-mediated inflammation in the heart after myocardial infarction, a key mechanism of post-heart-attack injury. Another 2024 RCT found six-month high-dose supplementation improved liver steatosis and myocardial function, while a 2018 trial (n=104) in hypertensive and hypercholesterolemic patients receiving monacolin K showed additional benefit from CoQ10 co-supplementation.",
-        "why_this_grade": "Three independent meta-analyses and systematic reviews converge on this outcome with adequately powered human trials, providing strong replicated evidence. The mechanism\u2014restoring mitochondrial function and reducing inflammatory damage in heart tissue\u2014is biologically coherent and consistently observed."
-      },
-      {
-        "outcome": "inflammation",
-        "grade": "Strong",
-        "what_studies_show": "A 2023 meta-analysis specifically on inflammation biomarkers (n=1517) and three prior meta-analyses (2021, 2017; n=428) all show significant reduction in inflammatory markers across diverse populations, from cancer patients to rheumatoid arthritis. A 2024 RCT (n=61) demonstrated CoQ10 suppresses macrophage-driven inflammation via the NLRP3 inflammasome pathway after heart attack, a well-characterized inflammatory mechanism. A 2025 systematic review confirmed these effects in rheumatoid arthritis alongside oxidative stress reduction.",
-        "why_this_grade": "Four independent meta-analyses or systematic reviews consistently show reduced inflammation markers in human studies with adequate power. The mechanism\u2014antioxidant activity and modulation of inflammasome signaling\u2014is mechanistically sound and repeatedly confirmed."
-      },
-      {
-        "outcome": "stress / anxiety",
-        "grade": "Moderate",
-        "what_studies_show": "A 2025 meta-analysis (n=400) synthesized three human RCTs examining depressive symptoms and anxiety, finding beneficial effects. A 2022 RCT in women with metabolic conditions reported improvements in mental health parameters alongside metabolic profiles. A 2019 RCT found CoQ10 reduced pain in fibromyalgia patients treated with pregabalin, a condition closely linked to anxiety and stress sensitivity.",
-        "why_this_grade": "Only one meta-analysis exists on stress and anxiety in humans; despite solid findings, this conclusion has not yet been independently replicated by other systematic reviews. The animal evidence (14 studies) is promising but does not substitute for human replication, keeping the grade at Moderate rather than Strong."
-      },
-      {
-        "outcome": "immune function",
-        "grade": "Strong",
-        "what_studies_show": "A 2024 meta-analysis on mitochondrial biomarkers in autism spectrum disorder and a 2025 systematic review on rheumatoid arthritis both identify CoQ10 as modulating immune function. A 2024 RCT (n=61) showed CoQ10 enhanced immune regulation via macrophage activity after myocardial infarction. A second 2024 RCT (n=1394) in sepsis patients found modulation of immune activation markers, and a landmark 1993 RCT demonstrated CoQ10 enhances immune responses alongside vitamin B6.",
-        "why_this_grade": "Two independent meta-analyses and systematic reviews converge on immune function improvement with adequately powered human trials. The mechanism\u2014restoring mitochondrial ATP production in immune cells and reducing excessive inflammation\u2014explains the consistent findings."
-      }
-    ],
-    "evidence_base": "CoQ10 has the strongest evidence base among the outcomes examined, with 9 human studies per outcome on average and robust meta-analytic synthesis. The research spans cardiovascular disease, rheumatoid arthritis, cancer-related inflammation, sepsis, fibromyalgia, and metabolic syndrome, providing broad population coverage. Studies range from small mechanistic RCTs (n=25\u201361) to large meta-analyses (n>1000), mostly conducted in the last decade, with consensus across multiple independent systematic reviews. This convergence across diverse clinical populations and rigorous synthesis methods inspires confidence in the findings.",
-    "emerging_research": "Recent 2024\u20132026 studies are investigating CoQ10's role in specific inflammatory cascades\u2014particularly the NLRP3 inflammasome\u2014and exploring synergistic effects with other micronutrients like selenium and magnesium-based compounds. Animal research is expanding into neuropsychiatric domains, including fetal alcohol spectrum disorder and social stress-induced behavioral changes, though these have not yet been well-studied in humans. Preliminary work also suggests CoQ10 may help restore mitochondrial dysfunction in autism spectrum disorder and neurodevelopmental conditions, but human trials remain limited.",
-    "open_questions": "Optimal dosing across different conditions is not yet standardized\u2014studies use ranges from 100 mg to over 1000 mg daily, and whether higher doses consistently yield better outcomes remains unclear. Long-term safety data beyond 6\u201312 months is sparse, particularly in vulnerable populations like pregnant women or those with severe organ dysfunction. It is also unknown whether ubiquinone or ubiquinol formulations are meaningfully superior in real-world practice, or whether individual absorption and conversion rates (influenced by genetics and fat intake) explain variable clinical responses.",
-    "caveats": "CoQ10 is fat-soluble and absorbed better with food containing fat; taking it on an empty stomach significantly reduces bioavailability. People taking statin medications (which deplete CoQ10) may benefit from supplementation, but CoQ10 should not replace medical therapy for cardiovascular disease or inflammation-related conditions\u2014it is adjunctive. Those on anticoagulants (warfarin) should discuss CoQ10 with their doctor, as very high doses may have weak anticoagulant properties, though this risk is generally low at standard supplement doses.",
-    "_generated": true,
-    "_model": "claude-haiku-4-5-20251001"
+  "chemistry": {
+    "cid": 5281915,
+    "formula": "C59H90O4",
+    "weight": "863.3",
+    "iupac_name": "2-[(2E,6E,10E,14E,18E,22E,26E,30E,34E)-3,7,11,15,19,23,27,31,35,39-decamethyltetraconta-2,6,10,14,18,22,26,30,34,38-decaenyl]-5,6-dimethoxy-3-methylcyclohexa-2,5-diene-1,4-dione",
+    "smiles": null,
+    "inchikey": "ACTIUHUUMQJHFO-UPTCCGCDSA-N",
+    "xlogp": 19.4,
+    "image_url": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=5281915&t=l",
+    "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281915",
+    "matched_query": "CoQ10",
+    "source": "PubChem",
+    "synonyms": [
+      "Coenzyme Q10",
+      "ubidecarenone",
+      "303-98-0",
+      "ubiquinone-10",
+      "Ubiquinone 50",
+      "Ubiquinone 10"
+    ]
   },
-  "_cached_at": 1787092006.616452
+  "_cached_at": 1787506096.690027
 }

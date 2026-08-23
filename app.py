@@ -107,10 +107,24 @@ def profile():
     if not _valid_topic(topic):
         return jsonify({"error": "invalid topic"}), 400
 
+    # Resolve vendor/brand/street names to the compound the research is under
+    # (e.g. "GLP-3" -> retatrutide, "Ozempic" -> semaglutide). The note is
+    # returned so the UI can tell the user WHY they're seeing a different name.
+    alias_note = None
+    try:
+        import aliases as _aliases
+        resolved, resolved_cat, alias_note = _aliases.resolve(topic)
+        if resolved.lower() != topic.lower():
+            topic = resolved
+            if resolved_cat:
+                category = resolved_cat
+    except Exception:
+        pass
+
     # 1) CACHE FIRST — always free, always fast. This is the common path.
     cached_profile = cache.get(topic)
     if cached_profile:
-        return jsonify({"profile": cached_profile, "source": "cache"})
+        return jsonify({"profile": cached_profile, "source": "cache", "alias_note": alias_note})
 
     # 2) CACHE MISS -> would generate (slow + paid). Apply guardrails.
     if _rate_limited(ip):
@@ -123,7 +137,7 @@ def profile():
     try:
         _count_generation()
         result = run.research(topic, category, use_cache=True, verbose=False)
-        return jsonify({"profile": result, "source": "generated"})
+        return jsonify({"profile": result, "source": "generated", "alias_note": alias_note})
     except Exception as e:
         return jsonify({"error": "generation failed", "detail": type(e).__name__}), 500
 

@@ -1,63 +1,138 @@
 {
   "name": "Berberine",
   "category": "herb",
-  "overall_score": 95,
-  "tier": "Strong",
-  "study_count": 123,
+  "overall_score": 76,
+  "tier": "Moderate",
+  "study_count": 22,
   "claims": [
     {
-      "outcome": "inflammation",
+      "outcome": "gut / digestion",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 32,
+      "n_studies": 7,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Imprecision: modest verified sample (~59 participants across 2 of 7 studies); effect estimate may be unstable."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 55,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 29,
+        "n_human_studies": 6,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:36999891",
+        "PMID:18442638",
+        "PMID:32353823",
+        "PMID:33024120",
+        "PMID:40269802",
+        "PMID:41087029",
+        "PMID:41077606"
+      ],
+      "studies": [
+        {
+          "pmid": "40269802",
+          "title": "Berberine and health outcomes: an overview of systematic reviews.",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36999891",
+          "title": "Berberine and health outcomes: An umbrella review.",
+          "year": "2023",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 11
+        },
+        {
+          "pmid": "32353823",
+          "title": "The effect of Berberine on weight loss in order to prevent obesity: A systematic review.",
+          "year": "2020",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41087029",
+          "title": "Gut microbiota-mediated berberine metabolism ameliorates cholestatic liver disease by suppressing 5-hydroxytryptamine production.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "33024120",
+          "title": "Gut microbiome-related effects of berberine and probiotics on type 2 diabetes (the PREMOTE study).",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "18442638",
+          "title": "Efficacy of berberine in patients with type 2 diabetes mellitus.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": 48
+        },
+        {
+          "pmid": "41077606",
+          "title": "Berberine combined with stachyose protects against obesity by modulating gut microbiota and increasing leptin sensitivity.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For gut / digestion, Berberine has moderate human evidence (7 studies)."
+    },
+    {
+      "outcome": "inflammation",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 7,
+      "grade_reasons": [
+        "Imprecision: small verified sample (~11 participants across 1 measured studies)."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 5,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:36999891",
+        "PMID:38522318",
         "PMID:32690176",
-        "PMID:37748390",
-        "PMID:39068762",
-        "PMID:35280677",
         "PMID:34956436",
-        "PMID:41356191",
-        "PMID:39006190",
-        "PMID:36859349",
-        "PMID:38537446",
-        "PMID:38570276",
-        "PMID:38154262",
-        "PMID:38424708",
-        "PMID:31337260",
-        "PMID:39298444",
-        "PMID:40412730",
-        "PMID:37811696",
-        "PMID:34684666",
-        "PMID:32966840",
-        "PMID:39351242",
-        "PMID:40058846",
-        "PMID:35436630",
-        "PMID:37385463",
-        "PMID:37681364",
-        "PMID:37421530",
-        "PMID:38729776",
-        "PMID:38727934",
-        "PMID:39448992",
-        "PMID:36287004",
-        "PMID:31909440",
-        "PMID:36411660",
-        "PMID:31413530",
-        "PMID:31545226"
+        "PMID:38113631",
+        "PMID:41543854",
+        "PMID:41077606"
       ],
       "studies": [
         {
@@ -77,594 +152,42 @@
           "n": null
         },
         {
-          "pmid": "34684666",
-          "title": "Berberine Phospholipid Is an Effective Insulin Sensitizer and Improves Metabolic and Hormonal Disorders in Women with Polycystic Ovary Syndrome: A One-Group Pre",
-          "year": "2021",
-          "design": "Clinical trial",
+          "pmid": "36999891",
+          "title": "Berberine and health outcomes: An umbrella review.",
+          "year": "2023",
+          "design": "Systematic review",
           "population": "human",
-          "n": null
+          "n": 11
         },
         {
-          "pmid": "40412730",
-          "title": "Berberine chloride alleviated intestinal inflammation and improved postoperative ileus by regulating macrophage polarization via PI3K/AKT signaling pathway.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40058846",
-          "title": "Berberine Improves Ox-LDL-Induced Macrophage Efferocytosis Dysfunction and Alleviates Inflammation via the PPAR\u03b3/LXR\u03b1 Pathway.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39068762",
-          "title": "Berberine alleviates ulcerative colitis by inhibiting inflammation through targeting IRGM1.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39006190",
-          "title": "Exploration of Berberine Against Ulcerative Colitis via TLR4/NF-\u03baB/HIF-1\u03b1 Pathway by Bioinformatics and Experimental Validation.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38537446",
-          "title": "Berberine alleviates inflammation in polycystic ovary syndrome by inhibiting hyaluronan synthase 2 expression.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38154262",
-          "title": "Berberine alleviates inflammation and suppresses PLA2-COX-2-PGE2-EP2 pathway through targeting gut microbiota in DSS-induced ulcerative colitis.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38424708",
-          "title": "Berberine attenuates inflammation and oxidative stress and modulates lymphocyte E-NTPDase in acute hyperlipidemia.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39298444",
-          "title": "Berberine potentiates liver inflammation and fibrosis in the PI*Z hAAT transgenic murine model.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38729776",
-          "title": "The combination of berberine and isoliquiritigenin synergistically improved adipose inflammation and obesity-induced insulin resistance.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38727934",
-          "title": "Berberine attenuates brain aging via stabilizing redox homeostasis and inflammation in an accelerated senescence model of Wistar rats.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39448992",
-          "title": "Berberine-loaded PLGA nanoparticles alleviate ulcerative colitis by targeting IL-6/IL-6R axis.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37748390",
-          "title": "Berberine ameliorate inflammation and apoptosis via modulating PI3K/AKT/NF\u03baB and MAPK pathway on dry eye.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36859349",
-          "title": "Berberine ameliorates depression-like behaviors in mice via inhibiting NLRP3 inflammasome-mediated neuroinflammation and preventing neuroplasticity disruption.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37811696",
-          "title": "Berberine ameliorates renal interstitial inflammation and fibrosis in mice with unilateral ureteral obstruction.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37421530",
-          "title": "Berberine mitigates acetamiprid-induced hepatotoxicity and inflammation via regulating endogenous antioxidants and NF-\u03baB/TNF-\u03b1 signaling in rats.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35280677",
-          "title": "Berberine ameliorates DSS-induced intestinal mucosal barrier dysfunction through microbiota-dependence and Wnt/\u03b2-catenin pathway.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35436630",
-          "title": "Hydrochloride Berberine ameliorates alcohol-induced liver injury by regulating inflammation and lipid metabolism.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36411660",
-          "title": "Coptisine protects against hyperuricemic nephropathy through alleviating inflammation, oxidative stress and mitochondrial apoptosis via PI3K/Akt signaling pathw",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "32966840",
-          "title": "Berberine hydrochloride inhibits inflammation and fibrosis after canalicular laceration repair in rabbits.",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31909440",
-          "title": "Anti-Inflammation Associated Protective Mechanism of Berberine and its Derivatives on Attenuating Pentylenetetrazole-Induced Seizures in Zebrafish.",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31337260",
-          "title": "Berberine reduces neuroglia activation and inflammation in streptozotocin-induced diabetic mice.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31413530",
-          "title": "Berberine prevents stress-induced gut inflammation and visceral hypersensitivity and reduces intestinal motility in rats.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31545226",
-          "title": "Effects of berberine and metformin on intestinal inflammation and gut microbiome composition in db/db mice.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "41356191",
-          "title": "Berberine suppresses colon inflammation via integrated modulation of host metabolism, microbial ecology, and innate immune signaling.",
-          "year": "2026",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37681364",
-          "title": "Novel Natural Carrier-Free Self-Assembled Nanoparticles for Treatment of Ulcerative Colitis by Balancing Immune Microenvironment and Intestinal Barrier.",
-          "year": "2023",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38570276",
-          "title": "Berberine inhibits NLRP3 inflammasome activation and proinflammatory macrophage M1 polarization to accelerate peripheral nerve regeneration.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39351242",
-          "title": "Berberine alleviates ETEC-induced intestinal inflammation and oxidative stress damage by optimizing intestinal microbial composition in a weaned piglet model.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37385463",
-          "title": "Dietary berberine against intestinal oxidative stress, inflammation response, and microbiota disturbance caused by chronic copper exposure in freshwater grouper",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36287004",
-          "title": "Berberine Depresses Inflammation and Adjusts Smooth Muscle to Ameliorate Ulcerative Colitis of Cats by Regulating Gut Microbiota.",
-          "year": "2022",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For inflammation, Berberine has moderate human evidence (32 studies)."
-    },
-    {
-      "outcome": "gut / digestion",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 35,
-      "grade_reasons": [
-        "Imprecision: small verified sample (~90 participants across measured studies)."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 34,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:33994854",
-        "PMID:39227962",
-        "PMID:35280677",
-        "PMID:41087029",
-        "PMID:38154262",
-        "PMID:40865345",
-        "PMID:41356191",
-        "PMID:34984827",
-        "PMID:31545226",
-        "PMID:29365334",
-        "PMID:29202334",
-        "PMID:40639239",
-        "PMID:31413530",
-        "PMID:39509850",
-        "PMID:36287004",
-        "PMID:33959013",
-        "PMID:36174380",
-        "PMID:37820424",
-        "PMID:36168925",
-        "PMID:35584453",
-        "PMID:35980327",
-        "PMID:38139133",
-        "PMID:37981270",
-        "PMID:34480937",
-        "PMID:26396057",
-        "PMID:35596224",
-        "PMID:36903391",
-        "PMID:37060117",
-        "PMID:36144733",
-        "PMID:35037010",
-        "PMID:35611943",
-        "PMID:40816629",
-        "PMID:34025574",
-        "PMID:31863867",
-        "PMID:41328349"
-      ],
-      "studies": [
-        {
-          "pmid": "41087029",
-          "title": "Gut microbiota-mediated berberine metabolism ameliorates cholestatic liver disease by suppressing 5-hydroxytryptamine production.",
+          "pmid": "41543854",
+          "title": "Berberine and Adiposity in Diabetes-Free Individuals With Obesity and MASLD: A Randomized Clinical Trial.",
           "year": "2026",
           "design": "RCT",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "40865345",
-          "title": "Co-administration of berberine and evodiamine: Mitigating evodiamine-induced hepatotoxicity and potentiating colitis treatment.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40639239",
-          "title": "Coptisine activates aryl hydrocarbon receptor to regulate colonic epithelial homeostasis in DSS induced ulcerative colitis and TNF-\u03b1 challenged intestinal organ",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39509850",
-          "title": "Colon-targeted self-assembled nanoparticles loaded with berberine double salt ameliorate ulcerative colitis by improving intestinal mucosal barrier and gut micr",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40816629",
-          "title": "Berberine alleviates metabolic dysfunction-associated steatohepatitis by enhancing the abundance of Akkermansia muciniphila.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39227962",
-          "title": "Berberine and magnolol exert cooperative effects on ulcerative colitis in mice by self-assembling into carrier-free nanostructures.",
+          "pmid": "38522318",
+          "title": "Inhibition of inflammation by berberine: Molecular mechanism and network pharmacology analysis.",
           "year": "2024",
-          "design": "Animal",
-          "population": "animal",
+          "design": "Unclassified",
+          "population": "human",
           "n": null
         },
         {
-          "pmid": "38154262",
-          "title": "Berberine alleviates inflammation and suppresses PLA2-COX-2-PGE2-EP2 pathway through targeting gut microbiota in DSS-induced ulcerative colitis.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37981270",
-          "title": "Berberine hydrochloride-loaded dung beetle chitosan/sodium alginate microspheres ameliorate DSS-induced colitis and regulate gut microorganisms in mice.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37820424",
-          "title": "Synergistic effect of berberine hydrochloride and dehydrocostus lactone in the treatment of ulcerative colitis: Take gut microbiota as the target.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36168925",
-          "title": "Berberine alleviates intestinal barrier dysfunction in glucolipid metabolism disorder hamsters by modulating gut microbiota and gut-microbiota-related tryptopha",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36903391",
-          "title": "Berberine-Based Carbon Quantum Dots Improve Intestinal Barrier Injury and Alleviate Oxidative Stress in C57BL/6 Mice with 5-Fluorouracil-Induced Intestinal Muco",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35280677",
-          "title": "Berberine ameliorates DSS-induced intestinal mucosal barrier dysfunction through microbiota-dependence and Wnt/\u03b2-catenin pathway.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "34984827",
-          "title": "Berberine ameliorates aGVHD by gut microbiota remodelling, TLR4 signalling suppression and colonic barrier repairment for NLRP3 inflammasome inhibition.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36174380",
-          "title": "The berberine-enriched gut commensal Blautia producta ameliorates high-fat diet (HFD)-induced hyperlipidemia and stimulates liver LDLR expression.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35584453",
-          "title": "The combination of berberine and evodiamine ameliorates high-fat diet-induced non-alcoholic fatty liver disease associated with modulation of gut microbiota in ",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35596224",
-          "title": "Berberine inhibits intestinal carcinogenesis by suppressing intestinal pro-inflammatory genes and oncogenic factors through modulating gut microbiota.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "33994854",
-          "title": "Berberine alleviates lipid metabolism disorders via inhibition of mitochondrial complex I in gut and liver.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "33959013",
-          "title": "Berberine-Loaded Carboxylmethyl Chitosan Nanoparticles Ameliorate DSS-Induced Colitis and Remodel Gut Microbiota in Mice.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "34480937",
-          "title": "Berberine combined with stachyose improves glycometabolism and gut microbiota through regulating colonic microRNA and gene expression in diabetic rats.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "34025574",
-          "title": "Berberine Slows the Progression of Prediabetes to Diabetes in Zucker Diabetic Fatty Rats by Enhancing Intestinal Secretion of Glucagon-Like Peptide-2 and Improv",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31863867",
-          "title": "Oxyberberine, a novel gut microbiota-mediated metabolite of berberine, possesses superior anti-colitis effect: Impact on intestinal epithelial barrier, gut micr",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31545226",
-          "title": "Effects of berberine and metformin on intestinal inflammation and gut microbiome composition in db/db mice.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31413530",
-          "title": "Berberine prevents stress-induced gut inflammation and visceral hypersensitivity and reduces intestinal motility in rats.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "29365334",
-          "title": "Berberine Modulates Gut Microbiota and Reduces Insulin Resistance via the TLR4 Signaling Pathway.",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "29202334",
-          "title": "Berberine treatment increases Akkermansia in the gut and improves high-fat diet-induced atherosclerosis in Apoe",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "26396057",
-          "title": "Modulation of gut microbiota by berberine and metformin during the treatment of high-fat diet-induced obesity in rats.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "41356191",
-          "title": "Berberine suppresses colon inflammation via integrated modulation of host metabolism, microbial ecology, and innate immune signaling.",
+          "pmid": "41077606",
+          "title": "Berberine combined with stachyose protects against obesity by modulating gut microbiota and increasing leptin sensitivity.",
           "year": "2026",
-          "design": "In vitro",
+          "design": "Animal",
           "population": "animal",
           "n": null
         },
         {
-          "pmid": "41328349",
-          "title": "Multifunctional macrophage mimetic nanoplatform modulates vascular and epithelial double gut barriers to alleviate ulcerative colitis.",
-          "year": "2026",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35037010",
-          "title": "An oral pH-activated \"nano-bomb\" carrier combined with berberine by regulating gene silencing and gut microbiota for site-specific treatment of ulcerative colit",
-          "year": "2022",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35611943",
-          "title": "Responses of human gut microbiota abundance and amino acid metabolism",
-          "year": "2022",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38139133",
-          "title": "Berberine Protects against High-Energy and Low-Protein Diet-Induced Hepatic Steatosis: Modulation of Gut Microbiota and Bile Acid Metabolism in Laying Hens.",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": 90
-        },
-        {
-          "pmid": "37060117",
-          "title": "Dietary berberine supplementation improves growth performance and alleviates gut injury in weaned piglets by modulating ileal microbiota and metabolites.",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36287004",
-          "title": "Berberine Depresses Inflammation and Adjusts Smooth Muscle to Ameliorate Ulcerative Colitis of Cats by Regulating Gut Microbiota.",
-          "year": "2022",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35980327",
-          "title": "A Combination of Baicalin and Berberine Hydrochloride Ameliorates Dextran Sulfate Sodium-Induced Colitis by Modulating Colon Gut Microbiota.",
-          "year": "2022",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36144733",
-          "title": "Effect and Mechanism of Pharmaceutical Excipients on Berberine to Alleviate Ulcerative Colitis via Regulating Gut Microbiota.",
-          "year": "2022",
-          "design": "Unclassified",
+          "pmid": "38113631",
+          "title": "Berberine exerts antidepressant effects in vivo and in vitro through the PI3K/AKT/CREB/BDNF signaling pathway.",
+          "year": "2024",
+          "design": "Animal",
           "population": "animal",
           "n": null
         }
@@ -680,60 +203,44 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For gut / digestion, Berberine has moderate human evidence (35 studies)."
+      "summary": "For inflammation, Berberine shows early but unsettled evidence (7 studies)."
     },
     {
-      "outcome": "cardiovascular",
-      "tier": "Strong",
-      "certainty": "high",
-      "score": 90,
+      "outcome": "liver health",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 22,
+      "n_studies": 6,
       "grade_reasons": [
-        "Consistency: 4 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+        "Imprecision: modest verified sample (~48 participants across 1 of 6 studies); effect estimate may be unstable."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 55,
-        "human": 90,
-        "overall": 90,
-        "ceiling": 90,
-        "n_human_studies": 10,
-        "n_animal_studies": 12,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 6,
+        "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:40269802",
-        "PMID:40220423",
+        "PMID:18442638",
         "PMID:32353823",
-        "PMID:36805484",
-        "PMID:34923903",
-        "PMID:41543854",
-        "PMID:40064874",
-        "PMID:39448992",
-        "PMID:34444711",
-        "PMID:33183320",
-        "PMID:33060638",
-        "PMID:40716066",
-        "PMID:35606250",
-        "PMID:39700090",
-        "PMID:24728953",
-        "PMID:40850072",
-        "PMID:38424708",
-        "PMID:38054840",
-        "PMID:41439983",
-        "PMID:32005442",
-        "PMID:40222275",
-        "PMID:40058846"
+        "PMID:32690176",
+        "PMID:40269802",
+        "PMID:41087029",
+        "PMID:41543854"
       ],
       "studies": [
         {
-          "pmid": "36805484",
-          "title": "Efficacy and safety of berberine for several cardiovascular diseases: A systematic review and meta-analysis of randomized controlled trials.",
-          "year": "2023",
+          "pmid": "32690176",
+          "title": "The effect of berberine supplementation on obesity parameters, inflammation and liver function enzymes: A systematic review and meta-analysis of randomized cont",
+          "year": "2020",
           "design": "Meta-analysis",
           "population": "human",
-          "n": 4606
+          "n": null
         },
         {
           "pmid": "40269802",
@@ -752,12 +259,12 @@
           "n": null
         },
         {
-          "pmid": "32005442",
-          "title": "Berberine for prevention of dementia associated with diabetes and its comorbidities: A systematic review.",
-          "year": "2020",
-          "design": "Systematic review",
+          "pmid": "41087029",
+          "title": "Gut microbiota-mediated berberine metabolism ameliorates cholestatic liver disease by suppressing 5-hydroxytryptamine production.",
+          "year": "2026",
+          "design": "RCT",
           "population": "human",
-          "n": 120
+          "n": null
         },
         {
           "pmid": "41543854",
@@ -768,140 +275,12 @@
           "n": null
         },
         {
-          "pmid": "34923903",
-          "title": "Combined berberine and probiotic treatment as an effective regimen for improving postprandial hyperlipidemia in type 2 diabetes patients: a double blinded place",
-          "year": "2022",
+          "pmid": "18442638",
+          "title": "Efficacy of berberine in patients with type 2 diabetes mellitus.",
+          "year": "2008",
           "design": "RCT",
           "population": "human",
-          "n": 365
-        },
-        {
-          "pmid": "34444711",
-          "title": "Effect of Berberine on Cardiovascular Disease Risk Factors: A Mechanistic Randomized Controlled Trial.",
-          "year": "2021",
-          "design": "RCT",
-          "population": "human",
-          "n": 84
-        },
-        {
-          "pmid": "33183320",
-          "title": "Pharmacokinetics and pharmacodynamics of HTD1801 (berberine ursodeoxycholate, BUDCA) in patients with hyperlipidemia.",
-          "year": "2020",
-          "design": "RCT",
-          "population": "human",
-          "n": 50
-        },
-        {
-          "pmid": "35606250",
-          "title": "Effects of treatment with monacolin K, berberine and coenzyme Q10 on lipid metabolism in patients with moderate cardiovascular risk.",
-          "year": "2022",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "24728953",
-          "title": "Berberine and monacolin effects on the cardiovascular risk profile of women with oestroprogestin-induced hypercholesterolemia.",
-          "year": "2014",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": 84
-        },
-        {
-          "pmid": "40220423",
-          "title": "Berberine promotes hair growth by targeting Axin2 and activating Wnt/\u03b2-catenin pathway.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40064874",
-          "title": "Berberine-inspired ionizable lipid for self-structure stabilization and brain targeting delivery of nucleic acid therapeutics.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40716066",
-          "title": "Berberine Ameliorates Atrial Remodeling and Inhibits the Atrial Fibrillation of Mice via Regulating NLRP3 Inflammasome.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40850072",
-          "title": "Animal studies and AI-based analysis identify the efficacy of berberine to inhibit experimental abdominal aortic aneurysms.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "41439983",
-          "title": "13-Decyl Berberine Derivative Is a Novel Mitochondria-Targeted Antioxidant and a Potent Inhibitor of Ferroptosis.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40222275",
-          "title": "Berberine improves cardiac insufficiency through AMPK/PGC-1\u03b1 signaling-mediated mitochondrial homeostasis and apoptosis in HFpEF mice.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "40058846",
-          "title": "Berberine Improves Ox-LDL-Induced Macrophage Efferocytosis Dysfunction and Alleviates Inflammation via the PPAR\u03b3/LXR\u03b1 Pathway.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39448992",
-          "title": "Berberine-loaded PLGA nanoparticles alleviate ulcerative colitis by targeting IL-6/IL-6R axis.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39700090",
-          "title": "Exploring the mechanism of berberine treatment for atherosclerosis combined with non-alcoholic fatty liver disease based on bioinformatic and experimental study",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38424708",
-          "title": "Berberine attenuates inflammation and oxidative stress and modulates lymphocyte E-NTPDase in acute hyperlipidemia.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38054840",
-          "title": "Effect of berberine on pharmacokinetics and pharmacodynamics of atorvastatin in hyperlipidemia rats.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "33060638",
-          "title": "Exposure to the natural alkaloid Berberine affects cardiovascular system morphogenesis and functionality during zebrafish development.",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
+          "n": 48
         }
       ],
       "effects": {
@@ -915,107 +294,34 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cardiovascular, Berberine is well-supported by human trials (22 studies)."
+      "summary": "For liver health, Berberine has moderate human evidence (6 studies)."
     },
     {
-      "outcome": "blood sugar",
+      "outcome": "weight / fat loss",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 28,
+      "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~221 participants); effect estimate may be unstable."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
+        "mechanistic": 25,
+        "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 18,
-        "n_animal_studies": 10,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:36999891",
-        "PMID:30393248",
-        "PMID:36467075",
         "PMID:32353823",
-        "PMID:18442638",
-        "PMID:34956436",
-        "PMID:40740996",
-        "PMID:35251851",
-        "PMID:18397984",
-        "PMID:39998703",
-        "PMID:37679692",
-        "PMID:28515053",
-        "PMID:40147680",
-        "PMID:40029660",
-        "PMID:39064727",
-        "PMID:42103929",
-        "PMID:39042390",
-        "PMID:39399826",
-        "PMID:36178590",
-        "PMID:40903097",
-        "PMID:36195307",
-        "PMID:41039626",
-        "PMID:35008753",
-        "PMID:36128280",
-        "PMID:38230770",
-        "PMID:34556670",
-        "PMID:34049474",
-        "PMID:18520050"
+        "PMID:41543854"
       ],
       "studies": [
-        {
-          "pmid": "36195307",
-          "title": "Protective effect of berberine in diabetic nephropathy: A systematic review and meta-analysis revealing the mechanism of action.",
-          "year": "2022",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "34956436",
-          "title": "The Effect of Berberine on Metabolic Profiles in Type 2 Diabetic Patients: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
-          "year": "2021",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "30393248",
-          "title": "Effects of berberine on blood glucose in patients with type 2 diabetes mellitus: a systematic literature review and a meta-analysis.",
-          "year": "2019",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40740996",
-          "title": "Efficacy and safety of berberine on the components of metabolic syndrome: a systematic review and meta-analysis of randomized placebo-controlled trials.",
-          "year": "2025",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "36999891",
-          "title": "Berberine and health outcomes: An umbrella review.",
-          "year": "2023",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 11
-        },
-        {
-          "pmid": "36467075",
-          "title": "Glucose-lowering effect of berberine on type 2 diabetes: A systematic review and meta-analysis.",
-          "year": "2022",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
         {
           "pmid": "32353823",
           "title": "The effect of Berberine on weight loss in order to prevent obesity: A systematic review.",
@@ -1025,171 +331,11 @@
           "n": null
         },
         {
-          "pmid": "39998703",
-          "title": "The efficacy and safety of berberine in combination with cinnamon supplementation in patients with type 2 diabetes: a randomized clinical trial.",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40029660",
-          "title": "Berberine Ursodeoxycholate for the Treatment of Type 2 Diabetes: A Randomized Clinical Trial.",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": 113
-        },
-        {
-          "pmid": "39064727",
-          "title": "Comparative Effects of",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39042390",
-          "title": "Does berberine impact anthropometric, hepatic, and metabolic parameters in patients with metabolic dysfunction-associated fatty liver disease? Randomized, doubl",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "37679692",
-          "title": "Efficacy and safety of HIMABERB\u00ae Berberine on glycemic control in patients with prediabetes: double-blind, placebo-controlled, and randomized pilot trial.",
-          "year": "2023",
-          "design": "RCT",
-          "population": "human",
-          "n": 34
-        },
-        {
-          "pmid": "34556670",
-          "title": "Berberine is an insulin secretagogue targeting the KCNH6 potassium channel.",
-          "year": "2021",
-          "design": "RCT",
-          "population": "human",
-          "n": 15
-        },
-        {
-          "pmid": "18442638",
-          "title": "Efficacy of berberine in patients with type 2 diabetes mellitus.",
-          "year": "2008",
-          "design": "RCT",
-          "population": "human",
-          "n": 48
-        },
-        {
-          "pmid": "18397984",
-          "title": "Treatment of type 2 diabetes and dyslipidemia with the natural plant alkaloid berberine.",
-          "year": "2008",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40903097",
-          "title": "Berberine-induced hypoglycaemia and electrocardiogram interpretation in athletes.",
-          "year": "2025",
-          "design": "Case report",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "35251851",
-          "title": "Study on the Effect of Berberine, Myoinositol, and Metformin in Women with Polycystic Ovary Syndrome: A Prospective Randomised Study.",
-          "year": "2022",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "36128280",
-          "title": "The Effect of Berberine on Lipid Profile, Liver Enzymes, and Fasting Blood Glucose in Patients with Non-alcoholic Fatty Liver Disease (NAFLD): A Randomized Cont",
-          "year": "2022",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40147680",
-          "title": "Ginsenoside Rb1 and berberine synergistically protect against type 2 diabetes mellitus via GDF15/HAMP pathway throughout the liver lobules: Insights from spatia",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "41039626",
-          "title": "Synergistic potential of Berberine and Wogonin improved adipose inflammation and insulin resistance associated with obesity through HIF-\u03b1 axis.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39399826",
-          "title": "Nanocarrier-Assisted Delivery of Berberine Promotes Diabetic Alveolar Bone Regeneration by Scavenging ROS and Improving Mitochondrial Dysfunction.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38230770",
-          "title": "Berberine attenuates cognitive dysfunction and hippocampal apoptosis in rats with prediabetes.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35008753",
-          "title": "Berberine Decreases Intestinal GLUT2 Translocation and Reduces Intestinal Glucose Absorption in Mice.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "34049474",
-          "title": "Berberine and Ginsenoside Rb1 Ameliorate Depression-Like Behavior in Diabetic Rats.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "28515053",
-          "title": "Berberine reduced blood pressure and improved vasodilation in diabetic rats.",
-          "year": "2017",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "18520050",
-          "title": "Chronic effects of berberine on blood, liver glucolipid metabolism and liver PPARs expression in diabetic hyperlipidemic rats.",
-          "year": "2008",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36178590",
-          "title": "High-Throughput Screening Assay Identifies Berberine and Mubritinib as Neuroprotection Drugs for Spinal Cord Injury via Blood-Spinal Cord Barrier Protection.",
-          "year": "2022",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "42103929",
-          "title": "Metformin inhibits mitochondrial complex I in intestinal epithelium to promote glycaemic control.",
+          "pmid": "41543854",
+          "title": "Berberine and Adiposity in Diabetes-Free Individuals With Obesity and MASLD: A Randomized Clinical Trial.",
           "year": "2026",
-          "design": "Unclassified",
-          "population": "animal",
+          "design": "RCT",
+          "population": "human",
           "n": null
         }
       ],
@@ -1204,154 +350,41 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For blood sugar, Berberine has moderate human evidence (28 studies)."
-    },
-    {
-      "outcome": "stress / anxiety",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": true,
-      "n_studies": 6,
-      "grade_reasons": [
-        "Imprecision: modest verified sample (~392 participants); effect estimate may be unstable."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 22,
-        "overall": 22,
-        "ceiling": 22,
-        "n_human_studies": 2,
-        "n_animal_studies": 4,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:29520171",
-        "PMID:31888678",
-        "PMID:34147041",
-        "PMID:40209846",
-        "PMID:12890523",
-        "PMID:33027278"
-      ],
-      "studies": [
-        {
-          "pmid": "34147041",
-          "title": "The effects of",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "33027278",
-          "title": "Determinants of anxiety levels among young males in a threat of experiencing military conflict-Applying a machine-learning algorithm in a psychosociological stu",
-          "year": "2020",
-          "design": "Unclassified",
-          "population": "human",
-          "n": 392
-        },
-        {
-          "pmid": "40209846",
-          "title": "Oxyberberine revokes letrozole-induced polycystic ovarian syndrome and depression-like behavior in female Sprague-Dawley rats.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31888678",
-          "title": "Proteomic profiling of the neurons in mice with depressive-like behavior induced by corticosterone and the regulation of berberine: pivotal sites of oxidative p",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "29520171",
-          "title": "Berberine alleviates symptoms of anxiety by enhancing dopamine expression in rats with post-traumatic stress disorder.",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "12890523",
-          "title": "Gender differences in the regulation of 3 alpha-hydroxysteroid dehydrogenase in rat brain and sensitivity to neurosteroid-mediated stress protection.",
-          "year": "2003",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For stress / anxiety, Berberine has only preliminary or animal evidence (6 studies)."
+      "summary": "For weight / fat loss, Berberine has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
-    "inflammation",
     "gut / digestion",
-    "cardiovascular",
-    "blood sugar"
+    "liver health",
+    "weight / fat loss"
   ],
-  "effects_promising": [],
-  "effects_emerging": [
-    "stress / anxiety"
+  "effects_promising": [
+    "inflammation"
   ],
+  "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "explanation": {
-    "what_it_is": "Berberine is a yellow alkaloid compound extracted from plants in the Berberidaceae family, most commonly from goldenseal, barberry, and Oregon grape roots. It is a naturally occurring molecule with a long history in traditional Chinese and Ayurvedic medicine. People typically take berberine as an oral supplement in capsule or powder form, often standardized to 97\u201399% purity.",
-    "how_it_works": "Berberine works through multiple biochemical pathways. It activates AMP-activated protein kinase (AMPK), a cellular energy sensor that regulates metabolism and glucose homeostasis. It also modulates the gut microbiota\u2014the trillions of bacteria in your digestive tract\u2014which in turn influences how your body handles lipids, glucose, and inflammation. Additionally, berberine may reduce intestinal permeability ('leaky gut'), suppress pro-inflammatory signaling pathways in immune cells like macrophages, and inhibit lipid accumulation in fat cells. These overlapping mechanisms explain why berberine shows effects across metabolic, digestive, and inflammatory systems.",
-    "outcome_detail": [
-      {
-        "outcome": "cardiovascular",
-        "grade": "Strong",
-        "what_studies_show": "A 2023 meta-analysis of over 4,600 participants found berberine reduced cardiovascular risk markers. Four independent systematic reviews and meta-analyses converge on benefits for heart health outcomes, with a 2026 systematic review and a 2022 RCT (n=365) on postprandial lipids all confirming similar effects. Studies show improvements in cholesterol profiles, blood pressure, and lipid metabolism in people with obesity, diabetes, and metabolic syndrome.",
-        "why_this_grade": "Multiple large meta-analyses (n=4600+) and independent systematic reviews all reach consistent conclusions, and the evidence includes adequately powered RCTs. This consistency and sample size meet the threshold for Strong evidence despite some heterogeneity in study designs."
-      },
-      {
-        "outcome": "blood sugar",
-        "grade": "Moderate",
-        "what_studies_show": "Eighteen human studies, primarily meta-analyses and systematic reviews published 2019\u20132025, show berberine lowers blood glucose and improves insulin sensitivity in people with type 2 diabetes. A 2022 meta-analysis on diabetic nephropathy, a 2021 meta-analysis on metabolic profiles, and a 2019 systematic review all report glucose-lowering effects. However, the verified sample size across measured studies is modest (~221 participants total).",
-        "why_this_grade": "Evidence comes from multiple high-quality syntheses of human trials, but the combined sample is small and some effect estimates may be unstable. The consistency of direction across studies supports a moderate grade, but imprecision limits confidence to below strong."
-      },
-      {
-        "outcome": "inflammation",
-        "grade": "Moderate",
-        "what_studies_show": "Three human meta-analyses (2021, 2020, and a 2021 clinical trial) found berberine reduced inflammatory markers and metabolic parameters in type 2 diabetic and obese populations. Multiple 2025 and 2024 animal studies demonstrate that berberine decreases macrophage-driven inflammation, alleviates ulcerative colitis, and improves innate immune dysregulation. Human studies confirm reduced inflammatory enzymes and improved liver function.",
-        "why_this_grade": "While human and animal studies show consistent anti-inflammatory effects, the three human studies have sample sizes that could not be fully verified from abstracts, leaving precision unconfirmed. This imprecision prevents a stronger grade despite mechanistic clarity."
-      },
-      {
-        "outcome": "gut / digestion",
-        "grade": "Moderate",
-        "what_studies_show": "One 2026 human RCT studied berberine's effects on gut microbiota composition and cholestatic liver disease, showing microbiota-mediated benefits. The remaining 34 animal studies (2024\u20132025) demonstrate berberine improves intestinal barrier function, reduces ulcerative colitis severity, enhances beneficial bacteria (Akkermansia), and alleviates postoperative ileus. Mechanisms involve aryl hydrocarbon receptor signaling and epithelial homeostasis.",
-        "why_this_grade": "The single human RCT provides proof-of-concept in real people, but evidence is heavily weighted toward animal models. The verified human sample is small (~90 participants), making the effect estimate imprecise and confidence unstable. Moderate reflects promise in humans with limited sample, not yet replicated widely."
-      },
-      {
-        "outcome": "stress / anxiety",
-        "grade": "Preliminary",
-        "what_studies_show": "Two human studies (2023 and 2020, the latter with 392 participants in a military-stress context) examined anxiety; neither was formally classified as a clinical trial. Four animal studies (2025, 2019, 2018, 2003) show berberine and its derivative oxyberberine reduce depression-like and anxiety-like behavior via dopamine, PCOS-related mood effects, and corticosterone-induced stress responses in rodents.",
-        "why_this_grade": "Human evidence is minimal, uncontrolled, and not from formal RCTs. Animal data is consistent in direction but modest in scope. The combined verified sample (~392 participants, mostly from a single non-clinical population study) and lack of proper human trials mean this outcome remains preliminary\u2014promising in animal models but not yet proven in humans."
-      }
-    ],
-    "evidence_base": "Berberine has been studied extensively: 32 studies on inflammation (3 human, 29 animal), 35 on gut health (1 human, 34 animal), 22 on cardiovascular outcomes (10 human, 12 animal), 28 on blood sugar (18 human, 10 animal), and 6 on stress/anxiety (2 human, 4 animal). The bulk of research is animal mechanistic work, but cardiovascular and blood-sugar outcomes are supported by multiple human meta-analyses and RCTs published 2019\u20132026. Overall, the evidence base is moderately mature for metabolic and cardiovascular effects, but underdeveloped for gut and stress outcomes in humans. Recent 2025\u20132026 studies suggest active ongoing investigation.",
-    "emerging_research": "Recent 2025\u20132026 studies explore berberine's role in microbiota-mediated disease\u2014particularly how it reshapes bacterial populations to treat cholestatic liver disease and metabolic dysfunction-associated steatohepatitis. A 2025 study examined colon-targeted nanoparticles loaded with berberine for ulcerative colitis, and a 2026 RCT investigated berberine's effects on adiposity and metabolic health in obesity-free diabetics. A 2025 animal study on oxyberberine (a metabolite) suggests depression-like behavior reversal in PCOS models. These directions hint at gut-microbiota-mediated and niche metabolic applications, though human evidence remains sparse.",
-    "open_questions": "Optimal dosing for each outcome is not well established\u2014studies vary widely (typically 500\u20131500 mg/day), and no head-to-head dose-response trials in humans exist. Long-term safety beyond ~12 weeks is unknown; most human trials are short-term. The gut microbiota mechanism is plausible but relies on one human RCT; we do not know whether all populations respond the same way or which bacterial shifts predict clinical benefit. Stress/anxiety effects are completely unproven in humans and rest on animal models\u2014a proper clinical trial is needed before recommending berberine for mood.",
-    "caveats": "Berberine is generally well tolerated but can cause gastrointestinal upset (nausea, diarrhea, constipation) at higher doses. It may interact with medications metabolized by cytochrome P450 enzymes (e.g., statins, certain diabetes drugs) and can lower blood sugar\u2014people on diabetes medication should monitor glucose or consult a doctor. Pregnant and nursing women should avoid berberine due to insufficient safety data. Quality varies among supplements; choose third-party tested products to ensure purity and potency.",
-    "_generated": true,
-    "_model": "claude-haiku-4-5-20251001"
+  "chemistry": {
+    "cid": 2353,
+    "formula": "C20H18NO4+",
+    "weight": "336.4",
+    "iupac_name": "16,17-dimethoxy-5,7-dioxa-13-azoniapentacyclo[11.8.0.02,10.04,8.015,20]henicosa-1(13),2,4(8),9,14,16,18,20-octaene",
+    "smiles": null,
+    "inchikey": "YBHILYKTIRIUTE-UHFFFAOYSA-N",
+    "xlogp": 3.6,
+    "image_url": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=2353&t=l",
+    "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2353",
+    "matched_query": "Berberine",
+    "source": "PubChem",
+    "synonyms": [
+      "2086-83-1",
+      "Umbellatine",
+      "Berberin",
+      "Berbericine",
+      "Majarine",
+      "Thalsine"
+    ]
   },
-  "_cached_at": 1787092415.647691
+  "_cached_at": 1787506426.1937668
 }

@@ -1,9 +1,9 @@
 {
   "name": "Valerian Root",
   "category": "herb",
-  "overall_score": 79,
+  "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 36,
+  "study_count": 10,
   "claims": [
     {
       "outcome": "sleep quality",
@@ -11,10 +11,9 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 5,
+      "n_studies": 4,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~135 participants); effect estimate may be unstable.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Imprecision: modest verified sample (~145 participants across 3 of 4 studies); effect estimate may be unstable."
       ],
       "layers": {
         "mechanistic": 30,
@@ -22,26 +21,17 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 5,
+        "n_human_studies": 4,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:33086877",
-        "PMID:7122669",
-        "PMID:33420602",
-        "PMID:37561965",
-        "PMID:10599933"
+        "PMID:3936097",
+        "PMID:42219748",
+        "PMID:10599933",
+        "PMID:33420602"
       ],
       "studies": [
-        {
-          "pmid": "33086877",
-          "title": "Valerian Root in Treating Sleep Problems and Associated Disorders-A Systematic Review and Meta-Analysis.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
         {
           "pmid": "33420602",
           "title": "Efficacy of Valerian Extract on Sleep Quality after Coronary Artery bypass Graft Surgery: A Triple-Blind Randomized Controlled Trial.",
@@ -59,67 +49,12 @@
           "n": 99
         },
         {
-          "pmid": "7122669",
-          "title": "Aqueous extract of valerian root (Valeriana officinalis L.) improves sleep quality in man.",
-          "year": "1982",
+          "pmid": "3936097",
+          "title": "Effect of valerian on human sleep.",
+          "year": "1985",
           "design": "RCT",
           "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "37561965",
-          "title": "The Role of Dietary Ingredients in Mental Energy - A Scoping Review of Randomized Controlled Trials.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For sleep quality, Valerian Root has moderate human evidence (5 studies)."
-    },
-    {
-      "outcome": "stress / anxiety",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:42219748",
-        "PMID:30632220"
-      ],
-      "studies": [
-        {
-          "pmid": "30632220",
-          "title": "Valerian extract alters functional brain connectivity: A randomized double-blind placebo-controlled trial.",
-          "year": "2019",
-          "design": "RCT",
-          "population": "human",
-          "n": null
+          "n": 10
         },
         {
           "pmid": "42219748",
@@ -141,7 +76,71 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For stress / anxiety, Valerian Root has moderate human evidence (2 studies)."
+      "summary": "For sleep quality, Valerian Root has moderate human evidence (4 studies)."
+    },
+    {
+      "outcome": "stress / anxiety",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Precision: ~180 participants verified across 1 of 3 studies; most abstracts omit sample size, so the true total is substantially larger."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 35,
+        "human": 22,
+        "overall": 22,
+        "ceiling": 22,
+        "n_human_studies": 1,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:42219748",
+        "PMID:41946076",
+        "PMID:25495725"
+      ],
+      "studies": [
+        {
+          "pmid": "42219748",
+          "title": "Sexsomnia in a Young Man: A Non-REM Parasomnia With Diagnostic and Therapeutic Challenges.",
+          "year": "2026",
+          "design": "Case report",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "25495725",
+          "title": "Valeriana officinalis root extract suppresses physical stress by electric shock and psychological stress by nociceptive stimulation-evoked responses by decreasi",
+          "year": "2014",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "41946076",
+          "title": "Effects of drinking water valerian extract and stocking density on stress, performance, and egg quality in laying Japanese quails.",
+          "year": "2026",
+          "design": "Unclassified",
+          "population": "unknown",
+          "n": 180
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For stress / anxiety, Valerian Root has only preliminary or animal evidence (3 studies)."
     },
     {
       "outcome": "cognition",
@@ -149,36 +148,25 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: small verified sample (~61 participants across measured studies).",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Imprecision: modest verified sample (~160 participants across 2 of 2 studies); effect estimate may be unstable."
       ],
       "layers": {
-        "mechanistic": 30,
-        "preclinical": 35,
+        "mechanistic": 25,
+        "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 1,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:37561965",
-        "PMID:34370563",
-        "PMID:24055511",
+        "PMID:10599933",
         "PMID:25173770"
       ],
       "studies": [
-        {
-          "pmid": "34370563",
-          "title": "Dietary Supplement Ingredients for Optimizing Cognitive Performance Among Healthy Adults: A Systematic Review.",
-          "year": "2021",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
         {
           "pmid": "25173770",
           "title": "Can Valeriana officinalis root extract prevent early postoperative cognitive dysfunction after CABG surgery? A randomized, double-blind, placebo-controlled tria",
@@ -188,20 +176,12 @@
           "n": 61
         },
         {
-          "pmid": "37561965",
-          "title": "The Role of Dietary Ingredients in Mental Energy - A Scoping Review of Randomized Controlled Trials.",
-          "year": "2024",
-          "design": "Unclassified",
+          "pmid": "10599933",
+          "title": "The influence of valerian treatment on \"reaction time, alertness and concentration\" in volunteers.",
+          "year": "1999",
+          "design": "RCT",
           "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "24055511",
-          "title": "Valeriana officinalis extract and its main component, valerenic acid, ameliorate D-galactose-induced reductions in memory, cell proliferation, and neuroblast di",
-          "year": "2013",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
+          "n": 99
         }
       ],
       "effects": {
@@ -215,254 +195,37 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cognition, Valerian Root has moderate human evidence (4 studies)."
+      "summary": "For cognition, Valerian Root has moderate human evidence (2 studies)."
     },
     {
-      "outcome": "muscle strength",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 25,
+      "outcome": "gut / digestion",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 1,
       "grade_reasons": [
-        "Imprecision: small verified sample (~26 participants across measured studies).",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
       "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 12,
-        "n_animal_studies": 13,
-        "note": "Human evidence present: human certainty sets the overall score."
+        "mechanistic": 20,
+        "preclinical": 35,
+        "human": 0,
+        "overall": 35,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 1,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:33086877",
-        "PMID:30560075",
-        "PMID:34659971",
-        "PMID:39019366",
-        "PMID:1611689",
-        "PMID:27419099",
-        "PMID:33792859",
-        "PMID:26465629",
-        "PMID:15367385",
-        "PMID:34109550",
-        "PMID:14736362",
-        "PMID:7122669",
-        "PMID:24250592",
-        "PMID:31899925",
-        "PMID:3936097",
-        "PMID:33510252",
-        "PMID:24837472",
-        "PMID:22718671",
-        "PMID:10975170",
-        "PMID:21154200",
-        "PMID:30632220",
-        "PMID:30989266",
-        "PMID:37561965",
-        "PMID:7979830",
-        "PMID:18602406"
+        "PMID:35658820"
       ],
       "studies": [
         {
-          "pmid": "33086877",
-          "title": "Valerian Root in Treating Sleep Problems and Associated Disorders-A Systematic Review and Meta-Analysis.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "30632220",
-          "title": "Valerian extract alters functional brain connectivity: A randomized double-blind placebo-controlled trial.",
-          "year": "2019",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "22718671",
-          "title": "Extract of valerian root (Valeriana officinalis L.) vs. placebo in treatment of obsessive-compulsive disorder: a randomized double-blind study.",
-          "year": "2011",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "3936097",
-          "title": "Effect of valerian on human sleep.",
-          "year": "1985",
-          "design": "RCT",
-          "population": "human",
-          "n": 10
-        },
-        {
-          "pmid": "7122669",
-          "title": "Aqueous extract of valerian root (Valeriana officinalis L.) improves sleep quality in man.",
-          "year": "1982",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "26465629",
-          "title": "Valerian Root and Lemon Balm Extracts: A Phytomedicine Compound Improves Symptoms of Hyperactivity, Attention Deficits, and Impulsivity in Children.",
-          "year": "2015",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "10975170",
-          "title": "Valerian as a hypnotic for Hispanic patients.",
-          "year": "2000",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": 16
-        },
-        {
-          "pmid": "34659971",
-          "title": "An Alternative Cause of Encephalopathy: Valerian Root Overdose.",
-          "year": "2021",
-          "design": "Case report",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "37561965",
-          "title": "The Role of Dietary Ingredients in Mental Energy - A Scoping Review of Randomized Controlled Trials.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "27419099",
-          "title": "The effect of Valerian root extract on the severity of pre menstrual syndrome symptoms.",
-          "year": "2016",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "24837472",
-          "title": "Hyperactivity, concentration difficulties and impulsiveness improve during seven weeks' treatment with valerian root and lemon balm extracts in primary school c",
-          "year": "2014",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "24250592",
-          "title": "The effects of valerian root on hot flashes in menopausal women.",
-          "year": "2013",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "33510252",
-          "title": "Valerian and valeric acid inhibit growth of breast cancer cells possibly by mediating epigenetic modifications.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "30560075",
-          "title": "Analgesic Effect of Valerian Root and Turnip Extracts.",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "21154200",
-          "title": "Telemetry as a tool to measure sedative effects of a valerian root extract and its single constituents in mice.",
-          "year": "2011",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "18602406",
-          "title": "GABA A receptors as in vivo substrate for the anxiolytic action of valerenic acid, a major constituent of valerian root extracts.",
-          "year": "2009",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "15367385",
-          "title": "In vitro activity of commercial valerian root extracts against human cytochrome P450 3A4.",
-          "year": "2004",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "14736362",
-          "title": "Analysis of responses to valerian root extract in the feline pulmonary vascular bed.",
-          "year": "2003",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "7979830",
-          "title": "Synaptosomal GABA release as influenced by valerian root extract--involvement of the GABA carrier.",
-          "year": "1994",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "1611689",
-          "title": "Psychotropic effects of Japanese valerian root extract.",
-          "year": "1992",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39019366",
-          "title": "Fabrication and characterization of Karaya gum-based films reinforced with bacterial nanocellulose stabilized valerian root extract Pickering emulsion for lamb ",
-          "year": "2024",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "33792859",
-          "title": "The Toxicological Risk Assessment of Lead and Cadmium in Valeriana officinalis L., radix (Valerian root) as Herbal Medicinal Product for the Relief of Mild Nerv",
+          "pmid": "35658820",
+          "title": "Protective effect of valerian extract capsule (VEC) on ethanol- and indomethacin-induced gastric mucosa injury and ameliorative effect of VEC on gastrointestina",
           "year": "2022",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "34109550",
-          "title": "The Toxicological Risk Assessment of Cu, Mn, and Zn as Essential Elemental Impurities in Herbal Medicinal Products with Valerian Root (Valeriana officinalis L.,",
-          "year": "2022",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31899925",
-          "title": "An Unsuccessful Attempt to Confirm the Occurrence of 4'-O-\u03b2- d-Glucosyl-9-O-(6\u2033-deoxysaccharosyl)olivil in Valerian Root.",
-          "year": "2020",
-          "design": "In vitro",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "30989266",
-          "title": "Simple and green synthesis of carbon dots (CDs) from valerian root and application of modified mesoporous boehmite (AlOOH) with CDs as a fluorescence probe for ",
-          "year": "2019",
-          "design": "In vitro",
+          "design": "Animal",
           "population": "animal",
           "n": null
         }
@@ -478,55 +241,21 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For muscle strength, Valerian Root has moderate human evidence (25 studies)."
+      "summary": "For gut / digestion, Valerian Root has only preliminary or animal evidence (1 studies)."
     }
   ],
   "effects_established": [
     "sleep quality",
-    "stress / anxiety",
-    "cognition",
-    "muscle strength"
+    "cognition"
   ],
-  "effects_promising": [],
-  "effects_emerging": [],
+  "effects_promising": [
+    "gut / digestion"
+  ],
+  "effects_emerging": [
+    "stress / anxiety"
+  ],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "explanation": {
-    "what_it_is": "Valerian root is a perennial plant (Valeriana officinalis) native to Europe and Asia, traditionally used in herbal medicine for centuries. The active compounds include valerenic acid, isovaleric acid, and other volatile oils and alkaloids extracted from the dried root. People typically consume it as a dried herb in capsules, tablets, teas, or liquid extracts, often in the evening to support sleep.",
-    "how_it_works": "Valerian root's mechanism is not fully understood, but research suggests it may work through multiple pathways. The compound appears to enhance GABA (gamma-aminobutyric acid), a calming neurotransmitter in the brain, and may also interact with serotonin and adenosine receptors \u2014 all involved in relaxation and sleep regulation. Some evidence indicates valerian affects brain connectivity patterns linked to stress response. The volatile oils and other phytochemicals may have mild sedative and anxiolytic (anxiety-reducing) properties, though the precise active ingredient(s) remain unclear.",
-    "outcome_detail": [
-      {
-        "outcome": "sleep quality",
-        "grade": "Moderate",
-        "what_studies_show": "A 2020 meta-analysis of systematic reviews on valerian root for sleep problems and associated disorders found evidence of benefit. Supporting this are five human studies including a 1982 RCT showing aqueous valerian extract improved sleep quality, a 1999 RCT (n=99) examining reaction time and alertness, and a 2021 RCT (n=36) testing valerian extract after coronary bypass surgery. A 2024 scoping review of dietary ingredients and mental energy also contributed data.",
-        "why_this_grade": "The evidence is based on five human randomized or systematic studies, but the sample sizes are modest (around 135 participants total across the meta-analysis). Only one meta-analysis exists to date, so the conclusion has not yet been independently replicated by other systematic reviews, and the effect estimate may be unstable due to imprecision."
-      },
-      {
-        "outcome": "stress / anxiety",
-        "grade": "Moderate",
-        "what_studies_show": "Two human studies support a role for valerian in stress and anxiety. A 2019 RCT using functional brain imaging found that valerian extract altered brain connectivity in a pattern consistent with reduced stress response (a randomized double-blind placebo-controlled design). A 2026 case report also touched on this outcome, though case reports represent very limited evidence.",
-        "why_this_grade": "Only two human studies are available, and sample sizes could not be verified from the abstracts, making precision uncertain. Without larger, independently verified trials, the evidence remains moderate rather than strong, despite the use of rigorous RCT methodology in the 2019 study."
-      },
-      {
-        "outcome": "cognition",
-        "grade": "Moderate",
-        "what_studies_show": "Three human studies and one animal study examined valerian and cognitive function. A 2015 RCT (n=61) tested whether valerian could prevent early cognitive dysfunction after cardiac bypass surgery. A 2021 systematic review of dietary supplements for cognitive performance in healthy adults included valerian, and a 2024 scoping review of mental energy and cognition also reviewed relevant data. Animal research from 2013 showed that valeriana extract and valerenic acid ameliorated cognitive decline in a D-galactose model.",
-        "why_this_grade": "Evidence is split between a small human sample (approximately 61 participants) and animal data, with only one meta-analysis/systematic review existing. The human sample is too small and the conclusions have not been independently replicated, keeping the grade at moderate rather than strong."
-      },
-      {
-        "outcome": "muscle strength",
-        "grade": "Moderate",
-        "what_studies_show": "A substantial body of research (12 human and 13 animal studies) has examined valerian root and muscle strength. Human studies include a 2020 meta-analysis on valerian for sleep and related disorders, a 2019 RCT on brain connectivity, a 2011 RCT in obsessive-compulsive disorder, a 1985 RCT (n=10) on valerian and sleep, a 1982 RCT on aqueous extract, and a 2015 clinical trial combining valerian with lemon balm for hyperactivity and attention. Animal studies (13 total) provide mechanistic support.",
-        "why_this_grade": "Despite 25 total studies, the verified human sample size is very small (approximately 26 participants across the measured trials), making the effect estimate imprecise. A single meta-analysis exists but has not been independently replicated by other systematic reviews, so confidence remains moderate."
-      }
-    ],
-    "evidence_base": "The research on valerian root is predominantly human-based (17 human studies vs. 14 animal studies), with studies ranging from the 1980s to 2024. The human evidence consists mostly of randomized controlled trials and meta-analyses, which are higher-quality designs, but sample sizes are generally small (often under 100 participants per study). One systematic review or meta-analysis exists for each major outcome, but these conclusions have not yet been independently verified by competing systematic reviews, limiting overall confidence. The field has accumulated modest evidence over decades, but the database would benefit from larger, more recent trials.",
-    "emerging_research": "Recent work (2019\u20132024) has begun to use neuroimaging to understand how valerian affects brain function, rather than relying solely on subjective sleep or anxiety reports. A 2019 RCT used functional connectivity analysis to show altered brain patterns, and a 2024 scoping review synthesized newer data on mental energy and cognition across multiple herbal ingredients. These newer studies are more mechanistically grounded but still represent early exploration; larger imaging studies would be needed to confirm findings.",
-    "open_questions": "The optimal dose, duration of treatment, and which populations benefit most remain unclear \u2014 most studies used different valerian preparations and dosing schedules. Long-term safety data (beyond a few weeks) is scarce, and it is unknown whether tolerance develops with extended use. The precise active ingredient(s) and why effects vary between individuals have not been definitively established, and few studies have directly compared valerian to conventional sleep or anxiety medications in head-to-head trials.",
-    "caveats": "Valerian root is generally considered safe for short-term use in adults, but quality and potency vary widely between commercial products due to inconsistent extraction methods and plant source variability. It may cause drowsiness and should not be combined with other sedatives, alcohol, or medications that affect the central nervous system without medical guidance. Pregnant and nursing women should consult a healthcare provider before use, and people with liver disease should exercise caution. Long-term safety in children and adolescents has not been established.",
-    "_generated": true,
-    "_model": "claude-haiku-4-5-20251001"
-  },
-  "_cached_at": 1787092434.722613
+  "_cached_at": 1787506437.990464
 }

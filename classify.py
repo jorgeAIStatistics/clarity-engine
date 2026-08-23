@@ -19,11 +19,98 @@ _DESIGN_BY_PUBTYPE = {
     "systematic review": "systematic_review",
     "randomized controlled trial": "rct",
     "controlled clinical trial": "rct",
+    "clinical trial, phase i": "rct",
+    "clinical trial, phase ii": "rct",
+    "clinical trial, phase iii": "rct",
+    "clinical trial, phase iv": "rct",
+    "pragmatic clinical trial": "rct",
+    "equivalence trial": "rct",
+    "adaptive clinical trial": "rct",
     "clinical trial": "trial",
+    "clinical trial protocol": "trial",
     "observational study": "observational",
     "cohort studies": "observational",
+    "prospective studies": "observational",
+    "retrospective studies": "observational",
+    "cross-sectional studies": "observational",
+    "case-control studies": "observational",
+    "longitudinal studies": "observational",
+    "follow-up studies": "observational",
+    "comparative study": "observational",
+    "multicenter study": "observational",
+    "twin study": "observational",
     "case reports": "case_report",
+    "case report": "case_report",
 }
+
+# Fallback: many papers carry ONLY the generic "Journal Article" publication type,
+# with the design stated in the abstract text. Without this fallback ~19% of the
+# catalog lands as "Unclassified", which weakens the trials table, the critical
+# appraisal, and (via design_rank) the grade itself. Ordered strongest-first;
+# first match wins.
+_DESIGN_BY_TEXT = [
+    ("meta_analysis", ("meta-analysis", "meta analysis", "metaanalysis",
+                       "pooled analysis of")),
+    ("systematic_review", ("systematic review", "scoping review",
+                           "prisma", "systematically reviewed")),
+    ("rct", ("randomized controlled trial", "randomised controlled trial",
+             "randomly assigned", "randomly allocated", "randomized, double-blind",
+             "randomised, double-blind", "double-blind, placebo-controlled",
+             "double blind placebo controlled", "placebo-controlled trial",
+             "randomized crossover", "randomised crossover", "randomized trial",
+             "randomised trial", "rct")),
+    ("trial", ("open-label trial", "single-arm trial", "pilot trial",
+               "clinical trial", "we enrolled", "participants were enrolled",
+               "open label study", "intervention study")),
+    ("observational", ("cross-sectional", "case-control", "cohort study",
+                       "prospective cohort", "retrospective analysis",
+                       "observational study", "survey of")),
+    ("case_report", ("case report", "we report a case", "a case of")),
+]
+
+
+# Animal-model signals. If any appear, the text fallback must NOT hand back a
+# human-trial design — animal studies use identical trial vocabulary ("randomly
+# assigned", "double-blind", "placebo-controlled"), and mislabelling them as RCTs
+# is how rat data ends up counted as human evidence.
+_ANIMAL_TEXT_SIGNALS = (
+    # rodents
+    "rat", "rats", "mouse", "mice", "murine", "rodent", "hamster", "gerbil",
+    "guinea pig", "male wistar", "sprague-dawley", "c57bl", "balb/c",
+    # other mammals
+    "rabbit", "rabbits", "canine", "dog", "dogs", "porcine", "pig", "pigs",
+    "piglet", "bovine", "calf", "cattle", "equine", "horse", "horses", "foal",
+    "ovine", "sheep", "lamb", "caprine", "goat", "feline", "cat", "cats",
+    "ferret", "primate", "monkey", "monkeys", "macaque", "marmoset", "baboon",
+    # birds / fish / invertebrates  (broiler chicken studies were passing as human)
+    "chicken", "chickens", "broiler", "poultry", "avian", "hen", "hens",
+    "quail", "duck", "turkey", "zebrafish", "fish", "salmon", "trout",
+    "drosophila", "c. elegans", "nematode", "xenopus",
+    # study framing
+    "in vivo animal", "animal model", "animal study", "veterinary",
+    "in vitro", "cell culture", "cell line", "cultured cells", "fibroblast",
+)
+
+
+def _has_animal_signal(title, abstract):
+    blob = f"{title or ''} {abstract or ''}".lower()
+    return any(sig in blob for sig in _ANIMAL_TEXT_SIGNALS)
+
+
+def _design_from_text(title, abstract):
+    """
+    Infer design from title+abstract when publication types are uninformative.
+    Returns None for anything showing animal/in-vitro signals: better to leave a
+    study Unclassified than to promote a rat study to RCT.
+    """
+    if _has_animal_signal(title, abstract):
+        return None
+    blob = f"{title or ''} {abstract or ''}".lower()
+    for design, needles in _DESIGN_BY_TEXT:
+        for n in needles:
+            if n in blob:
+                return design
+    return None
 
 # Rank used for sorting / picking the strongest evidence in a cluster.
 DESIGN_RANK = {
@@ -77,6 +164,15 @@ def classify(study):
             if DESIGN_RANK[cand] > DESIGN_RANK[design]:
                 design = cand
 
+    # Fallback to abstract text when publication types were uninformative
+    # (very common: papers tagged only "Journal Article"). Never DOWNgrades a
+    # design already established from metadata — only fills genuine gaps.
+    if design == "unknown" and not is_narrative_review:
+        inferred = _design_from_text(study.get("title", ""), study.get("abstract", ""))
+        if inferred:
+            design = inferred
+            study["design_source"] = "abstract_text"
+
     text = f"{study.get('title','')} {study.get('abstract','')}"
     title_only = study.get("title", "")
 
@@ -101,8 +197,13 @@ def classify(study):
 
     # Publication type is a strong human signal: RCTs/meta-analyses are human
     # unless the abstract is explicitly an animal model.
-    pubtype_is_human = design in ("rct", "trial", "observational",
-                                  "meta_analysis", "systematic_review")
+    # CRITICAL: only designs from PubMed METADATA count. A design inferred from
+    # abstract text must NOT imply human population — animal studies also say
+    # "randomly assigned" and "double-blind". Treating inferred designs as human
+    # evidence reintroduces the phantom-human bug (rat studies grading as RCTs).
+    design_from_metadata = study.get("design_source") != "abstract_text"
+    pubtype_is_human = design_from_metadata and design in (
+        "rct", "trial", "observational", "meta_analysis", "systematic_review")
 
     if title_is_animal and not pubtype_is_human:
         # Species in the title, not an explicitly human study design -> animal.
@@ -124,8 +225,12 @@ def classify(study):
         population = "unknown"
 
     # If we concluded animal, an otherwise-generic design should reflect that.
-    if population == "animal" and design in ("unknown", "trial"):
-        design = "animal"
+    if population == "animal":
+        # An animal study is never an "RCT" in our taxonomy, however the abstract
+        # is worded. Preserve genuine animal meta-analyses/systematic reviews;
+        # everything else collapses to animal/in vitro.
+        if design in ("unknown", "trial", "rct", "observational", "case_report"):
+            design = "animal"
 
     # Confidence flag: mark cases the keyword logic is genuinely unsure about, so
     # an optional LLM pass can resolve ONLY these (keeping cost/latency minimal).
@@ -196,3 +301,218 @@ if __name__ == "__main__":
     studies = pubmed._parse_articles(open("tests/sample_pubmed.xml").read())
     for s in classify_all(studies):
         print(f"PMID {s['pmid']}: design={s['design']:18} pop={s['population']:8} n={s['sample_size']}")
+
+# ---------------------------------------------------------------------------
+# RELEVANCE + STUDY-TYPE FILTERS
+# Two failures found in the catalog that grading logic cannot fix, because they
+# are about WHICH studies get graded:
+#   1. TB-500's "evidence" included papers never mentioning TB-500 (PubMed
+#      matched "TB" as tuberculosis, generic peptide methods papers, etc).
+#   2. MOTS-c's "human evidence" was observational studies MEASURING endogenous
+#      MOTS-c as a biomarker. Nobody was administered anything. Sick people
+#      having lower levels says nothing about whether supplementing helps.
+# Both inflate grades with material that isn't intervention evidence.
+# ---------------------------------------------------------------------------
+
+# Compound name variants, so relevance checking doesn't reject legitimate papers
+# that use the pharmacological name rather than the street name.
+_NAME_VARIANTS = {
+    "tb-500": ["tb-500", "tb500", "thymosin beta-4", "thymosin beta 4", "tβ4", "tb4"],
+    "bpc-157": ["bpc-157", "bpc 157", "bpc157", "pentadecapeptide"],
+    "ghk-cu": ["ghk-cu", "ghk cu", "ghk", "copper tripeptide", "copper peptide"],
+    "cjc-1295": ["cjc-1295", "cjc 1295", "drug affinity complex", "grf 1-29"],
+    "mots-c": ["mots-c", "mots c", "mitochondrial-derived peptide", "mitochondrial derived peptide"],
+    "melanotan ii": ["melanotan", "melanotan-ii", "melanotan ii", "mt-ii", "afamelanotide"],
+    "melanotan-1": ["melanotan", "afamelanotide", "melanotan-i"],
+    "pt-141": ["pt-141", "pt 141", "bremelanotide"],
+    "aod-9604": ["aod-9604", "aod 9604", "aod9604"],
+    "thymosin alpha-1": ["thymosin alpha", "thymalfasin", "tα1"],
+    "ipamorelin": ["ipamorelin"],
+    "sermorelin": ["sermorelin", "grf 1-29"],
+    "epithalon": ["epithalon", "epitalon", "ala-glu-asp-gly"],
+    "ll-37": ["ll-37", "ll 37", "cathelicidin"],
+    "igf-1 lr3": ["igf-1 lr3", "igf-i lr3", "long r3 igf"],
+    "5-amino-1mq": ["5-amino-1mq", "5-amino 1mq", "nnmt inhibitor"],
+    "nicotinamide adenine dinucleotide": ["nad+", "nad ", "nicotinamide adenine dinucleotide",
+                                          "nicotinamide riboside", "nicotinamide mononucleotide"],
+    "delta sleep-inducing peptide": ["delta sleep-inducing peptide", "dsip"],
+    "vasoactive intestinal peptide": ["vasoactive intestinal peptide", "vip"],
+    "cibinetide": ["cibinetide", "ara-290", "ara 290"],
+}
+
+
+# Greek letters appear constantly in biomedical titles: "β-Alanine", "tβ4",
+# "α-GPC", "ω-3". Without normalisation the relevance filter rejected 40% of
+# beta-alanine's retrieval — core intervention trials thrown out on a character
+# encoding difference. Normalise BOTH the paper text and the compound name so
+# "β-alanine" and "beta-alanine" are the same string.
+_GREEK_MAP = {
+    "\u03b1": "alpha", "\u0391": "alpha", "\u03b2": "beta", "\u0392": "beta",
+    "\u03b3": "gamma", "\u0393": "gamma", "\u03b4": "delta", "\u0394": "delta",
+    "\u03b5": "epsilon", "\u03ba": "kappa", "\u03bb": "lambda",
+    "\u03bc": "mu", "\u00b5": "mu", "\u03c9": "omega", "\u03a9": "omega",
+    "\u03c3": "sigma", "\u03a3": "sigma", "\u03c4": "tau", "\u03b8": "theta",
+    "\u03c6": "phi", "\u03c1": "rho", "\u03b7": "eta", "\u03b9": "iota",
+    "\u03bd": "nu", "\u03be": "xi", "\u03c0": "pi", "\u03c5": "upsilon",
+    "\u03c7": "chi", "\u03c8": "psi", "\u03b6": "zeta",
+}
+
+
+def _greek_fold(text):
+    """Replace Greek letters with their spelled-out names, lowercase."""
+    t = (text or "").lower()
+    for g, name in _GREEK_MAP.items():
+        if g in t:
+            t = t.replace(g, name)
+    return t
+
+
+_FORM_SUFFIXES = (
+    "monohydrate", "hydrochloride", "hcl", "citrate", "malate", "sulfate",
+    "sulphate", "gluconate", "picolinate", "bisglycinate", "glycinate",
+    "oxide", "chloride", "acetate", "tartrate", "aspartate", "orotate",
+    "extract", "powder", "capsules", "root", "supplement", "supplements",
+)
+
+
+def _name_forms(topic):
+    """All names a paper might use for this compound."""
+    key = (topic or "").lower().strip()
+    forms = set(_NAME_VARIANTS.get(key, []))
+    forms.add(key)
+    forms.add(key.replace("-", " "))
+    forms.add(key.replace(" ", "-"))
+    # strip trailing form/salt words: "creatine monohydrate" -> "creatine"
+    parts = key.split()
+    while len(parts) > 1 and parts[-1] in _FORM_SUFFIXES:
+        parts = parts[:-1]
+        forms.add(" ".join(parts))
+    return {f for f in forms if f and len(f) > 2}
+
+
+def is_relevant(study, topic):
+    """
+    Does this paper actually concern the compound? PubMed relevance search will
+    happily return papers that merely share a token with the query. A study that
+    never names the compound cannot be evidence about it.
+    """
+    if not topic:
+        return True
+    blob = _greek_fold(f"{study.get('title','')} {study.get('abstract','')}")
+    # Use the same name forms as intervention detection, so "creatine
+    # monohydrate" also matches papers that simply say "creatine". Greek-folded
+    # on both sides so "beta-alanine" matches papers written "beta-Alanine".
+    variants = {_greek_fold(v) for v in _name_forms(topic)}
+    variants |= {_greek_fold(topic).replace("-", ""),
+                 _greek_fold(topic).replace("-", " ")}
+    return any(v and v in blob for v in variants)
+
+
+# Language indicating the compound was ADMINISTERED (intervention evidence).
+_INTERVENTION_SIGNALS = (
+    "supplementation", "supplemented", "administered", "administration of",
+    "treated with", "treatment with", "received", "injection of", "injected",
+    "ingestion of", "ingested", "were given", "was given", "dosed",
+    "randomized to", "randomised to", "assigned to receive", "placebo-controlled",
+    "double-blind", "oral intake", "intravenous", "subcutaneous", "supplement",
+    "therapy with", "infusion of", "topical application",
+)
+
+# Language indicating the study MEASURED endogenous levels (correlational).
+_BIOMARKER_SIGNALS = (
+    "circulating levels", "serum levels", "plasma levels", "serum concentration",
+    "plasma concentration", "circulating concentrations", "biomarker",
+    "were measured in patients", "levels were assessed", "associated with levels",
+    "correlates with", "correlation between serum", "diagnostic value",
+    "prognostic value", "expression levels in patients", "reduced serum",
+    "elevated serum", "levels in patients with", "positively associate",
+    "negatively associate", "association between serum", "associate with",
+    "expression patterns of", "as a biomarker", "diagnostic-prognostic",
+    "cross-sectional study", "serum humanin",
+)
+
+
+# Analytical / assay / detection papers. These legitimately name the compound
+# (so they pass relevance) but contain no evidence about whether it works —
+# they are about how to MEASURE it. TB-500's "human evidence" was largely
+# doping-control and mass-spectrometry methodology.
+_ANALYTICAL_SIGNALS = (
+    "doping control", "doping-control", "mass spectrometry", "chromatography",
+    "solid-phase extraction", "solid phase extraction", "quantification of",
+    "simultaneous determination", "analytical method", "assay development",
+    "screening for peptides", "detection method", "adsorption effects",
+    "sample preparation", "validated method", "lc-ms", "uhplc", "hplc",
+    "in vitro model systems of the metabolism", "metabolite profiling",
+)
+
+
+def is_analytical_paper(study):
+    """True for detection/assay methodology papers — not efficacy evidence."""
+    blob = _greek_fold(f"{study.get('title','')} {study.get('abstract','')}")
+    return any(sig in blob for sig in _ANALYTICAL_SIGNALS)
+
+
+# Salt/form suffixes to strip: papers say "creatine supplementation", not
+# "creatine monohydrate supplementation". Failing to strip these caused creatine
+# to lose two-thirds of its studies and drop from Strong to Moderate.
+def _compound_intervention_phrases(topic):
+    """
+    Phrases indicating THIS compound was administered. Generic intervention
+    words are not enough — MOTS-c kept a study of patients "treated with
+    metformin" because the phrase fired on a different drug. But the patterns
+    must also match how supplement papers actually write ("creatine loading",
+    "participants ingested creatine", "supplementation with creatine").
+    """
+    phrases = []
+    for n in {_greek_fold(x) for x in _name_forms(topic)}:
+        phrases += [
+            # compound-first
+            f"{n} supplementation", f"{n} supplement", f"{n} administration",
+            f"{n} treatment", f"{n} ingestion", f"{n} intake", f"{n} loading",
+            f"{n} was administered", f"{n} were administered",
+            f"{n} was given", f"{n} were given", f"{n} injection",
+            f"{n} or placebo", f"{n} versus placebo", f"{n} vs placebo",
+            f"{n} group", f"{n} arm", f"{n} dose", f"{n} dosing",
+            f"{n} improves", f"{n} attenuates", f"{n} reduces", f"{n} increases",
+            f"{n} alleviates", f"{n} enhances", f"{n} improved", f"{n} increased",
+            f"{n} decreased", f"{n} reduced",
+            # compound-second
+            f"administration of {n}", f"administered {n}", f"treated with {n}",
+            f"supplemented with {n}", f"supplementation with {n}",
+            f"received {n}", f"receiving {n}", f"injected with {n}",
+            f"ingested {n}", f"ingestion of {n}", f"intake of {n}",
+            f"placebo or {n}", f"exogenous {n}", f"effects of {n}",
+            f"effect of {n}", f"supplementing with {n}", f"given {n}",
+            f"randomized to {n}", f"randomised to {n}", f"assigned to {n}",
+        ]
+    return phrases
+
+
+def is_intervention_study(study, topic=None):
+    """
+    True if the compound appears to have been GIVEN to subjects; False if the
+    study merely measured naturally-occurring levels.
+
+    This matters enormously for endogenous compounds (MOTS-c, DHEA, oxytocin,
+    glutathione, CoQ10, vitamin D): much of their literature is observational
+    measurement, which is NOT evidence that supplementing them does anything.
+    Returns True when ambiguous — we only exclude on a clear biomarker signal
+    with no intervention language present.
+    """
+    blob = _greek_fold(f"{study.get('title','')} {study.get('abstract','')}")
+    has_biomarker = any(sig in blob for sig in _BIOMARKER_SIGNALS)
+
+    if topic:
+        # STRICT RULE: when we know which compound we're grading, require
+        # language showing THAT compound was administered. Absent that, the
+        # paper is measuring it, comparing it, or mentioning it — none of which
+        # is evidence that taking it does anything. This deliberately
+        # under-counts rather than inflates: a missed human study costs a
+        # slightly conservative grade; a biomarker study counted as intervention
+        # evidence tells someone a compound works when nobody ever took it.
+        return any(p in blob for p in _compound_intervention_phrases(topic))
+
+    has_intervention = any(sig in blob for sig in _INTERVENTION_SIGNALS)
+    if has_biomarker and not has_intervention:
+        return False
+    return True

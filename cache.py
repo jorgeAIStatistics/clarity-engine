@@ -29,6 +29,25 @@ def _path(topic):
     return os.path.join(CACHE_DIR, f"{_slug(topic)}.json")
 
 
+def invalidate(topic):
+    """
+    Delete a cached profile so the next run regenerates it.
+
+    Exists because validating an engine change against a cached profile is
+    silent and looks identical to a real result — several rounds were spent
+    inspecting stale output after a fix. `run.py --fresh` calls this first.
+    Returns True if a file was removed.
+    """
+    p = _path(topic)
+    try:
+        os.remove(p)
+        return True
+    except FileNotFoundError:
+        return False
+    except OSError:
+        return False
+
+
 def get(topic, max_age_days=90):
     """Return a cached profile if it exists and isn't too old, else None."""
     p = _path(topic)

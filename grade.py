@@ -28,6 +28,9 @@ _ORDER = ["very_low", "low", "moderate", "high"]
 # (Refine these with your biostatistics judgment; they are deliberately explicit.)
 _ADEQUATE_TOTAL_N = 400   # rough floor below which imprecision is a concern
 _MODERATE_TOTAL_N = 100   # below this, imprecision is serious
+_TYPICAL_TRIAL_N = 50   # median trial size expected before the top tier
+_MIN_STUDIES_FOR_STRONG = 12   # human studies + syntheses behind a top-tier grade
+_MIN_PRIMARY_HUMAN = 8         # primary human trials required, not just reviews
 
 
 # ---------------------------------------------------------------------------
@@ -105,40 +108,123 @@ def grade_outcome(studies_for_outcome):
     elif not has_human:
         downgrade("Indirectness: no clearly human-population evidence detected.")
 
-    # (b) Imprecision — the honest version.
-    #     - If we could not measure sample size at all, we CANNOT claim precision.
-    #       Cap at moderate and flag it, rather than silently passing to high.
-    #     - If we could measure it, judge against explicit thresholds.
+    # (b) Imprecision — coverage-aware.
+    #     THE BUG THIS FIXES: total_n is only the sum over studies whose abstract
+    #     happened to state N. Meta-analysis abstracts almost always report their
+    #     pooled N; individual RCT abstracts often don't. So an outcome backed by
+    #     28 real RCTs could show "~197 participants" purely because N wasn't
+    #     extractable — and get downgraded for the ENGINE'S parsing failure while
+    #     a meta-analysis-heavy outcome sails through. Unknown must not mean small.
+    #
+    #     Rule: judge against an estimate that accounts for coverage. If only a
+    #     fraction of studies reported N, scale the observed mean across the whole
+    #     body of studies, and treat a substantial human-study count as its own
+    #     precision signal.
+    n_measured = len(measured_n)
+    coverage = (n_measured / n_studies) if n_studies else 0.0
+    mean_n = (total_n / n_measured) if n_measured else 0
+    # Coverage-adjusted estimate of the participants behind this outcome.
+    est_total_n = int(mean_n * n_studies) if n_measured else 0
+    # A large body of human studies is itself evidence the literature is not tiny.
+    n_human_studies = sum(1 for s in studies_for_outcome if s.get("population") == "human")
+    substantial_body = n_human_studies >= 10
+
     if not have_precision_signal:
         if level_idx > _ORDER.index("moderate"):
             level_idx = _ORDER.index("moderate")
         reasons.append("Imprecision: sample sizes could not be verified from the abstracts; "
                        "precision is unconfirmed, so certainty is capped below the top tier.")
-    elif total_n < _MODERATE_TOTAL_N:
-        downgrade(f"Imprecision: small verified sample (~{total_n} participants across measured studies).")
-    elif total_n < _ADEQUATE_TOTAL_N:
-        downgrade(f"Imprecision: modest verified sample (~{total_n} participants); effect estimate may be unstable.")
+    elif est_total_n >= _ADEQUATE_TOTAL_N or substantial_body:
+        # Adequately powered, or a large enough human literature that "small
+        # sample" is not a credible concern. Note honestly when it's an estimate.
+        if coverage < 0.5 and est_total_n >= _ADEQUATE_TOTAL_N:
+            reasons.append(f"Precision: ~{total_n} participants verified across "
+                           f"{n_measured} of {n_studies} studies; most abstracts omit sample size, "
+                           f"so the true total is substantially larger.")
+    elif est_total_n < _MODERATE_TOTAL_N:
+        # Genuinely tiny evidence base — a single downgrade isn't enough, since
+        # e.g. one 18-person trial should not read as "good human evidence".
+        downgrade(f"Imprecision: small verified sample (~{total_n} participants across "
+                  f"{n_measured} measured studies).")
+        if level_idx > _ORDER.index("low"):
+            level_idx = _ORDER.index("low")
+    else:
+        downgrade(f"Imprecision: modest verified sample (~{total_n} participants across "
+                  f"{n_measured} of {n_studies} studies); effect estimate may be unstable.")
 
     # (c) Inconsistency — the honest version.
-    #     The engine can't read effect DIRECTION from free-text abstracts. But a
-    #     META-ANALYSIS *is* a formal consistency assessment someone already did.
-    #     So:
-    #       - A human meta-analysis (rank 6) with a VERIFIED adequate sample keeps
-    #         high certainty; unverified consistency is recorded as a soft note.
-    #       - A single study can't be assessed for consistency -> downgrade.
-    #       - Several individual studies we merely COUNTED (no pooled analysis) can't
-    #         be confirmed to agree -> hold at moderate rather than sail to high.
-    is_meta = best_rank >= 6
-    adequate_precision = have_precision_signal and total_n >= _ADEQUATE_TOTAL_N
+    #     The engine can't read effect DIRECTION from free-text abstracts. A single
+    #     meta-analysis is a formal consistency assessment, BUT its mere existence
+    #     tells us nothing about what it CONCLUDED — and nearly every heavily-
+    #     researched topic on PubMed has *a* meta-analysis. So a single one is NOT
+    #     enough for the top tier. Strong now requires MULTIPLE meta-analyses /
+    #     systematic reviews (a proxy for independent replication of the synthesis),
+    #     with adequate sample and no other flags. One meta-analysis caps at Moderate.
+    n_meta = sum(1 for s in studies_for_outcome
+                 if s.get("design") in ("meta_analysis", "systematic_review"))
+    # NOTE: deliberately does NOT accept `substantial_body`. A large count of
+    # human studies stops us from calling the evidence "small", but it is not
+    # evidence of adequate POWER — 10 tiny trials are still 10 tiny trials.
+    # Requiring a real estimated sample (with meaningful coverage behind the
+    # estimate) is what keeps Strong rare and earned.
+    # A pile of tiny trials is not the same as adequately powered evidence, even
+    # when the sum is large: 20 trials of n=30 extrapolate past any total-N bar
+    # while each one remains underpowered. So the top tier ALSO requires that a
+    # typical trial in the set was a reasonable size, OR that a pooled synthesis
+    # reported a large sample of its own (meta-analyses legitimately aggregate).
+    _median_n = sorted(measured_n)[len(measured_n) // 2] if measured_n else 0
+    _largest_n = max(measured_n) if measured_n else 0
+    # Either a typical trial was reasonably sized, OR at least one study in the
+    # set (usually a pooled meta-analysis) reported a genuinely large sample.
+    typical_trial_ok = _median_n >= _TYPICAL_TRIAL_N or _largest_n >= _MODERATE_TOTAL_N
+    adequate_precision = (have_precision_signal
+                          and est_total_n >= _ADEQUATE_TOTAL_N
+                          and coverage >= 0.15
+                          and typical_trial_ok)
+
+    # MINIMUM EVIDENCE FLOOR. Without this, a thin retrieved set that happens to
+    # contain two review-type papers clears the Strong gate — which is how
+    # Vitamin E reached Strong on 13 studies. The top tier should require an
+    # actual body of primary human research behind the syntheses.
+    n_primary_human = sum(1 for s in studies_for_outcome
+                          if s.get("population") == "human"
+                          and s.get("design") in ("rct", "trial", "observational"))
+    # A meta-analysis IS a body of primary research, compressed — so count each
+    # synthesis toward the floor rather than demanding raw trials the retrieval
+    # may not have surfaced. What we're excluding is the case where BOTH the
+    # study count and the primary-research base are thin.
+    # Key the floor on HUMAN evidence only. Counting total studies let a set that
+    # was 20/25 animal work clear the bar (apple cider vinegar), while a compact
+    # set of large human trials failed it. What matters for a human-evidence tier
+    # is how much human research sits behind the syntheses.
+    # Require BOTH a real primary-human base AND the syntheses. Meta-analyses no
+    # longer substitute for primary research wholesale (a x3 multiplier made the
+    # floor toothless); they add to it modestly.
+    human_evidence_units = n_primary_human + n_meta
+    enough_evidence = (n_primary_human >= _MIN_PRIMARY_HUMAN
+                       and human_evidence_units >= _MIN_STUDIES_FOR_STRONG)
 
     if n_studies < 2:
         downgrade("Inconsistency: only one study addresses this outcome; consistency cannot be assessed.")
-    elif is_meta and has_human and adequate_precision:
-        # Earned the top tier: pooled human evidence, adequately powered.
-        reasons.append("Consistency: based on a pooled meta-analysis / systematic review "
-                       "(formal consistency assessment); effect-direction agreement assumed from the pooled result.")
+    elif n_meta >= 2 and has_human and adequate_precision and enough_evidence:
+        # Earned the top tier: MULTIPLE independent syntheses, adequately powered.
+        reasons.append(f"Consistency: {n_meta} independent meta-analyses / systematic reviews "
+                       "converge on this outcome (proxy for replicated synthesis); adequately powered.")
+    elif n_meta >= 2 and has_human and adequate_precision and not enough_evidence:
+        if level_idx > _ORDER.index("moderate"):
+            level_idx = _ORDER.index("moderate")
+        reasons.append(f"Limited human evidence: {n_primary_human} primary human studies "
+                       f"and {n_meta} pooled analyses retrieved — below the threshold for "
+                       "the top tier.")
+    elif n_meta == 1 and has_human:
+        # A single synthesis exists but has not been independently replicated, and
+        # we can't read its conclusion — hold at moderate, don't award Strong.
+        if level_idx > _ORDER.index("moderate"):
+            level_idx = _ORDER.index("moderate")
+        reasons.append("Consistency: a single meta-analysis / systematic review exists, but its "
+                       "conclusion is not independently replicated or verified — held at moderate.")
     elif level_idx >= _ORDER.index("high"):
-        # Multiple individual studies, no pooled analysis, agreement unverified.
+        # Multiple individual studies, no pooled synthesis — agreement unverified.
         level_idx = _ORDER.index("moderate")
         reasons.append("Inconsistency: several studies exist but no pooled analysis confirms they agree; "
                        "held at moderate pending review.")

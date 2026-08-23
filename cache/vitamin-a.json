@@ -1,7 +1,7 @@
 {
   "name": "Vitamin A",
   "category": "vitamin",
-  "overall_score": 70,
+  "overall_score": 79,
   "tier": "Moderate",
   "study_count": 14,
   "claims": [
@@ -11,42 +11,68 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 14,
+      "n_studies": 8,
       "grade_reasons": [
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Limited human evidence: 4 primary human studies and 4 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 55,
+        "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 4,
-        "n_animal_studies": 10,
+        "n_human_studies": 8,
+        "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:35294044",
+        "PMID:21501438",
+        "PMID:40305237",
+        "PMID:40605146",
+        "PMID:38738639",
         "PMID:33377367",
-        "PMID:31641172",
-        "PMID:33573953",
-        "PMID:37180172",
-        "PMID:32731980",
-        "PMID:25311225",
-        "PMID:34305901",
-        "PMID:16251628",
-        "PMID:38593338",
-        "PMID:9434661",
-        "PMID:20348126",
-        "PMID:40916456",
-        "PMID:31783923",
-        "PMID:3876274"
+        "PMID:30576507",
+        "PMID:24024773"
       ],
       "studies": [
         {
-          "pmid": "20348126",
-          "title": "Effectiveness of measles vaccination and vitamin A treatment.",
-          "year": "2010",
+          "pmid": "35294044",
+          "title": "Vitamin A supplementation for preventing morbidity and mortality in children from six months to five years of age.",
+          "year": "2022",
           "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "21501438",
+          "title": "Impact of vitamin A supplementation on infant and childhood mortality.",
+          "year": "2011",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40605146",
+          "title": "Vitamin A, C and/or E Intake During Pregnancy and Offspring Respiratory Health: A Systematic Review and Meta-Analysis.",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 213
+        },
+        {
+          "pmid": "38738639",
+          "title": "Oral vitamin A supplements to prevent acute upper respiratory tract infections in children up to seven years of age.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 351
+        },
+        {
+          "pmid": "40305237",
+          "title": "Randomized Controlled Clinical Trial of Pediatric Pneumococcus and Hepatitis A Vaccinations With or Without a High-Dose Oral Vitamin A Supplement.",
+          "year": "2025",
+          "design": "RCT",
           "population": "human",
           "n": null
         },
@@ -59,99 +85,186 @@
           "n": null
         },
         {
-          "pmid": "16251628",
-          "title": "Vitamin a supplementation does not affect infants' immune responses to polio and tetanus vaccines.",
-          "year": "2005",
+          "pmid": "30576507",
+          "title": "Neonatal vitamin A supplementation and immune responses to oral polio vaccine in Zimbabwean infants.",
+          "year": "2019",
           "design": "RCT",
           "population": "human",
-          "n": 1085
+          "n": 181
         },
         {
-          "pmid": "9434661",
-          "title": "The effect of zinc and vitamin A supplementation on immune response in an older population.",
-          "year": "1998",
+          "pmid": "24024773",
+          "title": "Vitamin A supplementation and serum Th1- and Th2-associated cytokine response in women.",
+          "year": "2013",
           "design": "RCT",
+          "population": "human",
+          "n": 56
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For immune function, Vitamin A has moderate human evidence (8 studies)."
+    },
+    {
+      "outcome": "anemia / iron status",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Limited human evidence: 0 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:12519564",
+        "PMID:29336593"
+      ],
+      "studies": [
+        {
+          "pmid": "29336593",
+          "title": "Effect of vitamin A supplementation on iron status in humans: A systematic review and meta-analysis.",
+          "year": "2019",
+          "design": "Meta-analysis",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "40916456",
-          "title": "Vitamin A deficiency enhances susceptibility to experimental autoimmune pancreatitis through activation of CD4+ T cells expressing CXCR3 and secreting CCL25.",
+          "pmid": "12519564",
+          "title": "Vitamin A supplementation during pregnancy.",
+          "year": "2002",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 426
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For anemia / iron status, Vitamin A has moderate human evidence (2 studies)."
+    },
+    {
+      "outcome": "inflammation",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~56 participants across 1 of 2 studies); effect estimate may be unstable.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:30473441",
+        "PMID:24024773"
+      ],
+      "studies": [
+        {
+          "pmid": "30473441",
+          "title": "A systematic review and meta-analysis of randomized controlled trials to evaluating the trend of cytokines to vitamin A supplementation in autoimmune diseases.",
+          "year": "2019",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "24024773",
+          "title": "Vitamin A supplementation and serum Th1- and Th2-associated cytokine response in women.",
+          "year": "2013",
+          "design": "RCT",
+          "population": "human",
+          "n": 56
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For inflammation, Vitamin A has moderate human evidence (2 studies)."
+    },
+    {
+      "outcome": "liver health",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:33216111",
+        "PMID:40305237"
+      ],
+      "studies": [
+        {
+          "pmid": "33216111",
+          "title": "Metabolism of Neonatal Vitamin A Supplementation: A Systematic Review.",
+          "year": "2021",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40305237",
+          "title": "Randomized Controlled Clinical Trial of Pediatric Pneumococcus and Hepatitis A Vaccinations With or Without a High-Dose Oral Vitamin A Supplement.",
           "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38593338",
-          "title": "Vitamin A-treated natural killer cells reduce interferon-gamma production and support regulatory T-cell differentiation.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37180172",
-          "title": "Vitamin A deficiency and vitamin A supplementation affect innate and T cell immune responses to rotavirus A infection in a conventional sow model.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "33573953",
-          "title": "Vitamin A with L-ascorbic acid sodium salt improves the growth performance, immune function and antioxidant capacity of weaned pigs.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "34305901",
-          "title": "Clickable Vitamins as a New Tool to Track Vitamin A and Retinoic Acid in Immune Cells.",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31783923",
-          "title": "Oral vitamin A supplementation of porcine epidemic diarrhea virus infected gilts enhances IgA and lactogenic immune protection of nursing piglets.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "25311225",
-          "title": "Vitamin A metabolism and mucosal immune function are distinct between BALB/c and C57BL/6 mice.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "3876274",
-          "title": "High dietary vitamin A (retinyl palmitate) and cellular immune functions in mice.",
-          "year": "1985",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "32731980",
-          "title": "Effects of maternal and dietary vitamin A on growth performance, meat quality, antioxidant status, and immune function of offspring broilers.",
-          "year": "2020",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31641172",
-          "title": "Vitamin A deficiency impairs the immune response to intranasal vaccination and RSV infection in neonatal calves.",
-          "year": "2019",
-          "design": "Unclassified",
-          "population": "animal",
+          "design": "RCT",
+          "population": "human",
           "n": null
         }
       ],
@@ -166,34 +279,40 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For immune function, Vitamin A has moderate human evidence (14 studies)."
+      "summary": "For liver health, Vitamin A has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
-    "immune function"
+    "immune function",
+    "anemia / iron status",
+    "inflammation",
+    "liver health"
   ],
   "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "explanation": {
-    "what_it_is": "Vitamin A is a fat-soluble micronutrient essential for human health, obtained from dietary sources (retinol from animal products, beta-carotene from plants) or taken as a supplement. The body stores it in the liver and converts it to active forms\u2014retinol, retinal, and retinoic acid\u2014that regulate gene expression throughout the body. It comes in oral supplement forms (tablets, capsules, oils) and is also added to fortified foods.",
-    "how_it_works": "Vitamin A binds to nuclear receptors (RAR and RXR) that act as transcription factors, controlling the expression of genes involved in cell differentiation, growth, and immune regulation. In the immune system specifically, it helps maintain the integrity of mucosal barriers (gut, respiratory tract), promotes the development and maturation of T cells and B cells, and regulates the balance between inflammatory and regulatory immune responses. Deficiency impairs antibody production and T-cell function, making infections more severe; adequate levels support both pathogen defense and immune tolerance to prevent excessive inflammation. This is why vitamin A has long been recognized as critical for infection resistance, particularly in children and populations at nutritional risk.",
-    "outcome_detail": [
-      {
-        "outcome": "immune function",
-        "grade": "Moderate",
-        "what_studies_show": "Human studies show mixed results. A 2010 meta-analysis found vitamin A treatment effective alongside measles vaccination, while a 2020 RCT in Indonesian pre-schoolers showed benefit of combined zinc and vitamin A supplementation on immune responses. However, a large 2005 RCT (n=1,085) found vitamin A supplementation did not improve infants' immune responses to polio and tetanus vaccines, and a 1998 RCT in older adults showed limited immune benefit from combined zinc and vitamin A. Animal studies (2024\u20132025) demonstrate that vitamin A deficiency increases susceptibility to autoimmune inflammation and that vitamin A treatment modulates natural killer cell and regulatory T-cell function, supporting a mechanistic role.",
-        "why_this_grade": "Only four human trials exist, with inconsistent findings across different age groups and vaccine types; the single meta-analysis supports efficacy but lacks independent replication. The evidence is moderate because mechanistic plausibility is strong and some human trials show benefit, but the small number of independent human studies and heterogeneous results (including null findings in large trials) prevent a higher grade. Animal studies clarify mechanism but cannot substitute for consistent human proof."
-      }
-    ],
-    "evidence_base": "The evidence base for vitamin A and immune function is dominated by a small number of human trials (4) paired with more numerous animal studies (10 of 14 total). Human studies span from 1998 to 2020 and include meta-analysis, RCTs, and varied populations (pre-schoolers, infants, older adults), but lack consistency in their conclusions. Animal work is more recent (2024\u20132025) and clarifies cellular mechanisms. Overall, this reflects moderate confidence: enough human data to suggest an effect, but insufficient volume and consistency to call it well-proven, and a reliance on older trials means the field lacks recent large-scale replication in humans.",
-    "emerging_research": "Recent animal studies (2024\u20132025) are mapping how vitamin A fine-tunes T-cell and natural killer cell behavior at the molecular level, revealing it is not simply an 'immune booster' but a regulator that can dampen certain inflammatory pathways while supporting others. This mechanistic clarity may help explain why vitamin A supplementation works well for some immune challenges (e.g., measles in deficient populations) but not others (e.g., vaccine response in already-replete infants). Future human work may stratify benefit by baseline nutritional status, age, and the specific immune outcome measured.",
-    "open_questions": "The optimal dose and duration of supplementation for immune benefit in well-nourished populations remain unclear; most evidence comes from deficient or at-risk groups. Long-term safety and efficacy of high-dose vitamin A supplementation in adults has not been adequately studied in modern trials. It is also unknown whether vitamin A supplementation improves real-world infection rates or clinical outcomes in people with adequate baseline nutrition, or whether benefit is limited to populations with underlying deficiency.",
-    "caveats": "Vitamin A is fat-soluble and can accumulate to toxic levels with excessive supplementation; chronic high intake (>10,000 IU/day in adults, lower in pregnancy) increases risk of bone loss and birth defects. Quality and purity vary among supplements; look for third-party testing. Vitamin A supplements may interact with certain medications (retinoids, some anticonvulsants) and should be discussed with a healthcare provider, especially for pregnant women, those with liver disease, or people at risk for osteoporosis.",
-    "_generated": true,
-    "_model": "claude-haiku-4-5-20251001"
+  "chemistry": {
+    "cid": 445354,
+    "formula": "C20H30O",
+    "weight": "286.5",
+    "iupac_name": "(2E,4E,6E,8E)-3,7-dimethyl-9-(2,6,6-trimethylcyclohexen-1-yl)nona-2,4,6,8-tetraen-1-ol",
+    "smiles": null,
+    "inchikey": "FPIPGXGPPPQFEQ-OVSJKPMPSA-N",
+    "xlogp": 5.7,
+    "image_url": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=445354&t=l",
+    "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/445354",
+    "matched_query": "retinol",
+    "source": "PubChem",
+    "synonyms": [
+      "retinol",
+      "all-trans-Retinol",
+      "68-26-8",
+      "Agoncal",
+      "trans-retinol",
+      "Veroftal"
+    ]
   },
-  "_cached_at": 1787092239.518755
+  "_cached_at": 1787506325.9417431
 }
