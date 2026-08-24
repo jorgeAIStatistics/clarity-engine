@@ -3,7 +3,7 @@
   "category": "vitamin",
   "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 11,
+  "study_count": 20,
   "claims": [
     {
       "outcome": "cognition",
@@ -11,9 +11,9 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 7,
       "grade_reasons": [
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Limited human evidence: 2 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -21,7 +21,7 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
+        "n_human_studies": 6,
         "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -29,9 +29,20 @@
         "PMID:33809274",
         "PMID:37334792",
         "PMID:34101780",
-        "PMID:40499198"
+        "PMID:40499198",
+        "PMID:42227307",
+        "PMID:14584018",
+        "PMID:26262738"
       ],
       "studies": [
+        {
+          "pmid": "42227307",
+          "title": "Vitamin B12 supplementation for growth, development, and cognition in children.",
+          "year": "2026",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
         {
           "pmid": "33809274",
           "title": "Effects of Vitamin B12 Supplementation on Cognitive Function, Depressive Symptoms, and Fatigue: A Systematic Review, Meta-Analysis, and Meta-Regression.",
@@ -39,6 +50,14 @@
           "design": "Meta-analysis",
           "population": "human",
           "n": 6276
+        },
+        {
+          "pmid": "14584018",
+          "title": "Folic acid with or without vitamin B12 for cognition and dementia.",
+          "year": "2003",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 19
         },
         {
           "pmid": "37334792",
@@ -55,6 +74,14 @@
           "design": "RCT",
           "population": "human",
           "n": 120
+        },
+        {
+          "pmid": "26262738",
+          "title": "UNDERNUTRITION, SERUM VITAMIN B12, FOLIC ACID AND DEPRESSIVE SYMPTOMS IN OLDER ADULTS.",
+          "year": "2015",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 84
         },
         {
           "pmid": "40499198",
@@ -76,126 +103,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cognition, Vitamin B12 has moderate human evidence (4 studies)."
-    },
-    {
-      "outcome": "mood / depression",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:33809274",
-        "PMID:35851507"
-      ],
-      "studies": [
-        {
-          "pmid": "33809274",
-          "title": "Effects of Vitamin B12 Supplementation on Cognitive Function, Depressive Symptoms, and Fatigue: A Systematic Review, Meta-Analysis, and Meta-Regression.",
-          "year": "2021",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 6276
-        },
-        {
-          "pmid": "35851507",
-          "title": "High-dose Vitamin B6 supplementation reduces anxiety and strengthens visual surround suppression.",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": 307
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For mood / depression, Vitamin B12 has moderate human evidence (2 studies)."
-    },
-    {
-      "outcome": "inflammation",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 3,
-      "grade_reasons": [
-        "Imprecision: modest verified sample (~130 participants across 2 of 3 studies); effect estimate may be unstable."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:26109103",
-        "PMID:34101780",
-        "PMID:33342334"
-      ],
-      "studies": [
-        {
-          "pmid": "34101780",
-          "title": "Effects of Folic Acid and Vitamin B12 Supplementation on Cognitive Impairment and Inflammation in Patients with Alzheimer's Disease: A Randomized, Single-Blinde",
-          "year": "2021",
-          "design": "RCT",
-          "population": "human",
-          "n": 120
-        },
-        {
-          "pmid": "33342334",
-          "title": "Vitamin B12 and Atopic Dermatitis: Any Therapeutic Relevance For Oral Supplementation?",
-          "year": "2022",
-          "design": "Case report",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "26109103",
-          "title": "Vitamin B12 modulates the transcriptome of the skin microbiota in acne pathogenesis.",
-          "year": "2015",
-          "design": "Unclassified",
-          "population": "human",
-          "n": 10
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For inflammation, Vitamin B12 has moderate human evidence (3 studies)."
+      "summary": "For cognition, Vitamin B12 has moderate human evidence (7 studies)."
     },
     {
       "outcome": "anemia / iron status",
@@ -203,25 +111,37 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 6,
       "grade_reasons": [
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Limited human evidence: 2 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
-        "mechanistic": 25,
+        "mechanistic": 30,
         "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
+        "n_human_studies": 6,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:38231320",
-        "PMID:38797248"
+        "PMID:38797248",
+        "PMID:14584018",
+        "PMID:10903597",
+        "PMID:34999324",
+        "PMID:22742602"
       ],
       "studies": [
+        {
+          "pmid": "22742602",
+          "title": "Interventions with vitamins B6, B12 and C in pregnancy.",
+          "year": "2012",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
         {
           "pmid": "38231320",
           "title": "Efficacy of different routes of vitamin B12 supplementation for the treatment of patients with vitamin B12 deficiency: A systematic review and network meta-anal",
@@ -229,6 +149,30 @@
           "design": "Systematic review",
           "population": "human",
           "n": 4275
+        },
+        {
+          "pmid": "14584018",
+          "title": "Folic acid with or without vitamin B12 for cognition and dementia.",
+          "year": "2003",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 19
+        },
+        {
+          "pmid": "34999324",
+          "title": "The effect of vitamin B12-supplementation on actigraphy measured sleep pattern; a randomized control trial.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "10903597",
+          "title": "Enteral vitamin B12 supplements reverse postgastrectomy B12 deficiency.",
+          "year": "2000",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 31
         },
         {
           "pmid": "38797248",
@@ -250,14 +194,151 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For anemia / iron status, Vitamin B12 has moderate human evidence (2 studies)."
+      "summary": "For anemia / iron status, Vitamin B12 has moderate human evidence (6 studies)."
+    },
+    {
+      "outcome": "mood / depression",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 4,
+      "grade_reasons": [
+        "Limited human evidence: 1 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 4,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:33809274",
+        "PMID:35851507",
+        "PMID:14584018",
+        "PMID:26262738"
+      ],
+      "studies": [
+        {
+          "pmid": "33809274",
+          "title": "Effects of Vitamin B12 Supplementation on Cognitive Function, Depressive Symptoms, and Fatigue: A Systematic Review, Meta-Analysis, and Meta-Regression.",
+          "year": "2021",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 6276
+        },
+        {
+          "pmid": "14584018",
+          "title": "Folic acid with or without vitamin B12 for cognition and dementia.",
+          "year": "2003",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 19
+        },
+        {
+          "pmid": "35851507",
+          "title": "High-dose Vitamin B6 supplementation reduces anxiety and strengthens visual surround suppression.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": 307
+        },
+        {
+          "pmid": "26262738",
+          "title": "UNDERNUTRITION, SERUM VITAMIN B12, FOLIC ACID AND DEPRESSIVE SYMPTOMS IN OLDER ADULTS.",
+          "year": "2015",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 84
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For mood / depression, Vitamin B12 has moderate human evidence (4 studies)."
+    },
+    {
+      "outcome": "bone health",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Limited human evidence: 1 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 3,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:29239465",
+        "PMID:38474851",
+        "PMID:22136481"
+      ],
+      "studies": [
+        {
+          "pmid": "38474851",
+          "title": "Plant-Based Diets in Children: Secular Trends, Health Outcomes, and a Roadmap for Urgent Practice Recommendations and Research-A Systematic Review.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "29239465",
+          "title": "Vitamin B12, bone mineral density and fracture risk in adults: A systematic review.",
+          "year": "2017",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 25
+        },
+        {
+          "pmid": "22136481",
+          "title": "Rationale and design of the B-PROOF study, a randomized controlled trial on the effect of supplemental intake of vitamin B12 and folic acid on fracture incidenc",
+          "year": "2011",
+          "design": "RCT",
+          "population": "human",
+          "n": 2919
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For bone health, Vitamin B12 has moderate human evidence (3 studies)."
     }
   ],
   "effects_established": [
     "cognition",
+    "anemia / iron status",
     "mood / depression",
-    "inflammation",
-    "anemia / iron status"
+    "bone health"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -285,5 +366,76 @@
       "DODEX INJECTABLE"
     ]
   },
-  "_cached_at": 1787506312.7645938
+  "_cached_at": 1787607390.651644,
+  "explanation": {
+    "what_it_is": "Vitamin B12 (cyanocobalamin, molecular formula C63H88CoN14O14P) is a water-soluble vitamin essential for DNA synthesis, myelin formation, and energy metabolism. It is naturally found in animal products\u2014meat, fish, eggs, dairy\u2014and is absorbed in the terminal ileum. People obtain it through diet, oral supplements, injections, or nasal sprays; deficiency is particularly common in vegans, older adults, and those with certain digestive disorders.",
+    "how_it_works": "B12 acts as a coenzyme for two critical enzymatic reactions: methylation (via methionine synthase, which recycles folate and produces the neurotransmitter precursor SAM) and the conversion of methylmalonic acid to succinyl-CoA in energy production. It is also required for proper myelin maintenance around nerve fibers and for red blood cell maturation. Low B12 disrupts all three pathways\u2014impairing cognitive function, raising homocysteine (a cardiovascular risk marker), and causing megaloblastic anemia. Restoring B12 levels reverses these processes.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "A 2021 meta-analysis of 6,276 participants found B12 supplementation improved cognitive function and reduced depressive symptoms and fatigue. A 2023 randomized controlled trial in 307 middle-aged and elderly patients with cognitive impairment showed B12 supplementation improved cognitive outcomes. A 2003 systematic review of 19 studies examined folic acid with or without B12 for cognition and dementia. A 2026 meta-analysis focused on B12 supplementation for growth, development, and cognition in children. Two primary human trials and three pooled analyses were retrieved.",
+        "why_this_grade": "Evidence in humans is present but limited: only 2 primary randomized trials and 3 meta-analyses/systematic reviews were found, falling below the threshold for the top (Strong) tier. The studies span diverse populations (children, older adults, cognitively impaired patients) and show consistent direction, but the primary evidence base is small."
+      },
+      {
+        "outcome": "anemia / iron status",
+        "grade": "Moderate",
+        "what_studies_show": "A 2024 systematic review of 4,275 participants examined the efficacy of different B12 supplementation routes for treating B12 deficiency. A 2000 clinical trial in 31 patients showed oral B12 supplements reversed post-gastrectomy B12 deficiency. A 2024 prospective cohort study (n=26) demonstrated oral B12 supplementation in pernicious anemia. A 2012 meta-analysis assessed vitamins B6, B12, and C in pregnancy. A 2022 randomized trial examined B12 supplementation effects on sleep patterns. A 2003 systematic review included B12 for cognition and dementia.",
+        "why_this_grade": "All six retrieved studies are human trials or analyses with no animal studies; however, only 2 primary trials (small n) and 3 pooled analyses are available. The evidence confirms B12 corrects deficiency states and related anemia, but the primary trial evidence base is limited in size and scope."
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Moderate",
+        "what_studies_show": "A 2021 meta-analysis of 6,276 participants found B12 supplementation reduced depressive symptoms. A 2015 observational study in 84 older adults with undernutrition found associations between serum B12, folic acid, and depressive symptoms. A 2022 randomized trial (n=307) examined high-dose B6 supplementation for anxiety (related B vitamin outcome). A 2003 systematic review of 19 studies reviewed folic acid with or without B12 for cognition and mood-related outcomes.",
+        "why_this_grade": "Only 1 primary human randomized trial and 2 pooled analyses were retrieved, which is below the threshold for Strong tier evidence. The meta-analysis showed promise, but the limited number of primary trials and modest retrieval of mood-specific studies constrain confidence."
+      },
+      {
+        "outcome": "bone health",
+        "grade": "Moderate",
+        "what_studies_show": "A 2017 systematic review of 25 studies examined the relationship between vitamin B12, bone mineral density, and fracture risk in adults. A 2011 randomized controlled trial (B-PROOF study, n=2,919) was designed to test the effect of supplemental B12 intake on bone health outcomes. A 2024 systematic review assessed plant-based diets in children, including micronutrient considerations for bone health.",
+        "why_this_grade": "Only 1 primary human trial (B-PROOF, 2011) and 2 systematic reviews were retrieved. This represents a small primary evidence base. The B-PROOF trial is the main prospective randomized study, but retrieval records do not include its full results; the total literature on B12 and bone appears sparse in these records."
+      }
+    ],
+    "evidence_base": "The retrieved evidence for B12 is entirely human-based (no animal studies across the four outcomes). Studies span meta-analyses, systematic reviews, and randomized controlled trials, with trials ranging from small (n=26\u201331) to large (n=2,919 for B-PROOF). Most research is relatively recent (2011\u20132026), with a few older systematic reviews (2003, 2012). The dominance of pooled analyses and systematic reviews relative to primary trials suggests the underlying literature is fragmented across diverse populations and study designs, limiting confidence in any single outcome.",
+    "emerging_research": "Recent work (2024\u20132026) increasingly examines B12 supplementation via different routes (oral, injection, nasal) and in specific populations (vegans, plant-based diet followers, older adults with cognitive decline, children). A 2024 systematic review of 4,275 participants comparing supplementation routes suggests interest in optimizing delivery. A 2026 meta-analysis on B12 in child development and cognition reflects growing attention to prevention in younger populations. These directions are still early and driven largely by observational and meta-analytic synthesis rather than large-scale primary trials.",
+    "open_questions": "Among the studies retrieved here, the primary randomized trial evidence for each outcome is sparse (1\u20132 trials per outcome). Long-term follow-up data appear absent from the retrieved abstracts; most trials shown are relatively short-duration. Populations studied include children, older adults, pregnant women, and those with existing deficiency or cognitive impairment, but the retrieved records do not indicate whether healthy, replete adults have been studied, or whether benefit extends to non-deficient individuals. The present sample of ~40 abstracts per outcome is not exhaustive; gaps visible here (e.g., few primary trials, short durations) may not reflect the full scientific literature.",
+    "caveats": "B12 is water-soluble and generally safe even at high doses, as excess is excreted in urine; toxicity is rare. However, oral absorption requires intrinsic factor and is impaired in pernicious anemia, atrophic gastritis, and post-gastrectomy states\u2014injections or high-dose oral formulations are then necessary. B12 can interact with metformin (which reduces absorption) and certain antibiotics; vegans and older adults should monitor status regularly. Quality of supplements varies; ensure third-party certification and appropriate form (cyanocobalamin or methylcobalamin are most stable).",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base relies heavily on meta-analyses and systematic reviews of small primary trials; only 1\u20132 dedicated RCTs per outcome, with most individual studies enrolling under 100 participants, substantially limits confidence in the clinical benefit.",
+    "concerns": [
+      {
+        "issue": "Heavy dependence on pooled analyses with thin primary evidence",
+        "detail": "For cognition, mood, and bone health, the grading notes explicitly state '2 primary human studies and 3 pooled analyses' or '1 primary human study and 2 pooled analyses' \u2014 meaning the retrieved evidence leans on re-analysis of older work rather than new trials. The 2003 systematic review (n=19) appears across three outcomes (cognition, anemia, mood), yet represents very small underlying sample; a meta-analysis citing this work may amplify its weight. Without the full landscape of contributing trials to those pooled analyses, it is unclear whether heterogeneity or publication bias inflates the pooled estimate.",
+        "severity": "high"
+      },
+      {
+        "issue": "Majority of primary RCTs are small and underpowered",
+        "detail": "For cognition and anemia, the two dedicated RCTs report n=120 and n=307 respectively; for mood, only one RCT (n=307) is retrieved. For bone health, only one RCT (n=2919) is reported, but it is the B-PROOF study (design phase only, 2011), not a completed efficacy trial. Small RCTs are vulnerable to random variation and attrition bias; a single large trial could materially shift the pooled result. The median sample sizes (120 for cognition, 31 for anemia, 307 for mood) mask the fact that six of the eleven unique human studies report n \u2264 84.",
+        "severity": "high"
+      },
+      {
+        "issue": "Confounding by co-supplementation and study populations uncontrolled",
+        "detail": "The 2021 RCT on cognition (n=120) and the 2021 meta-analysis (n=6276) both combine folic acid with B12, and the 2015 unclassified study (n=84) measures observational associations between serum B12 and depressive symptoms in malnourished older adults\u2014a population where deficiency is extreme and unblinded. The 2024 anemia study (n=26) is a prospective cohort, not a controlled trial. Without RCTs isolating B12 alone in replete populations, it is unknown whether benefit is specific to B12, whether it requires co-factors, or whether it is driven by reversal of severe deficiency rather than supplementation per se.",
+        "severity": "high"
+      },
+      {
+        "issue": "Pooled effect size not extractable; heterogeneity and direction of effect unstated",
+        "detail": "The engine reports 'pooled effect: none extractable' for all four outcomes. This means the retrieved abstracts do not provide a usable summary effect, confidence interval, or direction of effect from the meta-analyses. Without these, it is impossible to judge whether the pooled result favours B12 strongly, weakly, or is consistent with no effect. The grades ('Moderate') may reflect the quality of included studies rather than the magnitude of benefit.",
+        "severity": "high"
+      },
+      {
+        "issue": "Outcome overlap and selective co-reporting inflate apparent evidence breadth",
+        "detail": "The 2021 meta-analysis (n=6276) and the 2003 systematic review (n=19) each contribute to multiple outcomes (cognition, mood for both; anemia for the 2003 review). This creates the false impression of independent evidence: the four outcomes rest on only ~3\u20134 unique pooled analyses and one dedicated RCT per outcome. The 2022 RCT on mood (n=307) is labelled as 'High-dose Vitamin B6 supplementation reduces anxiety'\u2014not B12\u2014suggesting possible mislabeling or outcome drift in the retrieval.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "B12's role in methylation, myelin synthesis, and homocysteine metabolism is biochemically plausible and supports cognitive and mood outcomes in principle. However, the retrieved evidence does not report mechanistic endpoints (e.g., homocysteine reduction, methylation markers, or imaging of myelin integrity) linking supplementation to the clinical outcomes. The cognition outcome relies on a single animal study (2025, endoplasmic reticulum stress in neurons) that is not connected to human trial data. The leap from biochemical mechanism to clinically meaningful improvement in cognition or mood in replete populations remains inferential.",
+    "strongest_counterargument": "B12 is an essential micronutrient, and observational associations between deficiency and poor cognition or mood are well-established. However, the retrieved RCTs enrol predominantly deficient or malnourished populations (e.g., older adults with cognitive impairment, pernicious anemia patients), making it impossible to distinguish restoration of function from pharmacological benefit. In populations without deficiency, the two smallest dedicated RCTs (n=120, n=307) show no extractable pooled effect, and the 2003 systematic review suggests 'limited evidence.' A skeptic would argue that this body of evidence documents that correcting a deficiency helps, not that the supplement provides benefit to the replete.",
+    "what_would_change_the_picture": "A large (n \u2265 500), adequately powered RCT in B12-replete adults (baseline serum B12 > 300 pmol/L or similar) with a active-control or placebo arm, measuring cognition (validated scale), mood (PHQ-9 or similar), and bone density (DXA), with blinding and low attrition, would resolve whether supplementation benefits non-deficient populations. Publication of the full results (not abstract) of the B-PROOF trial, including stratified analysis by baseline B12 status, would also materially inform the evidence base.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

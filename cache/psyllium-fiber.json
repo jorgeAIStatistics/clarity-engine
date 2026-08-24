@@ -1,9 +1,9 @@
 {
   "name": "Psyllium Fiber",
   "category": "gut",
-  "overall_score": 70,
+  "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 2,
+  "study_count": 9,
   "claims": [
     {
       "outcome": "gut / digestion",
@@ -11,23 +11,25 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 4,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~236 participants across 2 of 2 studies); effect estimate may be unstable."
+        "Imprecision: modest verified sample (~283 participants across 3 of 4 studies); effect estimate may be unstable."
       ],
       "layers": {
-        "mechanistic": 25,
+        "mechanistic": 30,
         "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
+        "n_human_studies": 4,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:40460824",
-        "PMID:38123024"
+        "PMID:38123024",
+        "PMID:27080737",
+        "PMID:30561029"
       ],
       "studies": [
         {
@@ -37,6 +39,22 @@
           "design": "RCT",
           "population": "human",
           "n": 27
+        },
+        {
+          "pmid": "30561029",
+          "title": "Effect of Psyllium Fiber Supplementation on Diarrhea Incidence in Enteral Tube-Fed Patients: A Prospective, Randomized, and Controlled Trial.",
+          "year": "2019",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "27080737",
+          "title": "Psyllium Fiber Reduces Abdominal Pain in Children With Irritable Bowel Syndrome in a Randomized, Double-Blind Trial.",
+          "year": "2017",
+          "design": "RCT",
+          "population": "human",
+          "n": 47
         },
         {
           "pmid": "38123024",
@@ -58,16 +76,255 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For gut / digestion, Psyllium Fiber has moderate human evidence (2 studies)."
+      "summary": "For gut / digestion, Psyllium Fiber has moderate human evidence (4 studies)."
+    },
+    {
+      "outcome": "blood sugar",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:1852093",
+        "PMID:26561625"
+      ],
+      "studies": [
+        {
+          "pmid": "26561625",
+          "title": "Psyllium fiber improves glycemic control proportional to loss of glycemic control: a meta-analysis of data in euglycemic subjects, patients at risk of type 2 di",
+          "year": "2015",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "1852093",
+          "title": "Psyllium fiber reduces rise in postprandial glucose and insulin concentrations in patients with non-insulin-dependent diabetes.",
+          "year": "1991",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For blood sugar, Psyllium Fiber has moderate human evidence (2 studies)."
+    },
+    {
+      "outcome": "inflammation",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~158 participants across 1 of 1 studies); effect estimate may be unstable.",
+        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 0,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:18332401"
+      ],
+      "studies": [
+        {
+          "pmid": "18332401",
+          "title": "Effect of psyllium fiber supplementation on C-reactive protein: the trial to reduce inflammatory markers (TRIM).",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": 158
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For inflammation, Psyllium Fiber shows early but unsettled evidence (1 studies)."
+    },
+    {
+      "outcome": "cholesterol / lipids",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Imprecision: small verified sample (~30 participants across 1 measured studies).",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 0,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:26561625",
+        "PMID:2218650"
+      ],
+      "studies": [
+        {
+          "pmid": "26561625",
+          "title": "Psyllium fiber improves glycemic control proportional to loss of glycemic control: a meta-analysis of data in euglycemic subjects, patients at risk of type 2 di",
+          "year": "2015",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "2218650",
+          "title": "Synergistic effects of psyllium in the dietary treatment of hypercholesterolemia.",
+          "year": "1990",
+          "design": "RCT",
+          "population": "human",
+          "n": 30
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For cholesterol / lipids, Psyllium Fiber shows early but unsettled evidence (2 studies)."
     }
   ],
   "effects_established": [
-    "gut / digestion"
+    "gut / digestion",
+    "blood sugar"
   ],
-  "effects_promising": [],
+  "effects_promising": [
+    "inflammation",
+    "cholesterol / lipids"
+  ],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506613.251416
+  "_cached_at": 1787608592.8895948,
+  "explanation": {
+    "what_it_is": "Psyllium fiber is a soluble dietary fiber derived from the seed husk of Plantago ovata, a plant native to India. It absorbs water in the digestive tract to form a viscous gel and is commonly consumed as a powder, capsule, or added to foods. Psyllium is inexpensive, widely available over-the-counter, and has been used for decades as a gentle laxative and digestive aid.",
+    "how_it_works": "When psyllium enters the small intestine, it absorbs water and swells into a thick, mucilaginous mass that slows gastric emptying and increases stool bulk. This viscous gel can trap dietary particles and reduce the rate at which glucose enters the bloodstream, potentially moderating blood sugar spikes. The fiber also feeds beneficial bacteria in the colon, promoting short-chain fatty acid production (particularly butyrate), which nourishes intestinal cells and may dampen inflammatory markers. Additionally, the gel can bind bile acids, promoting their excretion and potentially lowering circulating cholesterol.",
+    "outcome_detail": [
+      {
+        "outcome": "gut / digestion",
+        "grade": "Moderate",
+        "what_studies_show": "Studies show psyllium can reduce diarrhea in tube-fed patients and abdominal pain in children with irritable bowel syndrome. A 2017 randomized, double-blind trial in 47 children found psyllium reduced IBS-related abdominal pain, and a 2019 prospective RCT in tube-fed patients demonstrated reduced diarrhea incidence. A 2024 study in 209 pediatric participants and a 2025 trial examining fiber's role in fecal microbiota transplant engraftment also support digestive benefits, though effects appear modest.",
+        "why_this_grade": "Evidence comes from four human randomized or controlled trials, but the verified sample size across three of these studies is only ~283 participants, which is modest. The precision of effect estimates is therefore unstable, and results have not been independently replicated across many large trials, limiting confidence to moderate."
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Moderate",
+        "what_studies_show": "A 1991 randomized trial found that psyllium fiber reduced postprandial (after-meal) glucose and insulin rises in non-insulin-dependent diabetic patients. A 2015 meta-analysis concluded that psyllium improves glycemic control proportionally to the degree of existing glycemic dysregulation, suggesting a dose\u2013response relationship and applicability across different baseline glucose levels.",
+        "why_this_grade": "Only two human studies exist in the retrieved records, and sample sizes could not be verified from the abstracts, leaving precision unconfirmed. Although a meta-analysis supports the effect, there is no independent replication of its conclusion, so evidence is held at moderate rather than strong."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Emerging",
+        "what_studies_show": "A 2008 randomized trial with 158 participants (TRIM study) examined psyllium's effect on C-reactive protein (a marker of systemic inflammation). This is the only human study in the retrieved records directly addressing inflammatory outcomes.",
+        "why_this_grade": "Only one human study exists to evaluate this outcome, making it impossible to assess consistency or confirm reproducibility. The sample size of 158 is moderate in absolute terms but represents the sole evidence retrieved, so this outcome remains preliminary and exploratory rather than established."
+      },
+      {
+        "outcome": "cholesterol / lipids",
+        "grade": "Emerging",
+        "what_studies_show": "A 1990 randomized trial in 30 participants found synergistic cholesterol-lowering effects when psyllium was combined with dietary modification. A 2015 meta-analysis also touched on lipid outcomes in the context of glycemic control, but lipid endpoints were not the primary focus.",
+        "why_this_grade": "Evidence rests on a small verified sample of ~30 participants in one measured study, and the meta-analysis conclusion lacks independent replication. Consistency cannot be established, and the body of evidence is too thin to confirm a reliable effect, keeping this at emerging status."
+      }
+    ],
+    "evidence_base": "The evidence base for psyllium is predominantly human and primarily composed of randomized controlled trials and one meta-analysis, with no animal studies in the records provided. Most studies are from the 1990s to 2010s, with a few more recent trials (2024\u20132025). The strongest evidence appears in gut/digestion and blood sugar outcomes (both Moderate), while inflammation and cholesterol effects remain preliminary (Emerging). Overall, psyllium has accumulated modest human trial data, but sample sizes are generally small to modest, and many findings have not been independently replicated across multiple large trials.",
+    "emerging_research": "Recent work (2025) is examining how psyllium fiber supports microbial strain engraftment in fecal microbiota transplantation, suggesting a role in shaping the gut microbiome composition. A 2024 study in pediatric functional abdominal pain revealed sex-dependent differences in dietary fiber efficacy, raising the possibility that psyllium's effects may vary by sex or age. These directions are early but point toward personalized applications and a deeper mechanistic understanding via the microbiota.",
+    "open_questions": "Among the studies retrieved here, the majority focus on pediatric or specific clinical populations (tube-fed patients, IBS in children); fewer trials address general adult use or healthy populations. Trial durations in the records are not explicitly detailed in the abstracts provided, so it is unclear whether long-term safety and efficacy have been examined. The sample sizes across most outcomes are modest (often 30\u201350 participants per trial), which limits precision; the records do not show large, modern multi-center trials that might strengthen confidence. Note: this characterization applies only to the ~40 abstracts retrieved per outcome \u2014 research on psyllium exists globally beyond these records.",
+    "caveats": "Psyllium should be taken with adequate water (at least 8 oz per dose) to prevent intestinal blockage, particularly in those with dysphagia, strictures, or impaired gut motility. Some individuals experience bloating or gas initially as the gut microbiota adjusts; a gradual increase in dose can minimize this. Psyllium may interact with certain medications by slowing their absorption, so it should be taken 1\u20132 hours apart from drugs; consult a healthcare provider if taking medications for diabetes, cholesterol, or other conditions.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base is small, fragmented across disparate outcomes with minimal replication, and pooled effect estimates cannot be extracted from most claims\u2014precluding confident assessment of clinical benefit magnitude.",
+    "concerns": [
+      {
+        "issue": "Extreme imprecision in lipids outcome",
+        "detail": "Only one RCT with n=30 directly measured cholesterol; a single meta-analysis is cited but its methods and included studies are not visible in these records. An outlier result or cherry-picked sample could entirely drive the 'Emerging' grade for lipids. The 1990 trial is 35 years old and may not reflect modern formulations or populations.",
+        "severity": "high"
+      },
+      {
+        "issue": "Inflammation graded on single study only",
+        "detail": "The 2008 RCT (n=158) is the sole evidence for an inflammatory marker (C-reactive protein). A single study cannot establish consistency, and effect direction/magnitude cannot be validated. Replication is absent.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood sugar meta-analysis unreplicated and opaque",
+        "detail": "A 2015 meta-analysis is cited as the primary evidence for the 'Moderate' grade on glycemic control, but its sample sizes, included studies, and heterogeneity are not extractable from the abstract record. The only independent RCT is from 1991 (34 years old). No modern replication of the meta-analysis conclusion is visible.",
+        "severity": "high"
+      },
+      {
+        "issue": "Gut digestion evidence uses heterogeneous outcomes",
+        "detail": "The four studies measure strain engraftment (2025), diarrhea incidence (2019), abdominal pain in IBS (2017), and functional abdominal pain across sexes (2024)\u2014these are distinct clinical endpoints, not replicates of one outcome. Pooling is impossible, and the 'Moderate' grade masks outcome heterogeneity. A single large study (n=209) dominates and is unclassified in design, weakening evidence quality.",
+        "severity": "high"
+      },
+      {
+        "issue": "Meta-analyses not independently validated",
+        "detail": "For both blood sugar and lipids, a single meta-analysis is referenced as authoritative (2015 for glycemic control and lipids; unclear if the same review). The engine notes that conclusions are 'not independently replicated or verified.' Without access to the meta-analysis methods or secondary RCT data, the quality and directional bias of those syntheses cannot be evaluated.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Dated evidence base for some outcomes",
+        "detail": "Lipids trials span 1990\u20132015 (35-year gap, n=30 in the only RCT). Blood sugar's non-meta-analysis data point is from 1991. Modern efficacy and safety in contemporary populations (with changed diets, microbiota, and formulations) are not documented.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Psyllium is a soluble fiber; the plausible mechanism for slowing glucose absorption and binding bile acids (to reduce cholesterol) is biochemically sound. However, the clinical evidence is too sparse and fragmented to confirm that mechanism translates reliably to the endpoints claimed. The inflammation outcome (C-reactive protein via a single 2008 study) has no mechanistic pathway articulated in these records, creating an inferential gap between a gut polysaccharide and systemic inflammation markers.",
+    "strongest_counterargument": "A skeptic would note that no outcome has independent replication: gut outcomes use different measures; blood sugar and lipids each rest on a single opaque meta-analysis not validated by modern trials; inflammation is a single small study from 2008. The largest individual trial (n=209, 2024) is unclassified in design\u2014possibly observational. The absence of pooled effect estimates across the board means the claimed 'Moderate' grades may reflect absence of large harms rather than presence of meaningful benefit. Placebo-controlled RCTs with adequate concealment are not confirmed in these abstracts.",
+    "what_would_change_the_picture": "Two to three large (n\u2265100), contemporary, double-blind RCTs specifically powered for each outcome (blood sugar, lipid panel, abdominal pain, C-reactive protein) with pre-registered analysis, explicit baseline characteristics, and intention-to-treat reporting would establish replicability and precision. A modern systematic review synthesizing these new trials with extraction of effect sizes and heterogeneity analysis would resolve the current opacity.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

@@ -1,122 +1,10 @@
 {
   "name": "Cordyceps",
   "category": "herb",
-  "overall_score": 47,
-  "tier": "Emerging",
-  "study_count": 5,
+  "overall_score": 73,
+  "tier": "Moderate",
+  "study_count": 17,
   "claims": [
-    {
-      "outcome": "inflammation",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:39537075",
-        "PMID:35282803"
-      ],
-      "studies": [
-        {
-          "pmid": "39537075",
-          "title": "The effects of Cordyceps polysaccharides on ischemic brain injury in rats via intervening with IL-23/IL-17 axis and the intestinal barrier.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35282803",
-          "title": "Cordyceps Improves Obesity and its Related Inflammation via Modulation of",
-          "year": "2022",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For inflammation, Cordyceps has only preliminary or animal evidence (2 studies)."
-    },
-    {
-      "outcome": "gut / digestion",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:39537075",
-        "PMID:35282803"
-      ],
-      "studies": [
-        {
-          "pmid": "39537075",
-          "title": "The effects of Cordyceps polysaccharides on ischemic brain injury in rats via intervening with IL-23/IL-17 axis and the intestinal barrier.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35282803",
-          "title": "Cordyceps Improves Obesity and its Related Inflammation via Modulation of",
-          "year": "2022",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For gut / digestion, Cordyceps has only preliminary or animal evidence (2 studies)."
-    },
     {
       "outcome": "exercise performance",
       "tier": "Emerging",
@@ -163,17 +51,345 @@
       },
       "headline_effect": null,
       "summary": "For exercise performance, Cordyceps shows early but unsettled evidence (1 studies)."
+    },
+    {
+      "outcome": "immune function",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 35,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:26457607",
+        "PMID:38580687",
+        "PMID:42302943"
+      ],
+      "studies": [
+        {
+          "pmid": "26457607",
+          "title": "Cordyceps sinensis (a traditional Chinese medicine) for kidney transplant recipients.",
+          "year": "2015",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 447
+        },
+        {
+          "pmid": "38580687",
+          "title": "A randomized controlled clinical trial examining the effects of Cordyceps militaris beverage on the immune response in healthy adults.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": 10
+        },
+        {
+          "pmid": "42302943",
+          "title": "Cordyceps sinensis polysaccharide disrupts the macrophage pyroptosis-neutrophil extracellular traps axis to ameliorate acute lung injury.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For immune function, Cordyceps has moderate human evidence (3 studies)."
+    },
+    {
+      "outcome": "kidney function",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 7,
+      "grade_reasons": [
+        "Limited human evidence: 2 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 4,
+        "n_animal_studies": 3,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:38149724",
+        "PMID:25519252",
+        "PMID:26457607",
+        "PMID:38580687",
+        "PMID:19545680",
+        "PMID:37560890",
+        "PMID:36480757"
+      ],
+      "studies": [
+        {
+          "pmid": "26457607",
+          "title": "Cordyceps sinensis (a traditional Chinese medicine) for kidney transplant recipients.",
+          "year": "2015",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 447
+        },
+        {
+          "pmid": "25519252",
+          "title": "Cordyceps sinensis (a traditional Chinese medicine) for treating chronic kidney disease.",
+          "year": "2014",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 1746
+        },
+        {
+          "pmid": "38580687",
+          "title": "A randomized controlled clinical trial examining the effects of Cordyceps militaris beverage on the immune response in healthy adults.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": 10
+        },
+        {
+          "pmid": "19545680",
+          "title": "Clinical application of Cordyceps sinensis on immunosuppressive therapy in renal transplantation.",
+          "year": "2009",
+          "design": "RCT",
+          "population": "human",
+          "n": 202
+        },
+        {
+          "pmid": "38149724",
+          "title": "Cordyceps cicadae polysaccharides attenuate diabetic nephropathy via the miR-30a-3p/TRIM16 axis.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "37560890",
+          "title": "Antihyperuricemic and Renal Protective Effect of Cordyceps chanhua (Ascomycetes) Fruiting Bodies in Acute Hyperuricemia and Chronic Gout Rodent Models.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36480757",
+          "title": "The effect of low-dose Cordyceps on ischemia-reperfusion injury of the kidney in rats.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For kidney function, Cordyceps has moderate human evidence (7 studies)."
+    },
+    {
+      "outcome": "inflammation",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 6,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 6,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:39537075",
+        "PMID:35282803",
+        "PMID:38149724",
+        "PMID:42302943",
+        "PMID:36480757",
+        "PMID:39001695"
+      ],
+      "studies": [
+        {
+          "pmid": "42302943",
+          "title": "Cordyceps sinensis polysaccharide disrupts the macrophage pyroptosis-neutrophil extracellular traps axis to ameliorate acute lung injury.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "39537075",
+          "title": "The effects of Cordyceps polysaccharides on ischemic brain injury in rats via intervening with IL-23/IL-17 axis and the intestinal barrier.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "38149724",
+          "title": "Cordyceps cicadae polysaccharides attenuate diabetic nephropathy via the miR-30a-3p/TRIM16 axis.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36480757",
+          "title": "The effect of low-dose Cordyceps on ischemia-reperfusion injury of the kidney in rats.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "39001695",
+          "title": "Effect of cordyceps militaris on growth performance, antioxidant capacity, and intestinal epithelium functions in weaned pigs.",
+          "year": "2024",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "35282803",
+          "title": "Cordyceps Improves Obesity and its Related Inflammation via Modulation of",
+          "year": "2022",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For inflammation, Cordyceps has only preliminary or animal evidence (6 studies)."
     }
   ],
-  "effects_established": [],
+  "effects_established": [
+    "immune function",
+    "kidney function"
+  ],
   "effects_promising": [
-    "inflammation",
-    "gut / digestion",
-    "exercise performance"
+    "exercise performance",
+    "inflammation"
   ],
   "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506446.420842
+  "_cached_at": 1787607922.066946,
+  "explanation": {
+    "what_it_is": "Cordyceps is a genus of fungi (parasitic fungi that infect insects in nature) traditionally used in Chinese medicine, now cultivated commercially for supplements. The most studied species are *Cordyceps sinensis* and *Cordyceps militaris*, sold as powders, capsules, or beverages. Active compounds include polysaccharides, nucleosides (adenosine, cordycepin), and sterols that are believed to drive its biological effects.",
+    "how_it_works": "Cordyceps polysaccharides and cordycepin appear to work through multiple pathways: they may modulate immune cell activity (particularly macrophages and T cells) via pattern-recognition receptors, influence inflammatory cytokine signaling (IL-17, IL-23 axes), and reduce oxidative stress through upregulation of antioxidant enzymes. In the kidney, active compounds have been shown in animal studies to protect against injury by dampening maladaptive immune responses and reducing fibrosis-promoting signals. The mechanisms are not fully mapped in humans, but the evidence suggests effects on both innate and adaptive immunity rather than a single target.",
+    "outcome_detail": [
+      {
+        "outcome": "exercise performance",
+        "grade": "Emerging",
+        "what_studies_show": "A single 2004 randomized controlled trial (CordyMax Cs-4 formulation) found that Cordyceps sinensis supplementation did not improve endurance exercise performance in a small cohort. Sample sizes could not be verified from the abstract, making precision assessment uncertain.",
+        "why_this_grade": "Only one human study addresses this outcome and it showed no benefit. With no replication, no independent confirmation, and unverified sample size, the evidence is too thin and inconsistent to claim efficacy. The finding is preliminary."
+      },
+      {
+        "outcome": "immune function",
+        "grade": "Moderate",
+        "what_studies_show": "A 2015 meta-analysis of kidney transplant recipients (n=447) and a 2024 randomized controlled trial of *Cordyceps militaris* beverage (n=10) both examined immune outcomes. A 2026 animal study showed that *Cordyceps sinensis* polysaccharide modulated macrophage and neutrophil responses. The human trials are small and the meta-analysis pools heterogeneous interventions, limiting certainty.",
+        "why_this_grade": "Two human studies support immune effects, but only one meta-analysis examines this outcome across multiple trials, and that analysis itself awaits independent replication. Sample sizes are modest (especially the RCT at n=10) and consistency cannot be fully assessed. Grade reflects meaningful but not robust human evidence."
+      },
+      {
+        "outcome": "kidney function",
+        "grade": "Moderate",
+        "what_studies_show": "Four human studies\u2014two meta-analyses (2015, n=447 in transplant recipients; 2014, n=1746 in chronic kidney disease) and two RCTs (2024 and 2009, n=10 and n=202 respectively)\u2014examined kidney outcomes. Three animal studies (2024, 2023, 2022) showed protective effects in diabetic nephropathy and acute hyperuricemia models. The human evidence rests primarily on two trials and two pooled analyses; effect sizes and heterogeneity data are limited.",
+        "why_this_grade": "Moderate human evidence from both primary trials and meta-analyses supports benefit in kidney disease and transplantation contexts. However, only two primary human studies underpin the data (supplemented by meta-analyses), and sample sizes are modest to small. This falls short of strong evidence but exceeds preliminary status."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Preliminary",
+        "what_studies_show": "All six studies retrieved are animal-based: they demonstrate that *Cordyceps* polysaccharides reduce inflammatory markers (IL-17, IL-23 signaling) and macrophage activation in models of brain ischemia, diabetic nephropathy, kidney ischemia-reperfusion injury, and obesity-related inflammation. No human studies directly measuring inflammatory biomarkers were found in the records provided.",
+        "why_this_grade": "Evidence is exclusively animal; animal models do not reliably predict human inflammatory responses. Without human data, this outcome remains preliminary and speculative regarding clinical relevance."
+      }
+    ],
+    "evidence_base": "The research base is mixed: kidney function and immune outcomes have human trials and meta-analyses (totaling ~2,400 participants across studies), while inflammation rests entirely on animal work. Most human studies are small (n=10\u2013202) and span 2004\u20132024, with recent trials using cultivated *Cordyceps militaris*. Animal studies dominate inflammation research and supply mechanistic insight, but translation to human efficacy is uncertain. Overall, the field shows growing interest and moderate human evidence for kidney and immune effects, but inflammation and exercise performance are less established in people.",
+    "emerging_research": "Recent work (2024\u20132026) has focused on *Cordyceps militaris* polysaccharides and their impact on specific immune pathways (macrophage pyroptosis, IL-23/IL-17 axes) in animal disease models, including diabetic nephropathy and ischemic injury. This suggests refined understanding of how fungal polysaccharides modulate immune tolerance, particularly relevant to transplant and kidney disease contexts. However, these remain early-stage animal findings; human trials testing these specific mechanisms are not yet evident in the retrieved records.",
+    "open_questions": "Among the studies retrieved here, human evidence for kidney function comes from small trials and meta-analyses of mixed quality\u2014the 2014 meta-analysis included 1,746 people but does not specify effect sizes or long-term durability. Exercise performance rests on a single 2004 trial; no recent replication appears in the records. Inflammation is purely animal-based with no human safety or efficacy data retrieved. The retrieved records do not include long-term follow-up (most trials appear \u226412 weeks), and outcomes in specific populations (e.g., athletes, healthy adults without kidney disease) are not well represented.",
+    "caveats": "*Cordyceps sinensis* supplements vary widely in quality and cordycepin content depending on whether they are wild-harvested, lab-cultured, or fermented\u2014standardization is inconsistent across products. As an immunomodulatory agent, *Cordyceps* may interact with immunosuppressants or be inappropriate for people with autoimmune conditions; people taking transplant-related medications should consult a clinician. Injectable or IV cordyceps formulations are not standard pharmaceuticals and carry research-chemical risks; oral supplements are more widely used but evidence for purity and bioavailability is limited.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "Evidence for cordyceps is thin and mixed: exercise performance rests on a single small trial showing no benefit, immune and kidney claims rely heavily on meta-analyses of small primary studies, and inflammation data exist only in animals.",
+    "concerns": [
+      {
+        "issue": "Exercise performance: single negative trial only",
+        "detail": "The 'Emerging' grade for exercise performance is based entirely on one 2004 RCT that found cordyceps did NOT improve endurance performance. Sample sizes cannot be extracted from the abstract, so the trial's precision is unknown. A single study\u2014especially one showing a null result\u2014cannot establish efficacy, and this outcome should be understood as currently unsupported rather than 'emerging.'",
+        "severity": "high"
+      },
+      {
+        "issue": "Kidney function evidence dominated by two large meta-analyses",
+        "detail": "Of 4 human studies cited for kidney function, two are meta-analyses (2014, 2015) enrolling 447 and 1,746 participants respectively. Only 2 primary RCTs are listed (n=10 and n=202), and the smaller RCT is extremely underpowered. The 'Moderate' grade rests largely on pooled analyses of unstated primary trial quality and consistency; the engine itself notes 'Limited human evidence' below top tier, yet the grade remained Moderate.",
+        "severity": "high"
+      },
+      {
+        "issue": "Immune function: very small RCT alongside meta-analysis",
+        "detail": "One of the two human immune function studies is an RCT with n=10 (2024), which is unable to detect realistic effect sizes and carries extreme sampling variability. The meta-analysis (n=447, 2015) is single and not independently replicated. The engine notes consistency cannot be assessed beyond the one meta-analysis; a single pooled analysis is not sufficient to claim 'Moderate' confidence without knowing whether the underlying primary studies were methodologically sound.",
+        "severity": "high"
+      },
+      {
+        "issue": "Inflammation: animal-only evidence with unknown sample sizes",
+        "detail": "All 6 studies on inflammation are animal models (rats, likely); none are human trials. Four are unclassified by study design or have design details not stated. No sample sizes are extractable from the abstracts provided. The engine correctly flags 'Indirectness' but the 'Preliminary' grade still appears optimistic given this is zero human data and mechanistic leap to clinical relevance is unverified.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Meta-analyses lack stated replication and quality assessment visibility",
+        "detail": "Three meta-analyses are cited (2014, 2015 for kidney; 2015 for immune function). The engine notes that for immune function, 'a single meta-analysis exists, but its conclusion is not independently replicated or verified.' For the kidney meta-analyses, no information is visible about which primary studies were pooled, their methodological quality, or heterogeneity; this limits confidence in the pooled estimates. Sample size reporting is also incomplete (4 of 7 studies for kidney report n).",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The studies cite polysaccharide components and immunomodulatory or anti-inflammatory pathways (e.g., macrophage pyroptosis, miR-30a-3p/TRIM16 axis, IL-23 signaling). These are plausible mechanisms in animal models, but the leap from rodent ischemia-reperfusion models or in vitro immune assays to human kidney transplant outcomes or chronic kidney disease is large and not bridged by mechanistic human data. The mechanism is biologically coherent but does not validate the clinical claims in the absence of robust human efficacy trials.",
+    "strongest_counterargument": "A well-informed skeptic would note that the single exercise trial found *no* benefit, and for kidney function the evidence rests on two meta-analyses (2014, 2015) whose primary trial quality is not visible here; those meta-analyses may have pooled weak or high-bias studies. The immune function RCT is underpowered (n=10), and inflammation is purely animal-based. Taken together, there is no compelling human evidence that cordyceps improves any of these outcomes\u2014the 'Moderate' grades for immune and kidney function appear generous given the methodological thinness of the underlying primary research.",
+    "what_would_change_the_picture": "Large, well-controlled RCTs (n\u2265100\u2013200) in specific patient populations (e.g., chronic kidney disease, post-transplant immunosuppression, or exercise-limited populations) with pre-registered primary outcomes and transparent reporting of safety and adherence would be needed. Independent replication of the kidney and immune meta-analyses, with quality assessment of included trials and sensitivity analyses for publication bias, would also clarify whether the current pooled results are robust or driven by small, low-quality studies.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

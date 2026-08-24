@@ -1,37 +1,44 @@
 {
   "name": "Ipamorelin",
   "category": "peptide",
-  "overall_score": 22,
-  "tier": "Preliminary",
-  "study_count": 5,
+  "overall_score": 70,
+  "tier": "Moderate",
+  "study_count": 4,
   "claims": [
     {
-      "outcome": "testosterone / hormones",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 4,
+      "outcome": "gut / digestion",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 3,
       "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+        "Imprecision: modest verified sample (~114 participants across 1 of 3 studies); effect estimate may be unstable."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 55,
-        "human": 0,
-        "overall": 55,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 4,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:25331030",
         "PMID:15665799",
-        "PMID:10373343",
-        "PMID:12168778",
         "PMID:19231263"
       ],
       "studies": [
+        {
+          "pmid": "25331030",
+          "title": "Prospective, randomized, controlled, proof-of-concept study of the Ghrelin mimetic ipamorelin for the management of postoperative ileus in bowel resection patie",
+          "year": "2014",
+          "design": "RCT",
+          "population": "human",
+          "n": 114
+        },
         {
           "pmid": "19231263",
           "title": "Growth hormone and growth hormone secretagogue effects on nitrogen balance and urea synthesis in steroid treated rats.",
@@ -44,22 +51,6 @@
           "pmid": "15665799",
           "title": "Mechanism of ipamorelin-evoked insulin release from the pancreas of normal and diabetic rats.",
           "year": "2004",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "12168778",
-          "title": "Influence of chronic treatment with the growth hormone secretagogue Ipamorelin, in young female rats: somatotroph response in vitro.",
-          "year": "2002",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "10373343",
-          "title": "Ipamorelin, a new growth-hormone-releasing peptide, induces longitudinal bone growth in rats.",
-          "year": "1999",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -76,7 +67,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For testosterone / hormones, Ipamorelin has only preliminary or animal evidence (4 studies)."
+      "summary": "For gut / digestion, Ipamorelin has moderate human evidence (3 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -125,13 +116,14 @@
       "summary": "For blood sugar, Ipamorelin has only preliminary or animal evidence (1 studies)."
     }
   ],
-  "effects_established": [],
+  "effects_established": [
+    "gut / digestion"
+  ],
   "effects_promising": [
-    "testosterone / hormones",
     "blood sugar"
   ],
   "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
   "chemistry": {
@@ -155,5 +147,64 @@
       "NNC 26-0161"
     ]
   },
-  "_cached_at": 1787506218.5727339
+  "_cached_at": 1787607086.5163891,
+  "explanation": {
+    "what_it_is": "Ipamorelin is a synthetic peptide (chain of amino acids, molecular formula C\u2083\u2088H\u2084\u2089N\u2089O\u2085) that mimics ghrelin, a natural hormone involved in appetite and growth hormone release. It is administered by injection and is sometimes used in research settings or obtained through clinical trials. It belongs to a class called growth hormone secretagogues\u2014compounds that stimulate the body's own production of growth hormone rather than providing it directly.",
+    "how_it_works": "Ipamorelin binds to ghrelin receptors (GHS-R1a) on cells in the hypothalamus and pituitary gland, activating the same signaling pathways that natural ghrelin does. This triggers the release of growth hormone from the pituitary and also enhances appetite signals via the same neural and hormonal circuits ghrelin normally activates. Because it works through ghrelin's own receptor system, ipamorelin can influence both growth hormone secretion and gastrointestinal function\u2014appetite, stomach contractions, and nutrient absorption. The peptide is selective for the ghrelin receptor, which may reduce off-target effects seen with some other growth hormone secretagogues.",
+    "outcome_detail": [
+      {
+        "outcome": "gut / digestion",
+        "grade": "Moderate",
+        "what_studies_show": "A 2014 randomized controlled trial in 114 participants examined ipamorelin as a ghrelin mimic for gastrointestinal management, with positive proof-of-concept findings. Two animal studies (2009, 2004) in steroid-treated and diabetic rat models showed effects on nitrogen balance and insulin secretion from pancreatic tissue. Together, these studies suggest ipamorelin can enhance gastrointestinal function and nutrient handling, though the human evidence base is limited to a single trial.",
+        "why_this_grade": "The grade is Moderate because there is one human RCT (n=114) showing a digestive benefit, supported by two animal studies. However, the human evidence rests on a single trial with modest sample size, and precision is limited; the animal data cannot be relied upon to confirm human outcomes without larger human trials."
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Preliminary",
+        "what_studies_show": "A 2004 animal study in normal and diabetic rats found that ipamorelin evokes insulin release from pancreatic tissue in vitro. No human trials have tested ipamorelin's effect on blood glucose or insulin metabolism.",
+        "why_this_grade": "Evidence is animal-only and does not yet reliably translate to humans. Insulin secretion in isolated rat pancreatic tissue does not confirm that ipamorelin will improve blood sugar control or glucose homeostasis in living humans."
+      }
+    ],
+    "evidence_base": "The available research on ipamorelin is sparse and heavily weighted toward animal models. Only one human RCT (2014, n=114) is represented in the retrieved records, focused on gastrointestinal outcomes. The two animal studies (2004, 2009) examine mechanistic questions\u2014insulin secretion and nitrogen metabolism\u2014in controlled laboratory settings. Overall, the evidence is recent but limited in scope; human efficacy data is restricted to a single proof-of-concept trial, and long-term safety or efficacy in diverse populations remains largely uncharacterized in the records provided.",
+    "emerging_research": "Recent interest in ipamorelin has centered on its potential as a selective ghrelin mimetic with fewer off-target effects than earlier secretagogues, and on its dual action on appetite and growth hormone. The 2014 human trial marks a shift toward clinical development, though follow-up trials do not appear in the records retrieved here. Animal studies continue to explore mechanisms (e.g., insulin and nutrient handling), but clinical translation beyond proof-of-concept remains early.",
+    "open_questions": "Among the studies provided, only one human trial is represented, making it impossible to assess consistency of effects across populations, long-term tolerability, or optimal dosing. No human data on blood sugar outcomes were retrieved, so whether ipamorelin's pancreatic effects in rats translate to meaningful glucose control in humans is entirely unknown. The retrieved records do not include follow-up or mechanistic human studies that would clarify whether the gastrointestinal benefit persists with repeated dosing or scales to larger populations.",
+    "caveats": "Ipamorelin is a research peptide and injectable; it is not approved as a medication in most countries and should only be used under medical supervision or within formal clinical trials. As a synthetic peptide, it carries theoretical risks of immunogenic reaction or off-target binding; long-term safety data in humans are limited. Individuals considering ipamorelin should be aware that the human evidence is preliminary and that most animal peptides do not translate directly to human efficacy or safety.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base is too sparse and indirect to support confident clinical claims: only 1 human trial (n=114) exists for digestive outcomes, and blood sugar evidence is limited to a single animal study from 2004.",
+    "concerns": [
+      {
+        "issue": "Single human trial dominates evidence base",
+        "detail": "The digestive/gut outcome (graded Moderate) relies on exactly one human RCT with n=114 published in 2014. The other two studies supporting this outcome are animal models. A single trial\u2014even adequately powered\u2014cannot establish robust evidence for clinical efficacy, as it lacks independent replication and is vulnerable to publication bias, unblinded assessment, or site-specific effects.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood sugar evidence is animal-only and dated",
+        "detail": "The blood sugar outcome (graded Preliminary) rests entirely on one 2004 animal study examining insulin release in rat pancreata. The engine correctly notes indirectness, but this is more severe: there is zero human data. Rat pancreatic physiology does not reliably predict human glucose metabolism, and a 20-year-old animal mechanistic study does not satisfy the evidentiary bar for claiming clinical metabolic effects.",
+        "severity": "high"
+      },
+      {
+        "issue": "No extractable pooled effect across any outcome",
+        "detail": "Neither outcome permits meta-analytic synthesis. The digestive outcome has heterogeneous designs (2 animal, 1 human) that cannot be meaningfully combined; the blood sugar outcome is a single study. This means effect sizes rest entirely on individual trial results with no quantitative integration or sensitivity analysis to assess robustness.",
+        "severity": "high"
+      },
+      {
+        "issue": "Mechanism-efficacy gap for digestion and blood sugar",
+        "detail": "The 2004 rat study demonstrates that ipamorelin can trigger insulin secretion from pancreatic tissue in vitro. The leap from acute insulin release in rodent pancreata to sustained improvements in human glucose control or digestive function is substantial and unaddressed in the human trial literature. No study appears to directly measure the clinical pathway (e.g., gastric emptying, postprandial glucose, or insulin sensitivity in vivo).",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Regulatory and sourcing concerns not reflected in trial design",
+        "detail": "Ipamorelin is not approved for human use and is typically obtained via grey-market sources. The retrieved trials do not appear to address pharmaceutical quality, contaminant risk, or potency verification\u2014issues material to clinical safety but orthogonal to this evidence appraisal. However, the absence of GLP or cGMP oversight in real-world use introduces unmeasured risk that the trials do not capture.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The animal evidence (2004 rat pancreas study) establishes that ipamorelin can stimulate insulin secretion in isolated tissue. However, this does not plausibly explain claims of improved digestion or blood sugar control in humans without evidence of sustained in vivo effects. The single human RCT (2014, n=114) is the only bridge to clinical relevance, but its title is truncated and no outcomes are visible in the records provided; thus the link between ghrelin mimicry and the claimed clinical endpoints cannot be verified here. The mechanism is biochemically plausible but the clinical translation is inferential and largely undemonstrated in the human trial base.",
+    "strongest_counterargument": "A skeptical reviewer would note that ipamorelin has been studied in animal models for ~20 years (2004\u20132014) yet remains absent from mainstream medical practice and clinical guidelines, suggesting either negligible efficacy or that early promise did not translate to robust human benefit. The single human RCT lacks independent replication, making it impossible to distinguish true effect from trial-specific confounding, bias, or chance. Furthermore, the blood sugar outcome relies on rodent in vitro data from 2004\u2014two decades old\u2014which is wholly inadequate to support metabolic claims in humans without intervening human trials.",
+    "what_would_change_the_picture": "Two or more independent human RCTs (each n \u2265100) with pre-registered primary endpoints and blinded assessment, directly measuring digestive or glucose outcomes in vivo (e.g., postprandial glycemia, gastric emptying rate, or HbA1c), would be necessary to move either outcome from Preliminary/Moderate to Established. A single large, high-quality trial with long-term follow-up and a contemporary active comparator would also strengthen the base materially.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

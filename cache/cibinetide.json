@@ -3,32 +3,31 @@
   "category": "peptide",
   "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 12,
+  "study_count": 16,
   "claims": [
     {
-      "outcome": "immune function",
+      "outcome": "tendon / tissue healing",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 2,
       "grade_reasons": [
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
+        "mechanistic": 25,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
         "n_human_studies": 1,
-        "n_animal_studies": 2,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:29026145",
-        "PMID:26774587",
-        "PMID:24136731"
+        "PMID:24136731",
+        "PMID:29223734"
       ],
       "studies": [
         {
@@ -40,17 +39,9 @@
           "n": null
         },
         {
-          "pmid": "29026145",
-          "title": "Cibinetide dampens innate immune cell functions thus ameliorating the course of experimental colitis.",
-          "year": "2017",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "26774587",
-          "title": "ARA 290 relieves pathophysiological pain by targeting TRPV1 channel: Integration between immune system and nociception.",
-          "year": "2016",
+          "pmid": "29223734",
+          "title": "Activation of the EPOR-\u03b2 common receptor complex by cibinetide ameliorates impaired wound healing in mice with genetic diabetes.",
+          "year": "2018",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -67,7 +58,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For immune function, Cibinetide has moderate human evidence (3 studies)."
+      "summary": "For tendon / tissue healing, Cibinetide has moderate human evidence (2 studies)."
     },
     {
       "outcome": "inflammation",
@@ -170,30 +161,49 @@
       "summary": "For inflammation, Cibinetide has moderate human evidence (7 studies)."
     },
     {
-      "outcome": "tendon / tissue healing",
+      "outcome": "neuropathic pain",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 5,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Imprecision: modest verified sample (~64 participants across 1 of 5 studies); effect estimate may be unstable."
       ],
       "layers": {
-        "mechanistic": 25,
+        "mechanistic": 30,
         "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 1,
+        "n_human_studies": 4,
         "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:24136731",
-        "PMID:29223734"
+        "PMID:28475703",
+        "PMID:29549285",
+        "PMID:25387363",
+        "PMID:26774587",
+        "PMID:24136731"
       ],
       "studies": [
+        {
+          "pmid": "28475703",
+          "title": "Cibinetide Improves Corneal Nerve Fiber Abundance in Patients With Sarcoidosis-Associated Small Nerve Fiber Loss and Neuropathic Pain.",
+          "year": "2017",
+          "design": "RCT",
+          "population": "human",
+          "n": 64
+        },
+        {
+          "pmid": "25387363",
+          "title": "ARA 290, a nonerythropoietic peptide engineered from erythropoietin, improves metabolic control and neuropathic symptoms in patients with type 2 diabetes.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
         {
           "pmid": "24136731",
           "title": "ARA 290 improves symptoms in patients with sarcoidosis-associated small nerve fiber loss and increases corneal nerve fiber density.",
@@ -203,9 +213,17 @@
           "n": null
         },
         {
-          "pmid": "29223734",
-          "title": "Activation of the EPOR-\u03b2 common receptor complex by cibinetide ameliorates impaired wound healing in mice with genetic diabetes.",
+          "pmid": "29549285",
+          "title": "Corneal nerve fiber size adds utility to the diagnosis and assessment of therapeutic response in patients with small fiber neuropathy.",
           "year": "2018",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "26774587",
+          "title": "ARA 290 relieves pathophysiological pain by targeting TRPV1 channel: Integration between immune system and nociception.",
+          "year": "2016",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -222,15 +240,72 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For tendon / tissue healing, Cibinetide has moderate human evidence (2 studies)."
+      "summary": "For neuropathic pain, Cibinetide has moderate human evidence (5 studies)."
+    },
+    {
+      "outcome": "blood sugar",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 45,
+        "human": 0,
+        "overall": 45,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 2,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:32345869",
+        "PMID:26683514"
+      ],
+      "studies": [
+        {
+          "pmid": "32345869",
+          "title": "Improvement of Islet Allograft Function Using Cibinetide, an Innate Repair Receptor Ligand.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "26683514",
+          "title": "A Nonhematopoietic Erythropoietin Analogue, ARA 290, Inhibits Macrophage Activation and Prevents Damage to Transplanted Islets.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For blood sugar, Cibinetide has only preliminary or animal evidence (2 studies)."
     }
   ],
   "effects_established": [
-    "immune function",
+    "tendon / tissue healing",
     "inflammation",
-    "tendon / tissue healing"
+    "neuropathic pain"
   ],
-  "effects_promising": [],
+  "effects_promising": [
+    "blood sugar"
+  ],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
@@ -256,5 +331,76 @@
       "ARA 290"
     ]
   },
-  "_cached_at": 1787506678.8603652
+  "_cached_at": 1787608804.6190422,
+  "explanation": {
+    "what_it_is": "Cibinetide (also known as ARA290) is a 51-amino-acid synthetic peptide engineered from erythropoietin, a naturally occurring hormone that regulates red blood cell production. Unlike erythropoietin itself, cibinetide is designed to activate repair and immune-tolerance pathways without stimulating red blood cell formation. It is administered by injection and is primarily used in research and clinical trials rather than as an approved therapeutic.",
+    "how_it_works": "Cibinetide activates the erythropoietin receptor-\u03b2 (EPOR-\u03b2) common receptor complex, a signaling pathway distinct from the classical erythropoietin pathway. This activation triggers innate repair mechanisms\u2014processes the body uses to heal tissue damage and resolve inflammation. In particular, it appears to dampen excessive immune activation (particularly macrophage and innate immune cell activity) and may modulate pain-sensing pathways, including the TRPV1 channel involved in neuropathic pain. The net effect is reduced inflammatory damage and improved repair in tissues affected by nerve loss, injury, or autoimmune processes.",
+    "outcome_detail": [
+      {
+        "outcome": "neuropathic pain",
+        "grade": "Moderate",
+        "what_studies_show": "Four human randomized controlled trials (including a 2017 study of 64 patients with sarcoidosis-associated small nerve fiber loss, and studies from 2013 and 2015) showed that cibinetide improved neuropathic pain symptoms and increased corneal nerve fiber abundance in patients with small fiber neuropathy. One animal study (2016) found that ARA290 relieves pain by targeting TRPV1 channels. The human trials focused mainly on sarcoidosis and metabolic neuropathy populations.",
+        "why_this_grade": "Human evidence is present and consistent across multiple RCTs, supporting a moderate grade. However, the largest verified human sample was 64 participants in a single trial, and sample sizes across the other studies could not be confirmed from the abstracts, leaving effect estimates potentially unstable. This imprecision prevents a higher grade."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "Two human studies (a 2013 RCT in sarcoidosis patients and a 2018 unclassified study) and five animal studies (2020, 2017, 2016 two reports) demonstrated that cibinetide reduces inflammatory markers and dampens innate immune cell activation. Animal studies showed it ameliorates colitis, protects islet allografts, and inhibits macrophage activation. Human studies primarily measured corneal nerve recovery in sarcoidosis as a proxy for systemic inflammation.",
+        "why_this_grade": "Moderate human evidence supports an anti-inflammatory effect, with supporting animal mechanistic data. However, sample sizes across the human studies could not be verified from the abstracts provided, and the clinical populations studied are limited in scope, capping certainty below the highest tier."
+      },
+      {
+        "outcome": "tendon / tissue healing",
+        "grade": "Moderate",
+        "what_studies_show": "A 2013 human RCT in sarcoidosis patients showed improved symptoms and increased corneal nerve fiber density (a marker of tissue healing). A 2018 animal study demonstrated that cibinetide activation of the EPOR-\u03b2 receptor complex ameliorates impaired wound healing in mice. Together, these suggest cibinetide can promote tissue repair in both nerve and dermal contexts.",
+        "why_this_grade": "Both human and animal evidence point toward a tissue-healing benefit, justifying a Moderate grade. However, human evidence is limited to one trial with unverified sample size and corneal nerve recovery as the primary healing marker, rather than direct measurement of wound or tendon repair. This imprecision prevents a higher grade."
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Preliminary",
+        "what_studies_show": "Two animal studies (2020 and 2016) reported that cibinetide improved islet allograft function and metabolic control in mice. No human studies on blood sugar control were among the retrieved records.",
+        "why_this_grade": "Evidence is animal-only and does not yet translate reliably to human glucose metabolism or diabetes management. The findings are promising mechanistically but remain preliminary pending human trial data."
+      }
+    ],
+    "evidence_base": "The retrieved literature includes 4 human studies (primarily RCTs in sarcoidosis and small fiber neuropathy, mostly 2013\u20132018) and 6 animal studies (2016\u20132020). Human evidence is modest in size and focused on niche populations (sarcoidosis, inherited neuropathy); animal studies provide mechanistic insight into immune suppression and tissue repair. Overall, the evidence base is small and recent, with most human work appearing in the mid-to-late 2010s. This limits confidence to the Moderate tier and leaves open questions about efficacy in broader populations and longer-term safety.",
+    "emerging_research": "Recent animal work (2020) has expanded focus to allograft transplant tolerance and islet cell survival, suggesting potential applications in transplantation medicine beyond neuropathy. A 2016 study linking pain relief to TRPV1 channel modulation opens a mechanistic avenue for chronic pain conditions beyond small fiber neuropathy. However, these directions remain early-stage and animal-derived; human validation is lacking in the retrieved records.",
+    "open_questions": "Among the studies provided, human evidence is confined to sarcoidosis-associated neuropathy and metabolic neuropathy; efficacy in other pain or inflammatory conditions, and in broader patient populations (e.g., diabetes, trauma, or post-surgical healing), is not represented in these records. Trial durations visible here are short (weeks to months); whether benefits persist or accrue over longer follow-up is unclear from the retrieved abstracts. Blood sugar control is entirely animal-derived, with no human data in the records provided. Note: these observations describe only the sample of ~40 abstracts retrieved per outcome; they do not characterize the full landscape of cibinetide research globally.",
+    "caveats": "Cibinetide is an injectable peptide often classified as a research chemical; it is not approved by the FDA or EMA for routine clinical use and carries uncertain long-term safety and pharmacokinetic profiles. Peptides can trigger immune responses or degrade rapidly in circulation, and interactions with other medications are not well-documented in the records provided. Individuals considering use should do so only under medical supervision in a clinical trial or approved-use setting, and should discuss contraindications with their physician.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "This evidence base is dominated by animal studies and tiny human trials with unverifiable sample sizes; the only human RCT with a reported n shows 64 participants, and no pooled effects are extractable, making any claim about clinical magnitude highly uncertain.",
+    "concerns": [
+      {
+        "issue": "Sample sizes unverifiable for most human evidence",
+        "detail": "Of 6 human studies across all outcomes, only 1 RCT (2017, neuropathic pain) explicitly reports n=64. The remaining 5 human studies have sample sizes listed as 'none extractable from these abstracts.' Without knowing whether these are n=20 or n=200, the precision and stability of any clinical claim cannot be assessed. A single small trial could dominate the picture.",
+        "severity": "high"
+      },
+      {
+        "issue": "Severe imbalance favoring animal evidence",
+        "detail": "The inflammation outcome (graded Moderate) rests on only 2 human studies vs. 5 animal studies. Tendon healing (Moderate) is 1 human + 1 animal. Animal models of inflammation, wound healing, and pain relief do not reliably predict human efficacy\u2014this is a well-documented translational failure mode. The human evidence alone for inflammation and tissue healing is minimal.",
+        "severity": "high"
+      },
+      {
+        "issue": "No pooled effect estimates reported across any outcome",
+        "detail": "For neuropathic pain, inflammation, and tendon healing, the records state 'pooled effect: none extractable.' This suggests either heterogeneous designs preventing meta-analysis, or individual studies were too small to combine. Without knowing the direction and magnitude of individual effects, or whether they are consistent, it is impossible to appraise whether the 'Moderate' grades reflect convergent evidence or scattered positive signals.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood sugar evidence is animal-only, capped at Preliminary",
+        "detail": "Both blood sugar studies (2016, 2020) are animal trials with unverifiable sample sizes. The engine correctly notes this is indirect evidence. Any claim about cibinetide's effect on human glucose control is unsupported by human data and should not be cited in clinical contexts.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Study selection and retrieval bias unknown",
+        "detail": "These records represent ~40 retrieved abstracts; the full literature on cibinetide and ARA 290 (which appear to be related or identical compounds, based on title overlap) may be larger. The extent to which negative or null studies were excluded from this sample is not visible. The 2013\u20132020 window is now 5+ years old; more recent evidence is not reflected.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Cibinetide is described as ligand for the 'innate repair receptor' (EPOR-\u03b2 common receptor complex); proposed to reduce macrophage activation and inflammation, and promote nerve fiber regeneration. The animal studies directly test this mechanism (e.g., macrophage inhibition, wound healing). The human evidence is limited to symptom and biomarker endpoints (nerve fiber abundance, pain scores, corneal innervation) in small populations with neuropathy or sarcoidosis. There is no large inferential leap between the proposed mechanism and the measured clinical outcomes, but the human evidence is too thin to confirm that mechanism translation occurred.",
+    "strongest_counterargument": "A skeptic would note that cibinetide is not approved for human use and the cited human evidence consists of 6 trials (mostly unspecified n) over 7 years, with only one study clearly reporting 64 participants. Even the neuropathic pain outcome\u2014the most supported\u2014rests on 3 RCTs of unknown total n (one was 64), meaning the actual sample could be as small as 100\u2013150 across three arms. At this scale, any single outlier, unblinded outcome assessment, or selective reporting would substantially shift the pooled result. The animal evidence cannot compensate for this, as animal models of pain and inflammation are known to be poor predictors of human drug efficacy. The lack of any extractable pooled effect means there is no quantified clinical benefit to reference.",
+    "what_would_change_the_picture": "A well-powered, pre-registered, double-blind RCT in humans (n \u2265 300 per arm) with a single primary endpoint (e.g., neuropathic pain intensity or time to functional recovery in a defined neuropathy cohort) and transparent reporting of secondary endpoints would establish whether cibinetide has a clinically meaningful effect. Replication of that result in an independent population would shift the evidence from 'preliminary' to 'established.'",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

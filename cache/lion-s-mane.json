@@ -1,9 +1,9 @@
 {
   "name": "Lion's Mane",
   "category": "nootropic",
-  "overall_score": 47,
-  "tier": "Emerging",
-  "study_count": 4,
+  "overall_score": 70,
+  "tier": "Moderate",
+  "study_count": 5,
   "claims": [
     {
       "outcome": "cognition",
@@ -53,29 +53,38 @@
       "summary": "For cognition, Lion's Mane shows early but unsettled evidence (1 studies)."
     },
     {
-      "outcome": "inflammation",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
+      "outcome": "mood / depression",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
       "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
-        "mechanistic": 20,
+        "mechanistic": 25,
         "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
         "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:38004235",
         "PMID:26559695"
       ],
       "studies": [
+        {
+          "pmid": "38004235",
+          "title": "The Acute and Chronic Effects of Lion's Mane Mushroom Supplementation on Cognitive Function, Stress and Mood in Young Adults: A Double-Blind, Parallel Groups, P",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
         {
           "pmid": "26559695",
           "title": "The Anti-Inflammatory Effects of Lion's Mane Culinary-Medicinal Mushroom, Hericium erinaceus (Higher Basidiomycetes) in a Coculture System of 3T3-L1 Adipocytes ",
@@ -96,54 +105,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Lion's Mane has only preliminary or animal evidence (1 studies)."
-    },
-    {
-      "outcome": "mood / depression",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
-      "has_human_evidence": true,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 1,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:38004235"
-      ],
-      "studies": [
-        {
-          "pmid": "38004235",
-          "title": "The Acute and Chronic Effects of Lion's Mane Mushroom Supplementation on Cognitive Function, Stress and Mood in Young Adults: A Double-Blind, Parallel Groups, P",
-          "year": "2023",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For mood / depression, Lion's Mane shows early but unsettled evidence (1 studies)."
+      "summary": "For mood / depression, Lion's Mane has moderate human evidence (2 studies)."
     },
     {
       "outcome": "stress / anxiety",
@@ -191,18 +153,139 @@
       },
       "headline_effect": null,
       "summary": "For stress / anxiety, Lion's Mane shows early but unsettled evidence (1 studies)."
+    },
+    {
+      "outcome": "gut / digestion",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Indirectness: no clearly human-population evidence detected.",
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 0,
+        "human": 0,
+        "overall": 20,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 0,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:41908968"
+      ],
+      "studies": [
+        {
+          "pmid": "41908968",
+          "title": "Effect of lion's mane mushroom (",
+          "year": "2026",
+          "design": "Unclassified",
+          "population": "unknown",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For gut / digestion, Lion's Mane has only preliminary or animal evidence (1 studies)."
     }
   ],
-  "effects_established": [],
+  "effects_established": [
+    "mood / depression"
+  ],
   "effects_promising": [
     "cognition",
-    "inflammation",
-    "mood / depression",
     "stress / anxiety"
   ],
-  "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "effects_emerging": [
+    "gut / digestion"
+  ],
+  "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506267.021292
+  "_cached_at": 1787607220.971366,
+  "explanation": {
+    "what_it_is": "Lion's Mane (Hericium erinaceus) is a medicinal mushroom native to Asia, characterized by its distinctive white, cascading appearance. It contains bioactive compounds including hericenones and erinacines, which are small molecules that can cross the blood-brain barrier. People typically consume it as a dried powder, extract, capsule, or culinary preparation, often marketed for cognitive and mood support.",
+    "how_it_works": "Lion's Mane is believed to work primarily by stimulating the production of nerve growth factor (NGF), a protein critical for the growth, maintenance, and survival of neurons. The hericenones and erinacines in the mushroom cross the blood-brain barrier and activate pathways that encourage neuroplasticity \u2014 the brain's ability to form new connections and adapt. This mechanism could theoretically support memory, focus, and emotional resilience, since impaired neuroplasticity and reduced NGF are associated with cognitive decline and mood disorders. Additionally, Lion's Mane has been shown to have anti-inflammatory properties in animal models, which may protect brain tissue from damage.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Emerging",
+        "what_studies_show": "A 2023 randomized controlled trial examined the acute and chronic effects of Lion's Mane supplementation on cognitive function. While the study design was rigorous, sample sizes could not be verified from the abstract, and this is currently the only human study addressing cognition in the retrieved records, making it impossible to assess consistency across trials.",
+        "why_this_grade": "Emerging reflects genuine human evidence from a properly designed trial, but the single study and unconfirmed sample size limit certainty. We cannot yet call this outcome established because one trial is insufficient to confirm effects or rule out chance findings."
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Moderate",
+        "what_studies_show": "A 2023 randomized controlled trial in humans found effects of Lion's Mane on mood, and a 2015 animal study demonstrated anti-inflammatory properties of the mushroom, which is relevant to mood since inflammation is implicated in depression. Together, these two studies provide both human and mechanistic animal support for a mood-related benefit.",
+        "why_this_grade": "Moderate grade reflects one human RCT paired with supporting animal evidence of anti-inflammatory action. However, sample sizes in the human trial could not be verified, and only one human study limits our certainty about the magnitude and consistency of real-world mood effects."
+      },
+      {
+        "outcome": "stress / anxiety",
+        "grade": "Emerging",
+        "what_studies_show": "A 2023 randomized controlled trial measured acute and chronic effects of Lion's Mane on stress and mood outcomes. This is the only study in the retrieved records specifically addressing stress or anxiety in humans, and sample sizes could not be verified from the abstract.",
+        "why_this_grade": "Emerging indicates there is human evidence from a proper trial design, but a single study with unconfirmed precision cannot yet establish a reliable effect. Consistency across independent trials has not been demonstrated."
+      },
+      {
+        "outcome": "gut / digestion",
+        "grade": "Preliminary",
+        "what_studies_show": "One study titled 'Effect of lion's mane mushroom' was retrieved, but it appears to lack clear human population evidence or a readily identifiable study design in the abstract.",
+        "why_this_grade": "Preliminary reflects insufficient or indirect evidence. Without confirmed human data or clear study design information, we cannot assess whether Lion's Mane actually affects digestive health or function."
+      }
+    ],
+    "evidence_base": "The research on Lion's Mane is dominated by a single 2023 human RCT that addresses cognition, mood, and stress simultaneously \u2014 a breadth that sometimes masks the thinness of the literature on each outcome individually. Animal studies, particularly a 2015 investigation of anti-inflammatory mechanisms, provide plausible biological support but cannot directly prove human benefit. The overall evidence base is young and small; no large multi-center trials or long-term follow-up studies appear in the retrieved records. This means our confidence remains moderate at best, and more independent human trials are needed to confirm effects.",
+    "emerging_research": "A 2026 study on gut and digestion effects is forthcoming, though details are limited in the current records. Recent work continues to explore how hericenones and erinacines modulate NGF pathways in the brain and whether the mushroom's anti-inflammatory properties extend to systemic effects beyond the brain. Ongoing research is also likely examining dose-response relationships and whether benefits accumulate over longer supplementation periods, though the retrieved abstracts do not yet clarify these findings.",
+    "open_questions": "Among the studies provided here, the 2023 RCT appears to be the primary human evidence for cognition, mood, and stress, but sample sizes and precise outcome measures cannot be confirmed from the abstracts alone \u2014 a significant limitation. None of the retrieved records detail how long participants were followed beyond the trial duration shown, so durability of any benefit remains unclear. The gut/digestion outcome rests on a single unclassified study with no confirmed human evidence, leaving this outcome especially uncertain. Note: this description reflects only the ~40 studies retrieved for these outcomes; a complete picture of the global literature may differ.",
+    "caveats": "Lion's Mane is generally well-tolerated, but quality and standardization of commercial products vary widely \u2014 content of active compounds may not match label claims. People taking blood thinners or those with mushroom allergies should consult a healthcare provider before use. Pregnant or nursing women and those with immunocompromised conditions should exercise caution, as safety in these groups has not been well studied in the human trials retrieved here.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The entire evidence base rests on a single 2023 human RCT for cognition and stress, one 2015 animal study for mood, and an unclassified 2026 study of unknown design\u2014sample sizes are not extractable from any record, making precision impossible to assess.",
+    "concerns": [
+      {
+        "issue": "Extreme sparsity and non-replication",
+        "detail": "Three of four outcomes (cognition, stress, gut/digestion) are supported by only one study each; mood has two studies but one is animal-only. The 2023 RCT appears to be the sole human evidence for cognition and stress simultaneously, yet the engine could not extract sample sizes from its abstract. A single small trial or methodological flaw would render both 'Emerging' grades unsupported.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sample sizes completely opaque",
+        "detail": "The engine explicitly notes that sample sizes 'could not be verified from the abstracts' for cognition, mood, and stress. Without knowing whether trials enrolled 20 or 200 participants, precision and confidence intervals cannot be assessed. This is not a minor reporting gap\u2014it is a fundamental inability to judge whether observed effects are noise or signal.",
+        "severity": "high"
+      },
+      {
+        "issue": "Animal-to-human evidence leap for mood",
+        "detail": "The 'Moderate' grade for mood rests on one 2015 animal study and one 2023 human RCT. The animal study (titled 'Anti-Inflammatory Effects') does not establish that mouse or rat mood/depression improvements translate to human depression outcomes. There is no clear statement that the animal study measured depression-like behavior or that its mechanism links to human mood disorder.",
+        "severity": "high"
+      },
+      {
+        "issue": "2026 study with unknown population and design",
+        "detail": "The gut/digestion outcome is graded 'Preliminary' based on a 2026 study marked 'Unclassified' with unknown population composition. A future-dated or improperly classified study cannot provide a basis for any claim. The engine notes 'no clearly human-population evidence detected,' yet this single record still contributes to the overall 'Moderate' tier.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Identical study recycled across three outcomes",
+        "detail": "The 2023 RCT titled 'The Acute and Chronic Effects of Lion's Mane Mushroom Supplementation on Cognitive Function, Stress' is cited as evidence for cognition, mood, AND stress. It is unclear whether this is the same trial reporting three outcomes, or whether the title is incomplete. If it is one trial reporting multiple outcomes without adjustment for multiple comparisons, the apparent evidence base is artificially inflated.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The records provided do not detail any proposed biological mechanism (e.g., nerve growth factor stimulation, neuroinflammation reduction). The 2015 animal study's title mentions 'anti-inflammatory effects,' which could plausibly link to mood via microglial activation or cytokine signaling, but the abstracts do not spell out this pathway or show it connects to the cognition or stress outcomes in humans. Without visible mechanistic reasoning, it is unclear whether the clinical outcomes claimed are mechanistically coherent or represent a leap from in vitro or animal findings.",
+    "strongest_counterargument": "A skeptic would note that the entire 'Moderate' tier rests on a single 2023 human RCT of unknown sample size, supplemented by a 2015 mouse/rat study and a misclassified 2026 record. The single RCT may be underpowered, may show within-group improvement with no control arm, or may suffer from publication bias (we see only the abstract title, not the methods or results). Replication in an independent, adequately powered trial with transparent sample size and pre-registration would be the minimal bar to justify a 'Moderate' grade; the current records do not meet it.",
+    "what_would_change_the_picture": "Two or more independent, adequately powered RCTs (each n\u226550\u2013100 per arm) in distinct populations, with sample sizes and effect sizes clearly reported, would establish whether Lion's Mane has a reproducible effect on cognition, mood, or stress. Until then, the grade should reflect that the evidence is too sparse and opaque to support clinical claims.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

@@ -1,33 +1,108 @@
 {
   "name": "L-Tyrosine",
   "category": "amino",
-  "overall_score": 73,
+  "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 6,
+  "study_count": 14,
   "claims": [
+    {
+      "outcome": "cognition",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 4,
+      "grade_reasons": [
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 4,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:38975711",
+        "PMID:29255945",
+        "PMID:27403851",
+        "PMID:8149360"
+      ],
+      "studies": [
+        {
+          "pmid": "38975711",
+          "title": "Impact of L-theanine and L-tyrosine on markers of stress and cognitive performance in response to a virtual reality based active shooter training drill.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": 28
+        },
+        {
+          "pmid": "27403851",
+          "title": "Effects of l-Tyrosine on working memory and inhibitory control are determined by DRD2 genotypes: A randomized controlled trial.",
+          "year": "2016",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "8149360",
+          "title": "L-tyrosine pharmacotherapy of schizophrenia: preliminary data.",
+          "year": "1994",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "29255945",
+          "title": "Food for thought: association between dietary tyrosine and cognitive performance in younger and older adults.",
+          "year": "2019",
+          "design": "Observational",
+          "population": "human",
+          "n": 1724
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For cognition, L-Tyrosine has moderate human evidence (4 studies)."
+    },
     {
       "outcome": "endurance",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 4,
       "grade_reasons": [
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
-        "mechanistic": 25,
+        "mechanistic": 30,
         "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
+        "n_human_studies": 4,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:41818465",
-        "PMID:12381742"
+        "PMID:12381742",
+        "PMID:24389518",
+        "PMID:21437603"
       ],
       "studies": [
         {
@@ -39,56 +114,17 @@
           "n": null
         },
         {
-          "pmid": "12381742",
-          "title": "Effects of L-tyrosine and carbohydrate ingestion on endurance exercise performance.",
-          "year": "2002",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For endurance, L-Tyrosine has moderate human evidence (2 studies)."
-    },
-    {
-      "outcome": "exercise performance",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:12381742",
-        "PMID:24389518"
-      ],
-      "studies": [
-        {
           "pmid": "24389518",
           "title": "Failure of oral tyrosine supplementation to improve exercise performance in the heat.",
           "year": "2014",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "21437603",
+          "title": "Oral tyrosine supplementation improves exercise capacity in the heat.",
+          "year": "2011",
           "design": "RCT",
           "population": "human",
           "n": null
@@ -113,55 +149,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For exercise performance, L-Tyrosine has moderate human evidence (2 studies)."
-    },
-    {
-      "outcome": "cognition",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
-      "has_human_evidence": true,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Imprecision: small verified sample (~28 participants across 1 measured studies).",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed.",
-        "Floor applied: human trial evidence retained at least 'emerging' certainty absent a specific serious flaw."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 1,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:38975711"
-      ],
-      "studies": [
-        {
-          "pmid": "38975711",
-          "title": "Impact of L-theanine and L-tyrosine on markers of stress and cognitive performance in response to a virtual reality based active shooter training drill.",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": 28
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cognition, L-Tyrosine shows early but unsettled evidence (1 studies)."
+      "summary": "For endurance, L-Tyrosine has moderate human evidence (4 studies)."
     },
     {
       "outcome": "stress / anxiety",
@@ -169,24 +157,23 @@
       "certainty": "low",
       "score": 47,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: small verified sample (~28 participants across 1 measured studies).",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed.",
-        "Floor applied: human trial evidence retained at least 'emerging' certainty absent a specific serious flaw."
+        "Imprecision: small verified sample (~28 participants across 1 measured studies)."
       ],
       "layers": {
-        "mechanistic": 20,
+        "mechanistic": 25,
         "preclinical": 0,
         "human": 47,
         "overall": 47,
         "ceiling": 47,
-        "n_human_studies": 1,
+        "n_human_studies": 2,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:38975711"
+        "PMID:38975711",
+        "PMID:28477375"
       ],
       "studies": [
         {
@@ -196,6 +183,14 @@
           "design": "RCT",
           "population": "human",
           "n": 28
+        },
+        {
+          "pmid": "28477375",
+          "title": "Oral l-tyrosine supplementation augments the vasoconstriction response to whole-body cooling in older adults.",
+          "year": "2017",
+          "design": "RCT",
+          "population": "human",
+          "n": null
         }
       ],
       "effects": {
@@ -209,15 +204,88 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For stress / anxiety, L-Tyrosine shows early but unsettled evidence (1 studies)."
+      "summary": "For stress / anxiety, L-Tyrosine shows early but unsettled evidence (2 studies)."
+    },
+    {
+      "outcome": "muscle strength",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 4,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 4,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:41818465",
+        "PMID:38866581",
+        "PMID:18079309",
+        "PMID:31339280"
+      ],
+      "studies": [
+        {
+          "pmid": "41818465",
+          "title": "Effects of L-Tyrosine Ingestion on Endurance Performance in Mentally Fatigued Cyclists.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "38866581",
+          "title": "L-tyrosine for treatment of an infant with nemaline rod myopathy.",
+          "year": "2024",
+          "design": "Case report",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "31339280",
+          "title": "[Nemaline rod myopathy treated with L-tyrosine to relieve symptoms in a neonate].",
+          "year": "2019",
+          "design": "Case report",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "18079309",
+          "title": "Dietary L-tyrosine supplementation in nemaline myopathy.",
+          "year": "2008",
+          "design": "Case report",
+          "population": "human",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For muscle strength, L-Tyrosine has moderate human evidence (4 studies)."
     }
   ],
   "effects_established": [
+    "cognition",
     "endurance",
-    "exercise performance"
+    "muscle strength"
   ],
   "effects_promising": [
-    "cognition",
     "stress / anxiety"
   ],
   "effects_emerging": [],
@@ -245,5 +313,76 @@
       "4-Hydroxy-L-phenylalanine"
     ]
   },
-  "_cached_at": 1787506481.1774058
+  "_cached_at": 1787608033.574811,
+  "explanation": {
+    "what_it_is": "L-tyrosine is a semi-essential amino acid with the chemical formula C9H11NO3. It is naturally present in protein-containing foods (meat, dairy, nuts, seeds) and is also available as a dietary supplement in powder or capsule form. The body can synthesize it from another amino acid, phenylalanine, but dietary or supplemental intake may boost levels, particularly during stress or high cognitive demand.",
+    "how_it_works": "L-tyrosine serves as a precursor to catecholamine neurotransmitters\u2014dopamine, norepinephrine, and epinephrine\u2014which regulate alertness, mood, stress response, and motor control. When you consume tyrosine, your body converts it via enzymatic pathways (first to L-DOPA, then dopamine, and onward) in the brain and adrenal glands. During periods of intense mental or physical stress, catecholamine levels can become depleted; supplemental tyrosine theoretically replenishes substrate availability, allowing faster or more robust neurotransmitter synthesis. Additionally, tyrosine is incorporated into proteins and supports thyroid hormone synthesis, both relevant to metabolism and energy production.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "A 2024 randomized controlled trial (n=28) found that L-theanine and L-tyrosine together improved markers of stress and cognitive performance during a virtual reality stressor. A 2016 RCT showed that L-tyrosine's effects on working memory and inhibitory control were determined by dopamine receptor D2 (DRD2) genotypes, suggesting individual genetic variation shapes response. A 1994 RCT reported preliminary evidence for L-tyrosine in schizophrenia. A 2019 observational study of 1,724 younger and older adults found an association between dietary tyrosine intake and cognitive performance. However, the studies are inconsistent in their findings and no pooled meta-analysis confirms agreement across them.",
+        "why_this_grade": "Four human randomized trials and observational data exist, which supports a Moderate grade. However, inconsistency between studies\u2014with differing effect sizes and some mixed results\u2014and the lack of a pooled analysis confirming robust consensus keep the grade from rising to Strong. The evidence suggests a real effect is plausible, but the strength and consistency of that effect remain uncertain."
+      },
+      {
+        "outcome": "endurance",
+        "grade": "Moderate",
+        "what_studies_show": "A 2026 RCT examined L-tyrosine ingestion on endurance performance in mentally fatigued cyclists. A 2014 RCT reported failure of oral tyrosine to improve exercise performance in the heat. A 2011 RCT found that oral tyrosine supplementation improved exercise capacity in the heat. A 2002 RCT assessed L-tyrosine and carbohydrate ingestion on endurance exercise performance. The studies show mixed results, with some supporting benefit during heat stress and mental fatigue, and others finding no improvement.",
+        "why_this_grade": "Four human RCTs examine endurance, justifying Moderate rather than Emerging. However, sample sizes could not be verified from the abstracts provided, limiting confidence in precision. The inconsistency in outcomes (some positive, some null) and unconfirmed sample sizes keep the grade capped below Strong."
+      },
+      {
+        "outcome": "stress / anxiety",
+        "grade": "Emerging",
+        "what_studies_show": "A 2024 RCT (n=28) tested L-theanine and L-tyrosine together on stress markers and cognitive performance during a virtual reality stressor, showing some benefit. A 2017 RCT examined oral L-tyrosine supplementation and vasoconstriction response to whole-body cooling in older adults, yielding additional physiological data. Overall, only two human studies specifically address stress or anxiety, and the sample size in the verified study is small (n=28).",
+        "why_this_grade": "Only two human studies address stress/anxiety with minimal verified sample size (~28 participants in the measured trial). This is too small and few in number to establish confidence in efficacy. The grade is Emerging, meaning preliminary promising signals exist but robust human evidence is lacking."
+      },
+      {
+        "outcome": "muscle strength",
+        "grade": "Moderate",
+        "what_studies_show": "A 2026 RCT examined L-tyrosine ingestion in endurance cyclists. Three case reports (2024, 2019, and 2008) document L-tyrosine treatment in nemaline rod myopathy, a rare genetic muscle disorder, with reports of symptom relief in infants and neonates. These case reports represent the strongest signal for a direct muscle strength or myopathy benefit, though case reports are lower-level evidence than RCTs.",
+        "why_this_grade": "Four human studies exist, but three are case reports in a rare nemaline myopathy population, not robust RCTs in general muscle strength. Sample sizes for the broader RCT could not be verified from abstracts, limiting precision. The evidence suggests L-tyrosine may have a role in rare myopathies, but confidence in general muscle strength benefit is limited by study design and unconfirmed sample sizes."
+      }
+    ],
+    "evidence_base": "The research on L-tyrosine is predominantly human and recent, with randomized controlled trials and observational studies for cognition and endurance, and case reports for rare muscle disorders. No animal studies appear in the retrieved records for any outcome. Most trials are from the 2000s onward, with several from 2024\u20132026, suggesting active ongoing research. However, sample sizes are often not reported in the abstracts, and the evidence is marked by inconsistency\u2014some trials show benefit while others do not\u2014indicating genuine uncertainty about effect sizes and populations most likely to respond.",
+    "emerging_research": "A 2024 RCT combining L-tyrosine with L-theanine suggests interest in multi-component formulations for stress resilience and cognition, potentially synergistic approaches. Case reports of L-tyrosine use in nemaline rod myopathy (2024, 2019, 2008) point to possible therapeutic applications in rare genetic muscle disorders, though these remain anecdotal. More recent work (2026) continues to probe endurance and mental fatigue in athletes. These directions are early and primarily hypothesis-generating rather than confirmatory.",
+    "open_questions": "Among the studies retrieved here, the research is limited to young and middle-aged to older adults in most trials, with few data in children or adolescents (except the myopathy case reports). Trial durations are not fully detailed in the abstracts, but they appear to be acute or short-term (days to weeks rather than months), so long-term safety and efficacy remain uncharacterized in the records provided. Sample sizes in most RCTs were not confirmed from the abstracts, limiting our ability to assess statistical power. Additionally, none of the cognition or endurance trials appear to stratify by the DRD2 genotypes identified in the 2016 study, so the degree to which genetic variation explains inconsistent findings across studies is unclear from the available records.",
+    "caveats": "L-tyrosine is generally well-tolerated as a dietary supplement, but it can raise blood pressure and interact with monoamine oxidase (MAO) inhibitors and some psychiatric medications; individuals on these drugs should consult a healthcare provider before supplementing. Quality and purity of commercial L-tyrosine products vary; purchasing from third-party certified suppliers is recommended. Pregnant or nursing women, and anyone with phenylketonuria (PKU) or thyroid disorders, should speak with a healthcare provider, as tyrosine metabolism and thyroid hormone effects warrant individualized guidance.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base is extremely sparse and methodologically weak: most outcomes rely on fewer than 4 RCTs with unpublished or unverifiable sample sizes, making it impossible to assess precision or rule out chance findings.",
+    "concerns": [
+      {
+        "issue": "Sample sizes unverifiable for majority of trials",
+        "detail": "Of 12 total RCTs across three outcomes (cognition, endurance, muscle strength), only 1 study reports sample size in the abstracts (n=28 for the 2024 cognition trial). For endurance, all 4 RCTs lack extractable n values despite the engine noting this as a critical limitation. For muscle strength, the 1 RCT similarly does not report sample size in the abstract, leaving precision entirely unconfirmable.",
+        "severity": "high"
+      },
+      {
+        "issue": "Muscle strength evidence contaminated by case reports",
+        "detail": "Three of four studies graded as 'Moderate' evidence for muscle strength are case reports (2008, 2019, 2019), not RCTs. Case reports cannot establish efficacy and are prone to selection and reporting bias. These describe treatment of nemaline myopathy in infants\u2014a highly specific genetic disorder, not general muscle strength in typical populations. The single RCT (2026) appears to measure endurance in cyclists, not strength gain.",
+        "severity": "high"
+      },
+      {
+        "issue": "No pooled analysis despite multiple trials; inconsistency noted but not resolved",
+        "detail": "The cognition outcome explicitly notes 'Inconsistency: several studies exist but no pooled analysis confirms they agree.' Four studies span 30 years (1994\u20132024) with heterogeneous designs (RCTs and 1 observational), yet no synthesis is available. The endurance outcome similarly lists 4 RCTs but reports 'none extractable' for pooled effect. Without meta-analysis or a clear narrative synthesis, it is impossible to determine whether effects align or contradict.",
+        "severity": "high"
+      },
+      {
+        "issue": "Stress/anxiety evidence is minimal and underpowered",
+        "detail": "Only 2 RCTs exist for stress/anxiety, graded 'Emerging.' One reports n=28 (2024); the other (2017) does not report sample size. The 2017 trial measures vasoconstriction response to cooling in 'older' participants\u2014a physiological proxy, not direct anxiety or stress outcome measurement. The 2024 study is co-authored with L-theanine, making it unclear which compound or their combination drove any effect.",
+        "severity": "high"
+      },
+      {
+        "issue": "Genotype-dependent effects suggest narrow applicability",
+        "detail": "The 2016 cognition RCT reports that 'Effects of l-Tyrosine on working memory and inhibitory control are determined by DRD2 genotypes.' If true, this means L-tyrosine may only benefit individuals with specific dopamine receptor genotypes, radically narrowing the population for whom evidence applies. The abstract does not clarify whether this was a pre-registered finding or post-hoc subgroup analysis, and no other trials appear to account for or replicate this genetic constraint.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "L-tyrosine is a precursor to catecholamines (dopamine, norepinephrine), and enhanced synthesis could plausibly improve cognition, stress resilience, and endurance performance under conditions of catecholamine depletion. However, the clinical outcomes measured (working memory, cycling endurance, muscle strength) are distant from dopamine availability per se. The leap assumes that (1) oral supplementation reliably increases CNS or peripheral catecholamine levels in humans, (2) baseline tyrosine is limiting in the populations tested, and (3) the magnitude of increase produces detectable improvements in complex phenotypes. The evidence base does not establish these intermediates convincingly.",
+    "strongest_counterargument": "A skeptic would note that across 12 RCTs, no consistent, well-powered efficacy signal has emerged: cognition trials disagree (per engine note), endurance trials show conflicting results (the 2014 trial explicitly reports 'failure' while 2011 claims success), and stress/anxiety comprises only tiny, underpowered studies. The fact that effect sizes are not extractable and sample sizes are often hidden suggests either (a) small or null effects not worth reporting in detail, or (b) heterogeneous methodology precluding synthesis. The 2016 finding of genotype-dependence, if real, implies most users derive no benefit. Collectively, this points to a compound with weak, inconsistent, and context-dependent effects at best.",
+    "what_would_change_the_picture": "A large (n \u2265200), pre-registered, double-blind RCT with pre-specified stratification by DRD2 genotype, measuring cognition or endurance performance in a well-defined, homogeneous population, with transparent reporting of sample size, effect size, and 95% CI would meaningfully resolve whether L-tyrosine has clinically meaningful efficacy. Meta-analysis of existing RCTs with explicit inclusion of trials reporting null effects would clarify whether the current heterogeneity reflects real population differences or publication/reporting bias.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

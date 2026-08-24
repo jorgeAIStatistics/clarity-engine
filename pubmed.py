@@ -83,16 +83,50 @@ def esearch(term, retmax=40):
     return r.json().get("esearchresult", {}).get("idlist", [])
 
 
+_EFETCH_BATCH = 40
+
+
 def efetch(pmids):
-    """Fetch abstracts + metadata for a list of PMIDs. Returns list of dicts."""
+    """
+    Fetch abstracts + metadata for a list of PMIDs, in batches.
+
+    A single request for 150 abstracts returns a multi-megabyte XML document,
+    which exceeded the timeout and then burned four retries — over a minute
+    with nothing produced. NCBI's own guidance is to batch; 40 per request is
+    comfortably inside their limits and each batch returns quickly.
+
+    Batches run concurrently (the throttle is lock-guarded, so NCBI's rate
+    limit is still respected) and partial failures degrade to fewer studies
+    rather than losing the whole compound.
+    """
     if not pmids:
         return []
-    r = _get_with_retry(f"{BASE}/efetch.fcgi", _params({
-        "db": "pubmed",
-        "id": ",".join(pmids),
-        "retmode": "xml",
-    }), timeout=45)
-    return _parse_articles(r.text)
+    pmids = list(pmids)
+    batches = [pmids[i:i + _EFETCH_BATCH]
+               for i in range(0, len(pmids), _EFETCH_BATCH)]
+
+    def _one(batch):
+        try:
+            r = _get_with_retry(f"{BASE}/efetch.fcgi", _params({
+                "db": "pubmed",
+                "id": ",".join(batch),
+                "retmode": "xml",
+            }), timeout=30)
+            return _parse_articles(r.text)
+        except Exception as e:
+            print(f"  [pubmed] efetch batch of {len(batch)} failed: "
+                  f"{type(e).__name__}; continuing with the rest")
+            return []
+
+    if len(batches) == 1:
+        return _one(batches[0])
+
+    from concurrent.futures import ThreadPoolExecutor
+    out = []
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for part in pool.map(_one, batches):
+            out.extend(part)
+    return out
 
 
 def _parse_articles(xml_text):

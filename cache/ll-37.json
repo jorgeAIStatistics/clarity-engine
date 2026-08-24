@@ -1,29 +1,29 @@
 {
   "name": "LL-37",
   "category": "peptide",
-  "overall_score": 22,
-  "tier": "Preliminary",
-  "study_count": 11,
+  "overall_score": 76,
+  "tier": "Moderate",
+  "study_count": 36,
   "claims": [
     {
       "outcome": "inflammation",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 6,
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 17,
       "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
-        "human": 0,
-        "overall": 55,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 6,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 15,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:40559884",
@@ -31,9 +31,36 @@
         "PMID:36958193",
         "PMID:41843625",
         "PMID:39133985",
-        "PMID:31877496"
+        "PMID:31877496",
+        "PMID:31478135",
+        "PMID:30741829",
+        "PMID:38310763",
+        "PMID:24021961",
+        "PMID:36370932",
+        "PMID:31465746",
+        "PMID:27863138",
+        "PMID:35616038",
+        "PMID:31046155",
+        "PMID:37480520",
+        "PMID:22031815"
       ],
       "studies": [
+        {
+          "pmid": "37480520",
+          "title": "Efficacy of LL-37 cream in enhancing healing of diabetic foot ulcer: a randomized double-blind controlled trial.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "31046155",
+          "title": "LL-37 promotes neutrophil extracellular trap formation in chronic rhinosinusitis with nasal polyps.",
+          "year": "2019",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null
+        },
         {
           "pmid": "41843625",
           "title": "LL-37 selectively targets Plasmodium-infected erythrocytes and exhibits antimalarial activity.",
@@ -67,6 +94,14 @@
           "n": null
         },
         {
+          "pmid": "38310763",
+          "title": "LL-37 improves sepsis-induced acute lung injury by suppressing pyroptosis in alveolar epithelial cells.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "36958193",
           "title": "Antimicrobial peptide cathelicidin LL-37 preserves intestinal barrier and organ function in rats with heat stroke.",
           "year": "2023",
@@ -75,8 +110,354 @@
           "n": null
         },
         {
+          "pmid": "36370932",
+          "title": "Human cathelicidin LL-37 exerts amelioration effects against EHEC O157:H7 infection regarding inflammation, enteric dysbacteriosis, and impairment of gut barrie",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "35616038",
+          "title": "Cathelicidin LL-37 improves bone metabolic balance in rats with ovariectomy-induced osteoporosis via the Wnt/beta-catenin pathway.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "31877496",
           "title": "LL-37 restored glucocorticoid sensitivity impaired by virus dsRNA in lung.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "31478135",
+          "title": "Synthetic cathelicidin LL-37 reduces Mycobacterium avium subsp. paratuberculosis internalization and pro-inflammatory cytokines in macrophages.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "31465746",
+          "title": "Superoxide Dismutase 3 Inhibits LL-37/KLK-5-Mediated Skin Inflammation through Modulation of EGFR and Associated Inflammatory Cascades.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "30741829",
+          "title": "Cathelicidin LL-37 restoring glucocorticoid function in smoking and lipopolysaccharide-induced airway inflammation in rats.",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "27863138",
+          "title": "Prevention of sinonasal inflammation by a synthetic glycosaminoglycan.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "24021961",
+          "title": "Antimicrobial peptide LL-37 and IDR-1 ameliorate MRSA pneumonia in vivo.",
+          "year": "2013",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "22031815",
+          "title": "Antiviral activity and increased host defense against influenza infection elicited by the human cathelicidin LL-37.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For inflammation, LL-37 has moderate human evidence (17 studies)."
+    },
+    {
+      "outcome": "tendon / tissue healing",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 4,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 3,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:38423213",
+        "PMID:36958193",
+        "PMID:35616038",
+        "PMID:37480520"
+      ],
+      "studies": [
+        {
+          "pmid": "37480520",
+          "title": "Efficacy of LL-37 cream in enhancing healing of diabetic foot ulcer: a randomized double-blind controlled trial.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "38423213",
+          "title": "Cathelicidin LL-37 promotes wound healing in diabetic mice by regulating TFEB-dependent autophagy.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36958193",
+          "title": "Antimicrobial peptide cathelicidin LL-37 preserves intestinal barrier and organ function in rats with heat stroke.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "35616038",
+          "title": "Cathelicidin LL-37 improves bone metabolic balance in rats with ovariectomy-induced osteoporosis via the Wnt/beta-catenin pathway.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For tendon / tissue healing, LL-37 has moderate human evidence (4 studies)."
+    },
+    {
+      "outcome": "immune function",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 12,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 11,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:36958193",
+        "PMID:41843625",
+        "PMID:27012197",
+        "PMID:31478135",
+        "PMID:38310763",
+        "PMID:24021961",
+        "PMID:36370932",
+        "PMID:28038684",
+        "PMID:39262269",
+        "PMID:35616038",
+        "PMID:37480520",
+        "PMID:22031815"
+      ],
+      "studies": [
+        {
+          "pmid": "37480520",
+          "title": "Efficacy of LL-37 cream in enhancing healing of diabetic foot ulcer: a randomized double-blind controlled trial.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41843625",
+          "title": "LL-37 selectively targets Plasmodium-infected erythrocytes and exhibits antimalarial activity.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "38310763",
+          "title": "LL-37 improves sepsis-induced acute lung injury by suppressing pyroptosis in alveolar epithelial cells.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36958193",
+          "title": "Antimicrobial peptide cathelicidin LL-37 preserves intestinal barrier and organ function in rats with heat stroke.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36370932",
+          "title": "Human cathelicidin LL-37 exerts amelioration effects against EHEC O157:H7 infection regarding inflammation, enteric dysbacteriosis, and impairment of gut barrie",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "35616038",
+          "title": "Cathelicidin LL-37 improves bone metabolic balance in rats with ovariectomy-induced osteoporosis via the Wnt/beta-catenin pathway.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "31478135",
+          "title": "Synthetic cathelicidin LL-37 reduces Mycobacterium avium subsp. paratuberculosis internalization and pro-inflammatory cytokines in macrophages.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "28038684",
+          "title": "LL-37 boosts immunosuppressive function of placenta-derived mesenchymal stromal cells.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "24021961",
+          "title": "Antimicrobial peptide LL-37 and IDR-1 ameliorate MRSA pneumonia in vivo.",
+          "year": "2013",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "22031815",
+          "title": "Antiviral activity and increased host defense against influenza infection elicited by the human cathelicidin LL-37.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "39262269",
+          "title": "Human Cathelicidin, LL-37 a potential antiviral therapeutic for Rift Valley Fever Virus in Egypt.",
+          "year": "2024",
+          "design": "In vitro",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "27012197",
+          "title": "Human cathelicidin LL-37 inhibits platelet aggregation and thrombosis via Src/PI3K/Akt signaling.",
+          "year": "2016",
+          "design": "In vitro",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For immune function, LL-37 has moderate human evidence (12 studies)."
+    },
+    {
+      "outcome": "gut / digestion",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 3,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:36958193",
+        "PMID:31478135",
+        "PMID:36370932"
+      ],
+      "studies": [
+        {
+          "pmid": "36958193",
+          "title": "Antimicrobial peptide cathelicidin LL-37 preserves intestinal barrier and organ function in rats with heat stroke.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36370932",
+          "title": "Human cathelicidin LL-37 exerts amelioration effects against EHEC O157:H7 infection regarding inflammation, enteric dysbacteriosis, and impairment of gut barrie",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "31478135",
+          "title": "Synthetic cathelicidin LL-37 reduces Mycobacterium avium subsp. paratuberculosis internalization and pro-inflammatory cytokines in macrophages.",
           "year": "2020",
           "design": "Animal",
           "population": "animal",
@@ -94,174 +475,19 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For inflammation, LL-37 has only preliminary or animal evidence (6 studies)."
-    },
-    {
-      "outcome": "gut / digestion",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:36958193"
-      ],
-      "studies": [
-        {
-          "pmid": "36958193",
-          "title": "Antimicrobial peptide cathelicidin LL-37 preserves intestinal barrier and organ function in rats with heat stroke.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For gut / digestion, LL-37 has only preliminary or animal evidence (1 studies)."
-    },
-    {
-      "outcome": "tendon / tissue healing",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 45,
-        "human": 0,
-        "overall": 45,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 2,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:38423213",
-        "PMID:36958193"
-      ],
-      "studies": [
-        {
-          "pmid": "38423213",
-          "title": "Cathelicidin LL-37 promotes wound healing in diabetic mice by regulating TFEB-dependent autophagy.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36958193",
-          "title": "Antimicrobial peptide cathelicidin LL-37 preserves intestinal barrier and organ function in rats with heat stroke.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For tendon / tissue healing, LL-37 has only preliminary or animal evidence (2 studies)."
-    },
-    {
-      "outcome": "skin / appearance",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 45,
-        "human": 0,
-        "overall": 45,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 2,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:38423213",
-        "PMID:39133985"
-      ],
-      "studies": [
-        {
-          "pmid": "38423213",
-          "title": "Cathelicidin LL-37 promotes wound healing in diabetic mice by regulating TFEB-dependent autophagy.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39133985",
-          "title": "Tranilast alleviates skin inflammation and fibrosis in rosacea-like mice induced by long-term exposure to LL-37.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For skin / appearance, LL-37 has only preliminary or animal evidence (2 studies)."
+      "summary": "For gut / digestion, LL-37 has only preliminary or animal evidence (3 studies)."
     }
   ],
-  "effects_established": [],
-  "effects_promising": [
+  "effects_established": [
     "inflammation",
-    "gut / digestion",
     "tendon / tissue healing",
-    "skin / appearance"
+    "immune function"
+  ],
+  "effects_promising": [
+    "gut / digestion"
   ],
   "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
   "chemistry": {
@@ -285,5 +511,76 @@
       "antimicrobial peptide LL-37"
     ]
   },
-  "_cached_at": 1787506661.700352
+  "_cached_at": 1787608752.9617438,
+  "explanation": {
+    "what_it_is": "LL-37 (cathelicidin LL-37, also called Cap-18 or ropocamptide) is a 37-amino-acid antimicrobial peptide produced naturally by human immune cells, particularly neutrophils and epithelial cells. It is a cationic peptide with the molecular formula C205H340N60O53 (molecular weight 4493 Da) and functions as part of the innate immune system's first line of defense. For research and clinical use, LL-37 is typically administered as a synthetic peptide in topical cream formulations or injectable forms.",
+    "how_it_works": "LL-37 works through multiple mechanisms. It directly kills bacteria and other pathogens by disrupting their cell membranes due to its positive charge, which allows it to bind and permeabilize negatively charged microbial surfaces. Beyond direct antimicrobial activity, LL-37 interacts with host immune receptors (such as formyl peptide receptor-like 1, FPRL1) to trigger cell signaling pathways that modulate inflammation and immune cell activation. It promotes neutrophil recruitment and can stimulate the formation of neutrophil extracellular traps (NETs)\u2014web-like structures that trap and kill pathogens. Additionally, evidence suggests LL-37 enhances wound healing by promoting autophagy and regulating metabolic pathways in immune and epithelial cells, and it may preserve intestinal barrier integrity during stress or infection.",
+    "outcome_detail": [
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "A 2023 randomized double-blind controlled trial examined LL-37 cream for diabetic foot ulcer healing, and a 2019 clinical trial found LL-37 promotes neutrophil extracellular trap formation in chronic rhinosinusitis with nasal polyps. Animal studies (2025, 2024, and earlier) have demonstrated that LL-37 attenuates sepsis-induced lung injury, promotes wound healing in diabetic mice via autophagy regulation, and modulates inflammatory responses in skin and other tissues. Overall, the retrieved records show mixed inflammatory effects depending on context and tissue type.",
+        "why_this_grade": "Only 2 human studies are present in the provided records, limiting direct clinical evidence, and sample sizes could not be verified from the abstracts, leaving precision unconfirmed. The grade reflects moderate confidence: there is some human evidence, but quantity and methodological robustness are constrained, and the remaining 15 animal studies cannot reliably predict human outcomes without confirmation."
+      },
+      {
+        "outcome": "tendon / tissue healing",
+        "grade": "Moderate",
+        "what_studies_show": "A 2023 randomized controlled trial tested LL-37 cream for enhancing healing of diabetic foot ulcers in humans. Animal studies (2024, 2023, 2022) showed that LL-37 promotes wound healing in diabetic mice through TFEB-dependent autophagy, preserves intestinal barrier integrity in heat-stressed rats, and improves bone metabolic balance in ovariectomy-induced osteoporosis in rats via Wnt/\u03b2-catenin signaling. Across these studies, LL-37 demonstrated pro-healing and tissue-protective effects in multiple tissue contexts.",
+        "why_this_grade": "Only 1 human study is in the retrieved records, and sample sizes could not be verified from the abstracts, capping certainty below the top tier due to imprecision. The 3 animal studies provide supporting mechanistic evidence but do not constitute robust clinical proof; the single human trial provides the foundation for the Moderate grade, but broader human validation is needed."
+      },
+      {
+        "outcome": "immune function",
+        "grade": "Moderate",
+        "what_studies_show": "A 2023 randomized controlled trial involving diabetic foot ulcer healing included immune parameters. Animal studies (2026, 2024, 2023, 2022) demonstrated that LL-37 selectively targets Plasmodium-infected erythrocytes and exhibits antimalarial activity, improves sepsis-induced acute lung injury by suppressing pyroptosis, preserves intestinal barrier and organ function in heat-stressed rats, exerts amelioration against EHEC O157:H7 infection, and improves bone immune-metabolic balance in osteoporotic rats. These findings span antimicrobial, anti-inflammatory, and immunomodulatory effects.",
+        "why_this_grade": "Only 1 human study is present in the provided records, and sample sizes could not be verified from the abstracts, making precision unconfirmed. The 11 animal studies provide mechanistic support but do not directly validate immune benefits in humans; the single human trial anchors the Moderate grade, but human-specific immune outcomes require further clinical study."
+      },
+      {
+        "outcome": "gut / digestion",
+        "grade": "Preliminary",
+        "what_studies_show": "Three animal studies examined LL-37 in gastrointestinal contexts: one showed that LL-37 preserves intestinal barrier integrity and organ function in heat-stressed rats, another found LL-37 exerts amelioration effects against EHEC O157:H7 bacterial infection in terms of inflammation and barrier function, and a 2020 study demonstrated that synthetic LL-37 reduces Mycobacterium avium subsp. paratuberculosis internalization and pro-inflammatory responses. These suggest potential benefits for intestinal barrier protection and pathogen control.",
+        "why_this_grade": "No human studies are present in the retrieved records; all evidence is animal-only, which does not reliably translate to human digestive or systemic outcomes. This indirectness\u2014combined with the small number of animal studies and lack of human validation\u2014places the outcome at Preliminary. Substantial human research would be needed to establish clinical relevance."
+      }
+    ],
+    "evidence_base": "The research base comprises 17 inflammation studies (2 human, 15 animal), 4 tissue healing studies (1 human, 3 animal), 12 immune function studies (1 human, 11 animal), and 3 gut/digestion studies (0 human, 3 animal). The bulk of evidence is animal-derived, with only one human randomized controlled trial (the 2023 diabetic foot ulcer LL-37 cream trial) appearing repeatedly across outcomes. Most studies are from 2022\u20132026, reflecting recent research interest. This skew toward animal models and a single human trial limits the certainty and generalizability of efficacy claims; human data remain sparse despite promising mechanistic findings in rodents and in vitro systems.",
+    "emerging_research": "Recent animal studies (2025\u20132026) are exploring LL-37 in acute inflammatory contexts, including sepsis-induced lung injury and pyroptosis suppression in epithelial cells, as well as antimalarial activity. A 2024 study examined whether tranilast (an anti-inflammatory agent) modulates LL-37-induced inflammation in rosacea-like mouse models, suggesting investigation into how to harness LL-37's beneficial effects while controlling unwanted inflammatory responses. These directions are early-stage and have not yet yielded human clinical evidence.",
+    "open_questions": "Among the studies retrieved here, human evidence is limited to one trial on diabetic foot ulcer healing; no studies of LL-37 in otherwise healthy adults or in other chronic disease populations are present in the records provided. All gut/digestion outcomes rest entirely on animal models with stress or infection contexts (heat stress, bacterial infection), and no data on LL-37 effects on healthy human digestion or microbiota are visible in the abstracts given. Whether the tissue-healing benefits seen in diabetic mice translate to other wound types or populations in humans remains unclear from these records. Trial durations and longer-term safety profiles are not detailed in the abstracts provided, so it is unknown whether benefits persist or whether tolerability concerns emerge over weeks or months of human use.",
+    "caveats": "LL-37 is an injectable research peptide and in some formulations a topical agent; clinical-grade purity, sterility, and formulation standards should be verified before use, as contamination or degradation can compromise safety and efficacy. Potential users should be aware that LL-37 is pro-inflammatory in some contexts (e.g., it promotes neutrophil activation and NET formation) and may exacerbate certain inflammatory conditions; medical supervision is advised. Interactions with immunosuppressive drugs or use in immunocompromised individuals are not addressed in the study records provided and warrant careful consideration.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base rests almost entirely on animal studies with unverified sample sizes; only one human RCT appears across all outcomes, and it tests a topical cream\u2014not the injectable peptide typically obtained grey-market.",
+    "concerns": [
+      {
+        "issue": "Overwhelming animal-to-human ratio",
+        "detail": "Across inflammation (15 animal, 2 human), tendon healing (3 animal, 1 human), and immune function (11 animal, 1 human), animal studies comprise 86\u201394% of the evidence for each outcome. The single human RCT cited (2023 diabetic foot ulcer cream trial) appears in all three outcomes but tests topical application, not injectable LL-37. Animal models of sepsis, infection, or metabolic disease do not reliably predict human efficacy, particularly for a peptide being used outside regulated contexts.",
+        "severity": "high"
+      },
+      {
+        "issue": "No sample sizes extractable; precision cannot be assessed",
+        "detail": "The engine explicitly noted that sample sizes could not be verified from the abstracts for any outcome. This means the effective weight of each trial is unknown: a 12-person study and a 120-person study appear equally in the evidence table. Given that several animal studies are recent (2024\u20132026), this is likely a limitation of abstract detail rather than truly massive trials, but it prevents any assessment of whether the pooled signal is robust or would collapse with a single larger negative trial.",
+        "severity": "high"
+      },
+      {
+        "issue": "Mismatch between evidence base and clinical application",
+        "detail": "The evidence tests LL-37 in specific disease models (diabetic foot ulcers, sepsis-induced lung injury, MRSA pneumonia, osteoporosis) and routes (topical cream, likely parenteral in animals). Users obtaining injectable peptide grey-market are typically self-administering for systemic inflammation, wound healing, or immune support in non-diseased populations. The translatability of efficacy in rodent sepsis to efficacy in healthy humans seeking immune enhancement is speculative and not addressed in these trials.",
+        "severity": "high"
+      },
+      {
+        "issue": "Recent publication spike with no apparent shift in quality or design",
+        "detail": "Eight of the 17 inflammation studies and all 4 tendon-healing studies are dated 2022\u20132026. This cluster may reflect genuine research momentum, but the absence of sample-size data and dominance of animal models suggests this may be a reporting artifact or a widening net of in vivo mechanistic studies rather than confirmatory human evidence. No large Phase 2 or 3 RCTs appear in the retrieved records.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Gut/digestion outcome graded Preliminary with zero human data",
+        "detail": "All three gut-related studies are animal-only (2020\u20132023). The engine correctly flagged this as indirect evidence. A user considering LL-37 for gut health or barrier function has no human efficacy data whatsoever, only rat and rodent mechanistic studies of infection or barrier preservation under acute stress.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "LL-37 is an endogenous antimicrobial peptide with documented in vitro and animal activity against infection and inflammation. The mechanistic pathway (neutrophil recruitment, barrier preservation, autophagy-modulation, pyroptosis suppression) is plausible. However, a large gap exists between animal models of acute sepsis, pneumonia, or wound injury\u2014where immune activation is pathogenic\u2014and systemic use in healthy or chronically inflamed populations where the net effect of boosting LL-37 (which may amplify both protective and destructive inflammatory responses) is unknown. The single human trial used topical application for a localized wound, not injectable systemic dosing.",
+    "strongest_counterargument": "A skeptic would argue that animal models consistently showing efficacy do not predict human outcomes, especially for immunomodulatory peptides where off-target activation can cause harm. The absence of dose-escalation, safety, or PK data in these abstracts, combined with the fact that the only human RCT tests a topical formulation in diabetic ulcers (a diseased population), means there is no evidence that injectable LL-37 is safe or effective in the populations actually using it (healthy individuals seeking anti-inflammatory or immune benefits). The animal efficacy could reflect model-specific biology or publication bias toward positive results.",
+    "what_would_change_the_picture": "A Phase 2 RCT in healthy humans receiving injectable LL-37 (at proposed grey-market doses) with pre-specified inflammatory, immune, and tissue-repair biomarkers, plus safety monitoring, would directly address translational uncertainty. Alternatively, a large (n>200) human RCT in a chronic inflammatory condition (e.g., chronic rhinosinusitis, as mentioned in one abstract) using injectable LL-37 would ground the evidence in the human populations under study.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

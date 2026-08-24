@@ -1,20 +1,19 @@
 {
   "name": "Astaxanthin",
   "category": "longevity",
-  "overall_score": 79,
-  "tier": "Moderate",
-  "study_count": 19,
+  "overall_score": 95,
+  "tier": "Strong",
+  "study_count": 67,
   "claims": [
     {
-      "outcome": "inflammation",
+      "outcome": "skin / appearance",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 11,
+      "n_studies": 4,
       "grade_reasons": [
-        "Precision: ~430 participants verified across 3 of 11 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 7 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -22,8 +21,82 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 9,
+        "n_human_studies": 3,
         "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:34578794",
+        "PMID:32202443",
+        "PMID:29941810",
+        "PMID:39725444"
+      ],
+      "studies": [
+        {
+          "pmid": "34578794",
+          "title": "Systematic Review and Meta-Analysis on the Effects of Astaxanthin on Human Skin Ageing.",
+          "year": "2021",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "32202443",
+          "title": "Effects of Astaxanthin Supplementation on Skin Health: A Systematic Review of Clinical Studies.",
+          "year": "2021",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "29941810",
+          "title": "The Protective Role of Astaxanthin for UV-Induced Skin Deterioration in Healthy People-A Randomized, Double-Blind, Placebo-Controlled Trial.",
+          "year": "2018",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39725444",
+          "title": "Oral administration of astaxanthin mitigates chronological skin aging in mice.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For skin / appearance, Astaxanthin has moderate human evidence (4 studies)."
+    },
+    {
+      "outcome": "inflammation",
+      "tier": "Strong",
+      "certainty": "high",
+      "score": 90,
+      "has_human_evidence": true,
+      "n_studies": 35,
+      "grade_reasons": [
+        "Precision: ~501 participants verified across 6 of 35 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: 6 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 90,
+        "overall": 90,
+        "ceiling": 90,
+        "n_human_studies": 20,
+        "n_animal_studies": 15,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -37,7 +110,31 @@
         "PMID:41673418",
         "PMID:33974978",
         "PMID:25292409",
-        "PMID:35091276"
+        "PMID:35091276",
+        "PMID:36117431",
+        "PMID:39127677",
+        "PMID:35397697",
+        "PMID:21972007",
+        "PMID:39269488",
+        "PMID:27117878",
+        "PMID:32933455",
+        "PMID:36727984",
+        "PMID:34611051",
+        "PMID:36294075",
+        "PMID:35237893",
+        "PMID:20683004",
+        "PMID:40333882",
+        "PMID:33333811",
+        "PMID:27714500",
+        "PMID:39090754",
+        "PMID:36285709",
+        "PMID:25514562",
+        "PMID:39543175",
+        "PMID:41596351",
+        "PMID:35820614",
+        "PMID:40287452",
+        "PMID:22809098",
+        "PMID:23192897"
       ],
       "studies": [
         {
@@ -53,6 +150,38 @@
           "title": "Effects of astaxanthin in animal models of obesity-associated diseases: A systematic review and meta-analysis.",
           "year": "2021",
           "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41596351",
+          "title": "The Role of Astaxanthin as an Antioxidant and Anti-Inflammatory Agent in Human Health: A Systematic Review.",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39269488",
+          "title": "Exploring the benefits of astaxanthin as a functional food ingredient: Its effects on oxidative stress and reproductive outcomes in women with PCOS - A systemat",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39127677",
+          "title": "Effect of astaxanthin supplementation on female fertility and reproductive outcomes: a systematic review and meta-analysis of clinical and animal studies.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36117431",
+          "title": "The effects of astaxanthin supplementation on expression of microRNAs involved in cardiovascular diseases: a systematic review of current evidence.",
+          "year": "2022",
+          "design": "Systematic review",
           "population": "human",
           "n": null
         },
@@ -97,6 +226,30 @@
           "n": null
         },
         {
+          "pmid": "36727984",
+          "title": "Astaxanthin Supplementation Does Not Affect Markers of Muscle Damage or Inflammation After an Exercise-Induced Muscle Damage Protocol in Resistance-Trained Male",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "34611051",
+          "title": "Astaxanthin Supplementation Increases Glutathione Concentrations but Does Not Impact Fat Oxidation During Exercise in Active Young Men.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "35237893",
+          "title": "Randomized controlled trial of astaxanthin impacts on antioxidant status and assisted reproductive technology outcomes in women with polycystic ovarian syndrome",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "34110707",
           "title": "Astaxanthin supplementation enhances metabolic adaptation with aerobic training in the elderly.",
           "year": "2021",
@@ -113,9 +266,121 @@
           "n": null
         },
         {
+          "pmid": "23192897",
+          "title": "Effect of astaxanthin supplementation on paraoxonase 1 activities and oxidative stress status in young soccer players.",
+          "year": "2013",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39090754",
+          "title": "The effect of astaxanthin supplementation on inflammatory markers, oxidative stress indices, lipid profile, uric acid level, blood pressure, endothelial functio",
+          "year": "2024",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 40
+        },
+        {
+          "pmid": "21972007",
+          "title": "Combined fish oil and astaxanthin supplementation modulates rat lymphocyte function.",
+          "year": "2012",
+          "design": "Observational",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36294075",
+          "title": "Impacts of Astaxanthin Supplementation on Walking Capacity by Reducing Oxidative Stress in Nursing Home Residents.",
+          "year": "2022",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 13
+        },
+        {
+          "pmid": "40333882",
+          "title": "Plasma-based proteomics analysis of molecular pathways in canine diabetes mellitus after astaxanthin supplementation.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": 18
+        },
+        {
+          "pmid": "40287452",
+          "title": "Astaxanthin supplementation in Arabian racing horses mitigates oxidative stress and inflammation in peripheral blood mononuclear cells through enhanced mitophag",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "39543175",
+          "title": "The effect of long term astaxanthin supplementation on the antioxidant status of racing Arabian horses - preliminary study.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "35397697",
+          "title": "Astaxanthin Attenuates Nonalcoholic Steatohepatitis with Downregulation of Osteoprotegerin in Ovariectomized Mice Fed Choline-Deficient High-Fat Diet.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36285709",
+          "title": "Astaxanthin attenuates irradiation-induced osteoporosis in mice by inhibiting oxidative stress, osteocyte senescence, and SASP.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "32933455",
+          "title": "Astaxanthin Prevents Lung Injury Due to Hyperoxia and Inflammation.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "27117878",
+          "title": "Dietary astaxanthin supplementation attenuates disuse-induced muscle atrophy and myonuclear apoptosis in the rat soleus muscle.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "25292409",
           "title": "Oral Astaxanthin Supplementation Prevents Peritoneal Fibrosis in Rats.",
           "year": "2015",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "25514562",
+          "title": "Astaxanthin supplementation delays physical exhaustion and prevents redox imbalances in plasma and soleus muscles of Wistar rats.",
+          "year": "2014",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "22809098",
+          "title": "Combination of astaxanthin and fish oil supplementation alters antioxidant enzyme profile of dental pulp tissue.",
+          "year": "2012",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "20683004",
+          "title": "Effect of astaxanthin supplementation on inflammation and cardiac function in BALB/c mice.",
+          "year": "2010",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -125,7 +390,31 @@
           "title": "High dietary astaxanthin supplementation alters egg yolk nutritional composition in hens.",
           "year": "2025",
           "design": "Unclassified",
-          "population": "unknown",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "35820614",
+          "title": "Diet supplementation of astaxanthin mitigates cadmium induced negative effects on oxidative, inflammatory and non-specific immune responses, and the intestinal ",
+          "year": "2022",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "33333811",
+          "title": "Dietary Supplementation of Astaxanthin Improved the Growth Performance, Antioxidant Ability and Immune Response of Juvenile Largemouth Bass (",
+          "year": "2020",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "27714500",
+          "title": "Astaxanthin supplementation attenuates immobilization-induced skeletal muscle fibrosis via suppression of oxidative stress.",
+          "year": "2017",
+          "design": "Unclassified",
+          "population": "animal",
           "n": null
         }
       ],
@@ -140,7 +429,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Astaxanthin has moderate human evidence (11 studies)."
+      "summary": "For inflammation, Astaxanthin is well-supported by human trials (35 studies)."
     },
     {
       "outcome": "cardiovascular",
@@ -148,25 +437,40 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 18,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Precision: ~52 participants verified across 2 of 18 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 4,
-        "n_animal_studies": 0,
+        "n_human_studies": 13,
+        "n_animal_studies": 5,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:39568140",
         "PMID:37874168",
         "PMID:38843946",
-        "PMID:33974978"
+        "PMID:33974978",
+        "PMID:36117431",
+        "PMID:21972007",
+        "PMID:29226138",
+        "PMID:41848228",
+        "PMID:32933455",
+        "PMID:36727984",
+        "PMID:23274592",
+        "PMID:32755613",
+        "PMID:35061144",
+        "PMID:33333811",
+        "PMID:39090754",
+        "PMID:17685090",
+        "PMID:41596351",
+        "PMID:36678157"
       ],
       "studies": [
         {
@@ -178,9 +482,33 @@
           "n": null
         },
         {
+          "pmid": "32755613",
+          "title": "The effects of astaxanthin supplementation on obesity, blood pressure, CRP, glycemic biomarkers, and lipid profile: A meta-analysis of randomized controlled tri",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41596351",
+          "title": "The Role of Astaxanthin as an Antioxidant and Anti-Inflammatory Agent in Human Health: A Systematic Review.",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "38843946",
           "title": "A marine-derived antioxidant astaxanthin as a potential neuroprotective and neurotherapeutic agent: A review of its efficacy on neurodegenerative conditions.",
           "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36117431",
+          "title": "The effects of astaxanthin supplementation on expression of microRNAs involved in cardiovascular diseases: a systematic review of current evidence.",
+          "year": "2022",
           "design": "Systematic review",
           "population": "human",
           "n": null
@@ -200,6 +528,94 @@
           "design": "RCT",
           "population": "human",
           "n": null
+        },
+        {
+          "pmid": "36727984",
+          "title": "Astaxanthin Supplementation Does Not Affect Markers of Muscle Damage or Inflammation After an Exercise-Induced Muscle Damage Protocol in Resistance-Trained Male",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36678157",
+          "title": "Astaxanthin Supplemented with High-Intensity Functional Training Decreases Adipokines Levels and Cardiovascular Risk Factors in Men with Obesity.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 12
+        },
+        {
+          "pmid": "23274592",
+          "title": "Astaxanthin supplementation does not augment fat use or improve endurance performance.",
+          "year": "2013",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "17685090",
+          "title": "Effects of astaxanthin supplementation on lipid peroxidation.",
+          "year": "2007",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39090754",
+          "title": "The effect of astaxanthin supplementation on inflammatory markers, oxidative stress indices, lipid profile, uric acid level, blood pressure, endothelial functio",
+          "year": "2024",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 40
+        },
+        {
+          "pmid": "21972007",
+          "title": "Combined fish oil and astaxanthin supplementation modulates rat lymphocyte function.",
+          "year": "2012",
+          "design": "Observational",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41848228",
+          "title": "Protective Effects of Astaxanthin on PFOS-Induced Liver Injury via Fatty Acid and Cholesterol Metabolic Pathways.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "32933455",
+          "title": "Astaxanthin Prevents Lung Injury Due to Hyperoxia and Inflammation.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "29226138",
+          "title": "Effects of Astaxanthin on Reverse Cholesterol Transport and Atherosclerosis in Mice.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "35061144",
+          "title": "Effect of Astaxanthin and Copper Supplementation on Growth, Immunity, Antioxidant, and Blood Biochemical Status of Growing Murrah Buffalo Heifers.",
+          "year": "2022",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "33333811",
+          "title": "Dietary Supplementation of Astaxanthin Improved the Growth Performance, Antioxidant Ability and Immune Response of Juvenile Largemouth Bass (",
+          "year": "2020",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
         }
       ],
       "effects": {
@@ -213,7 +629,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cardiovascular, Astaxanthin has moderate human evidence (4 studies)."
+      "summary": "For cardiovascular, Astaxanthin has moderate human evidence (18 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -221,24 +637,32 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 10,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Precision: ~122 participants verified across 3 of 10 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
-        "mechanistic": 25,
-        "preclinical": 0,
+        "mechanistic": 30,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 0,
+        "n_human_studies": 6,
+        "n_animal_studies": 4,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:37874168",
-        "PMID:33974978"
+        "PMID:33974978",
+        "PMID:36727984",
+        "PMID:37177891",
+        "PMID:32755613",
+        "PMID:35061144",
+        "PMID:40333882",
+        "PMID:41596351",
+        "PMID:39428502",
+        "PMID:36678157"
       ],
       "studies": [
         {
@@ -250,11 +674,75 @@
           "n": null
         },
         {
+          "pmid": "32755613",
+          "title": "The effects of astaxanthin supplementation on obesity, blood pressure, CRP, glycemic biomarkers, and lipid profile: A meta-analysis of randomized controlled tri",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41596351",
+          "title": "The Role of Astaxanthin as an Antioxidant and Anti-Inflammatory Agent in Human Health: A Systematic Review.",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "37874168",
           "title": "Astaxanthin supplementation impact on insulin resistance, lipid profile, blood pressure, and oxidative stress in polycystic ovary syndrome patients: A triple-bl",
           "year": "2024",
           "design": "RCT",
           "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36727984",
+          "title": "Astaxanthin Supplementation Does Not Affect Markers of Muscle Damage or Inflammation After an Exercise-Induced Muscle Damage Protocol in Resistance-Trained Male",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36678157",
+          "title": "Astaxanthin Supplemented with High-Intensity Functional Training Decreases Adipokines Levels and Cardiovascular Risk Factors in Men with Obesity.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 12
+        },
+        {
+          "pmid": "40333882",
+          "title": "Plasma-based proteomics analysis of molecular pathways in canine diabetes mellitus after astaxanthin supplementation.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": 18
+        },
+        {
+          "pmid": "39428502",
+          "title": "Astaxanthin compound nutrient improved insulin resistance, hormone levels, embryo quality and pregnancy outcomes in polycystic ovary syndrome patients undergoin",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": 92
+        },
+        {
+          "pmid": "37177891",
+          "title": "Astaxanthin Supplementation Assists Sorafenib in Slowing Skeletal Muscle Atrophy in H22 Tumor-Bearing Mice via Reversing Abnormal Glucose Metabolism.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "35061144",
+          "title": "Effect of Astaxanthin and Copper Supplementation on Growth, Immunity, Antioxidant, and Blood Biochemical Status of Growing Murrah Buffalo Heifers.",
+          "year": "2022",
+          "design": "Unclassified",
+          "population": "animal",
           "n": null
         }
       ],
@@ -269,70 +757,14 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For blood sugar, Astaxanthin has moderate human evidence (2 studies)."
-    },
-    {
-      "outcome": "blood pressure",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:37874168",
-        "PMID:33974978"
-      ],
-      "studies": [
-        {
-          "pmid": "33974978",
-          "title": "Effects of astaxanthin in animal models of obesity-associated diseases: A systematic review and meta-analysis.",
-          "year": "2021",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "37874168",
-          "title": "Astaxanthin supplementation impact on insulin resistance, lipid profile, blood pressure, and oxidative stress in polycystic ovary syndrome patients: A triple-bl",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For blood pressure, Astaxanthin has moderate human evidence (2 studies)."
+      "summary": "For blood sugar, Astaxanthin has moderate human evidence (10 studies)."
     }
   ],
   "effects_established": [
+    "skin / appearance",
     "inflammation",
     "cardiovascular",
-    "blood sugar",
-    "blood pressure"
+    "blood sugar"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -360,5 +792,76 @@
       "Astaxanthine"
     ]
   },
-  "_cached_at": 1787506556.048838
+  "_cached_at": 1787608327.160925,
+  "explanation": {
+    "what_it_is": "Astaxanthin (C\u2084\u2080H\u2085\u2082O\u2084, molecular weight 596.8) is a red-orange carotenoid pigment produced naturally by microalgae, particularly *Haematococcus pluvialis*, and accumulates in seafood like salmon and shrimp. It is structurally similar to beta-carotene but with a unique molecular arrangement that gives it distinctive biological activity. People typically consume it as a dietary supplement in capsule form, often derived from cultivated algae or synthesized, sometimes marketed under trade names like BioAstin.",
+    "how_it_works": "Astaxanthin is a powerful lipid-soluble antioxidant that neutralizes free radicals\u2014unstable molecules that damage cells\u2014by donating electrons to them. Its long conjugated chain of double bonds (the polyene backbone) allows it to quench reactive oxygen species more effectively than many other carotenoids, and it preferentially accumulates in cell membranes and mitochondrial membranes where oxidative damage often occurs. By reducing oxidative stress, astaxanthin indirectly dampens inflammatory signaling pathways, since free-radical accumulation and inflammation are tightly linked. It may also modulate gene expression involved in antioxidant defense (such as upregulating the Nrf2 pathway) and reduce expression of pro-inflammatory cytokines, though the full scope of its cellular targets is still being mapped.",
+    "outcome_detail": [
+      {
+        "outcome": "skin / appearance",
+        "grade": "Moderate",
+        "what_studies_show": "A 2021 meta-analysis and systematic review, together with a 2018 randomized double-blind trial in healthy people, found that astaxanthin supplementation showed protective effects against UV-induced skin damage and supported skin health markers related to aging. A 2025 animal study in mice also demonstrated that oral astaxanthin mitigated chronological skin aging. Overall, the retrieved human evidence points to modest but measurable benefits for skin resilience and appearance.",
+        "why_this_grade": "Three human studies (including one meta-analysis and one RCT) support the outcome, but sample sizes could not be verified from the abstracts, so precision is uncertain. The moderate grade reflects genuine human evidence balanced against imprecision in the available data."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Strong",
+        "what_studies_show": "Six independent meta-analyses and systematic reviews (published 2021\u20132026) converge on the finding that astaxanthin supplementation reduces oxidative stress and inflammation biomarkers in humans. A 2022 meta-analysis of 380 participants specifically showed mildly reduced inflammation markers, and multiple reviews confirm effects across obesity-associated diseases and cardiovascular contexts. The consistency across multiple independent syntheses is a key strength of the evidence base.",
+        "why_this_grade": "Twenty human studies and 15 animal studies support this outcome, bolstered by six independent meta-analyses and systematic reviews that replicate the direction of effect. While most individual studies omit sample sizes in their abstracts (limiting precision assessment), the convergence across multiple independent syntheses and adequately powered analyses provides strong confidence in the anti-inflammatory effect."
+      },
+      {
+        "outcome": "cardiovascular",
+        "grade": "Moderate",
+        "what_studies_show": "A 2020 meta-analysis and a 2021 meta-analysis examined effects on blood pressure, lipid profiles, and inflammation markers related to cardiometabolic health. A 2024 RCT in firefighters assessed impacts on cardiometabolic markers and tactical performance. Multiple systematic reviews (2022, 2024, 2026) have examined astaxanthin's role in cardiovascular disease pathways. The evidence suggests potential benefits for cardiometabolic markers, but findings have not yet been pooled into a single comprehensive analysis confirming consistency.",
+        "why_this_grade": "Thirteen human studies support this outcome, but only two studies had sample sizes verifiable from abstracts (~52 total participants), making precision uncertain. While multiple meta-analyses exist, no single pooled analysis confirms that independent trials agree on a consistent effect size, placing this at Moderate rather than Strong."
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Moderate",
+        "what_studies_show": "A 2020 meta-analysis examined astaxanthin's effects on glycemic biomarkers and found trends toward improved blood sugar markers. A 2021 meta-analysis in obesity-related diseases and a 2024 RCT on insulin resistance and lipid profiles added evidence. A 2023 RCT in 12 participants showed decreases in adipokines and cardiovascular risk markers after astaxanthin supplementation with high-intensity training. Together, these studies suggest a modest effect on glucose metabolism and related parameters.",
+        "why_this_grade": "Six human studies support this outcome, but only three had verifiable sample sizes (~122 total participants), limiting precision assessment. No pooled analysis confirms that multiple independent trials agree on effect size, and the recovered studies show no definitive consensus, warranting a Moderate grade pending further synthesis."
+      }
+    ],
+    "evidence_base": "The evidence for astaxanthin is predominantly human-based (39 of 58 studies retrieved are human), with most data coming from systematic reviews and meta-analyses published between 2020 and 2026. The inflammation outcome is particularly well-supported by six independent meta-analyses that converge on anti-inflammatory effects; other outcomes (skin, cardiovascular, blood sugar) rest on fewer but still multiple syntheses. Animal studies (19 retrieved) provide mechanistic plausibility and support for the human findings. The research is recent and active, which is appropriate for a supplement category, though individual trial sizes are often small and sample-size reporting is inconsistent across abstracts.",
+    "emerging_research": "Recent systematic reviews (2025\u20132026) are expanding the scope of astaxanthin research into female fertility and reproductive outcomes, as well as neuroprotection and neurodegenerative disease, though these remain early and are not yet formally graded here. A 2025 animal study specifically examined chronological skin aging, suggesting renewed focus on skin health. The field continues to probe astaxanthin's effects on microRNA expression related to cardiovascular disease, a molecular-level investigation that may refine understanding of its clinical impact.",
+    "open_questions": "Among the retrieved studies, none have specified follow-up durations beyond the scope of the abstracts provided, so we cannot determine whether any trials extended beyond typical 8\u201312 week supplementation periods to assess sustained effects. Sample-size reporting was incomplete across most abstracts, making it difficult to assess the true precision of the overall body of evidence; only a fraction of the 58 studies retrieved provided verifiable participant numbers. The retrieved records do not reveal whether studies have examined astaxanthin in specific populations (e.g., older adults, individuals with diagnosed cardiovascular disease, or those with type 2 diabetes), so gaps in population coverage may exist but are not visible here. These observations reflect only the sample of abstracts provided to this analysis\u2014the full literature may contain additional long-term trials or population-specific studies not present in this retrieval set.",
+    "caveats": "Astaxanthin is generally well-tolerated, but because most commercial products are derived from cultivated algae or synthetic sources, quality and concentration vary by manufacturer; third-party testing is advisable. It is fat-soluble and may interact with certain medications or conditions affecting fat absorption; individuals on anticoagulants or with bleeding disorders should consult a healthcare provider before use. Pregnant and breastfeeding individuals should seek guidance, as long-term safety data in these populations is limited.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The inflammation evidence is reasonably robust (multiple meta-analyses, 35 studies), but the cardiovascular, blood sugar, and skin outcomes rest on small, poorly reported trials with inconsistent results\u2014making it premature to grade them 'Moderate' or the overall compound as 'Strong' for longevity.",
+    "concerns": [
+      {
+        "issue": "Cardiovascular evidence severely underpowered and unreported",
+        "detail": "Only 2 of 18 cardiovascular studies report sample sizes (n=12 and n=40, total ~52 participants verified). The engine explicitly flags 'inconsistency: several studies exist but no pooled analysis confirms they agree.' Six RCTs are listed but their results are not summarized in the abstracts, making it impossible to know if they converge or contradict. A single large negative trial (e.g., the 2013 trial on endurance performance) could reverse the apparent signal.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood sugar outcome graded on minimal evidence with no consensus synthesis",
+        "detail": "Only 3 of 10 studies report sample sizes (n=12, 18, 92; median 18), totaling ~122 verified participants. The engine notes 'inconsistency: no pooled analysis confirms they agree,' yet the outcome is graded 'Moderate.' Two meta-analyses are listed but their conclusions are not visible in abstracts; at least one RCT showed astaxanthin 'Does Not Affect' inflammation after exercise, suggesting mixed results. This grade appears assigned without evidence of agreement across trials.",
+        "severity": "high"
+      },
+      {
+        "issue": "Skin appearance evidence is minimal and heterogeneous in design",
+        "detail": "Only 4 studies total (1 RCT human, 2 systematic reviews, 1 animal model from 2025), and no sample sizes are extractable from the abstracts provided. The meta-analysis and systematic review titles suggest they synthesize the same narrow literature. The 2025 animal study (mice) is the only novel data point; whether mouse chronological aging translates to human cosmetic outcomes is uncertain. The 2018 RCT on UV protection is specific and narrow, not evidence for general skin aging.",
+        "severity": "high"
+      },
+      {
+        "issue": "Most sample sizes are not reported in the abstracts, obscuring true precision",
+        "detail": "For inflammation (35 studies), only 6 report sample sizes; the engine estimates ~501 verified participants but acknowledges 'true total is substantially larger'\u2014yet does not state how many of the 29 unreported studies are large vs. tiny. For cardiovascular (18 studies), only 2 report n. For blood sugar (10 studies), only 3 report n. For skin (4 studies), zero report n. This makes it impossible to audit whether the literature is actually well-powered or if a handful of large studies are driving the grades while many small studies are invisible.",
+        "severity": "high"
+      },
+      {
+        "issue": "No pooled effect sizes are extractable; grades rest on narrative synthesis",
+        "detail": "Across all four outcomes, the engine reports 'pooled effect: none extractable' for each. This means the grades (Moderate, Strong) are not based on quantified meta-analytic summaries but on the reviewers' qualitative reading of the retrieved abstracts. For inflammation, the engine notes '6 independent meta-analyses / systematic reviews converge'\u2014but this is a proxy for replication, not proof of effect size or clinical significance. The actual magnitude of benefit is unknown.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Astaxanthin's proposed mechanism (antioxidant and anti-inflammatory via carotenoid structure, suppression of NF-\u03baB, ROS scavenging) is biochemically plausible and supported by in vitro and animal data. However, the leap from oxidative stress reduction in inflammatory biomarkers to clinically meaningful benefits in skin aging, cardiovascular disease, or blood sugar control is substantial. The inflammation outcome (the strongest) measures biomarkers (CRP, inflammatory cytokines), not hard clinical endpoints (MI, stroke, mortality). For skin, the evidence conflates UV-induced acute damage with chronological aging. For blood sugar and cardiovascular outcomes, the mechanism-to-clinical translation is assumed but not empirically demonstrated in the human trials cited.",
+    "strongest_counterargument": "A skeptic would note that the 'Strong' overall grade rests almost entirely on the inflammation biomarker evidence, which shows modest reductions in CRP and cytokines across small, heterogeneous trials with no reported adverse event screening. The three longevity-relevant outcomes (cardiovascular, blood sugar, skin aging) are each graded 'Moderate' based on <20 trials each, with most sample sizes unreported and no agreed pooled effect. Critically, none of these outcomes measure mortality, functional capacity, or disease incidence\u2014only surrogates. A comprehensive meta-analysis of all RCTs in cardiovascular or metabolic disease would likely show effect heterogeneity and small absolute benefit; the current evidence base is consistent with astaxanthin having a small or negligible effect on the outcomes that matter for longevity.",
+    "what_would_change_the_picture": "A pre-registered meta-analysis of all astaxanthin RCTs (n\u226520 participants) published to date, reporting pooled effect sizes with 95% CIs and I\u00b2 for each outcome (inflammation, CVD, blood sugar, skin), plus assessment of publication bias. Alternatively, a large (n\u2265200), long-term (\u22656 months) RCT in a high-risk population (e.g., metabolic syndrome) measuring hard endpoints (blood pressure, lipid profile, fasting glucose, hs-CRP) with preregistered analysis would anchor the evidence for human benefit.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

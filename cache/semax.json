@@ -3,40 +3,193 @@
   "category": "peptide",
   "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 13,
+  "study_count": 26,
   "claims": [
     {
-      "outcome": "stress / anxiety",
+      "outcome": "cognition",
       "tier": "Preliminary",
       "certainty": "very_low",
       "score": 22,
       "has_human_evidence": false,
-      "n_studies": 4,
+      "n_studies": 3,
       "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 3,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:40692165",
+        "PMID:27411820",
+        "PMID:18756821"
+      ],
+      "studies": [
+        {
+          "pmid": "40692165",
+          "title": "Semax peptide targets the \u03bc opioid receptor gene Oprm1 to promote deubiquitination and functional recovery after spinal cord injury in female mice.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "27411820",
+          "title": "Semax prevents learning and memory inhibition by heavy metals.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "18756821",
+          "title": "[Effect of semax on the temporary dynamics of brain-derived neurotrophic factor and nerve growth factor gene expression in the rat hippocampus and frontal corte",
+          "year": "2008",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For cognition, Semax has only preliminary or animal evidence (3 studies)."
+    },
+    {
+      "outcome": "stress / anxiety",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 14,
+      "grade_reasons": [
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 45,
-        "human": 0,
-        "overall": 45,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 2,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 13,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:24385169",
         "PMID:11177268",
         "PMID:14968154",
-        "PMID:31028579"
+        "PMID:31028579",
+        "PMID:25735182",
+        "PMID:32621722",
+        "PMID:33418449",
+        "PMID:21113455",
+        "PMID:18239779",
+        "PMID:34576218",
+        "PMID:22803132",
+        "PMID:20387390",
+        "PMID:15341218",
+        "PMID:32737723"
       ],
       "studies": [
+        {
+          "pmid": "15341218",
+          "title": "The neuroprotective effects of Semax in conditions of MPTP-induced lesions of the brain dopaminergic system.",
+          "year": "2004",
+          "design": "Observational",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "32621722",
+          "title": "The Influence of Selank on the Level of Cytokines Under the Conditions of \"Social\" Stress.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "33418449",
+          "title": "Semax, synthetic ACTH(4-10) analogue, attenuates behavioural and neurochemical alterations following early-life fluvoxamine exposure in white rats.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "34576218",
+          "title": "Antistress Action of Melanocortin Derivatives Associated with Correction of Gene Expression Patterns in the Hippocampus of Male Rats Following Acute Stress.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "32737723",
+          "title": "Composition of Colon Microbiota in Rats Treated with ACTH(4-7)-PGP Peptide (Semax) under Conditions of Restraint Stress.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "25735182",
+          "title": "[Effects of neonatal fluvoxamine administration to white rats and their correction by semax treatment].",
+          "year": "2014",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
         {
           "pmid": "24385169",
           "title": "Heptapeptide semax attenuates the effects of chronic unpredictable stress in rats.",
           "year": "2013",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "22803132",
+          "title": "Semax attenuates the influence of neonatal maternal deprivation on the behavior of adolescent white rats.",
+          "year": "2012",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "21113455",
+          "title": "Anticoagulation and antiplatelet effects of semax under conditions of acute and chronic immobilization stress.",
+          "year": "2010",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "20387390",
+          "title": "[Influence of Semax on the emotional state of white rats in the norm and against the background of cholecystokinin-tetrapeptide action].",
+          "year": "2010",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "18239779",
+          "title": "Effects of semax and its Pro-Gly-Pro fragment on calcium homeostasis of neurons and their survival under conditions of glutamate toxicity.",
+          "year": "2007",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -54,7 +207,7 @@
           "title": "Experimental Substantiation of Application of Semax as a Modulator of Immune Reaction on the Model of \"Social\" Stress.",
           "year": "2019",
           "design": "Unclassified",
-          "population": "unknown",
+          "population": "animal",
           "n": null
         },
         {
@@ -62,7 +215,7 @@
           "title": "Glyprolines and semax prevent stress-induced microcirculatory disturbances in the mesentery.",
           "year": "2003",
           "design": "Unclassified",
-          "population": "unknown",
+          "population": "animal",
           "n": null
         }
       ],
@@ -77,21 +230,20 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For stress / anxiety, Semax has only preliminary or animal evidence (4 studies)."
+      "summary": "For stress / anxiety, Semax has moderate human evidence (14 studies)."
     },
     {
-      "outcome": "immune function",
+      "outcome": "cardiovascular",
       "tier": "Preliminary",
       "certainty": "very_low",
       "score": 22,
       "has_human_evidence": false,
-      "n_studies": 2,
+      "n_studies": 1,
       "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
       "layers": {
-        "mechanistic": 25,
+        "mechanistic": 20,
         "preclinical": 35,
         "human": 0,
         "overall": 35,
@@ -101,86 +253,13 @@
         "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:24661604",
-        "PMID:31028579"
+        "PMID:10763109"
       ],
       "studies": [
         {
-          "pmid": "24661604",
-          "title": "The peptide semax affects the expression of genes related to the immune and vascular systems in rat brain focal ischemia: genome-wide transcriptional analysis.",
-          "year": "2014",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31028579",
-          "title": "Experimental Substantiation of Application of Semax as a Modulator of Immune Reaction on the Model of \"Social\" Stress.",
-          "year": "2019",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For immune function, Semax has only preliminary or animal evidence (2 studies)."
-    },
-    {
-      "outcome": "recovery / soreness",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 3,
-      "grade_reasons": [
-        "Imprecision: modest verified sample (~67 participants across 1 of 3 studies); effect estimate may be unstable."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:40692165",
-        "PMID:29798983",
-        "PMID:10741256"
-      ],
-      "studies": [
-        {
-          "pmid": "10741256",
-          "title": "[Evaluation of therapeutic effect of new Russian drug semax in optic nerve disease].",
+          "pmid": "10763109",
+          "title": "[The effect of semax and mexidol on the course of acute pancreatitis in rats].",
           "year": "2000",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "29798983",
-          "title": "[The efficacy of semax in the tretament of patients at different stages of ischemic stroke].",
-          "year": "2018",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": 67
-        },
-        {
-          "pmid": "40692165",
-          "title": "Semax peptide targets the \u03bc opioid receptor gene Oprm1 to promote deubiquitination and functional recovery after spinal cord injury in female mice.",
-          "year": "2025",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -197,7 +276,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For recovery / soreness, Semax has moderate human evidence (3 studies)."
+      "summary": "For cardiovascular, Semax has only preliminary or animal evidence (1 studies)."
     },
     {
       "outcome": "inflammation",
@@ -205,7 +284,7 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 8,
       "grade_reasons": [
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
@@ -215,15 +294,19 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 3,
+        "n_human_studies": 2,
+        "n_animal_studies": 6,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:40692165",
         "PMID:34097675",
         "PMID:10741256",
-        "PMID:11202510"
+        "PMID:11202510",
+        "PMID:10358912",
+        "PMID:32621722",
+        "PMID:23888777",
+        "PMID:34201112"
       ],
       "studies": [
         {
@@ -231,6 +314,14 @@
           "title": "[Evaluation of therapeutic effect of new Russian drug semax in optic nerve disease].",
           "year": "2000",
           "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "10358912",
+          "title": "[Investigation of mechanisms of neuro-protective effect of semax in acute period of ischemic stroke].",
+          "year": "1999",
+          "design": "Observational",
           "population": "human",
           "n": null
         },
@@ -246,6 +337,30 @@
           "pmid": "34097675",
           "title": "[The Peptide Drug ACTH(4-7)PGP (Semax) Suppresses mRNA Transcripts Encoding Proinflammatory Mediators Induced by Reversible Ischemia of the Rat Brain].",
           "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "32621722",
+          "title": "The Influence of Selank on the Level of Cytokines Under the Conditions of \"Social\" Stress.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "34201112",
+          "title": "Brain Protein Expression Profile Confirms the Protective Effect of the ACTH",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "23888777",
+          "title": "[The effect of semax and its C-end peptide PGP on Vegfa gene expression in the rat brain during incomplete global ischemia].",
+          "year": "2013",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -270,16 +385,16 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Semax has moderate human evidence (4 studies)."
+      "summary": "For inflammation, Semax has moderate human evidence (8 studies)."
     }
   ],
   "effects_established": [
-    "recovery / soreness",
+    "stress / anxiety",
     "inflammation"
   ],
   "effects_promising": [
-    "stress / anxiety",
-    "immune function"
+    "cognition",
+    "cardiovascular"
   ],
   "effects_emerging": [],
   "honesty_note": null,
@@ -306,5 +421,76 @@
       "RefChem:56007"
     ]
   },
-  "_cached_at": 1787506635.713869
+  "_cached_at": 1787608668.010526,
+  "explanation": {
+    "what_it_is": "Semax is a synthetic peptide derived from adrenocorticotropic hormone (ACTH), consisting of four amino acids (Pro-Gly-Pro with an N-terminal methionine). It is administered as an injectable peptide, primarily used in Russia and some Eastern European countries as a nootropic and neuroprotective agent. The compound is not approved by major Western regulatory bodies and is often classified as a research chemical.",
+    "how_it_works": "Semax appears to act through multiple pathways in the central nervous system. Recent research suggests it interacts with the \u03bc opioid receptor system (specifically the Oprm1 gene), which is involved in stress response, mood regulation, and neuronal protection. The peptide may also influence neurotrophic factors\u2014proteins that support neuron survival and growth\u2014and appears to modulate inflammatory signaling pathways, particularly by reducing expression of pro-inflammatory cytokine messengers in the brain. These mechanisms could plausibly support cognitive resilience and stress buffering, though the clinical relevance in humans remains incompletely understood.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Preliminary",
+        "what_studies_show": "All three studies demonstrating cognitive effects are in animals. A 2008 study examined effects on brain-derived neurotrophic factor and nerve growth factor gene expression; a 2016 study showed semax prevented learning and memory impairment induced by heavy metals; and a 2025 study found the peptide targets the \u03bc opioid receptor to promote recovery after injury. None of these translate directly to human cognitive outcomes.",
+        "why_this_grade": "Evidence is exclusively from animal models, which do not reliably predict human efficacy. There are no human trials demonstrating cognitive benefits in the records retrieved."
+      },
+      {
+        "outcome": "stress / anxiety",
+        "grade": "Moderate",
+        "what_studies_show": "One human observational study (2004) reported neuroprotective effects in conditions involving dopaminergic system damage; however, it was not a controlled trial. Thirteen animal studies documented anti-stress and anti-anxiety effects: a 2021 study showed semax attenuated behavioral and neurochemical changes following early-life stress, another found it reduced pro-inflammatory cytokine elevation under social stress, and others demonstrated effects on stress-related microbiota and gene expression patterns in the hippocampus and other brain regions.",
+        "why_this_grade": "The single human study is observational rather than randomized controlled, and sample sizes across the retrieved records could not be verified from abstracts, limiting precision. The majority of supporting evidence remains animal-based, so confidence is held at Moderate rather than Strong."
+      },
+      {
+        "outcome": "cardiovascular",
+        "grade": "Preliminary",
+        "what_studies_show": "Only one animal study (2000) examined cardiovascular effects, testing semax alongside mexidol in a rat model of acute pancreatitis. No human cardiovascular data are available in the retrieved records.",
+        "why_this_grade": "Evidence is limited to a single animal study. This is too sparse and indirect to establish efficacy in humans."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "Two human studies are present: a 2000 RCT evaluated therapeutic effects in optic nerve disease, and a 1999 observational study investigated neuroprotective mechanisms in acute ischemic stroke. Six animal studies showed that semax reduced pro-inflammatory mediator transcripts, suppressed cytokine elevation under stress, and produced protective effects visible in brain protein expression profiles (2021 studies). A 2025 animal study also implicated the \u03bc opioid receptor pathway in these protective effects.",
+        "why_this_grade": "The two human studies provide some direct evidence, but one is observational and sample sizes could not be confirmed from abstracts. The majority of detail comes from animal research. Imprecision in sample reporting limits certainty to Moderate."
+      }
+    ],
+    "evidence_base": "The research base is heavily weighted toward animal studies (23 animal vs. 3 human records retrieved). The human evidence includes one RCT and two observational studies, all focused on neurological and inflammatory conditions; no high-quality randomized controlled trials in healthy populations appear in the sample provided. Most studies are from 2000\u20132025, with a cluster of mechanistic animal work from 2021 onwards. The predominance of animal and observational data means confidence in human efficacy remains below what would be needed for strong recommendations.",
+    "emerging_research": "Recent studies (2021\u20132025) have begun to elucidate molecular mechanisms: semax's interaction with the \u03bc opioid receptor system and its role in reducing pro-inflammatory gene transcription are emerging focal points. A 2025 study linking semax to functional recovery via the Oprm1 gene suggests a specific target for further investigation. These mechanistic advances are promising for understanding how the peptide might work, but they remain primarily in animal models and have not yet been translated into human clinical trials.",
+    "open_questions": "Among the retrieved studies, human evidence is scarce and consists only of small observational studies and one RCT in specialized populations (optic nerve disease, stroke). No retrieved records show long-term follow-up (most are acute or short-duration studies), and the vast majority of work is animal-based, making it unclear whether mechanisms observed in rodents will translate to human cognition or anxiety. The sample of 26 records here is limited\u2014this represents roughly 40 abstracts per outcome but is not exhaustive\u2014so I cannot characterize what research exists globally; these observations reflect only what the provided data contain.",
+    "caveats": "Semax is an injectable peptide not approved in most Western countries and is often sold as a research chemical, meaning purity, sterility, and quality are not guaranteed. As a synthetic peptide, it may trigger immune responses or interact unpredictably with other medications or neurochemical systems; medical supervision is advisable if use is considered. Pregnant women, individuals with pituitary or adrenal conditions, and those taking dopamine-active medications should exercise particular caution, as the peptide's effects on the neuroendocrine system are incompletely characterized in humans.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "All outcomes rely on animal models or tiny, pre-2005 human observational studies; no randomized controlled trial evidence exists in humans for any claimed benefit, and sample sizes for human data are not disclosed in these abstracts.",
+    "concerns": [
+      {
+        "issue": "No human RCT evidence for major claims",
+        "detail": "Of 27 total studies across all outcomes, only 2 are human (both observational: 1999 ischemic stroke, 2000 optic nerve disease). The stress/anxiety outcome (graded Moderate) rests on 13 animal studies and 1 observational human study with no disclosed sample size. Cognition and cardiovascular rely entirely on animal data. No registered randomized trial appears in these abstracts.",
+        "severity": "high"
+      },
+      {
+        "issue": "Pervasive non-reporting of sample sizes",
+        "detail": "The grading engine explicitly notes 'sample sizes could not be verified from the abstracts' for stress/anxiety (14 studies) and inflammation (8 studies). This prevents assessment of precision, statistical power, and whether results could reflect noise from underpowered trials. Six of eight inflammation studies and 11 of 14 stress studies are animal work, but even within those, N is hidden.",
+        "severity": "high"
+      },
+      {
+        "issue": "Human evidence is obsolete and uncontrolled",
+        "detail": "The two human studies (1999, 2000) are both observational, lack control groups, and predate modern methodology standards by 25 years. The 2000 RCT label appears to be mislabeled in the engine output (listed as human inflammation evidence); its actual design cannot be verified from the title alone. Neither trial disclosed sample size or blinding.",
+        "severity": "high"
+      },
+      {
+        "issue": "Extreme recency in animal literature suggests limited historical evidence base",
+        "detail": "Five of 27 studies are from 2025, and nine are from 2021 alone. This clustering may reflect recent investment in the compound's development, but it also means the older foundational evidence (2000\u20132013) comprises fewer than half the retrieved studies. If older work was negative or null, it may be underrepresented in these abstracts.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Potential grey-market availability confounds interpretation",
+        "detail": "The preamble notes semax is often obtained grey-market and not approved for human use. This context suggests the human observational studies were likely conducted in unregulated settings (possibly Russia) with uncontrolled formulations and purity. Translating efficacy from such studies to regulated pharmaceutical use is unreliable.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The proposed mechanism (\u03bc opioid receptor modulation, BDNF/NGF upregulation, cytokine suppression) is plausible in animal neurobiology, but there is a large inferential leap between rodent dopamine/stress markers and human cognition, anxiety, or inflammation outcomes. The animal studies measure surrogate endpoints (gene expression, behavior in forced swim tests) that do not necessarily correlate with clinical symptom relief in humans, particularly when no human dose-response or bioavailability data is provided.",
+    "strongest_counterargument": "A skeptic would note that animal neuropeptides frequently fail to translate to humans due to blood\u2013brain barrier penetration, off-target effects, and inter-species pharmacokinetics. The absence of a single prospective randomized controlled trial in humans across cognition, anxiety, stress, and inflammation\u2014despite the compound's apparent interest in Russian neuroscience\u2014suggests either negative trials were not published or the compound has not been rigorously tested. The two human observational studies are so old and uncontrolled that they provide almost no basis for clinical claims.",
+    "what_would_change_the_picture": "A pre-registered, randomized, placebo-controlled trial in humans (n\u2265100 per arm) with validated cognitive or anxiety endpoints (e.g., MMSE, GAD-7) and active pharmacokinetic confirmation would be the minimum to convert this from animal inference to clinically credible evidence. Secondary priority: disclosure of sample sizes and effect sizes from the existing animal work, and a systematic review that separates published from unpublished trials to assess publication bias.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

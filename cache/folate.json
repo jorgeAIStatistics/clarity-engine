@@ -3,7 +3,7 @@
   "category": "vitamin",
   "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 4,
+  "study_count": 6,
   "claims": [
     {
       "outcome": "cognition",
@@ -11,24 +11,24 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 3,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
-        "mechanistic": 25,
+        "mechanistic": 30,
         "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
+        "n_human_studies": 3,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:39681839",
-        "PMID:36940509"
+        "PMID:36940509",
+        "PMID:40249981"
       ],
       "studies": [
         {
@@ -36,6 +36,14 @@
           "title": "Effectiveness of vitamin-B supplements on cognition in older adults: A meta-analysis.",
           "year": "2023",
           "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40249981",
+          "title": "The effects of methyl nutrients on cognition and one carbon metabolism in older adults with mild cognitive impairment, A systematic review and meta-analysis.",
+          "year": "2025",
+          "design": "Systematic review",
           "population": "human",
           "n": null
         },
@@ -59,7 +67,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cognition, Folate has moderate human evidence (2 studies)."
+      "summary": "For cognition, Folate has moderate human evidence (3 studies)."
     },
     {
       "outcome": "inflammation",
@@ -115,13 +123,62 @@
       },
       "headline_effect": null,
       "summary": "For inflammation, Folate has moderate human evidence (2 studies)."
+    },
+    {
+      "outcome": "cholesterol / lipids",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 0,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:29279272"
+      ],
+      "studies": [
+        {
+          "pmid": "29279272",
+          "title": "The effects of folate supplementation on lipid profiles among patients with metabolic diseases: A systematic review and meta-analysis of randomized controlled t",
+          "year": "2018",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For cholesterol / lipids, Folate shows early but unsettled evidence (1 studies)."
     }
   ],
   "effects_established": [
     "cognition",
     "inflammation"
   ],
-  "effects_promising": [],
+  "effects_promising": [
+    "cholesterol / lipids"
+  ],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
@@ -147,5 +204,35 @@
       "Folacin"
     ]
   },
-  "_cached_at": 1787506322.643601
+  "_cached_at": 1787607436.2241569,
+  "explanation": {
+    "what_it_is": "Folate (also called folic acid or vitamin B9, chemical formula C\u2081\u2089H\u2081\u2089N\u2087O\u2086) is a water-soluble B vitamin essential for cell division and DNA synthesis. It occurs naturally in leafy greens, legumes, and fortified grains, and is available as a supplement in synthetic form (folic acid) or as naturally derived folate. Most people consume it orally as tablets or in fortified foods.",
+    "how_it_works": "Folate functions as a coenzyme in one-carbon metabolism \u2014 a fundamental biochemical pathway that transfers single-carbon units needed to synthesize and repair DNA, produce neurotransmitters, and regulate gene expression through methylation. It works alongside other B vitamins (B12, B6) and is converted in the liver to its active form, tetrahydrofolate (THF), which participates in reactions that build nucleotides (the building blocks of DNA and RNA) and regenerate the amino acid methionine. This is why folate is especially critical during pregnancy and periods of rapid cell growth, and why adequate levels support brain function and may influence inflammatory pathways by regulating homocysteine metabolism.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "Three human studies \u2014 including a 2023 meta-analysis of B-vitamin supplements in older adults, a 2025 systematic review of methyl nutrients (including folate) and cognition in older adults with mild cognitive impairment, and a 2024 randomized controlled trial examining cognitive benefits of folic acid supplementation during pregnancy \u2014 found associations between folate status and cognitive outcomes, with some evidence that epigenetic changes track with cognitive benefits. However, precise effect sizes and sample sizes could not be verified from the abstracts retrieved.",
+        "why_this_grade": "Human evidence is present (three studies) and shows a consistent direction, but the limitation of unconfirmed sample sizes and imprecision prevents elevation to Strong. The research suggests a meaningful link but does not yet establish definitive magnitude of benefit."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "Two meta-analyses \u2014 a 2024 systematic review pooling 426 participants examining folic acid supplementation on inflammation and homocysteine in type 2 diabetes, and a 2021 systematic review and dose-response analysis of n=2286 examining effects on pro-inflammatory mediators \u2014 both retrieved human pooled evidence showing folate-related changes in inflammatory markers. However, both are secondary analyses (meta-analyses) rather than primary trials.",
+        "why_this_grade": "The evidence is human-based and pooled across a reasonable number of participants (total ~2700+ across reviews), showing consistent direction. However, the absence of primary randomized trials in the retrieved records and reliance on pooled analyses limits certainty to Moderate rather than Strong."
+      },
+      {
+        "outcome": "cholesterol / lipids",
+        "grade": "Emerging",
+        "what_studies_show": "A single 2018 meta-analysis of folate supplementation on lipid profiles in patients with metabolic diseases was retrieved. Data are limited, and sample sizes could not be verified from the abstract.",
+        "why_this_grade": "Only one study addresses this outcome, precluding any assessment of consistency or reproducibility. The single finding, combined with unconfirmed precision, places this at the Emerging level \u2014 promising but preliminary and insufficient to establish efficacy."
+      }
+    ],
+    "evidence_base": "The research base consists primarily of human studies, with no animal evidence in the records retrieved. The evidence includes three randomized or observational trials and systematic reviews/meta-analyses for cognition; two meta-analyses for inflammation; and a single meta-analysis for lipids. Most studies are from 2018\u20132025, reflecting recent interest in folate's role in metabolic and cognitive health. The overall tier is Moderate, meaning evidence is encouraging for some outcomes but hampered by sample-size transparency issues and limited primary trial data in certain areas.",
+    "emerging_research": "Recent work (2024\u20132025) has focused on folate's epigenetic effects \u2014 specifically how folic acid supplementation during pregnancy correlates with DNA methylation patterns and downstream cognitive development. Concurrently, researchers are investigating folate's role in homocysteine regulation as a mechanism linking methyl-nutrient status to inflammation in type 2 diabetes and metabolic disease. These directions are still early; long-term follow-up and mechanistic confirmation in larger populations are ongoing.",
+    "open_questions": "Among the studies retrieved here, the cognition and cholesterol/lipids outcomes are limited by unverified sample sizes and imprecision in the abstracts. For cognition, most evidence focuses on older adults or pregnant women; it is unclear from these records whether benefits extend to younger or cognitively normal populations, or how long effects persist beyond the study periods shown. For inflammation and lipids, the retrieved records show few or no primary randomized trials, leaving dose-response relationships and long-term safety/efficacy undefined in the available data. Note: these observations describe only the sample of ~40 abstracts provided per outcome; the complete global literature may contain additional studies not retrieved here.",
+    "caveats": "Folate supplements are safe at recommended dietary allowances (~400 mcg/day for adults), but very high doses (>5000 mcg/day) may mask vitamin B12 deficiency and raise theoretical cancer risk in some contexts \u2014 discussion with a clinician is warranted for high-dose or long-term use. Quality varies by brand; look for third-party testing. Folate interacts with certain anticonvulsants, methotrexate, and medications that inhibit folate absorption; check with a pharmacist if you take chronic medications.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

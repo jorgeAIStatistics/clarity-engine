@@ -3,7 +3,7 @@
   "category": "herb",
   "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 10,
+  "study_count": 11,
   "claims": [
     {
       "outcome": "sleep quality",
@@ -90,12 +90,12 @@
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 35,
+        "preclinical": 45,
         "human": 22,
         "overall": 22,
         "ceiling": 22,
         "n_human_studies": 1,
-        "n_animal_studies": 1,
+        "n_animal_studies": 2,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -125,7 +125,7 @@
           "title": "Effects of drinking water valerian extract and stocking density on stress, performance, and egg quality in laying Japanese quails.",
           "year": "2026",
           "design": "Unclassified",
-          "population": "unknown",
+          "population": "animal",
           "n": 180
         }
       ],
@@ -203,24 +203,33 @@
       "certainty": "very_low",
       "score": 22,
       "has_human_evidence": false,
-      "n_studies": 1,
+      "n_studies": 2,
       "grade_reasons": [
         "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
+        "mechanistic": 25,
+        "preclinical": 45,
         "human": 0,
-        "overall": 35,
+        "overall": 45,
         "ceiling": 55,
         "n_human_studies": 0,
-        "n_animal_studies": 1,
+        "n_animal_studies": 2,
         "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:35658820"
+        "PMID:35658820",
+        "PMID:40425957"
       ],
       "studies": [
+        {
+          "pmid": "40425957",
+          "title": "Histological study of the therapeutic effect of valerian extract alone or in combination with co-enzyme Q10 on experimentally induced gastric ulcers in adult al",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
         {
           "pmid": "35658820",
           "title": "Protective effect of valerian extract capsule (VEC) on ethanol- and indomethacin-induced gastric mucosa injury and ameliorative effect of VEC on gastrointestina",
@@ -241,7 +250,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For gut / digestion, Valerian Root has only preliminary or animal evidence (1 studies)."
+      "summary": "For gut / digestion, Valerian Root has only preliminary or animal evidence (2 studies)."
     }
   ],
   "effects_established": [
@@ -257,5 +266,76 @@
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506437.990464
+  "_cached_at": 1787607893.7342982,
+  "explanation": {
+    "what_it_is": "Valerian root is an herbal extract derived from the rhizome and roots of Valeriana officinalis, a perennial plant native to Europe and Asia. It has been used in traditional medicine for centuries, particularly in European folk practice. People typically take it as a dried extract in capsules, tablets, or as a liquid preparation, and it contains a complex mixture of compounds including valerenic acid, isovaleric acid, and volatile oils.",
+    "how_it_works": "Valerian's mechanism in the body is not fully characterized, but evidence suggests it works through multiple pathways. Its active compounds appear to interact with GABA (gamma-aminobutyric acid) receptors and the serotonin system, both central to mood and sleep regulation. Some constituents may also inhibit the breakdown of GABA in the brain, potentially increasing its calming effect. Additionally, valerian contains compounds that may have mild sedative or anxiolytic (anxiety-reducing) properties, though the precise contribution of individual components remains unclear. This multi-target profile may explain why valerian has been studied for both sleep and stress-related outcomes.",
+    "outcome_detail": [
+      {
+        "outcome": "sleep quality",
+        "grade": "Moderate",
+        "what_studies_show": "Multiple randomized controlled trials have examined valerian's effect on sleep. A 2021 RCT (n=36) in post-cardiac surgery patients and a 1999 RCT (n=99) in healthy volunteers both assessed sleep quality and related cognitive measures. A smaller 1985 RCT (n=10) directly measured the effect of valerian on human sleep. Collectively, these studies suggest modest improvements in sleep quality, though sample sizes are modest and findings show variability.",
+        "why_this_grade": "The evidence is graded Moderate because it comes from human randomized trials with a reasonable study design, but the verified sample across three of the four studies is approximately 145 participants total, which is relatively small. This modest sample size means the effect estimate may be unstable and could shift with additional data."
+      },
+      {
+        "outcome": "stress / anxiety",
+        "grade": "Preliminary",
+        "what_studies_show": "Evidence for valerian's effect on stress and anxiety is currently limited to early-stage research. One human case report from 2026 and two animal studies (2014 and 2026) comprise the retrieved literature. The animal studies examined valerian extract's suppression of stress responses induced by physical (electric shock) and psychological stressors, as well as effects on stress-related outcomes in laying hens. These preliminary findings are suggestive but do not yet establish efficacy in humans.",
+        "why_this_grade": "This outcome is graded Preliminary because most evidence comes from animal models, which do not reliably translate to human effects. Only one human record was retrieved, and it was a case report rather than a controlled trial. Approximately 180 participants are verified in one animal study, but the human evidence base remains too thin to support a clinical claim."
+      },
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "Two human randomized controlled trials have assessed valerian's effects on cognitive function. A 2015 RCT (n=61) examined whether Valeriana officinalis root extract could prevent early postoperative cognitive dysfunction following cardiac surgery. A 1999 RCT (n=99) measured the influence of valerian treatment on reaction time, alertness, and concentration in healthy volunteers. Both trials are controlled studies in humans, and together they comprise approximately 160 verified participants.",
+        "why_this_grade": "The evidence is graded Moderate because it derives from human RCTs with reasonable methodological design, but the combined verified sample is modest (approximately 160 across both studies), which means effect estimates may be unstable and could change with additional trials. The studies are also somewhat dated, which may limit generalizability to current populations."
+      },
+      {
+        "outcome": "gut / digestion",
+        "grade": "Preliminary",
+        "what_studies_show": "Evidence for valerian's effects on gastrointestinal health is restricted to animal models. A 2025 animal study examined the therapeutic effect of valerian extract alone or combined with coenzyme Q10 on histological measures of gut tissue. A 2022 animal study investigated the protective effect of valerian extract capsules against ethanol- and indomethacin-induced gastric mucosa injury. Both studies show potential protective mechanisms in animal models.",
+        "why_this_grade": "This outcome is graded Preliminary because evidence is entirely animal-derived and does not yet include human trials. Animal studies do not reliably predict human gastrointestinal effects, limiting confidence in clinical relevance. No human data on valerian and digestion were retrieved."
+      }
+    ],
+    "evidence_base": "The research base for valerian root is predominantly human-derived for sleep quality and cognition (both graded Moderate), resting on randomized controlled trials conducted between 1985 and 2021. For stress/anxiety and gut health, evidence is preliminary and relies heavily on animal studies or sparse human case reports. Overall, studies are relatively modest in size (verified samples range from ~10 to ~180 participants per outcome), and several are from the 1980s\u20131990s. This mix suggests valerian has been a subject of genuine clinical interest, but confidence is constrained by modest sample sizes and, for some outcomes, the absence of large modern trials.",
+    "emerging_research": "Recent studies (2025\u20132026) have begun exploring valerian in combination with other compounds\u2014such as coenzyme Q10 for gastrointestinal protection\u2014and its role in specific perioperative settings (e.g., prevention of postoperative cognitive dysfunction). A 2026 case report noted sexsomnia (complex sleep behavior) in association with valerian use, suggesting a need for surveillance of rare behavioral side effects. These directions are early and do not yet constitute a change in the overall evidence grade, but they indicate ongoing interest in valerian's mechanisms and potential harms.",
+    "open_questions": "Among the studies retrieved here, most human trials are relatively small and several predate modern trial standards; none of the retrieved records appear to follow participants beyond the immediate perioperative or trial period, so long-term safety and sustained efficacy remain uncharacterized in the sample shown. The studies retrieved for stress/anxiety are predominantly animal-based, and cognition trials are concentrated in surgical settings rather than the general population\u2014it remains unclear from these records alone whether findings generalize to other groups. Because you have been provided only a sample of approximately 40 abstracts per outcome, you cannot infer what additional research may exist in the full literature; these observations reflect only what is present in the retrieved studies.",
+    "caveats": "Valerian is an herbal extract with variable composition across commercial products, and standardization of active compounds is not regulated uniformly, which may affect reproducibility and efficacy. It may cause drowsiness, dizziness, or headache in some users, and there is a reported case of complex sleep behavior (sexsomnia); anyone with a history of parasomnia should use caution. Valerian may interact with sedating medications or other CNS-active drugs, and it should not be combined with prescription sleep aids or anxiolytics without medical guidance. Pregnant and nursing women, and those with liver disease, should consult a healthcare provider before use.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base for valerian is small, fragmented, and lacks pooled effect estimates; no outcome rests on more than four RCTs, and the stress/anxiety literature is dominated by animal and case reports rather than human trials.",
+    "concerns": [
+      {
+        "issue": "Stress/anxiety grade unsupported by human RCTs",
+        "detail": "The stress/anxiety outcome is graded 'Preliminary' and rests on only 1 human study (a case report, 2026), 1 animal study (2014), and 1 unclassified animal study (2026). No RCTs of stress/anxiety in humans are present in the retrieved records. A single case report cannot establish efficacy in a population, and animal models of stress do not reliably predict human anxiolytic response. The grade 'Preliminary' is appropriate, but the absence of any human RCT trial here means claims about anxiety benefit lack the minimum evidence standard.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sleep quality evidence is tiny and heterogeneous",
+        "detail": "Sleep quality (graded Moderate) comprises only 3 RCTs with n=10, 36, and 99 (total ~145 participants across reported trials), plus 1 case report. The n=10 trial (1985) is substantially underpowered by modern standards. No pooled effect estimate is extractable, meaning individual trial results are not synthesized; the engine notes 'effect estimate may be unstable.' The heterogeneity of populations (post-CABG surgery patients, healthy volunteers) is not addressed in the records, and without pooling, one cannot know whether the direction or magnitude of benefit is consistent.",
+        "severity": "high"
+      },
+      {
+        "issue": "Cognition evidence spans 26 years with no recent replication",
+        "detail": "Two RCTs (n=61 and n=99) are the sole human cognition evidence; they were published in 2015 and 1999 respectively\u2014a 16-year gap with no independent replication in between. The 1999 trial is over 25 years old and used earlier-generation outcome measures ('reaction time, alertness and concentration'). The 2015 trial was conducted in a post-CABG surgery population, limiting generalizability to broader cognition claims. No pooled effect or consistency check is available.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Gut/digestion outcome is animal-only with no sample size data",
+        "detail": "The gut/digestion outcome (graded Preliminary, appropriately) is based on 2 animal studies (2025, 2022) with no human trials and no extractable sample sizes from the abstracts provided. The engine explicitly notes 'Indirectness: evidence is animal-only; does not reliably translate to humans.' Any human health claim about digestion from this evidence is speculative.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Across all outcomes, no pooled meta-analysis is possible",
+        "detail": "The engine reports 'pooled effect: none extractable' for all four outcomes (sleep, stress/anxiety, cognition, digestion). This means the retrieved evidence comprises isolated trials rather than synthesized estimates. Without meta-analysis, publication bias, heterogeneity, and true effect direction remain opaque. Individual small trials are prone to random variation; a single large or outlier study could shift conclusions substantially.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The biological plausibility of valerian's anxiolytic and sleep-promoting effects is established in traditional use and some preclinical work (e.g., animal stress models, receptor binding studies), but the retrieved records do not present a coherent mechanism linking in vitro or animal observations to the clinical outcomes. The leap from an animal model of stress suppression (2014 electric shock study) or a case report of sexsomnia (2026) to a claim of clinical anxiolytic efficacy is large and unsupported by the human trial evidence in these records.",
+    "strongest_counterargument": "A skeptic would note that three of four sleep quality trials are underpowered (n=10, n=36, n=99 in 1985, 2021, 1999 respectively), pooling is absent, and one trial is a case report\u2014not a control design. The two cognition RCTs are separated by 16 years with no replication, and the stress/anxiety outcome lacks any human RCT at all. The combined effect size across all outcomes is unknown, and the heterogeneity of patient populations (post-surgical, healthy, etc.) is unaddressed. This pattern is consistent with a literature that has generated promising but isolated signals rather than robust, replicated evidence of clinical benefit.",
+    "what_would_change_the_picture": "A well-powered, double-blind RCT of \u2265200 participants with standardized valerian extract and validated outcome measures (e.g., Pittsburgh Sleep Quality Index for sleep, Hamilton Anxiety Scale for anxiety) in a single homogeneous population, preregistered and reported transparently, would provide a meaningful test. A meta-analysis with \u22655 RCTs of similar design and population would also strengthen confidence by reducing random variation and quantifying heterogeneity.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

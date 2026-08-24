@@ -3,7 +3,7 @@
   "category": "peptide",
   "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 7,
+  "study_count": 6,
   "claims": [
     {
       "outcome": "inflammation",
@@ -79,29 +79,28 @@
       "summary": "For inflammation, KPV has moderate human evidence (4 studies)."
     },
     {
-      "outcome": "testosterone / hormones",
+      "outcome": "gut / digestion",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 2,
       "grade_reasons": [
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
+        "mechanistic": 25,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
         "n_human_studies": 1,
-        "n_animal_studies": 2,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:18092346",
-        "PMID:12750433",
-        "PMID:16965771"
+        "PMID:35245681",
+        "PMID:18092346"
       ],
       "studies": [
         {
@@ -113,17 +112,9 @@
           "n": null
         },
         {
-          "pmid": "16965771",
-          "title": "Effects of the COOH-terminal tripeptide alpha-MSH(11-13) on corneal epithelial wound healing: role of nitric oxide.",
-          "year": "2006",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "12750433",
-          "title": "Dissection of the anti-inflammatory effect of the core and C-terminal (KPV) alpha-melanocyte-stimulating hormone peptides.",
-          "year": "2003",
+          "pmid": "35245681",
+          "title": "A KPV-binding double-network hydrogel restores gut mucosal barrier in an inflamed colon.",
+          "year": "2022",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -140,12 +131,12 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For testosterone / hormones, KPV has moderate human evidence (3 studies)."
+      "summary": "For gut / digestion, KPV has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
     "inflammation",
-    "testosterone / hormones"
+    "gut / digestion"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -173,5 +164,64 @@
       "SCHEMBL710419"
     ]
   },
-  "_cached_at": 1787506627.998355
+  "_cached_at": 1787608645.517238,
+  "explanation": {
+    "what_it_is": "KPV is a tripeptide \u2014 a short chain of three amino acids (lysine, proline, and valine) \u2014 with the chemical formula C\u2081\u2081H\u2081\u2082O\u2083 and molecular weight 192.21. It is derived from alpha-melanocyte-stimulating hormone (\u03b1-MSH), a naturally occurring signaling molecule in the body. KPV is typically administered as an injectable research peptide and is not approved as a medication.",
+    "how_it_works": "KPV appears to work by interacting with melanocortin receptors, which are signaling proteins found throughout the body, including on immune cells and in the gut lining. When KPV binds to these receptors \u2014 particularly melanocortin-1 receptors (MC1R) \u2014 it triggers intracellular pathways that dampen inflammatory signaling, including effects on nitric oxide production and immune cell activation. The mechanism seems particularly relevant in the intestinal barrier, where melanocortin signaling can help stabilize and repair the tight junctions between cells that normally prevent inflammatory molecules from crossing into the bloodstream. This biological plausibility is why researchers have tested KPV in inflammatory and digestive settings.",
+    "outcome_detail": [
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "Among the four studies retrieved, one 2008 observational human study examined KPV's anti-inflammatory potential in inflammatory bowel disease (IBD), and three animal studies (2022, 2006, 2003) showed anti-inflammatory effects in murine models of colitis, in corneal epithelial wound healing, and in dissection of \u03b1-MSH's anti-inflammatory mechanisms. The human study was observational rather than a controlled trial, limiting causal inference.",
+        "why_this_grade": "Evidence reached Moderate rather than Strong because the single human study was observational (not randomized controlled), and sample sizes could not be verified from the retrieved abstracts, leaving precision unconfirmed. The three supporting animal studies provide biological plausibility but cannot establish human efficacy on their own."
+      },
+      {
+        "outcome": "gut / digestion",
+        "grade": "Moderate",
+        "what_studies_show": "Two studies were retrieved: the same 2008 observational human study in IBD, and a 2022 animal study using a KPV-binding hydrogel that restored gut mucosal barrier function in inflamed colon models. Together they suggest KPV may support gut barrier integrity and digestive inflammation, but human evidence is limited to a single observational report.",
+        "why_this_grade": "The Moderate grade reflects one human observational study plus one supporting animal study, both focused on barrier and inflammatory outcomes. Unverified sample sizes and the lack of randomized controlled trials in humans prevent a higher grade; the single human observation cannot establish efficacy alone."
+      }
+    ],
+    "evidence_base": "The evidence base is small and weighted toward animal studies: of the four inflammation records and two gut records retrieved, only one unique human study appears (2008, observational). The remaining studies are in mice or in vitro systems (2003, 2006, 2022). This limits confidence in human efficacy; animal models can show mechanism but do not prove benefit in people. The oldest record dates to 2003 and the most recent to 2022, spanning nearly two decades, yet the total human trial count remains one observational study.",
+    "emerging_research": "Recent work (2022) has explored KPV in hydrogel delivery systems designed to target the inflamed colon directly, suggesting interest in optimizing bioavailability and local intestinal action. Earlier studies (2003\u20132006) focused on dissecting the mechanism via melanocortin receptors and nitric oxide pathways. These directions are exploratory; no recent large human trials appear in the retrieved data.",
+    "open_questions": "Among the studies retrieved here, only one human study is present, and it is observational rather than randomized; the design, sample size, and clinical outcomes of that study cannot be verified from the abstracts provided. No retrieved studies report long-term follow-up (duration limits are not specified in the abstracts). The retrieved animal studies do not clarify which dosages, formulations, or exposure durations translate to human use. This small sample of records (two per outcome) does not permit assessment of what the broader field may have published; you are seeing only a portion of available literature.",
+    "caveats": "KPV is a research peptide and is not approved as a medication by regulatory agencies; it should be considered experimental. Injectable peptides carry standard risks of injection-site reactions, infection, and sterility concerns if not properly manufactured and administered. The single human observational study does not establish safety or efficacy in controlled conditions. Anyone considering KPV should consult a healthcare provider, as interactions with other medications and long-term safety in humans remain unclear.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "Only one human study is present in the retrieved evidence, and it is observational with unverifiable sample size; the rest are animal models from 2003\u20132022, making any clinical conclusion premature.",
+    "concerns": [
+      {
+        "issue": "Overwhelming reliance on animal models",
+        "detail": "Of 4 inflammation studies, 3 are animal-only. Of 2 gut/digestion studies, 1 is animal-only. The single human study (2008 observational) appears to be cited under both outcomes, suggesting it may be the only clinical-level evidence in the entire retrieved base. Animal models of inflammation and barrier function do not reliably predict human efficacy, and no dose-escalation, pharmacokinetic, or safety bridging studies are listed.",
+        "severity": "high"
+      },
+      {
+        "issue": "No extractable sample sizes; precision unconfirmed",
+        "detail": "The engine explicitly notes sample sizes could not be verified from abstracts for all four inflammation studies and both gut studies. Without knowing whether the human observational study enrolled 5 people or 50, the actual precision of the evidence cannot be assessed. This caps certainty even if the direction of effect were clear.",
+        "severity": "high"
+      },
+      {
+        "issue": "Single human study is observational, not controlled",
+        "detail": "The 2008 observational study is the only human evidence retrieved for both inflammation and gut outcomes. Observational designs cannot rule out confounding, placebo response, or reporting bias. No randomized controlled trial of KPV in humans appears in these records.",
+        "severity": "high"
+      },
+      {
+        "issue": "Grey-market injection status not addressed in retrieved literature",
+        "detail": "The compound is noted as injectable, not approved for human use, and often obtained grey-market. None of the retrieved study records appear to address dosing, formulation quality, sterility, or safety in humans. This creates a gap between any efficacy signal and real-world usability and safety.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Temporal gap and heterogeneous animal models",
+        "detail": "The inflammation evidence spans 2003\u20132022 with a 19-year gap between earliest and latest animal studies. Different animal systems (murine inflammatory models, corneal wounds, colonic inflammation) are used without clear mechanistic convergence reported in the abstracts. Heterogeneity of models and outcomes makes it difficult to assess whether results generalize.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "KPV is framed as derived from alpha-MSH and exerting anti-inflammatory effects, which is biologically plausible at a molecular level. However, a large inferential leap exists between in vitro or animal barrier-function studies and clinical utility in human gut or systemic inflammation. The retrieved abstracts do not establish whether KPV crosses the intestinal barrier, achieves relevant tissue concentrations in humans after injection, or engages the same pathways in human immune cells as in murine models.",
+    "strongest_counterargument": "A skeptic would note that the entire human evidence base consists of a single observational study from 2003\u20132022, making it impossible to distinguish KPV's effect from natural history, placebo, or patient selection bias. Animal models show promise, but they have a notoriously poor track record translating to human efficacy\u2014particularly in inflammation, where species differences in immune signaling are substantial. Without a randomized controlled trial in humans, no clinical claim can be confidently made.",
+    "what_would_change_the_picture": "A phase 2 randomized, placebo-controlled trial in humans with a pre-specified inflammatory or gastrointestinal outcome (e.g., inflammatory bowel disease activity, C-reactive protein, intestinal permeability marker) and adequate sample size (n \u2265 60\u2013100) would provide direct evidence of clinical efficacy or lack thereof. Concurrent pharmacokinetic data showing KPV reaches target tissues at active doses would anchor the mechanism.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

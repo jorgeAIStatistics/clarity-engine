@@ -1,36 +1,63 @@
 {
   "name": "Boron",
   "category": "mineral",
-  "overall_score": 73,
+  "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 13,
+  "study_count": 29,
   "claims": [
     {
       "outcome": "bone health",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 2,
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 6,
       "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
-        "Imprecision: small verified sample (~10 participants across 1 measured studies)."
+        "Imprecision: modest verified sample (~42 participants across 2 of 6 studies); effect estimate may be unstable."
       ],
       "layers": {
-        "mechanistic": 25,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 5,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:27908411",
-        "PMID:42420633"
+        "PMID:42420633",
+        "PMID:34082267",
+        "PMID:7889886",
+        "PMID:42087024",
+        "PMID:12835499"
       ],
       "studies": [
+        {
+          "pmid": "7889886",
+          "title": "Effects of boron supplementation on bone mineral density and dietary, blood, and urinary calcium, phosphorus, magnesium, and boron in female athletes.",
+          "year": "1994",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "42087024",
+          "title": "The Effects of Boron Mineral on Performance, Bone and Mineral Metabolism in Purebred Arabian Foals.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": 32
+        },
+        {
+          "pmid": "34082267",
+          "title": "Borate and boric acid supplementation of drinking water alters teeth and bone mineral density and composition differently in rabbits fed a high protein and ener",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
         {
           "pmid": "27908411",
           "title": "Boron supplementation improves bone health of non-obese diabetic mice.",
@@ -40,65 +67,9 @@
           "n": 10
         },
         {
-          "pmid": "42420633",
-          "title": "Impact of boron supplementation on bone health, antioxidant, and immune status in heifers.",
-          "year": "2026",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For bone health, Boron has only preliminary or animal evidence (2 studies)."
-    },
-    {
-      "outcome": "immune function",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": true,
-      "n_studies": 3,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 35,
-        "human": 22,
-        "overall": 22,
-        "ceiling": 22,
-        "n_human_studies": 1,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:33051505",
-        "PMID:42420633",
-        "PMID:31345367"
-      ],
-      "studies": [
-        {
-          "pmid": "31345367",
-          "title": "Dietary boron supplementation enhances sperm quality and immunity through influencing the associated biochemical parameters and modulating the genes expression ",
-          "year": "2019",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "33051505",
-          "title": "Boron improves cardiac contractility and fibrotic remodeling following myocardial infarction injury.",
-          "year": "2020",
+          "pmid": "12835499",
+          "title": "Effects of boric acid supplementation on bone histomorphometry, metabolism, and biomechanical properties in aged female F-344 rats.",
+          "year": "2003",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -108,7 +79,7 @@
           "title": "Impact of boron supplementation on bone health, antioxidant, and immune status in heifers.",
           "year": "2026",
           "design": "Unclassified",
-          "population": "unknown",
+          "population": "animal",
           "n": null
         }
       ],
@@ -123,7 +94,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For immune function, Boron has only preliminary or animal evidence (3 studies)."
+      "summary": "For bone health, Boron has moderate human evidence (6 studies)."
     },
     {
       "outcome": "testosterone / hormones",
@@ -131,26 +102,32 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 10,
       "grade_reasons": [
-        "Precision: ~113 participants verified across 1 of 4 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~239 participants verified across 2 of 10 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 35,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 1,
+        "n_human_studies": 4,
+        "n_animal_studies": 6,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:7889885",
         "PMID:25906949",
         "PMID:35864721",
-        "PMID:11697760"
+        "PMID:11697760",
+        "PMID:8508192",
+        "PMID:9197924",
+        "PMID:22782709",
+        "PMID:12835499",
+        "PMID:40844573",
+        "PMID:11424693"
       ],
       "studies": [
         {
@@ -170,6 +147,38 @@
           "n": null
         },
         {
+          "pmid": "8508192",
+          "title": "The effect of boron supplementation on lean body mass, plasma testosterone levels, and strength in male bodybuilders.",
+          "year": "1993",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "9197924",
+          "title": "The effect of boron supplementation on its urinary excretion and selected cardiovascular risk factors in healthy male subjects.",
+          "year": "1997",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "22782709",
+          "title": "The effect of supplementation of calcium, vitamin D, boron, and increased fluoride intake on bone mechanical properties and metabolic hormones in rat.",
+          "year": "2014",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "12835499",
+          "title": "Effects of boric acid supplementation on bone histomorphometry, metabolism, and biomechanical properties in aged female F-344 rats.",
+          "year": "2003",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "11697760",
           "title": "Dietary boron supplementation enhanced the action of estrogen, but not that of parathyroid hormone, to improve trabecular bone quality in ovariectomized rats.",
           "year": "2001",
@@ -178,11 +187,27 @@
           "n": null
         },
         {
+          "pmid": "11424693",
+          "title": "Inflammatory response, growth, and thyroid hormone concentrations are affected by long-term boron supplementation in gilts.",
+          "year": "2001",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "40844573",
+          "title": "Impact of Boron on Reproductive Performance, Serum Biochemical Indices, and Egg Quality in Laying Wanxi White Geese.",
+          "year": "2026",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": 126
+        },
+        {
           "pmid": "35864721",
           "title": "Effects of dietary boron supplementation on the testicular function and thyroid activity in male goats: Involvement of CYP17A1 gene.",
           "year": "2022",
           "design": "Unclassified",
-          "population": "unknown",
+          "population": "animal",
           "n": null
         }
       ],
@@ -197,66 +222,184 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For testosterone / hormones, Boron has moderate human evidence (4 studies)."
+      "summary": "For testosterone / hormones, Boron has moderate human evidence (10 studies)."
     },
     {
-      "outcome": "cardiovascular",
+      "outcome": "immune function",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 8,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 8,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:33051505",
+        "PMID:42420633",
+        "PMID:31345367",
+        "PMID:34773147",
+        "PMID:14552383",
+        "PMID:42087024",
+        "PMID:11424693",
+        "PMID:29903163"
+      ],
+      "studies": [
+        {
+          "pmid": "42087024",
+          "title": "The Effects of Boron Mineral on Performance, Bone and Mineral Metabolism in Purebred Arabian Foals.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": 32
+        },
+        {
+          "pmid": "34773147",
+          "title": "Transcriptome Profiling of Duodenum Reveals the Importance of Boron Supplementation in Modulating Immune Activities in Rats.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": 624
+        },
+        {
+          "pmid": "33051505",
+          "title": "Boron improves cardiac contractility and fibrotic remodeling following myocardial infarction injury.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "29903163",
+          "title": "[Effects of boron on serum biochemical indexes and microstructure of immune organs in male obese rats].",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "11424693",
+          "title": "Inflammatory response, growth, and thyroid hormone concentrations are affected by long-term boron supplementation in gilts.",
+          "year": "2001",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "42420633",
+          "title": "Impact of boron supplementation on bone health, antioxidant, and immune status in heifers.",
+          "year": "2026",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "31345367",
+          "title": "Dietary boron supplementation enhances sperm quality and immunity through influencing the associated biochemical parameters and modulating the genes expression ",
+          "year": "2019",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "14552383",
+          "title": "Effect of boron supplementation of pig diets on the production of tumor necrosis factor-alpha and interferon-gamma.",
+          "year": "2003",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For immune function, Boron has only preliminary or animal evidence (8 studies)."
+    },
+    {
+      "outcome": "inflammation",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 5,
       "grade_reasons": [
-        "Precision: ~224 participants verified across 1 of 4 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~113 participants verified across 1 of 5 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 0,
+        "n_human_studies": 2,
+        "n_animal_studies": 3,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:12428176",
-        "PMID:17385554",
-        "PMID:28229388",
-        "PMID:42550342"
+        "PMID:25906949",
+        "PMID:38072490",
+        "PMID:34082267",
+        "PMID:14552383",
+        "PMID:11424693"
       ],
       "studies": [
         {
-          "pmid": "17385554",
-          "title": "Influence of dietary boron supplementation on some serum metabolites and egg-yolk cholesterol in laying hens.",
-          "year": "2007",
+          "pmid": "25906949",
+          "title": "Effects of boron supplementation on the severity and duration of pain in primary dysmenorrhea.",
+          "year": "2015",
           "design": "RCT",
           "population": "human",
-          "n": 224
+          "n": 113
         },
         {
-          "pmid": "12428176",
-          "title": "Boron supplementation and activated factor VII in healthy men.",
-          "year": "2002",
-          "design": "RCT",
+          "pmid": "38072490",
+          "title": "Effects of boron citrate supplementation on cardiometabolic factors, inflammatory biomarkers and anthropometric measures in obese patients: study protocol for a",
+          "year": "2023",
+          "design": "Clinical trial",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "28229388",
-          "title": "Effects of Boron Supplementation on Peripartum Dairy Cows' Health.",
-          "year": "2017",
-          "design": "Unclassified",
-          "population": "human",
+          "pmid": "34082267",
+          "title": "Borate and boric acid supplementation of drinking water alters teeth and bone mineral density and composition differently in rabbits fed a high protein and ener",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
           "n": null
         },
         {
-          "pmid": "42550342",
-          "title": "Effects of boron and dicalcium phosphate supplementation on wool-biting behavior and metabolic indicators in lactating Akkaraman sheep.",
-          "year": "2026",
+          "pmid": "11424693",
+          "title": "Inflammatory response, growth, and thyroid hormone concentrations are affected by long-term boron supplementation in gilts.",
+          "year": "2001",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "14552383",
+          "title": "Effect of boron supplementation of pig diets on the production of tumor necrosis factor-alpha and interferon-gamma.",
+          "year": "2003",
           "design": "Unclassified",
-          "population": "unknown",
+          "population": "animal",
           "n": null
         }
       ],
@@ -271,19 +414,18 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cardiovascular, Boron has moderate human evidence (4 studies)."
+      "summary": "For inflammation, Boron has moderate human evidence (5 studies)."
     }
   ],
   "effects_established": [
+    "bone health",
     "testosterone / hormones",
-    "cardiovascular"
+    "inflammation"
   ],
   "effects_promising": [
-    "bone health"
-  ],
-  "effects_emerging": [
     "immune function"
   ],
+  "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
@@ -308,5 +450,76 @@
       "Boron 11"
     ]
   },
-  "_cached_at": 1787506395.7453241
+  "_cached_at": 1787607713.621907,
+  "explanation": {
+    "what_it_is": "Boron is a naturally occurring mineral element (atomic number 5, molecular weight 10.81) found in foods like nuts, leafy greens, and legumes, as well as in soil and water. In supplement form, it is typically taken as boron citrate, sodium borate, or boric acid. The body does not require boron for survival, but it accumulates in bone and plays a role in mineral metabolism.",
+    "how_it_works": "Boron influences how the body uses calcium, magnesium, and phosphorus \u2014 all critical for bone structure and strength. It appears to affect vitamin D metabolism and may help reduce urinary calcium loss, keeping more mineral in bone. Boron also has anti-inflammatory properties and may modulate immune signaling through effects on cytokine production. The exact molecular targets remain incompletely characterized, but evidence suggests it stabilizes mineral balance and may suppress inflammatory pathways in tissues including bone and immune organs.",
+    "outcome_detail": [
+      {
+        "outcome": "bone health",
+        "grade": "Moderate",
+        "what_studies_show": "A 1994 randomized controlled trial in humans examined the effects of boron supplementation on bone mineral density and blood/urinary mineral levels. Supporting evidence comes from multiple animal studies (2026, 2021, 2017, 2003, 2026) in foals, mice, and other models, which found that boron supplementation improved bone mineral density, altered bone composition, and enhanced biomechanical properties. However, human evidence is limited to a single trial.",
+        "why_this_grade": "Although animal studies consistently show benefit, human data rest on only one small trial, leaving results imprecise and susceptible to chance. The modest verified sample size (~42 participants across the two most detailed studies) and lack of a pooled analysis across human trials prevent a higher grade despite a plausible mechanism and suggestive animal data."
+      },
+      {
+        "outcome": "testosterone / hormones",
+        "grade": "Moderate",
+        "what_studies_show": "Four human randomized or clinical trials have examined boron's effects on hormones: a 1993 study on testosterone and strength in male bodybuilders, a 1994 trial on plasma boron and testosterone in males, a 1997 clinical trial on cardiovascular risk factors in healthy adults, and a 2015 RCT (n=113) on pain severity in primary dysmenorrhea. Animal studies (2014, 2003) also assessed bone and mineral metabolism with boron supplementation. Results across studies have not been pooled, and several reports omit sample sizes.",
+        "why_this_grade": "Multiple human trials exist and reach moderate evidence, but inconsistency between studies and incomplete reporting of participant numbers prevent firm conclusions. No meta-analysis confirms agreement on direction or magnitude of hormonal effects, and most studies focused on specific subgroups (bodybuilders, menstruating women) rather than a broad population."
+      },
+      {
+        "outcome": "immune function",
+        "grade": "Preliminary",
+        "what_studies_show": "Eight animal studies (2026, 2022, 2020, 2017, 2001, and 2026) examined boron's effects on immune markers, including serum biochemical indexes, immune organ microstructure, thyroid hormone concentrations, and cytokine production (TNF-\u03b1, interferon-\u03b3). Studies were conducted in foals (n=32), chickens (n=624), obese rats, and heifers. Findings suggest boron may modulate immune activation and inflammatory responses in these animal models.",
+        "why_this_grade": "All evidence is from animal studies; no human trials on immune function are available in the records provided. Animal results do not reliably translate to humans, and the absence of human data means immune effects in people remain unproven."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "Two human studies assessed inflammation: a 2015 RCT (n=113) measuring pain and inflammatory markers in primary dysmenorrhea, and a 2023 clinical trial evaluating boron citrate's effects on inflammatory biomarkers and cardiometabolic factors. Three animal studies (2021, 2001, 2003) examined inflammatory markers, thyroid hormones, and cytokine production (TNF-\u03b1, interferon-\u03b3) in boric acid and boron-supplemented models. Results suggest anti-inflammatory effects, but studies have not been formally pooled.",
+        "why_this_grade": "Human evidence exists and shows promise, but only ~113 participants are verified across one trial, and most studies omit sample sizes, making the true sample uncertain. Inconsistency between trials and lack of consensus meta-analysis keep the grade at Moderate rather than Strong; the mechanism is plausible and animal data supportive, but human confirmation remains limited."
+      }
+    ],
+    "evidence_base": "The evidence base is mixed in type: human trials are small, scattered across different populations (bodybuilders, menstruating women, general healthy adults), and published over decades (1993\u20132023). Animal studies are more numerous (19 of 31 total) and recent (2001\u20132026), with findings generally consistent in direction (pro-bone, anti-inflammatory, immune-modulatory), but not in magnitude or mechanism. Most human trials are short-term (weeks to a few months), and many abstracts lack sufficient detail to verify exact participant numbers. This heterogeneity and reliance on animal models for immune effects justify overall 'Moderate' confidence \u2014 plausible effects exist, but human confirmation is incomplete.",
+    "emerging_research": "Recent work (2020\u20132026) increasingly focuses on boron's anti-inflammatory and immune-modulatory pathways, particularly via effects on cytokines (TNF-\u03b1, interferon-\u03b3) and immune organ integrity, and its role in fibrotic remodeling after cardiac injury. Transcriptomic studies (2022) are beginning to map genome-wide responses to boron supplementation in immune tissues. These directions are early and remain largely animal-based, but suggest boron may have broader systemic anti-inflammatory roles beyond bone metabolism.",
+    "open_questions": "Among the studies retrieved here, human trials are notably small and scattered: no trial appears to exceed n=113, and most human work predates 2010 or focuses on niche populations. Immune function has zero human trials in these records, leaving that outcome purely preclinical. Long-term safety and efficacy beyond 12 weeks are not evident in the study records provided; most trials appear to run for days to a few months. Because you are seeing only a sample of ~40 abstracts per outcome, you cannot know whether larger or longer human trials exist elsewhere in the literature \u2014 only that they are absent from this retrieval.",
+    "caveats": "Boron supplements are generally recognized as safe at typical dietary doses (1\u201320 mg/day), but high doses (>100 mg/day) may cause gastrointestinal upset and neurological effects; safety data in pregnancy are limited, and pregnant women should avoid supplementation. Quality and purity vary widely among commercial boron products; look for third-party testing. Boron may interact with medications affecting mineral metabolism or thyroid function, so consult a healthcare provider if you take other supplements or have kidney or bone disorders.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base is heavily animal-dominated with minimal human data per outcome; most human trials are small, underpowered, and from the 1990s, making it difficult to establish whether boron supplementation produces clinically meaningful effects in people.",
+    "concerns": [
+      {
+        "issue": "Severe animal-to-human translational gap",
+        "detail": "Immune function is 0 human / 8 animal studies, and the engine explicitly flags this as 'indirectness: evidence is animal-only; does not reliably translate to humans.' Bone health is 1 human / 5 animal; testosterone/hormones is 4 human / 6 animal. Animal models often show effects that fail to replicate in humans, and mineralisation or hormone signalling in foals, mice, rats, pigs, and heifers may not govern boron's relevance in human physiology.",
+        "severity": "high"
+      },
+      {
+        "issue": "Absence of pooled effect estimates across all outcomes",
+        "detail": "No meta-analysis or systematic quantitative synthesis is extractable from any outcome (bone, hormones, immunity, inflammation). Without knowing effect directions, magnitudes, or consistency across studies, the 'Moderate' grade for bone and hormone outcomes rests on qualitative judgment rather than aggregated evidence. This is particularly problematic for testosterone/hormones (10 studies) and inflammation (5 studies), where the engine notes 'inconsistency: several studies exist but no pooled analysis confirms they agree.'",
+        "severity": "high"
+      },
+      {
+        "issue": "Sample size reporting is sparse and opaque",
+        "detail": "Bone health: 2 of 6 studies report n (median n=32, likely underpowered for detecting modest effects). Testosterone/hormones: 2 of 10 studies report n (median n=126, but 8 studies are silent on sample size, so actual participant count is unknown). Inflammation: 1 of 5 studies report n. When 50\u201380% of studies omit sample size, the true statistical power and risk of spurious findings cannot be assessed. Single small outlier studies could easily swing unpooled conclusions.",
+        "severity": "high"
+      },
+      {
+        "issue": "Human evidence skewed toward outdated small trials",
+        "detail": "Bone health human evidence is a single 1994 RCT. Testosterone/hormones includes three RCTs (1993, 1994, 2015) and one clinical trial (1997); the 2015 dysmenorrhea trial (n=113) is the only recent, adequately-sized human study identified. Inflammation includes one 2015 RCT (n=113) and one 2023 clinical trial. Nearly 30 years separate the oldest and most recent human bone data; standards for study conduct, reporting, and bias mitigation have shifted substantially. Replication of these early findings in contemporary, larger, preregistered trials is absent.",
+        "severity": "high"
+      },
+      {
+        "issue": "Incomplete and inconsistent study design composition",
+        "detail": "Testosterone/hormones includes 2 'Unclassified' designs alongside RCTs and animals; bone health includes 1 'Unclassified' animal study. 'Unclassified' studies lack clear descriptions of methods, blinding, or control arms in these abstracts, making quality appraisal impossible. Without knowing whether these are observational, quasi-experimental, or merely poorly reported, the evidentiary weight of the Moderate grades is overstated.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The proposed mechanism (boron modulating estrogen signalling, bone mineralisation, and inflammatory pathways) is plausible in vitro and in animal models, but there is a large inferential leap from animal bone and hormone metabolism to human clinical outcomes. The dysmenorrhea trial suggests boron may reduce pain and inflammation in humans, but this is a single endpoint in a single 2015 trial; whether this reflects a specific anti-inflammatory role or a general placebo-responsive symptom is unclear. No trial directly measures proposed mechanistic targets (e.g., estrogen receptor activity, osteoblast function) in humans, so the chain from mechanism to clinical benefit remains indirect.",
+    "strongest_counterargument": "A skeptic would note that only one adequately-sized, recent human trial (2015 dysmenorrhea, n=113) demonstrates a plausible clinical effect in people; the rest of the human evidence is either from the 1990s (and thus may reflect outdated patient selection or measurement methods), animal-based, or unclassified. The absence of a meta-analysis showing consistent direction and magnitude across studies, combined with the sparsity of sample size reporting (especially for older studies), suggests the literature may be subject to publication bias favouring positive results. Replication in modern, large, preregistered RCTs powered for clinically meaningful differences has not occurred.",
+    "what_would_change_the_picture": "Large (n \u2265 200), preregistered, double-blind RCTs in humans testing boron supplementation on the specific clinical outcomes (bone density/fracture risk, testosterone/strength, inflammatory markers, immune outcomes) with long-term follow-up (\u226512 weeks) and pre-specified primary endpoints, published in the last 5 years. A Cochrane or systematic review with meta-analysis pooling these trials by outcome, with subgroup analyses by age, sex, and baseline boron status, would clarify whether the Moderate grades reflect true effects or heterogeneous, small, poorly-powered studies.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

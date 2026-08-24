@@ -1,42 +1,41 @@
 {
   "name": "Niacin",
   "category": "vitamin",
-  "overall_score": 22,
-  "tier": "Preliminary",
-  "study_count": 1,
+  "overall_score": 70,
+  "tier": "Moderate",
+  "study_count": 4,
   "claims": [
     {
-      "outcome": "exercise performance",
+      "outcome": "eye / vision",
       "tier": "Preliminary",
       "certainty": "very_low",
       "score": 22,
-      "has_human_evidence": false,
+      "has_human_evidence": true,
       "n_studies": 1,
       "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
         "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
       ],
       "layers": {
         "mechanistic": 20,
         "preclinical": 0,
-        "human": 0,
-        "overall": 20,
-        "ceiling": 55,
-        "n_human_studies": 0,
+        "human": 22,
+        "overall": 22,
+        "ceiling": 22,
+        "n_human_studies": 1,
         "n_animal_studies": 0,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:34696617"
+        "PMID:23218599"
       ],
       "studies": [
         {
-          "pmid": "34696617",
-          "title": "Niacin supplementation impairs exercise performance.",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "unknown",
+          "pmid": "23218599",
+          "title": "[A rare case of cystoid maculopathy].",
+          "year": "2013",
+          "design": "Case report",
+          "population": "human",
           "n": null
         }
       ],
@@ -51,15 +50,119 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For exercise performance, Niacin has only preliminary or animal evidence (1 studies)."
+      "summary": "For eye / vision, Niacin has only preliminary or animal evidence (1 studies)."
+    },
+    {
+      "outcome": "congenital malformations",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 35,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:28792876",
+        "PMID:34748060"
+      ],
+      "studies": [
+        {
+          "pmid": "34748060",
+          "title": "Effect of maternal dietary niacin intake on congenital anomalies: a systematic review and meta-analysis.",
+          "year": "2022",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 743
+        },
+        {
+          "pmid": "28792876",
+          "title": "NAD Deficiency, Congenital Malformations, and Niacin Supplementation.",
+          "year": "2017",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For congenital malformations, Niacin has moderate human evidence (2 studies)."
+    },
+    {
+      "outcome": "skin / appearance",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": true,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 0,
+        "human": 22,
+        "overall": 22,
+        "ceiling": 22,
+        "n_human_studies": 1,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:28152570"
+      ],
+      "studies": [
+        {
+          "pmid": "28152570",
+          "title": "Niacin intake and risk of skin cancer in US women and men.",
+          "year": "2017",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 808
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For skin / appearance, Niacin has only preliminary or animal evidence (1 studies)."
     }
   ],
-  "effects_established": [],
+  "effects_established": [
+    "congenital malformations"
+  ],
   "effects_promising": [],
   "effects_emerging": [
-    "exercise performance"
+    "eye / vision",
+    "skin / appearance"
   ],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
   "chemistry": {
@@ -83,5 +186,70 @@
       "Akotin"
     ]
   },
-  "_cached_at": 1787506348.562855
+  "_cached_at": 1787607519.062054,
+  "explanation": {
+    "what_it_is": "Niacin (also called nicotinic acid, pyridine-3-carboxylic acid) is a B vitamin with the molecular formula C\u2086H\u2085NO\u2082. It is found naturally in foods like meat, fish, nuts, and grains, and is widely available as an oral supplement in tablets or capsules. The body can also synthesize small amounts of niacin from the amino acid tryptophan.",
+    "how_it_works": "Niacin is converted in the body to nicotinamide adenine dinucleotide (NAD), a coenzyme essential for energy production and cellular function. NAD participates in hundreds of metabolic reactions\u2014it helps transfer electrons in energy-generating pathways, supports DNA repair, and is involved in cell signaling. Adequate niacin availability ensures sufficient NAD production, which is why deficiency can cause systemic problems. Beyond energy metabolism, NAD-dependent enzymes regulate inflammation, stress responses, and cellular aging pathways, making niacin relevant to processes from skin health to developmental biology.",
+    "outcome_detail": [
+      {
+        "outcome": "eye / vision",
+        "grade": "Preliminary",
+        "what_studies_show": "A 2013 case report described one rare instance of cystoid maculopathy (a retinal condition affecting the macula). No details on mechanism, dose, or whether niacin was causal versus coincidental are available from the abstract.",
+        "why_this_grade": "Only a single case report exists in the retrieved studies, with unverified sample size and no comparison group. Consistency cannot be assessed with one record, and a case report cannot establish causation or efficacy, keeping the grade preliminary."
+      },
+      {
+        "outcome": "congenital malformations",
+        "grade": "Moderate",
+        "what_studies_show": "A 2022 meta-analysis of 743 human participants examined maternal dietary niacin intake and congenital anomalies, and an animal study from 2017 explored NAD deficiency and niacin supplementation in the context of congenital malformations. Together, these suggest a biological relationship between niacin availability and fetal development.",
+        "why_this_grade": "Both human and animal evidence exist, and a systematic review synthesized the human data. However, the meta-analysis has not been independently replicated, and the conclusions remain held at moderate rather than strong because verification from a separate meta-analysis or large randomized trial is absent."
+      },
+      {
+        "outcome": "skin / appearance",
+        "grade": "Preliminary",
+        "what_studies_show": "A 2017 study of 808 US women and men examined niacin intake in relation to skin cancer risk. Details on methodology, specific niacin doses, or outcomes are not provided in the abstract.",
+        "why_this_grade": "Only one human study addresses skin outcomes in the retrieved records, making it impossible to assess consistency. A single observational study cannot establish efficacy for improving skin appearance or preventing skin disease without replication and mechanistic confirmation."
+      }
+    ],
+    "evidence_base": "The retrieved literature on niacin consists primarily of a small number of human observational and meta-analytic studies supplemented by limited animal research. Most records are recent (2013\u20132022), but coverage is sparse: only 2\u20133 studies per outcome. The human evidence is dominated by observational designs and a single meta-analysis rather than randomized controlled trials, and animal studies are few. This sparse, heterogeneous record means confidence in niacin's efficacy for these outcomes remains preliminary to moderate, and firm clinical conclusions are not yet possible.",
+    "emerging_research": "Recent work has focused on niacin's role in NAD metabolism and its implications for developmental biology (congenital malformations) and cancer risk (skin outcomes). The 2017 animal study on NAD deficiency suggests that adequate niacin availability is critical during fetal development, a direction with potential relevance to pregnancy health. However, these early findings have not yet translated into large-scale human trials or clinical practice guidelines, and whether supplementation beyond normal intake would improve outcomes remains unproven.",
+    "emerging_questions": "Among the studies provided here, the congenital malformations evidence rests on a single meta-analysis without independent verification, and the eye and skin outcomes rest on isolated studies (one case report and one observational cohort, respectively) with no follow-up replication shown. The records do not include information on optimal niacin dosing, timing (e.g., periconceptional supplementation for malformation prevention), or populations most likely to benefit. Notably, the studies retrieved do not appear to span infants, children, or disease states beyond the specific outcomes listed, so generalization to other age groups or health conditions is not yet clear from these records.",
+    "caveats": "Niacin is a B vitamin and is generally safe at recommended dietary levels (~14\u201316 mg/day for adults); however, high-dose supplementation (typically >500 mg/day) can cause flushing, hepatotoxicity, and glucose dysregulation, particularly in sustained-release forms. Pregnant or nursing individuals considering niacin supplementation beyond dietary intake should consult a healthcare provider to ensure safety for both mother and fetus. Niacin can interact with certain medications and should not replace medical treatment for established deficiency or disease.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base is extremely thin: only three studies total across three outcomes, with no replicable findings, no extractable pooled effects, and a single case report anchoring one outcome.",
+    "concerns": [
+      {
+        "issue": "Single studies per outcome, no replication",
+        "detail": "Eye/vision, congenital malformations, and skin/appearance each rest on at most two studies, with eye/vision supported by only a single case report (2013). The engine explicitly notes that consistency cannot be assessed when only one study addresses an outcome. No independent replication or verification exists for any of these clinical endpoints.",
+        "severity": "high"
+      },
+      {
+        "issue": "Case report as sole evidence for vision outcome",
+        "detail": "The eye/vision outcome is graded Preliminary and rests entirely on a single 2013 case report of cystoid maculopathy. Case reports describe individual presentations without control groups, baseline rates, or causality assessment. Sample size could not be extracted, and this design alone cannot establish whether niacin caused, prevented, or was incidental to the condition.",
+        "severity": "high"
+      },
+      {
+        "issue": "No extractable pooled effects across outcomes",
+        "detail": "Despite the congenital malformations outcome including a 2022 meta-analysis (n=743), the engine reports 'pooled effect: none extractable' across all outcomes. This means the magnitude, direction, and confidence interval of any treatment effect cannot be determined from the provided records. A Moderate grade on congenital malformations is therefore not anchored to a quantified estimate.",
+        "severity": "high"
+      },
+      {
+        "issue": "Mixed and unclassified study designs weaken inference",
+        "detail": "Two of three outcomes include 'Unclassified' designs (congenital malformations, skin/appearance). The congenital malformations outcome pairs a human meta-analysis with an animal study of unspecified design, complicating interpretation. Unclassified designs prevent assessment of methodological rigor (e.g., blinding, allocation concealment, loss to follow-up).",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Skin cancer outcome uses observational association, not intervention",
+        "detail": "The 2017 skin/appearance study (n=808) is titled 'Niacin intake and risk of skin cancer in US women and men.' This observational framing suggests a correlational or epidemiological design measuring intake versus outcome risk, not a controlled trial testing supplementation efficacy. Association does not establish that niacin supplementation prevents or causes skin cancer.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Niacin is a component of NAD metabolism, which is biologically plausible for cellular energy and DNA repair processes relevant to skin and congenital development. However, the clinical outcomes (eye maculopathy, congenital malformations, skin cancer risk) each require a mechanistic bridge from NAD biochemistry to a specific pathophysiological dysfunction, and the retrieved studies do not articulate or test these mechanisms. The congenital malformations outcome comes closest (the 2017 animal study explicitly addresses 'NAD Deficiency'), but the human meta-analysis does not clarify whether supplementation addresses a deficiency state or has clinical benefit in replete populations. For vision, the case report provides no mechanistic reasoning.",
+    "strongest_counterargument": "A skeptic would argue that three outcomes across three single studies (one a case report) with no replicable signal, no quantifiable pooled effects, and designs ranging from observational to unclassified provide no credible evidence that niacin supplementation improves vision, prevents birth defects, or affects skin cancer risk in the general population. The meta-analysis on congenital malformations is the strongest piece, but without an extractable effect size, it cannot be used to update a prior belief. The evidence is consistent with either negligible effect or undetected publication bias favoring promising case reports and small studies.",
+    "what_would_change_the_picture": "Independent replication of the 2022 meta-analysis with transparent outcome extraction and quantified effect sizes (relative risk, confidence intervals) for congenital malformations would clarify that outcome. For vision and skin outcomes, large, preregistered randomized controlled trials with standardized, clinically meaningful endpoints (e.g., visual acuity decline, incident skin cancer diagnoses) and long-term follow-up would be required to establish causality and clinical relevance beyond observational association or case descriptions.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

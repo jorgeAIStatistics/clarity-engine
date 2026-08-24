@@ -3,8 +3,54 @@
   "category": "peptide",
   "overall_score": 22,
   "tier": "Preliminary",
-  "study_count": 1,
+  "study_count": 3,
   "claims": [
+    {
+      "outcome": "muscle growth",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 35,
+        "human": 0,
+        "overall": 35,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 1,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:12947030"
+      ],
+      "studies": [
+        {
+          "pmid": "12947030",
+          "title": "Extracellular signal-regulated kinase and phosphoinositol-3 kinase mediate IGF-1 induced proliferation of fetal sheep cardiomyocytes.",
+          "year": "2003",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For muscle growth, IGF-1 LR3 has only preliminary or animal evidence (1 studies)."
+    },
     {
       "outcome": "blood sugar",
       "tier": "Preliminary",
@@ -50,15 +96,128 @@
       },
       "headline_effect": null,
       "summary": "For blood sugar, IGF-1 LR3 has only preliminary or animal evidence (1 studies)."
+    },
+    {
+      "outcome": "tendon / tissue healing",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 35,
+        "human": 0,
+        "overall": 35,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 1,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:12947030"
+      ],
+      "studies": [
+        {
+          "pmid": "12947030",
+          "title": "Extracellular signal-regulated kinase and phosphoinositol-3 kinase mediate IGF-1 induced proliferation of fetal sheep cardiomyocytes.",
+          "year": "2003",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For tendon / tissue healing, IGF-1 LR3 has only preliminary or animal evidence (1 studies)."
     }
   ],
   "effects_established": [],
   "effects_promising": [
-    "blood sugar"
+    "muscle growth",
+    "blood sugar",
+    "tendon / tissue healing"
   ],
   "effects_emerging": [],
   "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506631.929089
+  "_cached_at": 1787608650.920776,
+  "explanation": {
+    "what_it_is": "IGF-1 LR3 (insulin-like growth factor 1 long-acting R3 variant) is a synthetic peptide engineered to mimic insulin-like growth factor 1, a natural hormone that regulates growth and metabolism in the body. It is an injectable research chemical\u2014not approved for human clinical use\u2014often sourced through research suppliers or underground markets. The 'LR3' designation refers to modifications (a long arginine sequence and an R3 amino acid substitution) that increase its half-life and receptor selectivity compared to native IGF-1.",
+    "how_it_works": "IGF-1 LR3 binds to the IGF-1 receptor, a transmembrane protein present on muscle, bone, tendon, and metabolic tissues. Once bound, it activates intracellular signaling cascades\u2014particularly the phosphoinositide 3-kinase (PI3K) and extracellular signal-regulated kinase (ERK) pathways\u2014that promote protein synthesis, cell proliferation, and differentiation. These same pathways influence glucose uptake and insulin sensitivity in metabolic tissues. In theory, sustained IGF-1 signaling could amplify muscle protein accretion, improve tissue repair, and modulate blood sugar handling, though how this plays out in living humans remains largely unknown.",
+    "outcome_detail": [
+      {
+        "outcome": "muscle growth",
+        "grade": "Preliminary",
+        "what_studies_show": "A single 2003 animal study demonstrated that IGF-1 activates ERK and PI3K signaling pathways in fetal cells, triggering proliferation\u2014a cellular process theoretically relevant to muscle expansion. However, this work was conducted in isolated cell culture (fetal cells), not in intact muscle tissue or living animals, and does not assess actual muscle mass gain or functional changes.",
+        "why_this_grade": "Evidence rests on a single animal cell study with no human data. The cellular mechanism is plausible but indirect; activation of growth pathways in culture does not reliably predict muscle-building effects in the intact human body."
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Preliminary",
+        "what_studies_show": "The same 2003 animal cell study shows IGF-1 engages signaling pathways (PI3K, ERK) that are known to influence glucose metabolism at the cellular level. No studies in animals or humans measured actual blood glucose, insulin sensitivity, or glucose tolerance in response to IGF-1 LR3.",
+        "why_this_grade": "Only one animal cell study is available, showing pathway activation rather than metabolic outcomes. No human data exists, and the leap from in vitro signaling to systemic glucose control is unvalidated."
+      },
+      {
+        "outcome": "tendon / tissue healing",
+        "grade": "Preliminary",
+        "what_studies_show": "The 2003 study identified that IGF-1 activates growth-promoting signaling cascades in cultured fetal cells, a process that could theoretically support tissue repair and collagen synthesis. However, no studies directly assessed IGF-1 effects on tendon injury, tissue healing rates, or structural recovery in animals or humans.",
+        "why_this_grade": "Evidence is limited to a single animal cell culture study demonstrating pathway activation, not actual tissue repair outcomes. No direct evidence of healing effects in intact tissue or living organisms exists in the retrieved records."
+      }
+    ],
+    "evidence_base": "The evidence base for IGF-1 LR3 is extremely sparse: all three outcomes rest on a single 2003 animal cell study examining intracellular signaling mechanisms, with zero human trials. The retrieved studies show mechanistic plausibility (pathway activation) but no functional or clinical outcomes in animal models or humans. This is pre-clinical foundational science, not evidence of real-world efficacy. The age and narrowness of the available literature reflect the status of IGF-1 LR3 as a research chemical without meaningful human investigation.",
+    "emerging_research": "No recent or novel research on IGF-1 LR3 appears in the retrieved records; the sole study dates to 2003. Emerging inquiry into IGF-1 signaling in muscle and metabolic disease continues in academic literature, but it does not appear to have generated human trials of IGF-1 LR3 specifically. Any therapeutic development of IGF-1 analogues remains in early preclinical or investigational stages.",
+    "open_questions": "Among the studies retrieved, there are no human trials, no animal model studies of intact tissue, and no dose-response or safety data. The single record provided offers no information on optimal dosing, duration of effect, long-term tolerability, or how IGF-1 LR3 specifically compares to native IGF-1 or other growth factors. Because only ~40 abstracts per outcome were retrieved (a sample, not a complete literature search), it is possible additional studies exist in the broader field; however, the records here show no published human evidence whatsoever.",
+    "caveats": "IGF-1 LR3 is not approved by regulatory agencies (FDA, EMA) for human use and is typically classified as a research chemical or controlled substance in many jurisdictions. Its safety profile in humans is unknown; potential risks include cancer cell growth stimulation, hypoglycemia, fluid retention, and joint pain\u2014concerns based on native IGF-1 biology rather than tested adverse events from IGF-1 LR3. It should not be used outside of approved clinical research, and users should be aware that purity, sterility, and consistency of underground-sourced peptides are unverified.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "All three clinical outcomes rest on a single animal study from 2003 addressing cell proliferation mechanics\u2014no human evidence exists for any claimed benefit.",
+    "concerns": [
+      {
+        "issue": "Zero human evidence across all outcomes",
+        "detail": "Every outcome (muscle growth, blood sugar, tendon/tissue healing) is supported by 0 human trials and 1 animal trial. The retrieved evidence contains no clinical trial data, observational studies, or case series in humans. A single animal mechanistic study cannot establish that any of these benefits occur in human users.",
+        "severity": "high"
+      },
+      {
+        "issue": "Single study drives all three outcomes",
+        "detail": "The same 2003 animal study (Extracellular signal-regulated kinase and phosphoinositol-3 kinase mediate IGF-1 induced proliferation) appears to underlie grading for muscle growth, blood sugar, and tendon healing. Sample sizes are not extractable from the abstract, and the study is 20+ years old. No independent replication is visible in the retrieved records.",
+        "severity": "high"
+      },
+      {
+        "issue": "Mechanistic endpoints \u2260 clinical outcomes",
+        "detail": "The 2003 study examined intracellular signaling pathways (ERK and PI3K phosphorylation) during cell proliferation, not measurable clinical endpoints like muscle mass gain, glucose homeostasis, or functional tissue repair in living organisms. The leap from cell-level mechanism to systemic human benefit is enormous and unsupported by bridge evidence.",
+        "severity": "high"
+      },
+      {
+        "issue": "No safety or adverse event data visible",
+        "detail": "The records contain no information on safety, dosing, or adverse events in any population. Given that IGF-1 LR3 is noted as grey-market and not approved for human use, the absence of safety documentation is a critical gap\u2014particularly for a peptide that affects growth signaling and metabolic pathways.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Severe recency and translation gaps",
+        "detail": "The single animal study is from 2003; no more recent human or animal clinical work is present in the retrieved records. Animal models of cell proliferation are known to have poor predictive validity for human performance and safety outcomes, yet this gap is the entire evidence base.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The 2003 study documents that IGF-1 activates ERK and PI3K signaling in cultured cells\u2014a plausible mechanism for proliferative effects. However, there is an enormous leap from demonstrating phosphorylation in vitro to claiming muscle growth, blood sugar regulation, or tissue healing in humans. Muscle hypertrophy, glucose homeostasis, and connective tissue repair involve complex systemic interactions (hormonal, neurological, metabolic, inflammatory) that cellular signaling studies do not address. The mechanism is biochemically sound but does not bridge to clinical phenotypes.",
+    "strongest_counterargument": "A skeptic would note that IGF-1 signaling promotes proliferation in cell culture, but this tells us almost nothing about systemic efficacy or safety in humans. Animal and human biology differ substantially in drug metabolism, tissue distribution, immune response, and compensatory feedback loops. The complete absence of human data means we cannot rule out that the peptide is inert in humans, causes harmful side effects (e.g., cancer risk, metabolic dysregulation), or requires doses far higher than those achievable or safe in practice. The 20-year-old cell biology paper does not constitute evidence that a person injecting grey-market IGF-1 LR3 will gain muscle or improve healing.",
+    "what_would_change_the_picture": "Randomized controlled trials in humans (n \u2265 50 per arm) with pre-specified muscle mass, strength, glucose regulation, or tissue healing outcomes, blinded allocation, and adverse event monitoring would be necessary to establish clinical efficacy. Dose-response and pharmacokinetic studies in humans would be needed to validate that systemic effects occur at achievable doses.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

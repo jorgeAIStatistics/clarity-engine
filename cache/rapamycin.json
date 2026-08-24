@@ -3,7 +3,7 @@
   "category": "longevity",
   "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 9,
+  "study_count": 19,
   "claims": [
     {
       "outcome": "immune function",
@@ -11,25 +11,28 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 6,
       "grade_reasons": [
-        "Precision: ~1223 participants verified across 1 of 3 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~1223 participants verified across 1 of 6 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 35,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 1,
+        "n_human_studies": 3,
+        "n_animal_studies": 3,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:36399256",
         "PMID:40132910",
-        "PMID:40974246"
+        "PMID:40974246",
+        "PMID:30563829",
+        "PMID:32712065",
+        "PMID:26691741"
       ],
       "studies": [
         {
@@ -49,9 +52,33 @@
           "n": null
         },
         {
+          "pmid": "30563829",
+          "title": "Rapamycin Prevents Surgery-Induced Immune Dysfunction in Patients with Bladder Cancer.",
+          "year": "2019",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "40974246",
           "title": "Rapamycin's Role in Periodontal Health and Therapeutics: A Scoping Review.",
           "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "32712065",
+          "title": "Effects of co-administration of rapamycin and evening primrose/hemp seed oil supplement on immunologic factors and cell membrane fatty acids in experimental aut",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "26691741",
+          "title": "Blood-brain barrier leakage after status epilepticus in rapamycin-treated rats II: Potential mechanisms.",
+          "year": "2016",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -68,47 +95,66 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For immune function, Rapamycin has moderate human evidence (3 studies)."
+      "summary": "For immune function, Rapamycin has moderate human evidence (6 studies)."
     },
     {
-      "outcome": "skin / appearance",
+      "outcome": "cognition",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 4,
       "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
         "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
-        "mechanistic": 25,
-        "preclinical": 0,
+        "mechanistic": 30,
+        "preclinical": 45,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
         "n_human_studies": 2,
-        "n_animal_studies": 0,
+        "n_animal_studies": 2,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:31761958",
-        "PMID:27409709"
+        "PMID:40132910",
+        "PMID:38185381",
+        "PMID:38640155",
+        "PMID:21504792"
       ],
       "studies": [
         {
-          "pmid": "27409709",
-          "title": "Rapamycin and rapalogs for tuberous sclerosis complex.",
-          "year": "2016",
-          "design": "Meta-analysis",
+          "pmid": "38640155",
+          "title": "Effect and Mechanism of Rapamycin on Cognitive Deficits in Animal Models of Alzheimer's Disease: A Systematic Review and Meta-analysis of Preclinical Studies.",
+          "year": "2024",
+          "design": "Systematic review",
           "population": "human",
-          "n": 263
+          "n": null
         },
         {
-          "pmid": "31761958",
-          "title": "Topical rapamycin reduces markers of senescence and aging in human skin: an exploratory, prospective, randomized trial.",
-          "year": "2019",
+          "pmid": "40132910",
+          "title": "mTOR inhibition modulates vaccine-induced immune responses to generate memory T cells in patients with solid tumors.",
+          "year": "2025",
           "design": "RCT",
           "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "21504792",
+          "title": "A pulse rapamycin therapy for infantile spasms and associated cognitive decline.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "38185381",
+          "title": "Evaluating the effects of single, multiple, and delayed systemic rapamycin injections to contextual fear reconsolidation: Implications for the neurobiology of m",
+          "year": "2024",
+          "design": "Unclassified",
+          "population": "animal",
           "n": null
         }
       ],
@@ -123,7 +169,89 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For skin / appearance, Rapamycin has moderate human evidence (2 studies)."
+      "summary": "For cognition, Rapamycin has moderate human evidence (4 studies)."
+    },
+    {
+      "outcome": "mood / depression",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 5,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 3,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:40188830",
+        "PMID:35101523",
+        "PMID:32092760",
+        "PMID:41413564",
+        "PMID:28777104"
+      ],
+      "studies": [
+        {
+          "pmid": "40188830",
+          "title": "Influence of rapamycin on safety and healthspan metrics after one year: PEARL trial results.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "35101523",
+          "title": "mTORC1 inhibitor effects on rapid ketamine-induced reductions in suicidal ideation in patients with treatment-resistant depression.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "32092760",
+          "title": "Modulation of the antidepressant effects of ketamine by the mTORC1 inhibitor rapamycin.",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41413564",
+          "title": "Intestinal \u03b3\u03b4 T17-IL-17A signaling disrupts hippocampal mitophagy in stress-induced depression and is restored by arketamine.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "28777104",
+          "title": "Mood-stabilizing effects of rapamycin and its analog temsirolimus: relevance to autophagy.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For mood / depression, Rapamycin has moderate human evidence (5 studies)."
     },
     {
       "outcome": "kidney function",
@@ -131,23 +259,25 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 4,
       "grade_reasons": [
-        "Limited human evidence: 0 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Limited human evidence: 2 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
-        "mechanistic": 25,
+        "mechanistic": 30,
         "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
+        "n_human_studies": 4,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:40590196",
-        "PMID:27409709"
+        "PMID:27409709",
+        "PMID:28177677",
+        "PMID:18192922"
       ],
       "studies": [
         {
@@ -165,60 +295,21 @@
           "design": "Meta-analysis",
           "population": "human",
           "n": 263
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For kidney function, Rapamycin has moderate human evidence (2 studies)."
-    },
-    {
-      "outcome": "cognition",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:40132910",
-        "PMID:21504792"
-      ],
-      "studies": [
-        {
-          "pmid": "40132910",
-          "title": "mTOR inhibition modulates vaccine-induced immune responses to generate memory T cells in patients with solid tumors.",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
         },
         {
-          "pmid": "21504792",
-          "title": "A pulse rapamycin therapy for infantile spasms and associated cognitive decline.",
-          "year": "2011",
-          "design": "Animal",
-          "population": "animal",
+          "pmid": "18192922",
+          "title": "Rapamycin inhibits PAI-1 expression and reduces interstitial fibrosis and glomerulosclerosis in chronic allograft nephropathy.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": 18
+        },
+        {
+          "pmid": "28177677",
+          "title": "mTORC1 inhibitors rapamycin and metformin affect cardiovascular markers differentially in ZDF rats.",
+          "year": "2017",
+          "design": "Observational",
+          "population": "human",
           "n": null
         }
       ],
@@ -233,14 +324,14 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cognition, Rapamycin has moderate human evidence (2 studies)."
+      "summary": "For kidney function, Rapamycin has moderate human evidence (4 studies)."
     }
   ],
   "effects_established": [
     "immune function",
-    "skin / appearance",
-    "kidney function",
-    "cognition"
+    "cognition",
+    "mood / depression",
+    "kidney function"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -268,5 +359,76 @@
       "AY-22989"
     ]
   },
-  "_cached_at": 1787506539.434033
+  "_cached_at": 1787608270.358281,
+  "explanation": {
+    "what_it_is": "Rapamycin (also called sirolimus) is a macrolide antibiotic derived from the bacterium Streptomyces hygroscopicus, with the molecular formula C\u2085\u2081H\u2087\u2089NO\u2081\u2083. It is taken orally or by injection and works by binding to and inhibiting mTORC1, a central cellular growth and metabolism signaling complex. In clinical use, it is FDA-approved as an immunosuppressant for organ transplant recipients, but researchers are investigating its potential in aging and age-related diseases.",
+    "how_it_works": "Rapamycin binds to the protein FKBP12, and this complex then inhibits mTORC1 (mechanistic target of rapamycin complex 1), a master regulator of cell growth, protein synthesis, and autophagy. By suppressing mTORC1 activity, rapamycin slows cellular growth, reduces energy-expensive processes, and enhances autophagy\u2014the cell's 'cleanup' mechanism for removing damaged organelles and proteins. This pathway is thought to be involved in aging and inflammatory processes; suppressing it may reduce immune overactivity, preserve cognitive function under stress, stabilize mood, and protect kidney tissue from fibrosis and damage. The mechanism is well-established in cell biology, though its clinical relevance in non-transplant settings is still being defined.",
+    "outcome_detail": [
+      {
+        "outcome": "immune function",
+        "grade": "Moderate",
+        "what_studies_show": "A 2023 meta-analysis of 1,223 participants found that rapamycin (not dietary restriction alone) improves resilience against pathogens. A 2025 RCT examined mTORC1 inhibition's effects on vaccine-induced immune responses and memory T cell generation in patients with solid tumors. A 2019 RCT in bladder cancer patients showed rapamycin prevented surgery-induced immune dysfunction. Animal studies explored rapamycin's role in periodontal immunity, co-administration effects with supplements on immune markers, and blood-brain barrier integrity after seizures.",
+        "why_this_grade": "Three human studies including a meta-analysis provide evidence of immune-modulating effects, but sample-size precision is limited (confirmed in only 1 of 6 studies) and the meta-analysis conclusion lacks independent replication. Animal models support the pathway but do not yet bridge to human clinical outcomes."
+      },
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "A 2024 systematic review examined rapamycin's effects and mechanisms on cognitive deficits in animal models of Alzheimer's disease. A 2025 RCT investigated mTORC1 inhibition in relation to immune and cognitive responses in transplant patients. Animal studies assessed rapamycin for infantile spasms and cognitive decline (2011), and its effects on contextual fear conditioning and memory (2024).",
+        "why_this_grade": "Two human studies (one a systematic review of animal models, one an RCT with broader endpoints) and two animal experiments provide preliminary evidence, but sample sizes could not be verified from abstracts and no independent replication of conclusions exists across trials, limiting certainty to moderate."
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Moderate",
+        "what_studies_show": "A 2025 RCT examined rapamycin's influence on safety and healthspan metrics including mood after one year (PEARL trial). A 2022 RCT investigated mTORC1 inhibitor effects on rapid ketamine-induced reductions in suicidal ideation in treatment-resistant depression. A 2020 RCT explored rapamycin's modulation of ketamine's antidepressant effects. Animal studies examined intestinal \u03b3\u03b4 T17 signaling in stress-induced depression (2025) and mood-stabilizing effects of rapamycin and temsirolimus (2018).",
+        "why_this_grade": "Three human RCTs, two focused specifically on depression and ketamine response, provide evidence of mood-related effects; however, sample sizes could not be verified and no independent replication of findings across independent trials exists, limiting confidence to moderate."
+      },
+      {
+        "outcome": "kidney function",
+        "grade": "Moderate",
+        "what_studies_show": "A 2025 meta-analysis examined rapamycin's impact on delayed graft function in kidney transplant recipients. A 2016 meta-analysis of 263 participants reviewed rapamycin and rapalogs for tuberous sclerosis complex (which involves kidney hamartomas). A 2008 RCT (n=18) in chronic allograft recipients found rapamycin inhibited PAI-1 expression and reduced interstitial fibrosis and glomerulosclerosis. A 2017 observational study compared mTORC1 inhibitors' effects on cardiovascular markers in animal models.",
+        "why_this_grade": "Four human studies including two meta-analyses provide evidence of renal protective effects in transplant and genetic disease settings. However, evidence is limited to 2 primary RCTs and 2 pooled analyses with modest sample sizes; no animal studies were retrieved to confirm underlying mechanisms."
+      }
+    ],
+    "evidence_base": "The research on rapamycin spans human and animal studies, with the human evidence concentrated in three areas: transplant medicine (kidney function), psychiatric co-treatment (mood and depression with ketamine), and vaccine/immune responses in cancer patients. Most human studies are RCTs or meta-analyses published 2008\u20132025; cognition and immune function evidence also draws on systematic reviews of animal models. The overall evidence is moderate-tier across outcomes: human data exists but is limited by small-to-moderate sample sizes, lack of independent replication across trials, and outcome measures that vary between studies. Animal studies consistently support the mTORC1 pathway's relevance to inflammation, immunity, and cellular stress, but translation to clinical benefit in aging or non-transplant populations is not yet proven.",
+    "emerging_research": "Recent work (2024\u20132025) is exploring rapamycin's effects on healthspan and longevity-related outcomes (PEARL trial), its role in preventing cognitive decline in Alzheimer's-like models, and its synergy with ketamine for depression and suicidal ideation. Studies are also investigating immune memory formation and resilience against infection, as well as intestinal immune signaling in stress-related depression. These areas remain early-stage; human efficacy is not yet established outside transplant medicine.",
+    "open_questions": "Among the studies retrieved here, human trials are concentrated in transplant recipients and psychiatric co-treatment; no trials were found in otherwise-healthy aging populations or in primary prevention of age-related disease. Most RCTs are relatively recent (2020 or later) and durations vary; it is unclear from these records whether longer-term effects (>1 year) have been rigorously followed. Cognitive outcomes are drawn primarily from systematic reviews of animal models, not direct human cognition trials. Because this search captures only ~40 abstracts per outcome, it does not represent the full literature; however, based on what is shown here, robust evidence in non-transplant human populations is sparse.",
+    "caveats": "Rapamycin is an immunosuppressant and must be prescribed and monitored by a physician; it carries risks of infection, impaired wound healing, and increased cancer risk with long-term use\u2014it is not a supplement and should never be self-administered outside approved clinical indications. Quality and purity vary if obtained outside pharmaceutical supply chains. Interactions with other medications (especially those metabolized via CYP3A4) are significant; do not combine with other mTORC1 inhibitors or immunosuppressants without expert guidance.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "Most outcomes rest on single systematic reviews without independent replication, and sample sizes are largely unreported or very small\u2014clinical certainty is thinner than 'Moderate' suggests.",
+    "concerns": [
+      {
+        "issue": "Single meta-analysis anchors multiple outcomes",
+        "detail": "For both immune function and cognition, a single meta-analysis or systematic review is the highest-level evidence, and the engine explicitly notes neither conclusion is independently replicated. For cognition, the entire human evidence base is: one 2024 systematic review, one 2025 RCT on vaccine-induced T cells (not a cognition trial), and no other primary human trials. If the systematic review has methodological flaws or publication bias, the entire Moderate grade collapses.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sample sizes mostly unreported; precision unverifiable",
+        "detail": "For cognition, mood, and kidney function, no sample sizes are extractable from abstracts. The engine flags cognition and mood as 'Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed.' For kidney function, only 2 of 4 studies report n (18 and 263), meaning 50% of the evidence base lacks any reported sample size. Without knowing whether trials are n=10 or n=100, pooled estimates are meaningless.",
+        "severity": "high"
+      },
+      {
+        "issue": "Off-target primary outcomes in human trials",
+        "detail": "The 2025 RCT cited under cognition is titled 'mTOR inhibition modulates vaccine-induced immune responses to generate memory T cells'\u2014its primary outcome is vaccine response, not cognition. It appears in both immune function and cognition outcomes, suggesting outcome switching or secondary analysis fishing. The 2020 RCT under mood combines rapamycin with ketamine; rapamycin's independent contribution is unclear. These are not clean tests of rapamycin's effect on the stated outcomes.",
+        "severity": "high"
+      },
+      {
+        "issue": "Heavy reliance on animal models with no dose or timing correspondence",
+        "detail": "Immune function is 50% animal studies (3 of 6); cognition is 50% animal (2 of 4); mood is 40% animal (2 of 5). Abstracts do not specify whether dosing, duration, or route in animals align with human trials or clinical use. The 2016 animal study of rapamycin in epileptic rats explicitly examines blood-brain barrier leakage\u2014a potential harm signal\u2014yet grades remain 'Moderate' across all outcomes without discussion of this risk.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Recency clustering masks temporal robustness",
+        "detail": "Immune function and cognition show heavy weighting toward 2023\u20132026 publications (5 of 6 immune; 3 of 4 cognition). No immunity or cognition data exist before 2016. This clustering suggests a recent surge of interest rather than a mature, stable evidence base. If early trials were conducted but not yet published or failed to replicate, the current sample is biased toward positive findings.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Rapamycin's mTOR inhibition is biologically plausible for immune memory (autophagy, T cell differentiation) and some cognitive models (neuroinflammation, ischemic injury). However, the clinical leaps are large: animal studies of epilepsy-induced BBB leakage or stress-induced depression do not directly establish that rapamycin improves cognition or mood in healthy aging populations or patients with depression. The kidney function outcome is strongest mechanistically\u2014transplant fibrosis and glomerulosclerosis are direct fibrotic diseases where mTOR inhibition has a clear target. But cognition and mood rely on indirect, multi-step mechanisms that are plausible but not proven to translate from animal models to humans.",
+    "strongest_counterargument": "A skeptic would argue that the Moderate grade overstates confidence: the human evidence is thin (mostly 2\u20134 studies per outcome), driven by a single unreplicated meta-analysis in two outcomes, and sample sizes are unknown for half or more of the trials. The 2025 vaccine-response RCT does not test cognition. The 2020 mood RCT conflates rapamycin with ketamine. Three human outcomes (immune, cognition, mood) rest on data published almost entirely in 2023 or later, which is a red flag for recency bias or p-hacking. Until these findings are independently replicated in pre-specified, adequately powered trials with clear outcome measures, 'Moderate' is generous.",
+    "what_would_change_the_picture": "Independent replication of the 2023 immune meta-analysis findings in a new RCT with at least 200 participants per arm and pre-registered outcomes would strengthen immune function. For cognition, a dedicated RCT of rapamycin in cognitively normal older adults (n \u2265 300) with cognitive testing as the primary outcome\u2014not secondary\u2014would test the claim directly. For mood, a large RCT in depression as monotherapy (not adjunct to ketamine) with Hamilton or Montgomery-\u00c5sberg scales would clarify whether rapamycin has independent antidepressant efficacy.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

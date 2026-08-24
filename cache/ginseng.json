@@ -3,7 +3,7 @@
   "category": "herb",
   "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 12,
+  "study_count": 24,
   "claims": [
     {
       "outcome": "cognition",
@@ -11,10 +11,10 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 4,
       "grade_reasons": [
-        "Precision: ~671 participants verified across 1 of 3 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 0 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~671 participants verified across 1 of 4 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 0 primary human studies and 4 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -22,14 +22,15 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
+        "n_human_studies": 4,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:39474788",
         "PMID:21154383",
-        "PMID:23560064"
+        "PMID:23560064",
+        "PMID:40774237"
       ],
       "studies": [
         {
@@ -45,6 +46,14 @@
           "title": "Ginseng for cognition.",
           "year": "2010",
           "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40774237",
+          "title": "Cognitive Benefits of Ginseng: A Systematic Review and Meta-Analysis of Changes in Mini-Mental State Examination and Alzheimer's Disease Assessment Scale-Cognit",
+          "year": "2025",
+          "design": "Systematic review",
           "population": "human",
           "n": null
         },
@@ -68,40 +77,65 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cognition, Ginseng has moderate human evidence (3 studies)."
+      "summary": "For cognition, Ginseng has moderate human evidence (4 studies)."
     },
     {
-      "outcome": "exercise performance",
+      "outcome": "blood sugar",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 10,
       "grade_reasons": [
-        "Limited human evidence: 0 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~1386 participants verified across 4 of 10 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 3 primary human studies and 5 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
-        "mechanistic": 25,
-        "preclinical": 0,
+        "mechanistic": 30,
+        "preclinical": 45,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 0,
+        "n_human_studies": 8,
+        "n_animal_studies": 2,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:27822924",
-        "PMID:21704950"
+        "PMID:39004031",
+        "PMID:16332943",
+        "PMID:21704950",
+        "PMID:25265315",
+        "PMID:8721940",
+        "PMID:39387709",
+        "PMID:26871778",
+        "PMID:31392839",
+        "PMID:18355331",
+        "PMID:29276207"
       ],
       "studies": [
         {
-          "pmid": "27822924",
-          "title": "Efficacy of Ginseng Supplements on Fatigue and Physical Performance: a Meta-analysis.",
+          "pmid": "26871778",
+          "title": "The Efficacy of Ginseng-Related Therapies in Type 2 Diabetes Mellitus: An Updated Systematic Review and Meta-analysis.",
           "year": "2016",
           "design": "Meta-analysis",
           "population": "human",
-          "n": 630
+          "n": null
+        },
+        {
+          "pmid": "25265315",
+          "title": "The effect of ginseng (the genus panax) on glycemic control: a systematic review and meta-analysis of randomized controlled clinical trials.",
+          "year": "2014",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 770
+        },
+        {
+          "pmid": "39387709",
+          "title": "Effects of Ginseng Consumption on Cardiovascular Health\u00a0Biomarkers in Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
         },
         {
           "pmid": "21704950",
@@ -110,63 +144,6 @@
           "design": "Systematic review",
           "population": "human",
           "n": 411
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For exercise performance, Ginseng has moderate human evidence (2 studies)."
-    },
-    {
-      "outcome": "cardiovascular",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 4,
-      "grade_reasons": [
-        "Limited human evidence: 1 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 4,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:39004031",
-        "PMID:27074879",
-        "PMID:16332943",
-        "PMID:28707603"
-      ],
-      "studies": [
-        {
-          "pmid": "28707603",
-          "title": "Ginseng for Treating Hypertension: A Systematic Review and Meta-Analysis of Double Blind, Randomized, Placebo-Controlled Trials.",
-          "year": "2017",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 183
-        },
-        {
-          "pmid": "27074879",
-          "title": "The effect of ginseng (genus Panax) on blood pressure: a systematic review and meta-analysis of randomized controlled clinical trials.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 1381
         },
         {
           "pmid": "16332943",
@@ -183,6 +160,38 @@
           "design": "RCT",
           "population": "human",
           "n": 195
+        },
+        {
+          "pmid": "18355331",
+          "title": "Effect of Panax ginseng supplementation on biomarkers of glucose tolerance, antioxidant status and oxidative stress in type 2 diabetic subjects: results of a pl",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "8721940",
+          "title": "Ginseng therapy in non-insulin-dependent diabetic patients.",
+          "year": "1995",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "31392839",
+          "title": "Oral supplementation with ginseng polysaccharide promotes food intake in mice.",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "29276207",
+          "title": "Effects of Antrodia camphorata and Panax ginseng supplementation on anti-fatigue properties in mice.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": 10
         }
       ],
       "effects": {
@@ -196,7 +205,89 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cardiovascular, Ginseng has moderate human evidence (4 studies)."
+      "summary": "For blood sugar, Ginseng has moderate human evidence (10 studies)."
+    },
+    {
+      "outcome": "endurance",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 5,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~46 participants across 2 of 5 studies); effect estimate may be unstable."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 35,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 4,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:15744902",
+        "PMID:16149140",
+        "PMID:32526977",
+        "PMID:17624213",
+        "PMID:25617625"
+      ],
+      "studies": [
+        {
+          "pmid": "25617625",
+          "title": "Improved inflammatory balance of human skeletal muscle during exercise after supplementations of the ginseng-based steroid Rg1.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "17624213",
+          "title": "Ginseng supplementation does not change lactate threshold and physical performances in physically active Thai men.",
+          "year": "2007",
+          "design": "RCT",
+          "population": "human",
+          "n": 30
+        },
+        {
+          "pmid": "15744902",
+          "title": "Panax notoginseng supplementation enhances physical performance during endurance exercise.",
+          "year": "2005",
+          "design": "RCT",
+          "population": "human",
+          "n": 16
+        },
+        {
+          "pmid": "16149140",
+          "title": "American ginseng supplementation attenuates creatine kinase level induced by submaximal exercise in human beings.",
+          "year": "2005",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "32526977",
+          "title": "The Effect of a 2-Week Red Ginseng Supplementation on Food Efficiency and Energy Metabolism in Mice.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For endurance, Ginseng has moderate human evidence (5 studies)."
     },
     {
       "outcome": "blood pressure",
@@ -204,9 +295,10 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 5,
       "grade_reasons": [
-        "Limited human evidence: 0 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~1564 participants verified across 2 of 5 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 0 primary human studies and 4 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -214,14 +306,16 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
+        "n_human_studies": 5,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:27074879",
         "PMID:16332943",
-        "PMID:28707603"
+        "PMID:28707603",
+        "PMID:39387709",
+        "PMID:38969369"
       ],
       "studies": [
         {
@@ -241,10 +335,26 @@
           "n": 1381
         },
         {
+          "pmid": "39387709",
+          "title": "Effects of Ginseng Consumption on Cardiovascular Health\u00a0Biomarkers in Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "16332943",
           "title": "Systematic review of the effects of ginseng on cardiovascular risk factors.",
           "year": "2006",
           "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "38969369",
+          "title": "Ginseng supplementation and cardiovascular disease risk factors: a protocol for GRADE-assessed systematic review and dose-response meta-analysis.",
+          "year": "2024",
+          "design": "Unclassified",
           "population": "human",
           "n": null
         }
@@ -260,13 +370,13 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For blood pressure, Ginseng has moderate human evidence (3 studies)."
+      "summary": "For blood pressure, Ginseng has moderate human evidence (5 studies)."
     }
   ],
   "effects_established": [
     "cognition",
-    "exercise performance",
-    "cardiovascular",
+    "blood sugar",
+    "endurance",
     "blood pressure"
   ],
   "effects_promising": [],
@@ -274,5 +384,76 @@
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506408.1897018
+  "_cached_at": 1787607795.09867,
+  "explanation": {
+    "what_it_is": "Ginseng refers to plants of the genus Panax, most commonly Asian ginseng (Panax ginseng) and American ginseng (Panax quinquefolius). The root is the primary used part and contains bioactive compounds called ginsenosides\u2014steroid-like molecules unique to the plant. People typically consume ginseng as dried root powder, extracts, tea, or standardized supplements.",
+    "how_it_works": "Ginsenosides, ginseng's main active constituents, are believed to act on multiple physiological systems. They may modulate the hypothalamic-pituitary-adrenal (HPA) axis\u2014the body's central stress-response system\u2014potentially reducing cortisol and supporting resilience under physical or mental load. Ginsenosides also appear to influence glucose metabolism by enhancing insulin secretion and improving cellular glucose uptake, which could help regulate blood sugar. In muscle and blood vessels, they may reduce inflammatory signaling and oxidative stress, potentially improving oxygen utilization during exercise and supporting cardiovascular function. The exact mechanism by which ginsenosides exert these effects remains incompletely understood, but their steroid-like structure allows them to interact with cellular receptors and signaling pathways involved in energy, stress, and inflammation.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "Four pooled analyses and systematic reviews (2010, 2013, 2024, 2025)\u2014all summarizing randomized controlled trials\u2014found that ginseng supplementation was associated with modest improvements in cognitive function, including memory and mental clarity. A 2024 meta-analysis of 671 verified participants identified a signal for cognitive benefit. Most of the primary trial data came from older adults or individuals with age-related cognitive concerns, though detailed breakdowns by population were not consistently reported in the retrieved abstracts.",
+        "why_this_grade": "The evidence is graded Moderate because human data exist (four analyses) but consist primarily of pooled secondary analyses rather than large primary trials. Sample size precision is limited\u2014only 1 of 4 studies reported exact participant numbers (671), and most abstracts omitted figures, making true cumulative sample uncertain. This mixed-strength evidence base falls below the threshold for a Strong grade."
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Moderate",
+        "what_studies_show": "Eight human studies\u2014including three primary randomized trials and five meta-analyses (2006, 2011, 2014, 2016, 2024)\u2014examined ginseng's effect on glucose control, mostly in people with type 2 diabetes or prediabetes. A 2014 meta-analysis of 770 participants and a 2024 RCT of 195 patients with prediabetes receiving ginseng berry saponins both reported modest improvements in fasting glucose and glycemic markers. Two animal studies in mice provided supporting mechanistic data. Overall, findings suggest a small but consistent benefit for blood sugar regulation.",
+        "why_this_grade": "Moderate grade reflects 8 human studies with verified sample sizes totaling ~1386 participants across 4 studies, but imprecision because most abstracts did not report sample sizes and only 3 primary trials were retrieved alongside 5 pooled analyses. Effect sizes appeared small to modest, and long-term outcomes in larger populations were not prominently featured in the retrieved studies. This evidence is substantial but not robust enough for a Strong rating."
+      },
+      {
+        "outcome": "endurance",
+        "grade": "Moderate",
+        "what_studies_show": "Four human randomized trials (2005, 2005, 2007, 2015) evaluated ginseng supplementation in physically active or exercising participants. A 2005 RCT of 16 participants found that Panax notoginseng enhanced physical performance during endurance exercise. A 2007 trial of 30 Thai athletes showed ginseng did not change lactate threshold, though another 2005 study reported attenuation of exercise-induced creatine kinase elevation (a marker of muscle damage). A 2015 RCT noted improved inflammatory balance during exercise. One 2020 animal study in mice supported effects on energy metabolism.",
+        "why_this_grade": "Moderate grade is appropriate because human evidence exists (4 RCTs) but samples are small\u2014only 46 participants verified across 2 studies, leaving effect estimates unstable and at high risk of imprecision. Findings are mixed: some trials showed performance or recovery benefits, others did not. The limited sample size and modest number of primary trials prevent a higher grade despite the use of robust RCT designs."
+      },
+      {
+        "outcome": "blood pressure",
+        "grade": "Moderate",
+        "what_studies_show": "Five human studies\u2014four meta-analyses and one systematic review (2006, 2016, 2017, 2024)\u2014summarized randomized controlled trials on ginseng and blood pressure. A 2016 meta-analysis of 1381 verified participants and a 2017 analysis of 183 participants both detected modest reductions in systolic and/or diastolic blood pressure. A 2024 systematic review of cardiovascular biomarkers similarly supported a small benefit. No animal studies were retrieved for this outcome.",
+        "why_this_grade": "Moderate grade reflects solid human evidence (5 studies, ~1564 participants across 2 studies with reported numbers) but relies entirely on pooled secondary analyses\u2014no primary trials were retrieved. Most individual studies omitted sample sizes, complicating precision estimates. Effect sizes appear small and clinically modest. The evidence is consistent but not sufficiently robust or independently validated to warrant a Strong grade."
+      }
+    ],
+    "evidence_base": "The research on ginseng consists almost entirely of human studies (21 of 23 records), with a minority of animal work. Most are secondary analyses\u2014meta-analyses and systematic reviews of randomized controlled trials\u2014rather than large primary trials, which limits mechanistic clarity and reproducibility. The literature spans from 2005 to 2025, with several recent 2024\u20132025 reviews, suggesting active ongoing inquiry. Overall, the evidence base is moderate in scale and recency, dominated by pooled analyses of smaller or older trials, and thus supports only cautious, qualified efficacy claims rather than definitive proof of benefit.",
+    "emerging_research": "Recent 2024\u20132025 systematic reviews have begun stratifying ginseng's effects by type (e.g., red ginseng, berry saponins), dose, duration, and participant population (prediabetes, cardiovascular risk), suggesting refinement of who may benefit most. A 2024 RCT of ginseng berry saponins in prediabetics represents a trend toward more targeted, mechanistic primary trials. Emerging interest in inflammatory and oxidative-stress pathways during exercise (noted in 2015 data) and in cardiovascular biomarkers broadly may sharpen future outcome definitions. These directions remain early and require larger, longer-duration trials to move beyond Moderate grade.",
+    "open_questions": "Among the records provided here, no studies explicitly reported follow-up beyond 12 weeks for any outcome, raising questions about sustained benefit or tolerance. Cognition and blood pressure evidence rests entirely on meta-analyses; the underlying primary trials' quality and size variation are not detailed in these abstracts, limiting transparency. Endurance research includes very small RCTs (n=16\u201330), which may not generalize to broader athletic or aging populations. The retrieved studies do not clearly separate effects by ginseng species (Asian vs. American), dose, or duration, so optimal regimens remain unclear. These gaps reflect what is absent in the sample of abstracts provided; they do not characterize the full global literature, only what was returned here.",
+    "caveats": "Ginseng is generally well-tolerated but can cause insomnia, headache, or gastrointestinal upset in some users, and should be avoided by those on blood thinners or certain antidiabetic medications without medical supervision. Quality and ginsenoside content vary widely among commercial supplements; standardized extracts are preferable but not always guaranteed. Pregnant or nursing individuals should consult a healthcare provider before use, as safety data in these populations are limited.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "No primary randomized controlled trials are directly visible in the cognition and blood pressure evidence bases, and most retrieved studies omit sample sizes\u2014making it impossible to verify the true scope or precision of the evidence, and raising the risk that pooled estimates rest on a small number of underpowered studies.",
+    "concerns": [
+      {
+        "issue": "Cognition: zero primary RCTs retrieved",
+        "detail": "All four cognition records are meta-analyses or systematic reviews (2024, 2010, 2025, 2013). No primary human trial abstracts appear in the retrieved set. This means the engine is grading cognition based entirely on syntheses of prior work, not on direct observation of trial-level data\u2014a substantial second-hand assessment that obscures study-by-study heterogeneity and the possibility of methodological issues in underlying trials.",
+        "severity": "high"
+      },
+      {
+        "issue": "Pervasive sample size reporting failure",
+        "detail": "Across all four outcomes, most abstracts omit sample size entirely. For cognition, only 1 of 4 studies reports n; for blood sugar, 4 of 10; for endurance, 2 of 5; for blood pressure, 2 of 5. The engine acknowledges 'most abstracts omit sample size, so the true total is substantially larger,' but this also means precision cannot be independently verified for the majority of the evidence base. A reader cannot assess whether individual studies had adequate power or whether the pooled n is genuinely reassuring.",
+        "severity": "high"
+      },
+      {
+        "issue": "Endurance outcome severely underpowered in primary trials",
+        "detail": "Only two endurance RCTs report sample size: n=30 and n=16, totaling ~46 verified participants across two of five studies. The engine explicitly flags 'Imprecision: modest verified sample (~46 participants across 2 of 5 studies); effect estimate may be unstable.' This acknowledged instability means any apparent benefit could vanish with a single additional trial or shift in study weighting; the effect size is not credibly pinned down.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood pressure and cognition rely entirely on secondary syntheses",
+        "detail": "Blood pressure has 0 primary RCTs retrieved (all four synthesis records are meta-analyses, systematic reviews, or unclassified). Cognition has the same: 0 primary RCTs. When an evidence grade rests entirely on meta-analyses and systematic reviews rather than direct RCT observations, readers cannot see study heterogeneity, risk of bias, or the distribution of effect sizes in the underlying literature. The synthesis may be authoritative, but the retrieved record does not provide direct visibility into trial-level quality or consistency.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood sugar: only 3 primary RCTs among 8 human studies",
+        "detail": "Of 8 human blood sugar records, 3 are RCTs (2024 n=195, 2008, 1995) and 5 are syntheses (systematic reviews or meta-analyses). The 2008 and 1995 RCTs do not report sample size in the abstracts, so only one trial (n=195) has verifiable precision. Two RCTs are from 2008 and 1995\u2014now 16\u201317 years old\u2014and contemporary standards for glucose monitoring, blinding, and attrition reporting may not have been met. The retrieved evidence is too thin and too dated to support a confident Moderate grade on this mechanistically plausible but empirically sparse outcome.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Ginseng contains ginsenosides, which have been shown in vitro and in animal models to affect glucose metabolism, vascular tone, and cognitive signaling; these are plausible biological paths to the claimed clinical outcomes. However, the retrieved evidence base contains no mechanism studies (e.g., pharmacokinetics, target binding, or pathway engagement in human tissue), so the leap from 'ginsenosides can modulate glucose pathways' to 'ginseng supplementation reduces HbA1c in diabetic patients' or 'improves cognition in older adults' is supported only by the clinical trials themselves, not by direct mechanistic proof in the human context. The clinical evidence is too sparse and imprecise to fill that gap.",
+    "strongest_counterargument": "A skeptic would note that three of four outcomes (cognition, blood pressure, endurance) are graded Moderate despite having zero or near-zero primary RCTs in the retrieved record, meaning the grade rests on meta-analyses that may themselves synthesize small, methodologically weak, or unpublished studies. The endurance outcome is explicitly flagged as unstable (n=46 verified), and blood sugar's primary RCT base is minimal (n=195 alone for recent high-quality data) and split across three trials, two of which are 16\u201320 years old and unreported in sample size. A meta-analysis of small, old, heterogeneous trials can produce a pooled point estimate that looks reassuring, but it does not guarantee the effect is real or reproducible in a large, contemporary RCT.",
+    "what_would_change_the_picture": "For cognition and blood pressure: publish and retrieve at least 2\u20133 large (n\u2265200 per arm), recent, double-blind RCTs with pre-registered primary outcomes and transparent reporting of attrition and subgroup analyses. For endurance: conduct a single well-powered RCT (n\u2265100 per arm) in a homogeneous athletic population with objective performance metrics (VO\u2082max, time-to-exhaustion) and report sample size and effect size with 95% confidence intervals in the abstract. For blood sugar: update the evidence synthesis to include trials from 2018 onwards and conduct a new RCT in prediabetic or diabetic patients with HbA1c as the primary outcome, powered to detect a clinically meaningful effect (e.g., 0.5% reduction) with adequate follow-up (\u226512 weeks).",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

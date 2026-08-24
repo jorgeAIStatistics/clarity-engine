@@ -1,9 +1,9 @@
 {
   "name": "NMN",
   "category": "longevity",
-  "overall_score": 73,
+  "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 12,
+  "study_count": 15,
   "claims": [
     {
       "outcome": "sleep quality",
@@ -11,9 +11,9 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 4,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~168 participants across 2 of 3 studies); effect estimate may be unstable."
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
         "mechanistic": 30,
@@ -21,14 +21,15 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
+        "n_human_studies": 3,
         "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:38789831",
         "PMID:35215405",
-        "PMID:36698264"
+        "PMID:36698264",
+        "PMID:37202819"
       ],
       "studies": [
         {
@@ -46,6 +47,14 @@
           "design": "RCT",
           "population": "human",
           "n": 108
+        },
+        {
+          "pmid": "37202819",
+          "title": "Oral nicotinamide mononucleotide (NMN) to treat chronic insomnia: protocol for the multicenter, randomized, double-blinded, placebo-controlled trial.",
+          "year": "2023",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 400
         },
         {
           "pmid": "36698264",
@@ -67,7 +76,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For sleep quality, NMN has moderate human evidence (3 studies)."
+      "summary": "For sleep quality, NMN has moderate human evidence (4 studies)."
     },
     {
       "outcome": "exercise performance",
@@ -75,9 +84,157 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
+      "n_studies": 5,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~202 participants across 3 of 5 studies); effect estimate may be unstable.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 35,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 4,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:36482258",
+        "PMID:35215405",
+        "PMID:36443648",
+        "PMID:40275690",
+        "PMID:40362776"
+      ],
+      "studies": [
+        {
+          "pmid": "40275690",
+          "title": "The Effect of Nicotinamide Mononucleotide and Riboside on Skeletal Muscle Mass and Function: A Systematic Review and Meta-Analysis.",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36482258",
+          "title": "The efficacy and safety of \u03b2-nicotinamide mononucleotide (NMN) supplementation in healthy middle-aged adults: a randomized, multicenter, double-blind, placebo-c",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 80
+        },
+        {
+          "pmid": "36443648",
+          "title": "Effects of nicotinamide mononucleotide on older patients with diabetes and impaired physical performance: A prospective, placebo-controlled, double-blind study.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 14
+        },
+        {
+          "pmid": "35215405",
+          "title": "Effect of 12-Week Intake of Nicotinamide Mononucleotide on Sleep Quality, Fatigue, and Physical Performance in Older Japanese Adults: A Randomized, Double-Blind",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": 108
+        },
+        {
+          "pmid": "40362776",
+          "title": "Effects of Time-Restricted Fasting-Nicotinamide Mononucleotide Combination on Exercise Capacity via Mitochondrial Activation and Gut Microbiota Modulation.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For exercise performance, NMN has moderate human evidence (5 studies)."
+    },
+    {
+      "outcome": "endurance",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
       "n_studies": 3,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~202 participants across 3 of 3 studies); effect estimate may be unstable."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:34238308",
+        "PMID:40362776",
+        "PMID:36263579"
+      ],
+      "studies": [
+        {
+          "pmid": "34238308",
+          "title": "Nicotinamide mononucleotide supplementation enhances aerobic capacity in amateur runners: a randomized, double-blind study.",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40362776",
+          "title": "Effects of Time-Restricted Fasting-Nicotinamide Mononucleotide Combination on Exercise Capacity via Mitochondrial Activation and Gut Microbiota Modulation.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36263579",
+          "title": "Bazi Bushen capsule attenuates cognitive deficits by inhibiting microglia activation and cellular senescence.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For endurance, NMN has moderate human evidence (3 studies)."
+    },
+    {
+      "outcome": "muscle strength",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~122 participants across 2 of 3 studies); effect estimate may be unstable.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
         "mechanistic": 30,
@@ -90,18 +247,18 @@
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:36482258",
         "PMID:35215405",
-        "PMID:36443648"
+        "PMID:36443648",
+        "PMID:40275690"
       ],
       "studies": [
         {
-          "pmid": "36482258",
-          "title": "The efficacy and safety of \u03b2-nicotinamide mononucleotide (NMN) supplementation in healthy middle-aged adults: a randomized, multicenter, double-blind, placebo-c",
-          "year": "2023",
-          "design": "RCT",
+          "pmid": "40275690",
+          "title": "The Effect of Nicotinamide Mononucleotide and Riboside on Skeletal Muscle Mass and Function: A Systematic Review and Meta-Analysis.",
+          "year": "2025",
+          "design": "Systematic review",
           "population": "human",
-          "n": 80
+          "n": null
         },
         {
           "pmid": "36443648",
@@ -131,147 +288,17 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For exercise performance, NMN has moderate human evidence (3 studies)."
-    },
-    {
-      "outcome": "inflammation",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
-      "has_human_evidence": true,
-      "n_studies": 4,
-      "grade_reasons": [
-        "Imprecision: small verified sample (~20 participants across 1 measured studies)."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 2,
-        "n_animal_studies": 2,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:38100537",
-        "PMID:41705654",
-        "PMID:41291722",
-        "PMID:39593096"
-      ],
-      "studies": [
-        {
-          "pmid": "41705654",
-          "title": "Anti-inflammatory effects of nicotinamide mononucleotide (NMN) in human skeletal muscle after BFR-exercise.",
-          "year": "2026",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "38100537",
-          "title": "Nicotinamide mononucleotide alleviates endotoxin-induced acute lung injury by modulating macrophage polarization via the SIRT1/NF-\u03baB pathway.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41291722",
-          "title": "\u03b2-Nicotinamide mononucleotide activates the SIRT1/NF-\u03baB pathway to alleviate ischemia reperfusion injury after lung transplantation.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39593096",
-          "title": "Nicotinamide mononucleotide improves the ovarian reserve of POI by inhibiting NLRP3-mediated pyroptosis of ovarian granulosa cells.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": 20
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For inflammation, NMN shows early but unsettled evidence (4 studies)."
-    },
-    {
-      "outcome": "cardiovascular",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": true,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 35,
-        "human": 22,
-        "overall": 22,
-        "ceiling": 22,
-        "n_human_studies": 1,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:40853391",
-        "PMID:39252011"
-      ],
-      "studies": [
-        {
-          "pmid": "40853391",
-          "title": "Beta-Hydroxybutyrate but not NMN supplementation mimics caloric restriction reducing early mortality in Daphnia.",
-          "year": "2025",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39252011",
-          "title": "Spatial regulation of NMN supplementation on brain lipid metabolism upon subacute and sub-chronic PM exposure in C57BL/6 mice.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cardiovascular, NMN has only preliminary or animal evidence (2 studies)."
+      "summary": "For muscle strength, NMN has moderate human evidence (3 studies)."
     }
   ],
   "effects_established": [
     "sleep quality",
-    "exercise performance"
+    "exercise performance",
+    "endurance",
+    "muscle strength"
   ],
-  "effects_promising": [
-    "inflammation"
-  ],
-  "effects_emerging": [
-    "cardiovascular"
-  ],
+  "effects_promising": [],
+  "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
@@ -296,5 +323,76 @@
       "Alpha9"
     ]
   },
-  "_cached_at": 1787506506.967154
+  "_cached_at": 1787608152.468854,
+  "explanation": {
+    "what_it_is": "NMN (nicotinamide mononucleotide) is a nucleotide precursor with the molecular formula C11H15N2O8P and molecular weight 334.22 g/mol. It is a naturally occurring compound found in trace amounts in foods like cow's milk, beer, and whey protein, and serves as an immediate biosynthetic precursor to NAD+ (nicotinamide adenine dinucleotide). People typically take it orally as a powder or capsule supplement in doses ranging from 250 mg to 1000 mg daily.",
+    "how_it_works": "NMN crosses cell membranes and is rapidly converted to NAD+ inside cells through salvage pathways, particularly via the enzyme nicotinamide mononucleotide adenylyltransferase (NMNAT). NAD+ is a critical coenzyme in cellular energy metabolism, powering reactions that generate ATP (cellular fuel), and it also serves as a substrate for longevity-linked enzymes called sirtuins and PARPs, which regulate DNA repair, stress resistance, and mitochondrial health. By raising intracellular NAD+ levels, NMN is thought to restore energy-producing capacity in mitochondria, enhance cellular repair processes, and reduce age-related decline in tissues that demand high metabolic activity\u2014particularly skeletal muscle and the nervous system. This mechanism explains why NMN has been studied mainly in older adults and those with metabolic dysfunction.",
+    "outcome_detail": [
+      {
+        "outcome": "sleep quality",
+        "grade": "Moderate",
+        "what_studies_show": "A 2024 RCT in 60 participants found that NMN ingestion increased blood NAD levels and improved walking speed; a 2022 RCT in 108 healthy adults examined the effect of 12-week NMN intake on sleep quality, fatigue, and physical performance; and a 2023 protocol for a large multicenter randomized trial (n=400) was registered to test oral NMN for chronic insomnia. A 2023 animal study showed NMN ameliorated sleep deprivation-induced gut dysbiosis. Collectively, these studies suggest NMN may improve sleep-related measures and may help maintain physical function during altered sleep, though human trials remain limited and findings are not yet pooled in a meta-analysis.",
+        "why_this_grade": "The grade of Moderate reflects that there are 3 human randomized trials and 1 animal study on record, but inconsistency across studies and the absence of a confirmed pooled analysis prevent a higher grade. The evidence is promising but not yet conclusive."
+      },
+      {
+        "outcome": "exercise performance",
+        "grade": "Moderate",
+        "what_studies_show": "A 2025 systematic review examined NMN and nicotinamide riboside effects on skeletal muscle mass and function; a 2023 RCT in 80 healthy middle-aged adults tested NMN efficacy and safety on performance measures; a 2023 RCT in 14 older patients with diabetes examined NMN effects on physical performance; and a 2022 RCT in 108 adults measured 12-week NMN intake on physical performance alongside sleep and fatigue. A 2025 animal study investigated NMN combined with time-restricted fasting on exercise capacity via mitochondrial pathways. Across the human trials shown, verified sample sizes total roughly 202 participants in 3 studies, and a single systematic review exists but has not been independently replicated.",
+        "why_this_grade": "Moderate grade is appropriate because 4 human studies and 1 animal study are available, but imprecision (modest sample sizes that limit the stability of effect estimates) and lack of independent replication of the systematic review conclusion prevent a higher tier."
+      },
+      {
+        "outcome": "endurance",
+        "grade": "Moderate",
+        "what_studies_show": "A 2021 RCT in amateur runners found that NMN supplementation enhanced aerobic capacity in a randomized, double-blind design. Two animal studies from 2025 and 2022 investigated NMN effects on exercise capacity\u2014one examining NMN combined with time-restricted fasting via mitochondrial mechanisms, and another (the Bazi Bushen capsule study) looking at effects on cellular senescence and microglia activation. Human evidence is limited to a single trial; the findings suggest aerobic benefit in runners, but sample size precision was not confirmed from the abstracts.",
+        "why_this_grade": "The grade reflects 1 human RCT and 2 animal studies, which provides preliminary support for endurance benefit. However, imprecision (unconfirmed sample sizes from abstracts) and reliance on a single human trial cap certainty at Moderate."
+      },
+      {
+        "outcome": "muscle strength",
+        "grade": "Moderate",
+        "what_studies_show": "A 2025 systematic review examined NMN and nicotinamide riboside effects on skeletal muscle mass and function; a 2023 RCT in 14 older patients with diabetes assessed NMN effects on physical performance including strength measures; and a 2022 RCT in 108 adults measured physical performance (including strength-related outcomes) over 12 weeks of NMN intake. Across 2 of 3 studies, verified sample sizes total approximately 122 participants. The systematic review represents the only pooled analysis available, and it has not been independently replicated.",
+        "why_this_grade": "All 3 human studies shown have no animal evidence; the small sample sizes in 2 verified trials (14 and 108 participants) introduce imprecision that limits effect estimate stability, and the single systematic review lacks independent replication, warranting a Moderate grade."
+      }
+    ],
+    "evidence_base": "The research base for NMN is dominated by small to modest-sized randomized controlled trials in humans (typically 14\u2013108 participants per study) and supportive animal studies, with most recent publications from 2022\u20132025. A single systematic review on muscle effects exists but has not been independently verified. Overall, the evidence is encouraging and mechanistically plausible\u2014NMN does raise NAD+ levels as expected\u2014yet human trials remain relatively few in number, heterogeneous in design, and limited to relatively short intervention periods (typically 12 weeks). This means the field has enough human data to suggest a real effect on physical performance and sleep, but not enough to pin down effect sizes or long-term safety with high precision.",
+    "emerging_research": "Recent work (2024\u20132025) is exploring NMN in combination with other interventions, such as time-restricted fasting, to amplify effects on mitochondrial capacity and exercise performance. Studies are beginning to investigate mechanistic pathways beyond simple NAD+ repletion\u2014for example, effects on gut microbiota in sleep-deprived states and on cellular senescence markers in aging. These directions are early-stage and mostly appear in animal models or small human pilots, so they remain unproven in larger populations.",
+    "open_questions": "Among the retrieved studies, sleep quality trials remain limited and unpooled; none of the records shown follow participants beyond 12 weeks, so long-term durability of effects is unaddressed in this sample. Exercise performance and muscle strength studies tend to enroll older adults or those with metabolic disease (diabetes, sedentary lifestyle); trials in younger, highly trained, or completely healthy populations are sparse or absent from the records provided. The retrieved abstracts do not report sample sizes for the 2021 endurance trial in runners or clearly detail the performance measures used across all studies, limiting precision assessment. This sample of ~40 records per outcome represents only a portion of the total literature; research published in different databases or in languages other than English may exist but is not reflected here.",
+    "caveats": "NMN is orally bioavailable and generally well-tolerated in the short-term studies shown (up to 12 weeks), but long-term safety data in humans are limited. As a research supplement, purity and dose accuracy vary by manufacturer; third-party testing is advisable. NMN may interact with medications affecting NAD+ metabolism or sirtuins, and people with conditions affecting nucleotide metabolism (e.g., certain genetic disorders) should consult a healthcare provider before use. Pregnant or nursing individuals have not been studied and should avoid it pending evidence.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "No pooled analyses exist for any claimed outcome; the entire moderate tier rests on small, non-replicated individual trials and a single 2025 systematic review, making effect estimates potentially unstable and prone to reversal.",
+    "concerns": [
+      {
+        "issue": "Absence of pooled effect estimates across all outcomes",
+        "detail": "Despite 4 sleep quality studies, 5 exercise performance studies, 3 endurance studies, and 3 muscle strength studies, the engine explicitly notes 'pooled effect: none extractable' for every single outcome. The engine held sleep quality and exercise performance at 'Moderate' specifically because 'no pooled analysis confirms they agree,' yet graded them as if consensus existed. This is a logical inconsistency: without meta-analytic synthesis, individual trial heterogeneity cannot be assessed, and conflicting results within an outcome cannot be detected.",
+        "severity": "high"
+      },
+      {
+        "issue": "Dependence on single unreplicated systematic review",
+        "detail": "Both exercise performance and muscle strength outcomes lean on a 2025 systematic review as their primary evidence synthesis. The engine explicitly states 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate.' This means the entire grade for two outcomes rests on one recent review that has no independent confirmation. A flawed methodology or selective inclusion in that review could shift both grades downward.",
+        "severity": "high"
+      },
+      {
+        "issue": "Minimal verified sample sizes with high variability",
+        "detail": "Exercise performance (verified n=202 across 3 RCTs), muscle strength (verified n=122 across 2 RCTs), and endurance (sample sizes 'could not be verified from abstracts') all fall below thresholds typically needed for stable effect estimation. The exercise performance pool includes one n=14 trial, which alone could dominate or destabilize results. The engine flags these as 'Imprecision: effect estimate may be unstable' yet still assigns Moderate grade.",
+        "severity": "high"
+      },
+      {
+        "issue": "Endurance outcome has no human sample size data and only 1 human trial",
+        "detail": "The endurance outcome comprises 1 human RCT and 2 animal studies. The engine notes 'sample sizes could not be verified from the abstracts; precision is unconfirmed.' Without knowing the human trial's n, it is impossible to assess whether the effect is precisely estimated. Grading an outcome as Moderate when its sole human evidence is unquantifiable is methodologically unsound.",
+        "severity": "high"
+      },
+      {
+        "issue": "Very recent literature with no long-term follow-up data visible",
+        "detail": "All outcomes are drawn from studies conducted 2021\u20132025, with the sleep quality and exercise performance outcomes dominated by 2023\u20132024 publications. No study abstracts report follow-up duration or sustainability of effects beyond the intervention period. For a 'longevity' category compound, the absence of data on sustained benefit or long-term safety is a notable gap, though this may reflect the inherent recency of the literature rather than a flaw in trial design.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "NAD+ bioavailability is plausibly linked to mitochondrial function and cellular energy metabolism, which could theoretically support improvements in exercise performance and endurance. However, the leap from 'NMN increases blood NAD levels' (as observed in the 2024 trial) to 'this improves sleep quality, muscle strength, and endurance' is large and indirect. The retrieved abstracts do not show mechanistic confirmation (e.g., direct measurement of muscle NAD+ content, mitochondrial ATP production, or sleep architecture changes) linking the pharmacokinetic observation to the claimed clinical outcomes. The animal studies on gut microbiota dysbiosis and microglia activation suggest additional pathways, but these remain disconnected from the human performance and sleep data.",
+    "strongest_counterargument": "A skeptic would note that: (1) each outcome lacks independent meta-analytic validation\u2014the moderate grades are assigned in the absence of synthesized evidence; (2) the exercise performance and muscle strength conclusions depend entirely on a single 2025 systematic review that has not been peer-reviewed or replicated; (3) the verified human sample sizes are small (n\u2264202 for exercise, n\u2264122 for muscle strength), meaning a single large negative trial or methodological error could reverse the direction of effect. The skeptic would argue that 'Moderate' should be downgraded to 'Low' pending either a larger, well-powered trial or independent replication of the systematic review's findings.",
+    "what_would_change_the_picture": "An independent meta-analysis of the existing trials that quantifies pooled effect sizes and heterogeneity, combined with a large (n\u2265300) multi-center RCT specifically powered for one primary outcome (e.g., muscle strength in older adults or sleep architecture in chronic insomnia), would clarify whether the current moderate grades reflect genuine benefit or inflated estimates from small, heterogeneous studies. Additionally, measurement of tissue-level NAD+ content and direct biomarkers of the proposed mechanism in human participants would bridge the gap between pharmacokinetics and clinical outcomes.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

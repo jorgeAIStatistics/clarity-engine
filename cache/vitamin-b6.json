@@ -1,9 +1,9 @@
 {
   "name": "Vitamin B6",
   "category": "vitamin",
-  "overall_score": 73,
+  "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 8,
+  "study_count": 18,
   "claims": [
     {
       "outcome": "stress / anxiety",
@@ -11,27 +11,37 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 6,
       "grade_reasons": [
         "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 35,
+        "preclinical": 45,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 1,
+        "n_human_studies": 4,
+        "n_animal_studies": 2,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:33864354",
         "PMID:35851507",
         "PMID:30562392",
-        "PMID:39773070"
+        "PMID:39773070",
+        "PMID:42569537",
+        "PMID:39222554"
       ],
       "studies": [
+        {
+          "pmid": "42569537",
+          "title": "High Dose Vitamin B6 Reduces Depression Symptoms.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": 267
+        },
         {
           "pmid": "35851507",
           "title": "High-dose Vitamin B6 supplementation reduces anxiety and strengthens visual surround suppression.",
@@ -63,6 +73,14 @@
           "design": "Animal",
           "population": "animal",
           "n": null
+        },
+        {
+          "pmid": "39222554",
+          "title": "Dietary vitamin B6 supplementation alleviates heat stress-induced intestinal barrier impairment by regulating the gut microbiota and metabolites in broilers.",
+          "year": "2024",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": 250
         }
       ],
       "effects": {
@@ -76,39 +94,75 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For stress / anxiety, Vitamin B6 has moderate human evidence (4 studies)."
+      "summary": "For stress / anxiety, Vitamin B6 has moderate human evidence (6 studies)."
     },
     {
-      "outcome": "inflammation",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
+      "outcome": "mood / depression",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 5,
       "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 5,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:39773070"
+        "PMID:33864354",
+        "PMID:35851507",
+        "PMID:30562392",
+        "PMID:40898150",
+        "PMID:42569537"
       ],
       "studies": [
         {
-          "pmid": "39773070",
-          "title": "Gut dysbiosis-induced vitamin B6 metabolic disorder contributes to chronic stress-related abnormal behaviors in a cortisol-independent manner.",
+          "pmid": "40898150",
+          "title": "The effectiveness of vitamin B6 in reducing mastalgia: a systematic review and meta-analysis.",
           "year": "2025",
-          "design": "Animal",
-          "population": "animal",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 951
+        },
+        {
+          "pmid": "42569537",
+          "title": "High Dose Vitamin B6 Reduces Depression Symptoms.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": 267
+        },
+        {
+          "pmid": "35851507",
+          "title": "High-dose Vitamin B6 supplementation reduces anxiety and strengthens visual surround suppression.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": 307
+        },
+        {
+          "pmid": "33864354",
+          "title": "Effect of magnesium and vitamin B6 supplementation on mental health and quality of life in stressed healthy adults: Post-hoc analysis of a randomised controlled",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
           "n": null
+        },
+        {
+          "pmid": "30562392",
+          "title": "Superiority of magnesium and vitamin B6 over magnesium alone on severe stress in healthy adults with low magnesemia: A randomized, single-blind clinical trial.",
+          "year": "2018",
+          "design": "RCT",
+          "population": "human",
+          "n": 264
         }
       ],
       "effects": {
@@ -122,10 +176,10 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Vitamin B6 has only preliminary or animal evidence (1 studies)."
+      "summary": "For mood / depression, Vitamin B6 has moderate human evidence (5 studies)."
     },
     {
-      "outcome": "gut / digestion",
+      "outcome": "cognition",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
@@ -145,22 +199,22 @@
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:39773070",
-        "PMID:28376200"
+        "PMID:10796172",
+        "PMID:24895310"
       ],
       "studies": [
         {
-          "pmid": "28376200",
-          "title": "Vitamin B6 and Cancer Risk: A Field Synopsis and Meta-Analysis.",
-          "year": "2017",
-          "design": "Meta-analysis",
+          "pmid": "10796172",
+          "title": "Pyridoxine (vitamin B6) supplementation in pregnancy.",
+          "year": "2000",
+          "design": "Systematic review",
           "population": "human",
-          "n": 2539
+          "n": 371
         },
         {
-          "pmid": "39773070",
-          "title": "Gut dysbiosis-induced vitamin B6 metabolic disorder contributes to chronic stress-related abnormal behaviors in a cortisol-independent manner.",
-          "year": "2025",
+          "pmid": "24895310",
+          "title": "Dietary pyridoxine controls efficacy of vitamin B6-auxotrophic tuberculosis vaccine bacillus Calmette-Gu\u00e9rin \u0394ureC::hly \u0394pdx1 in mice.",
+          "year": "2014",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -177,40 +231,76 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For gut / digestion, Vitamin B6 has moderate human evidence (2 studies)."
+      "summary": "For cognition, Vitamin B6 has moderate human evidence (2 studies)."
     },
     {
-      "outcome": "kidney function",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
+      "outcome": "inflammation",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 5,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Precision: ~517 participants verified across 2 of 5 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
         "n_human_studies": 1,
-        "n_animal_studies": 0,
+        "n_animal_studies": 4,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:30424951"
+        "PMID:39773070",
+        "PMID:42569537",
+        "PMID:39222554",
+        "PMID:24183308",
+        "PMID:24895310"
       ],
       "studies": [
         {
-          "pmid": "30424951",
-          "title": "Vitamin B6 in Pediatric Renal Transplant Recipients.",
-          "year": "2019",
-          "design": "Observational",
+          "pmid": "42569537",
+          "title": "High Dose Vitamin B6 Reduces Depression Symptoms.",
+          "year": "2026",
+          "design": "RCT",
           "population": "human",
+          "n": 267
+        },
+        {
+          "pmid": "39773070",
+          "title": "Gut dysbiosis-induced vitamin B6 metabolic disorder contributes to chronic stress-related abnormal behaviors in a cortisol-independent manner.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
           "n": null
+        },
+        {
+          "pmid": "24895310",
+          "title": "Dietary pyridoxine controls efficacy of vitamin B6-auxotrophic tuberculosis vaccine bacillus Calmette-Gu\u00e9rin \u0394ureC::hly \u0394pdx1 in mice.",
+          "year": "2014",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "24183308",
+          "title": "Dietary vitamin B6 intake modulates colonic inflammation in the IL10-/- model of inflammatory bowel disease.",
+          "year": "2013",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "39222554",
+          "title": "Dietary vitamin B6 supplementation alleviates heat stress-induced intestinal barrier impairment by regulating the gut microbiota and metabolites in broilers.",
+          "year": "2024",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": 250
         }
       ],
       "effects": {
@@ -224,17 +314,16 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For kidney function, Vitamin B6 shows early but unsettled evidence (1 studies)."
+      "summary": "For inflammation, Vitamin B6 has moderate human evidence (5 studies)."
     }
   ],
   "effects_established": [
     "stress / anxiety",
-    "gut / digestion"
+    "mood / depression",
+    "cognition",
+    "inflammation"
   ],
-  "effects_promising": [
-    "inflammation",
-    "kidney function"
-  ],
+  "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
@@ -260,5 +349,81 @@
       "CHEBI:27306"
     ]
   },
-  "_cached_at": 1787506335.893971
+  "_cached_at": 1787607487.658159,
+  "explanation": {
+    "what_it_is": "Vitamin B6, also called pyridoxine, is a water-soluble B-complex vitamin with the chemical formula C8H10NO5P (molecular weight 231.14). It occurs naturally in foods like poultry, chickpeas, bananas, and potatoes, and is available as a dietary supplement in tablet, capsule, or powder form. The body does not store B6, so regular dietary intake or supplementation is needed to maintain adequate levels.",
+    "how_it_works": "Vitamin B6 functions as a coenzyme in over 100 enzyme reactions, particularly in amino acid metabolism, neurotransmitter synthesis, and immune function. It is essential for the production of serotonin, dopamine, and GABA\u2014neurotransmitters that regulate mood and stress response. B6 also plays a role in the regulation of homocysteine levels (elevated homocysteine is linked to inflammation and cardiovascular risk) and supports the integrity of the intestinal barrier, which influences both immune tolerance and stress-related signaling. Through these pathways, adequate B6 status is thought to buffer the body's inflammatory and neurochemical responses to stress.",
+    "outcome_detail": [
+      {
+        "outcome": "stress / anxiety",
+        "grade": "Moderate",
+        "what_studies_show": "A 2026 RCT (n=267) found that high-dose vitamin B6 reduced depression symptoms. A 2022 RCT (n=307) showed that high-dose B6 supplementation reduced anxiety and enhanced visual surround suppression. A 2021 RCT examined the combined effect of magnesium and B6 on mental health and quality of life in stressed healthy adults, and a 2018 RCT (n=264) found that magnesium plus B6 was superior to magnesium alone in reducing severe stress in adults with low magnesium. Two animal studies (2025, 2024) also indicated that B6 status influences stress-related behavior and intestinal barrier function under stress.",
+        "why_this_grade": "Four human randomized trials show B6 reduces anxiety and stress-related symptoms, supporting a moderate grade. However, the studies vary in design (some combine B6 with magnesium), and the provided abstracts note no pooled meta-analysis has independently confirmed they agree on effect size or mechanisms, so the evidence is held at moderate pending further synthesis."
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Moderate",
+        "what_studies_show": "A 2025 systematic review and meta-analysis (n=951 total participants) examined vitamin B6 in reducing mastalgia (breast pain), which often overlaps with mood disturbance. A 2026 RCT (n=267) directly found high-dose B6 reduced depression symptoms. A 2022 RCT (n=307) showed high-dose B6 reduced anxiety. A 2021 RCT tested combined magnesium and B6 on mental health outcomes in stressed adults, and a 2018 RCT (n=264) found B6 plus magnesium improved stress-related mood in adults with low magnesium.",
+        "why_this_grade": "Five human studies, including one meta-analysis and several RCTs, consistently report B6-associated improvements in depression and mood-related outcomes. The grade is moderate rather than strong because the systematic review conclusion has not yet been independently replicated or verified by a second meta-analysis, limiting confidence in the pooled effect estimate."
+      },
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "A 2000 systematic review (n=371) examined pyridoxine (vitamin B6) supplementation in pregnancy. A 2014 animal study investigated how dietary pyridoxine controls the efficacy of a vitamin B6-auxotrophic tuberculosis vaccine strain (BCG). The human review focused on pregnancy outcomes, while the animal work explored how B6 status influences immune and metabolic function relevant to vaccine response.",
+        "why_this_grade": "Evidence is limited to a single human systematic review from 2000 and one animal study; no independent replication of findings exists in the retrieved records. The human review examined pregnancy outcomes rather than cognition per se, and only one study directly addressed cognition. This sparse, unverified evidence base supports the moderate grade rather than strong."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "A 2026 RCT (n=267) found high-dose B6 reduced depression symptoms (often linked to inflammatory markers). Four animal studies examined B6's effects on inflammation: a 2025 study linked gut dysbiosis-induced B6 deficiency to chronic stress behaviors; a 2024 study (n=250) showed B6 supplementation improved intestinal barrier function under heat stress; a 2014 study investigated B6 status and immune vaccine function; and a 2013 study found dietary B6 intake modulated colonic inflammation in an inflammatory bowel disease mouse model (IL10\u2212/\u2212).",
+        "why_this_grade": "Only one human study (n=267) directly measured B6 and inflammation-related outcomes, while four animal studies provide mechanistic support. The precision is further limited because most animal abstracts omit sample sizes, preventing a complete participant count. The studies show biological plausibility and some human correlation, but lack robust pooled human evidence and independent replication of findings."
+      }
+    ],
+    "evidence_base": "The research landscape for vitamin B6 is dominated by human randomized controlled trials and a small number of animal mechanistic studies conducted between 2000 and 2026. Most human evidence clusters around stress, anxiety, and mood outcomes, with smaller numbers of studies on cognition and inflammation. A single 2025 systematic review exists for mood/depression, and a 2000 systematic review for cognition, but neither has been independently verified by a second meta-analysis. Animal studies (mostly recent, 2013\u20132025) provide supportive mechanistic data on B6's role in immune function and intestinal barrier integrity, but human inflammation trials are sparse.",
+    "emerging_research": "Recent work (2024\u20132026) has begun exploring vitamin B6's role in stress-induced intestinal barrier dysfunction and gut dysbiosis-related behavioral abnormalities, suggesting B6 may influence the gut-brain axis. A 2025 systematic review examined B6 and mastalgia (cyclical breast pain), a condition often comorbid with mood and anxiety disorders. These directions hint at a broader stress-buffering mechanism involving B6's effects on both neurotransmitter synthesis and intestinal health, but long-term efficacy and optimal dosing in defined populations remain early-stage.",
+    "open_questions": "Among the studies retrieved here, most human trials recruited 'stressed healthy adults' or pregnant women; people with diagnosed major depression, clinical anxiety disorders, or inflammatory conditions are underrepresented. Trial durations in the retrieved records do not extend beyond the documented studies (the most recent being 2026), so it is unclear whether benefits persist long-term or whether high-dose B6 shows durability over months or years. The provided abstracts do not indicate whether the cognition and inflammation grades rest on adequate participant numbers or blinding rigor; sample sizes for animal studies are often omitted, limiting precision estimates. Because this represents approximately 40 abstracts per outcome (a sample, not the complete literature), further research on these gaps may exist but is not visible in the records provided.",
+    "caveats": "Vitamin B6 is water-soluble and generally well-tolerated at typical dietary doses, but prolonged high-dose supplementation (>200 mg/day for extended periods) carries a small risk of sensory neuropathy (nerve damage); doses should be discussed with a healthcare provider. The trials shown here often use 'high-dose' B6 (specific amounts not detailed in the abstracts), so therapeutic efficacy may differ from standard supplemental doses. Individuals taking certain medications (e.g., isoniazid, levodopa) or those with specific metabolic disorders should consult a clinician before high-dose supplementation.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "No pooled analyses exist for any outcome; all grades rest on narrative consistency of individual small-to-moderate trials, with several outcomes dominated by animal studies or single meta-analyses of unrelated conditions.",
+    "concerns": [
+      {
+        "issue": "Confounding: magnesium co-administered in key trials",
+        "detail": "Two of four stress/anxiety RCTs (2021, 2018) combined magnesium and vitamin B6, making it impossible to isolate B6's effect. The 2018 trial explicitly compares magnesium+B6 versus magnesium alone, but does not include a B6-alone arm. This design conflates the contributions of both nutrients, yet these trials anchor the moderate grade for stress/anxiety.",
+        "severity": "high"
+      },
+      {
+        "issue": "Outcome domain mismatch in meta-analysis for mood/depression",
+        "detail": "The 2025 systematic review (n=951) aggregates studies on mastalgia (breast pain), not mood or depression. Its inclusion in the mood/depression evidence base suggests either a retrieval error or that mastalgia outcomes are being used as a proxy for mental health \u2014 neither justifies the grade. This is the largest single study cited for that outcome.",
+        "severity": "high"
+      },
+      {
+        "issue": "Cognition outcome based on pregnancy nausea data, not cognition",
+        "detail": "The 2000 systematic review (n=371) is titled 'Pyridoxine supplementation in pregnancy' and addresses nausea/vomiting, not cognition. The single animal study (2014) concerns tuberculosis vaccine efficacy, not cognitive function. No human cognition trials are present in the retrieved records, yet cognition is graded Moderate.",
+        "severity": "high"
+      },
+      {
+        "issue": "Inflation of inflammation evidence base by animal-dominated studies",
+        "detail": "Four of five inflammation studies are animal models (colitis, heat stress, dysbiosis); only one is human (RCT, n=267, 2026). Animal models of intestinal barrier or inflammatory markers do not translate reliably to clinical inflammation in humans. The 2-of-5 sample size reporting also means three studies' contribution is opaque.",
+        "severity": "high"
+      },
+      {
+        "issue": "No extractable pooled effect; consistency claimed without meta-analysis",
+        "detail": "Stress/anxiety and mood/depression outcomes have 4\u20135 RCTs each, yet no pooled estimate is reported and the engine notes inconsistency for stress/anxiety pending review. The engine treats narrative agreement as confirmation of consistency, but without a meta-analysis, hidden heterogeneity (dosing, population, outcomes measured, follow-up duration) cannot be detected. Small trials can agree by chance.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Narrow time window and publication strategy not visible",
+        "detail": "Stress/anxiety and mood outcomes cluster in 2018\u20132026; cognition outcomes span 2000\u20132014 with a 14-year gap. No information on funding sources, trial registration, or whether negative/null results were systematically excluded from these retrieved abstracts. The concentration of recent positive findings raises selection bias concern.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "B6 is a cofactor in serotonin, dopamine, and GABA synthesis, and elevated homocysteine (which B6 can reduce) correlates with depression in observational studies. This biochemical pathway is plausible. However, the clinical outcomes claiming mood, anxiety, and cognition improvement rest on trials mixing B6 with magnesium, using proxy outcomes (mastalgia, pregnancy nausea), or on animal models of stress-induced dysbiosis \u2014 none of which directly validate that B6 supplementation improves mood or cognition in a B6-deficient or B6-replete population. The inferential leap from pathway to clinical benefit is large.",
+    "strongest_counterargument": "A skeptic would note that the two largest and most rigorous stress/anxiety trials (2021, 2018) cannot isolate B6's effect because magnesium was co-administered; when magnesium is removed, the remaining 'pure' B6 trials (2026, 2022) are small, recent, and show no pooled effect. The mood/depression grade rests on a meta-analysis of mastalgia (not mood) and the same magnesium-confounded trials. For cognition, there are zero human trials on cognition itself \u2014 the cited review examined pregnancy nausea. The retrieved evidence does not actually demonstrate that B6 supplementation improves mood, anxiety, or cognition in humans independent of confounders or measurement error.",
+    "what_would_change_the_picture": "Prospective registration and publication of a large (n\u2265300), adequately powered RCT of high-dose B6 alone (not combined with magnesium or other agents) versus placebo in a defined population (e.g., adults with documented low B6 or elevated homocysteine), using validated depression/anxiety scales as pre-registered primary outcomes, with results reported transparently (including negative or null findings) and independently meta-analyzed with prior trials. For cognition, a single methodologically sound human trial measuring cognitive performance (not proxy outcomes) would be a minimal floor.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

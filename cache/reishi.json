@@ -3,13 +3,105 @@
   "category": "herb",
   "overall_score": 22,
   "tier": "Preliminary",
-  "study_count": 0,
-  "claims": [],
+  "study_count": 1,
+  "claims": [
+    {
+      "outcome": "cancer / tumor growth",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 35,
+        "human": 0,
+        "overall": 35,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 1,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:28427938"
+      ],
+      "studies": [
+        {
+          "pmid": "28427938",
+          "title": "Ganoderma lucidum (Reishi) suppresses proliferation and migration of breast cancer cells via inhibiting Wnt/\u03b2-catenin signaling.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For cancer / tumor growth, Reishi has only preliminary or animal evidence (1 studies)."
+    }
+  ],
   "effects_established": [],
-  "effects_promising": [],
+  "effects_promising": [
+    "cancer / tumor growth"
+  ],
   "effects_emerging": [],
   "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506450.339607
+  "_cached_at": 1787607932.300867,
+  "explanation": {
+    "what_it_is": "Reishi (Ganoderma lucidum) is a woody fungus native to East Asia, used in traditional medicine for over 2,000 years. It contains bioactive compounds including polysaccharides, triterpenes, and peptidoglycans. People typically consume it as a dried powder, extract, tea, or supplement capsule.",
+    "how_it_works": "Reishi's bioactive compounds are thought to interact with immune cells and cell-signaling pathways. The polysaccharides may stimulate macrophages and natural killer cells, potentially enhancing immune surveillance. Triterpenes and other components have shown activity against inflammatory cytokines and cell-cycle proteins in laboratory settings. These mechanisms suggest plausible immune-modulatory and anti-proliferative effects, though how effectively these translate from test tubes and animal tissue to human disease remains unclear.",
+    "outcome_detail": [
+      {
+        "outcome": "cancer / tumor growth",
+        "grade": "Preliminary",
+        "what_studies_show": "A 2017 animal study found that Ganoderma lucidum suppressed proliferation and migration of breast cancer cells in vitro by inhibiting the Wnt/\u03b2-catenin signaling pathway. No human trials examining reishi's effects on cancer growth or survival have been retrieved in this evidence set.",
+        "why_this_grade": "The single available record is an animal/cell-culture study, which cannot reliably predict human clinical benefit. Animal models often fail to translate to equivalent human outcomes, and laboratory inhibition of cancer cells does not establish efficacy against actual tumors in people."
+      }
+    ],
+    "evidence_base": "The retrieved records for reishi's cancer effects consist entirely of pre-clinical work; no human trials are present in this sample. The field likely contains additional animal studies and mechanistic research, but this evidence set shows no clinical data. Any conclusions about reishi and cancer in humans would be highly premature based on what is shown here.",
+    "emerging_research": "Recent in vitro and animal studies continue to explore reishi's triterpenes and polysaccharides against various cancer cell lines and xenograft models, with mechanisms focused on apoptosis, cell-cycle arrest, and immune activation. These findings are scientifically interesting and may warrant future human investigation, but remain far from clinical proof of benefit.",
+    "open_questions": "Among the studies retrieved here, there are no human trials, no long-term follow-up studies, and no examination of reishi alone versus other interventions in cancer patients. The single animal study focuses on mechanism; the sample size, control arms, and relevance to whole-organism tumor biology in people are not detailed. Because this is only a sample of the broader literature (~1 study per outcome retrieved), I cannot say whether human trials exist elsewhere in the published record.",
+    "caveats": "Reishi should not be used as a replacement for proven cancer treatments. People with active cancer, on chemotherapy or immunotherapy, or with bleeding disorders should consult their oncologist before use, as reishi may interact with immune function and anticoagulants. Quality and potency of commercial reishi supplements vary widely; standardization of active compounds is inconsistent across products.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "Cancer/tumor claims rest on a single 2017 animal study with no human data and no extractable sample size information, making any clinical inference premature.",
+    "concerns": [
+      {
+        "issue": "Exclusive reliance on animal evidence",
+        "detail": "The retrieved evidence for cancer/tumor outcomes consists of 1 animal study and 0 human studies. Animal models of cancer, particularly in vitro or xenograft systems, frequently show activity that does not translate to clinical benefit in humans. Without at least preliminary human data (pharmacokinetics, safety, or early efficacy signals), the leap from cell/animal suppression of proliferation to human cancer treatment is very large.",
+        "severity": "high"
+      },
+      {
+        "issue": "No sample size data available",
+        "detail": "The abstract records do not provide extractable sample size information for the single animal study. This prevents assessment of whether the study was adequately powered or whether results could reflect noise or outlier findings in a very small experiment.",
+        "severity": "high"
+      },
+      {
+        "issue": "Single study, single year, no independent replication visible",
+        "detail": "Only one study (2017) appears in the retrieved records for cancer outcomes. There is no visible independent replication, no dose-response data, and no reported effect sizes or confidence intervals. A single positive animal finding is insufficient to establish a pattern, especially without peer-reviewed confirmation.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The proposed mechanism (inhibition of proliferation and migration in breast cancer cells) is biologically plausible in isolation, but the leap from an in vitro or rodent xenograft system to clinical anti-cancer efficacy in humans is enormous. Reishi polysaccharides and triterpenes have immunomodulatory properties that could theoretically support anti-tumor activity, but animal studies often use high doses or direct inoculation routes not achievable with oral supplementation in humans. The actual bioavailability, tissue distribution, and clinical dose\u2013response relationship in humans remain entirely unexplored in this evidence set.",
+    "strongest_counterargument": "Many medicinal herbs show anti-proliferative activity in cancer cell lines and rodent models without any human clinical benefit. The single animal study offers no information about whether oral Reishi delivers sufficient bioactive compound to human tumors, whether the dose used would be tolerable in patients, or whether the effect size (if real) would be clinically meaningful. Without a single randomized controlled trial in cancer patients, any claim of anti-cancer benefit is speculative.",
+    "what_would_change_the_picture": "A phase I/II human trial in a specific cancer type (e.g., breast, colorectal) with pharmacokinetic data, safety assessment, and preliminary efficacy endpoints (response rate, time-to-progression, or biomarkers) would establish whether animal findings have clinical relevance. Absent that, at minimum, independent replication of the animal study with reported sample sizes, effect sizes, and dose-response relationships would strengthen confidence.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

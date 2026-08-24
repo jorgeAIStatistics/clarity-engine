@@ -1,56 +1,229 @@
 {
   "name": "EAAs",
   "category": "amino",
-  "overall_score": 70,
+  "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 7,
+  "study_count": 15,
   "claims": [
     {
-      "outcome": "cardiovascular",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
+      "outcome": "muscle growth",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
       "n_studies": 3,
       "grade_reasons": [
-        "Imprecision: small verified sample (~25 participants across 1 measured studies)."
+        "Imprecision: modest verified sample (~89 participants across 2 of 3 studies); effect estimate may be unstable."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 35,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:26793971",
+        "PMID:11118822",
+        "PMID:39849571"
+      ],
+      "studies": [
+        {
+          "pmid": "11118822",
+          "title": "Effects of exercise training and amino-acid supplementation on body composition and physical performance in untrained women.",
+          "year": "2000",
+          "design": "RCT",
+          "population": "human",
+          "n": 21
+        },
+        {
+          "pmid": "26793971",
+          "title": "Influence of essential amino acids on muscle mass and muscle strength in patients with cerebral stroke during early rehabilitation: protocol and rationale of a ",
+          "year": "2016",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39849571",
+          "title": "Supplementation with essential amino acids in the early stage of carbohydrate reintroduction after a very-low energy ketogenic therapy (VLEKT) improves body cel",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": 68
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For muscle growth, EAAs has moderate human evidence (3 studies)."
+    },
+    {
+      "outcome": "muscle strength",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 7,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~133 participants across 3 of 7 studies); effect estimate may be unstable."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 4,
+        "n_animal_studies": 3,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:40806660",
+        "PMID:26793971",
+        "PMID:11118822",
+        "PMID:39696747",
+        "PMID:38615703",
+        "PMID:39849571",
+        "PMID:23193843"
+      ],
+      "studies": [
+        {
+          "pmid": "23193843",
+          "title": "Essential amino acid supplementation in patients with severe COPD: a step towards home rehabilitation.",
+          "year": "2012",
+          "design": "RCT",
+          "population": "human",
+          "n": 44
+        },
+        {
+          "pmid": "11118822",
+          "title": "Effects of exercise training and amino-acid supplementation on body composition and physical performance in untrained women.",
+          "year": "2000",
+          "design": "RCT",
+          "population": "human",
+          "n": 21
+        },
+        {
+          "pmid": "40806660",
+          "title": "Early Effect of Supplementation with Essential Amino Acids on Cardiac Performance in Elderly Patients with Heart Failure and Sarcopenia.",
+          "year": "2025",
+          "design": "Observational",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "26793971",
+          "title": "Influence of essential amino acids on muscle mass and muscle strength in patients with cerebral stroke during early rehabilitation: protocol and rationale of a ",
+          "year": "2016",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39849571",
+          "title": "Supplementation with essential amino acids in the early stage of carbohydrate reintroduction after a very-low energy ketogenic therapy (VLEKT) improves body cel",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": 68
+        },
+        {
+          "pmid": "38615703",
+          "title": "Effects of essential amino acids supplementation in a low-protein diet on growth performance, intestinal health and microbiota of juvenile blotched snakehead (C",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "39696747",
+          "title": "Supplementation of essential amino acids suppresses age-associated sleep loss and sleep fragmentation but not loss of rhythm strength under yeast-restricted mal",
+          "year": "2025",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For muscle strength, EAAs has moderate human evidence (7 studies)."
+    },
+    {
+      "outcome": "exercise performance",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 4,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~65 participants across 2 of 4 studies); effect estimate may be unstable."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 3,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 4,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:25682182",
-        "PMID:31963802",
-        "PMID:38791339"
+        "PMID:38426663",
+        "PMID:26793971",
+        "PMID:11118822",
+        "PMID:23193843"
       ],
       "studies": [
         {
-          "pmid": "31963802",
-          "title": "Essential Amino Acid Supplement Lowers Intrahepatic Lipid despite Excess Alcohol Consumption.",
-          "year": "2020",
+          "pmid": "23193843",
+          "title": "Essential amino acid supplementation in patients with severe COPD: a step towards home rehabilitation.",
+          "year": "2012",
           "design": "RCT",
           "population": "human",
-          "n": 25
+          "n": 44
         },
         {
-          "pmid": "38791339",
-          "title": "Chemotherapy-Induced Changes in Plasma Amino Acids and Lipid Oxidation of Resected Patients with Colorectal Cancer: A Background for Future Studies.",
+          "pmid": "11118822",
+          "title": "Effects of exercise training and amino-acid supplementation on body composition and physical performance in untrained women.",
+          "year": "2000",
+          "design": "RCT",
+          "population": "human",
+          "n": 21
+        },
+        {
+          "pmid": "38426663",
+          "title": "Short-Term Ingestion of Essential Amino Acid Based Nutritional Supplements or Whey Protein Improves the Physical Function of Older Adults Independently of Gut M",
           "year": "2024",
           "design": "Unclassified",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "25682182",
-          "title": "Is there a role for ketoacid supplements in the management of CKD?",
-          "year": "2015",
+          "pmid": "26793971",
+          "title": "Influence of essential amino acids on muscle mass and muscle strength in patients with cerebral stroke during early rehabilitation: protocol and rationale of a ",
+          "year": "2016",
           "design": "Unclassified",
           "population": "human",
           "n": null
@@ -67,10 +240,10 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cardiovascular, EAAs shows early but unsettled evidence (3 studies)."
+      "summary": "For exercise performance, EAAs has moderate human evidence (4 studies)."
     },
     {
-      "outcome": "gut / digestion",
+      "outcome": "recovery / soreness",
       "tier": "Preliminary",
       "certainty": "very_low",
       "score": 22,
@@ -91,73 +264,9 @@
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:38426663"
-      ],
-      "studies": [
-        {
-          "pmid": "38426663",
-          "title": "Short-Term Ingestion of Essential Amino Acid Based Nutritional Supplements or Whey Protein Improves the Physical Function of Older Adults Independently of Gut M",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For gut / digestion, EAAs has only preliminary or animal evidence (1 studies)."
-    },
-    {
-      "outcome": "inflammation",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 3,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:40806660",
-        "PMID:38426663",
         "PMID:31343947"
       ],
       "studies": [
-        {
-          "pmid": "40806660",
-          "title": "Early Effect of Supplementation with Essential Amino Acids on Cardiac Performance in Elderly Patients with Heart Failure and Sarcopenia.",
-          "year": "2025",
-          "design": "Observational",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "38426663",
-          "title": "Short-Term Ingestion of Essential Amino Acid Based Nutritional Supplements or Whey Protein Improves the Physical Function of Older Adults Independently of Gut M",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
         {
           "pmid": "31343947",
           "title": "Cellular and morphological changes with EAA supplementation before and after total knee arthroplasty.",
@@ -178,20 +287,91 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For inflammation, EAAs has moderate human evidence (3 studies)."
+      "summary": "For recovery / soreness, EAAs has only preliminary or animal evidence (1 studies)."
     }
   ],
   "effects_established": [
-    "inflammation"
+    "muscle growth",
+    "muscle strength",
+    "exercise performance"
   ],
-  "effects_promising": [
-    "cardiovascular"
-  ],
+  "effects_promising": [],
   "effects_emerging": [
-    "gut / digestion"
+    "recovery / soreness"
   ],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506475.446688
+  "_cached_at": 1787608018.7309382,
+  "explanation": {
+    "what_it_is": "Essential amino acids (EAAs) are nine amino acids your body cannot synthesize and must obtain from diet or supplementation: histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, and valine. They are the building blocks of all proteins and are critical for muscle repair and growth. EAAs come as powders, capsules, or liquids, and are often taken around workouts or with meals to support protein synthesis.",
+    "how_it_works": "When you consume EAAs, they enter the bloodstream and are transported to muscle tissue, where they stimulate the mTOR pathway\u2014a key cellular signaling cascade that initiates muscle protein synthesis (the process of building new muscle fibers). Leucine, in particular, acts as a potent trigger for this pathway. EAAs also provide substrate (raw material) for the body to assemble new contractile proteins and help maintain nitrogen balance, which is essential when training hard or recovering from illness. By ensuring adequate availability of all nine essential amino acids, supplementation can support the muscle-building stimulus created by exercise or physical therapy, especially in people with limited dietary protein intake or higher amino acid demands.",
+    "outcome_detail": [
+      {
+        "outcome": "muscle growth",
+        "grade": "Moderate",
+        "what_studies_show": "Two human randomized or observational trials (one from 2000 in n=21 participants studying exercise and amino-acid supplementation, and one from 2016 examining EAA effects in stroke patients) reported improvements in muscle mass; one 2025 animal study (n=68) also found gains during carbohydrate reintroduction after very-low-calorie dieting. Human evidence is limited to fewer than 90 verified participants across the two human trials.",
+        "why_this_grade": "While human studies show promise for muscle growth, the sample size is modest and effect estimates remain imprecise. The evidence rests on only two human trials with small to moderate participant numbers, limiting confidence that results would hold consistently across different populations or conditions."
+      },
+      {
+        "outcome": "muscle strength",
+        "grade": "Moderate",
+        "what_studies_show": "Four human trials spanning 2000\u20132025 (including RCTs in COPD patients and studies in stroke and elderly heart-failure populations) and three animal studies reported gains in muscle strength or performance with EAA supplementation. Human data encompasses approximately 133 verified participants across three of the seven studies, with designs ranging from randomized controlled trials to observational studies.",
+        "why_this_grade": "Human evidence is more robust than for muscle growth alone, but sample sizes remain modest and effect estimates are imprecise. Gains were observed across different patient populations (COPD, stroke, heart failure), suggesting some generalizability, but the heterogeneous populations and modest total sample make the strength of the effect uncertain."
+      },
+      {
+        "outcome": "exercise performance",
+        "grade": "Moderate",
+        "what_studies_show": "Four human studies (2000\u20132024) examined exercise performance and physical capacity in various populations: COPD patients (n=44 RCT, 2012), general participants undergoing training (n=21, 2000), and stroke patients (2016), plus one unclassified nutritional-supplement trial (2024). Reported outcomes included improvements in exercise tolerance and physical performance. Approximately 65 participants were verified across two of the four studies.",
+        "why_this_grade": "All four studies are human-based, but sample sizes are small and variability in study design and population limits precision. The evidence suggests benefit in exercise capacity, but the modest participant count and limited detail in some abstracts mean the true effect size remains uncertain and may not generalize equally to all fitness levels or training contexts."
+      },
+      {
+        "outcome": "recovery / soreness",
+        "grade": "Preliminary",
+        "what_studies_show": "Only one human study (2019, unclassified design) examined cellular and morphological changes with EAA supplementation around total knee arthroplasty\u2014a surgical recovery context. Specific effect sizes and participant numbers could not be verified from the abstract.",
+        "why_this_grade": "A single study is insufficient to establish efficacy. Without replication, we cannot assess consistency or confirm the robustness of any observed benefit. This outcome remains exploratory and should not be relied upon as evidence of effectiveness."
+      }
+    ],
+    "evidence_base": "The literature on EAAs is predominantly human-based and includes randomized controlled trials, observational studies, and small animal trials published mostly in the last 25 years (with several recent 2024\u20132025 additions). Most human studies are small, ranging from 21 to 44 participants per trial, which limits statistical power and precision. The research spans diverse populations\u2014healthy exercisers, COPD patients, stroke survivors, and elderly patients with heart failure\u2014suggesting the researchers have tested EAAs in multiple contexts, but this diversity also means no single large, well-powered trial dominates the picture. Overall, the evidence base shows consistent interest in protein metabolism and muscle support, but lacks the scale and uniformity typical of top-tier evidence.",
+    "emerging_research": "Recent 2024\u20132025 studies have begun examining EAAs in novel contexts: carbohydrate reintroduction after very-low-calorie diets, cardiac performance in elderly patients, and intestinal health markers alongside muscle growth in animals on low-protein diets. These directions suggest researchers are exploring whether EAAs might support metabolic flexibility and systemic recovery beyond muscle alone. However, all these lines remain early, with small samples and limited human replication; they are not yet ready to guide clinical practice.",
+    "open_questions": "Among the studies retrieved here, there is limited long-term follow-up data\u2014most trials span weeks to a few months\u2014so we cannot yet characterize durability of effects beyond the short term. The human trials cluster around specific patient populations (COPD, stroke, elderly) and small training cohorts; notably absent from the retrieved records are large trials in healthy young athletes or in aging adults undergoing sustained resistance training, making it unclear how uniformly EAAs benefit these groups. Additionally, the recovery/soreness outcome rests on a single study in a surgical population, leaving that claim essentially unvalidated in the sample provided.",
+    "caveats": "EAA supplements are generally well tolerated, but their bioavailability and effect depend on overall diet quality and protein intake\u2014they are not a substitute for adequate total protein consumption. People with certain metabolic disorders (maple syrup urine disease, phenylketonuria) or those taking medications that interact with amino acid metabolism should consult a healthcare provider before supplementing. The quality and purity of commercial EAA products can vary; purchasing from reputable manufacturers and third-party tested sources is advisable.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "Evidence for EAAs on muscle outcomes rests on tiny, methodologically mixed trials (mostly n<50, half with unclear design), no pooled analyses, and heavy reliance on disease/elderly populations\u2014generalizability to healthy populations is unclear.",
+    "concerns": [
+      {
+        "issue": "Severe imprecision across all outcomes",
+        "detail": "Only 2\u20133 of 4\u20137 studies per outcome report sample sizes; median n is 21\u201344 across outcomes, with two RCTs at n=21 and n=44 anchoring the human evidence. The engine explicitly notes effect estimates 'may be unstable' due to modest verified sample (~65\u2013133 participants). A single outlier trial or publication bias could substantially shift conclusions.",
+        "severity": "high"
+      },
+      {
+        "issue": "High proportion of non-RCT and unclassified designs",
+        "detail": "For muscle strength (the largest outcome set), only 2 of 7 trials are RCTs; 2 are unclassified and 1 is observational. For muscle growth, 1 of 3 is unclassified. Unclassified designs preclude risk-of-bias assessment and invite confounding. The 2025 observational cardiac study on muscle strength is particularly prone to unmeasured confounding.",
+        "severity": "high"
+      },
+      {
+        "issue": "Narrow, non-representative population sampling",
+        "detail": "The two largest RCTs recruit from disease populations: severe COPD (n=44) and cerebral stroke (n=21). These patients have impaired muscle physiology and rehabilitation potential; effects cannot be assumed to generalize to healthy, young, or athletic populations. No RCTs in healthy volunteers are visible in these records.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Recovery/soreness evidence is nominal",
+        "detail": "Only 1 unclassified human study addresses this outcome, with sample size not extractable from the abstract. This outcome is therefore graded 'Preliminary'\u2014too thin to support any practical claim.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "No pooled effect estimates and no consistency assessment possible",
+        "detail": "The engine notes 'none extractable' for all pooled effects; heterogeneity and publication bias cannot be evaluated. With 4\u20137 studies per outcome and multiple designs, combining them would require transparent meta-analysis or narrative synthesis of study-level effects, neither of which is visible here.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "EAAs provide the amino acid substrate for myoprotein synthesis, a plausible mechanism for muscle growth and strength gains. However, the leap from biochemistry to clinical benefit in healthy people is not trivial: healthy individuals with adequate dietary protein already have sufficient EAAs, so supplemental EAAs may add marginal value. The visible evidence tests this primarily in disease/elderly cohorts (COPD, stroke, cardiac) where muscle wasting and rehabilitation are active problems\u2014the mechanism is more compelling in these contexts than in a broad population.",
+    "strongest_counterargument": "All three 'Moderate' outcomes are supported by a handful of small, mostly uncontrolled trials in disease populations published over a 25-year span. A skeptic would note that (1) healthy people consuming typical protein intakes likely receive sufficient EAAs without supplementation, (2) the evidence base shows no RCTs in this population, (3) effect sizes are not transparent (no pooled estimates given), and (4) methodological heterogeneity and small n make type I error likely. The 'Moderate' grade may reflect the plausibility of the mechanism rather than robust clinical evidence.",
+    "what_would_change_the_picture": "Preregistered RCTs in healthy adults (n \u2265100 per arm) comparing EAAs to isonitrogenous controls on muscle mass, strength, and exercise performance, with standardized baseline protein intake and follow-up \u22658 weeks. Meta-analysis with risk-of-bias assessment and assessment of heterogeneity would also be essential to stabilize effect estimates across the current small trials.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

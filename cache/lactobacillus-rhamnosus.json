@@ -1,9 +1,9 @@
 {
   "name": "Lactobacillus rhamnosus",
   "category": "gut",
-  "overall_score": 76,
+  "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 10,
+  "study_count": 20,
   "claims": [
     {
       "outcome": "gut / digestion",
@@ -11,9 +11,9 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 6,
+      "n_studies": 13,
       "grade_reasons": [
-        "Precision: ~290 participants verified across 1 of 6 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~423 participants verified across 5 of 13 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
@@ -22,8 +22,8 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 3,
+        "n_human_studies": 9,
+        "n_animal_studies": 4,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -32,7 +32,14 @@
         "PMID:34600097",
         "PMID:37020105",
         "PMID:41539833",
-        "PMID:32374342"
+        "PMID:32374342",
+        "PMID:20421444",
+        "PMID:22136660",
+        "PMID:18162832",
+        "PMID:33506929",
+        "PMID:35475684",
+        "PMID:26394008",
+        "PMID:34806832"
       ],
       "studies": [
         {
@@ -52,17 +59,73 @@
           "n": null
         },
         {
+          "pmid": "35475684",
+          "title": "No Effect of Lactobacillus rhamnosus GG on Eradication of Colonization by Vancomycin-Resistant Enterococcus faecium or Microbiome Diversity in Hospitalized Adul",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": 81
+        },
+        {
+          "pmid": "33506929",
+          "title": "Effects of Lactobacillus rhamnosus GG on early postoperative outcome after pylorus-preserving pancreatoduodenectomy: a randomized trial.",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": 20
+        },
+        {
+          "pmid": "22136660",
+          "title": "Prenatal administration of Lactobacillus rhamnosus has no effect on the diversity of the early infant gut microbiota.",
+          "year": "2012",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "20421444",
+          "title": "Probiotics and intestinal colonization by vancomycin-resistant enterococci in mice and humans.",
+          "year": "2010",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "18162832",
+          "title": "Intestinal permeability and effects of Lactobacillus rhamnosus therapy in children with short bowel syndrome.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": 12
+        },
+        {
+          "pmid": "26394008",
+          "title": "Lactobacillus rhamnosus GG-supplemented formula expands butyrate-producing bacterial strains in food allergic infants.",
+          "year": "2016",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 20
+        },
+        {
           "pmid": "24899028",
           "title": "Probiotic-associated aspiration pneumonia due to Lactobacillus rhamnosus.",
           "year": "2014",
           "design": "Case report",
-          "population": "unknown",
+          "population": "human",
           "n": null
         },
         {
           "pmid": "41539833",
           "title": "Lactobacillus rhamnosus RL-H3-005 ameliorates Enterococcus faecium-induced pulmonary inflammation via gut microbiota remodeling and macrophage polarization regu",
           "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "34806832",
+          "title": "Effect of Lactobacillus rhamnosus MN-431 Producing Indole Derivatives on Complementary Feeding-Induced Diarrhea Rat Pups Through the Enhancement of the Intestin",
+          "year": "2022",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -95,87 +158,41 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For gut / digestion, Lactobacillus rhamnosus has moderate human evidence (6 studies)."
+      "summary": "For gut / digestion, Lactobacillus rhamnosus has moderate human evidence (13 studies)."
     },
     {
-      "outcome": "inflammation",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
+      "outcome": "immune function",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
       "has_human_evidence": true,
       "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Imprecision: small verified sample (~20 participants across 1 measured studies)."
       ],
       "layers": {
         "mechanistic": 25,
         "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
         "n_human_studies": 1,
         "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:37020105",
-        "PMID:41539833"
+        "PMID:32374342",
+        "PMID:33506929"
       ],
       "studies": [
         {
-          "pmid": "37020105",
-          "title": "The preterm gut microbiota and administration routes of different probiotics: a randomized controlled trial.",
-          "year": "2023",
+          "pmid": "33506929",
+          "title": "Effects of Lactobacillus rhamnosus GG on early postoperative outcome after pylorus-preserving pancreatoduodenectomy: a randomized trial.",
+          "year": "2021",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": 20
         },
-        {
-          "pmid": "41539833",
-          "title": "Lactobacillus rhamnosus RL-H3-005 ameliorates Enterococcus faecium-induced pulmonary inflammation via gut microbiota remodeling and macrophage polarization regu",
-          "year": "2026",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For inflammation, Lactobacillus rhamnosus has moderate human evidence (2 studies)."
-    },
-    {
-      "outcome": "immune function",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:32374342"
-      ],
-      "studies": [
         {
           "pmid": "32374342",
           "title": "Mechanisms for Lactobacillus rhamnosus treatment of intestinal infection by drug-resistant Escherichia coli.",
@@ -196,39 +213,57 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For immune function, Lactobacillus rhamnosus has only preliminary or animal evidence (1 studies)."
+      "summary": "For immune function, Lactobacillus rhamnosus shows early but unsettled evidence (2 studies)."
     },
     {
-      "outcome": "stress / anxiety",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 1,
+      "outcome": "skin / appearance",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 3,
       "grade_reasons": [
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 3,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:28943228"
+        "PMID:27240551",
+        "PMID:38941923",
+        "PMID:41539833"
       ],
       "studies": [
         {
-          "pmid": "28943228",
-          "title": "Effect of Lactobacillus rhamnosus HN001 in Pregnancy on Postpartum Symptoms of Depression and Anxiety: A Randomised Double-blind Placebo-controlled Trial.",
-          "year": "2017",
-          "design": "RCT",
-          "population": "human",
-          "n": 423
+          "pmid": "41539833",
+          "title": "Lactobacillus rhamnosus RL-H3-005 ameliorates Enterococcus faecium-induced pulmonary inflammation via gut microbiota remodeling and macrophage polarization regu",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "38941923",
+          "title": "Lactobacillus rhamnosus GG alleviates radiation-induced intestinal injury by modulating intestinal immunity and remodeling gut microbiota.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "27240551",
+          "title": "Therapeutic effect of tyndallized Lactobacillus rhamnosus IDCC 3201 on atopic dermatitis mediated by down-regulation of immunoglobulin E in NC/Nga mice.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
         }
       ],
       "effects": {
@@ -242,20 +277,146 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For stress / anxiety, Lactobacillus rhamnosus has moderate human evidence (1 studies)."
+      "summary": "For skin / appearance, Lactobacillus rhamnosus has only preliminary or animal evidence (3 studies)."
+    },
+    {
+      "outcome": "mood / depression",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 35,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:28943228",
+        "PMID:40768020"
+      ],
+      "studies": [
+        {
+          "pmid": "28943228",
+          "title": "Effect of Lactobacillus rhamnosus HN001 in Pregnancy on Postpartum Symptoms of Depression and Anxiety: A Randomised Double-blind Placebo-controlled Trial.",
+          "year": "2017",
+          "design": "RCT",
+          "population": "human",
+          "n": 423
+        },
+        {
+          "pmid": "40768020",
+          "title": "Regulatory Effects of Probiotics on Anxiety and Depression-Like Behaviors in H. pylori-Infected Rats.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For mood / depression, Lactobacillus rhamnosus has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
     "gut / digestion",
-    "inflammation",
-    "stress / anxiety"
+    "mood / depression"
   ],
   "effects_promising": [
-    "immune function"
+    "immune function",
+    "skin / appearance"
   ],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506604.852294
+  "_cached_at": 1787608542.407273,
+  "explanation": {
+    "what_it_is": "Lactobacillus rhamnosus is a lactic acid-producing bacterium found naturally in the human gut and in fermented foods like yogurt and kefir. It belongs to the Lactobacillus genus, a group of bacteria generally recognized as safe and commonly used in probiotic supplements. People typically consume it as a capsule, powder, or fermented food, with strain GG being one of the most studied variants.",
+    "how_it_works": "L. rhamnosus colonizes the intestinal tract and produces lactic acid, which lowers gut pH and creates an environment hostile to harmful bacteria. It also produces bacteriocins\u2014antimicrobial compounds that directly inhibit pathogenic microbes. The bacterium adheres to the intestinal epithelium (the lining), potentially reinforcing the physical barrier between the gut and the bloodstream. Through these mechanisms, it may reduce inflammation, support the growth of beneficial microbial neighbors, and interact with gut-associated immune cells, though the precise strength of each effect in humans remains incompletely understood.",
+    "outcome_detail": [
+      {
+        "outcome": "gut / digestion",
+        "grade": "Moderate",
+        "what_studies_show": "A 2011 meta-analysis of 290 participants found L. rhamnosus GG helpful for abdominal pain in functional gastrointestinal disorders. More recent randomized trials (2010\u20132023) examined outcomes including early infant gut microbiota diversity, vancomycin-resistant enterococcus colonization, and postoperative gastrointestinal recovery in various populations. Studies were small (n=20\u201381 in most trials) and focused on specific clinical contexts (preterm infants, postoperative patients, infection prevention) rather than general digestive health.",
+        "why_this_grade": "Nine human studies and one meta-analysis provide evidence of benefit in targeted digestive conditions, but the total verified sample across clearly reported trials is modest (~423 participants across studies with disclosed numbers), and findings are not uniformly consistent across all outcomes tested. The single meta-analysis has not been independently replicated, which keeps the grade at Moderate rather than Strong."
+      },
+      {
+        "outcome": "immune function",
+        "grade": "Emerging",
+        "what_studies_show": "A 2021 randomized trial (n=20) in postoperative pancreatic surgery patients measured immune outcomes, and a 2020 animal study demonstrated mechanisms by which L. rhamnosus treatment suppressed infection by drug-resistant E. coli through intestinal immune modulation. Human evidence is extremely limited in number and scope.",
+        "why_this_grade": "Only one small human trial and one animal study are represented in the retrieved records. The human study involved a highly specific surgical population and was not designed primarily to measure immune function. This is far too little evidence to establish efficacy in humans; the grade reflects that while mechanism is plausible, human proof is absent."
+      },
+      {
+        "outcome": "skin / appearance",
+        "grade": "Preliminary",
+        "what_studies_show": "Three animal studies (2016, 2024, 2026) explored L. rhamnosus effects on skin-related inflammation and atopic dermatitis, with one showing therapeutic benefit in a tyndallized (heat-killed) form, and two demonstrating intestinal immune and microbial modulation in infection models. None of these were human trials.",
+        "why_this_grade": "All available evidence is from animal models, which do not reliably predict human outcomes. No human data on skin or dermatological outcomes were retrieved, so claims about skin effects in people are premature."
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Moderate",
+        "what_studies_show": "A 2017 randomized trial of 423 pregnant women given L. rhamnosus HN001 measured postpartum depression and anxiety symptoms. A 2026 animal study in H. pylori-infected rats examined anxiety and depression-like behaviors. The human trial represents the largest single study in the retrieved records for this outcome.",
+        "why_this_grade": "One adequately powered human randomized trial and one animal study exist, but they have not been pooled or independently replicated in human samples. The animal study and the single human trial do not yet constitute independently verified agreement, so the evidence is held at Moderate pending further replication in human populations."
+      }
+    ],
+    "evidence_base": "The retrieved literature includes 9 human studies (mostly small randomized trials and one meta-analysis) and 8 animal studies spanning 2010\u20132026. Human trials are predominantly short-term (weeks to a few months) and conducted in specific clinical populations (preterm infants, postoperative patients, pregnant women, infection-prevention contexts) rather than healthy general populations. The evidence is relatively recent, with a concentration of studies from 2017 onward. This mix suggests plausibility for clinical benefit in certain contexts but does not yet constitute robust, broadly generalizable proof.",
+    "emerging_research": "Recent studies (2024\u20132026) are exploring L. rhamnosus in novel infection models (drug-resistant E. coli and H. pylori) and examining whether heat-killed (tyndallized) forms retain therapeutic benefit for inflammatory conditions like atopic dermatitis. Mechanistic work is increasingly detailed, mapping interactions between the bacterium and intestinal immunity and microbial diversity. However, these directions remain early; translation to human clinical benefit is not yet established.",
+    "open_questions": "Among the retrieved records, no studies follow participants beyond a few months, so the durability of any benefit is unknown from these data alone. The studies span very different populations (preterm infants, pregnant women, postoperative patients, infection-exposed adults), but the records provided do not include trials in healthy adults or children taking L. rhamnosus for general wellness. Whether long-term supplementation in otherwise healthy people offers sustained benefit remains absent from this sample of the literature. Note: this sample contains approximately 40 abstracts per outcome; claims about what research does or does not exist globally cannot be made from these records alone.",
+    "caveats": "L. rhamnosus is generally well tolerated and has a long safety record in food and supplements, but it is a live microorganism and should be avoided or used cautiously in severely immunocompromised individuals (e.g., those on high-dose immunosuppressants or with advanced HIV). Quality varies widely among commercial probiotic products; viable cell count, strain identity, and storage conditions are often poorly controlled. Pregnant women or those taking antibiotics should consult a clinician, as timing and interactions can affect colonization.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "Evidence is fragmented across disparate populations and outcomes with no pooled analyses; the largest human study (n=423) addresses only mood in pregnancy, and gut/digestion claims rest on a single 2011 meta-analysis of n=290 that has not been independently replicated.",
+    "concerns": [
+      {
+        "issue": "Single meta-analysis anchors main claim",
+        "detail": "The gut/digestion outcome (graded Moderate) is supported primarily by one 2011 meta-analysis of n=290 on abdominal pain in functional GI disorders. The engine explicitly notes this conclusion is 'not independently replicated or verified.' No subsequent pooled analysis in the retrieved records (spanning 2008\u20132026) confirms or extends these findings, leaving the evidence base vulnerable to the methodological limitations of that single synthesis.",
+        "severity": "high"
+      },
+      {
+        "issue": "Majority of studies undersized and sample sizes hidden",
+        "detail": "Only 5 of 13 studies in gut/digestion report sample sizes; among those, the median is just n=20. The engine estimates true total is 'substantially larger' but abstracts systematically omit denominators, making precision assessment impossible. For immune function (n=2 total), only 1 study reports size (n=20). This opacity prevents readers from assessing whether any individual trial was adequately powered, and small studies are prone to random variation and publication bias.",
+        "severity": "high"
+      },
+      {
+        "issue": "Inconsistent strain, dose, and outcome definitions across trials",
+        "detail": "Trials reference 'Lactobacillus rhamnosus GG,' 'HN001,' and 'RL-H3-005' as if interchangeable, yet these are distinct strains with potentially different properties. The 2022 RCT (n=81) found no effect on vancomycin-resistant enterococci colonization, directly contradicting the premise of probiotic efficacy for bacterial colonization seen in the 2010 trial. Without standardized outcome measures or strain specifications, results cannot be pooled or compared reliably.",
+        "severity": "high"
+      },
+      {
+        "issue": "Skin outcome relies entirely on animal models",
+        "detail": "All three studies under skin/appearance (graded Preliminary) are animal-only (2016\u20132026), with no human data reported. The engine correctly flags this as 'indirectness': rodent or other animal models do not reliably predict human dermatological outcomes. No translational path from these studies to human skin health claims is evident.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Mood/depression evidence from single pregnancy cohort",
+        "detail": "The Moderate grade for mood rests almost entirely on one 2017 RCT (n=423) measuring postpartum depression in pregnant women receiving L. rhamnosus HN001. This population and strain are highly specific; generalization to non-pregnant individuals or other L. rhamnosus strains is unjustified. The single supporting animal study (2026) is too recent to have undergone peer scrutiny and uses a different model (H. pylori-infected rats), so replication in humans is absent.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The proposed mechanism (modulation of gut microbiota, butyrate production, intestinal barrier function) is biologically plausible and supported by the 2016 clinical trial showing expanded butyrate-producing strains. However, the leap from microbial composition changes to clinical outcomes (abdominal pain relief, immune enhancement, mood improvement) is substantial. The records show mechanistic biomarkers (microbiota composition, butyrate levels) but do not demonstrate a causal chain linking these to the reported clinical endpoints; most trials measure only the clinical outcome without confirming the mechanism was engaged.",
+    "strongest_counterargument": "A skeptic would note that the gut/digestion claim pivots on a single 2011 meta-analysis (n=290, 15 years old) that was not replicated; the 2022 RCT (n=81) explicitly reported no effect of L. rhamnosus GG on a related outcome (bacterial colonization), suggesting strain-specific or outcome-specific failures. For mood, the n=423 pregnancy trial is from a single population (pregnant women) and strain (HN001), so the effect may not generalize. Across all outcomes, sample sizes are small, outcome definitions inconsistent, and no independent pooled analysis exists to confirm the meta-analysis's conclusion.",
+    "what_would_change_the_picture": "A prospective systematic review with pre-registered search and analysis protocol that independently re-analyzes the 2011 meta-analysis data and incorporates all new RCTs (2012\u20132026) using standardized strain and outcome definitions would resolve whether the evidence base is consistent. Alternatively, a adequately powered, multi-center RCT (n\u2265200) in a single, clearly defined population (e.g., irritable bowel syndrome or antibiotic-associated diarrhea) using a single L. rhamnosus strain with both mechanistic biomarkers and clinical outcomes would establish whether effects are reproducible.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

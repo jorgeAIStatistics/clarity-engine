@@ -3,10 +3,56 @@
   "category": "longevity",
   "overall_score": 47,
   "tier": "Emerging",
-  "study_count": 2,
+  "study_count": 6,
   "claims": [
     {
-      "outcome": "skin / appearance",
+      "outcome": "cardiovascular",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 35,
+        "human": 0,
+        "overall": 35,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 1,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:21451208"
+      ],
+      "studies": [
+        {
+          "pmid": "21451208",
+          "title": "Alpha-ketoglutarate stabilizes redox homeostasis and improves arterial elasticity in aged mice.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": 10
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For cardiovascular, Ca-AKG has only preliminary or animal evidence (1 studies)."
+    },
+    {
+      "outcome": "aging / longevity",
       "tier": "Emerging",
       "certainty": "low",
       "score": 47,
@@ -58,12 +104,78 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For skin / appearance, Ca-AKG shows early but unsettled evidence (2 studies)."
+      "summary": "For aging / longevity, Ca-AKG shows early but unsettled evidence (2 studies)."
+    },
+    {
+      "outcome": "muscle growth",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~130 participants across 2 of 3 studies); effect estimate may be unstable."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:37217632",
+        "PMID:41764984",
+        "PMID:21451208"
+      ],
+      "studies": [
+        {
+          "pmid": "37217632",
+          "title": "Alpha-ketoglutarate supplementation and BiologicaL agE in middle-aged adults (ABLE)-intervention study protocol.",
+          "year": "2023",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 120
+        },
+        {
+          "pmid": "21451208",
+          "title": "Alpha-ketoglutarate stabilizes redox homeostasis and improves arterial elasticity in aged mice.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": 10
+        },
+        {
+          "pmid": "41764984",
+          "title": "Effects of \u03b1-ketoglutarate and its calcium salt on growth performance, health, rumen fermentation and microbiota in fattening Hu lambs.",
+          "year": "2026",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For muscle growth, Ca-AKG shows early but unsettled evidence (3 studies)."
     }
   ],
   "effects_established": [],
   "effects_promising": [
-    "skin / appearance"
+    "cardiovascular",
+    "aging / longevity",
+    "muscle growth"
   ],
   "effects_emerging": [],
   "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
@@ -90,5 +202,70 @@
       "Oxoglutaric acid"
     ]
   },
-  "_cached_at": 1787506542.906147
+  "_cached_at": 1787608276.623165,
+  "explanation": {
+    "what_it_is": "Alpha-ketoglutarate (AKG) is a small organic molecule with the chemical formula C\u2085H\u2086O\u2085 \u2014 a 5-carbon compound that occurs naturally in cells as an intermediate in the citric acid cycle, the central metabolic pathway that generates energy. Calcium-alpha-ketoglutarate (Ca-AKG) is the calcium salt form, which may improve absorption and stability. People take it as a dietary supplement in powder or capsule form, typically in gram quantities.",
+    "how_it_works": "AKG sits at a metabolic crossroads: it acts as a cofactor and substrate in the citric acid cycle (the engine that converts nutrients into cellular energy), and it is also a precursor for amino acid synthesis, particularly glutamate and arginine. These amino acids are building blocks for muscle proteins and are involved in immune function and nitric oxide production (which relaxes blood vessel walls). Additionally, AKG participates in cellular redox balance \u2014 the ratio of oxidized to reduced molecules that determines resistance to oxidative stress \u2014 by accepting electrons in reactions that neutralize reactive oxygen species. Because oxidative damage accumulates with age and underpins many age-related diseases, a compound that supports this system could theoretically slow aging processes, though direct human evidence is limited.",
+    "outcome_detail": [
+      {
+        "outcome": "cardiovascular",
+        "grade": "Preliminary",
+        "what_studies_show": "A single 2011 animal study in aged mice (n=10) found that alpha-ketoglutarate treatment stabilized redox homeostasis and improved arterial elasticity. This suggests a potential pathway by which the compound might support blood vessel function, but the evidence comes only from mice and has not been tested in human trials.",
+        "why_this_grade": "The evidence is animal-only and does not reliably translate to humans. A single small rodent study provides insufficient basis to claim cardiovascular benefit in people."
+      },
+      {
+        "outcome": "aging / longevity",
+        "grade": "Emerging",
+        "what_studies_show": "Two studies \u2014 one human clinical trial (ABLE study, 2023, n=120 middle-aged adults) and one animal study (2011, n=10 aged mice) \u2014 are registered in the retrieved records. The human trial explicitly examined alpha-ketoglutarate supplementation and 'biological age,' though detailed efficacy results from the 2023 trial are not yet available in the provided abstracts. Animal data showed redox stabilization and improved arterial elasticity.",
+        "why_this_grade": "The human evidence is recent but modest in size (~120 participants total across the studies retrieved), and results from the main trial are not yet detailed in the available records. Precision is limited by small sample size and early-stage reporting."
+      },
+      {
+        "outcome": "muscle growth",
+        "grade": "Emerging",
+        "what_studies_show": "Three studies are in the retrieved records: one human clinical trial (2023, n=120, ABLE study), one animal study in aged mice (2011, n=10), and one animal study on growth performance in ruminants (2026). The 2023 trial measured biological age; the animal studies examined growth performance and health outcomes, though specific muscle mass metrics are not detailed in the provided abstracts.",
+        "why_this_grade": "Only one human trial (n=120) is present in the retrieved data, and its detailed results on muscle growth are not yet available. The small verified human sample and preliminary reporting stage limit confidence in effect size and stability."
+      }
+    ],
+    "evidence_base": "The research landscape for Ca-AKG is heavily weighted toward animal studies and early-stage human trials. Among the records retrieved, animal work (mostly rodents and ruminants) dominates mechanistic investigation, while the human evidence consists primarily of one recent (2023) clinical trial protocol in middle-aged adults that has not yet published detailed efficacy outcomes. Overall, the field remains in an exploratory phase: studies have examined oxidative stress, energy metabolism, and aging markers, but the sample sizes are small and human efficacy data are nascent. This means confidence is appropriately low, and claims of established benefit would be premature.",
+    "emerging_research": "The 2023 ABLE study (alpha-ketoglutarate supplementation and biological age in middle-aged adults) is the flagship recent human trial, specifically designed to measure effects on 'biological age' \u2014 a composite measure of aging processes at the molecular and cellular level. This represents a shift from mechanistic animal studies toward directly measuring aging-relevant outcomes in humans, though results are not yet publicly detailed. Future work may clarify whether oral AKG can meaningfully slow biological aging or improve muscle and cardiovascular health in older populations.",
+    "open_questions": "Among the study records retrieved here, the human evidence is limited to one trial (2023, n=120) whose published results on efficacy endpoints are not yet detailed in the abstracts provided. No long-term follow-up studies (beyond the trial duration) appear in the retrieved records, and the population studied is middle-aged adults \u2014 it is unclear whether efficacy extends to elderly or frail populations, or to younger individuals. Animal studies are small (n=10\u201320 range) and conducted in rodents or livestock, which may not reflect human response. Because these are only a sample of ~40 abstracts per outcome, important studies or longer-term follow-ups may exist in the broader literature but are not visible here.",
+    "caveats": "Ca-AKG is a naturally occurring metabolite and is generally recognized as safe at typical dietary supplement doses, but high-dose supplementation has not been extensively studied for long-term safety in humans. Because the evidence remains preliminary, claims of anti-aging or muscle-building benefit should be viewed as speculative; individuals should consult a healthcare provider before use, especially if taking medications that affect amino acid metabolism or those with kidney disease (since AKG is ultimately metabolized and excreted). Quality and purity of commercial supplements vary; choose products from reputable manufacturers.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The entire evidence base rests on a single small human trial (n=120, 2023) plus animal studies from 2011; no human data exists for cardiovascular or muscle outcomes, and no independent replication of the human trial has been published.",
+    "concerns": [
+      {
+        "issue": "Single human trial, no replication",
+        "detail": "All three outcomes (cardiovascular, aging/longevity, muscle growth) cite or depend on the 2023 ABLE trial (n=120) as the sole human evidence. No independent human studies confirm its findings. A single trial\u2014even reasonably sized\u2014cannot establish a reliable effect estimate without replication, especially for claims about aging and longevity that would require long-term follow-up or proxy biomarkers.",
+        "severity": "high"
+      },
+      {
+        "issue": "Cardiovascular outcome lacks human evidence entirely",
+        "detail": "The cardiovascular grade is based exclusively on one 2011 animal study (n=10 mice). The engine explicitly flagged this as 'indirectness: evidence is animal-only; does not reliably translate to humans.' Arterial elasticity in aged mice is a mechanistic proxy; it does not establish that Ca-AKG improves cardiovascular outcomes in human patients.",
+        "severity": "high"
+      },
+      {
+        "issue": "Muscle growth outcome mostly unverified",
+        "detail": "Two of three studies cited for muscle growth lack sample size reporting (one is 'unclassified' design, 2026, animal study with no n provided). Only the 2023 human trial (n=120) and 2011 animal study report numbers. The 2026 unclassified study cannot be properly evaluated for methodological rigor or result quality from the records provided.",
+        "severity": "high"
+      },
+      {
+        "issue": "Narrow temporal window and potential selection bias in retrieved literature",
+        "detail": "The human evidence is from 2023 only; the animal evidence clusters in 2011 and 2026. This pattern (old animal work, then recent human trial, then new animal work) is atypical for an established field and may reflect selective retrieval. No intermediate human studies bridge the 12-year gap, raising questions about whether the ABLE trial was preceded by adequate mechanistic or early-phase human work.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "No pooled effect extractable for any outcome",
+        "detail": "The engine reports 'none extractable' for pooled effects across all three outcomes. This means heterogeneity, methodological differences, or insufficient reporting prevent quantitative synthesis. Effect sizes, confidence intervals, or even direction of effect cannot be formally combined\u2014leaving only qualitative interpretation of individual studies.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The proposed mechanism (redox homeostasis stabilization, improved arterial elasticity) is demonstrated only in aged mice; it is plausible that restoration of redox balance could slow aging or support muscle, but the leap from *mechanistic proxy in animals* to *longevity or muscle growth in middle-aged humans* is substantial. The 2023 ABLE trial would need to report biomarkers of aging (e.g., epigenetic clock, biological age) or direct muscle mass/strength outcomes to validate this chain; the records do not reveal what the ABLE trial actually measured as its primary endpoint.",
+    "strongest_counterargument": "A skeptic would note that the 2023 ABLE trial is the only human study cited, no independent replication exists, and the cardiovascular outcome is supported entirely by a small 2011 mouse study that the engine itself flagged as not reliably translating to humans. Even if the ABLE trial showed a change in some biomarker of aging, a single 120-person trial without active control, blinding verification, or long-term follow-up cannot establish that Ca-AKG extends human lifespan or robustly improves muscle. The animal studies are too old and small to fill that gap.",
+    "what_would_change_the_picture": "Independent replication of the ABLE trial in a separate human cohort with pre-specified endpoints (e.g., change in epigenetic age, muscle mass via DXA, cardiovascular function via imaging or endothelial markers), plus publication of at least one adequately powered RCT in a clinical cardiovascular population. Until then, the human evidence is confined to a single trial with unknown risk of bias and no active comparator.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

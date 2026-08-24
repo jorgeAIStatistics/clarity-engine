@@ -1,9 +1,9 @@
 {
   "name": "Alpha-GPC",
   "category": "nootropic",
-  "overall_score": 70,
+  "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 13,
+  "study_count": 16,
   "claims": [
     {
       "outcome": "cognition",
@@ -125,35 +125,117 @@
       "summary": "For cognition, Alpha-GPC has moderate human evidence (9 studies)."
     },
     {
-      "outcome": "stress / anxiety",
+      "outcome": "stroke risk",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 5,
+      "grade_reasons": [
+        "Precision: ~3021 participants verified across 2 of 5 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 35,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 4,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:36683513",
+        "PMID:34817582",
+        "PMID:8030842",
+        "PMID:36412158",
+        "PMID:27765578"
+      ],
+      "studies": [
+        {
+          "pmid": "36683513",
+          "title": "Activity of Choline Alphoscerate on Adult-Onset Cognitive Dysfunctions: A Systematic Review and Meta-Analysis.",
+          "year": "2023",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "8030842",
+          "title": "alpha-Glycerophosphocholine in the mental recovery of cerebral ischemic attacks. An Italian multicenter clinical trial.",
+          "year": "1994",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 2044
+        },
+        {
+          "pmid": "36412158",
+          "title": "[Clinical and immunological effects of choline alfoscerate in the treatment of amnestic type Mild Cognitive Impairment].",
+          "year": "2022",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "34817582",
+          "title": "Association of L-\u03b1 Glycerylphosphorylcholine With Subsequent Stroke Risk After 10 Years.",
+          "year": "2021",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 977
+        },
+        {
+          "pmid": "27765578",
+          "title": "Late treatment with choline alfoscerate (l-alpha glycerylphosphorylcholine, \u03b1-GPC) increases hippocampal neurogenesis and provides protection against seizure-in",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For stroke risk, Alpha-GPC has moderate human evidence (5 studies)."
+    },
+    {
+      "outcome": "immune function",
       "tier": "Preliminary",
       "certainty": "very_low",
       "score": 22,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 2,
       "grade_reasons": [
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
+        "mechanistic": 25,
+        "preclinical": 35,
         "human": 22,
         "overall": 22,
         "ceiling": 22,
         "n_human_studies": 1,
-        "n_animal_studies": 2,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:35398024",
-        "PMID:37859347",
-        "PMID:22956150"
+        "PMID:36412158",
+        "PMID:35398024"
       ],
       "studies": [
         {
-          "pmid": "37859347",
-          "title": "Potential Risk of Choline Alfoscerate on Isoflurane-Induced Toxicity in Primary Human Astrocytes.",
-          "year": "2024",
+          "pmid": "36412158",
+          "title": "[Clinical and immunological effects of choline alfoscerate in the treatment of amnestic type Mild Cognitive Impairment].",
+          "year": "2022",
           "design": "Unclassified",
           "population": "human",
           "n": null
@@ -165,14 +247,6 @@
           "design": "Animal",
           "population": "animal",
           "n": null
-        },
-        {
-          "pmid": "22956150",
-          "title": "Cholinergic precursors modulate the expression of heme oxigenase-1, p21 during astroglial cell proliferation and differentiation in culture.",
-          "year": "2012",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
         }
       ],
       "effects": {
@@ -186,66 +260,84 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For stress / anxiety, Alpha-GPC has only preliminary or animal evidence (3 studies)."
-    },
-    {
-      "outcome": "recovery / soreness",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
-      "has_human_evidence": true,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 1,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:8030842"
-      ],
-      "studies": [
-        {
-          "pmid": "8030842",
-          "title": "alpha-Glycerophosphocholine in the mental recovery of cerebral ischemic attacks. An Italian multicenter clinical trial.",
-          "year": "1994",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": 2044
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For recovery / soreness, Alpha-GPC shows early but unsettled evidence (1 studies)."
+      "summary": "For immune function, Alpha-GPC has only preliminary or animal evidence (2 studies)."
     }
   ],
   "effects_established": [
-    "cognition"
+    "cognition",
+    "stroke risk"
   ],
-  "effects_promising": [
-    "recovery / soreness"
-  ],
+  "effects_promising": [],
   "effects_emerging": [
-    "stress / anxiety"
+    "immune function"
   ],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506271.081697
+  "_cached_at": 1787607231.215173,
+  "explanation": {
+    "what_it_is": "Alpha-GPC (alpha-glycerophosphocholine, also called choline alfoscerate) is a naturally occurring compound derived from soy lecithin or synthesized in the lab. It is a precursor to acetylcholine, a neurotransmitter critical for memory and attention, and also a component of cell membranes. People typically take it as an oral supplement or, in clinical settings, via injection.",
+    "how_it_works": "Alpha-GPC crosses the blood-brain barrier and provides choline, which the brain uses to synthesize acetylcholine \u2014 a key neurotransmitter for learning, memory formation, and attention. Beyond acetylcholine production, it also supplies phosphatidylcholine, a major structural phospholipid in neuronal membranes, supporting membrane repair and stability. In animal models, it has been shown to modulate microglial activation (immune cells in the brain) and promote neuronal differentiation via the \u03b17 nicotinic acetylcholine receptor. These mechanisms suggest potential neuroprotection, though their relevance to human outcomes remains under investigation.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "A 2023 meta-analysis of human and animal studies examined alpha-GPC's effects on adult-onset cognitive dysfunction. Human evidence includes a 1994 Italian multicenter trial (n=2044) in cerebral ischemic stroke patients showing mental recovery benefit, and additional human studies from 2022 on mild cognitive impairment with amnestic features. Animal studies from 2017, 2022, and 2024 in rodent models observed improvements in memory and neuronal differentiation. The body of evidence, while suggestive, relies on limited independent human trials and a single meta-analysis without external replication.",
+        "why_this_grade": "The grade reflects genuine human evidence of cognitive benefit in specific populations (post-stroke, mild cognitive impairment), but confidence is tempered by the small number of independent human trials (3 identified here) and reliance on a single meta-analysis that has not been independently verified. The precision of the evidence base is also uncertain, as most study abstracts did not report sample sizes."
+      },
+      {
+        "outcome": "stroke risk",
+        "grade": "Moderate",
+        "what_studies_show": "A 2021 observational study (n=977) examined the association between alpha-GPC supplementation and stroke risk over 10 years. The 1994 Italian trial (n=2044) studied mental recovery after acute ischemic stroke in a clinical setting. A 2023 meta-analysis synthesized these and other human and animal studies on alpha-GPC's effects in cerebral ischemia contexts. The retrieved human evidence focuses on post-stroke recovery and long-term stroke association rather than primary stroke prevention.",
+        "why_this_grade": "Moderate evidence reflects documented human studies in stroke-related contexts and a meta-analysis, but consistency is not independently replicated \u2014 only one systematic review exists in the retrieved records. Precision is limited by incomplete sample size reporting across most abstracts, and studies address post-stroke recovery and association rather than direct stroke risk reduction in a preventive setting."
+      },
+      {
+        "outcome": "immune function",
+        "grade": "Preliminary",
+        "what_studies_show": "A 2022 human study (source unclear from abstract) examined clinical and immunological effects of choline alfoscerate in mild cognitive impairment with amnestic features. A 2022 animal study in a rat model observed immunological parameters alongside memory and neuronal changes. Neither study provides detailed sample size or effect magnitude from the abstracts retrieved.",
+        "why_this_grade": "Evidence is graded Preliminary because only one human and one animal study are available in the retrieved records, sample sizes could not be verified from abstracts, and the human evidence is not clearly characterized in terms of study design or outcome specificity. This is too sparse and imprecise to establish confidence in immune effects in humans."
+      }
+    ],
+    "evidence_base": "The research retrieved here is a mix of older human trials (notably the 1994 Italian multicenter study), recent observational and unspecified human studies (2021\u20132022), and recent animal mechanistic work (2022\u20132024). A single 2023 meta-analysis appears to anchor the cognition and stroke-risk grades, but independent replication of its conclusions is not evident in these records. The body is dominated by small human trials and animal models exploring mechanisms; long-term efficacy trials in large, well-defined populations are not evident in the retrieved abstracts.",
+    "emerging_research": "Recent animal studies (2022\u20132024) have begun investigating alpha-GPC's effects on microglial activation and neuroinflammation in Alzheimer's disease models via the \u03b17 nicotinic pathway, and its role in neuronal differentiation in dual-hit stress models. These mechanistic directions suggest investigators are exploring how alpha-GPC might modulate brain immune and repair processes beyond simple acetylcholine restoration. However, these are early-stage preclinical findings, and translation to human neuroinflammatory or neurodegenerative contexts remains unproven.",
+    "open_questions": "Among the retrieved studies, human evidence for cognition and stroke outcomes is concentrated in post-stroke and mild cognitive impairment populations; it is unclear whether benefit extends to cognitively normal aging or other neurological contexts. The studies retrieved do not indicate long-term follow-up beyond the 10-year observational stroke study; most appear shorter in duration. Immune function is represented by only two studies (one human, one animal) with unverified sample sizes, so the specific immune parameters measured and their clinical relevance remain poorly characterized in these records. Note: these observations reflect only the ~40 abstracts retrieved per outcome and do not characterize the full literature in the field.",
+    "caveats": "Alpha-GPC is generally well-tolerated in oral form, but injectable formulations are prescription or research-grade in most countries and carry standard injection risks; clinical use should be supervised. Quality varies among over-the-counter supplements; look for third-party testing. Alpha-GPC may interact with certain medications affecting acetylcholine levels (e.g., anticholinergics, some dementia drugs); consult a clinician before use, especially if you are taking medication or have a history of stroke or seizure. Pregnant and breastfeeding individuals should avoid it pending clearer safety data.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The cognition and stroke-risk evidence rests almost entirely on two large trials from 1994\u20132023, with a single meta-analysis that has not been independently replicated, and most component studies do not report sample sizes in the abstracts, obscuring the true evidentiary base.",
+    "concerns": [
+      {
+        "issue": "Single unreplicated meta-analysis",
+        "detail": "Both 'cognition' and 'stroke risk' grades rely on a 2023 meta-analysis as their primary synthesis. The engine explicitly notes this conclusion is 'not independently replicated or verified.' If that meta-analysis contained methodological flaws (cherry-picked studies, poor risk-of-bias assessment, or inappropriate pooling), the entire Moderate grade collapses. No independent systematic review corroborates it.",
+        "severity": "high"
+      },
+      {
+        "issue": "Dominance of single large historical trial",
+        "detail": "The 1994 clinical trial (n=2044) on ischemic stroke recovery appears in both the cognition and stroke-risk outcome lists. For cognition, only 1 of 9 studies reports sample size; for stroke risk, only 2 of 5 do. This 1994 trial likely dominates both pooled estimates. The trial is 30 years old; contemporary replication is absent, and it predates modern neuroimaging and molecular biomarkers.",
+        "severity": "high"
+      },
+      {
+        "issue": "Missing sample sizes obscure true evidence volume",
+        "detail": "The engine reports sample sizes are missing from most abstracts. For cognition, only 1 of 9 studies reports n; for stroke risk, only 2 of 5 do. The stated median (2044) is driven by one large trial, but the true total participant count across all studies is unstated. Readers cannot assess whether the evidence base represents 3,000 or 15,000 total participants, which materially affects confidence.",
+        "severity": "high"
+      },
+      {
+        "issue": "Animal studies comprise majority of cognition evidence",
+        "detail": "Of the 9 cognition studies, 6 are in animals and only 3 are human. Animal models (rats, mice) do not directly establish clinical efficacy in humans; they establish biological plausibility. Translational failure is common. The human evidence is thus much sparser than the 'Moderate' grade might suggest to a casual reader.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Immune function evidence is purely preliminary and recent",
+        "detail": "The 2 immune-function studies (both 2022, both with unreported sample sizes) consist of 1 animal study and 1 unclassified human study. No sample sizes are extractable. This outcome is correctly graded Preliminary, but it enters the literature with zero prior evidence, making it vulnerable to noise and unlikely to replicate without independent follow-up.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Alpha-GPC is known biochemically to be a choline precursor and phospholipid, supporting acetylcholine synthesis and membrane repair. The proposed mechanism (enhanced cholinergic function, neuroprotection via lipid remodeling) is plausible *in vitro* and in animal models. However, the leap from animal cognition improvement (e.g., reversal of scopolamine-induced amnesia in rats) to human recovery from ischemic stroke is large. Stroke recovery involves complex multi-system remodeling; an acute cholinergic boost is a narrow mechanism for a broad clinical problem. The mechanistic support is stronger for the pre-clinical (animal) data than for the human cognition and stroke claims.",
+    "strongest_counterargument": "A skeptic would note that the cognition and stroke-risk grades rest on a single unreplicated 2023 meta-analysis, itself built largely on a 30-year-old trial (1994) that may not meet modern trial standards (blinding, intention-to-treat, standardized outcomes). The 6 animal cognition studies show plausibility but are not proof of human benefit\u2014translational failure is the rule, not the exception. For stroke risk, the 2021 observational study (n=977) reported an association after 10 years, but the direction and magnitude are not visible in the abstract, and observational data cannot establish causation. Without independent replication of the 2023 meta-analysis and new prospective trials in humans, the evidence rests on a single synthetic analysis of older data.",
+    "what_would_change_the_picture": "An independently conducted systematic review and meta-analysis with explicit risk-of-bias assessment and sensitivity analysis would clarify whether the 2023 conclusions are robust. Alternatively, a large prospective randomized controlled trial (n \u2265 500) in a specific cognitive disorder (e.g., mild cognitive impairment, post-stroke aphasia) with pre-registered outcomes and modern neuropsychological testing would establish human efficacy or refute it.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

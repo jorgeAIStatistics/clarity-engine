@@ -1,20 +1,20 @@
 {
   "name": "Vitamin K2",
   "category": "vitamin",
-  "overall_score": 73,
+  "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 17,
+  "study_count": 27,
   "claims": [
     {
-      "outcome": "inflammation",
+      "outcome": "bone health",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 6,
+      "n_studies": 10,
       "grade_reasons": [
-        "Precision: ~468 participants verified across 2 of 6 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+        "Precision: ~7667 participants verified across 3 of 10 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 3 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -22,64 +22,100 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 3,
+        "n_human_studies": 6,
+        "n_animal_studies": 4,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:37147641",
+        "PMID:23525894",
         "PMID:40721947",
-        "PMID:37477796",
-        "PMID:41201220",
-        "PMID:41100911",
-        "PMID:39466454"
+        "PMID:18830045",
+        "PMID:35711002",
+        "PMID:41538639",
+        "PMID:37257737",
+        "PMID:20177349",
+        "PMID:24136015",
+        "PMID:41268154",
+        "PMID:21575717"
       ],
       "studies": [
         {
-          "pmid": "41100911",
-          "title": "Effects of vitamin K2 and D3 supplementation on epicardial adipose tissue and systemic inflammation: A substudy of the AVADEC trial.",
+          "pmid": "35711002",
+          "title": "Efficacy and safety of vitamin K2 for postmenopausal women with osteoporosis at a long-term follow-up: meta-analysis and systematic review.",
+          "year": "2022",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 6853
+        },
+        {
+          "pmid": "41268154",
+          "title": "The effect of vitamin K2 supplementation on bone turnover biochemical markers in postmenopausal osteoporosis patients: a systematic review and meta-analysis.",
           "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 570
+        },
+        {
+          "pmid": "18830045",
+          "title": "[Vitamin K2].",
+          "year": "2008",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "23525894",
+          "title": "Three-year low-dose menaquinone-7 supplementation helps decrease bone loss in healthy postmenopausal women.",
+          "year": "2013",
           "design": "RCT",
           "population": "human",
-          "n": 388
+          "n": 244
+        },
+        {
+          "pmid": "20177349",
+          "title": "Dietary vitamin K2 supplement improves bone status after lung and heart transplantation.",
+          "year": "2010",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "24136015",
+          "title": "The efficacy of vitamin K2 and calcitriol combination on thalassemic osteopathy.",
+          "year": "2013",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41538639",
+          "title": "Effect of vitamin K and calcium in bone loss in ovariectomized rats.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "37257737",
+          "title": "Neuroprotective effect of Vitamin K2 against gut dysbiosis associated cognitive decline.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "21575717",
+          "title": "Prospective evaluation of Vitamin K2, Raloxifene and their co-administration in osteoporotic rats.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
         },
         {
           "pmid": "40721947",
           "title": "Vitamin K2 inhibits PGE2-mediated osteoblast ferroptosis by upregulation of CBR1 via the Nrf2/Keap1 pathway.",
           "year": "2025",
           "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39466454",
-          "title": "Vitamin K2 Ameliorates Diabetes-Associated Cognitive Decline by Reducing Oxidative Stress and Neuroinflammation.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41201220",
-          "title": "Vitamin K2 Alleviates Metabolic Dysfunction-Associated Steatotic Liver Disease Through Mitochondrial Dysfunction Modulation via Gut Microbiota.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": 80
-        },
-        {
-          "pmid": "37147641",
-          "title": "Vitamin K2 supplementation improves impaired glycemic homeostasis and insulin sensitivity for type 2 diabetes through gut microbiome and fecal metabolites.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37477796",
-          "title": "Vitamin K2 protects against aluminium chloride-mediated neurodegeneration.",
-          "year": "2023",
-          "design": "Animal",
           "population": "animal",
           "n": null
         }
@@ -95,7 +131,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Vitamin K2 has moderate human evidence (6 studies)."
+      "summary": "For bone health, Vitamin K2 has moderate human evidence (10 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -103,24 +139,25 @@
       "certainty": "very_low",
       "score": 22,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 4,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~102 participants across 1 of 3 studies); effect estimate may be unstable."
+        "Precision: ~102 participants verified across 1 of 4 studies; most abstracts omit sample size, so the true total is substantially larger."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 35,
+        "preclinical": 55,
         "human": 22,
         "overall": 22,
         "ceiling": 22,
-        "n_human_studies": 2,
-        "n_animal_studies": 1,
+        "n_human_studies": 1,
+        "n_animal_studies": 3,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:37147641",
         "PMID:40464168",
-        "PMID:39466454"
+        "PMID:39466454",
+        "PMID:36696048"
       ],
       "studies": [
         {
@@ -132,18 +169,26 @@
           "n": 102
         },
         {
+          "pmid": "37147641",
+          "title": "Vitamin K2 supplementation improves impaired glycemic homeostasis and insulin sensitivity for type 2 diabetes through gut microbiome and fecal metabolites.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36696048",
+          "title": "Co-supplementation of Vitamin K2 and Selenium Synergistically Improves Metabolic Status and Reduces Cardiovascular Risk Markers in Dyslipidemic Rabbits.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "39466454",
           "title": "Vitamin K2 Ameliorates Diabetes-Associated Cognitive Decline by Reducing Oxidative Stress and Neuroinflammation.",
           "year": "2024",
           "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "37147641",
-          "title": "Vitamin K2 supplementation improves impaired glycemic homeostasis and insulin sensitivity for type 2 diabetes through gut microbiome and fecal metabolites.",
-          "year": "2023",
-          "design": "Animal",
           "population": "animal",
           "n": null
         }
@@ -159,62 +204,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For blood sugar, Vitamin K2 has only preliminary or animal evidence (3 studies)."
-    },
-    {
-      "outcome": "gut / digestion",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 45,
-        "human": 0,
-        "overall": 45,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 2,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:37147641",
-        "PMID:41201220"
-      ],
-      "studies": [
-        {
-          "pmid": "41201220",
-          "title": "Vitamin K2 Alleviates Metabolic Dysfunction-Associated Steatotic Liver Disease Through Mitochondrial Dysfunction Modulation via Gut Microbiota.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": 80
-        },
-        {
-          "pmid": "37147641",
-          "title": "Vitamin K2 supplementation improves impaired glycemic homeostasis and insulin sensitivity for type 2 diabetes through gut microbiome and fecal metabolites.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For gut / digestion, Vitamin K2 has only preliminary or animal evidence (2 studies)."
+      "summary": "For blood sugar, Vitamin K2 has only preliminary or animal evidence (4 studies)."
     },
     {
       "outcome": "cardiovascular",
@@ -222,18 +212,18 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 6,
+      "n_studies": 8,
       "grade_reasons": [
         "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 35,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
         "n_human_studies": 5,
-        "n_animal_studies": 1,
+        "n_animal_studies": 3,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -242,7 +232,9 @@
         "PMID:31704740",
         "PMID:40464168",
         "PMID:41201220",
-        "PMID:41100911"
+        "PMID:41100911",
+        "PMID:34718756",
+        "PMID:36696048"
       ],
       "studies": [
         {
@@ -292,6 +284,22 @@
           "design": "Animal",
           "population": "animal",
           "n": 80
+        },
+        {
+          "pmid": "36696048",
+          "title": "Co-supplementation of Vitamin K2 and Selenium Synergistically Improves Metabolic Status and Reduces Cardiovascular Risk Markers in Dyslipidemic Rabbits.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "34718756",
+          "title": "Combining phosphate binder therapy with vitamin K2 inhibits vascular calcification in an experimental animal model of kidney failure.",
+          "year": "2022",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
         }
       ],
       "effects": {
@@ -305,16 +313,98 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cardiovascular, Vitamin K2 has moderate human evidence (6 studies)."
+      "summary": "For cardiovascular, Vitamin K2 has moderate human evidence (8 studies)."
+    },
+    {
+      "outcome": "muscle strength",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 5,
+      "grade_reasons": [
+        "Precision: ~346 participants verified across 2 of 5 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 3,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:23525894",
+        "PMID:40464168",
+        "PMID:41538639",
+        "PMID:41843412",
+        "PMID:21575717"
+      ],
+      "studies": [
+        {
+          "pmid": "41843412",
+          "title": "The Effects of Vitamin K2 on Recovery from Muscle-Damaging Resistance Exercise in Young and Older Adults: The TAKEOVER Randomized Controlled Trial.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "23525894",
+          "title": "Three-year low-dose menaquinone-7 supplementation helps decrease bone loss in healthy postmenopausal women.",
+          "year": "2013",
+          "design": "RCT",
+          "population": "human",
+          "n": 244
+        },
+        {
+          "pmid": "40464168",
+          "title": "Vitamin K2 Alleviates Insulin Resistance Associated Skeletal Muscle Atrophy via the AKT/mTOR Signalling Pathway.",
+          "year": "2025",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 102
+        },
+        {
+          "pmid": "41538639",
+          "title": "Effect of vitamin K and calcium in bone loss in ovariectomized rats.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "21575717",
+          "title": "Prospective evaluation of Vitamin K2, Raloxifene and their co-administration in osteoporotic rats.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For muscle strength, Vitamin K2 has moderate human evidence (5 studies)."
     }
   ],
   "effects_established": [
-    "inflammation",
-    "cardiovascular"
+    "bone health",
+    "cardiovascular",
+    "muscle strength"
   ],
-  "effects_promising": [
-    "gut / digestion"
-  ],
+  "effects_promising": [],
   "effects_emerging": [
     "blood sugar"
   ],
@@ -342,5 +432,76 @@
       "J39.473D"
     ]
   },
-  "_cached_at": 1787506319.970913
+  "_cached_at": 1787607423.625841,
+  "explanation": {
+    "what_it_is": "Vitamin K2, chemically known as menaquinone (molecular formula C\u2083\u2086H\u2084\u2088O\u2082), is a fat-soluble vitamin produced by bacteria in the gut and found in fermented foods like natto, cheese, and certain meats. Unlike vitamin K1 (phylloquinone), which is abundant in leafy greens and primarily involved in blood clotting, K2 is distributed to tissues throughout the body and accumulates in bone and vascular tissue. People typically obtain it through diet or take it as a supplement, most commonly in the form of menaquinone-7 (MK-7).",
+    "how_it_works": "Vitamin K2 acts as a cofactor for gamma-carboxyglation, an enzymatic process that activates specific proteins in bone and blood vessels. Two key proteins depend on this: osteocalcin in bone tissue and matrix Gla protein in vascular tissue. Osteocalcin, once K2-activated, helps bind calcium into the bone mineral matrix; matrix Gla protein helps prevent calcium deposition in soft tissues like arteries. K2 also appears to influence insulin signaling pathways (particularly AKT/mTOR) and may modulate inflammation and oxidative stress in skeletal muscle and metabolic tissues, though these mechanisms are less well established in humans.",
+    "outcome_detail": [
+      {
+        "outcome": "bone health",
+        "grade": "Moderate",
+        "what_studies_show": "A 2022 meta-analysis of 6,853 postmenopausal women with osteoporosis found efficacy and safety over long-term follow-up; a 2025 systematic review in 570 postmenopausal osteoporosis patients examined bone turnover markers; a 2013 randomized trial (n=244) showed three-year low-dose menaquinone-7 supplementation helped decrease bone loss in healthy postmenopausal women; and a 2010 RCT demonstrated dietary K2 supplement improved bone status after lung and heart transplantation. Additional support comes from clinical trial evidence in thalassemic osteopathy and a 2008 systematic review.",
+        "why_this_grade": "Six human studies including meta-analyses and RCTs provide reasonable evidence of benefit for bone health, particularly in postmenopausal women. However, only three primary human studies were retrieved, below the threshold for the strongest tier, and inconsistency across trials has not yet been fully resolved by pooled analysis, keeping the grade at Moderate rather than Strong."
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Preliminary",
+        "what_studies_show": "A single 2025 human study (n=102) found that vitamin K2 alleviates insulin resistance associated with skeletal muscle atrophy via AKT/mTOR signaling. Three animal studies from 2023\u20132024 showed K2 supplementation improves glycemic homeostasis and insulin sensitivity in type 2 diabetes models, reduces metabolic dysfunction when co-supplemented with selenium, and ameliorates diabetes-associated cognitive decline.",
+        "why_this_grade": "Only one human study (102 participants) is available in the retrieved records, with most evidence coming from animal models. This minimal human data means the effect in people remains unproven and preliminary; animal findings are promising but do not yet establish efficacy in clinical use."
+      },
+      {
+        "outcome": "cardiovascular",
+        "grade": "Moderate",
+        "what_studies_show": "Five human studies provide the basis: a 2025 RCT (n=388) examined effects of K2 and D3 on epicardial adipose tissue and systemic inflammation; a 2023 clinical trial (n=400) studied K2 and D3 supplementation in severe coronary artery calcification; two 2020\u20132021 RCTs (n=132 each) compared vitamin K antagonists with newer anticoagulants in hemodialysis and atrial fibrillation patients; and a 2025 study (n=102) found K2 involvement in insulin resistance pathways relevant to metabolic cardiovascular risk. Three animal studies support mitochondrial and metabolic mechanisms.",
+        "why_this_grade": "Five human studies across diverse cardiovascular outcomes (inflammation, coronary calcification, anticoagulation, metabolic risk) exist, but no pooled meta-analysis has confirmed agreement among them. The heterogeneity and lack of synthesis prevent elevation to Strong; the human evidence and biological plausibility support Moderate."
+      },
+      {
+        "outcome": "muscle strength",
+        "grade": "Moderate",
+        "what_studies_show": "A 2026 RCT examined effects of vitamin K2 on recovery from muscle-damaging resistance exercise in young and older adults; a 2025 human study (n=102) showed K2 alleviates insulin resistance and skeletal muscle atrophy via AKT/mTOR signaling; and a 2013 RCT (n=244) in postmenopausal women included muscle-related outcomes over three years. Two animal studies (2011, 2026) tested K2 alone and in combination with calcium on bone and muscle outcomes in osteoporotic models.",
+        "why_this_grade": "Three human studies provide evidence, including an upcoming 2026 RCT and mechanistic evidence of K2's role in muscle protein synthesis. However, sample sizes verified are around 346 participants across retrievable data, and no formal meta-analysis has confirmed consistency among the trials, so the grade remains Moderate pending synthesis."
+      }
+    ],
+    "evidence_base": "The research is dominated by human studies (13 of 21 records provided), with most trials conducted in the past decade, particularly 2013 onwards. Prominent designs include randomized controlled trials in postmenopausal women (bone and cardiovascular outcomes), systematic reviews and meta-analyses (especially for bone health), and smaller mechanistic studies in metabolic disease. Animal models (8 records) support pathways in muscle, bone, and metabolic regulation but do not directly prove human efficacy. The overall evidence tier is Moderate: sufficient human data exists to suggest benefit in bone and cardiovascular health and muscle outcomes, but inconsistency between trials and limited pooled analysis prevent a Strong designation.",
+    "emerging_research": "Recent work (2025\u20132026) is exploring K2's role in insulin resistance and skeletal muscle atrophy through AKT/mTOR signaling, suggesting potential applications beyond bone health in metabolic disease and aging-related muscle loss. Co-supplementation strategies pairing K2 with vitamin D3 and selenium are being tested in cardiovascular and metabolic conditions. A 2026 RCT specifically examining K2's effects on recovery from muscle-damaging exercise in both young and older adults represents a novel direction in sports physiology and aging.",
+    "open_questions": "Among the studies retrieved here, most human trials focus on postmenopausal women; representation in younger populations, men, and non-osteoporotic individuals is limited. Trial durations for muscle strength are not explicitly detailed in all records retrieved, and the 2026 RCT suggests this is an active gap being addressed. For blood sugar outcomes, only one human study (n=102) appears in the records, leaving the human dose, duration, and population largely uncharacterized. Note: these gaps describe only what is visible in the ~40 abstracts provided per outcome; you cannot infer what research exists in the broader literature.",
+    "caveats": "Vitamin K2 is fat-soluble and requires adequate dietary fat for absorption; taking it with a meal containing fat improves bioavailability. People taking warfarin or other vitamin K antagonists (used for blood thinning) should consult their physician before supplementing, as K2 may interfere with anticoagulation efficacy\u2014the retrieved studies show mixed results in hemodialysis and atrial fibrillation patients on anticoagulants. Supplement quality and MK-7 content vary; third-party testing is advisable. Pregnant women and those with specific bleeding disorders should seek medical guidance before use.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base is small, recent, and lacks consistent pooled analyses across all outcomes; no outcome has more than 6 human studies with reported sample sizes, and cardiovascular and muscle strength grades rest on unexplained heterogeneity rather than demonstrated agreement.",
+    "concerns": [
+      {
+        "issue": "Severe underreporting of sample sizes",
+        "detail": "Across all outcomes, the majority of studies do not report sample size in the abstracts provided. For bone health, only 3 of 10 studies report n; for blood sugar, only 1 of 4; for cardiovascular, 6 of 8; for muscle strength, only 2 of 5. This makes it impossible to weight studies by precision or detect whether a single large trial is driving the grade. The engine notes that 'true total is substantially larger,' but that inflated number is speculative and cannot be verified from the records.",
+        "severity": "high"
+      },
+      {
+        "issue": "No pooled analysis for cardiovascular or muscle strength outcomes",
+        "detail": "The engine explicitly flags 'Inconsistency: several studies exist but no pooled analysis confirms they agree' for both cardiovascular (8 studies) and muscle strength (5 studies). These outcomes are graded Moderate despite this unresolved heterogeneity. A reader cannot tell whether the studies agree on direction or magnitude of effect, or whether one outlier is being balanced against null findings.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood sugar evidence is fragmentary and largely preclinical",
+        "detail": "The blood sugar outcome (graded Preliminary) rests on only 1 human study with n=102 (unclassified design, 2025) and 3 animal studies. The single human study title mentions 'Insulin Resistance Associated Skeletal Muscle Atrophy via the AKT/mTOR Signaling' \u2014 this is a mechanistic study, not a clinical glycemic outcome trial. Two of the 4 studies are unclassified, making design assessment impossible. This outcome grade should not be mistaken for evidence of clinical benefit on blood sugar control.",
+        "severity": "high"
+      },
+      {
+        "issue": "Bone health evidence relies heavily on older systematic reviews",
+        "detail": "Of the 6 human bone health studies, 3 are systematic reviews or meta-analyses (2008, 2022, 2025), leaving only 3 primary human trials (2010, 2013 RCT, 2013 clinical trial). The 2008 systematic review is now 18 years old. Without access to the full content of the reviews, it is unclear whether they reached consensus on efficacy or flagged the same limitations now visible (small trials, selective populations like postmenopausal women, short follow-up).",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Selective population focus may limit generalizability",
+        "detail": "Multiple studies explicitly target postmenopausal women with osteoporosis, cardiac patients, or transplant recipients (titles include 'postmenopausal women with osteoporosis,' 'after lung and heart transplantation,' 'thalassemic osteopathy'). The bone health grade is driven by evidence in a narrow demographic. Efficacy in broader or younger populations remains unknown from these records.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Vitamin K2 is proposed to act as a cofactor for carboxylation of osteocalcin and matrix Gla protein, which regulate bone mineralization and vascular calcification. This mechanism plausibly connects to bone health and cardiovascular outcomes. However, the blood sugar and muscle strength claims rest on more speculative mechanistic studies (e.g., 'AKT/mTOR Signaling,' 'ferroptosis inhibition') that do not directly measure the proposed enzyme function; the leap from preclinical pathway modulation to clinical metabolic benefit is large and unvalidated in humans.",
+    "strongest_counterargument": "The cardiovascular and muscle strength grades are assigned despite documented heterogeneity and no pooled consensus. A skeptic would note that if studies disagreed on direction or magnitude, 'Moderate' would be an inflated grade reflecting only the average narrative tone of abstracts, not evidence of effect. For blood sugar, the single human trial is mechanistic and uncontrolled; it does not measure fasting glucose, HbA1c, or insulin sensitivity in a clinical population. The blood sugar grade may reflect the engine's tendency to credit any human trial over animal work, not clinical utility.",
+    "what_would_change_the_picture": "A pre-specified meta-analysis or network meta-analysis with consistent outcome reporting (e.g., bone mineral density change in postmenopausal women, arterial stiffness or calcification progression in cardiovascular patients, handgrip or leg strength in aging) would resolve whether observed effects are consistent across studies or driven by heterogeneity. A large, adequately powered RCT of vitamin K2 supplementation in a non-selective population (e.g., general adult sample) with clinical endpoints (fracture incidence, cardiovascular events, mortality) over 2+ years would directly test whether the mechanistic benefits translate to clinically meaningful outcomes.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

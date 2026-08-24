@@ -1,35 +1,156 @@
 {
   "name": "BCAAs",
   "category": "amino",
-  "overall_score": 73,
+  "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 7,
+  "study_count": 12,
   "claims": [
+    {
+      "outcome": "muscle growth",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~54 participants across 1 of 3 studies); effect estimate may be unstable."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:40356541",
+        "PMID:37189033",
+        "PMID:36678201"
+      ],
+      "studies": [
+        {
+          "pmid": "37189033",
+          "title": "Branched-chain amino acids supplementation improves liver frailty index in frail compensated cirrhotic patients: a randomized controlled trial.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 54
+        },
+        {
+          "pmid": "40356541",
+          "title": "Supplementation with specific branched-chain amino acids (BCAAs) affects mouse sperm parameters and testicular apoptotic gene expression.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36678201",
+          "title": "Branched-Chain Amino Acids and Di-Alanine Supplementation in Aged Mice: A Translational Study on Sarcopenia.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For muscle growth, BCAAs has moderate human evidence (3 studies)."
+    },
+    {
+      "outcome": "muscle strength",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 35,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:28870476",
+        "PMID:36678201"
+      ],
+      "studies": [
+        {
+          "pmid": "28870476",
+          "title": "Branched-chain amino acid supplementation and exercise-induced muscle damage in exercise recovery: A\u00a0meta-analysis of randomized clinical trials.",
+          "year": "2017",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36678201",
+          "title": "Branched-Chain Amino Acids and Di-Alanine Supplementation in Aged Mice: A Translational Study on Sarcopenia.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For muscle strength, BCAAs has moderate human evidence (2 studies)."
+    },
     {
       "outcome": "recovery / soreness",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 5,
       "grade_reasons": [
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
         "n_human_studies": 4,
-        "n_animal_studies": 0,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:36235655",
         "PMID:28060208",
         "PMID:34072718",
-        "PMID:28870476"
+        "PMID:28870476",
+        "PMID:36678201"
       ],
       "studies": [
         {
@@ -63,6 +184,14 @@
           "design": "Systematic review",
           "population": "human",
           "n": null
+        },
+        {
+          "pmid": "36678201",
+          "title": "Branched-Chain Amino Acids and Di-Alanine Supplementation in Aged Mice: A Translational Study on Sarcopenia.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
         }
       ],
       "effects": {
@@ -76,87 +205,41 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For recovery / soreness, BCAAs has moderate human evidence (4 studies)."
+      "summary": "For recovery / soreness, BCAAs has moderate human evidence (5 studies)."
     },
     {
-      "outcome": "blood sugar",
+      "outcome": "exercise performance",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
       "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
         "mechanistic": 25,
-        "preclinical": 0,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 0,
+        "n_human_studies": 1,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:35031039",
-        "PMID:31313139"
+        "PMID:32751732",
+        "PMID:42166751"
       ],
       "studies": [
         {
-          "pmid": "35031039",
-          "title": "Meta-analysis links dietary branched-chain amino acids to metabolic health in rodents.",
-          "year": "2022",
-          "design": "Meta-analysis",
+          "pmid": "42166751",
+          "title": "Effect of Branched-Chain Amino Acid Supplementation Alone or Combined With Tryptophan or Methionine on Appetite Control and Related Health Outcomes in Older Adu",
+          "year": "2026",
+          "design": "RCT",
           "population": "human",
-          "n": null
+          "n": 308
         },
-        {
-          "pmid": "31313139",
-          "title": "Branched-Chain Amino Acids and Seizures: A Systematic Review of the Literature.",
-          "year": "2019",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For blood sugar, BCAAs has moderate human evidence (2 studies)."
-    },
-    {
-      "outcome": "exercise performance",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:32751732"
-      ],
-      "studies": [
         {
           "pmid": "32751732",
           "title": "Ergogenic Effect of BCAAs and L-Alanine Supplementation: Proof-of-Concept Study in a Murine Model of Physiological Exercise.",
@@ -177,19 +260,90 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For exercise performance, BCAAs has only preliminary or animal evidence (1 studies)."
+      "summary": "For exercise performance, BCAAs has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
+    "muscle growth",
+    "muscle strength",
     "recovery / soreness",
-    "blood sugar"
-  ],
-  "effects_promising": [
     "exercise performance"
   ],
+  "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506470.899014
+  "_cached_at": 1787608004.979712,
+  "explanation": {
+    "what_it_is": "Branched-chain amino acids (BCAAs) are three essential amino acids\u2014leucine, isoleucine, and valine\u2014named for their branched molecular structure. Unlike most amino acids, BCAAs are metabolized primarily in muscle rather than the liver, making them unique in amino acid biochemistry. They are found naturally in protein-rich foods (meat, dairy, eggs, legumes) and sold as supplements in powder, capsule, and liquid forms, often used by athletes and older adults.",
+    "how_it_works": "BCAAs, especially leucine, activate mTOR, a cellular signaling pathway central to muscle protein synthesis\u2014the process by which the body builds and repairs muscle tissue. They are also substrates for muscle energy during exercise and may reduce levels of serotonin precursors that contribute to central fatigue during prolonged activity. Because muscles readily take up BCAAs from the bloodstream and use them preferentially during and after exercise, supplementation increases their availability when demand is high. This mechanism plausibly supports muscle recovery, reduced soreness, and adaptation to training, though the magnitude of effect in humans remains modest.",
+    "outcome_detail": [
+      {
+        "outcome": "muscle growth",
+        "grade": "Moderate",
+        "what_studies_show": "A 2023 randomized controlled trial in 54 frail cirrhotic patients found that BCAA supplementation improved a liver frailty index, suggesting a benefit in a specific disease population. Two animal studies, one in 2025 on mouse sperm and testicular parameters and one in 2023 on aged mice with sarcopenia, also reported favorable changes, though findings in animal models do not directly translate to human muscle hypertrophy.",
+        "why_this_grade": "The evidence base includes only one human trial with a modest sample (n=54), and it was conducted in frail cirrhotic patients rather than healthy individuals or athletes seeking muscle gain. The two supporting animal studies cannot confirm efficacy in humans. Sample size and study precision are limited, and the human evidence is disease-specific rather than demonstrating generalized muscle growth."
+      },
+      {
+        "outcome": "muscle strength",
+        "grade": "Moderate",
+        "what_studies_show": "A 2017 meta-analysis of human studies on BCAAs and exercise-induced muscle damage concluded that supplementation may support recovery and reduce soreness, with implications for strength maintenance. A 2023 animal study in aged mice reported improvements in strength-related markers following BCAA and di-alanine supplementation, suggesting benefits in age-related muscle loss.",
+        "why_this_grade": "The human evidence rests on a single meta-analysis without independently verified sample sizes or replication by other systematic reviews, capping certainty at moderate. The animal model provides supporting mechanistic insight but cannot confirm direct strength gains in humans. Imprecision in reporting limits confidence in the magnitude of effect."
+      },
+      {
+        "outcome": "recovery / soreness",
+        "grade": "Moderate",
+        "what_studies_show": "Multiple human studies\u2014including two meta-analyses (2021 and 2017) and two systematic reviews (2022 and 2018)\u2014examined BCAAs and muscle damage markers or soreness after resistance and endurance exercise. These reviews collectively suggest that BCAA supplementation may attenuate muscle soreness and some damage markers in athletes. A 2023 animal study in aged mice also showed benefits in recovery-related outcomes.",
+        "why_this_grade": "Although four human studies (mostly reviews of multiple trials) support a benefit, exact sample sizes could not be verified from the abstracts, leaving precision unconfirmed. The consistency of findings across reviews is promising, but no single large trial has independently replicated the meta-analytic conclusion with full transparency. The evidence suggests a modest, real effect in exercise recovery, but certainty is capped below strong due to these limitations."
+      },
+      {
+        "outcome": "exercise performance",
+        "grade": "Moderate",
+        "what_studies_show": "A 2026 randomized controlled trial in 308 participants tested BCAA supplementation alone or combined with tryptophan or methionine on appetite and related parameters. A 2020 animal proof-of-concept study in mice reported an ergogenic (performance-enhancing) effect of BCAAs combined with L-alanine under conditions of physiologic stress.",
+        "why_this_grade": "The human trial (n=308) provides a reasonably sized evidence base, and the animal model supports a mechanistic link between BCAA supplementation and performance. However, no pooled analysis or meta-analysis of human trials confirms that these studies agree in direction or magnitude of effect, and the 2026 trial emphasizes appetite alongside performance, leaving the performance-specific finding unclear. Inconsistency across studies prevents a higher grade."
+      }
+    ],
+    "evidence_base": "The literature on BCAAs is predominantly human and includes multiple meta-analyses and systematic reviews focused on exercise recovery and muscle damage, largely published in the past decade. Most human evidence comes from trials in athletes and active individuals during resistance or endurance training, often with follow-up periods measured in days to weeks. Animal studies provide mechanistic support through models of aging and physiologic stress. Overall, the evidence is moderate in quantity and quality\u2014sufficient to suggest real but modest effects, but limited by small individual trial sizes, heterogeneity in outcome measurement, and disease or population-specific findings (e.g., frail cirrhotic patients) that do not generalize to all users.",
+    "emerging_research": "Recent work (2025\u20132026) is exploring BCAAs in combination with other amino acids (tryptophan, methionine, L-alanine) and in specific populations such as frail or aged individuals, suggesting a shift toward personalized supplementation strategies. Studies in aging-related muscle loss (sarcopenia) and recovery from metabolic stress are expanding. However, these remain small or early-stage, and human trials combining BCAAs with co-supplements are just beginning to yield results.",
+    "open_questions": "Among the studies retrieved here, most human evidence focuses on acute exercise recovery rather than long-term muscle growth or sustained performance gains; whether BCAAs drive meaningful changes over months of training in healthy individuals remains unclear from the provided records. The human evidence is concentrated in athletes and older or frail populations, leaving gaps for other groups (e.g., sedentary adults, younger non-athletes). No study in the retrieved set appears to extend beyond 12 weeks, so durability of benefits and optimal dosing schedules are not addressed in these records. Finally, it is important to note that this represents a sample of approximately 40 abstracts per outcome; other research exists in the broader literature that is not captured here.",
+    "caveats": "BCAAs are generally safe and well tolerated, but long-term safety at high doses has not been extensively studied. Individuals with branched-chain ketoaciduria (a rare genetic disorder) should avoid BCAAs; those with hepatic encephalopathy should use them only under medical supervision, as the evidence base is small and disease-specific. Quality varies among commercial supplements; third-party testing is advisable. BCAAs are less effective than whole-protein sources (e.g., whey, casein) for stimulating muscle protein synthesis, so they are best viewed as a supplement, not a replacement for adequate dietary protein intake.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base consists almost entirely of secondary syntheses (meta-analyses and systematic reviews) and animal studies; only one primary human RCT per outcome is available, making it impossible to verify whether the pooled conclusions from reviews actually hold when primary data are examined.",
+    "concerns": [
+      {
+        "issue": "Reliance on secondary syntheses without primary data transparency",
+        "detail": "For recovery/soreness (the largest outcome group), 4 of 5 studies are meta-analyses or systematic reviews, yet sample sizes are not extractable from the abstracts and no pooled effect can be verified. This means the grade reflects the conclusions of prior syntheses, not direct access to underlying trial data. A single flawed meta-analysis could drive the entire grade without visibility into its eligibility criteria, risk of bias assessment, or whether studies were actually combined appropriately.",
+        "severity": "high"
+      },
+      {
+        "issue": "Acute scarcity of primary human trials per outcome",
+        "detail": "Muscle growth is graded on 1 human RCT (n=54) plus 2 animal studies. Muscle strength is graded on 1 meta-analysis plus 1 animal study \u2014 no independent human primary trial is visible. Exercise performance has 1 human RCT (n=308) plus 1 animal study. This means each clinical outcome rests on either a single trial or a single secondary analysis, making the grade vulnerable to publication bias or study-specific quirks.",
+        "severity": "high"
+      },
+      {
+        "issue": "Animal-to-human inference gap unaddressed",
+        "detail": "For muscle growth and strength, animal studies comprise 50% or more of the evidence base. The records do not indicate whether mouse/animal outcomes (sperm parameters, sarcopenia models in aged mice) translate to human muscle hypertrophy or strength. No mechanistic bridge is provided in the abstracts; the leap from aged mouse supplementation to human athletic muscle gain is inferential, not empirical.",
+        "severity": "high"
+      },
+      {
+        "issue": "Inconsistency flagged but not investigated",
+        "detail": "The exercise performance outcome is marked 'Inconsistency: several studies exist but no pooled analysis confirms they agree.' However, only 2 studies are reported (n=308 RCT and 1 animal study), so it is unclear what disagreement is being flagged or whether it is real. No detail is provided on how results differed, preventing assessment of whether the disagreement is clinically meaningful or methodological.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Publication year concentration and absence of recent large trials",
+        "detail": "Most outcomes cluster in 2017\u20132023, with a 2026 study visible only for exercise performance. The single largest human RCT (n=308, 2026) is for exercise performance \u2014 a mechanistically peripheral outcome for BCAAs. Muscle growth and strength, the theoretically primary outcomes, remain graded on much smaller or secondary evidence. No recent large primary trials for muscle growth or strength appear in the retrieved records.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "BCAAs (leucine, isoleucine, valine) have a clear biochemical role in mTOR activation and protein synthesis, which plausibly links to muscle growth. However, the clinical leap is substantial: humans consume whole proteins and other amino acids that also stimulate protein synthesis, and BCAAs as an isolated supplement must show benefit *beyond* baseline amino acid intake. The records show one RCT on muscle growth (n=54), but its title mentions 'liver frailty index in frail compensated cirrhot[ics]' \u2014 a hepatic outcome, not muscle hypertrophy \u2014 creating uncertainty about whether the study actually tested the claimed mechanism in the intended population.",
+    "strongest_counterargument": "A well-informed skeptic would note that the human evidence base rests on isolated small-to-medium RCTs and secondary syntheses of unknown quality, with no large, recent, pre-registered primary trial demonstrating a consistent benefit for muscle growth or strength in healthy or athletic populations. The 2026 exercise performance RCT (n=308) is the largest human study, yet exercise performance is mechanistically tangential to BCAA-specific action. Taken together, the 'Moderate' grade may reflect the volume and recency of secondary literature rather than robust primary evidence, and a single well-designed large RCT in the target population could shift or deflate the grade.",
+    "what_would_change_the_picture": "A pre-registered, adequately-powered RCT (n \u2265 100 per arm) in a homogeneous population (e.g., resistance-trained athletes or older adults with low muscle mass) comparing BCAA supplementation to isocaloric control (not placebo alone) with muscle mass (DXA or MRI), strength (1-RM or isokinetic dynamometry), and protein synthesis biomarkers as pre-specified primary outcomes, published in the next 2\u20133 years, would provide the primary evidence currently absent. Secondary analysis of whether meta-analyses of older, smaller trials remain robust after exclusion of high risk-of-bias studies would also clarify confidence in current grades.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

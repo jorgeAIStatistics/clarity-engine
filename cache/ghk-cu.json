@@ -13,8 +13,7 @@
       "has_human_evidence": false,
       "n_studies": 7,
       "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
-        "Imprecision: modest verified sample (~24 participants across 1 of 7 studies); effect estimate may be unstable."
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
       "layers": {
         "mechanistic": 30,
@@ -23,7 +22,7 @@
         "overall": 55,
         "ceiling": 55,
         "n_human_studies": 0,
-        "n_animal_studies": 6,
+        "n_animal_studies": 7,
         "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
@@ -88,8 +87,8 @@
           "pmid": "2244543",
           "title": "Effects of glycyl-histidyl-lysyl chelated Cu(II) on ferritin dependent lipid peroxidation.",
           "year": "1990",
-          "design": "Unclassified",
-          "population": "unknown",
+          "design": "In vitro",
+          "population": "animal",
           "n": null
         }
       ],
@@ -107,24 +106,98 @@
       "summary": "For tendon / tissue healing, GHK-Cu has only preliminary or animal evidence (7 studies)."
     },
     {
-      "outcome": "inflammation",
+      "outcome": "stress / anxiety",
       "tier": "Preliminary",
       "certainty": "very_low",
       "score": 22,
-      "has_human_evidence": true,
-      "n_studies": 5,
+      "has_human_evidence": false,
+      "n_studies": 4,
       "grade_reasons": [
+        "Indirectness: no clearly human-population evidence detected.",
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
-        "human": 22,
-        "overall": 22,
-        "ceiling": 22,
-        "n_human_studies": 1,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
         "n_animal_studies": 3,
-        "note": "Human evidence present: human certainty sets the overall score."
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:42084774",
+        "PMID:38879894",
+        "PMID:31809714",
+        "PMID:41511598"
+      ],
+      "studies": [
+        {
+          "pmid": "38879894",
+          "title": "The glycyl-l-histidyl-l-lysine-Cu",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "31809714",
+          "title": "Protective effects of GHK-Cu in bleomycin-induced pulmonary fibrosis via anti-oxidative stress and anti-inflammation pathways.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "42084774",
+          "title": "The GHK-Cu delays aging in\u00a0Caenorhabditis elegans\u00a0via coordinated regulation of mitochondrial function and activation of DAF-16/SKN-1 pathways.",
+          "year": "2026",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "41511598",
+          "title": "Anxiolytic Effect of GHK-PGP Peptide and Its Structural Analogues in a Test with Punished Behavior.",
+          "year": "2025",
+          "design": "Unclassified",
+          "population": "unknown",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For stress / anxiety, GHK-Cu has only preliminary or animal evidence (4 studies)."
+    },
+    {
+      "outcome": "inflammation",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 5,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 5,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
         "PMID:38879894",
@@ -134,14 +207,6 @@
         "PMID:2244543"
       ],
       "studies": [
-        {
-          "pmid": "42084774",
-          "title": "The GHK-Cu delays aging in\u00a0Caenorhabditis elegans\u00a0via coordinated regulation of mitochondrial function and activation of DAF-16/SKN-1 pathways.",
-          "year": "2026",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
         {
           "pmid": "38879894",
           "title": "The glycyl-l-histidyl-l-lysine-Cu",
@@ -170,8 +235,16 @@
           "pmid": "2244543",
           "title": "Effects of glycyl-histidyl-lysyl chelated Cu(II) on ferritin dependent lipid peroxidation.",
           "year": "1990",
+          "design": "In vitro",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "42084774",
+          "title": "The GHK-Cu delays aging in\u00a0Caenorhabditis elegans\u00a0via coordinated regulation of mitochondrial function and activation of DAF-16/SKN-1 pathways.",
+          "year": "2026",
           "design": "Unclassified",
-          "population": "unknown",
+          "population": "animal",
           "n": null
         }
       ],
@@ -187,129 +260,15 @@
       },
       "headline_effect": null,
       "summary": "For inflammation, GHK-Cu has only preliminary or animal evidence (5 studies)."
-    },
-    {
-      "outcome": "cardiovascular",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": true,
-      "n_studies": 3,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 35,
-        "human": 22,
-        "overall": 22,
-        "ceiling": 22,
-        "n_human_studies": 1,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:42084774",
-        "PMID:2244543",
-        "PMID:27517151"
-      ],
-      "studies": [
-        {
-          "pmid": "42084774",
-          "title": "The GHK-Cu delays aging in\u00a0Caenorhabditis elegans\u00a0via coordinated regulation of mitochondrial function and activation of DAF-16/SKN-1 pathways.",
-          "year": "2026",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "27517151",
-          "title": "The tri-peptide GHK-Cu complex ameliorates lipopolysaccharide-induced acute lung injury in mice.",
-          "year": "2016",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "2244543",
-          "title": "Effects of glycyl-histidyl-lysyl chelated Cu(II) on ferritin dependent lipid peroxidation.",
-          "year": "1990",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cardiovascular, GHK-Cu has only preliminary or animal evidence (3 studies)."
-    },
-    {
-      "outcome": "anemia / iron status",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
-        "human": 0,
-        "overall": 20,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 0,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:2244543"
-      ],
-      "studies": [
-        {
-          "pmid": "2244543",
-          "title": "Effects of glycyl-histidyl-lysyl chelated Cu(II) on ferritin dependent lipid peroxidation.",
-          "year": "1990",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For anemia / iron status, GHK-Cu has only preliminary or animal evidence (1 studies)."
     }
   ],
   "effects_established": [],
   "effects_promising": [
-    "tendon / tissue healing"
+    "tendon / tissue healing",
+    "stress / anxiety",
+    "inflammation"
   ],
-  "effects_emerging": [
-    "inflammation",
-    "cardiovascular",
-    "anemia / iron status"
-  ],
+  "effects_emerging": [],
   "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
@@ -332,5 +291,70 @@
       "CS-0015088"
     ]
   },
-  "_cached_at": 1787506209.3769522
+  "_cached_at": 1787607052.646719,
+  "explanation": {
+    "what_it_is": "GHK-Cu is a copper-bound tripeptide\u2014three amino acids (glycine, histidine, and lysine) linked together and chelated (bonded) to a copper ion. It occurs naturally in small amounts in human plasma and saliva, and in higher concentrations in collagen-rich tissues. For research and clinical use, it is synthesized as a powder or solution for injection or topical application.",
+    "how_it_works": "GHK-Cu works primarily through its copper ion, which acts as a cofactor for enzymes involved in collagen cross-linking, antioxidant defense, and tissue remodeling. Specifically, copper is essential for lysyl oxidase and cytochrome c oxidase\u2014enzymes that stabilize collagen fibers and generate cellular energy. The tripeptide carrier appears to facilitate copper delivery to tissues and may itself modulate growth factors and matrix metalloproteinases, enzymes that both break down and rebuild extracellular matrix. Additionally, GHK-Cu may reduce oxidative stress by supporting superoxide dismutase and other antioxidant pathways, potentially dampening inflammatory signals.",
+    "outcome_detail": [
+      {
+        "outcome": "tendon / tissue healing",
+        "grade": "Preliminary",
+        "what_studies_show": "All seven studies demonstrating effects on tissue healing were conducted in animal models (mice, rats, C. elegans) and in vitro systems. A 2015 rat ACL (anterior cruciate ligament) reconstruction study (n=24) showed the tripeptide-copper complex transiently improved healing outcomes. A 2017 study in mice found GHK-Cu-liposomes accelerated scald wound healing by promoting cell proliferation and angiogenesis. Earlier work (2000) identified that the complex stimulates matrix metalloproteinase-2 expression, a key enzyme in tissue remodeling. No human clinical trials on tendon or wound healing were retrieved.",
+        "why_this_grade": "Evidence is entirely animal-derived and does not include human participants or human-tissue studies. Animal models, while mechanistically informative, often fail to translate reliably to human efficacy and tolerability. Until human trials are conducted, this outcome remains preliminary."
+      },
+      {
+        "outcome": "stress / anxiety",
+        "grade": "Preliminary",
+        "what_studies_show": "Three animal studies and one unclassified study (likely animal-based on abstract data) were retrieved. A 2024 study examined glycyl-L-histidyl-L-lysine-Cu effects in an animal model; a 2020 study noted anti-stress effects in the context of bleomycin-induced pulmonary fibrosis in mice; a 2026 study in C. elegans indicated GHK-Cu delays aging via mitochondrial and stress-response pathways; and a 2025 study reported anxiolytic effects of a GHK-PGP peptide analog in a punished-behavior test. No human anxiety or stress trials were identified.",
+        "why_this_grade": "No human-population evidence exists in the retrieved records. All studies are in animal or model organisms, making it impossible to confirm whether effects translate to human psychology or neurochemistry. Additionally, sample sizes could not be verified from abstracts, preventing confirmation of statistical precision."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Preliminary",
+        "what_studies_show": "Five animal and in vitro studies addressed inflammation. A 2020 study demonstrated that GHK-Cu exerted protective effects in bleomycin-induced pulmonary fibrosis in mice via anti-oxidative stress and anti-inflammatory pathways. A 2016 study showed the tripeptide-copper complex ameliorated lipopolysaccharide-induced acute lung injury in mice. A 1990 in vitro study examined effects on ferritin-dependent lipid peroxidation. A 2026 C. elegans study and a 2024 animal study also indicated anti-inflammatory mechanisms. No human inflammatory disease trials were retrieved.",
+        "why_this_grade": "All evidence is derived from animal models or in vitro systems with no human studies. While the results suggest anti-inflammatory activity through oxidative stress reduction, animal findings do not reliably predict human anti-inflammatory efficacy. Human trials would be needed to establish clinical relevance."
+      }
+    ],
+    "evidence_base": "The research base consists entirely of animal models (primarily mice and rats) and in vitro/simple organism studies (C. elegans), spanning from 1990 to 2026. No human clinical trials on any of the three outcomes were retrieved in the provided records. The studies are mechanistically focused, investigating cellular pathways, enzyme activity, and tissue responses rather than clinical endpoints. This animal-heavy, human-absent pattern means confidence in real-world human efficacy remains very low; the compound's effects in human biology are not yet established.",
+    "emerging_research": "Recent work (2024\u20132026) has expanded GHK-Cu investigation into aging and mitochondrial function, with C. elegans studies suggesting it may coordinate stress-response and energy metabolism pathways. A 2025 study examined structural analogs of GHK peptides (e.g., GHK-PGP) for anxiolytic activity, hinting at structure\u2013activity refinement. These directions are early-stage and remain in animal or model-organism systems, so their relevance to human therapeutics is not yet clear.",
+    "open_questions": "Among the retrieved studies, no human trials are present for any outcome, making it impossible to know whether animal findings translate to clinical efficacy or safety in people. The retrieved records do not include long-term follow-up studies in humans (partly because human studies are absent); the longest animal studies appear to be acute or subacute interventions. Notably, the retrieved sample includes only animal models and does not show evidence for outcomes in specific human populations (e.g., older adults, athletes with tendon injury, or patients with chronic inflammatory disease), so we cannot yet characterize which people, if any, might benefit.",
+    "caveats": "GHK-Cu is an injectable peptide or research chemical often sold through unregulated channels; purity, sterility, and bioavailability are not verified for commercial products. No published human safety or toxicity data were provided in the retrieved records, so side effects and drug interactions are unknown. Individuals considering use should consult a physician and be aware that efficacy in humans has not been demonstrated and that off-label peptide injections carry infection and allergic-reaction risks.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "No human evidence exists for any claimed outcome; all three evidence bases consist entirely of animal or in vitro studies with minimal sample size reporting and no extractable pooled effects, making translation to human efficacy speculative.",
+    "concerns": [
+      {
+        "issue": "Zero human evidence across all outcomes",
+        "detail": "All 16 unique studies retrieved (7 for tendon healing, 4 for stress/anxiety, 5 for inflammation) are animal or in vitro designs. The stress/anxiety outcome includes 2 studies with 'Unclassified' design status, suggesting ambiguity in classification itself. No randomized controlled trials, observational studies, or case series in humans are represented in this retrieved set.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sample sizes unreported and unverifiable",
+        "detail": "Of 16 studies, only 1 reports a numerical sample size (n=24 for the 2015 rat ACL study). The engine explicitly flags 'sample sizes could not be verified from the abstracts' for stress/anxiety and inflammation outcomes. This means statistical power, precision of estimates, and vulnerability to small-study bias cannot be assessed\u2014a fundamental requirement for evaluating preliminary evidence.",
+        "severity": "high"
+      },
+      {
+        "issue": "No pooled effects extractable; evidence cannot be synthesized",
+        "detail": "The engine notes 'pooled effect: none extractable' for all three outcomes. This indicates either extreme heterogeneity in study designs/outcomes, absence of quantitative reporting in abstracts, or that the small n-values preclude meta-analysis. Without pooled estimates, readers cannot evaluate the magnitude or consistency of effect, which is essential for a Preliminary grade.",
+        "severity": "high"
+      },
+      {
+        "issue": "Potential citation overlap masking evidence sparseness",
+        "detail": "The 2020 study on bleomycin-induced pulmonary fibrosis appears in both the tendon/tissue healing set and the inflammation set, and the 2024 and 2026 C. elegans/stress studies appear in both anxiety and inflammation sets. This overlap may artificially inflate the appearance of breadth; the unique mechanistic evidence may be considerably thinner than the outcome counts suggest.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Publication date clustering and recency skew in stress/anxiety",
+        "detail": "The stress/anxiety outcome shows 3 of 4 studies published in 2024\u20132026, suggesting recent interest but no longitudinal validity. Tendon healing spans 1990\u20132020 (30 years) but stress/anxiety is concentrated in the last 2 years, risking trend-chasing and higher likelihood of unreplicated preliminary findings. The 2025 and 2026 studies have not yet had time for independent replication.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The proposed mechanism\u2014copper-mediated antioxidant activity and stimulation of matrix metalloproteinase-2 and collagen remodeling\u2014is plausible in vitro and in rodent wound models. However, the leap from acute injury repair in mice (bleomycin lung injury, scald wounds, ACL transection) to chronic human conditions (stress, anxiety, systemic inflammation, tendon healing) is substantial. Rodent acute injury models do not test whether GHK-Cu crosses the blood-brain barrier in humans, achieves therapeutic concentrations in target tissues, or modulates the complex neuroendocrine and immune axes relevant to anxiety and stress. The mechanism is biochemically coherent but does not bridge to the clinical outcomes claimed.",
+    "strongest_counterargument": "A skeptic would note that GHK-Cu is an unregulated grey-market injectable with zero human safety or efficacy data in the retrieved set, making any recommendation premature. The animal studies, while showing some positive signals in narrow injury models, do not demonstrate that systemic GHK-Cu exposure improves healing or mental health in humans\u2014nor do they address bioavailability, off-target toxicity, or long-term safety. The absence of human RCTs, combined with the compound's grey-market status and regulatory unapproval, means claims of clinical benefit rest entirely on extrapolation from small animal studies, which is a notoriously poor predictor of human outcome.",
+    "what_would_change_the_picture": "A phase II randomized controlled trial in humans with a well-defined condition (e.g., rotator cuff tendinopathy or generalized anxiety disorder) measuring both primary efficacy outcomes (functional improvement, symptom scales) and pharmacokinetics/safety over 8\u201312 weeks would establish whether animal signals translate. Absent that, or at minimum a prospective open-label or small RCT with pre-registered endpoints, the evidence base cannot support clinical claims beyond 'preliminary signals warrant investigation.'",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

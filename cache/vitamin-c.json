@@ -1,19 +1,19 @@
 {
   "name": "Vitamin C",
   "category": "vitamin",
-  "overall_score": 79,
-  "tier": "Moderate",
-  "study_count": 15,
+  "overall_score": 95,
+  "tier": "Strong",
+  "study_count": 56,
   "claims": [
     {
-      "outcome": "inflammation",
+      "outcome": "immune function",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 6,
+      "n_studies": 9,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~79 participants across 2 of 6 studies); effect estimate may be unstable."
+        "Limited human evidence: 6 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -21,17 +21,138 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 6,
+        "n_human_studies": 9,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:32337708",
+        "PMID:34967304",
+        "PMID:19223675",
+        "PMID:24862607",
+        "PMID:41692856",
+        "PMID:31035414",
+        "PMID:15528034",
+        "PMID:39237620",
+        "PMID:11960947"
+      ],
+      "studies": [
+        {
+          "pmid": "34967304",
+          "title": "Effect of Vitamin C Supplements on Respiratory Tract Infections: A Systematic Review and Meta-Analysis.",
+          "year": "2022",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 2758
+        },
+        {
+          "pmid": "32337708",
+          "title": "Vitamin C supplementation for prevention and treatment of pneumonia.",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 2774
+        },
+        {
+          "pmid": "31035414",
+          "title": "The Effect of Vitamin C (Ascorbic Acid) in the Treatment of Patients with Cancer: A Systematic Review.",
+          "year": "2019",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 19
+        },
+        {
+          "pmid": "41692856",
+          "title": "High-dose vitamin C supplementation in patients undergoing allogeneic hematopoietic stem cell transplantation: A pilot randomized, triple-blind, placebo-control",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39237620",
+          "title": "Liposomal delivery enhances absorption of vitamin C into plasma and leukocytes: a double-blind, placebo-controlled, randomized trial.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": 27
+        },
+        {
+          "pmid": "24862607",
+          "title": "Vitamin C supplementation has no effect on American bullfrog's immune response.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "19223675",
+          "title": "Vitamin C supplementation and salivary immune function following exercise-heat stress.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "15528034",
+          "title": "Hypoxia/reoxygenation and vitamin C intake influence NO synthesis and antioxidant defenses of neutrophils.",
+          "year": "2004",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "11960947",
+          "title": "Influence of vitamin C supplementation on oxidative and immune changes after an ultramarathon.",
+          "year": "2002",
+          "design": "RCT",
+          "population": "human",
+          "n": 15
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For immune function, Vitamin C has moderate human evidence (9 studies)."
+    },
+    {
+      "outcome": "stress / anxiety",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 8,
+      "grade_reasons": [
+        "Precision: ~274 participants verified across 2 of 8 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 8,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:38010274",
+        "PMID:34476568",
+        "PMID:19223675",
+        "PMID:24862607",
         "PMID:38820340",
         "PMID:34122682",
         "PMID:39519608",
-        "PMID:39209360",
-        "PMID:40871671",
-        "PMID:41174501"
+        "PMID:39209360"
       ],
       "studies": [
         {
@@ -43,12 +164,221 @@
           "n": null
         },
         {
+          "pmid": "38010274",
+          "title": "Vitamin C supplementation alleviates hypercortisolemia caused by chronic stress.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39519608",
+          "title": "The Administration of Resveratrol and Vitamin C Reduces Oxidative Stress in Postmenopausal Women-A Pilot Randomized Clinical Trial.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39209360",
+          "title": "Effect of vitamin C and hawthorn beverage formula on blood pressure and oxidative stress in heat-exposed workers: a cluster-randomized controlled trial.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "34476568",
+          "title": "Vitamin C supplementation promotes mental vitality in healthy young adults: results from a cross-sectional analysis and a randomized, double-blind, placebo-cont",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": 214
+        },
+        {
+          "pmid": "34122682",
+          "title": "The Effect of Combined Vitamin C and Vitamin E Supplementation on Oxidative Stress Markers in Women with Endometriosis: A Randomized, Triple-Blind Placebo-Contr",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": 60
+        },
+        {
+          "pmid": "24862607",
+          "title": "Vitamin C supplementation has no effect on American bullfrog's immune response.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "19223675",
+          "title": "Vitamin C supplementation and salivary immune function following exercise-heat stress.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For stress / anxiety, Vitamin C has moderate human evidence (8 studies)."
+    },
+    {
+      "outcome": "inflammation",
+      "tier": "Strong",
+      "certainty": "high",
+      "score": 90,
+      "has_human_evidence": true,
+      "n_studies": 28,
+      "grade_reasons": [
+        "Consistency: 12 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 90,
+        "overall": 90,
+        "ceiling": 90,
+        "n_human_studies": 28,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:38820340",
+        "PMID:34122682",
+        "PMID:39519608",
+        "PMID:39209360",
+        "PMID:40871671",
+        "PMID:41174501",
+        "PMID:38518058",
+        "PMID:28063380",
+        "PMID:19003734",
+        "PMID:40532258",
+        "PMID:39527016",
+        "PMID:36774847",
+        "PMID:33905041",
+        "PMID:16248984",
+        "PMID:34699040",
+        "PMID:33472962",
+        "PMID:26482865",
+        "PMID:37401190",
+        "PMID:36308079",
+        "PMID:33397446",
+        "PMID:26178731",
+        "PMID:15528034",
+        "PMID:30332942",
+        "PMID:37612864",
+        "PMID:30118241",
+        "PMID:40584396",
+        "PMID:41034912",
+        "PMID:41687812"
+      ],
+      "studies": [
+        {
+          "pmid": "40532258",
+          "title": "Oral vitamin C supplementation decreased low-density lipoprotein in adults on hemodialysis: A systematic review and meta-analysis.",
+          "year": "2025",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 549
+        },
+        {
+          "pmid": "38820340",
+          "title": "Vitamin C and E antioxidant supplementation may significantly reduce pain symptoms in endometriosis: A systematic review and meta-analysis of randomized control",
+          "year": "2024",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "38518058",
+          "title": "The effects of vitamin C supplementation in the critically ill patients outcomes: A systematic review and meta-analysis of randomized controlled trials.",
+          "year": "2024",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36774847",
+          "title": "The association between vitamin C dietary intake and its serum levels with anthropometric indices: A systematic review and meta-analysis.",
+          "year": "2023",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "33472962",
+          "title": "Effects of Vitamin C Supplementation on Glycemic Control and Cardiovascular Risk Factors in People With Type 2 Diabetes: A GRADE-Assessed Systematic Review and ",
+          "year": "2021",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "30332942",
+          "title": "A Meta-analysis of Randomized Control Trials: The Impact of Vitamin C Supplementation on Serum CRP and Serum hs-CRP Concentrations.",
+          "year": "2018",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 446
+        },
+        {
+          "pmid": "41687812",
+          "title": "Effect of vitamin C supplementation on post-exercise recovery: A systematic review and meta-analysis of randomized double-blind placebo trials.",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 52
+        },
+        {
           "pmid": "41174501",
           "title": "Efficacy of vitamin C in COVID-19 management: a systematic review and meta-analysis.",
           "year": "2025",
           "design": "Systematic review",
           "population": "human",
           "n": 19
+        },
+        {
+          "pmid": "39527016",
+          "title": "Effects of Vitamin C Supplements on Clinical Outcomes and Hospitalization Duration for Patients with Coronavirus Disease 2019 (COVID-19): A Systematic Review an",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 3429
+        },
+        {
+          "pmid": "40584396",
+          "title": "Efficacy of vitamin C supplementation during pregnancy in the prevention of preterm birth: a systematic review and meta-analysis.",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 567
+        },
+        {
+          "pmid": "41034912",
+          "title": "The impact of vitamin C supplementation on the perioperative outcomes after total hip and knee arthroplasty: a systematic review and meta-analysis.",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 852
+        },
+        {
+          "pmid": "33397446",
+          "title": "Efficacy of vitamin C supplementation as an adjunct in the non-surgical management of periodontitis: a systematic review.",
+          "year": "2021",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
         },
         {
           "pmid": "40871671",
@@ -70,6 +400,38 @@
           "pmid": "39209360",
           "title": "Effect of vitamin C and hawthorn beverage formula on blood pressure and oxidative stress in heat-exposed workers: a cluster-randomized controlled trial.",
           "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "37401190",
+          "title": "Inter-individual variability in redox and performance responses after antioxidant supplementation: A randomized double blind crossover study.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 22
+        },
+        {
+          "pmid": "37612864",
+          "title": "Eight Weeks of Vitamin C Supplementation Restores the Lost Correlation between Serum Leptin and C-reactive Protein (CRP) in Patients with Type 2 Diabetes; A Ran",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 70
+        },
+        {
+          "pmid": "34699040",
+          "title": "Antioxidants Supplementation in Acute Amitriptyline Abuse for Pain.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": 132
+        },
+        {
+          "pmid": "36308079",
+          "title": "Vitamin C supplementation attenuates oxidative stress and improves erythrocyte deformability in cardiac surgery with cardiopulmonary bypass.",
+          "year": "2022",
           "design": "RCT",
           "population": "human",
           "n": null
@@ -81,62 +443,70 @@
           "design": "RCT",
           "population": "human",
           "n": 60
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For inflammation, Vitamin C has moderate human evidence (6 studies)."
-    },
-    {
-      "outcome": "tendon / tissue healing",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Imprecision: modest verified sample (~98 participants across 1 of 2 studies); effect estimate may be unstable.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:33725178",
-        "PMID:35368012"
-      ],
-      "studies": [
+        },
         {
-          "pmid": "35368012",
-          "title": "Clinical effect of vitamin C supplementation on bone healing: A systematic review.",
-          "year": "2022",
-          "design": "Systematic review",
+          "pmid": "33905041",
+          "title": "Vitamin C decreases reduced glutathione in chronic haemodialysis patients: a pilot, randomised, double-blind trial.",
+          "year": "2021",
+          "design": "RCT",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "33725178",
-          "title": "Does vitamin C supplementation improve rotator cuff healing? A preliminary study.",
-          "year": "2022",
+          "pmid": "30118241",
+          "title": "Effects of aerobic exercise and vitamin C supplementation on rhinitis symptoms in allergic rhinitis patients.",
+          "year": "2018",
           "design": "RCT",
           "population": "human",
-          "n": 98
+          "n": 10
+        },
+        {
+          "pmid": "26482865",
+          "title": "Vitamin C and E supplementation prevents some of the cellular adaptations to endurance-training in humans.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "26178731",
+          "title": "A randomized controlled trial of green tea catechins in protection against ultraviolet radiation-induced cutaneous inflammation.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": 25
+        },
+        {
+          "pmid": "19003734",
+          "title": "Protective effect of vitamin C on oxidative stress: a randomized controlled trial.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": 244
+        },
+        {
+          "pmid": "16248984",
+          "title": "Dietary vitamin C down-regulates inflammatory gene expression in apoE4 smokers.",
+          "year": "2005",
+          "design": "RCT",
+          "population": "human",
+          "n": 10
+        },
+        {
+          "pmid": "15528034",
+          "title": "Hypoxia/reoxygenation and vitamin C intake influence NO synthesis and antioxidant defenses of neutrophils.",
+          "year": "2004",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "28063380",
+          "title": "Hydroxytyrosol supplementation increases vitamin C levels in vivo. A human volunteer trial.",
+          "year": "2017",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 14
         }
       ],
       "effects": {
@@ -150,18 +520,17 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For tendon / tissue healing, Vitamin C has moderate human evidence (2 studies)."
+      "summary": "For inflammation, Vitamin C is well-supported by human trials (28 studies)."
     },
     {
-      "outcome": "cardiovascular",
+      "outcome": "iron status",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 11,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Limited human evidence: 5 primary human studies and 6 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -169,89 +538,32 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 4,
+        "n_human_studies": 11,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:39519608",
-        "PMID:39209360",
-        "PMID:40871671",
-        "PMID:27529239"
+        "PMID:33136134",
+        "PMID:34476568",
+        "PMID:32337708",
+        "PMID:15846696",
+        "PMID:33932734",
+        "PMID:28063380",
+        "PMID:19223675",
+        "PMID:31035414",
+        "PMID:36118282",
+        "PMID:24792921",
+        "PMID:15528034"
       ],
       "studies": [
         {
-          "pmid": "27529239",
-          "title": "Vitamin C and Heart Health: A Review Based on Findings from Epidemiologic Studies.",
-          "year": "2016",
+          "pmid": "36118282",
+          "title": "Efficacy of Vitamin C Supplementation on Chronic Obstructive Pulmonary Disease (COPD): A Systematic Review and Meta-Analysis.",
+          "year": "2022",
           "design": "Meta-analysis",
           "population": "human",
-          "n": null
+          "n": 487
         },
-        {
-          "pmid": "40871671",
-          "title": "Anti-Inflammatory, Antithrombotic and Antioxidant Efficacy and Synergy of a High-Dose Vitamin C Supplement Enriched with a Low Dose of Bioflavonoids; In Vitro A",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39519608",
-          "title": "The Administration of Resveratrol and Vitamin C Reduces Oxidative Stress in Postmenopausal Women-A Pilot Randomized Clinical Trial.",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39209360",
-          "title": "Effect of vitamin C and hawthorn beverage formula on blood pressure and oxidative stress in heat-exposed workers: a cluster-randomized controlled trial.",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cardiovascular, Vitamin C has moderate human evidence (4 studies)."
-    },
-    {
-      "outcome": "mood / depression",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 3,
-      "grade_reasons": [
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:34808597",
-        "PMID:34476568",
-        "PMID:33932734"
-      ],
-      "studies": [
         {
           "pmid": "33932734",
           "title": "The effect of vitamin C supplementation on mood status in adults: a systematic review and meta-analysis of randomized controlled clinical trials.",
@@ -261,12 +573,36 @@
           "n": 836
         },
         {
-          "pmid": "34808597",
-          "title": "Collagen and Vitamin C Supplementation Increases Lower Limb Rate of Force Development.",
-          "year": "2022",
-          "design": "RCT",
+          "pmid": "32337708",
+          "title": "Vitamin C supplementation for prevention and treatment of pneumonia.",
+          "year": "2020",
+          "design": "Meta-analysis",
           "population": "human",
-          "n": 50
+          "n": 2774
+        },
+        {
+          "pmid": "24792921",
+          "title": "Effect of vitamin C on endothelial function in health and disease: a systematic review and meta-analysis of randomised controlled trials.",
+          "year": "2014",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "15846696",
+          "title": "Vitamin C supplementation in pregnancy.",
+          "year": "2005",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 766
+        },
+        {
+          "pmid": "31035414",
+          "title": "The Effect of Vitamin C (Ascorbic Acid) in the Treatment of Patients with Cancer: A Systematic Review.",
+          "year": "2019",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 19
         },
         {
           "pmid": "34476568",
@@ -275,6 +611,38 @@
           "design": "RCT",
           "population": "human",
           "n": 214
+        },
+        {
+          "pmid": "33136134",
+          "title": "The Efficacy and Safety of Vitamin C for Iron Supplementation in Adult Patients With Iron Deficiency Anemia: A Randomized Clinical Trial.",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": 426
+        },
+        {
+          "pmid": "19223675",
+          "title": "Vitamin C supplementation and salivary immune function following exercise-heat stress.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "15528034",
+          "title": "Hypoxia/reoxygenation and vitamin C intake influence NO synthesis and antioxidant defenses of neutrophils.",
+          "year": "2004",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "28063380",
+          "title": "Hydroxytyrosol supplementation increases vitamin C levels in vivo. A human volunteer trial.",
+          "year": "2017",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 14
         }
       ],
       "effects": {
@@ -288,14 +656,14 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For mood / depression, Vitamin C has moderate human evidence (3 studies)."
+      "summary": "For iron status, Vitamin C has moderate human evidence (11 studies)."
     }
   ],
   "effects_established": [
+    "immune function",
+    "stress / anxiety",
     "inflammation",
-    "tendon / tissue healing",
-    "cardiovascular",
-    "mood / depression"
+    "iron status"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -323,5 +691,81 @@
       "Ascorbicap"
     ]
   },
-  "_cached_at": 1787506315.9672692
+  "_cached_at": 1787607405.420762,
+  "explanation": {
+    "what_it_is": "Vitamin C (l-ascorbic acid, C\u2086H\u2088O\u2086) is a water-soluble micronutrient essential for human health that humans cannot synthesize and must obtain from food or supplements. It occurs naturally in citrus fruits, berries, and leafy greens, and is widely available as oral tablets, powders, capsules, and intravenous formulations. In the body, it exists in reduced (active) and oxidized (dehydroascorbate) forms, cycling between them as it donates and accepts electrons.",
+    "how_it_works": "Vitamin C functions primarily as a reducing agent and electron donor in numerous enzymatic reactions. It is essential for collagen synthesis, carnitine metabolism, and the hydroxylation of proline and lysine residues in connective tissues. As a potent antioxidant, it neutralizes free radicals by donating electrons, helping to regenerate other antioxidants like vitamin E. It enhances the absorption of non-heme iron by reducing ferric iron (Fe\u00b3\u207a) to the more bioavailable ferrous form (Fe\u00b2\u207a), and plays roles in immune cell function\u2014particularly supporting white blood cell activity and antibody production. These mechanisms underpin its effects on inflammation, stress response, immune defense, and iron metabolism.",
+    "outcome_detail": [
+      {
+        "outcome": "immune function",
+        "grade": "Moderate",
+        "what_studies_show": "A 2022 meta-analysis of 2,758 participants found that vitamin C supplementation reduced respiratory tract infection incidence in people under physical stress (such as athletes), though the effect was smaller or absent in the general population. A 2020 meta-analysis of 2,774 participants examined vitamin C for pneumonia prevention and treatment. A 2026 RCT evaluated high-dose vitamin C in patients undergoing stem cell transplantation, and a 2024 double-blind RCT (n=27) showed that liposomal vitamin C delivery improved plasma and leukocyte absorption compared to standard forms. A 2019 systematic review of 19 studies examined vitamin C in cancer patients. Overall, the evidence shows modest benefit for respiratory infections under specific conditions and improved bioavailability with certain delivery methods.",
+        "why_this_grade": "Nine human studies were retrieved, including multiple meta-analyses suggesting modest immune effects particularly in stressed populations, but the total evidence base falls short of the 'Strong' tier threshold. The limitation reflects that despite multiple pooled analyses, the number of independent primary trials and the consistency of effects across diverse populations remain limited."
+      },
+      {
+        "outcome": "stress / anxiety",
+        "grade": "Moderate",
+        "what_studies_show": "Recent RCTs (2024) demonstrate that vitamin C supplementation can alleviate hypercortisolemia (elevated cortisol) caused by chronic stress, and a 2022 RCT (n=214) found that vitamin C promoted mental vitality in healthy young adults. A 2024 RCT showed vitamin C reduced oxidative stress in postmenopausal women, and another (2024) found it lowered blood pressure and oxidative stress markers in heat-exposed workers. A 2021 RCT (n=60) showed combined vitamin C and E supplementation reduced oxidative stress in women with endometriosis. A 2024 meta-analysis examined vitamin C and E together for pain and stress-related symptoms. Studies focus on cortisol reduction and oxidative stress as mechanistic links to stress and anxiety.",
+        "why_this_grade": "Eight human studies were retrieved; however, among the records provided, only 2 studies report exact sample sizes (n=214 and n=60), representing ~274 verified participants across those two trials. Most other abstracts omit sample size information, preventing precise assessment of the true total participant count. A single meta-analysis exists but no independent replication is evident in the retrieved records, holding the grade at Moderate rather than Strong."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Strong",
+        "what_studies_show": "Twenty-eight human studies were retrieved, including 12 independent meta-analyses and systematic reviews showing consistent reduction in inflammatory markers. A 2025 meta-analysis (n=549) found oral vitamin C decreased low-density lipoprotein in hemodialysis patients. A 2024 meta-analysis found vitamin C and E reduced pain symptoms in endometriosis (a condition with significant inflammatory component). A 2024 meta-analysis of critically ill patients showed favorable outcomes on inflammatory markers. A 2023 meta-analysis examined vitamin C intake and serum levels in relation to inflammatory indicators. A 2021 meta-analysis demonstrated effects on glycemic control and cardiovascular risk factors (inflammation-related) in type 2 diabetes. A 2018 meta-analysis (n=446) specifically measured impact on serum CRP and other inflammatory markers, showing significant reductions. Multiple additional reviews converge on anti-inflammatory effects across diverse populations and conditions.",
+        "why_this_grade": "Strong grade is supported by convergence: 12 independent meta-analyses and systematic reviews all point toward the same conclusion (anti-inflammatory effects), meeting the consistency threshold for top-tier evidence. The evidence is adequately powered and drawn from randomized trials and observational studies spanning diverse clinical populations (hemodialysis, critically ill, type 2 diabetes, endometriosis)."
+      },
+      {
+        "outcome": "iron status",
+        "grade": "Moderate",
+        "what_studies_show": "Eleven human studies were retrieved, including six meta-analyses. A 2022 meta-analysis examined vitamin C supplementation in chronic obstructive pulmonary disease (COPD). A 2021 meta-analysis (n=836) assessed vitamin C's effect on mood status. A 2020 meta-analysis (n=2,774) covered vitamin C for pneumonia prevention and treatment. A 2014 meta-analysis examined vitamin C's effects on endothelial function. A 2005 meta-analysis (n=766) studied vitamin C supplementation in pregnancy. A 2019 systematic review of 19 studies evaluated vitamin C in cancer patients. Five additional primary studies appear to address iron-related outcomes, though specific sample sizes and findings are not detailed in the records provided.",
+        "why_this_grade": "Five primary human studies and six pooled analyses (meta-analyses/systematic reviews) were retrieved, which falls below the threshold for the top evidence tier. The evidence is present and suggestive but limited in quantity and synthesis replication to achieve a Strong rating."
+      }
+    ],
+    "evidence_base": "The research base is exclusively human studies (zero animal studies among those retrieved), dominated by randomized controlled trials and meta-analyses published primarily from 2014 onwards, with a cluster of recent studies from 2023\u20132026. Inflammation is the best-characterized outcome, supported by 12 convergent meta-analyses; immune function, stress/anxiety, and iron status rely on smaller numbers of independent trials and typically 1\u20132 pooled syntheses each. Overall, the evidence reflects a mature field of clinical research on an essential nutrient, with modern trials increasingly examining delivery methods (e.g., liposomal formulations) and diverse populations (critically ill, athletes, postmenopausal women, patients with specific diseases). This translates to moderately high confidence for inflammation and immune effects under specific conditions, with emerging refinement of populations and delivery mechanisms.",
+    "emerging_research": "Recent trials (2024\u20132026) focus on optimizing bioavailability through liposomal and novel delivery systems, with early evidence that encapsulation enhances plasma and leukocyte absorption. A 2026 trial is investigating high-dose intravenous vitamin C in the severe stress context of allogeneic stem cell transplantation. Combination studies (vitamin C + E, vitamin C + hawthorn) are exploring synergistic effects on oxidative stress and blood pressure regulation. These directions remain preliminary and are not yet established as standard clinical practice.",
+    "open_questions": "Among the studies retrieved here, most trials are relatively short in duration, with no long-term follow-up data visible (the records do not show trials extending beyond several months). The immune function and stress/anxiety outcomes rely on studies in specific populations (athletes, heat-exposed workers, transplant patients, endometriosis); whether effects generalize across broader populations is unclear from the provided records. For iron status, the retrieved studies were not systematically focused on iron bioavailability or anemia treatment as primary outcomes\u2014the link between vitamin C supplementation and actual iron status improvement is suggested but not extensively detailed in these abstracts. Note: you have access to approximately 40 abstracts per outcome; significant literature may exist beyond these records.",
+    "caveats": "Vitamin C is water-soluble and excess amounts are excreted in urine, making toxicity rare at typical supplement doses; however, very high intakes (>2,000 mg/day chronically) may increase kidney stone risk in susceptible individuals and can cause diarrhea or nausea. People with hemochromatosis, G6PD deficiency, or those prone to kidney stones should consult a healthcare provider before supplementing. Oral vitamin C absorption plateaus at ~100\u2013200 mg per dose; higher intakes show diminishing returns, making megadosing inefficient for most people.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base conflates vitamin C's role as a bioavailability enhancer for iron with direct clinical effects on iron status, and most outcomes lack pooled effect sizes despite meta-analyses being present.",
+    "concerns": [
+      {
+        "issue": "No extractable pooled effects despite meta-analyses",
+        "detail": "Across all four outcomes, the engine notes 'pooled effect: none extractable' despite 6 meta-analyses for immune function, 1 for stress/anxiety, 12 for inflammation, and 5 for iron status. This means the records contain synthesis work but no usable quantified summary estimate\u2014readers cannot verify the magnitude or precision of claimed effects, making 'Strong' and 'Moderate' grades difficult to assess against actual effect sizes.",
+        "severity": "high"
+      },
+      {
+        "issue": "Immune function grade relies on small, heterogeneous RCTs",
+        "detail": "Five of six primary RCT studies report sample sizes of 15\u201327 participants; only one reaches n\u2265100. The 2015 study on American bullfrogs is flagged as human but is clearly animal work and appears misclassified. With such small trials and a mix of mechanistic (oxidative stress, neutrophil function) and clinical (respiratory infection, cancer) outcomes, a single large study or publication bias could reverse the pooled result. The two large meta-analyses (n=2758, 2774) address respiratory tract infections and pneumonia specifically\u2014narrower than 'immune function' as a category.",
+        "severity": "high"
+      },
+      {
+        "issue": "Stress/anxiety outcome severely underpowered and underreported",
+        "detail": "Only 2 of 8 studies report sample size (n=60, 214), yet the engine estimates 'substantially larger' true total. The median reported is 214, but this reflects only those two studies; the other six abstracts omit n entirely, preventing assessment of statistical power or heterogeneity. A 2024 meta-analysis exists but is single and unconfirmed\u2014no replication, and one co-authored RCT in the same year alleviates 'hypercortisolemia' without reporting sample size. The outcome mixes endometriosis pain, postmenopausal oxidative stress, and 'mental vitality'\u2014conceptually distant constructs.",
+        "severity": "high"
+      },
+      {
+        "issue": "Inflammation outcome lacks clarity on effect direction and clinical relevance",
+        "detail": "The inflammation outcome is 'Strong' based on 12 meta-analyses converging, but the records do not show pooled effect sizes, confidence intervals, or even whether all syntheses agree on direction or magnitude. Sample sizes span 10 to 3,429, with a median of 70 across primary RCTs. Studies address CRP, hemodialysis LDL, post-exercise recovery, COVID-19, and preterm birth\u2014mechanistically and clinically heterogeneous. The largest synthesis (n=3,429) concerns hospitalization duration, not inflammation biomarkers. Without quantified effect estimates, 'Strong' cannot be verified as justified by the data.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Iron status outcome conflates enhancer role with clinical efficacy",
+        "detail": "The 2020 RCT (n=426) is titled 'The Efficacy and Safety of Vitamin C for Iron Supplementation,' which tests co-administration (a bioavailability mechanism) rather than vitamin C alone on iron repletion. Meta-analyses on pneumonia, COPD, mood, and pregnancy are listed but none are specifically about iron status, suggesting outcome labeling misalignment. Only 4 primary RCTs are available, making the 'Moderate' grade rest largely on 5 meta-analyses whose relevance to iron status is opaque from these records.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Minimal time trend; very recent data may be subject to publication lag artifacts",
+        "detail": "The stress/anxiety and inflammation outcomes include numerous 2024\u20132026 studies, sometimes without sample size reporting or full titles. Recent rapid publication in this space (e.g., three 2024 RCTs on stress/anxiety) may reflect selective reporting of positive findings before peer-review scrutiny. Older literature (2002\u20132008) for immune function and iron status may reflect historical bias toward positive results.",
+        "severity": "low"
+      }
+    ],
+    "mechanism_check": "Vitamin C's antioxidant properties and role in collagen synthesis are biochemically sound and support reduced inflammation and improved iron bioavailability. However, the leap from oxidative stress markers or in vitro immune cell function to clinical outcomes (respiratory infections, iron-deficiency anemia resolution, anxiety reduction) is substantial. Most retrieved abstracts address surrogate markers (CRP, oxidative stress markers, cortisol levels) rather than clinical endpoints (infection incidence, symptom remission, hospitalization). For iron status specifically, the evidence conflates vitamin C's enhancer function (proven mechanism) with independent clinical efficacy, which are not the same claim.",
+    "strongest_counterargument": "A skeptic would note that pooled effect sizes are unavailable despite the presence of multiple meta-analyses, making it impossible to assess whether effects are clinically meaningful or driven by publication bias and heterogeneous, small RCTs. For immune function and stress/anxiety, most primary trials are under 30 participants; two large syntheses on respiratory infections cannot be generalized to 'immune function.' For inflammation, 'Strong' appears assigned without a quantified pooled estimate, raising the possibility that convergence of meta-analyses reflects shared methodological bias rather than true effect. The inclusion of irrelevant studies (bullfrogs, combinations with uncontrolled agents like hawthorn or resveratrol) suggests loose inclusion criteria and outcome definition.",
+    "what_would_change_the_picture": "Publication of actual pooled effect sizes with 95% confidence intervals for each outcome, stratified by study quality (risk of bias). A large, adequately powered (n\u2265500) randomized trial on vitamin C and clinically relevant immune endpoints (infection incidence, hospitalization) independent of exercise stress or extreme conditions would clarify whether observed effects translate to real-world populations.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

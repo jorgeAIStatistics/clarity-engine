@@ -1,9 +1,9 @@
 {
   "name": "Ginkgo Biloba",
   "category": "nootropic",
-  "overall_score": 70,
+  "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 4,
+  "study_count": 17,
   "claims": [
     {
       "outcome": "cognition",
@@ -11,24 +11,28 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 7,
       "grade_reasons": [
-        "Limited human evidence: 0 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Limited human evidence: 1 primary human studies and 4 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 0,
+        "n_human_studies": 6,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:25114079",
         "PMID:27940086",
-        "PMID:32658034"
+        "PMID:32658034",
+        "PMID:20236541",
+        "PMID:28918573",
+        "PMID:25163996",
+        "PMID:9611693"
       ],
       "studies": [
         {
@@ -48,10 +52,107 @@
           "n": 561
         },
         {
+          "pmid": "20236541",
+          "title": "Effects of Ginkgo biloba in dementia: systematic review and meta-analysis.",
+          "year": "2010",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 2372
+        },
+        {
           "pmid": "27940086",
           "title": "Effects of Ginkgo biloba on dementia: An overview of systematic reviews.",
           "year": "2017",
           "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "25163996",
+          "title": "Ginkgo biloba extract EGb 761\u00ae in children with ADHD.",
+          "year": "2014",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "9611693",
+          "title": "Ginkgo biloba for antidepressant-induced sexual dysfunction.",
+          "year": "1998",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 63
+        },
+        {
+          "pmid": "28918573",
+          "title": "Anti-inflammatory effects of Ginkgo biloba extract against trimethyltin-induced hippocampal neuronal injury.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For cognition, Ginkgo Biloba has moderate human evidence (7 studies)."
+    },
+    {
+      "outcome": "eye / vision",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~130 participants across 2 of 3 studies); effect estimate may be unstable.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 3,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:39961352",
+        "PMID:23440785",
+        "PMID:10385132"
+      ],
+      "studies": [
+        {
+          "pmid": "23440785",
+          "title": "Ginkgo biloba extract for age-related macular degeneration.",
+          "year": "2013",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 119
+        },
+        {
+          "pmid": "10385132",
+          "title": "Ginkgo biloba extract increases ocular blood flow velocity.",
+          "year": "1999",
+          "design": "RCT",
+          "population": "human",
+          "n": 11
+        },
+        {
+          "pmid": "39961352",
+          "title": "Effect of ginkgo biloba extract on macula and peripapillary perfusion examined using optical coherence tomography angiography.",
+          "year": "2025",
+          "design": "Clinical trial",
           "population": "human",
           "n": null
         }
@@ -67,39 +168,67 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cognition, Ginkgo Biloba has moderate human evidence (3 studies)."
+      "summary": "For eye / vision, Ginkgo Biloba has moderate human evidence (3 studies)."
     },
     {
-      "outcome": "liver health",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
+      "outcome": "inflammation",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 4,
       "grade_reasons": [
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Precision: ~104 participants verified across 1 of 4 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
-        "human": 22,
-        "overall": 22,
-        "ceiling": 22,
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
         "n_human_studies": 1,
-        "n_animal_studies": 0,
+        "n_animal_studies": 3,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:40435579"
+        "PMID:28918573",
+        "PMID:31359441",
+        "PMID:35781715",
+        "PMID:38110608"
       ],
       "studies": [
         {
-          "pmid": "40435579",
-          "title": "Protective effects of Ginkgo biloba supplementation on clinical outcomes in metabolic dysfunction-associated steatotic liver disease.",
-          "year": "2025",
-          "design": "Unclassified",
+          "pmid": "35781715",
+          "title": "Beneficial effects of Ginkgo biloba leaf extract on inflammatory markers: A systematic review and meta-analysis of the clinical trials.",
+          "year": "2022",
+          "design": "Meta-analysis",
           "population": "human",
-          "n": 476
+          "n": 104
+        },
+        {
+          "pmid": "38110608",
+          "title": "Ginkgo Biloba Extract Can Antagonize Subchronic Arsenite Exposure-Induced Hepatocyte Senescence by Inhibiting Oxidative Damage and Inflammation in Rats.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "31359441",
+          "title": "Ginkgo biloba extract may alleviate viral myocarditis by suppression of S100A4 and MMP-3.",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "28918573",
+          "title": "Anti-inflammatory effects of Ginkgo biloba extract against trimethyltin-induced hippocampal neuronal injury.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
         }
       ],
       "effects": {
@@ -113,18 +242,155 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For liver health, Ginkgo Biloba has only preliminary or animal evidence (1 studies)."
+      "summary": "For inflammation, Ginkgo Biloba has moderate human evidence (4 studies)."
+    },
+    {
+      "outcome": "sexual function",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Imprecision: small verified sample (~59 participants across 2 measured studies)."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 3,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:18274887",
+        "PMID:12404672",
+        "PMID:24949064"
+      ],
+      "studies": [
+        {
+          "pmid": "18274887",
+          "title": "Short- and long-term effects of Ginkgo biloba extract on sexual dysfunction in women.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "12404672",
+          "title": "A placebo-controlled, double-blind trial of Ginkgo biloba for antidepressant-induced sexual dysfunction.",
+          "year": "2002",
+          "design": "RCT",
+          "population": "human",
+          "n": 19
+        },
+        {
+          "pmid": "24949064",
+          "title": "Triple-blind, placebo-controlled trial of Ginkgo biloba extract on sexual desire in postmenopausal women in Tehran.",
+          "year": "2014",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 40
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For sexual function, Ginkgo Biloba shows early but unsettled evidence (3 studies)."
     }
   ],
   "effects_established": [
-    "cognition"
+    "cognition",
+    "eye / vision",
+    "inflammation"
   ],
-  "effects_promising": [],
-  "effects_emerging": [
-    "liver health"
+  "effects_promising": [
+    "sexual function"
   ],
+  "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506293.179036
+  "_cached_at": 1787607301.237767,
+  "explanation": {
+    "what_it_is": "Ginkgo biloba is an extract from the leaves of the ginkgo tree, one of the oldest living tree species, traditionally used in Chinese medicine. The supplement contains flavonoids and terpenoids\u2014compounds with antioxidant and anti-inflammatory properties. People typically take it as a capsule, tablet, or liquid standardized extract, often in doses of 120\u2013240 mg daily in divided doses.",
+    "how_it_works": "Ginkgo biloba works through several overlapping mechanisms. Its flavonoids and terpenoids act as antioxidants, neutralizing free radicals that can damage cells and contribute to aging and disease. The extract also improves blood flow by promoting vasodilation (widening of blood vessels) and reducing blood viscosity, which may enhance oxygen and nutrient delivery to tissues\u2014particularly the brain and eye. Additionally, ginkgo appears to modulate inflammatory pathways and protect nerve cells from oxidative stress, potentially slowing neurodegeneration. These mechanisms are why it has been studied for cognitive decline, vision problems, and inflammation-related conditions.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "A series of meta-analyses and systematic reviews\u2014including analyses of 939 participants (2020), 561 participants (2015), and 2,372 participants (2010)\u2014have examined ginkgo's effects on dementia and cognitive impairment. These pooled analyses found modest but measurable benefits in cognitive test scores and symptoms in people with Alzheimer's disease and other forms of dementia. A 2014 clinical trial also tested ginkgo in children with ADHD, and a 1998 study examined its use for antidepressant-induced cognitive or sexual side effects. Overall, the evidence suggests a small-to-moderate positive effect on established cognitive decline.",
+        "why_this_grade": "Although multiple meta-analyses exist, only one primary human trial was retrieved, and the total evidence base relies heavily on pooled analyses rather than independent primary studies. Sample sizes in individual trials tend to be modest, and the consistency of benefit across different types of cognitive impairment is not fully established, which keeps this from reaching the top tier."
+      },
+      {
+        "outcome": "eye / vision",
+        "grade": "Moderate",
+        "what_studies_show": "Three human studies examined ginkgo's effects on vision. A 2013 systematic review assessed ginkgo extract for age-related macular degeneration. A 1999 randomized controlled trial in 11 participants found that ginkgo extract increased ocular blood flow velocity, suggesting improved circulation to the eye. A 2025 clinical trial measured effects on macula and peripapillary perfusion using advanced imaging. Together, these studies suggest ginkgo may improve blood flow to the eye and potentially benefit age-related vision decline, though the evidence base remains small.",
+        "why_this_grade": "Only three human studies exist in the retrieved records, with modest sample sizes\u2014fewer than 130 participants across the two studies with reported numbers. A single systematic review forms the backbone of evidence, and its conclusions have not been independently replicated. The small, dispersed sample and lack of replication keep this at moderate rather than strong."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "A 2022 meta-analysis of human studies (104 verified participants) found that ginkgo biloba leaf extract produced beneficial effects on inflammatory markers including C-reactive protein and interleukin levels. Three animal studies (2024, 2019, 2018) demonstrated anti-inflammatory mechanisms in models of arsenite exposure, viral myocarditis, and trimethyltin-induced neuronal injury. The human evidence points to modest reductions in systemic inflammation; animal work suggests suppression of inflammatory proteins and pathways.",
+        "why_this_grade": "The human evidence base is thin\u2014only one meta-analysis of 104 participants. Most animal studies in the retrieved records omit sample sizes, making the full scope unclear. A single meta-analysis exists without independent replication of its findings. Together, these limitations prevent a higher grade despite the consistent direction of effects."
+      },
+      {
+        "outcome": "sexual function",
+        "grade": "Emerging",
+        "what_studies_show": "Three small human randomized controlled trials and related studies (2002, 2008, 2014) examined ginkgo's effects on sexual dysfunction. A 2002 placebo-controlled, double-blind trial (n=19) assessed ginkgo for antidepressant-induced sexual dysfunction. A 2008 RCT measured short- and long-term sexual function outcomes in women. A 2014 triple-blind, placebo-controlled trial (n=40) tested ginkgo on sexual desire in postmenopausal women. Results suggest possible benefit, but the evidence remains preliminary and based on small samples.",
+        "why_this_grade": "Only three human studies exist, with a combined verified sample of approximately 59 participants across the two measured trials\u2014too small to establish a reliable effect. No replication or meta-analysis supports these findings. The evidence is promising but not yet sufficient to confirm efficacy in humans."
+      }
+    ],
+    "evidence_base": "The research on ginkgo biloba is predominantly human-based for cognition and vision (though vision studies are few), whereas inflammation evidence mixes one human meta-analysis with several animal models. Most studies are older (1998\u20132020), with a recent 2025 vision trial being the newest retrieved record. The cognitive evidence relies heavily on meta-analyses and systematic reviews rather than independent primary trials, which provides broader perspective but also means the grading rests partly on the quality and consistency of earlier work. Overall, ginkgo has a reasonable body of human evidence for cognition and vision but remains modestly supported compared to pharmaceuticals, and the sexual function literature is small and early-stage.",
+    "emerging_research": "Recent work (2024\u20132025) is exploring ginkgo's anti-inflammatory effects in specific disease models\u2014such as arsenite-induced hepatocyte damage and viral myocarditis\u2014suggesting potential applications beyond cognition. A 2025 clinical trial using optical coherence tomography to assess retinal perfusion represents a more refined approach to measuring vision benefit than earlier studies. These directions are preliminary and mostly early-stage or animal-based, but they point toward a broader understanding of ginkgo's vascular and cytoprotective roles.",
+    "open_questions": "Among the studies retrieved here, the cognition evidence base is dominated by meta-analyses rather than new primary trials, leaving questions about which patient groups (age, cognitive status, disease type) benefit most and whether benefits are durable beyond the typical trial duration shown. The vision literature is very small (three studies total), and two have modest sample sizes; longer follow-up and larger trials in age-related macular degeneration are not present in these records. The sexual function data rest on fewer than 60 verified participants across two trials, with no recent follow-up\u2014whether effects are sustained or clinically meaningful remains unclear from the available records. Note: these observations describe only the sample of studies retrieved for this review (~40 per outcome); they do not characterize the full global literature on ginkgo.",
+    "caveats": "Ginkgo biloba is generally well-tolerated, but it can increase bleeding risk, particularly when combined with anticoagulants (e.g., warfarin) or antiplatelet drugs (e.g., aspirin); people on blood thinners should consult a doctor before use. Quality and standardization of commercial ginkgo extracts vary widely; look for products standardized to 24% ginkgo flavone glycosides and 6% terpene lactones. Pregnant women should avoid it, and it may interact with certain antidepressants and other medications.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base relies almost entirely on meta-analyses and systematic reviews of older, small primary trials; only 1 prospective RCT in cognition and 2 in sexual function are visible, making it difficult to assess whether observed pooled effects reflect true benefit or publication bias and methodological heterogeneity.",
+    "concerns": [
+      {
+        "issue": "Cognition evidence dominated by meta-analyses of dated trials",
+        "detail": "Cognition outcome (graded Moderate) comprises 3 meta-analyses, 1 systematic review, and only 1 single primary clinical trial. The primary trial is from 2014 (Ginkgo for ADHD in children), leaving dementia/Alzheimer's conclusions to syntheses of older literature (earliest 1998). The engine explicitly flagged 'limited human evidence: 1 primary human studies and 4 pooled analyses' \u2014 this is a reversal of the typical evidence hierarchy, where syntheses should amplify primary data, not replace it. No pooled effect size is extractable, suggesting heterogeneity or reporting gaps that obscure whether benefits are consistent or marginal.",
+        "severity": "high"
+      },
+      {
+        "issue": "Vision outcome relies on single small RCT and underpowered trial",
+        "detail": "Eye/vision (Moderate grade) shows only 3 studies total: a 1999 RCT with n=11, a 2013 systematic review, and a 2025 trial with unreported sample size. Two studies report ~130 participants total, which the engine flagged as 'imprecision: modest verified sample; effect estimate may be unstable.' A single underpowered RCT (n=11) measuring ocular blood flow is not sufficient to support a moderate clinical grade. The systematic review conclusion is not independently verified by other meta-analyses \u2014 a single synthesis cannot establish replicable consensus.",
+        "severity": "high"
+      },
+      {
+        "issue": "Inflammation outcome is 75% animal data with one small human meta-analysis",
+        "detail": "Inflammation (Moderate grade) comprises 3 animal studies and 1 human meta-analysis (n=104). The engine notes 'most abstracts omit sample size, so the true total is substantially larger,' but this is not verifiable from the records \u2014 we can only confirm 1 of 4 studies reported n. Animal studies (hepatocyte senescence, viral myocarditis, trimethyltin-induced neuronal damage) do not directly predict human inflammatory outcomes; the mechanistic leap from rodent models to clinical inflammation reduction is substantial. A single human meta-analysis with modest documented sample size cannot anchor a Moderate clinical grade when the bulk of evidence is preclinical.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sexual function outcome is tiny and underpowered",
+        "detail": "Sexual function (Emerging grade, appropriately conservative) shows only 59 verified participants across 2 RCTs (n=19, n=40), with a third unclassified study of unknown power. Both primary trials are dated (2002, 2008); the most recent is 2014. The median reported sample size is 40. At this scale, a single dropout or baseline imbalance could swing the result. The Emerging grade is justified, but readers should know this outcome rests on evidence equivalent to a single poorly powered trial replicated once.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "No pooled effect sizes reported across any outcome",
+        "detail": "Despite three meta-analyses in cognition and one in inflammation, the records show 'pooled effect: none extractable' for every outcome. This either indicates that the meta-analyses did not report point estimates and confidence intervals in a standard format, or the abstracts did not capture them. Without effect sizes, magnitude of benefit cannot be compared across outcomes or against other nootropics, and readers cannot distinguish 'small but consistent' from 'inconsistent heterogeneous effects.' This is a critical transparency gap.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The animal studies propose anti-inflammatory and neuroprotective mechanisms (S100A4/MMP-3 suppression, trimethyltin toxicity attenuation, hepatocyte senescence prevention), which are biologically plausible for a vascular and antioxidant agent. However, there is a large inferential leap from rodent brain or liver models to human cognition or vision: animal inflammation endpoints do not directly measure cognitive function or visual acuity. The human cognition trials appear to measure Alzheimer's severity or ADHD symptoms, which could plausibly be supported by improved cerebral perfusion (one mechanism claimed), but this link is not explicitly tested in the visible primary literature. For sexual function, the mechanism is similarly indirect \u2014 improved blood flow might enhance erectile or vaginal perfusion, but this is not mechanistically validated in the small RCTs shown.",
+    "strongest_counterargument": "A skeptic would observe that the cognition grade rests on meta-analyses of a fragmented, dated literature with no modern large RCTs visible in these records. Meta-analyses of small, old trials are prone to publication bias and cannot escape methodological heterogeneity; if effect sizes are not reported, the syntheses may obscure negative or null studies. For vision and inflammation, the outcome grades are supported by single meta-analyses without independent replication, and for vision the primary evidence includes an n=11 trial \u2014 a well-executed negative modern RCT could overturn these gradings. Sexual function is explicitly Emerging, which is appropriate given the tiny sample and lack of recent data, suggesting the compound's clinical relevance is unproven.",
+    "what_would_change_the_picture": "A large, modern, multi-site RCT (n\u2265200) of Ginkgo vs. placebo measuring cognition (MMSE or Montreal Cognitive Assessment) in older adults with mild cognitive impairment, or vision (visual acuity, macular thickness, or optical coherence tomography) in age-related macular degeneration, with preregistration and transparent reporting of effect sizes and 95% CIs, would provide direct evidence to either confirm or refute the Moderate grades. For inflammation, a human RCT measuring inflammatory biomarkers (IL-6, CRP, TNF-\u03b1) with adequate power would break dependence on animal extrapolation.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

@@ -1,28 +1,29 @@
 {
   "name": "Caffeine",
   "category": "supplement",
-  "overall_score": 76,
-  "tier": "Moderate",
-  "study_count": 16,
+  "overall_score": 95,
+  "tier": "Strong",
+  "study_count": 53,
   "claims": [
     {
       "outcome": "exercise performance",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
+      "tier": "Strong",
+      "certainty": "high",
+      "score": 90,
       "has_human_evidence": true,
-      "n_studies": 8,
+      "n_studies": 25,
       "grade_reasons": [
-        "Limited human evidence: 2 primary human studies and 6 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~2689 participants verified across 9 of 25 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: 12 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 8,
-        "n_animal_studies": 0,
+        "preclinical": 35,
+        "human": 90,
+        "overall": 90,
+        "ceiling": 90,
+        "n_human_studies": 24,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -33,9 +34,50 @@
         "PMID:30926628",
         "PMID:40954555",
         "PMID:40543159",
-        "PMID:35297302"
+        "PMID:35297302",
+        "PMID:40431449",
+        "PMID:30204516",
+        "PMID:40249126",
+        "PMID:36768476",
+        "PMID:40647262",
+        "PMID:38158179",
+        "PMID:37191618",
+        "PMID:35239468",
+        "PMID:38257082",
+        "PMID:24277927",
+        "PMID:39967381",
+        "PMID:31574901",
+        "PMID:33666113",
+        "PMID:29933355",
+        "PMID:41918248",
+        "PMID:39125317",
+        "PMID:42120364"
       ],
       "studies": [
+        {
+          "pmid": "37191618",
+          "title": "Moderators of Caffeine's Effects on Jumping Performance in Females: A Systematic Review and Meta-Analysis.",
+          "year": "2024",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 200
+        },
+        {
+          "pmid": "35239468",
+          "title": "Effects of caffeine chewing gum supplementation on exercise performance: A systematic review and meta-analysis.",
+          "year": "2023",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 200
+        },
+        {
+          "pmid": "33666113",
+          "title": "Effects of Caffeine Supplementation on Physical Performance of Soccer Players: Systematic Review and Meta-Analysis.",
+          "year": "2021",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
         {
           "pmid": "30926628",
           "title": "Wake up and smell the coffee: caffeine supplementation and exercise performance-an umbrella review of 21 published meta-analyses.",
@@ -43,6 +85,14 @@
           "design": "Meta-analysis",
           "population": "human",
           "n": 21
+        },
+        {
+          "pmid": "40431449",
+          "title": "Effects of Caffeine Supplementation on Exercise Performance in Volleyball Players: A Systematic Review and Meta-Analysis.",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
         },
         {
           "pmid": "38892701",
@@ -59,6 +109,14 @@
           "design": "Systematic review",
           "population": "human",
           "n": null
+        },
+        {
+          "pmid": "38158179",
+          "title": "Does ergogenic effect of caffeine supplementation depend on CYP1A2 genotypes? A systematic review with meta-analysis.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 666
         },
         {
           "pmid": "37462346",
@@ -85,6 +143,30 @@
           "n": 213
         },
         {
+          "pmid": "31574901",
+          "title": "Effect of Caffeine Supplementation on Sports Performance Based on Differences Between Sexes: A Systematic Review.",
+          "year": "2019",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 254
+        },
+        {
+          "pmid": "41918248",
+          "title": "Comparative effects of caffeine and paraxanthine on rowing performance and sleep quality: a randomized crossover study.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "42120364",
+          "title": "Effects of acute caffeine ingestion combined with post-activation potentiation enhancement on the anaerobic capacity of male collegiate basketball players.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "40954555",
           "title": "Neuromuscular adaptations to caffeine supplementation in low-load resistance training with blood flow restriction.",
           "year": "2025",
@@ -99,70 +181,77 @@
           "design": "RCT",
           "population": "human",
           "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For exercise performance, Caffeine has moderate human evidence (8 studies)."
-    },
-    {
-      "outcome": "endurance",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
-      "has_human_evidence": true,
-      "n_studies": 3,
-      "grade_reasons": [
-        "Imprecision: small verified sample (~21 participants across 1 measured studies).",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 3,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:33759701",
-        "PMID:30926628",
-        "PMID:40704635"
-      ],
-      "studies": [
-        {
-          "pmid": "30926628",
-          "title": "Wake up and smell the coffee: caffeine supplementation and exercise performance-an umbrella review of 21 published meta-analyses.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 21
         },
         {
-          "pmid": "40704635",
-          "title": "No effects of caffeine on cycling to exhaustion and perceptual responses in non-caffeine-restricted subjects.",
+          "pmid": "40249126",
+          "title": "Individual responses to encapsulated caffeine and caffeine chewing gum on strength and power in strength-trained males.",
           "year": "2025",
           "design": "RCT",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "33759701",
-          "title": "Effects of Creatine and Caffeine Supplementation During Resistance Training on Body Composition, Strength, Endurance, Rating of Perceived Exertion and Fatigue i",
-          "year": "2022",
+          "pmid": "40647262",
+          "title": "The Acute Effects of Caffeine Supplementation on Anaerobic Performance and Functional Strength in Female Soccer Players.",
+          "year": "2025",
           "design": "RCT",
           "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39967381",
+          "title": "Acute effects of isolated and combined dietary nitrate and caffeine ingestion on ergometer-based 1000 m time trial performance in highly trained kayakers.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39125317",
+          "title": "Combined Impact of Creatine, Caffeine, and Variable Resistance on Repeated Sprint Ability in Young Soccer Players.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "29933355",
+          "title": "Caffeine's Effects on an Upper-Body Resistance Exercise Workout.",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "30204516",
+          "title": "Caffeine and Sprint Cycling Performance: Effects of Torque Factor and Sprint Duration.",
+          "year": "2019",
+          "design": "RCT",
+          "population": "human",
+          "n": 13
+        },
+        {
+          "pmid": "24277927",
+          "title": "Caffeine supplementation and reactive agility in elite youth soccer players.",
+          "year": "2014",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "38257082",
+          "title": "Are the Dietary-Nutritional Recommendations Met? Analysis of Intake in Endurance Competitions.",
+          "year": "2024",
+          "design": "Observational",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36768476",
+          "title": "A Combination of Caffeine Supplementation and Enriched Environment in an Alzheimer's Disease Mouse Model.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
           "n": null
         }
       ],
@@ -177,7 +266,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For endurance, Caffeine shows early but unsettled evidence (3 studies)."
+      "summary": "For exercise performance, Caffeine is well-supported by human trials (25 studies)."
     },
     {
       "outcome": "muscle strength",
@@ -185,9 +274,8 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 11,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~50 participants across 2 of 4 studies); effect estimate may be unstable.",
         "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
@@ -196,7 +284,7 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 4,
+        "n_human_studies": 11,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -204,7 +292,14 @@
         "PMID:33759701",
         "PMID:30926628",
         "PMID:40954555",
-        "PMID:32851636"
+        "PMID:32851636",
+        "PMID:40249126",
+        "PMID:39463442",
+        "PMID:40647262",
+        "PMID:40369047",
+        "PMID:39967381",
+        "PMID:29933355",
+        "PMID:41918248"
       ],
       "studies": [
         {
@@ -216,9 +311,57 @@
           "n": 21
         },
         {
+          "pmid": "41918248",
+          "title": "Comparative effects of caffeine and paraxanthine on rowing performance and sleep quality: a randomized crossover study.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "40954555",
           "title": "Neuromuscular adaptations to caffeine supplementation in low-load resistance training with blood flow restriction.",
           "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40249126",
+          "title": "Individual responses to encapsulated caffeine and caffeine chewing gum on strength and power in strength-trained males.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40647262",
+          "title": "The Acute Effects of Caffeine Supplementation on Anaerobic Performance and Functional Strength in Female Soccer Players.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40369047",
+          "title": "Single and combined effect of beetroot juice and caffeine intake on muscular strength, power and endurance performance in resistance-trained males.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39967381",
+          "title": "Acute effects of isolated and combined dietary nitrate and caffeine ingestion on ergometer-based 1000 m time trial performance in highly trained kayakers.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39463442",
+          "title": "Caffeine optimizes Zumba training benefits on functional performances in middle-aged women: a randomized trial study.",
+          "year": "2024",
           "design": "RCT",
           "population": "human",
           "n": null
@@ -238,6 +381,14 @@
           "design": "RCT",
           "population": "human",
           "n": 29
+        },
+        {
+          "pmid": "29933355",
+          "title": "Caffeine's Effects on an Upper-Body Resistance Exercise Workout.",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": null
         }
       ],
       "effects": {
@@ -251,39 +402,121 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For muscle strength, Caffeine has moderate human evidence (4 studies)."
+      "summary": "For muscle strength, Caffeine has moderate human evidence (11 studies)."
     },
     {
-      "outcome": "sleep quality",
+      "outcome": "endurance",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 10,
       "grade_reasons": [
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Precision: ~275 participants verified across 2 of 10 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 6 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
+        "mechanistic": 30,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 0,
+        "n_human_studies": 9,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:35380245"
+        "PMID:33759701",
+        "PMID:30926628",
+        "PMID:40704635",
+        "PMID:36768476",
+        "PMID:39463442",
+        "PMID:40369047",
+        "PMID:38257082",
+        "PMID:31574901",
+        "PMID:33666113",
+        "PMID:41666907"
       ],
       "studies": [
         {
-          "pmid": "35380245",
-          "title": "Risk or benefit? Side effects of caffeine supplementation in sport: a systematic review.",
-          "year": "2022",
+          "pmid": "33666113",
+          "title": "Effects of Caffeine Supplementation on Physical Performance of Soccer Players: Systematic Review and Meta-Analysis.",
+          "year": "2021",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "30926628",
+          "title": "Wake up and smell the coffee: caffeine supplementation and exercise performance-an umbrella review of 21 published meta-analyses.",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 21
+        },
+        {
+          "pmid": "31574901",
+          "title": "Effect of Caffeine Supplementation on Sports Performance Based on Differences Between Sexes: A Systematic Review.",
+          "year": "2019",
           "design": "Systematic review",
           "population": "human",
-          "n": 421
+          "n": 254
+        },
+        {
+          "pmid": "41666907",
+          "title": "Effects of Acute Caffeine Supplementation on Integrated Biathlon Performance in Elite Male Athletes.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40704635",
+          "title": "No effects of caffeine on cycling to exhaustion and perceptual responses in non-caffeine-restricted subjects.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40369047",
+          "title": "Single and combined effect of beetroot juice and caffeine intake on muscular strength, power and endurance performance in resistance-trained males.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39463442",
+          "title": "Caffeine optimizes Zumba training benefits on functional performances in middle-aged women: a randomized trial study.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "33759701",
+          "title": "Effects of Creatine and Caffeine Supplementation During Resistance Training on Body Composition, Strength, Endurance, Rating of Perceived Exertion and Fatigue i",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "38257082",
+          "title": "Are the Dietary-Nutritional Recommendations Met? Analysis of Intake in Endurance Competitions.",
+          "year": "2024",
+          "design": "Observational",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36768476",
+          "title": "A Combination of Caffeine Supplementation and Enriched Environment in an Alzheimer's Disease Mouse Model.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
         }
       ],
       "effects": {
@@ -297,17 +530,117 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For sleep quality, Caffeine has moderate human evidence (1 studies)."
+      "summary": "For endurance, Caffeine has moderate human evidence (10 studies)."
+    },
+    {
+      "outcome": "cognition",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 7,
+      "grade_reasons": [
+        "Precision: ~213 participants verified across 1 of 7 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 5,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:38666339",
+        "PMID:40704635",
+        "PMID:35297302",
+        "PMID:36768476",
+        "PMID:23829154",
+        "PMID:38070463",
+        "PMID:36146946"
+      ],
+      "studies": [
+        {
+          "pmid": "38666339",
+          "title": "Can caffeine improve your performance? Psychophysiological effects - A systematic review.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "35297302",
+          "title": "Acute caffeine supplementation and live match-play performance in team-sports: A systematic review (2000-2021).",
+          "year": "2022",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 213
+        },
+        {
+          "pmid": "40704635",
+          "title": "No effects of caffeine on cycling to exhaustion and perceptual responses in non-caffeine-restricted subjects.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36146946",
+          "title": "Cognitive effects of guarana supplementation with maximal intensity cycling.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "23829154",
+          "title": "Caffeine gum minimizes sleep inertia.",
+          "year": "2013",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "38070463",
+          "title": "Swimming training and caffeine supplementation protects against metabolic syndrome-induced nuclear factor-\u03baB activation and cognitive deficits in rats.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36768476",
+          "title": "A Combination of Caffeine Supplementation and Enriched Environment in an Alzheimer's Disease Mouse Model.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For cognition, Caffeine has moderate human evidence (7 studies)."
     }
   ],
   "effects_established": [
     "exercise performance",
     "muscle strength",
-    "sleep quality"
+    "endurance",
+    "cognition"
   ],
-  "effects_promising": [
-    "endurance"
-  ],
+  "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
@@ -333,5 +666,76 @@
       "Thein"
     ]
   },
-  "_cached_at": 1787505973.7503319
+  "_cached_at": 1787606766.233313,
+  "explanation": {
+    "what_it_is": "Caffeine (1,3,7-trimethylpurine-2,6-dione; C\u2088H\u2081\u2080N\u2084O\u2082) is a naturally occurring alkaloid found in coffee beans, tea leaves, cacao, and guarana. It is a central nervous system stimulant that works by blocking adenosine receptors in the brain. People typically consume it as a beverage (coffee, tea), tablet, capsule, chewing gum, or powder.",
+    "how_it_works": "Caffeine binds to and blocks adenosine receptors throughout the central nervous system, preventing the natural signal that builds up during wakefulness to promote sleepiness. This antagonism increases neural firing, releasing dopamine and norepinephrine, which heightens alertness and arousal. In muscle tissue, caffeine may enhance calcium handling and reduce perceived effort during exercise. Additionally, caffeine modulates pain perception and mental fatigue, allowing athletes and workers to maintain intensity longer before subjective exhaustion sets in. These effects combine to support both physical endurance and cognitive performance, though the magnitude varies by individual sensitivity and training state.",
+    "outcome_detail": [
+      {
+        "outcome": "exercise performance",
+        "grade": "Strong",
+        "what_studies_show": "Twelve independent meta-analyses and systematic reviews converge on the finding that caffeine reliably improves exercise performance across multiple sports and modalities. Recent meta-analyses (2023\u20132025) examined caffeine's effects in jumping (females), chewing gum formulations, soccer players, cyclists, and volleyball players; a 2020 umbrella review synthesized 21 published analyses. The evidence spans ~2,689 verified participants across at least 9 studies, with sample sizes ranging from small trials (n=21 in syntheses) to large pooled analyses, and includes both laboratory and sport-specific testing protocols.",
+        "why_this_grade": "The Strong grade reflects 24 human studies with high consistency\u2014twelve independent meta-analyses all support the same conclusion\u2014and adequate statistical power across diverse populations and exercise types. The limitation that most abstracts omit sample size suggests the actual participant pool is much larger than the 2,689 verified here, further strengthening confidence."
+      },
+      {
+        "outcome": "muscle strength",
+        "grade": "Moderate",
+        "what_studies_show": "Eleven human randomized controlled trials from 2020 to 2025 examined caffeine's acute effects on strength and power, including studies in rowing, resistance training, soccer, and combined supplementation (caffeine + beetroot juice). These trials tested both encapsulated and chewing gum formulations in strength-trained individuals and athletes. A 2020 meta-analysis on exercise performance (n=21 published reviews) included strength as a component outcome.",
+        "why_this_grade": "Although all 11 studies are human and recent, the Moderate grade reflects that only a single meta-analysis currently exists for strength specifically, and no independent replication of that synthesis has yet verified the conclusion. The evidence base is solid but narrower than for exercise performance; additional pooled analyses would elevate confidence to Strong."
+      },
+      {
+        "outcome": "endurance",
+        "grade": "Moderate",
+        "what_studies_show": "Nine human studies and one animal study retrieved, including three pooled analyses (2019\u20132021) and three primary human trials (2025\u20132026). A 2019 systematic review of 254 participants examined sex differences in caffeine's endurance effects; more recent trials tested acute caffeine on cycling to exhaustion, biathlon performance, and combined beetroot + caffeine supplementation. A 2020 umbrella review of 21 published syntheses also addressed endurance.",
+        "why_this_grade": "The Moderate grade reflects limited primary human evidence\u2014only 6 primary trials and 3 pooled analyses\u2014below the threshold for top-tier confidence. Although the 2019 review included 254 verified participants, most other abstracts omit sample size, so true participant numbers are larger but unquantified. Consistency appears good, but the narrower evidence base (compared to exercise performance) limits the grade."
+      },
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "Five human studies and two animal studies were retrieved, including two systematic reviews (2022, 2024) and three primary human trials (2013, 2023, 2025). A 2022 systematic review examined acute caffeine's effects on live match-play cognition in team-sport athletes (n=213 verified); other trials tested cognitive effects during maximal-intensity cycling, sleep inertia, and one RCT found no effect on cognition during cycling to exhaustion. A 2024 animal study examined caffeine and metabolic syndrome markers.",
+        "why_this_grade": "The Moderate grade reflects limited human evidence (5 trials total, only 1 with a verified sample size of 213) and inconsistency\u2014studies exist but no pooled analysis confirms they consistently agree. The evidence is small and heterogeneous; pending independent replication of pooled findings, the grade remains Moderate rather than Strong."
+      }
+    ],
+    "evidence_base": "The research base for caffeine is predominantly human (29 of 32 studies retrieved are human), heavily weighted toward exercise science, and dominated by meta-analyses and systematic reviews. Twelve independent syntheses converge on exercise performance, while endurance and cognition rely on fewer primary trials and limited replication of pooled analyses. Most studies are recent (2019\u20132025), reflecting active investigation, though many abstracts omit sample size, limiting precise participant accounting. Overall, the evidence is robust for exercise performance but thinner and less consistent for cognition and muscle strength.",
+    "emerging_research": "Recent 2025\u20132026 trials are examining individual variability in response to caffeine\u2014comparing encapsulated vs. chewing gum formats, combining caffeine with other ergogenic aids (beetroot juice), and testing effects in specific populations (female athletes, blood-flow-restricted resistance training). A 2026 comparative trial of caffeine and paraxanthine on rowing and sleep quality suggests interest in understanding caffeine's impacts on sleep\u2013performance trade-offs. These directions are early but point toward personalized dosing and formulation strategies.",
+    "open_questions": "Among the studies retrieved here, cognition research is particularly sparse (only 5 human trials, one with verified sample size) and lacks a meta-analysis confirming consistency; sport-specific and sex-specific responses appear in some analyses but are not uniformly examined across all outcomes. No studies in the retrieved records extended beyond acute or short-term (weeks) assessment, so the long-term safety or tolerance profile of chronic supplementation is not visible in these abstracts. These observations describe only the sample of ~40 abstracts per outcome provided; the field may have additional human evidence, long-term trials, or mechanistic studies not appearing in this retrieval.",
+    "caveats": "Caffeine is generally well-tolerated at typical doses (3\u20136 mg/kg body weight) but can cause jitteriness, anxiety, sleep disruption, and dependence with chronic use or in sensitive individuals. Quality and dose accuracy vary widely among commercial supplements; standardized pharmaceutical or food-grade sources are more reliable. Caffeine interacts with many medications (e.g., ciprofloxacin, fluvoxamine, theophylline) and is contraindicated in pregnancy and certain cardiac arrhythmias; individuals should consult a healthcare provider before supplementing, especially if taking other drugs or managing sleep or anxiety disorders.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "Exercise performance evidence is robust, but muscle strength and endurance rest on small, unreplicated trials, and cognition is too sparse to support clinical claims.",
+    "concerns": [
+      {
+        "issue": "Muscle strength: single meta-analysis, predominantly recent small RCTs",
+        "detail": "Only 1 meta-analysis exists for muscle strength (2020), making this conclusion unreplicated by independent synthesis. Of 11 studies, only 2 report sample sizes (21 and 29 participants); the remaining 9 are opaque. Recent clustering (9 of 11 studies are 2025\u20132026) suggests a publication surge, raising concerns about recent convenience sampling rather than a stable literature. A single outlier or selective inclusion in that one meta-analysis could substantially shift the conclusion.",
+        "severity": "high"
+      },
+      {
+        "issue": "Endurance: minimal human evidence, large opacity on sample sizes",
+        "detail": "Only 2 of 10 studies report sample sizes (21 and 254 participants); 8 are completely opaque. The engine explicitly flags 'below the threshold for the top tier' due to limited human evidence (6 primary human studies). One animal study is included in the composition, diluting the human-specific evidence. This thin transparency makes precision claims unreliable.",
+        "severity": "high"
+      },
+      {
+        "issue": "Cognition: severely underpowered and inconsistent evidence base",
+        "detail": "Only 7 studies total, with only 1 reporting a sample size (213 participants). The engine notes 'inconsistency: several studies exist but no pooled analysis confirms they agree.' Two of the seven are animal studies, further reducing human applicability. With 3 RCTs and 2 systematic reviews on 5 human studies, no consensus mechanism or effect size can be confidently stated. This is insufficient to support a 'Moderate' grade for a cognitive claim.",
+        "severity": "high"
+      },
+      {
+        "issue": "Exercise performance: sample size reporting opacity despite 'Strong' grade",
+        "detail": "Only 9 of 25 studies report sample sizes. The engine notes 'most abstracts omit sample size, so the true total is substantially larger,' which means the claimed ~2689 verified participants are a lower bound. This opacity obscures whether the evidence base is truly powered or inflated by small, unreported trials. Replication status is inferred from 12 syntheses converging, but that does not guarantee methodological quality of the underlying primaries.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "No pooled effect sizes or confidence intervals reported across any outcome",
+        "detail": "All four outcomes show 'pooled effect: none extractable,' meaning the abstracts retrieved do not contain quantitative effect estimates, heterogeneity measures (I\u00b2), or 95% CIs. This prevents readers from assessing effect magnitude, precision, or statistical consistency. Grades are assigned without transparent numerical evidence available in these records.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Caffeine is a well-characterized CNS adenosine antagonist with known acute effects on alertness, arousal, and motor output. These acute neurophysiological mechanisms plausibly support exercise performance outcomes (where 25 studies converge). However, the leap from acute CNS effects to *sustained muscle strength gains* after resistance training is mechanistically thin\u2014this would require chronic neuromuscular adaptation beyond caffeine's primary acute mode of action, and only one meta-analysis underpins that claim. Cognition is the weakest link: the records do not explain whether caffeine improves cognition at rest, during exercise, or in fatigued states, and the 7 studies are too inconsistent to infer a mechanism.",
+    "strongest_counterargument": "A skeptic would argue that exercise performance's 'Strong' grade is inflated by systematic review proliferation, not independent replication. The 12 meta-analyses and systematic reviews may all be synthesizing overlapping or identical primary trials, creating an illusion of consistency. For muscle strength and endurance, the handful of small, recent RCTs (mostly 2025\u20132026) may reflect a publication trend rather than a robust effect; the lack of older large trials, combined with opacity on sample sizes, suggests these outcomes could be at risk of reversal by a few well-powered negative trials. Cognition is simply too sparse and contradictory to claim even a 'Moderate' effect.",
+    "what_would_change_the_picture": "For exercise performance: disclose and meta-analyze all sample sizes in the retrieved abstracts to confirm true N, and test whether effect sizes differ meaningfully between caffeine formulations (powder, gum, capsule) and exercise types (power vs. endurance). For muscle strength and endurance: conduct 1\u20132 large, pre-registered RCTs (n > 100 per arm) in untrained or resistance-trained populations, measuring strength as a primary outcome with long-term follow-up to distinguish acute from chronic effects. For cognition: either retrieve and synthesize the full literature on caffeine and cognitive function (separately from exercise contexts) or downgrade to 'Low' pending adequately powered trials, as 7 studies with one reported N is scientifically indefensible.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

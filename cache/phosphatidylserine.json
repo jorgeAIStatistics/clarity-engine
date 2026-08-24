@@ -1,9 +1,9 @@
 {
   "name": "Phosphatidylserine",
   "category": "nootropic",
-  "overall_score": 70,
+  "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 6,
+  "study_count": 9,
   "claims": [
     {
       "outcome": "cognition",
@@ -59,29 +59,38 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 3,
       "grade_reasons": [
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
-        "mechanistic": 25,
+        "mechanistic": 30,
         "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 1,
+        "n_human_studies": 2,
         "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:42312814",
-        "PMID:41348177"
+        "PMID:41348177",
+        "PMID:16960523"
       ],
       "studies": [
         {
           "pmid": "42312814",
           "title": "Beneficial vascular effects of oral phosphatidylserine supplementation in type 2 diabetes.",
           "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "16960523",
+          "title": "Phosphatidylserine supplementation and recovery following downhill running.",
+          "year": "2006",
           "design": "RCT",
           "population": "human",
           "n": null
@@ -106,79 +115,51 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For blood sugar, Phosphatidylserine has moderate human evidence (2 studies)."
+      "summary": "For blood sugar, Phosphatidylserine has moderate human evidence (3 studies)."
     },
     {
-      "outcome": "liver health",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
+      "outcome": "cholesterol / lipids",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 4,
       "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+        "Imprecision: modest verified sample (~54 participants across 2 of 4 studies); effect estimate may be unstable."
       ],
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:41348177"
-      ],
-      "studies": [
-        {
-          "pmid": "41348177",
-          "title": "Phosphatidylserine Supplementation Improves Metabolic Liver Disease and Glycemic Control in the Presence of Suppressed Oxidative Glucose Metabolism.",
-          "year": "2026",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For liver health, Phosphatidylserine has only preliminary or animal evidence (1 studies)."
-    },
-    {
-      "outcome": "inflammation",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 25,
+        "mechanistic": 30,
         "preclinical": 45,
-        "human": 0,
-        "overall": 45,
-        "ceiling": 55,
-        "n_human_studies": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
         "n_animal_studies": 2,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:41348177",
-        "PMID:34245747"
+        "PMID:34245747",
+        "PMID:23495677",
+        "PMID:3518329"
       ],
       "studies": [
+        {
+          "pmid": "23495677",
+          "title": "The effect of phosphatidylserine administration on memory and symptoms of attention-deficit hyperactivity disorder: a randomised, double-blind, placebo-controll",
+          "year": "2014",
+          "design": "RCT",
+          "population": "human",
+          "n": 19
+        },
+        {
+          "pmid": "3518329",
+          "title": "Double-blind randomized controlled study of phosphatidylserine in senile demented patients.",
+          "year": "1986",
+          "design": "RCT",
+          "population": "human",
+          "n": 35
+        },
         {
           "pmid": "41348177",
           "title": "Phosphatidylserine Supplementation Improves Metabolic Liver Disease and Glycemic Control in the Presence of Suppressed Oxidative Glucose Metabolism.",
@@ -207,16 +188,62 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Phosphatidylserine has only preliminary or animal evidence (2 studies)."
+      "summary": "For cholesterol / lipids, Phosphatidylserine has moderate human evidence (4 studies)."
+    },
+    {
+      "outcome": "bone health",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 35,
+        "human": 0,
+        "overall": 35,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 1,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:32621924"
+      ],
+      "studies": [
+        {
+          "pmid": "32621924",
+          "title": "Phosphatidylserine nanoliposomes inhibit glucocorticoid-induced osteoporosis: A potential combination therapy with alendronate.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For bone health, Phosphatidylserine has only preliminary or animal evidence (1 studies)."
     }
   ],
   "effects_established": [
-    "blood sugar"
+    "blood sugar",
+    "cholesterol / lipids"
   ],
   "effects_promising": [
     "cognition",
-    "liver health",
-    "inflammation"
+    "bone health"
   ],
   "effects_emerging": [],
   "honesty_note": null,
@@ -243,5 +270,76 @@
       "Serine, Phosphatidyl"
     ]
   },
-  "_cached_at": 1787506286.67294
+  "_cached_at": 1787607282.175642,
+  "explanation": {
+    "what_it_is": "Phosphatidylserine (PS) is a phospholipid \u2014 a fatty molecule with a phosphate group and amino acid head \u2014 found naturally in cell membranes throughout the body, especially in the brain. It is extracted from plant or animal sources (commonly soy or bovine brain) and sold as a dietary supplement in capsule or powder form. The molecular structure is C\u2084\u2082H\u2088\u2082NO\u2081\u2080P, a complex fat that resembles the phospholipids your own cells use to maintain their outer layer.",
+    "how_it_works": "Phosphatidylserine is incorporated into cell membranes, where it plays a structural role and influences cellular signaling. In the brain, it may support neurotransmitter release and cell-to-cell communication, which is why it has been studied for cognitive effects. PS also participates in immune regulation and may influence how cells respond to metabolic stress, potentially affecting blood sugar regulation and cholesterol metabolism. The mechanism likely involves both direct incorporation into damaged or aging cell membranes and indirect signaling through phospholipid-dependent pathways, though the precise chain of events in humans remains incompletely understood.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Emerging",
+        "what_studies_show": "A 2014 randomized controlled trial in 19 participants examined the effect of phosphatidylserine on memory and attention-deficit hyperactivity disorder symptoms. This single small study is the only human trial retrieved addressing cognition; results are not yet characterized in detail from the abstracts provided.",
+        "why_this_grade": "Only one small human study (n=19) addresses this outcome, making it impossible to assess consistency or confidence. The sample size is too small to provide precise estimates. This qualifies as emerging evidence \u2014 suggestive but far from established in humans."
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Moderate",
+        "what_studies_show": "Two human randomized controlled trials examined phosphatidylserine's effects on blood sugar: one from 2026 on vascular and metabolic benefits in type 2 diabetes, and one from 2006 on recovery following exercise stress. A 2026 animal study also demonstrated improvements in glycemic control and metabolic liver disease. Together, these suggest PS may help regulate glucose metabolism, though the human evidence remains limited.",
+        "why_this_grade": "Two human RCTs provide direction, but sample sizes could not be verified from the abstracts, leaving precision uncertain. The combination of modest human data plus supporting animal evidence elevates this to Moderate, but unconfirmed sample sizes prevent a higher grade."
+      },
+      {
+        "outcome": "cholesterol / lipids",
+        "grade": "Moderate",
+        "what_studies_show": "Two human randomized controlled trials (n=19 in 2014, n=35 in 1986) and two animal studies (2026 and 2021) examined effects on cholesterol and lipid profiles. The 2021 animal study specifically tested PS-containing liposomes for anti-atherosclerotic and cholesterol-lowering potential. The human trials showed measurable lipid changes, though effect sizes and clinical significance vary.",
+        "why_this_grade": "Two human trials with a combined verified sample of approximately 54 participants provide evidence direction, but this modest sample makes effect estimates potentially unstable. The addition of two supporting animal studies pushes the grade to Moderate, but imprecision from small human trial sizes prevents higher confidence."
+      },
+      {
+        "outcome": "bone health",
+        "grade": "Preliminary",
+        "what_studies_show": "A single 2020 animal study tested phosphatidylserine-containing nanoliposomes against glucocorticoid-induced osteoporosis as a potential combination therapy. The study demonstrated protective effects in an animal model, but no human trials are present in the retrieved records.",
+        "why_this_grade": "Evidence is animal-only and does not reliably predict human outcomes. With no human data, this remains preliminary and speculative for human bone health applications."
+      }
+    ],
+    "evidence_base": "The evidence for phosphatidylserine is a mix of small human trials and animal studies, with human research heavily concentrated in the 1980s\u20132010s. Most outcomes rely on single-digit or low double-digit human trial populations, and sample sizes in several key studies could not be verified from abstracts alone, limiting precision. Animal studies are more recent (2020\u20132026) and provide supportive mechanistic data, particularly for metabolic and lipid effects. Overall, the literature suggests promise in several areas but lacks the large, modern, long-duration human trials needed to establish robust efficacy.",
+    "emerging_research": "Recent animal studies (2020\u20132026) have shifted focus toward delivery innovations, particularly nanoliposome formulations of phosphatidylserine, designed to improve absorption and target specific organs (liver, bone). These early-stage investigations suggest PS may be most useful not as a standalone agent but as a component of liposomal or encapsulated systems. A 2026 human trial on type 2 diabetes represents relatively recent human work, though published outcomes are not yet detailed. These directions remain exploratory and have not yet translated to widespread clinical application.",
+    "open_questions": "Among the studies retrieved here, human trials are generally small (n=19\u201335) and appear concentrated in older or specialized populations (ADHD, dementia, diabetes); whether PS works similarly in healthy adults or other age groups is not clear from these records. Trial durations in the retrieved abstracts are not consistently stated, but the field appears dominated by short-term studies \u2014 the full scope of long-term safety or sustained benefit remains unclear from this sample alone. No retrieved studies appear to directly compare different doses, formulations (e.g., nanoliposomal vs. standard), or sources (soy vs. bovine), so optimal administration is not characterized.",
+    "caveats": "Phosphatidylserine is generally considered safe and well-tolerated in short-term use, but long-term safety data in humans are limited. Because PS is a phospholipid, it is theoretically present in normal diets and is not known to be acutely toxic; however, dietary supplement quality and purity vary, and some products may contain contaminants. People with bleeding disorders or taking anticoagulants should consult a healthcare provider, as some early research suggested PS might affect platelet function, though this is not established in modern human trials.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base is extremely sparse: cognition rests on a single 19-person trial, and most other claims lack extractable sample sizes or human data, making it impossible to assess precision or clinical significance reliably.",
+    "concerns": [
+      {
+        "issue": "Cognition claim based on single tiny trial",
+        "detail": "The 'Emerging' grade for cognition rests entirely on one 2014 RCT with n=19. No consistency can be assessed with a single study, and a sample of 19 is inherently prone to instability from random variation or uncontrolled confounds. The engine explicitly flagged both imprecision and inability to assess inconsistency.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood sugar: sample sizes unverifiable from records",
+        "detail": "The 'Moderate' grade for blood sugar includes 3 studies (2 RCT human, 1 animal) but the abstracts provided contain no extractable sample sizes for any of them. The engine capped certainty below top tier due to unconfirmed precision, yet a 'Moderate' grade was still assigned without knowing whether the human trials had n=20 or n=200.",
+        "severity": "high"
+      },
+      {
+        "issue": "Lipids: half of evidence lacks sample sizes, one study recycled across outcomes",
+        "detail": "Only 2 of 4 lipids studies report sample sizes (n=19 and n=35, totaling ~54 participants in human arms). The 2014 study (n=19) appears to serve double duty (listed under both cognition and lipids outcomes), inflating the apparent breadth of evidence. The engine flagged modest and potentially unstable sample sizes.",
+        "severity": "high"
+      },
+      {
+        "issue": "Bone health is animal-only with no human translation pathway",
+        "detail": "The 'Preliminary' grade for bone health is based on a single 2020 animal study with no sample size reported and no human trials. The engine correctly noted this is indirect evidence that does not reliably translate to humans. The grading acknowledges the limitation but the evidence cannot support a human clinical claim.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Publication lag obscures how recent the evidence actually is",
+        "detail": "The retrieved abstracts include a 2026 study (likely a preprint or early online), but the human RCT evidence for cognition and one lipids study are from 2014 and 1986. A 40-year gap between oldest and most recent studies, combined with only one cognition trial from over a decade ago, leaves current clinical relevance uncertain.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The retrieved abstracts do not provide mechanistic details (they are titles only). Without understanding the proposed biological pathway from phosphatidylserine to cognition, blood sugar control, or bone homeostasis, it is impossible to evaluate whether the clinical outcomes follow plausibly from the compound's properties. The mechanism-to-outcome leap cannot be assessed from the records provided.",
+    "strongest_counterargument": "A skeptic would note that the entire 'Moderate' tier rests on unverifiable sample sizes and a single 19-person cognition trial whose results cannot be checked for consistency. The lipids and blood-sugar grades aggregate animal and human data without transparency about which effects come from which\u2014animal liposome formulations may behave entirely differently from oral phosphatidylserine in humans. The 2014 and 1986 trials are old; without access to the full text, we cannot confirm whether they used comparable doses, populations, or outcome measures to modern standards.",
+    "what_would_change_the_picture": "A well-powered (n \u2265 100 per arm), recent RCT in a clearly defined population (e.g., mild cognitive impairment, type 2 diabetes, or hypercholesterolemia) with pre-registered outcomes and transparent reporting of sample sizes, dropout rates, and effect sizes would resolve uncertainty for at least one claim. Separately, human translation studies bridging the animal bone-health data to osteoporosis or fracture prevention would be needed to justify claims in that domain.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

@@ -58,6 +58,13 @@ def main():
                 flags.append((name, "human-tier grade with no human studies",
                               f"{c['outcome']}"))
 
+        # 2a. Coverage floor: any compound this thin is a retrieval problem,
+        #     not a genuine absence of literature. Caffeine dropped from 71
+        #     studies to 16 when the pool was shrunk, and lost a tier with it.
+        if p.get("study_count", 0) < 12 and p.get("category") != "peptide":
+            flags.append((name, "thin retrieval (likely a search/pool problem)",
+                          f"{p.get('study_count')} studies"))
+
         # 2. Suspiciously few studies for a well-known compound
         if p.get("study_count", 0) < 15 and name in EXPECTED and EXPECTED[name] == "Strong":
             flags.append((name, "very few studies for a well-studied compound",

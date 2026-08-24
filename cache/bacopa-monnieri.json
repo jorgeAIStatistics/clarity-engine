@@ -3,7 +3,7 @@
   "category": "nootropic",
   "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 12,
+  "study_count": 19,
   "claims": [
     {
       "outcome": "cognition",
@@ -11,18 +11,19 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 5,
+      "n_studies": 12,
       "grade_reasons": [
-        "Limited human evidence: 3 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~2798 participants verified across 5 of 12 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 4 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 5,
-        "n_animal_studies": 0,
+        "n_human_studies": 7,
+        "n_animal_studies": 5,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -30,7 +31,14 @@
         "PMID:18611150",
         "PMID:38538390",
         "PMID:41091332",
-        "PMID:22747190"
+        "PMID:22747190",
+        "PMID:19808086",
+        "PMID:39656222",
+        "PMID:41678913",
+        "PMID:35041248",
+        "PMID:25965066",
+        "PMID:20153260",
+        "PMID:25660331"
       ],
       "studies": [
         {
@@ -40,6 +48,14 @@
           "design": "Meta-analysis",
           "population": "human",
           "n": 518
+        },
+        {
+          "pmid": "41678913",
+          "title": "Comparative effects of Bacopa monnieri and Ginkgo biloba on cognitive functions: A systematic review and network meta-analysis.",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 2107
         },
         {
           "pmid": "22747190",
@@ -66,12 +82,60 @@
           "n": 62
         },
         {
+          "pmid": "35041248",
+          "title": "Effects of Bacopa monnieri (CDRI 08\u00ae) in a population of males exhibiting inattention and hyperactivity aged 6 to 14\u2009years: A randomized, double-blind, placebo-",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "18611150",
           "title": "Effects of a standardized Bacopa monnieri extract on cognitive performance, anxiety, and depression in the elderly: a randomized, double-blind, placebo-controll",
           "year": "2008",
           "design": "RCT",
           "population": "human",
           "n": 10
+        },
+        {
+          "pmid": "39656222",
+          "title": "Bacopaside-I ameliorates motor dysfunction and neurodegeneration in rat model of Parkinson's disease.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "25965066",
+          "title": "In Silico and In Vitro Analysis of Bacoside A Aglycones and Its Derivatives as the Constituents Responsible for the Cognitive Effects of Bacopa monnieri.",
+          "year": "2015",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "25660331",
+          "title": "Protective effects of Bacopa monnieri on ischemia-induced cognitive deficits in mice: the possible contribution of bacopaside I and underlying mechanism.",
+          "year": "2015",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "19808086",
+          "title": "Cognitive enhancement and neuroprotective effects of Bacopa monnieri in Alzheimer's disease model.",
+          "year": "2010",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "20153260",
+          "title": "Behavioral deficit and decreased GABA receptor functional regulation in the cerebellum of epileptic rats: effect of Bacopa monnieri and bacoside A.",
+          "year": "2010",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
         }
       ],
       "effects": {
@@ -85,7 +149,71 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For cognition, Bacopa Monnieri has moderate human evidence (5 studies)."
+      "summary": "For cognition, Bacopa Monnieri has moderate human evidence (12 studies)."
+    },
+    {
+      "outcome": "mood / depression",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Imprecision: small verified sample (~10 participants across 1 measured studies)."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 35,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 2,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:18611150",
+        "PMID:39656222",
+        "PMID:35041248"
+      ],
+      "studies": [
+        {
+          "pmid": "35041248",
+          "title": "Effects of Bacopa monnieri (CDRI 08\u00ae) in a population of males exhibiting inattention and hyperactivity aged 6 to 14\u2009years: A randomized, double-blind, placebo-",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "18611150",
+          "title": "Effects of a standardized Bacopa monnieri extract on cognitive performance, anxiety, and depression in the elderly: a randomized, double-blind, placebo-controll",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": 10
+        },
+        {
+          "pmid": "39656222",
+          "title": "Bacopaside-I ameliorates motor dysfunction and neurodegeneration in rat model of Parkinson's disease.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For mood / depression, Bacopa Monnieri shows early but unsettled evidence (3 studies)."
     },
     {
       "outcome": "stress / anxiety",
@@ -144,28 +272,27 @@
     },
     {
       "outcome": "sleep quality",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: small verified sample (~62 participants across 1 measured studies).",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed.",
-        "Floor applied: human trial evidence retained at least 'emerging' certainty absent a specific serious flaw."
+        "Imprecision: modest verified sample (~62 participants across 1 of 2 studies); effect estimate may be unstable."
       ],
       "layers": {
-        "mechanistic": 20,
+        "mechanistic": 25,
         "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 1,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:38538390"
+        "PMID:38538390",
+        "PMID:35041248"
       ],
       "studies": [
         {
@@ -175,55 +302,6 @@
           "design": "RCT",
           "population": "human",
           "n": 62
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For sleep quality, Bacopa Monnieri shows early but unsettled evidence (1 studies)."
-    },
-    {
-      "outcome": "mood / depression",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 4,
-      "grade_reasons": [
-        "Imprecision: modest verified sample (~111 participants across 2 of 4 studies); effect estimate may be unstable."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:18611150",
-        "PMID:41091332",
-        "PMID:39656222",
-        "PMID:35041248"
-      ],
-      "studies": [
-        {
-          "pmid": "41091332",
-          "title": "The Effects of a Bacopa monnieri Extract (Bacumen",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": 101
         },
         {
           "pmid": "35041248",
@@ -232,22 +310,6 @@
           "design": "RCT",
           "population": "human",
           "n": null
-        },
-        {
-          "pmid": "18611150",
-          "title": "Effects of a standardized Bacopa monnieri extract on cognitive performance, anxiety, and depression in the elderly: a randomized, double-blind, placebo-controll",
-          "year": "2008",
-          "design": "RCT",
-          "population": "human",
-          "n": 10
-        },
-        {
-          "pmid": "39656222",
-          "title": "Bacopaside-I ameliorates motor dysfunction and neurodegeneration in rat model of Parkinson's disease.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
         }
       ],
       "effects": {
@@ -261,20 +323,91 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For mood / depression, Bacopa Monnieri has moderate human evidence (4 studies)."
+      "summary": "For sleep quality, Bacopa Monnieri has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
     "cognition",
     "stress / anxiety",
-    "mood / depression"
+    "sleep quality"
   ],
   "effects_promising": [
-    "sleep quality"
+    "mood / depression"
   ],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787506261.782065
+  "_cached_at": 1787607212.345728,
+  "explanation": {
+    "what_it_is": "Bacopa monnieri, also called water hyssop or brahmi, is a small creeping plant used in Ayurvedic medicine for centuries. The active compounds are bacosides \u2014 a family of alkaloids and saponins that concentrate in the leaf extract. People typically take standardized extracts (often CDRI 08\u00ae in research) as capsules or powders, usually dosed between 300\u2013600 mg daily in studies.",
+    "how_it_works": "Bacopa is thought to work through multiple pathways in the brain. The bacosides appear to enhance synaptic transmission \u2014 the process by which neurons communicate \u2014 possibly by increasing neurotransmitter availability and stabilizing nerve cell membranes. Some research suggests bacosides reduce oxidative stress in the brain and may promote dendrite (nerve cell branch) growth. The mechanism behind any mood or anxiety effects is less clear, but may involve dopamine and serotonin signaling. Overall, the biochemistry points to neuroprotection and cognitive support, though human evidence for the magnitude of these effects remains modest.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Moderate",
+        "what_studies_show": "A 2014 meta-analysis of randomized controlled trials (n=518 combined) and a 2026 systematic review comparing Bacopa monnieri and Ginkgo biloba (n=2107) both found cognitive benefits associated with Bacopa extract. Smaller recent RCTs \u2014 including a 2025 trial (n=101) and a 2024 trial (n=62) in adults with mild cognitive concerns \u2014 reported improvements in cognitive performance and/or attention after Bacopa supplementation. A 2022 RCT in children aged 6+ with inattention and hyperactivity also showed cognitive gains.",
+        "why_this_grade": "The evidence crosses multiple study designs (meta-analyses, systematic reviews, and individual RCTs) and a reasonably large verified participant base (at least 2798 across confirmed studies), meeting the threshold for Moderate. However, most individual abstracts lack sample-size details, and the evidence is still limited to 4 primary human studies and 3 pooled analyses \u2014 below the volume needed for a Strong rating. Results are consistent across studies but effect sizes are not uniformly reported."
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Emerging",
+        "what_studies_show": "A 2008 RCT (n=10) found improvements in depression and anxiety in elderly participants taking standardized Bacopa extract. A 2022 RCT in children with inattention and hyperactivity also measured mood outcomes. One animal study (2025) in a Parkinson's model showed bacopaside-I reduced neurodegeneration, a mechanistic finding relevant to mood but not direct evidence in humans.",
+        "why_this_grade": "Only 2 human studies exist in the retrieved records, with very small verified sample sizes (~10 participants in the measured trial). No meta-analyses or large RCTs specifically targeting depression or mood are present. The evidence is too limited and imprecise to establish efficacy \u2014 it is promising preliminary finding rather than reliable demonstration of benefit."
+      },
+      {
+        "outcome": "stress / anxiety",
+        "grade": "Moderate",
+        "what_studies_show": "A 2025 RCT (n=101) and a 2008 RCT (n=10) both measured anxiety outcomes in participants taking Bacopa monnieri extract. Both reported reductions in anxiety or anxiety-related symptoms, though study populations and extract standardization varied.",
+        "why_this_grade": "Two human RCTs with a combined verified sample of ~111 participants support an anxiety-reducing effect. The sample is modest and effect estimates may be unstable given the small number of trials and participants, preventing a Strong classification. No animal studies were retrieved, so the mechanism remains inferred from biochemistry rather than experimentally confirmed in animals in this sample."
+      },
+      {
+        "outcome": "sleep quality",
+        "grade": "Moderate",
+        "what_studies_show": "A 2024 RCT (n=62) in adults with mild cognitive concerns found that Bacopa monnieri improved sleep quality alongside cognitive performance. A 2022 RCT in children also measured sleep outcomes, though detailed results are not specified in the abstract.",
+        "why_this_grade": "Two human RCTs address sleep, with a verified sample of ~62 participants in the larger trial. This modest evidence base meets the threshold for Moderate rather than Emerging, but the imprecision warning (few trials, small samples) indicates the effect estimate is not yet stable. Further replication is needed to confirm the size and consistency of sleep benefit."
+      }
+    ],
+    "evidence_base": "The research on Bacopa monnieri is dominated by human RCTs and systematic reviews; we retrieved 7 human studies and 5 animal studies across the outcomes. The majority of human work is recent (2022\u20132026), with a foundational 2008 trial and 2014 meta-analysis providing earlier support for cognition. Most studies use standardized extracts (particularly CDRI 08\u00ae), improving comparability. The animal studies are mechanistic (examining bacosides in Parkinson's models) rather than efficacy-focused. Overall, the human evidence is moderate in quantity and reasonably consistent, but sample sizes per outcome are often small and long-term safety data appear limited in the records retrieved.",
+    "emerging_research": "Recent work (2025\u20132026) is expanding Bacopa research into broader cognitive conditions (mild cognitive impairment, inattention in children) and comparing it head-to-head with other nootropics like Ginkgo biloba. Animal research is probing mechanistic pathways \u2014 particularly how bacopaside-I may protect against neurodegeneration in neurodegenerative models \u2014 though human translation of these findings remains early. Sleep quality is emerging as a secondary benefit in trials designed for cognition, suggesting future studies may investigate sleep more directly.",
+    "open_questions": "Among the studies retrieved here, the vast majority of human trials are short-term (weeks to a few months); none of the records provided show follow-up beyond 12 months, leaving long-term safety and durability unclear. The mood/depression evidence rests on only two human trials with very small sample sizes, and it is unknown whether these effects generalize beyond the specific populations studied (elderly in one trial, children in another). The records do not distinguish whether all Bacopa extracts (CDRI 08\u00ae, whole-plant, others) are equally effective, nor do they clarify optimal dosing or duration. Finally, because you are viewing only a sample of ~40 abstracts per outcome, gaps in the records provided do not mean gaps exist in the full literature \u2014 consult broader reviews for the complete state of research.",
+    "caveats": "Bacopa monnieri is generally well-tolerated in the trials shown, though gastrointestinal upset and fatigue were occasionally reported; long-term safety in pregnant women, children under age 6, or those on medications affecting dopamine or serotonin has not been systematically characterized in the records retrieved and warrants caution. Standardization varies across commercial products \u2014 many studies use CDRI 08\u00ae, a specific extract formulation \u2014 so non-standardized supplements may differ in potency. Those taking anticholinergic drugs, sedatives, or treatments for psychiatric conditions should consult a healthcare provider before use, as Bacopa's effects on neurotransmitters are not fully mapped in all drug-interaction contexts.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base for Bacopa is small and heterogeneous: most outcomes rest on 1\u20132 human RCTs with modest sample sizes, and no pooled effect estimates could be extracted, so the true magnitude and consistency of benefit remain uncertain.",
+    "concerns": [
+      {
+        "issue": "Cognition outcome relies heavily on reviews without pooled data",
+        "detail": "Cognition is graded 'Moderate' but comprises only 4 primary human RCTs (n=10, 62, 101, and one unreported); the grade is inflated by 3 pooled analyses (2 systematic reviews and 1 meta-analysis) that did NOT produce extractable effect estimates. This means the apparent strength comes from secondary summaries rather than primary effect measurements. A single large or well-executed RCT showing null or contradictory results could reverse the picture.",
+        "severity": "high"
+      },
+      {
+        "issue": "Tiny trial (n=10) from 2008 anchors multiple outcomes",
+        "detail": "The 2008 RCT with n=10 appears in evidence records for cognition, mood/depression, and stress/anxiety. This study is underpowered by modern standards and its results could be driven by noise or unblinded assessment. Its outsized presence in a thin evidence base (only 2 RCTs for anxiety, 2 for sleep, 3 total for mood) means one small, potentially flawed trial materially supports three distinct 'Moderate' or 'Emerging' grades.",
+        "severity": "high"
+      },
+      {
+        "issue": "Mood/depression outcome critically underpowered",
+        "detail": "Mood is graded 'Emerging' on the basis of exactly 1 human RCT with reportable sample size (n=10), plus one RCT with unreported n, plus one animal study. The engine explicitly flagged 'imprecision: small verified sample (~10 participants).' This is insufficient to support any clinical claim about mood or depression, and the 'Emerging' label may overstate confidence.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sleep and stress/anxiety outcomes based on single studies or unreported ns",
+        "detail": "Sleep quality is graded 'Moderate' despite comprising only 2 RCTs, one of which (n=62) is reported and one with unreported sample size\u2014the engine flagged ~62 verified participants across 1 of 2 studies. Stress/anxiety is graded 'Moderate' on 2 RCTs (n=10 and n=101, total ~111), but one is the underpowered 2008 trial. Neither outcome has internal replication or direct comparison, so effect estimates are unstable and vulnerable to single-study bias.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "No extracted pooled effects; heterogeneity and directional consistency unknown",
+        "detail": "For all four outcomes, the records state 'pooled effect: none extractable.' This means we cannot quantify whether individual studies point in the same direction, whether effect sizes are comparable, or whether apparent benefits are consistent across populations or dosing regimens. The systematic reviews and meta-analysis exist but did not produce synthesized estimates visible in these records, raising the possibility of publication bias, heterogeneity, or inconclusive meta-analytic findings.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "The retrieved records focus on clinical outcomes (cognition, mood, anxiety, sleep) but do not describe the proposed biological mechanism linking Bacopa's constituents (e.g., bacosides, bacopaside-I) to those outcomes. The animal studies (Parkinson's model, ischemia-induced deficits) suggest neuroprotection, but there is a substantial inferential leap from in vitro or animal neuroprotection to clinical cognition or mood improvement in human populations. Without clarity on the mechanism or dose\u2013response relationships in humans, it is unclear whether positive animal findings translate to the reported clinical effects.",
+    "strongest_counterargument": "A skeptic would note that the cognition evidence is supported almost entirely by secondary syntheses (reviews and meta-analyses) that did not yield extractable effect estimates\u2014suggesting the underlying RCTs are small, heterogeneous, or inconclusive. For mood and sleep, the evidence is so thin (1\u20132 RCTs per outcome, one with n=10) that it cannot exclude placebo, observer bias, or regression to the mean. The absence of a pooled effect estimate across any outcome is also telling: if Bacopa reliably improved these domains, a coherent meta-analytic signal should be visible.",
+    "what_would_change_the_picture": "A large (n\u2265200), well-blinded, multisite RCT with pre-registered primary outcomes and intention-to-treat analysis in a single population (e.g., older adults with subjective cognitive decline, or adults with anxiety) would resolve whether Bacopa's effect is real and clinically meaningful. Concurrently, publication of the full meta-analytic results (effect size, confidence interval, heterogeneity statistics, funnel plot) from the 2014 and 2026 syntheses would clarify whether pooled estimates support or contradict the 'Moderate' grades currently assigned.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

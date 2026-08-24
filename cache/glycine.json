@@ -1,9 +1,9 @@
 {
   "name": "Glycine",
   "category": "amino",
-  "overall_score": 70,
+  "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 15,
+  "study_count": 32,
   "claims": [
     {
       "outcome": "inflammation",
@@ -11,26 +11,30 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 8,
       "grade_reasons": [
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
         "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 45,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
         "n_human_studies": 1,
-        "n_animal_studies": 2,
+        "n_animal_studies": 7,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:37851316",
         "PMID:38418414",
         "PMID:34085156",
-        "PMID:38271555"
+        "PMID:38271555",
+        "PMID:41277608",
+        "PMID:32110933",
+        "PMID:34075695",
+        "PMID:33830211"
       ],
       "studies": [
         {
@@ -39,6 +43,14 @@
           "year": "2024",
           "design": "Systematic review",
           "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41277608",
+          "title": "Glycine attenuates high fructose-induced liver injury in adolescent mice by modulating lipid metabolism and gut microbiota.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
           "n": null
         },
         {
@@ -58,11 +70,35 @@
           "n": null
         },
         {
+          "pmid": "34075695",
+          "title": "Glycine Attenuates Citrobacter rodentium-Induced Colitis by Regulating ATF6-Mediated Endoplasmic Reticulum Stress in Mice.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "33830211",
+          "title": "Dietary Supplementation with Glycine Enhances Intestinal Mucosal Integrity and Ameliorates Inflammation in C57BL/6J Mice with High-Fat Diet-Induced Obesity.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "32110933",
+          "title": "Glycine Attenuates Lipopolysaccharide-Induced Acute Lung Injury by Regulating NLRP3 Inflammasome and NRF2 Signaling.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "38418414",
           "title": "Glycine supplementation can partially restore oxidative stress-associated glutathione deficiency in ageing cats.",
           "year": "2024",
           "design": "Unclassified",
-          "population": "unknown",
+          "population": "animal",
           "n": null
         }
       ],
@@ -77,7 +113,7 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Glycine has moderate human evidence (4 studies)."
+      "summary": "For inflammation, Glycine has moderate human evidence (8 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -85,24 +121,27 @@
       "certainty": "very_low",
       "score": 22,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 6,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Precision: ~240 participants verified across 1 of 6 studies; most abstracts omit sample size, so the true total is substantially larger."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 45,
+        "preclinical": 55,
         "human": 22,
         "overall": 22,
         "ceiling": 22,
         "n_human_studies": 1,
-        "n_animal_studies": 2,
+        "n_animal_studies": 5,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:42094615",
         "PMID:36615754",
-        "PMID:35447412"
+        "PMID:35447412",
+        "PMID:39332340",
+        "PMID:32091321",
+        "PMID:33830211"
       ],
       "studies": [
         {
@@ -128,6 +167,30 @@
           "design": "Animal",
           "population": "animal",
           "n": null
+        },
+        {
+          "pmid": "32091321",
+          "title": "Glycine supplementation during six months does not alter insulin, glucose or triglyceride plasma levels in healthy rats.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "33830211",
+          "title": "Dietary Supplementation with Glycine Enhances Intestinal Mucosal Integrity and Ameliorates Inflammation in C57BL/6J Mice with High-Fat Diet-Induced Obesity.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "39332340",
+          "title": "Optimal glycine allowance levels in low-protein diets and the dynamic requirement model for broilers.",
+          "year": "2024",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": 240
         }
       ],
       "effects": {
@@ -141,39 +204,98 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For blood sugar, Glycine has only preliminary or animal evidence (3 studies)."
+      "summary": "For blood sugar, Glycine has only preliminary or animal evidence (6 studies)."
     },
     {
-      "outcome": "liver health",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 4,
+      "outcome": "weight / fat loss",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 15,
       "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Precision: ~346 participants verified across 3 of 15 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 45,
-        "human": 0,
-        "overall": 45,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 2,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 5,
+        "n_animal_studies": 6,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:38842011",
+        "PMID:34535959",
+        "PMID:41107432",
+        "PMID:30916479",
         "PMID:39513322",
         "PMID:37837640",
         "PMID:36615754",
-        "PMID:38271555"
+        "PMID:38271555",
+        "PMID:34519439",
+        "PMID:36584416",
+        "PMID:37801645",
+        "PMID:38761109",
+        "PMID:34085156",
+        "PMID:27029941",
+        "PMID:38038705"
       ],
       "studies": [
         {
+          "pmid": "34535959",
+          "title": "Gut barrier and microbiota changes with glycine and branched-chain amino acid supplementation in chronic haemodialysis patients.",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": 27
+        },
+        {
+          "pmid": "34519439",
+          "title": "Glycine increases fat-free mass in malnourished haemodialysis patients: a randomized double-blind crossover trial.",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41107432",
+          "title": "Metabolic impact of dietary glycine supplementation in individuals with severe obesity.",
+          "year": "2025",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 19
+        },
+        {
+          "pmid": "38842011",
+          "title": "Arginine, glycine, and creatine supplementation improves symptoms in a female with creatine transporter deficiency.",
+          "year": "2024",
+          "design": "Case report",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "37801645",
+          "title": "Dietary glycine supplementation enhances the growth performance of hybrid striped bass (Morone saxatilis \u2640\u00d7 Morone chrysops \u2642) fed soybean meal-based diets.",
+          "year": "2023",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "38271555",
           "title": "Dietary glycine supplementation enhances glutathione availability in tissues of pigs with intrauterine growth restriction.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "38761109",
+          "title": "Dietary glycine supplementation activates mechanistic target of rapamycin signaling pathway in tissues of pigs with intrauterine growth restriction.",
           "year": "2024",
           "design": "Animal",
           "population": "animal",
@@ -188,72 +310,6 @@
           "n": null
         },
         {
-          "pmid": "39513322",
-          "title": "Dietary glycine supplementation enhances creatine availability in tissues of pigs with intrauterine growth restriction.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": null
-        },
-        {
-          "pmid": "37837640",
-          "title": "Dietary glycine supplementation enhances postweaning growth and meat quality of pigs with intrauterine growth restriction.",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For liver health, Glycine has only preliminary or animal evidence (4 studies)."
-    },
-    {
-      "outcome": "gut / digestion",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 4,
-      "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
-        "human": 0,
-        "overall": 45,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 2,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:39513322",
-        "PMID:37837640",
-        "PMID:34085156",
-        "PMID:38271555"
-      ],
-      "studies": [
-        {
-          "pmid": "38271555",
-          "title": "Dietary glycine supplementation enhances glutathione availability in tissues of pigs with intrauterine growth restriction.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
           "pmid": "34085156",
           "title": "Protective effects of glycine against lipopolysaccharide-induced intestinal apoptosis and inflammation.",
           "year": "2022",
@@ -262,6 +318,22 @@
           "n": null
         },
         {
+          "pmid": "30916479",
+          "title": "Glycine supplementation extends lifespan of male and female mice.",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "27029941",
+          "title": "Glycine Regulates Expression and Distribution of Claudin-7 and ZO-3 Proteins in Intestinal Porcine Epithelial Cells.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "39513322",
           "title": "Dietary glycine supplementation enhances creatine availability in tissues of pigs with intrauterine growth restriction.",
           "year": "2024",
@@ -272,6 +344,22 @@
         {
           "pmid": "37837640",
           "title": "Dietary glycine supplementation enhances postweaning growth and meat quality of pigs with intrauterine growth restriction.",
+          "year": "2023",
+          "design": "Unclassified",
+          "population": "unknown",
+          "n": null
+        },
+        {
+          "pmid": "36584416",
+          "title": "Dietary glycine supplementation prevents heat stress-induced impairment of antioxidant status and intestinal barrier function in broilers.",
+          "year": "2023",
+          "design": "Unclassified",
+          "population": "unknown",
+          "n": 300
+        },
+        {
+          "pmid": "38038705",
+          "title": "Dietary glycine supplementation improves the growth performance of 110- to 240-g (phase II) hybrid striped bass (Morone saxatilis \u2640\u00d7 Morone chrysops \u2642) fed soyb",
           "year": "2023",
           "design": "Unclassified",
           "population": "unknown",
@@ -289,15 +377,79 @@
         "note": "extractor not run"
       },
       "headline_effect": null,
-      "summary": "For gut / digestion, Glycine has only preliminary or animal evidence (4 studies)."
+      "summary": "For weight / fat loss, Glycine has moderate human evidence (15 studies)."
+    },
+    {
+      "outcome": "muscle growth",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Imprecision: small verified sample (~16 participants across 1 measured studies)."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:37801645",
+        "PMID:40197604",
+        "PMID:34519439"
+      ],
+      "studies": [
+        {
+          "pmid": "34519439",
+          "title": "Glycine increases fat-free mass in malnourished haemodialysis patients: a randomized double-blind crossover trial.",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40197604",
+          "title": "High-Intensity Interval Training Combined with Glycine Supplementation Drives Ferroptosis Resistance to Counteract Skeletal Muscle Atrophy in Aging Mice.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": 16
+        },
+        {
+          "pmid": "37801645",
+          "title": "Dietary glycine supplementation enhances the growth performance of hybrid striped bass (Morone saxatilis \u2640\u00d7 Morone chrysops \u2642) fed soybean meal-based diets.",
+          "year": "2023",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 0,
+        "n_total": 0
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "extractor not run"
+      },
+      "headline_effect": null,
+      "summary": "For muscle growth, Glycine shows early but unsettled evidence (3 studies)."
     }
   ],
   "effects_established": [
-    "inflammation"
+    "inflammation",
+    "weight / fat loss"
   ],
   "effects_promising": [
-    "liver health",
-    "gut / digestion"
+    "muscle growth"
   ],
   "effects_emerging": [
     "blood sugar"
@@ -326,5 +478,76 @@
       "Glycolixir"
     ]
   },
-  "_cached_at": 1787506489.9893062
+  "_cached_at": 1787608069.894026,
+  "explanation": {
+    "what_it_is": "Glycine (2-aminoacetic acid, C\u2082H\u2085NO\u2082) is the smallest and simplest amino acid \u2014 a building block of proteins and a signaling molecule in the nervous system. It occurs naturally in collagen, gelatin, and many protein-rich foods, and is also synthesized by the body from other amino acids. People typically consume it through diet or take it as an oral supplement in powder or capsule form.",
+    "how_it_works": "Glycine acts through several interconnected pathways. It is a precursor to glutathione, a major cellular antioxidant that protects tissues from oxidative damage \u2014 this explains much of its anti-inflammatory potential. Glycine also acts as an inhibitory neurotransmitter in the spinal cord and brainstem, which may support sleep and pain modulation. It participates in collagen synthesis and creatine production, both critical for tissue structure and muscle function. In the gut, glycine helps stabilize the intestinal barrier by supporting tight junction proteins, which may reduce systemic inflammation. Finally, glycine influences glucose metabolism through effects on liver gluconeogenesis and may modulate immune responses via effects on T-cell function.",
+    "outcome_detail": [
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "A 2024 systematic review of glycine in human adults represents the only human evidence retrieved; most inflammation studies come from animal models (mice and pigs, 2021\u20132025). Animal work shows that dietary or administered glycine reduces intestinal inflammation, dampens lipopolysaccharide-induced intestinal damage, and attenuates colitis-like injury by upregulating antioxidant defenses (glutathione) and suppressing endoplasmic reticulum stress pathways. However, the human evidence is limited to one review and lacks independent replication in controlled trials.",
+        "why_this_grade": "The grade reflects only one human study (a systematic review) alongside several animal models showing consistent direction. Sample sizes in the abstracts could not be verified, and the human finding has not been independently replicated in a separate randomized trial, capping confidence at moderate rather than strong."
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Preliminary",
+        "what_studies_show": "Among the six studies retrieved, glycine's effect on blood sugar control remains unclear and largely unproven in humans. A 2022 human study examined glycine's role in atherosclerosis risk via glutathione induction but did not directly measure glucose outcomes. Animal studies show mixed signals: one 2022 trial found that glycine supplementation in obese mice *worsened* glucose tolerance through enhanced hepatic gluconeogenesis, while a 2021 study in healthy mice found no change in glucose or insulin levels after six months of supplementation.",
+        "why_this_grade": "Only one human study is available and it does not directly address blood sugar; the animal evidence is contradictory (benefit vs. harm depending on metabolic context). Most abstracts omit sample size, preventing verification of precision. This evidence is too preliminary and inconsistent to support a clinical claim."
+      },
+      {
+        "outcome": "weight / fat loss",
+        "grade": "Moderate",
+        "what_studies_show": "Five human studies and six animal studies are represented in the retrieved records. In humans, a 2021 RCT (n=27) in haemodialysis patients showed changes in gut barrier and microbiota; another 2021 RCT reported increased fat-free mass (lean tissue) in malnourished haemodialysis patients on glycine; a 2025 clinical trial (n=19) in severe obesity examined metabolic impact. Animal studies across pigs and striped bass (2023\u20132025) show enhanced growth and body composition. However, studies have not been pooled in a meta-analysis, and sample sizes in most abstracts are unverified, limiting precision.",
+        "why_this_grade": "Multiple human trials exist with directional consistency (improved or maintained lean mass), and animal models support favorable body composition changes. However, verified sample sizes are low (~346 total across only 3 of 15 studies), heterogeneous populations (haemodialysis, obesity, fish) prevent a unified conclusion, and no systematic pooling confirms agreement. This warrants moderate confidence but not strong."
+      },
+      {
+        "outcome": "muscle growth",
+        "grade": "Emerging",
+        "what_studies_show": "Evidence for glycine and muscle growth is sparse. One 2021 RCT in malnourished haemodialysis patients (the only human study) documented increased fat-free mass on glycine. Two animal studies (2025 and 2023) examined glycine's role in muscle physiology \u2014 one testing combined high-intensity interval training plus glycine in a ferroptosis resistance model (n=16), and another in striped bass growth performance. Direct measurement of muscle hypertrophy or strength in healthy humans is absent from the retrieved records.",
+        "why_this_grade": "Only a single human study explicitly measures muscle-related outcomes in a small, sick population (haemodialysis). Animal evidence is minimal and mechanistically specialized (ferroptosis resistance, fish growth). The sample size is very small (~16 participants in one animal study). This is too limited to constitute established evidence and must be framed as emerging and requiring further study in healthy human populations."
+      }
+    ],
+    "evidence_base": "The retrieved literature is heavily skewed toward animal models (20 of 32 studies) and most human work comes from small clinical trials or case reports rather than large randomized controlled trials. Publication dates are recent (2021\u20132026), indicating active research, but the human evidence base for glycine remains thin \u2014 typically single-center trials with modest sample sizes and limited follow-up duration. The evidence is strongest for inflammation and weight/body composition (moderate grade), weaker for blood sugar (preliminary), and minimal for muscle growth (emerging). Confidence across all outcomes is capped by small human sample sizes and lack of independent replication of key findings.",
+    "emerging_research": "Recent work (2025\u20132026) has begun exploring glycine's role in more specific mechanistic pathways: ferroptosis resistance and muscle adaptation to exercise in animal models, and cardiomyocyte regeneration via the GCN2/AKT signaling axis. A 2025 trial in severe obesity is examining metabolic impacts more directly. These directions are early-stage and mostly in animals or very small human cohorts; their clinical relevance and reproducibility remain unproven.",
+    "open_questions": "Among the studies retrieved here, human evidence is concentrated in haemodialysis and obesity populations; healthy adult data are sparse or absent. Most retrieved trials do not report sample sizes in the abstracts, making it impossible to fully assess the precision of current findings. No study in the provided records extends beyond 12 months, so long-term safety and durability of any effect remain unknown in the sample literature. The retrieved abstracts represent only ~40 studies per outcome, so this assessment cannot characterize what research exists in the broader field \u2014 only what is visible in these records.",
+    "caveats": "Glycine is generally recognized as safe in typical dietary and supplemental doses (1\u20135 g daily); it is a natural amino acid with no major contraindications in healthy individuals. However, people with rare genetic disorders affecting glycine metabolism (e.g., glycine encephalopathy) should avoid supplementation. Individuals on medications affecting neurotransmission or with certain psychiatric conditions should consult a clinician before high-dose use, as glycine's role as an inhibitory neurotransmitter is not fully characterized in all populations. Quality and purity of commercial supplements vary; sourcing from reputable manufacturers is advisable.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal": {
+    "headline": "The evidence base is heavily animal-derived (68% of inflammation trials, 83% of blood sugar trials), human evidence is sparse and small (median n=27 for weight/fat loss; n=16 for muscle growth), and no pooled analyses exist to confirm consistency across studies.",
+    "concerns": [
+      {
+        "issue": "Overwhelming animal predominance with minimal human translation",
+        "detail": "Inflammation (7 of 8 studies animal), blood sugar (5 of 6 animal), and muscle growth (2 of 3 animal). A single human systematic review addresses inflammation, but its own conclusion is not independently replicated in the human evidence provided. Animal models test mechanisms, not clinical efficacy; the leap from rodent intestinal barrier or murine lipopolysaccharide response to human disease outcomes is substantial and unvalidated here.",
+        "severity": "high"
+      },
+      {
+        "issue": "Human trials are very small and lack consistency assessment",
+        "detail": "Weight/fat loss: median n=27, only 3 of 15 studies report sample size; muscle growth: n=16 for the single RCT. No meta-analysis or pooled effect is reported for any outcome. The engine notes inconsistency is held at 'moderate pending review' for weight/fat loss, but no cross-study agreement is demonstrated in these abstracts. A single outlier or methodological flaw in a small trial could substantially shift perceived effect.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood sugar evidence includes a directionally opposing finding",
+        "detail": "One 2022 animal study titled 'Glycine Supplementation in Obesity Worsens Glucose Intolerance through Enhanced Liver Gluconeogenesis' directly contradicts the 'blood sugar improvement' premise. This is listed as part of the evidence base but no reconciliation or subgroup analysis is provided. The preliminary grade may mask underlying heterogeneity.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sample sizes largely unverifiable; precision claims unconfirmed",
+        "detail": "Blood sugar: only 1 of 6 studies reports n; weight/fat loss: only 3 of 15; muscle growth: only 1 of 3. The engine states 'sample sizes could not be verified from the abstracts.' Abstract-level assessment cannot confirm whether unreported trials are adequately powered, and pooled precision remains unquantifiable.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Recent dates do not indicate rigor; some designs are unclassified",
+        "detail": "While most trials are recent (2020\u20132026), two outcomes include 'Unclassified' design studies (blood sugar: 2 unclassified; weight/fat loss: 5 unclassified). These lack clear methodology descriptors, making it impossible to assess risk of bias or control adequacy from these records. Mix of RCT, case report, and clinical trial alongside unclassified studies suggests heterogeneous evidence quality.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Animal studies suggest glycine modulates glutathione synthesis, inflammasome pathways (NLRP3), and endoplasmic reticulum stress (ATF6). These are plausible proxies for inflammation reduction. However, the leap from rodent hepatic gluconeogenesis or murine colitis to human weight loss, muscle gain, or blood sugar control is large; no human mechanistic data (e.g., metabolic tracer studies, muscle biopsy, or inflammatory cytokine measurement in the reported trials) bridges that gap. The directionally opposed glucose finding adds ambiguity about the true direction of effect on glycemic control.",
+    "strongest_counterargument": "A skeptic would argue: (1) animal inflammation and metabolic studies do not predict human clinical outcomes, especially when the human evidence is sparse, small, and non-replicated; (2) the single human blood sugar study appears neutral or negative (worsened glucose tolerance), contradicting the graded optimism; (3) weight/fat loss and muscle growth grades rest on median n~20\u201327, where a single large outlier or regression to the mean could change the narrative, and no pooled analysis exists to test this. The moderate and emerging grades may reflect evidence absence rather than true effect.",
+    "what_would_change_the_picture": "Large, well-powered (n\u2265100) human RCTs in each outcome domain with pre-registered primary endpoints, transparent reporting of sample size and allocation concealment, and prospective meta-analysis across trials to assess consistency and heterogeneity. A single adequately powered human trial would also establish whether the directional glycine\u2013glucose relationship is truly beneficial or harmful.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  }
 }

@@ -18,6 +18,22 @@ import time
 CACHE_DIR = os.environ.get("CLARITY_CACHE_DIR", "cache")
 
 
+def _db():
+    """
+    Postgres backend when DATABASE_URL is set, else None.
+
+    Render's disk is ephemeral, so files alone mean the catalog vanishes on
+    every deploy or spin-down. With a database configured, profiles persist and
+    the site stays fast across restarts. Local development needs no database —
+    files remain the default.
+    """
+    try:
+        import db
+        return db if db.available() else None
+    except Exception:
+        return None
+
+
 def _slug(topic):
     """Turn 'BPC-157' into a safe filename like 'bpc-157'."""
     s = topic.strip().lower()
@@ -38,18 +54,26 @@ def invalidate(topic):
     inspecting stale output after a fix. `run.py --fresh` calls this first.
     Returns True if a file was removed.
     """
+    removed = False
+    d = _db()
+    if d:
+        removed = d.invalidate(_slug(topic))
     p = _path(topic)
     try:
         os.remove(p)
-        return True
-    except FileNotFoundError:
-        return False
-    except OSError:
-        return False
+        removed = True
+    except (FileNotFoundError, OSError):
+        pass
+    return removed
 
 
 def get(topic, max_age_days=90):
     """Return a cached profile if it exists and isn't too old, else None."""
+    d = _db()
+    if d:
+        hit = d.get(_slug(topic), max_age_days=max_age_days)
+        if hit:
+            return hit
     p = _path(topic)
     if not os.path.exists(p):
         return None
@@ -72,11 +96,21 @@ def put(topic, profile):
     profile["_cached_at"] = time.time()
     with open(_path(topic), "w", encoding="utf-8") as f:
         json.dump(profile, f, indent=2)
+    # Write through to the database when configured, so a generated profile
+    # survives the next restart instead of living only until the disk is wiped.
+    d = _db()
+    if d:
+        d.put(_slug(topic), profile)
     return profile
 
 
 def list_cached():
     """List all cached topic slugs (what's already been generated)."""
+    d = _db()
+    if d:
+        slugs = d.list_cached()
+        if slugs:
+            return slugs
     if not os.path.isdir(CACHE_DIR):
         return []
     return sorted(fn[:-5] for fn in os.listdir(CACHE_DIR) if fn.endswith(".json"))

@@ -14,6 +14,7 @@ Usage:
 """
 
 import sys
+import time
 import json
 import pubmed
 import classify
@@ -42,9 +43,13 @@ def research(topic, category="supplement", use_cache=True, retmax=40, verbose=Tr
     # SINGLE RETRIEVAL: fetch a large pool once, then partition it across
     # outcomes locally. Previously each outcome ran its own PubMed search
     # (~15 round-trips, ~55s/compound) and the results overlapped heavily.
-    pool_size = max(retmax, 60)
+    pool_size = max(retmax, 150)
+    _t0 = time.time()
     base_studies = classify.classify_all(
         pubmed.search_topic(topic, None, retmax=pool_size))
+    if verbose:
+        print(f"[generating] retrieved {len(base_studies)} studies "
+              f"in {time.time() - _t0:.1f}s", file=sys.stderr)
 
     # Discover outcomes from RELEVANT, INTERVENTION studies only.
     # PubMed's relevance ranking returns papers where the compound appears
@@ -120,7 +125,7 @@ def research(topic, category="supplement", use_cache=True, retmax=40, verbose=Tr
     def _process_outcome(outcome):
         # Select from the pool we already have — no additional PubMed call.
         studies = [s for s in study_pool if discover.assign_to_outcome(s, outcome)]
-        if len(studies) < 3:
+        if len(studies) < 8:
             # Genuinely sparse in the pool: one targeted search as a top-up,
             # so an outcome isn't graded on two papers when more exist.
             extra = classify.classify_all(
