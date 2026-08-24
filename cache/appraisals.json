@@ -12983,5 +12983,40 @@
     "what_would_change_the_picture": "For muscle outcomes: a pre-registered meta-analysis of RCTs in young, healthy, resistance-trained individuals (separate from sarcopenia trials) with explicit reporting of between-study heterogeneity and sensitivity analyses excluding confounded (exercise+protein) trials would clarify whey's isolated effect. For recovery/soreness: adequately powered RCTs (n\u2265100 per arm) using objective biomarkers (creatine kinase, inflammatory cytokines) alongside self-reported soreness, with pre-specified comparator (isocaloric control, not alternative protein) would resolve whether the Moderate grade reflects a real signal or noise from small, heterogeneous trials.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
+  },
+  "folate::clarity-engine-v2::appraise1::7aea398a92": {
+    "headline": "The evidence base is too sparse and poorly characterized to support confident claims: cognition relies on 3 trials with unverifiable sample sizes, inflammation on 2 meta-analyses only (no primary trials), and lipids on a single 2018 meta-analysis.",
+    "concerns": [
+      {
+        "issue": "Cognition evidence lacks extractable sample sizes",
+        "detail": "All three cognition studies (meta-analysis, systematic review, RCT from 2023\u20132025) have abstracts that do not report or do not permit extraction of sample sizes. The engine explicitly noted this prevents verification of precision, capping certainty below top tier. Without knowing whether these are underpowered small trials or adequately sized studies, the Moderate grade cannot be evaluated for robustness.",
+        "severity": "high"
+      },
+      {
+        "issue": "Inflammation evidence is entirely secondary (no primary trials)",
+        "detail": "Both inflammation studies are meta-analyses (2021, 2024); there are no retrieved primary human trials. One meta-analysis covered only 426 participants total, suggesting small underlying studies. Relying solely on pooled re-analyses without access to the original trial designs and conduct introduces dependency on prior meta-analytic choices (study selection, weighting, heterogeneity handling) that are invisible here.",
+        "severity": "high"
+      },
+      {
+        "issue": "Lipids outcome based on single outdated meta-analysis",
+        "detail": "The lipids/cholesterol outcome rests on a lone 2018 meta-analysis with unextractable sample size. The engine notes both imprecision and lack of consistency assessment; a single meta-analysis cannot show whether findings are robust across independent bodies of evidence. A seven-year gap since publication raises concern about currency.",
+        "severity": "high"
+      },
+      {
+        "issue": "Cognition RCT design and population unclear",
+        "detail": "The 2024 RCT titled 'Cognitive benefits of folic acid supplementation during pregnancy track with epigenetic changes' concerns pregnancy and epigenetics, not the cognitive outcomes typically relevant to the folate-cognition evidence base for non-pregnant populations. The abstract does not clarify whether cognitive gains in pregnant women generalize to other ages or whether epigenetic changes are a validated biomarker of clinical cognitive benefit.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Pooled effects not extractable from any outcome",
+        "detail": "For cognition and lipids, no pooled effect sizes are available from the abstracts provided. For inflammation, pooled effects also cannot be extracted. This means the strength and direction of benefit cannot be directly verified from the records; grades rest on the engine's internal assessment rather than transparent summary statistics.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Folate is an essential cofactor in one-carbon metabolism and methylation, which plausibly supports neurogenesis, myelin synthesis, and homocysteine metabolism\u2014mechanisms relevant to cognition and possibly inflammation. However, the retrieved studies do not transparently link mechanistic endpoints (e.g., homocysteine reduction, epigenetic marks) to clinical outcomes (e.g., cognition scores, inflammatory markers). The 2024 pregnancy RCT associates epigenetic changes with cognitive 'benefits,' but epigenetic change is not a validated clinical outcome; whether methylation differences translate to functionally meaningful cognitive gains in target populations is an inferential leap not clearly closed by these abstracts.",
+    "strongest_counterargument": "A skeptic would note that this evidence base is extremely thin: three underpowered or uncharacterized trials for cognition, zero primary trials for inflammation, and one aging meta-analysis for lipids. The cognition grade (Moderate) rests partly on a pregnancy study, which is a different population; the inflammation grade relies entirely on secondary analyses without visibility into original trial conduct. Folate deficiency is rare in developed countries, and supplementation in non-deficient populations may show negligible effects. The absence of large, recent primary RCTs and the lack of pre-specified pooled effect estimates suggest the literature has not yet produced convincing evidence of clinically meaningful benefit.",
+    "what_would_change_the_picture": "A recent large multi-center RCT (n \u2265 500 per arm) in a single, well-defined population (e.g., older adults with mild cognitive impairment, or type 2 diabetes) measuring cognition or inflammatory markers with pre-specified primary endpoints and reporting both effect size and confidence intervals would materially strengthen the evidence. Alternatively, a high-quality systematic review with explicit search strategy, risk-of-bias assessment, and transparent pooled estimates (with heterogeneity analysis) covering primary trials published after 2020 would clarify whether the current grade reflects genuine signal or publication bias in a sparse literature.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
   }
 }
