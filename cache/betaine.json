@@ -1,6 +1,6 @@
 {
-  "name": "Betaine",
-  "category": "amino",
+  "name": "betaine",
+  "category": "supplement",
   "overall_score": 79,
   "tier": "Moderate",
   "study_count": 39,
@@ -94,17 +94,64 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "39514262",
+            "metric": "smd",
+            "value": 0.47,
+            "ci_low": 0.04,
+            "ci_high": 0.89,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "The results revealed a significant effect size of 0.47 (95% CI 0.04 to 0.89) for maximal strength"
+          },
+          {
+            "pmid": "40944155",
+            "metric": "cohen_d",
+            "value": 0.475,
+            "ci_low": 0.0,
+            "ci_high": 0.95,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "effect size = 0.475"
+          }
+        ],
+        "n_not_reported": 5,
+        "n_total": 7
       },
       "pooled": {
         "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
+        "exploratory": {
+          "value": 0.475,
+          "ci_low": -0.0,
+          "ci_high": 0.95,
+          "n_studies": 1
+        },
+        "note": null
       },
-      "headline_effect": null,
-      "summary": "For exercise performance, Betaine has moderate human evidence (7 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": 0.47,
+        "ci_low": 0.04,
+        "ci_high": 0.89,
+        "ci_estimated": false,
+        "n_studies_pooled": 17,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "39514262",
+        "quote": "The results revealed a significant effect size of 0.47 (95% CI 0.04 to 0.89) for maximal strength"
+      },
+      "summary": "For exercise performance, betaine has moderate human evidence (7 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -199,6 +246,14 @@
           "n": null
         },
         {
+          "pmid": "32583209",
+          "title": "In vivo: maternal betaine supplementation normalized fetal growth in diabetic pregnancy.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "29373534",
           "title": "Betaine Supplementation Enhances Lipid Metabolism and Improves Insulin Resistance in Mice Fed a High-Fat Diet.",
           "year": "2018",
@@ -229,28 +284,20 @@
           "design": "Unclassified",
           "population": "animal",
           "n": null
-        },
-        {
-          "pmid": "32583209",
-          "title": "In vivo: maternal betaine supplementation normalized fetal growth in diabetic pregnancy.",
-          "year": "2020",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 12,
+        "n_total": 12
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For blood sugar, Betaine has moderate human evidence (12 studies)."
+      "summary": "For blood sugar, betaine has moderate human evidence (12 studies)."
     },
     {
       "outcome": "cholesterol / lipids",
@@ -332,6 +379,14 @@
           "n": null
         },
         {
+          "pmid": "38232620",
+          "title": "Betaine supplementation alleviates corticosterone-induced hepatic cholesterol accumulation through epigenetic modulation of HMGCR and CYP7A1 genes in laying hen",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": 72
+        },
+        {
           "pmid": "36164766",
           "title": "Effects of betaine supplementation on reproductive performance of breeding geese.",
           "year": "2023",
@@ -346,6 +401,14 @@
           "design": "Animal",
           "population": "animal",
           "n": null
+        },
+        {
+          "pmid": "32475448",
+          "title": "Maternal betaine supplementation decreases hepatic cholesterol deposition in chicken offspring with epigenetic modulation of SREBP2 and CYP7A1 genes.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": 120
         },
         {
           "pmid": "32414094",
@@ -388,42 +451,26 @@
           "n": null
         },
         {
-          "pmid": "38232620",
-          "title": "Betaine supplementation alleviates corticosterone-induced hepatic cholesterol accumulation through epigenetic modulation of HMGCR and CYP7A1 genes in laying hen",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": 72
-        },
-        {
           "pmid": "34564022",
           "title": "Dietary supplementation of betaine promotes lipolysis by regulating fatty acid metabolism in geese.",
           "year": "2021",
           "design": "Unclassified",
           "population": "animal",
           "n": null
-        },
-        {
-          "pmid": "32475448",
-          "title": "Maternal betaine supplementation decreases hepatic cholesterol deposition in chicken offspring with epigenetic modulation of SREBP2 and CYP7A1 genes.",
-          "year": "2020",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": 120
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 15,
+        "n_total": 15
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cholesterol / lipids, Betaine has moderate human evidence (15 studies)."
+      "summary": "For cholesterol / lipids, betaine has moderate human evidence (15 studies)."
     },
     {
       "outcome": "cognition",
@@ -496,16 +543,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 5,
+        "n_total": 5
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cognition, Betaine has moderate human evidence (5 studies)."
+      "summary": "For cognition, betaine has moderate human evidence (5 studies)."
     }
   ],
   "effects_established": [
@@ -540,75 +587,40 @@
       "Abromine"
     ]
   },
-  "_cached_at": 1787608116.7301672,
+  "_cached_at": 1788016106.543657,
   "explanation": {
-    "what_it_is": "Betaine (C\u2085H\u2081\u2081NO\u2082, also called glycine betaine or trimethylglycine) is a small organic compound found naturally in foods like beets, spinach, and whole grains. It is a quaternary ammonium compound\u2014essentially the amino acid glycine with three methyl groups attached\u2014that exists in the body as a zwitterion (carrying both positive and negative charges). People typically consume it through diet or take it as an oral supplement in powder or capsule form.",
-    "how_it_works": "Betaine functions primarily as a methyl donor in one-carbon metabolism, a fundamental biochemical pathway that produces compounds needed for DNA synthesis, cell division, and tissue repair. It donates a methyl group to homocysteine (an amino acid byproduct), converting it to methionine and helping keep homocysteine levels in check\u2014high homocysteine is linked to cardiovascular and metabolic problems. Betaine also acts as an osmolyte, helping cells maintain water balance and protecting proteins from stress. In muscle tissue, these effects on methylation and cellular hydration may support protein synthesis and exercise performance; in the liver, betaine's methyl-donor role and osmolytic properties may help regulate glucose metabolism and lipid handling.",
+    "what_it_is": "Betaine (also called glycine betaine or trimethylglycine) is a small organic compound with the molecular formula C\u2085H\u2081\u2081NO\u2082 found naturally in foods like beets, spinach, and whole grains. It is a zwitterion\u2014a molecule with both positive and negative charges\u2014that acts as a methyl donor and osmolyte in cells. People typically take it as a powder or capsule supplement, often in doses ranging from a few grams to 5+ grams daily.",
+    "how_it_works": "Betaine has two main biological roles. First, it donates methyl groups (CH\u2083) to other molecules in the body, particularly in the methylation cycle that produces compounds needed for cell division, DNA synthesis, and energy metabolism. This 'one-carbon' methylation pathway is especially important for making creatine and carnitine, both linked to muscle function and energy. Second, betaine acts as an osmolyte\u2014it helps cells maintain water balance and osmotic pressure, which may protect cells under stress and aid nutrient transport. In muscle and liver, these dual roles could plausibly improve energy availability, delay fatigue, and support metabolic flexibility during intense exercise. In cells sensitive to blood sugar and lipid metabolism, betaine's methylation and osmotic effects might influence glucose handling and cholesterol synthesis.",
     "outcome_detail": [
       {
         "outcome": "exercise performance",
         "grade": "Moderate",
-        "what_studies_show": "A 2024 systematic review and meta-analysis of 317 participants found that chronic betaine supplementation produced measurable improvements in exercise performance. Additional RCTs from 2023\u20132025 reported benefits in cycling time-trial performance, anaerobic power, and strength gains, though a 2020 RCT (n=15) found no benefit for muscle hypertrophy or strength after 6 weeks of CrossFit training. A 2017 systematic review similarly concluded that betaine showed promise for muscle strength and power across multiple studies.",
-        "why_this_grade": "Seven human studies, including two meta-analyses and five primary trials, provide a reasonably consistent signal of benefit; however, the sample sizes in most individual trials remain small or unreported, and the total verified participant count is modest. The evidence is solid enough to support a 'moderate' rating but below the threshold for 'strong' due to limited precision and the modest number of independent primary trials."
+        "what_studies_show": "A 2024 systematic review and meta-analysis of chronic betaine supplementation (n=317) found a small to modest pooled effect on exercise performance (standardized mean difference 0.47, 95% CI 0.04 to 0.89). Individual randomized controlled trials from 2023\u20132025 reported improvements in endurance tasks (e.g., 60 km cycling time trial performance) and anaerobic measures (CrossFit performance, testosterone markers), though a 2020 RCT (n=15) found no benefit for muscle strength or hypertrophy after 6 weeks of CrossFit training. Earlier systematic reviews (2017) also examined betaine's effect on muscle strength and power.",
+        "why_this_grade": "Seven human studies met criteria, with a modest pooled effect size and verified sample sizes in only 2 of the 7 records (limiting precision). The evidence base is smaller than what earns a 'Strong' rating, and individual trials show variable results depending on exercise type and duration. This warrants 'Moderate'\u2014the effect is likely real but modest and not yet decisively consistent across all contexts."
       },
       {
         "outcome": "blood sugar",
         "grade": "Moderate",
-        "what_studies_show": "A 2022 meta-analysis of human studies examined the effects of betaine supplementation on metabolic markers including glucose control. A 2018 RCT in 27 prediabetic participants and a 2009 RCT in 55 participants with nonalcoholic fatty liver disease measured betaine's metabolic effects. Animal studies in mice (2024, 2026) demonstrated that dietary betaine improved glucose metabolism and attenuated insulin resistance, providing mechanistic support for the human findings.",
-        "why_this_grade": "Only four human studies were retrieved (two RCTs with reported sample sizes totaling ~82 participants, plus two pooled analyses), and a single meta-analysis does not independently confirm its own conclusion across multiple syntheses. Eight animal studies add biological plausibility but cannot substitute for human evidence. This mix justifies a 'moderate' grade rather than 'strong.'"
+        "what_studies_show": "Four human studies and eight animal studies (12 total) were retrieved. A 2022 meta-analysis examined betaine's effects on cardiovascular and metabolic markers including glucose control. A 2018 RCT in 27 prediabetic adults reported metabolic effects of betaine supplementation. A 2009 RCT (n=55) in nonalcoholic fatty liver disease patients found relevant metabolic outcomes. Animal studies from 2024\u20132026 showed that dietary betaine improved glucose metabolism in obese mice and attenuated insulin resistance in high-selenium-fed mice.",
+        "why_this_grade": "Only 4 human studies were retrieved, with verified sample sizes in just 2 records (~82 participants). A single meta-analysis exists but lacks independent replication in the records provided. The animal studies support a plausible mechanism, but human evidence is limited in number and scope. This constellation warrants 'Moderate': the direction is promising, but the human evidence base is too thin for a higher tier."
       },
       {
         "outcome": "cholesterol / lipids",
         "grade": "Moderate",
-        "what_studies_show": "A 2022 meta-analysis of betaine supplementation and cardiovascular markers and a 2021 meta-analysis specifically found that betaine moderately increases total cholesterol levels. A 2018 RCT in prediabetic participants (n=27) measured lipid changes. The retrieved human studies suggest a net increase in total cholesterol rather than a beneficial reduction. Animal studies (n=11 retrieved) in mice and geese provided supporting mechanistic data on lipid metabolism.",
-        "why_this_grade": "Four human studies were retrieved, including only one primary RCT with a clear sample size; the two meta-analyses are the main evidence base. The finding that betaine may raise total cholesterol is noteworthy but represents a modest effect size across a small evidence base. Precision is limited (verified participants ~669 across 4 studies, though most abstracts omit sample sizes), and replication across independent meta-analyses is not documented."
+        "what_studies_show": "Four human studies and eleven animal studies (15 total) were retrieved. A 2022 meta-analysis of betaine supplementation on cardiovascular markers and a 2021 meta-analysis found that betaine moderately increases total cholesterol levels. A 2018 RCT (n=27) in prediabetic individuals measured lipid outcomes. Animal studies (2024) showed betaine improved glucose metabolism in obese mice and alleviated hepatic cholesterol accumulation (n=72) through epigenetic mechanisms.",
+        "why_this_grade": "Four human studies were identified with verified sample sizes in only 4 of 15 studies (about 669 participants), and just 1 primary RCT\u2014most evidence rests on 2 meta-analyses, neither independently replicated in the records here. The human evidence is thus below the threshold for 'Strong,' and the animal-to-human ratio (11:4) suggests uncertainty about translation. 'Moderate' reflects real but limited human data and unresolved questions about the direction and magnitude of lipid effects."
       },
       {
         "outcome": "cognition",
         "grade": "Moderate",
-        "what_studies_show": "A 2011 clinical trial evaluated betaine as part of a pro-methylation dietary supplement cocktail in Angelman syndrome; a 2014 case report described a patient with severe methylenetetrahydrofolate reductase deficiency treated with methylation support. Two animal studies (2024, 2019) investigated betaine's effects on cognitive impairment induced by homocysteine and its potential as a psychotherapeutic agent in models of schizophrenia.",
-        "why_this_grade": "Only two human studies were retrieved\u2014one clinical trial and one case report\u2014with unconfirmed sample sizes, providing a very limited and imprecise human evidence base. Two animal studies suggest plausibility, but the human data are too sparse and the studies too small or uncontrolled to establish efficacy. This warrants 'moderate' as a holding grade, acknowledging theoretical promise while reflecting genuine uncertainty."
+        "what_studies_show": "Two human studies and two animal studies (5 total) were retrieved. A 2011 clinical trial evaluated pro-methylation dietary supplements (including betaine) in Angelman syndrome. A 2014 case report described severe methylenetetrahydrofolate reductase deficiency with betaine involvement. Animal studies (2024, 2019) showed betaine alleviated cognitive impairment induced by high homocysteine via NLRP3-mediated neuroinflammation, and was investigated as a potential psychotherapeutic for schizophrenia.",
+        "why_this_grade": "Only 5 studies total (2 human, 2 animal, 1 unclassified) were retrieved, and sample sizes could not be verified from the abstracts, limiting confidence in precision. The human evidence is very sparse\u2014a clinical trial and a case report, neither giving strong statistical power. The animal studies suggest a plausible mechanism (homocysteine reduction, anti-inflammatory effects), but human cognitive evidence remains preliminary. 'Moderate' reflects the theoretical promise and early-stage human observations, but the evidence base is too small for a higher grade."
       }
     ],
-    "evidence_base": "The research base for betaine comprises predominantly small to modest-sized human RCTs and meta-analyses (totaling four outcomes with 7, 4, 4, and 2 human studies respectively), supplemented by animal studies that provide mechanistic insight. Most human trials range from ~15 to ~55 participants per study, and many abstracts do not report sample sizes, making precision difficult to verify. The evidence is relatively recent (2009\u20132025), with a cluster of trials and meta-analyses from 2022 onward. Overall, human evidence is sufficient to support 'moderate'-grade confidence for exercise performance, blood sugar, and lipids, but is sparse and heterogeneous\u2014none of these outcomes have achieved 'strong' evidence status.",
-    "emerging_research": "Recent animal studies (2024\u20132026) are investigating betaine's role in specific metabolic conditions, such as high-selenium-induced insulin resistance and obesity-related glucose dysfunction. A 2024 animal study explored betaine's potential to attenuate neuroinflammation and cognitive impairment via NLRP3-mediated microglial activation, suggesting a novel neuroprotective mechanism. A 2019 animal trial examined betaine as a potential psychotherapeutic agent. These directions remain preliminary and have not yet been replicated in human trials, so their clinical relevance is not yet established.",
-    "open_questions": "Among the studies retrieved here, exercise performance trials vary widely in duration and type of performance measured (strength, power, endurance, CrossFit skill), and the longest verified human trial for cognition is a single case report or small clinical trial, leaving duration and effect stability unclear. Sample sizes are either small or unreported in most retrieved abstracts, limiting precision estimates. No retrieved human studies appear to extend beyond 12 weeks, so long-term safety and sustained efficacy remain undocumented in the records provided. It is important to note that these observations describe only the sample of ~40 abstracts retrieved per outcome; the full global literature may contain additional or contrasting data not visible here.",
-    "caveats": "Betaine is generally recognized as safe at dietary doses (typically 1\u20133 g daily) and is produced endogenously in the body. However, very high supplemental doses may raise homocysteine levels in some individuals and could interact with folate and B-vitamin status; people with certain genetic variants affecting one-carbon metabolism (e.g., MTHFR mutations) should consult a healthcare provider before supplementing. Quality and purity of commercial supplements vary, and betaine's efficacy is modest and inconsistent across individuals, so realistic expectations are important.",
-    "_generated": true,
-    "_model": "claude-haiku-4-5-20251001"
-  },
-  "appraisal": {
-    "headline": "Evidence for betaine is limited to small, heterogeneous human trials (mostly under 60 participants per outcome) with inconsistent designs; animal studies dominate the lipid and blood sugar literature, limiting human generalizability.",
-    "concerns": [
-      {
-        "issue": "Sparse human sample sizes across all outcomes",
-        "detail": "Only 2 of 7 exercise studies report sample size (n=15, 317); blood sugar has 2 of 12 studies with data (n=27, 55); cholesterol has 4 of 15 (n=27\u2013450). Most abstracts omit n entirely. Even where reported, primary human RCTs are frequently under 30 participants (2020 CrossFit trial n=15; 2018 prediabetes trial n=27), meaning individual outlier results can shift conclusions substantially.",
-        "severity": "high"
-      },
-      {
-        "issue": "Animal studies heavily outweigh human evidence for metabolic outcomes",
-        "detail": "Blood sugar: 8 animal vs 4 human studies. Cholesterol: 11 animal vs 4 human. These animal models (mice, rats, geese) may not translate to human physiology, yet comprise the majority of the retrieved literature. No preclinical-to-clinical bridging is evident in the records.",
-        "severity": "high"
-      },
-      {
-        "issue": "No pooled effect extracted; meta-analyses reach inconsistent conclusions",
-        "detail": "Two systematic reviews exist for exercise performance (2017, 2024) and two for cholesterol (2021, 2022), yet the engine extracted no unified pooled effect. Notably, the 2021 meta-analysis on cholesterol concludes betaine 'moderately increases total cholesterol' \u2014 a potential adverse finding \u2014 yet this contradicts the 'Moderate' grade for the outcome. This signals internal inconsistency within the retrieved meta-analyses themselves.",
-        "severity": "high"
-      },
-      {
-        "issue": "Exercise performance evidence shows direct contradictions",
-        "detail": "A 2025 RCT reports betaine 'improves 60 km cycling time trial performance,' while a 2020 RCT (n=15) concluded 'does not improve muscle hypertrophy or strength,' and a 2012 RCT found 'creatine but not betaine increases strength.' These conflicting outcomes are unresolved in the retrieved abstracts; no explanation for discordance is provided.",
-        "severity": "high"
-      },
-      {
-        "issue": "Cognition evidence is anecdotal and mechanistically distant",
-        "detail": "Only 5 studies total, with no extractable sample sizes. One is a case report, one a clinical trial in Angelman syndrome (a rare genetic disorder), and two are animal studies on homocysteine-induced impairment\u2014a mechanism orthogonal to typical cognitive enhancement claims. No RCT in cognitively normal populations is visible.",
-        "severity": "moderate"
-      }
-    ],
-    "mechanism_check": "Betaine is a methyl donor in one-carbon metabolism, which supports theoretical roles in creatine synthesis (relevant to muscle performance) and homocysteine metabolism (relevant to cardiovascular/cognitive claims). However, the inferential leap from one-carbon metabolism to clinical exercise performance, blood glucose control, or cognition in healthy humans is substantial. The mechanism explains *why* betaine *could* matter biochemically, but does not predict *how much* it matters clinically. Small human trials report inconsistent outcomes, suggesting either the effect is marginal, context-dependent, or confounded\u2014none of which the mechanistic argument resolves.",
-    "strongest_counterargument": "A skeptic would note that across exercise, blood sugar, and lipids, the human evidence consists almost entirely of small RCTs (median n under 60 per outcome) with heterogeneous designs, dosing regimens, and populations, yet no convincing meta-analytic signal emerges. The 2021 cholesterol meta-analysis even suggests betaine raises total cholesterol\u2014an undesired effect. Meanwhile, animal studies (which dominate blood sugar and lipid outcomes) have poor track records for translating to human benefit. Taken together, the 'Moderate' grade may conflate mechanistic plausibility and animal promise with genuine clinical evidence\u2014a common trap that overweights hypothesis over data.",
-    "what_would_change_the_picture": "Large, pre-registered RCTs (n \u2265 100\u2013200 per arm) in homogeneous populations (e.g., sedentary adults; prediabetic patients) with consistent dosing, long-term follow-up (\u226512 weeks), and pre-specified primary outcomes would resolve uncertainty. A single large, well-powered trial showing a clinically meaningful effect on exercise performance or glucose control, with replication in an independent cohort, would elevate the evidence tier.",
+    "evidence_base": "The retrieved literature on betaine spans 87 studies across all four outcomes, with human studies comprising about one-third to half of records per outcome. Most evidence is concentrated in systematic reviews and meta-analyses (particularly for exercise performance, blood sugar, and lipids) published since 2018, with several randomized controlled trials in adults and smaller populations (prediabetes, nonalcoholic fatty liver disease, rare genetic disorders). Animal models predominate for lipid and cognition outcomes, while human RCTs cluster around exercise (athletic populations) and metabolic endpoints. This mix suggests betaine's mechanisms are well-characterized in cells and animal models, but human translation remains incomplete and most individual trials are relatively small (n=15\u201355). The overall confidence is therefore moderate: plausible and partly supported by human data, but not yet robust or large-scale.",
+    "emerging_research": "Recent 2024\u20132025 studies have refined betaine's effects on endurance performance (60 km cycling) and examined interactions with one-carbon metabolism and testosterone in athletes. Animal research from 2026 and 2024 explores betaine's role in epigenetic regulation of glucose and cholesterol metabolism, particularly in obesity and metabolic stress. A 2024 animal study suggests betaine may mitigate high-selenium\u2013induced insulin resistance, pointing to a potential niche application. These directions are early and mostly preliminary in humans, but collectively suggest betaine's effects may depend on dose, exercise type, and individual metabolic state rather than being universally applicable.",
+    "open_questions": "Among the studies retrieved here, most human trials were conducted in adults and athletic or prediabetic populations; children, older adults, and healthy individuals without metabolic concerns are poorly represented. Trial durations shown are typically 6 weeks to several months\u2014no long-term (>1 year) human outcomes on cognition, lipids, or blood sugar appear in the records provided. For cognition, only one small clinical trial and one case report in humans exist in this set, leaving the effect size and generalizability unknown. The retrieved records represent approximately 40 abstracts per outcome, so this description reflects only a sample of the published literature; other studies may exist in the field overall, but I cannot know what lies beyond these records.",
+    "caveats": "Betaine is generally well-tolerated as an oral supplement, but high doses (>10 g/day) can rarely cause fishy-smelling breath or gastrointestinal upset. People with choline deficiency or certain genetic disorders affecting methylation (such as severe MTHFR deficiency) should consult a healthcare provider before supplementing, as betaine's methylation effects could theoretically worsen imbalances in rare cases. Betaine may interact with medications that depend on folate or B-vitamin metabolism; pregnant women and those on anticoagulants should seek medical advice before use. Quality and purity vary among commercial supplements\u2014third-party testing is advisable.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

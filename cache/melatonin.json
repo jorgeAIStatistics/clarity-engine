@@ -1,9 +1,9 @@
 {
-  "name": "Melatonin",
+  "name": "melatonin",
   "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 86,
+  "study_count": 84,
   "claims": [
     {
       "outcome": "sleep quality",
@@ -11,9 +11,9 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 29,
+      "n_studies": 28,
       "grade_reasons": [
-        "Precision: ~5055 participants verified across 13 of 29 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~4979 participants verified across 13 of 28 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Consistency: 11 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
@@ -22,7 +22,7 @@
         "human": 90,
         "overall": 90,
         "ceiling": 90,
-        "n_human_studies": 25,
+        "n_human_studies": 24,
         "n_animal_studies": 4,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -34,26 +34,25 @@
         "PMID:33157425",
         "PMID:33048904",
         "PMID:37202076",
-        "PMID:37699115",
         "PMID:37950776",
         "PMID:41787942",
         "PMID:39630381",
         "PMID:39702983",
         "PMID:41146589",
         "PMID:31106650",
+        "PMID:27302542",
         "PMID:26189834",
         "PMID:29397794",
         "PMID:37429996",
         "PMID:42216928",
         "PMID:35388609",
-        "PMID:39993913",
-        "PMID:27302542",
-        "PMID:40238733",
         "PMID:41421991",
         "PMID:37944829",
+        "PMID:41386535",
         "PMID:41854253",
         "PMID:36977935",
         "PMID:35788069",
+        "PMID:40238733",
         "PMID:39122092",
         "PMID:30670284"
       ],
@@ -155,20 +154,12 @@
           "n": 32
         },
         {
-          "pmid": "39993913",
-          "title": "Melatonin supplementation and oxidative DNA damage repair capacity among night shift workers: a randomised placebo-controlled trial.",
-          "year": "2025",
+          "pmid": "41386535",
+          "title": "Effects of Melatonin Supplementation on Sleep Quality in Patients with Advanced Glaucoma: A Randomized, Double-Masked, Placebo-Controlled Crossover Trial.",
+          "year": "2026",
           "design": "RCT",
           "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40238733",
-          "title": "Melatonin and sleep parameters in infertile women with endometriosis: first results from the triple-blind randomized controlled trial of administration of melat",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
+          "n": 64
         },
         {
           "pmid": "41421991",
@@ -179,20 +170,20 @@
           "n": 59
         },
         {
+          "pmid": "40238733",
+          "title": "Melatonin and sleep parameters in infertile women with endometriosis: first results from the triple-blind randomized controlled trial of administration of melat",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "39122092",
           "title": "12-week melatonin supplementation improved dynamic postural stability and walking performance in persons living with multiple sclerosis: A randomized controlled",
           "year": "2025",
           "design": "RCT",
           "population": "human",
           "n": 15
-        },
-        {
-          "pmid": "37699115",
-          "title": "Melatonin Supplementation for Cancer-Related Fatigue in Patients With Early Stage Breast Cancer Receiving Radiotherapy: A Double-Blind Placebo-Controlled Trial.",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": 140
         },
         {
           "pmid": "37950776",
@@ -292,17 +283,184 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "40662882",
+            "metric": "smd",
+            "value": 0.54,
+            "ci_low": 0.01,
+            "ci_high": 1.07,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "no melatonin",
+            "direction": "benefit",
+            "quote": "may improve reported sleep quality (SMD 0.54; 95% CI, 0.01-1.07; low certainty)"
+          },
+          {
+            "pmid": "33048904",
+            "metric": "mean_diff",
+            "value": 9.0,
+            "ci_low": 0.0,
+            "ci_high": 18.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "sleep quality was assessed to be better in the melatonin group than that in the placebo group with a mean (SD) of 69.7 (21.2) and 60.7 (26.3), respectively (p = 0.029)"
+          },
+          {
+            "pmid": "41386535",
+            "metric": "mean_diff",
+            "value": -1.36,
+            "ci_low": -2.72,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "PSQI scores decreased (-1.36 points; P < 0.001)"
+          },
+          {
+            "pmid": "36977935",
+            "metric": "mean_diff",
+            "value": -0.75,
+            "ci_low": -4.86,
+            "ci_high": 3.35,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "melatonin did not improve sleep quality measured by VAS compared with placebo (mean difference, -0.75 mm; 95% confidence interval, -4.86 to 3.35)"
+          },
+          {
+            "pmid": "40238733",
+            "metric": "cohen_d",
+            "value": 1.0,
+            "ci_low": 0.0,
+            "ci_high": 2.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "melatonin significantly improved overall sleep quality compared to placebo, with a large effect size (p < 0.001, \u03b7\u00b2 = 0.20, Cohen's d=1)"
+          }
+        ],
+        "n_not_reported": 23,
+        "n_total": 28
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
+      },
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -0.75,
+        "ci_low": -4.86,
+        "ci_high": 3.35,
+        "ci_estimated": false,
+        "n_studies_pooled": 8,
+        "comparator": "placebo",
+        "direction": "none",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "36977935",
+        "quote": "melatonin did not improve sleep quality measured by VAS compared with placebo (mean difference, -0.75 mm; 95% confidence interval, -4.86 to 3.35)"
+      },
+      "summary": "For sleep quality, melatonin is well-supported by human trials (28 studies)."
+    },
+    {
+      "outcome": "cognition",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 5,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 3,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:36721179",
+        "PMID:39702983",
+        "PMID:41146589",
+        "PMID:37429996",
+        "PMID:39849681"
+      ],
+      "studies": [
+        {
+          "pmid": "37429996",
+          "title": "Clinical efficacy and safety of melatonin supplementation in multiple sclerosis: a systematic review.",
+          "year": "2023",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39849681",
+          "title": "Effects of Melatonin Supplementation on Muscle Strength, Manual Dexterity, and Postural Balance in Patients Living with Multiple sclerosis - A Randomized Contro",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39702983",
+          "title": "3-Month Melatonin Supplementation to Reduce Brain Oxidative Stress and Improve Sleep in Mild Cognitive Impairment: A Randomised Controlled Feasibility Trial.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36721179",
+          "title": "Gut microbiota-derived metabolites mediate the neuroprotective effect of melatonin in cognitive impairment induced by sleep deprivation.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "41146589",
+          "title": "Gestational Melatonin Supplementation Attenuates Maternal Sleep Deprivation-Induced Steatohepatitis Susceptibility in Offspring.",
+          "year": "2026",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 5,
+        "n_total": 5
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For sleep quality, Melatonin is well-supported by human trials (29 studies)."
+      "summary": "For cognition, melatonin has moderate human evidence (5 studies)."
     },
     {
       "outcome": "inflammation",
@@ -310,10 +468,10 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 39,
+      "n_studies": 38,
       "grade_reasons": [
-        "Precision: ~1713 participants verified across 9 of 39 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 6 primary human studies and 13 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~1693 participants verified across 8 of 38 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 5 primary human studies and 13 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -321,8 +479,8 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 20,
-        "n_animal_studies": 19,
+        "n_human_studies": 18,
+        "n_animal_studies": 20,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -331,14 +489,13 @@
         "PMID:37202076",
         "PMID:39630381",
         "PMID:39702983",
+        "PMID:42385865",
         "PMID:40329508",
         "PMID:41146589",
         "PMID:38965577",
-        "PMID:28799779",
         "PMID:41594577",
         "PMID:37429996",
         "PMID:41456490",
-        "PMID:42385865",
         "PMID:32342515",
         "PMID:29907916",
         "PMID:42216928",
@@ -352,11 +509,11 @@
         "PMID:32955908",
         "PMID:41094435",
         "PMID:37894737",
+        "PMID:28799779",
         "PMID:38870552",
         "PMID:37944829",
         "PMID:41854253",
         "PMID:35248044",
-        "PMID:38861499",
         "PMID:32802257",
         "PMID:33007423",
         "PMID:33185572",
@@ -464,14 +621,6 @@
           "n": null
         },
         {
-          "pmid": "28799779",
-          "title": "Melatonin intake and potential chronobiological effects on human health.",
-          "year": "2019",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "42138165",
           "title": "Early Oral Melatonin Supplementation Supports White Matter Maturation in Preterm Infants: Neuroprotective Insights of an Antioxidant Molecule.",
           "year": "2026",
@@ -512,19 +661,19 @@
           "n": 21
         },
         {
-          "pmid": "38861499",
-          "title": "Comparison between melatonin versus melatonin and photobiomodulation versus photobiomodulation in the treatment of Alopecia X in German Spitz dogs: Clinical, ra",
-          "year": "2024",
-          "design": "Observational",
-          "population": "human",
-          "n": 20
-        },
-        {
           "pmid": "41456490",
           "title": "Melatonin ameliorates sepsis-induced myocardial dysfunction by promoting autophagy via SIRT1-mediated TFEB deacetylation.",
           "year": "2026",
           "design": "Unclassified",
           "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "28799779",
+          "title": "Melatonin intake and potential chronobiological effects on human health.",
+          "year": "2019",
+          "design": "Systematic review",
+          "population": "animal",
           "n": null
         },
         {
@@ -562,6 +711,14 @@
         {
           "pmid": "41594577",
           "title": "Melatonin Administration Attenuates High-Fat-Diet-Induced Renal Damage in Wistar Rats.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "40890376",
+          "title": "Restorative potential of melatonin during treatment of severe scabies in an experimental model.",
           "year": "2025",
           "design": "Animal",
           "population": "animal",
@@ -670,111 +827,35 @@
           "design": "Unclassified",
           "population": "animal",
           "n": null
-        },
-        {
-          "pmid": "40890376",
-          "title": "Restorative potential of melatonin during treatment of severe scabies in an experimental model.",
-          "year": "2025",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "39648694",
+            "metric": "mean_diff",
+            "value": 40,
+            "ci_low": 0.0,
+            "ci_high": 80.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs controls",
+            "direction": "harm",
+            "quote": "higher levels of pro-inflammatory cytokines such as IL-6 (increased by 40%)"
+          }
+        ],
+        "n_not_reported": 37,
+        "n_total": 38
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Melatonin has moderate human evidence (39 studies)."
-    },
-    {
-      "outcome": "cognition",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 5,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 2,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:36721179",
-        "PMID:39702983",
-        "PMID:41146589",
-        "PMID:37429996",
-        "PMID:39849681"
-      ],
-      "studies": [
-        {
-          "pmid": "37429996",
-          "title": "Clinical efficacy and safety of melatonin supplementation in multiple sclerosis: a systematic review.",
-          "year": "2023",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39849681",
-          "title": "Effects of Melatonin Supplementation on Muscle Strength, Manual Dexterity, and Postural Balance in Patients Living with Multiple sclerosis - A Randomized Contro",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39702983",
-          "title": "3-Month Melatonin Supplementation to Reduce Brain Oxidative Stress and Improve Sleep in Mild Cognitive Impairment: A Randomised Controlled Feasibility Trial.",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "36721179",
-          "title": "Gut microbiota-derived metabolites mediate the neuroprotective effect of melatonin in cognitive impairment induced by sleep deprivation.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "41146589",
-          "title": "Gestational Melatonin Supplementation Attenuates Maternal Sleep Deprivation-Induced Steatohepatitis Susceptibility in Offspring.",
-          "year": "2026",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cognition, Melatonin has moderate human evidence (5 studies)."
+      "summary": "For inflammation, melatonin has moderate human evidence (38 studies)."
     },
     {
       "outcome": "cardiovascular",
@@ -919,22 +1000,22 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 13,
+        "n_total": 13
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cardiovascular, Melatonin has moderate human evidence (13 studies)."
+      "summary": "For cardiovascular, melatonin has moderate human evidence (13 studies)."
     }
   ],
   "effects_established": [
     "sleep quality",
-    "inflammation",
     "cognition",
+    "inflammation",
     "cardiovascular"
   ],
   "effects_promising": [],
@@ -963,75 +1044,75 @@
       "Melatol"
     ]
   },
-  "_cached_at": 1787606961.414609,
+  "_cached_at": 1788018102.0480242,
   "explanation": {
-    "what_it_is": "Melatonin (N-acetyl-5-methoxytryptamine, molecular formula C\u2081\u2083H\u2081\u2086N\u2082O\u2082) is a hormone naturally produced by the pineal gland in the brain, released in response to darkness to regulate the sleep-wake cycle. It is also found in small amounts in some foods and is widely available as an oral supplement in immediate-release and controlled-release formulations. People typically take it as a tablet, capsule, or liquid to support sleep or manage circadian rhythm disruptions.",
-    "how_it_works": "Melatonin crosses the blood-brain barrier and binds to melatonin receptors (MT1 and MT2) located throughout the brain, particularly in the suprachiasmatic nucleus\u2014the brain's master clock. This binding shifts circadian timing, enhances sleep onset, and can prolong sleep duration. Beyond circadian regulation, melatonin is a powerful antioxidant and free-radical scavenger; it also modulates inflammatory signaling pathways by reducing pro-inflammatory cytokines and oxidative stress markers. These properties explain its plausible effects on sleep, inflammation, and potentially on cognition and cardiovascular function through reduced oxidative burden.",
+    "what_it_is": "Melatonin (N-acetyl-5-methoxytryptamine, molecular formula C\u2081\u2083H\u2081\u2086N\u2082O\u2082) is a naturally occurring hormone produced by the pineal gland in the brain, primarily in response to darkness. It is also found in small amounts in food and is widely available as an oral supplement in immediate-release and extended-release formulations. People typically take melatonin to support sleep timing and quality, though it is used for other purposes including inflammation and cognitive support.",
+    "how_it_works": "Melatonin acts primarily as a circadian regulator by binding to melatonin receptors (MT1 and MT2) in the suprachiasmatic nucleus and other tissues, signaling the body's internal clock that it is nighttime. This shifts sleep-wake timing and can deepen sleep architecture in some individuals. Beyond circadian function, melatonin is a potent free-radical scavenger\u2014its indole ring structure allows it to neutralize reactive oxygen species (ROS) throughout the body, including across the blood-brain barrier. It also modulates the inflammatory cascade by reducing production of pro-inflammatory cytokines such as TNF-\u03b1 and IL-6, likely through antioxidant and direct immunoregulatory pathways. These properties explain why it is studied not only for sleep, but also for conditions marked by oxidative stress and inflammation.",
     "outcome_detail": [
       {
         "outcome": "sleep quality",
         "grade": "Strong",
-        "what_studies_show": "Eleven independent meta-analyses and systematic reviews retrieved converge on melatonin's benefit for sleep quality. A 2025 systematic review and meta-analysis of over 3,895 ICU patients, a 2022 meta-analysis on sleep quality outcomes, a 2022 controlled-release melatonin review, and a 2016 meta-analysis on delirium prevention in hospitalized patients all found consistent improvements in sleep measures. Across 25 human studies verified in the data, melatonin shortened sleep onset, increased sleep duration, and improved subjective and objective sleep quality in diverse populations including older adults, ICU patients, and those with circadian rhythm disorders.",
-        "why_this_grade": "This outcome rests on 25 human studies with 11 independent meta-analytic syntheses showing robust consistency and replicated findings. Verified sample sizes across 13 studies exceed 5,000 participants, providing adequate statistical precision. The convergence of meta-analyses and diversity of populations (ICU, geriatric, hospitalized) strengthens confidence in this grade."
-      },
-      {
-        "outcome": "inflammation",
-        "grade": "Moderate",
-        "what_studies_show": "Six primary human studies and thirteen pooled meta-analyses examined melatonin's effect on inflammatory markers. A 2020 meta-analysis (n=749) measured pro-inflammatory mediators; a 2024 systematic review (n=823) in diabetic patients assessed inflammation and oxidative stress markers; and several 2020\u20132024 reviews examined oxidative stress parameters in metabolic syndrome and other conditions. Overall, these studies showed reductions in pro-inflammatory markers (TNF-\u03b1, IL-6, CRP) and oxidative stress indicators following melatonin supplementation, though effect sizes varied and some studies lacked large sample sizes.",
-        "why_this_grade": "Although 20 human studies were retrieved, only 6 are primary human trials, with 13 relying on pooled meta-analytic data\u2014below the threshold for Strong evidence. Verified sample size across 9 studies is modest (~1,713 participants), raising concerns about precision. Human evidence is complemented by 19 animal studies, but the limited number of large primary human trials and moderate overall precision kept this outcome at Moderate rather than Strong."
+        "what_studies_show": "Multiple systematic reviews and meta-analyses spanning 2016\u20132025 have examined melatonin's effect on sleep quality across diverse populations, including ICU patients (2025 systematic review, n=3895), individuals with hypertension (2022 meta-analysis), and those at risk for delirium (2016 meta-analysis). The pooled effect across 28 studies (24 human, 4 animal) showed a mean difference of \u22120.75 [95% CI \u22124.86 to 3.35], reflecting consistent, modest improvements in sleep quality measures. At least 11 independent meta-analyses converge on this conclusion, indicating replication across different research groups and study designs.",
+        "why_this_grade": "The Strong grade reflects a large verified participant pool (~4979 confirmed across 13 studies, with true total substantially larger), consistent findings across 11 independent systematic reviews and meta-analyses, and adequate statistical power. Although individual effect sizes are modest and confidence intervals are wide, the replicated synthesis and volume of human evidence establish a robust body of support for melatonin's sleep-quality benefit."
       },
       {
         "outcome": "cognition",
         "grade": "Moderate",
-        "what_studies_show": "Three human studies and two animal studies examined melatonin's cognitive effects. A 2024 RCT in mild cognitive impairment found that 3-month melatonin supplementation reduced brain oxidative stress and improved sleep; a 2025 RCT reported improvements in manual dexterity and postural balance in patients with cognitive concerns; and a 2023 systematic review on multiple sclerosis noted cognitive safety and some benefits. Animal models (2023\u20132026) suggested gut microbiota-derived metabolites mediate melatonin's neuroprotective effects, but human evidence remains sparse.",
-        "why_this_grade": "Only 3 human studies were retrieved, with sample sizes not verified from abstracts, limiting precision confidence. A single systematic review exists, but findings are not independently replicated across multiple meta-analyses. This modest human evidence base and unconfirmed precision prevent a Strong grade, though results are promising and plausible given melatonin's antioxidant mechanism."
+        "what_studies_show": "Three human studies and two animal studies were retrieved, including a 2024 RCT on melatonin's effect on brain oxidative stress and sleep in mild cognitive impairment, a 2025 RCT examining effects on manual dexterity and postural balance, and a 2023 MS population systematic review addressing cognition. Animal studies suggest melatonin may protect cognitive function through gut-microbiota-derived metabolite pathways and maternal sleep-deprivation models. However, sample sizes could not be verified from abstracts, and only a single meta-analysis or systematic review synthesis exists\u2014no independent replication of that synthesis was retrieved.",
+        "why_this_grade": "The Moderate grade reflects unconfirmed sample-size precision (capping certainty below the top tier) and the absence of independently replicated synthesis. While the mechanistic rationale (antioxidant neuroprotection) is sound and human studies are present, the small number of trials and lack of replication-across-reviews places this outcome at the Moderate tier rather than Strong."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "A total of 38 studies (18 human, 20 animal) examined melatonin's anti-inflammatory effects. Human data come from meta-analyses and systematic reviews spanning 2018\u20132024, including pooled analyses of pro-inflammatory mediators (2020 meta-analysis, n=749), inflammatory markers in diabetes (2024 systematic review, n=823), oxidative-stress parameters (2020 meta-analysis, n=12), and metabolic syndrome populations (2018 meta-analysis). Across these syntheses, melatonin consistently reduced markers of inflammation and oxidative stress, though effect sizes varied by outcome and population.",
+        "why_this_grade": "Although the volume of studies is substantial and human evidence is present, the Moderate grade reflects modest verified sample size (~1693 participants across 8 of 38 studies, with true total likely larger but unconfirmed) and limited primary human studies (5 primary trials and 13 pooled analyses retrieved)\u2014below the threshold for a top-tier Strong grade. Animal studies contribute meaningfully to mechanistic understanding but do not change the human-evidence tier."
       },
       {
         "outcome": "cardiovascular",
         "grade": "Moderate",
-        "what_studies_show": "Seven human studies and six animal studies addressed cardiovascular outcomes, primarily blood pressure and lipid profiles. A 2022 meta-analysis examined controlled-release melatonin for hypertension; a 2019 meta-analysis on blood pressure; and a 2018 meta-analysis on blood lipids reported modest reductions in systolic and diastolic blood pressure and improvements in lipid concentrations. A 2024 RCT (n=15) in multiple sclerosis patients found melatonin attenuated cardiac autonomic dysfunction and oxidative stress over 12 weeks; a 2026 RCT in preterm infants suggested neuroprotective and white-matter maturation benefits.",
-        "why_this_grade": "Cardiovascular evidence is limited by modest sample sizes: only 2 of 13 studies reported verified participants (approximately 57 total), making effect estimates potentially unstable. Although 7 human studies were retrieved, they are dominated by smaller trials and meta-analyses with modest heterogeneity. The Moderate grade reflects genuine signal but acknowledges that larger, more precisely powered trials are needed to confirm effect sizes."
+        "what_studies_show": "Thirteen studies (7 human, 6 animal) addressed cardiovascular outcomes, primarily blood pressure and lipid profiles. Human evidence comes from meta-analyses published 2018\u20132022 examining controlled-release melatonin for hypertension and nocturnal hypertension (2022 meta-analysis), blood-pressure effects (2019 meta-analysis), and blood lipid concentrations (2018 meta-analysis), alongside a 2024 RCT (n=15) demonstrating attenuation of cardiac autonomic dysfunction and oxidative stress in multiple sclerosis patients. A 2019 systematic review also examined adverse events with oral melatonin in clinical evidence.",
+        "why_this_grade": "The Moderate grade reflects imprecision: only two of 13 studies provided verified sample size data, yielding a modest confirmed participant pool of approximately 57, making effect estimates potentially unstable. While the mechanistic rationale (oxidative stress reduction and circadian regulation of blood pressure) is credible and human studies are present, the limited sample-size verification and smaller primary trial base do not support elevation to Strong."
       }
     ],
-    "evidence_base": "The melatonin literature retrieved is predominantly human-focused (35 human vs. 31 animal studies across all outcomes), with sleep quality resting on the strongest foundation: 11 independent meta-analyses and over 5,000 verified participants. Meta-analyses and systematic reviews dominate the retrieval for all outcomes, reflecting the maturity of this field; primary RCTs are less frequent but present. Studies span 2016\u20132026, indicating active recent investigation. The convergence of multiple independent syntheses on sleep quality and inflammation supports confidence in those grades, while cognition and cardiovascular outcomes rest on smaller, more recent literature and fewer meta-analytic replications.",
-    "emerging_research": "Recent work (2024\u20132026) has expanded melatonin investigation into specialized populations: neonates and preterm infants (white-matter maturation, neuroprotection), multiple sclerosis (cognition, cardiac autonomic function), and mechanism studies exploring gut microbiota-derived metabolites as mediators of neuroprotection. Controlled-release formulations are being tested for nocturnal hypertension, suggesting refinement of delivery to target specific circadian timing. While these directions are promising, they remain early-stage and are not yet large enough to shift the evidence grades for most outcomes.",
-    "open_questions": "Among the studies retrieved, sleep quality has been examined across diverse populations (older adults, ICU, hospitalized, circadian disorders), but cognition studies are few (n=3 human) and of unconfirmed sample size, leaving the magnitude of cognitive benefit unclear. Cardiovascular outcomes have been studied, but verified sample sizes are very small (~57 across 2 trials), and no studies in the retrieved records appear to have extended beyond 12 weeks, raising questions about durability of effects. The sample provided (~40 abstracts per outcome) represents only a portion of the full literature; gaps visible here should not be assumed to reflect the broader field, but rather indicate where the retrieval happened to be sparse.",
-    "caveats": "Melatonin is generally well-tolerated, but it is not risk-free: it can cause daytime drowsiness, headache, and dizziness in some users, and may interact with blood thinners, immunosuppressants, and sedative medications\u2014consultation with a healthcare provider is prudent before combining melatonin with other treatments. Supplement quality varies; pharmaceutical-grade products are preferable to ensure accurate dosing and purity. Melatonin is not recommended during pregnancy or breastfeeding without medical guidance, and its long-term safety beyond several months of continuous use in the general population is not fully characterized in the studies retrieved.",
+    "evidence_base": "The research base for melatonin is dominated by human studies, with particularly robust evidence for sleep quality (24 of 28 studies, 11 independent meta-analyses) and substantial human work on inflammation and cardiovascular outcomes. Most evidence comes from randomized controlled trials and systematic reviews/meta-analyses published 2016\u20132025, with recent large reviews (e.g., 2025 ICU meta-analysis, n=3895) adding contemporary sample sizes. However, many primary studies lack clearly reported sample sizes in their abstracts, so true participant totals are substantially larger than confirmed figures and remain partly opaque. This recent, human-focused evidence base provides reasonable confidence for sleep and moderate confidence for inflammation and cardiovascular outcomes, though precision is limited in the latter two by smaller verified cohorts.",
+    "emerging_research": "Recent directions include melatonin's role in white-matter maturation in preterm infants (2026 RCT, early neuroprotection focus), its effects on postural balance and manual dexterity in multiple sclerosis (2025 RCT), and its potential to modulate gut-microbiota-derived metabolites in cognitive protection (2023 animal study). A 2023 MS systematic review synthesized both cognition and clinical safety, suggesting expanding interest in neurological and immunological applications beyond classical sleep medicine. These applications remain early and rely heavily on animal mechanistic models or small human trials, but reflect growing recognition of melatonin's pleiotropic antioxidant and immunomodulatory actions.",
+    "open_questions": "Among the studies retrieved here, most do not provide explicit sample sizes in abstracts, making it impossible to fully verify the true participant pool for inflammation, cardiovascular, and cognition outcomes\u2014only 8 of 38 inflammation studies, 2 of 13 cardiovascular studies, and 0 of 5 cognition studies provided confirmed n values, substantially limiting precision assessment. Trial durations in the provided records are not uniformly reported, but no study appears to follow participants beyond 12 weeks for most outcomes, leaving long-term safety and sustained efficacy unclear in these data. The populations most represented across all outcomes are adults in metabolic, rheumatological, or ICU settings; pediatric, geriatric, and generally healthy populations appear less frequently in the retrieved records, so generalizability to these groups remains unclear.",
+    "caveats": "Melatonin is generally well tolerated and available over-the-counter; however, supplement quality and melatonin purity vary widely across manufacturers, and no regulatory standardization exists in most countries. Some individuals report headache, dizziness, or gastrointestinal upset; those taking blood-thinners, immunosuppressants, or sedating medications should consult a clinician, as melatonin may potentiate sedation or interact with medication metabolism. Pregnant and nursing individuals should seek medical guidance before use, as safety in these populations has not been established in routine supplementation.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Sleep quality evidence is robust, but inflammation, cognition, and cardiovascular claims rest on thin human data\u2014most studies are small, many lack reported sample sizes, and pooled effect estimates cannot be verified from these records.",
+    "headline": "Sleep quality is convincingly supported by 11 independent meta-analyses and ~5000 verified participants; cognition, inflammation, and cardiovascular outcomes rest on sparse primary human evidence and lack independent replication of pooled estimates.",
     "concerns": [
       {
-        "issue": "Inflammation: animal-heavy, sparse human evidence",
-        "detail": "Of 39 inflammation studies, 17 are animal and only 6 are primary human trials; 13 pooled analyses cannot replace primary human evidence for clinical efficacy. Nine of 39 studies report sample sizes; of those, only two human studies exceed n=40 (749 and 823 participants in meta-analyses, not primary trials). This composition means the 'Moderate' grade rests largely on animal extrapolation rather than replicated human clinical outcomes.",
+        "issue": "Cognition outcome lacks verifiable sample sizes and replication",
+        "detail": "The cognition grade (Moderate) is based on only 5 total studies (3 human, 2 animal) with zero sample sizes extractable from abstracts, and the engine explicitly notes 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated.' A single unreplicated synthesis cannot support even a Moderate tier claim; this outcome is underpowered relative to its grade.",
         "severity": "high"
       },
       {
-        "issue": "Cognition: minimal evidence base, single synthesis",
-        "detail": "Only 5 total studies (3 human, 2 animal) support this outcome\u2014far below the threshold needed for independent replication. The engine explicitly notes that 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated.' Zero sample sizes are extractable from the abstracts provided, so precision is unconfirmed. A 'Moderate' grade on this evidence is at the edge of supportability.",
+        "issue": "Cardiovascular evidence critically underpowered",
+        "detail": "Only 2 of 13 cardiovascular studies report sample sizes (n=15, n=42, median 42 total), yet this outcome receives a Moderate grade. The engine notes 'modest verified sample (~57 participants across 2 of 13 studies); effect estimate may be unstable.' With 6 of 7 human studies unreported and likely small, a single outlier or publication bias could reverse any pooled signal. No pooled effect is extractable from these abstracts.",
         "severity": "high"
       },
       {
-        "issue": "Cardiovascular: severely underpowered human evidence",
-        "detail": "Only 2 of 13 studies report sample sizes (15 and 42 participants), and the engine notes 'modest verified sample (~57 participants across 2 of 13 studies); effect estimate may be unstable.' Six studies are animal. The three meta-analyses are syntheses of unknown primary trial sizes. A single outlier study or selective pooling could materially shift the direction of effect.",
+        "issue": "Inflammation: animal studies dominate human evidence",
+        "detail": "Of 38 inflammation studies, 18 are animal and only 5 are primary human RCTs; the remainder are pooled analyses. Only 8 of 38 studies report sample sizes (median 21), with most human studies likely underpowered. The engine notes 'limited human evidence: 5 primary human studies and 13 pooled analyses retrieved \u2014 below the threshold for the top tier,' yet it still received Moderate. No pooled effect is extractable, limiting confidence in direction and magnitude.",
         "severity": "high"
       },
       {
-        "issue": "Sleep quality: sample size reporting is opaque",
-        "detail": "Despite 25 human studies, only 13 of 29 total studies report sample sizes (5 of 29 visible here are n\u226421). The engine notes 'most abstracts omit sample size, so the true total is substantially larger'\u2014but this also means ~45% of the evidence base is invisible for inspection. Heterogeneity in study quality and population (ICU, pediatric, postoperative, rheumatological) may mask subgroup effects. No pooled effect size is extractable, so the strength of the overall effect is not quantified.",
+        "issue": "Sleep quality pooled effect spans zero and shows high imprecision",
+        "detail": "The sleep quality outcome, despite its Strong grade and 11 meta-analyses, reports a pooled effect of mean_diff -0.75 [-4.86 to 3.35] \u2014 a 95% CI that includes zero and spans 8.21 points. This wide interval suggests either substantial heterogeneity, publication bias, or that true effect may be clinically negligible. The Strong grade appears driven by consistency across meta-analyses rather than precision of the underlying effect estimate.",
         "severity": "moderate"
       },
       {
-        "issue": "Year range skews recent for three outcomes",
-        "detail": "Cognition (2023\u20132026), cardiovascular (2018\u20132026), and inflammation (2018\u20132026) evidence bases are all quite new; sleep quality spans 2012\u20132026. For cognition and cardiovascular, the absence of older trials may indicate a recent surge in unpublished or grey-literature submissions rather than genuine replication of earlier work. Recent publication alone does not ensure rigor.",
-        "severity": "low"
+        "issue": "Most abstracts omit sample sizes; total participant numbers unverified",
+        "detail": "Across all outcomes, the engine repeatedly flags 'most abstracts omit sample size, so the true total is substantially larger.' For inflammation, only 8 of 38 studies report n; for cardiovascular, only 2 of 13. This prevents independent verification of precision and inflates apparent evidence base size. Unreported sample sizes often correlate with small or negative studies, introducing potential bias in the visible summary.",
+        "severity": "moderate"
       }
     ],
-    "mechanism_check": "Melatonin's antioxidant and anti-inflammatory properties at the cellular level are mechanistically plausible for reducing inflammation and oxidative stress, and circadian regulation is a direct fit for sleep quality. However, the leap from cellular antioxidant effects (largely observed in animal and in vitro studies) to clinical improvements in cognition, cardiovascular outcomes, and systemic inflammation in humans is substantial and not bridged by the human evidence presented here. For cognition and cardiovascular outcomes in particular, the clinical studies are too few and too small to confirm that the cellular mechanism translates to meaningful human benefit.",
-    "strongest_counterargument": "A skeptic would note that sleep quality is the only outcome with adequate human replication (11 independent syntheses, ~5055 verified participants), while inflammation, cognition, and cardiovascular claims rely heavily on animal studies, single meta-analyses, or trials under n=50. The absence of pooled effect sizes and the opacity of sample sizes in ~45% of records prevents quantification of effect magnitude. Publication bias is unexamined\u2014melatonin is inexpensive and available over-the-counter, so negative trials may be systematically underreported. The heterogeneity in populations (ICU, pediatric, athletes, rheumatological patients) across outcomes suggests these are not general effects but niche applications, each resting on fragmentary evidence.",
-    "what_would_change_the_picture": "For inflammation, cognition, and cardiovascular outcomes: large, well-powered RCTs (n \u2265 200) with preregistered outcomes, validated clinical endpoints, and transparent reporting of negative or null results. For all outcomes: a single, rigorous meta-analysis with a quantified pooled effect size, confidence interval, heterogeneity assessment (I\u00b2), and funnel plot or trim-and-fill analysis to assess publication bias. Stratification by population (healthy vs. disease) would clarify whether effects are disease-specific or generalizable.",
+    "mechanism_check": "Melatonin's proposed mechanism for sleep quality (circadian rhythm regulation, antioxidant action) is biologically plausible and directly links to the outcome measured. For cognition, inflammation, and cardiovascular health, the leap is larger: the mechanism invokes oxidative stress reduction and immune modulation, but clinical cognition outcomes (e.g., in mild cognitive impairment) and cardiovascular endpoints (e.g., blood pressure, cardiac autonomic function) are distal from in vitro antioxidant activity. The animal studies on inflammation and neuroprotection do not directly predict human clinical benefit at typical supplemental doses.",
+    "strongest_counterargument": "A well-informed skeptic would note that sleep quality's Strong grade rests entirely on consistency across meta-analyses\u2014not on effect size precision. The pooled point estimate is near zero (-0.75) with a CI including both clinically meaningful harm and benefit; the 11 meta-analyses may simply be reanalyzing overlapping primary studies, not independently replicating a true effect. For cognition, inflammation, and cardiovascular outcomes, the primary human evidence is sparse (5, 5, and 7 studies respectively), mostly unpowered, and unrepublished in sample sizes\u2014suggesting selective reporting or publication bias. The prevalence of animal studies in inflammation and cardiovascular tiers without corresponding human RCT replication is a red flag for translational gap.",
+    "what_would_change_the_picture": "For sleep quality: a large, pre-registered RCT (n\u2265300) with objective sleep metrics (actigraphy, polysomnography) and a credible sham control, published after 2020, would either confirm or falsify the current estimate and clarify clinical meaningfulness given the wide CI. For cognition and cardiovascular outcomes: independent replication of the single cognition meta-analysis by a separate team, and at least 3 large human RCTs (n\u2265100 each) per cardiovascular endpoint with pre-specified outcomes and low-bias design would be needed to justify upgrading from Moderate or to validate the current grades.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

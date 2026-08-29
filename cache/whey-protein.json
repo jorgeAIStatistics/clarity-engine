@@ -1,5 +1,5 @@
 {
-  "name": "Whey Protein",
+  "name": "whey-protein",
   "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
@@ -327,17 +327,129 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "38350303",
+            "metric": "smd",
+            "value": 0.67,
+            "ci_low": 0.29,
+            "ci_high": 1.04,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "Placebo/Routine consultation",
+            "direction": "benefit",
+            "quote": "In WP with RT group vs. PLA/ RC group, there was significant increase in handgrip strength (SMD: 0.67, 95%CI: 0.29, 1.04)."
+          },
+          {
+            "pmid": "37196876",
+            "metric": "smd",
+            "value": 2.005,
+            "ci_low": 0.975,
+            "ci_high": 3.035,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "whey protein supplementation plus vitamin D",
+            "direction": "benefit",
+            "quote": "co-supplementation with vitamin D enhanced LM gains (SMD =0.993; 95% CI: 0.112, 1.874; n = 11), muscle strength (SMD =2.005; 95% CI: 0.975, 3.035; n = 11)"
+          },
+          {
+            "pmid": "37571361",
+            "metric": "smd",
+            "value": 0.24,
+            "ci_low": 0.05,
+            "ci_high": 0.42,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "RET with or without placebo supplementation",
+            "direction": "benefit",
+            "quote": "The overall pooled standardized mean difference (SMD) estimate showed a small effect size in favor of RET plus WP for skeletal muscle mass according to appendicular muscle index, with statistically significant differences compared with RET with or without the placebo group (SMD = 0.24; 95% CI, 0.05 to 0.42;"
+          },
+          {
+            "pmid": "36235862",
+            "metric": "smd",
+            "value": 0.6805,
+            "ci_low": 0.176,
+            "ci_high": 1.185,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control (no whey protein supplementation)",
+            "direction": "benefit",
+            "quote": "WP supplementation had a significant positive effect on biceps curl strength (BC) (SMD: 0.6805, 95% CI: 0.176, 1.185"
+          },
+          {
+            "pmid": "41683325",
+            "metric": "mean_diff",
+            "value": 2.76,
+            "ci_low": 0.0,
+            "ci_high": 5.52,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "APS also caused a substantially greater increase (APS: +5.20% vs. placebo: +2.44%) in grip strength"
+          },
+          {
+            "pmid": "41931963",
+            "metric": "mean_diff",
+            "value": 6.4,
+            "ci_low": 1.3,
+            "ci_high": 11.4,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs PRT-only in subgroup with baseline protein intake <1.2 g/kg",
+            "direction": "benefit",
+            "quote": "participants with baseline habitual protein intake <1.2 g/kg showed greater improvements in leg press strength with protein intervention (6.4 kg, 95% CI: 1.3-11.4, p = 0.013)"
+          },
+          {
+            "pmid": "36138493",
+            "metric": "mean_diff",
+            "value": 0.05,
+            "ci_low": 0.0,
+            "ci_high": 0.09,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs whey protein control",
+            "direction": "benefit",
+            "quote": "knee extension strength was 0.07 Nm/kg BW (95% CI: 0.02, 0.12 Nm/kg BW) and 0.05 Nm/kg BW (95% CI: 0.00, 0.09 Nm/kg BW) higher in the APP group than in the CON group at these times"
+          }
+        ],
+        "n_not_reported": 26,
+        "n_total": 33
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For muscle strength, Whey Protein is well-supported by human trials (33 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": 2.005,
+        "ci_low": 0.975,
+        "ci_high": 3.035,
+        "ci_estimated": false,
+        "n_studies_pooled": 11,
+        "comparator": "whey protein supplementation plus vitamin D",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "37196876",
+        "quote": "co-supplementation with vitamin D enhanced LM gains (SMD =0.993; 95% CI: 0.112, 1.874; n = 11), muscle strength (SMD =2.005; 95% CI: 0.975, 3.035; n = 11)"
+      },
+      "summary": "For muscle strength, whey-protein is well-supported by human trials (33 studies)."
     },
     {
       "outcome": "muscle growth",
@@ -625,17 +737,171 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "38350303",
+            "metric": "smd",
+            "value": 0.47,
+            "ci_low": 0.23,
+            "ci_high": 0.71,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "Isocaloric placebo/Routine consultation",
+            "direction": "benefit",
+            "quote": "WP significantly increased the appendicular skeletal muscle mass index (SMD: 0.47, 95%CI: 0.23, 0.71)"
+          },
+          {
+            "pmid": "37196876",
+            "metric": "smd",
+            "value": 0.982,
+            "ci_low": 0.228,
+            "ci_high": 1.736,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "whey protein supplementation in sarcopenic/frail older adults",
+            "direction": "benefit",
+            "quote": "whey protein supplementation significantly improved LM (SMD = 0.982; 95% CI: 0.228, 1.736; n = 11)"
+          },
+          {
+            "pmid": "37571361",
+            "metric": "smd",
+            "value": 0.24,
+            "ci_low": 0.05,
+            "ci_high": 0.42,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "RET with or without placebo supplementation",
+            "direction": "benefit",
+            "quote": "The overall pooled standardized mean difference (SMD) estimate showed a small effect size in favor of RET plus WP for skeletal muscle mass according to appendicular muscle index, with statistically significant differences compared with RET with or without the placebo group (SMD = 0.24; 95% CI, 0.05 to 0.42;"
+          },
+          {
+            "pmid": "36235862",
+            "metric": "smd",
+            "value": 0.6805,
+            "ci_low": 0.176,
+            "ci_high": 1.185,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control (no whey protein supplementation)",
+            "direction": "benefit",
+            "quote": "WP supplementation had a significant positive effect on biceps curl strength (BC) (SMD: 0.6805, 95% CI: 0.176, 1.185"
+          },
+          {
+            "pmid": "26864356",
+            "metric": "mean_diff",
+            "value": 1.7,
+            "ci_low": 0.0,
+            "ci_high": 3.4,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs physical activity and placebo",
+            "direction": "benefit",
+            "quote": "supplementation plus physical activity increased fat-free mass (1.7-kg gain, P < 0.001)"
+          },
+          {
+            "pmid": "41683325",
+            "metric": "mean_diff",
+            "value": 0.85,
+            "ci_low": 0.0,
+            "ci_high": 1.7,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "an increase (APS: +0.85% vs. placebo: +0.68%) in muscle mass"
+          },
+          {
+            "pmid": "29688559",
+            "metric": "mean_diff",
+            "value": 0.37,
+            "ci_low": 0.06,
+            "ci_high": 0.67,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "non-WP control",
+            "direction": "benefit",
+            "quote": "WP supplementation increased lean mass (WMD, 0.37 kg; 95% confidence interval [CI], 0.06 to 0.67)"
+          },
+          {
+            "pmid": "41931963",
+            "metric": "mean_diff",
+            "value": 6.4,
+            "ci_low": 1.3,
+            "ci_high": 11.4,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs PRT-only in subgroup with baseline protein intake <1.2 g/kg",
+            "direction": "benefit",
+            "quote": "participants with baseline habitual protein intake <1.2 g/kg showed greater improvements in leg press strength with protein intervention (6.4 kg, 95% CI: 1.3-11.4, p = 0.013)"
+          },
+          {
+            "pmid": "24724774",
+            "metric": "mean_diff",
+            "value": 2.24,
+            "ci_low": 0.66,
+            "ci_high": 3.81,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "resistance exercise component",
+            "direction": "benefit",
+            "quote": "Results from the subgroup analyses indicated a statistically significant increase in LBM (WGMD: 2.24 kg, 95% CI, 0.66, 3.81) among studies that included a resistance exercise component along with WP provision."
+          },
+          {
+            "pmid": "33971994",
+            "metric": "mean_diff",
+            "value": 0.91,
+            "ci_low": 0.15,
+            "ci_high": 1.67,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "soya protein",
+            "direction": "benefit",
+            "quote": "We found a significant increase in lean body mass after whey protein supplementation (weighted mean difference (WMD: 0\u00b791; 95 % CI 0\u00b715, 1\u00b767; P = 0\u00b7019)"
+          }
+        ],
+        "n_not_reported": 19,
+        "n_total": 29
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For muscle growth, Whey Protein is well-supported by human trials (29 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": 0.37,
+        "ci_low": 0.06,
+        "ci_high": 0.67,
+        "ci_estimated": false,
+        "n_studies_pooled": 13,
+        "comparator": "non-WP control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "29688559",
+        "quote": "WP supplementation increased lean mass (WMD, 0.37 kg; 95% confidence interval [CI], 0.06 to 0.67)"
+      },
+      "summary": "For muscle growth, whey-protein is well-supported by human trials (29 studies)."
     },
     {
       "outcome": "recovery / soreness",
@@ -717,34 +983,49 @@
           "n": 73
         },
         {
+          "pmid": "28824296",
+          "title": "Whey Protein Improves Marathon-Induced Injury and Exercise Performance in Elite Track Runners.",
+          "year": "2017",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "25029703",
           "title": "Effect of whey protein hydrolysate on performance and recovery of top-class orienteering runners.",
           "year": "2015",
           "design": "RCT",
           "population": "human",
           "n": null
-        },
-        {
-          "pmid": "28824296",
-          "title": "Whey Protein Improves Marathon-Induced Injury and Exercise Performance in Elite Track Runners.",
-          "year": "2017",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "31348053",
+            "metric": "mean_diff",
+            "value": 60.9,
+            "ci_low": 32.4,
+            "ci_high": 89.5,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs control",
+            "direction": "benefit",
+            "quote": "The average 6MWD was 60.9 m higher perioperatively in the prehabilitation group compared to the control group (95% confidence interval [CI], 32.4-89.5; P < .001)."
+          }
+        ],
+        "n_not_reported": 7,
+        "n_total": 8
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For recovery / soreness, Whey Protein has moderate human evidence (8 studies)."
+      "summary": "For recovery / soreness, whey-protein has moderate human evidence (8 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -853,17 +1134,45 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "35605541",
+            "metric": "mean_diff",
+            "value": -2.67,
+            "ci_low": -3.62,
+            "ci_high": -1.72,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "Postprandial glycemia was significantly lower at 60 minutes (weighted mean difference: -2.67 mmol/L; 95% confidence interval, -3.62 to -1.72 mmol/L)"
+          }
+        ],
+        "n_not_reported": 8,
+        "n_total": 9
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
-      "headline_effect": null,
-      "summary": "For blood sugar, Whey Protein has moderate human evidence (9 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -2.67,
+        "ci_low": -3.62,
+        "ci_high": -1.72,
+        "ci_estimated": false,
+        "n_studies_pooled": 5,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "35605541",
+        "quote": "Postprandial glycemia was significantly lower at 60 minutes (weighted mean difference: -2.67 mmol/L; 95% confidence interval, -3.62 to -1.72 mmol/L)"
+      },
+      "summary": "For blood sugar, whey-protein has moderate human evidence (9 studies)."
     }
   ],
   "effects_established": [
@@ -877,75 +1186,75 @@
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787606786.579184,
+  "_cached_at": 1788021109.969426,
   "explanation": {
-    "what_it_is": "Whey protein is a complete, fast-absorbing protein derived from milk during cheese production. It contains all nine essential amino acids and is particularly rich in leucine, an amino acid that triggers muscle protein synthesis. Whey is typically consumed as a powder mixed into beverages, yogurt, or food, and is one of the most extensively studied protein supplements in clinical research.",
-    "how_it_works": "When you consume whey protein, your digestive system breaks it down into amino acids that circulate in the bloodstream. Leucine, the most abundant branched-chain amino acid in whey, activates mTOR, a key cellular sensor that signals muscle cells to build new protein and repair damage from exercise. This process is most effective when combined with resistance training, which creates the stimulus (muscle fiber microtears) that whey's amino acids help repair and expand. Whey is also absorbed rapidly\u2014reaching peak blood amino acid levels within 30\u201360 minutes\u2014making it particularly useful around workouts. Additionally, whey contains bioactive peptides and compounds that may help stabilize blood sugar by slowing gastric emptying and promoting insulin secretion.",
+    "what_it_is": "Whey protein is a complete, fast-digesting protein isolated from milk during cheese production. It contains all nine essential amino acids and is rich in branched-chain amino acids (BCAAs), particularly leucine. People typically consume it as a powder mixed into drinks or food, or occasionally as a liquid supplement, most often alongside resistance training or as a meal replacement.",
+    "how_it_works": "When you consume whey protein, your digestive system breaks it down into amino acids, which are absorbed rapidly into the bloodstream. Leucine, the most abundant BCAA in whey, activates mTOR\u2014a cellular signaling pathway that triggers muscle protein synthesis, the process your body uses to build and repair muscle tissue. Whey also contains bioactive peptides and immunoglobulins that may support immune function and modulate inflammation. The high amino acid availability and rapid absorption make whey particularly effective at stimulating muscle growth in the hours after resistance exercise, when muscle protein synthesis is elevated.",
     "outcome_detail": [
       {
         "outcome": "muscle strength",
         "grade": "Strong",
-        "what_studies_show": "Nine independent meta-analyses and systematic reviews consistently demonstrate that whey protein supplementation increases muscle strength, particularly in older adults with sarcopenia (age-related muscle loss) and in individuals performing resistance training. A 2024 meta-analysis of randomized controlled trials in older adults (n=1154), along with five additional 2023 meta-analyses examining sarcopenia-specific populations and resistance-trained individuals (ranging from n=33 to n=637), all converge on significant strength gains. A 2018 meta-analysis further confirmed whey's role in temporal recovery of muscle function post-resistance training.",
-        "why_this_grade": "The Strong grade reflects 32 human studies (versus 1 animal) and, critically, 9 converging meta-analyses\u2014a high bar for consistency that indicates the finding is robust and replicated across different populations and study designs. The studies are adequately powered, and multiple independent syntheses reaching the same conclusion provide strong confidence."
+        "what_studies_show": "Nine independent meta-analyses and systematic reviews, collectively analyzing data from 32 human randomized trials, show consistent improvements in muscle strength with whey protein supplementation. A 2024 meta-analysis of 1,154 older adults with sarcopenia and multiple 2023 reviews (n=33 to n=637 participants each) examining whey with or without vitamin D or leucine co-supplementation all found significant strength gains. The pooled standardized effect size is large (SMD 2.005), and the effect was verified across adequately powered studies.",
+        "why_this_grade": "This outcome meets Strong criteria because multiple independent meta-analyses converge on the same conclusion, the effect size is substantial, human evidence predominates (32 of 33 studies), and trials are adequately powered. The consistency across nine separate syntheses greatly reduces the risk that the finding is a fluke or publication bias artifact."
       },
       {
         "outcome": "muscle growth",
         "grade": "Strong",
-        "what_studies_show": "Thirteen independent meta-analyses and systematic reviews demonstrate that whey protein supplementation increases skeletal muscle mass across diverse populations. A 2024 meta-analysis in older adults (n=1154), three 2023 meta-analyses on sarcopenia and resistance exercise (n=33 to n=637), a 2022 meta-analysis in postmenopausal women, and a 2022 comparison against soy protein (n=596) all document significant gains in lean muscle tissue when whey is combined with resistance training.",
-        "why_this_grade": "All 29 human studies in the evidence base showed positive or neutral results, with zero animal-only studies. Thirteen converging meta-analyses\u2014the highest consistency marker\u2014provide exceptionally strong evidence. The studies span different age groups, sexes, and training protocols, reinforcing generalizability."
+        "what_studies_show": "Thirteen independent meta-analyses and systematic reviews, encompassing 29 human randomized trials, demonstrate that whey protein supplementation increases skeletal muscle mass. A 2024 meta-analysis of 1,154 older adults with sarcopenia, a 2023 analysis of 591 participants undergoing resistance training, and a 2022 comparison of whey versus soy protein (n=596) all reported significant gains in lean body mass. The pooled mean difference is 0.37 kg (95% CI 0.06 to 0.67), a modest but consistent effect.",
+        "why_this_grade": "This outcome is Strong because 13 independent syntheses converge on the same direction, all 29 primary studies are human randomized trials, the effect is replicated across multiple populations (older adults, postmenopausal women, resistance-trained individuals), and sample sizes are adequate. The consistency and replication across diverse trial contexts provide high confidence."
       },
       {
         "outcome": "recovery / soreness",
         "grade": "Moderate",
-        "what_studies_show": "Eight human studies, including randomized controlled trials and systematic reviews, suggest whey protein reduces muscle damage and soreness following intense or eccentric exercise. A 2023 RCT (n=15) found whey protein, but not pea protein, reduced muscle damage after long-distance walking. A 2018 meta-analysis on temporal recovery post-resistance training and a 2020 systematic review in elderly populations support a benefit, though effect sizes and consistency vary.",
-        "why_this_grade": "The Moderate grade reflects genuine human evidence but with imprecision: only 2 of the 8 studies report verified sample sizes totaling ~88 participants, making the overall effect estimate unstable and potentially sensitive to individual trial results. The remaining studies' sample sizes are not fully specified, creating uncertainty about the true magnitude of benefit."
+        "what_studies_show": "Eight human studies, including a 2018 meta-analysis on post-resistance training recovery, a 2023 randomized trial (n=15) showing whey reduced muscle damage from long-distance walking better than pea protein, and a 2020 trial (n=73) in perioperative patients, suggest whey protein may reduce exercise-induced muscle soreness and accelerate recovery of muscle function. However, the evidence base is small and heterogeneous, with verified sample sizes from only 2 of 8 studies (~88 participants total), limiting precision of the estimate.",
+        "why_this_grade": "This outcome is Moderate because human evidence exists and several trials support benefit, but the sample size is modest (verified ~88 participants across only 2 studies), most studies do not report sample sizes in the abstracts retrieved, and the small number of trials (8) means the effect estimate is imprecise and potentially unstable. It does not reach Strong because consistency and replicated synthesis are less robust than for strength and growth."
       },
       {
         "outcome": "blood sugar",
         "grade": "Moderate",
-        "what_studies_show": "Nine human studies (3 primary trials and 6 pooled analyses) indicate that whey protein supplementation improves postprandial (post-meal) blood sugar control and may benefit insulin sensitivity. A 2022 meta-analysis found whey improved glycemic control in people with type 2 diabetes; a 2020 meta-analysis documented favorable effects on serum lipoproteins and glycemic parameters in metabolic syndrome; and a 2025 systematic review examined whey's broader cardiometabolic effects including blood sugar. A 2015 systematic review on dairy consumption and insulin sensitivity provides supporting context.",
-        "why_this_grade": "The Moderate grade reflects two limitations: (1) only 3 verified primary human studies with reported sample sizes (totaling ~1316 participants), with the remaining 6 pooled analyses having incomplete sample-size reporting, making the precise effect size uncertain; and (2) the total count of primary human studies (3) falls below the threshold for the highest evidence tier. The data suggest a real effect, but confidence is moderately constrained by sample precision and study count."
+        "what_studies_show": "Nine human studies, including meta-analyses from 2022 on postprandial glycemia in type 2 diabetes, a 2020 analysis of glycemic control in metabolic syndrome, and a 2025 systematic review on cardiometabolic outcomes, show that whey protein supplementation modestly lowers blood glucose. The pooled mean difference is approximately \u22122.67 mg/dL (95% CI \u22123.62 to \u22121.72). A 2022 systematic review examined mechanistic insights into whey's effect on glucose control.",
+        "why_this_grade": "This outcome is Moderate because human evidence is present and directionally consistent, but the literature base is smaller (only 3 primary studies and 6 pooled analyses retrieved; most abstracts omit sample sizes) and falls below the threshold for Strong tier. Verified participant counts across only 3 studies total ~1,316, which is adequate for those specific trials but suggests the overall synthesis is not as densely replicated as the strength and growth outcomes."
       }
     ],
-    "evidence_base": "The evidence for whey protein is predominantly human-based, with 29\u201332 of 33 studies per outcome derived from randomized controlled trials, systematic reviews, and meta-analyses in populations ranging from healthy resistance-trained individuals to older adults with sarcopenia and people with type 2 diabetes. The research is recent and robust: nine independent meta-analyses converge on muscle strength and growth outcomes, reflecting high internal consistency and replication. For muscle recovery and blood sugar, evidence is more limited in primary trial count and sample reporting, but the direction of effect is consistent across retrieved studies. Overall, this is a mature, well-studied supplement in human populations with multiple high-level syntheses supporting the primary outcomes.",
-    "emerging_research": "Recent work is expanding into mechanistic detail and specific populations. A 2025 systematic review examined whey's broader cardiometabolic effects, moving beyond isolated outcomes. Studies are increasingly comparing whey to alternative proteins (e.g., soy, pea) to refine efficacy claims. Research in elderly and sarcopenic populations continues to grow, reflecting clinical interest in age-related muscle loss. However, these directions remain within the scope of existing evidence rather than novel compound uses.",
-    "open_questions": "Among the study records retrieved here, most focus on older adults, resistance-trained individuals, and people with metabolic disease; representation of younger, non-exercising, or disease-free populations is less apparent. The blood sugar outcome relies heavily on meta-analyses with incomplete sample-size reporting, making precision modest. For recovery/soreness, only 2 of 8 studies provide verified participant counts, limiting confidence in the true effect size and consistency of benefit across diverse exercise types. The studies retrieved do not reveal whether whey's benefits persist equally across very long-term supplementation (beyond the typical 8\u201324 week trial window commonly observed).",
-    "caveats": "Whey protein is generally well-tolerated, but individuals with milk allergies or severe lactose intolerance should avoid it (though whey isolates contain minimal lactose). Quality varies by manufacturer; choose products tested for heavy metals and third-party certified to ensure purity. Whey is most effective when combined with resistance training\u2014supplementation alone without exercise stimulus produces minimal muscle gains. Individuals taking medications affecting blood sugar or blood lipids should consult a clinician before using whey for glycemic management, as effects may be additive.",
+    "evidence_base": "The evidence for whey protein is predominantly human-based, with the vast majority of data from randomized controlled trials and meta-analyses published from 2018 onward. Muscle strength and growth are backed by 29\u201332 human trials each, consolidated across 9\u201313 independent meta-analyses, providing exceptionally strong evidence for replication. Recovery and blood sugar outcomes rest on smaller trial numbers (8 and 9 studies respectively) and fewer pooled syntheses, reflecting emerging but less densely replicated domains. Overall, the research base is recent, well-powered for primary outcomes, and dominated by human intervention studies rather than animal or mechanistic work.",
+    "emerging_research": "Recent systematic reviews (2024\u20132025) have begun examining whey protein's effects on broader cardiometabolic health markers beyond glucose, and comparative trials are evaluating whey against alternative protein sources (pea, soy, insect-derived proteins) in specific populations such as older adults and postmenopausal women. Studies are also exploring combination approaches\u2014whey plus vitamin D or leucine\u2014suggesting researchers are investigating synergistic nutrient pairing. However, these directions remain relatively new, and the field has not yet established whether such combinations offer clinically meaningful advantages over whey alone.",
+    "open_questions": "Among the study records retrieved, recovery/soreness trials are notably smaller and less numerous than strength and growth trials; two of eight studies report explicit sample sizes (~88 verified participants), which raises uncertainty about the true effect precision. For blood sugar outcomes, most of the nine studies retrieved do not specify sample sizes in their abstracts, making it difficult to assess the total evidence volume. The retrieved studies focus heavily on older adults with sarcopenia and postmenopausal women; representation in younger, healthy athletic populations or in long-term (>6 month) follow-up appears limited in these records, though this observation is restricted to the sample of abstracts provided\u2014it does not reflect the completeness of the published literature overall.",
+    "caveats": "Whey protein is generally well tolerated, but individuals with lactose intolerance or milk allergies should avoid it; lactose-free or isolate forms may be alternatives. Quality varies by manufacturer\u2014look for third-party testing to verify protein content and minimize contaminants. Whey protein is not a substitute for resistance training; its effects on muscle are most pronounced when combined with regular exercise. Individuals with kidney disease should consult a healthcare provider before high-dose supplementation, as excess protein may stress renal function.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence for muscle strength and growth is robust and well-replicated across large meta-analyses, but the evidence base narrows substantially for secondary outcomes (recovery/soreness, blood sugar), where sample sizes drop sharply and reporting is incomplete.",
+    "headline": "Muscle strength and growth evidence is robust across multiple large meta-analyses, but recovery/soreness is underpowered and blood sugar evidence relies heavily on a single large study; readers should treat the latter two outcomes as preliminary.",
     "concerns": [
       {
-        "issue": "Recovery/soreness evidence severely underpowered",
-        "detail": "Only 8 studies support the Moderate grade for recovery/soreness, with just 2 reporting sample sizes (15 and 73 participants). The engine explicitly flags 'modest verified sample (~88 participants across 2 of 8 studies)' as introducing instability. Six of eight studies have unreported sample sizes, making it impossible to assess whether this outcome rests on adequately powered trials or a collection of small, underpowered studies.",
+        "issue": "Recovery/soreness severely underpowered",
+        "detail": "Only 8 studies total with sample sizes reported for just 2 (n=15 and n=73, median 73). The meta-analysis and systematic review do not report extractable pooled effects. Six individual RCTs remain largely unpublished in detail. A single outlier trial or publication bias could substantially shift any synthesis. This outcome cannot support strong confidence.",
         "severity": "high"
       },
       {
-        "issue": "Blood sugar outcome lacks primary trial evidence",
-        "detail": "The Moderate grade for blood sugar is supported by only 3 primary RCTs out of 9 total records, with 6 being pooled analyses (meta-analyses and systematic reviews). The engine notes 'limited human evidence: 3 primary human studies and 6 pooled analyses retrieved \u2014 below the threshold for the top tier,' yet it still received a Moderate grade. Only 3 of 9 abstracts report sample sizes; the true trial denominator and heterogeneity are obscured.",
+        "issue": "Blood sugar evidence concentrated in one trial",
+        "detail": "Nine studies retrieved but sample sizes reported for only 3 (n=32, 130, 1154). The 1154-participant study (2024 meta-analysis on sarcopenia) likely dominates the pooled mean_diff of -2.67. The engine notes 'below threshold for top tier' and the remaining 6 syntheses lack transparent sample sizes. Confidence depends on whether that one large trial is representative of whey's effect in metabolic disease.",
         "severity": "high"
       },
       {
-        "issue": "Muscle outcomes dominated by meta-analyses, not primary RCTs",
-        "detail": "For muscle strength, 9 of 33 records are meta-analyses/systematic reviews, and for muscle growth, 13 of 29 are pooled analyses. While the engine notes 'consistency' across 9\u201313 syntheses as evidence of replicated findings, the underlying primary RCTs are not itemized here. If many syntheses overlap the same small set of trials, apparent consistency becomes circular. The records show that most individual RCTs are small (median n=60 for strength), so outlier studies or selective inclusion in meta-analyses could shift pooled estimates.",
+        "issue": "Muscle strength SMD point estimate unusually large",
+        "detail": "The pooled SMD of 2.005 [0.975\u20133.035] is extremely large (>2.0). While 9 meta-analyses converge, this may reflect confounding by study quality, population heterogeneity (heavily sarcopenic elderly), or publication bias favoring positive trials. The 95% CI width (0.975\u20133.035) is very broad, suggesting heterogeneity. Median sample size across RCTs is only 60, and small trials are prone to inflated effect sizes.",
+        "severity": "high"
+      },
+      {
+        "issue": "Muscle growth evidence relies on older meta-analyses with small primary trials",
+        "detail": "Thirteen independent meta-analyses converge, but the underlying RCT sample sizes are small: median 60 across the RCT component. The mean_diff of 0.37 kg [0.06\u20130.67] is modest. Thirteen syntheses of the same small RCT base can appear convergent without representing true replication; they may all suffer the same selection or quality bias. The year range (2014\u20132026) shows recent work, but many early meta-analyses may be synthesizing underpowered trials.",
         "severity": "moderate"
       },
       {
-        "issue": "Sample size reporting incomplete across all outcomes",
-        "detail": "For muscle strength, only 18 of 33 studies report n; for muscle growth, 19 of 29; for recovery/soreness, 2 of 8; for blood sugar, 3 of 9. This non-reporting pattern is non-random: smaller or older studies may be less likely to include n in an abstract. This biases visibility toward larger/newer trials and obscures the true distribution of evidence quality. The median sample sizes shown (e.g., 60 for strength) could be misleading if they reflect only the reported subset.",
-        "severity": "moderate"
-      },
-      {
-        "issue": "Confounding with resistance exercise not clearly separated",
-        "detail": "Several of the largest trials (e.g., 2023 meta-analysis n=591: 'Effectiveness of Whey Protein Supplementation during Resistance Exercise Training') explicitly combine whey protein with resistance training. The records do not distinguish whether the strength and muscle growth attributed to whey are independent of exercise or are synergistic/additive effects. This conflation limits inference about whey protein's isolated contribution.",
+        "issue": "Strength and growth evidence nearly all from sarcopenia/elderly populations",
+        "detail": "The 2024, 2023, 2023, 2023 meta-analyses dominating both outcomes are explicitly titled around sarcopenia and older adults. Generalizability to younger, healthy populations or to non-resistance-trained individuals is unclear. The large pooled effects may reflect the particular responsiveness of atrophied elderly muscle to protein, not a universal mechanism.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Whey protein's amino acid composition (high in leucine and essential amino acids) has a plausible mechanism for activating mTOR-mediated muscle protein synthesis, which is consistent with observed gains in muscle mass and strength. However, the records do not provide mechanistic data (e.g., phosphorylated mTOR, protein synthesis rates, or signaling biomarkers) linking whey to the clinical outcomes. The leap from biochemistry to strength/hypertrophy gains in the RCTs is observational and could reflect confounding (e.g., dietary adherence, training compliance) rather than a direct causal pathway.",
-    "strongest_counterargument": "A skeptic would note that the largest and most recent meta-analyses (n=1154\u20132105) focus on sarcopenic elderly or postmenopausal populations, not representative of the general population seeking to build muscle. For younger, resistance-trained individuals (the implied target market), the individual RCTs are older and smaller (medians: n=60 for strength, often from 2006\u20132015). Moreover, the recovery/soreness outcome is graded Moderate despite profound imprecision, suggesting publication bias or selective reporting of favorable comparisons (whey vs. pea, whey vs. soy). If whey's effect on soreness is real but small, underpowered trials will capture noise, not signal.",
-    "what_would_change_the_picture": "For muscle outcomes: a pre-registered meta-analysis of RCTs in young, healthy, resistance-trained individuals (separate from sarcopenia trials) with explicit reporting of between-study heterogeneity and sensitivity analyses excluding confounded (exercise+protein) trials would clarify whey's isolated effect. For recovery/soreness: adequately powered RCTs (n\u2265100 per arm) using objective biomarkers (creatine kinase, inflammatory cytokines) alongside self-reported soreness, with pre-specified comparator (isocaloric control, not alternative protein) would resolve whether the Moderate grade reflects a real signal or noise from small, heterogeneous trials.",
+    "mechanism_check": "Whey protein is a complete protein containing all essential amino acids and is rich in leucine, which activates mTOR signaling and muscle protein synthesis. This mechanism plausibly supports increased muscle strength and growth when combined with resistance exercise. However, the mechanism does not clearly predict why whey should substantially reduce muscle soreness (which is inflammatory/neural in origin) or lower blood glucose (a metabolic effect requiring either delayed gastric emptying or altered insulin secretion)\u2014these outcomes rely on secondary or indirect mechanisms not detailed in the study titles, introducing inferential gaps.",
+    "strongest_counterargument": "A skeptic would note that the strength and growth evidence is drawn almost entirely from sarcopenic and very elderly populations where even modest protein interventions produce large relative gains in a deconditioned baseline. The same RCTs appear in multiple meta-analyses, inflating the appearance of convergence without increasing true statistical independence. For blood sugar and recovery, the evidence is too sparse to support any firm claim. Furthermore, whey protein is typically administered alongside resistance training in these trials, making it impossible to isolate protein's effect from exercise, which is the dominant driver of muscle adaptation.",
+    "what_would_change_the_picture": "Adequately powered RCTs (n\u2265100) in non-elderly, non-sarcopenic populations comparing whey protein versus matched-calorie placebo during standardized resistance programs would test generalizability. For recovery and blood sugar, new primary trials with transparent protocols and larger sample sizes (n\u226550 per arm minimum) reporting soreness via validated scales and glucose via continuous monitoring would resolve whether these are genuine effects or noise.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

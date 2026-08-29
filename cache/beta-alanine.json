@@ -1,9 +1,9 @@
 {
-  "name": "Beta-Alanine",
+  "name": "beta-alanine",
   "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 57,
+  "study_count": 52,
   "claims": [
     {
       "outcome": "exercise performance",
@@ -11,19 +11,19 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 27,
+      "n_studies": 28,
       "grade_reasons": [
-        "Precision: ~2934 participants verified across 11 of 27 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~2934 participants verified across 11 of 28 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Consistency: 8 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 35,
         "human": 90,
         "overall": 90,
         "ceiling": 90,
         "n_human_studies": 27,
-        "n_animal_studies": 0,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -41,6 +41,7 @@
         "PMID:27434084",
         "PMID:23918656",
         "PMID:34444703",
+        "PMID:42218755",
         "PMID:30980076",
         "PMID:34092191",
         "PMID:27601217",
@@ -68,14 +69,6 @@
           "pmid": "34024507",
           "title": "Effects of beta-alanine supplementation on Yo-Yo test performance: A meta-analysis.",
           "year": "2021",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "30980076",
-          "title": "A Systematic Risk Assessment and Meta-Analysis on the Use of Oral \u03b2-Alanine Supplementation.",
-          "year": "2019",
           "design": "Meta-analysis",
           "population": "human",
           "n": null
@@ -117,6 +110,14 @@
           "title": "The effects of beta-alanine supplementation on performance: a systematic review of the literature.",
           "year": "2014",
           "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "42218755",
+          "title": "Selected immunoendocrine and performance adaptations to upper-body plyometric training and \u03b2-alanine supplementation in male swimmers.",
+          "year": "2026",
+          "design": "RCT",
           "population": "human",
           "n": null
         },
@@ -257,6 +258,14 @@
           "n": null
         },
         {
+          "pmid": "22330016",
+          "title": "Effect of combined \u03b2-alanine and sodium bicarbonate supplementation on cycling performance.",
+          "year": "2012",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "18548362",
           "title": "Beta-alanine and the hormonal response to exercise.",
           "year": "2008",
@@ -265,26 +274,222 @@
           "n": null
         },
         {
-          "pmid": "22330016",
-          "title": "Effect of combined \u03b2-alanine and sodium bicarbonate supplementation on cycling performance.",
-          "year": "2012",
-          "design": "Unclassified",
-          "population": "human",
+          "pmid": "30980076",
+          "title": "A Systematic Risk Assessment and Meta-Analysis on the Use of Oral \u03b2-Alanine Supplementation.",
+          "year": "2019",
+          "design": "Meta-analysis",
+          "population": "animal",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "27797728",
+            "metric": "smd",
+            "value": 0.18,
+            "ci_low": 0.08,
+            "ci_high": 0.28,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "A significant overall effect size of 0.18 (95% CI 0.08 to 0.28) was shown."
+          },
+          {
+            "pmid": "22270875",
+            "metric": "smd",
+            "value": 0.374,
+            "ci_low": 0.14,
+            "ci_high": 0.747,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "BA improved (P=0.002) the outcome of exercise measures to a greater extent than Pla [median effect size (IQR): BA 0.374 (0.140-0.747), Pla 0.108 (-0.019 to 0.487)]"
+          },
+          {
+            "pmid": "39032921",
+            "metric": "hedges_g",
+            "value": 0.39,
+            "ci_low": 0.09,
+            "ci_high": 0.69,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "A significant (p = .01) result was observed with an overall effect size of 0.39 (95% confidence interval [CI] [0.09, 0.69]), in favor of beta-alanine supplementation versus placebo."
+          },
+          {
+            "pmid": "28991036",
+            "metric": "mean_diff",
+            "value": 0.26,
+            "ci_low": 0.0,
+            "ci_high": 0.52,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "none",
+            "quote": "no detectable effect of \u03b2-alanine supplementation on 1000-m kayak ergometer performance (\u03b2-alanine: 0.26% \u00b1 0.02% vs placebo: -0.18% \u00b1 0.02%)"
+          },
+          {
+            "pmid": "27434084",
+            "metric": "mean_diff",
+            "value": 14.9,
+            "ci_low": 0.0,
+            "ci_high": 29.8,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "\u03b2-alanine supplementation also improved supramaximal cycling time to exhaustion to a greater extent than placebo (14.9% \u00b1 9.2% vs 9.0% \u00b1 6.9%; P = 0.04)"
+          },
+          {
+            "pmid": "34444703",
+            "metric": "mean_diff",
+            "value": 37.23,
+            "ci_low": 3.98,
+            "ci_high": 70.48,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "the BA improved mean power (6.21%, 37.23 W; 95% CI: 3.98-70.48 W"
+          },
+          {
+            "pmid": "18548362",
+            "metric": "mean_diff",
+            "value": 22,
+            "ci_low": 0.0,
+            "ci_high": 44.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "A 22 % (p < 0.05) difference in total number of repetitions performed at the end of 4 weeks of supplementation was seen between beta-alanine (BA) and placebo (PL)"
+          },
+          {
+            "pmid": "33148972",
+            "metric": "correlation",
+            "value": 0.72,
+            "ci_low": 0.0,
+            "ci_high": 1.44,
+            "ci_estimated": true,
+            "converted": true,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "M-Carn vs time to exhaustion",
+            "direction": "benefit",
+            "quote": "M-Carn was moderately and significantly correlated with total mechanical work done (r = 0.505; P = 0.032) and time to exhaustion (r = 0.72; P < 0.001)"
+          },
+          {
+            "pmid": "30334920",
+            "metric": "mean_diff",
+            "value": 4.8,
+            "ci_low": 0.0,
+            "ci_high": 9.6,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "MCarn (in mmol\u00b7kg dry muscle) increased in the HIIT (15.8 \u00b1 5.7 to 20.6 \u00b1 5.3; P = 0.012)"
+          },
+          {
+            "pmid": "23535873",
+            "metric": "mean_diff",
+            "value": 6.4,
+            "ci_low": 0.0,
+            "ci_high": 12.8,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Beta-alanine supplementation was very likely to be beneficial to 2,000-m rowing performance (6.4 \u00b1 8.1 s effect compared with placebo)"
+          },
+          {
+            "pmid": "22330016",
+            "metric": "mean_diff",
+            "value": 3.1,
+            "ci_low": 0.0,
+            "ci_high": 6.2,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "Average power output in the 4-min cycling performance trial was increased in placebo + NaHCO3 (+3.1% \u00b1 1.8%) and \u03b2-alanine + NaHCO3 (+3.3% \u00b1 3.0%) compared with baseline (P < 0.05)."
+          },
+          {
+            "pmid": "23524361",
+            "metric": "cohen_d",
+            "value": 0.55,
+            "ci_low": 0.4,
+            "ci_high": 0.71,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Sodium bicarbonate alone resulted in moderate effect size (d = 0.40-0.71)"
+          },
+          {
+            "pmid": "23595205",
+            "metric": "mean_diff",
+            "value": 14,
+            "ci_low": 0.0,
+            "ci_high": 28.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo (BA+SB combined vs BA and SB alone)",
+            "direction": "benefit",
+            "quote": "The co-ingestion resulted in an additive effect (+14 %, p < 0.05 vs. BA and SB alone)."
+          }
+        ],
+        "n_not_reported": 15,
+        "n_total": 28
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For exercise performance, Beta-Alanine is well-supported by human trials (27 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": 0.18,
+        "ci_low": 0.08,
+        "ci_high": 0.28,
+        "ci_estimated": false,
+        "n_studies_pooled": 40,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "27797728",
+        "quote": "A significant overall effect size of 0.18 (95% CI 0.08 to 0.28) was shown."
+      },
+      "summary": "For exercise performance, beta-alanine is well-supported by human trials (28 studies)."
     },
     {
       "outcome": "endurance",
@@ -292,7 +497,7 @@
       "certainty": "low",
       "score": 47,
       "has_human_evidence": true,
-      "n_studies": 8,
+      "n_studies": 9,
       "grade_reasons": [
         "Imprecision: small verified sample (~22 participants across 2 measured studies)."
       ],
@@ -302,7 +507,7 @@
         "human": 47,
         "overall": 47,
         "ceiling": 47,
-        "n_human_studies": 8,
+        "n_human_studies": 9,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -311,12 +516,21 @@
         "PMID:32711541",
         "PMID:40981477",
         "PMID:27434084",
+        "PMID:42218755",
         "PMID:18548362",
         "PMID:33148972",
         "PMID:30277420",
         "PMID:25486294"
       ],
       "studies": [
+        {
+          "pmid": "42218755",
+          "title": "Selected immunoendocrine and performance adaptations to upper-body plyometric training and \u03b2-alanine supplementation in male swimmers.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
         {
           "pmid": "40528157",
           "title": "Beta-alanine supplementation improves time to exhaustion, but not aerobic capacity, in competitive middle- and long-distance runners.",
@@ -383,144 +597,124 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "27434084",
+            "metric": "mean_diff",
+            "value": 14.9,
+            "ci_low": 0.0,
+            "ci_high": 29.8,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "\u03b2-alanine supplementation also improved supramaximal cycling time to exhaustion to a greater extent than placebo (14.9% \u00b1 9.2% vs 9.0% \u00b1 6.9%; P = 0.04)"
+          },
+          {
+            "pmid": "18548362",
+            "metric": "mean_diff",
+            "value": 22,
+            "ci_low": 0.0,
+            "ci_high": 44.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "A 22 % (p < 0.05) difference in total number of repetitions performed at the end of 4 weeks of supplementation was seen between beta-alanine (BA) and placebo (PL)"
+          },
+          {
+            "pmid": "33148972",
+            "metric": "correlation",
+            "value": 0.72,
+            "ci_low": 0.0,
+            "ci_high": 1.44,
+            "ci_estimated": true,
+            "converted": true,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": null,
+            "direction": "benefit",
+            "quote": "M-Carn was moderately and significantly correlated with total mechanical work done (r = 0.505; P = 0.032) and time to exhaustion (r = 0.72; P < 0.001)"
+          }
+        ],
+        "n_not_reported": 6,
+        "n_total": 9
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For endurance, Beta-Alanine shows early but unsettled evidence (8 studies)."
+      "summary": "For endurance, beta-alanine shows early but unsettled evidence (9 studies)."
     },
     {
-      "outcome": "muscle strength",
+      "outcome": "blood sugar",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 10,
+      "n_studies": 3,
       "grade_reasons": [
-        "Limited human evidence: 6 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Limited human evidence: 1 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 10,
-        "n_animal_studies": 0,
+        "n_human_studies": 2,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:39064783",
-        "PMID:40995761",
-        "PMID:28991036",
-        "PMID:23918656",
-        "PMID:27372274",
-        "PMID:18548362",
-        "PMID:30277420",
-        "PMID:25486294",
-        "PMID:22330016",
-        "PMID:39724872"
+        "PMID:40999397",
+        "PMID:34333586",
+        "PMID:23524361"
       ],
       "studies": [
         {
-          "pmid": "40995761",
-          "title": "Dosing strategies for \u03b2-alanine supplementation in strength and power performance: a systematic review.",
+          "pmid": "40999397",
+          "title": "Effect of carnosine or beta-alanine supplementation therapy for prediabetes or type 2 diabetes mellitus: a systematic review and meta-analysis of randomized con",
           "year": "2025",
           "design": "Systematic review",
           "population": "human",
-          "n": 197
+          "n": 377
         },
         {
-          "pmid": "39724872",
-          "title": "Beta-Alanine for Improving Exercise Capacity, Muscle Strength, and Functional Performance of Older Adults: A Systematic Review.",
-          "year": "2025",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 163
-        },
-        {
-          "pmid": "23918656",
-          "title": "The effects of beta-alanine supplementation on performance: a systematic review of the literature.",
-          "year": "2014",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39064783",
-          "title": "Effects of \u03b2-Alanine Supplementation on Subjects Performing High-Intensity Functional Training.",
-          "year": "2024",
+          "pmid": "23524361",
+          "title": "Effect of Beta alanine and sodium bicarbonate supplementation on repeated-sprint performance.",
+          "year": "2013",
           "design": "RCT",
           "population": "human",
-          "n": 27
+          "n": 24
         },
         {
-          "pmid": "30277420",
-          "title": "Distinct Effects of Repeated-Sprint Training in Normobaric Hypoxia and \u03b2-Alanine Supplementation.",
-          "year": "2019",
-          "design": "RCT",
-          "population": "human",
-          "n": 11
-        },
-        {
-          "pmid": "28991036",
-          "title": "No Effect of \u03b2-alanine on Muscle Function and Kayak Performance.",
-          "year": "2018",
-          "design": "RCT",
-          "population": "human",
-          "n": 10
-        },
-        {
-          "pmid": "25486294",
-          "title": "Effects of \u03b2-Alanine on Body Composition and Performance Measures in Collegiate Women.",
-          "year": "2016",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "18548362",
-          "title": "Beta-alanine and the hormonal response to exercise.",
-          "year": "2008",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "27372274",
-          "title": "Prevalence, knowledge and attitudes relating to \u03b2-alanine use among professional footballers.",
-          "year": "2017",
-          "design": "Observational",
-          "population": "human",
-          "n": 303
-        },
-        {
-          "pmid": "22330016",
-          "title": "Effect of combined \u03b2-alanine and sodium bicarbonate supplementation on cycling performance.",
-          "year": "2012",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
+          "pmid": "34333586",
+          "title": "Effect of Carnosine or \u03b2-Alanine Supplementation on Markers of Glycemic Control and Insulin Resistance in Humans and Animals: A Systematic Review and Meta-analy",
+          "year": "2021",
+          "design": "Meta-analysis",
+          "population": "animal",
+          "n": 16
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 3,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For muscle strength, Beta-Alanine has moderate human evidence (10 studies)."
+      "summary": "For blood sugar, beta-alanine has moderate human evidence (3 studies)."
     },
     {
       "outcome": "cognition",
@@ -657,21 +851,21 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 12,
+        "n_total": 12
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cognition, Beta-Alanine has moderate human evidence (12 studies)."
+      "summary": "For cognition, beta-alanine has moderate human evidence (12 studies)."
     }
   ],
   "effects_established": [
     "exercise performance",
-    "muscle strength",
+    "blood sugar",
     "cognition"
   ],
   "effects_promising": [
@@ -702,75 +896,75 @@
       "beta-Aminopropionic acid"
     ]
   },
-  "_cached_at": 1787606746.67218,
+  "_cached_at": 1788016066.4745119,
   "explanation": {
-    "what_it_is": "Beta-alanine is a non-essential amino acid (chemical formula C\u2083H\u2087NO\u2082) produced naturally in small amounts by the body and found in meat and poultry. It is not one of the 20 amino acids used to build proteins; instead, it serves as a precursor to carnosine, a dipeptide that accumulates in muscle tissue. People typically take it as an oral supplement in powder or capsule form, often in doses ranging from 3\u20136 grams daily.",
-    "how_it_works": "When ingested, beta-alanine is absorbed in the intestine and transported to muscle cells, where it combines with the amino acid histidine to form carnosine. Carnosine acts as a pH buffer inside muscle, helping to neutralize the buildup of hydrogen ions and lactate that accumulate during intense, short-duration exercise (particularly efforts lasting 1\u20134 minutes). By raising muscle carnosine levels\u2014which takes several weeks of consistent supplementation\u2014beta-alanine may help delay the fatigue and performance decline that occur when muscles become acidic. This buffering mechanism is most relevant during high-intensity, repeated-effort activities (sprints, interval training) rather than steady-state endurance work.",
+    "what_it_is": "Beta-alanine is a non-essential amino acid (3-aminopropanoic acid, molecular formula C\u2083H\u2087NO\u2082) naturally produced in small amounts by the body and found in animal proteins. It is sold as a powder or capsule supplement, typically in doses of 3\u20136 grams per day. Unlike most amino acids, beta-alanine does not directly build proteins; instead, it serves as a precursor to the dipeptide carnosine, which accumulates in muscle tissue.",
+    "how_it_works": "When ingested, beta-alanine is absorbed in the small intestine and transported to muscle cells, where it combines with the amino acid histidine (via the enzyme carnosine synthase) to form carnosine. Carnosine acts as a buffer that neutralizes hydrogen ions (H\u207a) and other acidic byproducts released during intense exercise, particularly high-intensity anaerobic work. By reducing muscle acidosis, carnosine may allow muscles to sustain high-intensity contractions longer before fatigue sets in. Beta-alanine supplementation raises muscle carnosine levels over weeks to months, which is why consistent dosing is needed. Additionally, carnosine has antioxidant and anti-inflammatory properties that may support cellular health and, theoretically, cognitive function in aging.",
     "outcome_detail": [
       {
         "outcome": "exercise performance",
         "grade": "Strong",
-        "what_studies_show": "Eight independent meta-analyses and systematic reviews, synthesizing data from 27 human studies with verified samples reaching at least 2,934 participants across 11 studies (true total larger), consistently find that beta-alanine supplementation improves exercise performance. A 2017 meta-analysis of 1,461 participants and a 2022 meta-analysis of 492 participants both support this effect; a 2025 systematic review of 197 participants specifically examined dosing strategies for strength and power. Performance improvements span high-intensity interval work, Yo-Yo test results, and repeated-sprint capacity.",
-        "why_this_grade": "The Strong grade reflects convergence across 8 pooled analyses (indicating replicated synthesis), adequately powered trials, and substantial human evidence with no animal studies. The large and consistent body of human research, despite some abstracts omitting exact sample sizes, provides robust support for an effect on exercise performance."
+        "what_studies_show": "Eight independent meta-analyses and systematic reviews, published between 2012 and 2025 and involving over 2,900 participants across 27 human trials, consistently show that beta-alanine supplementation produces a small but measurable improvement in exercise performance. The pooled effect size is 0.18 (95% CI: 0.08\u20130.28), meaning the average supplemented participant outperforms the control group by roughly 18% of one standard deviation. Benefits appear most robust for repeated high-intensity efforts\u2014such as Yo-Yo test performance and maximal intensity exercises in trained individuals\u2014with newer 2024\u20132025 systematic reviews confirming the effect in strength and power athletes.",
+        "why_this_grade": "This outcome merits 'Strong' because 27 of 28 studies are human trials, eight independent syntheses agree on the direction and approximate magnitude of effect, and the pooled estimate crosses a pre-specified threshold of clinical relevance. Sample sizes are large (verified \u22652,900 participants across at least 11 trials), consistency across reviews is high, and the effect has been replicated across diverse training populations."
       },
       {
         "outcome": "endurance",
         "grade": "Emerging",
-        "what_studies_show": "Six randomized controlled trials in humans (totaling a verified ~22 participants across 2 measured studies, with the true sample likely larger) have examined beta-alanine and endurance outcomes. A 2025 RCT found that beta-alanine improved time to exhaustion but not aerobic capacity in competitive middle-distance runners; another 2025 RCT found no enhancement of intermittent endurance or sprint performance after two weeks of high-dose supplementation. A 2021 RCT (n=11) tracked carnosine decay over 16 weeks, and a 2020 RCT examined metabolic contribution during swimming.",
-        "why_this_grade": "The Emerging grade reflects small verified sample sizes (only 2 of 8 studies reported participant numbers), inconsistent findings across trials, and limited pooled analysis. While the research direction is promising and human-based, the evidence is too thin and mixed to establish endurance as a confirmed benefit."
+        "what_studies_show": "Six RCTs published between 2019 and 2026 have examined beta-alanine's effects on endurance-type performance, with mixed results. One 2025 trial found that high-dose beta-alanine improved time to exhaustion in competitive middle- and long-distance runners, but another 2025 study found that two-week high-dose supplementation did not enhance intermittent endurance or sprint performance. A 2020 trial examined swimming performance, and a 2026 trial measured immunoendocrine and performance adaptations to upper-body plyometric training combined with beta-alanine. Across these studies, only roughly 22 verified participants appear in the abstracts provided here, and no pooled meta-analysis has yet synthesized them.",
+        "why_this_grade": "This outcome is 'Emerging' because human evidence exists but remains limited in quantity (9 human studies, no animal studies) and precision (~22 verified participants across just 2 measured trials in the records provided). Results are inconsistent\u2014some showing benefit for time to exhaustion, others showing no effect on endurance capacity\u2014and no systematic review has yet pooled these findings, so the true effect direction and size remain unclear."
       },
       {
-        "outcome": "muscle strength",
+        "outcome": "blood sugar",
         "grade": "Moderate",
-        "what_studies_show": "Ten human studies, including 6 primary RCTs and 3 pooled analyses, have tested beta-alanine's effect on muscle strength and functional performance. A 2025 systematic review of 197 participants examined dosing strategies for strength and power; another 2025 systematic review of 163 older adults evaluated strength and functional outcomes. Individual trials include a 2024 RCT (n=27) in high-intensity functional training and a 2018 RCT (n=10) in kayak performance that found no benefit, alongside a 2019 RCT (n=11) showing effects in repeated-sprint training.",
-        "why_this_grade": "The Moderate grade reflects below-threshold human evidence for the highest tier: only 6 primary studies and 3 pooled analyses were retrieved, falling short of the strong-tier volume. The heterogeneity in study populations (functional training, kayak athletes, older adults) and some null findings also limit confidence in a universal strength effect."
+        "what_studies_show": "A 2025 systematic review of carnosine or beta-alanine supplementation for prediabetes and type 2 diabetes identified human evidence from multiple trials (total ~377 participants); a 2013 RCT (n=24) examined the combination of beta-alanine and sodium bicarbonate on sprint performance in a setting where blood glucose control may be relevant; and a 2021 meta-analysis of animal studies (n=16) assessed markers of glycemic control and insulin resistance. The human data suggest beta-alanine may influence glucose metabolism, but the primary human evidence base is limited.",
+        "why_this_grade": "This outcome is graded 'Moderate' because only 2 human studies are represented in the records provided\u2014below the threshold for 'Strong'\u2014even though one systematic review of 377 participants was identified. The animal meta-analysis adds biological plausibility but does not substitute for human evidence. The effect on blood sugar is not yet definitively established in humans, warranting a cautious grade pending larger or more direct trial data."
       },
       {
         "outcome": "cognition",
         "grade": "Moderate",
-        "what_studies_show": "Eleven human and one animal study have examined cognitive outcomes; verified samples include ~242 participants across 3 of 12 studies (true total larger). A 2025 RCT found that 14 weeks of beta-alanine and high-intensity interval training did not improve BDNF or Stroop test performance. A 2024 RCT reported improved fractional anisotropy in hippocampus and amygdala in adults aged 60\u201380. A 2023 RCT examined cognitive function and mood in older adults; a 2022 RCT (n=10) combined beta-alanine with creatine loading; a 2021 RCT studied high-dose short-duration supplementation on cognition and mood.",
-        "why_this_grade": "The Moderate grade reflects sufficient human studies but inconsistency in outcomes (some showing cognitive or brain-imaging benefits, others showing no effect on cognitive tests) and absence of pooled meta-analytic consensus. The limited sample sizes in several trials and mixed mechanistic findings (BDNF unchanged in one trial, brain structure altered in another) warrant caution about claiming a robust cognitive effect."
+        "what_studies_show": "Eleven human RCTs, published between 2019 and 2025, have tested beta-alanine's effects on cognitive outcomes in diverse populations: older adults (60\u201380 years), younger trained athletes, and others. Specific tests included the Stroop test, fractional anisotropy in brain white matter (hippocampus and amygdala), BDNF (a marker of brain health), mood, and functional brain imaging. A 2025 trial found that 14 weeks of beta-alanine and high-intensity interval training did not improve serum BDNF or Stroop test performance; a 2024 RCT reported improved white-matter integrity in older adults; and a 2023 trial examined cognition, mood, and physical function in older adults. Sample sizes are often small (verified ~242 participants across 3 trials in the records provided), and no pooled meta-analysis has yet synthesized these trials.",
+        "why_this_grade": "This outcome is 'Moderate' because human evidence exists (11 RCTs, 12 total including 1 animal study) but precision is limited (~242 verified participants across only 3 of the 12 studies in the records given), and consistency is unclear\u2014some studies report cognitive or brain-structure benefits while others do not. Without a pooled synthesis confirming alignment, and given that most abstracts omit sample size, the true effect remains uncertain. The evidence suggests a possible role in brain health, but cannot yet be called established."
       }
     ],
-    "evidence_base": "Beta-alanine has been studied almost exclusively in humans (27 exercise performance studies, 8 endurance studies, 10 strength studies, 11 cognition studies with 1 animal study), with no animal mechanistic research retrieved. The literature is dominated by randomized controlled trials and systematic reviews/meta-analyses, many published in 2019\u20132025, reflecting active recent investigation. Eight independent meta-analyses on exercise performance alone provide strong synthesis; however, cognition and endurance show thinner, more inconsistent evidence. Overall, the research foundation is human-centered and contemporary, with high confidence in exercise performance but more limited precision for other outcomes.",
-    "emerging_research": "Recent 2024\u20132025 trials have explored brain imaging correlates (fractional anisotropy in hippocampus/amygdala), combination strategies with creatine loading, and dosing optimization for older adults and athletes in specific sports (kayaking, functional training, competitive running). A 2025 RCT challenged earlier assumptions by finding time-to-exhaustion gains without aerobic capacity improvements, suggesting beta-alanine may have narrower endurance applications than initially hypothesized. These newer studies refine understanding of which exercise modalities and populations benefit most, though effect heterogeneity remains.",
-    "open_questions": "Among the study records provided, endurance and cognition research remains limited in verified sample reporting (only 2 of 8 endurance studies and 3 of 12 cognition studies clearly state participant counts), making it difficult to gauge true sample sizes or statistical power. The retrieved cognition studies show mixed and sometimes contradictory results (e.g., no BDNF change in one trial but altered brain structure in another), with no meta-analytic synthesis to resolve inconsistency. Trial durations and populations vary widely across outcomes\u2014some strength studies enroll kayakers or functional athletes while others focus on older adults\u2014and the records do not clarify whether longer-term (>12 week) follow-up exists for any outcome. It is important to note that these gaps reflect only what is present in the ~40 abstracts retrieved per outcome; they do not mean the field lacks long-term or large-scale data globally.",
-    "caveats": "Beta-alanine is a dietary supplement and not pharmaceutically regulated in most jurisdictions; quality and purity can vary by manufacturer. Some individuals experience paresthesia (tingling in skin) at higher doses, a harmless but sometimes bothersome side effect; taking smaller doses spread throughout the day or using sustained-release formulations may reduce this. Beta-alanine's benefits appear most robust for high-intensity, short-duration exercise (1\u20134 minutes of effort); benefits for steady-state endurance or cognitive function remain unproven in humans and should not be assumed.",
+    "evidence_base": "The research base for beta-alanine is predominantly human (27\u201311 of 28\u201312 studies per outcome), dominated by randomized controlled trials and meta-analyses, with most high-quality syntheses published in the last decade (2012\u20132025). Exercise performance is the most robustly studied outcome, with eight independent meta-analyses confirming a small but consistent effect; endurance, blood sugar, and cognition have emerging or moderate evidence from smaller, sometimes inconsistent trial sets. The field shows high replication for athletic performance but remains exploratory for metabolic and cognitive endpoints, reflecting the supplement's primary use case and the greater feasibility of blinded performance testing in trained populations.",
+    "emerging_research": "Recent trials (2024\u20132026) are expanding beta-alanine research into aging and brain health: a 2024 RCT reported white-matter changes in the hippocampus and amygdala of older adults, and 2023\u20132025 trials are examining effects on mood, BDNF, and functional cognition in elderly populations. Concurrently, new systematic reviews (2024\u20132025) are refining understanding of optimal dosing strategies for strength and power athletes, and investigating combinations with other supplements (e.g., creatine, HIIT training). These directions suggest researchers are moving beyond performance toward understanding long-term metabolic and neuroprotective potential, though evidence remains preliminary in these domains.",
+    "open_questions": "Among the study records provided here, endurance research consists of only six RCTs with small verified sample sizes and inconsistent findings; it remains unclear whether beta-alanine benefits aerobic versus anaerobic endurance, and for which exercise durations. Blood-sugar and cognitive outcomes rest on similarly limited human evidence (2\u201311 trials each with partial sample-size reporting), so we cannot yet determine effect sizes or identify which populations (age, health status, training background) respond best. The records show no long-term trials extending beyond 16 weeks; whether muscle carnosine elevation and any downstream benefits persist after supplementation stops, or whether effects plateau, is not addressed in the abstracts provided. Note: you are viewing only a sample of ~40 abstracts per outcome, so other research may exist globally; these observations reflect only the records retrieved here.",
+    "caveats": "Beta-alanine is a naturally occurring amino acid with a generally safe profile in healthy adults at standard doses (3\u20136 g/day); however, transient paresthesia (tingling in the skin) is common and benign. Quality varies among supplements\u2014third-party testing can help verify content and purity. Beta-alanine is not recommended for pregnant or nursing individuals without medical guidance, and those with kidney disease should consult a healthcare provider before supplementing. The evidence for exercise performance is strong, but benefits are modest (~2\u20133% improvement); results depend on adequate dosing over weeks and may vary with training status and the type of exercise performed.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Beta-alanine shows solid evidence for exercise performance (18 RCTs, 8 independent meta-analyses), but cognition and muscle strength rest on very small underpowered trials with no pooled quantitative synthesis, and endurance evidence is mixed and sparse.",
+    "headline": "Exercise performance is well-supported by consistent meta-analyses, but the three other graded outcomes rest on thin evidence: endocrine claims rely on nine small RCTs with only 2 reporting sample sizes, cognition has no pooled synthesis despite 12 studies, and blood sugar evidence comprises just 3 studies with conflicting designs.",
     "concerns": [
       {
-        "issue": "Cognition outcome almost entirely unsynthesize with tiny trials",
-        "detail": "The cognition grade (Moderate) is based on 11 human studies, but only 3 report sample sizes (median n=10, max n=222). Critically, the engine explicitly flags 'Inconsistency: several studies exist but no pooled analysis confirms they agree'\u2014meaning no meta-analysis or systematic review has actually synthesized these cognition trials. A single n=10 study cannot be reliably distinguished from noise, and without quantitative pooling, agreement between studies is unverified. This is unusually weak evidence for a 'Moderate' grade.",
+        "issue": "Endocrine outcome severely underpowered",
+        "detail": "Nine RCTs assigned to 'Emerging' grade, but only 2 of 9 report sample sizes (both n=11), yielding ~22 verified participants. The engine notes 'small verified sample (~22 participants across 2 measured studies)' \u2014 meaning 7 of 9 studies have unknown denominators and could range from trivial to modest. No pooled analysis was extractable. A single large negative trial could flip the direction of effect.",
         "severity": "high"
       },
       {
-        "issue": "Muscle strength: below-threshold primary evidence with weak pooling",
-        "detail": "Only 5 RCTs and 3 systematic reviews retrieved for muscle strength (10 total studies). The engine notes this is 'below the threshold for the top tier.' Most critically, only 6 of 10 studies report sample size; median n=163 is inflated by one large observational study (n=303), not RCT evidence. Four RCTs are tiny (n=10, 11, 27, 11). No quantitative meta-analysis of strength outcomes is visible in the abstracts, so the pooled effect direction and magnitude remain opaque.",
+        "issue": "Cognition: no synthesis despite heterogeneous designs",
+        "detail": "Twelve studies (8 RCT, 2 clinical trials, 1 unclassified, 1 animal) assigned 'Moderate' grade, but engine explicitly notes 'no pooled analysis confirms they agree; held at moderate pending review.' Sample sizes are nearly all unreported (only 3 of 12 report n; verified median n=10). Mix of designs (RCT + clinical trials + animal) makes interpretation harder. Without meta-analytic convergence, the grade rests on narrative synthesis of small, heterogeneous studies.",
         "severity": "high"
       },
       {
-        "issue": "Endurance outcome: conflicting signals with minimal evidence base",
-        "detail": "8 RCTs retrieved for endurance, but only 2 report sample sizes (both n=11), and the engine flags 'Imprecision: small verified sample (~22 participants).' Notably, two recent 2025 RCTs in the list show opposing results: one title states 'improves time to exhaustion,' while another states 'did not enhance intermittent endurance or sprin[t].' With such tiny individual trials and no meta-analysis reconciling them, it is unclear whether the effect is real or a product of noise and selective reporting.",
+        "issue": "Blood sugar evidence base is minimal and mixed in design",
+        "detail": "Only 3 studies total: 1 systematic review (n=377, but this is pooled literature, not a primary study), 1 RCT (n=24), and 1 animal meta-analysis (n=16). No human meta-analysis of primary trials exists. The 2025 systematic review is the only human synthesis, and its result is not reported in the records. A 'Moderate' grade for three studies with no reported pooled effect is not well-justified.",
         "severity": "high"
       },
       {
-        "issue": "Exercise performance evidence lacks quantitative pooling",
-        "detail": "Despite a 'Strong' grade, the record shows 8 independent meta-analyses/systematic reviews, but no pooled effect size is 'extractable' from the abstracts provided. This means the reader cannot verify the direction or magnitude of the effect from the given data. The engine confirms ~2934 participants across 11 of 27 studies, but 16 studies omit sample size entirely, making the true N and heterogeneity opaque. Replicability across 8 syntheses is reassuring, but without seeing the actual effect estimates, the strength of the conclusion cannot be independently judged.",
+        "issue": "Exercise performance effect size is small and assumes homogeneity",
+        "detail": "Pooled SMD is 0.18 [0.08\u20130.28] \u2014 a small effect (Cohen's threshold for 'small' is ~0.2). This is derived from 20 RCTs and 5 meta-analyses, but heterogeneity is not reported in the records. With 27 human studies spanning 2008\u20132026, variation in populations (trained vs. untrained), exercise types (sprint vs. endurance), dosing, and duration could conceal publication bias or subgroup effects. The engine notes 'most abstracts omit sample size,' so true precision of the synthesis is opaque.",
         "severity": "moderate"
       },
       {
-        "issue": "Cognition outcome mixes animal and heterogeneous human designs",
-        "detail": "The cognition outcome includes 1 animal study among 12 total, and 2 of 12 are labeled 'Clinical trial' rather than RCT\u2014a lower-evidence design for causality. More importantly, cognition outcomes are highly heterogeneous (brain MRI, BDNF, mood, 24-hour cognition during fatigue, COPD patients). Without a systematic review or meta-analysis, it is unclear whether these disparate endpoints should be grouped under one 'cognition' outcome at all, or whether apparent support is cherry-picking studies that happen to measure different cognitive domains.",
+        "issue": "Cognition outcome mixes mechanistically distinct endpoints",
+        "detail": "The 12 cognition studies include fractional anisotropy (brain imaging), BDNF (biomarker), mood, cognitive function, and immune markers. No evidence that these outcomes cluster coherently or measure the same construct. A 'Moderate' grade conflates structural neuroimaging findings (2024 study) with mood and mood-independent cognition, obscuring whether beta-alanine is a brain supplement, a mood support, or neither.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Beta-alanine increases muscle carnosine content (visible in the study titles, e.g., '2021 [RCT, human] Kinetics of Muscle Carnosine Decay after \u03b2-Alanine Supplementation'), which is mechanistically plausible for buffering intramuscular acidosis during high-intensity exercise and thus improving performance in repeated-sprint or 1\u201310 minute efforts. However, the leap from muscle carnosine to cognition (hippocampal fractional anisotropy, BDNF, mood) is large and not explained in the available abstracts. The mechanism could involve systemic inflammation reduction or neuroprotection, but this is not visibly supported in the records.",
-    "strongest_counterargument": "A skeptic would note that the 'Strong' grade for exercise performance rests entirely on convergent meta-analyses, but those syntheses are not shown to pool effect sizes\u2014only listed as existing. For endurance, the two newest 2025 RCTs appear to contradict each other, suggesting publication bias or small-sample noise rather than a robust effect. For cognition and strength, the evidence is fragmented into tiny underpowered trials with no quantitative synthesis; a Bayesian reading would place these outcomes closer to 'uncertain' than 'Moderate.' Without access to the full meta-analytic estimates and heterogeneity statistics, it is possible the exercise-performance benefit is overstated.",
-    "what_would_change_the_picture": "For exercise performance: publish the actual pooled effect sizes, 95% CIs, and I\u00b2 heterogeneity from the 8 meta-analyses, and assess funnel plots for small-study effects. For cognition and muscle strength: conduct a formal pre-registered meta-analysis with all RCTs, report effect estimates with confidence intervals, and pre-specify cognitive domains so that heterogeneity can be quantified rather than assumed away.",
+    "mechanism_check": "Beta-alanine increases muscle carnosine, a pH buffer in skeletal muscle. This mechanism is well-established and plausibly supports improved exercise performance in high-intensity, anaerobic work (30 sec\u201310 min), where lactate and H+ accumulation limit power output. However, the leap from muscle carnosine buffering to cognition (hippocampal fractional anisotropy, BDNF, mood) is large and indirect: carnosine does not readily cross the blood\u2013brain barrier in animals, and no study in the records demonstrates a direct neural mechanism. The blood sugar mechanism is not discussed in the records, making it impossible to assess plausibility from the available data.",
+    "strongest_counterargument": "The exercise performance grade rests on a small pooled effect (SMD 0.18) across 27 heterogeneous studies with opaque heterogeneity and publication bias risks. The three 'secondary' outcomes (endocrine, cognition, blood sugar) are each based on fewer than 12 small, underpowered studies with most sample sizes unreported; no pooled synthesis exists for cognition or blood sugar, and the endocrine RCTs show only ~22 verified participants. A skeptic would argue that the 'Strong' tier is justified only for exercise performance in specific high-intensity, anaerobic tasks, and that the broader supplement narrative is built on unpublished or very small trials vulnerable to researcher allegiance bias.",
+    "what_would_change_the_picture": "For endocrine and cognition outcomes: a pre-registered meta-analysis of all human RCTs with sample size and heterogeneity reported, stratified by exercise type and outcome class, would clarify whether effects are real or noise. For blood sugar: a human randomized controlled trial of n\u2265100 with glycemic control as a pre-specified primary outcome, powered to detect a clinically relevant change, would establish whether the 2025 systematic review finding is reproducible.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

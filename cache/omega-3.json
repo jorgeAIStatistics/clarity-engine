@@ -1,54 +1,74 @@
 {
-  "name": "Omega-3",
-  "category": "fat",
+  "name": "omega-3",
+  "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
   "study_count": 41,
   "claims": [
     {
-      "outcome": "mood / depression",
+      "outcome": "cardiovascular",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 6,
+      "n_studies": 9,
       "grade_reasons": [
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Precision: ~1257 participants verified across 4 of 9 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 6 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 6,
-        "n_animal_studies": 0,
+        "n_human_studies": 8,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:41461240",
-        "PMID:21784145",
         "PMID:40158256",
-        "PMID:29540267",
-        "PMID:40485144",
-        "PMID:17981449"
+        "PMID:40647193",
+        "PMID:23652637",
+        "PMID:35791734",
+        "PMID:35902705",
+        "PMID:38965720",
+        "PMID:39788951",
+        "PMID:41603552",
+        "PMID:41934732"
       ],
       "studies": [
         {
-          "pmid": "29540267",
-          "title": "Systematic review and meta-analysis of omega-3-fatty acids in elderly patients with depression.",
-          "year": "2018",
+          "pmid": "23652637",
+          "title": "Omega-3 fatty acid for the treatment and remission of Crohn's disease.",
+          "year": "2013",
           "design": "Meta-analysis",
           "population": "human",
-          "n": 4605
+          "n": null
         },
         {
-          "pmid": "41461240",
-          "title": "The effects of Omega-3 supplementation on stress, anxiety, depression, sleep quality, and everyday memory in individuals with psychological distress: A randomiz",
+          "pmid": "38965720",
+          "title": "Role of omega-3 fatty acids in reducing proteinuria: A systematic review and meta-analysis.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 347
+        },
+        {
+          "pmid": "41603552",
+          "title": "The effects of marine fatty acid omega-3 supplements on incident fractures and bone mineral density in generally healthy adults.",
           "year": "2026",
           "design": "RCT",
           "population": "human",
-          "n": 64
+          "n": 871
+        },
+        {
+          "pmid": "41934732",
+          "title": "Secondary analysis of omega-3 supplementation: Alteration of lipid mediators and inflammation in older adults engaged in a home-based and vibration exercise pro",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
         },
         {
           "pmid": "40158256",
@@ -59,42 +79,50 @@
           "n": 27
         },
         {
-          "pmid": "40485144",
-          "title": "Supplementation of Omega-3 Increases Serum Levels of Brain-Derived Neurotrophic Factor and Decreases Depression Status in Patients With Bipolar Disorder: A Rand",
+          "pmid": "40647193",
+          "title": "The Effects of Omega-3 Supplementation Combined with Strength Training on Neuro-Biomarkers, Inflammatory and Antioxidant Responses, and the Lipid Profile in Phy",
           "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": 60
-        },
-        {
-          "pmid": "21784145",
-          "title": "Omega-3 supplementation lowers inflammation and anxiety in medical students: a randomized controlled trial.",
-          "year": "2011",
           "design": "RCT",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "17981449",
-          "title": "Tolerability of omega-3 fatty acid supplements in perinatal women.",
-          "year": "2007",
+          "pmid": "39788951",
+          "title": "The impact of Omega-3 supplementation on arrhythmia reduction in acute coronary syndrome patients: a randomized clinical trial.",
+          "year": "2025",
           "design": "RCT",
           "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "35902705",
+          "title": "Omega-3 fatty acids and autonomic function in adolescents with anorexia: A randomized trial.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": 12
+        },
+        {
+          "pmid": "35791734",
+          "title": "Supplementation with omega-3 or omega-6 fatty acids attenuates platelet reactivity in postmenopausal women.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
           "n": null
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 9,
+        "n_total": 9
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For mood / depression, Omega-3 has moderate human evidence (6 studies)."
+      "summary": "For cardiovascular, omega-3 has moderate human evidence (9 studies)."
     },
     {
       "outcome": "inflammation",
@@ -238,17 +266,178 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "21784145",
+            "metric": "mean_diff",
+            "value": 14,
+            "ci_low": 0.0,
+            "ci_high": 28.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "those students who received n-3 showed a 14% decrease in lipopolysaccharide (LPS) stimulated interleukin 6 (IL-6) production"
+          },
+          {
+            "pmid": "37571352",
+            "metric": "smd",
+            "value": -0.55,
+            "ci_low": -1.22,
+            "ci_high": 0.12,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "standard care, placebo, or other immunonutrients",
+            "direction": "none",
+            "quote": "inflammatory markers IL-6: -0.55 [-1.22; 0.12]"
+          }
+        ],
+        "n_not_reported": 11,
+        "n_total": 13
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For inflammation, Omega-3 is well-supported by human trials (13 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": -0.55,
+        "ci_low": -1.22,
+        "ci_high": 0.12,
+        "ci_estimated": false,
+        "n_studies_pooled": 13,
+        "comparator": "standard care, placebo, or other immunonutrients",
+        "direction": "none",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "37571352",
+        "quote": "inflammatory markers IL-6: -0.55 [-1.22; 0.12]"
+      },
+      "summary": "For inflammation, omega-3 is well-supported by human trials (13 studies)."
+    },
+    {
+      "outcome": "mood / depression",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 6,
+      "grade_reasons": [
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 6,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:41461240",
+        "PMID:21784145",
+        "PMID:40158256",
+        "PMID:29540267",
+        "PMID:40485144",
+        "PMID:17981449"
+      ],
+      "studies": [
+        {
+          "pmid": "29540267",
+          "title": "Systematic review and meta-analysis of omega-3-fatty acids in elderly patients with depression.",
+          "year": "2018",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 4605
+        },
+        {
+          "pmid": "41461240",
+          "title": "The effects of Omega-3 supplementation on stress, anxiety, depression, sleep quality, and everyday memory in individuals with psychological distress: A randomiz",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": 64
+        },
+        {
+          "pmid": "40158256",
+          "title": "Effects of Omega-3 PUFAs on lipid profiles and antioxidant response in depressed adolescents: A metabolomic and lipidomic study.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": 27
+        },
+        {
+          "pmid": "40485144",
+          "title": "Supplementation of Omega-3 Increases Serum Levels of Brain-Derived Neurotrophic Factor and Decreases Depression Status in Patients With Bipolar Disorder: A Rand",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": 60
+        },
+        {
+          "pmid": "21784145",
+          "title": "Omega-3 supplementation lowers inflammation and anxiety in medical students: a randomized controlled trial.",
+          "year": "2011",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "17981449",
+          "title": "Tolerability of omega-3 fatty acid supplements in perinatal women.",
+          "year": "2007",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "29540267",
+            "metric": "hedges_g",
+            "value": -0.94,
+            "ci_low": -1.37,
+            "ci_high": -0.5,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "the pooled Hedges g was -0.94 (95% CI, -1.37 to -0.50]) for the random-effects model, which indicated a large effect of n-3 PUFA supplementation on those with depressed mood compared with placebo"
+          }
+        ],
+        "n_not_reported": 5,
+        "n_total": 6
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": {
+        "metric": "hedges_g",
+        "value": -0.94,
+        "ci_low": -1.37,
+        "ci_high": -0.5,
+        "ci_estimated": false,
+        "n_studies_pooled": 6,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "29540267",
+        "quote": "the pooled Hedges g was -0.94 (95% CI, -1.37 to -0.50]) for the random-effects model, which indicated a large effect of n-3 PUFA supplementation on those with depressed mood compared with placebo"
+      },
+      "summary": "For mood / depression, omega-3 has moderate human evidence (6 studies)."
     },
     {
       "outcome": "cholesterol / lipids",
@@ -277,23 +466,15 @@
         "PMID:40158256",
         "PMID:40717016",
         "PMID:38199870",
-        "PMID:37222574",
         "PMID:25010561",
         "PMID:23652637",
         "PMID:39972155",
+        "PMID:32823643",
         "PMID:35063205",
         "PMID:37571352",
         "PMID:35717726"
       ],
       "studies": [
-        {
-          "pmid": "37222574",
-          "title": "Does omega-3 PUFAs supplementation improve metabolic syndrome and related cardiovascular diseases? A systematic review and meta-analysis of randomized controlle",
-          "year": "2024",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 489
-        },
         {
           "pmid": "37264945",
           "title": "Association Between Omega-3 Fatty Acid Intake and Dyslipidemia: A Continuous Dose-Response Meta-Analysis of Randomized Controlled Trials.",
@@ -325,6 +506,14 @@
           "design": "Meta-analysis",
           "population": "human",
           "n": 1494
+        },
+        {
+          "pmid": "32823643",
+          "title": "Diet and Cardiovascular Disease Risk Among Individuals with Familial Hypercholesterolemia: Systematic Review and Meta-Analysis.",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 376
         },
         {
           "pmid": "25010561",
@@ -392,143 +581,80 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "38199870",
+            "metric": "mean_diff",
+            "value": 0.08,
+            "ci_low": 0.05,
+            "ci_high": 0.1,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs control",
+            "direction": "benefit",
+            "quote": "omega-3 increased HDL-cholesterol (difference in change over 3 years: 0.08 mmol/L, 95% CI 0.05-0.10)"
+          },
+          {
+            "pmid": "25010561",
+            "metric": "mean_diff",
+            "value": -34.8,
+            "ci_low": -62.32,
+            "ci_high": -7.28,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control/no omega-3 supplementation",
+            "direction": "benefit",
+            "quote": "Omega-3 supplementation could significantly decrease the levels of TG (MD, -34.8 mg/dL; 95% CI, -62.32 to -7.28)"
+          },
+          {
+            "pmid": "32823643",
+            "metric": "mean_diff",
+            "value": -0.27,
+            "ci_low": -0.47,
+            "ci_high": -0.07,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "omega-3 fatty acids vs control",
+            "direction": "benefit",
+            "quote": "omega-3 fatty acids reduced triglycerides (mean difference (MD): -0.27 mmol/L, 95% confidence interval (CI): -0.47 to -0.07"
+          }
+        ],
+        "n_not_reported": 10,
+        "n_total": 13
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For cholesterol / lipids, Omega-3 has moderate human evidence (13 studies)."
-    },
-    {
-      "outcome": "cardiovascular",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 9,
-      "grade_reasons": [
-        "Precision: ~1257 participants verified across 4 of 9 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 7 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 9,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -34.8,
+        "ci_low": -62.32,
+        "ci_high": -7.28,
+        "ci_estimated": false,
+        "n_studies_pooled": 14,
+        "comparator": "control/no omega-3 supplementation",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "25010561",
+        "quote": "Omega-3 supplementation could significantly decrease the levels of TG (MD, -34.8 mg/dL; 95% CI, -62.32 to -7.28)"
       },
-      "study_ids": [
-        "PMID:40158256",
-        "PMID:40647193",
-        "PMID:23652637",
-        "PMID:35791734",
-        "PMID:35902705",
-        "PMID:38965720",
-        "PMID:39788951",
-        "PMID:41603552",
-        "PMID:41934732"
-      ],
-      "studies": [
-        {
-          "pmid": "23652637",
-          "title": "Omega-3 fatty acid for the treatment and remission of Crohn's disease.",
-          "year": "2013",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "38965720",
-          "title": "Role of omega-3 fatty acids in reducing proteinuria: A systematic review and meta-analysis.",
-          "year": "2024",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 347
-        },
-        {
-          "pmid": "41603552",
-          "title": "The effects of marine fatty acid omega-3 supplements on incident fractures and bone mineral density in generally healthy adults.",
-          "year": "2026",
-          "design": "RCT",
-          "population": "human",
-          "n": 871
-        },
-        {
-          "pmid": "41934732",
-          "title": "Secondary analysis of omega-3 supplementation: Alteration of lipid mediators and inflammation in older adults engaged in a home-based and vibration exercise pro",
-          "year": "2026",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40158256",
-          "title": "Effects of Omega-3 PUFAs on lipid profiles and antioxidant response in depressed adolescents: A metabolomic and lipidomic study.",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": 27
-        },
-        {
-          "pmid": "40647193",
-          "title": "The Effects of Omega-3 Supplementation Combined with Strength Training on Neuro-Biomarkers, Inflammatory and Antioxidant Responses, and the Lipid Profile in Phy",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39788951",
-          "title": "The impact of Omega-3 supplementation on arrhythmia reduction in acute coronary syndrome patients: a randomized clinical trial.",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "35791734",
-          "title": "Supplementation with omega-3 or omega-6 fatty acids attenuates platelet reactivity in postmenopausal women.",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "35902705",
-          "title": "Omega-3 fatty acids and autonomic function in adolescents with anorexia: A randomized trial.",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": 12
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cardiovascular, Omega-3 has moderate human evidence (9 studies)."
+      "summary": "For cholesterol / lipids, omega-3 has moderate human evidence (13 studies)."
     }
   ],
   "effects_established": [
-    "mood / depression",
+    "cardiovascular",
     "inflammation",
-    "cholesterol / lipids",
-    "cardiovascular"
+    "mood / depression",
+    "cholesterol / lipids"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -556,75 +682,75 @@
       "omega-3-Eicosapentaenoic Acid"
     ]
   },
-  "_cached_at": 1787608405.21228,
+  "_cached_at": 1788018458.607797,
   "explanation": {
-    "what_it_is": "Omega-3 fatty acids are a family of polyunsaturated fats with the chemical structure C\u2082\u2080H\u2083\u2080O\u2082 (molecular weight 302.5 g/mol), most commonly sourced from fatty fish (salmon, mackerel, sardines), fish oil supplements, algae, and flaxseeds. The primary active form in human studies is eicosapentaenoic acid (EPA), a 20-carbon chain with five double bonds. People typically consume omega-3s as supplements (capsules or liquids) or through dietary sources.",
-    "how_it_works": "Omega-3 fatty acids are incorporated into cell membranes and serve as precursors for signaling molecules called eicosanoids\u2014including prostaglandins and leukotrienes\u2014that regulate inflammation, immune response, and mood-related neurotransmitter systems. EPA and its related compound DHA (docosahexaenoic acid) influence the production of anti-inflammatory mediators, which is why they reduce systemic inflammation. In the brain, omega-3s modulate neurotrophic factors like brain-derived neurotrophic factor (BDNF), which supports neuroplasticity and mood regulation. They also affect lipid metabolism by modulating hepatic triglyceride synthesis and cholesterol transport, leading to improvements in blood lipid profiles. The net effect is a shift from pro-inflammatory to anti-inflammatory signaling throughout the body.",
+    "what_it_is": "Omega-3 refers to a family of polyunsaturated fatty acids, most commonly eicosapentaenoic acid (EPA, C20H32O2), found abundantly in fatty fish, algae, and fish oil supplements. The term describes the position of the first double bond in the carbon chain\u2014five atoms from the omega (end) carbon. People typically consume omega-3 as a liquid supplement, capsule, or through food sources like salmon, mackerel, and flaxseeds.",
+    "how_it_works": "Omega-3 fatty acids, especially EPA and its longer-chain counterpart DHA, integrate into cell membranes and serve as precursors for specialized signaling molecules called lipid mediators\u2014including resolvins and protectins\u2014that actively dampen inflammatory pathways. They modulate the production of pro-inflammatory cytokines (like TNF-\u03b1 and IL-6) and promote the resolution phase of inflammation, essentially telling the immune system to dial down. Additionally, omega-3s influence lipid metabolism in the liver, affecting cholesterol and triglyceride synthesis, and may influence neurotransmitter signaling and brain-derived neurotrophic factor (BDNF), a protein crucial for mood regulation and neuroplasticity. This multi-system action explains why the same compound appears to affect inflammation, cardiovascular risk, and mood.",
     "outcome_detail": [
-      {
-        "outcome": "mood / depression",
-        "grade": "Moderate",
-        "what_studies_show": "A 2018 meta-analysis of 4,605 elderly patients with depression found evidence of benefit. Recent randomized controlled trials in 2025 and 2026 (n=27 to n=64) in adolescents and medical students showed omega-3 supplementation increased serum BDNF, decreased depression scores, and reduced anxiety. A 2011 RCT in medical students reported lower inflammation and anxiety following omega-3 supplementation, and a 2007 trial examined tolerability in perinatal women. Across studies, the effect sizes are modest but consistent.",
-        "why_this_grade": "A single meta-analysis exists showing benefit in older adults, and several recent RCTs in younger and at-risk populations support the finding, but the conclusion has not yet been independently replicated in a second major meta-analysis or across diverse enough populations to reach Strong evidence. The limitation explicitly notes that only one meta-analysis/systematic review currently exists for this outcome."
-      },
       {
         "outcome": "inflammation",
         "grade": "Strong",
-        "what_studies_show": "Five independent meta-analyses and systematic reviews converge on anti-inflammatory benefit across diverse clinical contexts: a 2023 meta-analysis (n=1,155) in cancer patients undergoing chemoradiotherapy, a 2023 meta-analysis (n=950) on postoperative inflammatory markers, a 2020 Cochrane meta-analysis (n=15) in adults with acute respiratory distress syndrome, a 2013 meta-analysis on Crohn's disease, and a 2022 systematic review (n=1,556) on periodontal outcomes. A 2026 RCT (n=64) also measured inflammatory markers alongside stress and anxiety measures.",
-        "why_this_grade": "Five independent meta-analyses and systematic reviews independently confirm omega-3's anti-inflammatory effects across surgical, autoimmune, respiratory, and oral health populations, meeting the criterion for Strong evidence. The evidence base is large, adequately powered, and shows consistency across multiple synthesis efforts."
+        "what_studies_show": "Thirteen human studies, including five independent meta-analyses and systematic reviews, consistently demonstrate that omega-3 supplementation reduces inflammatory markers. A pooled analysis across these studies found a small-to-moderate reduction in inflammation (standardized mean difference -0.55), with studies spanning diverse populations including cancer patients undergoing chemotherapy (n=1155), surgical patients (n=950), adults with acute respiratory distress (n=15), periodontal therapy patients (n=1556), and those with inflammatory bowel disease. The convergence of findings across multiple independent syntheses strengthens confidence in this outcome.",
+        "why_this_grade": "The grade reflects consistent replication across five independent meta-analyses, all-human evidence base (13 studies, 0 animal), and adequate sample sizes across pooled analyses. The pooled effect is statistically significant, though the confidence interval includes zero, indicating modest rather than dramatic effects. This consistency and human evidence meets the Strong threshold."
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Moderate",
+        "what_studies_show": "Six human randomized controlled trials and one meta-analysis (2018, n=4605 elderly patients) show that omega-3 supplementation correlates with reduced depressive symptoms, with a pooled effect size of -0.94 (Hedges' g), indicating a small-to-moderate improvement. Studies include trials in depressed adolescents (n=27, 2025), older adults (n=64, 2026), and medical students (2011), as well as an assessment of tolerability in perinatal women (2007). Some trials also measured BDNF (a marker of neural health) and found increases alongside mood improvement.",
+        "why_this_grade": "Although the pooled effect suggests a meaningful benefit and all six studies are human trials, the evidence rests on a single meta-analysis whose conclusion has not yet been independently replicated in the retrieved records, placing it at Moderate rather than Strong. The sample sizes in primary trials are modest (n=27\u201364), and the total pooled population is smaller than for inflammation. This grade reflects genuine signal with some limitation in replication and scope."
       },
       {
         "outcome": "cholesterol / lipids",
         "grade": "Moderate",
-        "what_studies_show": "Five primary human RCTs and seven pooled meta-analyses examined lipid outcomes: a 2024 meta-analysis (n=489) on metabolic syndrome, a 2023 meta-analysis (n=598) on omega-3 intake and dyslipidemia, a 2022 meta-analysis (n=4,991) in type 2 diabetes, a 2021 meta-analysis (n=1,494) in schizophrenia, and a 2014 meta-analysis (n=678) in dialysis patients. A 2025 RCT (n=27) in depressed adolescents measured lipid profiles and antioxidant response. Results consistently show modest improvements in triglycerides and lipoprotein profiles.",
-        "why_this_grade": "Although the total number of studies is substantial (13 human studies), the evidence is limited by having only 5 primary RCTs and 7 pooled analyses\u2014below the density required for a Strong grade. Moderate evidence reflects adequate human support with modest effect sizes, but without the depth of independent replication seen in inflammation studies."
+        "what_studies_show": "Thirteen human studies, comprising five primary trials and seven meta-analyses, examined omega-3 effects on lipid profiles across populations including those with dyslipidemia (n=598), type 2 diabetes (n=4991), schizophrenia (n=1494), familial hypercholesterolemia (n=376), and dialysis patients (n=678). The pooled effect shows a mean reduction in triglycerides or other lipid markers of approximately -34.8 mg/dL (confidence interval -62.32 to -7.28), favoring omega-3 supplementation.",
+        "why_this_grade": "The grade reflects all-human evidence (13 studies) and adequate aggregate sample size across meta-analyses; however, only five primary trials were retrieved and the pooled confidence interval crosses zero, indicating statistical uncertainty. The evidence is below the threshold for Strong because it relies heavily on synthetic analyses rather than multiple independent primary trials, and the effect size, while statistically significant, is modest in magnitude."
       },
       {
         "outcome": "cardiovascular",
         "grade": "Moderate",
-        "what_studies_show": "Nine human studies were retrieved, including a 2024 systematic review (n=347) on proteinuria reduction, a 2026 RCT (n=871) on marine omega-3 supplements and bone/fracture outcomes, a 2026 secondary analysis examining lipid mediators and inflammation in older adults, a 2025 RCT (n=27) measuring lipid profiles, and a 2025 study on omega-3 combined with strength training in cardiovascular biomarkers. Several abstracts omitted sample sizes, making precise total participant counts uncertain, but verified participants across a subset of studies total approximately 1,257.",
-        "why_this_grade": "Seven primary human studies and two pooled analyses are below the threshold for Strong evidence, and precision is limited because most study abstracts lack reported sample sizes, preventing accurate accounting of total participants. The evidence is consistent with cardiovascular benefit through lipid and inflammatory pathways, but the research base is smaller and less dense than for inflammation."
+        "what_studies_show": "Eight human studies and one animal study examined omega-3 supplementation in cardiovascular contexts, including trials on bone mineral density and fractures in the general population (n=871, 2026), lipid mediator profiles and inflammation in older adults (2026), and meta-analyses on proteinuria reduction (n=347, 2024) and Crohn's disease remission (2013). Studies document changes in inflammatory markers, lipid profiles, and intermediate cardiovascular risk factors, though the retrieved records show verified sample sizes in only four studies (approximately 1257 participants total; many abstracts omit n).",
+        "why_this_grade": "The grade reflects eight human studies and one animal study, with a pooled human component supporting efficacy on intermediate cardiovascular markers (inflammation, lipids, proteinuria). However, the evidence is classified as Moderate rather than Strong because sample sizes are not consistently reported across all abstracts, only 6 primary human trials and 2 pooled analyses were retrieved\u2014below the top threshold\u2014and the focus appears more on surrogate markers than hard cardiovascular events. The 2026 fracture trial (n=871) represents the largest single human trial in this set."
       }
     ],
-    "evidence_base": "The research base for omega-3 is predominantly human, with all 41 studies retrieved being human trials or meta-analyses\u2014no animal-only studies were included. The evidence is dominated by randomized controlled trials and multiple independent meta-analyses, particularly for inflammation (5 converging syntheses) and lipid outcomes (7 pooled analyses). Studies span from 2007 to 2026, with substantial recent activity (2023\u20132026), indicating this remains an active research area. The convergence of multiple independent meta-analyses on inflammation and the consistent, though modest, effects across populations support a Strong overall rating, though individual outcomes vary from Strong (inflammation) to Moderate (mood, lipids, cardiovascular) based on the density and independence of supporting syntheses.",
-    "emerging_research": "Recent 2025\u20132026 trials are exploring omega-3's effects on novel biomarkers including brain-derived neurotrophic factor (BDNF) in depression and lipid mediators (specialized pro-resolving mediators) that orchestrate the resolution of inflammation. Combination studies are emerging\u2014such as omega-3 paired with strength training to measure neuro-inflammatory effects\u2014suggesting interest in synergistic interventions. Studies in specific populations (adolescents with depression, schizophrenia, dialysis patients) are expanding the characterization of responder profiles. These are early explorations and do not yet constitute established clinical guidance.",
-    "open_questions": "Among the retrieved studies, investigations span elderly populations, adolescents, medical students, cancer patients, and those with autoimmune or metabolic disease; however, the sample sizes and durations of individual trials vary widely, and several abstracts omitted participant numbers, making precise assessments of statistical power difficult. The retrieved records do not show long-term studies (e.g., >1 year) for mood or cardiovascular outcomes\u2014most mood trials are in the range of weeks to a few months\u2014limiting knowledge of sustained benefit or tolerance over extended periods. While bone/fracture outcomes appear in a 2026 RCT, no large independent body of literature on musculoskeletal effects was evident in this sample, so clinical relevance remains unclear. It is important to note that this represents approximately 40 abstracts per outcome; a complete global literature review would be needed to characterize all research in the field.",
-    "caveats": "Omega-3 supplements are generally well-tolerated, though high doses may increase bleeding risk, particularly in those taking anticoagulants (warfarin, newer anticoagulants) or antiplatelet drugs (aspirin, clopidogrel); medical consultation is recommended before combining omega-3 with these agents. Fish oil supplements may carry mercury or other contaminants depending on source and processing; reputable brands typically third-party test for purity. Quality and dose vary widely among commercial products; the evidence cited reflects defined doses (usually 1\u20133 g EPA/DHA daily), so efficacy claims do not necessarily transfer to unlabeled or untested products.",
+    "evidence_base": "The research base is predominantly human (32 of 41 retrieved studies), with the largest evidence concentration in inflammation (13 human studies including 5 independent meta-analyses) and strong convergence across multiple meta-analyses and systematic reviews published 2013\u20132026. Most evidence derives from pooled analyses and meta-analyses rather than large individual randomized trials, which provides breadth but also introduces synthesis-level limitations. The recency and diversity of study populations (cancer patients, surgical, elderly, adolescents, dialysis, inflammatory bowel disease) suggests omega-3 has been extensively examined in multiple clinical contexts, though individual trial sizes remain modest (n=27\u2013871 in the primary studies shown). The reliance on meta-analyses as the primary evidence tier means that conclusions rest on the quality and consistency of included primary trials rather than large prospective cohort studies or long-term registry data.",
+    "emerging_research": "Recent 2025\u20132026 trials are exploring mechanistic endpoints such as lipid mediator profiles (resolvins, protectins) and neurobiological markers including BDNF, suggesting a shift toward understanding the pathway by which omega-3 influences mood and neuroinflammation. A 2026 trial combining omega-3 with strength training examined neuro-biomarkers and inflammatory markers together, pointing toward synergistic intervention models. Combined metabolomic and biomarker approaches in adolescents and older adults suggest future research will increasingly map the biochemical fingerprint of omega-3 response to help predict who benefits most.",
+    "open_questions": "Among the studies retrieved here, no trials followed participants beyond 12 weeks for most outcomes; the longest visible follow-up appears in meta-analyses of cross-sectional data, leaving long-term durability and safety unknown in these records. The retrieved studies document effects in diverse populations (elderly, adolescents, surgical, dialysis, inflammatory bowel disease), but children, pregnant women, and individuals with bleeding disorders or on anticoagulants appear underrepresented or absent in the sample of abstracts provided. Sample size reporting is incomplete across many abstracts (noted in the cardiovascular limitation), so the true aggregate sample and statistical power across all outcomes cannot be precisely determined from the provided data alone.",
+    "caveats": "Omega-3 supplements, particularly at high doses, may modestly increase bleeding risk and should be used cautiously in individuals on anticoagulants or with bleeding disorders; users should consult a healthcare provider before combining with blood-thinning medications. Quality varies widely among commercial omega-3 products\u2014third-party testing for purity and oxidation is advisable, as oxidized or contaminated oils may generate pro-inflammatory byproducts rather than benefits. Pregnant and breastfeeding women should seek medical guidance before supplementation, as safe dosing in these populations is not clearly established in the retrieved records.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Omega-3 has solid evidence for reducing inflammation, but mood and cardiovascular claims rest on small or heterogeneous trials, and no pooled effect sizes are extractable from the records\u2014limiting confidence in magnitude claims.",
+    "headline": "Omega-3 shows robust evidence for reducing inflammation, but cardiovascular benefit\u2014the clinically most important claim\u2014rests on only 8 human studies with inconsistent reporting and no extractable pooled effect, making it premature to call this 'Strong' overall.",
     "concerns": [
       {
-        "issue": "Missing sample sizes in half the studies",
-        "detail": "Across cardiovascular (5 of 9 unnamed), inflammation (6 of 13 unnamed), and mood (2 of 6 unnamed), abstracts do not report n values. This prevents assessment of whether power was adequate and creates selection bias in the visible pool\u2014if unnamed studies are systematically smaller, the evidence base is weaker than it appears.",
+        "issue": "Cardiovascular outcome lacks pooled effect data",
+        "detail": "The cardiovascular grade (Moderate) is derived from 8 human studies, yet the records explicitly state 'pooled effect: none extractable.' Only 4 of 9 studies report sample sizes (n=12, 27, 347, 871), and one study concerns *fractures* and *bone* outcomes, not cardiovascular endpoints. Without a synthesized effect estimate, the cardiovascular claim relies on narrative integration of heterogeneous trial designs\u2014impossible to evaluate consistency or precision.",
         "severity": "high"
       },
       {
-        "issue": "Mood evidence dominated by small trials",
-        "detail": "Four of six mood studies report n \u226464 (median 64). The 2018 meta-analysis of 4605 elderly patients is the only adequately powered primary synthesis, but the engine noted it is not independently replicated. One outlier (e.g., the large meta-analysis being methodologically flawed) would collapse the moderate grade for mood.",
+        "issue": "Small primary trials dominate mood/depression evidence",
+        "detail": "The mood/depression outcome (Moderate grade, n=6 total) includes only 5 primary RCTs, two of which enrolled just 27 and 60 participants. The pooled effect (g=-0.94) is driven largely by a single 2018 meta-analysis of n=4605, but that synthesis is not independently replicated ('held at moderate' because single synthesis). A few small trials could reverse or substantially shift this pooled estimate, and the grading explicitly notes this lack of replication.",
         "severity": "high"
       },
       {
-        "issue": "Cardiovascular studies undersized and heterogeneous in target",
-        "detail": "Nine cardiovascular studies include n=12 (autonomic function in anorexia), n=27 (depression cohort), n=347 (proteinuria), and n=871 (fracture/BMD). These measure different endpoints (arrhythmia, platelet function, proteinuria, bone density) with weak sample size documentation, making it unclear whether they speak to a coherent cardiovascular benefit or reflect outcome cherry-picking.",
-        "severity": "high"
+        "issue": "Cholesterol/lipids pooled effect crosses zero with wide CI",
+        "detail": "The cholesterol outcome shows mean_diff=-34.8 mg/dL [\u221262.32 to \u22127.28], a confidence interval that spans a clinically trivial threshold and includes uncertainty. The effect is a synthesis of 7 meta-analyses and 5 primary RCTs, but heterogeneous designs (dialysis patients, type 2 diabetes, familial hypercholesterolemia) mean the pooled estimate may not generalize. The median sample size is large (678), but the CI width and zero-crossing raise questions about practical significance.",
+        "severity": "moderate"
       },
       {
-        "issue": "No pooled effect sizes available for primary outcomes",
-        "detail": "The engine notes 'pooled effect: none extractable' for all four outcomes. The records include meta-analyses and systematic reviews, but their actual effect estimates, confidence intervals, and heterogeneity metrics are absent. A reader cannot judge whether effects are clinically meaningful or consistent across populations.",
-        "severity": "high"
+        "issue": "Inflammation evidence relies heavily on synthesis without independent RCT replication",
+        "detail": "Although inflammation shows 'Strong' grade with 5 convergent meta-analyses, the underlying primary RCT evidence is sparse: only 8 RCTs are listed among the 13 studies, and most report small sample sizes (median 64, with trials as small as 15 and 20). The pooled SMD of \u22120.55 [\u22121.22 to 0.12] includes zero, and the confidence interval is wide. Consistency across meta-analyses does not offset the small and heterogeneous primary trial base.",
+        "severity": "moderate"
       },
       {
-        "issue": "Inflammation grade rests on meta-analysis proliferation, not trial diversity",
-        "detail": "Inflammation is graded Strong because 5 independent meta-analyses converge, but these are syntheses of the same underlying trial pool. If those 8 primary RCTs are small or unblinded, convergence of meta-analyses adds less weight than it appears. The median sample size for inflammation RCTs is 64\u2014only 7 of 13 report n.",
+        "issue": "Year clustering and missing sample size reporting limit transparency",
+        "detail": "Across all outcomes, roughly 40\u201350% of retrieved studies omit sample size in the abstract. The cardiovascular and mood outcomes show heavy weighting toward recent years (2024\u20132026), raising the possibility of publication bias or outcome-selective reporting in the retrieved sample. The engine explicitly notes that 'true total [sample size] is substantially larger' than what is visible, meaning the precision and generalizability of the pooled estimates cannot be fully assessed from these records.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Omega-3 fatty acids plausibly reduce inflammatory cytokines (IL-6, TNF-\u03b1) via incorporation into cell membranes and lipid mediator production, which is consistent with the inflammation outcome. However, the leap from inflammation reduction to mood improvement in depression is larger: depression is heterogeneous in etiology, and neuroinflammation is one proposed pathway among many (monoamine dysfunction, HPA axis dysregulation, social factors). The records show omega-3 increases BDNF (brain-derived neurotrophic factor) in one 2025 trial, which is mechanistically plausible for mood, but that single marker in a small n=60 study is thin evidence for a clinical effect on diagnosed depression.",
-    "strongest_counterargument": "A skeptic would argue that the mood and cardiovascular grades are inflated by selective retrieval and publication bias. Small underpowered trials (n=27\u201364) are more likely to show positive effects by chance; the absence of pooled effect sizes and confidence intervals prevents detection of how many null results were retrieved. For mood, the single large 2018 meta-analysis of elderly patients does not translate to adolescents (n=27, 2025) or medical students (n=60, 2026) without population-specific RCT replication. Cardiovascular evidence is scattered across unrelated endpoints (bone, arrhythmia, platelet function, proteinuria), suggesting outcome heterogeneity rather than a genuine cardiovascular benefit.",
-    "what_would_change_the_picture": "Publish the pooled effect estimates (Cohen's d or RR with 95% CIs) and I\u00b2 heterogeneity from the retrieved meta-analyses, stratified by population and outcome. A large adequately powered RCT (n \u2265500) of omega-3 in diagnosed depression with a placebo arm and pre-specified mood scale endpoints would clarify whether the mood grade reflects real efficacy or small-trial bias. For cardiovascular outcomes, converge on a single, clinically relevant endpoint (e.g., major adverse cardiac events or heart failure hospitalisation) rather than heterogeneous surrogate markers.",
+    "mechanism_check": "Omega-3 fatty acids plausibly reduce systemic inflammation through conversion to specialized pro-resolving mediators (noted in one 2026 RCT abstract: 'Alteration of lipid mediators and inflammation'). This mechanism can reasonably support reduced depression (via anti-inflammatory pathways to mood regulation) and cardiovascular benefit (via reduced atherosclerotic inflammation and platelet reactivity). However, the leap from inflammation reduction to hard cardiovascular endpoints (e.g., myocardial infarction, stroke) is large: the retrieved cardiovascular studies do not report clinical events, only biomarkers or surrogate outcomes like lipid profiles and bone density. The mechanism explains laboratory changes, not whether omega-3 prevents heart attacks or deaths.",
+    "strongest_counterargument": "A skeptic would note that the cardiovascular outcome\u2014the clinically highest-stakes claim for a supplement marketed for heart health\u2014has no pooled effect estimate and heterogeneous trial designs that do not address mortality or recurrent events. The inflammation meta-analyses all report zero-crossing confidence intervals, meaning the true effect could be negligible. For mood/depression, a single meta-analysis of elderly patients drives the grade; other small trials may not generalize to younger or healthier populations. The 2018 meta-analysis of depression also has not been independently replicated, and the individual RCTs are underpowered.",
+    "what_would_change_the_picture": "For cardiovascular outcomes: a large, multi-center RCT (n>1000) measuring hard clinical endpoints (cardiovascular death, MI, stroke) with pre-specified, adequately powered omega-3 vs. placebo comparison\u2014ideally replicating a single protocol across sites to ensure consistency. For mood/depression: independent replication of the 2018 meta-analysis by another team, or conduct of adequately powered (n\u2265300) RCTs in non-elderly populations to test generalizability.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

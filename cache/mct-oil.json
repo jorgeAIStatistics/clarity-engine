@@ -1,19 +1,107 @@
 {
-  "name": "MCT Oil",
-  "category": "fat",
+  "name": "mct-oil",
+  "category": "supplement",
   "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 17,
+  "study_count": 28,
   "claims": [
+    {
+      "outcome": "weight / fat loss",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 4,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 35,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 3,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:28689741",
+        "PMID:18326600",
+        "PMID:18845704",
+        "PMID:30990747"
+      ],
+      "studies": [
+        {
+          "pmid": "28689741",
+          "title": "Coconut oil has less satiating properties than medium chain triglyceride oil.",
+          "year": "2017",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "18326600",
+          "title": "Weight-loss diet that includes consumption of medium-chain triacylglycerol oil leads to a greater rate of weight and fat mass loss than does olive oil.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "18845704",
+          "title": "Medium chain triglyceride oil consumption as part of a weight loss diet does not lead to an adverse metabolic profile when compared to olive oil.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "30990747",
+          "title": "Medium-chain triglyceride diet stimulates less GIP secretion and suppresses body weight and fat mass gain compared with long-chain triglyceride diet.",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "18326600",
+            "metric": "mean_diff",
+            "value": -1.67,
+            "ci_low": -3.34,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs olive oil",
+            "direction": "benefit",
+            "quote": "MCT oil consumption resulted in lower endpoint body weight than did olive oil (-1.67 +/- 0.67 kg, unadjusted P = 0.013)"
+          }
+        ],
+        "n_not_reported": 3,
+        "n_total": 4
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
+      },
+      "headline_effect": null,
+      "summary": "For weight / fat loss, mct-oil has moderate human evidence (4 studies)."
+    },
     {
       "outcome": "cholesterol / lipids",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 12,
+      "n_studies": 21,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~22 participants across 1 of 12 studies); effect estimate may be unstable.",
+        "Precision: ~162 participants verified across 3 of 21 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
@@ -22,8 +110,8 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 9,
-        "n_animal_studies": 3,
+        "n_human_studies": 12,
+        "n_animal_studies": 9,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -38,7 +126,16 @@
         "PMID:32801267",
         "PMID:20513174",
         "PMID:27115157",
-        "PMID:31869355"
+        "PMID:31869355",
+        "PMID:22030098",
+        "PMID:39377959",
+        "PMID:9988780",
+        "PMID:18845704",
+        "PMID:30553406",
+        "PMID:2366103",
+        "PMID:6686684",
+        "PMID:22181977",
+        "PMID:30990747"
       ],
       "studies": [
         {
@@ -48,6 +145,14 @@
           "design": "Meta-analysis",
           "population": "human",
           "n": null
+        },
+        {
+          "pmid": "39377959",
+          "title": "Comparison of the Effect of Omega-3 vs. MCT Supplementation on Iron-Related Indices in Patients Undergoing Dialysis.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": 120
         },
         {
           "pmid": "34397733",
@@ -82,9 +187,17 @@
           "n": null
         },
         {
-          "pmid": "20513174",
-          "title": "Ease of oral administration and owner-perceived acceptability of triglyceride oil, dissolving thin film strip, and gelatin capsule formulations to healthy cats.",
-          "year": "2010",
+          "pmid": "22030098",
+          "title": "Substrate oxidation and cardiac performance during exercise in disorders of long chain fatty acid oxidation.",
+          "year": "2012",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "18845704",
+          "title": "Medium chain triglyceride oil consumption as part of a weight loss diet does not lead to an adverse metabolic profile when compared to olive oil.",
+          "year": "2008",
           "design": "RCT",
           "population": "human",
           "n": null
@@ -96,6 +209,14 @@
           "design": "RCT",
           "population": "human",
           "n": null
+        },
+        {
+          "pmid": "9988780",
+          "title": "A cross-over study of the effect of a single oral feeding of medium chain triglyceride oil vs. canola oil on post-ingestion plasma triglyceride levels in health",
+          "year": "1999",
+          "design": "RCT",
+          "population": "human",
+          "n": 20
         },
         {
           "pmid": "35470782",
@@ -136,75 +257,68 @@
           "design": "Animal",
           "population": "animal",
           "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cholesterol / lipids, MCT Oil has moderate human evidence (12 studies)."
-    },
-    {
-      "outcome": "weight / fat loss",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:28689741",
-        "PMID:18326600"
-      ],
-      "studies": [
+        },
         {
-          "pmid": "28689741",
-          "title": "Coconut oil has less satiating properties than medium chain triglyceride oil.",
-          "year": "2017",
-          "design": "RCT",
-          "population": "human",
+          "pmid": "30553406",
+          "title": "Medium-chain triglyceride reinforce the hepatic damage caused by fructose intake in mice.",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
           "n": null
         },
         {
-          "pmid": "18326600",
-          "title": "Weight-loss diet that includes consumption of medium-chain triacylglycerol oil leads to a greater rate of weight and fat mass loss than does olive oil.",
-          "year": "2008",
-          "design": "RCT",
-          "population": "human",
+          "pmid": "30990747",
+          "title": "Medium-chain triglyceride diet stimulates less GIP secretion and suppresses body weight and fat mass gain compared with long-chain triglyceride diet.",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "22181977",
+          "title": "Role of oil vehicle on hepatic cell proliferation in PCB-treated rats.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "20513174",
+          "title": "Ease of oral administration and owner-perceived acceptability of triglyceride oil, dissolving thin film strip, and gelatin capsule formulations to healthy cats.",
+          "year": "2010",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "2366103",
+          "title": "Effect of various triglycerides on plasma cholecystokinin levels in rats.",
+          "year": "1990",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "6686684",
+          "title": "Differential effects of medium- and long-chain triglycerides on food intake of normal and diabetic rats.",
+          "year": "1983",
+          "design": "Animal",
+          "population": "animal",
           "n": null
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 21,
+        "n_total": 21
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For weight / fat loss, MCT Oil has moderate human evidence (2 studies)."
+      "summary": "For cholesterol / lipids, mct-oil has moderate human evidence (21 studies)."
     },
     {
       "outcome": "cognition",
@@ -241,16 +355,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 1,
+        "n_total": 1
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cognition, MCT Oil has only preliminary or animal evidence (1 studies)."
+      "summary": "For cognition, mct-oil has only preliminary or animal evidence (1 studies)."
     },
     {
       "outcome": "stress / anxiety",
@@ -296,21 +410,21 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 2,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For stress / anxiety, MCT Oil has moderate human evidence (2 studies)."
+      "summary": "For stress / anxiety, mct-oil has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
-    "cholesterol / lipids",
     "weight / fat loss",
+    "cholesterol / lipids",
     "stress / anxiety"
   ],
   "effects_promising": [
@@ -320,75 +434,75 @@
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787608456.69646,
+  "_cached_at": 1788018006.1261,
   "explanation": {
-    "what_it_is": "MCT oil (medium-chain triglyceride oil) is a fat composed of fatty acids with 6\u201312 carbon atoms, typically derived from coconut or palm oil. Unlike longer-chain fats that require more digestive work, MCTs are absorbed more readily and metabolized quickly by the liver. It comes as a liquid supplement, often taken by mouth, and is sometimes used topically (e.g., in massage for infants).",
-    "how_it_works": "MCTs are absorbed directly into the portal blood from the intestine and transported to the liver, where they are rapidly oxidized for energy rather than stored as fat. This fast metabolism may increase calorie expenditure slightly and could affect satiety signals. MCTs also enter the bloodstream as ketones and free fatty acids, which may influence metabolic rate and appetite regulation differently than longer-chain fats do. Some animal work suggests MCTs might affect brain-derived neurotrophic factor (BDNF) and reduce anxiety-related behaviors, though the human relevance remains unclear.",
+    "what_it_is": "Medium-chain triglyceride (MCT) oil is a fat composed of saturated fatty acids with 6\u201312 carbon atoms, shorter than the long-chain fats found in most foods. It is derived from coconut oil, palm oil, or synthesized in the lab. MCT oil is typically consumed as a liquid supplement, often added to coffee, smoothies, or taken by the spoon, and is absorbed and metabolized faster than conventional dietary fats.",
+    "how_it_works": "MCT oil is rapidly absorbed in the small intestine and transported directly to the liver via the portal blood, where it is quickly broken down into ketone bodies or burned for energy\u2014bypassing the slow, complex digestion required for long-chain fats. This rapid metabolism may increase energy expenditure and fat oxidation in the short term. MCT may also influence hormones involved in appetite and satiety (such as GIP, glucose-dependent insulinotropic peptide) and affect how the body stores or mobilizes fat. Because it is more readily available for immediate energy, the theory is that MCT could help shift the body toward using stored fat for fuel, though the magnitude of this effect in real-world weight loss remains modest.",
     "outcome_detail": [
-      {
-        "outcome": "cholesterol / lipids",
-        "grade": "Moderate",
-        "what_studies_show": "A 2021 systematic review and meta-analysis of randomized trials examined MCT oil's effect on blood lipids. The body of evidence includes 9 human randomized controlled trials (e.g., a 2017 trial comparing coconut oil versus MCT oil on satiety, and studies in hemodialysis patients examining lipid and inflammatory markers). Overall, MCT oil showed measurable but modest changes in cholesterol and lipid profiles in these trials, though one study had a verified sample size of only about 22 participants, raising questions about the stability of the effect estimate.",
-        "why_this_grade": "The evidence is graded Moderate because it rests on a single meta-analysis (not yet independently replicated) and suffers from imprecision: sample sizes across trials were small or unverified, making the effect estimate unstable and confidence in the true size of the lipid benefit limited."
-      },
       {
         "outcome": "weight / fat loss",
         "grade": "Moderate",
-        "what_studies_show": "Two human randomized controlled trials examined MCT oil's effect on weight and fat loss. A 2017 trial compared satiety and weight-related outcomes between coconut oil and MCT oil, and a 2008 trial specifically tested a weight-loss diet that included medium-chain triglyceride oil, finding a greater rate of weight reduction with MCT oil inclusion compared to controls.",
-        "why_this_grade": "The evidence is graded Moderate rather than Strong because only two human trials were retrieved, sample sizes could not be verified from the abstracts, and precision is therefore unconfirmed, capping certainty below the highest tier. The promising but limited data leaves room for uncertainty about the true magnitude of the weight-loss effect."
+        "what_studies_show": "Three human randomized trials examined MCT oil in weight-loss diets. A 2008 RCT found that a weight-loss diet including MCT oil led to greater weight loss compared to control; another 2008 RCT confirmed that MCT oil consumption did not cause adverse metabolic changes. A 2017 RCT showed MCT oil had less satiating properties than coconut oil. One animal study (2019) found MCT diet suppressed body weight and fat mass gain compared to control, with effects linked to lower GIP secretion.",
+        "why_this_grade": "Human evidence shows a consistent pattern favoring MCT for weight loss when part of a structured diet, but sample sizes in the retrieved abstracts could not be verified, limiting precision. The evidence is graded Moderate because the human trials exist and align in direction, but uncertainty about participant numbers prevents a higher tier."
+      },
+      {
+        "outcome": "cholesterol / lipids",
+        "grade": "Moderate",
+        "what_studies_show": "A 2021 systematic review and meta-analysis of randomized trials evaluated MCT oil and blood lipid levels across multiple studies. Twelve human RCTs and nine animal studies were retrieved; a 2025 human RCT (n=120) in dialysis patients compared MCT and omega-3 supplementation on iron-related and lipid markers. Studies span 2016\u20132025, examining lipid profiles in diverse populations including hemodialysis patients, preterm infants, and general healthy or at-risk groups.",
+        "why_this_grade": "Although 12 human trials were included, the majority of abstracts did not report sample sizes, so the true number of total participants is unknown\u2014precision cannot be confirmed. A single meta-analysis exists but has not been independently replicated or verified in the retrieved records, capping confidence at Moderate rather than Strong."
       },
       {
         "outcome": "cognition",
         "grade": "Preliminary",
-        "what_studies_show": "A 2021 animal randomized trial in dogs with epilepsy found that a medium-chain triglyceride dietary supplement improved cognitive abilities. This is the only cognition study retrieved; it was conducted in animals, not humans.",
-        "why_this_grade": "The evidence is graded Preliminary because it comes from animal research only and does not reliably translate to humans. No human trials on MCT oil and cognition were found in the retrieved records, so claims about cognitive benefit in people are not yet supported by clinical evidence."
+        "what_studies_show": "A single 2021 animal RCT found that MCT oil dietary supplement improved cognitive abilities in canine epilepsy. No human studies on cognition and MCT oil appear in the retrieved records.",
+        "why_this_grade": "Evidence is animal-only (dogs with epilepsy) and does not reliably translate to human cognitive function. A single animal study is too limited and indirect to support human efficacy claims; the grade remains Preliminary pending human trials."
       },
       {
         "outcome": "stress / anxiety",
         "grade": "Moderate",
-        "what_studies_show": "Two studies examined stress and anxiety outcomes: a 2016 human randomized trial in hemodialysis patients measuring oxidative stress and inflammatory markers (some related to stress pathways), and a 2026 animal study showing that oral MCT oil reduced anxiety-like behavior and was associated with differences in serum BDNF (brain-derived neurotrophic factor), a protein involved in neural stress response.",
-        "why_this_grade": "The evidence is graded Moderate because it combines one human trial and one animal trial, but sample sizes in the human study could not be verified from the abstract, leaving precision unconfirmed. The human evidence focuses on biomarkers of stress in a specific patient population (hemodialysis) rather than direct anxiety measures in the general population, and the animal finding, while mechanistically interesting, does not confirm human benefit."
+        "what_studies_show": "One human study (2016 RCT) examined flaxseed oil (a related lipid) on inflammatory and oxidative stress markers in hemodialysis patients. One animal study (2026) reported that oral MCT oil administration reduced anxiety-like behavior in animals and was associated with differences in serum BDNF (brain-derived neurotrophic factor).",
+        "why_this_grade": "Only one human study and one animal study address stress or anxiety; sample sizes could not be verified from abstracts, limiting precision. The human evidence is indirect (measuring inflammation rather than anxiety directly), and animal findings suggest a possible mechanism but do not establish human efficacy. Moderate grade reflects the small and mixed evidence base."
       }
     ],
-    "evidence_base": "The research base is small and mixed: most of the lipids evidence comes from human randomized trials (9 of 12 records), whereas weight loss evidence is limited to 2 human trials, cognition to 1 animal trial, and stress/anxiety to 1 human and 1 animal study. The human trials are generally recent (2008\u20132021) and range from short-term interventions to observational measures in clinical populations (hemodialysis patients, preterm infants). The single meta-analysis on lipids, published in 2021, is the strongest summary of that outcome, but it has not been independently replicated. Overall, the evidence reflects a compound with some plausible human benefit in lipid and weight outcomes, but limited replication, modest sample sizes, and sparse data on other health claims.",
-    "emerging_research": "Recent work has begun to explore MCT oil's effects on stress biomarkers and brain health. A 2026 animal study found that MCT oil reduced anxiety-like behavior and altered BDNF levels, suggesting a potential link to neuroplasticity and stress resilience. This direction is very early and has not yet been tested in rigorous human trials; the mechanistic pathway from animal anxiety models to clinical stress reduction in humans remains to be established.",
-    "open_questions": "Among the retrieved studies, most human work focuses on specific clinical populations (hemodialysis patients, preterm infants) or short-term outcomes, and none of the records show follow-up beyond 12 weeks, so long-term effects are not visible in this sample. The cognition outcome has no human evidence, and the stress/anxiety outcome rests on only one human trial. It is unclear from these records whether MCT oil's effects differ by dose, duration, age, baseline health status, or concurrent use of other supplements \u2014 these variables are not systematically compared across the studies provided.",
-    "caveats": "MCT oil is generally recognized as safe for oral use in typical food-like doses, but gastrointestinal upset (diarrhea, cramping) can occur at high doses. Quality and purity vary by manufacturer; the retrieved studies do not detail how MCT oil was sourced or verified. People with certain fat-malabsorption disorders, severe liver disease, or those taking medications affected by rapid fat absorption should consult a healthcare provider before use. This is a research sample of ~40 abstracts per outcome; many more studies may exist globally, but this summary reflects only what was retrieved here.",
+    "evidence_base": "The research base for MCT oil is predominantly human randomized trials (approximately 13 human studies retrieved), with a smaller animal component (approximately 11 animal studies). Most trials are recent (2016\u20132025) and focus on weight loss, lipid metabolism, and markers of inflammation in specific populations (hemodialysis patients, preterm infants, people with epilepsy). The evidence is mechanistic and applied\u2014studies measure metabolic and biochemical outcomes rather than long-term disease prevention. Confidence is moderate because many trials lack clear sample-size reporting in their abstracts, and few outcomes have been independently replicated or verified by separate meta-analyses.",
+    "emerging_research": "A 2026 animal study suggests MCT oil may modulate anxiety-related behavior through changes in BDNF, a neurotropic factor involved in brain plasticity and mood\u2014a direction not yet explored in humans. Recent trials (2025) continue to examine MCT in specialized populations (dialysis patients, preterm infants), broadening understanding of whether benefits or risks differ by health status. These are early observations; human studies on anxiety and cognitive function remain absent or very limited in the retrieved records.",
+    "open_questions": "Among the studies retrieved here, no trials followed participants beyond several weeks to months; long-term safety and sustained efficacy remain uncharacterized in the provided records. Human evidence for cognition and anxiety is either absent or extremely sparse (one or fewer human studies per outcome), so it is unclear whether any benefits observed in animals translate to these domains in people. The retrieved lipid studies span diverse populations (hemodialysis, infants, general adults), making it unclear whether MCT oil's effects on cholesterol and triglycerides are consistent across different health states or whether certain groups benefit more than others.",
+    "caveats": "MCT oil is a food supplement and generally well-tolerated, but high intakes may cause gastrointestinal side effects (bloating, cramping, diarrhea) in some people. Quality and purity vary by brand; MCT is often sold as a stand-alone product or in blends, so verify labeling. MCT may interact with certain medications or be contraindicated in conditions affecting fat absorption; consult a healthcare provider before use, especially if pregnant, nursing, or taking medications for lipid management or diabetes.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence base for MCT oil is too sparse and underpowered to reliably support its claimed effects; most outcomes rest on fewer than three human trials with unverified or very small sample sizes.",
+    "headline": "Most trials are small and underpowered (median n=22 across lipid studies), sample sizes are absent from most abstracts, and no pooled effect sizes are extractable\u2014making it impossible to assess precision or clinical significance of claimed benefits.",
     "concerns": [
       {
-        "issue": "Sample sizes largely unverifiable and extremely small",
-        "detail": "Of 12 studies on lipids/cholesterol (the best-evidenced outcome), only 1 explicitly reports n=22. For weight loss and stress/anxiety, sample sizes are completely unextracted from abstracts. This means the actual power and precision of these trials is unknown. A single outlier or undetected bias in a trial with ~20 participants could substantially shift a pooled result.",
+        "issue": "Systematic missing of sample size data",
+        "detail": "Across 21 lipid studies, only 3 report sample sizes (n=20, 22, 120), and the engine explicitly notes abstracts omit this critical descriptor for most records. For weight/fat loss (4 studies) and stress/anxiety (2 studies), sample sizes are completely non-extractable from abstracts. Without n, confidence intervals cannot be calculated, and heterogeneity cannot be properly assessed.",
         "severity": "high"
       },
       {
-        "issue": "Lipid outcome relies on single unreplicated meta-analysis",
-        "detail": "The 2021 meta-analysis on lipids is listed as the sole systematic review, and the engine explicitly notes its conclusion has not been independently replicated or verified. If that meta-analysis contains methodological errors or selective inclusion, there is no independent human evidence to cross-check it. The raw trial data behind the meta-analysis are not presented in these abstracts.",
+        "issue": "Study selection confounding in lipid outcome",
+        "detail": "Of 21 studies labeled under 'cholesterol/lipids,' several titles indicate they actually examine unrelated outcomes: flaxseed oil (not MCT), iron indices, childhood diarrhea, and fatty acid oxidation disorders. These appear to be false-positive retrievals rather than genuine evidence for MCT's lipid effects. This contamination inflates the apparent evidence base and obscures the true size of rigorous MCT-specific trials.",
         "severity": "high"
       },
       {
-        "issue": "Many trials appear methodologically tangential to MCT oil efficacy",
-        "detail": "Several included studies (flaxseed oil studies from 2016\u20132017, coconut oil satiety study, preterm infant massage, childhood diarrhea, pet medication acceptability) are either about different oils entirely or have unclear relevance to MCT oil's systemic effects on lipids, weight, or cognition. It is unclear whether these were included in the lipid meta-analysis or whether they inflated the apparent evidence base.",
+        "issue": "Single meta-analysis, unverified and unreplicated",
+        "detail": "The lipid outcome relies on one 2021 meta-analysis as its highest-level evidence, but the engine notes this conclusion is 'not independently replicated or verified'\u2014held at moderate precisely because there is no corroborating systematic review. A single meta-analysis can mask publication bias, cherry-picking of studies, or methodological error and should not be treated as definitive.",
         "severity": "high"
       },
       {
-        "issue": "Cognition outcome is animal-only with no human translation",
-        "detail": "The single cognition trial (2021, canine epilepsy) does not generalize to human cognitive benefit. Dogs with drug-resistant epilepsy are not a reliable proxy for cognitive enhancement in healthy humans. The 'Preliminary' grade correctly reflects this, but the outcome should not be cited as evidence for human cognition benefits.",
+        "issue": "Cognition graded on single animal study",
+        "detail": "The cognition outcome is graded 'Preliminary' based on one 2021 RCT in dogs, explicitly flagged by the engine as indirectness (animal-only). This does not meet a standard threshold for clinical efficacy claims in humans and should carry minimal persuasive weight.",
         "severity": "moderate"
       },
       {
-        "issue": "Stress/anxiety outcome mixes incompatible evidence types",
-        "detail": "One human RCT (2016) on flaxseed oil markers of oxidative stress, and one 2026 animal study on MCT oil and anxiety-like behavior, together constitute the entire basis for a 'Moderate' grade on stress/anxiety. These are not commensurate: one is about inflammation in humans with a different oil, the other is about behavioral outcomes in animals. Human anxiety outcomes for MCT oil are absent.",
+        "issue": "Weight/fat loss evidence is thin and heterogeneous",
+        "detail": "Only 3 human RCTs support weight/fat loss, spanning 2008\u20132017, with no extractable sample sizes or pooled effect. Titles suggest mixed findings: one reports MCT 'leads to greater' weight loss, another states it 'does not lead to adverse' effects (a safety claim, not efficacy), and one compares MCT unfavorably to coconut oil. The small number and apparent directional inconsistency weaken confidence in a robust effect.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "MCT oils are proposed to be rapidly absorbed and metabolized to ketone bodies, which might have neurological or metabolic effects. This chain (MCT \u2192 ketones \u2192 seizure reduction, cognitive support, satiety) is biologically plausible. However, the leap from that mechanism to weight loss or lipid modification is less direct and would require demonstration that ketone availability, rather than net caloric intake, drives those outcomes\u2014a distinction not clearly addressed in these trial abstracts. The cognition and stress claims rest entirely on animal or indirect markers (oxidative stress in humans) and have no direct human data.",
-    "strongest_counterargument": "A skeptic would note that the lipid outcome (the highest-graded claim) rests entirely on a single 2021 meta-analysis whose internal validity and independence are unknown from these records. The two weight-loss trials have unverified sample sizes and no pooled effect is extractable. The evidence base is too thin and heterogeneous (mixing flaxseed oil, coconut oil, animal models, and disease-specific populations like preterm infants and epilepsy patients) to support a 'Moderate' overall tier. Until individual trial protocols and sample sizes are transparently reported, and until lipid claims are independently replicated by a second meta-analysis, MCT oil's effects remain speculative.",
-    "what_would_change_the_picture": "A second independent systematic review and meta-analysis of MCT oil and lipids that either confirms or contradicts the 2021 finding would be essential. Additionally, a pre-registered, adequately powered (n \u2265 100) RCT on weight loss and on stress/anxiety in non-epilepsy populations would clarify whether the 'Moderate' grades for these outcomes are justified. Publication of full trial protocols and actual sample sizes for all included studies would be necessary to assess whether imprecision concerns are real.",
+    "mechanism_check": "The biological plausibility of MCT \u2192 increased fat oxidation \u2192 weight loss is straightforward, but the clinical evidence does not clearly demonstrate this chain works in real patients. The 2019 animal study on GIP secretion and body weight is a mechanistic observation, not proof of human clinical benefit. For lipids, no mechanistic explanation is visible in the retrieved abstracts, and the heterogeneous study selection (flaxseed, iron indices, diarrhea) suggests the outcome label may not map cleanly to MCT's actual effects.",
+    "strongest_counterargument": "A skeptic would note that the lipid evidence base is contaminated by off-target studies, the single meta-analysis lacks independent replication, and the weight-loss trials are small, underpowered, and show inconsistent direction of effect. The fact that sample sizes are missing from most abstracts is itself a red flag: published abstracts usually include n when results are positive and robust. The stress/anxiety outcome rests on one human RCT of unknown sample size plus one animal study, offering no credible human evidence. Grading these as 'Moderate' conflates a large number of studies with actual evidence quality.",
+    "what_would_change_the_picture": "Retrieve and appraise full-text reports to extract verified sample sizes and calculate pooled effect sizes with 95% confidence intervals for each outcome. Conduct an independent systematic review of MCT-specific trials (excluding flaxseed, iron, and diarrhea studies) to verify the 2021 meta-analysis conclusion. Identify and conduct at least one additional adequately powered (n>100) RCT on cognition in humans, since current evidence is animal-only.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

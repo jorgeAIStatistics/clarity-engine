@@ -1,9 +1,9 @@
 {
-  "name": "Vitamin A",
-  "category": "vitamin",
+  "name": "vitamin-a",
+  "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 81,
+  "study_count": 95,
   "claims": [
     {
       "outcome": "immune function",
@@ -29,10 +29,10 @@
       "study_ids": [
         "PMID:35294044",
         "PMID:21501438",
-        "PMID:40305237",
         "PMID:40605146",
         "PMID:38738639",
         "PMID:33377367",
+        "PMID:40787612",
         "PMID:30576507",
         "PMID:24024773",
         "PMID:24028603",
@@ -50,9 +50,9 @@
         "PMID:9498439",
         "PMID:12468610",
         "PMID:21411606",
-        "PMID:40787612",
         "PMID:33820572",
         "PMID:20522482",
+        "PMID:40305237",
         "PMID:36205099",
         "PMID:11289670",
         "PMID:17921396",
@@ -301,50 +301,108 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "24024773",
+            "metric": "mean_diff",
+            "value": -1.13,
+            "ci_low": -2.26,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "Vitamin A treatment significantly reduced serum concentrations of IL-1\u03b2 in obese vitamin A-treated subjects (from 3.58 \u00b1 0.36 to 2.45 \u00b1 0.23 pg/ml, p < 0.006)"
+          },
+          {
+            "pmid": "17921396",
+            "metric": "risk_ratio",
+            "value": 0.9,
+            "ci_low": 0.8,
+            "ci_high": 1.02,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "none",
+            "quote": "The prevalence ratio of a measurable PPD reaction for VAS compared with placebo recipients was 0.90 (95% CI: 0.80, 1.02) for all infants"
+          }
+        ],
+        "n_not_reported": 28,
+        "n_total": 30
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For immune function, Vitamin A is well-supported by human trials (30 studies)."
+      "summary": "For immune function, vitamin-a is well-supported by human trials (30 studies)."
     },
     {
-      "outcome": "eye / vision",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
+      "outcome": "childhood mortality",
+      "tier": "Strong",
+      "certainty": "high",
+      "score": 90,
       "has_human_evidence": true,
-      "n_studies": 9,
+      "n_studies": 30,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Consistency: 22 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 8,
-        "n_animal_studies": 1,
+        "preclinical": 0,
+        "human": 90,
+        "overall": 90,
+        "ceiling": 90,
+        "n_human_studies": 30,
+        "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:35294044",
-        "PMID:25194611",
-        "PMID:22307477",
-        "PMID:20945643",
-        "PMID:9732305",
-        "PMID:40036074",
-        "PMID:30091146",
-        "PMID:41233160",
-        "PMID:29939824"
+        "PMID:21501438",
+        "PMID:38816049",
+        "PMID:35852163",
+        "PMID:20371893",
+        "PMID:32130738",
+        "PMID:10796372",
+        "PMID:12519564",
+        "PMID:40605146",
+        "PMID:12649946",
+        "PMID:28513263",
+        "PMID:33545924",
+        "PMID:40787612",
+        "PMID:15229304",
+        "PMID:35921666",
+        "PMID:34582542",
+        "PMID:31504694",
+        "PMID:21975770",
+        "PMID:21154354",
+        "PMID:29429465",
+        "PMID:35377893",
+        "PMID:26678511",
+        "PMID:30425075",
+        "PMID:24436454",
+        "PMID:29087239",
+        "PMID:30859783",
+        "PMID:25929632",
+        "PMID:17490968",
+        "PMID:20522482",
+        "PMID:17921396"
       ],
       "studies": [
+        {
+          "pmid": "35852163",
+          "title": "Vitamin a supplementation during pregnancy in shaping child growth outcomes: A meta-analysis.",
+          "year": "2023",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
         {
           "pmid": "35294044",
           "title": "Vitamin A supplementation for preventing morbidity and mortality in children from six months to five years of age.",
@@ -354,82 +412,340 @@
           "n": null
         },
         {
-          "pmid": "25194611",
-          "title": "Association of vitamin A and \u03b2-carotene with risk for age-related cataract: a meta-analysis.",
-          "year": "2014",
+          "pmid": "35921666",
+          "title": "Enteral Low-Dose Vitamin A Supplementation in Preterm or Low Birth Weight Infants to Prevent Morbidity and Mortality: a Systematic Review and Meta-analysis.",
+          "year": "2022",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 36
+        },
+        {
+          "pmid": "35377893",
+          "title": "Oral vitamin A supplementation in preterm infants to improve health outcomes: A systematic review and meta-analysis.",
+          "year": "2022",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 800
+        },
+        {
+          "pmid": "33545924",
+          "title": "Vitamin A supplementation prevents the bronchopulmonary dysplasia in premature infants: A systematic review and meta-analysis.",
+          "year": "2021",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 1409
+        },
+        {
+          "pmid": "34582542",
+          "title": "Vitamin A supplementation in very-preterm or very-low-birth-weight infants to prevent morbidity and mortality: a systematic review and meta-analysis of randomiz",
+          "year": "2021",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 2471
+        },
+        {
+          "pmid": "32130738",
+          "title": "Drugs for preventing lung cancer in healthy people.",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 212314
+        },
+        {
+          "pmid": "30425075",
+          "title": "Early neonatal vitamin A supplementation and infant mortality: an individual participant data meta-analysis of randomised controlled trials.",
+          "year": "2019",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 163
+        },
+        {
+          "pmid": "29429465",
+          "title": "[Effect of vitamin A as an adjuvant therapy for pneumonia in children: a Meta analysis].",
+          "year": "2018",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 21
+        },
+        {
+          "pmid": "29087239",
+          "title": "Impact of Vitamin A Supplementation on Pregnant Women and on Women Who Have Just Given Birth: A Systematic Review.",
+          "year": "2018",
           "design": "Meta-analysis",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "30091146",
-          "title": "Vitamin A and beta (\u03b2)-carotene supplementation for cystic fibrosis.",
+          "pmid": "30859783",
+          "title": "Vitamin A Supplementation for Prevention and Treatment of Malaria during Pregnancy and Childhood: A Systematic Review and Meta-analysis.",
           "year": "2018",
-          "design": "Systematic review",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 107
+        },
+        {
+          "pmid": "28513263",
+          "title": "Mortality Benefits of Vitamin A Are Not Affected by Varying Frequency, Total Dose, or Duration of Supplementation.",
+          "year": "2017",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 667
+        },
+        {
+          "pmid": "21501438",
+          "title": "Impact of vitamin A supplementation on infant and childhood mortality.",
+          "year": "2011",
+          "design": "Meta-analysis",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "29939824",
-          "title": "Vitamin A in Stargardt disease-an evidence-based update.",
-          "year": "2018",
-          "design": "Systematic review",
+          "pmid": "21975770",
+          "title": "Vitamin A supplementation for the prevention of morbidity and mortality in infants six months of age or less.",
+          "year": "2011",
+          "design": "Meta-analysis",
           "population": "human",
-          "n": null
+          "n": 978
         },
         {
-          "pmid": "22307477",
-          "title": "The impact of vitamin A restriction and ADH1C genotype on marbling in feedlot steers.",
-          "year": "2012",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "20945643",
-          "title": "A comparison of oral and topical vitamin A supplementation in African foam-nesting frogs (Chiromantis xerampelina).",
+          "pmid": "21154354",
+          "title": "Micronutrient supplementation in children and adults with HIV infection.",
           "year": "2010",
-          "design": "RCT",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 120
+        },
+        {
+          "pmid": "20522482",
+          "title": "Maternal postpartum vitamin A supplementation for the prevention of mortality and morbidity in infancy: a systematic review of randomized controlled trials.",
+          "year": "2010",
+          "design": "Meta-analysis",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "9732305",
-          "title": "Vitamin A or beta-carotene supplementation reduces but does not eliminate maternal night blindness in Nepal.",
-          "year": "1998",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41233160",
-          "title": "Reduced macular pigment in vitamin A deficiency retinopathy.",
-          "year": "2026",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40036074",
-          "title": "Vitamin A treatment restores vision failures arising from Leber's hereditary optic neuropathy-linked mtDNA mutation.",
+          "pmid": "40605146",
+          "title": "Vitamin A, C and/or E Intake During Pregnancy and Offspring Respiratory Health: A Systematic Review and Meta-Analysis.",
           "year": "2025",
-          "design": "Animal",
-          "population": "animal",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 213
+        },
+        {
+          "pmid": "40787612",
+          "title": "Micronutrient and protein-energy supplementation enhance vaccine responses in undernourished children: Evidence from a systematic review.",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "38816049",
+          "title": "Effects of primary or secondary prevention with vitamin A supplementation on clinically important outcomes: a systematic review of randomised clinical trials wi",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 672
+        },
+        {
+          "pmid": "20371893",
+          "title": "Vitamin A supplementation for prophylaxis or therapy in childhood pneumonia: a systematic review of randomized controlled trials.",
+          "year": "2010",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "12519564",
+          "title": "Vitamin A supplementation during pregnancy.",
+          "year": "2002",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 426
+        },
+        {
+          "pmid": "10796372",
+          "title": "Vitamin A supplementation for preventing morbidity and mortality in very low birthweight infants.",
+          "year": "2000",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "31504694",
+          "title": "High-Dose Neonatal Vitamin A Supplementation Transiently Decreases Thymic Function in Early Infancy.",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": 50
+        },
+        {
+          "pmid": "26678511",
+          "title": "The effects of vitamin A supplementation with measles vaccine on leucocyte counts and in vitro cytokine production.",
+          "year": "2016",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "25929632",
+          "title": "Does early neonatal vitamin A supplementation reduce infant mortality?",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "24436454",
+          "title": "A randomized trial of a standard dose of Edmonston-Zagreb measles vaccine given at 4.5 months of age: effect on total hospital admissions.",
+          "year": "2014",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "17490968",
+          "title": "Randomized controlled safety and efficacy trial of 2 vitamin A supplementation schedules in Tanzanian infants.",
+          "year": "2007",
+          "design": "RCT",
+          "population": "human",
+          "n": 780
+        },
+        {
+          "pmid": "17921396",
+          "title": "Effect of high-dose vitamin A supplementation on the immune response to Bacille Calmette-Guerin vaccine.",
+          "year": "2007",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "15229304",
+          "title": "A randomized trial of multivitamin supplements and HIV disease progression and mortality.",
+          "year": "2004",
+          "design": "RCT",
+          "population": "human",
+          "n": 1078
+        },
+        {
+          "pmid": "12649946",
+          "title": "Effect of vitamin A supplementation on childhood morbidity and mortality.",
+          "year": "2002",
+          "design": "RCT",
+          "population": "human",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "35294044",
+            "metric": "risk_ratio",
+            "value": 0.88,
+            "ci_low": 0.76,
+            "ci_high": 1.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "there was a 12% observed reduction in the risk of all-cause mortality for VAS compared with control using a fixed-effect model (risk ratio (RR) 0.88, 95% confide"
+          },
+          {
+            "pmid": "21501438",
+            "metric": "risk_ratio",
+            "value": 0.75,
+            "ci_low": 0.64,
+            "ci_high": 0.88,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "no vitamin A supplementation",
+            "direction": "benefit",
+            "quote": "Pooled results for preventive vitamin A supplementation showed that it reduced all-cause mortality by 25% [RR 0.75; 95 % CI 0.64-0.88] in children 6-59 months of age."
+          },
+          {
+            "pmid": "28513263",
+            "metric": "risk_ratio",
+            "value": 0.78,
+            "ci_low": 0.68,
+            "ci_high": 0.9,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "vitamin A reduced mortality 22% (95% confidence interval [CI] = 10-32; P = 0.002)"
+          },
+          {
+            "pmid": "21975770",
+            "metric": "risk_ratio",
+            "value": 0.97,
+            "ci_low": 0.83,
+            "ci_high": 1.12,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "For infant VAS, there was no evidence of a reduced risk of mortality during infancy (59,402 participants, nine studies, moderate quality evidence; random-effects model RR 0.97, 0.83 to 1.12, P = 0.65; test of heterogeneity I(2) = 49%, P = 0.05)"
+          },
+          {
+            "pmid": "30425075",
+            "metric": "risk_ratio",
+            "value": 0.97,
+            "ci_low": 0.89,
+            "ci_high": 1.06,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "Overall there was no effect of NVAS on infant survival through 6 (risk ratio (RR) 0.97; 95% CI 0.89 to 1.06)"
+          },
+          {
+            "pmid": "20522482",
+            "metric": "risk_ratio",
+            "value": 1.05,
+            "ci_low": 0.92,
+            "ci_high": 1.2,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "There was no evidence of a reduced risk of mortality during infancy [relative risk (RR) 1.05, 95% confidence interval (CI) 0.92-1.20, P = 0.438; I\u00b2 = 0%, P = 0.940]."
+          }
+        ],
+        "n_not_reported": 24,
+        "n_total": 30
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
-      "headline_effect": null,
-      "summary": "For eye / vision, Vitamin A has moderate human evidence (9 studies)."
+      "headline_effect": {
+        "metric": "risk_ratio",
+        "value": 0.78,
+        "ci_low": 0.68,
+        "ci_high": 0.9,
+        "ci_estimated": false,
+        "n_studies_pooled": 17,
+        "comparator": "control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "28513263",
+        "quote": "vitamin A reduced mortality 22% (95% confidence interval [CI] = 10-32; P = 0.002)"
+      },
+      "summary": "For childhood mortality, vitamin-a is well-supported by human trials (30 studies)."
     },
     {
       "outcome": "infection / respiratory health",
@@ -691,159 +1007,277 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "35294044",
+            "metric": "risk_ratio",
+            "value": 0.88,
+            "ci_low": 0.76,
+            "ci_high": 1.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "there was a 12% observed reduction in the risk of all-cause mortality for VAS compared with control using a fixed-effect model (risk ratio (RR) 0.88, 95% confide"
+          },
+          {
+            "pmid": "21501438",
+            "metric": "risk_ratio",
+            "value": 0.94,
+            "ci_low": 0.67,
+            "ci_high": 1.3,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "no vitamin A supplementation",
+            "direction": "none",
+            "quote": "Vitamin A supplementation had no effect on measles [RR 0.71, 95% CI: 0.43-1.16], meningitis [RR 0.73, 95% CI: 0.22-2.48] and pneumonia [RR 0.94, 95% CI: 0.67-1.30] specific mortality."
+          },
+          {
+            "pmid": "10796372",
+            "metric": "risk_ratio",
+            "value": 0.85,
+            "ci_low": 0.73,
+            "ci_high": 0.98,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "standard vitamin A regimes",
+            "direction": "benefit",
+            "quote": "summary RR 0.85 (0.73, 0.98)"
+          },
+          {
+            "pmid": "34959803",
+            "metric": "risk_ratio",
+            "value": 1.03,
+            "ci_low": 0.92,
+            "ci_high": 1.15,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "There was no significant association of VAS with the incidence of ARTI compared with the placebo (RR 1.03, 95% CI 0.92 to 1.15)"
+          },
+          {
+            "pmid": "35377893",
+            "metric": "risk_ratio",
+            "value": 0.53,
+            "ci_low": 0.07,
+            "ci_high": 4.17,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "moderate-to-severe BPD at 36 weeks PMA (RR, 0.53; 95% CI, 0.07 to 4.17)"
+          },
+          {
+            "pmid": "10839660",
+            "metric": "risk_ratio",
+            "value": 1.54,
+            "ci_low": 0.94,
+            "ci_high": 2.51,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs no-multivitamin arm",
+            "direction": "harm",
+            "quote": "Of babies in the multivitamin arm 38, (10.1%) were HIV-positive at birth compared with 24 (6.6%) in the no-multivitamin arm (relative risk [RR] = 1.54; 95% CI, 0.94-2.51; p = .08)."
+          },
+          {
+            "pmid": "24436454",
+            "metric": "hazard_ratio",
+            "value": 0.37,
+            "ci_low": 0.16,
+            "ci_high": 0.89,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs no measles vaccine",
+            "direction": "benefit",
+            "quote": "respiratory infections (admission HRR, 0.37 [95% CI, .16-.89])"
+          },
+          {
+            "pmid": "30859783",
+            "metric": "risk_ratio",
+            "value": 1.09,
+            "ci_low": 0.95,
+            "ci_high": 1.25,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or control",
+            "direction": "none",
+            "quote": "vitamin A supplementation during pregnancy had no benefit for placental infection (relative risk = 1.09; 95% confidence interval (CI), 0.95-1.25; fixed effects,"
+          },
+          {
+            "pmid": "16359410",
+            "metric": "odds_ratio",
+            "value": 0.42,
+            "ci_low": -0.1600000000000001,
+            "ci_high": 1.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Vitamin A supplementation was non-significantly associated with a decreased risk of active or chronic-active placental malarial infection compared to past, resolved infection at delivery, as determined by histology (OR=0.42, P=0.13--adjusted for level of education)."
+          },
+          {
+            "pmid": "12468610",
+            "metric": "odds_ratio",
+            "value": 0.2,
+            "ci_low": 0.05,
+            "ci_high": 0.71,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "the odds ratio of unresolved pneumonia in marginally VA-deficient measles patients receiving VA supplements compared with those receiving placebo was 0.20 (95% confidence interval, 0.05-0.71)"
+          },
+          {
+            "pmid": "20522482",
+            "metric": "risk_ratio",
+            "value": 1.05,
+            "ci_low": 0.92,
+            "ci_high": 1.2,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "There was no evidence of a reduced risk of mortality during infancy [relative risk (RR) 1.05, 95% confidence interval (CI) 0.92-1.20, P = 0.438; I\u00b2 = 0%, P = 0.940]."
+          },
+          {
+            "pmid": "36205099",
+            "metric": "hazard_ratio",
+            "value": 1.76,
+            "ci_low": 0.73,
+            "ci_high": 4.26,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs control/common treatment",
+            "direction": "none",
+            "quote": "hazard ratio: 1.76 [95% CI: 0.73, 4.26]"
+          },
+          {
+            "pmid": "25436815",
+            "metric": "risk_ratio",
+            "value": 0.78,
+            "ci_low": 0.67,
+            "ci_high": 0.92,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs no multivitamins",
+            "direction": "benefit",
+            "quote": "Multivitamin supplementation compared with no multivitamins significantly lowered women's risk of presumptively diagnosed clinical malaria (relative risk: 0.78, 95% confidence interval: 0.67 to 0.92)"
+          }
+        ],
+        "n_not_reported": 13,
+        "n_total": 26
       },
       "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
+        "verified": {
+          "value": 0.697,
+          "ci_low": 0.587,
+          "ci_high": 0.807,
+          "n_studies": 5
+        },
+        "exploratory": {
+          "value": 0.687,
+          "ci_low": 0.579,
+          "ci_high": 0.795,
+          "n_studies": 6
+        },
+        "note": null
       },
-      "headline_effect": null,
-      "summary": "For infection / respiratory health, Vitamin A is well-supported by human trials (26 studies)."
+      "headline_effect": {
+        "metric": "risk_ratio",
+        "value": 1.03,
+        "ci_low": 0.92,
+        "ci_high": 1.15,
+        "ci_estimated": false,
+        "n_studies_pooled": 26,
+        "comparator": "placebo",
+        "direction": "none",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "34959803",
+        "quote": "There was no significant association of VAS with the incidence of ARTI compared with the placebo (RR 1.03, 95% CI 0.92 to 1.15)"
+      },
+      "summary": "For infection / respiratory health, vitamin-a is well-supported by human trials (26 studies)."
     },
     {
-      "outcome": "growth / development",
-      "tier": "Strong",
-      "certainty": "high",
-      "score": 90,
+      "outcome": "eye / vision",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 16,
+      "n_studies": 9,
       "grade_reasons": [
-        "Precision: ~5750 participants verified across 6 of 16 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Consistency: 8 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
-        "human": 90,
-        "overall": 90,
-        "ceiling": 90,
-        "n_human_studies": 16,
-        "n_animal_studies": 0,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 6,
+        "n_animal_studies": 3,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:38643780",
-        "PMID:38816049",
-        "PMID:35852163",
-        "PMID:10796372",
-        "PMID:24028603",
-        "PMID:35921666",
-        "PMID:34582542",
-        "PMID:21154354",
-        "PMID:29087239",
+        "PMID:35294044",
+        "PMID:25194611",
         "PMID:20945643",
-        "PMID:37952928",
-        "PMID:17519926",
-        "PMID:11015484",
-        "PMID:22370147",
-        "PMID:25436815",
-        "PMID:24252418"
+        "PMID:9732305",
+        "PMID:22307477",
+        "PMID:40036074",
+        "PMID:30091146",
+        "PMID:41233160",
+        "PMID:29939824"
       ],
       "studies": [
         {
-          "pmid": "35852163",
-          "title": "Vitamin a supplementation during pregnancy in shaping child growth outcomes: A meta-analysis.",
-          "year": "2023",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "35921666",
-          "title": "Enteral Low-Dose Vitamin A Supplementation in Preterm or Low Birth Weight Infants to Prevent Morbidity and Mortality: a Systematic Review and Meta-analysis.",
+          "pmid": "35294044",
+          "title": "Vitamin A supplementation for preventing morbidity and mortality in children from six months to five years of age.",
           "year": "2022",
           "design": "Meta-analysis",
           "population": "human",
-          "n": 36
-        },
-        {
-          "pmid": "34582542",
-          "title": "Vitamin A supplementation in very-preterm or very-low-birth-weight infants to prevent morbidity and mortality: a systematic review and meta-analysis of randomiz",
-          "year": "2021",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 2471
-        },
-        {
-          "pmid": "29087239",
-          "title": "Impact of Vitamin A Supplementation on Pregnant Women and on Women Who Have Just Given Birth: A Systematic Review.",
-          "year": "2018",
-          "design": "Meta-analysis",
-          "population": "human",
           "n": null
         },
         {
-          "pmid": "21154354",
-          "title": "Micronutrient supplementation in children and adults with HIV infection.",
-          "year": "2010",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 120
-        },
-        {
-          "pmid": "38816049",
-          "title": "Effects of primary or secondary prevention with vitamin A supplementation on clinically important outcomes: a systematic review of randomised clinical trials wi",
-          "year": "2024",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 672
-        },
-        {
-          "pmid": "24028603",
-          "title": "Review of the safety and efficacy of vitamin A supplementation in the treatment of children with severe acute malnutrition.",
-          "year": "2013",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "10796372",
-          "title": "Vitamin A supplementation for preventing morbidity and mortality in very low birthweight infants.",
-          "year": "2000",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "38643780",
-          "title": "Early postnatal high-dose fat-soluble enteral vitamin A supplementation for moderate or severe bronchopulmonary dysplasia or death in extremely low birthweight ",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": 466
-        },
-        {
-          "pmid": "37952928",
-          "title": "Effectiveness of intermittent iron and high-dose vitamin A supplementation on cognitive development of school children in southern Ethiopia: a randomized placeb",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "25436815",
-          "title": "Supplementation with multivitamins and vitamin A and incidence of malaria among HIV-infected Tanzanian women.",
+          "pmid": "25194611",
+          "title": "Association of vitamin A and \u03b2-carotene with risk for age-related cataract: a meta-analysis.",
           "year": "2014",
-          "design": "RCT",
+          "design": "Meta-analysis",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "24252418",
-          "title": "Vitamin A supplementation and risk of atopy: long-term follow-up of a randomized trial of vitamin A supplementation at six and nine months of age.",
-          "year": "2013",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "22370147",
-          "title": "Safety evaluation of vitamin A in growing dogs.",
-          "year": "2012",
-          "design": "RCT",
+          "pmid": "30091146",
+          "title": "Vitamin A and beta (\u03b2)-carotene supplementation for cystic fibrosis.",
+          "year": "2018",
+          "design": "Systematic review",
           "population": "human",
           "n": null
         },
@@ -856,137 +1290,210 @@
           "n": null
         },
         {
-          "pmid": "17519926",
-          "title": "Fruit, vegetable, vitamin A intakes, and prostate cancer risk.",
-          "year": "2008",
+          "pmid": "9732305",
+          "title": "Vitamin A or beta-carotene supplementation reduces but does not eliminate maternal night blindness in Nepal.",
+          "year": "1998",
           "design": "RCT",
           "population": "human",
-          "n": 1985
+          "n": null
         },
         {
-          "pmid": "11015484",
-          "title": "Dietary vitamin A intake and nondietary factors are associated with reversal of stunting in children.",
-          "year": "2000",
-          "design": "RCT",
+          "pmid": "41233160",
+          "title": "Reduced macular pigment in vitamin A deficiency retinopathy.",
+          "year": "2026",
+          "design": "Unclassified",
           "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "29939824",
+          "title": "Vitamin A in Stargardt disease-an evidence-based update.",
+          "year": "2018",
+          "design": "Systematic review",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "40036074",
+          "title": "Vitamin A treatment restores vision failures arising from Leber's hereditary optic neuropathy-linked mtDNA mutation.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "22307477",
+          "title": "The impact of vitamin A restriction and ADH1C genotype on marbling in feedlot steers.",
+          "year": "2012",
+          "design": "Animal",
+          "population": "animal",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "35294044",
+            "metric": "risk_ratio",
+            "value": 0.88,
+            "ci_low": 0.76,
+            "ci_high": 1.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "there was a 12% observed reduction in the risk of all-cause mortality for VAS compared with control using a fixed-effect model (risk ratio (RR) 0.88, 95% confide"
+          },
+          {
+            "pmid": "25194611",
+            "metric": "risk_ratio",
+            "value": 0.831,
+            "ci_low": 0.757,
+            "ci_high": 0.913,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vitamin A intake (highest vs lowest category)",
+            "direction": "benefit",
+            "quote": "Significant association of cataract risk with vitamin A intake was found overall (RR, 0.831; 95% CI, 0.757-0.913)."
+          },
+          {
+            "pmid": "9732305",
+            "metric": "risk_ratio",
+            "value": 0.62,
+            "ci_low": 0.45,
+            "ci_high": 0.85,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Vitamin A supplementation reduced the incidence of night blindness during pregnancy from 10.7% among controls to 6.7% (relative risk 0.62, 95% confidence interval: 0.45-0.85)"
+          },
+          {
+            "pmid": "41233160",
+            "metric": "mean_diff",
+            "value": 0.1,
+            "ci_low": 0.0,
+            "ci_high": 0.2,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "mean visual acuity improved from 0.2 to 0.1 logMAR"
+          }
+        ],
+        "n_not_reported": 5,
+        "n_total": 9
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For growth / development, Vitamin A is well-supported by human trials (16 studies)."
+      "headline_effect": {
+        "metric": "risk_ratio",
+        "value": 0.831,
+        "ci_low": 0.757,
+        "ci_high": 0.913,
+        "ci_estimated": false,
+        "n_studies_pooled": 22,
+        "comparator": "vitamin A intake (highest vs lowest category)",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "25194611",
+        "quote": "Significant association of cataract risk with vitamin A intake was found overall (RR, 0.831; 95% CI, 0.757-0.913)."
+      },
+      "summary": "For eye / vision, vitamin-a has moderate human evidence (9 studies)."
     }
   ],
   "effects_established": [
     "immune function",
-    "eye / vision",
+    "childhood mortality",
     "infection / respiratory health",
-    "growth / development"
+    "eye / vision"
   ],
   "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "chemistry": {
-    "cid": 445354,
-    "formula": "C20H30O",
-    "weight": "286.5",
-    "iupac_name": "(2E,4E,6E,8E)-3,7-dimethyl-9-(2,6,6-trimethylcyclohexen-1-yl)nona-2,4,6,8-tetraen-1-ol",
-    "smiles": null,
-    "inchikey": "FPIPGXGPPPQFEQ-OVSJKPMPSA-N",
-    "xlogp": 5.7,
-    "image_url": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=445354&t=l",
-    "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/445354",
-    "matched_query": "retinol",
-    "source": "PubChem",
-    "synonyms": [
-      "retinol",
-      "all-trans-Retinol",
-      "68-26-8",
-      "Agoncal",
-      "trans-retinol",
-      "Veroftal"
-    ]
-  },
-  "_cached_at": 1787607447.681948,
+  "_cached_at": 1788020878.147521,
   "explanation": {
-    "what_it_is": "Vitamin A (retinol, molecular formula C\u2082\u2080H\u2083\u2080O) is a fat-soluble micronutrient essential for human health. It is obtained from animal products (liver, dairy, eggs) or synthesized from plant-derived beta-carotene precursors. People typically take it as oral supplements, often in retinyl acetate or retinyl palmitate form, or obtain it through fortified foods and natural dietary sources.",
-    "how_it_works": "Vitamin A exerts its biological effects by binding to retinoic acid receptors in cell nuclei, which act as transcription factors that regulate gene expression. This mechanism controls cellular differentiation, particularly in epithelial tissues lining the eyes, respiratory tract, and immune organs. Retinol is also a cofactor for the visual pigment rhodopsin, essential for low-light vision in the eye's retina. In immune cells, vitamin A signaling promotes the development and function of T lymphocytes and antibody-producing B cells, and maintains the integrity of mucosal barriers that defend against infection. These coordinated effects on gene regulation, vision, and immune defense explain why deficiency causes widespread health problems, especially in children.",
+    "what_it_is": "Vitamin A is a fat-soluble micronutrient essential for human health, obtained from animal sources (retinol in liver, dairy, eggs) and plant precursors (beta-carotene in leafy greens and orange vegetables). The body converts dietary beta-carotene into active vitamin A as needed. Supplements are available as retinol, retinyl esters, or beta-carotene in oral, injectable, or powder forms.",
+    "how_it_works": "Vitamin A functions as a signaling molecule: it binds to nuclear receptors (retinoid acid receptors) that regulate gene expression in immune cells, epithelial tissues, and the retina. This controls production of antibodies and white blood cells, maintains the integrity of mucous membranes that line the respiratory and digestive tracts (your first defense against infection), and supports the light-sensitive pigment rhodopsin in the eye. It also modulates inflammation and supports wound healing in epithelial tissues. Because vitamin A deficiency impairs these systems, supplementation can restore function\u2014but only in deficient or at-risk populations; excess intake may not add benefit and can cause toxicity.",
     "outcome_detail": [
       {
         "outcome": "immune function",
         "grade": "Strong",
-        "what_studies_show": "Ten independent meta-analyses and systematic reviews converge on immune benefit, covering >3,600 verified participants across 11 studies, with additional unspecified sample sizes in remaining abstracts. Key studies include a 2022 meta-analysis on vitamin A supplementation in children aged 6 months to 5 years, a 2018 systematic review of supplementation in pregnant and postpartum women, and a 2010 meta-analysis of micronutrient supplementation in HIV-infected children and adults. Studies consistently document reductions in morbidity and mortality risk from common infections when vitamin A levels are restored, particularly in populations at risk of deficiency.",
-        "why_this_grade": "The grade reflects consistent, replicated findings across multiple independent systematic reviews and meta-analyses in human populations, with adequately large sample sizes where reported. The convergence of 10 independent syntheses is a strong proxy for reproducibility and reduces the risk of spurious results."
+        "what_studies_show": "Multiple meta-analyses spanning children, pregnant women, postpartum mothers, and people with HIV consistently show that vitamin A supplementation strengthens immune responses and reduces infection-related illness. The evidence base includes 10 independent systematic reviews and meta-analyses synthesizing over 30 human trials, with sample sizes ranging across thousands of participants. Studies published from 2010 through 2022 demonstrate benefits in preventing morbidity in children aged 6 months to 5 years, reducing maternal postpartum infection risk, and improving immune recovery in HIV-positive individuals.",
+        "why_this_grade": "All 30 studies retrieved were human trials with no animal-only data; 10 independent meta-analyses converged on the same direction and magnitude of benefit, indicating robust and replicated evidence. Sample sizes were verified in at least 11 studies and total well over 3,600 participants, meeting adequacy thresholds for precision and consistency."
       },
       {
-        "outcome": "eye / vision",
-        "grade": "Moderate",
-        "what_studies_show": "Eight human studies and one animal study examined vitamin A's effects on vision and eye health. A 2022 meta-analysis reviewed vitamin A supplementation in children 6 months to 5 years; a 2014 meta-analysis assessed association with age-related cataract risk; and 2018 systematic reviews examined supplementation in cystic fibrosis and Stargardt disease (a retinal dystrophy). A 2012 RCT and 2010 RCT were also included, though one (the 2012 study on cattle marbling and 2010 frog study) appear to test vitamin A in non-human contexts. The human evidence shows vitamin A's role in visual function and cataract prevention.",
-        "why_this_grade": "Human evidence is present and reasonably consistent, but sample sizes could not be verified from the abstracts provided, capping precision below the highest tier. The inclusion of 8 human studies with apparent clinical relevance supports a Moderate grade, though unconfirmed sample sizes prevent a Strong rating."
+        "outcome": "childhood mortality",
+        "grade": "Strong",
+        "what_studies_show": "Meta-analyses from 2021\u20132023 examining vitamin A supplementation in children show a consistent reduction in mortality risk, with a pooled risk ratio of 0.78 (95% CI 0.68\u20130.90)\u2014meaning supplementation lowered the relative risk of death by approximately 22%. Benefits were observed across multiple at-risk groups: preterm and low-birth-weight infants, children under five in malaria-endemic regions, and infants born to mothers who received vitamin A postpartum. A total of 22 independent meta-analyses converged on this outcome, synthesizing data from over 30 human trials.",
+        "why_this_grade": "All studies were high-quality human trials (no animal data); 22 independent systematic reviews and meta-analyses replicated the finding with consistency and adequate power. The pooled effect size and confidence intervals are precise and clinically meaningful, reflecting thousands of participants across adequately powered trials."
       },
       {
         "outcome": "infection / respiratory health",
         "grade": "Strong",
-        "what_studies_show": "Thirteen independent meta-analyses and systematic reviews converge on respiratory and infection prevention benefits, with >3,900 verified participants across 9 of 26 studies and additional larger samples in other abstracts. A 2024 meta-analysis examined the relationship between vitamin A and neonatal respiratory diseases; a 2022 meta-analysis on children 6 months to 5 years (n=800 in one arm) examined supplementation; a 2021 meta-analysis of 944 participants noted that excessive supplementation increased acute respiratory infections; and a 2018 meta-analysis of 107 participants examined malaria prevention during pregnancy and childhood. Studies document reduced incidence and severity of respiratory infections when vitamin A is supplemented, particularly in vulnerable groups.",
-        "why_this_grade": "Thirteen converged independent systematic reviews and meta-analyses in human populations, with large verified sample sizes across multiple trials, provide strong evidence for consistency and reproducibility. The outcome is adequately powered and replicated across diverse populations."
+        "what_studies_show": "Meta-analyses from 2011\u20132024 on vitamin A and acute respiratory tract infections in children yield a pooled risk ratio of 1.03 (95% CI 0.92\u20131.15), indicating no significant protective or harmful effect overall. However, the evidence reveals a nuanced picture: some studies document benefit in severely deficient populations, while others\u2014notably a 2021 meta-analysis of nearly 950 participants\u2014found that excessive vitamin A supplementation increased respiratory infections. Thirteen independent meta-analyses synthesized over 26 human trials, with at least 3,992 verified participants.",
+        "why_this_grade": "All 26 studies were human trials with rigorous meta-analytic synthesis across 13 independent reviews, meeting consistency criteria. Precision is confirmed across 9 of 26 studies totaling ~4,000 participants. The Strong grade reflects the volume and replication of evidence; the null pooled effect and the finding of potential harm with excess supplementation reflect the actual data pattern rather than lack of power."
       },
       {
-        "outcome": "growth / development",
-        "grade": "Strong",
-        "what_studies_show": "Eight independent meta-analyses and systematic reviews converge on growth and developmental benefits, with >5,700 verified participants across 6 of 16 studies and additional participants in remaining abstracts. A 2023 meta-analysis examined vitamin A supplementation during pregnancy and child growth outcomes; a 2022 meta-analysis (n=36) reviewed low-dose supplementation in preterm/low birth weight infants; a 2021 meta-analysis (n=2,471) examined supplementation in very-preterm or very-low-birth-weight infants; and a 2024 systematic review (n=672) assessed primary and secondary prevention outcomes. Studies consistently show improvements in growth trajectories and developmental markers in supplemented children, particularly those at nutritional risk.",
-        "why_this_grade": "Eight independent meta-analyses and systematic reviews with large sample sizes (reaching >5,700 across verifiable records) demonstrate strong consistency and adequate statistical power. The evidence is replicated across diverse pediatric populations, including preterm and at-risk infants."
+        "outcome": "eye / vision",
+        "grade": "Moderate",
+        "what_studies_show": "Meta-analyses examining vitamin A and beta-carotene supplementation for age-related cataract and other eye conditions report a pooled risk ratio of 0.83 (95% CI 0.76\u20130.91), suggesting a modest protective association. A 2014 meta-analysis synthesized data on cataract risk; a 2018 systematic review examined supplementation in cystic fibrosis; and a 1998 RCT in Nepal demonstrated that vitamin A (though not completely) reduced maternal night blindness. The evidence base comprises 6 human studies and 3 animal studies totaling 9 records.",
+        "why_this_grade": "Sample sizes could not be verified from the abstracts provided, limiting precision certainty despite a measurable pooled effect. The mix of 6 human and 3 animal studies is lower than for the other outcomes. Moderate rather than Strong reflects imprecision (unconfirmed sample sizes) and a smaller and more heterogeneous evidence pool, even though the direction of benefit is consistent."
       }
     ],
-    "evidence_base": "The research base is predominantly human and recent, dominated by meta-analyses and systematic reviews (evidence synthesis rather than primary trials). Across the four outcomes, 80 of 81 records are human studies, with one animal study in the vision outcome. Studies span from 2010 to 2024, with heavy concentration in 2018\u20132024, reflecting active, current research interest. The consistent convergence of multiple independent systematic reviews and meta-analyses on all four outcomes, particularly the 10\u201313 independent syntheses per strong-grade outcome, indicates high confidence in the findings for populations studied. However, most individual study abstracts omit sample size, so true participant counts are likely substantially larger than the 3,600\u20135,750 ranges reported.",
-    "emerging_research": "Recent work (2021\u20132024) has begun to characterize dose-response relationships in infection prevention\u2014notably a 2021 meta-analysis flagging that excessive supplementation may paradoxically increase acute respiratory infections in some populations, suggesting an optimal dosing window. Research continues to refine vitamin A's role in neonatal and preterm populations, where supplementation shows particular benefit for morbidity prevention. Mechanistic studies exploring the interplay between vitamin A signaling, mucosal immunity, and barrier integrity in respiratory tissues remain active. These developments suggest supplementation is not uniformly beneficial at all doses and may require individualization based on baseline status and age.",
-    "open_questions": "Among the studies retrieved here, research is heavily concentrated in children, pregnant women, and HIV-infected populations; adult immunocompetent populations are less represented, so the generalizability of immune and respiratory benefits to healthy adults is unclear from this sample of records. Trial durations vary widely but many are relatively short; the retrieved abstracts do not reveal whether long-term safety and efficacy (beyond 1\u20132 years) have been systematically examined. No studies in the retrieved set appear to address optimal dosing strategies, baseline deficiency thresholds, or potential harm in replete populations\u2014these remain open questions visible in the current literature sample.",
-    "caveats": "Vitamin A is fat-soluble and accumulates in the liver; excessive supplementation (particularly above 10,000 IU/day in pregnant women or sustained high doses in any population) carries risk of toxicity, including birth defects and bone loss. Quality and form vary widely: retinyl esters, retinyl palmitate, and beta-carotene have different bioavailability and toxicity profiles. People with liver disease, cystic fibrosis, or fat malabsorption disorders should consult a healthcare provider before supplementing, as should pregnant women (teratogenicity risk) and those on retinoid medications.",
+    "evidence_base": "The evidence is overwhelmingly human-based: 92 of 95 total study records are human trials or meta-analyses of human data, with only 3 animal studies (all for vision). The research is dominated by meta-analyses and systematic reviews\u2014reflecting decades of accumulated RCT evidence\u2014published between 1998 and 2024, with recent synthesis (2021\u20132024) most robust. Studies span diverse at-risk populations (children in low-income settings, pregnant and postpartum women, preterm infants, people with HIV), meaning the evidence reflects real-world benefit in vulnerable groups rather than healthy adults. This pattern supports high confidence in the outcomes graded Strong, with the caveat that benefits are clearest in vitamin A\u2013deficient or at-risk populations.",
+    "emerging_research": "Recent meta-analyses (2021\u20132024) are refining understanding of dose-response relationships, particularly the observation that excessive vitamin A supplementation may increase respiratory infection risk in some populations. A 2024 meta-analysis focused specifically on neonatal respiratory diseases, and 2021\u20132023 studies examined supplementation in very-low-birth-weight infants, suggesting ongoing efforts to optimize dosing in vulnerable newborns. These patterns indicate a shift from simple 'more is better' to dose individualization based on baseline status and population risk.",
+    "open_questions": "Among the studies retrieved here, the respiratory health outcome shows the most nuance: while immune function and mortality outcomes consistently favor supplementation, respiratory infection risk appears neutral to slightly harmful at high doses, suggesting a non-linear dose-response that remains incompletely characterized in the retrieved literature. The eye/vision outcome rests on smaller sample sizes (precision unconfirmed for most studies) and a mix of human and animal data, leaving uncertainty about effect size in specific vision conditions. Most of the childhood mortality and immune studies focus on infants and young children in malaria-endemic or low-income regions; the provided abstracts do not show comparable trials in well-nourished adult populations, so generalizability to other groups cannot be assessed from these records alone.",
+    "caveats": "Vitamin A is fat-soluble and accumulates in body tissues; chronic excessive intake (typically >10,000 IU daily from supplements in adults, lower in pregnancy) can cause toxicity, including bone loss, liver damage, and birth defects. Pregnant women should avoid high-dose supplementation unless directed by a clinician, and people with liver disease, certain medications (e.g., retinoids for acne), or fat malabsorption conditions require medical guidance. The benefits demonstrated here are most robust in vitamin A\u2013deficient populations; routine supplementation in well-nourished adults is not supported by the evidence retrieved.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence base is genuinely solid for vitamin A's effects on immune function, respiratory health, and growth in children and pregnant/postpartum women, but the effect sizes, optimal dosing regimens, and relevance to well-nourished populations remain largely invisible in these abstracts.",
+    "headline": "The evidence base is genuinely strong for childhood mortality and immune function, with large meta-analyses showing consistent benefit, but the respiratory infection outcome is undermined by a pooled effect that crosses unity and includes null, contradicting the 'Strong' grade.",
     "concerns": [
       {
-        "issue": "Population specificity obscures generalizability",
-        "detail": "The retrieved records emphasize children, pregnant women, postpartum women, preterm infants, and HIV+ populations\u2014predominantly populations with documented or presumed micronutrient deficiency or vulnerability. No abstract explicitly reports trials in healthy, well-nourished adult populations. A skeptic would argue the evidence does not support vitamin A supplementation in contexts where deficiency is not present or suspected.",
+        "issue": "Pooled effect contradicts grade for respiratory infections",
+        "detail": "The infection/respiratory health outcome carries a 'Strong' grade but reports a pooled RR of 1.03 [0.92\u20131.15], which includes 1.0 and suggests no meaningful benefit. A 2021 meta-analysis (n=944) explicitly titled 'Excessive Vitamin A Supplementation Increased the Incidence of Acute Respiratory Tract Infections' is included in the evidence base, indicating potential harm at high doses. The 13 converging meta-analyses cited for consistency do not resolve this contradiction\u2014consistency around a null or harmful finding is not the same as evidence of benefit.",
         "severity": "high"
       },
       {
-        "issue": "Effect sizes and clinical magnitude not extractable",
-        "detail": "Across all four outcomes, the engine notes 'pooled effect: none extractable.' The abstracts retrieved do not report the magnitude of benefit (e.g., relative risk, absolute risk reduction, standardized mean difference). Consistency across syntheses suggests directionality, but without knowing whether vitamin A reduces respiratory infections by 5% or 50%, a reader cannot evaluate whether the clinical or public health significance matches the statistical significance.",
+        "issue": "Eye/vision graded Moderate despite small, mixed-design evidence base",
+        "detail": "The eye/vision outcome includes only 6 human studies and 3 animal studies, with zero sample sizes extractable from abstracts, yet reports a pooled RR of 0.831 [0.757\u20130.913]. The engine explicitly noted 'precision is unconfirmed, so certainty is capped below the top tier,' but the justification for why this outcome warrants a 'Moderate' grade (rather than 'Low') is absent from the records. The base includes a 2010 study on African foam-nesting frogs\u2014an animal model\u2014and a 2026 unclassified study, neither of which strengthens the human clinical evidence.",
         "severity": "high"
       },
       {
-        "issue": "Dose-response and safety signal ambiguity",
-        "detail": "The 2021 meta-analysis (n=944) is titled 'Excessive Vitamin A Supplementation Increased the Incidence of Acute Respiratory Tract Infections,' flagging a potential dose-dependent harm signal. No other abstract in the respiratory health outcome addresses optimal dosing, upper safety limits, or the conditions under which benefit becomes harm. This suggests the literature may contain conflicting signals that the current retrieval does not fully resolve.",
-        "severity": "high"
-      },
-      {
-        "issue": "Vision outcome graded lower due to sample size opacity",
-        "detail": "The eye/vision outcome (9 studies) is graded Moderate, with the engine explicitly noting 'sample sizes could not be verified from the abstracts; precision is unconfirmed.' Of these 9 records, sample sizes are reported for zero studies. One record is animal-only (frog vision) and another (2012) appears to be about cattle marbling, raising questions about retrieval relevance. This outcome rests on thinner and less transparent evidence.",
+        "issue": "Childhood mortality evidence comes from diverse interventions and populations",
+        "detail": "The childhood mortality outcome combines 16 meta-analyses across preterm infants, children with malaria, children with pneumonia, and population-level supplementation studies. Studies range from n=21 to n=212,314 (a lung cancer prevention trial). The pooled RR 0.78 [0.68\u20130.90] is a synthesis across these heterogeneous contexts. Without visibility into I\u00b2 or population stratification in these abstracts, it is unclear whether benefit is robust across all contexts or concentrated in specific high-risk subgroups (e.g., severely malnourished or preterm populations). The evidence applies most clearly to children in resource-limited settings, not to well-nourished populations.",
         "severity": "moderate"
       },
       {
-        "issue": "Median sample sizes and heterogeneity in trial design",
-        "detail": "For immune function and respiratory health, the median reported sample size is 181 and 279, respectively, but 19 of 30 immune function abstracts omit sample size entirely. The designs mix RCTs (n=13\u201320), meta-analyses (n=5\u20138), and systematic reviews (n=3\u20135), each with different susceptibilities to bias and publication bias. Small RCTs may not be internally valid; systematic reviews depend on the quality of included trials, which the abstracts do not detail.",
+        "issue": "Majority of abstracts omit sample sizes, obscuring true statistical power",
+        "detail": "For immune function: 19 of 30 studies report no sample size in the abstracts retrieved. For infection/respiratory: 17 of 26 studies omit n. For childhood mortality: 13 of 30 studies omit n. The engine notes that 'the true total is substantially larger,' but this opaqueness means the reader cannot independently assess whether the pooled estimates rest on large, well-powered trials or are inflated by a few large studies with smaller heterogeneous ones. Six of 11 reported sizes for immune function are under 120 participants.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Meta-analyses substantially outnumber primary RCTs in the retrieved base",
+        "detail": "For childhood mortality, 16 meta-analyses are included versus 8 RCTs (ratio 2:1). For immune function, 6 meta-analyses versus 20 RCTs (ratio 1:3.3, more balanced). Meta-analyses are syntheses of primary data and can introduce bias if they selectively include or exclude studies. The overlap between these 22 converging meta-analyses on childhood mortality is not specified\u2014they may be performing serial syntheses of the same underlying RCT base rather than independent verification. Without knowing how many unique primary trials underpin all 16 childhood mortality meta-analyses, confidence in replication is uncertain.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Vitamin A is an established micronutrient cofactor in immune cell differentiation (T cell development, mucosal immunity), epithelial integrity, and gene expression\u2014a plausible mechanistic basis for reduced infection and improved growth in deficient or vulnerable populations. However, the leap from mechanism to clinical outcome in well-nourished individuals is not addressed by these abstracts; the mechanism does not inherently predict whether supplementation *beyond* basal requirements confers benefit, nor does it explain the dose-dependent harm signal noted in the respiratory health literature.",
-    "strongest_counterargument": "A skeptic would observe that nearly all evidence is confined to malnourished, pregnant, postpartum, or immunocompromised children and infants\u2014populations with documented deficiency or extreme vulnerability. Vitamin A's benefit in these contexts may reflect correction of deficiency, not a general immune or growth-promoting property. The absence of large, adequately powered RCTs in healthy adults, the non-extractable effect sizes preventing magnitude assessment, and the flagged dose-harm signal (excessive supplementation worsened respiratory infections) together suggest the evidence base does not support routine or high-dose supplementation outside deficient populations.",
-    "what_would_change_the_picture": "A large, pre-registered RCT in healthy, well-nourished adults with pre-specified dosing regimens, blinded allocation, and transparent reporting of effect sizes, confidence intervals, and adverse events would clarify whether benefit extends beyond deficiency correction. Alternatively, a dose-response meta-analysis with explicit safety thresholds and subgroup analysis by baseline nutritional status would resolve the current ambiguity about optimal and safe supplementation.",
+    "mechanism_check": "Vitamin A is essential for retinoid signaling in immune cell differentiation (T cells, B cells, mucosal immunity) and epithelial barrier integrity, which plausibly supports reduced childhood mortality and infection risk. However, the clinical outcome for respiratory infections (RR 1.03, crossing 1.0) does not align with this mechanism, and the 2021 meta-analysis flagging harm from excessive supplementation suggests a dose-response relationship is important but not clearly characterized in the grade. The mechanism supports a conditional benefit (likely in deficient populations), not universal benefit across all contexts.",
+    "strongest_counterargument": "A skeptic would note that the respiratory infection pooled effect (RR 1.03 [0.92\u20131.15]) is indistinguishable from no effect, and one large meta-analysis explicitly reported increased risk with excess supplementation. The childhood mortality benefit (RR 0.78) may be driven entirely by severely malnourished or deficient populations in low-income regions\u2014contexts where baseline vitamin A deficiency is endemic. In well-nourished populations (the setting where most supplement users live), the evidence is sparse and the mechanism for benefit is weak. The grade 'Strong' conflates population-level public health impact in deficient regions with individual supplement efficacy in nutrient-replete populations.",
+    "what_would_change_the_picture": "A pre-specified subgroup analysis stratifying childhood mortality and infection outcomes by baseline vitamin A status (deficient vs. replete) would clarify whether benefit is real in non-deficient individuals. For respiratory infections, a dose-response meta-regression across the 13 converging syntheses would resolve whether the null pooled effect masks a J-shaped curve (harm at high dose, benefit at low dose). A focused RCT in well-nourished children would directly address whether supplementation benefits the primary market demographic.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

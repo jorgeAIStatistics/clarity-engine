@@ -1,6 +1,6 @@
 {
-  "name": "Flaxseed",
-  "category": "fat",
+  "name": "flaxseed",
+  "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
   "study_count": 64,
@@ -33,13 +33,13 @@
         "PMID:40499336",
         "PMID:20826632",
         "PMID:38663513",
-        "PMID:35745197",
         "PMID:31899314",
         "PMID:36640581",
         "PMID:35311432",
         "PMID:34384619",
         "PMID:34358644",
         "PMID:39550356",
+        "PMID:35745197",
         "PMID:37049557",
         "PMID:16844912",
         "PMID:16607740",
@@ -59,20 +59,20 @@
           "n": 13
         },
         {
-          "pmid": "35745197",
-          "title": "Role of Phytoestrogen-Rich Bioactive Substances (",
-          "year": "2022",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "34384619",
           "title": "Effects of Flaxseed on Blood Lipids in Healthy and Dyslipidemic Subjects: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
           "year": "2022",
           "design": "Meta-analysis",
           "population": "human",
           "n": 1107
+        },
+        {
+          "pmid": "35745197",
+          "title": "Role of Phytoestrogen-Rich Bioactive Substances (",
+          "year": "2022",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
         },
         {
           "pmid": "31899314",
@@ -220,17 +220,101 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "19515737",
+            "metric": "mean_diff",
+            "value": -0.1,
+            "ci_low": -0.2,
+            "ci_high": 0.0,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "Flaxseed interventions reduced total and LDL cholesterol by 0.10 mmol/L (95% CI: -0.20, 0.00 mmol/L)"
+          },
+          {
+            "pmid": "31899314",
+            "metric": "mean_diff",
+            "value": -5.389,
+            "ci_low": -9.483,
+            "ci_high": -1.295,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "flaxseed supplementation significantly reduced total cholesterol (TC) (WMD = -5.389 mg/dL; 95% CI: -9.483, -1.295, p = 0.010)"
+          },
+          {
+            "pmid": "35745197",
+            "metric": "mean_diff",
+            "value": -0.26,
+            "ci_low": -0.38,
+            "ci_high": -0.13,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "flaxseed intake vs control",
+            "direction": "benefit",
+            "quote": "weighted-mean difference (WMD) = -0.26; 95% confidence interval (95% CI): -0.38 to -0.13"
+          },
+          {
+            "pmid": "16607740",
+            "metric": "mean_diff",
+            "value": -17.2,
+            "ci_low": -34.4,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "Flaxseed supplementation was associated with significant reductions in TC (-17.2%)"
+          },
+          {
+            "pmid": "34119421",
+            "metric": "mean_diff",
+            "value": 20.4,
+            "ci_low": 0.0,
+            "ci_high": 40.8,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Total cholesterol also decreased by 20.4 units compared to 11.86 units in the placebo group."
+          }
+        ],
+        "n_not_reported": 16,
+        "n_total": 21
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For cholesterol / lipids, Flaxseed is well-supported by human trials (21 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -5.389,
+        "ci_low": -9.483,
+        "ci_high": -1.295,
+        "ci_estimated": false,
+        "n_studies_pooled": 62,
+        "comparator": "control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "31899314",
+        "quote": "flaxseed supplementation significantly reduced total cholesterol (TC) (WMD = -5.389 mg/dL; 95% CI: -9.483, -1.295, p = 0.010)"
+      },
+      "summary": "For cholesterol / lipids, flaxseed is well-supported by human trials (21 studies)."
     },
     {
       "outcome": "blood pressure",
@@ -374,17 +458,87 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "36622248",
+            "metric": "mean_diff",
+            "value": -3.19,
+            "ci_low": -4.15,
+            "ci_high": -2.24,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control/placebo",
+            "direction": "benefit",
+            "quote": "Meta-analysis of 33 trials (comprising 43 treatment arms) with 2427 participants revealed significant reductions in both systolic (WMD: -3.19 mmHg; 95% CI: -4.15 to -2.24"
+          },
+          {
+            "pmid": "25740909",
+            "metric": "mean_diff",
+            "value": -1.77,
+            "ci_low": -3.45,
+            "ci_high": -0.09,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "flaxseed supplementation reduced systolic blood pressure (-1.77 mm Hg; 95% CI: -3.45, -0.09 mm Hg; P = 0.04)"
+          },
+          {
+            "pmid": "34119421",
+            "metric": "mean_diff",
+            "value": -13.38,
+            "ci_low": -26.76,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "a 13.38-unit decrease in SBP was observed compared to a 1.72 unit increase in the placebo group"
+          },
+          {
+            "pmid": "24126178",
+            "metric": "mean_diff",
+            "value": -10,
+            "ci_low": -20.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "SBP was \u2248 10 mm Hg lower, and DBP was \u2248 7 mm Hg lower in the flaxseed group compared with placebo after 6 months"
+          }
+        ],
+        "n_not_reported": 9,
+        "n_total": 13
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For blood pressure, Flaxseed has moderate human evidence (13 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -3.19,
+        "ci_low": -4.15,
+        "ci_high": -2.24,
+        "ci_estimated": false,
+        "n_studies_pooled": 33,
+        "comparator": "control/placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "36622248",
+        "quote": "Meta-analysis of 33 trials (comprising 43 treatment arms) with 2427 participants revealed significant reductions in both systolic (WMD: -3.19 mmHg; 95% CI: -4.15 to -2.24"
+      },
+      "summary": "For blood pressure, flaxseed has moderate human evidence (13 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -538,16 +692,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 14,
+        "n_total": 14
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For blood sugar, Flaxseed is well-supported by human trials (14 studies)."
+      "summary": "For blood sugar, flaxseed is well-supported by human trials (14 studies)."
     },
     {
       "outcome": "inflammation",
@@ -694,6 +848,14 @@
           "n": null
         },
         {
+          "pmid": "37150237",
+          "title": "Dietary flaxseed (Linum usitatissimum) oil supplementation affects growth, oxidative stress, immune response, and diseases resistance in rainbow trout (Oncorhyn",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "26941581",
           "title": "Dietary Flaxseed Mitigates Impaired Skeletal Muscle Regeneration: in Vivo, in Vitro and in Silico Studies.",
           "year": "2016",
@@ -708,28 +870,35 @@
           "design": "Animal",
           "population": "animal",
           "n": null
-        },
-        {
-          "pmid": "37150237",
-          "title": "Dietary flaxseed (Linum usitatissimum) oil supplementation affects growth, oxidative stress, immune response, and diseases resistance in rainbow trout (Oncorhyn",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "26959052",
+            "metric": "mean_diff",
+            "value": -0.83,
+            "ci_low": -1.34,
+            "ci_high": -0.31,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "a significant reduction in CRP of 0.83 mg/L (95% confidence interval -1.34 to -0.31; p = 0.002) among subjects with a BMI of \u226530 kg/m\u00b2"
+          }
+        ],
+        "n_not_reported": 15,
+        "n_total": 16
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Flaxseed is well-supported by human trials (16 studies)."
+      "summary": "For inflammation, flaxseed is well-supported by human trials (16 studies)."
     }
   ],
   "effects_established": [
@@ -743,75 +912,75 @@
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787608505.2371671,
+  "_cached_at": 1788017002.662907,
   "explanation": {
-    "what_it_is": "Flaxseed is the small, oil-rich seed of the flax plant (Linum usitatissimum), native to temperate regions. It contains three key bioactive components: alpha-linolenic acid (an omega-3 fatty acid), lignans (plant compounds with estrogen-like properties), and soluble fiber. People typically consume it whole, ground, as an oil, or as a supplement powder.",
-    "how_it_works": "Flaxseed's effects stem from multiple pathways. The alpha-linolenic acid is converted in the body to longer-chain omega-3 compounds that reduce inflammation and support endothelial (blood vessel) function. Lignans are metabolized by gut bacteria into phytoestrogens, which may modulate immune responses and lipid metabolism. The soluble fiber slows glucose absorption in the small intestine, blunting blood sugar spikes and helping regulate cholesterol by binding bile acids in the digestive tract. Collectively, these compounds work on inflammation, glucose control, and lipid clearance \u2014 three interconnected pathways relevant to cardiometabolic health.",
+    "what_it_is": "Flaxseed is the small, brown or golden seed of the flax plant (Linum usitatissimum), rich in omega-3 fatty acids (alpha-linolenic acid), soluble fiber, and polyphenols called lignans. People typically consume it as whole seeds, ground powder, or oil supplements. It has been used in traditional diets for thousands of years and is now widely available as a dietary supplement.",
+    "how_it_works": "Flaxseed's main bioactive components work through several pathways. The alpha-linolenic acid (an omega-3 polyunsaturated fat) is converted in the body into EPA and DHA, which are known to reduce inflammation and support cardiovascular health. The soluble fiber (mucilage) slows gastric emptying and glucose absorption, helping stabilize blood sugar and cholesterol levels. Lignans, phytoestrogens with antioxidant properties, may reduce inflammatory markers like C-reactive protein. Together, these compounds appear to improve lipid profiles, enhance insulin sensitivity, and dampen systemic inflammation\u2014all mechanisms linked to better cardiovascular and metabolic health.",
     "outcome_detail": [
       {
         "outcome": "cholesterol / lipids",
         "grade": "Strong",
-        "what_studies_show": "Multiple meta-analyses covering over 1,100 to 3,772 participants (verified from at least 8 studies) consistently show that flaxseed supplementation reduces blood lipid levels in both healthy and dyslipidemic subjects. A 2020 meta-analysis with 3,772 participants examined dose-response relationships; a 2022 review of 1,107 participants and a 2025 systematic review (1,136 participants) in diabetic populations all corroborate lipid reductions. Seven independent meta-analyses and systematic reviews converge on this finding.",
-        "why_this_grade": "Strong evidence reflects the large number of human trials (17 of 21 studies), substantial replicated synthesis (7 independent meta-analyses), and a verified participant base of thousands across multiple populations and study designs. The consistency across different populations strengthens confidence in the effect."
+        "what_studies_show": "A robust body of research\u2014including meta-analyses pooling data from over 3,700 participants in a 2020 systematic review, plus a 2022 meta-analysis of 1,107 healthy and dyslipidemic subjects\u2014consistently shows that flaxseed supplementation lowers blood lipid levels. The pooled effect across studies indicates a mean reduction of approximately 5.4 mg/dL in total or LDL cholesterol. Seven independent meta-analyses and systematic reviews converge on this finding, suggesting the effect is reliable and reproducible across different study designs and populations.",
+        "why_this_grade": "The evidence meets the 'Strong' threshold because it comprises predominantly human trials (17 of 21 studies), is supported by multiple large meta-analyses with adequate sample sizes and powered designs, and shows consistent results across independent syntheses. The pooled effect size is modest but clinically relevant, and precision is supported by thousands of verified participants across the body of work."
       },
       {
         "outcome": "blood pressure",
         "grade": "Moderate",
-        "what_studies_show": "Five meta-analyses and systematic reviews (2015\u20132025), including a 2016 review of 1,302 participants and a 2023 dose-response analysis (2,427 participants), report reductions in blood pressure with flaxseed supplementation. A 2025 systematic review in diabetic patients (1,136 participants) and a 2026 RCT in migraine patients (n=68) also support this outcome. The data come primarily from 7 primary human studies pooled across reviews.",
-        "why_this_grade": "Moderate grade reflects adequate human evidence (12 of 13 studies), but only 7 primary human trials and 5 pooled syntheses were retrieved\u2014below the volume needed for the highest tier. The evidence is replicated across meta-analyses, but the limited number of independent primary studies tempers full confidence."
+        "what_studies_show": "Meta-analyses and systematic reviews\u2014including a 2016 synthesis of 1,302 participants and a 2023 dose-response analysis involving 2,427 subjects\u2014demonstrate that flaxseed supplementation reduces blood pressure by an average of approximately 3.2 mmHg. A 2015 meta-analysis of controlled trials and a 2025 systematic review in diabetic populations also report consistent reductions. The effect is smaller than for lipids or blood sugar, and fewer primary human trials are available compared to those outcomes.",
+        "why_this_grade": "This outcome is graded 'Moderate' rather than 'Strong' because the human evidence base is more limited\u2014seven primary human studies and five pooled analyses\u2014falling short of the volume and replication seen for lipid or glucose outcomes. The pooled effect is modest (around 3 mmHg), and while human trials dominate (12 of 13 studies), the smaller number of independent data sources reduces confidence in the consistency and generalizability of the finding."
       },
       {
         "outcome": "blood sugar",
         "grade": "Strong",
-        "what_studies_show": "Four independent meta-analyses and systematic reviews consistently show that flaxseed supplementation reduces hemoglobin A1c and improves glucose control in people with type 2 diabetes and prediabetes. A 2023 meta-analysis (n=13 trials) and a 2018 meta-analysis (n=25 trials) both document reductions in fasting glucose and hemoglobin A1c. Recent RCTs (2024\u20132022) in type 2 diabetes and postprandial glycemia confirm these effects with acute and chronic supplementation.",
-        "why_this_grade": "Strong grade reflects exclusively human evidence (14 of 14 studies), consistent replication across 4 independent meta-analyses, and multiple RCT confirmations in target populations (type 2 diabetes, prediabetes). The effect on hemoglobin A1c, a gold-standard marker of long-term glucose control, reinforces confidence."
+        "what_studies_show": "Multiple meta-analyses and randomized controlled trials\u2014including a 2023 meta-analysis of 13 studies specifically examining hemoglobin A1c reduction in type 2 diabetes patients, a 2024 meta-analysis assessing flaxseed's effects on glucose and insulin resistance, and a 2018 systematic review of 25 trials on glucose control\u2014consistently show that flaxseed lowers fasting glucose and hemoglobin A1c (a marker of long-term blood sugar control). A 2022 acute crossover trial in type 2 diabetic subjects demonstrated that even a single dose of flaxseed reduced postprandial (after-meal) blood sugar spikes.",
+        "why_this_grade": "This outcome earns 'Strong' because all 14 retrieved studies are human trials (no reliance on animal data), the evidence is supported by four independent meta-analyses and systematic reviews showing consistent findings, and the effect has been demonstrated across diverse study designs\u2014from single-dose acute trials to longer-term supplementation studies. The consistency across replicated syntheses indicates a robust and reproducible effect."
       },
       {
         "outcome": "inflammation",
         "grade": "Strong",
-        "what_studies_show": "Four independent meta-analyses (2016\u20132024) covering thousands of participants show that flaxseed supplementation reduces circulating inflammatory biomarkers, particularly C-reactive protein (CRP). A 2024 meta-analysis (n=3,000) and a 2020 meta-analysis (n=2,520) used GRADE assessment and systematic approaches; a 2019 review examined multiple inflammatory endpoints. Recent RCTs (2022\u20132026) in overweight subjects and migraine patients confirm reductions in inflammatory markers.",
-        "why_this_grade": "Strong evidence reflects 13 human studies, four converging meta-analyses, verified participants in the thousands (across at least 6 studies), and replication in diverse populations (metabolic syndrome, diabetes, migraine). The consistency of CRP reduction across independent analyses supports a robust effect."
+        "what_studies_show": "Large meta-analyses\u2014a 2024 GRADE-assessed review of approximately 3,000 participants, a 2020 synthesis of 2,520 subjects, and a 2019 systematic review\u2014demonstrate that flaxseed supplementation reduces inflammatory biomarkers, particularly C-reactive protein (CRP) and related markers of endothelial dysfunction. A 2026 randomized controlled trial in migraine patients and a 2022 trial in overweight individuals both confirmed improvements in inflammatory biomarkers alongside other metabolic benefits.",
+        "why_this_grade": "The 'Strong' grade reflects predominantly human evidence (13 of 16 studies), convergence across four independent meta-analyses showing consistent anti-inflammatory effects, and adequately powered syntheses with thousands of verified participants across the body of work. The outcome is biologically plausible given flaxseed's omega-3 and lignan content, and findings are replicated across multiple study populations and designs."
       }
     ],
-    "evidence_base": "The research base is predominantly human (50 human vs. 8 animal studies across all outcomes), dominated by meta-analyses and systematic reviews published from 2015 to 2026. Most outcomes rely on pooled data from multiple RCTs and observational studies, with a verified participant base reaching into the thousands (particularly for lipids and inflammation). The recent concentration of syntheses and trials (especially 2022\u20132025) reflects active, current investigation of flaxseed's cardiometabolic effects.",
-    "emerging_research": "Recent studies (2024\u20132026) are expanding flaxseed's profile beyond traditional lipid and glucose outcomes into secondary areas such as migraine management (via inflammation reduction) and detailed anthropometric changes in overweight/obese populations. A 2024 meta-analysis examined connections between flaxseed and high-sensitivity CRP, refining understanding of its anti-inflammatory potency. These directions suggest flaxseed may benefit broader metabolic and neuroinflammatory conditions, though these applications remain earlier in evidence accumulation than the core cardiometabolic outcomes.",
-    "open_questions": "Among the retrieved studies, all outcomes focus on adult populations; pediatric or pregnancy-related data are not present in these records. Trial durations in the retrieved abstracts are not systematically detailed here, so it is unclear from the sample whether short-term (weeks) versus long-term (months to years) effects differ. The retrieved studies do not appear to isolate effects of individual flaxseed components (e.g., lignan dose alone vs. alpha-linolenic acid alone), making it harder to pinpoint which mechanism drives each outcome. These represent gaps visible in the provided sample; the global literature may contain additional investigations not in this retrieval.",
-    "caveats": "Flaxseed is well-tolerated at typical supplement doses (10\u201340 g/day), but high intakes may cause mild gastrointestinal upset due to fiber content; doses should be increased gradually with adequate water. Flaxseed contains cyanogenic compounds in small amounts; raw flax in very high quantities is not recommended, though commercial supplements are processed to minimize this risk. People on blood-thinning medications (e.g., warfarin) or with estrogen-sensitive conditions (e.g., hormone-responsive breast cancer) should consult a healthcare provider before regular supplementation, as lignans have mild estrogenic activity and alpha-linolenic acid may have anticoagulant effects.",
+    "evidence_base": "Flaxseed research is robust and predominantly human-based: across all outcomes, 56 human studies and only 8 animal studies are represented in the retrieved literature. Multiple large meta-analyses (at least 4 per outcome for the strongest outcomes) and systematic reviews from 2015 to 2026 drive the evidence base, indicating active, recent investigation. The literature includes a mix of RCTs, acute crossover trials, and longer-term supplementation studies, often in people with metabolic or cardiovascular risk factors (type 2 diabetes, dyslipidemia, overweight populations). This recency and diversity of human evidence support confidence in the outcomes graded Strong.",
+    "emerging_research": "Recent studies (2024\u20132026) are exploring nuanced effects: dose-response relationships for blood pressure and lipid lowering, combination of flaxseed with other dietary interventions (e.g., fasting-mimicking diets), and applications beyond traditional cardiometabolic outcomes\u2014for instance, a 2026 trial examined flaxseed's effect on migraine headache frequency and quality of life, suggesting potential anti-inflammatory benefits in neurological contexts. These newer directions remain preliminary and await replication, but they hint at flaxseed's broader therapeutic scope.",
+    "open_questions": "Among the studies retrieved here, most trials span 4\u201312 weeks to 3\u20136 months; longer-term safety and efficacy data (beyond 1 year) are sparse in the provided abstracts, making it unclear whether benefits persist or whether tolerance develops. The retrieved evidence focuses heavily on people with type 2 diabetes, dyslipidemia, or overweight status; applicability in younger, healthier populations or in specific subgroups (e.g., children, pregnant women, those on anticoagulants) is not well represented in these records. Additionally, while the literature pooled here shows thousands of participants overall, many individual abstracts omit sample sizes, so the true total and distribution across studies remain partially obscured.",
+    "caveats": "Flaxseed is generally well-tolerated, but it is high in fiber and may cause digestive bloating or loose stools, especially at high doses; gradual introduction is advisable. Because flaxseed contains compounds with mild anticoagulant properties and is rich in omega-3 fatty acids, people taking blood-thinning medications (warfarin, aspirin) should consult a healthcare provider before supplementing, as the combination could theoretically increase bleeding risk. Quality varies among commercial flaxseed products; whole seeds should be ground fresh or stored in cool conditions to prevent oxidation of the delicate oils.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence base is genuinely solid for cholesterol, blood sugar, and inflammation, with multiple large meta-analyses converging on consistent effects; blood pressure evidence is thinner and graded appropriately as moderate.",
+    "headline": "The evidence base is genuinely solid for lipid and blood sugar outcomes, with multiple meta-analyses converging on modest but consistent effects; blood pressure support is weaker, and the inflammation literature lacks extractable pooled effect sizes despite high-quality systematic reviews.",
     "concerns": [
       {
-        "issue": "Blood pressure evidence underpowered relative to claims",
-        "detail": "Only 7 primary RCTs support blood pressure claims, with a median sample size of 112 participants. The 2016 meta-analysis (n=1302) and 2023 systematic review (n=2427) aggregate published trials, but the engine explicitly notes this is 'below the threshold for the top tier.' A single large negative RCT or publication bias favoring positive small trials could substantially shift the pooled estimate.",
+        "issue": "Missing sample sizes in plurality of studies",
+        "detail": "Across the four outcomes, most abstracts omit sample size: only 8 of 21 lipid studies report n; 10 of 13 blood pressure studies report n; 7 of 14 blood sugar studies report n; 6 of 16 inflammation studies report n. The engine notes the true total is 'substantially larger,' but this opacity means individual small trials could be hidden in the denominator, and meta-analysis weighting cannot be verified from these records alone. A single poorly-conducted small study could have outsized influence if it is weighted equally in an unweighted pooling.",
         "severity": "high"
       },
       {
-        "issue": "Substantial reporting gaps obscure true sample size for lipids and inflammation",
-        "detail": "For cholesterol/lipids (21 studies total), only 8 report sample sizes in abstracts; the engine estimates true total 'substantially larger' than the ~6484 verified. For inflammation (16 studies), only 6 report n. This opacity makes it impossible to assess whether the pooled effects are driven by a few large trials or distributed across many small ones\u2014a critical distinction for robustness.",
+        "issue": "Blood pressure effect size relies on limited primary evidence",
+        "detail": "Only 7 primary RCTs and 5 pooled analyses support the blood pressure outcome, graded Moderate precisely because this falls below the 'Strong' threshold. The pooled mean difference is -3.19 mmHg [\u22124.15 to \u22122.24], which is both statistically significant and clinically modest. One of the meta-analyses (2015, n=11) appears to have a suspiciously small sample size label, raising the question of whether that is a misreport or an outlier pulling the estimate.",
         "severity": "high"
       },
       {
-        "issue": "Blood sugar evidence relies on small primary trials despite strong meta-analysis consensus",
-        "detail": "Of 10 RCTs in the blood sugar outcome, only 7 of 14 total studies report sample size; reported sizes are small (median 44, range 13\u2013283). Four meta-analyses converge on the finding, which is reassuring for consistency, but the underlying primary evidence base is underpowered. A meta-analysis of underpowered studies can still show consistency\u2014but without the raw data and effect heterogeneity, it is unclear whether this represents a true effect or systematic bias in trial design or selective reporting.",
+        "issue": "Inflammation outcome lacks pooled effect sizes",
+        "detail": "Despite 4 independent meta-analyses and 8 RCTs totaling ~5948 verified participants across 6 studies, the engine notes 'pooled effect: none extractable.' This means the records provided do not include quantitative summaries (mean difference, standardized mean difference) for inflammation endpoints. The consistency signal is strong (convergence across 4 meta-analyses), but without the actual effect estimates, a reader cannot assess magnitude, precision, or heterogeneity. It is unclear whether the syntheses found small effects, moderate effects, or wide confidence intervals.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood sugar outcome also lacks extractable pooled effect",
+        "detail": "Similar to inflammation, the blood sugar outcome (graded Strong) reports 'pooled effect: none extractable,' despite 10 RCTs and 4 meta-analyses. The engine notes 'adequately powered' and 'replicated synthesis,' but without a quantitative effect size from these records, the magnitude of blood sugar reduction cannot be assessed. A very small effect (e.g., \u22120.1% HbA1c reduction) could theoretically pass statistical significance in a large trial but lack clinical relevance.",
         "severity": "moderate"
       },
       {
-        "issue": "Most outcomes lack extractable pooled effect estimates",
-        "detail": "For all four outcomes (cholesterol, blood pressure, blood sugar, inflammation), the engine notes 'pooled effect: none extractable.' This means the abstracted records do not include the quantitative meta-analytic result (e.g., mean difference, 95% CI, I\u00b2 heterogeneity). Without these numbers, a reader cannot assess the magnitude of effect, precision, or consistency across trials\u2014only that meta-analyses exist.",
-        "severity": "moderate"
-      },
-      {
-        "issue": "Open-label trial designs in RCT subset",
-        "detail": "At least two RCTs in the blood sugar outcome are explicitly described as 'open-labeled' (2021 flaxseed/hesperidin, 2016 flaxseed/NAFLD pilot), introducing high risk of performance and detection bias. No blinding information is provided for most other RCTs in the records, so the proportion of blinded vs. unblinded trials is unknown.",
+        "issue": "Recent meta-analyses (2023\u20132026) may include overlapping trials",
+        "detail": "Seven of the lipid studies and five of the blood pressure studies are meta-analyses or systematic reviews published between 2022 and 2026, often labeled as 'updated' or 'dose-response' reviews. These almost certainly share primary trials in their analyses. The engine treats this as convergence and a 'replicated synthesis' proxy, but in reality, overlapping trial pools do not constitute independent replication\u2014they amplify the same evidence base. This inflates confidence in consistency without adding independent validation.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Flaxseed is rich in alpha-linolenic acid (ALA, an omega-3 PUFA), lignans, and soluble fiber\u2014all plausible biological mediators of lipid lowering, blood sugar stabilization, and anti-inflammatory effects. The mechanism is biochemically coherent: ALA is converted to long-chain omega-3s and can modulate lipid synthesis; lignans and fiber alter gut microbiota and glucose absorption. However, the records provide no mechanistic data (e.g., quantified ALA bioconversion, microbiota shifts, or in vivo enzyme activity). The clinical outcomes are inferred entirely from observational associations in the trials, not from pathway validation. This is not a fatal gap\u2014clinical efficacy does not require known mechanism\u2014but it means the mechanism is *supporting* plausibility, not *proving* causation.",
-    "strongest_counterargument": "A skeptic would emphasize that meta-analyses of small, mostly open-label RCTs with incomplete reporting (missing sample sizes, no pooled effect reported) are vulnerable to publication bias and selective outcome reporting. The convergence across multiple meta-analyses is reassuring for consistency, but if all meta-analyses are synthesizing the same set of small, biased primary trials, consensus among syntheses does not imply validity. For blood pressure specifically, the evidence base (7 RCTs, median n=112) is genuinely thin and could easily be overturned by a single well-powered, blinded negative trial. The lack of dose-response data in most records also leaves open the possibility that claimed effects are artifacts of subgroup analysis in trials that enrolled disease-specific populations (e.g., hypertensives, type 2 diabetics) rather than treatment effects in the general population.",
-    "what_would_change_the_picture": "For blood pressure: a large (n\u2265500), double-blind RCT in normotensive or prehypertensive adults with 12+ weeks follow-up and preregistered outcomes. For blood sugar and lipids: publication of the actual pooled estimates (mean difference, 95% CI, I\u00b2, heterogeneity analysis) from the cited meta-analyses, plus assessment of publication bias (e.g., funnel plot, Egger test). For all outcomes: a breakdown of RCT sample sizes and blinding status by outcome to assess whether pooled estimates are driven by few large trials or many small ones.",
+    "mechanism_check": "Flaxseed contains \u03b1-linolenic acid (ALA, an omega-3 precursor), lignans, and soluble fiber, which plausibly lower cholesterol via reduced hepatic VLDL production and increased fecal sterol excretion, and may dampen postprandial glucose spikes and systemic inflammation via fiber viscosity and polyphenol bioactivity. These mechanisms are biologically sound for the lipid and blood sugar outcomes observed. However, the blood pressure effect (\u22123.19 mmHg) is modest and the mechanistic pathway (ALA \u2192 improved endothelial function? fiber \u2192 reduced sodium reabsorption?) is less direct and not explored in the abstracts provided. The inflammation mechanism (lignan metabolites as selective estrogen receptor modulators or direct anti-inflammatory agents) is plausible but inferential\u2014no abstracts detail whether the observed CRP or cytokine reductions align with expected pharmacology.",
+    "strongest_counterargument": "A skeptic would note that (1) the lipid effect size, while consistent, is small (\u22125.4 mg/dL LDL or similar) and statistically heterogeneous across studies\u2014some trials show no benefit\u2014suggesting publication bias or cherry-picked dosing/duration windows; (2) blood pressure reduction (\u22123.19 mmHg) is within the margin of placebo-like effects and office measurement noise, especially given the small number of primary RCTs and their typical short durations (weeks to a few months); and (3) inflammation and blood sugar lack extractable effect sizes in these records, so we cannot rule out that convergent meta-analyses are actually reporting tiny or null effects that happen to be directionally consistent. The 'Strong' grade may reflect replication and consistency of direction, not necessarily robust magnitude.",
+    "what_would_change_the_picture": "Publication of a pre-registered, adequately powered RCT (n \u2265200) with a placebo control, standardized flaxseed dose, and endpoint blinding, lasting \u226512 weeks and measuring lipids, fasting glucose, inflammatory markers (high-sensitivity CRP, IL-6), and blood pressure simultaneously, would resolve whether the observed effects are reproducible in a single well-controlled setting. Alternatively, a meta-regression analyzing dose, duration, and flaxseed form (whole seed vs. oil vs. lignan extract) against heterogeneity would clarify whether the consistency is real or an artifact of outcome reporting bias.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

@@ -1,29 +1,84 @@
 {
-  "name": "KPV",
-  "category": "peptide",
-  "overall_score": 73,
-  "tier": "Moderate",
+  "name": "kpv",
+  "category": "supplement",
+  "overall_score": 22,
+  "tier": "Preliminary",
   "study_count": 6,
   "claims": [
     {
+      "outcome": "gut / digestion",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 45,
+        "human": 0,
+        "overall": 45,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 2,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:35245681",
+        "PMID:18092346"
+      ],
+      "studies": [
+        {
+          "pmid": "35245681",
+          "title": "A KPV-binding double-network hydrogel restores gut mucosal barrier in an inflamed colon.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "18092346",
+          "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease.",
+          "year": "2008",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 2,
+        "n_total": 2
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For gut / digestion, kpv has only preliminary or animal evidence (2 studies)."
+    },
+    {
       "outcome": "inflammation",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
       "n_studies": 4,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 3,
-        "note": "Human evidence present: human certainty sets the overall score."
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 4,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
         "PMID:35245681",
@@ -33,17 +88,17 @@
       ],
       "studies": [
         {
-          "pmid": "18092346",
-          "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease.",
-          "year": "2008",
-          "design": "Observational",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "35245681",
           "title": "A KPV-binding double-network hydrogel restores gut mucosal barrier in an inflamed colon.",
           "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "18092346",
+          "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease.",
+          "year": "2008",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -67,80 +122,25 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 4,
+        "n_total": 4
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For inflammation, KPV has moderate human evidence (4 studies)."
-    },
-    {
-      "outcome": "gut / digestion",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:35245681",
-        "PMID:18092346"
-      ],
-      "studies": [
-        {
-          "pmid": "18092346",
-          "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease.",
-          "year": "2008",
-          "design": "Observational",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "35245681",
-          "title": "A KPV-binding double-network hydrogel restores gut mucosal barrier in an inflamed colon.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For gut / digestion, KPV has moderate human evidence (2 studies)."
+      "summary": "For inflammation, kpv has only preliminary or animal evidence (4 studies)."
     }
   ],
-  "effects_established": [
-    "inflammation",
-    "gut / digestion"
+  "effects_established": [],
+  "effects_promising": [
+    "gut / digestion",
+    "inflammation"
   ],
-  "effects_promising": [],
   "effects_emerging": [],
-  "honesty_note": null,
+  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
   "chemistry": {
@@ -164,63 +164,58 @@
       "SCHEMBL710419"
     ]
   },
-  "_cached_at": 1787608645.517238,
+  "_cached_at": 1788017697.2644858,
   "explanation": {
-    "what_it_is": "KPV is a tripeptide \u2014 a short chain of three amino acids (lysine, proline, and valine) \u2014 with the chemical formula C\u2081\u2081H\u2081\u2082O\u2083 and molecular weight 192.21. It is derived from alpha-melanocyte-stimulating hormone (\u03b1-MSH), a naturally occurring signaling molecule in the body. KPV is typically administered as an injectable research peptide and is not approved as a medication.",
-    "how_it_works": "KPV appears to work by interacting with melanocortin receptors, which are signaling proteins found throughout the body, including on immune cells and in the gut lining. When KPV binds to these receptors \u2014 particularly melanocortin-1 receptors (MC1R) \u2014 it triggers intracellular pathways that dampen inflammatory signaling, including effects on nitric oxide production and immune cell activation. The mechanism seems particularly relevant in the intestinal barrier, where melanocortin signaling can help stabilize and repair the tight junctions between cells that normally prevent inflammatory molecules from crossing into the bloodstream. This biological plausibility is why researchers have tested KPV in inflammatory and digestive settings.",
+    "what_it_is": "KPV (lysine-proline-valine) is a tripeptide\u2014a short chain of just three amino acids\u2014derived from alpha-melanocyte-stimulating hormone (\u03b1-MSH), a natural signaling molecule in the body. It has the molecular formula C\u2081\u2081H\u2081\u2082O\u2083 and molecular weight 192.21. People typically take it as a supplement in oral or topical form, though it is also studied as an injectable research compound.",
+    "how_it_works": "KPV is believed to work by binding to melanocortin receptors, particularly melanocortin-1 (MC1R) and other members of the melanocortin receptor family, which are involved in regulating immune and inflammatory responses in the body. These receptors, when activated, can suppress production of pro-inflammatory signals and may help stabilize the intestinal barrier\u2014the layer of cells lining the gut that controls what passes between the intestine and bloodstream. The tripeptide is thought to mimic the anti-inflammatory signaling of its parent hormone, \u03b1-MSH, which is known to dampen immune overactivity in various tissues. This mechanism suggests KPV could theoretically modulate excessive inflammation, particularly in the gut, though human evidence for this remains lacking.",
     "outcome_detail": [
       {
-        "outcome": "inflammation",
-        "grade": "Moderate",
-        "what_studies_show": "Among the four studies retrieved, one 2008 observational human study examined KPV's anti-inflammatory potential in inflammatory bowel disease (IBD), and three animal studies (2022, 2006, 2003) showed anti-inflammatory effects in murine models of colitis, in corneal epithelial wound healing, and in dissection of \u03b1-MSH's anti-inflammatory mechanisms. The human study was observational rather than a controlled trial, limiting causal inference.",
-        "why_this_grade": "Evidence reached Moderate rather than Strong because the single human study was observational (not randomized controlled), and sample sizes could not be verified from the retrieved abstracts, leaving precision unconfirmed. The three supporting animal studies provide biological plausibility but cannot establish human efficacy on their own."
+        "outcome": "gut / digestion",
+        "grade": "Preliminary",
+        "what_studies_show": "Animal studies show promise: a 2022 study demonstrated that KPV-binding hydrogel restored mucosal barrier function in inflamed colon tissue, while a 2008 murine model study found that KPV, as the C-terminal tripeptide of \u03b1-MSH, had anti-inflammatory potential in models of inflammatory bowel disease. However, these findings come only from animal (mouse/rodent) studies with no human trial data.",
+        "why_this_grade": "The evidence is graded Preliminary because all available studies are animal-based and do not reliably translate to human physiology or disease. There is currently no human research demonstrating that KPV improves digestion or gut function in people."
       },
       {
-        "outcome": "gut / digestion",
-        "grade": "Moderate",
-        "what_studies_show": "Two studies were retrieved: the same 2008 observational human study in IBD, and a 2022 animal study using a KPV-binding hydrogel that restored gut mucosal barrier function in inflamed colon models. Together they suggest KPV may support gut barrier integrity and digestive inflammation, but human evidence is limited to a single observational report.",
-        "why_this_grade": "The Moderate grade reflects one human observational study plus one supporting animal study, both focused on barrier and inflammatory outcomes. Unverified sample sizes and the lack of randomized controlled trials in humans prevent a higher grade; the single human observation cannot establish efficacy alone."
+        "outcome": "inflammation",
+        "grade": "Preliminary",
+        "what_studies_show": "Four animal studies indicate anti-inflammatory effects: the 2022 hydrogel study and 2008 IBD model study (noted above), a 2006 study on corneal epithelial wound healing examining nitric oxide pathways, and a 2003 study dissecting the anti-inflammatory mechanism of \u03b1-MSH's KPV C-terminal fragment. All findings are confined to animal models or cell/tissue preparations with no human trials.",
+        "why_this_grade": "All four studies are animal-only (rodent models or isolated tissue systems), and animal inflammation models often fail to predict human outcomes. There is no human evidence that KPV reduces inflammatory markers, symptoms, or disease activity in any clinical setting."
       }
     ],
-    "evidence_base": "The evidence base is small and weighted toward animal studies: of the four inflammation records and two gut records retrieved, only one unique human study appears (2008, observational). The remaining studies are in mice or in vitro systems (2003, 2006, 2022). This limits confidence in human efficacy; animal models can show mechanism but do not prove benefit in people. The oldest record dates to 2003 and the most recent to 2022, spanning nearly two decades, yet the total human trial count remains one observational study.",
-    "emerging_research": "Recent work (2022) has explored KPV in hydrogel delivery systems designed to target the inflamed colon directly, suggesting interest in optimizing bioavailability and local intestinal action. Earlier studies (2003\u20132006) focused on dissecting the mechanism via melanocortin receptors and nitric oxide pathways. These directions are exploratory; no recent large human trials appear in the retrieved data.",
-    "open_questions": "Among the studies retrieved here, only one human study is present, and it is observational rather than randomized; the design, sample size, and clinical outcomes of that study cannot be verified from the abstracts provided. No retrieved studies report long-term follow-up (duration limits are not specified in the abstracts). The retrieved animal studies do not clarify which dosages, formulations, or exposure durations translate to human use. This small sample of records (two per outcome) does not permit assessment of what the broader field may have published; you are seeing only a portion of available literature.",
-    "caveats": "KPV is a research peptide and is not approved as a medication by regulatory agencies; it should be considered experimental. Injectable peptides carry standard risks of injection-site reactions, infection, and sterility concerns if not properly manufactured and administered. The single human observational study does not establish safety or efficacy in controlled conditions. Anyone considering KPV should consult a healthcare provider, as interactions with other medications and long-term safety in humans remain unclear.",
+    "evidence_base": "The research base for KPV is entirely preliminary and animal-derived. Studies span from 2003 to 2022, with a mix of whole-animal models (mostly mice with colitis or wound injury) and in vitro mechanistic work. No randomized controlled trials or observational human studies have been retrieved here. This small animal-only base means confidence in human efficacy remains very low; animal findings in inflammation and immune function frequently do not translate to humans, and the lack of dose optimization, safety, or tolerability data in people is a significant gap.",
+    "emerging_research": "Recent work (2022) has explored KPV incorporated into hydrogel delivery systems, suggesting interest in optimizing bioavailability and local tissue targeting\u2014particularly for gut barrier repair. Earlier mechanistic studies (2006\u20132008) focused on clarifying which melanocortin receptor pathways KPV engages and how it suppresses nitric oxide-mediated inflammation. These directions are scientifically interesting but remain entirely preclinical; no human trials or bioavailability studies in people are evident in the records retrieved.",
+    "open_questions": "Among the studies provided here, all inflammation and gut outcomes rest on animal models only\u2014no human populations have been studied. It remains unknown whether KPV achieves meaningful blood or tissue concentrations when taken orally, whether it crosses the intestinal barrier to act on immune cells in the gut, or what dose and duration would be needed in humans. The retrieved records do not include any pharmacokinetic studies, human safety data, or clinical trial designs. We cannot assess from these records alone whether longer-term human studies exist elsewhere in the literature, only that the sample provided contains none.",
+    "caveats": "KPV is a research peptide and is not approved by the FDA for human use; its quality, purity, and source vary widely among suppliers. Since all efficacy evidence is animal-based, using KPV in humans is experimental and unproven. People with inflammatory bowel disease or other gastrointestinal conditions should not substitute KPV for established medical care. As a peptide, it may be degraded by stomach acid if taken orally, and injectable forms carry sterility and injection-site risks; bioavailability and safety in humans remain unknown.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Only one human study is present in the retrieved evidence, and it is observational with unverifiable sample size; the rest are animal models from 2003\u20132022, making any clinical conclusion premature.",
+    "headline": "All evidence for KPV's effects on gut health and inflammation comes from animal studies; no human trials exist to establish whether these effects translate to clinical benefit.",
     "concerns": [
       {
-        "issue": "Overwhelming reliance on animal models",
-        "detail": "Of 4 inflammation studies, 3 are animal-only. Of 2 gut/digestion studies, 1 is animal-only. The single human study (2008 observational) appears to be cited under both outcomes, suggesting it may be the only clinical-level evidence in the entire retrieved base. Animal models of inflammation and barrier function do not reliably predict human efficacy, and no dose-escalation, pharmacokinetic, or safety bridging studies are listed.",
+        "issue": "Zero human evidence across both outcomes",
+        "detail": "The gut/digestion outcome is supported by 2 animal studies only (2008, 2022); the inflammation outcome by 4 animal studies only (2003, 2006, 2008, 2022). No human trials, observational studies, or clinical case series appear in the retrieved records. This is a complete absence of human safety and efficacy data, not merely a minority of the evidence base.",
         "severity": "high"
       },
       {
-        "issue": "No extractable sample sizes; precision unconfirmed",
-        "detail": "The engine explicitly notes sample sizes could not be verified from abstracts for all four inflammation studies and both gut studies. Without knowing whether the human observational study enrolled 5 people or 50, the actual precision of the evidence cannot be assessed. This caps certainty even if the direction of effect were clear.",
+        "issue": "Sample sizes not reported in abstracts",
+        "detail": "The records explicitly note 'sample sizes: none extractable from these abstracts' for both outcomes. Without n values from the animal studies themselves, it is impossible to assess whether observed effects are robust or whether they arise from small, underpowered experiments prone to noise and publication bias.",
         "severity": "high"
       },
       {
-        "issue": "Single human study is observational, not controlled",
-        "detail": "The 2008 observational study is the only human evidence retrieved for both inflammation and gut outcomes. Observational designs cannot rule out confounding, placebo response, or reporting bias. No randomized controlled trial of KPV in humans appears in these records.",
-        "severity": "high"
-      },
-      {
-        "issue": "Grey-market injection status not addressed in retrieved literature",
-        "detail": "The compound is noted as injectable, not approved for human use, and often obtained grey-market. None of the retrieved study records appear to address dosing, formulation quality, sterility, or safety in humans. This creates a gap between any efficacy signal and real-world usability and safety.",
+        "issue": "No pooled effect quantified",
+        "detail": "For both gut/digestion and inflammation, the records state 'pooled effect: none extractable.' This means the magnitude of benefit (if any) cannot be determined from these abstracts. Readers cannot discern whether animals showed large, moderate, or marginal responses to KPV.",
         "severity": "moderate"
       },
       {
-        "issue": "Temporal gap and heterogeneous animal models",
-        "detail": "The inflammation evidence spans 2003\u20132022 with a 19-year gap between earliest and latest animal studies. Different animal systems (murine inflammatory models, corneal wounds, colonic inflammation) are used without clear mechanistic convergence reported in the abstracts. Heterogeneity of models and outcomes makes it difficult to assess whether results generalize.",
+        "issue": "Reliance on murine and ex vivo models",
+        "detail": "The titled studies reference 'murine models' and one mentions a 'double-network hydrogel'\u2014suggesting in vitro or highly artificial systems. Murine intestinal inflammation and wound healing are notoriously poor predictors of human outcomes because of pharmacokinetic differences, microbiome variation, and immune system divergence.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "KPV is framed as derived from alpha-MSH and exerting anti-inflammatory effects, which is biologically plausible at a molecular level. However, a large inferential leap exists between in vitro or animal barrier-function studies and clinical utility in human gut or systemic inflammation. The retrieved abstracts do not establish whether KPV crosses the intestinal barrier, achieves relevant tissue concentrations in humans after injection, or engages the same pathways in human immune cells as in murine models.",
-    "strongest_counterargument": "A skeptic would note that the entire human evidence base consists of a single observational study from 2003\u20132022, making it impossible to distinguish KPV's effect from natural history, placebo, or patient selection bias. Animal models show promise, but they have a notoriously poor track record translating to human efficacy\u2014particularly in inflammation, where species differences in immune signaling are substantial. Without a randomized controlled trial in humans, no clinical claim can be confidently made.",
-    "what_would_change_the_picture": "A phase 2 randomized, placebo-controlled trial in humans with a pre-specified inflammatory or gastrointestinal outcome (e.g., inflammatory bowel disease activity, C-reactive protein, intestinal permeability marker) and adequate sample size (n \u2265 60\u2013100) would provide direct evidence of clinical efficacy or lack thereof. Concurrent pharmacokinetic data showing KPV reaches target tissues at active doses would anchor the mechanism.",
+    "mechanism_check": "The proposed mechanism (KPV as a melanocortin-derived anti-inflammatory tripeptide) is plausible at a biochemical level and is supported by the study titles mentioning 'alpha-MSH' and core/C-terminal dissection. However, there is a large inferential leap from demonstrating anti-inflammatory signaling in murine colons or corneal epithelium to claiming clinical efficacy for human gut health or systemic inflammation. Animal models often show robust target engagement without translating to human efficacy or safety.",
+    "strongest_counterargument": "A skeptic would note that thousands of compounds show anti-inflammatory effects in mice but fail or produce unexpected effects in humans due to differences in drug metabolism, gut microbiota composition, intestinal barrier structure, and immune tolerance. The absence of even a single human trial means we do not know whether KPV reaches the human gut in bioavailable form, whether it is absorbed or exerts local effects, or whether the doses used in animal studies are even achievable or safe in humans. The 14\u201319 year span between the earliest and most recent animal studies (with no new human data) suggests clinical translation has stalled.",
+    "what_would_change_the_picture": "A randomized, placebo-controlled trial in humans with a relevant GI or inflammatory condition (e.g., inflammatory bowel disease, irritable bowel syndrome, or systemic inflammation marker) with adequate sample size (n\u226530 per arm minimum), preregistered outcomes, and measured bioavailability or mechanism-of-action markers would establish whether the animal findings have clinical relevance. Pharmacokinetic studies in humans would also be essential to confirm that KPV reaches target tissues.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

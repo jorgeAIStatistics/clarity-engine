@@ -204,7 +204,18 @@ def grade_outcome(studies_for_outcome):
     enough_evidence = (n_primary_human >= _MIN_PRIMARY_HUMAN
                        and human_evidence_units >= _MIN_STUDIES_FOR_STRONG)
 
-    if n_studies < 2:
+    # Count HUMAN studies for the consistency floor, not total. A single human
+    # RCT sitting on top of animal work has n_studies >= 2 and used to sail past
+    # this check — which is how Epithalon reached Moderate on ONE retina RCT plus
+    # 3 animal papers. Consistency across human evidence cannot be assessed from a
+    # single human study, however much animal data surrounds it. Same lesson the
+    # Strong gate already learned above (n_primary_human): count human, not total.
+    n_human_for_consistency = sum(1 for s in studies_for_outcome
+                                  if s.get("population") == "human")
+    if n_human_for_consistency < 2 and has_human:
+        downgrade("Inconsistency: only one human study addresses this outcome; "
+                  "consistency cannot be assessed across independent human evidence.")
+    elif n_studies < 2:
         downgrade("Inconsistency: only one study addresses this outcome; consistency cannot be assessed.")
     elif n_meta >= 2 and has_human and adequate_precision and enough_evidence:
         # Earned the top tier: MULTIPLE independent syntheses, adequately powered.

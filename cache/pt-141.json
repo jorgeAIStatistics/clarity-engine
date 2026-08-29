@@ -1,6 +1,6 @@
 {
-  "name": "PT-141",
-  "category": "peptide",
+  "name": "pt-141",
+  "category": "supplement",
   "overall_score": 70,
   "tier": "Moderate",
   "study_count": 13,
@@ -18,12 +18,12 @@
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 35,
+        "preclinical": 45,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 9,
-        "n_animal_studies": 1,
+        "n_human_studies": 8,
+        "n_animal_studies": 2,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -35,8 +35,8 @@
         "PMID:12851303",
         "PMID:15833522",
         "PMID:17958619",
-        "PMID:14963471",
-        "PMID:14999221"
+        "PMID:14999221",
+        "PMID:14963471"
       ],
       "studies": [
         {
@@ -80,14 +80,6 @@
           "n": null
         },
         {
-          "pmid": "14963471",
-          "title": "Double-blind, placebo-controlled evaluation of the safety, pharmacokinetic properties and pharmacodynamic effects of intranasal PT-141, a melanocortin receptor ",
-          "year": "2004",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "14999221",
           "title": "Evaluation of the safety, pharmacokinetics and pharmacodynamic effects of subcutaneously administered PT-141, a melanocortin receptor agonist, in healthy male s",
           "year": "2004",
@@ -96,10 +88,10 @@
           "n": null
         },
         {
-          "pmid": "12851303",
-          "title": "PT-141: a melanocortin agonist for the treatment of sexual dysfunction.",
-          "year": "2003",
-          "design": "Clinical trial",
+          "pmid": "14963471",
+          "title": "Double-blind, placebo-controlled evaluation of the safety, pharmacokinetic properties and pharmacodynamic effects of intranasal PT-141, a melanocortin receptor ",
+          "year": "2004",
+          "design": "RCT",
           "population": "human",
           "n": null
         },
@@ -118,20 +110,71 @@
           "design": "Animal",
           "population": "animal",
           "n": null
+        },
+        {
+          "pmid": "12851303",
+          "title": "PT-141: a melanocortin agonist for the treatment of sexual dysfunction.",
+          "year": "2003",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "18206919",
+            "metric": "odds_ratio",
+            "value": 5.44,
+            "ci_low": 1.0,
+            "ci_high": 9.88,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Positive clinical results were seen in 51 (33.5%) patients in the bremelanotide group compared with 13 (8.5%) patients in the placebo group (p = 0.03)"
+          },
+          {
+            "pmid": "31599847",
+            "metric": "mean_diff",
+            "value": 1.275,
+            "ci_low": 0.0,
+            "ci_high": 2.55,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "The change in Female Sexual Function Index-desire domain score and Female Sexual Distress Scale-Desire/Arousal/Orgasm item 13 from baseline to end of the open-label extension ranged from 1.25 to 1.30"
+          },
+          {
+            "pmid": "31599840",
+            "metric": "mean_diff",
+            "value": 0.35,
+            "ci_low": 0.0,
+            "ci_high": 0.7,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "integrated studies 0.35, P<.001"
+          }
+        ],
+        "n_not_reported": 7,
+        "n_total": 10
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For sexual function, PT-141 has moderate human evidence (10 studies)."
+      "summary": "For sexual function, pt-141 has moderate human evidence (10 studies)."
     },
     {
       "outcome": "blood pressure",
@@ -169,16 +212,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 1,
+        "n_total": 1
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For blood pressure, PT-141 shows early but unsettled evidence (1 studies)."
+      "summary": "For blood pressure, pt-141 shows early but unsettled evidence (1 studies)."
     },
     {
       "outcome": "weight / fat loss",
@@ -223,17 +266,32 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "35170192",
+            "metric": "mean_diff",
+            "value": -1.3,
+            "ci_low": -1.9,
+            "ci_high": -0.8,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "least squares mean difference (95% CI), -1.3 (-1.9 to -0.8) kg"
+          }
+        ],
+        "n_not_reported": 1,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For weight / fat loss, PT-141 shows early but unsettled evidence (2 studies)."
+      "summary": "For weight / fat loss, pt-141 shows early but unsettled evidence (2 studies)."
     }
   ],
   "effects_established": [
@@ -268,69 +326,69 @@
       "PT 141"
     ]
   },
-  "_cached_at": 1787607150.313173,
+  "_cached_at": 1788018680.084658,
   "explanation": {
-    "what_it_is": "PT-141 (bremelanotide) is a synthetic peptide \u2014 a short chain of amino acids \u2014 with the molecular formula C\u2085\u2080H\u2086\u2088N\u2081\u2084O\u2081\u2080 and molecular weight 1025.2 Da. It is a melanocortin receptor agonist, meaning it activates cellular receptors normally stimulated by the body's own melanocortin hormones. PT-141 is administered as a subcutaneous injection and is sometimes used as a research chemical or in clinical settings.",
-    "how_it_works": "PT-141 works by binding to and activating melanocortin-4 receptors (MC4R) in the brain, particularly in regions that regulate sexual motivation and arousal. Melanocortin signaling is part of the body's broader neuroendocrine system; by mimicking natural melanocortin signals, PT-141 can influence dopamine and other neurotransmitters involved in sexual desire and response. This differs mechanically from other sexual dysfunction treatments like sildenafil (Viagra), which works by improving blood flow; PT-141 acts on the central nervous system's arousal pathways instead. The peptide is believed to enhance sexual motivation and genital sensation through this receptor activation.",
+    "what_it_is": "PT-141, also known as bremelanotide, is a synthetic cyclic peptide (C\u2085\u2080H\u2086\u2088N\u2081\u2084O\u2081\u2080, MW 1025.2) that activates melanocortin receptors in the body. It is administered as a subcutaneous injection or intranasal spray. PT-141 is not naturally produced in humans but is designed to mimic the action of melanocyte-stimulating hormone (MSH), a natural signaling molecule.",
+    "how_it_works": "PT-141 binds to melanocortin-4 receptors (MC4R) in the central nervous system, particularly in brain regions that control sexual arousal and desire. Activation of these receptors triggers a cascade that increases nitric oxide production and dopamine signaling \u2014 both crucial for sexual response in both men and women. The compound also has some activity at melanocortin-1 receptors, which explains its historical use in tanning research. This dual action on arousal pathways and potential systemic effects on vascular function forms the biological basis for its use in sexual dysfunction.",
     "outcome_detail": [
       {
         "outcome": "sexual function",
         "grade": "Moderate",
-        "what_studies_show": "A 2026 systematic review and meta-analysis of 8,994 participants found PT-141 effective for female sexual desire, arousal, and orgasmic dysfunctions. Earlier randomized controlled trials \u2014 including a 2019 Phase 3 trial in 267 participants with hypoactive sexual desire disorder, a 2008 trial (n=342) showing bremelanotide improved response in sildenafil non-responders, and studies in men combining PT-141 with sildenafil \u2014 consistently demonstrated improvements in sexual function outcomes. The evidence spans over two decades of human research, predominantly in women with sexual desire or arousal disorders.",
-        "why_this_grade": "Nine of ten studies reviewed were human trials, providing direct clinical evidence. However, the grade is held at Moderate rather than Strong because the systematic review (which anchors confidence) has not been independently replicated or verified, and most individual study abstracts lacked sample-size reporting, limiting precise assessment of the total evidence base."
+        "what_studies_show": "A 2026 systematic review and meta-analysis (n=8,994) evaluated PT-141 for female sexual desire, arousal, and orgasmic dysfunctions, finding evidence of benefit. Randomized trials from 2019 examined PT-141 in hypoactive sexual desire disorder (n=267) and dose-response patterns in women, showing responder rates above placebo. Earlier RCTs (2008, 2005, 2004) in men and women demonstrated improvements in sexual function when used alone or combined with sildenafil, with one 2008 trial (n=342) showing efficacy even in men who failed sildenafil treatment. Across these studies, PT-141 consistently showed benefit in both sexes, though effect sizes and response rates varied.",
+        "why_this_grade": "Eight human trials provide direct efficacy evidence in sexual dysfunction populations, supported by a meta-analysis. However, the single meta-analysis conclusion has not been independently replicated, and many abstracts lack reported sample sizes, preventing precise certainty calculation \u2014 hence Moderate rather than Strong."
       },
       {
         "outcome": "blood pressure",
         "grade": "Emerging",
-        "what_studies_show": "A single 2017 randomized controlled trial used ambulatory blood pressure monitoring to assess PT-141's effects on blood pressure in humans. The study was designed to evaluate blood pressure changes during and after bremelanotide treatment, but the abstract provided does not specify the direction or magnitude of any findings.",
-        "why_this_grade": "Only one human study addresses this outcome, making it impossible to assess consistency or confirm precision. This single study is insufficient to establish a reliable pattern, so the evidence remains preliminary and exploratory."
+        "what_studies_show": "A single 2017 RCT used ambulatory blood pressure monitoring to assess effects of bremelanotide on blood pressure regulation. This represents the only human study retrieved addressing this outcome.",
+        "why_this_grade": "Only one human study, with unverified sample size and no animal data, means consistency cannot be assessed and precision is unconfirmed. This single preliminary result is too limited to support any firm conclusion."
       },
       {
         "outcome": "weight / fat loss",
         "grade": "Emerging",
-        "what_studies_show": "Two randomized controlled trials examined PT-141's effect on body weight. A 2022 study in 27 obese women used Phase 1 trial data to assess weight changes following bremelanotide injection; a 2004 trial evaluated safety and pharmacodynamic effects including body-weight outcomes in a separate cohort. Both were small, early-phase human studies.",
-        "why_this_grade": "The total verified sample size across these studies is only about 27 participants, providing very limited precision. No animal studies were available, and the research base consists of only two small trials with no independent replication. This is far too preliminary to support claims of efficacy for weight or fat loss."
+        "what_studies_show": "A 2022 RCT (n=27) examined the effect of bremelanotide on body weight in obese women using data pooled from two phase 1 randomized controlled trials. A second 2004 RCT also included body weight assessment during early pharmacodynamic evaluation.",
+        "why_this_grade": "Only two human trials with a verified total of ~27 participants across measurable studies provide extremely limited evidence. No consistent pattern has been established, and the sample is small, so weight/fat loss remains preliminary and unproven in humans."
       }
     ],
-    "evidence_base": "The evidence is predominantly human (9 of 10 studies on sexual function are in humans; 2 of 2 on weight/fat loss). Most research focuses on sexual function in women and men with hypoactive sexual desire disorder or erectile dysfunction, spanning from 2004 to 2026 and dominated by phase 2/3 randomized controlled trials. The weight and blood pressure literature is minimal \u2014 only two and one studies respectively \u2014 and consists of early-phase trials with small samples. Overall, confidence is moderate for sexual function based on sustained clinical testing, but very limited for other outcomes.",
-    "emerging_research": "Recent work has expanded PT-141 investigation beyond sexual function into metabolic effects. The 2022 trial exploring weight loss in obese women and the 2017 blood pressure monitoring study suggest interest in PT-141's broader neuroendocrine actions \u2014 melanocortin signaling is involved in appetite and cardiovascular regulation as well as arousal. However, these directions remain in early phases with minimal participant numbers and no confirmed clinical efficacy yet.",
-    "open_questions": "Among the studies retrieved here, the sexual function literature concentrates on women with desire/arousal disorders and men in the context of sildenafil co-use or failure; whether PT-141 is equally effective across other populations (e.g., postmenopausal women, men with other causes of dysfunction) is not clear from the records provided. For blood pressure and weight loss, only one and two small trials respectively appear in this sample \u2014 it is unclear whether larger or longer trials exist elsewhere in the literature. No studies in the retrieved records examined outcomes beyond 12 weeks, so durability and long-term tolerability remain uncharacterized in these abstracts.",
-    "caveats": "PT-141 is an injectable peptide and in many jurisdictions is classified as a research chemical or requires prescription; it is not approved by all regulatory authorities for all indications (notably, FDA approval exists for female hypoactive sexual desire disorder, but use beyond that remains experimental or off-label). Users should be aware of import/regulatory status in their region and should only use under medical supervision or in approved clinical trials. Potential side effects include nausea, facial flushing, and changes in blood pressure or heart rate; melanocortin agonism can also affect skin pigmentation with repeated use.",
+    "evidence_base": "The research on PT-141 is predominantly human-based, with 8 human trials supporting sexual function (the primary indication) against 2 animal studies; blood pressure and weight studies are each represented by only 1\u20132 human trials with no animal data. Most evidence comes from randomized controlled trials, spanning 2004 to 2026, with the 2026 meta-analysis being the most recent synthesis. The body of work is modest in scope \u2014 the sexual function outcome has the strongest case, while other outcomes rest on small, early-phase studies. This suggests moderate confidence in sexual effects but limited confidence elsewhere.",
+    "emerging_research": "Recent interest has focused on PT-141's potential role in metabolic outcomes (weight management in obesity) and cardiovascular safety (blood pressure monitoring). The 2022 weight study represents renewed attention to off-label metabolic applications, though sample sizes remain very small. A 2017 ambulatory blood pressure study indicates ongoing investigation of systemic vascular effects, likely driven by regulatory and safety assessment needs. These directions are early-stage and do not yet constitute established indications.",
+    "open_questions": "Among the studies retrieved here, sexual function is well-represented across multiple trial designs and populations (both men and women), but blood pressure and weight outcomes each appear in only 1\u20132 records with incomplete participant numbers. No long-term follow-up studies are evident in the provided abstracts \u2014 most trials appear to be short-term phase 1, 2, or 3 assessments. The retrieved sample covers ~15\u201320 years of research (2004\u20132026); whether additional large, recent trials exist in the field overall cannot be determined from these records alone.",
+    "caveats": "PT-141 is an injectable or intranasal peptide and remains a research/prescription compound in most jurisdictions; it is not widely available over-the-counter and should only be used under medical supervision. Like all melanocortin agonists, PT-141 carries potential risks including changes in blood pressure, skin pigmentation, and nausea; long-term safety in humans has not been extensively characterized in the retrieved literature. Individuals with uncontrolled hypertension, cardiovascular disease, or history of melanoma should exercise particular caution and consult a physician before use.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "PT-141's sexual function evidence rests on a single unreplicated systematic review and six RCTs from 2003\u20132008, with only three studies reporting sample sizes; the clinical significance of any effect remains unclear because no pooled effect size could be extracted, and the compound is not approved for human use.",
+    "headline": "The sexual function evidence rests on a 2026 meta-analysis of 8,994 participants, but this systematic review's conclusion is not independently replicated\u2014making it a single pillars that cannot be cross-validated against other pooled analyses in the retrieved record.",
     "concerns": [
       {
-        "issue": "No extractable pooled effect size for primary outcome",
-        "detail": "Despite 10 studies on sexual function (6 RCTs, 1 systematic review), the engine could not extract a pooled effect. This means readers cannot determine the magnitude of benefit\u2014whether it is 5% improvement or 50%. Without this, claims of efficacy rest on narrative interpretation of individual trials rather than quantified synthesis.",
+        "issue": "Single unreplicated meta-analysis anchors main claim",
+        "detail": "The Moderate grade for sexual function is supported by one 2026 systematic review (n=8,994) that the engine explicitly notes is 'not independently replicated or verified.' Of the 10 sexual function studies retrieved, only 3 report sample sizes (267, 342, 8,994), meaning 7 abstracts omit this critical detail. If the meta-analysis incorporated different trials or made different inclusion/exclusion choices than a hypothetical independent review, the pooled effect could shift materially. No second meta-analysis exists in these records to test stability.",
         "severity": "high"
       },
       {
-        "issue": "Single systematic review not independently replicated",
-        "detail": "The 2026 systematic review (n=8994) is the only meta-analysis in the retrieved evidence and its conclusions are not verified by a second independent synthesis. The engine explicitly noted consistency is 'held at moderate' because replication is absent. A single meta-analysis can contain analytical choices (inclusion criteria, effect measure, heterogeneity handling) that bias results in either direction.",
+        "issue": "Most sexual function trials lack published sample sizes in abstracts",
+        "detail": "Of 10 sexual function studies, only 3 report n in the retrieved abstracts (267, 342, 8,994). Seven studies\u2014including four RCTs from 2004\u20132019\u2014have no extractable sample size. This opacity prevents independent assessment of whether effect sizes are driven by large, well-powered trials or inflated by small, underpowered studies. The engine notes 'most abstracts omit sample size,' undermining transparency.",
         "severity": "high"
       },
       {
-        "issue": "Evidence base heavily concentrated in early 2000s with minimal recent confirmation",
-        "detail": "Six of ten human studies on sexual function were published 2003\u20132008. Only two RCTs appear after 2015 (2019 studies on bremelanotide). A 15+ year gap without independent replication in modern contexts raises questions about whether earlier findings have held up under scrutiny or whether publication bias favored positive early results.",
+        "issue": "Blood pressure and weight loss evidence is fragmentary and underpowered",
+        "detail": "Blood pressure rests on a single 2017 RCT with no extractable sample size. Weight/fat loss rests on two RCTs, with only one reporting n=27. The engine caps these at 'Emerging' grade due to imprecision and inconsistency (single study per outcome). These outcomes cannot support confident claims about safety or efficacy.",
         "severity": "high"
       },
       {
-        "issue": "Majority of sexual function trials omit sample size from abstracts",
-        "detail": "Only 3 of 10 studies on sexual function report sample sizes in the records provided (267, 342, 8994). The engine notes 'most abstracts omit sample size,' making it impossible to assess whether small underpowered trials are inflating effect estimates. Small trials with unreported attrition are prone to exaggerated effects.",
+        "issue": "Temporal clustering of trials in 2004\u20132008, then gap until 2019\u20132026",
+        "detail": "Sexual function trials cluster in 2004\u20132008 (5 RCTs) and 2004 (2 animals), then a gap occurs until 2019 (2 RCTs) and 2026 (1 meta-analysis). This pattern suggests older trials may have been superseded or development paused, but no explanation is visible in these abstracts. It is unclear whether the 2026 meta-analysis included unpublished or withdrawn studies from the earlier period.",
         "severity": "moderate"
       },
       {
-        "issue": "Secondary outcomes (blood pressure, weight loss) rest on minimal evidence",
-        "detail": "Blood pressure is supported by a single 2017 RCT with no reported sample size. Weight/fat loss rests on two RCTs, only one reporting n=27 (very small). These 'Emerging' grades are appropriate, but marketing or clinical use claims about these outcomes would have essentially no evidentiary foundation.",
+        "issue": "Pooled effect cannot be extracted from any outcome",
+        "detail": "The engine notes 'pooled effect: none extractable' for all three outcomes. Although the 2026 meta-analysis presumably reports a pooled estimate, the abstract provided here does not include it. Readers cannot independently verify the magnitude, confidence interval, or heterogeneity of the claimed effect on sexual function.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The mechanism is biologically plausible: PT-141 is a melanocortin receptor agonist; melanocortin signaling in the hypothalamus is known to modulate sexual behavior and appetite in animal models (supported by the 2007 preclinical study). However, the leap from receptor agonism to clinical sexual function improvement in humans is not trivial\u2014the CNS effects demonstrated in animal models do not automatically translate to measurable improvements in desire, arousal, or orgasm in humans with heterogeneous etiologies. The clinical trials address this directly, but the lack of extractable effect sizes prevents confirming that the mechanism translates to meaningful human benefit.",
-    "strongest_counterargument": "A skeptic would note that (1) no pooled effect size was extractable, meaning effect magnitude is unknown; (2) the evidence base is dominated by trials from 2003\u20132008, which may reflect historical bias toward positive findings before pre-registration and transparency standards tightened; (3) only one systematic review exists and it is not independently replicated\u2014a single meta-analysis can conceal heterogeneity or publication bias; (4) the compound is not approved for human use, meaning no regulatory body has deemed the evidence sufficient for safe, effective marketing; and (5) many trials omit sample sizes, suggesting poor reporting that correlates with inflated effect estimates.",
-    "what_would_change_the_picture": "An independently conducted, pre-registered systematic review and meta-analysis with modern trial methodology (pre-registration, published protocols, low attrition, registered outcome hierarchies) that replicates or refutes the 2026 meta-analysis conclusion would clarify the effect size and robustness. Additionally, one or two large (n\u2265200), recent (post-2020), double-blind RCTs in women with diagnosed hypoactive sexual desire disorder, with pre-specified primary outcomes and published protocols, would establish whether earlier findings hold under contemporary standards.",
+    "mechanism_check": "PT-141 is a melanocortin receptor agonist proposed to enhance sexual arousal via central nervous system pathways (supported by 2007 and 2003 animal studies showing effects on female sexual function). This mechanism plausibly bridges to the clinical sexual function outcomes (desire, arousal, orgasm), as melanocortin signaling is neurobiologically implicated in sexual motivation. However, the mechanism does not straightforwardly explain the blood pressure or weight loss outcomes: melanocortin agonism is known to raise blood pressure in some contexts, yet the single blood pressure trial is presented as a safety/monitoring study, not efficacy evidence. The weight loss claim lacks clear mechanistic linkage in these records.",
+    "strongest_counterargument": "A skeptic would note that the Moderate grade for sexual function depends entirely on a single 2026 meta-analysis that has never been independently replicated. The older RCTs (2004\u20132008) were conducted when PT-141/bremelanotide was still in development, and regulatory interest may have waned\u2014the 11-year gap before 2019 trials raises questions about whether the compound encountered safety or efficacy obstacles. Furthermore, of the 10 sexual function studies, 7 omit sample sizes from their abstracts, suggesting either small pilot studies or selective reporting. A single outlier or bias in the 2026 meta-analysis could shift the pooled result, and no independent verification exists.",
+    "what_would_change_the_picture": "An independent second meta-analysis or systematic review using prospectively registered protocol and published full texts (not abstracts) of all included RCTs would establish whether the 2026 conclusion is robust. Alternatively, a large, high-quality Phase 3 or Phase 4 RCT published after 2026 comparing PT-141 to both placebo and active comparator, with preregistered outcomes and transparent reporting of sample size and effect size with confidence intervals, would provide a standalone benchmark.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

@@ -1,9 +1,9 @@
 {
-  "name": "Quercetin",
-  "category": "longevity",
+  "name": "quercetin",
+  "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 60,
+  "study_count": 59,
   "claims": [
     {
       "outcome": "endurance",
@@ -85,17 +85,87 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "21606866",
+            "metric": "smd",
+            "value": 0.15,
+            "ci_low": 0.02,
+            "ci_high": 0.27,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "ES = 0.15, P = 0.021, 95% confidence interval = 0.02-0.27"
+          },
+          {
+            "pmid": "20190352",
+            "metric": "mean_diff",
+            "value": 13.2,
+            "ci_low": 0.0,
+            "ci_high": 26.4,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "a substantial (13.2%) increase in ride time to fatigue (p < .05)"
+          },
+          {
+            "pmid": "37716119",
+            "metric": "mean_diff",
+            "value": 1443.152,
+            "ci_low": 1199.556,
+            "ci_high": 1686.749,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "number of steps 1443.152 (CI95%: 1199.556; 1686.749)"
+          },
+          {
+            "pmid": "22805526",
+            "metric": "mean_diff",
+            "value": 0.74,
+            "ci_low": 0.1,
+            "ci_high": 1.39,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "QS improved EP by 0.74% (95% CI: 0.10-1.39, p = .02) compared with placebo"
+          }
+        ],
+        "n_not_reported": 2,
+        "n_total": 6
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For endurance, Quercetin has moderate human evidence (6 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": 0.15,
+        "ci_low": 0.02,
+        "ci_high": 0.27,
+        "ci_estimated": false,
+        "n_studies_pooled": 11,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "21606866",
+        "quote": "ES = 0.15, P = 0.021, 95% confidence interval = 0.02-0.27"
+      },
+      "summary": "For endurance, quercetin has moderate human evidence (6 studies)."
     },
     {
       "outcome": "blood pressure",
@@ -185,17 +255,173 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "31092175",
+            "metric": "mean_diff",
+            "value": -1.69,
+            "ci_low": -3.22,
+            "ci_high": -0.17,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or control",
+            "direction": "benefit",
+            "quote": "WMD: -1.69; 95% CI: -3.22, -0.17"
+          }
+        ],
+        "n_not_reported": 6,
+        "n_total": 7
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
+      },
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -1.69,
+        "ci_low": -3.22,
+        "ci_high": -0.17,
+        "ci_estimated": false,
+        "n_studies_pooled": 8,
+        "comparator": "placebo or control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "31092175",
+        "quote": "WMD: -1.69; 95% CI: -3.22, -0.17"
+      },
+      "summary": "For blood pressure, quercetin has moderate human evidence (7 studies)."
+    },
+    {
+      "outcome": "muscle strength",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 10,
+      "grade_reasons": [
+        "Precision: ~551 participants verified across 3 of 10 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 8,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:40063125",
+        "PMID:17136942",
+        "PMID:37552763",
+        "PMID:32957571",
+        "PMID:30669587",
+        "PMID:19679747",
+        "PMID:39638948",
+        "PMID:22805526",
+        "PMID:22805422",
+        "PMID:29947492"
+      ],
+      "studies": [
+        {
+          "pmid": "22805526",
+          "title": "Effects of quercetin supplementation on endurance performance and maximal oxygen consumption: a meta-analysis.",
+          "year": "2013",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 288
+        },
+        {
+          "pmid": "40063125",
+          "title": "Quercetin ingestion alters motor unit behavior and enhances improvement in muscle strength following resistance training in older adults: a randomized, double-b",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "32957571",
+          "title": "Quercetin Supplementation Improves Neuromuscular Function Recovery from Muscle Damage.",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "30669587",
+          "title": "The Effects of Quercetin Supplementation on Eccentric Exercise-Induced Muscle Damage.",
+          "year": "2019",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "22805422",
+          "title": "Effects of quercetin supplementation on markers of muscle damage and inflammation after eccentric exercise.",
+          "year": "2012",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "19679747",
+          "title": "Dietary quercetin supplementation is not ergogenic in untrained men.",
+          "year": "2009",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "17136942",
+          "title": "Dietary antioxidant supplementation combined with quercetin improves cycling time trial performance.",
+          "year": "2006",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "29947492",
+          "title": "Quercetin phytosome\u00ae in triathlon athletes: a pilot registry study.",
+          "year": "2018",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 23
+        },
+        {
+          "pmid": "37552763",
+          "title": "Effects of quercetin and genistein on egg quality, lipid profiles, and immunity in laying hens.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": 240
+        },
+        {
+          "pmid": "39638948",
+          "title": "Senolytic cocktail dasatinib and quercetin attenuates chronic high altitude hypoxia associated bone loss in mice.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 10,
+        "n_total": 10
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For blood pressure, Quercetin has moderate human evidence (7 studies)."
+      "summary": "For muscle strength, quercetin has moderate human evidence (10 studies)."
     },
     {
       "outcome": "inflammation",
@@ -214,8 +440,8 @@
         "human": 90,
         "overall": 90,
         "ceiling": 90,
-        "n_human_studies": 18,
-        "n_animal_studies": 18,
+        "n_human_studies": 17,
+        "n_animal_studies": 19,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -226,6 +452,7 @@
         "PMID:38246289",
         "PMID:37552763",
         "PMID:36827356",
+        "PMID:27585526",
         "PMID:33940332",
         "PMID:27079631",
         "PMID:34950418",
@@ -253,7 +480,6 @@
         "PMID:34803913",
         "PMID:22805422",
         "PMID:29947492",
-        "PMID:32071149",
         "PMID:32184034"
       ],
       "studies": [
@@ -346,14 +572,6 @@
           "n": null
         },
         {
-          "pmid": "32071149",
-          "title": "Randomised clinical trial to determine the safety of quercetin supplementation in patients with chronic obstructive pulmonary disease.",
-          "year": "2020",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "22805422",
           "title": "Effects of quercetin supplementation on markers of muscle damage and inflammation after eccentric exercise.",
           "year": "2012",
@@ -434,6 +652,22 @@
           "n": null
         },
         {
+          "pmid": "37552763",
+          "title": "Effects of quercetin and genistein on egg quality, lipid profiles, and immunity in laying hens.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": 240
+        },
+        {
+          "pmid": "38833740",
+          "title": "Dietary supplementation with quercetin: an ideal approach for improving meat quality and oxidative stability of broiler chickens.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "37837396",
           "title": "Quercetin supplementation attenuates airway hyperreactivity and restores airway relaxation in rat pups exposed to hyperoxia.",
           "year": "2023",
@@ -452,6 +686,14 @@
         {
           "pmid": "36049669",
           "title": "Quercetin supplementation attenuates cisplatin induced myelosuppression in mice through regulation of hematopoietic growth factors and hematopoietic inhibitory ",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "36240886",
+          "title": "Molecular interplay promotes amelioration by quercetin during experimental hepatic inflammation in rodents.",
           "year": "2022",
           "design": "Animal",
           "population": "animal",
@@ -482,6 +724,14 @@
           "n": null
         },
         {
+          "pmid": "32104545",
+          "title": "The Effects and Mechanism of Quercetin Dietary Supplementation in Streptozotocin-Induced Hyperglycemic Arbor Acre Broilers.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "32349726",
           "title": "The dietary antioxidant quercetin reduces hallmarks of bleomycin-induced lung fibrogenesis in mice.",
           "year": "2020",
@@ -506,202 +756,41 @@
           "n": 6
         },
         {
+          "pmid": "27585526",
+          "title": "Quercetin attenuates atherosclerotic inflammation and adhesion molecule expression by modulating TLR-NF-\u03baB signaling pathway.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "19735175",
           "title": "Dietary vitamin E and quercetin modulate inflammatory responses of collagen-induced arthritis in mice.",
           "year": "2009",
           "design": "Animal",
           "population": "animal",
           "n": null
-        },
-        {
-          "pmid": "37552763",
-          "title": "Effects of quercetin and genistein on egg quality, lipid profiles, and immunity in laying hens.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": 240
-        },
-        {
-          "pmid": "38833740",
-          "title": "Dietary supplementation with quercetin: an ideal approach for improving meat quality and oxidative stability of broiler chickens.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36240886",
-          "title": "Molecular interplay promotes amelioration by quercetin during experimental hepatic inflammation in rodents.",
-          "year": "2022",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "32104545",
-          "title": "The Effects and Mechanism of Quercetin Dietary Supplementation in Streptozotocin-Induced Hyperglycemic Arbor Acre Broilers.",
-          "year": "2020",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 36,
+        "n_total": 36
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Quercetin is well-supported by human trials (36 studies)."
-    },
-    {
-      "outcome": "muscle strength",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 11,
-      "grade_reasons": [
-        "Precision: ~561 participants verified across 4 of 11 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 8,
-        "n_animal_studies": 3,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:40063125",
-        "PMID:17136942",
-        "PMID:37552763",
-        "PMID:32957571",
-        "PMID:30669587",
-        "PMID:19679747",
-        "PMID:39638948",
-        "PMID:22805526",
-        "PMID:22805422",
-        "PMID:29947492",
-        "PMID:24998094"
-      ],
-      "studies": [
-        {
-          "pmid": "22805526",
-          "title": "Effects of quercetin supplementation on endurance performance and maximal oxygen consumption: a meta-analysis.",
-          "year": "2013",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 288
-        },
-        {
-          "pmid": "40063125",
-          "title": "Quercetin ingestion alters motor unit behavior and enhances improvement in muscle strength following resistance training in older adults: a randomized, double-b",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "32957571",
-          "title": "Quercetin Supplementation Improves Neuromuscular Function Recovery from Muscle Damage.",
-          "year": "2020",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "30669587",
-          "title": "The Effects of Quercetin Supplementation on Eccentric Exercise-Induced Muscle Damage.",
-          "year": "2019",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "22805422",
-          "title": "Effects of quercetin supplementation on markers of muscle damage and inflammation after eccentric exercise.",
-          "year": "2012",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "19679747",
-          "title": "Dietary quercetin supplementation is not ergogenic in untrained men.",
-          "year": "2009",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "17136942",
-          "title": "Dietary antioxidant supplementation combined with quercetin improves cycling time trial performance.",
-          "year": "2006",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "29947492",
-          "title": "Quercetin phytosome\u00ae in triathlon athletes: a pilot registry study.",
-          "year": "2018",
-          "design": "Unclassified",
-          "population": "human",
-          "n": 23
-        },
-        {
-          "pmid": "39638948",
-          "title": "Senolytic cocktail dasatinib and quercetin attenuates chronic high altitude hypoxia associated bone loss in mice.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "24998094",
-          "title": "Long-term quercetin dietary enrichment decreases muscle injury in mdx mice.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": 10
-        },
-        {
-          "pmid": "37552763",
-          "title": "Effects of quercetin and genistein on egg quality, lipid profiles, and immunity in laying hens.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": 240
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For muscle strength, Quercetin has moderate human evidence (11 studies)."
+      "summary": "For inflammation, quercetin is well-supported by human trials (36 studies)."
     }
   ],
   "effects_established": [
     "endurance",
     "blood pressure",
-    "inflammation",
-    "muscle strength"
+    "muscle strength",
+    "inflammation"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -729,80 +818,75 @@
       "Quercetine"
     ]
   },
-  "_cached_at": 1787608232.747125,
+  "_cached_at": 1788018752.989584,
   "explanation": {
-    "what_it_is": "Quercetin (C\u2081\u2085H\u2081\u2080O\u2087) is a flavonoid\u2014a plant pigment belonging to the polyphenol family\u2014found abundantly in onions, apples, berries, and leafy greens. It is sold as a dietary supplement in powder, capsule, and tablet forms, often at doses of 500\u20131000 mg daily. The compound has been used in traditional medicine and is increasingly studied for potential effects on athletic performance and cardiometabolic health.",
-    "how_it_works": "Quercetin is a potent antioxidant and anti-inflammatory agent that works through several mechanisms. It scavenges free radicals directly and inhibits inflammatory signaling pathways\u2014particularly NF-\u03baB and related cytokine cascades\u2014reducing production of pro-inflammatory molecules like TNF-\u03b1, IL-6, and C-reactive protein. In muscle and endothelial tissue, quercetin may enhance mitochondrial biogenesis (the formation of new energy-producing structures in cells) and improve blood flow by supporting nitric oxide availability. These properties suggest plausible benefits for exercise performance, recovery, and vascular health, though the magnitude of these effects in humans remains modest and variable.",
+    "what_it_is": "Quercetin (C\u2081\u2085H\u2081\u2080O\u2087, molecular weight 302.23) is a flavonoid\u2014a plant-derived polyphenol found naturally in apples, onions, berries, and leafy greens. It is commonly taken as an oral supplement in capsule or powder form, often at doses of 500 mg to 1,000 mg daily. The compound is also known by older names including Sophoretin and Meletin.",
+    "how_it_works": "Quercetin acts primarily as an antioxidant and anti-inflammatory agent by scavenging free radicals and inhibiting inflammatory signaling pathways in cells. It crosses cell membranes and reaches tissues including muscle and immune cells, where it suppresses pro-inflammatory cytokines (such as TNF-\u03b1 and IL-6) and reduces oxidative stress markers. In muscle tissue, quercetin may modulate stress-response pathways and influence recovery from exercise-induced damage. By reducing systemic inflammation and oxidative load, it may indirectly support endothelial function, blood vessel tone, and cellular energy metabolism\u2014plausible mechanisms linking it to cardiovascular and exercise-related outcomes.",
     "outcome_detail": [
       {
         "outcome": "endurance",
         "grade": "Moderate",
-        "what_studies_show": "Two meta-analyses (2013, n=288; 2011, n=46) showed modest improvements in VO\u2082max and endurance capacity with quercetin supplementation. A 2010 RCT reported increased VO\u2082max and endurance in trained participants, while a 2009 RCT found no benefit in untrained men. A 2023 RCT using a lecithin-based delivery form (500 mg daily over two months) reported positive effects, and a 2025 study found no performance benefit when quercetin was combined with mangiferin in cyclists. Overall, the effect appears small and inconsistent across populations.",
-        "why_this_grade": "Six human studies including multiple meta-analyses support endurance benefits, but the evidence base relies heavily on pooled analyses rather than independent, large primary trials. Heterogeneity in study design, population fitness level, and delivery methods, combined with modest effect sizes, places this at Moderate rather than Strong."
+        "what_studies_show": "A 2013 meta-analysis (n=288) and a 2011 systematic review (n=46) both examined quercetin's effect on endurance performance and VO\u2082max; the pooled standardized mean difference was 0.15 (95% CI 0.02\u20130.27), indicating a small positive signal. Individual RCTs show mixed results: a 2010 study found increased VO\u2082max and endurance capacity, while a 2009 RCT in untrained men showed no ergogenic benefit, and a 2025 study found no performance benefit when quercetin was combined with mangiferin in cycling athletes. A 2023 RCT tested a lecithin-based delivery form at 500 mg daily over two months.",
+        "why_this_grade": "Six human studies provide modest evidence of a small benefit, but precision is limited\u2014only 2 of 6 studies reported sample sizes (total ~334 participants verified), and results are inconsistent across populations (trained vs. untrained athletes, different exercise protocols). The pooled effect size is small and the confidence interval barely excludes zero, reflecting genuine uncertainty about the magnitude of any real effect."
       },
       {
         "outcome": "blood pressure",
         "grade": "Moderate",
-        "what_studies_show": "Six meta-analyses and systematic reviews synthesized randomized controlled trials examining quercetin supplementation and blood pressure. A 2022 meta-analysis (n=841) and a 2020 review (n=896) both documented reductions in systolic and diastolic blood pressure, while a 2019 review noted improvements in endothelial function alongside blood pressure lowering in metabolic syndrome patients. A 2016 meta-analysis (n=587) confirmed these trends. Overall, effect sizes were modest, typically in the range of a few mmHg.",
-        "why_this_grade": "Although seven human studies and meta-analyses consistently point to blood pressure reduction, all are pooled analyses or systematic reviews\u2014no independent, large primary RCTs were retrieved. The evidence is Moderate because it rests on synthesis of smaller trials rather than standalone adequately powered studies demonstrating the effect."
-      },
-      {
-        "outcome": "inflammation",
-        "grade": "Strong",
-        "what_studies_show": "Seven independent meta-analyses and systematic reviews (2017, 2020 \u00d72, 2021, 2023) in humans, plus 18 animal studies, converge on inflammation reduction. Human trials consistently showed reductions in C-reactive protein (CRP) and other systemic inflammatory markers (TNF-\u03b1, IL-6). A 2020 meta-analysis on lipid profiles and inflammatory markers, a 2017 CRP-focused review, and a 2021 sepsis review all supported anti-inflammatory efficacy. A 2020 systematic review on polycystic ovary syndrome and a 2023 umbrella review of cardiometabolic outcomes reinforced these findings across diverse clinical populations.",
-        "why_this_grade": "This outcome earned Strong because multiple (7) independent meta-analyses converge on the same result, indicating replicability and consistency. The inclusion of 18 human and 18 animal studies, with ~428 verified participants across 8 studies, provides adequate scope and mechanistic corroboration, exceeding the threshold for top-tier evidence."
+        "what_studies_show": "Seven human studies, primarily meta-analyses and systematic reviews, examined quercetin's effect on blood pressure. A 2022 meta-analysis (n=841) and a 2020 meta-analysis (n=896) found a pooled mean difference of \u22121.69 mmHg (95% CI \u22123.22 to \u22120.17), a small reduction favoring quercetin. A 2016 meta-analysis of randomized controlled trials (n=587) and a 2019 meta-analysis of patients with metabolic conditions both supported this modest blood pressure-lowering effect. Additionally, a 2023 umbrella review and a 2016 systematic review on dietary polyphenols included quercetin among compounds with cardiovascular benefits.",
+        "why_this_grade": "While the pooled effect across large sample sizes (~2,324 participants across meta-analyses) is consistent, all seven retrieved studies are syntheses; zero are independent primary trials. The absolute effect is small (\u22121.69 mmHg) with a confidence interval that barely crosses zero, indicating clinically marginal impact. The lack of independent replication and small magnitude keep this at Moderate rather than Strong."
       },
       {
         "outcome": "muscle strength",
         "grade": "Moderate",
-        "what_studies_show": "Eight human studies examined quercetin and muscle strength or strength recovery. A 2025 RCT reported that quercetin ingestion altered motor unit behavior and enhanced strength gains during resistance training. A 2020 RCT found improved neuromuscular recovery from muscle damage. Three studies (2019, 2012, 2020) specifically addressed eccentric exercise-induced muscle damage and inflammation, showing mitigation of damage markers. A 2013 meta-analysis (n=288) included strength-related outcomes. However, a 2009 RCT reported no ergogenic benefit in untrained men.",
-        "why_this_grade": "Eight human and three animal studies exist, with ~561 verified participants across four trials. However, only one meta-analysis was retrieved, and its conclusions have not been independently replicated or verified. The evidence is mixed across populations and study designs, placing it at Moderate rather than Strong."
+        "what_studies_show": "Ten human and animal studies examined quercetin's effect on muscle strength and strength-related outcomes. A 2025 RCT found that quercetin ingestion altered motor unit behavior and enhanced improvement in muscle strength following resistance exercise. A 2020 RCT showed improved neuromuscular function recovery from muscle damage, and a 2019 RCT found reduced eccentric exercise-induced muscle damage. A 2012 RCT examined markers of muscle damage and inflammation after eccentric exercise. A 2013 meta-analysis included strength-related measures alongside endurance outcomes (n=288). However, a 2009 RCT in untrained men found no ergogenic benefit, demonstrating population-dependent effects.",
+        "why_this_grade": "Eight human studies support the outcome, but only 3 reported sample sizes (~551 participants verified), and most abstracts omitted numbers, obscuring the true total. Only a single meta-analysis/systematic review exists, and its conclusion has not yet been independently replicated. The evidence shows promise in recovery and muscle damage contexts but lacks the consistency and replication depth required for a Strong grade."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Strong",
+        "what_studies_show": "Thirty-six studies (17 human, 19 animal) converged on quercetin's anti-inflammatory effects. A 2020 meta-analysis of randomized controlled human trials found significant reductions in systemic inflammatory markers; a second 2020 meta-analysis showed effects on lipid profiles and inflammatory markers in metabolic disease patients; and a 2017 meta-analysis documented reduced plasma C-reactive protein. A 2023 umbrella review of cardiometabolic outcomes and a 2021 systematic review on sepsis both highlighted quercetin's therapeutic anti-inflammatory mechanisms. A 2020 systematic review on polycystic ovary syndrome identified anti-inflammatory effects as clinically relevant. Seven independent meta-analyses or systematic reviews converge on this outcome, and approximately 428 participants were verified across 8 human studies\u2014though true totals are larger.",
+        "why_this_grade": "Strong grade reflects convergence across seven independent syntheses in humans (proxy for replicated findings), robust sample sizes in meta-analyses (thousands of participants across pooled studies), consistency between human and animal evidence, and mechanistic clarity. Inflammation is quercetin's most well-established effect in the literature provided, supported by both clinical trials and preclinical work."
       }
     ],
-    "evidence_base": "The research base for quercetin is predominantly human (33 of 60 studies retrieved), dominated by meta-analyses and systematic reviews that pool results from smaller randomized controlled trials. Studies span 2009\u20132025, with notable clustering in 2020\u20132023. Animal studies (27 retrieved) provide mechanistic support for anti-inflammatory and antioxidant pathways but do not directly translate to human efficacy. The heavy reliance on synthesis of existing trials rather than large, independent primary studies limits confidence; most studies do not report full sample sizes in abstracts, preventing precise estimation of total participant numbers, though approximately 428 individuals were verified across sampled studies for inflammation outcomes.",
-    "emerging_research": "Recent work (2023\u20132025) explores optimized delivery forms\u2014such as lecithin-based formulations (2023) to improve absorption\u2014and combination strategies, including quercetin plus mangiferin for athletic performance (2025), though the latter showed no added benefit. A 2021 systematic review examined quercetin's role in sepsis management, reflecting growing interest in acute inflammatory states. Motor unit and neuromuscular mechanistic studies (2025) are beginning to clarify how quercetin may enhance muscle adaptation to training at a cellular level. These directions remain early and require replication.",
-    "open_questions": "Among the retrieved studies, none report follow-up beyond 12 weeks, so long-term durability and safety of supplementation remain uncharacterized in these records. Most trials enrolled relatively small cohorts (often 20\u2013100 participants), and very few report stratification by age, sex, fitness level, or genetic variation\u2014leaving unclear which populations benefit most. The studies provided do not include comparisons of quercetin to other anti-inflammatory compounds or explore optimal dosing and timing. Because this is a sample of ~40 abstracts per outcome, conclusions about what the broader literature does or does not contain cannot be drawn from these records alone.",
-    "caveats": "Quercetin is generally recognized as safe at supplemental doses (500\u20131000 mg daily), but it may interact with certain medications (e.g., warfarin) and can inhibit CYP3A4 enzymes, potentially affecting drug metabolism. Quality and purity of commercial supplements vary; look for third-party testing. Pregnant and nursing individuals should consult a clinician before use. The modest effect sizes observed in most trials mean quercetin should not be considered a substitute for established lifestyle interventions (exercise, diet, medical treatment) in managing blood pressure, inflammation, or athletic performance.",
+    "evidence_base": "The research base for quercetin is dominated by human studies (32 of 52 records), with 7 independent meta-analyses or systematic reviews providing synthesis-level evidence. Most human research dates from 2009\u20132023, with recent 2024\u20132025 trials extending the record. Animal studies (19 records) support mechanistic understanding but are excluded from formal grading. The bulk of human evidence consists of small to moderate RCTs and meta-analyses of variable quality; only inflammation benefits from multiple replicated syntheses across large pooled samples. This mixed but substantial body of work justifies Strong overall classification, though individual outcomes vary.",
+    "emerging_research": "Recent 2024\u20132025 trials are exploring quercetin in combination with other compounds (e.g., mangiferin for athletic performance) and in novel delivery forms (lecithin-based formulations) to improve bioavailability and consistency of effect. Emerging mechanistic work is probing quercetin's effects on motor unit behavior in muscle and its role in sepsis and metabolic endocrine disorders. However, these directions remain preliminary; sample sizes and replication are limited, and long-term efficacy and safety in specific disease populations have not yet been established.",
+    "open_questions": "Among the studies retrieved here, no trials followed participants beyond 12 weeks for most outcomes (endurance, strength, blood pressure); long-term safety and durability of effects are not demonstrated in the records provided. For blood pressure and muscle strength, the retrieved studies include few independent primary trials\u2014most are meta-analyses, limiting visibility into heterogeneity of individual study designs and populations. The retrieved records do not clearly specify which patient populations (e.g., age, comorbidity, training status) benefit most; endurance studies show benefit in some trained athletes but not untrained men, yet the sample of records here does not permit confident characterization of this moderator. We note explicitly: we are viewing only a sample of ~40 abstracts per outcome, so we cannot claim what research exists globally or what populations may have been studied in the full literature.",
+    "caveats": "Quercetin is generally well-tolerated at supplement doses (500\u20131,000 mg/day), but high doses may cause gastrointestinal upset and may interact with certain medications (e.g., fluoroquinolone antibiotics, warfarin) or reduce iron absorption if taken with iron-rich meals. Because most trials lasted \u226412 weeks and sample sizes were modest, long-term safety data and sustained efficacy in clinical populations are limited. The app records shown here are a sample; anyone with chronic disease, on medications, or considering long-term use should consult a healthcare provider.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Evidence base relies almost entirely on meta-analyses and systematic reviews with minimal direct reporting of sample sizes; the inflammation outcome appears genuinely solid, but endurance and blood pressure grades rest on synthesis of unstated primary studies, and muscle strength on a single unreplicated meta-analysis.",
+    "headline": "The evidence base relies heavily on secondary analyses (meta-analyses and systematic reviews) rather than primary trials, and most primary studies omit sample sizes, making it impossible to verify whether the pooled estimates rest on adequately powered evidence or are driven by a few large outliers.",
     "concerns": [
       {
-        "issue": "Endurance & blood pressure: zero primary studies directly observed",
-        "detail": "For endurance, all 6 retrieved studies are either meta-analyses, systematic reviews, or unclassified; for blood pressure, 0 of 7 are primary RCTs\u2014all are syntheses or unclassified. This means the 'Moderate' grades rest entirely on the quality and transparency of unpresented underlying trials. The engine notes pooled effects are 'none extractable,' indicating abstracts do not report the actual summary statistics or effect sizes.",
+        "issue": "Heavy reliance on secondary analyses without primary trial verification",
+        "detail": "For blood pressure (the outcome with strongest claims), 0 of 7 retrieved studies are primary human trials \u2014 all are meta-analyses, systematic reviews, or unclassified. For endurance and muscle strength, only 3 and 6 primary RCTs respectively are retrieved among 6 and 10 total studies. This means the graded effect sizes depend entirely on how well those secondary analyses captured and synthesized their underlying primary studies, which are not visible in these records. A meta-analysis can inherit bias from its inputs or mask heterogeneity.",
         "severity": "high"
       },
       {
-        "issue": "Majority of studies omit sample sizes; true trial count unknown",
-        "detail": "For endurance, only 2 of 6 studies report n; for blood pressure, only 4 of 7; for muscle strength, only 4 of 11. The engine notes true totals are 'substantially larger' than the 334\u2013561 participants verified, but does not state them. This prevents independent assessment of whether effect sizes are stable across heterogeneous sample sizes or vulnerable to small-trial bias.",
+        "issue": "Systematic opacity in sample size reporting across all outcomes",
+        "detail": "Endurance: 2 of 6 studies report n; blood pressure: 4 of 7; muscle strength: 3 of 10; inflammation: 8 of 36. The engine notes that 'true totals are substantially larger' but we cannot verify this from the abstracts. This means a conclusion like 'pooled SMD 0.15 for endurance' cannot be evaluated for precision or influenced by outliers \u2014 a single well-powered negative RCT hidden in the 4 unreported studies could shift the result meaningfully.",
         "severity": "high"
       },
       {
-        "issue": "Muscle strength grade rests on single unreplicated meta-analysis",
-        "detail": "The engine explicitly notes 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate.' The 2013 meta-analysis (n=288) appears in the muscle strength list, but no independent synthesis confirms or refutes it. One outlier RCT showing no effect (2009) is present, but replicated synthesis\u2014the standard for confidence\u2014is absent.",
+        "issue": "Negative and null results are visibly present but not weighted equally",
+        "detail": "Endurance outcome includes '2009 [RCT] Dietary quercetin supplementation is not ergogenic in untrained men' and '2025 [Unclassified] No Performance Benefits of Combined Mangiferin and Quercetin Supplementation in Cycling Athletes' \u2014 direct contradictions of the 'Moderate' grade. The 2009 RCT result is unexplained by the pooled SMD 0.15; muscle strength outcome similarly includes a 2009 null RCT. Without access to the meta-analysis methods (weighting, heterogeneity testing, subgroup analysis), it is unclear whether negative results were deprioritized or if effect size estimates mask conflicting data.",
         "severity": "high"
       },
       {
-        "issue": "Blood pressure evidence is purely meta-analytic with no primary human RCTs",
-        "detail": "Seven studies retrieved: four meta-analyses, two systematic reviews, one unclassified. The engine explicitly flags this: 'Limited human evidence: 0 primary human studies and 6 pooled analyses retrieved \u2014 below the threshold for the top tier.' A recent unclassified study (2024, n=5801) on hypertensive patients is present but its design and risk of bias are unknown ('Unclassified').",
-        "severity": "high"
-      },
-      {
-        "issue": "Inflammation outcome mixes animal and human evidence without clear segregation",
-        "detail": "18 animal and 18 human studies contribute to the 'Strong' inflammation grade. Sample sizes for animals are not fully reported (median 35 across 8 of 36 studies stated), and animal models (e.g., mdx mice, altitude hypoxia) may not translate to human inflammatory pathways. The consistency across 7 syntheses is noteworthy, but the human subset's true sample size and effect homogeneity are not transparent.",
+        "issue": "Inflammation outcome relies on 19 animal studies (53% of total) with unclear translational validity",
+        "detail": "Inflammation is graded 'Strong' despite being composed of 19 animal studies, 17 human studies, and 36 total \u2014 meaning animal evidence carries equal footing in the assessment. Two of the animal studies listed (laying hens, bone effects in hypoxia) have questionable relevance to human inflammation claims. Animal studies typically show larger effect sizes and are less subject to placebo/bias controls than human RCTs, so the 'Strong' grade may be inflated by the animal evidence bulk rather than reflecting human-specific efficacy.",
         "severity": "moderate"
       },
       {
-        "issue": "Year range spans 17\u201318 years; oldest evidence predates modern biomarker standards",
-        "detail": "Endurance evidence includes a 2009 trial; muscle strength includes a 2006 trial. Inflammation and blood pressure are more recent (2008\u20132026, 2016\u20132024). Older assays for CRP, cytokines, and VO\u2082max may differ in sensitivity from current methods, potentially inflating perceived consistency if later studies use more specific markers.",
-        "severity": "low"
+        "issue": "Inconsistent and narrow pooling in endurance and muscle strength",
+        "detail": "Endurance pooled effect: SMD 0.15 [0.02 to 0.27] \u2014 a very small effect with a confidence interval barely excluding zero; muscle strength lists 'none extractable' for pooled effect despite a 'Moderate' grade, suggesting the synthesis was narrative or inconsistently conducted. This undermines confidence that the grade reflects a robust, replicable signal rather than borderline or context-dependent findings.",
+        "severity": "moderate"
       }
     ],
-    "mechanism_check": "Quercetin is a polyphenolic antioxidant and reported AMPK/SIRT1 activator. A plausible mechanistic chain exists for inflammation (NF-\u03baB inhibition \u2192 reduced CRP/IL-6) and blood pressure (enhanced endothelial nitric oxide production). However, the leap from *in vitro* or *ex vivo* antioxidant activity to sustained clinical endurance gains is substantial\u2014improved VO\u2082max requires coordinated mitochondrial biogenesis and oxygen extraction, which neither antioxidant capacity alone nor acute AMPK activation has consistently demonstrated in human exercise trials. The mechanism is biologically coherent but does not fully explain why some trials show effect and others (2009, 2025) do not.",
-    "strongest_counterargument": "A skeptic would note that the endurance and blood pressure outcomes rest on meta-analyses of trials whose individual designs, quality, and populations are not visible in these records. Meta-analyses of heterogeneous small trials (median sample size often <50 per arm, inferred) are vulnerable to publication bias and selective outcome reporting; the 2009 and 2025 negative trials on endurance suggest the literature is inconsistent. For blood pressure, zero primary trials appear in the retrieved set\u2014the grade reflects synthesis of syntheses, which can perpetuate bias from the first-generation meta-analyses. Without access to the underlying trial registries or risk-of-bias assessments, one cannot rule out that pooled estimates are inflated by trials with loose blinding or cherry-picked endpoints.",
-    "what_would_change_the_picture": "For endurance and blood pressure: retrieve and appraise the actual primary RCTs cited by the meta-analyses (by year and author), assess their risk of bias, and recompute pooled effects excluding high-risk trials. For muscle strength: conduct or retrieve an independent meta-analysis to replicate the 2013 finding. For all outcomes: report actual sample sizes and heterogeneity (I\u00b2 or tau\u00b2) to establish whether effect estimates are robust or sensitive to small-trial bias.",
+    "mechanism_check": "Quercetin is an established antioxidant and anti-inflammatory in cell and animal models, and the inflammation outcome is supported by convergent meta-analyses (7 independent syntheses noted). However, the leap from in vitro anti-inflammatory activity to measurable clinical endurance and blood pressure benefits is large: endurance depends on mitochondrial efficiency and oxygen kinetics, not just inflammation; blood pressure is a complex hemodynamic trait influenced by vascular tone, sodium handling, and sympathetic activity \u2014 quercetin's role in these pathways is not detailed in the abstracts. The mechanism is plausible but the chain from cellular effect to measured clinical outcome remains inferential.",
+    "strongest_counterargument": "A skeptic would note that endurance (SMD 0.15, CI nearly touching zero) and blood pressure (mean diff \u22121.69 mmHg, clinically modest) show minimal to borderline effects in populations where placebo response and training variance are high. The negative RCT results (2009 null in untrained men, 2025 null in cyclists) are unexplained by the pooled estimates, suggesting either heterogeneous effects (quercetin works for some but not others, making the average misleading) or publication bias (positive abstract titles retrieved while null findings were buried). Without the full primary literature and meta-analysis heterogeneity data, the 'Moderate' grades appear to rest on selective reporting or meta-analyses that did not adequately address conflicting evidence.",
+    "what_would_change_the_picture": "A large, adequately powered (n>200 per arm) double-blind RCT in a defined population (e.g., endurance-trained athletes, or hypertensive adults on stable baseline therapy) with pre-registered endpoints, reported sample sizes, and explicit subgroup analysis would resolve whether quercetin effects are population-specific or generalisable. Simultaneously, a reanalysis or new meta-analysis that discloses heterogeneity statistics (I\u00b2), funnel plots for bias, and sensitivity analysis excluding small or methodologically weak trials would clarify whether the current pooled estimates are robust or inflated by outliers and bias.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

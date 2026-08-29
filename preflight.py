@@ -19,6 +19,12 @@ REQUIRED = [
      "Greek-letter normalisation — without it '\u03b2-Alanine' papers are rejected as off-topic"),
     ("classify.py", "_FORM_SUFFIXES",
      "salt-suffix stripping — without it 'creatine monohydrate' misses 'creatine supplementation'"),
+    ("classify.py", "_NON_AUTHORITATIVE_SIGNALS",
+     "species words decide population; 'in vitro'/'cell culture' do not"),
+    ("classify.py", "_ANIMAL_SIGNAL_RE",
+     "animal detector is word-boundary matched and authoritative for population"),
+    ("classify.py", "AUTHORITATIVE ANIMAL OVERRIDE",
+     "abstract-level species mention overrides PubMed pubtype"),
     ("classify.py", "_ANIMAL_TEXT_SIGNALS",
      "species detection — without it rat/chicken studies count as human"),
     ("classify.py", "is_intervention_study",
@@ -107,7 +113,7 @@ REQUIRED = [
      "cache invalidation helper"),
 ]
 
-EXPECTED_TESTS = 31
+EXPECTED_TESTS = 34
 
 
 def main():

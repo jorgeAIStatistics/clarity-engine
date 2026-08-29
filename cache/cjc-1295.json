@@ -1,6 +1,6 @@
 {
-  "name": "CJC-1295",
-  "category": "peptide",
+  "name": "cjc-1295",
+  "category": "supplement",
   "overall_score": 70,
   "tier": "Moderate",
   "study_count": 4,
@@ -40,19 +40,19 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 1,
+        "n_total": 1
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For muscle growth, CJC-1295 has only preliminary or animal evidence (1 studies)."
+      "summary": "For muscle growth, cjc-1295 has only preliminary or animal evidence (1 studies)."
     },
     {
-      "outcome": "muscle strength",
+      "outcome": "growth hormone / igf-1",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
@@ -103,21 +103,36 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "17018654",
+            "metric": "mean_diff",
+            "value": 45,
+            "ci_low": 0.0,
+            "ci_high": 90.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "mean GH levels, 46%; P < 0.01"
+          }
+        ],
+        "n_not_reported": 2,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For muscle strength, CJC-1295 has moderate human evidence (3 studies)."
+      "summary": "For growth hormone / igf-1, cjc-1295 has moderate human evidence (3 studies)."
     }
   ],
   "effects_established": [
-    "muscle strength"
+    "growth hormone / igf-1"
   ],
   "effects_promising": [
     "muscle growth"
@@ -147,63 +162,58 @@
       "DTXCID701513160"
     ]
   },
-  "_cached_at": 1787607093.069525,
+  "_cached_at": 1788016580.4827,
   "explanation": {
-    "what_it_is": "CJC-1295 is a 30-amino-acid peptide (molecular weight 3647.2 Da) that functions as a long-acting growth hormone-releasing hormone (GHRH) analog. It is a synthetic derivative designed to mimic the natural hypothalamic hormone that signals the pituitary gland to produce and release growth hormone. The peptide is administered by injection and is often used in research or performance contexts.",
-    "how_it_works": "CJC-1295 binds to GHRH receptors on somatotroph cells in the anterior pituitary, stimulating them to synthesize and secrete growth hormone (GH) into the bloodstream. Because it is engineered as a long-acting analog\u2014with extended half-life compared to native GHRH\u2014it produces sustained rather than pulsatile GH elevation. The elevated GH in turn stimulates the liver and other tissues to produce insulin-like growth factor I (IGF-1), a key anabolic hormone that mediates many effects of GH on muscle, bone, and metabolism. In theory, this prolonged activation of the GH/IGF-1 axis could support muscle protein synthesis and growth; however, translation from mechanism to reliable human benefit requires evidence from well-controlled trials.",
+    "what_it_is": "CJC-1295 is a synthetic peptide \u2014 a 30-amino-acid chain \u2014 that mimics growth hormone-releasing hormone (GHRH), a natural signaling molecule in the brain. It is engineered as a long-acting version of GHRH, modified with a carrier molecule to extend its half-life in the bloodstream from minutes to hours or days depending on formulation. People typically self-administer it as an injection, and it is not approved by the FDA for human use outside research settings.",
+    "how_it_works": "CJC-1295 binds to GHRH receptors on pituitary cells, which stimulates the release of growth hormone (GH) into the bloodstream. GH then travels to the liver and other tissues, where it triggers production of insulin-like growth factor I (IGF-1), a hormone critical for growth, muscle protein synthesis, and metabolism. The key advantage of CJC-1295 over natural GHRH is its extended duration \u2014 the conjugated carrier slows its clearance, allowing sustained rather than pulsatile GH elevation. This mimics a more continuous anabolic signal, which theoretically amplifies muscle growth and metabolic effects.",
     "outcome_detail": [
+      {
+        "outcome": "growth hormone / igf-1",
+        "grade": "Moderate",
+        "what_studies_show": "Two human studies from 2006 \u2014 one randomized controlled trial and one clinical trial \u2014 demonstrated that CJC-1295 administered as a long-acting GHRH analog prolongs GH and IGF-1 secretion in humans; pulsatile GH release was maintained even during continuous stimulation. An animal study from 2006 confirmed normalized GH responses with once-daily dosing in model organisms.",
+        "why_this_grade": "Moderate confidence is supported by human evidence showing the hormone-releasing mechanism works as intended. However, the grade is capped by imprecision \u2014 sample sizes could not be verified from the abstracts provided, leaving uncertainty about statistical power and generalizability. Only a small number of trials are represented in the retrieved records."
+      },
       {
         "outcome": "muscle growth",
         "grade": "Preliminary",
-        "what_studies_show": "Among the records retrieved, only one animal study (2006) examined muscle growth after once-daily CJC-1295 administration in an animal model. No human trials measuring muscle growth were found in the sample provided.",
-        "why_this_grade": "Evidence is animal-only and does not reliably translate to humans. A single animal study cannot establish efficacy in people, and biological differences between species mean animal GH responsiveness may not predict human outcomes."
-      },
-      {
-        "outcome": "muscle strength",
-        "grade": "Moderate",
-        "what_studies_show": "Two human studies from 2006\u2014one RCT and one clinical trial\u2014documented that CJC-1295 produced prolonged elevation of GH and IGF-1 secretion in human subjects. An additional animal study from the same period examined the compound's effects on normalizing GH patterns. The human trials confirmed the pharmacological effect (sustained GH/IGF-1 rise) but did not report directly on strength outcomes in the retrieved abstracts.",
-        "why_this_grade": "The grade is Moderate because human evidence exists showing the compound does elevate GH/IGF-1\u2014the proposed mechanism for strength benefit\u2014yet sample sizes could not be verified from the abstracts, and the retrieved records do not explicitly confirm direct measurement of strength in the human participants. Certainty is capped below the top tier due to unconfirmed precision and the gap between demonstrating GH elevation and proving functional strength gain."
+        "what_studies_show": "One animal study from 2006 found that once-daily CJC-1295 administration normalized growth hormone responses in animal models, suggesting the compound supports conditions favorable to muscle growth.",
+        "why_this_grade": "This evidence is animal-only and does not directly measure muscle growth in humans. While elevated GH and IGF-1 *could* support muscle development, the leap from hormone stimulation in animals to actual human muscle mass gains has not been demonstrated in the retrieved human studies. Animal data does not reliably translate to human outcomes."
       }
     ],
-    "evidence_base": "The retrieved records show a small evidence base dominated by studies from 2006, including two human trials (one RCT, one clinical trial) and one animal study. The human studies focused on pharmacodynamics\u2014confirming that CJC-1295 produces prolonged GH and IGF-1 secretion\u2014rather than measuring clinical endpoints like strength or muscle mass gain. No more recent human trials appear in the sample provided. This suggests the human evidence is relatively older and limited in scope; the field may have evolved since, but based on the records given here, long-term or large-scale human efficacy trials are not evident.",
-    "emerging_research": "Recent directions in long-acting GHRH peptides have explored combination regimens (e.g., with GHRP analogs to enhance pulsatility) and extended dosing intervals to optimize GH secretion patterns while minimizing tachyphylaxis. Some research has investigated whether sustained vs. pulsatile GH patterns produce different metabolic or body composition outcomes. However, among the records retrieved, these directions are not yet represented; most data here predate such refinements and remain focused on demonstrating pharmacological effect rather than clinical benefit.",
-    "open_questions": "Among the studies provided, human trials are limited to 2006 and measure GH/IGF-1 secretion rather than direct strength or muscle gains. The retrieved records do not show whether CJC-1295 produces measurable increases in lean mass or strength in healthy adults, older people, or other populations, or how long benefits persist. Sample sizes in the human studies could not be verified from the abstracts given, leaving precision unclear. It is important to note: this characterization reflects only the ~40 abstracts retrieved per outcome; the full global literature may contain additional human trials not represented here.",
-    "caveats": "CJC-1295 is often classified as a research chemical and is not approved by the FDA for human use in the United States; it is used off-label and legally only in research contexts in most jurisdictions. As an injectable peptide, it carries risks of infection, immune response, and potential pituitary desensitization with prolonged use. Because it elevates GH systemically, users should be aware of potential side effects associated with elevated GH (joint pain, carpal tunnel, glucose intolerance, and theoretical concern for acromegaly or malignancy with chronic elevation), and medical supervision is strongly recommended if used. Quality and purity of peptide preparations sold outside regulated pharmaceutical channels are often unverified.",
+    "evidence_base": "The retrieved research is small in volume and concentrated in 2006, with 2 human studies (an RCT and a clinical trial) and 1 animal study. All human evidence focuses on the hormone-release mechanism itself \u2014 showing that CJC-1295 does stimulate sustained GH and IGF-1 secretion \u2014 rather than downstream effects on body composition, strength, or metabolism. No long-term safety or efficacy trials for muscle or performance outcomes appear in these records. This means we have reasonable confidence that the compound reaches its intended biochemical target, but minimal human evidence for clinically meaningful effects like muscle gain.",
+    "emerging_research": "Recent directions visible in retrieved studies focus on characterizing the duration and pulsatility of the GH response under different dosing regimens. The shift from acute pulsatile GHRH to sustained-release formulations like CJC-1295 represents an attempt to optimize the timing of GH stimulation for anabolic benefit, but human trials explicitly measuring changes in lean mass, strength, or metabolic markers remain absent from the records provided. Further work would need to link hormone elevation to actual tissue-level outcomes.",
+    "open_questions": "Among the studies retrieved here, no human trials measured muscle growth, body composition, strength gains, or functional outcomes \u2014 only hormone levels. None of the records provided follow participants beyond the acute dosing period, leaving unknown whether sustained GH elevation translates to durable tissue changes or carries long-term safety implications. The sample sizes of the human trials are not specified in the abstracts, so precision and whether effects hold across diverse populations remain unclear. Because only ~40 records per outcome were retrieved, important trials or recent work in this field may not be represented.",
+    "caveats": "CJC-1295 is a research peptide without FDA approval for human use; purity, dosing, and sterility are unregulated in uncontrolled markets. As an injectable, it carries standard risks of infection, injection-site reactions, and immune responses. Long-term safety in humans has not been established in the retrieved literature, and it may interact with diabetes medications or other agents affecting glucose metabolism, given its impact on GH and metabolic hormones. Anyone considering use should consult a physician and be aware they are using an experimental compound.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "All retrieved evidence is from 2006 and lacks extractable sample sizes; the human trials have uncertain precision, and muscle growth evidence is animal-only with no human validation.",
+    "headline": "All retrieved evidence is from 2006 and lacks extractable sample sizes; the human data on GH/IGF-1 is limited to two small trials of unknown N, and muscle growth claims rest entirely on a single animal study.",
     "concerns": [
       {
-        "issue": "All evidence from single year, undated literature base",
-        "detail": "Every study in both outcomes is dated 2006. This is now ~18 years old. The records show zero studies from 2007 onward, which either indicates the compound was abandoned from research, or this retrieval is incomplete. No recent human data on efficacy or safety exists in this sample.",
+        "issue": "No sample sizes extractable from any trial",
+        "detail": "The engine explicitly notes that sample sizes could not be verified from the abstracts for the GH/IGF-1 outcome (3 total studies). Without N values, precision and power cannot be assessed, and a single small underpowered trial could be driving the 'Moderate' grade. This is especially critical when only 2 human studies exist for the main clinical claim.",
         "severity": "high"
       },
       {
-        "issue": "Sample sizes entirely non-extractable from abstracts",
-        "detail": "The engine explicitly notes 'sample sizes: none extractable from these abstracts' for muscle strength (3 trials) and muscle growth (1 trial). Without knowing whether the human RCT enrolled 10 or 100 participants, statistical precision cannot be assessed. The muscle strength grade is capped at 'Moderate' partly because of this hidden precision issue.",
+        "issue": "Muscle growth claim supported by animal data only",
+        "detail": "The 'Preliminary' grade for muscle growth rests on exactly one animal study (2006). The engine correctly flags this as indirect evidence with unknown human relevance. No human trial has measured muscle growth as an outcome in the retrieved records.",
         "severity": "high"
       },
       {
-        "issue": "Muscle growth evidence is exclusively animal",
-        "detail": "The 'Preliminary' grade for muscle growth rests on a single 2006 animal study with no human trials. The engine explicitly flags 'Indirectness: evidence is animal-only; does not reliably translate to humans.' GH-releasing peptides may increase circulating GH in rodents without producing functional muscle hypertrophy in humans, or at clinically meaningful magnitudes.",
-        "severity": "high"
-      },
-      {
-        "issue": "Muscle strength evidence mixes mechanistic with functional outcomes",
-        "detail": "Two of three muscle strength trials appear to measure GH and IGF-I secretion ('Prolonged stimulation...', 'Pulsatile secretion...'), which are biomarkers, not direct strength measurements. It is unclear whether any trial actually measured 1-rep max, grip strength, or work output. Elevated hormones do not automatically translate to measurable strength gains.",
+        "issue": "All evidence is two decades old with no recent replication",
+        "detail": "Every retrieved study is from 2006 (year range 2006\u20132006 for both outcomes). There are no subsequent RCTs, meta-analyses, or contemporary confirmations visible in this sample. This raises questions about publication bias (why no follow-up?) and whether early preliminary findings have held up.",
         "severity": "moderate"
       },
       {
-        "issue": "No safety or adverse event data visible",
-        "detail": "The records provided contain zero information on tolerability, injection site reactions, antibody formation, or systemic side effects from the 2006 trials. For a grey-market injectable peptide, absence of documented safety from the retrieved evidence is a critical gap.",
+        "issue": "GH/IGF-1 elevation does not establish muscle growth in humans",
+        "detail": "The 'Moderate' grade conflates demonstration of GH/IGF-1 secretion with clinically meaningful muscle hypertrophy. Elevated GH and IGF-1 are biochemical markers, not functional outcomes. The leap from acute hormone stimulation in small short-term trials to sustained muscle gain requires separate human evidence, which is absent from the records.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "CJC-1295 is a GHRH analog, so the mechanistic pathway (peptide \u2192 prolonged GH release \u2192 IGF-I elevation) is coherent in isolation. However, there is a large inferential leap from acute GH/IGF-I elevation in humans to sustained muscle growth or strength: the 2006 studies appear to document secretion patterns, not tissue outcomes. Muscle hypertrophy requires weeks to months of training stimulus plus hormonal signaling; a single or short-course measurement of serum GH tells us the peptide activates the axis, not that it produces clinical muscle gain.",
-    "strongest_counterargument": "A skeptic would note that CJC-1295 disappeared from the peer-reviewed literature after 2006, despite peptide research expanding dramatically since then. This suggests either the compound failed to show clinically meaningful effects beyond hormone elevation, or it was never developed further for human use. The human evidence consists of two small trials measuring only hormonal output, with no demonstrated functional strength or hypertrophy endpoint. Even the animal study (muscle growth) is a single small-sample report from 18 years ago, and animal GH sensitivity differs substantially from humans.",
-    "what_would_change_the_picture": "A well-designed 2020+ RCT with >50 participants per arm, blinded, measuring actual muscle mass (DEXA or MRI), strength (1-RM or isokinetic testing), and lean body mass over 12+ weeks of training, with transparent reporting of sample size, dropout rates, and adverse events, would clarify whether CJC-1295 produces clinically meaningful muscle gains beyond placebo. Alternatively, a systematic review of all CJC-1295 human trials (including grey literature) would establish whether the 2006 evidence is truly the state of the art or whether later studies exist.",
+    "mechanism_check": "CJC-1295 is a GHRH analog, so stimulating GH and IGF-1 secretion is mechanistically sound. However, the retrieved evidence shows only that it *does* stimulate these hormones in humans\u2014it does not demonstrate that this translates to muscle growth. The pathway from hormone elevation to hypertrophy involves downstream anabolic signaling, protein synthesis, and net nitrogen balance; none of these are measured in the human trials described. The gap between 'GH rises' and 'muscle grows' is large and not bridged by the available records.",
+    "strongest_counterargument": "A skeptic would note that acute GH stimulation in 2006-era short-term trials does not predict long-term anabolic effects in free-living humans. GH has pleiotropic effects (lipolysis, insulin resistance, fluid retention) and the body adapts to sustained elevation; the trials do not report muscle mass, strength, or lean body mass changes. The muscle growth claim rests on a single rat or mouse study of unknown quality, and animal GHRH analogs have not reliably translated to clinically meaningful hypertrophy in humans in the broader literature.",
+    "what_would_change_the_picture": "A well-designed RCT (N \u2265 50 per arm) measuring lean body mass (DEXA or MRI), muscle strength (1-RM or isokinetic testing), and muscle thickness (ultrasound) over \u226512 weeks in healthy humans, with a placebo control and adequate reporting of adverse events. Ideally, a replication study from an independent group published in the last 5 years.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

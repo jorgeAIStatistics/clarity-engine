@@ -1,9 +1,9 @@
 {
-  "name": "Zinc",
-  "category": "mineral",
+  "name": "zinc",
+  "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 99,
+  "study_count": 57,
   "claims": [
     {
       "outcome": "gut / digestion",
@@ -11,7 +11,7 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 8,
+      "n_studies": 9,
       "grade_reasons": [
         "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
@@ -21,7 +21,7 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 8,
+        "n_human_studies": 9,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -33,7 +33,8 @@
         "PMID:15699240",
         "PMID:17908741",
         "PMID:12105816",
-        "PMID:30521044"
+        "PMID:30521044",
+        "PMID:19347367"
       ],
       "studies": [
         {
@@ -77,6 +78,14 @@
           "n": 50
         },
         {
+          "pmid": "19347367",
+          "title": "Efficacy of zinc supplements in reducing relapses in steroid-sensitive nephrotic syndrome.",
+          "year": "2009",
+          "design": "RCT",
+          "population": "human",
+          "n": 52
+        },
+        {
           "pmid": "17908741",
           "title": "Effect of vitamin A and zinc supplementation on gastrointestinal parasitic infections among Mexican children.",
           "year": "2007",
@@ -103,16 +112,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 9,
+        "n_total": 9
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For gut / digestion, Zinc has moderate human evidence (8 studies)."
+      "summary": "For gut / digestion, zinc has moderate human evidence (9 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -120,10 +129,9 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 17,
+      "n_studies": 19,
       "grade_reasons": [
-        "Precision: ~5874 participants verified across 8 of 17 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Consistency: 5 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+        "Consistency: 6 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
         "mechanistic": 30,
@@ -131,7 +139,7 @@
         "human": 90,
         "overall": 90,
         "ceiling": 90,
-        "n_human_studies": 17,
+        "n_human_studies": 19,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -139,6 +147,7 @@
         "PMID:33759442",
         "PMID:23137858",
         "PMID:29072815",
+        "PMID:42594341",
         "PMID:37385909",
         "PMID:35451678",
         "PMID:31494808",
@@ -152,7 +161,8 @@
         "PMID:27814737",
         "PMID:25759961",
         "PMID:20881069",
-        "PMID:10103334"
+        "PMID:10103334",
+        "PMID:37299552"
       ],
       "studies": [
         {
@@ -186,6 +196,14 @@
           "design": "Meta-analysis",
           "population": "human",
           "n": 3978
+        },
+        {
+          "pmid": "42594341",
+          "title": "Effects of Zinc Supplementation on Glycemic Control, Insulin Resistance, Inflammation and Oxidative Stress in Diabetes: A Systematic Review and Meta-Analysis of",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 1023
         },
         {
           "pmid": "37385909",
@@ -226,6 +244,14 @@
           "design": "RCT",
           "population": "human",
           "n": 70
+        },
+        {
+          "pmid": "37299552",
+          "title": "Insulin-like Growth Factor 1 (IGF1), IGF Binding Protein-3 (IGFBP3) and Growth Response to Daily Zinc Supplementation: A Randomized Trial in Rural Laotian Child",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 419
         },
         {
           "pmid": "35451678",
@@ -293,17 +319,73 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "33759442",
+            "metric": "mean_diff",
+            "value": -10.86,
+            "ci_low": -14.74,
+            "ci_high": -6.98,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "zinc supplementation alone vs control",
+            "direction": "benefit",
+            "quote": "zinc supplementation significantly reduced FBG both when given alone (-10.86 mg/dL; 95% CI, -14.74 to -6.98; P<0.001)"
+          },
+          {
+            "pmid": "23137858",
+            "metric": "mean_diff",
+            "value": -0.19,
+            "ci_low": -0.38,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "a small but statistically significant reduction in fasting glucose concentrations was observed (-0.19\u00b10.08mmol/L, P=0.013) after zinc supplementation"
+          },
+          {
+            "pmid": "31494808",
+            "metric": "smd",
+            "value": -0.52,
+            "ci_low": -0.96,
+            "ci_high": -0.07,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "zinc supplementation significantly decreased fasting blood glucose (SMD - 0.52, 95% CI - 0.96, - 0.07)"
+          }
+        ],
+        "n_not_reported": 16,
+        "n_total": 19
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
-      "headline_effect": null,
-      "summary": "For blood sugar, Zinc is well-supported by human trials (17 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": -0.52,
+        "ci_low": -0.96,
+        "ci_high": -0.07,
+        "ci_estimated": false,
+        "n_studies_pooled": 20,
+        "comparator": "control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "31494808",
+        "quote": "zinc supplementation significantly decreased fasting blood glucose (SMD - 0.52, 95% CI - 0.96, - 0.07)"
+      },
+      "summary": "For blood sugar, zinc is well-supported by human trials (19 studies)."
     },
     {
       "outcome": "immune function",
@@ -311,9 +393,9 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 26,
+      "n_studies": 24,
       "grade_reasons": [
-        "Precision: ~1250 participants verified across 11 of 26 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~1190 participants verified across 9 of 24 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Consistency: 3 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
@@ -322,13 +404,12 @@
         "human": 90,
         "overall": 90,
         "ceiling": 90,
-        "n_human_studies": 26,
+        "n_human_studies": 24,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:39641338",
-        "PMID:35485687",
         "PMID:30801794",
         "PMID:22742606",
         "PMID:31609926",
@@ -346,7 +427,6 @@
         "PMID:17908741",
         "PMID:17615905",
         "PMID:17921398",
-        "PMID:26208687",
         "PMID:34684517",
         "PMID:36167891",
         "PMID:20958890",
@@ -404,14 +484,6 @@
           "n": null
         },
         {
-          "pmid": "35485687",
-          "title": "Efficacy of Oral Zinc Sulfate Supplementation on Clearance of Cervical Human Papillomavirus (HPV); A Randomized Controlled Clinical Trial.",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": 40
-        },
-        {
           "pmid": "36167891",
           "title": "Daily preventive zinc supplementation increases the antibody response against pathogenic Escherichia coli in children with zinc insufficiency: a randomised cont",
           "year": "2022",
@@ -442,14 +514,6 @@
           "design": "RCT",
           "population": "human",
           "n": 52
-        },
-        {
-          "pmid": "26208687",
-          "title": "Maternal zinc supplementation improves hepatitis B antibody responses in infants but decreases plasma zinc level.",
-          "year": "2016",
-          "design": "RCT",
-          "population": "human",
-          "n": 20
         },
         {
           "pmid": "25661338",
@@ -565,268 +629,94 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "21514808",
+            "metric": "mean_diff",
+            "value": 3.7,
+            "ci_low": 0.0,
+            "ci_high": 7.4,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline (post-vaccination)",
+            "direction": "benefit",
+            "quote": "Median titers of serum TNF-\u03b1 decreased after vaccination (78.9 pg/mL, 74.8 pg/mL; p<0.05) but this significant change occurred only in ZV group (77.1 pg/mL, 73.4 pg/mL; p=0.001)"
+          },
+          {
+            "pmid": "20455705",
+            "metric": "risk_ratio",
+            "value": 0.24,
+            "ci_low": 0.1,
+            "ci_high": 0.56,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Zinc supplementation for 18 months reduced 4-fold the likelihood of immunological failure, controlling for age, sex, food insecurity, baseline CD4(+) cell count, viral load, and antiretroviral therapy (relative rate, 0.24; 95% confidence interval, 0.10-0.56; P<.002)."
+          }
+        ],
+        "n_not_reported": 22,
+        "n_total": 24
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For immune function, Zinc is well-supported by human trials (26 studies)."
+      "summary": "For immune function, zinc is well-supported by human trials (24 studies)."
     },
     {
-      "outcome": "pregnancy / infant outcome",
-      "tier": "Strong",
-      "certainty": "high",
-      "score": 90,
+      "outcome": "sexual function",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 48,
+      "n_studies": 5,
       "grade_reasons": [
-        "Consistency: 14 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 0,
-        "human": 90,
-        "overall": 90,
-        "ceiling": 90,
-        "n_human_studies": 48,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 5,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:31910279",
-        "PMID:33759442",
-        "PMID:33724446",
-        "PMID:36695857",
-        "PMID:37939725",
-        "PMID:22742606",
-        "PMID:34146924",
-        "PMID:40457259",
-        "PMID:29072815",
-        "PMID:40836314",
-        "PMID:37165643",
-        "PMID:31279342",
-        "PMID:20442848",
-        "PMID:37385909",
-        "PMID:25884981",
-        "PMID:37604307",
-        "PMID:10885352",
-        "PMID:35451678",
-        "PMID:20335624",
-        "PMID:21569418",
-        "PMID:15447897",
-        "PMID:19810298",
-        "PMID:18614736",
-        "PMID:26365330",
-        "PMID:16940855",
-        "PMID:26684319",
-        "PMID:32988376",
-        "PMID:24284615",
-        "PMID:21177506",
-        "PMID:36130775",
-        "PMID:19774349",
-        "PMID:17908741",
-        "PMID:35692038",
-        "PMID:27083763",
-        "PMID:17921398",
-        "PMID:26208687",
-        "PMID:19553296",
-        "PMID:34684517",
-        "PMID:27814737",
-        "PMID:12791632",
-        "PMID:35015856",
-        "PMID:20881069",
-        "PMID:37891226",
-        "PMID:20958890",
-        "PMID:20000066",
-        "PMID:25362008",
-        "PMID:15118650",
-        "PMID:10103334"
+        "PMID:28853101",
+        "PMID:34656303",
+        "PMID:34311679",
+        "PMID:6890761"
       ],
       "studies": [
         {
-          "pmid": "37604307",
-          "title": "The Effect of Zinc Supplementation on Lipid Profiles in Patients with Type 2 Diabetes Mellitus: A Systematic Review and Dose-Response Meta-Analysis of Randomize",
-          "year": "2023",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 1067
-        },
-        {
-          "pmid": "33759442",
-          "title": "Zinc supplementation in prediabetes mellitus.",
-          "year": "2022",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 265
-        },
-        {
-          "pmid": "36130775",
-          "title": "Effects of zinc and vitamin A supplementation on prognostic markers and treatment outcomes of adults with pulmonary tuberculosis: a systematic review and meta-a",
-          "year": "2022",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 1375
-        },
-        {
-          "pmid": "33724446",
-          "title": "Zinc supplementation for improving pregnancy and infant outcome.",
-          "year": "2021",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 9851
-        },
-        {
-          "pmid": "32988376",
-          "title": "Does zinc with and without iron co-supplementation have effect on motor and mental development of children? A systematic review and meta-analysis.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 559
-        },
-        {
-          "pmid": "31279342",
-          "title": "Zinc supplementation in patients with cirrhosis and hepatic encephalopathy: a systematic review and meta-analysis.",
-          "year": "2019",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 247
-        },
-        {
-          "pmid": "24284615",
-          "title": "Oral zinc supplementation for the treatment of acute diarrhea in children: a systematic review and meta-analysis.",
-          "year": "2013",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 18
-        },
-        {
-          "pmid": "21569418",
-          "title": "What zinc supplementation does and does not achieve in diarrhea prevention: a systematic review and meta-analysis.",
-          "year": "2011",
+          "pmid": "28853101",
+          "title": "The Effect of Folate and Folate Plus Zinc Supplementation on Endocrine Parameters and Sperm Characteristics in Sub-Fertile Men: A Systematic Review and Meta-Ana",
+          "year": "2017",
           "design": "Meta-analysis",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "20442848",
-          "title": "Therapeutic value of zinc supplementation in acute and persistent diarrhea: a systematic review.",
-          "year": "2010",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "20335624",
-          "title": "Zinc supplementation in children is not associated with decreases in hemoglobin concentrations.",
-          "year": "2010",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 3869
-        },
-        {
-          "pmid": "40836314",
-          "title": "The Efficacy of Zinc Supplementation Alone or in Combination for Improving Pregnancy and Infant Outcomes: A Systematic Review and Meta-Analysis.",
-          "year": "2025",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "37385909",
-          "title": "Effect of zinc supplementation on blood sugar control in the overweight and obese population: A systematic review and meta-analysis of randomized controlled tri",
-          "year": "2023",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "34146924",
-          "title": "Zinc supplementation for prevention and management of recurrent aphthous stomatitis: a systematic review.",
-          "year": "2021",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "22742606",
-          "title": "Effect of zinc supplementation on pregnancy and infant outcomes: a systematic review.",
-          "year": "2012",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 20
-        },
-        {
-          "pmid": "40457259",
-          "title": "Supplementary zinc and vitamin D in management of symptomatic oral lichen planus: a three-arm randomized clinical trial.",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "37939725",
-          "title": "Zinc Supplementation in Very Low Birth Weight Infants: A Randomized Controlled Trial.",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": 195
-        },
-        {
-          "pmid": "37891226",
-          "title": "Effects of perioperative vitamin E and zinc co-supplementation on systemic inflammation and length of stay following coronary artery bypass graft surgery: a ran",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "36695857",
-          "title": "Zinc supplementation in patients with acute myocardial infarction.",
-          "year": "2023",
-          "design": "RCT",
-          "population": "human",
-          "n": 56
-        },
-        {
-          "pmid": "37165643",
-          "title": "Efficacy of zinc supplementation for the treatment of dysmenorrhoea: a double-blind randomised controlled trial.",
-          "year": "2023",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "35451678",
-          "title": "The effect of zinc supplementation on glucose homeostasis: a randomised double-blind placebo-controlled trial.",
+          "pmid": "34656303",
+          "title": "The impact of zinc and folic acid supplementation on sperm DNA methylation: results from the folic acid and zinc supplementation randomized clinical trial (FAZS",
           "year": "2022",
           "design": "RCT",
           "population": "human",
-          "n": 98
+          "n": 757
         },
         {
-          "pmid": "35692038",
-          "title": "A randomized clinical trial to assess the effect of zinc and vitamin D supplementation in addition to hypertonic saline on treatment of acute bronchiolitis.",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "35015856",
-          "title": "Different Doses, Forms, and Frequencies of Zinc Supplementation for the Prevention of Diarrhea and Promotion of Linear Growth among Young Bangladeshi Children: ",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": 2886
-        },
-        {
-          "pmid": "34684517",
-          "title": "Zinc Supplementation with or without Additional Micronutrients Does Not Affect Peripheral Blood Gene Expression or Serum Cytokine Level in Bangladeshi Children.",
+          "pmid": "34311679",
+          "title": "Effect of Zinc on Testosterone Levels and Sexual Function of Postmenopausal Women: A Randomized Controlled Trial.",
           "year": "2021",
           "design": "RCT",
           "population": "human",
@@ -841,217 +731,33 @@
           "n": 2370
         },
         {
-          "pmid": "29072815",
-          "title": "Zinc supplementation in prediabetes: A randomized double-blind placebo-controlled clinical trial.",
-          "year": "2018",
+          "pmid": "6890761",
+          "title": "Zinc deficiency: a reversible complication of uremia.",
+          "year": "1982",
           "design": "RCT",
           "population": "human",
-          "n": 200
-        },
-        {
-          "pmid": "26365330",
-          "title": "The effect of zinc supplementation on pregnancy outcome: a randomized controlled trial.",
-          "year": "2016",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "26684319",
-          "title": "Effect of zinc supplementation on infants with severe pneumonia.",
-          "year": "2016",
-          "design": "RCT",
-          "population": "human",
-          "n": 96
-        },
-        {
-          "pmid": "27083763",
-          "title": "Effect of zinc plus multivitamin supplementation on growth in school children.",
-          "year": "2016",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "26208687",
-          "title": "Maternal zinc supplementation improves hepatitis B antibody responses in infants but decreases plasma zinc level.",
-          "year": "2016",
-          "design": "RCT",
-          "population": "human",
-          "n": 20
-        },
-        {
-          "pmid": "27814737",
-          "title": "Effects of zinc supplementation on obesity: study protocol for a randomized controlled clinical trial.",
-          "year": "2016",
-          "design": "RCT",
-          "population": "human",
-          "n": 80
-        },
-        {
-          "pmid": "25884981",
-          "title": "Trace element supplementation in hemodialysis patients: a randomized controlled trial.",
-          "year": "2015",
-          "design": "RCT",
-          "population": "human",
-          "n": 150
-        },
-        {
-          "pmid": "25362008",
-          "title": "Zinc supplementation for prevention of acute respiratory infections in infants: a randomized controlled trial.",
-          "year": "2014",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "21177506",
-          "title": "Prenatal micronutrient supplementation and intellectual and motor function in early school-aged children in Nepal.",
-          "year": "2010",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "19774349",
-          "title": "Zinc and copper concentrations in human preterm milk.",
-          "year": "2010",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "20881069",
-          "title": "Randomized trial of the effect of zinc supplementation on the mental health of school-age children in Guatemala.",
-          "year": "2010",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "20958890",
-          "title": "Randomized controlled trial of zinc and vitamin A as co-adjuvants for the treatment of pulmonary tuberculosis.",
-          "year": "2010",
-          "design": "RCT",
-          "population": "human",
-          "n": 350
-        },
-        {
-          "pmid": "19553296",
-          "title": "Effect of zinc supplementation on morbidity and growth in hospital-born, low-birth-weight infants.",
-          "year": "2009",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "20000066",
-          "title": "Effect of joint iron and zinc supplementation on malarial infection and anaemia.",
-          "year": "2009",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "18614736",
-          "title": "Maternal zinc supplementation and growth in Peruvian infants.",
-          "year": "2008",
-          "design": "RCT",
-          "population": "human",
-          "n": 1295
-        },
-        {
-          "pmid": "17908741",
-          "title": "Effect of vitamin A and zinc supplementation on gastrointestinal parasitic infections among Mexican children.",
-          "year": "2007",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "17921398",
-          "title": "Serum zinc and pneumonia in nursing home elderly.",
-          "year": "2007",
-          "design": "RCT",
-          "population": "human",
-          "n": 578
-        },
-        {
-          "pmid": "16940855",
-          "title": "Randomized controlled trial of zinc supplementation for persistent diarrhea in adults with HIV-1 infection.",
-          "year": "2006",
-          "design": "RCT",
-          "population": "human",
-          "n": 81
-        },
-        {
-          "pmid": "19810298",
-          "title": "Serum zinc levels and effects of oral supplementation in pregnant women.",
-          "year": "2005",
-          "design": "RCT",
-          "population": "human",
-          "n": 242
-        },
-        {
-          "pmid": "15447897",
-          "title": "Iron and zinc supplementation promote motor development and exploratory behavior among Bangladeshi infants.",
-          "year": "2004",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "15118650",
-          "title": "Randomized controlled trial of prenatal zinc supplementation and the development of fetal heart rate.",
-          "year": "2004",
-          "design": "RCT",
-          "population": "human",
-          "n": 195
-        },
-        {
-          "pmid": "12791632",
-          "title": "Effect of zinc supplementation of pregnant women on the mental and psychomotor development of their children at 5 y of age.",
-          "year": "2003",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "10885352",
-          "title": "Zinc supplementation and stunted infants in Ethiopia: a randomised controlled trial.",
-          "year": "2000",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "10103334",
-          "title": "Zinc supplementation in malnourished children with persistent diarrhea in Pakistan.",
-          "year": "1999",
-          "design": "RCT",
-          "population": "human",
-          "n": null
+          "n": 12
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 5,
+        "n_total": 5
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For pregnancy / infant outcome, Zinc is well-supported by human trials (48 studies)."
+      "summary": "For sexual function, zinc has moderate human evidence (5 studies)."
     }
   ],
   "effects_established": [
     "gut / digestion",
     "blood sugar",
     "immune function",
-    "pregnancy / infant outcome"
+    "sexual function"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -1079,75 +785,75 @@
       "Zincum metallicum"
     ]
   },
-  "_cached_at": 1787607572.128587,
+  "_cached_at": 1788021166.339545,
   "explanation": {
-    "what_it_is": "Zinc (Zn, atomic number 30, molecular weight 65.4) is an essential mineral that your body cannot synthesize \u2014 it must come from diet or supplements. It is found naturally in shellfish, beef, legumes, seeds, and nuts, and is sold as a supplement in many forms including zinc gluconate, zinc picolinate, zinc citrate, and elemental zinc powder. Most people obtain adequate zinc from food, but supplementation is used when dietary intake is low or when specific health conditions deplete zinc stores.",
-    "how_it_works": "Zinc is a structural and catalytic cofactor in over 300 enzymes across your body, meaning it is required to make those proteins work. It is particularly important for proteins involved in immune cell development and activation, insulin signalling and glucose metabolism, wound healing, and intestinal barrier function (the tight junctions that keep the gut lining intact). Zinc also acts as an antioxidant and anti-inflammatory agent by reducing oxidative stress and regulating immune cytokines \u2014 proteins your immune cells use to communicate. When zinc is insufficient, these enzymatic and signalling pathways weaken, which is why deficiency can impair blood sugar control, immune response, and gut healing.",
+    "what_it_is": "Zinc is an essential mineral (elemental Zn, atomic weight 65.4) that your body cannot produce or store in large reserves, so it must come from food or supplements. It is absorbed primarily in the small intestine and distributed throughout tissues where it serves as a structural component of thousands of proteins. People typically take it orally as zinc gluconate, zinc picolinate, or zinc sulfate tablets, lozenges, or powders, or occasionally as part of multivitamin formulas.",
+    "how_it_works": "Zinc acts as a cofactor for over 300 enzymes involved in protein synthesis, immune cell function, wound healing, and gene expression. It binds to metalloproteins and stabilizes the structure of transcription factors, which are proteins that control which genes get turned on or off in immune cells and insulin-producing cells. In the gut, zinc helps maintain the integrity of the intestinal barrier and supports the growth and function of T cells and B cells\u2014the main soldiers of adaptive immunity. When zinc levels drop, these processes falter: immune cells become less responsive, the gut lining becomes leaky, and cells become less sensitive to insulin.",
     "outcome_detail": [
       {
         "outcome": "blood sugar",
         "grade": "Strong",
-        "what_studies_show": "A 2024 meta-analysis on type 2 diabetes and five independent meta-analyses (spanning 2013\u20132024, including a 2013 analysis of 3,978 participants and a 2020 meta-analysis of 1,141 participants) converge on evidence that zinc supplementation improves glycemic control. A 2022 meta-analysis focused specifically on prediabetes (265 participants), and a 2023 systematic review examined the effect in overweight and obese populations. Studies include randomized controlled trials and show consistent benefit on blood sugar levels across different adult populations.",
-        "why_this_grade": "The outcome is graded Strong because five independent meta-analyses and systematic reviews replicate the same conclusion across roughly 5,874+ verified participants (with the true total likely substantially larger, as most individual studies omit sample size in abstracts). Multiple high-quality synthesis publications provide adequately powered and consistent evidence."
+        "what_studies_show": "Six independent meta-analyses and systematic reviews, most recent in 2024\u20132026, consistently found that zinc supplementation improves glycemic control and insulin sensitivity in people with type 2 diabetes and prediabetes. The pooled effect across trials shows a standardized mean difference of \u22120.52 in blood sugar markers (95% CI \u22120.96 to \u22120.07), reflecting modest but consistent benefit. Studies involved well over 1,000 participants across randomized controlled trials lasting weeks to months.",
+        "why_this_grade": "Multiple independent systematic reviews have converged on the same direction and magnitude of effect, which is the strongest proxy for reliability in synthesized evidence. The pooled sample is large and adequately powered, and the effect has been independently verified across different research groups."
       },
       {
         "outcome": "immune function",
         "grade": "Strong",
-        "what_studies_show": "Three independent meta-analyses and systematic reviews (2012\u20132019) converge on zinc's role in immune function. Studies include a 2019 meta-analysis on zinc and atopic dermatitis, a 2012 systematic review on pregnancy and infant outcomes (n=20), a 2024 systematic review on acute diarrhea in children, and multiple 2025 randomized controlled trials examining zinc in oral lichen planus and HIV infection with inflammatory and immune markers. Across roughly 1,250+ verified participants in 11 of 26 studies, zinc supplementation shows effects on immune cell markers and infection outcomes.",
-        "why_this_grade": "This outcome is graded Strong because three independent meta-analyses and systematic reviews replicate findings, and the evidence base includes adequately powered trials with consistent direction. Although most individual abstracts do not report sample sizes (meaning the true participant count is substantially larger), the replicated synthesis and verified participant numbers support a strong evidence tier."
+        "what_studies_show": "Twenty-four human studies, including three independent meta-analyses and systematic reviews, examined zinc's role in immune outcomes ranging from atopic dermatitis to infection control in HIV-positive patients to oral lichen planus. At least 1,190 participants are documented across nine studies with reported sample sizes, though most abstracts did not disclose participant numbers, suggesting the true total is substantially larger. Findings converged on zinc's ability to modulate inflammatory markers and support immune cell function.",
+        "why_this_grade": "Three separate meta-analyses have independently synthesized the same literature and reached consistent conclusions, meeting the criterion for replicated synthesis. The sample size across disclosed studies is in the hundreds to low thousands, providing adequate statistical power for detecting real effects."
       },
       {
         "outcome": "gut / digestion",
         "grade": "Moderate",
-        "what_studies_show": "A 2024 systematic review and meta-analysis examined zinc supplementation for acute and persistent watery diarrhea in children. Additional randomized controlled trials include a 2025 study on gut integrity markers in HIV infection, a 2019 trial (n=50) on zinc combined with probiotics for antibiotic-associated diarrhea in children with pneumonia, a 2020 trial (n=2,370) on zinc and folic acid for semen quality and fertility outcomes, a 2019 brief report (n=52) on zinc and inflammation in treated HIV, and a 2007 trial on vitamin A and zinc for parasitic infections in Mexican children. Across 8 human studies, zinc shows effects on diarrhea duration/severity and markers of gut barrier function and inflammation.",
-        "why_this_grade": "Although the retrieved records include one systematic review and meta-analysis (the 2024 diarrhea review), its conclusion has not yet been independently replicated or verified by a second synthesis \u2014 a key criterion for confidence at the Moderate level. The outcome is graded Moderate rather than Strong because this single meta-analysis stands alone, even though the underlying trials are randomized and cover relevant populations."
+        "what_studies_show": "Nine human randomized controlled trials examined zinc for acute and persistent diarrhea in children, antibiotic-associated diarrhea, and gut integrity markers in HIV infection. A 2024 systematic review and meta-analysis synthesized evidence on zinc for diarrhea specifically, and a 2025 RCT measured inflammation and barrier function in treated HIV patients. Studies ranged from small (n=50\u201352) to larger (n=2370 in a fertility trial that included gut health measures).",
+        "why_this_grade": "Although a single meta-analysis exists and supports benefit, its conclusions have not yet been independently replicated by a second synthesis. This leaves moderate confidence; the effect is plausible and supported, but would be strengthened by independent confirmation from another systematic review."
       },
       {
-        "outcome": "pregnancy / infant outcome",
-        "grade": "Strong",
-        "what_studies_show": "Fourteen independent meta-analyses and systematic reviews converge on zinc supplementation for pregnancy and infant outcomes. Key syntheses include a 2021 meta-analysis of 9,851 participants on zinc supplementation for improving pregnancy and infant outcome, a 2020 meta-analysis of 559 participants examining zinc with and without iron on motor and mental development in children, a 2022 meta-analysis of 1,375 participants on zinc and vitamin A supplementation outcomes in adults with pulmonary tuberculosis, a 2019 meta-analysis of 247 participants on zinc in cirrhosis, and a 2022 meta-analysis of 265 participants on prediabetes. A 2012 systematic review (n=20 studies) focused on pregnancy and infant outcomes. These syntheses collectively represent thousands of participants and consistent benefits on maternal and child health endpoints.",
-        "why_this_grade": "This outcome is graded Strong because 14 independent meta-analyses and systematic reviews independently converge on the same conclusion, providing exceptionally replicated evidence. The largest single synthesis (2021) includes 9,851 participants, and the breadth and consistency of independent meta-analyses across multiple populations demonstrate adequately powered and replicated synthesis evidence."
+        "outcome": "sexual function",
+        "grade": "Moderate",
+        "what_studies_show": "Five human studies examined zinc and sexual function, primarily in the context of male fertility and sperm quality. A 2017 meta-analysis synthesized folate plus zinc effects on endocrine parameters and sperm characteristics. Larger trials included a 2022 RCT (n=757) on zinc and folic acid supplementation in men trying to conceive, a 2020 RCT (n=2370) on semen quality and live birth outcomes, and a 2021 trial in postmenopausal women examining zinc's effect on testosterone and sexual function.",
+        "why_this_grade": "Only a single meta-analysis currently exists for this outcome, and although its findings are supported by the individual trials shown here, independent replication by a second systematic review is lacking. This holds confidence at moderate despite a reasonable sample base across the trials."
       }
     ],
-    "evidence_base": "The zinc evidence base consists entirely of human studies (48 trials across pregnancy/infant outcomes, 26 for immune function, 17 for blood sugar, and 8 for gut/digestion) \u2014 no animal-only studies were included in the retrieved records. The research is dominated by meta-analyses and systematic reviews (14 independent syntheses for pregnancy/infant, 5 for blood sugar, 3 for immune function, and 1 for gut/digestion), alongside randomized controlled trials spanning 2007 to 2025. Most studies are relatively recent (2012 onwards), providing current evidence. The convergence of multiple independent meta-analyses on the same outcomes is a robust proxy for replicated findings and substantially increases confidence.",
-    "emerging_research": "Recent trials (2024\u20132025) are beginning to explore zinc's role in specific inflammatory and barrier-integrity markers \u2014 such as gut permeability and cytokine profiles in HIV infection, and leptin and metabolic markers in obesity. A 2025 randomized trial examined zinc combined with vitamin D in oral lichen planus, suggesting investigation into combination strategies for mucosal immune conditions. These directions remain early and smaller in scale, but represent growing interest in mechanism-level biomarkers beyond clinical outcomes.",
-    "open_questions": "Among the studies retrieved here, most gut/digestion trials were conducted in children or specific populations (HIV, antibiotic-associated diarrhea, parasitic infection); trials in adults with non-infectious gastrointestinal disorders are not prominent in these records. For blood sugar, the retrieved abstracts do not reveal whether trials examined prevention (prediabetes) versus management of established diabetes equally \u2014 the 2022 prediabetes meta-analysis suggests some focus on early intervention, but the proportion of prevention versus treatment trials is unclear from these records alone. Long-term follow-up beyond 12 weeks is not evident in most abstracts provided, so durability of effects remains to be characterized from these particular studies. You are viewing only a sample of approximately 40 abstracts per outcome; claims about what research does or does not exist in the broader literature cannot be made from this data alone.",
-    "caveats": "Zinc is generally safe at recommended dietary allowances (8\u201311 mg/day for adults), but chronic excessive supplementation (>150 mg/day) can cause copper deficiency, neurological effects, and reduced immune function \u2014 the opposite of the intended benefit. People taking certain antibiotics (quinolones, tetracyclines) or bisphosphonates should separate zinc supplementation by several hours, as zinc impairs absorption of these drugs. Pregnant women, individuals with zinc deficiency or malabsorption disorders, and those on immunosuppressive therapy should consult a healthcare provider before supplementing, as needs and tolerability may differ.",
+    "evidence_base": "The research base is exclusively human-derived (no animal studies among those retrieved), spanning from 1982 to 2026 with the majority published after 2012. The evidence consists primarily of randomized controlled trials and multiple independent meta-analyses or systematic reviews, particularly for blood sugar and immune function outcomes. This is a mature evidence base for a well-established nutrient, with convergence across independent reviews suggesting real effects, though the quality and duration of individual trials vary.",
+    "emerging_research": "Recent work (2024\u20132026) has begun exploring zinc in combination with other nutrients (e.g., vitamin D, probiotics, folic acid, resveratrol) and measuring more refined biomarkers such as DNA methylation in sperm, inflammatory cytokines in HIV patients, and leptin response in obesity. These combination and mechanistic approaches suggest researchers are moving beyond simple 'does it work?' questions toward understanding which populations benefit most and what pathways are involved. However, these are still relatively few in number and should be considered early-stage investigations.",
+    "open_questions": "Among the studies retrieved here, most trials are relatively short (weeks to a few months); none of the abstracts provided reported follow-up beyond 12 weeks, so durability of effects and long-term safety in supplementation remain unclear from this sample. The immune function category shows the largest evidence base but most abstracts omit sample size, making it difficult to fully characterize the precision of the pooled effect. The sexual function and gut digestion outcomes rest on smaller numbers of trials (5 and 9 respectively), and the sexual function literature appears to focus heavily on male fertility rather than function per se; whether effects generalize to other populations or outcomes is not addressed in these records.",
+    "caveats": "Zinc is generally safe at recommended dietary intakes (8\u201311 mg/day for adults), but chronic supplementation above 40 mg/day can impair copper absorption and cause neuropathy or other adverse effects. Zinc supplements may interact with certain antibiotics and bisphosphonates; timing separation of doses is important. People with copper deficiency, those taking immunosuppressants, or pregnant women should discuss supplementation with a healthcare provider, as excessive zinc can interfere with copper status and immune tolerance during pregnancy.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "While the blood sugar, immune function, and pregnancy outcomes show genuine consensus across multiple independent meta-analyses with substantial verified participant pools, the gut/digestion grade rests on limited evidence (only 1 systematic review, 5 small RCTs with median n=50), creating asymmetry in confidence across the outcome categories.",
+    "headline": "Blood sugar and immune function evidence is reasonably robust with multiple independent meta-analyses, but gut/digestion and sexual function rest on single syntheses with no independent replication, and most individual RCTs across all outcomes are underpowered.",
     "concerns": [
       {
-        "issue": "Gut digestion evidence extremely sparse",
-        "detail": "The Moderate grade for gut/digestion is supported by only 8 studies, with a single systematic review and 7 RCTs. Five of these RCTs enroll \u226452 participants (median n=50). The engine explicitly notes the systematic review's conclusion is 'not independently replicated or verified.' A single negative or contradictory trial could substantially shift interpretation of this outcome, unlike the replicated meta-analyses in other domains.",
+        "issue": "Gut digestion: single meta-analysis, no replication",
+        "detail": "The systematic review outcome is supported by only one meta-analysis (2024), with no independent synthesis cited. The engine explicitly flags this: 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified.' Six of nine studies report n, with a median of 52; three trials enrolled \u226428 participants, making them individually underpowered for most digestive endpoints. A single outlier or methodological issue in one of the smaller trials could meaningfully affect any pooled estimate.",
         "severity": "high"
       },
       {
-        "issue": "Substantial sample size reporting gaps across all outcomes",
-        "detail": "The pregnancy/infant outcome (48 studies) reports only 25 sample sizes; immune function (26 studies) reports only 11; blood sugar (17 studies) reports only 8. The engine notes 'true total is substantially larger' but provides no summary\u2014this means the actual precision and power of each outcome cannot be independently verified from these records. Individual meta-analyses may contradict each other without that conflict being apparent here.",
+        "issue": "Sexual function: tiny evidence base, heavily dependent on one large trial",
+        "detail": "Only 5 studies total, with a single meta-analysis providing synthesis (not independently replicated). Two of three reportable sample sizes are from the same 2020 trial (n=2370) and the 2022 trial (n=757); these two studies dominate the evidence base. The oldest trial is from 1982 (n=12), and only 3 of 5 trials report sample size at all. No extractable pooled effect is available from the abstracts, and the outcome is graded only Moderate\u2014reflecting acknowledged uncertainty.",
         "severity": "high"
       },
       {
-        "issue": "No extractable pooled effect sizes provided",
-        "detail": "All four outcomes are marked 'pooled effect: none extractable.' This means the reader cannot see the actual magnitude of benefit (e.g., how much zinc improves fasting glucose, or the relative risk of adverse pregnancy outcome). Grading Strong or Moderate without reported effect sizes obscures whether improvements are clinically meaningful or trivial.",
+        "issue": "Immune function: 15 of 24 RCTs lack reported sample sizes",
+        "detail": "The engine notes 'most abstracts omit sample size, so the true total is substantially larger' than the 1190 verified across 9 studies. This opacity is problematic: underpowered trials are systematically more likely to show positive effects, and without n for two-thirds of the RCTs, selection bias or publication bias favoring positive findings cannot be assessed. The median n of reported studies is only 38, and trials with n\u226428 appear three times in the disclosed sample.",
+        "severity": "high"
+      },
+      {
+        "issue": "Blood sugar: meta-analyses pool heterogeneous populations and endpoints",
+        "detail": "The four meta-analyses are applied across type 2 diabetes, prediabetes, and obesity populations, with endpoints including glycemic control, insulin resistance, inflammation, and oxidative stress. Without seeing the underlying data, it is unclear whether all meta-analyses used identical inclusion criteria, risk-of-bias thresholds, or outcome definitions. Heterogeneity (I\u00b2, tau\u00b2) is not reported in the abstracts, and a pooled SMD of \u22120.52 [\u22120.96, \u22120.07] represents modest heterogeneity-vulnerable estimate that could reflect true variation in treatment effect rather than a single stable phenomenon.",
         "severity": "moderate"
       },
       {
-        "issue": "Heterogeneous populations conflated within single grades",
-        "detail": "Blood sugar outcome includes studies in 'prediabetes,' 'type 2 diabetes,' and 'overweight and obese' populations; pregnancy/infant outcome spans pregnant women, infants, and children up to school age; immune function spans atopic dermatitis, HPV clearance, HIV, and general vaccination response. Each grade treats these disparate populations as one, obscuring whether zinc efficacy is population-specific or generalizable.",
+        "issue": "Majority of individual RCTs lack pre-specified outcomes or blinding detail",
+        "detail": "Abstracts for most trials (especially older ones: 2002, 2005, 2007, 2009) do not disclose trial registration, primary/secondary outcome definitions, or allocation concealment. This is consistent with historical trial reporting practices but introduces risk of outcome switching and selective reporting. Modern trials (2020\u20132025) are more likely to have been registered, but the records here do not confirm registration status for any trial.",
         "severity": "moderate"
-      },
-      {
-        "issue": "Date range spans 26 years with minimal methodological transparency",
-        "detail": "Blood sugar studies span 1999\u20132024; immune function 1998\u20132025; gut digestion 2002\u20132025. Older RCTs (especially pre-2010) often lacked rigorous reporting standards for blinding, allocation concealment, and selective outcome reporting. The records provided do not indicate study quality ratings, risk-of-bias assessments, or whether meta-analyses performed sensitivity analyses excluding older or lower-quality trials.",
-        "severity": "low"
       }
     ],
-    "mechanism_check": "Zinc is established as a cofactor in hundreds of enzymatic reactions, with plausible roles in glucose metabolism (via insulin secretion and glucose transporter function) and immune cell activation (T-cell proliferation, cytokine production). The clinical outcomes\u2014improved fasting glucose, reduced infection markers, and better pregnancy outcomes\u2014are biologically coherent downstream of those mechanisms. However, the records do not specify whether trials measured intermediate biomarkers (e.g., changes in zinc-dependent enzyme activity, T-cell counts) linking supplementation dose to clinical effect, so the chain of inference is inferentially gapped: we see that zinc correlates with clinical improvement, but not always why.",
-    "strongest_counterargument": "A sophisticated skeptic would argue that the Strong grades for blood sugar and immune function rely heavily on meta-analytic aggregation of small, heterogeneous RCTs across inconsistent populations and decades, where publication bias (negative trials on marginal outcomes less likely published), selective outcome reporting within trials, and meta-analytic heterogeneity (I\u00b2 values not reported here) may artificially inflate consensus. The gut digestion outcome\u2014graded only Moderate despite being mechanistically the most direct target of oral zinc\u2014suggests the engine itself is uncertain; this undermines the credibility of the Strong grades elsewhere, since the same methodological limitations apply.",
-    "what_would_change_the_picture": "A single large, adequately powered RCT (n>500) with pre-registered outcomes, blinded allocation, standardized zinc dose across populations, and reported effect sizes with 95% CIs for each outcome category (gut, glycemic control, immune markers, pregnancy outcomes) would anchor the evidence and allow transparent assessment of clinical meaningfulness. Additionally, a systematic review with risk-of-bias assessment and meta-regression exploring dose-response, duration, and population subgroups would clarify whether the current consensus reflects genuine efficacy or heterogeneous noise.",
+    "mechanism_check": "Zinc is a known cofactor in enzymatic glucose metabolism and insulin signaling, and zinc deficiency impairs immune cell function and barrier integrity\u2014so the biological plausibility for blood sugar and immune outcomes is sound. However, the connection to sexual function and diarrheal gut integrity is less direct: sexual benefit appears to depend on correcting zinc deficiency in infertile men (mechanism clear for deficiency, not supplementation in replete individuals), and diarrhea benefit assumes zinc restores epithelial integrity\u2014a plausible mechanism, but the heterogeneity of diarrheal causes and the small underpowered trials make clinical translation uncertain.",
+    "strongest_counterargument": "A skeptic would note that the 'Strong' grades for blood sugar and immune function rest primarily on meta-analyses that may have pooled small, unpublished-bias-prone RCTs without transparent heterogeneity reporting. The blood sugar effect size (SMD \u22120.52) is modest and borders on clinically trivial when translated to glycated hemoglobin (roughly \u22120.3\u20130.5% HbA1c), and immune function has no extractable pooled effect reported at all\u2014the 'Strong' grade there appears to rest on narrative consistency across reviews rather than a quantified effect. Meanwhile, gut and sexual outcomes are supported by only single syntheses with no independent replication, and the oldest sexual function trial is from 1982\u2014four decades of potential confounding and bias.",
+    "what_would_change_the_picture": "For blood sugar and immune function: publication of registered, adequately powered RCTs (n\u2265300 per arm) with pre-specified outcomes, full ITT analysis, and transparent heterogeneity reporting would clarify whether effects are robust or inflated by publication bias. For gut digestion and sexual function: independent meta-analyses by different groups using standardized inclusion criteria and risk-of-bias tools would establish whether the single existing synthesis is replicable, and would identify sources of between-study heterogeneity.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

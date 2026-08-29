@@ -1,9 +1,9 @@
 {
-  "name": "Potassium",
-  "category": "mineral",
+  "name": "potassium",
+  "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 101,
+  "study_count": 102,
   "claims": [
     {
       "outcome": "blood pressure",
@@ -13,7 +13,7 @@
       "has_human_evidence": true,
       "n_studies": 41,
       "grade_reasons": [
-        "Precision: ~19149 participants verified across 19 of 41 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~19079 participants verified across 18 of 41 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Consistency: 12 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
@@ -32,6 +32,7 @@
         "PMID:27289164",
         "PMID:1649867",
         "PMID:39519450",
+        "PMID:41263071",
         "PMID:16856060",
         "PMID:38780161",
         "PMID:16856053",
@@ -49,16 +50,14 @@
         "PMID:3524185",
         "PMID:1336526",
         "PMID:41345453",
-        "PMID:41263071",
-        "PMID:41935461",
         "PMID:2072372",
         "PMID:23035145",
         "PMID:28024910",
         "PMID:10357504",
         "PMID:3295034",
-        "PMID:4197254",
         "PMID:3305088",
         "PMID:6143083",
+        "PMID:8505112",
         "PMID:29700922",
         "PMID:6204149",
         "PMID:39796479",
@@ -67,7 +66,8 @@
         "PMID:39846487",
         "PMID:33674705",
         "PMID:28682116",
-        "PMID:29497150"
+        "PMID:29497150",
+        "PMID:26343780"
       ],
       "studies": [
         {
@@ -167,14 +167,6 @@
           "n": 277
         },
         {
-          "pmid": "41345453",
-          "title": "Sodium reduction is the key ingredient in dietary treatment of hypertension - a randomized controlled trial on sodium, potassium and nitrate.",
-          "year": "2026",
-          "design": "RCT",
-          "population": "human",
-          "n": 90
-        },
-        {
           "pmid": "41263071",
           "title": "Consistency of Blood Pressure Response to Potassium-Enriched Salt in the China Salt Substitute Study.",
           "year": "2026",
@@ -183,12 +175,12 @@
           "n": 608
         },
         {
-          "pmid": "41935461",
-          "title": "Effects of a combination of olive leaf extract and potassium on blood pressure in participants with mild to moderate hypertension: A double blind, randomized, p",
+          "pmid": "41345453",
+          "title": "Sodium reduction is the key ingredient in dietary treatment of hypertension - a randomized controlled trial on sodium, potassium and nitrate.",
           "year": "2026",
           "design": "RCT",
           "population": "human",
-          "n": 70
+          "n": 90
         },
         {
           "pmid": "39796479",
@@ -218,6 +210,22 @@
           "pmid": "29497150",
           "title": "Impact of long-term potassium supplementation on thiazide diuretic-induced abnormalities of glucose and uric acid metabolisms.",
           "year": "2018",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "26343780",
+          "title": "Effects of sodium and potassium supplementation on endothelial function: a fully controlled dietary intervention study.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "8505112",
+          "title": "Effect of low sodium diet or potassium supplementation on adolescent blood pressure.",
+          "year": "1993",
           "design": "RCT",
           "population": "human",
           "n": null
@@ -303,20 +311,20 @@
           "n": null
         },
         {
-          "pmid": "4197254",
-          "title": "Effects of hydrochlorothiazide in hypertensive patients and the need for potassium supplementation.",
-          "year": "1973",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "35164833",
           "title": "Diet or additional supplement to increase potassium intake: protocol for an adaptive clinical trial.",
           "year": "2022",
           "design": "Clinical trial",
           "population": "human",
           "n": null
+        },
+        {
+          "pmid": "28682116",
+          "title": "Potassium supplementation ameliorates increased plasma homocysteine induced by salt loading in normotensive salt-sensitive subjects.",
+          "year": "2017",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 47
         },
         {
           "pmid": "23035145",
@@ -349,14 +357,6 @@
           "design": "Unclassified",
           "population": "human",
           "n": 48
-        },
-        {
-          "pmid": "28682116",
-          "title": "Potassium supplementation ameliorates increased plasma homocysteine induced by salt loading in normotensive salt-sensitive subjects.",
-          "year": "2017",
-          "design": "Unclassified",
-          "population": "human",
-          "n": 47
         },
         {
           "pmid": "40232853",
@@ -400,17 +400,269 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "27289164",
+            "metric": "mean_diff",
+            "value": 0.19,
+            "ci_low": -0.44,
+            "ci_high": 0.82,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "The meta-analysis showed no overall effect of increased potassium intake on HR (0.19 bpm, 95% CI: -0.44, 0.82)"
+          },
+          {
+            "pmid": "1649867",
+            "metric": "mean_diff",
+            "value": -5.9,
+            "ci_low": -6.6,
+            "ci_high": -5.2,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "oral potassium supplements vs control",
+            "direction": "benefit",
+            "quote": "oral potassium supplements significantly lower systolic blood pressure [-5.9 mmHg, -6.6 to -5.2 mmHg (mean, 95% confidence interval)]"
+          },
+          {
+            "pmid": "39519450",
+            "metric": "mean_diff",
+            "value": -2.79,
+            "ci_low": -5.58,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "both reduce SBP by -2.79 and -2.10 mm Hg, respectively"
+          },
+          {
+            "pmid": "16856060",
+            "metric": "mean_diff",
+            "value": -4.6,
+            "ci_low": -9.9,
+            "ci_high": 0.7,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "none",
+            "quote": "The combination of potassium & magnesium compared to control resulted in statistically non-significant reductions in both SBP (mean difference = -4.6 mmHg, 95% CI: -9.9 to 0.7)"
+          },
+          {
+            "pmid": "16856053",
+            "metric": "mean_diff",
+            "value": -11.2,
+            "ci_low": -25.2,
+            "ci_high": 2.7,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "none",
+            "quote": "potassium supplementation compared to control resulted in a large but statistically non-significant reductions in SBP (mean difference: -11.2, 95% CI: -25.2 to 2.7)"
+          },
+          {
+            "pmid": "22541753",
+            "metric": "mean_diff",
+            "value": -9.5,
+            "ci_low": -10.8,
+            "ci_high": -8.1,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "potassium treatment vs control",
+            "direction": "benefit",
+            "quote": "A pooled reduction of systolic blood pressure of -9.5 mmHg (95% confidence interval -10.8 to -8.1)"
+          },
+          {
+            "pmid": "28419159",
+            "metric": "mean_diff",
+            "value": -4.25,
+            "ci_low": -5.96,
+            "ci_high": -2.53,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "potassium supplementation resulted in modest but significant reductions in both SBP (MD -4.25 mmHg; 95% CI: -5.96 to -2.53; I2 = 41%)"
+          },
+          {
+            "pmid": "3883170",
+            "metric": "mean_diff",
+            "value": -5.5,
+            "ci_low": -11.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "the mean blood pressure fell by an average of 5.5 mm Hg (P = 0.004)"
+          },
+          {
+            "pmid": "11115079",
+            "metric": "mean_diff",
+            "value": 14,
+            "ci_low": 0.0,
+            "ci_high": 28.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "potassium supplementation vs CsA high-sodium diet",
+            "direction": "benefit",
+            "quote": "Potassium supplementation lowered blood pressure (198 +/- 5 vs. 212 +/- 2 mm Hg, P < 0.05)"
+          },
+          {
+            "pmid": "41345453",
+            "metric": "mean_diff",
+            "value": -7,
+            "ci_low": -9,
+            "ci_high": -5,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "low-sodium vs high-sodium groups",
+            "direction": "benefit",
+            "quote": "The change in systolic BP in the low-sodium groups was -7 mmHg (95% CI -9;-5)"
+          },
+          {
+            "pmid": "2072372",
+            "metric": "mean_diff",
+            "value": -6.3,
+            "ci_low": -12.6,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "systolic, diastolic and mean BPs decreased by 6.3 +/- 2 (P less than 0.01), 3.0 +/- 2 and 4.1 +/- 2 (P less than 0.05) mmHg respectively for the supine position"
+          },
+          {
+            "pmid": "23035145",
+            "metric": "mean_diff",
+            "value": -4.31,
+            "ci_low": -4.99,
+            "ci_high": -3.62,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs those without maternal history of hypertension",
+            "direction": "benefit",
+            "quote": "Those with a maternal history of hypertension had larger systolic blood pressure responses to potassium compared with those without: -4.31 (95% confidence interval (CI): -4.99, -3.62) mm Hg"
+          },
+          {
+            "pmid": "28024910",
+            "metric": "mean_diff",
+            "value": -4.48,
+            "ci_low": -5.9,
+            "ci_high": -3.07,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "potassium supplementation vs control",
+            "direction": "benefit",
+            "quote": "potassium supplementation decreased systolic blood pressure of 4.48mmHg (95% CI 3.07-5.90)"
+          },
+          {
+            "pmid": "10357504",
+            "metric": "mean_diff",
+            "value": 5,
+            "ci_low": 0.0,
+            "ci_high": 10.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs high salt diet",
+            "direction": "benefit",
+            "quote": "showing a decrease in mean arterial pressure > or = 5 mmHg during low salt and equivalent reductions during high potassium"
+          },
+          {
+            "pmid": "3295034",
+            "metric": "mean_diff",
+            "value": -3.3,
+            "ci_low": -6.6,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "slow-potassium vs slow-sodium period",
+            "direction": "benefit",
+            "quote": "Mean supine systolic blood pressure in the sixth week of the slow-potassium period was 3.3 mmHg lower than that at the end of the slow-sodium period"
+          },
+          {
+            "pmid": "6143083",
+            "metric": "mean_diff",
+            "value": -4.0,
+            "ci_low": -8.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs control diet",
+            "direction": "benefit",
+            "quote": "Compared with the control diet, sodium restriction was associated with lower blood-pressure readings in seven patients, higher levels in five, and an overall reduction in mean pressures of only 4.0/3.0 mm Hg (not significant)."
+          },
+          {
+            "pmid": "6204149",
+            "metric": "mean_diff",
+            "value": -4,
+            "ci_low": -8.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "mean supine blood pressure had fallen by 4% with potassium supplementation compared with placebo"
+          }
+        ],
+        "n_not_reported": 24,
+        "n_total": 41
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For blood pressure, Potassium is well-supported by human trials (41 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -4.25,
+        "ci_low": -5.96,
+        "ci_high": -2.53,
+        "ci_estimated": false,
+        "n_studies_pooled": 23,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "28419159",
+        "quote": "potassium supplementation resulted in modest but significant reductions in both SBP (MD -4.25 mmHg; 95% CI: -5.96 to -2.53; I2 = 41%)"
+      },
+      "summary": "For blood pressure, potassium is well-supported by human trials (41 studies)."
     },
     {
       "outcome": "cardiovascular",
@@ -418,7 +670,7 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 43,
+      "n_studies": 44,
       "grade_reasons": [
         "Consistency: 13 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
@@ -428,7 +680,7 @@
         "human": 90,
         "overall": 90,
         "ceiling": 90,
-        "n_human_studies": 38,
+        "n_human_studies": 39,
         "n_animal_studies": 5,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -439,6 +691,7 @@
         "PMID:27289164",
         "PMID:1649867",
         "PMID:39519450",
+        "PMID:41263071",
         "PMID:16856060",
         "PMID:38780161",
         "PMID:16856053",
@@ -457,8 +710,6 @@
         "PMID:37846572",
         "PMID:1336526",
         "PMID:41345453",
-        "PMID:41263071",
-        "PMID:41935461",
         "PMID:2072372",
         "PMID:23035145",
         "PMID:28024910",
@@ -467,6 +718,7 @@
         "PMID:23199414",
         "PMID:3295034",
         "PMID:3305088",
+        "PMID:8505112",
         "PMID:29700922",
         "PMID:6204149",
         "PMID:39796479",
@@ -475,7 +727,8 @@
         "PMID:3586502",
         "PMID:39410716",
         "PMID:33674705",
-        "PMID:28682116"
+        "PMID:28682116",
+        "PMID:26343780"
       ],
       "studies": [
         {
@@ -583,14 +836,6 @@
           "n": 277
         },
         {
-          "pmid": "41345453",
-          "title": "Sodium reduction is the key ingredient in dietary treatment of hypertension - a randomized controlled trial on sodium, potassium and nitrate.",
-          "year": "2026",
-          "design": "RCT",
-          "population": "human",
-          "n": 90
-        },
-        {
           "pmid": "41263071",
           "title": "Consistency of Blood Pressure Response to Potassium-Enriched Salt in the China Salt Substitute Study.",
           "year": "2026",
@@ -599,12 +844,12 @@
           "n": 608
         },
         {
-          "pmid": "41935461",
-          "title": "Effects of a combination of olive leaf extract and potassium on blood pressure in participants with mild to moderate hypertension: A double blind, randomized, p",
+          "pmid": "41345453",
+          "title": "Sodium reduction is the key ingredient in dietary treatment of hypertension - a randomized controlled trial on sodium, potassium and nitrate.",
           "year": "2026",
           "design": "RCT",
           "population": "human",
-          "n": 70
+          "n": 90
         },
         {
           "pmid": "40879429",
@@ -661,6 +906,22 @@
           "design": "RCT",
           "population": "human",
           "n": 167
+        },
+        {
+          "pmid": "26343780",
+          "title": "Effects of sodium and potassium supplementation on endothelial function: a fully controlled dietary intervention study.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "8505112",
+          "title": "Effect of low sodium diet or potassium supplementation on adolescent blood pressure.",
+          "year": "1993",
+          "design": "RCT",
+          "population": "human",
+          "n": null
         },
         {
           "pmid": "1336526",
@@ -735,6 +996,14 @@
           "n": null
         },
         {
+          "pmid": "28682116",
+          "title": "Potassium supplementation ameliorates increased plasma homocysteine induced by salt loading in normotensive salt-sensitive subjects.",
+          "year": "2017",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 47
+        },
+        {
           "pmid": "23199414",
           "title": "Calcium, magnesium and potassium intake and mortality in women with heart failure: the Women's Health Initiative.",
           "year": "2013",
@@ -773,14 +1042,6 @@
           "design": "Unclassified",
           "population": "human",
           "n": 48
-        },
-        {
-          "pmid": "28682116",
-          "title": "Potassium supplementation ameliorates increased plasma homocysteine induced by salt loading in normotensive salt-sensitive subjects.",
-          "year": "2017",
-          "design": "Unclassified",
-          "population": "human",
-          "n": 47
         },
         {
           "pmid": "40232853",
@@ -824,17 +1085,297 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "27289164",
+            "metric": "mean_diff",
+            "value": 0.19,
+            "ci_low": -0.44,
+            "ci_high": 0.82,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "The meta-analysis showed no overall effect of increased potassium intake on HR (0.19 bpm, 95% CI: -0.44, 0.82)."
+          },
+          {
+            "pmid": "1649867",
+            "metric": "mean_diff",
+            "value": -5.9,
+            "ci_low": -6.6,
+            "ci_high": -5.2,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or control",
+            "direction": "benefit",
+            "quote": "oral potassium supplements significantly lower systolic blood pressure [-5.9 mmHg, -6.6 to -5.2 mmHg (mean, 95% confidence interval)]"
+          },
+          {
+            "pmid": "39519450",
+            "metric": "mean_diff",
+            "value": -2.79,
+            "ci_low": -5.58,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "both reduce SBP by -2.79 and -2.10 mm Hg, respectively"
+          },
+          {
+            "pmid": "16856060",
+            "metric": "mean_diff",
+            "value": -4.6,
+            "ci_low": -9.9,
+            "ci_high": 0.7,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "none",
+            "quote": "The combination of potassium & magnesium compared to control resulted in statistically non-significant reductions in both SBP (mean difference = -4.6 mmHg, 95% CI: -9.9 to 0.7)"
+          },
+          {
+            "pmid": "36839211",
+            "metric": "mean_diff",
+            "value": 0.74,
+            "ci_low": 0.0,
+            "ci_high": 1.48,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "control potassium intake",
+            "direction": "benefit",
+            "quote": "potassium supplementation was associated with a significant increase in FMD (MD: 0.74%)"
+          },
+          {
+            "pmid": "22541753",
+            "metric": "mean_diff",
+            "value": -9.5,
+            "ci_low": -10.8,
+            "ci_high": -8.1,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control/no potassium treatment",
+            "direction": "benefit",
+            "quote": "A pooled reduction of systolic blood pressure of -9.5 mmHg (95% confidence interval -10.8 to -8.1)"
+          },
+          {
+            "pmid": "28419159",
+            "metric": "mean_diff",
+            "value": -4.25,
+            "ci_low": -5.96,
+            "ci_high": -2.53,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "potassium supplementation resulted in modest but significant reductions in both SBP (MD -4.25 mmHg; 95% CI: -5.96 to -2.53; I2 = 41%)"
+          },
+          {
+            "pmid": "3883170",
+            "metric": "mean_diff",
+            "value": -5.5,
+            "ci_low": -11.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "the mean blood pressure fell by an average of 5.5 mm Hg (P = 0.004)"
+          },
+          {
+            "pmid": "11115079",
+            "metric": "mean_diff",
+            "value": 14,
+            "ci_low": 0.0,
+            "ci_high": 28.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "potassium supplementation vs CsA high-sodium diet",
+            "direction": "benefit",
+            "quote": "Potassium supplementation lowered blood pressure (198 +/- 5 vs. 212 +/- 2 mm Hg, P < 0.05)"
+          },
+          {
+            "pmid": "6125727",
+            "metric": "mean_diff",
+            "value": -4,
+            "ci_low": -8.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "By the fourth week mean supine blood pressure had fallen by 4% on potassium supplementation compared with placebo."
+          },
+          {
+            "pmid": "41345453",
+            "metric": "mean_diff",
+            "value": -7,
+            "ci_low": -9,
+            "ci_high": -5,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "low-sodium vs high-sodium groups",
+            "direction": "benefit",
+            "quote": "The change in systolic BP in the low-sodium groups was -7 mmHg (95% CI -9;-5)"
+          },
+          {
+            "pmid": "2072372",
+            "metric": "mean_diff",
+            "value": -6.3,
+            "ci_low": -12.6,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "systolic, diastolic and mean BPs decreased by 6.3 +/- 2 (P less than 0.01)"
+          },
+          {
+            "pmid": "23035145",
+            "metric": "mean_diff",
+            "value": -4.31,
+            "ci_low": -4.99,
+            "ci_high": -3.62,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs no maternal history of hypertension",
+            "direction": "benefit",
+            "quote": "Those with a maternal history of hypertension had larger systolic blood pressure responses to potassium compared with those without: -4.31 (95% confidence interval (CI): -4.99, -3.62) mm Hg"
+          },
+          {
+            "pmid": "28024910",
+            "metric": "mean_diff",
+            "value": -4.48,
+            "ci_low": -5.9,
+            "ci_high": -3.07,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or control",
+            "direction": "benefit",
+            "quote": "potassium supplementation decreased systolic blood pressure of 4.48mmHg (95% CI 3.07-5.90)"
+          },
+          {
+            "pmid": "10357504",
+            "metric": "mean_diff",
+            "value": 5,
+            "ci_low": 0.0,
+            "ci_high": 10.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs high salt diet",
+            "direction": "benefit",
+            "quote": "showing a decrease in mean arterial pressure > or = 5 mmHg during low salt and equivalent reductions during high potassium"
+          },
+          {
+            "pmid": "23199414",
+            "metric": "hazard_ratio",
+            "value": 0.86,
+            "ci_low": 0.71,
+            "ci_high": 1.04,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "highest vs lowest quartile of dietary magnesium intake",
+            "direction": "benefit",
+            "quote": "Corresponding HR were 1\u00b700 (referent), 0\u00b786 (95 % CI 0\u00b771, 1\u00b704), 0\u00b788 (95 % CI 0\u00b769, 1\u00b711) and 0\u00b784 (95 % CI 0\u00b763, 1\u00b712) (P for trend = 0\u00b729), across quartiles of dietary Mg intake"
+          },
+          {
+            "pmid": "3295034",
+            "metric": "mean_diff",
+            "value": -3.3,
+            "ci_low": -6.6,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "slow-sodium period vs slow-potassium period",
+            "direction": "benefit",
+            "quote": "Mean supine systolic blood pressure in the sixth week of the slow-potassium period was 3.3 mmHg lower than that at the end of the slow-sodium period"
+          },
+          {
+            "pmid": "28682116",
+            "metric": "correlation",
+            "value": 0.75,
+            "ci_low": 0.0,
+            "ci_high": 1.5,
+            "ci_estimated": true,
+            "converted": true,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "MBP change vs plasma Hcys change during low-salt to high-salt intake",
+            "direction": "none",
+            "quote": "the change of mean arterial blood pressure (MBP) correlated significantly and positively with the alteration of plasma Hcys during low-salt to high-salt intake and high-salt to high-salt with potassium supplementation (r = 0.75, P < 0.001"
+          },
+          {
+            "pmid": "26343780",
+            "metric": "mean_diff",
+            "value": 1.16,
+            "ci_low": 0.37,
+            "ci_high": 1.96,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "FMD was 1\u00b716 % (95% CI 0\u00b737, 1\u00b796) higher after K supplementation than after placebo"
+          }
+        ],
+        "n_not_reported": 25,
+        "n_total": 44
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For cardiovascular, Potassium is well-supported by human trials (43 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -4.25,
+        "ci_low": -5.96,
+        "ci_high": -2.53,
+        "ci_estimated": false,
+        "n_studies_pooled": 23,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "28419159",
+        "quote": "potassium supplementation resulted in modest but significant reductions in both SBP (MD -4.25 mmHg; 95% CI: -5.96 to -2.53; I2 = 41%)"
+      },
+      "summary": "For cardiovascular, potassium is well-supported by human trials (44 studies)."
     },
     {
       "outcome": "kidney function",
@@ -853,8 +1394,8 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 9,
-        "n_animal_studies": 6,
+        "n_human_studies": 8,
+        "n_animal_studies": 7,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -903,14 +1444,6 @@
           "pmid": "37382933",
           "title": "Kaliuresis and Intracellular Uptake of Potassium with Potassium Citrate and Potassium Chloride Supplements: A Randomized Controlled Trial.",
           "year": "2023",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "9298475",
-          "title": "Muscle potassium content and potassium gluconate supplementation in normokalemic cats with naturally occurring chronic renal failure.",
-          "year": "1997",
           "design": "RCT",
           "population": "human",
           "n": null
@@ -980,6 +1513,14 @@
           "n": null
         },
         {
+          "pmid": "31304869",
+          "title": "Retrospective study of the efficacy of oral potassium supplementation in cats with kidney disease.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "11115079",
           "title": "Dietary potassium and magnesium supplementation in cyclosporine-induced hypertension and nephrotoxicity.",
           "year": "2000",
@@ -988,26 +1529,41 @@
           "n": 10
         },
         {
-          "pmid": "31304869",
-          "title": "Retrospective study of the efficacy of oral potassium supplementation in cats with kidney disease.",
-          "year": "2020",
-          "design": "Unclassified",
+          "pmid": "9298475",
+          "title": "Muscle potassium content and potassium gluconate supplementation in normokalemic cats with naturally occurring chronic renal failure.",
+          "year": "1997",
+          "design": "Animal",
           "population": "animal",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "11115079",
+            "metric": "mean_diff",
+            "value": -25,
+            "ci_low": -50.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs CsA high-sodium diet",
+            "direction": "benefit",
+            "quote": "Potassium supplementation lowered blood pressure (198 +/- 5 vs. 212 +/- 2 mm Hg, P < 0.05) and partially prevented the development of proteinuria (-25%, P < 0.05)."
+          }
+        ],
+        "n_not_reported": 14,
+        "n_total": 15
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For kidney function, Potassium has moderate human evidence (15 studies)."
+      "summary": "For kidney function, potassium has moderate human evidence (15 studies)."
     },
     {
       "outcome": "sleep quality",
@@ -1053,16 +1609,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 2,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For sleep quality, Potassium has moderate human evidence (2 studies)."
+      "summary": "For sleep quality, potassium has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
@@ -1097,75 +1653,75 @@
       "CHEBI:26216"
     ]
   },
-  "_cached_at": 1787607648.705052,
+  "_cached_at": 1788018626.856085,
   "explanation": {
-    "what_it_is": "Potassium is an essential mineral (element K, atomic weight ~39) that the body cannot synthesize and must obtain from diet or supplements. It is a positively charged electrolyte found naturally in foods like bananas, leafy greens, and beans, and is taken as a supplement in forms such as potassium chloride, potassium citrate, or potassium gluconate. In the body, potassium exists primarily inside cells, where it plays a critical structural and functional role.",
-    "how_it_works": "Potassium is the main positive charge inside cells, opposing sodium's role outside cells; this imbalance\u2014the sodium-potassium gradient\u2014powers the Na+/K+-ATPase pump, which drives energy-consuming processes and maintains cell membrane potential (electrical charge across the membrane). This gradient is essential for muscle contraction, nerve signal transmission, and heart rhythm regulation. By influencing this gradient and vasodilation (widening of blood vessels), adequate potassium intake helps regulate blood vessel tone and fluid balance, which directly affects blood pressure and cardiovascular function. Potassium also interacts with the renin-angiotensin system, a hormone pathway that controls blood pressure and kidney function.",
+    "what_it_is": "Potassium is an essential mineral and electrolyte (chemical symbol K, atomic weight ~39) that the body cannot synthesize and must obtain from diet or supplementation. It exists naturally in foods like bananas, leafy greens, and beans, and is taken as a dietary supplement in forms such as potassium chloride, potassium citrate, or potassium gluconate. In the body, potassium is one of the most abundant intracellular cations, with about 98% stored inside cells and only ~2% circulating in the blood.",
+    "how_it_works": "Potassium is critical to the sodium\u2013potassium pump (Na+/K+-ATPase), an active transport mechanism that maintains the electrical and osmotic balance across all cell membranes. This pump extrudes sodium and brings potassium into cells, creating the voltage gradient that allows nerve impulses, muscle contraction, and heart rhythm to function. Higher dietary potassium intake increases urinary sodium excretion (natriuresis) and reduces overall fluid volume and arterial stiffness, which lowers blood pressure. Potassium also modulates vascular endothelial function and tone, influences kidney filtration and electrolyte handling, and may affect sleep-wake regulation through its role in neuromuscular signaling and ion balance in the central nervous system.",
     "outcome_detail": [
       {
         "outcome": "blood pressure",
         "grade": "Strong",
-        "what_studies_show": "Multiple meta-analyses spanning 2016\u20132024 in normotensive and hypertensive populations show that potassium supplementation reduces systolic blood pressure. A 2017 meta-analysis of randomized controlled trials (n=9,059) and a 2020 dose-response meta-analysis both confirmed this relationship; a 2021 analysis (n=5,708) examined how baseline potassium intake affects the blood pressure response to sodium reduction. Studies consistently found blood pressure reduction across diverse populations, with effect sizes that increased with supplementation dose and baseline hypertension status.",
-        "why_this_grade": "Twelve independent meta-analyses or systematic reviews converge on this outcome, demonstrating consistency and replication. Across 36 human studies verified in the retrieved records, with ~19,149 participants documented, the evidence is adequately powered and represents the most robust finding in potassium research."
+        "what_studies_show": "Multiple large meta-analyses spanning 2016\u20132024 consistently demonstrate that potassium supplementation reduces blood pressure. A pooled analysis across the retrieved studies (36 human studies, over 19,000 participants verified in at least 18 trials) showed a mean systolic blood pressure reduction of 4.25 mmHg (95% CI \u22125.96 to \u22122.53). Studies include a 2017 meta-analysis of 9,059 participants on oral potassium for essential hypertension, a 2020 dose\u2013response meta-analysis of randomized controlled trials, and a 2024 meta-analysis examining supplementation in normotensive populations. The effect was consistent across independently conducted meta-analyses (12 converged on similar conclusions).",
+        "why_this_grade": "Strong grade reflects adequate precision (>19,000 verified participants across multiple large RCTs), high consistency (12 independent meta-analyses reach similar conclusions), and predominantly human evidence (36 of 41 studies). The pooled effect size is modest but clinically meaningful and robust."
       },
       {
         "outcome": "cardiovascular",
         "grade": "Strong",
-        "what_studies_show": "Thirteen meta-analyses and systematic reviews (2016\u20132024) show broad cardiovascular benefits beyond blood pressure alone. A 2023 meta-analysis (n=332) specifically examined potassium's effect on endothelial function (the health of blood vessel linings); multiple analyses addressed blood pressure as a core cardiovascular risk factor and additional markers. The retrieved studies span hypertensive and normotensive populations, demonstrating effects on vascular function and hemodynamics.",
-        "why_this_grade": "Across 38 human studies in the retrieved records, thirteen independent meta-analyses independently replicate findings on cardiovascular outcomes, indicating both consistency and adequate statistical power. This replication across multiple synthesis efforts meets the threshold for a Strong grade."
+        "what_studies_show": "Evidence on cardiovascular outcomes beyond blood pressure includes a 2023 meta-analysis (n=332) examining potassium supplementation on endothelial function, as well as the same large body of blood-pressure meta-analyses (39 human studies total) that underpin cardiovascular benefit. Multiple meta-analyses from 2017\u20132024 have synthesized data on oral potassium for hypertension and vascular health, with 13 independent systematic reviews converging on the outcome. The pooled effect mirrors blood pressure findings (mean difference \u22124.25 mmHg), supporting benefit for vascular function and pressure regulation.",
+        "why_this_grade": "Strong evidence is supported by 39 human studies (vs. 5 animal), high replication (13 converged meta-analyses), and consistency across large trials (including the 2023 endothelial function analysis and multiple 2017\u20132024 hypertension syntheses). Cardiovascular benefit rests substantially on blood-pressure reduction, which is well-established."
       },
       {
         "outcome": "kidney function",
         "grade": "Moderate",
-        "what_studies_show": "A 2016 systematic review and meta-analysis (n=1,216) examined the effects of potassium supplements on kidney function in randomized controlled trials. More recent studies (2023\u20132026) include an acute potassium load trial in healthy individuals and chronic kidney disease patients, and trials examining potassium's role in reducing crystalluria (kidney stone formation) and altering urinary potassium excretion. Together, these studies document potassium's effects on renal handling and stone-forming risk, though sample sizes in individual trials remain modest.",
-        "why_this_grade": "Only a single meta-analysis exists among the retrieved studies to pool and verify the conclusion; no independent replication or second meta-synthesis is present in the records provided. With ~1,269 participants verified across only 4 of the 15 studies retrieved (most abstracts omitting sample size), precision is limited. The evidence supports a Moderate grade pending independent verification."
+        "what_studies_show": "A 2016 meta-analysis of randomized controlled trials (n=1,216) examined potassium supplements' effects on kidney function. Additional RCTs include a 2026 study on natriuretic response to acute potassium loading in healthy individuals and chronic kidney disease patients, a 2024 trial (n=23) on potassium citrate co-supplementation in kidney stone formers, and a 2023 RCT comparing kaliuresis and intracellular potassium uptake between potassium citrate and chloride. Earlier studies (1991, 1987) also assessed potassium handling and urinary effects. The findings suggest potassium influences kidney sodium excretion and electrolyte handling, though specific effects on kidney function parameters vary.",
+        "why_this_grade": "Moderate grade reflects smaller overall sample (approximately 1,269 verified participants across 4 of 15 studies; true total is larger but less transparent), limited replication (only one meta-analysis exists for this outcome, not independently verified), and fewer human vs. animal studies (8 human, 7 animal). The evidence is supportive but not yet as robust or consistent as blood pressure findings."
       },
       {
         "outcome": "sleep quality",
         "grade": "Moderate",
-        "what_studies_show": "Two randomized controlled trials are present in the retrieved records: a 2024 trial (n=320) examining potassium and magnesium supplementation on insomnia and sleep hormones in patients with diabetes mellitus, and a 1991 trial measuring potassium's effects on actigraph-identified sleep patterns. Both are human studies; neither animal research was retrieved on this outcome.",
-        "why_this_grade": "Only two human studies exist in the retrieved records, and no pooled meta-analysis confirms they agree on the direction or magnitude of effect. The inconsistency constraint and small study pool warrant a Moderate grade; additional replication is needed before confidence can be raised."
+        "what_studies_show": "Only two human studies were retrieved: a 2024 RCT (n=320) examining effects of magnesium and potassium supplementation on insomnia and sleep hormones in patients with diabetes mellitus, and a 1991 RCT showing that potassium affects actigraph-identified sleep. No animal studies were included in this outcome, and no pooled meta-analysis was available to assess consistency.",
+        "why_this_grade": "Moderate grade reflects very limited evidence (only 2 human studies, no animal data, no meta-analysis), inconsistent replication (studies exist but have not been pooled or independently validated to confirm agreement), and consequently reduced confidence in the effect. This outcome requires substantially more research before strong conclusions can be drawn."
       }
     ],
-    "evidence_base": "The retrieved evidence for potassium is predominantly human-based and heavily concentrated in meta-analyses and systematic reviews published from 2016 onward, with a spike in 2023\u20132024 studies. Blood pressure and cardiovascular outcomes are supported by 12\u201313 independent meta-syntheses each, representing mature, replicated research; kidney function and sleep quality are much more limited, resting on one meta-analysis and two small trials respectively. The research spans normotensive and hypertensive populations, with some data in chronic kidney disease and diabetes mellitus; the dominance of meta-analyses over individual trials reflects a well-studied basic question in human cardiovascular health.",
-    "emerging_research": "Recent trials (2023\u20132026) are beginning to explore potassium's effects in specific disease contexts\u2014diabetes mellitus with insomnia, chronic kidney disease, and kidney stone formation\u2014rather than healthy normotensives. A 2023\u20132026 cluster includes mechanistic studies on kaliuresis (urinary potassium excretion) and intracellular potassium uptake, suggesting refinement of the dose and form most effective for different populations. These directions remain preliminary and are not yet pooled or independently verified.",
-    "open_questions": "Among the retrieved studies, sleep quality is represented by only two trials and lacks any meta-analysis, so the consistency and generalizability of this benefit are unknown. Kidney function data are sparse (nine human studies, only four with clear sample sizes) and rest on a single meta-analysis without independent replication; whether potassium poses risk or benefit in specific kidney diseases (e.g., advanced chronic kidney disease, hyperkalemia-prone conditions) is not clearly answered by the retrieved abstracts. Across all outcomes, most abstracts omit sample sizes, so the true denominator of participants in some analyses cannot be precisely established from the records provided. This sample of ~40 abstracts per outcome does not represent the complete global literature; claims about overall research gaps would require a full systematic review of the field.",
-    "caveats": "Potassium supplements carry a real risk of hyperkalemia (excess blood potassium), which can cause dangerous heart arrhythmias; this risk is particularly high in people with kidney disease, diabetes, or those taking ACE inhibitors, angiotensin receptor blockers, or potassium-sparing diuretics. High-dose potassium supplementation should only be undertaken with medical supervision and serum potassium monitoring. Most people meet potassium needs through diet; supplementation is most appropriate for those with documented deficiency, specific medical conditions (hypertension under physician care), or as directed by a healthcare provider.",
+    "evidence_base": "The evidence for potassium is predominantly human-based, with 36\u201339 human studies per major outcome compared to 5\u20137 animal studies. The research is dominated by meta-analyses and systematic reviews published from 2016 onward, particularly for blood pressure and cardiovascular outcomes, where at least 12\u201313 independent syntheses converge on similar conclusions. Sample sizes in blood-pressure trials are large (verified totals >19,000 across multiple analyses), though kidney-function and sleep-quality evidence bases are considerably smaller and less replicated. Overall, the strength of evidence reflects mature, well-replicated findings for blood pressure and cardiovascular function, but more preliminary evidence for kidney and sleep outcomes.",
+    "emerging_research": "Recent studies (2023\u20132026) have begun investigating more specific forms of potassium supplementation\u2014comparing potassium citrate versus chloride for natriuresis and intracellular uptake (2023), examining co-supplementation with probiotics and magnesium in stone formers (2024), and exploring sleep and hormone effects in patient populations with diabetes mellitus (2024). A 2026 acute-loading study is investigating natriuretic response in chronic kidney disease patients. These directions suggest growing interest in potassium form optimization and application to specific disease states, though findings remain preliminary and limited in scale.",
+    "open_questions": "Among the studies retrieved here, kidney-function and sleep-quality evidence bases are substantially smaller and less consistent than blood-pressure findings; the retrieved records show only 2 human studies on sleep (no pooled analysis) and approximately 1,269 verified participants for kidney outcomes (with true totals uncertain). Most trial abstracts do not report sample sizes, making precise participant counts difficult. The retrieved studies do not reveal the typical duration of supplementation or whether effects persist long-term; most appear to be shorter-term RCTs. You are viewing only a sample of approximately 40 abstracts per outcome, so conclusions about overall field knowledge or gaps beyond these records cannot be made.",
+    "caveats": "Potassium supplementation can pose serious risks in individuals with kidney disease, on ACE inhibitors or potassium-sparing diuretics, or with certain cardiac conditions, as excess potassium can cause life-threatening hyperkalemia (elevated blood potassium). Supplementation form matters\u2014potassium chloride may cause gastrointestinal upset, while citrate or gluconate forms are often better tolerated. Most people can safely increase potassium through whole foods (bananas, leafy greens, beans, avocados) rather than supplements; supplementation should be guided by a healthcare provider and monitored with blood testing, especially in those with reduced kidney function or on medications affecting potassium balance.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Blood pressure and cardiovascular evidence is robust and repeatedly synthesized, but kidney function rests on a single unreplicated meta-analysis, and sleep quality on only two small trials with no pooled verification.",
+    "headline": "Blood pressure and cardiovascular evidence is robust and well-replicated, but kidney function is underpowered (only 1 meta-analysis, mostly animal data), and sleep quality is essentially anecdotal (2 RCTs, one unreported sample size).",
     "concerns": [
       {
-        "issue": "Kidney function: single unreplicated synthesis",
-        "detail": "The kidney function outcome (Moderate grade) relies entirely on one 2016 meta-analysis (n=1216) with no independent replication or systematic review verification. The remaining 14 studies in the retrieved set include only 6 RCTs, 5 animals, and 1 case report. The engine explicitly noted 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified.' This is a fragile evidence base where one methodological flaw in that 2016 synthesis could overturn the conclusion.",
+        "issue": "Kidney function evidence is thin and animal-heavy",
+        "detail": "Of 15 total kidney function studies, 7 are animal and only 8 are human; just 4 human studies report sample sizes (median n=23), and only 1 meta-analysis exists with no independent replication. A single outlier trial or methodological flaw in the human studies could substantially shift the conclusion. The median n=23 for human trials means most are underpowered to detect modest effects.",
         "severity": "high"
       },
       {
-        "issue": "Sleep quality: minimal evidence base, no meta-analysis",
-        "detail": "Sleep quality is graded Moderate despite comprising only 2 RCTs (one with n=320, one with unreported n) and no pooled meta-analysis or systematic review. The engine noted 'several studies exist but no pooled analysis confirms they agree.' This is insufficient for even a Moderate grade by the standard applied to kidney function; the outcome is underspecified and may represent only two independent research groups.",
+        "issue": "Sleep quality grade rests on two studies only, one with unreported sample size",
+        "detail": "The 'Moderate' grade for sleep quality is based on just 2 RCTs (1991 and 2024); only the 2024 study (n=320) reports sample size, leaving the 1991 trial's n unknown. No pooled analysis is described, and the engine explicitly notes 'inconsistency' with no confirmation they agree. This is insufficient to ground a 'Moderate' claim.",
         "severity": "high"
       },
       {
-        "issue": "Blood pressure & cardiovascular: median sample size masks heterogeneity in primary trials",
-        "detail": "While blood pressure and cardiovascular outcomes cite 12\u201313 independent meta-analyses (strong consistency), the underlying primary RCTs show a bimodal distribution: 8 small trials (n=10\u201370) and 11 large trials (n=277\u20139059). The median of 70\u2013277 obscures that 8 of 19 reported-n studies enroll under 30 participants. A single outlier result in a large trial or methodological flaw in multiple small trials could shift the pooled estimate; the convergence claim depends on which studies each meta-analysis included.",
+        "issue": "Blood pressure/cardiovascular outcomes share identical pooled effects despite different mechanisms",
+        "detail": "Both blood pressure and cardiovascular outcomes report identical mean_diff of -4.25 [-5.96 to -2.53]. While 12 independent meta-analyses converge on blood pressure reduction, the cardiovascular outcome list includes only one mechanistic study (2023 endothelial function meta-analysis, n=332). It is unclear whether the cardiovascular grade reflects independent evidence of hard events (MI, stroke, mortality) or is largely inferred from blood pressure lowering alone.",
         "severity": "moderate"
       },
       {
-        "issue": "Substantial missing sample size data across all outcomes",
-        "detail": "The engine notes that abstracts omit sample size for most studies, so 'the true total is substantially larger' than verified. For blood pressure (41 studies, 19 report n), for cardiovascular (43 studies, 23 report n), and especially kidney function (15 studies, 4 report n), the true denominators and their distribution across trial sizes are unknown. This prevents assessment of whether small-trial bias or outlier studies are inflating effect estimates.",
+        "issue": "Sample size reporting is incomplete across all outcomes",
+        "detail": "For blood pressure, only 18 of 41 studies report n; for cardiovascular, 22 of 44; for kidney function, 4 of 15. The engine notes the true total is 'substantially larger' but abstracts omit detail. Unpublished or selectively reported sample sizes create risk of hidden heterogeneity or publication bias not visible in the records.",
         "severity": "moderate"
       },
       {
-        "issue": "No extractable pooled effect sizes provided",
-        "detail": "For all four outcomes, the engine reports 'pooled effect: none extractable.' Readers cannot verify the magnitude of benefit, confidence intervals, or heterogeneity (I\u00b2) statistics. The grade 'Strong' rests on consistency of *direction* across meta-analyses (converge on benefit), not on a quantified, transparent effect size. This limits ability to assess clinical significance or compare potassium to other interventions.",
-        "severity": "moderate"
+        "issue": "Oldest blood pressure meta-analysis is from 1991; decade-plus gaps exist",
+        "detail": "While the literature spans 1982\u20132026, the oldest blood pressure meta-analysis in the records is 1991, and there is a 15-year gap until 2006. The 2006 meta-analysis (n=483) predates modern trial designs and heterogeneous populations. It is unclear whether early trials were smaller or used different inclusion criteria than recent ones, which could inflate or deflate pooled estimates.",
+        "severity": "low"
       }
     ],
-    "mechanism_check": "Potassium's effect on blood pressure is mechanistically plausible (via sodium-potassium pump activity, vascular tone, and natriuresis) and directly measured in the trials reviewed. The cardiovascular outcome (likely encompassing stroke, MI, arrhythmia) is a downstream consequence of sustained BP reduction, so the inferential leap from mechanism to clinical outcome is small. However, kidney function and sleep quality lack a clear mechanistic bridge: the retrieved studies on kidney are mostly about urinary potassium excretion (a marker, not a functional outcome), and the sleep studies appear isolated without articulated mechanism in the retrieved abstracts.",
-    "strongest_counterargument": "A skeptic would note that 12\u201313 converging meta-analyses on blood pressure do not prove potassium lowers BP\u2014they prove that *researchers who synthesize this literature* agree it lowers BP. Meta-analyses can be biased toward positive findings due to selective inclusion, outcome reporting bias in primary trials, and publication bias (negative small trials less likely published). The lack of extractable effect sizes prevents assessment of whether the benefit is clinically meaningful (e.g., 1\u20132 mmHg vs. 10 mmHg), and the cluster of small primary trials (n<30) raises the possibility of hidden heterogeneity or selective reporting. For kidney and sleep, the evidence is too sparse to rule out chance findings or journal bias toward positive results in small samples.",
-    "what_would_change_the_picture": "For blood pressure/cardiovascular: publication of a pre-registered systematic review with transparent search strategy, explicit inclusion/exclusion criteria, and risk-of-bias assessment of all included trials, plus an extractable pooled effect with 95% CI and I\u00b2 heterogeneity. For kidney function: independent replication of the 2016 meta-analysis or a new synthesis by a second group, incorporating any post-2016 RCTs. For sleep quality: at least 3\u20134 additional adequately powered (n\u2265200) RCTs with consistent outcome definitions and a subsequent meta-analysis.",
+    "mechanism_check": "Potassium's mechanism for blood pressure reduction is well-established (Na-K ATPase activation, vasodilation, renin-angiotensin suppression) and directly supports the observed blood pressure lowering. However, the 'cardiovascular' grade conflates blood pressure reduction with cardiovascular protection: the records show strong evidence for the former, but the latter is inferred largely from a single 2023 endothelial function meta-analysis (n=332). Hard cardiovascular outcomes (MI, stroke, death) are not visible in the records provided, creating a significant gap between mechanism and claimed clinical benefit.",
+    "strongest_counterargument": "A skeptic would note that (1) the blood pressure benefit, while replicated, is modest (\u22124.25 mmHg) and may not translate to clinically meaningful cardiovascular risk reduction in normotensive or mildly hypertensive populations; (2) kidney function evidence is too sparse and animal-dominated to rule out harm in certain populations (e.g., chronic kidney disease, drug interactions); and (3) the cardiovascular grade appears to rest on blood pressure reduction alone rather than independent hard-event evidence, making it an inferential claim rather than direct proof. Potassium supplementation can cause life-threatening hyperkalemia in vulnerable groups, a risk not addressed in these records.",
+    "what_would_change_the_picture": "Large, adequately powered RCTs with hard cardiovascular endpoints (MI, stroke, all-cause mortality) in both normotensive and hypertensive populations, stratified by baseline kidney function and concurrent medication use. A dedicated, independently-replicated meta-analysis of kidney outcomes with uniform inclusion of human trials and safety monitoring for hyperkalemia events.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

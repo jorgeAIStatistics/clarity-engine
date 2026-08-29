@@ -1,6 +1,6 @@
 {
-  "name": "Noopept",
-  "category": "nootropic",
+  "name": "noopept",
+  "category": "supplement",
   "overall_score": 70,
   "tier": "Moderate",
   "study_count": 29,
@@ -21,8 +21,8 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 13,
+        "n_human_studies": 1,
+        "n_animal_studies": 15,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -51,22 +51,6 @@
           "design": "Clinical trial",
           "population": "human",
           "n": 60
-        },
-        {
-          "pmid": "16224581",
-          "title": "Early postnatal effects of noopept and piracetam on declarative and procedural memory of adult male and female rats.",
-          "year": "2005",
-          "design": "Observational",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "12660828",
-          "title": "Impairment of learning and memory after photothrombosis of the prefrontal cortex in rat brain: effects of Noopept.",
-          "year": "2002",
-          "design": "Observational",
-          "population": "human",
-          "n": null
         },
         {
           "pmid": "36946173",
@@ -149,6 +133,14 @@
           "n": null
         },
         {
+          "pmid": "16224581",
+          "title": "Early postnatal effects of noopept and piracetam on declarative and procedural memory of adult male and female rats.",
+          "year": "2005",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "15934357",
           "title": "[Comparative study of the long-term behavioral effects of noopept and piracetam in adult male rats and female rats in postnatal period].",
           "year": "2005",
@@ -165,6 +157,14 @@
           "n": null
         },
         {
+          "pmid": "12660828",
+          "title": "Impairment of learning and memory after photothrombosis of the prefrontal cortex in rat brain: effects of Noopept.",
+          "year": "2002",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "31687967",
           "title": "MANAGEMENT OF AMNESTIC AND BEHAVIORAL DISORDERS AFTER KETAMINE ANESTHESIA.",
           "year": "2019",
@@ -175,16 +175,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 16,
+        "n_total": 16
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cognition, Noopept has moderate human evidence (16 studies)."
+      "summary": "For cognition, noopept has moderate human evidence (16 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -257,16 +257,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 5,
+        "n_total": 5
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For blood sugar, Noopept has only preliminary or animal evidence (5 studies)."
+      "summary": "For blood sugar, noopept has only preliminary or animal evidence (5 studies)."
     },
     {
       "outcome": "inflammation",
@@ -320,17 +320,32 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "12109295",
+            "metric": "mean_diff",
+            "value": 62.2,
+            "ci_low": 0.0,
+            "ci_high": 124.4,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs control",
+            "direction": "benefit",
+            "quote": "suppressed the acute nonimmune carrageenan-induced foot inflammation in rats by 62.2%"
+          }
+        ],
+        "n_not_reported": 2,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Noopept has only preliminary or animal evidence (3 studies)."
+      "summary": "For inflammation, noopept has only preliminary or animal evidence (3 studies)."
     },
     {
       "outcome": "mood / depression",
@@ -403,16 +418,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 5,
+        "n_total": 5
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For mood / depression, Noopept has only preliminary or animal evidence (5 studies)."
+      "summary": "For mood / depression, noopept has only preliminary or animal evidence (5 studies)."
     }
   ],
   "effects_established": [
@@ -448,75 +463,75 @@
       "DTXSID80166214"
     ]
   },
-  "_cached_at": 1787607314.865271,
+  "_cached_at": 1788018412.4097862,
   "explanation": {
-    "what_it_is": "Noopept (GVS-111, Omberacetam) is a synthetic dipeptide\u2014two amino acids joined together\u2014with the chemical formula C\u2081\u2087H\u2082\u2082N\u2082O\u2084. It was developed in Russia in the 1970s as a cognitive-enhancing compound and is structurally related to piracetam, a well-known nootropic. It is typically taken as an oral supplement in capsule or powder form, often in doses of 10\u201330 mg daily.",
-    "how_it_works": "Noopept's exact mechanism in human biology is not fully understood, but animal studies suggest it works through multiple pathways. It appears to enhance acetylcholine signaling\u2014a neurotransmitter crucial for learning and memory\u2014and may modulate glutamate and GABA, the brain's main excitatory and inhibitory neurotransmitters. Research indicates it can activate HIF-1, a transcription factor that helps cells adapt to stress and may improve brain blood flow and cell survival. It also shows anti-inflammatory properties in animal models, reducing markers of neuroinflammation, though whether this translates to humans remains unclear.",
+    "what_it_is": "Noopept (GVS-111, also called Omberacetam) is a synthetic dipeptide compound with the molecular formula C\u2081\u2087H\u2082\u2082N\u2082O\u2084, first developed in Russia in the 1970s. It is structurally related to piracetam, a well-known nootropic, but is thought to be more potent. People typically take it orally in pill form, usually in doses of 10\u201330 mg per day, often divided into two doses.",
+    "how_it_works": "Noopept is believed to work primarily by crossing the blood\u2013brain barrier and modulating synaptic function, particularly in regions involved in learning and memory like the hippocampus. Research suggests it may enhance inhibitory (GABA-related) and excitatory (glutamate-related) neurotransmission, potentially by affecting ion channel activity or receptor sensitivity. It also appears to have neuroprotective properties\u2014animal studies indicate it may reduce oxidative stress and stabilize cell membranes. Some evidence hints it may influence growth factors and gene expression in the brain, though the complete mechanism in humans remains incompletely understood.",
     "outcome_detail": [
       {
         "outcome": "cognition",
         "grade": "Moderate",
-        "what_studies_show": "A 2011 clinical trial of 60 patients with mild cognitive impairment following stroke found noopept improved cognitive measures. A 2005 observational study examined early postnatal effects on declarative and procedural memory. The bulk of supporting evidence comes from animal studies (13 of 16 records), including work in 2019\u20132023 on cognitive function in diabetic rats and HIF-1 activation, which suggest a plausible neuroprotective mechanism.",
-        "why_this_grade": "Human evidence exists but is limited\u2014only 3 human studies retrieved, with just 60 verified participants in the largest trial. The remainder of evidence relies on animal models, which do not always predict human outcomes. This mix is enough to suggest a real effect in people with cognitive decline, but sample sizes are small and long-term human data are sparse among the records provided."
+        "what_studies_show": "One human clinical trial in 2011 (n=60) tested noopept in patients with mild cognitive impairment following stroke and found cognitive benefits. The majority of evidence comes from animal studies\u2014approximately 15 rodent studies published between 2009 and 2023\u2014showing improved performance on cognitive and memory tasks, including effects on genotype-dependent behavior in mice and enhancement of synaptic inhibition in the hippocampus.",
+        "why_this_grade": "While the single human trial is encouraging, the evidence base for cognition rests overwhelmingly on animal research, which does not reliably predict human outcomes. The human data is thin (one trial, 60 participants), and most animal studies omit detailed sample sizes, making the total evidence base difficult to quantify precisely; this limits confidence to Moderate rather than Strong."
       },
       {
         "outcome": "blood sugar",
         "grade": "Preliminary",
-        "what_studies_show": "Five animal studies (2013\u20132023) tested noopept in diabetic rats or models of diabetes. A 2014 study showed it normalized incretin system parameters; a 2014 study compared it to sitagliptin (a diabetes drug); and 2019\u20132023 studies examined pancreatic histology and glucose metabolism in streptozotocin-induced diabetes models.",
-        "why_this_grade": "All evidence is animal-only; no human trials on blood sugar control or diabetes are present in the retrieved studies. Animal findings are promising but do not reliably predict human efficacy, making this outcome preliminary until human data emerge."
+        "what_studies_show": "Five animal studies, all published between 2013 and 2023, examined noopept in rodent models of diabetes induced by streptozotocin or in rats with metabolic dysfunction. These studies reported normalization of incretin system parameters, improved pancreatic histology, and metabolic benefits. No human trials on blood sugar are included in the retrieved records.",
+        "why_this_grade": "Evidence is entirely animal-based (rodent diabetes models), and animal findings do not reliably translate to human physiology or disease. Without human trials, any effect on blood sugar in people remains completely unproven."
       },
       {
         "outcome": "inflammation",
         "grade": "Preliminary",
-        "what_studies_show": "Three animal studies (2002, 2012, 2021) report anti-inflammatory effects: a 2021 study found it modulated persistent inflammation via microglia and brain-derived neurotrophic factor; a 2012 study showed reduced cytokine levels; and a 2002 study documented anti-inflammatory properties in an experimental model.",
-        "why_this_grade": "Evidence is exclusively animal-based with no human trials. While consistent across the small number of retrieved records, animal inflammation models differ substantially from human inflammatory conditions, limiting confidence in real-world applicability."
+        "what_studies_show": "Three animal studies (2002, 2012, 2021) investigated noopept's anti-inflammatory properties. Work from 2012 and 2002 reported anti-inflammatory action and reduction in cytokine levels; a 2021 study in a pain model found it modulated spinal microglial inflammation via brain-derived neurotrophic factor (BDNF) signaling. All studies used laboratory animals; no human inflammation trials are present in the retrieved records.",
+        "why_this_grade": "Evidence is exclusively animal-derived and limited to three studies. Animal inflammation models, while mechanistically interesting, do not establish whether noopept reduces inflammation in humans."
       },
       {
         "outcome": "mood / depression",
         "grade": "Preliminary",
-        "what_studies_show": "Five animal studies (2014\u20132019) examined mood-related outcomes, focusing on neuroprotection and synaptic function. A 2015 study found noopept enhanced inhibitory synaptic transmission in the hippocampus; a 2014 study showed neuroprotection in an Alzheimer's-related cellular model; and others explored behavioral and neuroreceptor effects in rodents.",
-        "why_this_grade": "No human studies on mood or depression appear in the retrieved records. All evidence is animal-based, examining mechanisms and behavior in rodents rather than clinical depression or anxiety in people. Preclinical data are suggestive but not sufficient to claim efficacy in humans."
+        "what_studies_show": "Five animal studies (2014\u20132019) explored noopept's effects on mood-related behaviors and neural substrates. Studies reported neuroprotective effects in Alzheimer's-related cellular models, enhancement of inhibitory synaptic transmission, and effects on behavioral measures and neuroreceptor dynamics in rodents. No human trials on mood or depression appear in the retrieved records.",
+        "why_this_grade": "All evidence is from animal models, which do not establish clinical efficacy in humans with depression or mood disorders. The body of research is small and does not include any human behavioral or clinical outcomes."
       }
     ],
-    "evidence_base": "Noopept research is heavily skewed toward animal models: across all outcomes, the retrieved records show roughly 26 animal studies and only 3 human studies. Human work is concentrated on cognition (a 2011 clinical trial and 2005 observational study); other outcomes rely entirely on rodent experiments. Most studies are from 2002\u20132023, with a cluster of animal work in recent years (2019\u20132023), suggesting active investigation of mechanisms. This mix indicates Noopept has plausible biochemical effects in animals and modest human evidence for cognitive benefit, but does not yet support confident claims about other health outcomes in people.",
-    "emerging_research": "Recent animal studies (2020\u20132023) have focused on molecular mechanisms, particularly HIF-1 activation and microglia modulation in inflammation and neurodegeneration. Work in diabetic rodent models has expanded, suggesting researchers are exploring metabolic effects alongside cognition. A 2021 study examined spinal cord inflammation, indicating interest in pain and neuroprotection beyond brain function. These directions are early-stage and animal-only; human trials testing these mechanisms have not appeared in the retrieved literature.",
-    "open_questions": "Among the studies provided, human evidence is sparse and concentrated on cognition in older adults or stroke patients; pediatric, younger adult, or long-term safety data do not appear in the retrieved records. Trial durations in the human studies are not specified in the abstracts provided here, so it is unclear whether benefits persist beyond the study window. No head-to-head trials comparing noopept to standard cognitive therapies or other nootropics appear in these records. Finally, the retrieved sample includes only ~40 abstracts per outcome and cannot represent the complete body of research globally; readers should note that larger or more recent human trials may exist outside this sample.",
-    "caveats": "Noopept is a research chemical not approved by the FDA in the United States and is primarily available as an unregulated supplement or research compound; quality and purity vary widely between suppliers. It may interact with acetylcholinesterase inhibitors (drugs for Alzheimer's disease) and has not been systematically tested in pregnancy, nursing, or in people with severe liver or kidney disease\u2014caution is warranted in these groups. Because human evidence is limited and animal models may not predict human toxicity, long-term safety in people is not yet established.",
+    "evidence_base": "The research on noopept is dominated by animal studies\u2014approximately 28 of the 29 retrieved publications are rodent or cell-based experiments conducted between 2002 and 2023, with one notable human clinical trial (2011, n=60) on cognition in stroke-related mild cognitive impairment. Most animal work originates from Russian and Eastern European research institutions and focuses on mechanistic endpoints (synaptic function, gene expression, microglial activity) rather than clinical outcomes. The human evidence is minimal and confined to a single, relatively small trial, severely limiting confidence in any claim about real-world efficacy in broader populations.",
+    "emerging_research": "Recent work (2020\u20132023) has begun to examine noopept's interaction with metabolic and inflammatory pathways. A 2020 study investigated activation of the hypoxia-inducible factor HIF-1, a master regulator of cellular stress responses, suggesting potential mechanisms in neuroprotection under low-oxygen conditions. A 2021 study explored microglial modulation in chronic pain models via BDNF signaling. These directions are early and remain confined to animal models; their relevance to human disease is not yet established.",
+    "open_questions": "Among the studies retrieved here, human data is restricted to one trial on cognition in stroke patients; no human trials appear for blood sugar, inflammation, or mood. Most animal studies do not report sample sizes in their abstracts, making the total evidence base difficult to quantify. None of the retrieved studies describe follow-up durations longer than weeks to months, so the durability of any effects over extended use is not visible in this sample. Because you are viewing only a sample of ~40 abstracts per outcome, gaps here do not necessarily reflect the full published literature, but they do represent what is immediately available for evidence synthesis.",
+    "caveats": "Noopept is not approved by the FDA and is marketed as a research chemical or unregulated supplement in most Western countries; manufacturing standards and purity are not guaranteed. As a synthetic peptide, it may trigger immune responses or cause side effects (headache, insomnia, and agitation have been reported in some users), and it should not be combined with other psychoactive substances without medical guidance. Pregnant women, nursing mothers, and people with kidney or liver disease should avoid it until safety data in these populations exists. Because human evidence is extremely limited, anyone considering noopept should consult a healthcare provider.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The cognition evidence rests heavily on animal studies (13 of 16), with only one small human trial (n=60) and minimal reporting of sample sizes across the literature, making human efficacy claims premature.",
+    "headline": "Only 1 human trial (n=60, 2011) supports cognition claims; all other evidence is animal studies, so efficacy in humans remains largely unvalidated.",
     "concerns": [
       {
-        "issue": "Severe animal-to-human translation gap",
-        "detail": "Cognition outcome is 81% animal studies (13 of 16), with only 1 clinical trial enrolling 60 participants. Blood sugar, inflammation, and mood outcomes are 100% animal-only (5, 3, and 5 studies respectively). Animal models of cognition\u2014particularly in stroke, diabetes, and Alzheimer's disease\u2014often fail to predict human response. No pooled human effect is extractable, so the 'Moderate' cognition grade rests almost entirely on preclinical mechanism evidence rather than clinical validation.",
+        "issue": "Extreme animal-to-human imbalance for cognition",
+        "detail": "The cognition outcome (graded Moderate) rests on 15 animal studies and only 1 clinical trial. The single human trial enrolled 60 participants in 2011 and tested noopept in stroke-related cognitive impairment\u2014a specific, medically compromised population that may not generalize to healthy or mildly cognitively impaired individuals. No data on whether the effect persists, replicates, or extends to other cognitive domains or populations.",
         "severity": "high"
       },
       {
-        "issue": "Reporting opacity on sample sizes",
-        "detail": "The engine explicitly flags that only 2 of 16 cognition studies report sample size (n=10 and n=60), yet notes the true total is 'substantially larger.' This means the actual composition of the evidence cannot be verified from these abstracts. For blood sugar, only 1 of 5 animal studies reports n=10; for inflammation and mood, zero sample sizes are extractable. This makes it impossible to assess whether the evidence base consists of many small underpowered studies or a few larger ones\u2014a critical factor in evidence credibility.",
+        "issue": "All non-cognition outcomes lack any human evidence",
+        "detail": "Blood sugar (5 animal studies), inflammation (3 animal studies), and mood/depression (5 animal studies) are graded Preliminary but derive entirely from animal models. The engine explicitly flags these as having 'Indirectness: evidence is animal-only; does not reliably translate to humans.' Rodent models of streptozotocin-induced diabetes or microglia-dependent inflammation do not establish that noopept affects these pathways in human physiology.",
         "severity": "high"
       },
       {
-        "issue": "Single human trial with no comparator details visible",
-        "detail": "The one clinical trial supporting cognition claims (2011, n=60, stroke population) is described only by title. No control arm, duration, effect size, or statistical significance is visible in these records. A 60-person trial in a disease-specific population (post-stroke cognitive impairment) may not generalize to healthy cognition or age-related decline. Without seeing the actual result, the 'Moderate' grade cannot be evaluated as justified by this single human study.",
+        "issue": "Severe missing sample size data limits precision assessment",
+        "detail": "For cognition, only 2 of 16 studies report sample size (verified n=70 total across those 2). The engine notes 'most abstracts omit sample size,' making it impossible to assess whether the evidence base is actually powered. For blood sugar, only 1 of 5 reports n (n=10); for inflammation and mood/depression, no sample sizes are extractable. Studies with unreported n cannot be evaluated for risk of small-sample bias or meta-analytic stability.",
         "severity": "high"
       },
       {
-        "issue": "Blood sugar, inflammation, and mood claims rest on minimal, animal-only evidence",
-        "detail": "Three of four outcomes (blood sugar, inflammation, mood) are graded 'Preliminary' and comprise only 5, 3, and 5 animal studies respectively\u2014often with unreported or very small sample sizes (e.g., n=10). The engine correctly notes these do not reliably translate to humans. Claiming any therapeutic effect on these outcomes in humans would be speculative; the grade reflects appropriate caution, but the evidence is too thin to support clinical use for these indications.",
+        "issue": "No extractable pooled effect across any outcome",
+        "detail": "None of the four outcomes show a pooled effect. This may reflect heterogeneous designs, outcome measures, or populations, but it also prevents quantitative synthesis. A 'Moderate' grade for cognition rests on narrative synthesis of 16 disparate studies, many animal, which is prone to cherry-picking and cannot account for publication bias or unobserved small negative trials.",
         "severity": "moderate"
       },
       {
-        "issue": "Temporal clustering and possible publication bias not visible",
-        "detail": "Cognition studies span 2002\u20132023, but 2\u20133 recent animal studies (2023, 2020, 2019) occupy prominent positions in the list. Inflammation and mood studies cluster in the 2010s\u20132020s. Without access to a complete literature search and funnel plot, it is impossible to assess whether these studies represent a publication bias toward positive results in specific labs or whether null findings exist but were not retrieved.",
+        "issue": "Repeated use of same animal models and potentially same cohorts",
+        "detail": "The cognition and blood sugar literatures overlap (e.g., 2023, 2019 studies appear in both), and the blood sugar studies rely heavily on streptozotocin-induced diabetes in rats\u2014a narrow model. Cross-study contamination (same lab, same animals, same intervention) is not visible in these abstracts, but the narrow populations and concentrated authorship contexts suggest limited independent replication.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The mechanistic evidence (NGF/BDNF upregulation, HIF-1 activation, GABA enhancement, anti-inflammatory cytokine modulation) is plausible in principle and supports neuroprotection in animal brains. However, there is a substantial leap from 'noopept modulates transcription factors and growth factors in rodent brain tissue' to 'noopept improves human cognition.' The single human trial bridges this gap partially, but its design, result, and generalizability are not visible here, so the sufficiency of mechanistic evidence to support clinical claims cannot be assessed.",
-    "strongest_counterargument": "A skeptic would note that nootropic compounds routinely show promise in rodent learning tasks and cell-culture neuroprotection, yet rarely produce robust human cognitive improvements in larger trials\u2014a pattern documented across piracetam, aniracetam, and others in the same family. The 2011 human trial may be an outlier or may have shown modest, clinically marginal benefit in a narrow post-stroke population; without seeing the result, one cannot distinguish a genuine modest effect from a small study capturing noise. The blood sugar and mood claims are entirely unsupported in humans and rest on animal models known to be poor translators of metabolic and psychiatric outcomes.",
-    "what_would_change_the_picture": "A multicenter, double-blind, placebo-controlled trial (n \u2265 200) in healthy or mildly cognitively impaired adults, with pre-registered primary outcomes (e.g., validated cognitive batteries, neuroimaging, or biomarkers) and 12+ month follow-up, would provide credible human evidence for cognition. For blood sugar and mood, any human randomized controlled trial with biochemical endpoints (HbA1c, fasting glucose, depression rating scales) would begin to ground these claims in human biology rather than extrapolation from diabetes and anxiety models in rats.",
+    "mechanism_check": "The animal studies propose plausible mechanisms\u2014NGF/BDNF upregulation (2008), HIF-1 transcription factor activation (2020), modulation of spinal microglia (2021)\u2014that could support neuroprotection and cognition. However, the leap from 'noopept increases BDNF in rat hippocampus' to 'noopept improves cognition in humans' is substantial and bridged by only one small, two-decade-old clinical trial in a stroke-specific population. The mechanism could be real but compartmentalized: rodent pharmacology does not reliably predict human cognitive benefit, especially outside the tested indication.",
+    "strongest_counterargument": "A skeptic would argue that a single 60-person trial from 2011, never replicated or built upon in the human literature, is insufficient to support a 'Moderate' grade for cognition in a general population. The animal literature, while mechanistically suggestive, may reflect publication bias (positive findings reported, null results not) and cannot compensate for lack of large, pre-registered, independent human trials. The compound may be active in rodent brains without producing clinically meaningful cognitive gain in humans, a pattern common in preclinical-to-clinical translation.",
+    "what_would_change_the_picture": "A blinded, placebo-controlled randomized trial enrolling \u2265200 cognitively normal or mildly impaired adults, with pre-specified cognitive endpoints (e.g., MMSE, Rey Auditory Verbal Learning Test) and adequate power, followed to completion and registered prospectively, would provide the human evidence needed to validate or refute claims. Replication of the 2011 stroke trial in a second independent cohort would also strengthen confidence that the effect is real and reproducible.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

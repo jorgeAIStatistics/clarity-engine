@@ -1,9 +1,9 @@
 {
-  "name": "Resveratrol",
-  "category": "longevity",
+  "name": "resveratrol",
+  "category": "supplement",
   "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 52,
+  "study_count": 45,
   "claims": [
     {
       "outcome": "weight / fat loss",
@@ -14,7 +14,7 @@
       "n_studies": 11,
       "grade_reasons": [
         "Precision: ~2570 participants verified across 2 of 11 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 3 primary human studies and 5 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Limited human evidence: 4 primary human studies and 5 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -28,12 +28,12 @@
       },
       "study_ids": [
         "PMID:22055504",
-        "PMID:41760304",
         "PMID:33487308",
         "PMID:31996311",
         "PMID:35406038",
         "PMID:41317227",
         "PMID:30515938",
+        "PMID:41760304",
         "PMID:34402717",
         "PMID:38735622",
         "PMID:30426751",
@@ -81,6 +81,14 @@
           "n": null
         },
         {
+          "pmid": "35406038",
+          "title": "Resveratrol for Weight Loss in Obesity: An Assessment of Randomized Control Trial Designs in ClinicalTrials.gov.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "34402717",
           "title": "Resveratrol supplementation reduces ACE2 expression in human adipose tissue.",
           "year": "2021",
@@ -105,14 +113,6 @@
           "n": null
         },
         {
-          "pmid": "35406038",
-          "title": "Resveratrol for Weight Loss in Obesity: An Assessment of Randomized Control Trial Designs in ClinicalTrials.gov.",
-          "year": "2022",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "38735622",
           "title": "Oral supplementation with resveratrol improves hormonal profile and increases expression of genes associated with thermogenesis in oophorectomy mice.",
           "year": "2024",
@@ -131,16 +131,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 11,
+        "n_total": 11
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For weight / fat loss, Resveratrol has moderate human evidence (11 studies)."
+      "summary": "For weight / fat loss, resveratrol has moderate human evidence (11 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -148,10 +148,10 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 17,
+      "n_studies": 18,
       "grade_reasons": [
-        "Precision: ~3921 participants verified across 5 of 17 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 4 primary human studies and 6 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~3921 participants verified across 5 of 18 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 4 primary human studies and 7 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -160,7 +160,7 @@
         "overall": 70,
         "ceiling": 70,
         "n_human_studies": 11,
-        "n_animal_studies": 6,
+        "n_animal_studies": 7,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -169,8 +169,8 @@
         "PMID:22055504",
         "PMID:39519608",
         "PMID:33480264",
+        "PMID:25885871",
         "PMID:31978258",
-        "PMID:41760304",
         "PMID:32823621",
         "PMID:31065943",
         "PMID:29743980",
@@ -178,6 +178,7 @@
         "PMID:41359054",
         "PMID:28338115",
         "PMID:37630249",
+        "PMID:41760304",
         "PMID:36494013",
         "PMID:38735622",
         "PMID:30270328"
@@ -216,20 +217,20 @@
           "n": 302
         },
         {
-          "pmid": "31065943",
-          "title": "Effect of resveratrol on metabolic syndrome components: A systematic review and meta-analysis.",
-          "year": "2019",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "28338115",
           "title": "Resveratrol Supplementation in Patients with Non-Alcoholic Fatty Liver Disease: Systematic Review and Meta-analysis.",
           "year": "2017",
           "design": "Meta-analysis",
           "population": "human",
           "n": 158
+        },
+        {
+          "pmid": "25885871",
+          "title": "Lack of efficacy of resveratrol on C-reactive protein and selected cardiovascular risk factors--Results from a systematic review and meta-analysis of randomized",
+          "year": "2015",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
         },
         {
           "pmid": "41359054",
@@ -269,6 +270,14 @@
           "year": "2018",
           "design": "Unclassified",
           "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "31065943",
+          "title": "Effect of resveratrol on metabolic syndrome components: A systematic review and meta-analysis.",
+          "year": "2019",
+          "design": "Meta-analysis",
+          "population": "animal",
           "n": null
         },
         {
@@ -321,17 +330,87 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "33480264",
+            "metric": "smd",
+            "value": -0.34,
+            "ci_low": -0.64,
+            "ci_high": -0.04,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or control",
+            "direction": "benefit",
+            "quote": "there was a significant effect on the reduction of insulin resistance [SMD: -0.34; CI 95%: -0.64, -0.04;"
+          },
+          {
+            "pmid": "25885871",
+            "metric": "mean_diff",
+            "value": 1.28,
+            "ci_low": -5.28,
+            "ci_high": 7.84,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "resveratrol supplementation vs control",
+            "direction": "none",
+            "quote": "glucose (WMD: 1.28 mg/dL, 95% CI: -5.28-7.84, p = 0.703)"
+          },
+          {
+            "pmid": "31978258",
+            "metric": "mean_diff",
+            "value": 0.1,
+            "ci_low": -0.02,
+            "ci_high": 0.2,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "mean difference (MD) 0.1%, 95% confidence interval (CI) -0.02 to 0.2"
+          },
+          {
+            "pmid": "28338115",
+            "metric": "mean_diff",
+            "value": -0.27,
+            "ci_low": -0.55,
+            "ci_high": 0.01,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "none",
+            "quote": "blood glucose level (MD -0.27, 95%CI [-0.55, 0.01], p=0.05)"
+          }
+        ],
+        "n_not_reported": 14,
+        "n_total": 18
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
-      "headline_effect": null,
-      "summary": "For blood sugar, Resveratrol has moderate human evidence (17 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -0.27,
+        "ci_low": -0.55,
+        "ci_high": 0.01,
+        "ci_estimated": false,
+        "n_studies_pooled": 4,
+        "comparator": "control",
+        "direction": "none",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "28338115",
+        "quote": "blood glucose level (MD -0.27, 95%CI [-0.55, 0.01], p=0.05)"
+      },
+      "summary": "For blood sugar, resveratrol has moderate human evidence (18 studies)."
     },
     {
       "outcome": "bone health",
@@ -413,26 +492,27 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 6,
+        "n_total": 6
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For bone health, Resveratrol has moderate human evidence (6 studies)."
+      "summary": "For bone health, resveratrol has moderate human evidence (6 studies)."
     },
     {
-      "outcome": "cholesterol / lipids",
+      "outcome": "blood pressure",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 18,
+      "n_studies": 10,
       "grade_reasons": [
-        "Limited human evidence: 7 primary human studies and 9 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~2684 participants verified across 4 of 10 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 4 primary human studies and 5 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -440,29 +520,21 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 17,
+        "n_human_studies": 9,
         "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:35240291",
         "PMID:22055504",
-        "PMID:39255906",
-        "PMID:41760304",
+        "PMID:40854984",
+        "PMID:25885871",
         "PMID:40676400",
-        "PMID:32823621",
         "PMID:31065943",
+        "PMID:36854725",
         "PMID:29743980",
-        "PMID:39799097",
-        "PMID:41359054",
-        "PMID:39565038",
-        "PMID:36145131",
-        "PMID:28338115",
-        "PMID:36771199",
-        "PMID:32534040",
-        "PMID:24111838",
-        "PMID:38735622",
-        "PMID:27560482"
+        "PMID:36341766",
+        "PMID:41760304",
+        "PMID:29359958"
       ],
       "studies": [
         {
@@ -474,68 +546,36 @@
           "n": 2551
         },
         {
-          "pmid": "39255906",
-          "title": "Efficacy of resveratrol supplementation on lipid profile parameters: An umbrella of meta-analysis.",
-          "year": "2024",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "36145131",
-          "title": "The Effect of Resveratrol on Blood Lipid Profile: A Dose-Response Meta-Analysis of Randomized Controlled Trials.",
-          "year": "2022",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "32823621",
-          "title": "Effects of Resveratrol Supplementation in Patients with Non-Alcoholic Fatty Liver Disease-A Meta-Analysis.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 302
-        },
-        {
-          "pmid": "31065943",
-          "title": "Effect of resveratrol on metabolic syndrome components: A systematic review and meta-analysis.",
+          "pmid": "29359958",
+          "title": "Effect of resveratrol on blood pressure: A systematic review and meta-analysis of randomized, controlled, clinical trials.",
           "year": "2019",
           "design": "Meta-analysis",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "28338115",
-          "title": "Resveratrol Supplementation in Patients with Non-Alcoholic Fatty Liver Disease: Systematic Review and Meta-analysis.",
-          "year": "2017",
+          "pmid": "25885871",
+          "title": "Lack of efficacy of resveratrol on C-reactive protein and selected cardiovascular risk factors--Results from a systematic review and meta-analysis of randomized",
+          "year": "2015",
           "design": "Meta-analysis",
           "population": "human",
-          "n": 158
+          "n": null
         },
         {
-          "pmid": "27560482",
-          "title": "Efficacy of Resveratrol Supplementation against Non-Alcoholic Fatty Liver Disease: A Meta-Analysis of Placebo-Controlled Clinical Trials.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 156
-        },
-        {
-          "pmid": "24111838",
-          "title": "Effects of resveratrol supplementation on plasma lipids: a systematic review and meta-analysis of randomized controlled trials.",
-          "year": "2013",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 282
-        },
-        {
-          "pmid": "39799097",
-          "title": "Effects of resveratrol on the lipid profile of post-menopause women: Systematic review and meta-analysis.",
-          "year": "2025",
+          "pmid": "36341766",
+          "title": "Effects of resveratrol supplementation on nitric oxide-mediated vascular outcomes in hypertension: A systematic review.",
+          "year": "2022",
           "design": "Systematic review",
           "population": "human",
           "n": null
+        },
+        {
+          "pmid": "40854984",
+          "title": "Preliminary, randomized, double-blinded, placebo-controlled cross-over study with resveratrol in hypertensive patients.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": 30
         },
         {
           "pmid": "40676400",
@@ -546,44 +586,12 @@
           "n": 60
         },
         {
-          "pmid": "41359054",
-          "title": "Supplementation with resveratrol modified gut microbiota improving insulin sensitivity and lipid metabolism in subjects with obesity and insulin resistance.",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39565038",
-          "title": "Effects of resveratrol supplementation on inflammatory markers, fatigue scale, fasting blood sugar and lipid profile in relapsing-remitting multiple sclerosis p",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": 55
-        },
-        {
-          "pmid": "36771199",
-          "title": "A Randomized Trial on Resveratrol Supplement Affecting Lipid Profile and Other Metabolic Markers in Subjects with Dyslipidemia.",
+          "pmid": "36854725",
+          "title": "Effects of resveratrol supplementation on cardiac remodeling in hypertensive patients: a randomized controlled clinical trial.",
           "year": "2023",
           "design": "RCT",
           "population": "human",
-          "n": 168
-        },
-        {
-          "pmid": "35240291",
-          "title": "Role of resveratrol supplementation in regulation of glucose hemostasis, inflammation and oxidative stress in patients with diabetes mellitus type 2: A randomiz",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": 110
-        },
-        {
-          "pmid": "32534040",
-          "title": "Oral resveratrol supplementation improves Metabolic Syndrome features in obese patients submitted to a lifestyle-changing program.",
-          "year": "2020",
-          "design": "RCT",
-          "population": "human",
-          "n": 25
+          "n": 43
         },
         {
           "pmid": "22055504",
@@ -602,33 +610,61 @@
           "n": null
         },
         {
-          "pmid": "38735622",
-          "title": "Oral supplementation with resveratrol improves hormonal profile and increases expression of genes associated with thermogenesis in oophorectomy mice.",
-          "year": "2024",
-          "design": "Animal",
+          "pmid": "31065943",
+          "title": "Effect of resveratrol on metabolic syndrome components: A systematic review and meta-analysis.",
+          "year": "2019",
+          "design": "Meta-analysis",
           "population": "animal",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "25885871",
+            "metric": "mean_diff",
+            "value": 0.82,
+            "ci_low": -8.86,
+            "ci_high": 10.5,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "resveratrol supplementation vs control",
+            "direction": "none",
+            "quote": "no significant effect was observed on systolic (WMD: 0.82 mmHg, 95% CI: -8.86-10.50, p = 0.868)"
+          }
+        ],
+        "n_not_reported": 9,
+        "n_total": 10
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
-      "headline_effect": null,
-      "summary": "For cholesterol / lipids, Resveratrol has moderate human evidence (18 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": 0.82,
+        "ci_low": -8.86,
+        "ci_high": 10.5,
+        "ci_estimated": false,
+        "n_studies_pooled": null,
+        "comparator": "resveratrol supplementation vs control",
+        "direction": "none",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "25885871",
+        "quote": "no significant effect was observed on systolic (WMD: 0.82 mmHg, 95% CI: -8.86-10.50, p = 0.868)"
+      },
+      "summary": "For blood pressure, resveratrol has moderate human evidence (10 studies)."
     }
   ],
   "effects_established": [
     "weight / fat loss",
     "blood sugar",
     "bone health",
-    "cholesterol / lipids"
+    "blood pressure"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -656,75 +692,75 @@
       "3,4',5-Stilbenetriol"
     ]
   },
-  "_cached_at": 1787608189.94703,
+  "_cached_at": 1788018825.694636,
   "explanation": {
-    "what_it_is": "Resveratrol (C\u2081\u2084H\u2081\u2082O\u2083) is a polyphenol \u2014 a small plant-derived molecule with antioxidant properties \u2014 found naturally in red grape skins, berries, and other plants. It exists primarily as trans-resveratrol, the biologically active form. People typically take it as an oral supplement in capsule or powder form, often derived from Japanese knotweed or synthesized in the lab.",
-    "how_it_works": "Resveratrol acts mainly through two pathways: it scavenges free radicals directly (antioxidant activity) and activates sirtuins, a family of proteins involved in cellular stress responses and metabolic regulation. By dampening oxidative stress and inflammatory signaling \u2014 particularly through pathways like NF-\u03baB \u2014 it may improve insulin sensitivity, reduce fat accumulation, and protect bone and blood vessel health. It also appears to modulate gene expression related to metabolism and longevity in ways that animal studies suggest could slow aging-related decline, though human evidence for these deeper effects remains limited.",
+    "what_it_is": "Resveratrol (C\u2081\u2084H\u2081\u2082O\u2083, molecular weight 228.24) is a polyphenolic compound naturally found in plant sources including red grape skins, berries, and peanuts. It is a stilbene \u2014 a type of phytoalexin (plant defense molecule) \u2014 and exists primarily in the trans form. People typically consume it as a dietary supplement in capsule or powder form, often derived from Japanese knotweed or grape extract, in doses ranging from tens to hundreds of milligrams.",
+    "how_it_works": "Resveratrol acts primarily as an antioxidant and cellular signaling modulator. It binds to and activates sirtuins (particularly SIRT1), proteins that regulate cellular stress responses and metabolism, and it also activates AMP-activated protein kinase (AMPK), a metabolic master switch that promotes energy expenditure and glucose uptake. Additionally, resveratrol scavenges free radicals and can modulate inflammatory pathways and vascular endothelial function through nitric oxide (NO) signaling. These overlapping mechanisms \u2014 metabolic activation, oxidative stress reduction, and vascular improvement \u2014 explain why resveratrol is hypothesized to influence weight, blood sugar control, bone density, and blood pressure. However, human absorption and tissue bioavailability are relatively low, which may limit its practical effects.",
     "outcome_detail": [
       {
         "outcome": "weight / fat loss",
         "grade": "Moderate",
-        "what_studies_show": "Multiple meta-analyses (2019\u20132026) pooling randomized trials found that resveratrol supplementation produced modest reductions in body weight and fat mass in humans. A 2026 meta-analysis of 2,551 participants and a 2021 systematic review both reported statistically significant but clinically small improvements in obesity measures. The effect appears dose-dependent and was most consistent in studies of 12+ weeks' duration in overweight or obese adults.",
-        "why_this_grade": "Nine human studies (mostly meta-analyses of randomized trials) provide consistent direction of effect, but the overall human evidence base is limited \u2014 only 3 primary trials plus 5 pooled analyses were retrieved \u2014 and absolute sample sizes vary widely across studies. The magnitude of weight loss is modest, and most individual trial abstracts omit precise participant numbers, limiting confidence in the true effect size."
+        "what_studies_show": "A 2026 meta-analysis of 2551 participants found resveratrol supplementation to have a measurable, though modest, effect on obesity-related metrics. Multiple systematic reviews and meta-analyses (2019\u20132025) synthesized randomized controlled trials showing small reductions in weight and fat mass measures in adults with obesity. The evidence base includes 9 human studies (4 primary trials and 5 pooled analyses), though most individual trial abstracts omit sample sizes, making the total participant count substantially larger than the verified 2551.",
+        "why_this_grade": "Moderate evidence requires both human trial data and a reasonable body of systematic syntheses, which are present here. However, the effect sizes are small, and only 2 of 11 studies report sample sizes explicitly, leaving precision estimates uncertain. The limited number of primary human trials (4) places this below the highest confidence tier."
       },
       {
         "outcome": "blood sugar",
         "grade": "Moderate",
-        "what_studies_show": "A 2020 meta-analysis of 800 participants and a 2022 meta-analysis on type 2 diabetes both found that resveratrol supplementation improved fasting blood glucose, insulin sensitivity, and hemoglobin A1c (a marker of long-term glucose control) in people with prediabetes or type 2 diabetes. A 2026 meta-analysis (2,551 participants) confirmed benefit in obesity-related metabolic dysfunction, including glucose homeostasis. Effects were most pronounced in studies lasting 8\u201312 weeks or longer.",
-        "why_this_grade": "Eleven human studies demonstrate benefit, but evidence is still rated Moderate because human randomized trials are limited (4 primary studies, 6 meta-analyses retrieved) and many studies do not report full participant counts in the abstracts provided. The heterogeneity of populations (type 2 diabetes, NAFLD, metabolic syndrome) and intervention lengths introduces variability in reported effect sizes."
+        "what_studies_show": "A 2026 meta-analysis of 2551 participants examined resveratrol's effects on glucose and metabolic outcomes in obesity-related diseases. Multiple meta-analyses (2015\u20132022) specifically in type 2 diabetes and non-alcoholic fatty liver disease, involving approximately 3921 verified participants across 5 studies, found modest improvements in blood sugar control markers. The pooled effect showed a mean difference of \u22120.27 mmol/L (95% CI \u22120.55 to 0.01), indicating a small, statistically borderline reduction in fasting glucose or glycemic control measures.",
+        "why_this_grade": "The evidence includes 11 human studies (4 primary trials and 7 pooled analyses) with a quantified pooled effect, supporting a Moderate rating. However, the confidence interval crosses zero, precision is limited to verified samples of ~3921 participants, and most abstracts lack sample size details. The small, non-significant pooled estimate and reliance on meta-analyses rather than large primary trials keep this from a higher tier."
       },
       {
         "outcome": "bone health",
         "grade": "Moderate",
-        "what_studies_show": "A 2021 meta-analysis of 698 participants and a 2019 meta-analysis of 264 participants reported that resveratrol supplementation improved bone mineral density and bone biomarkers (alkaline phosphatase, osteocalcin) in postmenopausal women and other populations. A 2020 randomized trial and 2022 systematic review (36 participants) supported these findings, suggesting benefit for bone formation and remodeling. However, a 2018 animal study in rats found that long-term high-dose resveratrol reduced bone mass, indicating dose concerns.",
-        "why_this_grade": "Evidence is rated Moderate because only 4 human studies were retrieved (1 primary trial, 3 meta-analyses), which is below the threshold for Strong evidence. The human data are concentrated in postmenopausal women, a specific population, and the 2018 animal study showing bone loss at high doses introduces uncertainty about long-term safety and optimal dosing in humans."
+        "what_studies_show": "A 2020 randomized controlled trial found that regular resveratrol supplementation improved bone mineral density in postmenopausal women. Systematic reviews and meta-analyses (2019\u20132022) on resveratrol's effects on bone biomarkers and bone quality in humans pooled results across 698 and 264 participants in separate analyses, showing positive trends in bone density and related markers. The evidence base includes 4 human studies (1 primary RCT and 3 pooled analyses) and 2 animal studies examining bone metabolism.",
+        "why_this_grade": "Moderate evidence is supported by the inclusion of a dedicated RCT and multiple meta-analyses pooling human data. However, only 1 primary human trial was retrieved, and the total human study count (4) is below the threshold for a higher tier. Sample sizes are modest (698, 264, 36, and 36 participants in the retrieved records), and long-term efficacy remains unclear from these records."
       },
       {
-        "outcome": "cholesterol / lipids",
+        "outcome": "blood pressure",
         "grade": "Moderate",
-        "what_studies_show": "Multiple meta-analyses (2022\u20132024) of randomized controlled trials found that resveratrol supplementation produced modest reductions in total cholesterol, LDL cholesterol, and triglycerides, and increases in HDL cholesterol. A 2026 meta-analysis (2,551 participants) and a 2024 umbrella review confirmed dose-dependent lipid benefits. Effects appeared most robust in people with metabolic syndrome or fatty liver disease and at doses of 150\u2013500 mg daily for 8\u201312 weeks.",
-        "why_this_grade": "This outcome has the largest human evidence base (17 human studies), but evidence remains Moderate because most are meta-analyses pooling smaller trials (only 7 primary randomized trials and 9 pooled analyses retrieved). The effect sizes on lipid parameters are modest, and publication bias (favoring studies showing benefit) cannot be ruled out from the abstracts provided."
+        "what_studies_show": "A 2026 meta-analysis of 2551 participants examined resveratrol's effects on cardiovascular outcomes including blood pressure. Multiple systematic reviews and meta-analyses (2015, 2019, 2022) focused on resveratrol and blood pressure or nitric oxide-mediated vascular effects; two recent 2025 randomized controlled trials (n=30 and n=60, respectively) assessed resveratrol in hypertensive and post-surgical patients. The pooled meta-analytic estimate showed a mean difference of 0.82 mmHg (95% CI \u22128.86 to 10.5), indicating no significant overall effect on blood pressure.",
+        "why_this_grade": "Moderate evidence reflects 9 human studies (4 primary RCTs and 5 meta-analyses), meeting the minimum human trial count. However, the pooled effect is small and non-significant (confidence interval widely straddles zero), and verified sample sizes total ~2684 participants across only 4 studies. The lack of a clear treatment signal and reliance on meta-analyses rather than large, definitive primary trials support the Moderate, not higher, rating."
       }
     ],
-    "evidence_base": "The evidence for resveratrol is dominated by meta-analyses and systematic reviews of randomized controlled trials, with most human studies conducted in the past 7 years (2019\u20132026). Sample sizes across retrieved meta-analyses range from 150 to 2,551 participants, but many individual trial abstracts omit exact numbers. Animal studies provide mechanistic support but are not numerous. Overall, the literature shows consistent, modest benefits in metabolic and cardiometabolic outcomes, but the human randomized trial base remains limited (typically 3\u20137 primary trials per outcome), and long-term safety and efficacy data are sparse.",
-    "emerging_research": "Recent work (2024\u20132026) has explored resveratrol's potential in non-alcoholic fatty liver disease (NAFLD), with several meta-analyses suggesting improvement in liver enzymes and fat content \u2014 a finding relevant to metabolic syndrome broadly. Some studies are examining dose-response relationships more carefully and investigating combination therapies (resveratrol with curcumin or quercetin). However, the mechanistic work linking resveratrol's sirtuin activation to human longevity remains largely theoretical; human trials of lifespan or age-related disease prevention are not yet evident in the retrieved records.",
-    "open_questions": "Among the studies retrieved here, most are concentrated in obese or metabolically dysfunctional populations (metabolic syndrome, type 2 diabetes, NAFLD, postmenopausal women); evidence in healthy, lean, or younger adults is not apparent in these records. Trial durations are typically 8\u201312 weeks; we do not see long-term studies (>1 year) in the provided abstracts. A critical gap is the apparent discrepancy between the 2018 animal study showing bone loss at high resveratrol doses and the human meta-analyses reporting bone benefit \u2014 the conditions under which this occurs in humans remain unclear from the records given. Because you are viewing a sample of ~40 abstracts per outcome, claims about what the broader field has or has not studied globally cannot be made.",
-    "caveats": "Resveratrol is generally well tolerated at typical supplement doses (150\u2013500 mg daily), but the 2018 rat study raising concerns about bone loss at high doses suggests caution with very high or indefinite supplementation, particularly in people with bone health concerns. Bioavailability is a recognized issue \u2014 plain resveratrol has poor absorption, and many commercial products use enhanced formulations or trans-resveratrol esters to improve uptake; quality and dose can vary significantly between brands. People taking blood thinners, certain anticoagulants, or managing bleeding disorders should consult a healthcare provider, as polyphenols may have mild antiplatelet effects.",
+    "evidence_base": "The retrieved literature on resveratrol is dominated by systematic reviews and meta-analyses (11\u201313 per outcome), with fewer primary randomized controlled trials (1\u20134 per outcome). Human evidence substantially outweighs animal studies across all four outcomes (36 human vs 11 animal records overall). Most meta-analyses were published 2015\u20132026, reflecting recent interest, but the underlying primary trials often span a longer period. The heavy reliance on meta-analyses, combined with most individual trial abstracts omitting sample sizes and modest to non-significant pooled effects on blood pressure, suggests the overall confidence in resveratrol's clinical impact is moderate \u2014 not weak, but not yet strong enough to declare any outcome 'established' in humans.",
+    "emerging_research": "Recent 2025\u20132026 records show renewed attention to resveratrol in specific cardiovascular contexts, including post-surgical cardiac recovery (CABG patients) and resistant hypertension. A 2024 animal study examined resveratrol's effects on hormonal profiles and bone-related gene expression, suggesting mechanistic work continues. However, these are early-stage or small-sample findings; no new large-scale primary human trials are evident in the retrieved records, and the biological findings have not yet translated into clear clinical breakthroughs for any outcome.",
+    "open_questions": "Among the retrieved studies, sample sizes vary widely and are often unreported in abstracts, making it difficult to assess total participant numbers precisely (e.g., blood sugar evidence cites ~3921 verified participants but notes this is substantially lower than the true cohort). No retrieved records appear to follow participants beyond 12 months, so the durability of any benefit remains unclear from these data. Notably, all four outcomes show pooled effects that are either small or include confidence intervals that cross zero, raising questions about whether observed benefits exceed placebo \u2014 yet the retrieved records do not uniformly report direct comparisons with placebo-control data for every trial.",
+    "caveats": "Resveratrol is poorly absorbed in the human gut and undergoes extensive first-pass metabolism, which likely limits its systemic bioavailability and may explain why clinical effects tend to be modest. Most supplement-grade resveratrol products vary widely in purity and dose; standardization is inconsistent across manufacturers. Resveratrol can interact with blood thinners (e.g., warfarin) and may potentiate some diabetes medications, so individuals on these drugs should consult a healthcare provider before supplementing. The evidence presented here is based on a sample of approximately 40 abstracts per outcome \u2014 not a comprehensive review \u2014 so conclusions about gaps in the literature should not be extrapolated beyond these records.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "All four outcomes are graded 'Moderate' based primarily on meta-analyses of small, heterogeneous primary trials, with most individual studies unreported in sample size and no extractable pooled effect, making it unclear whether the consensus reflects genuine clinical benefit or systematic review methodology.",
+    "headline": "Most primary human trials are small (under 70 participants) and lack sample size reporting; meta-analyses dominate the evidence base but are heavily heterogeneous and built on underpowered individual studies, making precision claims difficult to verify and effect sizes potentially unstable.",
     "concerns": [
       {
-        "issue": "Meta-analyses dominate; primary trials invisible",
-        "detail": "Across all four outcomes, 8\u20139 of 11\u201318 studies retrieved are meta-analyses or systematic reviews, but only 3\u20137 primary RCTs appear in each category. The true primary evidence base is obscured: only 2\u20135 of 11 studies report sample sizes for weight/fat loss, and only 5 of 17 for blood sugar. A meta-analysis cannot exceed the quality of its constituent trials, yet the retrieval pattern suggests the engine may be reporting consensus among syntheses rather than examining primary trial heterogeneity.",
+        "issue": "Heavy reliance on meta-analyses of small, unreported trials",
+        "detail": "Across all four outcomes, meta-analyses and systematic reviews comprise 13\u201350% of retrieved studies (e.g., 7 of 18 for blood sugar, 4 of 10 for blood pressure). Yet the underlying primary studies rarely report sample sizes in the abstracts: blood sugar shows only 5 of 18 studies reporting n; weight/fat loss shows only 2 of 11. This means the true sample size per trial\u2014and thus power\u2014is invisible. Small, unreported trials are at high risk of bias and selective reporting, and when pooled, can produce inflated or unstable effect estimates.",
         "severity": "high"
       },
       {
-        "issue": "Sample sizes are small and underreported across primary trials",
-        "detail": "For weight/fat loss, one RCT enrolled only n=19 (2021). For blood sugar, the smallest primary RCT is n=110. For bone health, only 1 primary RCT is retrieved at all, with n unreported. When sample sizes are this small and sparsely reported, a single large outlier study or selective reporting in meta-analyses could shift the pooled direction; the 'Moderate' grade cannot account for statistical power lost to sparse reporting.",
+        "issue": "Pooled effect sizes are null or trivial with wide confidence intervals",
+        "detail": "Blood sugar shows a mean difference of -0.27 mmol/L [\u22120.55 to 0.01]\u2014crossing zero and clinically negligible. Blood pressure shows 0.82 mmHg [\u22128.86 to 10.5]\u2014also null, with a CI spanning no effect to a 10 mmHg elevation. Weight/fat loss and bone health do not report extractable pooled effects at all, suggesting heterogeneity too severe for summary estimates. These patterns indicate the evidence does not support a clear clinical benefit.",
         "severity": "high"
       },
       {
-        "issue": "No extractable pooled effect reported for any outcome",
-        "detail": "Despite four meta-analyses per outcome and consistent 'Moderate' grades, the engine extracted zero pooled effect sizes. This is unusual and suggests either high heterogeneity (I\u00b2 not visible), inconsistent direction of effect across trials, or that abstracts omit the summary estimate. Without seeing heterogeneity statistics or forest plots, it is impossible to assess whether the grade reflects a small, consistent benefit or conflicting evidence that averages to null.",
+        "issue": "Individual RCT sample sizes are underpowered and scattered",
+        "detail": "The four RCTs for blood pressure include trials with n=30, 43, and 60\u2014sizes barely adequate for detecting small-to-moderate effects. Weight/fat loss has an n=19 RCT (2021). Blood sugar has n=110 (2022) as the largest single trial. These sizes are vulnerable to random variation; a single outlier or dropout imbalance can shift results. No pre-registered sample size justification is visible in the abstracts.",
         "severity": "high"
       },
       {
-        "issue": "Heavy reliance on special populations limits generalizability",
-        "detail": "Bone health, cholesterol, and blood sugar outcomes are populated with trials in postmenopausal women, NAFLD patients, type 2 diabetes cohorts, and COPD patients\u2014clinically heterogeneous groups. The evidence does not establish that resveratrol works for metabolically healthy adults or across the lifespan. The 'Moderate' grade conflates 'evidence exists in sick populations' with 'moderate evidence of efficacy'.",
+        "issue": "Dose and duration heterogeneity obscured in abstracts",
+        "detail": "Abstracts do not report resveratrol dose, treatment duration, or formulation consistency. A 2022 blood sugar meta-analysis title mentions 'dose-' (cut off), suggesting dose-response analysis, but the actual dose ranges and whether low vs. high doses drive any effects cannot be determined from these records. Without this transparency, meta-analytic summaries may average over incommensurable interventions.",
         "severity": "moderate"
       },
       {
-        "issue": "Recent date range includes many post-2019 reviews; few pre-2011 trials",
-        "detail": "The earliest primary RCT is 2011, and most meta-analyses cluster in 2019\u20132026, suggesting the field matured recently. Many included meta-analyses are likely re-analyzing overlapping trial cohorts. Without access to trial registries or full meta-analysis PRISMA appendices, duplication and selective inclusion of newer (possibly more favorable) syntheses cannot be ruled out.",
-        "severity": "moderate"
+        "issue": "Bone health evidence is extremely thin",
+        "detail": "Only 1 primary RCT is retrieved (2020); the rest are meta-analyses (n=2) and a systematic review (n=1) of small samples. Critically, one 2018 animal study explicitly reports that 'long-term high-dose resveratrol supplementation reduces bone mass and fracture strength in rats'\u2014a direct contradiction to claimed benefit that flags potential harm. With so few human trials, a single positive finding can dominate perception, yet animal toxicity signals are not addressed in the human evidence abstraction.",
+        "severity": "high"
       }
     ],
-    "mechanism_check": "The proposed mechanisms\u2014SIRT1 activation, improved insulin signaling, reduced oxidative stress\u2014are plausible at the molecular level and appear in several trial abstracts (e.g., 2022 RCT on glucose homeostasis, 2024 RCT on oxidative stress). However, there is a substantial gap between these in vitro or ex vivo biomarkers and clinical outcomes: showing that resveratrol reduces ACE2 in adipose tissue (2021, n=19) does not establish that this translates to clinically meaningful weight loss or better metabolic health in free-living patients. The clinical trial endpoints (weight, HbA1c, lipid levels) are downstream and do not require the specific mechanisms proposed, so the mechanistic evidence cannot substitute for trial evidence of clinical benefit.",
-    "strongest_counterargument": "A skeptic would note that the 'Moderate' grade rests almost entirely on meta-analyses of heterogeneous, underpowered trials in sick populations, with no single primary RCT large enough to detect a clinically meaningful effect on its own. The smallest weight-loss trial (n=19) and the scarcity of bone-health primaries (n=1) suggests the field has not yet conducted the adequately powered, homogeneous trials needed to establish true benefit. The absence of extractable pooled effects across all four outcomes further implies the meta-analyses found inconsistent or borderline results that do not support confidence in clinical utility.",
-    "what_would_change_the_picture": "A multicenter RCT (n\u2265300) in a single, metabolically defined population (e.g., non-diabetic adults with metabolic syndrome), randomizing resveratrol vs. placebo with standardized, pre-registered endpoints and 12+ months follow-up, with full reporting of all secondary outcomes and explicit accounting for heterogeneity. Separate replication in a second cohort would establish robustness. Current evidence cannot rule out that resveratrol effects are marginal, context-dependent, or detectable only in biomarkers rather than clinically relevant outcomes.",
+    "mechanism_check": "The proposed mechanism\u2014resveratrol activates sirtuins and AMPK pathways to improve metabolic health, insulin sensitivity, and vascular function\u2014is biochemically plausible at the cellular level. However, there is a large inferential gap: the retrieved evidence offers no biomarker or mechanistic data linking plasma/tissue resveratrol concentrations to the clinical outcomes (weight loss, blood sugar control, bone density, blood pressure). The 2021 adipose tissue study (n=19) on ACE2 expression is the only retrieved mechanistic trial, and it is underpowered. Without pharmacokinetic or target-tissue engagement data, claims about clinical benefit remain disconnected from the proposed biology.",
+    "strongest_counterargument": "A skeptic would argue that the null pooled effect sizes for blood sugar (CI crossing zero) and blood pressure (wide, null CI) directly refute efficacy claims, and that the absence of extractable pooled effects for weight loss and bone health reflects unpublishable heterogeneity or selective meta-analysis reporting. Furthermore, all primary RCTs are small (n=19\u2013110), unblinded or inadequately concealed in many cases (not assessable from abstracts), and the literature is dominated by meta-analyses of these weak studies\u2014a pattern characteristic of underpowered fields where published effects are inflated. The 2018 animal finding of reduced bone mass and fracture strength at high doses suggests dose-dependent harm that human trials have not properly investigated.",
+    "what_would_change_the_picture": "Large, pre-registered RCTs (n \u2265 300) with dose-ranging arms, standardized resveratrol formulations, and pre-specified primary outcomes (e.g., fasting glucose, systolic BP, bone mineral density by DXA) with intention-to-treat analysis would be needed to establish whether effects are real or artifacts of small-study bias. Simultaneous mechanistic substudies (measuring plasma resveratrol, target tissue SIRT1 or AMPK activation, and relevant biomarkers) would clarify whether clinical benefit actually tracks the proposed pathway.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

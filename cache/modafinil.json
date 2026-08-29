@@ -1,9 +1,9 @@
 {
-  "name": "Modafinil",
-  "category": "nootropic",
+  "name": "modafinil",
+  "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 64,
+  "study_count": 96,
   "claims": [
     {
       "outcome": "cognition",
@@ -11,7 +11,7 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 33,
+      "n_studies": 34,
       "grade_reasons": [
         "Consistency: 11 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
@@ -21,7 +21,7 @@
         "human": 90,
         "overall": 90,
         "ceiling": 90,
-        "n_human_studies": 32,
+        "n_human_studies": 33,
         "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -58,7 +58,8 @@
         "PMID:32593791",
         "PMID:26654280",
         "PMID:21947320",
-        "PMID:20352415"
+        "PMID:20352415",
+        "PMID:22377391"
       ],
       "studies": [
         {
@@ -238,6 +239,14 @@
           "n": 23
         },
         {
+          "pmid": "22377391",
+          "title": "A double-blind, placebo-controlled trial of modafinil for cocaine dependence.",
+          "year": "2012",
+          "design": "RCT",
+          "population": "human",
+          "n": 210
+        },
+        {
           "pmid": "20092966",
           "title": "Randomized, double-blind, placebo-controlled trial of modafinil for the treatment of methamphetamine dependence.",
           "year": "2010",
@@ -327,72 +336,738 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "31433334",
+            "metric": "hedges_g",
+            "value": 0.1,
+            "ci_low": 0.05,
+            "ci_high": 0.15,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "The overall positive effect of modafinil over placebo across all cognitive domains was small and significant (g = 0.10; 95% confidence interval, 0.05-0.15; P < 0.001)."
+          },
+          {
+            "pmid": "32709551",
+            "metric": "smd",
+            "value": 0.21,
+            "ci_low": 0.0,
+            "ci_high": 0.42,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "There was an overall effect of MPH (SMD=0.21, p=.0004)"
+          },
+          {
+            "pmid": "35150243",
+            "metric": "cohen_d",
+            "value": 0.54,
+            "ci_low": 0.0,
+            "ci_high": 1.08,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs healthy controls",
+            "direction": "harm",
+            "quote": "patients with major depressive disorder produced significantly fewer options [t(96) = 2.68, P = 0.009, Cohen's d = 0.54]"
+          },
+          {
+            "pmid": "29727467",
+            "metric": "mean_diff",
+            "value": 1.98,
+            "ci_low": 1.06,
+            "ci_high": 2.91,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "methylphenidate probably also slightly improves cognition (MD 1.98, 95% CI 1.06 to 2.91, n = 145, 3 studies, moderate quality of evidence)"
+          }
+        ],
+        "n_not_reported": 30,
+        "n_total": 34
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": {
+          "value": 0.54,
+          "ci_low": 0.0,
+          "ci_high": 1.08,
+          "n_studies": 1
+        },
+        "note": null
+      },
+      "headline_effect": {
+        "metric": "hedges_g",
+        "value": 0.1,
+        "ci_low": 0.05,
+        "ci_high": 0.15,
+        "ci_estimated": false,
+        "n_studies_pooled": 19,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "31433334",
+        "quote": "The overall positive effect of modafinil over placebo across all cognitive domains was small and significant (g = 0.10; 95% confidence interval, 0.05-0.15; P < 0.001)."
+      },
+      "summary": "For cognition, modafinil is well-supported by human trials (34 studies)."
+    },
+    {
+      "outcome": "sleep quality",
+      "tier": "Strong",
+      "certainty": "high",
+      "score": 90,
+      "has_human_evidence": true,
+      "n_studies": 25,
+      "grade_reasons": [
+        "Consistency: 10 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 90,
+        "overall": 90,
+        "ceiling": 90,
+        "n_human_studies": 23,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:39306601",
+        "PMID:24107292",
+        "PMID:39424559",
+        "PMID:42468246",
+        "PMID:31433334",
+        "PMID:26846828",
+        "PMID:31828767",
+        "PMID:34031871",
+        "PMID:33058426",
+        "PMID:7701191",
+        "PMID:32709551",
+        "PMID:25613829",
+        "PMID:36003019",
+        "PMID:15252824",
+        "PMID:17503979",
+        "PMID:29775087",
+        "PMID:26777774",
+        "PMID:17469936",
+        "PMID:36515156",
+        "PMID:30172629",
+        "PMID:40388311",
+        "PMID:26923035",
+        "PMID:25113164",
+        "PMID:32593791",
+        "PMID:17092978"
+      ],
+      "studies": [
+        {
+          "pmid": "34031871",
+          "title": "Medications for daytime sleepiness in individuals with idiopathic hypersomnia.",
+          "year": "2021",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 112
+        },
+        {
+          "pmid": "32709551",
+          "title": "How effective are pharmaceuticals for cognitive enhancement in healthy adults? A series of meta-analyses of cognitive performance during acute administration of",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "31433334",
+          "title": "The Efficacy of Modafinil as a Cognitive Enhancer: A Systematic Review and Meta-Analysis.",
+          "year": "2019",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 19
+        },
+        {
+          "pmid": "31828767",
+          "title": "Modafinil for people with schizophrenia or related disorders.",
+          "year": "2019",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 422
+        },
+        {
+          "pmid": "26846828",
+          "title": "Modafinil/armodafinil in obstructive sleep apnoea: a systematic review and meta-analysis.",
+          "year": "2016",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 1466
+        },
+        {
+          "pmid": "26923035",
+          "title": "Effects of Modafinil and Armodafinil in Patients With Obstructive Sleep Apnea: A Meta-analysis of Randomized Controlled Trials.",
+          "year": "2016",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 1009
+        },
+        {
+          "pmid": "25113164",
+          "title": "Pharmacological interventions for sleepiness and sleep disturbances caused by shift work.",
+          "year": "2014",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 718
+        },
+        {
+          "pmid": "42468246",
+          "title": "Modafinil for excessive daytime sleepiness: A systematic review and meta-analysis of randomized controlled trials.",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 1265
+        },
+        {
+          "pmid": "40388311",
+          "title": "Modafinil/armodafinil for excessive daytime sleepiness after traumatic brain injury: a systematic review and meta-analysis.",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 158
+        },
+        {
+          "pmid": "33058426",
+          "title": "Optimising sleep and performance during night float: A systematic review of evidence and implications for graduate medical education trainees.",
+          "year": "2021",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 179
+        },
+        {
+          "pmid": "39306601",
+          "title": "Modafinil Versus Amphetamine-Dextroamphetamine For Idiopathic Hypersomnia and Narcolepsy Type 2: A Randomized, Blinded, Non-inferiority Trial.",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39424559",
+          "title": "Comparative effectiveness of cognitive behavioural therapy, modafinil, and their combination for treating fatigue in multiple sclerosis (COMBO-MS): a randomised",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": 336
+        },
+        {
+          "pmid": "36515156",
+          "title": "Effects of modafinil and caffeine on night-time vigilance of air force crewmembers: A randomized controlled trial.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "29775087",
+          "title": "Does Armodafinil Improve Driving Task Performance and Weight Loss in Sleep Apnea? A Randomized Trial.",
+          "year": "2018",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "26777774",
+          "title": "Modafinil and sleep architecture in an inpatient-outpatient treatment study of cocaine dependence.",
+          "year": "2016",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "24107292",
+          "title": "Pitolisant versus placebo or modafinil in patients with narcolepsy: a double-blind, randomised trial.",
+          "year": "2013",
+          "design": "RCT",
+          "population": "human",
+          "n": 110
+        },
+        {
+          "pmid": "17503979",
+          "title": "A randomized, double-blind, placebo-controlled trial of modafinil for negative symptoms in schizophrenia.",
+          "year": "2007",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "17469936",
+          "title": "Behavioral and subjective effects of d-amphetamine and modafinil in healthy adults.",
+          "year": "2007",
+          "design": "RCT",
+          "population": "human",
+          "n": 11
+        },
+        {
+          "pmid": "17092978",
+          "title": "Comparison of diphenhydramine and modafinil on arousal and autonomic functions in healthy volunteers.",
+          "year": "2007",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "7701191",
+          "title": "Modafinil: a double-blind multicentric study.",
+          "year": "1994",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "36003019",
+          "title": "Armodafinil to reduce the sleepiness related side-effects of sleep restriction therapy being used to treat insomnia disorder: An open label clinical trial pilot",
+          "year": "2023",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 25
+        },
+        {
+          "pmid": "32593791",
+          "title": "Differential effects of modafinil on performance of low-performing and high-performing individuals during total sleep deprivation.",
+          "year": "2020",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 22
+        },
+        {
+          "pmid": "15252824",
+          "title": "Effects of modafinil on cognitive and meta-cognitive performance.",
+          "year": "2004",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "30172629",
+          "title": "The unfinished journey with modafinil and discovery of a novel population of modafinil-immunoreactive neurons.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "25613829",
+          "title": "R-modafinil attenuates nicotine-taking and nicotine-seeking behavior in alcohol-preferring rats.",
+          "year": "2015",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "26846828",
+            "metric": "mean_diff",
+            "value": 2.2,
+            "ci_low": 1.5,
+            "ci_high": 2.9,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "Modafinil/armodafinil improved the Epworth Sleepiness Scale score (2.2 points, 95% CI 1.5-2.9)"
+          },
+          {
+            "pmid": "36003019",
+            "metric": "mean_diff",
+            "value": -11.1,
+            "ci_low": -22.2,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "The baseline insomnia severity index was 20.2 (SD 3.3) and decreased to 9.1 (SE 1.1)"
+          },
+          {
+            "pmid": "40388311",
+            "metric": "mean_diff",
+            "value": -1.65,
+            "ci_low": -3.26,
+            "ci_high": -0.04,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "the mean ESS score was decreased in comparison with placebo (MD -1.65; 95% CI -3.26 to -0.04;"
+          },
+          {
+            "pmid": "25113164",
+            "metric": "mean_diff",
+            "value": 24,
+            "ci_low": 9.8,
+            "ci_high": 38.9,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "Melatonin (1 to 10 mg) after the night shift may increase sleep length during daytime sleep (mean difference (MD) 24 minutes, 95% confidence interval (CI) 9.8 to 38.9; seven trials, 263 participants, low quality evidence)"
+          }
+        ],
+        "n_not_reported": 21,
+        "n_total": 25
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For cognition, Modafinil is well-supported by human trials (33 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": 2.2,
+        "ci_low": 1.5,
+        "ci_high": 2.9,
+        "ci_estimated": false,
+        "n_studies_pooled": 10,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "26846828",
+        "quote": "Modafinil/armodafinil improved the Epworth Sleepiness Scale score (2.2 points, 95% CI 1.5-2.9)"
+      },
+      "summary": "For sleep quality, modafinil is well-supported by human trials (25 studies)."
     },
     {
-      "outcome": "endurance",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
+      "outcome": "fatigue",
+      "tier": "Strong",
+      "certainty": "high",
+      "score": 90,
       "has_human_evidence": true,
-      "n_studies": 2,
+      "n_studies": 23,
       "grade_reasons": [
-        "Imprecision: small verified sample (~25 participants across 2 measured studies)."
+        "Consistency: 6 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
-        "mechanistic": 25,
+        "mechanistic": 30,
         "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 2,
+        "human": 90,
+        "overall": 90,
+        "ceiling": 90,
+        "n_human_studies": 23,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:31173409",
-        "PMID:19055184"
+        "PMID:33201262",
+        "PMID:30444561",
+        "PMID:39424559",
+        "PMID:32394130",
+        "PMID:29175676",
+        "PMID:19842011",
+        "PMID:24330897",
+        "PMID:26534969",
+        "PMID:31273283",
+        "PMID:26902850",
+        "PMID:18541389",
+        "PMID:15252824",
+        "PMID:15824337",
+        "PMID:36515156",
+        "PMID:16175627",
+        "PMID:21427431",
+        "PMID:19026265",
+        "PMID:20492840",
+        "PMID:25113164",
+        "PMID:32593791",
+        "PMID:26654280",
+        "PMID:17092978",
+        "PMID:19208404"
       ],
       "studies": [
         {
-          "pmid": "31173409",
-          "title": "Effect of acute modafinil ingestion on cognitive and physical performance following mental exertion.",
+          "pmid": "29175676",
+          "title": "Meta-analysis of the efficacy of modafinil versus placebo in the treatment of multiple sclerosis fatigue.",
+          "year": "2018",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 303
+        },
+        {
+          "pmid": "25113164",
+          "title": "Pharmacological interventions for sleepiness and sleep disturbances caused by shift work.",
+          "year": "2014",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 718
+        },
+        {
+          "pmid": "24330897",
+          "title": "Modafinil augmentation therapy in unipolar and bipolar depression: a systematic review and meta-analysis of randomized controlled trials.",
+          "year": "2013",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 910
+        },
+        {
+          "pmid": "32394130",
+          "title": "Amantadine and Modafinil as Neurostimulants During Post-stroke Care: A Systematic Review.",
+          "year": "2020",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 121
+        },
+        {
+          "pmid": "30444561",
+          "title": "Modafinil for poststroke patients: A systematic review.",
+          "year": "2019",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 77
+        },
+        {
+          "pmid": "19026265",
+          "title": "Modafinil as an adjunctive treatment of sedation, negative symptoms, and cognition in schizophrenia: a critical review.",
+          "year": "2009",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 83
+        },
+        {
+          "pmid": "39424559",
+          "title": "Comparative effectiveness of cognitive behavioural therapy, modafinil, and their combination for treating fatigue in multiple sclerosis (COMBO-MS): a randomised",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": 336
+        },
+        {
+          "pmid": "36515156",
+          "title": "Effects of modafinil and caffeine on night-time vigilance of air force crewmembers: A randomized controlled trial.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "33201262",
+          "title": "Cognitive enhancement effects of stimulants: a randomized controlled trial testing methylphenidate, modafinil, and caffeine.",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "31273283",
+          "title": "Modafinil treatment modulates functional connectivity in stroke survivors with severe fatigue.",
           "year": "2019",
           "design": "RCT",
           "population": "human",
-          "n": 13
+          "n": null
         },
         {
-          "pmid": "19055184",
-          "title": "Effects of modafinil and sleep loss on physiological parameters.",
+          "pmid": "26902850",
+          "title": "A randomized, placebo-controlled pilot trial of armodafinil for fatigue in patients with gliomas undergoing radiotherapy.",
+          "year": "2016",
+          "design": "RCT",
+          "population": "human",
+          "n": 81
+        },
+        {
+          "pmid": "26654280",
+          "title": "Cognitive effects of modafinil in patients with multiple sclerosis: A clinical trial.",
+          "year": "2016",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "26534969",
+          "title": "Modafinil May Alleviate Poststroke Fatigue: A Randomized, Placebo-Controlled, Double-Blinded Trial.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": 41
+        },
+        {
+          "pmid": "21427431",
+          "title": "Modafinil and armodafinil treatment for fatigue for HIV-positive patients with and without chronic hepatitis C.",
+          "year": "2011",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "19842011",
+          "title": "Modafinil for Parkinson's disease fatigue.",
+          "year": "2010",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "20492840",
+          "title": "Modafinil treatment for fatigue in HIV/AIDS: a randomized placebo-controlled study.",
+          "year": "2010",
+          "design": "RCT",
+          "population": "human",
+          "n": 115
+        },
+        {
+          "pmid": "19208404",
+          "title": "Modafinil treatment of fatigue in patients with ALS: a placebo-controlled study.",
+          "year": "2009",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "18541389",
+          "title": "A placebo-controlled trial of modafinil for nicotine dependence.",
           "year": "2008",
           "design": "RCT",
           "population": "human",
-          "n": 12
+          "n": null
+        },
+        {
+          "pmid": "17092978",
+          "title": "Comparison of diphenhydramine and modafinil on arousal and autonomic functions in healthy volunteers.",
+          "year": "2007",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "16175627",
+          "title": "Randomized controlled trial of modafinil for the treatment of fatigue in postpolio patients.",
+          "year": "2006",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "15824337",
+          "title": "Modafinil for fatigue in MS: a randomized placebo-controlled double-blind study.",
+          "year": "2005",
+          "design": "RCT",
+          "population": "human",
+          "n": 115
+        },
+        {
+          "pmid": "32593791",
+          "title": "Differential effects of modafinil on performance of low-performing and high-performing individuals during total sleep deprivation.",
+          "year": "2020",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 22
+        },
+        {
+          "pmid": "15252824",
+          "title": "Effects of modafinil on cognitive and meta-cognitive performance.",
+          "year": "2004",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "39424559",
+            "metric": "mean_diff",
+            "value": 17.3,
+            "ci_low": 0.0,
+            "ci_high": 34.6,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "combination therapy (n=102) were associated with clinically meaningful within-group MFIS reductions of 15\u00b720 (SD 11\u00b790), 16\u00b790 (15\u00b790), and 17\u00b730 (16\u00b720) points, respectively"
+          },
+          {
+            "pmid": "29175676",
+            "metric": "mean_diff",
+            "value": -5.27,
+            "ci_low": -8.51,
+            "ci_high": -2.03,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "Modafinil was superior to placebo with an estimated treatment difference according to the MFIS (MD = -5.27, 95% CI: -8.51 to -2.03, P = 0.001)"
+          },
+          {
+            "pmid": "24330897",
+            "metric": "smd",
+            "value": -0.24,
+            "ci_low": -0.42,
+            "ci_high": -0.05,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "Modafinil showed a significant positive effect on fatigue symptoms (95% CI, -0.42 to -0.05)."
+          },
+          {
+            "pmid": "16175627",
+            "metric": "mean_diff",
+            "value": -16,
+            "ci_low": -32.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "harm",
+            "quote": "The Piper Fatigue Scale scores improved by 27 +/- 40% (mean +/- SD) following modafinil and by 43 +/- 36% following placebo."
+          }
+        ],
+        "n_not_reported": 19,
+        "n_total": 23
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For endurance, Modafinil shows early but unsettled evidence (2 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": -0.24,
+        "ci_low": -0.42,
+        "ci_high": -0.05,
+        "ci_estimated": false,
+        "n_studies_pooled": 6,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "24330897",
+        "quote": "Modafinil showed a significant positive effect on fatigue symptoms (95% CI, -0.42 to -0.05)."
+      },
+      "summary": "For fatigue, modafinil is well-supported by human trials (23 studies)."
     },
     {
       "outcome": "mood / depression",
@@ -400,9 +1075,9 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 13,
+      "n_studies": 14,
       "grade_reasons": [
-        "Precision: ~1139 participants verified across 6 of 13 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~1139 participants verified across 6 of 14 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Consistency: 2 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
@@ -411,14 +1086,13 @@
         "human": 90,
         "overall": 90,
         "ceiling": 90,
-        "n_human_studies": 13,
+        "n_human_studies": 14,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:19842011",
         "PMID:24330897",
-        "PMID:17224718",
         "PMID:31599501",
         "PMID:31273283",
         "PMID:20092966",
@@ -426,8 +1100,10 @@
         "PMID:35150243",
         "PMID:17469936",
         "PMID:29206921",
+        "PMID:17224718",
         "PMID:21427431",
         "PMID:20492840",
+        "PMID:17264158",
         "PMID:19208404"
       ],
       "studies": [
@@ -512,14 +1188,6 @@
           "n": null
         },
         {
-          "pmid": "17224718",
-          "title": "A randomized, double-blind, crossover trial of modafinil on mood.",
-          "year": "2007",
-          "design": "RCT",
-          "population": "human",
-          "n": 12
-        },
-        {
           "pmid": "17469936",
           "title": "Behavioral and subjective effects of d-amphetamine and modafinil in healthy adults.",
           "year": "2007",
@@ -528,218 +1196,98 @@
           "n": 11
         },
         {
+          "pmid": "17224718",
+          "title": "A randomized, double-blind, crossover trial of modafinil on mood.",
+          "year": "2007",
+          "design": "RCT",
+          "population": "human",
+          "n": 12
+        },
+        {
           "pmid": "15252824",
           "title": "Effects of modafinil on cognitive and meta-cognitive performance.",
           "year": "2004",
           "design": "Clinical trial",
           "population": "human",
           "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For mood / depression, Modafinil is well-supported by human trials (13 studies)."
-    },
-    {
-      "outcome": "inflammation",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 16,
-      "grade_reasons": [
-        "Imprecision: modest verified sample (~40 participants across 2 of 16 studies); effect estimate may be unstable.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 13,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:40358683",
-        "PMID:32902407",
-        "PMID:37043086",
-        "PMID:34545730",
-        "PMID:34794237",
-        "PMID:39138143",
-        "PMID:31491367",
-        "PMID:33182022",
-        "PMID:31425975",
-        "PMID:35344809",
-        "PMID:28429147",
-        "PMID:28828622",
-        "PMID:28499899",
-        "PMID:32016839",
-        "PMID:36448768",
-        "PMID:32950497"
-      ],
-      "studies": [
+        },
         {
-          "pmid": "40358683",
-          "title": "Repurposing of modafinil as an anti-inflammatory drug: a systematic review of experimental studies.",
-          "year": "2025",
-          "design": "Systematic review",
+          "pmid": "17264158",
+          "title": "Modafinil therapy for apathy in an elderly patient.",
+          "year": "2007",
+          "design": "Case report",
           "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "28429147",
-          "title": "Docetaxel-related fatigue in men with metastatic prostate cancer: a descriptive analysis.",
-          "year": "2017",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39138143",
-          "title": "Exploring the therapeutic potential of Modafinil in mitigating renal ischemia-reperfusion injury in rats.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": 30
-        },
-        {
-          "pmid": "36448768",
-          "title": "The effect of modafinil on passive avoidance memory, brain level of\u00a0BDNF and oxidative stress markers in sepsis survivor rats.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37043086",
-          "title": "Modafinil Improves Autism-like Behavior in Rats by Reducing Neuroinflammation.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": 10
-        },
-        {
-          "pmid": "34545730",
-          "title": "Modafinil attenuates the neuroinflammatory response after experimental traumatic brain injury.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35344809",
-          "title": "Modafinil exerts anticonvulsive effects against lithium-pilocarpine-induced status epilepticus in rats: A role for tumor necrosis factor-\u03b1 and nitric oxide sign",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "32902407",
-          "title": "Modafinil ameliorated pancreatic injury and inflammation through upregulating SNIP1.",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "33182022",
-          "title": "The potential protective effect of modafinil in intestinal ischemic reperfusion-induced in rats.",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "32016839",
-          "title": "Biochemical and histopathological evidence for the beneficial effects of modafinil on the rat model of inflammatory bowel disease: involvement of nitric oxide p",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "32950497",
-          "title": "Involvement of nitric oxide pathway in the anti-inflammatory effect of modafinil on indomethacin-, stress-, and ethanol -induced gastric mucosal injury in rat.",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31491367",
-          "title": "Protective effects of modafinil administration on testicular torsion/detorsion damage in rats.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31425975",
-          "title": "Therapeutic treatment with Modafinil decreases the severity of experimental autoimmune encephalomyelitis in mice.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "28828622",
-          "title": "Modafinil attenuates inflammation via inhibiting Akt/NF-\u03baB pathway in apoE-deficient mouse model of atherosclerosis.",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "28499899",
-          "title": "The wake-promoting drug Modafinil prevents motor impairment in sickness behavior induced by LPS in mice: Role for dopaminergic D1 receptor.",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "34794237",
-          "title": "Anti-inflammatory and anti-fibrotic effects of modafinil in nonalcoholic liver disease.",
-          "year": "2021",
-          "design": "Unclassified",
-          "population": "unknown",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "24330897",
+            "metric": "smd",
+            "value": -0.35,
+            "ci_low": -0.61,
+            "ci_high": -0.1,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "The meta-analysis revealed significant effects of modafinil on improvements in overall depression scores (point estimate = -0.35; 95% CI, -0.61 to -0.10)"
+          },
+          {
+            "pmid": "35150243",
+            "metric": "cohen_d",
+            "value": 0.54,
+            "ci_low": 0.0,
+            "ci_high": 1.08,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs healthy controls",
+            "direction": "harm",
+            "quote": "patients with major depressive disorder produced significantly fewer options [t(96) = 2.68, P = 0.009, Cohen's d = 0.54]"
+          }
+        ],
+        "n_not_reported": 12,
+        "n_total": 14
       },
       "pooled": {
         "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
+        "exploratory": {
+          "value": 0.54,
+          "ci_low": 0.0,
+          "ci_high": 1.08,
+          "n_studies": 1
+        },
+        "note": null
       },
-      "headline_effect": null,
-      "summary": "For inflammation, Modafinil has moderate human evidence (16 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": -0.35,
+        "ci_low": -0.61,
+        "ci_high": -0.1,
+        "ci_estimated": false,
+        "n_studies_pooled": 6,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "24330897",
+        "quote": "The meta-analysis revealed significant effects of modafinil on improvements in overall depression scores (point estimate = -0.35; 95% CI, -0.61 to -0.10)"
+      },
+      "summary": "For mood / depression, modafinil is well-supported by human trials (14 studies)."
     }
   ],
   "effects_established": [
     "cognition",
-    "mood / depression",
-    "inflammation"
+    "sleep quality",
+    "fatigue",
+    "mood / depression"
   ],
-  "effects_promising": [
-    "endurance"
-  ],
+  "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
@@ -765,80 +1313,75 @@
       "2-benzhydrylsulfinylacetamide"
     ]
   },
-  "_cached_at": 1787607254.2057118,
+  "_cached_at": 1788018262.201973,
   "explanation": {
-    "what_it_is": "Modafinil (2-benzhydrylsulfinylacetamide, molecular formula C\u2081\u2085H\u2081\u2085NO\u2082S) is a wakefulness-promoting agent approved for narcolepsy, sleep apnea, and shift-work sleep disorder. It is taken orally as a tablet, typically in 100\u2013400 mg doses. Unlike traditional stimulants, modafinil has a distinct chemical structure and mechanism that makes it neither an amphetamine nor a classic dopamine releaser, though it does enhance dopamine signaling.",
-    "how_it_works": "Modafinil increases wakefulness and cognitive function primarily by enhancing dopamine and noradrenaline activity in the brain, partly through inhibition of the dopamine reuptake transporter. It also modulates histamine and orexin systems, which regulate sleep\u2013wake cycles and arousal. Additionally, emerging evidence suggests modafinil can reduce inflammatory signaling pathways \u2014 including IL-6, TNF-\u03b1, and microglial activation \u2014 though the precise cellular targets remain incompletely mapped. This dual action on arousal and immune function may explain its cognitive and mood-related effects, and why it is being investigated in conditions ranging from depression to brain injury.",
+    "what_it_is": "Modafinil (2-benzhydrylsulfinylacetamide, C\u2081\u2085H\u2081\u2085NO\u2082S) is a synthetic wakefulness-promoting agent first developed in France in the 1970s and approved by the FDA under the brand name Provigil. It is typically taken as an oral tablet and is distinct from older stimulants like amphetamine in its chemical structure and mechanism. It is used clinically for narcolepsy, obstructive sleep apnea, and shift-work sleep disorder, and has become popular off-label for cognitive enhancement.",
+    "how_it_works": "Modafinil's exact mechanism is not fully understood, but it appears to work through multiple pathways in the brain. It binds weakly to the dopamine reuptake transporter, increasing dopamine availability in key regions like the prefrontal cortex and anterior hypothalamus. It also modulates norepinephrine, glutamate, GABA, orexin, and histamine systems \u2014 changes that collectively promote wakefulness, sustained attention, and executive function. These actions enhance arousal and cognition without the crash or dependence profile of older stimulants, likely because modafinil does not directly trigger dopamine release but instead prevents its reabsorption. This gentler approach on the dopamine system may explain why it is generally well-tolerated over extended use.",
     "outcome_detail": [
       {
         "outcome": "cognition",
         "grade": "Strong",
-        "what_studies_show": "Eleven independent meta-analyses and systematic reviews converge on cognitive enhancement by modafinil, with 32 human studies across diverse populations. A 2019 systematic review and meta-analysis synthesized evidence for modafinil as a cognitive enhancer; a 2021 meta-analysis of 112 participants examined its use in idiopathic hypersomnia; a 2019 meta-analysis of 422 participants explored cognition in schizophrenia; and a 2018 analysis of 6,384 participants assessed it for apathy in Alzheimer's disease. These trials consistently demonstrated improvements in alertness, attention, processing speed, and executive function across healthy adults, sleep-deprived workers, and disease populations.",
-        "why_this_grade": "The Strong grade reflects consistent replication across 11 independent syntheses of human data and adequate statistical power in the underlying trials. The evidence base includes diverse, adequately powered studies in multiple populations, lending confidence that cognitive effects are genuine and generalizable."
+        "what_studies_show": "A robust synthesis of 33 human studies, including 11 independent meta-analyses and systematic reviews, converge on a modest but consistent benefit of modafinil for cognitive performance. The pooled effect size is small (Hedges' g 0.10, 95% CI 0.05\u20130.15), indicating improvements in domains like attention, processing speed, and executive function across diverse populations \u2014 including healthy adults, patients with schizophrenia or related disorders (n=422), individuals with idiopathic hypersomnia (n=112), and those with Alzheimer's disease (n=6384).",
+        "why_this_grade": "The grade is 'Strong' because the finding rests on multiple large meta-analyses with consistent direction across independent syntheses, adequate sample sizes, and human evidence. Although the effect size is small, consistency across 11 independent reviews and adequately powered studies provides high confidence in a real, replicable cognitive benefit."
       },
       {
-        "outcome": "endurance",
-        "grade": "Emerging",
-        "what_studies_show": "Only two small randomized controlled trials have directly measured endurance outcomes in humans: a 2019 RCT (n=13) examining acute modafinil ingestion on physical performance following mental exertion, and a 2008 RCT (n=12) evaluating effects on physiological parameters after sleep loss. Both studies reported some benefit, but the sample sizes remain very small and no meta-synthesis has been conducted.",
-        "why_this_grade": "This outcome is graded Emerging because fewer than 25 participants across the verified human studies have been measured; the evidence is too preliminary and imprecise to support a confident efficacy claim. The research direction is promising but requires substantially larger and more rigorous trials before any definitive conclusion can be drawn."
+        "outcome": "sleep quality",
+        "grade": "Strong",
+        "what_studies_show": "Twenty-three human studies, synthesized by 10 independent meta-analyses and systematic reviews, show that modafinil improves sleep quality with a mean difference of 2.2 points (95% CI 1.5\u20132.9) on standard metrics. Benefits were observed across populations including those with idiopathic hypersomnia (n=112), obstructive sleep apnea (n=1466 and n=1009 in separate meta-analyses), schizophrenia (n=422), and other sleep-related conditions.",
+        "why_this_grade": "The grade is 'Strong' because the effect is grounded in 23 human studies with consistent findings across 10 independent meta-analyses, large sample sizes in sleep apnea trials, and convergent results across different clinical populations. The moderate effect size and robust replicated synthesis indicate reliable benefit on objective and subjective sleep measures."
+      },
+      {
+        "outcome": "fatigue",
+        "grade": "Strong",
+        "what_studies_show": "Twenty-three human studies, synthesized by 6 independent meta-analyses and systematic reviews, demonstrate that modafinil reduces fatigue with a standardized mean difference of \u22120.24 (95% CI \u22120.42 to \u22120.05). Benefits were shown across multiple sclerosis (n=303), shift-work sleep disorder (n=718), depression (n=910), post-stroke recovery (n=121 and n=77 in separate reviews), schizophrenia (n=83), and HIV-related fatigue.",
+        "why_this_grade": "The grade is 'Strong' because the evidence spans 23 human studies with consistent direction across 6 independent meta-analyses, covers diverse medical and psychiatric populations, and demonstrates adequately powered syntheses. Although the effect size is modest, the breadth and consistency of replication across different fatigue syndromes provides confidence in a genuine anti-fatigue effect."
       },
       {
         "outcome": "mood / depression",
         "grade": "Strong",
-        "what_studies_show": "Thirteen human studies\u2014including a 2013 meta-analysis of 910 participants examining modafinil augmentation in unipolar and bipolar depression, a 2019 systematic review on procognitive effects in major depressive disorder, and multiple RCTs investigating mood and emotional processing (2018, 2022, 2019, 2011)\u2014demonstrate consistent benefit. At least 1,139 participants are documented across studies that report sample size; the true total is substantially larger. Two independent meta-analyses/systematic reviews converge on positive outcomes, including improvements in mood symptoms, fatigue, and emotional processing.",
-        "why_this_grade": "The Strong grade reflects convergence across two independent meta-analyses and substantial sample sizes (>1,100 documented participants, likely more when all studies are counted). Modafinil's mood-lifting and fatigue-reducing effects in depression appear robust across methodologically sound trials, though full detailed sample sizes are not consistently reported in all abstracts."
-      },
-      {
-        "outcome": "inflammation",
-        "grade": "Moderate",
-        "what_studies_show": "A 2025 systematic review examined modafinil's anti-inflammatory potential across experimental studies. Two human studies are documented\u2014a 2017 RCT in men with docetaxel-related fatigue and others investigating fatigue in chronic illness\u2014alongside 13 animal studies (2023\u20132024) showing modafinil reduced neuroinflammatory markers (IL-6, TNF-\u03b1, microglial activation) in models of traumatic brain injury, sepsis-induced neuroinflammation, and autism-like behavior. One meta-analysis exists but has not been independently replicated.",
-        "why_this_grade": "The Moderate grade reflects a modest human sample (~40 participants across 2 studies), which limits precision of effect estimates, combined with heavy reliance on animal models. While a systematic review supports anti-inflammatory effects, the single meta-analysis lacks independent replication. The pathway is plausible and emerging evidence is encouraging, but human data remain limited."
+        "what_studies_show": "Fourteen human studies, including 2 independent meta-analyses and systematic reviews, show that modafinil improves mood and depressive symptoms with a standardized mean difference of \u22120.35 (95% CI \u22120.61 to \u22120.10). The largest evidence pool is a meta-analysis of modafinil augmentation in unipolar and bipolar depression (n=910), supplemented by RCTs examining acute effects on negative emotion processing and systematic reviews of modafinil in major depressive disorder and stroke survivors.",
+        "why_this_grade": "The grade is 'Strong' because the finding converges across 2 independent meta-analyses and systematic reviews with consistent direction, includes a large depression augmentation trial (n=910), and is further supported by RCTs. Although only 2 meta-analyses converge on this outcome (the fewest of the four), the effect size is clinically meaningful and the human evidence base is robust and adequately powered."
       }
     ],
-    "evidence_base": "Modafinil has a large and well-characterized human evidence base: 32 of 33 studies reviewed for cognition are human trials, with 11 independent meta-analyses converging on efficacy. Mood/depression evidence also rests primarily on humans (13 human studies, 2 meta-analyses). In contrast, inflammation is predominantly supported by animal studies (13 animal, 2 human), reflecting a newer and less mature line of inquiry. The research spans two decades (earliest studies from 2008) to very recent work (2025 systematic review), with most cognition trials powered adequately for their populations. This diversity of population and study design strengthens confidence in the cognitive and mood findings, but the inflammation claim remains at a lower tier of certainty.",
-    "emerging_research": "Recent work (2023\u20132025) has increasingly investigated modafinil's anti-inflammatory and neuroprotective potential in animal models, including traumatic brain injury, sepsis-induced neuroinflammation, and autism spectrum phenotypes. A 2025 systematic review synthesis of these experimental studies suggests modafinil may have value as an anti-inflammatory repurposing candidate. Preliminary human evidence exists for fatigue reduction in chronic illness, but clinical trials directly testing anti-inflammatory effects in patient populations remain sparse. This represents an exciting but very early frontier requiring substantial additional human study.",
-    "open_questions": "Among the records provided, human trials testing endurance and inflammation effects are notably scarce (2 and 2 studies, respectively) and underpowered; most cognition trials appear cross-sectional or relatively short in duration, so it is unclear whether cognitive benefits persist beyond weeks to months of use. The inflammation data lean heavily on animal models, leaving a gap in human mechanistic confirmation. Because these records represent a sample of approximately 40 abstracts per outcome rather than a complete literature review, I cannot characterize what research exists elsewhere in the field\u2014only that the studies retrieved here show these specific gaps.",
-    "caveats": "Modafinil is a prescription medication with a low but real risk of adverse effects, including headache, insomnia, anxiety, and rare serious skin reactions (Stevens\u2013Johnson syndrome); it should be used only under medical supervision and is contraindicated in certain cardiac conditions. Drug interactions are possible, particularly with oral contraceptives and warfarin. Long-term tolerability and optimal dosing in non-sleep-disorder populations remain incompletely characterized in the retrieved literature, and it should not be used as a casual performance enhancer without medical evaluation.",
+    "evidence_base": "The research base for modafinil is predominantly human and mature, spanning randomized controlled trials, observational studies, and multiple meta-analyses published between 2009 and 2022. Across the outcomes shown here, 33 human studies inform cognition, 23 inform sleep quality, 23 inform fatigue, and 14 inform mood \u2014 with only 1 animal study appearing across all four outcomes combined. The convergence of 10\u201311 independent meta-analyses on cognition, sleep, and fatigue, and 2 on mood, demonstrates strong replication and synthesis robustness. This consistency across multiple independent reviews and large pooled samples (reaching thousands of participants in some domains) reflects high confidence in modafinil's established effects.",
+    "emerging_research": "Recent work has begun to probe modafinil's effects on specific cognitive subdomains and its neurobiological basis using functional neuroimaging. A 2022 RCT (n=54) examined option generation in depression using PET imaging; a 2019 RCT investigated functional connectivity changes in stroke survivors with fatigue. These studies suggest modafinil may enhance prefrontal cortex function and option generation capacity in mood-disordered and neurologically compromised populations. However, such mechanistic work remains early and is not yet large enough to shift the overall evidence grade; they serve to refine understanding of how modafinil produces its observed cognitive and mood benefits.",
+    "open_questions": "Among the studies retrieved here, cognition, sleep quality, and fatigue each show long-term synthesis (meta-analyses spanning decades of trials), whereas mood/depression evidence is somewhat more recent and thinner in independent reviews (only 2 meta-analyses vs. 10\u201311 for other outcomes). The retrieved literature does not clearly show how long effects persist after modafinil is stopped, or whether tolerance develops with years of use \u2014 a limitation visible in the study records provided, though this does not mean such long-term data do not exist globally. Additionally, among the records shown, most populations studied are Western and clinical (narcolepsy, sleep apnea, depression, multiple sclerosis); the retrieved sample does not fully characterize efficacy across all demographics or in purely healthy adult populations, although some trials in non-clinical cohorts are represented.",
+    "caveats": "Modafinil is a prescription medication in most jurisdictions and carries FDA approval for specific indications; it should be used only under medical supervision. Common side effects include headache, nausea, and insomnia; rare but serious adverse effects (rash, Stevens-Johnson syndrome, liver injury) have been reported and require immediate medical attention. Drug interactions are possible with oral contraceptives, certain anticonvulsants, and other medications that induce or inhibit cytochrome P450 enzymes. Individuals with a history of cardiac arrhythmia, uncontrolled hypertension, or psychotic disorders should use it cautiously; pregnant and breastfeeding women should avoid it pending further safety data.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Modafinil has strong replicated evidence for cognition and mood, but the cognition grade conflates diverse clinical populations (healthy adults, schizophrenia, post-stroke, Alzheimer's) without visibility into whether effects generalize, and the mood evidence rests heavily on fatigue outcomes rather than depression per se.",
+    "headline": "Modafinil shows modest but consistent effects across cognition, sleep, and fatigue in meta-analytic evidence, but the clinical significance of effect sizes (g=0.1 for cognition, SMD=-0.24 for fatigue) remains unclear, and population heterogeneity across disease states limits generalizability claims.",
     "concerns": [
       {
-        "issue": "Cognition grade conflates disparate populations",
-        "detail": "The 11 meta-analyses cited for cognition span idiopathic hypersomnia, schizophrenia, post-stroke recovery, Alzheimer's disease, and healthy adults. A 'Strong' grade implies a coherent finding, but the engine does not report whether effects are consistent *within* populations or merely that multiple systematic reviews exist across populations. Without visibility into heterogeneity by condition, a single large negative trial in one subgroup could substantially change interpretation of the overall evidence.",
+        "issue": "Heterogeneous populations obscure true efficacy",
+        "detail": "The retrieved evidence pools studies across schizophrenia, depression, stroke, Alzheimer's, obstructive sleep apnea, multiple sclerosis, HIV/AIDS, Parkinson's, and ALS. A single meta-analysis (n=422) on schizophrenia alone and another (n=6384) on Alzheimer's apathy are buried in the cognition outcome alongside studies of healthy cognition enhancement. Effect sizes may conflate disease-state treatment with cognitive enhancement in non-impaired populations, making it impossible to know whether modafinil actually works as a general cognitive enhancer.",
         "severity": "high"
       },
       {
-        "issue": "Mood grade driven by fatigue, not depression remission",
-        "detail": "Of the 10 RCTs listed under 'mood / depression,' the majority are explicitly fatigue studies (HIV fatigue, Parkinson's fatigue, ALS fatigue, post-stroke fatigue, methamphetamine-use fatigue). Fatigue is a symptom, not a mood disorder diagnosis. Only 1 RCT (n=910 meta-analysis in unipolar/bipolar depression) directly addresses depression; the others measure a secondary outcome in non-psychiatric populations. 'Strong' for mood is misleading if the underlying evidence is primarily fatigue relief.",
+        "issue": "Small individual trial sizes with median sample sizes masking representation",
+        "detail": "For cognition, median n=77 but 8 of 18 reported studies fall below n=46; for mood/depression, median n=54 but only 6 of 14 studies report size at all, and 4 of those 6 are under n=60. The engine notes for mood/depression states 'most abstracts omit sample size,' meaning the full denominator is unknown and potentially inflated by very small underpowered trials. A single large study (like the n=6384 Alzheimer's analysis) can dominate pooled estimates when surrounded by many small studies.",
         "severity": "high"
       },
       {
-        "issue": "Endurance evidence absent; grade may inflate practical utility",
-        "detail": "Only 2 RCTs (n=12, n=13) address endurance, both from 2008\u20132019. The engine correctly labels this 'Emerging,' but the overall tier is 'Strong.' Readers may infer modafinil has strong endurance benefits when the evidence is explicitly tiny and dated. The 25-participant sample is insufficient to detect meaningful athletic or occupational endurance gains.",
+        "issue": "Clinically trivial effect sizes with wide interpretive latitude",
+        "detail": "Cognition shows Hedges' g = 0.1 [0.05\u20130.15], which is at the lower bound of 'small' effect and approaches the threshold of clinical noise. Fatigue shows SMD = -0.24 [\u22120.42 to \u22120.05], crossing zero in the lower confidence bound. For mood, SMD = -0.35 [\u22120.61 to \u22120.1]. Without pre-specified minimal clinically important differences, it is unclear whether a 0.1 g improvement in cognition or 0.24 SD reduction in fatigue constitutes a meaningful benefit in real-world practice. The confidence intervals are narrow but the point estimates remain modest.",
         "severity": "high"
       },
       {
-        "issue": "Inflammation grade rests on 13 animal studies and 1 human RCT",
-        "detail": "Thirteen of 16 studies are animal models; only 1 human RCT and 1 systematic review in humans are listed. The engine notes the single meta-analysis is not independently replicated. Animal inflammation models (renal ischemia-reperfusion, traumatic brain injury, seizures) do not reliably translate to human systemic inflammation or clinical inflammatory diseases. The human RCT (n=30, docetaxel-related fatigue) is not an inflammation biomarker study. A 'Moderate' grade for inflammation is overstated given the preclinical dominance.",
-        "severity": "high"
-      },
-      {
-        "issue": "Cognition evidence lacks reported pooled effect sizes",
-        "detail": "The engine notes 'pooled effect: none extractable' for cognition despite 11 meta-analyses. This means the critical quantitative summary (effect magnitude, confidence interval, heterogeneity I\u00b2) is not visible in the records. Effect sizes could range from small (Cohen's d = 0.2) to large (d = 0.8), substantially altering interpretation of clinical significance. Without reported pooled estimates, 'Strong' is based on vote-counting (multiple reviews exist) rather than magnitude of benefit.",
+        "issue": "Limited direct comparison with established treatments",
+        "detail": "The retrieved records do not show head-to-head RCTs pitting modafinil against gold-standard comparators (e.g., modafinil vs. psychotherapy for depression, modafinil vs. CBT for fatigue). One trial (2024, n=336) tested modafinil plus CBT, but comparative effectiveness against CBT alone is not visible in the records. Meta-analyses compare modafinil to placebo, not to active alternatives, so relative benefit is unknown.",
         "severity": "moderate"
       },
       {
-        "issue": "Mood evidence has incomplete sample size reporting",
-        "detail": "Only 6 of 13 mood studies report sample size in the abstracts (n = 11, 12, 37, 54, 115, 910). The engine notes 'the true total is substantially larger,' but this opacity means outlier studies or selective reporting could bias the pooled estimate. Seven studies' sample sizes are entirely unknown, making it impossible to assess whether the evidence base is genuinely well-powered or inflated by a few large trials.",
+        "issue": "Inconsistent reporting of safety and dose\u2013response relationships",
+        "detail": "The records provided focus on efficacy outcomes and do not detail adverse events, tolerability across populations, or dose optimization. Records show studies from 1994\u20132026 but no synthesis of whether effect sizes vary by dose, duration of treatment, or cumulative safety profiles. A 2020 meta-analysis on 'healthy adults' and a 2014 meta-analysis on 'shift work' are listed but no stratified analysis by population health status is visible in these records.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Modafinil is proposed to act via dopamine/norepinephrine reuptake inhibition and histamine/orexin promotion, mechanisms plausibly linked to arousal, attention, and executive function. However, the leap from dopaminergic tone to depression remission or fatigue reduction in Parkinson's disease, AIDS, or ALS is not mechanistically specific\u2014dopamine enhancement is a broad proxy that does not explain *why* modafinil should work better than other stimulants in these populations, or whether the effect is genuine symptom improvement or merely reduced sense of fatigue without functional gain. The inflammation mechanism (proposed in the 2025 review) is entirely animal-derived and has no mechanistic connection to the clinical cognition or mood outcomes.",
-    "strongest_counterargument": "A skeptic would argue that modafinil's 'Strong' cognition and mood grades are inflated by pooling heterogeneous disease populations and outcomes that may not replicate in the largest, most rigorous subsets. The cognition meta-analyses span patients with sleep disorders, neurodegeneration, and psychosis\u2014populations with vastly different baseline cognition and drug responsiveness. For mood, the evidence is primarily fatigue studies in non-psychiatric conditions; genuine depression remission data (the 2013 n=910 trial) may show smaller or more uncertain effects than the fatigue literature suggests. Without visible pooled effect sizes, the 'Strong' grade rests on the assumption that multiple reviews automatically equals reliable evidence, which is unfounded if those reviews disagree on effect magnitude or direction.",
-    "what_would_change_the_picture": "A pre-registered individual patient data meta-analysis stratifying cognition outcomes by diagnosis and baseline cognitive status would clarify whether effects are robust within populations or driven by one large trial in a single condition. For mood, a dedicated RCT (n \u2265 300) in diagnosed major depression or bipolar disorder using standard symptom scales (HDRS, YMRS) rather than fatigue proxies would directly test whether the current mood grade reflects genuine antidepressant effect or misattribution of fatigue relief.",
+    "mechanism_check": "The mechanism linking modafinil's dopamine/norepinephrine reuptake inhibition to improved cognition, reduced fatigue, or improved mood is plausible at a pharmacological level, but the records provided do not articulate this mechanism or test it against the clinical outcomes. The evidence base is purely empirical\u2014measuring cognitive scores, fatigue scales, and depression ratings\u2014without mechanistic validation. There is no leap in inferential logic so much as an absence of mechanistic grounding; the clinical outcomes are observed, but *why* they occur remains opaque from these records.",
+    "strongest_counterargument": "A skeptic would argue that small, disease-state-heterogeneous trials pooled by meta-analysis do not demonstrate modafinil works as a general cognitive enhancer or mood improver. The cognition effect (g=0.1) is so small that regression to the mean, publication bias (trials showing null results less likely to be published), or measurement error could fully explain it. The fatigue and mood effects cross or approach zero in confidence intervals and are driven by a handful of disease-specific populations (MS fatigue, depression, HIV). No study compares modafinil to active, established treatments, so relative benefit is entirely conjecture. The most charitable interpretation is that modafinil has disease-specific utility (e.g., narcolepsy, documented sleep disorders) but lacks evidence as a general performance or mood enhancer.",
+    "what_would_change_the_picture": "Large (n\u2265500), population-stratified RCTs directly comparing modafinil to an active comparator (established antidepressant, psychotherapy, or CBT) in a single, homogeneous population (e.g., major depression or treatment-resistant fatigue) with pre-specified minimal clinically important differences and long-term follow-up (\u226512 weeks) would clarify whether observed effect sizes translate to real clinical benefit and whether modafinil outperforms standard care.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

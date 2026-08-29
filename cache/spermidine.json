@@ -1,7 +1,7 @@
 {
-  "name": "Spermidine",
-  "category": "longevity",
-  "overall_score": 73,
+  "name": "spermidine",
+  "category": "supplement",
+  "overall_score": 70,
   "tier": "Moderate",
   "study_count": 28,
   "claims": [
@@ -103,16 +103,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 8,
+        "n_total": 8
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cognition, Spermidine has moderate human evidence (8 studies)."
+      "summary": "For cognition, spermidine has moderate human evidence (8 studies)."
     },
     {
       "outcome": "immune function",
@@ -176,57 +176,48 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 4,
+        "n_total": 4
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For immune function, Spermidine has only preliminary or animal evidence (4 studies)."
+      "summary": "For immune function, spermidine has only preliminary or animal evidence (4 studies)."
     },
     {
       "outcome": "gut / digestion",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
       "has_human_evidence": true,
       "n_studies": 8,
       "grade_reasons": [
-        "Precision: ~54 participants verified across 1 of 8 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+        "Precision: ~54 participants verified across 1 of 8 studies; most abstracts omit sample size, so the true total is substantially larger."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 6,
+        "human": 22,
+        "overall": 22,
+        "ceiling": 22,
+        "n_human_studies": 1,
+        "n_animal_studies": 7,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:33151120",
         "PMID:39837844",
-        "PMID:38695904",
         "PMID:41579592",
+        "PMID:38695904",
         "PMID:35583480",
         "PMID:42372605",
         "PMID:26997172",
         "PMID:42356262"
       ],
       "studies": [
-        {
-          "pmid": "26997172",
-          "title": "Effect of oral polyamine supplementation pre-weaning on piglet growth and intestinal characteristics.",
-          "year": "2016",
-          "design": "RCT",
-          "population": "human",
-          "n": 54
-        },
         {
           "pmid": "42372605",
           "title": "Total glycosides of Cistanche deserticola ameliorate alcohol-induced oligoasthenozoospermia via the modulation of gut microbiota-mediated spermidine metabolism.",
@@ -282,20 +273,43 @@
           "design": "Animal",
           "population": "animal",
           "n": null
+        },
+        {
+          "pmid": "26997172",
+          "title": "Effect of oral polyamine supplementation pre-weaning on piglet growth and intestinal characteristics.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": 54
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "26997172",
+            "metric": "mean_diff",
+            "value": 41,
+            "ci_low": 0.0,
+            "ci_high": 82.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs control",
+            "direction": "benefit",
+            "quote": "oral spermine supplementation resulted in a 41% increase in villus height"
+          }
+        ],
+        "n_not_reported": 7,
+        "n_total": 8
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For gut / digestion, Spermidine has moderate human evidence (8 studies)."
+      "summary": "For gut / digestion, spermidine has only preliminary or animal evidence (8 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -395,27 +409,28 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 8,
+        "n_total": 8
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For blood sugar, Spermidine has only preliminary or animal evidence (8 studies)."
+      "summary": "For blood sugar, spermidine has only preliminary or animal evidence (8 studies)."
     }
   ],
   "effects_established": [
-    "cognition",
-    "gut / digestion"
+    "cognition"
   ],
   "effects_promising": [
     "immune function",
     "blood sugar"
   ],
-  "effects_emerging": [],
+  "effects_emerging": [
+    "gut / digestion"
+  ],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
@@ -440,75 +455,75 @@
       "N-(3-aminopropyl)butane-1,4-diamine"
     ]
   },
-  "_cached_at": 1787608204.690733,
+  "_cached_at": 1788019049.030494,
   "explanation": {
-    "what_it_is": "Spermidine is a small organic compound (C\u2087H\u2081\u2089N\u2083, molecular weight 145.25) classified as a polyamine \u2014 a type of molecule with multiple positive charges that plays roles in cell growth and protection. It occurs naturally in many foods including wheat germ, aged cheese, mushrooms, and fermented products, and is also produced by the human body. People take it as a dietary supplement, typically in capsule or powder form derived from natural sources or synthesized.",
-    "how_it_works": "Spermidine works primarily by activating autophagy \u2014 a cellular 'cleaning' process in which the body digests and recycles old or damaged components. It does this partly by boosting NAD+ levels and activating sirtuins, a family of longevity-linked proteins. In the gut, spermidine influences the microbiota (the community of bacteria living there) and appears to modulate immune signaling through polyamine-dependent pathways. It also interacts with iron metabolism and antioxidant systems, which may protect against cellular damage. These mechanisms suggest it could influence aging, immune resilience, and metabolic health, though the translation from animal models to sustained human benefit remains incomplete.",
+    "what_it_is": "Spermidine (C\u2087H\u2081\u2089N\u2083) is a naturally occurring polyamine \u2014 a small organic molecule with multiple nitrogen atoms \u2014 found in cells throughout the body and in foods like aged cheese, mushrooms, and whole grains. It is produced endogenously as cells divide and grow, but levels decline with age. People take it as an oral supplement, typically in capsule form derived from plant or microbial sources.",
+    "how_it_works": "Spermidine participates in several core cellular processes: it stabilizes DNA and RNA, supports protein synthesis, and regulates cell division and growth. At the molecular level, it acts as a cofactor in enzymatic reactions and can modify histone proteins, affecting gene expression. One of its best-studied roles is stimulating autophagy \u2014 the cell's recycling system that clears damaged components \u2014 particularly in response to nutrient stress. This autophagy-boosting effect is thought to underlie potential benefits in aging-related conditions, since cells accumulate debris over time; clearing it may slow neurodegeneration, support metabolic health, and improve immune resilience. Spermidine also modulates the composition of the gut microbiota and can influence how the intestinal barrier and immune system interact.",
     "outcome_detail": [
       {
         "outcome": "cognition",
         "grade": "Moderate",
-        "what_studies_show": "Five randomized controlled trials in humans have examined spermidine's effect on cognition in older adults, mostly those with subjective cognitive decline or dementia risk. A 2022 RCT (n=100) and a 2021 RCT (n=85) reported positive effects on cognition and biomarkers; smaller 2018 trials (n=30 each) on safety and memory performance in at-risk older adults also showed encouraging results. Three animal studies (2026 and earlier) in flies and mice with neurodegenerative features showed favorable outcomes. However, the human studies have not been pooled in a meta-analysis, and their results show inconsistency \u2014 some showing benefit, some equivocal \u2014 preventing a higher grade despite the positive direction.",
-        "why_this_grade": "The grade is Moderate because there are 5 human studies with reasonable sample sizes and RCT design, tilting the evidence toward efficacy. However, the inconsistency across studies and absence of a confirmatory pooled analysis mean we cannot yet call spermidine 'proven' for cognition. The limitation reflects that individual trials showed promise, but agreement is not yet settled."
+        "what_studies_show": "Five randomized controlled trials in humans have examined spermidine and cognitive function in older adults with subjective cognitive decline or dementia. A 2022 RCT (n=100) and a 2021 RCT (n=85) both reported positive effects on cognition and biomarkers in older populations; two 2018 trials (n=30 each) also suggested benefits for memory performance and were conducted in older adults at risk for dementia. A 2019 clinical trial similarly assessed cognition and biomarkers. Three animal studies in flies and mice (2026) showed spermidine modified aspects of neurodegenerative disease. However, the human trials show inconsistency in their findings and no pooled meta-analysis has yet confirmed agreement across them.",
+        "why_this_grade": "The grade reflects five human trials suggesting cognitive benefit, but the heterogeneity of results and lack of quantitative synthesis keeps confidence at Moderate rather than Strong. Small sample sizes (mostly n=30\u2013100) and the absence of a unifying meta-analysis limit certainty that the effect is robust across populations."
       },
       {
         "outcome": "immune function",
         "grade": "Preliminary",
-        "what_studies_show": "Four animal studies (2023\u20132025) have tested spermidine's effect on immune outcomes: in sepsis-induced lung injury in mice, survival and immune function in honey bees, hepatic immune landscape in a murine model, and protective enzymes in bees. All reported favorable immune or anti-inflammatory effects. No human trials of immune function have been retrieved.",
-        "why_this_grade": "The grade is Preliminary because all evidence is animal-only. While the animal data are consistent and recent, findings in mice and insects do not reliably predict human immune responses, which are far more complex. Human trials would be needed to establish clinical relevance."
+        "what_studies_show": "Four animal studies examined spermidine and immune responses: a 2025 study in mice showed spermidine reduced sepsis-induced lung injury via AMPK-mediated effects; a 2023 study linked polyamine supplementation to survival in honey bees; another 2023 murine study found spermidine modulated the liver immune landscape; and a 2024 study measured protective enzymes in bee colonies. No human trials are available in the retrieved records.",
+        "why_this_grade": "Evidence is entirely animal-based (mice, honey bees), and animal models do not reliably predict human immune responses. The preliminary grade reflects promising mechanistic findings that have not yet been tested in human participants."
       },
       {
         "outcome": "gut / digestion",
-        "grade": "Moderate",
-        "what_studies_show": "Two human studies contribute to this outcome: a 2016 RCT (n=54) on polyamine supplementation in piglets found positive effects on intestinal characteristics and growth, and a 2026 study on glycosides with spermidine involvement in microbiota modulation. Six animal studies (2024\u20132026) in mice and other models examined gut microbiota composition, alcohol-induced liver injury, ovarian function linked to gut changes, ulcerative colitis, and metabolic syndrome, with most reporting beneficial effects on intestinal and metabolic health. The human evidence is limited and the sample sizes reported are small; most animal abstracts omit sample sizes, so the true magnitude of evidence is unclear.",
-        "why_this_grade": "The grade is Moderate despite limited human evidence (54 verified participants in one RCT) because there is consistency across the animal studies and at least one human RCT showing positive direction. However, precision is low \u2014 the human arm is small, most studies lack reported sample sizes, and no meta-analysis confirms the findings agree. Pending further human work, the grade reflects promising but unconfirmed efficacy."
+        "grade": "Preliminary",
+        "what_studies_show": "One human study was identified in the retrieved records (2026, unclassified, regarding alcohol-induced reproductive effects with apparent dietary intervention), but sample size was not reported in the abstract. Seven animal studies (2026\u20132022) investigated spermidine and digestive/metabolic health: topics included alcohol-induced liver injury, ovarian function and microbiota composition, metabolic syndrome via Lactobacillus-derived spermidine, ulcerative colitis, and nonalcoholic fatty liver disease. These studies suggest spermidine may support gut barrier function and microbiota balance, but the human evidence base is sparse.",
+        "why_this_grade": "The grade reflects minimal human evidence (one study with unclear sample size) and heavy reliance on animal models. Precision is limited because most abstracts did not report participant or animal numbers; the true scale of human data remains uncertain."
       },
       {
         "outcome": "blood sugar",
         "grade": "Preliminary",
-        "what_studies_show": "Eight animal studies (2021\u20132024) in rodents examined spermidine's effect on glucose metabolism, diabetes onset, and obesity-related metabolic disorders. Studies reported that spermidine improved insulin signaling, reduced diabetes progression, ameliorated fatty liver disease, and shifted microbiota composition toward metabolically favorable profiles. No human trials of blood sugar or glucose control have been retrieved.",
-        "why_this_grade": "The grade is Preliminary because all evidence is animal-only and human metabolism differs substantially from rodent models in terms of insulin secretion, dietary complexity, and lifestyle factors. While the animal data show consistent favorable direction, they do not yet demonstrate efficacy in humans with diabetes or prediabetes."
+        "what_studies_show": "Eight animal studies (2024\u20132021) examined spermidine and glucose metabolism or metabolic disorders: findings included effects on diabetes onset via RIPK1 acetylhypusination, microbiota shifts in rodents on high-fat diet, hepatic immune modulation, nonalcoholic fatty liver disease, and brown fat/skeletal muscle metabolism. All studies were conducted in rodent models or did not report human data in the retrieved records.",
+        "why_this_grade": "Evidence is animal-only, and animal models (particularly rodent metabolic disease models) do not reliably predict human response. No human trials on spermidine and blood sugar appear in the retrieved records, making the grade preliminary."
       }
     ],
-    "evidence_base": "The evidence base is split: cognition and gut/digestive outcomes rest on a mix of human RCTs and animal studies, while immune function and blood sugar effects are supported only by animal research (mostly 2023\u20132026). Human studies are concentrated in older adults with cognitive decline or dementia risk, and sample sizes range from 30 to 100 per trial. The retrieved animal literature is recent and mechanistically diverse (sepsis, obesity, liver disease, microbiota shifts), suggesting active research interest. Overall, this is a moderate-tier compound with encouraging early human data on cognition and digestion, but validation is incomplete and no outcome has achieved a 'Strong' grade based on pooled human evidence.",
-    "emerging_research": "Recent work (2024\u20132026) is exploring spermidine's role in microbiota-derived metabolic signaling \u2014 particularly how oral spermidine might reshape the gut bacterial community to improve metabolic health, liver function, and ovarian function. Studies are also investigating specific mechanisms such as acetylhypusination of immune proteins (RIPK1) in diabetes, and restoration of polyamine levels in models of neurodegenerative disease. These directions are early and animal-focused, but they suggest spermidine may work partly as a 'postbiotic' \u2014 amplifying beneficial bacteria or their metabolites \u2014 rather than solely as a direct cellular supplement.",
-    "open_questions": "Among the studies retrieved here, human evidence is concentrated in older adults with cognitive decline; it is unclear whether findings generalize to younger or cognitively healthy people, or to non-dementia populations. Trial durations in the human cognition studies range from 3 months to unspecified; none of the retrieved records report follow-up beyond the primary intervention period, so durability of any cognitive benefit is unknown in the provided sample. For blood sugar and immune outcomes, no human trials appear in the retrieved records, leaving a substantial gap. Because this is a ~40-abstract sample per outcome, it is not possible to state what the broader literature contains \u2014 only that these specific records show what is described above.",
-    "caveats": "Spermidine is generally well-tolerated in short-term human studies, but long-term safety in humans remains incompletely characterized. Because it is involved in cell proliferation and polyamine metabolism, people with cancer or a strong family history should discuss supplementation with a physician. It may interact with certain medications affecting polyamine metabolism or autophagy; standard supplement\u2013drug interaction caution applies. Quality and dose consistency vary widely among commercial products, so verification of content is advisable.",
+    "evidence_base": "Across all outcomes, the evidence base is dominated by animal studies (22 of 23 studies retrieved are animal models, primarily mice and rodents). Human evidence is limited to five RCTs on cognition and a single unclassified human study on digestion; no human trials on immune function or blood sugar were retrieved. Most studies are recent (2021\u20132026), reflecting growing interest in polyamines and aging. This heavy reliance on animal data and small human trial counts limits confidence in translating findings to clinical practice; what appears promising in mice or flies may not replicate in humans.",
+    "emerging_research": "Recent studies (2024\u20132026) are increasingly investigating spermidine as a 'postbiotic' \u2014 a metabolite produced by beneficial gut bacteria \u2014 and exploring its role in microbiota-mediated metabolic benefits, including protection against alcohol-induced liver damage and metabolic syndrome. Novel mechanistic targets include ferroptosis (iron-dependent cell death), AMPK signaling, and histone acetylation, suggesting spermidine may work through multiple pathways. A 2026 study in flies and mice examined polyamine effects on neurodegeneration, and parallel work on ovarian and testicular function is emerging, though these directions remain preliminary in humans.",
+    "open_questions": "Among the studies retrieved here, human evidence is concentrated entirely in cognition (five RCTs); immune function, blood sugar, and digestion have either no human trials or only one with unreported sample sizes. None of the retrieved human trials appear to exceed 3 months in duration, leaving long-term safety and efficacy unknown in the provided records. The retrieved sample represents ~40 abstracts per outcome; this is explicitly a subset of the full literature, so gaps in the records provided do not necessarily reflect gaps in the field overall.",
+    "caveats": "Spermidine is a research chemical available primarily as a supplement; purity and dosing vary by manufacturer and should be verified. It is not approved as a medication for cognitive or metabolic disorders. Pregnant or nursing individuals and those taking medications that affect polyamine metabolism (e.g., certain antiproliferative agents) should consult a healthcare provider. Because most efficacy data come from animal models, individual human responses may differ from study findings.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Human evidence for spermidine is limited to cognition (5 studies, mostly n=30\u2013100), with no pooled analyses confirming consistency; all other outcomes either lack human data entirely or are represented by single small trials, making clinical translation unreliable.",
+    "headline": "Cognition evidence rests on small RCTs with no pooled analysis confirming consistency; all other outcomes are animal-only or nearly so, making human translability the dominant uncertainty.",
     "concerns": [
       {
-        "issue": "Zero human evidence for most claims",
-        "detail": "Immune function (4 studies, all animal), blood sugar (8 studies, all animal), and the majority of gut/digestion findings (6 of 8 animal) rest entirely on animal models. The engine correctly flags this as 'indirectness'; animal studies of polyamine metabolism do not reliably predict human metabolic or immune responses, particularly for chronic supplementation in free-living populations.",
+        "issue": "No human data for most outcomes",
+        "detail": "Immune function (0 human, 4 animal), blood sugar (0 human, 8 animal), and gut/digestion (1 human, 7 animal) are essentially animal-only evidence bases. The single human gut study is titled with a compound name (Cistanche deserticola) not spermidine, raising questions about relevance. Animal models of diabetes, sepsis, and hepatic inflammation do not reliably predict human response.",
         "severity": "high"
       },
       {
-        "issue": "No meta-analysis despite multiple cognition trials",
-        "detail": "Five human cognition RCTs exist (2018\u20132022, sample sizes 30, 30, 85, 100), yet the engine notes 'no pooled analysis confirms they agree.' Without explicit effect sizes, direction, and confidence intervals reported across these studies, it is impossible to determine whether they are truly consistent or whether heterogeneity is being masked. The 'Moderate' grade appears to rest on the assumption of coherence without evidence of it.",
+        "issue": "Cognition RCTs are small and heterogeneously designed",
+        "detail": "The cognition outcome rests on 4 RCTs with reported n of 30, 30, 85, 100 (median 85, but two at only 30). The engine explicitly notes 'inconsistency' and 'no pooled analysis confirms they agree.' No pooled effect size is extractable, suggesting the trials may differ in direction, magnitude, or both. Without knowing which direction each trial favored spermidine, the grade cannot be defended as reflecting robust agreement.",
         "severity": "high"
       },
       {
-        "issue": "Cognition trials enroll older adults with cognitive impairment; generalizability unclear",
-        "detail": "The four cognition RCTs with extractable n's all target older adults with subjective cognitive complaints or dementia (2018\u20132022 titles explicitly mention 'subjective cognitive impairment,' 'dementia,' 'at risk for dementia'). Whether benefits extend to cognitively normal younger populations, or represent symptomatic relief in a narrower demographic, is not addressed by the retrieved evidence. This limits the scope of any 'cognition' claim.",
+        "issue": "Sample sizes unreported in majority of studies",
+        "detail": "Immune function: 0 of 4 report n. Blood sugar: 0 of 8 report n. Gut/digestion: 1 of 8 report n (n=54). These abstracts provide almost no information on precision or power. A pooled analysis is mathematically impossible, and individual study adequacy is opaque. This is not a minor reporting gap\u2014it prevents any quantitative inference.",
+        "severity": "high"
+      },
+      {
+        "issue": "Cognition evidence is recent and small in absolute terms",
+        "detail": "Only 5 human cognition studies span 2018\u20132026, with the two smallest at n=30. Two trials are from 2018 (same sample size, same year), and it is unclear whether these are independent. Replication is limited. A single well-powered negative trial in this space could substantially shift confidence.",
         "severity": "moderate"
       },
       {
-        "issue": "Single human gut trial on piglets, not adults",
-        "detail": "The only gut/digestion RCT with reported sample size (n=54, 2016) is titled 'Effect of oral polyamine supplementation pre-weaning on piglet growth and intestinal characteristics.' Piglet intestinal physiology and weaning dynamics do not translate directly to adult human digestion or microbiota. The remaining human gut study (2026, unclassified) lacks a sample size and cannot be evaluated for precision.",
-        "severity": "moderate"
-      },
-      {
-        "issue": "Most sample sizes missing; precision of pooled estimates unknowable",
-        "detail": "For gut/digestion, only 1 of 8 studies reports n; for immune and blood sugar, zero abstracts report sample sizes. Even where counts are provided (cognition: 4 of 8), the absence of effect sizes in these abstracts means confidence intervals cannot be reconstructed. The evidence base may be underpowered for clinically meaningful effect detection, but this cannot be verified from the records.",
+        "issue": "Mechanism plausibility is not matched by clinical specificity",
+        "detail": "Animal studies invoke polyamine-mediated autophagy, mitochondrial function, and anti-inflammatory pathways. These are broadly neuroprotective and metabolically favorable in vitro and in model organisms, but the cognition trials do not report mechanistic biomarkers (autophagy flux, mitochondrial respiration, inflammatory cytokines) that would confirm the proposed pathway is engaged in humans. The inferential leap from 'spermidine boosts autophagy in flies' to 'spermidine improves memory in older adults' is large.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The mechanism\u2014spermidine modulating polyamine-dependent autophagy, mitochondrial function, and polyamine depletion in aging\u2014is biologically coherent and supported by cell and animal models. However, there is a substantial inferential leap from improved autophagy markers or lifespan in flies and mice to specific cognitive benefits in older humans with subjective complaints. The cognition trials do not appear to measure autophagy or mechanistic biomarkers directly (the 2022 and 2021 trial titles mention 'biomarkers' but the abstracts do not specify which), leaving the human pathway from mechanism to outcome undocumented.",
-    "strongest_counterargument": "A skeptic would note that the cognition evidence, while the most developed, consists of four small RCTs (two n=30) in a population with inherent placebo sensitivity (subjective cognitive complaints are notoriously responsive to expectancy). Without published effect sizes or a meta-analysis showing consistency, individual trials could be inflated by small-study bias or regression to the mean. Moreover, all other outcomes (blood sugar, immune function, most gut effects) rest entirely on animal models that routinely fail to translate to human efficacy; the pattern here suggests selective publication of positive animal findings without human confirmation.",
-    "what_would_change_the_picture": "A pre-registered, adequately powered RCT (n \u2265 200) of spermidine in cognitively normal older adults, with objective cognitive endpoints (e.g., processing speed, executive function) and measurement of proposed mechanistic biomarkers (autophagy flux, NAD+, mitochondrial function), would resolve whether cognition benefits extend beyond symptomatic improvement in impaired populations. For other outcomes, a single robust human trial per domain (immune challenge, glucose tolerance, microbiota composition) would establish whether animal findings translate at all.",
+    "mechanism_check": "Spermidine's proposed role in polyamine-dependent autophagy, mitochondrial biogenesis, and anti-inflammatory signaling is mechanistically plausible and well-supported in model organisms and cell culture. However, the cognition RCTs do not report autophagy markers, mitochondrial function tests, or inflammatory cytokines, so the claimed mechanism is inferred rather than observed in the human trials. The gap between 'polyamine levels affect neuronal homeostasis' and 'oral spermidine supplementation improves memory scores in older adults' requires bioavailability, CNS penetration, and sustained polyamine metabolism\u2014none of which are documented in these abstracts.",
+    "strongest_counterargument": "A skeptic would note that the cognition evidence is based on four small RCTs with no published pooled analysis and no clarity on consistency\u2014the engine itself flags inconsistency without resolution. The gut and metabolic outcomes are almost entirely animal studies in rodents, flies, and honeybees, populations whose polyamine metabolism and microbiota composition differ substantially from humans. The single human gut study is mislabeled or refers to a different compound, leaving zero high-confidence human data for three of four outcomes. Placebo effects and publication bias are not addressed, and the modest sample sizes make individual-trial power uncertain.",
+    "what_would_change_the_picture": "A large (n \u2265 200), multi-site RCT in older adults with cognitive impairment, preregistered and reporting cognition (MMSE, MoCA, or similar), mechanistic biomarkers (plasma polyamines, CSF autophagy flux, serum IL-6/TNF-\u03b1), and safety, with full transparency on outcomes and a published protocol. For metabolic outcomes, a human RCT in prediabetic or diabetic adults measuring glucose, HbA1c, and gut microbial composition would establish translability.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

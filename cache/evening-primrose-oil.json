@@ -1,6 +1,6 @@
 {
-  "name": "Evening Primrose Oil",
-  "category": "fat",
+  "name": "evening-primrose-oil",
+  "category": "supplement",
   "overall_score": 76,
   "tier": "Moderate",
   "study_count": 13,
@@ -58,17 +58,45 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "23633319",
+            "metric": "mean_diff",
+            "value": -2.22,
+            "ci_low": -10.48,
+            "ci_high": 6.04,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control/placebo",
+            "direction": "none",
+            "quote": "a meta-analysis of results from 7 studies showed that EPO failed to significantly increase improvement in global eczema symptoms as reported by participants on a visual analogue scale of 0 to 100 (MD -2.22, 95% CI -10.48 to 6.04"
+          }
+        ],
+        "n_not_reported": 2,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
-      "headline_effect": null,
-      "summary": "For skin / appearance, Evening Primrose Oil has moderate human evidence (3 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -2.22,
+        "ci_low": -10.48,
+        "ci_high": 6.04,
+        "ci_estimated": false,
+        "n_studies_pooled": 7,
+        "comparator": "control/placebo",
+        "direction": "none",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "23633319",
+        "quote": "a meta-analysis of results from 7 studies showed that EPO failed to significantly increase improvement in global eczema symptoms as reported by participants on a visual analogue scale of 0 to 100 (MD -2.22, 95% CI -10.48 to 6.04"
+      },
+      "summary": "For skin / appearance, evening-primrose-oil has moderate human evidence (3 studies)."
     },
     {
       "outcome": "cholesterol / lipids",
@@ -132,64 +160,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 4,
+        "n_total": 4
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cholesterol / lipids, Evening Primrose Oil has moderate human evidence (4 studies)."
-    },
-    {
-      "outcome": "joint / arthritis",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
-      "has_human_evidence": true,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Imprecision: small verified sample (~80 participants across 1 measured studies).",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed.",
-        "Floor applied: human trial evidence retained at least 'emerging' certainty absent a specific serious flaw."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 1,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:29426270"
-      ],
-      "studies": [
-        {
-          "pmid": "29426270",
-          "title": "Evening primrose oil and labour, is it effective? A randomised clinical trial.",
-          "year": "2018",
-          "design": "RCT",
-          "population": "human",
-          "n": 80
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For joint / arthritis, Evening Primrose Oil shows early but unsettled evidence (1 studies)."
+      "summary": "For cholesterol / lipids, evening-primrose-oil has moderate human evidence (4 studies)."
     },
     {
       "outcome": "inflammation",
@@ -261,17 +241,93 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "23633319",
+            "metric": "mean_diff",
+            "value": -2.22,
+            "ci_low": -10.48,
+            "ci_high": 6.04,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control/placebo",
+            "direction": "none",
+            "quote": "EPO failed to significantly increase improvement in global eczema symptoms as reported by participants on a visual analogue scale of 0 to 100 (MD -2.22, 95% CI -10.48 to 6.04, 176 particip"
+          }
+        ],
+        "n_not_reported": 4,
+        "n_total": 5
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
+      },
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -2.22,
+        "ci_low": -10.48,
+        "ci_high": 6.04,
+        "ci_estimated": false,
+        "n_studies_pooled": 7,
+        "comparator": "control/placebo",
+        "direction": "none",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "23633319",
+        "quote": "EPO failed to significantly increase improvement in global eczema symptoms as reported by participants on a visual analogue scale of 0 to 100 (MD -2.22, 95% CI -10.48 to 6.04, 176 particip"
+      },
+      "summary": "For inflammation, evening-primrose-oil has moderate human evidence (5 studies)."
+    },
+    {
+      "outcome": "joint / arthritis",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Imprecision: small verified sample (~80 participants across 1 measured studies).",
+        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed.",
+        "Floor applied: human trial evidence retained at least 'emerging' certainty absent a specific serious flaw."
+      ],
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 0,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:29426270"
+      ],
+      "studies": [
+        {
+          "pmid": "29426270",
+          "title": "Evening primrose oil and labour, is it effective? A randomised clinical trial.",
+          "year": "2018",
+          "design": "RCT",
+          "population": "human",
+          "n": 80
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 1,
+        "n_total": 1
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Evening Primrose Oil has moderate human evidence (5 studies)."
+      "summary": "For joint / arthritis, evening-primrose-oil shows early but unsettled evidence (1 studies)."
     }
   ],
   "effects_established": [
@@ -286,75 +342,75 @@
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787608520.754839,
+  "_cached_at": 1788016921.070784,
   "explanation": {
-    "what_it_is": "Evening primrose oil is a supplement derived from the seeds of the evening primrose plant (Oenothera biennis), rich in polyunsaturated fatty acids\u2014most notably gamma-linolenic acid (GLA), an omega-6 fat. It is typically taken as a soft-gel capsule by mouth. The oil has been used in traditional medicine for centuries and is now studied as a potential therapeutic agent for skin, inflammatory, and metabolic conditions.",
-    "how_it_works": "Evening primrose oil's primary active component, GLA, is converted in the body into dihomogamma-linolenic acid (DGLA), which serves as a precursor to anti-inflammatory molecules called prostaglandins and other lipid mediators. These signaling molecules help regulate immune response, reduce inflammatory cascade activation, and modulate skin barrier function. By shifting the balance toward anti-inflammatory mediators, GLA may reduce excessive immune activation in inflammatory skin conditions and potentially influence systemic inflammation. The oil also provides linoleic acid, another omega-6 polyunsaturated fat that supports cell membrane integrity and skin health.",
+    "what_it_is": "Evening primrose oil is a lipid extract from the seeds of Oenothera biennis, a plant native to North America. It is rich in polyunsaturated fatty acids, particularly gamma-linolenic acid (GLA), which comprises about 8\u201310% of the oil by weight. People typically consume it as an oral supplement in softgel capsules, usually in doses of 1.4\u20132.8 grams daily.",
+    "how_it_works": "Evening primrose oil's primary active component, GLA, is converted in the body to dihomogamma-linolenic acid (DGLA) and then to arachidonic acid precursors. These fatty acid metabolites are incorporated into cell membranes and serve as substrates for eicosanoid production \u2014 signaling molecules including prostaglandins and leukotrienes that regulate immune responses, inflammation, and tissue repair. Because GLA can be shunted toward anti-inflammatory pathways (such as production of prostaglandin E1), the oil may theoretically dampen excessive inflammatory signaling and support skin barrier function. This mechanism is why evening primrose oil has been studied in conditions marked by inflammation and skin dysfunction.",
     "outcome_detail": [
       {
         "outcome": "skin / appearance",
         "grade": "Moderate",
-        "what_studies_show": "A 2013 meta-analysis pooling 1,596 participants found that oral evening primrose oil showed benefit for eczema and atopic dermatitis. An earlier 1996 randomized controlled trial evaluated evening primrose oil (brand Epogam) in atopic dermatitis and asthma, and a 2002 study examined its therapeutic effect in atopic dermatitis patients with dry, scaly skin lesions. Together, these studies support an improvement in skin symptoms, particularly in eczema-related conditions.",
-        "why_this_grade": "Three human studies exist, including one reasonably large meta-analysis, showing a consistent direction of benefit. However, only one of the three studies reported a verified sample size (1,596), and the conclusion rests on a single meta-analysis that has not been independently replicated, limiting confidence to Moderate rather than Strong."
+        "what_studies_show": "A 2013 meta-analysis pooling data from 1,596 participants examined oral evening primrose oil and borage oil (both GLA sources) for eczema, finding a pooled effect of \u22122.22 points (95% CI: \u221210.48 to 6.04) on symptom or severity scales. Two additional human studies from 1996 and 2002\u2014an RCT testing evening primrose oil in atopic dermatitis and asthma, and an unclassified trial in atopic dermatitis patients with dry, scaly lesions\u2014contribute to the body of evidence, though their specific results are not detailed in the abstracts provided.",
+        "why_this_grade": "While three human studies exist, only one (the meta-analysis) has a verified large sample size; most abstracts omit exact participant counts. The confidence interval of the pooled effect crosses zero, indicating no statistically clear benefit. The evidence rests on a single meta-analysis with no independently replicated confirmation, keeping it at Moderate rather than Strong."
       },
       {
         "outcome": "cholesterol / lipids",
         "grade": "Moderate",
-        "what_studies_show": "A 2020 meta-analysis of randomized trials involving 926 participants examined the effect of evening primrose oil supplementation on lipid profile. A 2025 RCT with 24 participants explored evening primrose oil for painful diabetic neuropathy. One animal study from 2022 also examined lipid-related effects. The human data, though limited in number of primary studies, point toward some modulation of lipid metabolism.",
-        "why_this_grade": "Only one primary human trial and two pooled analyses were retrieved, falling below the evidence threshold for Strong. The 2020 meta-analysis provides the most robust human signal, but the overall human dataset remains lean. Animal evidence exists but cannot substitute for human confirmation of clinical lipid effects."
-      },
-      {
-        "outcome": "joint / arthritis",
-        "grade": "Emerging",
-        "what_studies_show": "A single 2018 randomized controlled trial with 80 participants examined evening primrose oil in the context of labour outcomes; this appears to be the only study in the retrieved records directly addressing joint or arthritis endpoints. The study's relevance to typical joint-inflammation questions is limited by its design focus.",
-        "why_this_grade": "Only one human study addresses this outcome, making consistency impossible to assess and preventing elevation above Emerging. The small sample size (~80 participants) and unclear clinical relevance to musculoskeletal joint disease further restrict confidence."
+        "what_studies_show": "A 2020 meta-analysis of randomized trials in 926 participants examined evening primrose oil supplementation and lipid profile changes, representing the primary human evidence alongside a 2013 meta-analysis that included lipid outcomes. A 2025 RCT with 24 participants tested evening primrose oil in painful diabetic neuropathy (a small trial that may have included lipid measurements), and one animal study from 2022 examined lipid or metabolic effects in a non-human model.",
+        "why_this_grade": "Only one primary human RCT meta-analysis (2020, n=926) directly measures lipid outcomes; the other human evidence comes from secondary pooled analyses or trials focused on other outcomes. This limited primary human evidence falls short of the threshold for Strong, while the animal study contributes context but cannot alone support human efficacy claims."
       },
       {
         "outcome": "inflammation",
         "grade": "Moderate",
-        "what_studies_show": "A 2013 meta-analysis of 1,596 participants found anti-inflammatory effects in the context of eczema. A 2023 RCT with 29 participants tested the combined anti-inflammatory effect of fish oil and evening primrose oil in breast cancer patients. An earlier 2018 RCT with 80 participants also examined inflammation in the labour context. Two animal studies (2023 and 2022) showed protective effects on inflammation-related outcomes in neurological and metabolic models.",
-        "why_this_grade": "Three human studies and two animal studies contribute to this outcome, with a consistent directional signal. However, only one meta-analysis exists, and its conclusion has not been independently verified by another systematic review, holding the grade at Moderate. The human trials are small or context-specific, and animal data cannot establish clinical efficacy alone."
+        "what_studies_show": "A 2013 meta-analysis of 1,596 participants (the same study as for skin) reported a pooled inflammatory marker effect of \u22122.22 (95% CI: \u221210.48 to 6.04). A 2023 RCT with 29 participants examined the anti-inflammatory effect of combined fish oil and evening primrose oil supplementation in breast cancer patients. A 2018 RCT with 80 participants investigated evening primrose oil in the context of labour and inflammatory markers. Two animal studies from 2023 and 2022 explored protective effects on neuroinflammation and other inflammatory pathways.",
+        "why_this_grade": "Three human studies are available, but the key pooled estimate has a confidence interval spanning zero, meaning no statistically clear anti-inflammatory benefit. Consistency cannot be independently verified\u2014only the single meta-analysis exists in the retrieved records\u2014and sample sizes in individual RCTs are modest (29\u201380 participants)."
+      },
+      {
+        "outcome": "joint / arthritis",
+        "grade": "Emerging",
+        "what_studies_show": "Only one RCT with 80 participants (2018) addresses joint or arthritis outcomes; it examined evening primrose oil in the context of labour outcomes, making the direct relevance to joint disease unclear from the available abstract.",
+        "why_this_grade": "A single small study with ~80 participants is insufficient to establish even moderate confidence. No independent replication exists in the retrieved records, and the study's primary focus (labour) raises uncertainty about whether arthritis or joint-specific efficacy was a pre-specified outcome. This is firmly preliminary."
       }
     ],
-    "evidence_base": "The research on evening primrose oil is predominantly human-based, with most evidence coming from small to moderate randomized controlled trials and two meta-analyses. Studies cluster around skin and inflammatory outcomes, with fewer data on lipids and minimal data on joint health. The literature spans from 1996 to 2025, showing sustained research interest, but many individual trials report small sample sizes (24\u201380 participants) and are often context-specific (eczema, labour, breast cancer). The use of both fish oil and evening primrose oil in combination in some studies complicates isolating evening primrose oil's specific contribution.",
-    "emerging_research": "Recent work (2023\u20132025) has begun exploring evening primrose oil's potential in pain and neuropathy (the 2025 trial on diabetic neuropathy) and its synergistic use with fish oil in cancer-related inflammation. Animal models from 2022\u20132023 suggest neuroprotective and anti-inflammatory effects in brain tissue, though these remain early and have not yet translated to human clinical trials. These directions are promising but preliminary and should not yet be considered established.",
-    "open_questions": "Among the studies provided here, no trials appear to follow participants beyond several weeks to months, so long-term safety and durability of benefit are not visible in these records. The retrieved studies focus heavily on eczema, atopic dermatitis, and specific acute conditions (labour, cancer treatment); general populations and other chronic inflammatory or metabolic diseases are poorly represented. Joint and arthritis outcomes rest on a single small trial with unclear relevance, leaving this indication substantially understudied in the dataset provided. Note: this sample comprises approximately 40 abstracts per outcome and does not represent the complete global literature.",
-    "caveats": "Evening primrose oil is generally well tolerated but may cause mild gastrointestinal upset, headache, or nausea in some users. It is an omega-6 rich supplement and should be balanced with omega-3 intake; individuals on anticoagulant or antiplatelet medications should consult a healthcare provider before use, as GLA may have mild antiplatelet effects. Quality and GLA content vary among commercial products; standardized formulations are preferable. Pregnant or nursing individuals should seek medical guidance, as some studies have examined evening primrose oil in labour contexts with mixed results.",
+    "evidence_base": "The research base is predominantly human\u2014most retrieved studies are RCTs or meta-analyses in human populations (skin conditions, lipid profiles, inflammation markers). Animal studies are few (2 of 5 inflammation studies, 1 of 4 lipid studies, none for skin or joint outcomes) and appear supportive rather than foundational. Most human evidence comes from systematic reviews and meta-analyses published in the 2010s\u20132020s, with a few older RCTs (1996, 2002). Overall, the evidence is limited in precision and consistency; many trials are small, and key efficacy conclusions rest on single meta-analyses rather than multiple independent confirmatory studies.",
+    "emerging_research": "Recent work has expanded into metabolic complications of diabetes, including a 2025 RCT examining evening primrose oil for painful diabetic neuropathy (n=24), suggesting interest in nerve-protective effects. A 2023 trial explored combined evening primrose and fish oil supplementation in breast cancer patients undergoing treatment, investigating anti-inflammatory benefits in a high-stress medical context. Animal studies from 2022\u20132023 have examined neuroprotective and microglial effects, hinting at potential neuroimmune applications. These directions remain preliminary and lack human replication.",
+    "open_questions": "Among the studies retrieved here, no trial appears to follow participants beyond several weeks to months\u2014long-term safety and durability of any benefit are not visible in these records. Most human trials are small (24\u201380 participants) except for the meta-analyses, raising questions about generalizability. The retrieved records do not show whether evening primrose oil has been compared head-to-head against active treatments (e.g., topical corticosteroids for eczema) or whether optimal dosing and duration have been established. Because this is a sample of ~40 abstracts per outcome and not a comprehensive literature review, I cannot claim what research exists globally, only that these particular retrieved studies show the patterns described above.",
+    "caveats": "Evening primrose oil is generally well tolerated but may cause mild gastrointestinal upset, headache, or allergic reactions in sensitive individuals. People taking anticoagulants (e.g., warfarin) or antiplatelet agents should consult a healthcare provider, as high-dose GLA may have mild anticoagulant properties. Quality varies among commercial products; third-party testing for purity and GLA content is advisable. Pregnant or nursing women should seek medical guidance before use, as evidence in these populations is limited.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Most efficacy claims rest on a single 2013 meta-analysis (n=1596) that has not been independently replicated; primary RCT evidence is sparse, small, and often off-target for the claimed outcomes.",
+    "headline": "The evidence base for evening-primrose-oil relies heavily on a single 2013 meta-analysis (n=1596) that appears repeatedly across three distinct outcomes without independent replication, making the grades vulnerable to that one review's methodology and conclusions.",
     "concerns": [
       {
-        "issue": "Single meta-analysis drives multiple outcome grades",
-        "detail": "The 2013 meta-analysis on eczema (n=1596) appears across skin/appearance, inflammation, and potentially cholesterol outcomes, yet the engine explicitly notes it is 'not independently replicated or verified.' For skin/appearance, 2 of 3 studies are either this meta-analysis or the unclassified 2002 study with no reported sample size. A single pooled analysis cannot establish consistency; if that meta-analysis's underlying trials had methodological flaws, all downstream grades are weakened.",
+        "issue": "Single meta-analysis dominates multiple outcomes",
+        "detail": "The 2013 meta-analysis on 'Oral evening primrose oil and borage oil for eczema' (n=1596) is listed as a primary evidence source for skin/appearance, inflammation, and (implicitly) contributes to the pooled effect reported for multiple outcomes. For skin/appearance and inflammation, the engine explicitly notes 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified.' This means the moderate grades for at least two outcomes rest on one review's design choices and interpretation, not convergent evidence.",
         "severity": "high"
       },
       {
-        "issue": "Severe mismatch between outcome claims and study populations",
-        "detail": "The joint/arthritis outcome is graded 'Emerging' based on a single 2018 RCT (n=80) titled 'Evening primrose oil and labour, is it effective?'\u2014a labor/obstetric study, not an arthritis trial. The inflammation outcome includes this same labor study. This suggests either miscategorization of study aims or that the compound is being credited for effects in populations and conditions far removed from what the trials actually measured.",
+        "issue": "Severe underpowering in primary RCTs",
+        "detail": "Of the three human RCTs identified, one enrolled only n=24 (diabetic neuropathy), one n=29 (breast cancer inflammation), and one n=80 (labor outcomes). A single well-executed trial or unfavorable finding in these small samples could substantially shift confidence. The median sample size of 80 for inflammation outcomes, driven by two very small RCTs, provides minimal protection against false positives from noise or selective reporting.",
         "severity": "high"
       },
       {
-        "issue": "Incomplete sample size reporting obscures true evidence base",
-        "detail": "For skin/appearance (3 studies), only 1 of 3 reports n; for inflammation (5 studies), only 3 of 5 report n. The engine notes 'true total is substantially larger' for skin but provides no concrete figure. Without knowing the actual sample sizes of the 1996 RCT and 2002 unclassified study, the real precision and weight of the evidence base cannot be assessed. A small, poorly-run 1996 RCT could be bundled with larger work without visibility.",
+        "issue": "Outcome-study mismatch obscures evidence specificity",
+        "detail": "The 2018 RCT titled 'Evening primrose oil and labour, is it effective?' (n=80) is listed under both inflammation AND joint/arthritis outcomes, yet the title suggests a pregnancy/labor application unrelated to either claimed outcome. This either reflects broad labeling of the trial across disparate claims, or indicates that the trial's actual findings were reinterpreted post-hoc to support multiple outcome grades. The joint/arthritis outcome is graded 'Emerging' based solely on this single labor trial, which raises questions about outcome assignment validity.",
         "severity": "high"
       },
       {
-        "issue": "Cholesterol evidence conflates eczema and metabolic outcomes",
-        "detail": "The 2013 meta-analysis on eczema (n=1596) is listed under cholesterol/lipids, yet its title does not indicate lipid endpoints. The actual dedicated lipid meta-analysis (2020, n=926) is the only study clearly addressing cholesterol, and a 2025 RCT (n=24) conflates evening primrose oil with diabetic neuropathy treatment. With only 1 primary lipid-focused study and unclear overlap between pooled analyses, the cholesterol grade lacks independent verification.",
-        "severity": "moderate"
+        "issue": "Pooled effect estimate appears inconsistent with outcome claims",
+        "detail": "The pooled effect reported for skin/appearance is mean_diff -2.22 [-10.48 to 6.04]\u2014a confidence interval that crosses zero and includes clinically meaningless change. The same effect size is reported for inflammation. These null or near-null pooled estimates are inconsistent with the 'Moderate' grade assigned, which typically implies clinically meaningful evidence. The engine notes that 'most abstracts omit sample size,' suggesting the true sample composition underlying these estimates is opaque.",
+        "severity": "high"
       },
       {
-        "issue": "Very small recent trials with dual interventions",
-        "detail": "The 2025 RCT on diabetic neuropathy enrolled only 24 participants and combined fish oil with evening primrose oil, making it impossible to isolate the effect of evening primrose oil alone. The 2023 inflammation RCT (n=29) also combined fish oil with evening primrose oil. These confounded, underpowered trials are pulled to support cholesterol and inflammation grades but add minimal interpretable signal.",
+        "issue": "Lipid/cholesterol evidence poorly characterized",
+        "detail": "For the cholesterol/lipids outcome, one meta-analysis (2020, n=926) is specific to lipid profile, but a second meta-analysis (2013, n=1596) is on eczema\u2014likely cited only for comparative pooling, not direct lipid evidence. The RCT on diabetic neuropathy (n=24) is not a lipid study. No pooled effect is extractable from the retrieved records. The engine acknowledges 'limited human evidence: 1 primary human studies and 2 pooled analyses retrieved.' This outcome's moderate grade appears driven by the reuse of the eczema meta-analysis rather than convergent lipid-specific trials.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Evening primrose oil contains gamma-linolenic acid (GLA), a precursor to anti-inflammatory eicosanoids, which plausibly supports claims about skin and inflammation outcomes. However, the leap from in vitro anti-inflammatory activity to measurable clinical benefit in eczema, joint pain, and labor outcomes is substantial and depends entirely on the strength of the primary trials. The mechanism does not explain why a single labor trial (2018, n=80) would support a general arthritis claim, suggesting either outcome misattribution or a very indirect mechanistic inference unsupported by the data.",
-    "strongest_counterargument": "A skeptic would note that the evidence base is held up primarily by a single 2013 meta-analysis on eczema with no independent replication, and that most primary RCTs are either very small (n=24\u201380), measure outcomes unrelated to the stated claim (a labor trial supporting arthritis), or combine evening primrose oil with other compounds (fish oil), obscuring its specific contribution. The 1996 RCT is nearly 30 years old, unreported sample sizes create hidden heterogeneity, and no 'Moderate' grade outcome has been validated by more than one standalone primary trial.",
-    "what_would_change_the_picture": "An independent systematic review published after 2013 that replicates or contradicts the 2013 meta-analysis would establish consistency. Alternatively, a modern, well-powered (n\u2265200) RCT of evening primrose oil alone (not combined with other oils) in a disease-specific population (e.g., eczema or rheumatoid arthritis) with a registered protocol and pre-specified endpoints would clarify whether the Moderate grades rest on solid evidence or artifact of evidence aggregation.",
+    "mechanism_check": "Evening primrose oil is high in gamma-linolenic acid (GLA), which theoretically modulates inflammatory pathways via arachidonic acid metabolism and DGL\u0100 production. This mechanism plausibly supports claims about inflammation and possibly skin barrier function in eczema. However, the leap from biochemical mechanism to clinical benefit in lipid profile is less direct\u2014GLA does not have a well-established independent lipid-lowering pathway separate from general anti-inflammatory effects. For joint/arthritis, the evidence base (a single labor trial) does not establish any mechanistic connection; the claim appears to be inferred from anti-inflammatory potential rather than demonstrated in the identified literature.",
+    "strongest_counterargument": "A skeptic would note that the 'Moderate' grades rest substantially on a single 2013 systematic review whose methodology, study selection criteria, and risk-of-bias assessment are not visible in these records. Independently, the retrieved primary RCTs are small (n=24\u201380), underpowered to detect realistic clinical effects, and show no consistent positive signal\u2014the pooled estimate for skin/appearance and inflammation crosses zero. The lipid outcome cites an eczema meta-analysis as supporting evidence, which suggests outcome-specific trials may be sparse or weak. Without access to the 2013 review's full analysis and risk-of-bias work, the grades could simply reflect optimistic interpretation of limited, small, and heterogeneous studies.",
+    "what_would_change_the_picture": "Independent replication of the 2013 meta-analysis using current methodology and risk-of-bias tools would be essential; alternatively, at least two new adequately powered (n>100 per arm) RCTs in a single indication (e.g., eczema or rheumatoid arthritis) with pre-registered outcomes and transparent reporting would materially strengthen or refute the moderate grades. For lipids specifically, a dedicated meta-analysis of lipid-specific RCTs (excluding eczema studies) is needed to justify the current grading.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

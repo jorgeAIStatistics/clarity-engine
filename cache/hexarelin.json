@@ -1,9 +1,9 @@
 {
-  "name": "Hexarelin",
-  "category": "peptide",
-  "overall_score": 76,
+  "name": "hexarelin",
+  "category": "supplement",
+  "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 81,
+  "study_count": 79,
   "claims": [
     {
       "outcome": "testosterone / hormones",
@@ -22,8 +22,8 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 30,
-        "n_animal_studies": 29,
+        "n_human_studies": 28,
+        "n_animal_studies": 31,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -48,16 +48,16 @@
         "PMID:15177700",
         "PMID:7962341",
         "PMID:9814463",
-        "PMID:10614623",
         "PMID:9364340",
         "PMID:8706295",
+        "PMID:7955465",
         "PMID:7586608",
         "PMID:28977588",
         "PMID:9156035",
         "PMID:12144941",
-        "PMID:7955465",
         "PMID:7584696",
         "PMID:7673411",
+        "PMID:10614623",
         "PMID:11600590",
         "PMID:17294832",
         "PMID:9005975",
@@ -305,22 +305,6 @@
           "n": 11
         },
         {
-          "pmid": "23861368",
-          "title": "Hexarelin treatment in male ghrelin knockout mice after myocardial infarction.",
-          "year": "2013",
-          "design": "Observational",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "11322492",
-          "title": "Hexarelin, but not growth hormone, protects heart from damage induced in vitro by calcium deprivation replenishment.",
-          "year": "2001",
-          "design": "Observational",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "7955465",
           "title": "Growth hormone releasing activity by intranasal administration of a synthetic hexapeptide (hexarelin).",
           "year": "1994",
@@ -425,6 +409,14 @@
           "n": null
         },
         {
+          "pmid": "23861368",
+          "title": "Hexarelin treatment in male ghrelin knockout mice after myocardial infarction.",
+          "year": "2013",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "22842067",
           "title": "Chronic administration of hexarelin attenuates cardiac fibrosis in the spontaneously hypertensive rat.",
           "year": "2012",
@@ -475,6 +467,14 @@
         {
           "pmid": "11322493",
           "title": "Hexarelin protects H9c2 cardiomyocytes from doxorubicin-induced cell death.",
+          "year": "2001",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "11322492",
+          "title": "Hexarelin, but not growth hormone, protects heart from damage induced in vitro by calcium deprivation replenishment.",
           "year": "2001",
           "design": "Animal",
           "population": "animal",
@@ -556,23 +556,94 @@
           "pmid": "31386895",
           "title": "Hexarelin attenuates atherosclerosis via inhibiting LOX-1-NF-\u03baB signaling pathway-mediated macrophage ox-LDL uptake in ApoE",
           "year": "2019",
-          "design": "In vitro",
+          "design": "Unclassified",
           "population": "animal",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "9425393",
+            "metric": "mean_diff",
+            "value": 52.6,
+            "ci_low": 0.0,
+            "ci_high": 105.2,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "hexarelin plus GHRH with high dose SS50",
+            "direction": "none",
+            "quote": "The peak serum GH concentration following the intravenous administration of hexarelin plus GHRH-(1-29)-NH2 remained large (52.6 +/- 7.2 mU/l; mean +/- SEM) despite the high dose of SS(1-14) (50 micrograms/m2/h)."
+          },
+          {
+            "pmid": "8548949",
+            "metric": "mean_diff",
+            "value": 3.7,
+            "ci_low": 0.0,
+            "ci_high": 7.4,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "raising the level from 10.4 +/- 3.9 (SD) to 14.1 +/- 4.6 nmol/l (P < 0.004)"
+          },
+          {
+            "pmid": "7962341",
+            "metric": "mean_diff",
+            "value": 97,
+            "ci_low": 0.0,
+            "ci_high": 194.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "elderly vs young",
+            "direction": "harm",
+            "quote": "basal IGF-I levels in the elderly were lower than those in young subjects (114.5 +/- 18.7 vs. 211.5 +/- 19.1 micrograms/L; P < 0.001)"
+          },
+          {
+            "pmid": "11081146",
+            "metric": "mean_diff",
+            "value": 36,
+            "ci_low": 0.0,
+            "ci_high": 72.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs saline infusion",
+            "direction": "benefit",
+            "quote": "delta GH: 57 +/- 16 ng/ml for Hexarelin infused; 21 +/- 7 ng/ml for saline infused"
+          },
+          {
+            "pmid": "9846166",
+            "metric": "mean_diff",
+            "value": 354,
+            "ci_low": 0.0,
+            "ci_high": 708.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs saline controls",
+            "direction": "benefit",
+            "quote": "a 174 h hexarelin infusion did elicit a significant increase (1289 +/- 42 ng/ml; P < 0.05)"
+          }
+        ],
+        "n_not_reported": 54,
+        "n_total": 59
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For testosterone / hormones, Hexarelin has moderate human evidence (59 studies)."
+      "summary": "For testosterone / hormones, hexarelin has moderate human evidence (59 studies)."
     },
     {
       "outcome": "cardiovascular",
@@ -590,8 +661,8 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 5,
-        "n_animal_studies": 11,
+        "n_human_studies": 4,
+        "n_animal_studies": 12,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -601,9 +672,9 @@
         "PMID:31386895",
         "PMID:32403043",
         "PMID:22842067",
-        "PMID:10614623",
         "PMID:28977588",
         "PMID:12144941",
+        "PMID:10614623",
         "PMID:10528131",
         "PMID:11322491",
         "PMID:34856183",
@@ -642,14 +713,6 @@
           "title": "Cardiac effects of hexarelin in hypopituitary adults.",
           "year": "1999",
           "design": "Clinical trial",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "23861368",
-          "title": "Hexarelin treatment in male ghrelin knockout mice after myocardial infarction.",
-          "year": "2013",
-          "design": "Observational",
           "population": "human",
           "n": null
         },
@@ -702,6 +765,14 @@
           "n": null
         },
         {
+          "pmid": "23861368",
+          "title": "Hexarelin treatment in male ghrelin knockout mice after myocardial infarction.",
+          "year": "2013",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "22842067",
           "title": "Chronic administration of hexarelin attenuates cardiac fibrosis in the spontaneously hypertensive rat.",
           "year": "2012",
@@ -737,96 +808,52 @@
           "pmid": "31386895",
           "title": "Hexarelin attenuates atherosclerosis via inhibiting LOX-1-NF-\u03baB signaling pathway-mediated macrophage ox-LDL uptake in ApoE",
           "year": "2019",
-          "design": "In vitro",
+          "design": "Unclassified",
           "population": "animal",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "10342360",
+            "metric": "mean_diff",
+            "value": 6.7,
+            "ci_low": 0.0,
+            "ci_high": 13.4,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "HEX increased LVEF (70.7+/-3.0 vs 64.0+/-1.5%, p<0.03)"
+          },
+          {
+            "pmid": "10528131",
+            "metric": "mean_diff",
+            "value": 7,
+            "ci_low": 0.0,
+            "ci_high": 14.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "Hexarelin administration increased LVEF both in patients with GHD and in CS (peak: 57+/-2 vs. 70+/-2, respectively, P<0.05 vs. baseline)"
+          }
+        ],
+        "n_not_reported": 14,
+        "n_total": 16
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For cardiovascular, Hexarelin has moderate human evidence (16 studies)."
-    },
-    {
-      "outcome": "muscle growth",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 4,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 0,
-        "overall": 55,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 4,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:22842067",
-        "PMID:28977588",
-        "PMID:31526442",
-        "PMID:17766487"
-      ],
-      "studies": [
-        {
-          "pmid": "31526442",
-          "title": "Hexarelin protects cardiac H9C2 cells from angiotensin II-induced hypertrophy",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "28977588",
-          "title": "Hexarelin, a Growth Hormone Secretagogue, Improves Lipid Metabolic Aberrations in Nonobese Insulin-Resistant Male MKR Mice.",
-          "year": "2017",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "22842067",
-          "title": "Chronic administration of hexarelin attenuates cardiac fibrosis in the spontaneously hypertensive rat.",
-          "year": "2012",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "17766487",
-          "title": "Hexarelin suppresses cardiac fibroblast proliferation and collagen synthesis in rat.",
-          "year": "2007",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For muscle growth, Hexarelin has only preliminary or animal evidence (4 studies)."
+      "summary": "For cardiovascular, hexarelin has moderate human evidence (16 studies)."
     },
     {
       "outcome": "kidney function",
@@ -872,26 +899,80 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 2,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For kidney function, Hexarelin has moderate human evidence (2 studies)."
+      "summary": "For kidney function, hexarelin has moderate human evidence (2 studies)."
+    },
+    {
+      "outcome": "eye / vision",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 35,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 1,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:41766237",
+        "PMID:15177700"
+      ],
+      "studies": [
+        {
+          "pmid": "15177700",
+          "title": "Hexarelin decreases slow-wave sleep and stimulates the secretion of GH, ACTH, cortisol and prolactin during sleep in healthy volunteers.",
+          "year": "2004",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41766237",
+          "title": "Hexarelin promotes the survival of retinal ganglion cells after optic nerve transection.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 2,
+        "n_total": 2
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For eye / vision, hexarelin has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
     "testosterone / hormones",
     "cardiovascular",
-    "kidney function"
+    "kidney function",
+    "eye / vision"
   ],
-  "effects_promising": [
-    "muscle growth"
-  ],
+  "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
@@ -917,75 +998,75 @@
       "MF-6003"
     ]
   },
-  "_cached_at": 1787608852.687294,
+  "_cached_at": 1788017264.808365,
   "explanation": {
-    "what_it_is": "Hexarelin (also called Examorelin) is a synthetic peptide of 6 amino acids (molecular formula C\u2084\u2087H\u2085\u2088N\u2081\u2082O\u2086, molecular weight 887.0) designed to mimic ghrelin, a natural hormone produced mainly by the stomach. It is administered by injection and belongs to a class of compounds called growth hormone secretagogues (GHS) \u2014 peptides that trigger the release of growth hormone from the pituitary gland. It is classified as a research chemical and is not approved for routine clinical use in most countries.",
-    "how_it_works": "Hexarelin binds to the ghrelin receptor (also called the GHS receptor or GHSR) on cells in the brain and pituitary gland, triggering a cascade that stimulates the release of growth hormone (GH). This also activates the hypothalamo-pituitary-adrenal (HPA) axis \u2014 the body's stress-response system \u2014 leading to increased secretion of cortisol, ACTH (adrenocorticotropic hormone), and other hormones. Because GH has effects throughout the body on metabolism, muscle, bone, and cardiovascular function, hexarelin's stimulation of GH release may explain observed changes in these systems. The peptide can also exert direct effects on cardiac and other tissues independent of GH alone.",
+    "what_it_is": "Hexarelin (also known as Examorelin) is a synthetic hexapeptide\u2014a short chain of six amino acids\u2014designed to mimic ghrelin, a natural hormone produced by the stomach. It is classified as a growth hormone-releasing peptide (GHRP) and is administered by injection. The compound was developed as a research tool and potential therapeutic agent to stimulate growth hormone and other pituitary hormones in the body.",
+    "how_it_works": "Hexarelin binds to growth hormone secretagogue receptors (GHS-R) on cells in the pituitary gland and hypothalamus, triggering the release of growth hormone (GH) and other anterior pituitary hormones including ACTH, prolactin, and cortisol. Unlike some GH-releasing peptides, hexarelin appears to stimulate the hypothalamo-pituitary-adrenal (HPA) axis\u2014the body's central stress and hormone-regulation system\u2014partly through arginine vasopressin signaling. This multi-hormone effect distinguishes it from GH-releasing hormone (GHRH), which targets GH more selectively. The mechanism explains why hexarelin can influence metabolism, cardiovascular function, and potentially immune and tissue-repair pathways.",
     "outcome_detail": [
       {
         "outcome": "testosterone / hormones",
         "grade": "Moderate",
-        "what_studies_show": "Research published between 1999 and 2004 shows that hexarelin stimulates secretion of multiple hormones in humans \u2014 notably growth hormone (GH), adrenocorticotropic hormone (ACTH), cortisol, and prolactin. Studies included acute dosing trials and tests in specific populations such as patients with coronary artery disease and those with alcohol-induced pseudo-Cushing's syndrome. A 1999 trial directly compared the cardiovascular and hormonal effects of hexarelin versus exogenous GH in humans, finding hexarelin triggered hormonal responses. However, across the 30 human studies in the evidence set, only about 96 participants had verified sample sizes in the abstracts retrieved; most studies do not report sample sizes, so the true total is substantially larger. No pooled meta-analysis from the provided records confirms whether these effects are consistent or variable in magnitude.",
-        "why_this_grade": "The evidence grade reflects adequate human data (30 studies) spanning two decades with consistent reports of hormonal stimulation, but imprecision in sample-size verification (only 7 of 59 studies had checked participant counts) and lack of a quantitative synthesis prevent a 'Strong' rating. The core mechanism \u2014 GH and cortisol release \u2014 is well-demonstrated, justifying 'Moderate' rather than 'Preliminary.'"
+        "what_studies_show": "Multiple randomized controlled trials and clinical studies from 1999\u20132004 in human participants demonstrate that hexarelin stimulates secretion of growth hormone, ACTH, cortisol, and prolactin. A 2004 RCT found that hexarelin decreases slow-wave sleep while stimulating these hormonal secretions. A 1999 RCT compared acute cardiovascular and hormonal effects of GH and hexarelin in humans, and another 1999 study showed that hexarelin stimulates the HPA axis via arginine vasopressin. The body of evidence includes 28 human studies and 31 animal studies (59 total), though verified sample sizes could be confirmed for only ~96 participants across 7 of these studies.",
+        "why_this_grade": "Moderate grade reflects that human RCTs and clinical trials exist showing real hormonal effects, but the evidence base lacks a pooled meta-analysis confirming consistency across studies, and most abstracts do not report full sample sizes, making the true precision uncertain. The hormone-stimulating effect is documented, but the clinical relevance and long-term impact remain incompletely characterized in the retrieved records."
       },
       {
         "outcome": "cardiovascular",
         "grade": "Moderate",
-        "what_studies_show": "Five human studies examined cardiovascular effects, including an RCT in 2002 in patients with coronary artery disease measuring cardiac performance after acute hexarelin administration, and a 1999 trial comparing acute cardiovascular responses to hexarelin versus GH in humans. A clinical trial of 12 normal subjects found growth hormone-independent cardiotropic (heart-related) activities of hexarelin. Animal studies (11 total) from 2007 onwards showed protective effects \u2014 e.g., suppression of cardiac fibrosis in hypertensive rats (2012), and attenuation of abdominal aortic aneurysm formation in mice (2022). The verified sample size across human studies was modest (approximately 43 participants across 3 of the 16 studies).",
-        "why_this_grade": "Human evidence exists but is limited in sample size and study count, and effect estimates remain imprecise; hence 'Moderate' rather than 'Strong.' The animal work is more extensive and shows consistent protective patterns, but animal findings do not reliably predict human outcomes. The grade reflects genuine evidence of cardiovascular activity in humans but uncertainty about magnitude and consistency."
-      },
-      {
-        "outcome": "muscle growth",
-        "grade": "Preliminary",
-        "what_studies_show": "All four studies in the evidence set for this outcome were conducted in animals (in vitro cell culture or rodent models). They examined protection of cardiac muscle cells from hypertrophy (2019), improvements in lipid metabolism in insulin-resistant mice (2017), attenuation of cardiac fibrosis in hypertensive rats (2012), and suppression of cardiac fibroblast proliferation (2007). None of these studies included human participants.",
-        "why_this_grade": "The grade is 'Preliminary' because evidence is entirely animal-based and does not reliably translate to human skeletal muscle growth or athletic benefit. While the studies suggest hexarelin may modulate muscle cell biology in rodents, human trials demonstrating muscle hypertrophy, strength gain, or body composition changes are absent from the retrieved literature."
+        "what_studies_show": "Four human studies (1999\u20132002, including RCTs and clinical trials) examined cardiovascular effects of hexarelin. A 2002 RCT measured cardiac performance in patients with coronary artery disease during acute hexarelin administration. A 1999 RCT compared acute cardiovascular effects of GH and hexarelin in humans. A clinical trial (2001, n=12 verified) assessed growth hormone-independent cardiotropic activities in normal subjects, and another 1999 clinical trial evaluated cardiac effects in hypopituitary adults. Animal studies (2021\u20132022) suggest hexarelin may attenuate aortic aneurysm formation and promote endogenous GH secretion.",
+        "why_this_grade": "Moderate grade reflects that human trials exist showing measurable cardiac effects, but the evidence is limited: only 4 human studies with modest verified sample sizes (~43 participants across 3 studies), and no pooled analysis confirms a consistent effect direction or magnitude. The imprecision and small number of human trials prevent a higher grade, though the effect is plausible and documented."
       },
       {
         "outcome": "kidney function",
         "grade": "Moderate",
-        "what_studies_show": "Only two studies addressed kidney function: one human clinical trial in 1999 examining hexarelin-induced anterior pituitary hormone secretion (with details on dose, nutrition, and age as variables), and one 2023 animal study showing hexarelin alleviates cell death in acute kidney injury via the MDM2/p53 pathway in rodents. The human study did not report sample size in the retrieved abstract, and the animal study's sample size could not be verified.",
-        "why_this_grade": "The 'Moderate' grade reflects one human study and one animal study addressing kidney-related outcomes, but critically imprecise sample sizes in both. The evidence is extremely limited and does not permit confident estimation of effect magnitude or real-world clinical impact. This grade is capped below 'Strong' due to unconfirmed precision and minimal human data."
+        "what_studies_show": "Only two studies\u2014one 1999 human clinical trial and one 2023 animal study\u2014were retrieved. The human trial examined hexarelin-induced anterior pituitary hormone secretion across different doses, nutrition, and ages in adult patients (sample size not verified from abstract). The 2023 animal study found that hexarelin alleviates apoptosis in ischemic acute kidney injury via the MDM2/p53 pathway, suggesting a protective mechanism in kidney tissue damage.",
+        "why_this_grade": "Moderate grade is driven by the extreme thinness of evidence: only one human study with unverified sample size and one animal study. The human trial did not isolate kidney function as a primary outcome, and no systematic data on kidney safety or benefit exist in the retrieved records. Certainty is capped below the top tier because precision cannot be confirmed and human-specific kidney effects remain largely uncharacterized."
+      },
+      {
+        "outcome": "eye / vision",
+        "grade": "Moderate",
+        "what_studies_show": "Two studies were retrieved: a 2004 human RCT reporting that hexarelin decreases slow-wave sleep and stimulates hormonal secretion (vision not a primary outcome), and a 2026 animal study showing that hexarelin promotes survival of retinal ganglion cells after optic nerve transection. The animal work suggests a neuroprotective mechanism in the retina, but human vision outcomes remain essentially unstudied in the retrieved literature.",
+        "why_this_grade": "Moderate grade reflects one animal study with a plausible neuroprotective mechanism and one human RCT that did not focus on vision. Sample sizes could not be verified from the abstracts, and no human trials specifically measuring vision or retinal outcomes appear in the retrieved records. The evidence is too sparse and indirect to support stronger claims about human eye health."
       }
     ],
-    "evidence_base": "The literature on hexarelin is mixed in origin: approximately 30 human studies (mostly small RCTs and clinical trials from 1999\u20132004) and 29 animal studies (rodent and in vitro work, more recent 2007\u20132023). Human studies are older and generally small; animal studies are more recent but cannot reliably substitute for human evidence. The research lacks large, long-term randomized controlled trials and meta-analyses that would allow strong causal claims. Confidence in hexarelin's effects is therefore moderate \u2014 sufficient to conclude it stimulates certain hormones and may affect cardiovascular tissue, but too imprecise to establish optimal dosing, duration, magnitude of benefit, or safety profile.",
-    "emerging_research": "Recent animal work (2022\u20132023) has explored hexarelin's protective mechanisms in kidney injury and vascular disease, focusing on molecular pathways such as MDM2/p53 signaling and inflammasome suppression. These directions are promising for understanding how the peptide might preserve organ function, but human trials exploring these outcomes are not evident in the retrieved records. Any therapeutic application in humans remains early and investigational.",
-    "open_questions": "Among the studies retrieved here, human research is concentrated in the late 1990s and early 2000s; no recent large human trials appear in the sample. The precise sample sizes for most studies could not be verified, making it difficult to assess whether effects are stable. Long-term safety and efficacy data (beyond acute or short-term dosing) are absent from the records provided. These records represent approximately 40 abstracts per outcome and do not constitute a complete literature search; other studies may exist globally, but based on what is shown here, the field appears to rely more heavily on animal mechanistic work than on human clinical evidence in recent years.",
-    "caveats": "Hexarelin is a research chemical and is not approved as a pharmaceutical in most jurisdictions; its purity, sterility, and long-term safety in humans are not well-established. As an injectable peptide, it carries risks of infection, injection-site reactions, and immune responses. It stimulates multiple hormones (cortisol, ACTH, prolactin) \u2014 chronic elevation of these may pose risks, especially in people with adrenal, metabolic, or cardiovascular disease; baseline hormone levels should be checked before use, and medical supervision is essential. Interactions with other medications and effects in pregnancy are not documented in the retrieved studies.",
+    "evidence_base": "The research on hexarelin is dominated by small, single-center trials and animal studies from the late 1990s through early 2000s, with a few more recent animal papers (2021\u20132023). Of the 59 studies across all outcomes in the retrieved set, approximately 28 are human (mostly RCTs and clinical trials) and 31 are animal models. Verified sample sizes are sparse\u2014only ~96 participants confirmed across 7 studies globally\u2014limiting confidence in effect sizes and stability. The human evidence focuses on acute hormonal and cardiovascular responses to single or short-course hexarelin administration rather than chronic safety or long-term clinical benefit.",
+    "emerging_research": "Recent animal studies (2021\u20132023) suggest novel neuroprotective and tissue-sparing roles: hexarelin may protect retinal ganglion cells and reduce kidney injury via apoptosis pathways, and it may attenuate inflammatory markers in cardiovascular disease (aortic aneurysm). A 2026 animal study on retinal ganglion cells represents ongoing exploration of hexarelin's effects on neurodegeneration. These findings are preliminary and have not been translated to human trials; their clinical relevance remains unknown.",
+    "open_questions": "Among the studies retrieved here, nearly all human trials are acute-dosing or short-duration studies from 1999\u20132004; no long-term safety or efficacy data appear in these records. Kidney function and eye/vision outcomes rest on only one human study each (kidney) or zero human studies (vision), making it impossible to assess consistency or reproducibility. The retrieved sample does not include trials in healthy adults taking hexarelin chronically, pediatric populations, or head-to-head comparisons with standard GH therapy. Because this is a sample of ~40 abstracts per outcome, research gaps visible here do not prove the field has not addressed these questions, only that they do not appear prominently in the retrieved set.",
+    "caveats": "Hexarelin is a research peptide and not approved as a medication in most jurisdictions; it is sold as a research chemical and should not be used without medical supervision. As an injectable peptide, it carries risks of infection, local reaction, and off-target hormonal effects (cortisol, ACTH elevation). Individuals with pituitary tumors, uncontrolled hypertension, or a personal history of malignancy should avoid it, as GH secretagogues may theoretically promote cell growth; long-term safety data in humans are limited. Pharmaceutical quality, purity, and sterility vary widely among research-grade suppliers and should be verified before use.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Hexarelin's effects are documented almost entirely in acute dosing studies or animal models; no human trials establish safety or efficacy with chronic use, the clinical scenario most relevant to grey-market users.",
+    "headline": "No pooled analyses exist, sample sizes are largely unreported, and the evidence base consists almost entirely of small mechanistic studies from the 1990s\u20132000s with no verifiable agreement on clinical outcomes.",
     "concerns": [
       {
-        "issue": "Acute dosing only in humans; chronic use untested",
-        "detail": "All 18 human RCTs in the testosterone/hormone outcome examine single or short-term administration (titles reference 'acute' effects, e.g., '1999 Acute cardiovascular and hormonal effects'). No human trial in the retrieved records documents chronic hexarelin dosing, safety over weeks or months, or whether acute GH/cortisol elevation persists or desensitizes. A grey-market user taking repeated injections faces an evidence gap the size of the clinical question itself.",
+        "issue": "Severe underreporting of sample sizes",
+        "detail": "For testosterone/hormones (59 studies), only 7 report n; for cardiovascular (16 studies), only 3 report n; for kidney function and eye/vision (2 studies each), none report n. The engine verified ~96 participants across 7 testosterone studies and ~43 across 3 cardiovascular studies. This means the true denominators for most outcomes are unknown, making it impossible to assess whether observed effects are stable or driven by a single large trial.",
         "severity": "high"
       },
       {
-        "issue": "Cardiovascular evidence is predominantly animal; human data sparse and dated",
-        "detail": "Of 5 human cardiovascular studies, only 2 are RCTs (both from 1999\u20132002, both acute dosing), and only 3 of 16 total studies report sample sizes, all small (11, 12, 20). The 10 animal studies cannot reliably predict human cardiac safety, especially in chronic use. A 2022 animal study on aortic aneurysm and a 2020 mouse study do not substitute for long-term human cardiovascular safety data.",
+        "issue": "No pooled analysis or meta-analytic synthesis",
+        "detail": "The engine explicitly notes 'pooled effect: none extractable' across all four outcomes and 'no pooled analysis confirms they agree.' With 59 testosterone studies, 16 cardiovascular, and 2 each for kidney/vision, the absence of any systematic meta-analysis means there is no quantified estimate of effect size or consistency. Readers cannot distinguish genuine agreement from heterogeneous or contradictory findings.",
         "severity": "high"
       },
       {
-        "issue": "Hormone outcome: no pooled analysis, inconsistency unresolved",
-        "detail": "The engine noted inconsistency is 'held at moderate pending review'\u2014meaning retrieved studies may report conflicting effects on testosterone, GH, cortisol, or prolactin, but no meta-analysis confirms they align. A 1998 RCT found 'lack of effect' on TSH response; a 1999 RCT documents cortisol and prolactin elevation. Without quantitative synthesis or explicit reconciliation of these contradictions, the true direction and magnitude of hormonal effect remain unclear.",
+        "issue": "Predominantly small mechanistic studies from 1990s\u20132000s",
+        "detail": "Testosterone/hormones range 1994\u20132026 but the named human RCTs cluster heavily in 1997\u20132004 (10 of ~18 RCTs listed); cardiovascular studies cluster 1999\u20132002 for human trials (2 RCTs, 2 clinical trials), then jump to 2014\u20132022 in animals. These early studies were designed to characterize GH secretion and hormonal responses, not to measure clinical benefit. A 27-year gap between mechanistic discovery (1990s) and any modern clinical outcome trial is a red flag for whether hexarelin delivers meaningful health effects.",
         "severity": "high"
       },
       {
-        "issue": "Muscle growth: animal-only, no human evidence",
-        "detail": "Four animal studies (2007\u20132019) examine cardiac hypertrophy, fibrosis, or lipid metabolism in rodents. None translate directly to skeletal muscle growth in humans. The engine correctly grades this 'Preliminary' and flags indirectness; any claim that hexarelin promotes human muscle gain lacks direct evidence.",
-        "severity": "moderate"
+        "issue": "Extreme evidence sparsity for most outcomes",
+        "detail": "Kidney function and eye/vision each have only 2 studies (1 human, 1 animal) with no sample sizes reported and no pooled effect. These do not constitute an evidence base; they are isolated observations. Even cardiovascular (16 studies) is dominated by animals (11/16), leaving only 4 human studies of which only 2 are RCTs with n \u226511\u201312.",
+        "severity": "high"
       },
       {
-        "issue": "Most human studies omit sample size in abstracts; true precision unknown",
-        "detail": "Only 7 of 59 total studies report n in the abstracts reviewed; engine estimates ~96 participants verified across those 7, but the true denominator is 'substantially larger' and opaque. If many unpublished or grey-literature RCTs enrolled 10\u201315 subjects, a single larger trial could flip pooled direction. Conversely, if several large RCTs are hidden in full-text papers not summarized here, precision may be higher than it appears.",
-        "severity": "moderate"
+        "issue": "Mechanism does not bridge to clinical outcomes",
+        "detail": "The human evidence describes hexarelin's acute effects on GH, ACTH, cortisol, prolactin, and some cardiac hemodynamic indices. However, the graded outcomes (testosterone, cardiovascular health, kidney function, vision) require evidence that *chronic* hexarelin exposure improves clinical endpoints (e.g., muscle mass, cardiac events, renal survival, vision loss prevention). The retrieved studies show acute hormonal secretion, not clinical benefit. Animal cardioprotection studies (2014\u20132022) are mechanistically suggestive but do not translate without human RCTs measuring hard outcomes.",
+        "severity": "high"
       }
     ],
-    "mechanism_check": "Hexarelin is documented as a GH secretagogue that stimulates GH, cortisol, ACTH, and prolactin acutely via pituitary pathways (supported by 1999\u20132004 RCTs). The leap from acute hormone elevation to tissue outcomes (muscle growth, cardiac protection, kidney function) is large: acute GH spikes do not necessarily translate to sustained anabolism, and elevated cortisol may offset myotrophic effects. Animal studies propose anti-inflammatory or anti-fibrotic mechanisms in cardiac tissue, but these have not been causally validated in humans, and the absence of chronic human toxicology means any long-term adaptive response (desensitization, receptor downregulation, adverse remodeling) is speculative.",
-    "strongest_counterargument": "A skeptic would note that every human RCT studies hexarelin as an acute diagnostic or research agent, not as a therapeutic or enhancement compound. The cardiovascular and muscle outcomes come almost entirely from animal models or mechanistic inference. Even if acute GH secretion is real and substantial, it does not prove anabolism, strength gain, or cardiac benefit in the chronic dosing scenario grey-market users employ. The absence of long-term human safety data, combined with lack of any human RCT showing clinical benefit (versus hormone level change), means the evidence base does not yet justify human use outside a controlled trial.",
-    "what_would_change_the_picture": "A 12\u201324 week double-blind RCT in healthy humans randomizing chronic hexarelin (vs. placebo) with measurement of muscle mass (DEXA or MRI), cardiac function (echocardiography), glucose tolerance, and cortisol/GH dynamics would directly address the chronic use case. Alternatively, a well-powered meta-analysis reconciling the existing acute RCT data on hormonal endpoints and explicitly testing for heterogeneity or publication bias would clarify whether the hormone effect is robust and clinically meaningful.",
+    "mechanism_check": "Hexarelin is a GH secretagogue that acutely triggers GH, ACTH, and prolactin release (documented in the 1990s\u20132000s RCTs). Recent animal work (2014\u20132022) suggests it may reduce cardiac fibrosis and inflammation via non-GH pathways. However, a substantial gap exists between acute hormone stimulation and sustained clinical benefit: the human literature does not measure whether chronic hexarelin improves muscle strength, prevents cardiovascular events, preserves renal function, or restores vision. The animal cardioprotection studies are mechanistically plausible but are not replicated in humans and do not address safety or efficacy in real patients.",
+    "strongest_counterargument": "A skeptic would note that despite 59 testosterone/hormone studies, the field has produced zero pooled meta-analysis and the human RCTs are from 1997\u20132004, focusing on acute GH release rather than clinical endpoints. The cardiovascular and kidney/vision bases are too small (2\u201316 studies, mostly animals, with unreported sample sizes) to support a 'Moderate' grade; they resemble early-phase exploratory research, not mature evidence. The 25+ year absence of modern, adequately powered RCTs measuring patient-relevant outcomes (strength, cardiac events, renal outcomes) in either healthy or diseased populations suggests the field has not progressed beyond curiosity about a novel peptide's immediate hormonal effects.",
+    "what_would_change_the_picture": "A pre-registered, adequately powered (n \u2265100\u2013200 per arm) RCT in a clinically relevant population (e.g., older adults, heart failure, or CKD patients) measuring a patient-centered outcome (muscle strength, cardiovascular events, renal function decline, or functional vision) over \u226512 weeks, with prospectively registered protocol and complete outcome reporting, would materially resolve whether hexarelin's acute GH-stimulating effect translates to clinical benefit. Current evidence cannot distinguish true efficacy from publication bias toward mechanistic novelty.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

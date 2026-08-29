@@ -1,6 +1,6 @@
 {
-  "name": "Lactobacillus rhamnosus",
-  "category": "gut",
+  "name": "lactobacillus-rhamnosus",
+  "category": "supplement",
   "overall_score": 73,
   "tier": "Moderate",
   "study_count": 20,
@@ -28,9 +28,9 @@
       },
       "study_ids": [
         "PMID:21507030",
+        "PMID:37020105",
         "PMID:24899028",
         "PMID:34600097",
-        "PMID:37020105",
         "PMID:41539833",
         "PMID:32374342",
         "PMID:20421444",
@@ -148,17 +148,59 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "21507030",
+            "metric": "risk_ratio",
+            "value": 1.31,
+            "ci_low": 1.08,
+            "ci_high": 1.59,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "LGG supplementation was associated with a significantly higher rate of treatment responders (defined as no pain or a decrease in pain intensity) in the overall population with abdominal pain-related functional gastrointestinal disorders (three RCTs, n = 290; risk ratio, RR 1.31, 95% CI 1.08-1.59"
+          },
+          {
+            "pmid": "33506929",
+            "metric": "mean_diff",
+            "value": -2,
+            "ci_low": -4.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs control",
+            "direction": "benefit",
+            "quote": "The length of hospital stay was shorter in the probiotic group compared to control (10 days vs. 8, respectively)"
+          }
+        ],
+        "n_not_reported": 11,
+        "n_total": 13
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For gut / digestion, Lactobacillus rhamnosus has moderate human evidence (13 studies)."
+      "headline_effect": {
+        "metric": "risk_ratio",
+        "value": 1.31,
+        "ci_low": 1.08,
+        "ci_high": 1.59,
+        "ci_estimated": false,
+        "n_studies_pooled": 3,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "21507030",
+        "quote": "LGG supplementation was associated with a significantly higher rate of treatment responders (defined as no pain or a decrease in pain intensity) in the overall population with abdominal pain-related functional gastrointestinal disorders (three RCTs, n = 290; risk ratio, RR 1.31, 95% CI 1.08-1.59"
+      },
+      "summary": "For gut / digestion, lactobacillus-rhamnosus has moderate human evidence (13 studies)."
     },
     {
       "outcome": "immune function",
@@ -204,16 +246,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 2,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For immune function, Lactobacillus rhamnosus shows early but unsettled evidence (2 studies)."
+      "summary": "For immune function, lactobacillus-rhamnosus shows early but unsettled evidence (2 studies)."
     },
     {
       "outcome": "skin / appearance",
@@ -268,16 +310,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 3,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For skin / appearance, Lactobacillus rhamnosus has only preliminary or animal evidence (3 studies)."
+      "summary": "For skin / appearance, lactobacillus-rhamnosus has only preliminary or animal evidence (3 studies)."
     },
     {
       "outcome": "mood / depression",
@@ -322,17 +364,32 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "28943228",
+            "metric": "mean_diff",
+            "value": -1.2,
+            "ci_low": -2.3,
+            "ci_high": -0.1,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Mothers in the probiotic treatment group reported significantly lower depression scores (HN001 mean=7\u00b77 (SD=5\u00b74), placebo 9\u00b70 (6\u00b70); effect size -1\u00b72, (95% CI -2\u00b73, -0\u00b71), p=0\u00b7037)"
+          }
+        ],
+        "n_not_reported": 1,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For mood / depression, Lactobacillus rhamnosus has moderate human evidence (2 studies)."
+      "summary": "For mood / depression, lactobacillus-rhamnosus has moderate human evidence (2 studies)."
     }
   ],
   "effects_established": [
@@ -347,75 +404,75 @@
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787608542.407273,
+  "_cached_at": 1788017891.605951,
   "explanation": {
-    "what_it_is": "Lactobacillus rhamnosus is a lactic acid-producing bacterium found naturally in the human gut and in fermented foods like yogurt and kefir. It belongs to the Lactobacillus genus, a group of bacteria generally recognized as safe and commonly used in probiotic supplements. People typically consume it as a capsule, powder, or fermented food, with strain GG being one of the most studied variants.",
-    "how_it_works": "L. rhamnosus colonizes the intestinal tract and produces lactic acid, which lowers gut pH and creates an environment hostile to harmful bacteria. It also produces bacteriocins\u2014antimicrobial compounds that directly inhibit pathogenic microbes. The bacterium adheres to the intestinal epithelium (the lining), potentially reinforcing the physical barrier between the gut and the bloodstream. Through these mechanisms, it may reduce inflammation, support the growth of beneficial microbial neighbors, and interact with gut-associated immune cells, though the precise strength of each effect in humans remains incompletely understood.",
+    "what_it_is": "Lactobacillus rhamnosus is a rod-shaped bacterium naturally found in the human gut and commonly used as a probiotic supplement. It is a lactic acid\u2013producing organism that survives stomach acid and can colonize the intestinal tract. People typically take it as a capsule, powder, or fermented food; the most studied strain is L. rhamnosus GG (LGG).",
+    "how_it_works": "L. rhamnosus works through several mechanisms: it produces lactic acid, which lowers intestinal pH and inhibits pathogenic bacteria; it competes with harmful organisms for nutrients and attachment sites on the gut lining; and it strengthens the intestinal barrier by promoting the production of mucus and tight-junction proteins. The bacterium also interacts with immune cells in the gut (particularly dendritic cells and T cells), potentially modulating inflammatory responses. These local effects in the digestive tract may influence systemic immune function and, through the gut\u2013brain axis, affect mood and neurological outcomes.",
     "outcome_detail": [
       {
         "outcome": "gut / digestion",
         "grade": "Moderate",
-        "what_studies_show": "A 2011 meta-analysis of 290 participants found L. rhamnosus GG helpful for abdominal pain in functional gastrointestinal disorders. More recent randomized trials (2010\u20132023) examined outcomes including early infant gut microbiota diversity, vancomycin-resistant enterococcus colonization, and postoperative gastrointestinal recovery in various populations. Studies were small (n=20\u201381 in most trials) and focused on specific clinical contexts (preterm infants, postoperative patients, infection prevention) rather than general digestive health.",
-        "why_this_grade": "Nine human studies and one meta-analysis provide evidence of benefit in targeted digestive conditions, but the total verified sample across clearly reported trials is modest (~423 participants across studies with disclosed numbers), and findings are not uniformly consistent across all outcomes tested. The single meta-analysis has not been independently replicated, which keeps the grade at Moderate rather than Strong."
+        "what_studies_show": "A 2011 meta-analysis of 290 participants found L. rhamnosus GG reduced abdominal pain and symptoms in functional gastrointestinal disorders. More recent randomized trials (2021\u20132023) examined outcomes ranging from postoperative recovery after pancreatic surgery to early infant microbiota composition and prevention of vancomycin-resistant enterococcal colonization. Overall, the pooled effect shows a risk ratio of 1.31 (95% CI 1.08\u20131.59) in favor of L. rhamnosus for digestive outcomes, though individual studies show mixed results: some demonstrate benefit while others (e.g., a 2022 trial in n=81) found no effect on colonization prevention.",
+        "why_this_grade": "Nine human studies contribute to this grade, and a pooled meta-analysis exists. However, sample sizes are inconsistently reported across abstracts, limiting precision; verified data from only ~423 participants across 5 studies, though the true total is likely much larger. The single meta-analysis has not yet been independently replicated, so consistency remains uncertain."
       },
       {
         "outcome": "immune function",
         "grade": "Emerging",
-        "what_studies_show": "A 2021 randomized trial (n=20) in postoperative pancreatic surgery patients measured immune outcomes, and a 2020 animal study demonstrated mechanisms by which L. rhamnosus treatment suppressed infection by drug-resistant E. coli through intestinal immune modulation. Human evidence is extremely limited in number and scope.",
-        "why_this_grade": "Only one small human trial and one animal study are represented in the retrieved records. The human study involved a highly specific surgical population and was not designed primarily to measure immune function. This is far too little evidence to establish efficacy in humans; the grade reflects that while mechanism is plausible, human proof is absent."
+        "what_studies_show": "A 2021 randomized trial (n=20) examined L. rhamnosus GG in patients undergoing pancreatic surgery and measured early postoperative outcomes, likely including immune-related measures. A 2020 animal study demonstrated mechanisms by which L. rhamnosus modulates immune response to drug-resistant E. coli intestinal infection. Human evidence is extremely limited\u2014only one small trial with ~20 participants.",
+        "why_this_grade": "Only one human study with a small verified sample (~20 participants) and one animal study exist in the retrieved records. This is too sparse and imprecise to establish efficacy in humans; the evidence is classified as emerging, meaning preliminary and not yet proven."
       },
       {
         "outcome": "skin / appearance",
         "grade": "Preliminary",
-        "what_studies_show": "Three animal studies (2016, 2024, 2026) explored L. rhamnosus effects on skin-related inflammation and atopic dermatitis, with one showing therapeutic benefit in a tyndallized (heat-killed) form, and two demonstrating intestinal immune and microbial modulation in infection models. None of these were human trials.",
-        "why_this_grade": "All available evidence is from animal models, which do not reliably predict human outcomes. No human data on skin or dermatological outcomes were retrieved, so claims about skin effects in people are premature."
+        "what_studies_show": "Three animal studies (2016, 2024, 2026) examined L. rhamnosus effects on skin-related outcomes. A 2016 trial tested tyndallized (heat-killed) L. rhamnosus in atopic dermatitis models, while 2024 and 2026 studies investigated mechanisms in intestinal injury and pulmonary inflammation models, potentially relevant to skin barrier function. All evidence is in animal models; no human trials are present in the retrieved records.",
+        "why_this_grade": "All three studies are animal-only and do not directly test skin effects in humans. Animal models do not reliably predict human outcomes, especially for cosmetic or dermatological effects, so this remains preliminary and unproven in people."
       },
       {
         "outcome": "mood / depression",
         "grade": "Moderate",
-        "what_studies_show": "A 2017 randomized trial of 423 pregnant women given L. rhamnosus HN001 measured postpartum depression and anxiety symptoms. A 2026 animal study in H. pylori-infected rats examined anxiety and depression-like behaviors. The human trial represents the largest single study in the retrieved records for this outcome.",
-        "why_this_grade": "One adequately powered human randomized trial and one animal study exist, but they have not been pooled or independently replicated in human samples. The animal study and the single human trial do not yet constitute independently verified agreement, so the evidence is held at Moderate pending further replication in human populations."
+        "what_studies_show": "A 2017 randomized trial (n=423) of L. rhamnosus HN001 administered during pregnancy measured postpartum depression and anxiety symptoms, providing the main human evidence. A 2026 animal study examined mood-like behaviors in H. pylori-infected rats treated with probiotics, demonstrating potential mechanisms. The human trial directly addressed mood outcomes in a large pregnancy cohort, though the specific effect size and replication status vary.",
+        "why_this_grade": "One human study with a substantial sample (n=423) directly measures mood outcomes. However, consistency is uncertain because multiple studies exist but lack a pooled meta-analysis confirming agreement between trials, holding this at moderate pending further verification and replication."
       }
     ],
-    "evidence_base": "The retrieved literature includes 9 human studies (mostly small randomized trials and one meta-analysis) and 8 animal studies spanning 2010\u20132026. Human trials are predominantly short-term (weeks to a few months) and conducted in specific clinical populations (preterm infants, postoperative patients, pregnant women, infection-prevention contexts) rather than healthy general populations. The evidence is relatively recent, with a concentration of studies from 2017 onward. This mix suggests plausibility for clinical benefit in certain contexts but does not yet constitute robust, broadly generalizable proof.",
-    "emerging_research": "Recent studies (2024\u20132026) are exploring L. rhamnosus in novel infection models (drug-resistant E. coli and H. pylori) and examining whether heat-killed (tyndallized) forms retain therapeutic benefit for inflammatory conditions like atopic dermatitis. Mechanistic work is increasingly detailed, mapping interactions between the bacterium and intestinal immunity and microbial diversity. However, these directions remain early; translation to human clinical benefit is not yet established.",
-    "open_questions": "Among the retrieved records, no studies follow participants beyond a few months, so the durability of any benefit is unknown from these data alone. The studies span very different populations (preterm infants, pregnant women, postoperative patients, infection-exposed adults), but the records provided do not include trials in healthy adults or children taking L. rhamnosus for general wellness. Whether long-term supplementation in otherwise healthy people offers sustained benefit remains absent from this sample of the literature. Note: this sample contains approximately 40 abstracts per outcome; claims about what research does or does not exist globally cannot be made from these records alone.",
-    "caveats": "L. rhamnosus is generally well tolerated and has a long safety record in food and supplements, but it is a live microorganism and should be avoided or used cautiously in severely immunocompromised individuals (e.g., those on high-dose immunosuppressants or with advanced HIV). Quality varies widely among commercial probiotic products; viable cell count, strain identity, and storage conditions are often poorly controlled. Pregnant women or those taking antibiotics should consult a clinician, as timing and interactions can affect colonization.",
+    "evidence_base": "The evidence base for L. rhamnosus is predominantly human-derived (11 of 16 retrieved studies), with most research published in the last 15 years (2010\u20132026). Randomized controlled trials and meta-analyses dominate the gut/digestion outcome, while mood and immune function evidence rests on smaller, more recent studies. Animal models are used primarily to explore mechanisms (e.g., immune pathways, stress responses), but skin effects remain animal-only. Overall, confidence is moderate for digestion and mood, emerging for immune function, and preliminary for skin; the strength is tempered by inconsistent reporting of sample sizes, limited independent replication of meta-analyses, and heterogeneity in strain selection and study design.",
+    "emerging_research": "Recent work (2024\u20132026) is exploring L. rhamnosus in inflammatory and infection-related conditions: a 2024 study examined radiation-induced intestinal injury, while 2026 research tested a specific strain (RL-H3-005) against Enterococcus faecium-driven pulmonary inflammation and H. pylori-associated mood symptoms in animals. These directions suggest interest in leveraging L. rhamnosus beyond digestion for immune and neuropsychiatric outcomes, though all remain early-stage and animal-focused.",
+    "open_questions": "Among the retrieved studies, the gut/digestion outcome is most established, but sample sizes are often omitted from abstracts, making true population precision unclear (only ~423 verified across 5 of 13 studies). Immune function and mood evidence rest on very few human trials (one each), with the mood trial recruiting pregnant women\u2014whether effects generalize to other populations is unknown. Notably, none of the retrieved records follow participants beyond the immediate postoperative or postpartum period; longer-term durability and safety data are not evident in this sample. The retrieved records also do not indicate whether age, health status, or strain variation substantially alter outcomes, though strain differences (GG, HN001, RL-H3-005) appear across studies.",
+    "caveats": "L. rhamnosus is generally safe, but people with severe immunosuppression, critical illness, or central venous catheters should consult a physician before use, as rare cases of bacteremia have been reported. Supplement quality and strain identity vary widely; products should be from reputable manufacturers verified for potency and purity. This compound is a research chemical in some jurisdictions and a food-grade probiotic in others; clarify regulatory status and intended use before purchase. Pregnant or nursing women should seek clinical guidance, as evidence is mixed despite the large mood trial in pregnancy.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Evidence is fragmented across disparate populations and outcomes with no pooled analyses; the largest human study (n=423) addresses only mood in pregnancy, and gut/digestion claims rest on a single 2011 meta-analysis of n=290 that has not been independently replicated.",
+    "headline": "The evidence base is dominated by small trials with inconsistent designs and sparse reporting of sample sizes; the pooled effect for gut/digestion rests on a single 2011 meta-analysis never independently replicated, and most claimed benefits (immune, mood, skin) are supported by single studies or animal-only data.",
     "concerns": [
       {
-        "issue": "Single meta-analysis anchors main claim",
-        "detail": "The gut/digestion outcome (graded Moderate) is supported primarily by one 2011 meta-analysis of n=290 on abdominal pain in functional GI disorders. The engine explicitly notes this conclusion is 'not independently replicated or verified.' No subsequent pooled analysis in the retrieved records (spanning 2008\u20132026) confirms or extends these findings, leaving the evidence base vulnerable to the methodological limitations of that single synthesis.",
+        "issue": "Single meta-analysis drives gut/digestion grade",
+        "detail": "The Moderate grade for gut/digestion relies almost entirely on one 2011 meta-analysis (n=290) that has never been independently replicated or verified by subsequent systematic reviews in the retrieved records. The engine explicitly noted that consistency is held at 'moderate' precisely because this single synthesis lacks independent confirmation. This means the pooled risk ratio of 1.31 [1.08\u20131.59] could reflect publication bias, methodological weaknesses, or heterogeneity contained within that single analysis, with no external validation.",
         "severity": "high"
       },
       {
-        "issue": "Majority of studies undersized and sample sizes hidden",
-        "detail": "Only 5 of 13 studies in gut/digestion report sample sizes; among those, the median is just n=20. The engine estimates true total is 'substantially larger' but abstracts systematically omit denominators, making precision assessment impossible. For immune function (n=2 total), only 1 study reports size (n=20). This opacity prevents readers from assessing whether any individual trial was adequately powered, and small studies are prone to random variation and publication bias.",
+        "issue": "Severe reporting gaps obscure true sample size",
+        "detail": "Only 5 of 13 studies in the gut/digestion outcome report sample sizes in the abstracts provided (median n=20). The engine notes the verified total is ~423 but acknowledges 'most abstracts omit sample size, so the true total is substantially larger' \u2014 meaning the actual denominator and thus precision of the pooled estimate cannot be verified from these records. This makes it impossible to assess whether the result is robust or driven by a handful of larger studies.",
         "severity": "high"
       },
       {
-        "issue": "Inconsistent strain, dose, and outcome definitions across trials",
-        "detail": "Trials reference 'Lactobacillus rhamnosus GG,' 'HN001,' and 'RL-H3-005' as if interchangeable, yet these are distinct strains with potentially different properties. The 2022 RCT (n=81) found no effect on vancomycin-resistant enterococci colonization, directly contradicting the premise of probiotic efficacy for bacterial colonization seen in the 2010 trial. Without standardized outcome measures or strain specifications, results cannot be pooled or compared reliably.",
+        "issue": "Immune and mood outcomes rest on single studies",
+        "detail": "Immune function (Emerging grade) is supported by only one human RCT (n=20) plus one animal study; mood/depression (Moderate grade) is based on a single 2017 human RCT (n=423) plus one animal study. A single outlier result or methodological flaw in each case could entirely support or overturn the grade. The mood outcome lacks any pooled analysis despite the Moderate grade, indicating the grade rests on narrative judgment of one trial.",
         "severity": "high"
       },
       {
-        "issue": "Skin outcome relies entirely on animal models",
-        "detail": "All three studies under skin/appearance (graded Preliminary) are animal-only (2016\u20132026), with no human data reported. The engine correctly flags this as 'indirectness': rodent or other animal models do not reliably predict human dermatological outcomes. No translational path from these studies to human skin health claims is evident.",
-        "severity": "moderate"
+        "issue": "Skin/appearance outcome is animal-only with no human evidence",
+        "detail": "All three studies supporting skin/appearance are animal models (2016\u20132026); sample sizes are not even extractable from the abstracts. The engine explicitly flagged this as 'Indirectness: evidence is animal-only; does not reliably translate to humans.' This outcome should not carry any clinical grade until at least one human trial exists.",
+        "severity": "high"
       },
       {
-        "issue": "Mood/depression evidence from single pregnancy cohort",
-        "detail": "The Moderate grade for mood rests almost entirely on one 2017 RCT (n=423) measuring postpartum depression in pregnant women receiving L. rhamnosus HN001. This population and strain are highly specific; generalization to non-pregnant individuals or other L. rhamnosus strains is unjustified. The single supporting animal study (2026) is too recent to have undergone peer scrutiny and uses a different model (H. pylori-infected rats), so replication in humans is absent.",
+        "issue": "Heterogeneous designs and populations within gut/digestion outcome",
+        "detail": "The 13 studies mixed RCTs, one meta-analysis, one clinical trial, one case report, and animal models, testing lactobacillus in contexts ranging from short bowel syndrome (n=12) to vancomycin-resistant enterococcal colonization (n=81) to preterm infant microbiota. Without clear stratification by clinical indication, the pooled risk ratio conflates distinct mechanistic questions and populations, obscuring whether the effect applies to any specific condition or is driven by a single outlier population.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The proposed mechanism (modulation of gut microbiota, butyrate production, intestinal barrier function) is biologically plausible and supported by the 2016 clinical trial showing expanded butyrate-producing strains. However, the leap from microbial composition changes to clinical outcomes (abdominal pain relief, immune enhancement, mood improvement) is substantial. The records show mechanistic biomarkers (microbiota composition, butyrate levels) but do not demonstrate a causal chain linking these to the reported clinical endpoints; most trials measure only the clinical outcome without confirming the mechanism was engaged.",
-    "strongest_counterargument": "A skeptic would note that the gut/digestion claim pivots on a single 2011 meta-analysis (n=290, 15 years old) that was not replicated; the 2022 RCT (n=81) explicitly reported no effect of L. rhamnosus GG on a related outcome (bacterial colonization), suggesting strain-specific or outcome-specific failures. For mood, the n=423 pregnancy trial is from a single population (pregnant women) and strain (HN001), so the effect may not generalize. Across all outcomes, sample sizes are small, outcome definitions inconsistent, and no independent pooled analysis exists to confirm the meta-analysis's conclusion.",
-    "what_would_change_the_picture": "A prospective systematic review with pre-registered search and analysis protocol that independently re-analyzes the 2011 meta-analysis data and incorporates all new RCTs (2012\u20132026) using standardized strain and outcome definitions would resolve whether the evidence base is consistent. Alternatively, a adequately powered, multi-center RCT (n\u2265200) in a single, clearly defined population (e.g., irritable bowel syndrome or antibiotic-associated diarrhea) using a single L. rhamnosus strain with both mechanistic biomarkers and clinical outcomes would establish whether effects are reproducible.",
+    "mechanism_check": "The studies report mechanistic endpoints (butyrate-producing strains, intestinal permeability, microbiota diversity, inflammatory markers) but do not robustly link these to the clinical outcomes (gut function, mood, immune protection) claimed in the grades. For example, the 2016 trial shows L. rhamnosus expands butyrate producers but does not establish that this expansion causally improves digestion or prevents disease. The leap from microbiota changes to clinical benefit is asserted rather than empirically demonstrated in the trial data.",
+    "strongest_counterargument": "A skeptic would note that (1) the gut/digestion grade rests on a single unreplicated meta-analysis from 2011, which by 2026 should have been independently confirmed yet has not; (2) most individual studies are underpowered (median n=20) and many report null or negative results (e.g., 'no effect' on VRE colonization, 'no effect' on infant microbiota diversity), suggesting publication bias inflates the pooled estimate; and (3) the lack of blinding, sparse adverse event reporting, and the single case report of probiotic-associated aspiration pneumonia suggest safety and efficacy data are incomplete.",
+    "what_would_change_the_picture": "An independent 2020+ systematic review with meta-analysis explicitly comparing the 2011 findings and subgroup analyses by clinical indication (infection prevention vs. functional GI symptoms vs. postoperative recovery) would resolve whether the pooled effect is robust or artifact. For immune and mood outcomes, adequately powered (n\u2265200) double-blind RCTs in clearly defined populations with preregistered outcomes would establish whether single-study grades reflect true effects or chance findings.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

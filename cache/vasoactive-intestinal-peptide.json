@@ -1,127 +1,40 @@
 {
-  "name": "Vasoactive intestinal peptide",
-  "category": "peptide",
-  "overall_score": 76,
-  "tier": "Moderate",
-  "study_count": 72,
+  "name": "vasoactive-intestinal-peptide",
+  "category": "supplement",
+  "overall_score": 22,
+  "tier": "Preliminary",
+  "study_count": 12,
   "claims": [
     {
       "outcome": "inflammation",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 18,
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 3,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~20 participants across 1 of 18 studies); effect estimate may be unstable."
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 17,
-        "note": "Human evidence present: human certainty sets the overall score."
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 3,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:37506142",
-        "PMID:20442436",
         "PMID:29540226",
-        "PMID:29456409",
         "PMID:26358268",
-        "PMID:25695487",
-        "PMID:41891524",
-        "PMID:16508968",
-        "PMID:31668399",
-        "PMID:28991483",
-        "PMID:38047500",
-        "PMID:12112366",
-        "PMID:39396104",
-        "PMID:10704723",
-        "PMID:16207319",
-        "PMID:31488076",
-        "PMID:18383379",
-        "PMID:35763864"
+        "PMID:16207319"
       ],
       "studies": [
-        {
-          "pmid": "20442436",
-          "title": "Inhaled vasoactive intestinal peptide exerts immunoregulatory effects in sarcoidosis.",
-          "year": "2010",
-          "design": "RCT",
-          "population": "human",
-          "n": 20
-        },
-        {
-          "pmid": "41891524",
-          "title": "Vasoactive Intestinal Peptide Induces Autophagy and Cytotoxicity in Renal Cell Carcinoma via SIRT3-Dependent Signaling Pathway.",
-          "year": "2026",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38047500",
-          "title": "Sympathetic Neurotransmitter, VIP, Delays Intervertebral Disc Degeneration via FGF18/FGFR2-Mediated Activation of Akt Signaling Pathway.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37506142",
-          "title": "Vasoactive intestinal peptide exerts therapeutic action by regulating PTEN in a model of Sj\u00f6gren's disease.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35763864",
-          "title": "Immunomodulatory effect of N-acetyl-seryl-aspartyl-proline and vasoactive intestinal peptide on chronic obstructive pulmonary disease pathophysiology.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31668399",
-          "title": "Vasoactive intestinal peptide decreases inflammation and tight junction disruption in experimental necrotizing enterocolitis.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31488076",
-          "title": "Vasoactive intestinal peptide ameliorates renal injury in a pristane-induced lupus mouse model by modulating Th17/Treg balance.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
         {
           "pmid": "29540226",
           "title": "Vasoactive intestinal peptide alleviates osteoarthritis effectively via inhibiting NF-\u03baB signaling pathway.",
           "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "29456409",
-          "title": "Recombinant expressed vasoactive intestinal peptide analogue ameliorates TNBS-induced colitis in rats.",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "28991483",
-          "title": "Vasoactive Intestinal Peptide Nanomedicine for the Management of Inflammatory Bowel Disease.",
-          "year": "2017",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -135,25 +48,57 @@
           "n": null
         },
         {
-          "pmid": "25695487",
-          "title": "Vasoactive intestinal peptide induces CD14+HLA-DR\u2011/low myeloid-derived suppressor cells in gastric cancer.",
-          "year": "2015",
+          "pmid": "16207319",
+          "title": "Protective effect of vasoactive intestinal peptide on bone destruction in the collagen-induced arthritis model of rheumatoid arthritis.",
+          "year": "2005",
           "design": "Animal",
           "population": "animal",
           "n": null
-        },
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 3,
+        "n_total": 3
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For inflammation, vasoactive-intestinal-peptide has only preliminary or animal evidence (3 studies)."
+    },
+    {
+      "outcome": "joint / arthritis",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 3,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:11817602",
+        "PMID:29540226",
+        "PMID:16207319"
+      ],
+      "studies": [
         {
-          "pmid": "18383379",
-          "title": "Genetic association of vasoactive intestinal peptide receptor with rheumatoid arthritis: altered expression and signal in immune cells.",
-          "year": "2008",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "16508968",
-          "title": "Vasoactive intestinal peptide induces CD4+,CD25+ T regulatory cells with therapeutic effect in collagen-induced arthritis.",
-          "year": "2006",
+          "pmid": "29540226",
+          "title": "Vasoactive intestinal peptide alleviates osteoarthritis effectively via inhibiting NF-\u03baB signaling pathway.",
+          "year": "2018",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -167,25 +112,9 @@
           "n": null
         },
         {
-          "pmid": "12112366",
-          "title": "Vasoactive intestinal peptide and pituitary adenylate cyclase-activating polypeptide inhibit chemokine production in activated microglia.",
+          "pmid": "11817602",
+          "title": "Therapeutic effect of vasoactive intestinal peptide in collagen-induced arthritis.",
           "year": "2002",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "10704723",
-          "title": "Vasoactive intestinal peptide inhibits degranulation and changes granular content of mast cells: a potential therapeutic strategy in controlling septic shock.",
-          "year": "2000",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39396104",
-          "title": "The impact of exogenous vasoactive intestinal polypeptide on inflammatory responses and mRNA expression of tight junction genes in lambs fed a high-grain diet.",
-          "year": "2024",
           "design": "Unclassified",
           "population": "animal",
           "n": null
@@ -193,126 +122,54 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 3,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Vasoactive intestinal peptide has moderate human evidence (18 studies)."
+      "summary": "For joint / arthritis, vasoactive-intestinal-peptide has only preliminary or animal evidence (3 studies)."
     },
     {
-      "outcome": "immune function",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 10,
+      "outcome": "cognition",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~20 participants across 1 of 10 studies); effect estimate may be unstable."
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
       "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 9,
-        "note": "Human evidence present: human certainty sets the overall score."
+        "mechanistic": 25,
+        "preclinical": 45,
+        "human": 0,
+        "overall": 45,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 2,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:37506142",
-        "PMID:20442436",
-        "PMID:26358268",
-        "PMID:25695487",
-        "PMID:16508968",
-        "PMID:28991483",
-        "PMID:19661153",
-        "PMID:12112366",
-        "PMID:29617700",
-        "PMID:18383379"
+        "PMID:8208360",
+        "PMID:6720984"
       ],
       "studies": [
         {
-          "pmid": "20442436",
-          "title": "Inhaled vasoactive intestinal peptide exerts immunoregulatory effects in sarcoidosis.",
-          "year": "2010",
-          "design": "RCT",
-          "population": "human",
-          "n": 20
-        },
-        {
-          "pmid": "37506142",
-          "title": "Vasoactive intestinal peptide exerts therapeutic action by regulating PTEN in a model of Sj\u00f6gren's disease.",
-          "year": "2023",
+          "pmid": "8208360",
+          "title": "Effects of vasoactive intestinal peptide (VIP) on scopolamine-induced amnesia in the rat.",
+          "year": "1994",
           "design": "Animal",
           "population": "animal",
           "n": null
         },
         {
-          "pmid": "28991483",
-          "title": "Vasoactive Intestinal Peptide Nanomedicine for the Management of Inflammatory Bowel Disease.",
-          "year": "2017",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "29617700",
-          "title": "Vasoactive Intestinal Peptide Protects Salivary Glands against Structural Injury and Secretory Dysfunction via IL-17A and AQP5 Regulation in a Model of Sj\u00f6gren ",
-          "year": "2017",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "26358268",
-          "title": "Vasoactive intestinal peptide reduces the inflammatory profile in mice infected with Trypanosoma cruzi.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "25695487",
-          "title": "Vasoactive intestinal peptide induces CD14+HLA-DR\u2011/low myeloid-derived suppressor cells in gastric cancer.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "19661153",
-          "title": "Vasoactive intestinal peptide ameliorates intestinal barrier disruption associated with Citrobacter rodentium-induced colitis.",
-          "year": "2009",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "18383379",
-          "title": "Genetic association of vasoactive intestinal peptide receptor with rheumatoid arthritis: altered expression and signal in immune cells.",
-          "year": "2008",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "16508968",
-          "title": "Vasoactive intestinal peptide induces CD4+,CD25+ T regulatory cells with therapeutic effect in collagen-induced arthritis.",
-          "year": "2006",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "12112366",
-          "title": "Vasoactive intestinal peptide and pituitary adenylate cyclase-activating polypeptide inhibit chemokine production in activated microglia.",
-          "year": "2002",
+          "pmid": "6720984",
+          "title": "Pulmonary vascular effects of vasoactive intestinal peptide in conscious newborn lambs.",
+          "year": "1984",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -320,146 +177,47 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 2,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For immune function, Vasoactive intestinal peptide has moderate human evidence (10 studies)."
+      "summary": "For cognition, vasoactive-intestinal-peptide has only preliminary or animal evidence (2 studies)."
     },
     {
-      "outcome": "gut / digestion",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 38,
+      "outcome": "eye / vision",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 4,
       "grade_reasons": [
-        "Precision: ~32 participants verified across 2 of 38 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 8,
-        "n_animal_studies": 30,
-        "note": "Human evidence present: human certainty sets the overall score."
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 4,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:37506142",
-        "PMID:31449808",
-        "PMID:36603770",
         "PMID:40859875",
-        "PMID:11817602",
-        "PMID:18158987",
-        "PMID:15155712",
-        "PMID:20442436",
-        "PMID:29540226",
         "PMID:22544514",
-        "PMID:29456409",
-        "PMID:26358268",
-        "PMID:25695487",
-        "PMID:41891524",
-        "PMID:16508968",
-        "PMID:31668399",
-        "PMID:34634687",
-        "PMID:28991483",
-        "PMID:18254893",
-        "PMID:16109832",
-        "PMID:19661153",
-        "PMID:10206720",
-        "PMID:7540700",
-        "PMID:35182949",
-        "PMID:38047500",
-        "PMID:34357396",
-        "PMID:8144851",
-        "PMID:26363093",
-        "PMID:12112366",
-        "PMID:39396104",
-        "PMID:29617700",
-        "PMID:10704723",
-        "PMID:16207319",
-        "PMID:2971708",
-        "PMID:31488076",
-        "PMID:2047543",
-        "PMID:18383379",
-        "PMID:35763864"
+        "PMID:27932763",
+        "PMID:42061597"
       ],
       "studies": [
         {
-          "pmid": "34357396",
-          "title": "Effect of Vasoactive Intestinal Polypeptide on Development of Migraine Headaches: A Randomized Clinical Trial.",
-          "year": "2021",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "20442436",
-          "title": "Inhaled vasoactive intestinal peptide exerts immunoregulatory effects in sarcoidosis.",
-          "year": "2010",
-          "design": "RCT",
-          "population": "human",
-          "n": 20
-        },
-        {
-          "pmid": "18254893",
-          "title": "Vasoactive intestinal peptide causes marked cephalic vasodilation, but does not induce migraine.",
-          "year": "2008",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "15155712",
-          "title": "Mechanisms of vasoactive intestinal peptide-mediated vasodilation in human skin.",
-          "year": "2004",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "10206720",
-          "title": "Administration of acetylcholine and vasoactive intestinal polypeptide to atopic eczema patients.",
-          "year": "1999",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "2971708",
-          "title": "Effect of vasoactive intestinal peptide (VIP) on propranolol-induced bronchoconstriction.",
-          "year": "1988",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "16109832",
-          "title": "Vasoactive intestinal peptide fragment VIP10-28 and active vasodilation in human skin.",
-          "year": "2005",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": 12
-        },
-        {
-          "pmid": "8144851",
-          "title": "Vasoactive intestinal peptide-induced prolactin release in hypothyroid patients.",
-          "year": "1993",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41891524",
-          "title": "Vasoactive Intestinal Peptide Induces Autophagy and Cytotoxicity in Renal Cell Carcinoma via SIRT3-Dependent Signaling Pathway.",
+          "pmid": "42061597",
+          "title": "Vasoactive intestinal peptide attenuates form-deprivation myopia in guinea pigs by suppressing the Wnt/\u03b2-catenin pathway along the retina-choroid-scleral axis.",
           "year": "2026",
           "design": "Animal",
           "population": "animal",
@@ -474,132 +232,12 @@
           "n": null
         },
         {
-          "pmid": "38047500",
-          "title": "Sympathetic Neurotransmitter, VIP, Delays Intervertebral Disc Degeneration via FGF18/FGFR2-Mediated Activation of Akt Signaling Pathway.",
-          "year": "2024",
+          "pmid": "27932763",
+          "title": "[Effect of vasoactive intestinal peptide on defecation and VIP-cAMP-PKA-AQP3 signaling pathway \u2028in rats with constipation].",
+          "year": "2016",
           "design": "Animal",
           "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37506142",
-          "title": "Vasoactive intestinal peptide exerts therapeutic action by regulating PTEN in a model of Sj\u00f6gren's disease.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36603770",
-          "title": "Vasoactive intestinal peptide receptor 2 signaling promotes breast cancer cell proliferation by enhancing the ERK pathway.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35182949",
-          "title": "Protection of Vasoactive Intestinal Peptide on the Blood-Brain Barrier Dysfunction Induced by Focal Cerebral Ischemia in Rats.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "35763864",
-          "title": "Immunomodulatory effect of N-acetyl-seryl-aspartyl-proline and vasoactive intestinal peptide on chronic obstructive pulmonary disease pathophysiology.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "34634687",
-          "title": "Vasoactive intestinal peptide attenuates bleomycin-induced murine pulmonary fibrosis by inhibiting epithelial-mesenchymal transition: Restoring autophagy in alv",
-          "year": "2021",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31449808",
-          "title": "Vasoactive intestinal peptide infusion reverses existing myocardial fibrosis in the rat.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31668399",
-          "title": "Vasoactive intestinal peptide decreases inflammation and tight junction disruption in experimental necrotizing enterocolitis.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31488076",
-          "title": "Vasoactive intestinal peptide ameliorates renal injury in a pristane-induced lupus mouse model by modulating Th17/Treg balance.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "29540226",
-          "title": "Vasoactive intestinal peptide alleviates osteoarthritis effectively via inhibiting NF-\u03baB signaling pathway.",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "29456409",
-          "title": "Recombinant expressed vasoactive intestinal peptide analogue ameliorates TNBS-induced colitis in rats.",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "28991483",
-          "title": "Vasoactive Intestinal Peptide Nanomedicine for the Management of Inflammatory Bowel Disease.",
-          "year": "2017",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "29617700",
-          "title": "Vasoactive Intestinal Peptide Protects Salivary Glands against Structural Injury and Secretory Dysfunction via IL-17A and AQP5 Regulation in a Model of Sj\u00f6gren ",
-          "year": "2017",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "26358268",
-          "title": "Vasoactive intestinal peptide reduces the inflammatory profile in mice infected with Trypanosoma cruzi.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "25695487",
-          "title": "Vasoactive intestinal peptide induces CD14+HLA-DR\u2011/low myeloid-derived suppressor cells in gastric cancer.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "26363093",
-          "title": "Vasoactive intestinal peptide administration after stroke in rats enhances neurogenesis and improves neurological function.",
-          "year": "2015",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
+          "n": 45
         },
         {
           "pmid": "22544514",
@@ -608,211 +246,31 @@
           "design": "Animal",
           "population": "animal",
           "n": null
-        },
-        {
-          "pmid": "19661153",
-          "title": "Vasoactive intestinal peptide ameliorates intestinal barrier disruption associated with Citrobacter rodentium-induced colitis.",
-          "year": "2009",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "18383379",
-          "title": "Genetic association of vasoactive intestinal peptide receptor with rheumatoid arthritis: altered expression and signal in immune cells.",
-          "year": "2008",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "18158987",
-          "title": "[Neuroprotective effects of vasoactive intestinal peptide against rat cerebral ischemia].",
-          "year": "2007",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "16508968",
-          "title": "Vasoactive intestinal peptide induces CD4+,CD25+ T regulatory cells with therapeutic effect in collagen-induced arthritis.",
-          "year": "2006",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "16207319",
-          "title": "Protective effect of vasoactive intestinal peptide on bone destruction in the collagen-induced arthritis model of rheumatoid arthritis.",
-          "year": "2005",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "12112366",
-          "title": "Vasoactive intestinal peptide and pituitary adenylate cyclase-activating polypeptide inhibit chemokine production in activated microglia.",
-          "year": "2002",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "10704723",
-          "title": "Vasoactive intestinal peptide inhibits degranulation and changes granular content of mast cells: a potential therapeutic strategy in controlling septic shock.",
-          "year": "2000",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "7540700",
-          "title": "Vasoactive intestinal peptide and substance P receptor antagonists improve postoperative ileus.",
-          "year": "1995",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "2047543",
-          "title": "Possible role of vasoactive intestinal peptide in the hyperprolactinemia induced by ethanol.",
-          "year": "1991",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39396104",
-          "title": "The impact of exogenous vasoactive intestinal polypeptide on inflammatory responses and mRNA expression of tight junction genes in lambs fed a high-grain diet.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "11817602",
-          "title": "Therapeutic effect of vasoactive intestinal peptide in collagen-induced arthritis.",
-          "year": "2002",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 4,
+        "n_total": 4
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For gut / digestion, Vasoactive intestinal peptide has moderate human evidence (38 studies)."
-    },
-    {
-      "outcome": "joint / arthritis",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 6,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 0,
-        "overall": 55,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 6,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:11817602",
-        "PMID:29540226",
-        "PMID:16508968",
-        "PMID:28991483",
-        "PMID:16207319",
-        "PMID:18383379"
-      ],
-      "studies": [
-        {
-          "pmid": "29540226",
-          "title": "Vasoactive intestinal peptide alleviates osteoarthritis effectively via inhibiting NF-\u03baB signaling pathway.",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "28991483",
-          "title": "Vasoactive Intestinal Peptide Nanomedicine for the Management of Inflammatory Bowel Disease.",
-          "year": "2017",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "18383379",
-          "title": "Genetic association of vasoactive intestinal peptide receptor with rheumatoid arthritis: altered expression and signal in immune cells.",
-          "year": "2008",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "16508968",
-          "title": "Vasoactive intestinal peptide induces CD4+,CD25+ T regulatory cells with therapeutic effect in collagen-induced arthritis.",
-          "year": "2006",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "16207319",
-          "title": "Protective effect of vasoactive intestinal peptide on bone destruction in the collagen-induced arthritis model of rheumatoid arthritis.",
-          "year": "2005",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "11817602",
-          "title": "Therapeutic effect of vasoactive intestinal peptide in collagen-induced arthritis.",
-          "year": "2002",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For joint / arthritis, Vasoactive intestinal peptide has only preliminary or animal evidence (6 studies)."
+      "summary": "For eye / vision, vasoactive-intestinal-peptide has only preliminary or animal evidence (4 studies)."
     }
   ],
-  "effects_established": [
-    "inflammation",
-    "immune function",
-    "gut / digestion"
-  ],
+  "effects_established": [],
   "effects_promising": [
-    "joint / arthritis"
+    "inflammation",
+    "joint / arthritis",
+    "cognition",
+    "eye / vision"
   ],
   "effects_emerging": [],
-  "honesty_note": null,
+  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
   "chemistry": {
@@ -825,91 +283,86 @@
     "xlogp": -15.9,
     "image_url": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=53314964&t=l",
     "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/53314964",
-    "matched_query": "Vasoactive intestinal peptide",
+    "matched_query": "vasoactive-intestinal-peptide",
     "source": "PubChem",
     "synonyms": [
+      "VASOACTIVE INTESTINAL PEPTIDE",
       "37221-79-7",
       "6J2WVD66KR",
       "UNII-6J2WVD66KR",
       "CCRIS 7231",
-      "VIP [MI]",
-      "SCHEMBL30969141"
+      "VIP [MI]"
     ]
   },
-  "_cached_at": 1787608774.638586,
+  "_cached_at": 1788020796.3617752,
   "explanation": {
-    "what_it_is": "Vasoactive intestinal peptide (VIP) is a 28-amino-acid neuropeptide with the molecular formula C\u2081\u2084\u2087H\u2082\u2083\u2087N\u2084\u2083O\u2084\u2083S and a molecular weight of 3326.8 Da. It is produced naturally by neurons in the central and peripheral nervous systems, particularly in the gut and respiratory tract. VIP is typically administered as an injection in research and clinical settings, though inhaled formulations have been tested in human trials.",
-    "how_it_works": "VIP acts as a signaling molecule by binding to specific G-protein-coupled receptors (VPAC1 and VPAC2) found on immune cells, epithelial cells, and neurons throughout the body. Once bound, it activates intracellular pathways that suppress pro-inflammatory cytokine production and promote regulatory immune responses\u2014for example, increasing populations of immune-dampening cells like CD4+CD25+ T regulatory cells. In the gut, it modulates secretion, blood flow, and the barrier function of intestinal walls, influencing both digestion and the permeability of the gut lining. In inflamed tissues, VIP appears to reduce the activity of nuclear factor-kappa B (NF-\u03baB), a master regulator of inflammatory gene expression, thereby calming immune activation.",
+    "what_it_is": "Vasoactive intestinal peptide (VIP) is a 28-amino-acid neuropeptide naturally produced in the body, particularly in the nervous and immune systems. It is a signaling molecule that acts as both a neurotransmitter and a hormone, regulating a wide range of physiological processes. In research and supplement contexts, VIP is typically administered as a synthetic peptide, either as an injection or intranasal formulation, since peptides cannot survive stomach acid when taken orally.",
+    "how_it_works": "VIP works by binding to specific cell-surface receptors (VPAC1 and VPAC2) found on nerve cells, immune cells, blood vessels, and other tissues. When VIP attaches to these receptors, it activates intracellular signaling cascades\u2014particularly the cAMP-PKA pathway\u2014that regulate gene expression and cellular behavior. This mechanism allows VIP to modulate immune responses (dampening inflammatory signals like NF-\u03baB), control blood vessel dilation, influence neural function, and affect fluid transport in various tissues. The breadth of VIP's distribution in the body explains why it has been explored for such diverse conditions, though this also means effects in one system may be difficult to predict or translate across different tissues and diseases.",
     "outcome_detail": [
       {
         "outcome": "inflammation",
-        "grade": "Moderate",
-        "what_studies_show": "A 2010 randomized controlled trial (n=20) of inhaled VIP in sarcoidosis patients demonstrated immunoregulatory effects, reducing inflammatory markers. Animal studies spanning 2002\u20132026 have consistently shown VIP reduces inflammation in diverse models\u2014including necrotizing enterocolitis, Sj\u00f6gren's disease, chronic obstructive pulmonary disease, and renal cell carcinoma\u2014though most studies are in rodents and cell cultures rather than humans.",
-        "why_this_grade": "The single human trial was small (n=20) and limited to sarcoidosis; although animal evidence is consistent and recent, it does not reliably predict clinical efficacy in broader human populations. The modest sample size and lack of confirmatory human trials prevent a higher grade despite the breadth of animal data."
-      },
-      {
-        "outcome": "immune function",
-        "grade": "Moderate",
-        "what_studies_show": "The same 2010 inhaled VIP trial (n=20) in sarcoidosis showed immunoregulatory effects. Animal studies (2015\u20132023) have documented VIP's ability to induce regulatory T cells, suppress inflammatory immune cells, and reduce infection-driven inflammation\u2014for instance, in Trypanosoma cruzi infection and in models of inflammatory bowel disease and salivary gland inflammation.",
-        "why_this_grade": "Evidence rests primarily on one small human study and multiple animal models showing consistent immunomodulatory actions. The limited human sample size and single trial design introduce imprecision; confidence would strengthen with larger randomized trials in different patient populations."
-      },
-      {
-        "outcome": "gut / digestion",
-        "grade": "Moderate",
-        "what_studies_show": "Eight human RCTs address VIP and gut/digestive effects, including trials on migraine headaches (2021), vasodilation and skin blood flow (2008, 2004), atopic eczema (1999), bronchoconstriction (1988), and the 2010 sarcoidosis trial. Human studies show VIP causes marked vasodilation and modulates vascular and secretory responses. Approximately 30 animal studies document VIP's effects on intestinal barrier function, secretion, motility, and inflammation across multiple disease models.",
-        "why_this_grade": "The outcome spans diverse human endpoints (vasodilation, migraine, asthma, dermatitis) with modest sample sizes (\u224832 participants verified across 2 studies with published n values); many abstracts omit sample sizes, so true totals are larger but unconfirmed. Studies exist but show variable outcomes and lack pooled analysis confirming agreement, warranting Moderate rather than Strong."
+        "grade": "Preliminary",
+        "what_studies_show": "Three animal studies, all conducted in rodent models, showed that VIP reduced inflammatory markers and pathology. A 2018 study in animals found that VIP alleviated osteoarthritis by inhibiting the NF-\u03baB signaling pathway; a 2015 study in mice infected with Trypanosoma cruzi reported VIP reduced the inflammatory profile; and a 2005 animal model of collagen-induced arthritis showed VIP had a protective effect against bone destruction. No human trials are available in the retrieved records.",
+        "why_this_grade": "All evidence is from animal models, which does not reliably predict human responses. The mechanisms shown in mice and rats\u2014such as NF-\u03baB inhibition\u2014are plausible in humans but remain unproven in actual patients."
       },
       {
         "outcome": "joint / arthritis",
         "grade": "Preliminary",
-        "what_studies_show": "All six available studies are animal experiments (2002\u20132018) testing VIP in collagen-induced arthritis, osteoarthritis, and rheumatoid arthritis models. These studies show VIP inhibits NF-\u03baB signaling, induces regulatory T cells, and protects against bone destruction and joint inflammation in mice and rat models.",
-        "why_this_grade": "No human trials for joint or arthritis outcomes are present in the retrieved records. Animal evidence alone does not reliably translate to human efficacy; human trials would be needed to establish clinical utility in arthritis patients."
+        "what_studies_show": "Three animal studies examined VIP's effects on arthritis. A 2018 study showed VIP effectively alleviated osteoarthritis via NF-\u03baB pathway inhibition in animal models; a 2005 collagen-induced arthritis model showed VIP protected against bone destruction; and a 2002 study reported a therapeutic effect of VIP in collagen-induced arthritis. No human clinical trials are present in the retrieved records.",
+        "why_this_grade": "All studies are animal-based, mostly using collagen-induced arthritis or osteoarthritis models in rodents. Animal efficacy does not reliably translate to human arthritis, and no human data exist to confirm benefit."
+      },
+      {
+        "outcome": "cognition",
+        "grade": "Preliminary",
+        "what_studies_show": "Two animal studies explored VIP and cognition. A 1994 study in rats examined VIP's effects on scopolamine-induced amnesia; a 1984 study in newborn lambs looked at pulmonary vascular effects (which is tangential to cognition). The retrieved studies provide minimal direct evidence on cognitive outcomes in any animal model.",
+        "why_this_grade": "Only one study directly addresses cognition (amnesia in rats), and none address human brain function or memory. The evidence is both animal-only and sparse, making any claim about VIP and cognition highly preliminary."
+      },
+      {
+        "outcome": "eye / vision",
+        "grade": "Preliminary",
+        "what_studies_show": "Four animal studies examined VIP and ocular function. A 2026 study in guinea pigs showed VIP attenuated form-deprivation myopia by suppressing Wnt/\u03b2-catenin signaling; a 2025 study found VIP reduced ocular hypertension by regulating trabecular meshwork tight junctions; a 2016 rat study (n=45) investigated VIP and the cAMP-PKA-AQP3 pathway; and a 2012 study reported protective effects of VIP in ischemic retinal degeneration. No human vision or eye disease trials are present in the retrieved records.",
+        "why_this_grade": "All four studies are animal models (guinea pigs, rats, lambs). Different outcomes are examined (myopia, glaucoma-related pressure, retinal degeneration), but without human trials, translation to human eye disease remains speculative."
       }
     ],
-    "evidence_base": "The research base is heavily weighted toward animal and mechanistic studies. Only one human RCT (2010, n=20, inhaled VIP in sarcoidosis) appears across multiple outcomes; it serves as the primary human anchor for inflammation and immune function grades. The gut/digestion outcome includes eight human RCTs spanning 1988\u20132021, though they address diverse endpoints (vasodilation, migraine, skin blood flow, asthma, dermatitis) rather than a single coherent outcome. Animal studies are numerous (30+ for gut, 6 for joints, 17 for inflammation) and recent (including 2024\u20132026 publications), providing mechanistic confidence but not clinical confirmation. Overall confidence is moderate: plausible pathways are well-mapped in rodent and cellular models, but human evidence is limited to small trials or indirect endpoints.",
-    "emerging_research": "Recent animal studies (2023\u20132026) have explored VIP in autophagy and cytotoxicity in renal cell carcinoma, intervertebral disc degeneration via FGF signaling, and PTEN regulation in Sj\u00f6gren's disease\u2014suggesting potential applications beyond classic inflammatory disorders. Nanomedicine formulations of VIP (2017) are under investigation to improve delivery and bioavailability. These directions are early-stage and animal-focused; human translation remains speculative.",
-    "open_questions": "Among the studies retrieved, human evidence is confined to one published RCT (sarcoidosis, n=20) plus six additional RCTs addressing digestion/vasodilation with unclear or small sample sizes; notably, no human trials for joint/arthritis are present. Trial durations in the retrieved records are not consistently reported, so it is unclear whether any long-term (>6 months) human efficacy data exist in the sample. The retrieved gut studies address disparate outcomes (migraine, vasodilation, dermatitis, asthma) rather than a single digestive endpoint, making it difficult to assess consistency. This description reflects only the ~40 abstracts retrieved per outcome; a complete literature search may reveal additional human trials or longer follow-up periods not visible here.",
-    "caveats": "VIP is an injectable peptide and is considered a research chemical in many jurisdictions\u2014regulatory status and purity vary widely, and it should only be obtained from regulated pharmaceutical or verified research suppliers. Potential interactions with other neurohormonal agents (e.g., other neuropeptide therapies, systemic vasoactive drugs) are not detailed in the retrieved studies, so medical supervision is warranted. The single large human safety database comes from the 2010 trial; broader and longer-term safety profiles in diverse populations remain poorly characterized.",
+    "evidence_base": "The research retrieved is entirely animal-based, with no human clinical trials present for any of the four outcomes examined. Studies span from 1984 to 2026, with most clustering in the 2000s\u20132020s; recent studies (2025\u20132026) suggest ongoing interest in VIP for eye conditions. The animal models used include rodents (mice, rats), guinea pigs, and lambs, and they focus on inflammatory pathways (NF-\u03baB, cAMP-PKA signaling) and tissue-specific effects (joints, retina, trabecular meshwork). This body of work demonstrates plausible mechanisms in animal systems but provides no direct evidence of safety or efficacy in human patients.",
+    "emerging_research": "Very recent studies (2025\u20132026) suggest growing interest in VIP for ocular conditions, particularly myopia and glaucoma-related pressure regulation, with emerging work on molecular signaling mechanisms like Wnt/\u03b2-catenin and tight-junction regulation. A 2024\u20132025 timeline hints that VIP eye research may accelerate, though these remain animal studies. No clinical trials in humans for any indication have appeared in the retrieved literature, so human safety and efficacy data remain absent.",
+    "open_questions": "Among the records provided here, there are zero human studies across all four outcomes, making it impossible to assess whether VIP's animal-model effects translate to patients. Trial durations and sample sizes are not consistently reported in the abstracts; the one study noting a sample size (2016 rat study, n=45) is still an animal model. The retrieved studies cover only a few disease models (osteoarthritis, collagen-induced arthritis, specific eye conditions, and one infection model), so it is unknown from these records whether VIP would work in other inflammatory or neurological conditions. Notably, I have access to only a sample of the published literature (~40 abstracts per outcome), so I cannot characterize the full scope of VIP research globally\u2014only what these particular retrieved studies show.",
+    "caveats": "VIP is a peptide and cannot be taken orally; any clinical use would require injection or intranasal administration, which carries infection risks and requires sterile handling. Because no human trials exist in the retrieved records, safety in humans is unknown, and side effects, drug interactions, and optimal dosing are not established. Anyone considering VIP should be aware it remains a research molecule without proven clinical efficacy in humans, and should consult a qualified physician before any use, especially given the injection route required.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence base rests almost entirely on animal models with only one small human RCT (n=20) per outcome, making clinical efficacy unverified and effect sizes potentially unstable.",
+    "headline": "All evidence is animal-only (zero human trials); there is no clinical evidence that VIP is safe or effective in humans for any claimed indication.",
     "concerns": [
       {
-        "issue": "Extreme evidence base composition disparity",
-        "detail": "Inflammation and immune function grades rest on 1 human RCT (n=20) paired with 16\u20139 animal studies respectively. Gut/digestion includes 8 human studies but 30 animal ones. Joint/arthritis is entirely animal-derived (6 studies, no human data). The animal-to-human ratio makes these grades vulnerable to species-translation failure, which is common for peptide therapeutics. A single human study cannot robustly validate what animal models suggest.",
+        "issue": "Complete absence of human evidence",
+        "detail": "Across all four outcomes (inflammation, joint/arthritis, cognition, eye/vision), the composition is uniformly 0 human studies and 3\u20134 animal studies only. This means clinical efficacy and safety are entirely unestablished. The engine correctly flags indirectness, but the gap between rodent/guinea pig models and human physiology is not merely methodological\u2014it is fundamental.",
         "severity": "high"
       },
       {
-        "issue": "Single tiny human trial anchors two grades",
-        "detail": "The 2010 inhaled VIP RCT (n=20, sarcoidosis) appears in both inflammation and immune function grades. With only 20 participants and no reported confidence intervals in these abstracts, this trial is underpowered for detecting clinically meaningful effects. If this trial has methodological limitations (e.g., high dropout, loss to follow-up, or subjective outcomes), both grades collapse simultaneously.",
+        "issue": "Cognition evidence is extremely dated and mechanically mismatched",
+        "detail": "The two cognition studies (1984, 1994) are 30+ years old and assess scopolamine-induced amnesia in rats and pulmonary vascular effects in newborn lambs\u2014neither of which bears obvious clinical relevance to human cognitive enhancement or disease. A study on pulmonary vascular effects in lambs appears mislabeled or improperly categorized under 'cognition,' suggesting either data entry error or overly loose outcome mapping.",
         "severity": "high"
       },
       {
-        "issue": "Majority of human trials not reporting sample sizes",
-        "detail": "In the gut/digestion outcome, only 2 of 38 studies report n (medians given are 12 and 20); the engine notes this as 'substantially larger' true total, but the abstracts provided do not quantify this. For inflammation and immune function, only 1 of 18 and 1 of 10 studies respectively report n. This systematic omission prevents assessment of whether the human evidence base is genuinely larger than it appears, and makes power evaluation impossible.",
-        "severity": "high"
-      },
-      {
-        "issue": "No pooled analyses extractable; consistency unknown",
-        "detail": "All three 'Moderate' grades report 'pooled effect: none extractable,' and the gut/digestion outcome notes 'Inconsistency: several studies exist but no pooled analysis confirms they agree.' Without meta-analysis or quantitative synthesis, claims of consistency are speculative. Individual studies may reach opposite conclusions (e.g., VIP reduces inflammation vs. has no effect), and the grade could reflect cherry-picking or publication bias rather than consensus.",
-        "severity": "high"
-      },
-      {
-        "issue": "Recruitment contexts narrowly focused on specific conditions",
-        "detail": "The one human inflammation/immune RCT tested inhaled VIP in sarcoidosis; gut/digestion studies tested cephalic vasodilation, migraine, eczema, and bronchoconstriction\u2014conditions unlikely to generalize to systemic use or grey-market injectable applications. If efficacy is highly condition-specific, the grade conflates disparate phenomena. The records do not show dose, route, or formulation consistency, complicating generalization.",
+        "issue": "Sample sizes not extractable for most studies; single study (n=45) cannot anchor confidence",
+        "detail": "Three of four eye/vision studies do not report sample sizes in their abstracts, and only one reports n=45. Without visibility into whether the other three studies were adequately powered, and given that small animal studies often suffer from underpowered designs, a single moderately-sized study cannot provide a reliable basis for efficacy claims. The median n=45 masks the possibility of very small individual trials.",
         "severity": "moderate"
       },
       {
-        "issue": "Grey-market administration context disconnected from trial evidence",
-        "detail": "The preamble notes VIP is 'often obtained grey-market and not approved for human use,' yet all human trials listed were conducted within regulated clinical protocols (RCT, clinical trial, or named conditions). No evidence in these records addresses safety, sterility, dosing accuracy, or efficacy of grey-market injectable peptides. The grade applies to pharmaceutical-grade studied VIP, not to the compound users would actually receive.",
+        "issue": "Evidence base is predominantly pre-2010, with dated methodology",
+        "detail": "Cognition evidence spans 1984\u20131994 (40 years ago); inflammation and joint outcomes heavily weight studies from 2002\u20132005. Only the eye/vision outcome includes recent studies (2012, 2025, 2026). Animal models and mechanistic assays from the 1980s\u20132000s may not reflect current understanding of VIP biology or disease pathophysiology, and older protocols often lack rigor by modern standards.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "No pooled effects reported; outcomes rely on isolated studies without synthesis",
+        "detail": "Each outcome grades as 'Preliminary' with 'none extractable' for pooled effect, meaning no meta-analysis or formal synthesis across studies exists. Individual animal studies stand alone, each vulnerable to publication bias, model-specific artifacts, and random noise. With only 2\u20134 studies per outcome, a single positive outlier can dominate the narrative without systematic comparison of quality or generalizability.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Animal studies consistently implicate plausible pathways\u2014NF-\u03baB inhibition, PTEN regulation, SIRT3-mediated autophagy, FGF18/FGFR2 signaling\u2014linking VIP to reduced inflammation and immune rebalancing. The leap from mechanism to clinical outcome, however, is large: in vitro and rodent models of colitis, lupus, or collagen-induced arthritis do not reliably predict human efficacy (especially across heterogeneous conditions like sarcoidosis, eczema, and migraine). The one human trial showed immunoregulatory effects in sarcoidosis but did not measure classical inflammatory markers (IL-6, TNF-\u03b1) in the abstracted record, so the link between proposed mechanism and observed clinical benefit remains inferential.",
-    "strongest_counterargument": "A skeptical expert would note that 90%+ of this evidence base is animal-derived, where VIP analogs often show robust effects in disease models but fail translation to humans. The single human RCT underpinning inflammation and immune grades enrolled only 20 participants for a poorly-defined peptide tested via a non-physiological route (inhaled); it cannot support the claim that parenteral VIP broadly suppresses inflammation. Moreover, the diversity of conditions tested (sarcoidosis, eczema, migraine, colitis, arthritis) suggests VIP's effects are narrow and condition-specific rather than broadly immunomodulatory, and the lack of quantitative synthesis masks contradictory findings. Grey-market use adds another layer of uncertainty: if the formulation, purity, or dose is uncontrolled, clinical efficacy is unknowable.",
-    "what_would_change_the_picture": "A well-powered Phase 2b RCT (n\u2265100\u2013150) in a single inflammatory indication (e.g., ulcerative colitis or rheumatoid arthritis) using pharmaceutical-grade injectable VIP, with preregistered primary outcome and published protocol, would establish whether human efficacy exceeds placebo. Simultaneously, a head-to-head comparison to standard-of-care therapy and 12+ month safety follow-up in grey-market-relevant populations would ground recommendations for off-label use.",
+    "mechanism_check": "The mechanistic studies invoke plausible signaling pathways (NF-\u03baB inhibition for inflammation, cAMP-PKA-AQP3 for vision, acetylcholine dysregulation for cognition), and these are biologically coherent in animal tissues. However, the leap from demonstrating pathway modulation in a rodent arthritis model or guinea pig myopia model to clinical efficacy in humans with osteoarthritis or myopia is large\u2014VIP dosing, bioavailability, blood-brain or blood-retinal barrier penetration, and in vivo pharmacokinetics in humans remain completely unexplored. The mechanism is plausible in principle but unvalidated in any human system.",
+    "strongest_counterargument": "A skeptic would note that animal models of inflammation, arthritis, and vision disorders are notoriously predictive of human response\u2014many compounds show clean mechanistic effects in rodents yet fail in human trials due to differences in immune complexity, comorbidity, drug metabolism, and placebo response. More fundamentally, VIP is a peptide: without evidence of oral bioavailability, stability, or CNS/ocular penetration in humans, it is unclear how any of these animal findings could translate to a practical therapeutic. The absence of even a single Phase 1 or Phase 2 human trial after 20+ years of animal work raises the question of whether VIP's toxicity, cost, or manufacturing barriers have precluded clinical translation despite mechanistic promise.",
+    "what_would_change_the_picture": "A well-designed Phase 1b or Phase 2a randomized controlled trial in humans (e.g., 40\u2013100 participants with mild osteoarthritis, myopia, or mild cognitive impairment, depending on indication) comparing VIP to placebo with objective biomarkers (inflammatory cytokines, intraocular pressure, cognitive testing) would directly address whether animal efficacy translates. Alternatively, rigorous pharmacokinetic/pharmacodynamic studies in healthy human volunteers demonstrating that VIP reaches target tissues at bioactive concentrations would be a prerequisite for moving any indication forward.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

@@ -1,9 +1,9 @@
 {
-  "name": "CoQ10",
+  "name": "coq10",
   "category": "supplement",
   "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 51,
+  "study_count": 53,
   "claims": [
     {
       "outcome": "cardiovascular",
@@ -11,9 +11,10 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 16,
+      "n_studies": 17,
       "grade_reasons": [
-        "Limited human evidence: 3 primary human studies and 12 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~10185 participants verified across 8 of 17 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 3 primary human studies and 13 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -21,7 +22,7 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 16,
+        "n_human_studies": 17,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -30,6 +31,7 @@
         "PMID:41158831",
         "PMID:41305562",
         "PMID:26526835",
+        "PMID:29766349",
         "PMID:38431600",
         "PMID:40116591",
         "PMID:25913756",
@@ -38,10 +40,10 @@
         "PMID:35297269",
         "PMID:36130103",
         "PMID:39904656",
-        "PMID:29766349",
         "PMID:42192187",
         "PMID:29623830",
-        "PMID:29330704"
+        "PMID:29330704",
+        "PMID:30417782"
       ],
       "studies": [
         {
@@ -75,6 +77,14 @@
           "design": "Meta-analysis",
           "population": "human",
           "n": 684
+        },
+        {
+          "pmid": "30417782",
+          "title": "The Effects of Coenzyme Q10 Supplementation on Metabolic Profiles of Patients with Chronic Kidney Disease: A Systematic Review and Meta-analysis of Randomized C",
+          "year": "2018",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
         },
         {
           "pmid": "25913756",
@@ -117,16 +127,16 @@
           "n": null
         },
         {
-          "pmid": "30122240",
-          "title": "Coenzyme Q10 in the treatment of heart failure: A systematic review of systematic reviews.",
+          "pmid": "29766349",
+          "title": "Recent Developments in the Role of Coenzyme Q10 for Coronary Heart Disease: a Systematic Review.",
           "year": "2018",
           "design": "Systematic review",
           "population": "human",
           "n": null
         },
         {
-          "pmid": "29766349",
-          "title": "Recent Developments in the Role of Coenzyme Q10 for Coronary Heart Disease: a Systematic Review.",
+          "pmid": "30122240",
+          "title": "Coenzyme Q10 in the treatment of heart failure: A systematic review of systematic reviews.",
           "year": "2018",
           "design": "Systematic review",
           "population": "human",
@@ -174,17 +184,252 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "41158831",
+            "metric": "mean_diff",
+            "value": -0.96,
+            "ci_low": -1.88,
+            "ci_high": -0.03,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control group",
+            "direction": "benefit",
+            "quote": "weighted mean difference (WMD) -0.96 (95% Confidence Interval -1.88; -0.03)"
+          },
+          {
+            "pmid": "39904656",
+            "metric": "mean_diff",
+            "value": -3.86,
+            "ci_low": -6.01,
+            "ci_high": -1.71,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or control",
+            "direction": "benefit",
+            "quote": "CoQ10supplementation reduced SBP (WMD: -3.86 mmHg, 95% CI: -6.01 to -1.71, P = 0.014"
+          },
+          {
+            "pmid": "29623830",
+            "metric": "smd",
+            "value": -0.28,
+            "ci_low": -0.56,
+            "ci_high": -0.005,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "The meta-analysis indicated a significant reduction in serum triglycerides levels (SMD -0.28; 95% CI, -0.56, -0.005)."
+          }
+        ],
+        "n_not_reported": 14,
+        "n_total": 17
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
-      "headline_effect": null,
-      "summary": "For cardiovascular, CoQ10 has moderate human evidence (16 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": -0.28,
+        "ci_low": -0.56,
+        "ci_high": -0.005,
+        "ci_estimated": false,
+        "n_studies_pooled": 21,
+        "comparator": "control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "29623830",
+        "quote": "The meta-analysis indicated a significant reduction in serum triglycerides levels (SMD -0.28; 95% CI, -0.56, -0.005)."
+      },
+      "summary": "For cardiovascular, coq10 has moderate human evidence (17 studies)."
+    },
+    {
+      "outcome": "cholesterol / lipids",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 10,
+      "grade_reasons": [
+        "Limited human evidence: 1 primary human studies and 8 pooled analyses retrieved \u2014 below the threshold for the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 10,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:36337001",
+        "PMID:41305562",
+        "PMID:29766349",
+        "PMID:25913756",
+        "PMID:35297269",
+        "PMID:36130103",
+        "PMID:39904656",
+        "PMID:42192187",
+        "PMID:29623830",
+        "PMID:30417782"
+      ],
+      "studies": [
+        {
+          "pmid": "36337001",
+          "title": "Effects of Coenzyme Q10 Supplementation on Lipid Profiles in Adults: A Meta-analysis of Randomized Controlled Trials.",
+          "year": "2022",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 2794
+        },
+        {
+          "pmid": "36130103",
+          "title": "Dose-Response Effect of Coenzyme Q10 Supplementation on Blood Pressure among Patients with Cardiometabolic Disorders: A Grading of Recommendations Assessment, D",
+          "year": "2022",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 1831
+        },
+        {
+          "pmid": "29623830",
+          "title": "The Effects of Coenzyme Q10 Supplementation on Lipid Profiles Among Patients with Metabolic Diseases: A Systematic Review and Meta-analysis of Randomized Contro",
+          "year": "2018",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 514
+        },
+        {
+          "pmid": "30417782",
+          "title": "The Effects of Coenzyme Q10 Supplementation on Metabolic Profiles of Patients with Chronic Kidney Disease: A Systematic Review and Meta-analysis of Randomized C",
+          "year": "2018",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "25913756",
+          "title": "Effects of coenzyme Q10 supplementation on metabolic profile in diabetes: a systematic review and meta-analysis.",
+          "year": "2015",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 356
+        },
+        {
+          "pmid": "42192187",
+          "title": "Effects of Coenzyme Q10 on Lipid, Glycemic, and Inflammatory Markers in Metabolic Disorders: A Systematic Review and Meta-Analysis.",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 3422
+        },
+        {
+          "pmid": "39904656",
+          "title": "Effects of Coenzyme Q10 Supplementation on Metabolic Indicators in Patients with Type 2 Diabetes: A Systematic Review and Meta-Analysis.",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "29766349",
+          "title": "Recent Developments in the Role of Coenzyme Q10 for Coronary Heart Disease: a Systematic Review.",
+          "year": "2018",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "35297269",
+          "title": "Coenzyme Q10 supplementation for the treatment of statin-associated muscle symptoms.",
+          "year": "2022",
+          "design": "Observational",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41305562",
+          "title": "Assessment of CoQ10 Dietary Intake in a Mediterranean Cohort of Familial Hypercholesterolemia Patients: A Pilot Study.",
+          "year": "2025",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "29623830",
+            "metric": "smd",
+            "value": -0.28,
+            "ci_low": -0.56,
+            "ci_high": -0.005,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "The meta-analysis indicated a significant reduction in serum triglycerides levels (SMD -0.28; 95% CI, -0.56, -0.005)."
+          },
+          {
+            "pmid": "30417782",
+            "metric": "smd",
+            "value": -0.58,
+            "ci_low": -0.94,
+            "ci_high": -0.21,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "CoQ10 supplementation vs control",
+            "direction": "benefit",
+            "quote": "CoQ10 supplementation significantly reduced total-cholesterol (SMD=-0.58; CI, -0.94, - 0.21; P=0.002; I2: 54.9)"
+          }
+        ],
+        "n_not_reported": 8,
+        "n_total": 10
+      },
+      "pooled": {
+        "verified": {
+          "value": -0.58,
+          "ci_low": -0.945,
+          "ci_high": -0.215,
+          "n_studies": 1
+        },
+        "exploratory": {
+          "value": -0.58,
+          "ci_low": -0.945,
+          "ci_high": -0.215,
+          "n_studies": 1
+        },
+        "note": null
+      },
+      "headline_effect": {
+        "metric": "smd",
+        "value": -0.28,
+        "ci_low": -0.56,
+        "ci_high": -0.005,
+        "ci_estimated": false,
+        "n_studies_pooled": 21,
+        "comparator": "control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "29623830",
+        "quote": "The meta-analysis indicated a significant reduction in serum triglycerides levels (SMD -0.28; 95% CI, -0.56, -0.005)."
+      },
+      "summary": "For cholesterol / lipids, coq10 has moderate human evidence (10 studies)."
     },
     {
       "outcome": "muscle strength",
@@ -212,9 +457,9 @@
         "PMID:16434667",
         "PMID:25545331",
         "PMID:34891216",
-        "PMID:21698649",
         "PMID:9208260",
         "PMID:19644406",
+        "PMID:21698649",
         "PMID:23306418"
       ],
       "studies": [
@@ -284,135 +529,32 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "23306418",
+            "metric": "mean_diff",
+            "value": 2.05,
+            "ci_low": 0.0,
+            "ci_high": 4.1,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "muscle strength as measured by leg extension repetitions (reps) increased significantly during CoQ10 treatment, with a mean (SD) increase from baseline of 1.73 (2.9) reps during placebo treatment versus 3.78 (5.0) reps during CoQ10 treatment (P = 0.031)"
+          }
+        ],
+        "n_not_reported": 7,
+        "n_total": 8
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For muscle strength, CoQ10 has moderate human evidence (8 studies)."
-    },
-    {
-      "outcome": "cholesterol / lipids",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 9,
-      "grade_reasons": [
-        "Limited human evidence: 1 primary human studies and 7 pooled analyses retrieved \u2014 below the threshold for the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 9,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:36337001",
-        "PMID:41305562",
-        "PMID:25913756",
-        "PMID:35297269",
-        "PMID:36130103",
-        "PMID:39904656",
-        "PMID:29766349",
-        "PMID:42192187",
-        "PMID:29623830"
-      ],
-      "studies": [
-        {
-          "pmid": "36337001",
-          "title": "Effects of Coenzyme Q10 Supplementation on Lipid Profiles in Adults: A Meta-analysis of Randomized Controlled Trials.",
-          "year": "2022",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 2794
-        },
-        {
-          "pmid": "36130103",
-          "title": "Dose-Response Effect of Coenzyme Q10 Supplementation on Blood Pressure among Patients with Cardiometabolic Disorders: A Grading of Recommendations Assessment, D",
-          "year": "2022",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 1831
-        },
-        {
-          "pmid": "29623830",
-          "title": "The Effects of Coenzyme Q10 Supplementation on Lipid Profiles Among Patients with Metabolic Diseases: A Systematic Review and Meta-analysis of Randomized Contro",
-          "year": "2018",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 514
-        },
-        {
-          "pmid": "25913756",
-          "title": "Effects of coenzyme Q10 supplementation on metabolic profile in diabetes: a systematic review and meta-analysis.",
-          "year": "2015",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 356
-        },
-        {
-          "pmid": "42192187",
-          "title": "Effects of Coenzyme Q10 on Lipid, Glycemic, and Inflammatory Markers in Metabolic Disorders: A Systematic Review and Meta-Analysis.",
-          "year": "2026",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 3422
-        },
-        {
-          "pmid": "39904656",
-          "title": "Effects of Coenzyme Q10 Supplementation on Metabolic Indicators in Patients with Type 2 Diabetes: A Systematic Review and Meta-Analysis.",
-          "year": "2025",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "29766349",
-          "title": "Recent Developments in the Role of Coenzyme Q10 for Coronary Heart Disease: a Systematic Review.",
-          "year": "2018",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "35297269",
-          "title": "Coenzyme Q10 supplementation for the treatment of statin-associated muscle symptoms.",
-          "year": "2022",
-          "design": "Observational",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41305562",
-          "title": "Assessment of CoQ10 Dietary Intake in a Mediterranean Cohort of Familial Hypercholesterolemia Patients: A Pilot Study.",
-          "year": "2025",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cholesterol / lipids, CoQ10 has moderate human evidence (9 studies)."
+      "summary": "For muscle strength, coq10 has moderate human evidence (8 studies)."
     },
     {
       "outcome": "inflammation",
@@ -437,6 +579,7 @@
       "study_ids": [
         "PMID:37118903",
         "PMID:38220408",
+        "PMID:29766349",
         "PMID:38431600",
         "PMID:40116591",
         "PMID:28125601",
@@ -449,7 +592,6 @@
         "PMID:38479900",
         "PMID:28179205",
         "PMID:38684047",
-        "PMID:29766349",
         "PMID:31185284",
         "PMID:42192187",
         "PMID:29623830"
@@ -601,23 +743,93 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "37118903",
+            "metric": "smd",
+            "value": -0.67,
+            "ci_low": -1.01,
+            "ci_high": -0.33,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "CoQ10 supplementation vs control",
+            "direction": "benefit",
+            "quote": "IL-6 (SMD: -0.67, 95% CI: [-1.01 to -0.33], p < 0.001)"
+          },
+          {
+            "pmid": "28125601",
+            "metric": "mean_diff",
+            "value": -0.45,
+            "ci_low": -0.67,
+            "ci_high": -0.24,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo/control",
+            "direction": "benefit",
+            "quote": "it has significantly decreased TNF-\u03b1 by 0.45 pg/ml [MD = -0.45, 95% CI (-0.67 to -0.24) pg/ml, I2 = 0%]"
+          },
+          {
+            "pmid": "28179205",
+            "metric": "mean_diff",
+            "value": -0.35,
+            "ci_low": -0.64,
+            "ci_high": -0.05,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or control",
+            "direction": "benefit",
+            "quote": "CoQ10 supplementation significantly reduced the levels of circulating CRP (WMD: -0.35mg/L, 95% CI: -0.64 to -0.05, P=0.022)"
+          },
+          {
+            "pmid": "42192187",
+            "metric": "smd",
+            "value": -1.01,
+            "ci_low": -1.56,
+            "ci_high": -0.64,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "CoQ10 supplementation vs control",
+            "direction": "benefit",
+            "quote": "tumor necrosis factor-\u03b1 (TNF-\u03b1, SMD = -1.01; 95% CI: -1.56, -0.64; p = 0.013)"
+          }
+        ],
+        "n_not_reported": 14,
+        "n_total": 18
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
-      "headline_effect": null,
-      "summary": "For inflammation, CoQ10 has moderate human evidence (18 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -0.35,
+        "ci_low": -0.64,
+        "ci_high": -0.05,
+        "ci_estimated": false,
+        "n_studies_pooled": 17,
+        "comparator": "placebo or control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "28179205",
+        "quote": "CoQ10 supplementation significantly reduced the levels of circulating CRP (WMD: -0.35mg/L, 95% CI: -0.64 to -0.05, P=0.022)"
+      },
+      "summary": "For inflammation, coq10 has moderate human evidence (18 studies)."
     }
   ],
   "effects_established": [
     "cardiovascular",
-    "muscle strength",
     "cholesterol / lipids",
+    "muscle strength",
     "inflammation"
   ],
   "effects_promising": [],
@@ -646,80 +858,75 @@
       "Ubiquinone 10"
     ]
   },
-  "_cached_at": 1787606938.142509,
+  "_cached_at": 1788016824.945537,
   "explanation": {
-    "what_it_is": "Coenzyme Q10 (CoQ10), also called ubiquinone, is a small, fat-soluble molecule naturally produced by the body with the chemical formula C59H90O4. It is found in nearly all cells and plays a critical role in energy production. People obtain it from food sources like meat, fish, and nuts, but supplement with it in capsule or powder form, often at doses ranging from 100\u2013600 mg per day.",
-    "how_it_works": "CoQ10 is an essential component of the mitochondrial electron transport chain, the machinery inside cells that converts nutrients into ATP\u2014the universal energy currency. It acts as an electron carrier between two key enzyme complexes (II and III), shuttling electrons that drive the chemical gradient needed to produce ATP. Beyond energy production, CoQ10 also acts as a lipophilic antioxidant, meaning it can scavenge reactive oxygen species (free radicals) in fatty tissues and cell membranes. Because of these roles, insufficient CoQ10 could theoretically impair energy-dependent processes (muscle contraction, heart function) and increase oxidative stress\u2014two mechanisms relevant to cardiovascular and muscular health.",
+    "what_it_is": "Coenzyme Q10 (CoQ10, ubiquinone-10) is a fat-soluble compound with the chemical formula C59H90O4 that occurs naturally in almost all human cells. It is synthesized in the body and also obtained from dietary sources like meat, fish, and nuts. CoQ10 is available as an oral supplement in capsule, tablet, powder, and liquid forms, with typical doses ranging from 30 mg to 600 mg daily.",
+    "how_it_works": "CoQ10 functions primarily as an electron carrier in the mitochondria\u2014the cell's energy factories\u2014where it shuttles electrons along the respiratory chain to generate ATP, the molecule cells use for fuel. It also acts as a potent antioxidant, neutralizing reactive oxygen species that damage cell membranes and proteins. In the cardiovascular system, CoQ10 may support blood vessel flexibility and help regulate blood pressure and lipid profiles. Because muscle and heart tissue are especially energy-hungry and vulnerable to oxidative stress, these tissues concentrate CoQ10 naturally, which is why supplementation has been explored for muscle-related and cardiac conditions.",
     "outcome_detail": [
       {
         "outcome": "cardiovascular",
         "grade": "Moderate",
-        "what_studies_show": "Multiple meta-analyses involving thousands of participants\u2014including a 2022 meta-analysis of 2,794 adults and a 2022 dose\u2013response analysis of 1,831 patients with cardiometabolic disease\u2014have examined CoQ10's effects on blood pressure and lipid profiles in cardiovascular and metabolic disease settings. A 2026 systematic review of 3,422 participants assessed effects on lipids, glycemic markers, and inflammatory biomarkers in metabolic disorders. Overall, the retrieved studies show modest, measurable improvements in blood pressure and lipid parameters in patients with metabolic disease, though effect sizes vary.",
-        "why_this_grade": "The evidence rests heavily on pooled analyses (meta-analyses) rather than independent primary trials, and the total sample across primary human studies is modest relative to cardiovascular research generally. The evidence demonstrates real effects in humans with cardiometabolic conditions, justifying 'Moderate,' but the reliance on secondary analyses and limited number of primary trials prevents a 'Strong' rating."
-      },
-      {
-        "outcome": "muscle strength",
-        "grade": "Moderate",
-        "what_studies_show": "Eight randomized controlled trials have examined CoQ10 and muscle performance, including a 2015 RCT (n=120) in patients with statin-induced muscle weakness, a 2012 RCT in older athletes, a 2010 study on repeated supramaximal exercise, a 1997 trial in mitochondrial encephalomyopathies, and a 2011 pilot in steroid-treated Duchenne muscular dystrophy (n=12). These trials span different populations and muscle-related outcomes, from fatigue to objective performance measures.",
-        "why_this_grade": "While eight human trials exist, most abstracts lack stated sample sizes; confirmed enrollment across two trials is only ~132 participants, suggesting the actual total is larger but obscured. More importantly, no meta-analysis has yet been published confirming whether results consistently favor CoQ10, so inconsistency cannot be ruled out. This combination\u2014sparse primary data and lack of pooled synthesis\u2014places the evidence at 'Moderate' rather than 'Strong'."
+        "what_studies_show": "Meta-analyses of randomized controlled trials\u2014including a 2022 analysis of 2,794 adults and a 2022 dose-response study of 1,831 patients with cardiometabolic disease\u2014found modest reductions in cardiovascular risk markers. A pooled analysis across 17 human studies showed a small standardized mean difference of \u22120.28 (95% CI \u22120.56 to \u22120.005) in cardiovascular outcomes. Studies examined effects on blood pressure, lipid profiles, and metabolic markers in both healthy and metabolic disease populations.",
+        "why_this_grade": "Although the evidence comes from a substantial body of human trials (17 studies, ~10,000+ participants), the pooled effect size is small and the confidence interval barely excludes zero, indicating marginal clinical benefit. The evidence rests mostly on meta-analyses and pooled reviews rather than a strong foundation of primary trials, which limits confidence in the estimate."
       },
       {
         "outcome": "cholesterol / lipids",
         "grade": "Moderate",
-        "what_studies_show": "Seven meta-analyses and one primary human trial, aggregating data from hundreds to thousands of participants (e.g., 2,794 in a 2022 meta-analysis, 514 in a 2018 systematic review, 356 in a 2015 diabetes-focused meta-analysis), have assessed CoQ10's impact on blood lipid profiles\u2014including total cholesterol, LDL, HDL, and triglycerides\u2014predominantly in adults with metabolic disease, diabetes, or cardiometabolic risk. Pooled analyses show modest reductions in certain lipid measures.",
-        "why_this_grade": "The evidence for lipids is based primarily on meta-analyses of randomized trials; only one primary human trial was independently retrieved. Although the pooled sample sizes are large and the outcomes clinically relevant, the reliance on secondary synthesis rather than a robust collection of primary trials limits confidence to 'Moderate'."
+        "what_studies_show": "A 2022 meta-analysis of 2,794 adults and a 2018 systematic review of 514 patients with metabolic disease examined CoQ10's effect on lipid profiles, finding a pooled standardized mean difference of \u22120.28 (95% CI \u22120.56 to \u22120.005). A 2026 systematic review of 3,422 participants assessed CoQ10 on lipid, glycemic, and inflammatory markers in metabolic disorders. Effects were most commonly measured as changes in total cholesterol, LDL, HDL, and triglycerides.",
+        "why_this_grade": "The grade reflects moderate human evidence from 10 studies totaling thousands of participants, but the effect size is small with a confidence interval that barely excludes zero. Most records are meta-analyses pooling earlier trials rather than new primary studies, and no single large trial dominates the picture."
+      },
+      {
+        "outcome": "muscle strength",
+        "grade": "Moderate",
+        "what_studies_show": "Eight randomized controlled trials examined CoQ10's effects on muscle performance and strength, including a 2015 RCT of 120 patients with confirmed statin-induced muscle symptoms, a 2012 study in older athletes measuring cardiorespiratory fitness and muscle performance, a 2010 trial of supramaximal exercise performance, and specialized studies in mitochondrial myopathy (1997) and Duchenne muscular dystrophy (2011, n=12). Study designs varied from crossover trials to training-based interventions.",
+        "why_this_grade": "Eight human trials provide a reasonable evidence base, but they are small and heterogeneous (only ~132 participants identified in 2 studies; others omit sample size), and no pooled quantitative analysis was available to confirm consistency across trials. The variety of patient populations and outcome measures prevents a strong summary effect estimate."
       },
       {
         "outcome": "inflammation",
         "grade": "Moderate",
-        "what_studies_show": "Eighteen human studies, predominantly meta-analyses, have investigated CoQ10 and inflammatory or oxidative stress markers in diverse populations: a 2025 meta-analysis (n=440) in athletes measured exercise-induced muscle damage and oxidative stress; a 2025 meta-analysis (n=400) examined depressive symptoms and anxiety; a 2023 GRADE-assessed analysis (n=1,517) evaluated inflammatory biomarkers; a 2019 meta-analysis (n=509) looked at TNF-\u03b1 and IL-6; and others assessed oxidative stress parameters. Collectively, studies show modest reductions in inflammatory and oxidative stress markers in humans.",
-        "why_this_grade": "The retrieved record comprises 14 pooled analyses and only 4 primary human trials, a composition that limits precision and independence. However, the large aggregate sample sizes and consistency of direction across studies (modest anti-inflammatory effects) support a 'Moderate' rating rather than lower grades; the preponderance of secondary analyses prevents 'Strong'."
+        "what_studies_show": "Meta-analyses from 2025 (n=440 athletes), 2025 (n=400 for mood/anxiety outcomes), 2023 (n=1,517 specifically on inflammation biomarkers), 2020, and 2019 (n=509 examining tumor necrosis factor-\u03b1 and interleukin-6) examined CoQ10's effects on inflammatory markers and oxidative stress. A pooled analysis across 18 human studies showed a mean difference of \u22120.35 (95% CI \u22120.64 to \u22120.05) in inflammation-related biomarkers.",
+        "why_this_grade": "The evidence comes from 18 human studies with a pooled effect suggesting modest anti-inflammatory benefit; the confidence interval excludes zero but the effect is small. Most records are meta-analyses and pooled reviews (14 of 18) rather than primary trials (4 of 18), limiting the depth of the underlying evidence base."
       }
     ],
-    "evidence_base": "The research base for CoQ10 is exclusively human in the retrieved studies; no animal studies were included. The evidence is dominated by meta-analyses and systematic reviews (pooled analyses) published from 2015 onwards, with meta-analyses ranging from several hundred to several thousand participants. Only a handful of independent primary randomized controlled trials appear in the records provided\u2014most notably in muscle strength (8 RCTs) and cardiovascular outcomes. This composition\u2014heavy reliance on secondary synthesis, moderate total primary trial data, and relatively recent publication\u2014means the confidence in CoQ10's effects is moderate rather than high. The breadth of populations studied (athletes, patients with metabolic disease, those with statin-induced myopathy, Duchenne muscular dystrophy) is a strength, but it also introduces heterogeneity.",
-    "emerging_research": "Recent meta-analyses (2024\u20132026) have begun investigating CoQ10 in populations beyond cardiovascular disease, notably in athletes examining exercise-induced oxidative stress and muscle damage, and in psychiatric populations evaluating effects on depression and anxiety. A 2025 meta-analysis of 400 participants examined depressive symptoms and anxiety, suggesting researchers are expanding the compound's potential applications beyond metabolic and muscle outcomes. However, these newer investigations remain early-stage pooled syntheses, and primary trials in these areas appear sparse in the retrieved literature.",
-    "open_questions": "Among the studies retrieved here, most cardiovascular and lipid trials focused on adults with metabolic disease or diabetes; trial durations and effects in younger, healthier populations are less represented. Muscle strength studies span ages and conditions (athletes, myopathy, muscular dystrophy) but sample sizes are often unreported, making it difficult to assess the total evidence base for any single population. None of the retrieved abstracts explicitly describe long-term follow-up beyond 12 weeks, so durability of effects is not addressed in the sample provided. Note: these observations apply only to the ~40 abstracts per outcome shown here; they do not characterize the full body of global CoQ10 literature.",
-    "caveats": "CoQ10 is fat-soluble and absorbed best with dietary fat; absorption varies widely between individuals and formulations (ubiquinone vs. ubiquinol), which may explain heterogeneity in study results. People taking anticoagulants (warfarin) should consult their physician, as CoQ10 may interact with blood-thinning medications. Quality and purity of supplements vary; users should seek third-party-tested products, and those with muscle pain or weakness on statins should discuss CoQ10 with their doctor rather than self-treat.",
+    "evidence_base": "The retrieved literature consists almost entirely of human studies (51 of 51 records); no animal-only studies are included. Most records are meta-analyses, systematic reviews, and pooled analyses published between 2015 and 2026, with a smaller number of primary randomized controlled trials and clinical trials spanning 1997 to 2022. This pattern suggests a mature, clinically focused research field where older primary trials have been synthesized repeatedly in recent years. The majority of evidence concerns adults with metabolic or cardiovascular disease, or athletes, though sample size data are often missing from abstracts, limiting precision estimates for the overall body of work.",
+    "emerging_research": "Recent 2025 meta-analyses have expanded focus to exercise-induced muscle damage and oxidative stress in athletes, and to mood outcomes (depressive symptoms and anxiety), suggesting broadening interest in CoQ10's role beyond traditional cardiovascular and metabolic domains. A 2023 GRADE-assessed review specifically examined optimal dosing for inflammatory biomarkers, highlighting growing attention to dose-response relationships. These newer directions remain preliminary and are represented by meta-analyses rather than large confirmatory trials, so clinical impact is not yet established.",
+    "open_questions": "Among the records provided, most cardiovascular and lipid studies enrolled patients with metabolic disease or cardiometabolic risk; fewer appear to include primary prevention in healthy populations, so it is unclear how benefits might generalize. Muscle strength trials are small and heterogeneous in design and population (ranging from mitochondrial myopathy to Duchenne muscular dystrophy to older athletes), making it difficult to identify a consistent pattern of response. The retrieved studies do not reveal long-term follow-up data (most appear to be weeks to a few months); whether benefits persist or accumulate over years is not clear from these records. Note: you are viewing a sample of ~40 abstracts per outcome; broader or longer-term research may exist in the full literature but is not represented here.",
+    "caveats": "CoQ10 is generally well-tolerated, but bioavailability varies widely depending on formulation (ubiquinone vs. reduced ubiquinol form) and whether it is taken with fat-containing food; quality and potency of commercial products are not universally standardized. Patients taking warfarin or other anticoagulants should consult a healthcare provider, as high-dose CoQ10 may theoretically interact with these medications. People with mitochondrial or metabolic disorders should discuss CoQ10 supplementation with their physician, especially in the context of established treatment.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence base consists almost entirely of meta-analyses and systematic reviews that pool primary studies of uncertain quality and effect size; only 3\u20134 primary RCTs are actually retrievable, making it impossible to verify whether pooled conclusions rest on solid ground.",
+    "headline": "The evidence base consists almost entirely of meta-analyses and systematic reviews synthesizing small primary trials; only 1 primary RCT is visible across the four outcomes, making it impossible to assess whether pooled findings reflect real effects or systematic bias in trial design and reporting.",
     "concerns": [
       {
-        "issue": "Evidence base is predominantly secondary analysis",
-        "detail": "Across all four outcomes, 65% of the 51 unique records are meta-analyses or systematic reviews (7+5 for cardiovascular, 5 for muscle strength, 4+3 for lipids, 9+5 for inflammation). Only 1 RCT appears in the cardiovascular pool, 5 RCTs in muscle strength, 0 in lipids, and 3 in inflammation. This means the 'Moderate' grades rest on synthesis of synthesis, not on direct observation of primary data. A single bias in how primary trials are selected or conducted propagates through all downstream meta-analyses.",
+        "issue": "Heavy reliance on secondary syntheses with few primary trials",
+        "detail": "Across cardiovascular (17 studies), cholesterol (10 studies), muscle strength (8 studies), and inflammation (18 studies), the engine explicitly flags that primary human studies are sparse: 3 for cardiovascular, 1 for cholesterol, and 4 for inflammation. The remaining studies are meta-analyses and systematic reviews\u2014analyses of analyses. Only 1 RCT is visible in muscle strength (n=120, 2015), and no primary RCT title appears in the cardiovascular or cholesterol lists. This means the pooled estimates are not derived from a large, independent trial database but from a smaller set of trials repeatedly re-analyzed.",
         "severity": "high"
       },
       {
-        "issue": "Muscle strength evidence critically underpowered and poorly documented",
-        "detail": "Of 8 muscle strength studies, only 2 report sample size (n=12, n=120; median 120). Six abstracts omit n entirely, so true total enrollment is unknown. The 1997 crossover trial in mitochondrial encephalomyopathy and the 2011 case series (n=12) in Duchenne muscular dystrophy are rare disease populations, not generalizable. No pooled meta-analysis exists to determine consistency; the grade rests on 'several studies exist' without evidence they agree. A single underpowered or biased trial could dominate the signal.",
+        "issue": "Confidence intervals cross zero; effect sizes are clinically marginal",
+        "detail": "Cardiovascular and cholesterol pooling report SMD -0.28 [-0.56 to -0.005], and inflammation reports mean difference -0.35 [-0.64 to -0.05]. All three include zero within their credible intervals or are extremely close to it (cholesterol CI upper bound is -0.005). For cardiovascular and cholesterol, the evidence does not exclude no effect. A skeptic would note that the point estimate of -0.28 SMD is small; clinical significance is debatable without knowing the outcome (blood pressure? LDL?), and the lower confidence bound is nearly zero, indicating weak precision.",
         "severity": "high"
       },
       {
-        "issue": "No pooled effect sizes reported for any outcome",
-        "detail": "All four outcomes explicitly state 'pooled effect: none extractable.' This means the engine could not obtain or compute a summary effect direction or magnitude from the retrieved records. It is therefore impossible to verify whether the 'Moderate' grades reflect a small consistent benefit, a large but heterogeneous effect, or substantial disagreement among studies. Readers cannot distinguish between weak evidence for a real effect and weak evidence for no effect.",
+        "issue": "Muscle strength outcome has no pooled analysis and coarse sample data",
+        "detail": "Of 8 muscle strength studies, only 2 report sample sizes (12 and 120; median 120), and the engine notes 'no pooled analysis confirms they agree.' The engine lists 'Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review.' This means heterogeneity is unresolved. One study is a case report (n=1, effectively). Without a meta-analysis, the moderate grade rests on narrative agreement among heterogeneous designs, which is a weaker evidence structure than the others.",
         "severity": "high"
       },
       {
-        "issue": "Cardiovascular and lipids outcomes heavily overlap and depend on same meta-analyses",
-        "detail": "The 2022 meta-analysis (n=2794) on lipid profiles appears in both cardiovascular and lipids; the 2018 meta-analysis (n=514) on lipid profiles in metabolic disease appears in both; the 2015 meta-analysis (n=356) on metabolic profile appears in both. This means the two 'Moderate' grades are not independent: they likely reflect the same underlying primary trials analyzed twice. Cardiovascular outcomes are nominally addressed by only 1 primary RCT (the statin myopathy trial, which is a surrogate), plus lipid/metabolic meta-analyses\u2014not direct cardiovascular outcomes like mortality, heart failure, or arrhythmia.",
-        "severity": "high"
-      },
-      {
-        "issue": "Population specificity masks narrow applicability",
-        "detail": "Most meta-analyses target specific patient groups: statin-treated patients (myopathy), type 2 diabetes, metabolic disease, or familial hypercholesterolemia. Only one lipids meta-analysis is titled 'in Adults' (2022, n=2794). Pooled estimates may not generalize to healthy populations or different disease contexts. The clinical relevance of improvements in biomarkers (lipids, inflammatory markers) in diseased cohorts to actual cardiovascular prevention in the general population is not addressed.",
+        "issue": "Most retrieved studies do not report sample sizes; true precision is uncertain",
+        "detail": "Cardiovascular: 8 of 17 report n; cholesterol: 5 of 10; muscle strength: 2 of 8; inflammation: 11 of 18. The engine notes 'true total is substantially larger' but cannot confirm it. This means reported sample sizes likely underestimate the actual evidence base, but also that many study abstracts are incomplete, raising the possibility of selective reporting or that the full-text papers would reveal different detail. The precision calculations (e.g., '~10185 participants verified') are based on incomplete data.",
         "severity": "moderate"
       },
       {
-        "issue": "Recent publication clustering may reflect selective updating, not evidence stabilization",
-        "detail": "For inflammation, 5 of 9 meta-analyses are from 2023\u20132025 (only 3 years of range reported); for lipids, 4 of 5 meta-analyses are from 2022\u20132026. For muscle strength, 4 of 5 RCTs are from 2010\u20132022, but the field's oldest trial is 1997. This clustering suggests either emerging research interest or redundant re-analysis of the same primary literature. Without access to the primary trials themselves, it is unclear whether newer meta-analyses added new evidence or re-summarized old studies.",
+        "issue": "Outcomes are heterogeneous within and across syntheses",
+        "detail": "The meta-analyses cover lipid profiles (LDL, HDL, triglycerides\u2014distinct outcomes), blood pressure, metabolic indicators, inflammatory biomarkers (TNF-\u03b1, IL-6), and muscle performance (unspecified in abstracts). The 2022 meta-analysis on lipids (n=2794) and the 2018 version (n=514) both address lipids but differ in sample size and cohort (general adults vs. metabolic disease patients). Inflammation syntheses span exercise-induced muscle damage, depressive symptoms, and tumor necrosis factor\u2014mechanistically distinct. Pooling such heterogeneous outcomes can obscure whether effects are robust across contexts or driven by specific subpopulations.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "CoQ10 is a mitochondrial electron-transport cofactor and an antioxidant, which plausibly supports roles in muscle energy metabolism and oxidative stress reduction. However, the leap from in vitro antioxidant activity or biomarker improvement (inflammatory cytokines, lipid levels) to clinical cardiovascular outcomes (infarction, stroke, mortality) is large and not addressed in these records. The retrieved evidence does not include any trials measuring hard cardiovascular events; instead, they measure surrogates (lipids, blood pressure) or biomarkers (TNF-\u03b1, IL-6). Whether CoQ10-induced reductions in these markers translate to meaningful clinical benefit is an open inferential gap.",
-    "strongest_counterargument": "A skeptic would note that the 'Moderate' grades rest almost entirely on secondary analyses of primary trials of unknown quality, with no extractable pooled effect size, and only 3\u20134 retrievable primary RCTs across all outcomes. The cardiovascular 'Moderate' grade is supported by lipid and blood-pressure meta-analyses, not direct cardiovascular events. Muscle strength evidence is severely underpowered (n=12 and n=120 primary trials) and undocumented (6 of 8 abstracts missing sample size). The strongest evidence\u2014lipids and inflammation\u2014measures biomarkers, not clinical outcomes. This is the profile of a supplement with plausible mechanism but unproven clinical relevance, not a genuinely moderate-confidence therapeutic.",
-    "what_would_change_the_picture": "A large (n\u2265500) multi-center RCT measuring hard cardiovascular outcomes (MI, stroke, mortality, or hospitalization) in a general or high-risk population, with pre-registered primary outcomes and published protocol, would establish whether CoQ10 has genuine clinical benefit. Alternatively, a systematic review with explicit quality assessment (GRADE or similar) and extraction of unpublished trial data, yielding a pooled effect estimate with confidence intervals and heterogeneity assessment, would clarify whether the current 'Moderate' grade reflects weak evidence for a small effect or absence of effect hidden by poor documentation.",
+    "mechanism_check": "CoQ10 is a cofactor in cellular respiration and mitochondrial ATP synthesis, and a lipophilic antioxidant. The clinical claims (improved lipids, blood pressure, muscle strength, reduced inflammation) assume that oral CoQ10 supplementation increases myocellular or systemic CoQ10 bioavailability enough to shift these outcomes. However, the retrieved records do not provide data on: (1) plasma or tissue CoQ10 levels achieved in the trials, (2) whether observed biomarker changes correlate with CoQ10 concentration, or (3) mechanistic pathways linking CoQ10 to the specific endpoints (e.g., does reduced TNF-\u03b1 occur via antioxidant capacity or another mechanism?). The leap from antioxidant/ATP biology to lipid or blood pressure reduction is plausible but not empirically grounded in the abstracts provided.",
+    "strongest_counterargument": "A skeptic would observe that 13 of 17 cardiovascular and 8 of 10 cholesterol studies are meta-analyses or systematic reviews of older, small primary trials. Many of those primary trials may suffer from small sample bias, inadequate blinding, or selective outcome reporting\u2014biases that meta-analysis cannot retroactively fix. The pooled effect (SMD -0.28, CI [-0.56, -0.005]) is on the border of statistical significance and clinically trivial in magnitude; with confidence intervals touching zero, the best-estimate effect may be absent. The heterogeneity across meta-analyses (2794 participants in 2022 lipid study vs. 514 in 2018) suggests the underlying trial database is volatile and the pooled estimate fragile to inclusion/exclusion choices. Only 1 visible primary RCT means most claims rest on indirect pooling rather than direct experimental evidence.",
+    "what_would_change_the_picture": "A large (n\u2265500), multi-center, placebo-controlled RCT with pre-registered primary outcomes (e.g., LDL-C reduction, systolic blood pressure, muscle strength by dynamometry, or plasma inflammatory cytokines) and complete reporting of adverse events and subgroup analyses would establish whether CoQ10 has a meaningful clinical effect independent of publication bias in the secondary literature. Mechanistic substudies measuring blood or tissue CoQ10 levels and their correlation with clinical endpoints would also clarify whether reported benefits reflect CoQ10-dependent processes.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

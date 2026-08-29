@@ -1,9 +1,9 @@
 {
-  "name": "NAC",
-  "category": "amino",
+  "name": "nac",
+  "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 54,
+  "study_count": 53,
   "claims": [
     {
       "outcome": "liver health",
@@ -93,17 +93,303 @@
         }
       ],
       "effects": {
+        "plottable": [
+          {
+            "pmid": "19524577",
+            "metric": "risk_ratio",
+            "value": 1.48,
+            "ci_low": 1.0,
+            "ci_high": 1.96,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Transplant-free survival was significantly better for NAC patients (40%) than for those given placebo (27%; 1-sided P = .043)"
+          },
+          {
+            "pmid": "32845997",
+            "metric": "hazard_ratio",
+            "value": 1.73,
+            "ci_low": 1.13,
+            "ci_high": 2.65,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Median time to hospital discharge was shorter in the NAC arm (9 [6-15] days) than in the placebo arm (18 [10-25] days) (HR, 1.73; 95% CI, 1.13-2.65)"
+          }
+        ],
+        "n_not_reported": 5,
+        "n_total": 7
+      },
+      "pooled": {
+        "verified": {
+          "value": 1.73,
+          "ci_low": 0.97,
+          "ci_high": 2.49,
+          "n_studies": 1
+        },
+        "exploratory": {
+          "value": 1.551,
+          "ci_low": 1.145,
+          "ci_high": 1.957,
+          "n_studies": 2
+        },
+        "note": null
+      },
+      "headline_effect": null,
+      "summary": "For liver health, nac has moderate human evidence (7 studies)."
+    },
+    {
+      "outcome": "muscle strength",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 11,
+      "grade_reasons": [
+        "Precision: ~123 participants verified across 3 of 11 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 5,
+        "n_animal_studies": 6,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:35975308",
+        "PMID:33783984",
+        "PMID:28102488",
+        "PMID:39682737",
+        "PMID:42167462",
+        "PMID:31530262",
+        "PMID:28887840",
+        "PMID:32889673",
+        "PMID:39337344",
+        "PMID:26825874",
+        "PMID:20673252"
+      ],
+      "studies": [
+        {
+          "pmid": "28102488",
+          "title": "Performance and Side Effects of Supplementation with N-Acetylcysteine: A Systematic Review and Meta-Analysis.",
+          "year": "2017",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "42167462",
+          "title": "N-acetyl cysteine and skeletal muscle health across aging and disease models: A systematic review of preclinical and preliminary human evidence.",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "35975308",
+          "title": "Supplementing Glycine and N-Acetylcysteine (GlyNAC) in Older Adults Improves Glutathione Deficiency, Oxidative Stress, Mitochondrial Dysfunction, Inflammation, ",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 12
+        },
+        {
+          "pmid": "33783984",
+          "title": "Glycine and N-acetylcysteine (GlyNAC) supplementation in older adults improves glutathione deficiency, oxidative stress, mitochondrial dysfunction, inflammation",
+          "year": "2021",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "32889673",
+          "title": "The impact of skeletal muscle wasting during neoadjuvant chemotherapy on postoperative anastomotic leakage in patients with esophageal cancer.",
+          "year": "2021",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 99
+        },
+        {
+          "pmid": "39682737",
+          "title": "Modulation of Brain Kynurenic Acid by N-Acetylcysteine Prevents Cognitive Impairment and Muscular Weakness Induced by Cisplatin in Female Rats.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "39337344",
+          "title": "Impact of Extremely Low-Frequency Electromagnetic Fields on Skeletal Muscle of Sedentary Adult Mice: A Pilot Study.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "31530262",
+          "title": "N-Acetyl Cysteine Attenuates the Sarcopenia and Muscle Apoptosis Induced by Chronic Liver Disease.",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "28887840",
+          "title": "Pre-clinical evaluation of N-acetylcysteine reveals side effects in the mdx mouse model of Duchenne muscular dystrophy.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "26825874",
+          "title": "Transforming growth factor type beta (TGF-\u03b2) requires reactive oxygen species to induce skeletal muscle atrophy.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "20673252",
+          "title": "Effect of N-acetylcysteine on markers of skeletal muscle injury after fatiguing contractile activity.",
+          "year": "2012",
+          "design": "Animal",
+          "population": "animal",
+          "n": 12
+        }
+      ],
+      "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 11,
+        "n_total": 11
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For liver health, NAC has moderate human evidence (7 studies)."
+      "summary": "For muscle strength, nac has moderate human evidence (11 studies)."
+    },
+    {
+      "outcome": "cognition",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 8,
+      "grade_reasons": [
+        "Precision: ~58 participants verified across 1 of 8 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 6,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:33783984",
+        "PMID:27894373",
+        "PMID:39682737",
+        "PMID:28438466",
+        "PMID:40163249",
+        "PMID:40921646",
+        "PMID:37628913",
+        "PMID:41579736"
+      ],
+      "studies": [
+        {
+          "pmid": "28438466",
+          "title": "The effect of N-acetylcysteine (NAC) on human cognition - A systematic review.",
+          "year": "2017",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "41579736",
+          "title": "Frontal white matter hyperintensity burden predicts cognitive response to N-acetylcysteine and exercise in vascular mild cognitive impairment.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "40163249",
+          "title": "N-Acetylcysteine for Hereditary Cystatin C Amyloid Angiopathy: A Nonrandomized Clinical Trial.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "27894373",
+          "title": "Cognitive effects of adjunctive N-acetyl cysteine in psychosis.",
+          "year": "2017",
+          "design": "RCT",
+          "population": "human",
+          "n": 58
+        },
+        {
+          "pmid": "40921646",
+          "title": "N-acetyl cysteine for the treatment of alcohol use disorder: study protocol for a multi-site, double-blind randomised controlled trial (NAC-AUD study).",
+          "year": "2025",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "33783984",
+          "title": "Glycine and N-acetylcysteine (GlyNAC) supplementation in older adults improves glutathione deficiency, oxidative stress, mitochondrial dysfunction, inflammation",
+          "year": "2021",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "39682737",
+          "title": "Modulation of Brain Kynurenic Acid by N-Acetylcysteine Prevents Cognitive Impairment and Muscular Weakness Induced by Cisplatin in Female Rats.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "37628913",
+          "title": "N-Acetylcysteine Amide against A\u03b2-Induced Alzheimer's-like Pathology in Rats.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 8,
+        "n_total": 8
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For cognition, nac has moderate human evidence (8 studies)."
     },
     {
       "outcome": "inflammation",
@@ -111,9 +397,9 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 28,
+      "n_studies": 27,
       "grade_reasons": [
-        "Precision: ~987 participants verified across 11 of 28 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~987 participants verified across 11 of 27 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Consistency: 2 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
@@ -123,7 +409,7 @@
         "overall": 90,
         "ceiling": 90,
         "n_human_studies": 22,
-        "n_animal_studies": 6,
+        "n_animal_studies": 5,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -138,6 +424,7 @@
         "PMID:39756697",
         "PMID:40205270",
         "PMID:30549489",
+        "PMID:42289121",
         "PMID:27103982",
         "PMID:29462456",
         "PMID:37299425",
@@ -152,9 +439,7 @@
         "PMID:37562904",
         "PMID:11029607",
         "PMID:37877260",
-        "PMID:25028602",
-        "PMID:35420738",
-        "PMID:20800897"
+        "PMID:25028602"
       ],
       "studies": [
         {
@@ -170,6 +455,14 @@
           "title": "Influence of N-Acetylcysteine Supplementation on Physical Performance and Laboratory Biomarkers in Adult Males: A Systematic Review of Controlled Trials.",
           "year": "2023",
           "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "42289121",
+          "title": "ORAL N-ACETYLCYSTEINE FOR MENSTRUAL PAIN IN ADOLESCENTS: A RANDOMIZED CONTROLLED STUDY OF OXIDATIVE STRESS REDUCTION WITHOUT HORMONAL MODULATION.",
+          "year": "2026",
+          "design": "RCT",
           "population": "human",
           "n": null
         },
@@ -310,14 +603,6 @@
           "n": null
         },
         {
-          "pmid": "20800897",
-          "title": "N-acetyl cysteine add-on treatment for bipolar II disorder: a subgroup analysis of a randomized placebo-controlled trial.",
-          "year": "2011",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "11029607",
           "title": "N-acetylcysteine replenishes glutathione in HIV infection.",
           "year": "2000",
@@ -334,17 +619,17 @@
           "n": null
         },
         {
-          "pmid": "39046019",
-          "title": "Lycopene supplementation promoted increased survival and decreased parasitemia in mice with severe malaria: comparison with N-acetylcysteine.",
-          "year": "2024",
+          "pmid": "40961779",
+          "title": "Dietary N-acetylcysteine supplementation improves antioxidant capacity and production performance of breeder hens and offspring.",
+          "year": "2025",
           "design": "Animal",
           "population": "animal",
           "n": null
         },
         {
-          "pmid": "35420738",
-          "title": "Diverse Impact of N-Acetylcysteine or Alpha-Lipoic Acid Supplementation during High-Fat Diet Regime on Matrix Metalloproteinase-2 and Matrix Metalloproteinase-9",
-          "year": "2022",
+          "pmid": "39046019",
+          "title": "Lycopene supplementation promoted increased survival and decreased parasitemia in mice with severe malaria: comparison with N-acetylcysteine.",
+          "year": "2024",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -372,282 +657,42 @@
           "design": "Animal",
           "population": "animal",
           "n": null
-        },
-        {
-          "pmid": "40961779",
-          "title": "Dietary N-acetylcysteine supplementation improves antioxidant capacity and production performance of breeder hens and offspring.",
-          "year": "2025",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "42289121",
+            "metric": "mean_diff",
+            "value": 0.2,
+            "ci_low": 0.0,
+            "ci_high": 0.4,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Urinary 8-iso-PGF\u2082\u03b1 levels were significantly reduced in the NAC group as well (0.6\u00b10.2 vs. 0.8\u00b10.2 ng/mg Cr, p=0.010)"
+          }
+        ],
+        "n_not_reported": 26,
+        "n_total": 27
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For inflammation, NAC is well-supported by human trials (28 studies)."
-    },
-    {
-      "outcome": "muscle strength",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 11,
-      "grade_reasons": [
-        "Precision: ~123 participants verified across 3 of 11 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 5,
-        "n_animal_studies": 6,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:35975308",
-        "PMID:33783984",
-        "PMID:28102488",
-        "PMID:39682737",
-        "PMID:42167462",
-        "PMID:31530262",
-        "PMID:28887840",
-        "PMID:32889673",
-        "PMID:39337344",
-        "PMID:26825874",
-        "PMID:20673252"
-      ],
-      "studies": [
-        {
-          "pmid": "28102488",
-          "title": "Performance and Side Effects of Supplementation with N-Acetylcysteine: A Systematic Review and Meta-Analysis.",
-          "year": "2017",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "42167462",
-          "title": "N-acetyl cysteine and skeletal muscle health across aging and disease models: A systematic review of preclinical and preliminary human evidence.",
-          "year": "2026",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "35975308",
-          "title": "Supplementing Glycine and N-Acetylcysteine (GlyNAC) in Older Adults Improves Glutathione Deficiency, Oxidative Stress, Mitochondrial Dysfunction, Inflammation, ",
-          "year": "2023",
-          "design": "RCT",
-          "population": "human",
-          "n": 12
-        },
-        {
-          "pmid": "33783984",
-          "title": "Glycine and N-acetylcysteine (GlyNAC) supplementation in older adults improves glutathione deficiency, oxidative stress, mitochondrial dysfunction, inflammation",
-          "year": "2021",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "32889673",
-          "title": "The impact of skeletal muscle wasting during neoadjuvant chemotherapy on postoperative anastomotic leakage in patients with esophageal cancer.",
-          "year": "2021",
-          "design": "Unclassified",
-          "population": "human",
-          "n": 99
-        },
-        {
-          "pmid": "39682737",
-          "title": "Modulation of Brain Kynurenic Acid by N-Acetylcysteine Prevents Cognitive Impairment and Muscular Weakness Induced by Cisplatin in Female Rats.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "39337344",
-          "title": "Impact of Extremely Low-Frequency Electromagnetic Fields on Skeletal Muscle of Sedentary Adult Mice: A Pilot Study.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "31530262",
-          "title": "N-Acetyl Cysteine Attenuates the Sarcopenia and Muscle Apoptosis Induced by Chronic Liver Disease.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "28887840",
-          "title": "Pre-clinical evaluation of N-acetylcysteine reveals side effects in the mdx mouse model of Duchenne muscular dystrophy.",
-          "year": "2017",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "26825874",
-          "title": "Transforming growth factor type beta (TGF-\u03b2) requires reactive oxygen species to induce skeletal muscle atrophy.",
-          "year": "2016",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "20673252",
-          "title": "Effect of N-acetylcysteine on markers of skeletal muscle injury after fatiguing contractile activity.",
-          "year": "2012",
-          "design": "Animal",
-          "population": "animal",
-          "n": 12
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For muscle strength, NAC has moderate human evidence (11 studies)."
-    },
-    {
-      "outcome": "cognition",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 8,
-      "grade_reasons": [
-        "Precision: ~58 participants verified across 1 of 8 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 6,
-        "n_animal_studies": 2,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:33783984",
-        "PMID:27894373",
-        "PMID:39682737",
-        "PMID:28438466",
-        "PMID:40163249",
-        "PMID:37628913",
-        "PMID:40921646",
-        "PMID:41579736"
-      ],
-      "studies": [
-        {
-          "pmid": "28438466",
-          "title": "The effect of N-acetylcysteine (NAC) on human cognition - A systematic review.",
-          "year": "2017",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41579736",
-          "title": "Frontal white matter hyperintensity burden predicts cognitive response to N-acetylcysteine and exercise in vascular mild cognitive impairment.",
-          "year": "2026",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40163249",
-          "title": "N-Acetylcysteine for Hereditary Cystatin C Amyloid Angiopathy: A Nonrandomized Clinical Trial.",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "27894373",
-          "title": "Cognitive effects of adjunctive N-acetyl cysteine in psychosis.",
-          "year": "2017",
-          "design": "RCT",
-          "population": "human",
-          "n": 58
-        },
-        {
-          "pmid": "40921646",
-          "title": "N-acetyl cysteine for the treatment of alcohol use disorder: study protocol for a multi-site, double-blind randomised controlled trial (NAC-AUD study).",
-          "year": "2025",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "33783984",
-          "title": "Glycine and N-acetylcysteine (GlyNAC) supplementation in older adults improves glutathione deficiency, oxidative stress, mitochondrial dysfunction, inflammation",
-          "year": "2021",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39682737",
-          "title": "Modulation of Brain Kynurenic Acid by N-Acetylcysteine Prevents Cognitive Impairment and Muscular Weakness Induced by Cisplatin in Female Rats.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "37628913",
-          "title": "N-Acetylcysteine Amide against A\u03b2-Induced Alzheimer's-like Pathology in Rats.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cognition, NAC has moderate human evidence (8 studies)."
+      "summary": "For inflammation, nac is well-supported by human trials (27 studies)."
     }
   ],
   "effects_established": [
     "liver health",
-    "inflammation",
     "muscle strength",
-    "cognition"
+    "cognition",
+    "inflammation"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -675,75 +720,75 @@
       "Acetadote"
     ]
   },
-  "_cached_at": 1787608132.705956,
+  "_cached_at": 1788018368.496626,
   "explanation": {
-    "what_it_is": "N-acetylcysteine (NAC) is a modified form of the amino acid cysteine, with the chemical formula C\u2085H\u2089NO\u2083S. It is either synthesized in a laboratory or derived from cysteine, and is taken orally as a capsule or powder, or administered intravenously in clinical settings. NAC is well-absorbed and serves as a precursor to glutathione, one of the body's main antioxidant molecules.",
-    "how_it_works": "NAC works primarily by replenishing glutathione (GSH), a tripeptide that is central to cellular defense against oxidative stress \u2014 the damage caused by free radicals and inflammatory molecules. Inside cells, NAC is broken down to release cysteine, which is the rate-limiting component for glutathione synthesis. By boosting glutathione levels, NAC reduces oxidative damage, quenches inflammatory signaling pathways, and supports immune regulation. It also has direct antioxidant activity of its own and can bind and neutralize harmful compounds (notably, it is the clinical antidote for acetaminophen overdose because it neutralizes toxic metabolites). These actions plausibly explain why NAC might protect liver cells, dampen chronic inflammation, preserve muscle function, and support brain health.",
+    "what_it_is": "N-acetyl-L-cysteine (NAC) is a modified form of the amino acid L-cysteine, with the chemical formula C5H9NO3S. It is produced synthetically and taken orally as a supplement, or sometimes administered intravenously in clinical settings. NAC serves as a precursor to glutathione, one of the body's most important antioxidant molecules.",
+    "how_it_works": "NAC works primarily by replenishing cellular glutathione, a tripeptide that neutralizes free radicals and reactive oxygen species (ROS)\u2014unstable molecules that damage proteins, lipids, and DNA. When cells are oxidatively stressed, glutathione becomes depleted; NAC crosses the cell membrane and donates its cysteine residue to rebuild glutathione pools. This reduces oxidative stress and the inflammatory signaling cascades it triggers. NAC also has direct antioxidant effects through its free thiol (-SH) group, can modulate immune cell activation, and may support mitochondrial function and cellular repair pathways.",
     "outcome_detail": [
-      {
-        "outcome": "liver health",
-        "grade": "Moderate",
-        "what_studies_show": "Multiple randomized controlled trials show NAC reduces markers of liver injury and inflammation in specific contexts. A 2024 pilot RCT in 13 children with metabolic dysfunction-associated steatotic liver disease found benefit; a 2023 RCT of 42 participants examined NAC in alcohol use disorder and liver function; and a 2021 trial of intravenous NAC in 173 patients with non-acetaminophen acute liver failure showed improved transplant-free survival. Several studies (2023, 2021) evaluated NAC's ability to prevent drug-induced liver injury from anti-tuberculosis medications, finding reductions in liver enzyme elevation and microRNA markers of hepatocyte damage.",
-        "why_this_grade": "Seven human RCTs exist, but no pooled meta-analysis has confirmed they yield consistent results \u2014 the studies differ in patient populations (children with fatty liver, adults with alcohol use disorder, drug-induced injury) and outcome measures. The grade is held at Moderate pending systematic review and synthesis to clarify which patient groups benefit most and by how much."
-      },
       {
         "outcome": "inflammation",
         "grade": "Strong",
-        "what_studies_show": "A robust body of evidence including 22 human studies and 6 animal studies demonstrates that NAC reduces multiple markers of systemic and local inflammation. Two independent systematic reviews and meta-analyses converge on this outcome: a 2024 review covering lactate, oxidative stress biomarkers, immune response, and muscle damage; and a 2023 review on physical performance and laboratory biomarkers in adult males. Recent RCTs (2025) in diabetic foot osteomyelitis (n=140 for TB-related inflammation), older adults with immunosenescence, and patients with tuberculosis all show NAC modulates inflammatory cytokines, reduces oxidative stress markers, and improves infection-related inflammation.",
-        "why_this_grade": "This outcome earned Strong because two independent meta-analyses/systematic reviews replicate the finding, indicating consistency across diverse study designs and populations. Approximately 987 participants are verified across 11 studies with disclosed sample sizes, and most studies employed adequate blinding and control groups. The breadth of populations (athletes, older adults, patients with infection and metabolic disease) and consistency across outcomes strengthen confidence."
+        "what_studies_show": "Two independent systematic reviews and meta-analyses, alongside 22 human trials (with verified totals of ~987 participants across 11 studies), consistently show that NAC supplementation reduces markers of oxidative stress, inflammatory cytokines, and immune activation. Studies span diverse populations\u2014athletes, older adults, patients with tuberculosis, diabetic foot ulcers, and adolescents with menstrual pain\u2014conducted between 2023 and 2026, generally showing dose-dependent reductions in biomarkers like lactate, CRP, and oxidative stress markers.",
+        "why_this_grade": "Two independent meta-analyses convergently support this outcome (a sign of replicated evidence synthesis), and the human trial count is substantial with reasonable sample sizes documented. The consistency across different clinical contexts and populations strengthens confidence in the anti-inflammatory effect."
+      },
+      {
+        "outcome": "liver health",
+        "grade": "Moderate",
+        "what_studies_show": "Seven human RCTs published between 2009 and 2024 examined NAC for liver protection in distinct scenarios: acetaminophen overdose (n=173, 2009 IV trial showing improved transplant-free survival in early acute liver failure), anti-tuberculosis drug-induced hepatotoxicity (multiple 2021\u20132023 RCTs), metabolic dysfunction-associated steatotic liver disease in children (n=13, 2024 pilot), and alcohol use disorder (n=42, 2023 double-blind RCT). Studies measured liver enzymes, microRNA-122 (a hepatocyte injury marker), and clinical outcomes.",
+        "why_this_grade": "Multiple human RCTs exist with clinically relevant designs, but no pooled meta-analysis confirms their agreement. Results appear encouraging but heterogeneous in study design and population; the moderate grade reflects genuine evidence in humans tempered by lack of unified synthesis."
       },
       {
         "outcome": "muscle strength",
         "grade": "Moderate",
-        "what_studies_show": "A 2017 meta-analysis and systematic review examined NAC supplementation and physical performance; a 2026 systematic review synthesized evidence across aging and disease models. Human RCTs include a 2023 trial (n=12) of GlyNAC (glycine plus NAC) in older adults, which improved glutathione and oxidative stress markers linked to muscle function, and a 2021 uncontrolled study (n=99) on muscle wasting during chemotherapy. An animal study (2024) showed NAC prevented cognitive and muscular weakness in a disease model.",
-        "why_this_grade": "Five human studies are available, but only 123 participants are confirmed across 3 trials with disclosed sample sizes; most abstracts omit participant numbers, so the true total may be larger. Critically, no single pooled meta-analysis independently confirms the studies agree on effect size or clinical significance. The grade remains Moderate because the evidence base is smaller and less consistently synthesized than for inflammation, and human evidence is mixed."
+        "what_studies_show": "A 2017 meta-analysis and a 2026 systematic review synthesized human studies on NAC and skeletal muscle health. Among documented trials, a 2023 RCT (n=12) and a 2021 study (n=99) of GlyNAC (glycine + NAC) supplementation in older adults reported improvements in glutathione deficiency and oxidative stress markers; a 2017 meta-analysis examined side effects and performance. Animal studies (n=6) show mechanistic support, including prevention of muscular weakness in disease models (2024).",
+        "why_this_grade": "Five human studies are documented, but only three report sample sizes (totaling ~123 verified participants), and most abstracts lack this detail, so true sample sizes are substantially larger. Inconsistency across studies and lack of a pooled quantitative synthesis hold the grade at moderate despite promising human evidence."
       },
       {
         "outcome": "cognition",
         "grade": "Moderate",
-        "what_studies_show": "A 2017 systematic review examined NAC's effects on human cognition. Recent trials (2026, 2025) target specific populations: one RCT assessed cognitive response to NAC and exercise in vascular cognitive impairment (with white matter hyperintensity burden as a predictor); another 2025 trial evaluated NAC in hereditary cystatin C amyloid angiopathy, a rare neurodegenerative condition. A 2017 RCT (n=58) tested NAC as an add-on treatment in psychosis and found cognitive benefits. A 2025 clinical trial protocol is underway for alcohol use disorder. A 2021 study of GlyNAC in older adults reported cognitive improvement linked to glutathione restoration.",
-        "why_this_grade": "Six human studies are present, but only 58 participants are confirmed from a single study; the other abstracts do not report sample sizes, so the true total is substantially larger and unknown. Only one meta-analysis/systematic review exists, and it has not been independently replicated or verified. The outcomes are also heterogeneous (psychosis, vascular dementia, amyloid angiopathy, aging), making it unclear whether benefits generalize. The grade is Moderate because the evidence is preliminary and not yet synthetically confirmed."
+        "what_studies_show": "Six human studies (2017\u20132025) examined NAC's cognitive effects: a 2017 systematic review synthesized the literature; a 2017 RCT (n=58) found cognitive benefit when NAC was added to antipsychotic therapy in psychosis; 2025\u20132026 RCTs explored NAC in hereditary cystatin C amyloid angiopathy, alcohol use disorder, and white matter hyperintensity burden. Only one study reported sample size in the provided abstracts (n=58), limiting precision quantification.",
+        "why_this_grade": "Human studies exist with reasonable designs (RCTs and a systematic review), but a single meta-analysis conclusion is documented without independent replication. Imprecision in sample size reporting across most abstracts and lack of convergent synthesis keep the grade moderate\u2014promising but not yet conclusively established."
       }
     ],
-    "evidence_base": "The research base is predominantly human (35 of 43 studies with human data across all outcomes), with 8 animal studies supporting mechanism. Most evidence comes from randomized controlled trials and systematic reviews published in the last five years (2023\u20132026), indicating active recent investigation. Inflammation shows the strongest synthesis, with two independent meta-analyses reaching the same conclusion; liver health, muscle strength, and cognition rely on smaller numbers of trials without confirmed pooled analyses. The sample sizes reported in abstracts are often incomplete, so the true participant counts are likely larger than stated but remain uncertain from the records provided.",
-    "emerging_research": "Recent work (2025\u20132026) is expanding NAC's use beyond classical antioxidant contexts. Trials are testing it in amyloid-related cognitive decline, diabetic complications, immunosenescence in older adults, and as an adjunct to exercise in vascular cognitive impairment. A multi-site double-blind trial for alcohol use disorder is underway. These directions suggest researchers are moving toward precision use \u2014 identifying which populations (age, disease, genetics) benefit most \u2014 rather than broad supplementation. Animal data continue to support mechanistic links between NAC, glutathione, and neuroprotection, but human translation remains early for most of these specific indications.",
-    "open_questions": "Among the studies retrieved here, sample sizes are often not disclosed in abstracts, so the true total participant count across all outcomes is substantially larger but unquantifiable from the records given. Trial durations are not consistently reported in the abstracts provided; it is unclear from these records alone whether long-term (>12 months) safety or efficacy data exist. The cognition and muscle strength evidence bases are smaller and less synthetically unified than inflammation; among the records retrieved, no independent replication of a cognition meta-analysis conclusion is evident. Note: You are seeing only a sample of approximately 40 abstracts per outcome \u2014 the global literature may contain additional studies not represented here, and claims about what is or is not studied overall should not be inferred from these records alone.",
-    "caveats": "NAC is generally well-tolerated orally but can cause gastrointestinal upset, headache, and rash in some users. Intravenous NAC carries standard infusion risks and should only be administered clinically. People with cystinuria (a rare genetic condition affecting cysteine metabolism) or sulfonamide allergy should avoid NAC. Interactions with certain medications (e.g., nitroglycerin, methotrexate) are possible; consult a clinician before combining NAC with other drugs. Pregnant and nursing women, and children, should use NAC only under medical supervision. Product quality and purity vary; third-party testing is recommended for supplements.",
+    "evidence_base": "NAC has a substantial human evidence base: 35 of 53 total studies retrieved are in humans, with 2\u20133 independent meta-analyses or systematic reviews supporting inflammation and cognition. Studies are mostly RCTs or clinical trials conducted between 2009 and 2026, skewing recent. Documented participant counts across reported studies total ~1,200+, though many abstracts omit sample sizes. The research reflects real clinical applications (drug-induced hepatotoxicity, psychosis, aging-related frailty, inflammation in athletic and chronic disease populations) rather than healthy volunteers alone, which increases real-world relevance but also introduces heterogeneity.",
+    "emerging_research": "Recent work (2025\u20132026) explores NAC in amyloid angiopathy (hereditary cystatin C), menstrual pain via oxidative stress reduction, immunosenescence in vitamin D-deficient older adults, and white matter hyperintensity burden in cognitive aging. A 2026 systematic review on NAC and skeletal muscle across aging and disease models suggests mechanistic clarity is improving, and combination therapies (NAC + vitamin D, NAC + glycine) are gaining attention. These directions are early-stage but reflect growing interest in NAC for age-related and inflammatory conditions.",
+    "open_questions": "Among the studies retrieved here, sample sizes are under-reported in abstracts\u2014only ~11 of 53 document participant numbers, limiting our ability to assess true statistical power. No long-term follow-up studies (>12 months) appear in these records, so durability of cognitive or strength gains is unknown in the retrieved literature. Pediatric and adolescent populations appear rarely (one child NAFLD study, one adolescent menstrual pain trial); most evidence is in older adults, athletes, or disease-specific cohorts. Because this sample represents only ~40 abstracts per outcome, gaps visible here do not establish what global research lacks\u2014only what is absent from these particular records.",
+    "caveats": "NAC is generally well-tolerated, but side effects including nausea, rash, and rarely bronchospasm have been reported. High doses may cause sulfur-like body odor. NAC can interact with certain medications (e.g., nitrates, chemotherapy); patients on these agents should consult a healthcare provider. Quality and dose vary widely among supplements; clinical trials typically used 1\u20133 g/day orally or IV dosing under medical supervision. Pregnant or nursing individuals should seek medical guidance before supplementing.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "NAC has genuine RCT support for inflammation (two independent meta-analyses converge), but liver health and cognition rest on small, non-pooled trials with no consistent synthesis, and muscle strength is dominated by animal models with only one small human RCT.",
+    "headline": "NAC has a robust evidence base for inflammation but weaker support for liver health, muscle strength, and cognition\u2014each of those latter three outcomes lacks pooled analysis, relies heavily on small or unreported sample sizes, and shows no independent replication of synthesis conclusions.",
     "concerns": [
       {
-        "issue": "Liver health: no pooled analysis despite 7 RCTs",
-        "detail": "Seven RCTs exist (2000\u20132024) but the engine explicitly notes 'no pooled analysis confirms they agree' and the outcome is held at Moderate pending review. Studies span populations (children with NAFLD, alcohol use disorder, TB drug toxicity, acute liver failure, HIV) so heterogeneous that their results may not be combinable. The median sample size is only 45, and two studies lack reported n entirely\u2014making it impossible to assess whether a single larger trial drives the apparent signal.",
+        "issue": "Muscle strength: 6 of 11 studies are animal, only 1 RCT in humans",
+        "detail": "The muscle strength grade (Moderate) rests on 11 studies, but only 1 is a human RCT (n=12). Six are animal models, and two are unclassified. Animal models (e.g., mdx mouse, chronic liver disease models) do not directly translate to human physiology, and the single human RCT is extremely small. The 2017 meta-analysis is cited but its methodology and conclusions are not visible in these records; no independent replication of its findings is documented.",
         "severity": "high"
       },
       {
-        "issue": "Cognition: single replicated meta-analysis, minimal human RCT data",
-        "detail": "Only 3 human RCTs exist, and the engine notes 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified.' Crucially, only 1 of 8 cognition studies reports sample size (n=58), so the true power of the human evidence base is opaque. The 2017 RCT measured 'cognitive effects in psychosis,' which is a narrow population and does not support generalization to age-related cognitive decline or broader cognitive enhancement.",
+        "issue": "Cognition: 87.5% of sample size data missing, single outcome RCT tiny",
+        "detail": "Only 1 of 8 cognition studies reports sample size (n=58). The other 7 abstracts do not disclose participant numbers, making it impossible to assess true precision or power. The 2017 systematic review is the only synthesis, but no independent replication confirms its conclusions. Two RCTs are listed, but only one reports n (n=58); the other two RCTs have invisible sample sizes. With such sparse reporting, a single large well-designed trial could substantially shift the evidence base.",
         "severity": "high"
       },
       {
-        "issue": "Muscle strength: 6 animal, 1 human RCT; no meta-analytic consensus",
-        "detail": "Of 11 total studies, 6 are animal models and only 1 is a human RCT (n=12, 2023). The 2017 meta-analysis is listed but no details confirm it pooled results or found consistency. Two unclassified human studies (2021) contribute an n=99 and unspecified n, but their design and outcome metrics are not transparent from titles alone. Animal studies in Duchenne muscular dystrophy (2017) and chronic liver disease (2019) do not necessarily predict effects in healthy or aging populations.",
+        "issue": "Liver health: heterogeneous indications, no pooled analysis, small to medium trials",
+        "detail": "Seven RCTs exist (n range 13\u2013173, median 45), but the engine explicitly notes 'inconsistency: several studies exist but no pooled analysis confirms they agree.' Studies address disparate conditions: metabolic dysfunction-associated steatotic liver disease, alcohol use disorder, anti-tuberculosis drug toxicity, and acute liver failure. Heterogeneity of patient populations and NAC dosing/route (e.g., intravenous in some) prevents synthesis. Without a meta-analysis, it is unknown whether these trials agree on a consistent effect size.",
         "severity": "high"
       },
       {
-        "issue": "Inflammation outcome includes 6 animal studies; human evidence smaller than grading suggests",
-        "detail": "Although inflammation is graded Strong with 28 studies, 6 are animal models. Of 22 human studies, only 11 report sample sizes, totaling ~987 verified participants\u2014the engine notes 'the true total is substantially larger' but this opacity means the actual per-study power is unknown. Two independent meta-analyses converge on the outcome, which supports consistency, but the original RCT data backing those syntheses is not visible in these records.",
+        "issue": "Inflammation grade 'Strong' rests on no pooled effect and unreported sample sizes in half the studies",
+        "detail": "Although inflammation has 27 studies (22 human, 19 RCTs) and two independent systematic reviews, the engine notes 'pooled effect: none extractable.' Of 27 studies, only 11 (41%) report sample sizes; the true sample size of the remaining 16 is unknown. The engine cites '~987 participants verified' as a proxy, but this is contingent on the missing 16 studies being non-trivial\u2014if many are very small, precision is overstated. Two systematic reviews converge, but their specific conclusions and risk-of-bias assessments are not visible in these records.",
         "severity": "moderate"
       },
       {
-        "issue": "Systemic lack of sample size reporting across outcomes",
-        "detail": "Liver health: 2 of 7 studies (29%) lack n. Muscle strength: 8 of 11 studies (73%) lack n. Cognition: 7 of 8 studies (88%) lack n. This is not random absence\u2014it suggests many records are from abstracts or incomplete sources. When most studies do not report sample size, outlier results (whether positive or null) are unweighted, and any pooled estimate in a future meta-analysis could be severely biased by the structure of published abstracts rather than true effect sizes.",
+        "issue": "Inflammation and liver health: study heterogeneity and indications not fully characterized",
+        "detail": "For inflammation, 27 studies span diseases (tuberculosis, Sj\u00f6gren's, diabetic foot osteomyelitis, menstrual pain, immunosenescence) with no documented meta-analysis to weight them or assess heterogeneity (I\u00b2). For liver health, NAC delivery routes differ (oral vs. intravenous), and indications span iatrogenic drug toxicity to pre-existing liver disease. The abstracts do not provide enough detail to judge whether pooling would be appropriate or whether subgroup effects are hidden by heterogeneity.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "NAC's antioxidant mechanism (glutathione replenishment, ROS scavenging) is biologically plausible and supported by the 2000 and 2023 studies showing glutathione restoration in HIV and older adults. However, the leap from *in vitro* or mechanistic endpoints (oxidative markers, microRNA-122, lactate) to clinical liver improvement or muscle strength gains is not explicitly validated in the retrieved records. The liver health trials measure biomarkers (microRNA-122) or hepatoprotection proxies (drug-induced injury prevention) rather than hard clinical outcomes like fibrosis regression or transplant-free survival (the 2009 acute liver failure trial is an exception). For cognition, the mechanism is proposed but the human trials are too few and heterogeneous to confirm that oxidative stress reduction in brain translates to measurable cognitive gain in non-psychotic populations.",
-    "strongest_counterargument": "A skeptic would note that the two strongest outcomes (inflammation and liver health, graded Strong and Moderate respectively) rest on no pooled analysis\u2014meaning no single meta-analytic estimate exists to confirm that study results agree or that the effect is large enough to overcome publication bias. The inflammation grade is boosted by two independent meta-analyses, but those syntheses are cited without access to their methods or effect sizes, so one cannot verify whether they truly converge or simply cite overlapping small trials. For liver health, heterogeneous populations and study designs (TB drug toxicity is a different clinical problem from NAFLD) suggest the RCTs do not address a single condition, weakening any inference that NAC works for 'liver health' broadly. The muscle strength outcome, dominated by animal models and underpowered human data, does not yet meet the bar for clinical relevance.",
-    "what_would_change_the_picture": "A prospectively registered, adequately powered (n\u2265200) RCT in a single, clinically relevant population (e.g., NAFLD fibrosis progression, or age-related sarcopenia with muscle strength as a primary outcome) would settle whether NAC's biochemical effects translate to durable clinical benefit. A meta-analysis of liver health RCTs that accounts for population heterogeneity (e.g., separate pooling for NAFLD vs. drug-induced injury) and reports the I\u00b2 statistic would clarify whether inconsistency is real or whether apparent disagreement reflects small-study noise.",
+    "mechanism_check": "NAC's proposed mechanism\u2014glutathione repletion and antioxidant/anti-inflammatory action\u2014is plausible and supported by the biochemistry literature (visible in outcome framing). However, the clinical outcomes (liver health, muscle strength, cognition) require the leap from in vitro glutathione restoration to measurable organ function or symptom improvement in heterogeneous human diseases. The animal studies on cognition and muscle show proof-of-concept, but rodent models of sarcopenia or amyloid pathology do not guarantee efficacy in aged or diseased humans. For inflammation, the mechanism is more directly observable via biomarkers (cytokines, oxidative stress markers), which are measured in several RCTs, reducing the inferential gap.",
+    "strongest_counterargument": "A skeptic would note that no single outcome has both a formal pooled meta-analysis AND independent replication of its conclusions visible in these records. For muscle strength, cognition, and liver health, the engine itself states 'no pooled analysis confirms they agree.' For inflammation, two systematic reviews exist but their actual conclusions are not shown\u2014they could disagree, or one could be of poor quality. Furthermore, half of the inflammation studies do not report sample sizes, and many cognition studies are missing n entirely, meaning the apparent 'Strong' and 'Moderate' grades may rest on small, high-bias studies. Publication bias and selective reporting are not addressed in any visible record.",
+    "what_would_change_the_picture": "For liver health, muscle strength, and cognition: conduct a preregistered, adequately powered (n >200) double-blind RCT in a single homogeneous patient population (e.g., NAFLD, age-related sarcopenia, mild cognitive impairment) with a primary composite endpoint and formal pre-specified subgroup analyses. For inflammation: publish or make visible the full results (including I\u00b2, risk-of-bias assessments, and conclusion) of the two cited systematic reviews, and conduct a formal network meta-analysis if multiple drug/disease combinations exist, to quantify heterogeneity and identify which indications (if any) show robust effects.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

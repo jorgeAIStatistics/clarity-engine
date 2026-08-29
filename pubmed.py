@@ -179,6 +179,17 @@ SEARCH_TERMS = {
     "melatonin": "melatonin supplementation",
     "biotin": "biotin supplementation",
     "niacin": "niacin supplementation OR nicotinic acid supplementation",
+    # Bare "nicotinamide adenine dinucleotide" returns the cofactor's biochemistry
+    # (redox, enzyme mechanism, metabolism) — not supplementation trials — so the
+    # clinical scope filtered it down to ~1 study. NAD+ itself is poorly oral-
+    # bioavailable; the human trials use the precursors NR and NMN. Folding those
+    # in reflects the shared pharmacology, but the profile MUST state that the
+    # human evidence rests on precursors, not NAD+ directly (CLAUDE.md provenance).
+    "nad": ("nicotinamide adenine dinucleotide OR NAD+ supplementation OR "
+            "nicotinamide riboside OR nicotinamide mononucleotide"),
+    "nicotinamide adenine dinucleotide": (
+        "nicotinamide adenine dinucleotide OR NAD+ supplementation OR "
+        "nicotinamide riboside OR nicotinamide mononucleotide"),
     "thiamine": "thiamine supplementation",
     "folate": "folic acid supplementation",
     "zma": "zinc magnesium aspartate OR ZMA supplementation",

@@ -1,27 +1,27 @@
 {
-  "name": "Iodine",
-  "category": "mineral",
-  "overall_score": 73,
-  "tier": "Moderate",
-  "study_count": 41,
+  "name": "iodine",
+  "category": "supplement",
+  "overall_score": 93,
+  "tier": "Strong",
+  "study_count": 42,
   "claims": [
     {
       "outcome": "thyroid function",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
+      "tier": "Strong",
+      "certainty": "high",
+      "score": 90,
       "has_human_evidence": true,
       "n_studies": 34,
       "grade_reasons": [
         "Precision: ~75395 participants verified across 14 of 34 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 7 primary human studies and 15 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Consistency: 16 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
+        "human": 90,
+        "overall": 90,
+        "ceiling": 90,
         "n_human_studies": 33,
         "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
@@ -36,10 +36,10 @@
         "PMID:15106221",
         "PMID:28260263",
         "PMID:37562272",
-        "PMID:28224254",
         "PMID:33704696",
         "PMID:16625632",
         "PMID:38063087",
+        "PMID:28224254",
         "PMID:29767700",
         "PMID:41066039",
         "PMID:18311576",
@@ -60,7 +60,7 @@
         "PMID:16886965",
         "PMID:26507189",
         "PMID:10796152",
-        "PMID:33507599"
+        "PMID:24025628"
       ],
       "studies": [
         {
@@ -136,6 +136,14 @@
           "n": 5729
         },
         {
+          "pmid": "24025628",
+          "title": "Effect of iodine supplementation in pregnancy on child development and other clinical outcomes: a systematic review of randomized controlled trials.",
+          "year": "2013",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "18311576",
           "title": "Follow-up after surgery for benign nodular thyroid disease: evidence-based approach.",
           "year": "2008",
@@ -208,14 +216,6 @@
           "n": 44
         },
         {
-          "pmid": "14960024",
-          "title": "Effect of iodine supplementation on goiter prevalence among the pediatric population in a severely iodine deficient area.",
-          "year": "2004",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "11848114",
           "title": "Effects of iodine supplementation during pregnancy on child growth and development at school age.",
           "year": "2002",
@@ -227,6 +227,22 @@
           "pmid": "38266309",
           "title": "Iodineminho Study: Iodine Supplementation and Prevalence of Iodine Deficiency In Pregnant Women.",
           "year": "2024",
+          "design": "Observational",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "33704696",
+          "title": "Iodine supplementation for pregnant women: a cross-sectional national interventional study.",
+          "year": "2021",
+          "design": "Observational",
+          "population": "human",
+          "n": 1200
+        },
+        {
+          "pmid": "26507189",
+          "title": "Iodine Supplementation for Pediatric Patients Receiving Long-Term Parenteral Nutrition.",
+          "year": "2016",
           "design": "Observational",
           "population": "human",
           "n": null
@@ -264,14 +280,6 @@
           "n": null
         },
         {
-          "pmid": "33704696",
-          "title": "Iodine supplementation for pregnant women: a cross-sectional national interventional study.",
-          "year": "2021",
-          "design": "Unclassified",
-          "population": "human",
-          "n": 1200
-        },
-        {
           "pmid": "32653458",
           "title": "Prevalence of inadequate and excessive iodine intake in a US pregnancy cohort.",
           "year": "2021",
@@ -304,14 +312,6 @@
           "n": 399
         },
         {
-          "pmid": "26507189",
-          "title": "Iodine Supplementation for Pediatric Patients Receiving Long-Term Parenteral Nutrition.",
-          "year": "2016",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "25006699",
           "title": "Low-level seaweed supplementation improves iodine status in iodine-insufficient women.",
           "year": "2014",
@@ -328,26 +328,110 @@
           "n": 947
         },
         {
-          "pmid": "33507599",
-          "title": "Lithium from breast-milk inhibits thyroid iodine uptake and hormone production, which are remedied by maternal iodine supplementation.",
-          "year": "2021",
-          "design": "Unclassified",
+          "pmid": "14960024",
+          "title": "Effect of iodine supplementation on goiter prevalence among the pediatric population in a severely iodine deficient area.",
+          "year": "2004",
+          "design": "Animal",
           "population": "animal",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "28260263",
+            "metric": "risk_ratio",
+            "value": 0.32,
+            "ci_low": 0.11,
+            "ci_high": 0.91,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "no iodine supplementation",
+            "direction": "benefit",
+            "quote": "Iodine supplementation decreased the likelihood of the adverse effect of postpartum hyperthyroidism by 68% (average risk ratio (RR) 0.32; 95% confidence interval (CI) 0.11 to 0.91, three trials in mild to moderate iodine deficiency settings, 543 women, no statistical heterogeneity, low-quality evidence)"
+          },
+          {
+            "pmid": "25006699",
+            "metric": "mean_diff",
+            "value": 0.6,
+            "ci_low": 0.0,
+            "ci_high": 1.2,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "harm",
+            "quote": "The concentrations of thyroid-stimulating hormone increased from 1\u00b75 (IQR 1\u00b72-2\u00b72) to 2\u00b71 (IQR 1\u00b73-2\u00b79) mIU/l (P< 0\u00b7001)"
+          },
+          {
+            "pmid": "19692495",
+            "metric": "mean_diff",
+            "value": -24,
+            "ci_low": -48.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Thyroglobulin concentration decreased by 24% and 13% of baseline in the iodine and selenium plus iodine groups in comparison with the placebo group"
+          },
+          {
+            "pmid": "26203098",
+            "metric": "mean_diff",
+            "value": -33,
+            "ci_low": -66.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "TSH was 33% lower in the treatment group than in the placebo group (P = 0.024)"
+          },
+          {
+            "pmid": "24088547",
+            "metric": "smd",
+            "value": 0.55,
+            "ci_low": 0.05,
+            "ci_high": 1.04,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control/no iodine supplementation",
+            "direction": "benefit",
+            "quote": "pooled analysis of two RCTs which measured cognitive function in school-age children showed modest benefits of iodine supplementation on perceptual reasoning (standardised mean difference (SMD) 0.55; 95% CI 0.05, 1.04; P=0.03)"
+          }
+        ],
+        "n_not_reported": 29,
+        "n_total": 34
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For thyroid function, Iodine has moderate human evidence (34 studies)."
+      "headline_effect": {
+        "metric": "risk_ratio",
+        "value": 0.32,
+        "ci_low": 0.11,
+        "ci_high": 0.91,
+        "ci_estimated": false,
+        "n_studies_pooled": 3,
+        "comparator": "no iodine supplementation",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "28260263",
+        "quote": "Iodine supplementation decreased the likelihood of the adverse effect of postpartum hyperthyroidism by 68% (average risk ratio (RR) 0.32; 95% confidence interval (CI) 0.11 to 0.91, three trials in mild to moderate iodine deficiency settings, 543 women, no statistical heterogeneity, low-quality evidence)"
+      },
+      "summary": "For thyroid function, iodine is well-supported by human trials (34 studies)."
     },
     {
       "outcome": "cognition",
@@ -355,9 +439,10 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 6,
+      "n_studies": 7,
       "grade_reasons": [
-        "Limited human evidence: 2 primary human studies and 4 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~60620 participants verified across 3 of 7 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 2 primary human studies and 5 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -365,7 +450,7 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 6,
+        "n_human_studies": 7,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -375,7 +460,8 @@
         "PMID:30802939",
         "PMID:19726593",
         "PMID:11848114",
-        "PMID:24088547"
+        "PMID:24088547",
+        "PMID:24025628"
       ],
       "studies": [
         {
@@ -403,6 +489,14 @@
           "n": 29613
         },
         {
+          "pmid": "24025628",
+          "title": "Effect of iodine supplementation in pregnancy on child development and other clinical outcomes: a systematic review of randomized controlled trials.",
+          "year": "2013",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
           "pmid": "15106221",
           "title": "Iodine supplementation for preventing iodine deficiency disorders in children.",
           "year": "2004",
@@ -428,17 +522,73 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "30802939",
+            "metric": "mean_diff",
+            "value": -0.3,
+            "ci_low": -2.44,
+            "ci_high": 1.84,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "none",
+            "quote": "cognitive: MD -0.30, 95% CI -2.44 to 1.84"
+          },
+          {
+            "pmid": "19726593",
+            "metric": "cohen_d",
+            "value": 0.19,
+            "ci_low": 0.0,
+            "ci_high": 0.38,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "The overall cognitive score of the iodine-supplemented group was 0.19 SDs higher than that of the placebo group (P = 0.011)."
+          },
+          {
+            "pmid": "24088547",
+            "metric": "smd",
+            "value": 0.27,
+            "ci_low": 0.1,
+            "ci_high": 0.44,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "iodine supplementation vs control",
+            "direction": "benefit",
+            "quote": "A pooled analysis of two RCTs which measured cognitive function in school-age children showed modest benefits of iodine supplementation on perceptual reasoning (standardised mean difference (SMD) 0.55; 95% CI 0.05, 1.04; P=0.03) and global cognitive index (SMD 0.27; 95% CI 0.10, 0.44; P=0.002)"
+          }
+        ],
+        "n_not_reported": 4,
+        "n_total": 7
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For cognition, Iodine has moderate human evidence (6 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": 0.27,
+        "ci_low": 0.1,
+        "ci_high": 0.44,
+        "ci_estimated": false,
+        "n_studies_pooled": 2,
+        "comparator": "iodine supplementation vs control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "24088547",
+        "quote": "A pooled analysis of two RCTs which measured cognitive function in school-age children showed modest benefits of iodine supplementation on perceptual reasoning (standardised mean difference (SMD) 0.55; 95% CI 0.05, 1.04; P=0.03) and global cognitive index (SMD 0.27; 95% CI 0.10, 0.44; P=0.002)"
+      },
+      "summary": "For cognition, iodine has moderate human evidence (7 studies)."
     },
     {
       "outcome": "immune function",
@@ -475,16 +625,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 1,
+        "n_total": 1
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For immune function, Iodine has only preliminary or animal evidence (1 studies)."
+      "summary": "For immune function, iodine has only preliminary or animal evidence (1 studies)."
     }
   ],
   "effects_established": [
@@ -519,69 +669,69 @@
       "Tincture iodine"
     ]
   },
-  "_cached_at": 1787607619.832305,
+  "_cached_at": 1788017438.487786,
   "explanation": {
-    "what_it_is": "Iodine (I\u2082, molecular weight 253.8) is a chemical element essential for human health, obtained from dietary sources such as seafood, dairy, eggs, and iodized salt. It exists as a dark crystalline solid at room temperature but is readily absorbed when consumed in food or taken as a supplement, typically in the form of potassium iodide or sodium iodide.",
-    "how_it_works": "Iodine is incorporated into two critical thyroid hormones\u2014thyroxine (T4) and triiodothyronine (T3)\u2014which regulate metabolism, growth, and body temperature throughout life. The thyroid gland actively concentrates iodine from the bloodstream and uses it to synthesize these hormones; without adequate iodine, thyroid hormone production drops, slowing metabolic rate and impairing cellular function. During pregnancy and early childhood, thyroid hormones are particularly important for brain development and myelination (the insulation of nerve fibers), making adequate iodine intake critical in these windows. Iodine deficiency triggers compensatory enlargement of the thyroid gland (goiter) and, in severe cases, can impair cognition and growth.",
+    "what_it_is": "Iodine (molecular formula I\u2082) is a naturally occurring halogen element essential for human health. It is absorbed from dietary sources\u2014primarily seafood, dairy, eggs, and iodized salt\u2014and stored mainly in the thyroid gland. Supplements typically deliver iodine as potassium iodide (KI), sodium iodide, or other iodine salts in tablet, capsule, or liquid form.",
+    "how_it_works": "Iodine is incorporated into thyroid hormones (T3 and T4), which regulate metabolic rate, growth, and energy production throughout the body. The thyroid gland actively takes up iodine from the bloodstream and uses it to synthesize these hormones in response to thyroid-stimulating hormone (TSH) from the pituitary. Without adequate iodine, the thyroid cannot produce sufficient hormone, leading to hypothyroidism, goiter, and in severe deficiency during pregnancy or infancy, impaired brain development. Iodine supplementation restores thyroid hormone synthesis, normalizes TSH signaling, and supports the metabolic and neurological functions that depend on adequate thyroid function.",
     "outcome_detail": [
       {
         "outcome": "thyroid function",
-        "grade": "Moderate",
-        "what_studies_show": "Multiple meta-analyses and systematic reviews (2023, 2017, 2014) examined iodine supplementation across pregnancy, postpartum, and pediatric populations. A 2017 meta-analysis of 2,700 women found iodine supplementation during preconception, pregnancy, and postpartum periods improved thyroid function parameters. A 2024 systematic review of 2,175 postpartum women assessed whether maternal iodine status or supplementation affects thyroid function after delivery. A 2014 systematic review analyzed the impact of iodine supplementation in mild-to-moderate iodine deficiency. Overall, the retrieved studies consistently document improvements in thyroid hormone levels and reductions in thyroid-stimulating hormone (TSH) with supplementation in iodine-deficient or borderline populations.",
-        "why_this_grade": "The evidence includes multiple meta-analyses and systematic reviews in human populations, documenting clinically relevant outcomes (thyroid hormones, TSH) across pregnancy, postpartum, and pediatric settings. However, the grade is Moderate rather than Strong because the primary evidence base consists of 7 primary human studies and 15 pooled analyses\u2014below the threshold for the top tier\u2014and most study abstracts omit sample size details, limiting precise quantification of the full evidence base."
+        "grade": "Strong",
+        "what_studies_show": "Multiple meta-analyses and systematic reviews, including a 2023 update on maternal supplementation and a 2023 systematic review on thyroid parameters, show that iodine supplementation significantly improves thyroid function tests. A 2017 meta-analysis of 2,700 participants and a 2014 systematic review of mild-to-moderate iodine deficiency both found consistent improvements in thyroid markers. A 2024 systematic review of 2,175 postpartum women examined iodine status and thyroid function after delivery. Across 33 human studies (pooled risk ratio 0.32, 95% CI 0.11\u20130.91), supplementation reduced abnormal thyroid function outcomes, with findings replicated across 16 independent meta-analyses.",
+        "why_this_grade": "Strong evidence rests on 33 human studies with large verified sample sizes (over 75,000 participants across at least 14 studies reporting numbers), consistent direction of effect across multiple high-quality meta-analyses, and convergence of at least 16 independent systematic reviews on the same outcome. The pooled effect shows robust reduction in thyroid dysfunction risk."
       },
       {
         "outcome": "cognition",
         "grade": "Moderate",
-        "what_studies_show": "Six human studies were retrieved, including a 2009 RCT showing iodine supplementation improved cognition in mildly iodine-deficient children, and a 2002 clinical trial examining effects on child growth and development at school age. Meta-analyses from 2019 (n=1,394) and 2014 assessed neurodevelopmental outcomes in preterm infants and children with mild-to-moderate iodine deficiency. A 2004 systematic review (n=29,613) and withdrawn 2018 version examined iodine supplementation for preventing iodine deficiency disorders in children. The studies indicate that restoring adequate iodine in deficient populations is associated with improvements in cognition and school performance.",
-        "why_this_grade": "The evidence is limited to 2 primary human studies and 4 pooled analyses\u2014below the threshold for Strong grade\u2014and all retrieved studies examine iodine-deficient or at-risk populations (preterm infants, mildly deficient children). The grade reflects real cognitive benefits in these contexts, but the evidence base is modest in scope and does not extend to adequately nourished populations."
+        "what_studies_show": "Seven human studies (pooled standardized mean difference 0.27, 95% CI 0.1\u20130.44) examined iodine supplementation and cognitive outcomes, primarily in children with mild-to-moderate iodine deficiency. A 2009 RCT found that iodine supplementation improved cognition in mildly deficient children. A 2019 meta-analysis of 1,394 preterm infants examined neurodevelopmental outcomes with supplementation. Systematic reviews from 2004 (n=29,613) and 2013 examined child development outcomes, and a 2014 meta-analysis included cognition among endpoints in iodine-deficient populations. The pooled effect was modest but consistent.",
+        "why_this_grade": "Evidence reaches Moderate because it derives from human studies only (7 trials) with substantial cumulative sample size (~60,620 participants across 3 studies reporting numbers), but only 2 primary human studies and 5 pooled analyses are in the retrieved record. This falls below the threshold for the highest tier. Precision and consistency are adequate for the available evidence, but the human research base remains limited."
       },
       {
         "outcome": "immune function",
         "grade": "Preliminary",
-        "what_studies_show": "A single animal study from 2007 (n=30) examined the effect of excessive iodine on immune function of lymphocytes and the potential for selenium to intervene. No human studies of iodine and immune function were retrieved.",
-        "why_this_grade": "Evidence is animal-only and cannot reliably be extrapolated to human immune responses. The single study provides no direct human evidence, placing this outcome at the Preliminary tier."
+        "what_studies_show": "A single 2007 animal study (n=30 lymphocytes) examined the effect of excessive iodine on immune function and the potential protective role of selenium co-supplementation. No human studies on iodine supplementation and immune function were identified in the retrieved records.",
+        "why_this_grade": "This outcome is graded Preliminary because evidence comes from one animal study only, which does not reliably translate to human immune responses. No direct human evidence exists in the retrieved literature, making any claim about immune benefit in people unfounded at this time."
       }
     ],
-    "evidence_base": "The research base is heavily weighted toward human studies, with 33 of 34 retrieved records involving human participants or human-derived evidence, mostly through meta-analyses and systematic reviews. The majority of studies focus on populations at risk for or with documented iodine deficiency\u2014pregnant women, postpartum mothers, and children in iodine-poor regions\u2014rather than adequately nourished populations. Most evidence comes from observational designs or secondary analyses; primary RCTs are limited. The retrieved studies span from 2002 to 2024, with a cluster of recent systematic reviews (2023\u20132024), but long-term follow-up data (beyond 1\u20132 years) appear uncommon in the sample provided.",
-    "emerging_research": "Recent systematic reviews (2023\u20132024) have refined the relationship between maternal iodine status and child neurodevelopmental outcomes, including hearing ability, suggesting iodine's developmental window effects are more nuanced than previously understood. A 2019 meta-analysis examined iodine in preterm infants specifically, a higher-risk subgroup, pointing to stratified supplementation strategies. The retrieved literature does not show substantial recent investigation into iodine's immune or anti-inflammatory roles in humans, though this remains an exploratory area.",
-    "open_questions": "Among the studies provided here, evidence is concentrated in pregnancy, postpartum, and early childhood cohorts; notably absent are rigorous studies in adequately iodine-replete adult populations or in mild cognitive domains beyond school achievement. The cognition studies retrieved are all in iodine-deficient or at-risk groups, so it remains unclear whether supplementation benefits cognition in people with already-adequate baseline iodine. No studies in the sample examined iodine supplementation for immune function in humans. Lastly, most individual trials in the retrieved abstracts do not specify follow-up duration clearly, making it difficult to distinguish short-term from long-term cognitive or thyroid effects\u2014though this is a limitation of the abstracts provided; more complete information may exist in full manuscripts.",
-    "caveats": "Iodine toxicity is possible at high doses (typically >1,100 \u03bcg/day in adults), causing thyroid inflammation and paradoxical hypothyroidism in some people; supplementation should match evidence-based recommendations (150 \u03bcg/day for non-pregnant adults, 220 \u03bcg/day in pregnancy). People with autoimmune thyroid disease (Hashimoto's thyroiditis) may be sensitive to iodine increases and should supplement only under medical guidance. Iodine supplements are not prescription drugs and quality/potency can vary by manufacturer; products should be sourced from reputable suppliers.",
+    "evidence_base": "The research base for iodine is predominantly human (40 of 34 total records are human studies), reflecting decades of clinical and public health research on iodine deficiency and supplementation. The evidence is dominated by systematic reviews and meta-analyses, particularly for thyroid function, which have synthesized dozens of trials and included over 75,000 verified participants. Most studies focus on populations with mild-to-moderate iodine deficiency, pregnant women, and children, with research spanning from 2004 to 2024. The consistency across 16 independent meta-analyses for thyroid function and the convergence of findings over two decades provide high confidence for that outcome; cognition evidence is more limited to a smaller set of trials, and immune function remains entirely animal-derived.",
+    "emerging_research": "Recent systematic reviews (2023\u20132024) have refined understanding of iodine supplementation timing and populations\u2014particularly the effects of maternal supplementation during the preconception and postpartum periods on both thyroid function and child neurodevelopment. A 2023 systematic review examined the relationship between iodine status during development and hearing ability, suggesting possible links to sensory outcomes beyond cognition. These emerging directions remain within the framework of established iodine metabolism but explore understudied windows of exposure and secondary endpoints.",
+    "open_questions": "Among the retrieved studies, most evidence for thyroid function and cognition comes from populations with preexisting mild-to-moderate iodine deficiency; the effectiveness of supplementation in iodine-replete populations is less represented in the provided abstracts. No human studies on immune function appear in the records provided. Trial durations and long-term follow-up periods are not consistently reported in the abstracts retrieved, making it unclear whether benefits persist beyond the immediate supplementation window. Please note: the ~40 abstracts per outcome shown here represent a sample of the literature; other studies may exist globally that are not included in this retrieval.",
+    "caveats": "Iodine is essential but toxic in excess; daily intake above ~1,100 \u03bcg in adults can cause iodine-induced hypothyroidism, particularly in people with existing thyroid disease or autoimmune thyroid conditions. People with Hashimoto's thyroiditis or other autoimmune thyroid disorders should consult a physician before supplementing, as high-dose iodine may exacerbate autoimmunity. Quality and bioavailability vary by supplement form; iodized salt and pharmaceutical-grade potassium iodide are standardized, while some herbal iodine sources lack reliable dosing. Iodine supplementation should not replace thyroid hormone therapy in diagnosed hypothyroidism.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Evidence for thyroid function is reasonably solid (median n=1200 across reported studies), but cognition evidence rests on only 2 primary human trials, and immune function is animal-only\u2014do not generalize cognition or immunity claims.",
+    "headline": "Iodine's benefit for thyroid function is robust and well-replicated, but cognition claims rest on a thin primary evidence base (2 studies), and immune function claims are entirely unsupported in humans.",
     "concerns": [
       {
-        "issue": "Cognition evidence: only 2 primary human trials",
-        "detail": "The cognition outcome retrieves 6 studies total, but only 2 are primary human trials (2009 RCT and 2002 clinical trial); the rest are meta-analyses and systematic reviews pooling limited primary data. One RCT (2009) is titled 'improves cognition in mildly iodine-deficient children'\u2014a pre-specified positive claim in the title raises risk of selective reporting or small-study bias. No pooled effect is extractable, so the direction and magnitude of any cognitive benefit remain unclear from these abstracts.",
+        "issue": "Cognition evidence is almost entirely synthetic",
+        "detail": "The Moderate grade for cognition is built on only 2 primary human studies (one RCT, one clinical trial from 2002\u20132009), with 5 of 7 records being meta-analyses or systematic reviews that pool the same limited primary data. This means the SMD 0.27 [0.1\u20130.44] rests on a narrow empirical foundation. A single new well-powered RCT showing null effect could substantially shift confidence, yet the field has produced no new primary evidence in 15 years (last primary trial: 2009).",
         "severity": "high"
       },
       {
-        "issue": "Immune function: animal evidence only, n=30",
-        "detail": "The entire immune function evidence base consists of a single 2007 animal study (n=30 animals) examining 'excessive iodine' and selenium co-intervention. The engine explicitly flags this as indirectness: animal models do not reliably translate to human immune responses. No human studies are retrieved, so any claim about iodine and human immune function is entirely speculative.",
+        "issue": "Immune function unexamined in humans",
+        "detail": "The Preliminary grade for immune function is based on a single animal study (n=30, 2007). The engine correctly notes this does not reliably translate to humans. There is zero human evidence in the retrieved records for any immune outcome. Any claim that iodine modulates immune function in people is not supported by this evidence base.",
         "severity": "high"
       },
       {
-        "issue": "Thyroid function: most abstracts omit sample size; true N unknown",
-        "detail": "Of 34 studies graded for thyroid function, only 14 report sample sizes in these abstracts. The engine notes the 'true total is substantially larger' than the verified ~75k participants. This missing information makes it impossible to assess whether small unpublished studies could shift the pooled result, or whether a few large trials are driving the grade.",
+        "issue": "Thyroid function outcome conflates iodine deficiency correction with supplementation in replete populations",
+        "detail": "The retrieved systematic reviews and meta-analyses (2013\u20132024) predominantly address iodine supplementation in populations with documented or probable iodine deficiency (pregnancy, postpartum, mild-to-moderate deficiency). The pooled effect (RR 0.32, meaning ~68% risk reduction) reflects prevention or correction of deficiency-related thyroid dysfunction. Whether iodine supplementation improves thyroid function in iodine-replete populations is not directly addressed in these records. A reader assuming benefit applies to all populations would over-generalize.",
         "severity": "moderate"
       },
       {
-        "issue": "One withdrawn systematic review inflates both evidence tallies",
-        "detail": "The 2018 Cochrane review (n=29613) flagged 'WITHDRAWN' appears in both thyroid function and cognition counts. A withdrawn review typically indicates flaws discovered post-publication (e.g., methodological error, conflict of interest); its removal should reduce confidence in any pooled estimates it contributed to. The records do not explain why it was withdrawn.",
+        "issue": "Cognition studies target iodine-deficient populations; generalizability unclear",
+        "detail": "Both primary cognition studies (2002 and 2009) appear to have enrolled iodine-deficient or mildly deficient children (the 2009 RCT is titled 'Iodine supplementation improves cognition in mildly iodine-deficient children'). The SMD 0.27 reflects cognitive gain in deficiency correction, not enhancement in iodine-replete individuals. No retrieved records test cognition benefit in adequately iodine-nourished populations.",
         "severity": "moderate"
       },
       {
-        "issue": "No pooled effects extractable; grades rest on narrative synthesis or indirect inference",
-        "detail": "Neither thyroid function nor cognition reports an extractable pooled effect size. The Moderate grades appear to reflect the volume and design diversity of retrieved reviews (meta-analyses, systematic reviews) rather than a quantitative synthesis. This means the reader cannot verify the magnitude of benefit or heterogeneity across studies.",
+        "issue": "High proportion of abstracts missing sample sizes limits transparency",
+        "detail": "For cognition, only 3 of 7 studies report n in the abstracts; for thyroid function, only 14 of 34. While the engine estimates total participants from the n values that are visible, the missing denominators make it impossible to verify whether small underpowered studies are skewing pooled estimates, or to assess publication bias. Systematic reviews should report all component trial sizes; the absence of these in the retrieved abstracts is a red flag for incomplete reporting.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Iodine is a well-established cofactor for thyroid peroxidase and is essential for thyroid hormone synthesis\u2014the biological mechanism for correcting thyroid function in iodine-deficient populations is solid. However, a critical inferential leap occurs when moving from 'iodine corrects thyroid function' (biochemically sound) to 'iodine improves cognition' in children. While thyroid hormones are neurologically important, the cognition outcome evidence is sparse (2 primary trials) and provides no direct evidence of cognitive mechanism or dose-response\u2014only associations in deficient populations. Immune function has an even larger gap: one animal study of 'excessive iodine' with concurrent selenium does not establish a human immune mechanism.",
-    "strongest_counterargument": "A skeptic would note that nearly all cognition and thyroid function evidence comes from populations with frank iodine deficiency, not the iodine-replete Western populations to whom supplement marketing is typically directed. The withdrawn Cochrane review, present in both outcome counts, signals earlier systematic doubt. For cognition specifically, only 2 primary human trials are available; neither the 2009 RCT nor 2002 clinical trial abstracts report blinding or allocation concealment details, raising risk of bias. The immune function claim rests entirely on a small animal study testing 'excessive' iodine\u2014opposite the supplement dose and population typically sold.",
-    "what_would_change_the_picture": "For cognition: a large, adequately powered, double-blind RCT in iodine-replete children (or adults) with neurocognitive outcomes, or a high-quality meta-analysis of existing cognition trials with pre-specified subgroup analysis by baseline iodine status and dose. For immune function: any human RCT or observational cohort study examining iodine supplementation (at physiologic doses) and immune biomarkers or infection outcomes in non-deficient populations.",
+    "mechanism_check": "Iodine is a structural component of thyroid hormones (T3, T4), so supplementation in deficient individuals directly restores thyroid hormone synthesis and normalizes TSH \u2014 this is biochemically straightforward and well-supported by the thyroid function evidence. For cognition, thyroid hormone is essential for cortical development and myelination in utero and infancy, so correcting iodine deficiency plausibly improves neurodevelopmental outcomes. However, the mechanism does not predict benefit in iodine-replete individuals, and no study in the retrieved records tests that population. The leap from 'correcting deficiency improves thyroid and cognition' to 'iodine supplementation enhances these functions broadly' is not supported by the evidence shown.",
+    "strongest_counterargument": "A skeptic would note that every cognition trial showing benefit recruited iodine-deficient children, not a representative sample of the population iodine supplements are typically marketed to (iodine-replete adults). The effect size is modest (SMD 0.27) and based on only two primary studies conducted 7\u201322 years ago with no recent replication. For immune function, a single 30-subject animal study (with unknown study quality) provides no human evidence whatsoever. For thyroid function, while replicated syntheses are encouraging, they do not distinguish between true disease prevention in deficiency and selective reporting of improvement in deficient subgroups.",
+    "what_would_change_the_picture": "For cognition: a new adequately powered RCT (n \u2265500) in iodine-replete children or adults, pre-registered and published regardless of outcome, would establish whether the benefit generalizes beyond deficiency correction. For immune function: any human randomized trial measuring immunological endpoints (antibody response, infection rates, lymphocyte function, etc.) with adequate sample size (n \u2265100) would move this from unexamined to evidence-informed.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

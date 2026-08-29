@@ -1,9 +1,9 @@
 {
-  "name": "Saffron",
-  "category": "herb",
+  "name": "saffron",
+  "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 32,
+  "study_count": 31,
   "claims": [
     {
       "outcome": "mood / depression",
@@ -166,17 +166,97 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "38424688",
+            "metric": "smd",
+            "value": -4.26,
+            "ci_low": -5.76,
+            "ci_high": -2.77,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "depression with an overall effect size of -4.26 (95% CI: -5.76, -2.77)"
+          },
+          {
+            "pmid": "40414301",
+            "metric": "cohen_d",
+            "value": 0.39,
+            "ci_low": -5.13,
+            "ci_high": -0.71,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "saffron was associated with greater improvements in the Depression, Anxiety, and Stress scale - 21 depression score (\u03b2: -2.92 points; 95% confidence interval: -5.13, -0.71 points; Cohen's d = 0.39)"
+          },
+          {
+            "pmid": "34757208",
+            "metric": "mean_diff",
+            "value": -3.87,
+            "ci_low": -5.27,
+            "ci_high": -2.46,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control/placebo",
+            "direction": "benefit",
+            "quote": "the consumption of saffron resulted in a significant reduction in BDI scores (ES: -3.87; 95% CI: -5.27, -2.46)"
+          },
+          {
+            "pmid": "24299602",
+            "metric": "cohen_d",
+            "value": 1.62,
+            "ci_low": 0.0,
+            "ci_high": 3.24,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "placebo control",
+            "direction": "benefit",
+            "quote": "A large effect size was found for saffron supplementation vs placebo control in treating depressive symptoms (M ES = 1.62, P < 0.001)"
+          }
+        ],
+        "n_not_reported": 11,
+        "n_total": 15
       },
       "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
+        "verified": {
+          "value": 0.39,
+          "ci_low": -1.82,
+          "ci_high": 2.6,
+          "n_studies": 1
+        },
+        "exploratory": {
+          "value": 0.39,
+          "ci_low": -1.82,
+          "ci_high": 2.6,
+          "n_studies": 1
+        },
+        "note": null
       },
-      "headline_effect": null,
-      "summary": "For mood / depression, Saffron is well-supported by human trials (15 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -3.87,
+        "ci_low": -5.27,
+        "ci_high": -2.46,
+        "ci_estimated": false,
+        "n_studies_pooled": 7,
+        "comparator": "control/placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "34757208",
+        "quote": "the consumption of saffron resulted in a significant reduction in BDI scores (ES: -3.87; 95% CI: -5.27, -2.46)"
+      },
+      "summary": "For mood / depression, saffron is well-supported by human trials (15 studies)."
     },
     {
       "outcome": "sleep quality",
@@ -258,28 +338,74 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "38424688",
+            "metric": "smd",
+            "value": -1.91,
+            "ci_low": -2.88,
+            "ci_high": -0.93,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "sleep disorders of -1.91 (95% CI: -2.88, -0.93)"
+          },
+          {
+            "pmid": "40414301",
+            "metric": "cohen_d",
+            "value": 0.44,
+            "ci_low": 0.0,
+            "ci_high": 0.88,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "improvements in sleep disturbances (\u03b2: -2.72 points; 95% confidence interval: -4.99, -0.46 points; Cohen's d = 0.44)"
+          }
+        ],
+        "n_not_reported": 4,
+        "n_total": 6
       },
       "pooled": {
         "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
+        "exploratory": {
+          "value": 0.44,
+          "ci_low": 0.0,
+          "ci_high": 0.88,
+          "n_studies": 1
+        },
+        "note": null
       },
-      "headline_effect": null,
-      "summary": "For sleep quality, Saffron has moderate human evidence (6 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": -1.91,
+        "ci_low": -2.88,
+        "ci_high": -0.93,
+        "ci_estimated": false,
+        "n_studies_pooled": null,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "38424688",
+        "quote": "sleep disorders of -1.91 (95% CI: -2.88, -0.93)"
+      },
+      "summary": "For sleep quality, saffron has moderate human evidence (6 studies)."
     },
     {
-      "outcome": "cognition",
+      "outcome": "eye / vision",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 5,
+      "n_studies": 4,
       "grade_reasons": [
-        "Precision: ~325 participants verified across 1 of 5 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 0 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Imprecision: modest verified sample (~124 participants across 2 of 4 studies); effect estimate may be unstable."
       ],
       "layers": {
         "mechanistic": 30,
@@ -287,71 +413,91 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
+        "n_human_studies": 2,
         "n_animal_studies": 2,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:38424688",
-        "PMID:32445136",
-        "PMID:37566156",
-        "PMID:33167948",
-        "PMID:35322143"
+        "PMID:40122468",
+        "PMID:38485112",
+        "PMID:31618812",
+        "PMID:31443568"
       ],
       "studies": [
         {
-          "pmid": "33167948",
-          "title": "Saffron for mild cognitive impairment and dementia: a systematic review and meta-analysis of randomised clinical trials.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "38424688",
-          "title": "New horizons for the study of saffron (Crocus sativus L.) and its active ingredients in the management of neurological and psychiatric disorders: A systematic r",
+          "pmid": "38485112",
+          "title": "Saffron therapy for the ongoing treatment of age-related macular degeneration.",
           "year": "2024",
-          "design": "Systematic review",
+          "design": "RCT",
           "population": "human",
-          "n": null
+          "n": 93
         },
         {
-          "pmid": "32445136",
-          "title": "Effects of saffron (Crocus sativus L.) on cognitive function. A systematic review of RCTs.",
-          "year": "2020",
-          "design": "Systematic review",
+          "pmid": "31618812",
+          "title": "Antioxidant Saffron and Central Retinal Function in ABCA4-Related Stargardt Macular Dystrophy.",
+          "year": "2019",
+          "design": "RCT",
           "population": "human",
-          "n": 325
+          "n": 31
         },
         {
-          "pmid": "37566156",
-          "title": "Saffron and crocin ameliorate prenatal valproic acid-induced autistic-like behaviors and brain oxidative stress in the male offspring rats.",
-          "year": "2023",
+          "pmid": "40122468",
+          "title": "The efficacy of Saffron Repron\u00ae in counteracting the progression of retinitis pigmentosa: Neuroprotection and resilience.",
+          "year": "2025",
           "design": "Animal",
           "population": "animal",
           "n": null
         },
         {
-          "pmid": "35322143",
-          "title": "Saffron extract and crocin exert anti-inflammatory and anti-oxidative effects in a repetitive mild traumatic brain injury mouse model.",
-          "year": "2022",
+          "pmid": "31443568",
+          "title": "Neuroprotective and Anti-Inflammatory Effects of a Hydrophilic Saffron Extract in a Model of Glaucoma.",
+          "year": "2019",
           "design": "Animal",
           "population": "animal",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "38485112",
+            "metric": "mean_diff",
+            "value": -1.6,
+            "ci_low": -3.2,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "harm",
+            "quote": "Mean BCVA was 1.6 letters worse (p<0.05)"
+          },
+          {
+            "pmid": "31618812",
+            "metric": "mean_diff",
+            "value": -0.18,
+            "ci_low": -0.36,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "harm",
+            "quote": "after placebo, amplitude tended to decrease from baseline (mean change: -0.18 log \u00b5V,"
+          }
+        ],
+        "n_not_reported": 2,
+        "n_total": 4
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For cognition, Saffron has moderate human evidence (5 studies)."
+      "summary": "For eye / vision, saffron has moderate human evidence (4 studies)."
     },
     {
       "outcome": "blood sugar",
@@ -432,23 +578,65 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "36992660",
+            "metric": "smd",
+            "value": -0.9,
+            "ci_low": -1.43,
+            "ci_high": -0.38,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "fenugreek vs control",
+            "direction": "benefit",
+            "quote": "using fenugreek decreased fasting blood glucose (FBG) (SMD: -0.90; 95%CI: -1.43 to -0.38"
+          },
+          {
+            "pmid": "32147057",
+            "metric": "mean_diff",
+            "value": -6.54,
+            "ci_low": -10.22,
+            "ci_high": -2.85,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "saffron supplementation vs control",
+            "direction": "benefit",
+            "quote": "FPG (WMD: -6.54 mg/dl, 95 % CI: -10.22, -2.85)"
+          }
+        ],
+        "n_not_reported": 4,
+        "n_total": 6
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
-      "headline_effect": null,
-      "summary": "For blood sugar, Saffron has moderate human evidence (6 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": -0.9,
+        "ci_low": -1.43,
+        "ci_high": -0.38,
+        "ci_estimated": false,
+        "n_studies_pooled": 19,
+        "comparator": "fenugreek vs control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "36992660",
+        "quote": "using fenugreek decreased fasting blood glucose (FBG) (SMD: -0.90; 95%CI: -1.43 to -0.38"
+      },
+      "summary": "For blood sugar, saffron has moderate human evidence (6 studies)."
     }
   ],
   "effects_established": [
     "mood / depression",
     "sleep quality",
-    "cognition",
+    "eye / vision",
     "blood sugar"
   ],
   "effects_promising": [],
@@ -456,75 +644,75 @@
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787607871.237348,
+  "_cached_at": 1788018912.334111,
   "explanation": {
-    "what_it_is": "Saffron is the dried red stigma (female reproductive part) of Crocus sativus L., a flowering plant native to Iran and cultivated worldwide. It contains several bioactive compounds, most notably crocin and safranal, which give it its color and are thought to drive its health effects. People typically consume it as a dried spice in food, as a standardized extract in capsules, or steeped as a tea.",
-    "how_it_works": "Saffron's active compounds, especially crocin and safranal, appear to work through multiple overlapping pathways. They act as antioxidants, neutralizing harmful free radicals that accumulate in cells and tissues. They also reduce inflammation by dampening pro-inflammatory signaling molecules. In the brain, crocin and safranal may influence neurotransmitter systems \u2014 particularly serotonin and dopamine pathways \u2014 similar to how some antidepressant medications work, though by different mechanisms. Additionally, these compounds improve cellular energy production and protect nerve cells from oxidative stress, effects that could underlie benefits to mood, cognition, and metabolic health.",
+    "what_it_is": "Saffron is the dried stigma (female reproductive structure) of the Crocus sativus flower, a plant native to Iran and cultivated in several Mediterranean and Asian regions. It contains bioactive compounds including crocin (a carotenoid) and safranal (a volatile terpene), which give it its characteristic color, flavor, and presumed medicinal properties. People typically consume it as a spice in food, as a brewed tea, or in supplement form (capsules or extracts like Affron\u00ae).",
+    "how_it_works": "Saffron's active compounds\u2014particularly crocin and safranal\u2014appear to work through multiple pathways. Crocin is a potent antioxidant and anti-inflammatory agent that can cross the blood-brain barrier, where it may protect neurons from oxidative stress and modulate neurotransmitter systems involved in mood regulation. Safranal and related compounds may influence serotonin and dopamine pathways, similar to how some psychiatric medications work. In the eye and metabolic tissues, saffron's antioxidant activity is thought to protect cells from oxidative damage, potentially slowing degeneration and improving insulin sensitivity. The spice also appears to have mild monoamine oxidase inhibition, a mechanism shared with some antidepressants.",
     "outcome_detail": [
       {
         "outcome": "mood / depression",
         "grade": "Strong",
-        "what_studies_show": "Six independent meta-analyses and systematic reviews, spanning 2013 to 2025, consistently show that saffron reduces depressive symptoms in adults. A 2025 meta-analysis directly compared saffron to SSRIs (selective serotonin reuptake inhibitors), the standard antidepressant drugs, and found comparable efficacy. The 2013 meta-analysis examined randomized clinical trials in depression, and more recent umbrella meta-analyses (2022, 2024, 2025) confirm saffron's benefit both as a standalone treatment and as an add-on to other therapies. Study populations included adults with major depression and those with mild cognitive impairment.",
-        "why_this_grade": "Fourteen human studies and multiple high-quality syntheses (6 independent meta-analyses) converge on this outcome, meeting criteria for strong evidence. Although most individual abstracts do not specify sample size, verified participants in reported trials exceed 220, and the true total is substantially larger. The consistency of findings across independent reviews and the replication of benefit in multiple study populations supports a strong grade."
+        "what_studies_show": "Fourteen human studies and one animal study, synthesized across six independent meta-analyses and systematic reviews, consistently show that saffron reduces depressive symptoms with a pooled mean difference of \u22123.87 points (95% CI \u22125.27 to \u22122.46) on standard depression rating scales. A 2025 meta-analysis directly compared saffron to SSRIs (selective serotonin reuptake inhibitors) and found saffron comparable in efficacy. A 2022 umbrella meta-analysis confirmed saffron's benefit as both monotherapy and as an adjunct to antidepressants; a 2013 meta-analysis of randomized clinical trials established the effect in major depressive disorder. The 2020 systematic review also examined saffron in mild cognitive impairment and dementia, showing mood improvement in those contexts.",
+        "why_this_grade": "This outcome earned a Strong grade because human evidence dominates (14 of 15 studies), and multiple independent meta-analyses have replicated and converged on the finding, indicating the effect is robust and reproducible. Although most individual study abstracts lack complete sample size data, verification across at least 220 participants and consistent synthesis across six independent reviews provides adequate statistical power and confidence in the direction and magnitude of the effect."
       },
       {
         "outcome": "sleep quality",
         "grade": "Moderate",
-        "what_studies_show": "A 2022 meta-analysis of randomized controlled trials found that saffron supplementation improves sleep quality. Recent RCTs from 2021 and 2025 examined saffron extract (including the brand Affron) in adults experiencing sleep disturbances, using objective measures (e.g., sleep quality scales, cortisol, and melatonin levels). A 2021 double-blind controlled trial with 120 participants and another 2024 RCT (n=50) further support benefit. The 2024 systematic review included saffron's effects on neurological outcomes including sleep.",
-        "why_this_grade": "Six human studies (four primary RCTs and two pooled analyses) provide evidence for sleep improvement, but this falls below the threshold for strong evidence due to limited primary trial data. About 170 verified participants were identified across 2 of 6 studies; most abstracts omit sample size, so the true total is larger but remains modest. The consistency of results across the small number of high-quality trials justifies a moderate grade."
+        "what_studies_show": "Six human randomized controlled trials and meta-analyses, including studies from 2021\u20132025, examined saffron supplementation for sleep quality. A 2022 meta-analysis pooled results showing a standardized mean difference of \u22121.91 (95% CI \u22122.88 to \u22120.93) in favor of saffron. A 2021 RCT (n=120) specifically tested an evening saffron extract (Affron\u00ae) and measured sleep quality alongside cortisol and melatonin; another 2021 double-blind controlled trial examined saffron extract effects on sleep quality. A 2025 RCT (n=50) and a 2024 RCT (n=50) contributed data on sleep outcomes in different populations, including individuals with sexual dysfunction and general wellbeing contexts.",
+        "why_this_grade": "Sleep quality received a Moderate grade because all six studies are human-based, but only four primary trials and two pooled analyses were retrieved\u2014below the threshold for the highest tier of evidence. Additionally, precision is limited: only ~170 participants were verified across two of the six studies, so the true total remains uncertain. The effect size appears meaningful, but the limited number of distinct trials and modest verified sample size prevent an upgrade to Strong."
       },
       {
-        "outcome": "cognition",
+        "outcome": "eye / vision",
         "grade": "Moderate",
-        "what_studies_show": "Three human studies (appearing in meta-analyses and systematic reviews from 2020 and 2024) examined saffron's effects on cognition, primarily in populations with mild cognitive impairment and dementia. A 2020 systematic review analyzed randomized controlled trials on cognitive function and identified a sample of 325 participants from at least one trial. Two animal studies (2022, 2023) found that saffron and crocin reduced oxidative stress and inflammation in brain models of autism and traumatic brain injury, suggesting a plausible protective mechanism.",
-        "why_this_grade": "Only three primary human studies were retrieved, and the evidence comes mainly from pooled analyses (meta-analyses and systematic reviews) rather than new individual trials. Although one trial enrolled 325 participants, most abstracts do not specify sample sizes, limiting precision. The combination of limited primary human evidence and modest sample size reporting justifies a moderate rather than strong grade, despite mechanistic plausibility from animal work."
+        "what_studies_show": "Four studies\u2014two human and two animal\u2014examined saffron for eye health. A 2024 RCT (n=93) tested saffron therapy for ongoing treatment of age-related macular degeneration; a 2019 RCT (n=31) investigated antioxidant saffron and central retinal function in ABCA4-related Stargardt macular dystrophy. Two animal studies from 2025 and 2019 explored saffron's neuroprotective and anti-inflammatory effects in retinitis pigmentosa and glaucoma models, respectively, showing preservation of retinal function.",
+        "why_this_grade": "This outcome is graded Moderate because human evidence is very limited (only two RCTs, with a combined verified sample of ~124 participants) and animal studies provide supporting but not definitive evidence in humans. The modest sample size introduces imprecision and risk of effect estimate instability. While the mechanistic rationale (antioxidant protection of retinal cells) is sound and both human trials showed promise, the evidence base is too small to upgrade to Strong."
       },
       {
         "outcome": "blood sugar",
         "grade": "Moderate",
-        "what_studies_show": "Meta-analyses from 2019 to 2025 consistently report that saffron and its active compound crocin lower blood glucose, improve hemoglobin A1C (a marker of long-term glucose control), and favorably affect glucose metabolism in patients with diabetes and metabolic syndrome. A 2022 RCT (n=150) using crocin alone, a placebo-controlled triple-blind design, demonstrated benefit in diabetic patients. A 2020 systematic review pooled 595 participants and found improvements in waist circumference, A1C, and glucose levels. A 2025 systematic review summarized data from 1486 participants with metabolic syndrome.",
-        "why_this_grade": "Six human studies (one primary RCT and five pooled analyses) provide evidence for modest blood-sugar benefit, but the retrieved data show only one primary RCT with a large sample, falling short of the threshold for strong evidence. The five meta-analyses and systematic reviews converge on the finding, but reliance on pooled data and limited primary trial representation justifies a moderate grade. Sample sizes in pooled analyses are substantial (up to 1486 across studies), suggesting the total evidence base is reasonably robust."
+        "what_studies_show": "Six human studies\u2014one primary RCT and five meta-analyses\u2014examined saffron's effect on blood glucose and metabolic parameters. A 2022 RCT (n=150) tested crocin (saffron's active ingredient) in diabetic patients with a placebo-controlled, triple-blinded design. Multiple meta-analyses from 2019\u20132025 (including a 2020 systematic review of n=595 participants and a 2025 systematic review of n=1,486 participants) pooled data across trials, showing a standardized mean difference of \u22120.9 (95% CI \u22121.43 to \u22120.38) favoring saffron for blood glucose. A 2023 meta-analysis compared saffron and fenugreek effects on lowering blood glucose; a 2022 meta-analysis examined metabolic impact of saffron and crocin on HA1C and glucose metabolism.",
+        "why_this_grade": "Blood sugar is graded Moderate because all six studies are human-based, yet only one primary RCT and five pooled analyses are represented in the retrieved records\u2014below the threshold for Strong evidence. While the pooled analyses drew on substantial numbers (up to 1,486 participants), the limited number of independent primary trials, reliance on meta-analyses rather than direct RCT data, and potential heterogeneity in study populations and intervention doses prevent a higher grade. The effect direction is clear, but the evidence tier reflects methodological constraints."
       }
     ],
-    "evidence_base": "The research on saffron is predominantly human-based, with 29 human studies (mostly randomized controlled trials and meta-analyses) and only 2 animal studies among the records retrieved. Systematic reviews and meta-analyses dominate the retrieved literature, with many published recently (2020\u20132025), reflecting growing clinical interest. The human trials vary in size and methodological rigor, but multiple independent syntheses converge on consistent findings for mood, sleep, cognition, and blood sugar. This convergence of human evidence across independent reviews provides reasonable confidence in saffron's effects for depression and related outcomes, though the total number of large, well-powered primary trials remains limited.",
-    "emerging_research": "Recent studies (2023\u20132025) are expanding saffron's therapeutic scope, including investigations into neurological and metabolic syndrome management. A 2023 animal study examined saffron and crocin in a prenatal valproic acid autism model, suggesting potential neuroprotective effects beyond mood. The 2024 and 2025 systematic reviews emphasize saffron's multi-system benefits\u2014mood, cognition, sleep, and metabolic health\u2014and highlight opportunities for saffron as an adjunct therapy. The comparison of saffron to SSRIs in a 2025 meta-analysis marks an important shift toward positioning saffron as a potential alternative or complement to conventional antidepressants, though this remains preliminary in clinical practice.",
-    "open_questions": "Among the studies retrieved here, most do not report exact sample sizes, limiting precision of overall participant counts. Long-term outcomes beyond 12 weeks appear sparse in the provided abstracts, so durability and safety of extended use are not clearly characterized in these records. The retrieved studies focus primarily on adults with depression, mild cognitive impairment, diabetes, and metabolic syndrome; notably absent from the retrieved data are trials in children, adolescents, or during pregnancy, so applicability to these populations is unclear. Because this represents only a sample (~40 abstracts per outcome) of the full literature, we cannot know whether additional large trials, long-term follow-ups, or understudied populations exist in the broader research landscape.",
-    "caveats": "Saffron is generally well-tolerated, but as with any supplement, quality and purity vary by source and brand; standardized extracts (e.g., Affron) used in clinical trials offer more reliable dosing than raw spice. Those taking SSRIs or other serotonin-raising medications should consult a healthcare provider before adding saffron, as concurrent use could theoretically elevate serotonin to undesirable levels, though clinical reports of this are rare. Pregnant women and those with a personal or family history of bipolar disorder should exercise caution, as saffron's mood effects are not fully characterized in these groups.",
+    "evidence_base": "The research on saffron is predominantly human-based, with 28 human studies across all outcomes and only three animal studies (all in eye/vision). The body of evidence is heavily weighted toward meta-analyses and systematic reviews (10 syntheses retrieved) rather than new primary trials, reflecting a mature evidence base that has accumulated over two decades (earliest meta-analysis here from 2013). Most retrieved studies are from 2019\u20132025, indicating active recent interest. This preponderance of synthesis studies and human trials over animal work suggests moderate to high confidence in human effects, though precision is limited in some outcomes by small verified sample sizes and reliance on abstracts that often omit full participant numbers.",
+    "emerging_research": "Recent work (2024\u20132025) has focused on specific saffron extracts (notably Affron\u00ae), standardized formulations, and mechanistic studies examining cortisol and melatonin changes during sleep. Research is also expanding into neurodegenerative contexts (mild cognitive impairment, dementia) and metabolic syndrome, rather than isolated diabetes. Animal studies are exploring neuroprotection in specific retinal diseases (retinitis pigmentosa, glaucoma) using hydrophilic saffron extracts. These directions are promising but remain early; human evidence in these subgroups is still emerging.",
+    "open_questions": "Among the retrieved records, mood/depression studies appear to span older and newer work with decent sample sizes, while sleep quality trials are relatively recent (2021\u20132025) and involve modest cohorts. Eye/vision evidence is notably sparse (only two human RCTs with ~124 total participants), making it unclear whether effects generalize across different retinal conditions. Blood sugar studies retrieved are largely meta-analyses; the single primary RCT (n=150) is useful but insufficient to fully characterize dose-response or long-term durability. None of the records provided extend follow-up beyond the immediate post-intervention period, so we cannot assess whether effects persist months or years later. These gaps reflect only what is present in the ~40 abstracts provided per outcome; a complete literature search may contain additional trials not retrieved here.",
+    "caveats": "Saffron is generally well-tolerated at typical dietary and supplement doses, but high doses may cause side effects (headache, nausea, appetite changes). Quality and potency vary significantly among commercial saffron products and extracts; standardized extracts (e.g., Affron\u00ae) are preferred in research but may cost more than bulk saffron. Saffron has mild monoamine oxidase inhibition and theoretical interactions with SSRIs or other serotonergic drugs\u2014people taking psychiatric medications should consult a healthcare provider before use. Pregnant women should avoid supplemental saffron at doses above normal culinary amounts due to limited safety data.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence base for mood/depression is genuinely robust (6 independent meta-analyses, consistent directionality), but sleep, cognition, and blood sugar rely heavily on secondary syntheses with very few primary trials, making those grades vulnerable to publication bias and selective outcome reporting.",
+    "headline": "The mood evidence is robust and internally consistent, but sleep, vision, and blood sugar rely heavily on meta-analyses of small primary trials with incomplete reporting\u2014effect sizes in these domains could be inflated by publication bias and selective pooling of underpowered studies.",
     "concerns": [
       {
-        "issue": "Sleep, cognition, blood sugar: minimal primary trial data",
-        "detail": "Sleep quality rests on only 4 primary RCTs; cognition has 0 primary human RCTs (only 3 syntheses + 2 animal studies); blood sugar has only 1 primary RCT against 5 syntheses. When pooled analyses vastly outnumber primary studies, the grade depends entirely on the selection, reporting bias, and outcome cherry-picking decisions made by a handful of synthesis authors. A single unfavorable unpublished trial or selective emphasis on favorable subgroups in the syntheses cannot be detected.",
+        "issue": "Small primary trials, incomplete n reporting",
+        "detail": "For sleep, vision, and blood sugar outcomes, only 2\u20133 of 4\u20136 studies explicitly report sample sizes in these records. The engine notes that 'the true total is substantially larger' but cannot verify it from abstracts. This opacity is a red flag: if most primary trials are small (median n=50 for mood, n=120 for sleep), a few large outliers in unprovided abstracts could be inflating pooled estimates. Six of eight mood RCTs have unreported n; even the three reported (50, 50, 120) are modest. A single large negative trial omitted from synthesis could substantially shift results.",
         "severity": "high"
       },
       {
-        "issue": "Sample sizes almost entirely unreported in abstracts",
-        "detail": "For mood/depression (14 human studies), only 3 report sample size in the retrieved abstracts; for sleep (6 studies), only 2 report n; for cognition (3 human studies), only 1 reports n; for blood sugar (6 studies), only 3 report n. The engine estimates 'true total substantially larger,' but those estimates rest on data not visible here. This opacity prevents assessment of whether the pooled estimate is driven by a few large trials or many small ones\u2014critical for judging robustness to publication bias.",
+        "issue": "Meta-analyses outnumber primary trials in key domains",
+        "detail": "Blood sugar has 1 primary RCT but 5 pooled analyses (meta-analyses and systematic reviews). Sleep has 4 primary RCTs but 2 pooled analyses. This structure creates a risk of circular amplification: the same small trials may be reanalyzed across multiple syntheses, inflating apparent consistency. A 2025 systematic review and a 2022 meta-analysis on blood sugar may share overlapping included trials, giving false impression of independent replication. The engine notes only 1 primary human study for blood sugar\u2014pooled effect (SMD \u22120.9) could reflect heterogeneous subgroups or publication bias rather than robust effect.",
         "severity": "high"
       },
       {
-        "issue": "No extractable pooled effects across any outcome",
-        "detail": "The records state 'pooled effect: none extractable' for all four outcomes, despite the presence of 4\u20136 meta-analyses per outcome. This likely means the engine could not parse effect sizes, confidence intervals, or heterogeneity statistics from the abstracts. Without these, readers cannot independently verify consistency, magnitude of benefit, or whether effects are clinically meaningful (e.g., a 0.3-point drop on a 100-point depression scale differs vastly from a 20-point drop).",
+        "issue": "Very recent literature (2025 spike) with no replication lag",
+        "detail": "Mood outcome includes four 2025 RCTs and two 2025 systematic reviews; sleep and blood sugar are similarly recent-heavy. In supplement literature, positive findings often appear in concentrated recent bursts, sometimes driven by industry funding or selective reporting. None of these 2025 trials have had time for independent replication or failure-to-replicate to emerge in peer review. For comparison, the oldest mood meta-analysis is from 2013\u2014a 12-year gap before sustained publication suggests earlier skepticism or lower citation pressure. Recency without prior replication is a consistent marker of inflated early effect sizes.",
         "severity": "high"
       },
       {
-        "issue": "Mood/depression: comparison to SSRIs may not be transparent",
-        "detail": "The 2025 meta-analysis titled 'Saffron Versus Selective Serotonin Reuptake Inhibitors (SSRIs)' is listed but the abstract does not state whether saffron was found equivalent, superior, inferior, or non-inferior. The phrasing 'versus' is ambiguous. If this meta-analysis is driving the 'Strong' grade for mood, readers should know the actual conclusion\u2014saffron may be equally effective as SSRIs, or SSRIs may be better, and the abstract here provides no detail.",
+        "issue": "Vision evidence insufficient for meaningful inference",
+        "detail": "Only 4 total studies (2 human RCTs, 2 animal) with verified n \u2264 124 across humans. The engine explicitly notes 'Imprecision: effect estimate may be unstable.' Two human trials on different retinal diseases (macular degeneration, Stargardt dystrophy) are not directly comparable; no pooled effect is extractable, yet the outcome is graded Moderate. This grading appears driven by the two animal studies, which do not clinically validate the human signal. Any human trial with n < 50 in a rare disease is prone to Type II error and random variation.",
         "severity": "moderate"
       },
       {
-        "issue": "Recent publication surge without historical precedent note",
-        "detail": "Mood/depression studies cluster in 2025 (4 of the 14 listed); sleep and blood sugar also show clustering in 2024\u20132025. This temporal concentration makes it harder to rule out transient trends, author-collaboration echo chambers, or selective focus on positive outcomes in this publication window. No record indicates whether these recent studies replicate or extend earlier findings or represent new discovery.",
+        "issue": "Composite outcomes and adjunct therapy obscure primary effects",
+        "detail": "The 2022 mood meta-analysis explicitly examines 'saffron, as an adjunct therapy'\u2014meaning co-administered with other treatments (likely SSRIs). The 2025 RCT examines 'Combined Scutellaria and Saffron Supplementation,' conflating two active ingredients. These designs cannot isolate the effect of saffron alone. If mood improvement is driven by SSRIs or co-treatments, and saffron adds marginal value, the pooled SMD \u22123.87 overstates the standalone effect. The engine's grading combines these adjunct and monotherapy trials without noting which is which.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The proposed mechanism for mood/depression (presumed to involve crocin and safranal as putative serotonergic or neuroprotective agents) is plausible at the preclinical level, but the clinical evidence does not establish HOW saffron achieves symptom reduction in humans\u2014only that symptom scores improve. The leap from 'animal models show antioxidant/anti-inflammatory activity' (evidenced by the two animal cognition studies) to 'saffron improves human depression or cognition' is large and not bridged by biomarker or mechanistic data in these abstracts. Sleep and blood sugar mechanisms are not described in the records at all.",
-    "strongest_counterargument": "A skeptic would note that the mood/depression grade rests heavily on six meta-analyses\u2014which are NOT independent evidence but derivative syntheses of a likely overlapping pool of ~8 RCTs. If those 8 primary trials share common methodological flaws (e.g., inadequate blinding, small size, selective outcome reporting favoring saffron), the meta-analyses simply amplify those flaws rather than validate them. For sleep, cognition, and blood sugar, the median primary trial evidence is so sparse (0\u20134 RCTs per outcome) that a single large negative trial, if it were conducted, could reverse the current grade. Additionally, no pooled effect size is provided, so the claimed 'strong' benefit for mood may be a statistically significant but clinically trivial improvement.",
-    "what_would_change_the_picture": "For mood/depression: a large, pre-registered, adequately powered (n>300) RCT with prospectively defined outcomes, active control (SSRI or other antidepressant), and long-term follow-up (\u226512 weeks) would clarify whether the effect is durable and non-inferiority is genuine. For sleep, cognition, and blood sugar: conduct at least 3\u20134 independent primary RCTs per outcome (not meta-analyses) with consistent dosing, comparable populations, and published protocols to rule out selective reporting.",
+    "mechanism_check": "Saffron's bioactive compounds (crocin, safranal) are documented in animal models to inhibit monoamine reuptake and reduce neuroinflammation, a plausible mechanism for mood elevation. However, the human clinical trials do not report neurochemical or mechanistic markers (e.g., serotonin metabolites, inflammatory cytokines); they report only mood scores. For blood sugar and sleep, the mechanistic gap widens: animal neuroprotection and antioxidant activity are not directly linked to systemic glucose control or sleep architecture in humans. The vision outcome relies almost entirely on animal neuroprotection with only two small human RCTs in rare diseases\u2014a large leap from bench findings to clinical restoration of vision.",
+    "strongest_counterargument": "A well-informed skeptic would note that mood literature is concentrated in recent, often small trials by researchers and sponsors invested in saffron's popularity (particularly via branded extracts like Affron\u00ae). Meta-analyses of small, positive trials with unreported sample sizes and adjunct-therapy confounding are vulnerable to both publication bias and outcome reporting bias. For blood sugar and sleep, the evidence base is thin (\u22644 primary human trials per outcome), yet graded Moderate or Strong\u2014a grade that should require either larger sample sizes or higher consistency than these records show. The lack of long-term safety data, dose-response studies, and active-comparator trials (vs. placebo alone) further limits confidence in clinical applicability.",
+    "what_would_change_the_picture": "Large (n \u2265 200), adequately powered, double-blind, placebo-controlled RCTs of saffron monotherapy with pre-registered outcomes and complete sample-size reporting would resolve uncertainty for mood and sleep. For blood sugar, trials in confirmed diabetic populations with glycemic control as primary outcome (not adjunct to metformin) are needed. Publication of all registered trials (not just positive ones) and independent meta-analyses by non-industry-affiliated groups would help distinguish genuine effects from publication bias.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

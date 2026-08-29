@@ -1,9 +1,9 @@
 {
-  "name": "Calcium",
-  "category": "mineral",
+  "name": "calcium",
+  "category": "supplement",
   "overall_score": 95,
   "tier": "Strong",
-  "study_count": 69,
+  "study_count": 71,
   "claims": [
     {
       "outcome": "bone health",
@@ -11,7 +11,7 @@
       "certainty": "high",
       "score": 90,
       "has_human_evidence": true,
-      "n_studies": 28,
+      "n_studies": 29,
       "grade_reasons": [
         "Consistency: 11 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
@@ -21,7 +21,7 @@
         "human": 90,
         "overall": 90,
         "ceiling": 90,
-        "n_human_studies": 28,
+        "n_human_studies": 29,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -31,7 +31,6 @@
         "PMID:38467003",
         "PMID:39560075",
         "PMID:18286218",
-        "PMID:37602580",
         "PMID:38494682",
         "PMID:14974070",
         "PMID:24114400",
@@ -46,6 +45,7 @@
         "PMID:27568072",
         "PMID:28725977",
         "PMID:10022402",
+        "PMID:37602580",
         "PMID:23689153",
         "PMID:37294251",
         "PMID:37111231",
@@ -53,7 +53,8 @@
         "PMID:17556697",
         "PMID:33040465",
         "PMID:26470637",
-        "PMID:34980546"
+        "PMID:34980546",
+        "PMID:36808216"
       ],
       "studies": [
         {
@@ -159,6 +160,14 @@
           "design": "RCT",
           "population": "human",
           "n": 196
+        },
+        {
+          "pmid": "36808216",
+          "title": "Effect of soluble corn fibre and calcium supplementation on bone mineral content and bone mineral density in preadolescent Malaysian children-a double-blind ran",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 243
         },
         {
           "pmid": "34980546",
@@ -282,17 +291,171 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "38467003",
+            "metric": "hazard_ratio",
+            "value": 0.93,
+            "ci_low": 0.87,
+            "ci_high": 0.99,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "a 7% reduction in cancer mortality was observed after a median cumulative follow-up of 22.3 years (1817 vs. 1943 deaths; hazard ratio [HR], 0.93 [95% CI, 0.87 to 0.99])"
+          },
+          {
+            "pmid": "18286218",
+            "metric": "risk_ratio",
+            "value": 1.5,
+            "ci_low": 1.06,
+            "ci_high": 2.12,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "calcium monotherapy vs control",
+            "direction": "harm",
+            "quote": "the data from the 5,500 women involved in trials of calcium monotherapy show consistent adverse trends in numbers of hip fractures (relative risk 1.50, 95% CI 1.06-2.12)"
+          },
+          {
+            "pmid": "14974070",
+            "metric": "mean_diff",
+            "value": 2.05,
+            "ci_low": 0.24,
+            "ci_high": 3.86,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "The pooled difference in percentage change from baseline was 2.05% (95% CI 0.24 to 3.86) for total body bone density"
+          },
+          {
+            "pmid": "24114400",
+            "metric": "hazard_ratio",
+            "value": 0.9,
+            "ci_low": 0.75,
+            "ci_high": 1.07,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "none",
+            "quote": "there was no effect on total fracture (HR 0.90, 95% CI 0.75-1.07)"
+          },
+          {
+            "pmid": "11690570",
+            "metric": "odds_ratio",
+            "value": 0.4,
+            "ci_low": 0.2,
+            "ci_high": 0.9,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "OR = 0.4; 95% CI: 0.2 to 0.9"
+          },
+          {
+            "pmid": "36164828",
+            "metric": "smd",
+            "value": 0.627,
+            "ci_low": 0.338,
+            "ci_high": 0.915,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control/placebo",
+            "direction": "benefit",
+            "quote": "calcium supplementation was associated with the accretion of BMD and BMC, especially on femoral neck (standardized mean difference [SMD] 0.627, 95% confidence interval [CI] 0.338-0.915"
+          },
+          {
+            "pmid": "32401318",
+            "metric": "mean_diff",
+            "value": 0.74,
+            "ci_low": -0.1,
+            "ci_high": 1.59,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo/no intervention",
+            "direction": "none",
+            "quote": "calcium supplementation (600/1000 mg/d) had no significant effect on BMD at the lumbar spine (WMD: 0.74%; 95% CI: -0.10%, 1.59%"
+          },
+          {
+            "pmid": "37602580",
+            "metric": "risk_ratio",
+            "value": 1.56,
+            "ci_low": 0.91,
+            "ci_high": 2.69,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "no medication or placebo",
+            "direction": "none",
+            "quote": "Neither calcium nor vitamin D supplementation was associated with risk of fractures around hip joint [risk ratio (RR) 1.56; 95% confidence interval (CI), 0.91 to 2.69"
+          },
+          {
+            "pmid": "15755853",
+            "metric": "mean_diff",
+            "value": -20.4,
+            "ci_low": -40.8,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "reduced the bone resorption markers serum type I collagen C-telopeptide and urinary N-telopeptide by 20.4% (P < 0.0001)"
+          },
+          {
+            "pmid": "34980546",
+            "metric": "mean_diff",
+            "value": 2.54,
+            "ci_low": 0.0,
+            "ci_high": 5.08,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs calcium and vitamin D alone",
+            "direction": "benefit",
+            "quote": "vBMD by 2.54 \u00b1 3.43%"
+          }
+        ],
+        "n_not_reported": 19,
+        "n_total": 29
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For bone health, Calcium is well-supported by human trials (28 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": 0.627,
+        "ci_low": 0.338,
+        "ci_high": 0.915,
+        "ci_estimated": false,
+        "n_studies_pooled": 43,
+        "comparator": "control/placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "36164828",
+        "quote": "calcium supplementation was associated with the accretion of BMD and BMC, especially on femoral neck (standardized mean difference [SMD] 0.627, 95% confidence interval [CI] 0.338-0.915"
+      },
+      "summary": "For bone health, calcium is well-supported by human trials (29 studies)."
     },
     {
       "outcome": "blood pressure",
@@ -481,17 +644,139 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "30277579",
+            "metric": "risk_ratio",
+            "value": 0.65,
+            "ci_low": 0.53,
+            "ci_high": 0.81,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "The average risk of high blood pressure (BP) was reduced with calcium supplementation compared with placebo (12 trials, 15,470 women: risk ratio (RR) 0.65, 95% confidence interval (CI) 0.53 to 0.81; I\u00b2 = 74%)."
+          },
+          {
+            "pmid": "35014026",
+            "metric": "mean_diff",
+            "value": -1.37,
+            "ci_low": -2.08,
+            "ci_high": -0.66,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or control",
+            "direction": "benefit",
+            "quote": "The effect on systolic and diastolic blood pressure was: mean difference (MD) -1.37 mmHg, 95% confidence interval (CI) -2.08, -0.66; 3140 participants; 18 studies"
+          },
+          {
+            "pmid": "34693985",
+            "metric": "mean_diff",
+            "value": -1.37,
+            "ci_low": -2.08,
+            "ci_high": -0.66,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or control",
+            "direction": "benefit",
+            "quote": "The effect on systolic and diastolic blood pressure was: mean difference (MD) -1.37 mmHg, 95% confidence interval (CI) -2.08, -0.66; 3140 participants; 18 studies"
+          },
+          {
+            "pmid": "9989892",
+            "metric": "risk_ratio",
+            "value": 0.35,
+            "ci_low": 0.21,
+            "ci_high": 0.57,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo/no treatment",
+            "direction": "benefit",
+            "quote": "Calcium supplementation in women at high risk of pregnancy hypertension reduced the incidence of high blood pressure (RR, 0.35; 95% CI, 0.21-0.57)"
+          },
+          {
+            "pmid": "29057843",
+            "metric": "risk_ratio",
+            "value": 0.54,
+            "ci_low": 0.41,
+            "ci_high": 0.7,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "pooled risk ratios (RRs) of 0.54 (0.41, 0.70)"
+          },
+          {
+            "pmid": "16522392",
+            "metric": "risk_ratio",
+            "value": 0.71,
+            "ci_low": 0.61,
+            "ci_high": 0.82,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "severe gestational hypertension (risk ratio, 0.71; 95% CI, 0.61-0.82)"
+          },
+          {
+            "pmid": "30935246",
+            "metric": "risk_ratio",
+            "value": 0.7,
+            "ci_low": 0.6,
+            "ci_high": 0.82,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "calcium supplement vs control",
+            "direction": "benefit",
+            "quote": "calcium supplement was associated with lower incidence of preeclampsia (RR 0.51, 95% CI: 0.40 to 0.64) and gestational hypertension (RR 0.70, 95% CI: 0.60 to 0.82)"
+          }
+        ],
+        "n_not_reported": 11,
+        "n_total": 18
       },
       "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
+        "verified": {
+          "value": 0.71,
+          "ci_low": 0.605,
+          "ci_high": 0.815,
+          "n_studies": 1
+        },
+        "exploratory": {
+          "value": 0.71,
+          "ci_low": 0.605,
+          "ci_high": 0.815,
+          "n_studies": 1
+        },
+        "note": null
       },
-      "headline_effect": null,
-      "summary": "For blood pressure, Calcium has moderate human evidence (18 studies)."
+      "headline_effect": {
+        "metric": "risk_ratio",
+        "value": 0.54,
+        "ci_low": 0.41,
+        "ci_high": 0.7,
+        "ci_estimated": false,
+        "n_studies_pooled": 27,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "29057843",
+        "quote": "pooled risk ratios (RRs) of 0.54 (0.41, 0.70)"
+      },
+      "summary": "For blood pressure, calcium has moderate human evidence (18 studies)."
     },
     {
       "outcome": "pregnancy / maternal health",
@@ -499,9 +784,9 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 15,
+      "n_studies": 16,
       "grade_reasons": [
-        "Limited human evidence: 5 primary human studies and 10 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Limited human evidence: 6 primary human studies and 10 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -509,7 +794,7 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 15,
+        "n_human_studies": 16,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -526,6 +811,7 @@
         "PMID:29057843",
         "PMID:12657345",
         "PMID:39608269",
+        "PMID:42067065",
         "PMID:18851852",
         "PMID:37166151",
         "PMID:16522392"
@@ -612,6 +898,14 @@
           "n": null
         },
         {
+          "pmid": "42067065",
+          "title": "Effect of calcium supplementation in pregnancy on maternal anemia and iron status: secondary analyses of two randomized trials in India and Tanzania.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": 8496
+        },
+        {
           "pmid": "38197817",
           "title": "Two Randomized Trials of Low-Dose Calcium Supplementation in Pregnancy.",
           "year": "2024",
@@ -653,17 +947,171 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "38197817",
+            "metric": "risk_ratio",
+            "value": 0.84,
+            "ci_low": 0.68,
+            "ci_high": 1.03,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "500-mg vs 1500-mg daily calcium supplementation",
+            "direction": "benefit",
+            "quote": "relative risk, 0.84; 95% confidence interval [CI], 0.68 to 1.03"
+          },
+          {
+            "pmid": "30277579",
+            "metric": "risk_ratio",
+            "value": 0.45,
+            "ci_low": 0.31,
+            "ci_high": 0.65,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "average RR 0.45, 95% CI 0.31 to 0.65"
+          },
+          {
+            "pmid": "41330480",
+            "metric": "risk_ratio",
+            "value": 0.83,
+            "ci_low": 0.67,
+            "ci_high": 1.04,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "Calcium may result in little to no difference in pre-eclampsia (risk ratio (RR) 0.83, 95% confidence interval (CI) 0.67 to 1.04; 6 RCTs, 15,364 women"
+          },
+          {
+            "pmid": "39560075",
+            "metric": "risk_ratio",
+            "value": 0.8,
+            "ci_low": 0.65,
+            "ci_high": 0.99,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or no treatment",
+            "direction": "benefit",
+            "quote": "Calcium supplementation probably slightly reduces the risk of preterm birth less than 37 weeks (average risk ratio (RR) 0.80, 95% confidence interval (CI) 0.65 to 0.99; 11 trials, 15,379 women; moderate-certainty evidence)"
+          },
+          {
+            "pmid": "9989892",
+            "metric": "risk_ratio",
+            "value": 0.35,
+            "ci_low": 0.21,
+            "ci_high": 0.57,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo/no treatment",
+            "direction": "benefit",
+            "quote": "Calcium supplementation in women at high risk of pregnancy hypertension reduced the incidence of high blood pressure (RR, 0.35; 95% CI, 0.21-0.57)"
+          },
+          {
+            "pmid": "29057843",
+            "metric": "risk_ratio",
+            "value": 0.54,
+            "ci_low": 0.41,
+            "ci_high": 0.7,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "pooled risk ratios (RRs) of 0.54 (0.41, 0.70)"
+          },
+          {
+            "pmid": "12657345",
+            "metric": "mean_diff",
+            "value": 13.6,
+            "ci_low": 0.0,
+            "ci_high": 27.2,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs no calcium supplement",
+            "direction": "benefit",
+            "quote": "A bedtime, 1200-mg calcium supplement during the third trimester of pregnancy reduces maternal bone resorption by an average of 13.6 nM BCE/mM creatinine (14%)"
+          },
+          {
+            "pmid": "42067065",
+            "metric": "mean_diff",
+            "value": 0.01,
+            "ci_low": -0.03,
+            "ci_high": 0.04,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "500 mg vs 1500 mg calcium supplementation",
+            "direction": "none",
+            "quote": "India: mean difference (MD) 0.01 (95% confidence interval (CI): -0.03, 0.04)"
+          },
+          {
+            "pmid": "18851852",
+            "metric": "odds_ratio",
+            "value": 0.31,
+            "ci_low": 0.15,
+            "ci_high": 0.63,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "odds ratio [OR], 0.31; 95% confidence interval [CI], 0.15-0.63"
+          },
+          {
+            "pmid": "16522392",
+            "metric": "risk_ratio",
+            "value": 0.68,
+            "ci_low": 0.48,
+            "ci_high": 0.97,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Eclampsia (risk ratio, 0.68: 95% CI, 0.48-0.97)"
+          }
+        ],
+        "n_not_reported": 6,
+        "n_total": 16
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For pregnancy / maternal health, Calcium has moderate human evidence (15 studies)."
+      "headline_effect": {
+        "metric": "risk_ratio",
+        "value": 0.54,
+        "ci_low": 0.41,
+        "ci_high": 0.7,
+        "ci_estimated": false,
+        "n_studies_pooled": 27,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "29057843",
+        "quote": "pooled risk ratios (RRs) of 0.54 (0.41, 0.70)"
+      },
+      "summary": "For pregnancy / maternal health, calcium has moderate human evidence (16 studies)."
     },
     {
       "outcome": "weight / fat loss",
@@ -674,16 +1122,16 @@
       "n_studies": 8,
       "grade_reasons": [
         "Precision: ~2333 participants verified across 3 of 8 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 6 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Limited human evidence: 5 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 8,
-        "n_animal_studies": 0,
+        "n_human_studies": 7,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -757,23 +1205,79 @@
           "pmid": "18719672",
           "title": "Calcium supplementation does not alter lipid oxidation or lipolysis in overweight/obese women.",
           "year": "2008",
-          "design": "Clinical trial",
-          "population": "human",
+          "design": "Animal",
+          "population": "animal",
           "n": null
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "26180255",
+            "metric": "mean_diff",
+            "value": -0.05,
+            "ci_low": -0.32,
+            "ci_high": 0.23,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "none",
+            "quote": "vitamin D supplementation had no significant effect on BMI (weighted mean difference [WMD], -0.06 kg/m(2); 95% confidence interval [95%CI], -0.14 to 0.03), weight (WMD, -0.05 kg; 95%CI, -0.32 to 0.23), or fat mass (WMD, -0.43 kg; 95%CI, -1.69 to 0.84)"
+          },
+          {
+            "pmid": "17719942",
+            "metric": "mean_diff",
+            "value": 0.84,
+            "ci_low": 0.0,
+            "ci_high": 1.68,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs maltodextrin control",
+            "direction": "benefit",
+            "quote": "total fat mass (difference 0.84 +/- 0.36 kg, P = .022)"
+          },
+          {
+            "pmid": "14764774",
+            "metric": "mean_diff",
+            "value": -0.8,
+            "ci_low": -1.6,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "none",
+            "quote": "body weight, placebo -6.2 +/- 0.7 vs. Ca -7.0 +/- 0.7 kg"
+          }
+        ],
+        "n_not_reported": 5,
+        "n_total": 8
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For weight / fat loss, Calcium has moderate human evidence (8 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -0.05,
+        "ci_low": -0.32,
+        "ci_high": 0.23,
+        "ci_estimated": false,
+        "n_studies_pooled": 12,
+        "comparator": "placebo",
+        "direction": "none",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "26180255",
+        "quote": "vitamin D supplementation had no significant effect on BMI (weighted mean difference [WMD], -0.06 kg/m(2); 95% confidence interval [95%CI], -0.14 to 0.03), weight (WMD, -0.05 kg; 95%CI, -0.32 to 0.23), or fat mass (WMD, -0.43 kg; 95%CI, -1.69 to 0.84)"
+      },
+      "summary": "For weight / fat loss, calcium has moderate human evidence (8 studies)."
     }
   ],
   "effects_established": [
@@ -808,75 +1312,75 @@
       "Blood Coagulation Factor IV"
     ]
   },
-  "_cached_at": 1787607632.835217,
+  "_cached_at": 1788016417.639461,
   "explanation": {
-    "what_it_is": "Calcium (Ca, atomic number 20, molecular weight 40.08) is an essential mineral that makes up about 2% of body weight in adults. It is obtained through dietary sources\u2014primarily dairy products, leafy greens, and fortified foods\u2014or as a dietary supplement in forms such as calcium carbonate, calcium citrate, or calcium gluconate. People typically consume it orally as tablets, powders, or foods.",
-    "how_it_works": "Calcium is the body's primary structural mineral: it is incorporated into the mineral matrix of bone and teeth, where it provides rigidity and strength. It is also essential for cell signaling, muscle contraction, nerve transmission, and blood clotting. In bone remodeling, adequate calcium intake helps maintain the balance between bone formation and resorption; when dietary intake is insufficient, the body withdraws calcium from bone to maintain blood levels, which accelerates bone loss over time. Calcium may also influence vascular tone and blood pressure regulation through effects on smooth muscle and endocrine signaling, though these mechanisms are less fully understood. During pregnancy, calcium plays a role in fetal skeletal development and may modulate factors related to hypertensive disorders.",
+    "what_it_is": "Calcium (Ca) is a soft, silvery-white alkaline earth metal with atomic weight 40.08. In supplements, it is typically provided as a salt\u2014most commonly calcium carbonate, citrate, or lactate\u2014rather than elemental form. People consume it orally in tablets, powders, or fortified foods to meet daily dietary needs, which are essential for bone formation and many cellular processes.",
+    "how_it_works": "Calcium is the primary structural mineral in bone and teeth; it is incorporated into the hydroxyapatite crystal lattice that gives bone its rigidity. Beyond the skeleton, calcium is critical for muscle contraction, nerve signaling, hormone secretion, and blood vessel function. In the cardiovascular system, adequate calcium intake has been associated with improved endothelial function and reduced arterial stiffness, which may lower blood pressure through effects on vascular smooth muscle tone and natriuresis (sodium excretion). During pregnancy, calcium supplementation may reduce the risk of hypertensive disorders by modulating placental vascular development and systemic vascular resistance. Calcium's role in regulating intracellular signaling and energy metabolism may also influence body composition, though the mechanism in weight regulation remains incompletely understood.",
     "outcome_detail": [
       {
         "outcome": "bone health",
         "grade": "Strong",
-        "what_studies_show": "Eleven independent meta-analyses and systematic reviews consistently demonstrate that calcium supplementation improves bone density and reduces fracture risk, particularly in older adults and postmenopausal women. Studies include a 2024 meta-analysis (n=234) in older osteoporotic people, a 2023 meta-analysis (n=6555) on vitamin D3 plus calcium in fracture prevention, a 2022 meta-analysis (n=1566) on calcium supplementation during pregnancy and offspring bone health, and a 2020 meta-analysis (n=527) on calcium supplementation in lactating women. The evidence spans multiple age groups and physiological states, with consistent replication across syntheses.",
-        "why_this_grade": "The convergence of 11 independent meta-analyses on the same outcome, combined with adequately powered individual studies across diverse populations, provides robust evidence for bone health benefits. All 28 studies retrieved were human trials with no contradictory findings, establishing this as a well-replicated effect."
+        "what_studies_show": "Multiple meta-analyses, including a 2024 pooled analysis of 234 older osteoporotic participants and a 2023 meta-analysis of over 6,500 participants receiving vitamin D3 plus calcium, consistently show that calcium supplementation\u2014especially when combined with vitamin D\u2014improves bone mineral density and reduces fracture risk in older adults, pregnant women, and younger populations. Across 11 independent meta-analyses and systematic reviews retrieved here, the pooled standardized effect size was 0.627, indicating a moderate-to-large beneficial effect.",
+        "why_this_grade": "This outcome earned Strong because the evidence includes 29 human studies with robust meta-analytic convergence (11 independent syntheses), adequate statistical power, and consistent direction of effect across diverse populations including older adults, pregnant women, lactating women, and younger individuals. The effect size is meaningful and clinically relevant for fracture prevention."
       },
       {
         "outcome": "blood pressure",
         "grade": "Moderate",
-        "what_studies_show": "Multiple meta-analyses show that calcium supplementation produces modest reductions in blood pressure. A 2022 meta-analysis (n=3512) examined calcium supplementation for prevention of primary hypertension, a 2018 meta-analysis (n=9732) assessed supplementation during pregnancy for preventing hypertensive disorders, and a 2020 pooled analysis examined co-supplementation with vitamin D. Studies in pregnant women (n=1616) also report benefits for offspring long-term outcomes. Overall, the effect is small to moderate and more consistently demonstrated in pregnant populations and those with baseline hypertension.",
-        "why_this_grade": "Although all 18 retrieved studies are human trials with consistent direction of effect, the evidence is Moderate rather than Strong because only 4 primary human studies were identified; the remainder are pooled analyses. This limits the independent replication threshold required for the top tier, and sample sizes, while substantial in aggregate, do not meet the density of primary trials seen for bone health."
+        "what_studies_show": "Meta-analyses spanning pregnancy-related hypertensive disorders and primary hypertension prevention in adults show a pooled risk ratio of 0.54 (95% CI 0.41\u20130.70), indicating approximately a 46% reduction in the odds of hypertension or preeclampsia with calcium supplementation. A 2022 meta-analysis of 3,512 participants examining primary hypertension prevention and a 2018 analysis of 9,732 pregnant women both support a protective effect, particularly in pregnancy.",
+        "why_this_grade": "The Moderate grade reflects a limited primary evidence base: only 4 primary human trials and 14 pooled analyses were retrieved, falling below the threshold for Strong. While the direction and magnitude of effect are consistent, the relatively small number of original randomized controlled trials and the heavy reliance on meta-analyses (rather than a broad base of primary studies) warrant a more cautious tier than Strong."
       },
       {
         "outcome": "pregnancy / maternal health",
         "grade": "Moderate",
-        "what_studies_show": "Calcium supplementation during pregnancy reduces the risk of hypertensive disorders (preeclampsia and gestational hypertension) and supports fetal bone health. Key studies include a 2024 meta-analysis (n=730) on preeclampsia prevention, a 2025 systematic review (n=9430) on hypertensive disorder prevention, a 2022 meta-analysis (n=1616) on long-term offspring outcomes, and a 2018 meta-analysis (n=9732) on hypertensive complications. Evidence is most robust for blood pressure-related benefits in pregnancy; effects on broader maternal health outcomes are less extensively studied.",
-        "why_this_grade": "All 15 retrieved studies are human trials, and the direction of effect is consistent. However, the evidence is Moderate because only 5 primary human studies were retrieved; the majority are pooled analyses. This limits independent replication and places the evidence below the threshold for a Strong grade, despite the substantial aggregate sample sizes."
+        "what_studies_show": "Systematic reviews and meta-analyses, including a 2024 review of 730 participants, a 2022 meta-analysis of 1,616 participants, and a large 2018 pooled analysis of 9,732 pregnant women, demonstrate that calcium supplementation reduces the risk of preeclampsia and gestational hypertension (pooled risk ratio 0.54, 95% CI 0.41\u20130.70). Benefits have also been observed for maternal and offspring bone health outcomes.",
+        "why_this_grade": "This outcome received Moderate grade because the literature base is limited: 6 primary human studies and 10 pooled analyses were retrieved, below the primary evidence threshold for Strong. Although the effect direction is consistent and clinically important (preeclampsia prevention in pregnancy), the reliance on a modest number of original trials and the focus on a specific population (pregnant women) prevents a higher tier."
       },
       {
         "outcome": "weight / fat loss",
         "grade": "Moderate",
-        "what_studies_show": "Calcium supplementation, particularly when combined with vitamin D, shows modest associations with reduced adiposity and fat mass. A 2015 meta-analysis (n=430) examined vitamin D alone or with calcium on adiposity measures, a 2024 systematic review (n=1873) in people with overweight or obesity, and a 2023 RCT (n=30) in adolescent pregnancy reported reductions in postpartum fat mass. Other RCTs examined urate-lowering effects and metabolic markers in older women. Effects are small and appear more pronounced in specific populations (e.g., pregnant adolescents).",
-        "why_this_grade": "Only 6 primary human studies were retrieved (with 2 pooled analyses), and many abstracts omitted sample size, making total participant numbers uncertain\u2014likely several thousand but not fully verifiable from the abstracts given. This limited primary evidence pool and lack of precision in reported totals places the outcome at Moderate grade despite the direction being consistent."
+        "what_studies_show": "A 2024 systematic review of 1,873 participants with overweight or obesity, a 2023 randomized controlled trial in 30 adolescent pregnant women showing postpartum fat mass reduction, and a 2015 meta-analysis of 430 participants examining calcium with or without vitamin D represent the retrieved evidence. The pooled effect on weight or fat loss is small and non-significant (mean difference \u22120.05 kg, 95% CI \u22120.32 to 0.23), suggesting minimal direct benefit for weight reduction.",
+        "why_this_grade": "Despite the Moderate grade, the evidence suggests weak or absent efficacy for weight loss: the effect size is negligible and the confidence interval includes zero. The grade reflects limited primary human evidence (5 primary studies and 2 pooled analyses retrieved) and substantial variation in study quality and design. The practical significance for fat loss is unclear given the near-zero pooled effect."
       }
     ],
-    "evidence_base": "The research base for calcium is exclusively human trials; no animal studies were retrieved across any outcome. The evidence is heavily dominated by meta-analyses and systematic reviews (pooled analyses), with fewer primary RCTs or observational studies explicitly reported in the abstracts. Studies span recent years (1998\u20132025) with the largest concentration from 2018 onward, indicating ongoing active research. The very high quality and replication of evidence for bone health (11 convergent syntheses) contrasts sharply with more limited primary trial evidence for blood pressure, pregnancy, and weight outcomes, reflecting the maturity of different research areas.",
-    "emerging_research": "Recent work has expanded beyond bone density alone to examine calcium's role in long-term offspring health outcomes (bone and metabolic measures through childhood and adulthood), as shown in 2022\u20132025 syntheses. Calcium combined with vitamin D is increasingly investigated as a co-supplementation strategy, particularly for blood pressure and weight management. A 2022 RCT examined urate-lowering effects of calcium supplementation, suggesting potential links to metabolic and inflammatory pathways that have not been extensively characterized. These directions are still being synthesized and are not yet established as robust clinical benefits.",
-    "open_questions": "Among the studies retrieved here, the evidence for bone health is mature and consistent, but the primary trial evidence base for blood pressure, pregnancy, and weight outcomes relies heavily on meta-analyses rather than independent primary RCTs, limiting clarity about which specific populations benefit most. The retrieved studies span diverse ages and physiological states (older adults, pregnant women, lactating women, adolescents, people with obesity), but it is unclear from these abstracts whether any important subgroups are underrepresented or whether long-term outcomes beyond 1\u20132 years postpartum have been examined. Because you are viewing only a sample of available abstracts (approximately 40 per outcome), you cannot determine what additional primary trial evidence, longer follow-up studies, or mechanistic research exists in the broader literature.",
-    "caveats": "Calcium supplementation is generally safe at recommended intake levels (800\u20131200 mg/day for most adults), but excessive intake (>2000 mg/day) may increase risk of kidney stones, hypercalcemia, and possibly cardiovascular events in some populations; the retrieved studies do not fully characterize long-term safety at high doses. Calcium supplements can interact with certain medications (e.g., bisphosphonates, some antibiotics, thyroid hormones) by reducing absorption; timing of administration matters. Pregnant women and those with a history of kidney stones, hypercalcemia, or parathyroid disorders should consult a healthcare provider before supplementing.",
+    "evidence_base": "The evidence base is entirely human, comprising 29 studies for bone health, 18 for blood pressure, 16 for pregnancy/maternal health, and 8 for weight loss. The literature is dominated by meta-analyses and systematic reviews; within the records retrieved here, only a handful of primary randomized controlled trials are reported in full detail. Studies span from 1998 to 2025, with the majority published in the last 5\u201310 years, reflecting renewed interest in calcium supplementation during pregnancy and in aging populations. The prevalence of meta-analytic evidence rather than large primary trials limits our confidence in estimating true effect sizes and identifying subgroups most likely to benefit.",
+    "emerging_research": "Recent work has begun to disentangle calcium's effects when given alone versus combined with vitamin D, with 2023\u20132024 studies suggesting synergy in bone health and blood pressure outcomes. A 2022 randomized trial explored calcium's urate-lowering effects, hinting at possible metabolic impacts beyond bone and vascular health. Attention is also growing on calcium supplementation timing and form (carbonate vs. citrate) and on whether benefits differ in younger, non-pregnant populations versus elderly or pregnant women. These directions remain early and are not yet sufficient to change efficacy claims.",
+    "open_questions": "Among the studies retrieved here, bone health evidence is robust across multiple age groups and life stages; by contrast, weight/fat loss trials are few (8 total) and show near-zero pooled effect, leaving unclear whether any subgroup truly benefits. No long-term safety or fracture-prevention trials exceeding 5 years appear in the retrieved set, so the durability of bone protection beyond the study period is not directly documented in these records. The retrieved literature does not include comparisons of supplemental calcium to dietary calcium sources or assess whether supplementation is necessary in populations with adequate dietary intake, nor do the abstracts provided characterize drop-out rates or adverse event reporting in detail.",
+    "caveats": "Calcium supplements can cause gastrointestinal upset (constipation or bloating), especially with carbonate formulations; citrate forms are often better tolerated. High-dose calcium may interfere with the absorption of iron, zinc, and some antibiotics; separate supplementation timing by at least 2 hours. Individuals with a history of kidney stones, sarcoidosis, or hypercalcemia should consult a physician before supplementing. Quality varies widely among products; look for third-party testing (e.g., USP or NSF certification) to ensure purity and label accuracy.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Bone health evidence is robust and replicated; blood pressure, pregnancy, and weight outcomes rest on only 4\u20136 primary trials each, making them vulnerable to bias and selective reporting.",
+    "headline": "Bone health evidence is genuinely robust (11 independent meta-analyses, adequately powered, ~0.63 SMD effect); the other three outcomes rest on modest primary trial evidence and overlapping meta-analyses of pregnancy/hypertension data that risk circular dependence.",
     "concerns": [
       {
-        "issue": "Severe evidence imbalance across outcomes",
-        "detail": "Bone health is graded Strong with 11 independent meta-analyses converging on the outcome across 28 studies (15 RCTs). By contrast, blood pressure, pregnancy, and weight are graded Moderate despite having only 4\u20136 primary RCTs each, with the remainder being meta-analyses of those same few trials. This means replication is illusory: the 9 meta-analyses on blood pressure are pooled analyses of overlapping primary studies, not independent confirmation. A single major bias in the underlying RCTs would propagate through all downstream syntheses.",
+        "issue": "Blood pressure and pregnancy outcomes share evidence pool",
+        "detail": "Five of the same large studies appear in both the blood pressure and pregnancy/maternal health outcomes (2018 n=9732, 2022 n=1616, 2025 n=9430, 2024 n=5569, 2022 n=1566). These are predominantly pregnancy-specific trials reporting hypertension as a secondary outcome. The engine reports only 4 primary human studies for blood pressure and 6 for pregnancy, yet the meta-analyses overlap substantially, creating pseudoreplication in the synthesis. A single trial weakness (e.g., selective reporting of hypertension endpoints in pregnancy cohorts) could artificially inflate confidence in both grades.",
         "severity": "high"
       },
       {
-        "issue": "Sparse reporting of sample sizes in non-bone outcomes",
-        "detail": "For weight/fat loss, only 3 of 8 studies report sample size; the engine estimates ~2333 total but acknowledges 'most abstracts omit sample size.' For blood pressure and pregnancy, 14 of 18 and 13 of 15 studies report n respectively, leaving 4 and 2 studies opaque. This opacity makes it impossible to assess whether the retrieved evidence is dominated by small, underpowered trials or large, definitive ones\u2014a crucial distinction when pooled analyses depend on the same handful of primary studies.",
+        "issue": "Weight/fat loss: minimal and non-significant pooled effect",
+        "detail": "The pooled mean difference is \u22120.05 kg [\u22120.32 to 0.23], a 95% CI that crosses zero and is clinically trivial. Despite the engine noting ~2333 verified participants, only 3 of 8 studies report sample sizes in the abstracts provided, and the majority of primary evidence is missing from this record. With only 5 primary RCTs and a null result, this outcome should not sustain a Moderate grade; the current grade appears inconsistent with the actual effect size reported.",
         "severity": "high"
       },
       {
-        "issue": "Pregnancy/maternal outcomes lack clear clinical specificity",
-        "detail": "The pregnancy/maternal health outcome mixes preeclampsia prevention (the dominant focus in the meta-analyses) with poorly specified 'long-term offspring outcomes' and 'maternal and offspring bone health.' The records show n=9732, n=9430, n=8325 for hypertensive disorder prevention, but the outcome category conflates multiple distinct endpoints. Without stratification of results by specific clinical outcome, it is unclear whether the Moderate grade reflects genuine efficacy on a single outcome or averaging across heterogeneous findings.",
+        "issue": "Blood pressure and pregnancy: only 4 and 6 primary trials respectively",
+        "detail": "The engine explicitly notes both outcomes are 'below the threshold for the top tier' due to limited primary human evidence (4 for blood pressure, 6 for pregnancy). The records show 9 meta-analyses for blood pressure and 10 for pregnancy, meaning the grade rests almost entirely on secondary syntheses rather than original trials. A single methodological flaw across multiple meta-analyses (e.g., consistent inclusion of quasi-randomized or low-quality trials) could inflate the pooled estimates.",
         "severity": "high"
       },
       {
-        "issue": "No visible pooled effect sizes or confidence intervals",
-        "detail": "The engine records state 'pooled effect: none extractable' for all four outcomes. Without access to effect magnitudes, direction of heterogeneity, or precision intervals, it is impossible to assess whether the graded outcomes represent clinically meaningful benefits or marginal, statistically significant but small changes. A Moderate grade could mask a 2\u20133 mmHg blood pressure reduction or a 10 mmHg reduction; these warrant different clinical interpretations.",
+        "issue": "Bone health: heterogeneity in participant populations and intervention types not visible",
+        "detail": "The 29 studies span populations from <35 years old, lactating women, postmenopausal women, pregnant women, and the elderly, with dosing and duration not specified in these abstracts. The pooled SMD of 0.627 masks potential subgroup variation. For example, the 2022 study on under-35s and the 2020 study on lactating women measure 'bone density' via different metrics; lumping these together without reported heterogeneity estimates obscures whether effect size is robust across ages and physiological states. The engine notes 'consistency' across 11 meta-analyses but does not provide I\u00b2 or other heterogeneity statistics visible here.",
         "severity": "moderate"
       },
       {
-        "issue": "Weight/fat loss evidence base is minimally specified",
-        "detail": "Eight studies are retrieved for weight outcomes, but the records show only 3 sample sizes (30, 430, 1873). Two of the eight are not classified as RCT or meta-analysis (design unmarked for 2 studies). The year range spans 2004\u20132024, but the abstracts do not indicate whether these are independent trials or repeated analyses of the same cohorts. With such sparse detail, the retrieved base cannot be reliably evaluated for redundancy, bias, or conflict.",
+        "issue": "Weight/fat loss: most primary studies missing sample sizes from record",
+        "detail": "Five RCTs are listed in the weight/fat loss outcome, but only one reports an n value (n=30, 2023). The engine acknowledges abstracts omit sample size and notes '~2333 participants verified across 3 of 8 studies,' meaning 5 of 8 primary studies have unknown Ns. This makes it impossible to assess whether the null result is powered adequately or driven by small, underpowered trials. A systematic imbalance toward small negative-effect trials could bias the pooled estimate downward.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Calcium's role in bone mineralization via osteoblast signaling and direct matrix incorporation is well-established biochemically, so the bone health outcome (Strong grade) maps directly to a plausible mechanism. However, calcium's proposed effects on blood pressure (via vascular smooth muscle and endothelial function), pregnancy outcomes (preventing preeclampsia through endothelial stabilization), and weight loss (via lipid metabolism or satiety signaling) are more speculative. The records do not provide mechanistic detail for non-bone outcomes, and small trial evidence for systemic effects cannot reliably distinguish between true biological activity and confounding, publication bias, or placebo response.",
-    "strongest_counterargument": "A skeptic would note that the blood pressure, pregnancy, and weight evidence rests on the same small set of primary RCTs, each of which could harbour bias in allocation concealment, participant blinding, or outcome reporting. Meta-analyses of these trials would then converge on a biased estimate, not on truth. The bone outcome's 11 independent meta-analyses are more robust, but even there, the median trial size is 408 and most pre-date 2020; newer large RCTs with sensitive fracture endpoints (the outcome that matters clinically) may not be represented equally. Without individual trial protocols and pre-registration, selective reporting of secondary outcomes cannot be ruled out.",
-    "what_would_change_the_picture": "For bone health: large, recent (post-2015) RCTs stratified by age, sex, baseline bone density, and baseline calcium intake, with pre-registered fracture endpoints and long-term follow-up (\u22653 years). For blood pressure, pregnancy, and weight: independent replication of the existing primary RCTs by different research groups, with pre-registered protocols, blinded outcome assessment, and transparent reporting of all measured endpoints to detect selective outcome reporting.",
+    "mechanism_check": "Calcium's role in bone mineralization is well-established biochemically, and the bone health outcome directly measures bone density/fracture risk, closing the mechanistic gap. However, for blood pressure and pregnancy outcomes, the proposed mechanism (calcium's role in vascular smooth muscle contraction and placental function) is plausible but indirect; the clinical outcomes (hypertension, preeclampsia) are multifactorial. The evidence shows an association in pregnancy-specific trials, but the mechanism is not fully elucidated in these abstracts, and the effect could reflect confounding (e.g., women receiving calcium supplementation may differ systematically in diet or prenatal care).",
+    "strongest_counterargument": "A skeptic would note that blood pressure and pregnancy outcomes rest on only 10 primary trials combined, mostly from pregnancy cohorts where calcium was tested as one component of antenatal care. The overlapping meta-analyses create an illusion of independent replication; in reality, the same 5\u20136 large trials are re-synthesized repeatedly. For weight/fat loss, the pooled effect is null (CI crosses zero), yet a Moderate grade was assigned\u2014this is inconsistent with grading logic. For bone health alone, the evidence is strong, but the overall 'Strong' tier rating conflates one genuinely robust outcome with three that do not meet the same evidentiary bar.",
+    "what_would_change_the_picture": "For blood pressure and pregnancy outcomes: (1) new primary RCTs in non-pregnant populations to decouple these outcomes from pregnancy-specific data, or meta-regression showing the effect holds across subgroups independent of pregnancy status. (2) For weight/fat loss: either a meta-analysis with full n data and heterogeneity estimates demonstrating adequate power, or a null outcome grade that reflects the pooled CI crossing zero. (3) For bone health: reporting of I\u00b2 and subgroup analyses showing the SMD 0.627 is not driven by a single population (e.g., postmenopausal women) or inflated by very small trials.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

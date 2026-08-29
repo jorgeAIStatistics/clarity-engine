@@ -1,10 +1,130 @@
 {
-  "name": "Vitamin D3",
-  "category": "vitamin",
+  "name": "vitamin-d3",
+  "category": "supplement",
   "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 35,
+  "study_count": 30,
   "claims": [
+    {
+      "outcome": "blood sugar",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 6,
+      "grade_reasons": [
+        "Precision: ~625 participants verified across 2 of 6 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 3 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 6,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:21612046",
+        "PMID:34473618",
+        "PMID:24622804",
+        "PMID:25062463",
+        "PMID:32795167",
+        "PMID:31701851"
+      ],
+      "studies": [
+        {
+          "pmid": "25062463",
+          "title": "Clinical review: Effect of vitamin D3 supplementation on improving glucose homeostasis and preventing diabetes: a systematic review and meta-analysis.",
+          "year": "2014",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 407
+        },
+        {
+          "pmid": "34473618",
+          "title": "Effect of Vitamin D Supplementation in Type 2 Diabetes Patients with Tuberculosis: A Systematic Review.",
+          "year": "2022",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "21612046",
+          "title": "[Vitamin D3 in prevention of diseases in adults--a systematic review].",
+          "year": "2010",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "32795167",
+          "title": "Vitamin D3 supplementation improves glycemic control in type 2 diabetic patients: Results from an Italian clinical trial.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "24622804",
+          "title": "Vitamin D3 supplementation during weight loss: a double-blind randomized controlled trial.",
+          "year": "2014",
+          "design": "RCT",
+          "population": "human",
+          "n": 218
+        },
+        {
+          "pmid": "31701851",
+          "title": "A single injection of vitamin D",
+          "year": "2020",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "25062463",
+            "metric": "mean_diff",
+            "value": -0.05,
+            "ci_low": -0.12,
+            "ci_high": 0.03,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo or non-vitamin D supplement",
+            "direction": "none",
+            "quote": "hemoglobin A1c (MD -0.05%; 95% CI -0.12 to 0.03, I(2) = 55%)"
+          }
+        ],
+        "n_not_reported": 5,
+        "n_total": 6
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -0.05,
+        "ci_low": -0.12,
+        "ci_high": 0.03,
+        "ci_estimated": false,
+        "n_studies_pooled": null,
+        "comparator": "placebo or non-vitamin D supplement",
+        "direction": "none",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "25062463",
+        "quote": "hemoglobin A1c (MD -0.05%; 95% CI -0.12 to 0.03, I(2) = 55%)"
+      },
+      "summary": "For blood sugar, vitamin-d3 has moderate human evidence (6 studies)."
+    },
     {
       "outcome": "bone health",
       "tier": "Moderate",
@@ -120,17 +240,60 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "35842938",
+            "metric": "odds_ratio",
+            "value": 0.75,
+            "ci_low": 0.64,
+            "ci_high": 0.87,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vitamin D3 plus calcium vs control",
+            "direction": "benefit",
+            "quote": "odds ratio (OR) of 0.75; 95% Confidence interval (CI): 0.64, 0.87"
+          },
+          {
+            "pmid": "38477739",
+            "metric": "odds_ratio",
+            "value": 0.7,
+            "ci_low": 0.27,
+            "ci_high": 1.85,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vitamin D vs placebo",
+            "direction": "benefit",
+            "quote": "Fractures were rare among participants in the main trial randomized to vitamin D vs placebo (7/755 vs 10/758 attending at least 1 follow-up; adjusted odds ratio 0.70, 95% CI, 0.27 to 1.85)."
+          },
+          {
+            "pmid": "12970287",
+            "metric": "mean_diff",
+            "value": 7.0,
+            "ci_low": 0.0,
+            "ci_high": 14.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "mean percentage increase in total MDMB of 7.0, 5.3, and 5% for RLX60-, RLX120-, and placebo-treated patients, respectively, compared with baseline"
+          }
+        ],
+        "n_not_reported": 7,
+        "n_total": 10
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For bone health, Vitamin D3 has moderate human evidence (10 studies)."
+      "summary": "For bone health, vitamin-d3 has moderate human evidence (10 studies)."
     },
     {
       "outcome": "mood / depression",
@@ -138,7 +301,7 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 8,
+      "n_studies": 7,
       "grade_reasons": [
         "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
@@ -148,13 +311,12 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 8,
+        "n_human_studies": 7,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:32749491",
-        "PMID:36098968",
         "PMID:30944021",
         "PMID:40913650",
         "PMID:21612046",
@@ -196,14 +358,6 @@
           "n": 346
         },
         {
-          "pmid": "36098968",
-          "title": "Effect of Vitamin D3 and Omega-3 Fatty Acid Supplementation on Risk of Frailty: An Ancillary Study of a Randomized Clinical Trial.",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": 3174
-        },
-        {
           "pmid": "32749491",
           "title": "Effect of Long-term Vitamin D3 Supplementation vs Placebo on Risk of Depression or Clinically Relevant Depressive Symptoms and on Change in Mood Scores: A Rando",
           "year": "2020",
@@ -229,17 +383,56 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "32749491",
+            "metric": "hazard_ratio",
+            "value": 0.97,
+            "ci_low": 0.87,
+            "ci_high": 1.09,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "none",
+            "quote": "hazard ratio, 0.97 [95% CI, 0.87 to 1.09]"
+          },
+          {
+            "pmid": "37204794",
+            "metric": "odds_ratio",
+            "value": 0.4,
+            "ci_low": 0.17,
+            "ci_high": 0.94,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "1200 IU vs 400 IU vitamin D3",
+            "direction": "benefit",
+            "quote": "odds ratio, 0.40; 95% CI, 0.17-0.94"
+          }
+        ],
+        "n_not_reported": 5,
+        "n_total": 7
       },
       "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
+        "verified": {
+          "value": 0.927,
+          "ci_low": 0.821,
+          "ci_high": 1.033,
+          "n_studies": 2
+        },
+        "exploratory": {
+          "value": 0.927,
+          "ci_low": 0.821,
+          "ci_high": 1.033,
+          "n_studies": 2
+        },
+        "note": null
       },
       "headline_effect": null,
-      "summary": "For mood / depression, Vitamin D3 has moderate human evidence (8 studies)."
+      "summary": "For mood / depression, vitamin-d3 has moderate human evidence (7 studies)."
     },
     {
       "outcome": "blood pressure",
@@ -330,150 +523,23 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 7,
+        "n_total": 7
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For blood pressure, Vitamin D3 has moderate human evidence (7 studies)."
-    },
-    {
-      "outcome": "immune function",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 10,
-      "grade_reasons": [
-        "Limited human evidence: 7 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 10,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:40646117",
-        "PMID:37606927",
-        "PMID:41983136",
-        "PMID:34473618",
-        "PMID:39178988",
-        "PMID:41887286",
-        "PMID:37003908",
-        "PMID:36329227",
-        "PMID:27506771",
-        "PMID:32830462"
-      ],
-      "studies": [
-        {
-          "pmid": "41983136",
-          "title": "Vitamin D status, supplementation, and multiple sclerosis: a systematic review and meta-analysis.",
-          "year": "2026",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39178988",
-          "title": "Vitamin D3 and cancer risk in healthy subjects: An umbrella review of systematic review and meta-analysis.",
-          "year": "2024",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 71
-        },
-        {
-          "pmid": "34473618",
-          "title": "Effect of Vitamin D Supplementation in Type 2 Diabetes Patients with Tuberculosis: A Systematic Review.",
-          "year": "2022",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41887286",
-          "title": "The Effect of Vitamin D3 Supplementation on Vitamin D Status and Associated Health Outcomes in Children: A Randomized Controlled Trial.",
-          "year": "2026",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40646117",
-          "title": "Impact of vitamin D3 supplementation on motor functionality and the immune response in Parkinson's disease patients with vitamin D deficiency.",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": 15
-        },
-        {
-          "pmid": "37606927",
-          "title": "Effect of Vitamin D Supplements on Relapse or Death in a p53-Immunoreactive Subgroup With Digestive Tract Cancer: Post Hoc Analysis of the AMATERASU Randomized ",
-          "year": "2023",
-          "design": "RCT",
-          "population": "human",
-          "n": 417
-        },
-        {
-          "pmid": "37003908",
-          "title": "Impact of vitamin D3 supplementation on COVID-19 vaccine response and immunoglobulin G antibodies in deficient women: A randomized controlled trial.",
-          "year": "2023",
-          "design": "RCT",
-          "population": "human",
-          "n": 14
-        },
-        {
-          "pmid": "36329227",
-          "title": "Effect of vitamin D3 supplementation on cellular immunity and inflammatory markers in COVID-19 patients admitted to the ICU.",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": 110
-        },
-        {
-          "pmid": "32830462",
-          "title": "Effect of vitamin D supplementation on N-glycan branching and cellular immunophenotypes in MS.",
-          "year": "2020",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "27506771",
-          "title": "Prenatal high-dose vitamin D3 supplementation has balanced effects on cord blood Th1 and Th2 responses.",
-          "year": "2016",
-          "design": "RCT",
-          "population": "human",
-          "n": 160
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For immune function, Vitamin D3 has moderate human evidence (10 studies)."
+      "summary": "For blood pressure, vitamin-d3 has moderate human evidence (7 studies)."
     }
   ],
   "effects_established": [
+    "blood sugar",
     "bone health",
     "mood / depression",
-    "blood pressure",
-    "immune function"
+    "blood pressure"
   ],
   "effects_promising": [],
   "effects_emerging": [],
@@ -490,86 +556,86 @@
     "xlogp": 7.9,
     "image_url": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=5280795&t=l",
     "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280795",
-    "matched_query": "cholecalciferol",
+    "matched_query": "vitamin-d3",
     "source": "PubChem",
     "synonyms": [
+      "Vitamin D3",
       "cholecalciferol",
       "67-97-0",
       "Colecalciferol",
       "Calciol",
-      "Oleovitamin D3",
-      "Ricketon"
+      "Oleovitamin D3"
     ]
   },
-  "_cached_at": 1787607364.410903,
+  "_cached_at": 1788020939.716867,
   "explanation": {
-    "what_it_is": "Vitamin D3 (cholecalciferol) is a fat-soluble steroid hormone precursor with the chemical formula C27H44O. It is synthesized in the skin when exposed to ultraviolet B (UVB) radiation and is also obtained from fatty fish, egg yolks, and fortified foods. Most people take it as an oral supplement in the form of capsules, tablets, or liquid drops.",
-    "how_it_works": "Vitamin D3 is converted in the liver to 25-hydroxyvitamin D [25(OH)D], the main circulating form used to assess vitamin D status. This is then activated in the kidneys to 1,25-dihydroxyvitamin D, the most biologically active form, which acts as a steroid hormone by binding to vitamin D receptors (VDR) present in cells throughout the body. Vitamin D receptors regulate the expression of hundreds of genes involved in calcium and phosphate homeostasis, immune cell differentiation and activation, bone mineralization, vascular function, and neurotransmitter synthesis. This widespread tissue distribution explains why vitamin D affects multiple physiological systems beyond bone\u2014including immune responses, cardiovascular regulation, and mood-related pathways in the central nervous system.",
+    "what_it_is": "Vitamin D3 (cholecalciferol, C\u2082\u2087H\u2084\u2084O) is a fat-soluble steroid hormone precursor synthesized in skin upon sun exposure or obtained from animal-derived foods and supplements. It is the form of vitamin D most commonly used in supplementation and most potent in raising blood vitamin D levels. People typically take it as an oral capsule, tablet, or liquid, or occasionally via injection.",
+    "how_it_works": "Vitamin D3 is converted in the liver to calcifediol (25-hydroxyvitamin D), the major circulating form used to assess vitamin D status, and then in the kidneys to calcitriol (1,25-dihydroxyvitamin D), the active hormone form. Calcitriol binds to vitamin D receptors (VDR) found throughout the body\u2014in bone, immune cells, the pancreas, vascular tissue, and brain. Through VDR signaling, vitamin D regulates calcium and phosphate absorption for bone mineralization, modulates immune function and inflammatory pathways, influences insulin secretion and glucose metabolism, and affects neurotransmitter synthesis and mood-related brain regions. This distributed receptor presence explains why vitamin D deficiency is linked to multiple health domains.",
     "outcome_detail": [
+      {
+        "outcome": "blood sugar",
+        "grade": "Moderate",
+        "what_studies_show": "Six human studies (3 primary RCTs and 3 pooled analyses) examined vitamin D3 supplementation in glycemic control and diabetes prevention. A 2014 meta-analysis of 407 participants and subsequent systematic reviews (2010, 2022) found modest effects; a 2022 Italian RCT, a 2014 double-blind RCT (n=218) during weight loss, and a 2020 clinical trial with single-dose injection were also retrieved. The pooled effect across studies showed a mean difference of \u22120.05 [\u22120.12 to 0.03] in blood sugar measures\u2014a small and statistically uncertain benefit.",
+        "why_this_grade": "Evidence is limited to 6 human studies (no animal models), with only 625 participants verified in 2 studies; most abstracts lack sample sizes, so true totals are larger but uncertain. The small pooled effect and confidence interval crossing zero, combined with modest replication, place this at Moderate rather than Strong."
+      },
       {
         "outcome": "bone health",
         "grade": "Moderate",
-        "what_studies_show": "A 2023 meta-analysis of 6,555 participants examined daily oral vitamin D3 plus calcium supplementation and found evidence of benefit on bone mineral density and fracture risk. Additional 2023 systematic reviews and a 2024 RCT (n=1,682) in adults evaluated the effect of vitamin D3 supplementation on bone mineral content, turnover markers, and fracture incidence. A 2019 RCT examined bone microstructure changes in response to vitamin D3 in a placebo-controlled design, and a 2022 RCT (n=92) in newborns showed effects on bone health markers. The evidence indicates vitamin D3 does influence bone density and markers of bone turnover in multiple age groups.",
-        "why_this_grade": "The retrieved studies are limited in number (7 primary human studies and 3 meta-analyses) relative to the threshold for a higher grade. While multiple RCTs and meta-analyses show consistent signals on bone mineral density and fracture risk, the overall evidence base remains modest, supporting a Moderate rather than Strong rating."
+        "what_studies_show": "Ten human studies (7 primary RCTs and 3 meta-analyses) examined bone mineral density, bone turnover, and fracture risk. A 2023 meta-analysis of 6555 participants and a 2024 RCT (n=1682) in South African populations assessed vitamin D3 with or without calcium on bone mineral content and fracture outcomes. Additional trials examined newborns (n=92, 2022), bone microstructure (2019), and general adults (2010 systematic review). Collectively, these studies show vitamin D3 supports bone mineral density and markers of bone turnover.",
+        "why_this_grade": "All 10 studies are human-based, with substantial sample sizes (especially the 2023 meta-analysis n=6555), but only 7 primary trials and 3 pooled analyses were retrieved\u2014below the threshold for Strong-tier confidence. The evidence shows consistent direction but limited independent replication of meta-analytic conclusions."
       },
       {
         "outcome": "mood / depression",
         "grade": "Moderate",
-        "what_studies_show": "A 2020 RCT (n=871) of long-term vitamin D3 supplementation versus placebo measured depression risk or clinically relevant depressive symptoms as a primary outcome. A 2024 RCT in rural adolescents evaluated whether vitamin D3 supplementation improves depression scores. A 2023 RCT (n=346) followed children from early life and assessed psychiatric symptoms at ages 6\u20138 years following early vitamin D3 exposure. A 2022 RCT (n=3,174) tested vitamin D3 combined with omega-3 fatty acids on frailty and mood-related outcomes. Additionally, a 2010 systematic review evaluated vitamin D3 in prevention of various conditions, including mood disorders, in adults. The evidence suggests vitamin D3 may modestly influence mood and depressive symptoms in multiple age groups.",
-        "why_this_grade": "Although 8 human studies are represented in the retrieved records, only a single meta-analysis or systematic review of mood outcomes exists, and its conclusions are not yet independently replicated or verified in the records provided. This lack of replication of findings across independent meta-analyses keeps the grade at Moderate."
+        "what_studies_show": "Seven human RCTs examined vitamin D3 supplementation and mood or depression outcomes. A 2020 trial (n=871) evaluated long-term vitamin D3 versus placebo on clinical depression risk; a 2023 RCT (n=346) followed infants supplemented in the first 2 years of life and measured psychiatric symptoms at ages 6\u20138; a 2024 trial enrolled rural adolescents; and a 2019 trial (n=23) in depression patients examined treatment response. A 2025 RCT (n=35) in women on hormonal contraceptives and a 2010 systematic review also contributed. Studies show modest positive trends toward mood improvement with supplementation.",
+        "why_this_grade": "Seven human studies exist but only a single meta-analysis or systematic review is retrieved\u2014no independent replication of the pooled conclusion. This consistency gap, combined with small trial sizes in some cases, keeps the grade at Moderate rather than Strong, even though direction is consistent."
       },
       {
         "outcome": "blood pressure",
         "grade": "Moderate",
-        "what_studies_show": "A 2016 meta-analysis (n=4,744) assessed the effect of vitamin D3 supplementation on blood pressure in adults and found evidence of a modest association. A 2022 RCT (n=1,025) examined the impact of vitamin D3 versus placebo on cardiac structure and function, which includes blood pressure regulation. A 2022 RCT (n=688) from the STURDY trial specifically evaluated effects of vitamin D supplementation on orthostatic hypotension. A 2019 RCT (n=181) measured effects on FGF23, a hormone involved in cardiovascular and renal regulation. The evidence indicates vitamin D3 may have a small beneficial effect on blood pressure regulation in some populations.",
-        "why_this_grade": "Only 5 primary human RCTs and 2 pooled analyses are represented in the retrieved records\u2014below the threshold for a Strong rating. While the meta-analysis and multiple RCTs suggest a relationship between vitamin D3 and blood pressure, the limited number of primary studies and the modest effect sizes support a Moderate grade."
-      },
-      {
-        "outcome": "immune function",
-        "grade": "Moderate",
-        "what_studies_show": "A 2026 systematic review and meta-analysis examined vitamin D status, supplementation, and multiple sclerosis, an autoimmune condition. A 2024 systematic review (n=71) evaluated vitamin D3 and cancer risk in healthy subjects, reflecting immune surveillance outcomes. A 2022 systematic review assessed vitamin D supplementation in type 2 diabetes patients with tuberculosis, combining metabolic and immune outcomes. A 2026 RCT examined vitamin D3 supplementation on vitamin D status and associated health outcomes including immune-related markers in children. A 2025 RCT (n=15) measured the impact of vitamin D3 on immune response and motor function in Parkinson's disease. A 2023 RCT (n=417) looked at vitamin D supplements in a p53-immunoreactive cancer subgroup. The evidence shows vitamin D3 influences immune markers and disease outcomes in several clinical contexts.",
-        "why_this_grade": "The retrieved records contain 7 primary human studies and 3 systematic reviews (10 human studies total), which falls short of the evidence threshold for a Strong rating. The body of evidence is modest and not yet independently replicated across independent meta-analyses with consistent methodology, supporting a Moderate grade."
+        "what_studies_show": "Seven human studies (5 primary RCTs and 2 meta-analyses) examined blood pressure outcomes. A 2016 meta-analysis of 4744 participants and a 2010 systematic review provided pooled estimates; 2022 RCTs (n=1025 and n=688) evaluated vitamin D3 versus placebo on cardiac structure/function and orthostatic hypotension; 2019 trials (n=23 and n=181) examined supplementation effects. The overall pattern shows small reductions in systolic and diastolic blood pressure, though effect sizes are modest.",
+        "why_this_grade": "Five primary human studies and 2 pooled analyses were retrieved, below the Strong-evidence threshold. Sample sizes are substantial (especially 2016 meta-analysis n=4744), but limited primary trial count and the modest effect magnitude support Moderate grading."
       }
     ],
-    "evidence_base": "The evidence base for vitamin D3 across all four outcomes is entirely human-derived; no animal studies appear in the retrieved records. The research is dominated by randomized controlled trials and meta-analyses / systematic reviews published between 2010 and 2026, with a recent concentration of studies from 2022 onward. Across all outcomes, each is supported by approximately 7\u201310 human studies, typically including 1\u20133 meta-analyses. This recency and reliance on RCTs and meta-analyses is methodologically sound, but the modest total number of primary studies per outcome (generally below 8) limits confidence; stronger evidence would require a larger, more diverse pool of independent trials or multi-trial confirmations of the same outcome.",
-    "emerging_research": "Recent studies (2025\u20132026) are beginning to examine vitamin D3 in more specific populations and contexts\u2014such as its role in neurological conditions (Parkinson's disease), its interaction with contraceptive hormones and sexual function, and its effect in early childhood on later psychiatric outcomes. Additionally, emerging work is exploring vitamin D's role in cancer immunosurveillance and autoimmune disease (multiple sclerosis) through meta-analyses. These newer directions suggest a shift toward understanding vitamin D not just in bone and general health, but in mechanistic immune and neurological pathways; however, study numbers remain small and findings preliminary.",
-    "open_questions": "Among the studies retrieved here, the majority are relatively short-term interventions (weeks to months), and few appear to follow participants beyond 12 months. The age distribution of trials varies\u2014some focus on infants and children, others on adults or older adults\u2014but no single outcome shows a complete picture across all life stages. The retrieved records include few studies in pregnant women or specific disease populations (e.g., chronic kidney disease), so the applicability of these findings to all groups remains uncertain. Because these data represent only a sample of approximately 40 abstracts per outcome, we cannot characterize what longer-term trials, additional populations, or mechanistic research may exist in the broader literature; we can only describe what is present in these records.",
-    "caveats": "Vitamin D3 is fat-soluble and can accumulate in body tissues; sustained intakes above 100 mcg/day (4,000 IU) may increase the risk of hypercalcemia, especially in individuals with hyperparathyroidism or granulomatous diseases. Vitamin D3 may interact with corticosteroids, anticonvulsants, and some medications that affect calcium metabolism; consultation with a healthcare provider is advisable before supplementing, particularly for those on chronic medications or with underlying bone, renal, or metabolic conditions. The quality and potency of over-the-counter vitamin D3 supplements varies; third-party testing or use of USP-verified products is recommended.",
+    "evidence_base": "The evidence base for vitamin D3 is exclusively human studies (no animal models provided in the retrieved records). It consists of a mix of randomized controlled trials (ranging from n=23 to n=1682), systematic reviews, and meta-analyses conducted primarily between 2010 and 2025. The research spans blood sugar, bone health, mood, and cardiovascular outcomes, with meta-analyses showing modest pooled effects. This human-centered, moderate-quality evidence base suggests practical clinical relevance but does not yet meet the threshold for claiming strong or definitive efficacy in any single outcome.",
+    "emerging_research": "Recent trials (2022\u20132025) have begun examining vitamin D3 in specific populations (rural adolescents, exclusively breastfed newborns, women on hormonal contraceptives, South African cohorts) and investigating long-term supplementation (e.g., a 2020 trial following depression risk over extended periods). Single-injection and innovative dosing strategies are also appearing in the literature (2020). These directions are promising for personalizing supplementation and understanding durability, but remain early and require replication.",
+    "open_questions": "Among the study records retrieved here, most RCTs range from a few weeks to 2 years; longer-term (5+ year) safety and efficacy data are not prominent in these samples. The retrieved studies appear concentrated in adult and recent pediatric/adolescent populations, though the 2023 meta-analysis (n=6555) likely spans diverse ages. None of the provided abstracts explicitly report on potential interactions with medications or vitamin D toxicity at high doses, and it is unclear whether the retrieved sample captures trials in populations with severe deficiency versus mild insufficiency. Because this is a sample of ~40 abstracts per outcome, the complete global literature may contain additional relevant studies; these gaps reflect only what is or is not visible in the records provided.",
+    "caveats": "Vitamin D3 is fat-soluble and accumulates in body tissues; chronic excessive supplementation (generally >10,000 IU/day long-term) can cause hypercalcemia and kidney or bone damage. Individuals with granulomatous disorders (sarcoidosis, tuberculosis), hyperparathyroidism, or kidney disease should consult a healthcare provider before supplementing, as vitamin D metabolism may be dysregulated. Vitamin D3 may interact with glucocorticoids, thiazide diuretics, and medications affecting calcium absorption; timing and monitoring are advisable in these cases.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "All four outcomes are graded Moderate based on small primary trial populations and absence of a replicated pooled effect signal across the evidence base \u2014 the retrieved studies are real but underpowered individually and lack convergent clinical consensus.",
+    "headline": "All four outcomes are graded Moderate due to limited primary evidence (5\u20137 RCTs per outcome) and absence of a consistent pooled effect across the literature, making it difficult to distinguish true effects from noise or publication bias.",
     "concerns": [
       {
-        "issue": "Median sample sizes too small to detect modest clinical effects",
-        "detail": "Across all outcomes, median primary trial n ranges from 110\u20131682. For bone health, 6 of 10 studies report n, with a median of 1682 driven by two large trials (5110, 6555); the remaining four primary RCTs are much smaller (24, 92, 260, 1019). For mood/depression, the median is 346 but six RCTs fall below 200 (23, 35, 169, with unreported n for 3 others). Small trials are prone to random variation and type II error, especially if true effects are modest (\u00b10.2\u20130.3 SD on continuous outcomes like mood or BP).",
+        "issue": "Pooled effects absent or near-null",
+        "detail": "Blood sugar shows a pooled effect of -0.05 [-0.12 to 0.03]\u2014a confidence interval that crosses zero and is clinically trivial. For bone health, mood, and blood pressure, no extractable pooled effect is reported at all, despite the presence of meta-analyses and systematic reviews. This suggests either inconsistent direction of effect across trials or small individual effect sizes that do not survive synthesis.",
         "severity": "high"
       },
       {
-        "issue": "No extractable pooled effect from meta-analyses despite their presence",
-        "detail": "The engine notes 'pooled effect: none extractable' for all four outcomes, despite meta-analyses being present (2 for bone health, 1 for mood, 1 for blood pressure, 3 for immune function). This signals either heterogeneity precluding a summary estimate, null or conflicting findings across trials, or insufficient reporting in the abstracts provided. Without visibility into the meta-analytic estimates or forest plots, the reader cannot assess whether the retrieved trials point toward benefit, harm, or null.",
+        "issue": "Threshold failure for primary evidence",
+        "detail": "Blood sugar, mood, and blood pressure each cite 'Limited human evidence: [5\u20137] primary human studies and [2\u20133] pooled analyses retrieved \u2014 below the threshold for the top tier.' This is an explicit statement that the evidence base falls short of the standard needed for higher confidence. Bone health has 7 primary RCTs but still fails to reach top tier, suggesting the quality or consistency of those trials is questionable.",
         "severity": "high"
       },
       {
-        "issue": "Immune function evidence dominated by mechanistic and disease-specific trials",
-        "detail": "Six of 10 immune function trials target specific conditions (MS, TB, COVID-19, cancer, Parkinson's) or measure immune markers in isolated populations (n=14\u2013160). Only one trial explicitly evaluates general immune function in a healthy cohort. Trials in disease-specific contexts do not establish that vitamin D3 improves immune function in otherwise healthy people, and small n (14, 15, 71) in these populations cannot reliably detect clinical benefit.",
+        "issue": "Severe underreporting of sample sizes",
+        "detail": "Blood sugar reports n for only 2 of 6 studies; mood reports n for only 5 of 7; blood pressure reports n for 6 of 7. When sample sizes are missing from abstracts, the true precision and weight of included studies cannot be assessed. The engine notes 'true total is substantially larger' for blood sugar, but without visibility into individual trial sizes, outlier studies with small n could have outsized influence on qualitative conclusions.",
         "severity": "high"
       },
       {
-        "issue": "Temporal clustering and language of trial titles suggest publication bias toward positive or novel findings",
-        "detail": "Mood/depression trials are recent (2010\u20132025, half from 2020 onward); bone health spans 2003\u20132024 but recent meta-analyses (2023, 2024) suggest continued interest despite decades of prior work, which may indicate selective reporting of newer or favorable results. Immune function is heavily weighted to 2022\u20132026 (8 of 10 studies), clustering around COVID-19 and emerging disease contexts rather than foundational immune parameters. Absence of funding source attribution in these records prevents assessment of whether industry sponsorship or selective registration amplified apparent effects.",
+        "issue": "Single overarching systematic review dominates multiple outcomes",
+        "detail": "The 2010 review '[Vitamin D3 in prevention of diseases in adults--a systematic review]' appears across all four outcomes (blood sugar, bone health, mood, blood pressure). This means conclusions about efficacy across different physiological systems rest substantially on a single source document from 15 years ago. Replication by independent reviews is absent for mood and blood pressure.",
         "severity": "moderate"
       },
       {
-        "issue": "Blood pressure outcome relies on single large meta-analysis and small primary RCTs",
-        "detail": "Only 5 primary RCTs for blood pressure, with one trial n=23 overlapping two outcomes (depression and BP), and no trials explicitly powered for BP as a primary endpoint (most are secondary outcomes from cardiology or supplementation trials). The 2016 meta-analysis (n=4744) is the evidence anchor, but its conclusion is not independently replicated\u2014if that meta-analysis is methodologically flawed or excludes relevant trials, the grade rests on a single source.",
+        "issue": "Heterogeneous and sometimes off-topic trial populations",
+        "detail": "The mood outcome includes a 2025 trial on 'hormonal contraceptives combined with vitamin D3 supplements on sexual dysfunction' (n=35) and a 2023 trial on psychiatric symptoms in 6-year-olds, making pooling of a depression signal implausible. Blood pressure includes a trial on 'asymmetric- and symmetric dimethylarginine in arterial hypertension,' a mechanistic endpoint, not a clinical blood pressure outcome. These mismatches reduce confidence that effect estimates address the stated outcome.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Vitamin D is a secosteroid hormone with established roles in calcium homeostasis (bone), immune regulation (1,25-dihydroxyvitamin D activates dendritic cells and Tregs), and neuroendocrine signaling (dopamine, serotonin precursors in mood regulation). The mechanistic pathway to bone health is most direct: vitamin D regulates intestinal calcium absorption and parathyroid hormone feedback. The leap to mood and immune function is larger\u2014vitamin D status and depression or immune outcomes are epidemiologically associated, but causality via supplementation requires that the intervention correct a deficiency state; the trials do not consistently report baseline vitamin D levels, deficiency prevalence, or responder subgroup analyses, so it is unclear whether observed effects are confined to deficient individuals or extend to replete populations.",
-    "strongest_counterargument": "A skeptic would note that despite decades of research and billions of dollars spent on vitamin D supplementation, no outcome achieved a 'High' grade and no meta-analysis yielded an extractable pooled effect large enough to report\u2014a pattern consistent with effect inflation via selective reporting and small-trial bias rather than robust clinical benefit. The clustering of recent trials in disease-specific or high-risk populations (pregnant women, COVID-19 patients, MS cohorts) also suggests researchers are seeking signal in vulnerable subgroups rather than demonstrating benefit in the general population, which is a hallmark of post-hoc analysis and low evidence quality.",
-    "what_would_change_the_picture": "Large, adequately powered RCTs (n \u2265 1000 per arm) with pre-specified stratification by baseline vitamin D status (deficient vs. sufficient), objective primary endpoints (bone fracture incidence, major depression diagnosis, clinical hypertension, infection rate), and independent meta-analyses replicating the pooled effect in the general population would be needed to elevate these outcomes to High confidence. Until then, the grade of Moderate reflects the current evidence: real but small trials with inconsistent or unreported effects.",
+    "mechanism_check": "Vitamin D is a calcitriol precursor with well-established roles in calcium homeostasis (plausibly supporting bone health) and immune function (plausibly linked to mood and inflammation). However, the leap from mechanism to clinical outcomes is substantial: the blood sugar outcome rests on D's role in pancreatic beta-cell function, yet the pooled effect is null; mood relies on hypothesized links to serotonin and immune tolerance, but the evidence base is small and heterogeneous; blood pressure improvement is mechanistically unclear (vasodilation? PTH suppression?) and unsupported by a visible pooled effect. The mechanism is reasonable but does not compensate for weak or absent clinical signals.",
+    "strongest_counterargument": "A skeptic would argue that the retrieved evidence shows vitamin D3 does not have clinically meaningful effects on any of these outcomes. For blood sugar, the pooled estimate is centered on zero. For bone health, mood, and blood pressure, no pooled effect is even extractable, and the engine explicitly notes the primary evidence base is below the threshold for confidence. The apparent effect on bone health rests on seven RCTs of variable quality and populations (from newborns to elderly), making it impossible to infer a robust signal. The dominance of a single 2010 systematic review across four outcomes, combined with small trial sizes and selective outcome reporting (e.g., a trial on sexual dysfunction counted as mood evidence), suggests the evidence base is too weak to support any grade beyond 'Insufficient.'",
+    "what_would_change_the_picture": "A large (n \u2265 500), multisite RCT with pre-registered primary endpoints and 12+ months follow-up in a single well-defined population (e.g., type 2 diabetics for blood sugar, postmenopausal women for bone density, or adults with baseline depression for mood) would clarify whether vitamin D3 has a real effect. Independent replication of any positive finding by a second large trial would move the evidence to High confidence; conversely, a well-powered null result would justify a downgrade to Insufficient.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

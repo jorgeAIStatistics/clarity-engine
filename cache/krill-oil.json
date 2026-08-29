@@ -1,6 +1,6 @@
 {
-  "name": "Krill Oil",
-  "category": "fat",
+  "name": "krill-oil",
+  "category": "supplement",
   "overall_score": 76,
   "tier": "Moderate",
   "study_count": 50,
@@ -111,17 +111,87 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "38776073",
+            "metric": "mean_diff",
+            "value": -0.3,
+            "ci_low": -6.9,
+            "ci_high": 6.4,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "none",
+            "quote": "between-group mean difference, -0.3; 95% CI, -6.9 to 6.4"
+          },
+          {
+            "pmid": "35880828",
+            "metric": "mean_diff",
+            "value": -5.18,
+            "ci_low": -10.0,
+            "ci_high": -0.32,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "difference in adjusted mean change between groups at 6 mo: -5.18; 95% CI: -10.0, -0.32"
+          },
+          {
+            "pmid": "39126570",
+            "metric": "smd",
+            "value": -0.24,
+            "ci_low": -0.41,
+            "ci_high": -0.08,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "krill oil demonstrated a significant small effect in improving knee physical function (SMD -0.24, 95% CI [-0.41; -0.08]"
+          },
+          {
+            "pmid": "39960912",
+            "metric": "smd",
+            "value": -0.6,
+            "ci_low": -0.99,
+            "ci_high": -0.21,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "usual care",
+            "direction": "benefit",
+            "quote": "the krill oil group demonstrated no significant improvement in knee osteoarthritis as measured by visual analog scale; however, it exhibited significant benefits in terms of pain (standardized mean difference [SMD] -0.60; 95% confidence interval [CI] -0.99 to -0.21)"
+          }
+        ],
+        "n_not_reported": 5,
+        "n_total": 9
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For joint / arthritis, Krill Oil has moderate human evidence (9 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": -0.24,
+        "ci_low": -0.41,
+        "ci_high": -0.08,
+        "ci_estimated": false,
+        "n_studies_pooled": 5,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "39126570",
+        "quote": "krill oil demonstrated a significant small effect in improving knee physical function (SMD -0.24, 95% CI [-0.41; -0.08]"
+      },
+      "summary": "For joint / arthritis, krill-oil has moderate human evidence (9 studies)."
     },
     {
       "outcome": "cholesterol / lipids",
@@ -145,15 +215,15 @@
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:39126570",
-        "PMID:42144109",
         "PMID:38039646",
+        "PMID:39126570",
         "PMID:36286433",
         "PMID:28371906",
+        "PMID:42144109",
         "PMID:42285576",
         "PMID:24816553",
-        "PMID:22685607",
         "PMID:40884171",
+        "PMID:22685607",
         "PMID:36005486",
         "PMID:27982752",
         "PMID:15656713",
@@ -266,17 +336,32 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "24461313",
+            "metric": "mean_diff",
+            "value": -10.2,
+            "ci_low": -20.4,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Relative to subjects in the placebo group, those administered krill oil had a statistically significant calculated reduction in serum TG levels of 10.2%."
+          }
+        ],
+        "n_not_reported": 12,
+        "n_total": 13
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For cholesterol / lipids, Krill Oil has moderate human evidence (13 studies)."
+      "summary": "For cholesterol / lipids, krill-oil has moderate human evidence (13 studies)."
     },
     {
       "outcome": "cognition",
@@ -300,9 +385,9 @@
       },
       "study_ids": [
         "PMID:37937381",
+        "PMID:39519107",
         "PMID:32872354",
-        "PMID:34181501",
-        "PMID:39519107"
+        "PMID:34181501"
       ],
       "studies": [
         {
@@ -340,16 +425,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 4,
+        "n_total": 4
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cognition, Krill Oil has only preliminary or animal evidence (4 studies)."
+      "summary": "For cognition, krill-oil has only preliminary or animal evidence (4 studies)."
     },
     {
       "outcome": "inflammation",
@@ -368,35 +453,35 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 11,
-        "n_animal_studies": 13,
+        "n_human_studies": 10,
+        "n_animal_studies": 14,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:39179145",
         "PMID:35880828",
-        "PMID:40686273",
+        "PMID:38039646",
         "PMID:39126570",
         "PMID:41933837",
-        "PMID:38039646",
+        "PMID:40686273",
         "PMID:35235416",
         "PMID:27701428",
-        "PMID:35057549",
-        "PMID:36566465",
-        "PMID:32872354",
-        "PMID:22126533",
-        "PMID:39009356",
-        "PMID:42014647",
-        "PMID:40884171",
-        "PMID:34181501",
         "PMID:39519107",
+        "PMID:35057549",
+        "PMID:32872354",
+        "PMID:36566465",
+        "PMID:39009356",
+        "PMID:22126533",
+        "PMID:33572810",
+        "PMID:40884171",
+        "PMID:42014647",
+        "PMID:34181501",
+        "PMID:33292022",
         "PMID:20587038",
         "PMID:36005486",
-        "PMID:33292022",
         "PMID:27817918",
         "PMID:32371092",
-        "PMID:26016867",
-        "PMID:33572810"
+        "PMID:26016867"
       ],
       "studies": [
         {
@@ -480,14 +565,6 @@
           "n": 47
         },
         {
-          "pmid": "36566465",
-          "title": "Impact of Antarctic krill oil supplementation on skeletal muscle injury recovery after resistance exercise.",
-          "year": "2023",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "40686273",
           "title": "Krill oil alleviates type 2 diabetes mellitus-induced sarcopenia in mice",
           "year": "2025",
@@ -520,6 +597,14 @@
           "n": null
         },
         {
+          "pmid": "36566465",
+          "title": "Impact of Antarctic krill oil supplementation on skeletal muscle injury recovery after resistance exercise.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "35235416",
           "title": "Krill Oil Attenuates Inflammation in Monosodium Iodoacetate-Induced Osteoarthritic Rats, SW982 Synovial Cell Line, and Primary Chondrocytes.",
           "year": "2022",
@@ -544,16 +629,16 @@
           "n": null
         },
         {
-          "pmid": "34181501",
-          "title": "Protective effects of krill oil on high fat diet-induced cognitive impairment by regulation of oxidative stress.",
+          "pmid": "33572810",
+          "title": "Krill Oil Supplementation Reduces Exacerbated Hepatic Steatosis Induced by Thermoneutral Housing in Mice with Diet-Induced Obesity.",
           "year": "2021",
           "design": "Animal",
           "population": "animal",
           "n": null
         },
         {
-          "pmid": "33572810",
-          "title": "Krill Oil Supplementation Reduces Exacerbated Hepatic Steatosis Induced by Thermoneutral Housing in Mice with Diet-Induced Obesity.",
+          "pmid": "34181501",
+          "title": "Protective effects of krill oil on high fat diet-induced cognitive impairment by regulation of oxidative stress.",
           "year": "2021",
           "design": "Animal",
           "population": "animal",
@@ -594,16 +679,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 24,
+        "n_total": 24
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Krill Oil has moderate human evidence (24 studies)."
+      "summary": "For inflammation, krill-oil has moderate human evidence (24 studies)."
     }
   ],
   "effects_established": [
@@ -618,75 +703,75 @@
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787608429.0296488,
+  "_cached_at": 1788017748.2316391,
   "explanation": {
-    "what_it_is": "Krill oil is a lipid-rich extract from Antarctic krill (small shrimp-like crustaceans), harvested and processed into capsule or liquid form. It is rich in omega-3 polyunsaturated fatty acids (EPA and DHA), phospholipids, and astaxanthin, a natural red pigment with antioxidant properties. Unlike fish oil, krill oil's omega-3s are bound to phospholipids, which may affect how the body absorbs and uses them.",
-    "how_it_works": "Krill oil's omega-3 fatty acids (EPA and DHA) are incorporated into cell membranes and act as precursors for anti-inflammatory signaling molecules called eicosanoids and resolvins. These compounds dampen the production of pro-inflammatory cytokines \u2014 chemical messengers that drive inflammation and pain. Astaxanthin, the accompanying antioxidant, scavenges free radicals and may suppress inflammatory pathways at the gene level. The phospholipid structure may enhance absorption and bioavailability compared to fish oil, allowing omega-3s to reach target tissues more efficiently.",
+    "what_it_is": "Krill oil is an oil extracted from Antarctic krill (Euphausia superba), small crustaceans that form the base of Southern Ocean food webs. It is rich in omega-3 polyunsaturated fatty acids (EPA and DHA), phospholipids, and the antioxidant astaxanthin. People typically take it as a softgel capsule supplement, often marketed as a marine alternative to fish oil.",
+    "how_it_works": "Krill oil's bioactive components work through several mechanisms. The omega-3 fatty acids (EPA and DHA) are incorporated into cell membranes, reduce production of pro-inflammatory molecules (cytokines and eicosanoids), and improve lipid metabolism\u2014helping lower triglycerides and modulate cholesterol ratios. The phospholipid form in krill oil may enhance absorption compared to triglyceride forms in fish oil. Astaxanthin, a carotenoid, acts as a potent antioxidant, reducing oxidative stress and free-radical damage in tissues. Together, these components are thought to dampen both inflammation and joint degradation, which would explain potential benefits in osteoarthritis and inflammatory conditions.",
     "outcome_detail": [
       {
         "outcome": "joint / arthritis",
         "grade": "Moderate",
-        "what_studies_show": "Six human studies (three primary RCTs and three meta-analyses with combined sample sizes of 700\u2013971 participants) found that krill oil supplementation reduced knee osteoarthritis pain and stiffness over 6 months or longer. A 2024 meta-analysis of knee pain pooled three RCTs, while separate 2025 and 2026 meta-analyses on knee osteoarthritis specifically included larger samples. A 2024 RCT (n=262) and 2022 RCT (n=235) in adults with mild-to-moderate knee osteoarthritis showed measurable pain reduction and improved function.",
-        "why_this_grade": "The evidence is Moderate because only 6 human studies were retrieved \u2014 below the threshold for Strong evidence \u2014 and the primary trials cluster around knee osteoarthritis in relatively short follow-ups. The consistent direction across meta-analyses and primary trials supports a real but modest effect. Animal evidence was also retrieved (n=3) but is not the basis for confidence in humans."
+        "what_studies_show": "Multiple meta-analyses (2024\u20132026, pooling up to 971 participants) and three randomized controlled trials (2016\u20132024) show that krill oil reduces knee osteoarthritis pain and joint symptoms. A 2022 RCT of 235 adults with mild to moderate knee osteoarthritis found significant improvement in pain over 6 months. The pooled effect across studies shows a small but consistent benefit (standardized mean difference \u22120.24), meaning pain scores improve modestly on average compared to placebo or control.",
+        "why_this_grade": "Six human studies (including three primary RCTs and three meta-analyses) provide solid evidence of efficacy in knee osteoarthritis. However, the sample size across primary trials remains modest and the effect size is small; the evidence threshold for 'Strong' requires larger or more numerous trials. The limitation is quantity and precision of human data rather than inconsistency."
       },
       {
         "outcome": "cholesterol / lipids",
         "grade": "Moderate",
-        "what_studies_show": "Seven human studies (four primary RCTs and three meta-analyses, with \u22653312 verified participants from 6 studies, likely many more unreported) examined krill oil's effects on blood lipids. A 2017 meta-analysis of RCTs, a 2023 meta-analysis (n=1458), and a 2024 study documented lipid-modifying effects, most notably lowering serum triglycerides. A 2026 RCT (n=72) found krill oil increased plasma omega-3 levels more than fish oil, and a 2026 trial (n=300) combining krill oil with a heart-healthy diet showed benefit on lipid-related outcomes. A 2014 RCT reported triglyceride reduction without increasing LDL cholesterol.",
-        "why_this_grade": "The evidence is Moderate because only 4 primary human RCTs and 3 pooled analyses were retrieved \u2014 below Strong-tier thresholds. Many abstracts omitted sample sizes, so the true participant count is unknown. The effect on triglycerides appears consistent, but data on other lipid markers (total cholesterol, HDL) and long-term cardiovascular outcomes remain limited in the retrieved records."
+        "what_studies_show": "Seven human studies (four primary RCTs and three meta-analyses, covering at least ~3312 verified participants) demonstrate that krill oil improves lipid profiles\u2014notably lowering triglycerides and favorably modulating cholesterol. A 2026 RCT (n=72) found krill oil raised plasma omega-3 levels more effectively than fish oil. A 2017 meta-analysis of randomized controlled trials confirmed lipid-modifying effects. A 2014 RCT showed triglyceride reduction without raising LDL cholesterol. Recent trials (2023\u20132026) in cardiovascular health populations replicate these benefits.",
+        "why_this_grade": "The evidence base includes multiple RCTs and meta-analyses with a substantial aggregate sample. However, most study abstracts lack explicit participant counts, so true total is likely larger but not precisely quantified in the data provided. Four primary human studies meet the threshold for Moderate; more robust or longer trials would be needed for Strong."
       },
       {
         "outcome": "cognition",
         "grade": "Preliminary",
-        "what_studies_show": "Four animal studies (2020\u20132024) tested krill oil in cognitive models, including aged mice, APP/PS1 transgenic mice (Alzheimer's model), and animals on high-fat diets. These studies reported that krill oil supplementation reduced markers of oxidative stress and neuronal apoptosis and mitigated cognitive impairment scores in animal testing. No human trials were retrieved.",
-        "why_this_grade": "The evidence is Preliminary because it is animal-only (0 human studies). While the mechanistic findings suggest krill oil may protect brain tissue, animal cognition models do not reliably predict human efficacy. No human trial data exist in the retrieved records to confirm these effects translate to people."
+        "what_studies_show": "Four animal studies (2020\u20132024) in mice models show that krill oil attenuates cognitive impairment, reduces oxidative stress in the hippocampus, and alleviates early mild cognitive decline in APP/PS1 transgenic mice (a model of Alzheimer's-like pathology). These studies suggest a plausible neuroprotective mechanism through antioxidant and anti-apoptotic pathways.",
+        "why_this_grade": "All evidence is from animal models only; no human trials have been retrieved. Animal findings do not reliably translate to human cognitive or neurological outcomes. This is classified Preliminary because it is unproven in humans and remains speculative for clinical use."
       },
       {
         "outcome": "inflammation",
         "grade": "Moderate",
-        "what_studies_show": "Eleven human studies (seven primary RCTs and three meta-analyses, with \u22653510 verified participants across 7 studies) examined systemic or joint-specific inflammation. Meta-analyses (2023, 2024, 2026) on cardiovascular health and knee osteoarthritis reported reductions in inflammatory markers (CRP, IL-6, TNF-\u03b1). Human RCTs included a 2026 pilot trial of chronic musculoskeletal pain in older adults, a 2024 study (n=39) in systemic lupus patients showing disease activity improvement, and a 2022 trial (n=235) documenting pain and inflammatory markers together.",
-        "why_this_grade": "The evidence is Moderate because only 7 primary human studies and 3 pooled analyses were retrieved \u2014 below the Strong threshold. Most abstracts omit sample sizes, so the true total enrolled is likely higher but unquantified. The effect direction is consistent across studies and populations, but sample sizes in primary trials are modest and the mechanistic link (e.g., which inflammatory markers drop most reliably) requires further definition."
+        "what_studies_show": "Ten human studies (seven primary RCTs and three meta-analyses, with at least ~3510 verified participants) show krill oil reduces inflammatory markers and inflammatory disease activity. A 2024 RCT in 39 patients with systemic lupus erythematosus found correction of omega-3 deficiency and improvement in disease activity. Meta-analyses (2023\u20132026) confirm anti-inflammatory effects in knee osteoarthritis and musculoskeletal pain. A 2026 pilot RCT in older adults with chronic musculoskeletal pain also reported benefit.",
+        "why_this_grade": "Moderate grade reflects solid human evidence (10 studies) but limited precision\u2014most abstracts omit sample size, so the true participant total is larger than verifiable here. Seven primary human studies and three meta-analyses support the effect, but the overall body remains below the threshold for Strong due to modest sample sizes and incomplete reporting in the retrieved records."
       }
     ],
-    "evidence_base": "The research foundation for krill oil is predominantly human and recent (majority 2020\u20132026), with 25 human studies (mostly RCTs and meta-analyses) and 13 animal studies among the retrieved records. Meta-analyses dominate the human literature and generally pool 2\u20133 primary trials each, indicating the individual trial base is still modest. Sample sizes in primary human RCTs range from ~40 to ~300 participants, with follow-up durations typically 3\u20136 months. Overall, the evidence is more mature than preliminary but not yet robust enough to claim established efficacy across all outcomes \u2014 hence the Moderate overall tier.",
-    "emerging_research": "Recent directions include 1) direct comparison of krill oil to fish oil absorption and bioavailability (2026 RCT showing superior omega-3 delivery), 2) applications beyond knee osteoarthritis, such as chronic musculoskeletal pain in older adults and systemic lupus (2024\u20132026), and 3) mechanistic studies isolating the contribution of astaxanthin and phospholipid formulation to efficacy. Animal models of cognitive aging and Alzheimer's-like pathology (2020\u20132024) suggest neuroprotective potential, though human trials have not yet begun.",
-    "open_questions": "Among the studies retrieved here, cognition is entirely animal-based with no human data. For joint health and inflammation, most retrieved primary trials were \u22646 months in duration \u2014 longer follow-up and relapse rates after stopping krill oil are not visible in these records. The retrieved studies cluster heavily on knee osteoarthritis and cardiovascular outcomes; applicability to other joint conditions, other inflammatory states, or preventive use in healthy adults is unclear from the sample provided. Many abstracts omitted sample sizes, making a precise participant tally impossible, though verified counts are at least 3000+ across the evidence base.",
-    "caveats": "Krill oil is a dietary supplement and is not regulated as rigorously as pharmaceuticals; quality, purity, and omega-3 content can vary among brands. It may interact with blood-thinning medications (anticoagulants, aspirin) due to its omega-3 content and should be discussed with a healthcare provider beforehand. People with shellfish or crustacean allergies should avoid krill oil. The evidence supports use for mild-to-moderate knee osteoarthritis and potentially lipid management, but is not yet strong enough to recommend as a first-line treatment for any condition.",
+    "evidence_base": "The research base for krill oil is predominantly human in origin, with meta-analyses and RCTs concentrated on joint/arthritis outcomes and lipid effects (published 2014\u20132026). Most human evidence is from randomized controlled trials lasting 6 months or less, with sample sizes typically ranging from 39 to 300 participants per primary trial. Animal studies (mostly 2020\u20132024, in mice models) supplement understanding of mechanisms but do not establish clinical efficacy. Overall, the literature reflects growing recent interest; the moderately consistent benefits in osteoarthritis and lipid profiles are supported by meta-analytic pooling, though individual trial sizes remain modest.",
+    "emerging_research": "Recent work (2024\u20132026) is exploring krill oil's potential in wider cardiovascular and inflammatory conditions beyond knee osteoarthritis, including systemic lupus and chronic musculoskeletal pain in older adults. Animal studies continue to investigate neuroprotection and cognitive effects, though these remain preclinical. Some trials are also comparing krill oil's bioavailability and efficacy to fish oil, with preliminary findings suggesting superior absorption of omega-3s from the phospholipid form in krill. These directions are early and have not yet translated to strong human evidence.",
+    "open_questions": "Among the studies retrieved here, nearly all human trials are under 12 months in duration; longer-term safety and sustained efficacy are not addressed in the provided records. The retrieved data show krill oil tested primarily in knee osteoarthritis and lipid disorders in adult and older adult populations\u2014evidence in younger, athletic, or disease-free populations is absent from these records. Sample sizes in primary human trials are generally small to modest (39\u2013300 per study), and most published abstracts omit participant numbers, limiting precision; the true total across all trials is likely substantially larger than what can be verified here. Because you are seeing only a sample of ~40 abstracts per outcome, you cannot conclude that research in other populations or conditions does not exist globally\u2014only that it does not appear in these retrieved records.",
+    "caveats": "Krill oil is generally well-tolerated, but people with shellfish/crustacean allergies should avoid it. Quality and purity vary by manufacturer; look for products third-party tested and standardized for EPA/DHA content. Krill oil may interact with anticoagulants or antiplatelet drugs (e.g., warfarin, aspirin) at high doses due to its omega-3 content; consult a healthcare provider if taking blood thinners. Pregnant or nursing women should seek medical guidance before use, as long-term safety data in these populations are not addressed in the studies provided.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence base consists almost entirely of small, short-term trials and meta-analyses that do not report extractable pooled effect sizes; without quantified efficacy data, the 'Moderate' grades rest on narrative synthesis rather than demonstrated clinical magnitude.",
+    "headline": "The evidence base for krill oil is composed largely of small, recent RCTs with overlapping study populations and meta-analyses that pool the same trials; genuine human evidence comprises only 3\u20137 independent primary studies per outcome, making the moderate grades vulnerable to publication bias and outcome selection.",
     "concerns": [
       {
-        "issue": "No pooled effect sizes reported",
-        "detail": "Across all four outcomes (joint/arthritis, cholesterol/lipids, cognition, inflammation), the engine explicitly notes 'pooled effect: none extractable.' This means the three meta-analyses per outcome cannot be parsed to confirm the direction, magnitude, or confidence interval of benefit. Readers and clinicians are asked to accept a 'Moderate' grade without access to the actual quantified summary estimate.",
+        "issue": "Severe circularity in meta-analyses",
+        "detail": "For joint/arthritis, three meta-analyses (2024, 2025, 2026) appear in the record, all published within 24 months, likely pooling the same 3 primary RCTs (2016, 2022, 2024). The 2024 meta-analysis alone reports n=700, which exceeds the sum of the three RCT sample sizes (235+262+unknown), suggesting substantial reuse of trial arms or external cohorts not listed in this abstract set. Citing the same trial multiple times inflates the appearance of evidence density; a single failed or biased trial could be embedded in all three meta-analyses simultaneously.",
         "severity": "high"
       },
       {
-        "issue": "Majority of primary human trials are small and underpowered",
-        "detail": "For joint/arthritis: 3 primary RCTs with reported n of 235, 262, and unreported (2016 trial). For inflammation: 7 primary RCTs with reported n of 39, 47, 60, 235, and three unreported. For cholesterol/lipids: 4 primary RCTs with reported n of 72, 120, 300, and one unreported (2014). Six of eight trials with disclosed n fall below 100 participants; this sample-size distribution means a single large negative or positive outlier trial could substantially shift a meta-analytic result, yet precision is not calculable here.",
+        "issue": "Incomplete sample size reporting masks true evidence scale",
+        "detail": "For cholesterol/lipids, only 6 of 13 studies report sample size in abstracts; for inflammation, only 7 of 24 do. The engine notes ~3,312 and ~3,510 'verified' participants respectively, but this is an undercount if abstracts omit n. Crucially, 6\u201314 animal studies per outcome contribute zero human data, diluting the human evidence grade by design inclusion. Declaring a 'Moderate' grade when the actual independent human RCT count is 3\u20137 per outcome risks overstating the empirical foundation.",
         "severity": "high"
       },
       {
-        "issue": "Cognition outcome relies entirely on animal evidence",
-        "detail": "All four studies for cognition are animal models (mice, no human trials). The engine graded this 'Preliminary' and noted 'does not reliably translate to humans.' Yet cognition appears as a substantive claim in the overall evidence portfolio. Extrapolation from APP/PS1 transgenic mice or high-fat diet rodent models to human cognitive decline is a large inferential gap with no human pharmacokinetic or bioavailability bridge.",
+        "issue": "Clustering of RCT publication in 2022\u20132026; trial registration and pre-specification opaque",
+        "detail": "For joint/arthritis, 4 of 6 human studies were published in 2022\u20132026; for cholesterol, 3 of 4 RCTs reported are from 2014 or 2026, with a 12-year gap and no intermediate trials visible. No abstracts mention trial registration numbers, primary outcome pre-specification, or sample size justification. This temporal clustering, combined with lack of transparency about outcome selection, creates vulnerability to selective reporting and p-hacking, especially in a supplement space where positive results are commercially incentivized.",
         "severity": "high"
       },
       {
-        "issue": "Meta-analyses are recent (2023\u20132026) but lack transparency on inclusion heterogeneity",
-        "detail": "Three meta-analyses are available for joint/arthritis (2024, 2025, 2026), yet their abstracts do not disclose whether they enrolled overlapping primary trials, how heterogeneity (I\u00b2) was handled, or whether results were sensitive to study quality. The 2024 knee-pain meta-analysis appears across three outcomes, suggesting it may be reanalyzed repeatedly; without visibility into inclusion criteria or effect-size heterogeneity, it is unclear whether the retrieved meta-analyses are truly independent syntheses or partial re-publications.",
+        "issue": "Cognition outcome graded on animal evidence alone",
+        "detail": "All 4 cognition trials are animal studies (mice and rats); zero human RCTs exist in the retrieved set. The 'Preliminary' grade is appropriate, but the engine correctly flags indirectness. No mechanism study has shown that cognitive benefits observed in APP/PS1 transgenic mice translate to human mild cognitive impairment or age-related decline. This outcome should be flagged as speculative for any marketing claim about human cognition.",
         "severity": "moderate"
       },
       {
-        "issue": "Funding sources and sponsorship bias not visible",
-        "detail": "The study records provided do not include funding or industry affiliation data. Krill oil is a proprietary marine product with commercial entities (e.g., Aker BioMarine, Neptune Wellness) actively marketing it. Absence of disclosed funding information in these abstracts does not prove bias, but it prevents assessment of potential sponsorship effects on trial design, analysis, or reporting.",
+        "issue": "Heterogeneous study populations and dose/duration not standardized across abstracts",
+        "detail": "The joint/arthritis trials span mild to moderate knee osteoarthritis, but abstracts do not clarify whether inclusion criteria, outcome measures (pain vs. function vs. biomarkers), or follow-up duration were harmonized. The 2017 RCT (n=60) on omega-3 forms and the 2015 RCT (n=47) blending krill and salmon oil introduce confounders (mixed supplements, small n) that meta-analyses may not have adequately stratified or downweighted. Pooling such heterogeneous designs can produce a false sense of consistency.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Krill oil is rich in phospholipid-bound omega-3 fatty acids (EPA/DHA) and astaxanthin. In vitro and rodent studies show omega-3s suppress NF-\u03baB signaling and reduce pro-inflammatory cytokines (IL-6, TNF-\u03b1), which plausibly supports claims about joint pain and inflammation. However, the leap from mechanism to clinical outcome is not trivial: the human trials measure pain scales and serum lipids, not changes in biomarkers (e.g., CRP) or joint imaging. For cholesterol/lipids, the mechanistic chain (phospholipid absorption \u2192 altered VLDL production \u2192 triglyceride lowering) is biologically coherent, but the small, heterogeneous trial population makes it unclear whether the effect size is clinically meaningful. For cognition, animal studies show reduced oxidative stress in hippocampus, but no human trial exists to confirm that krill oil crosses the blood\u2013brain barrier at therapeutic concentrations or improves memory in patients with mild cognitive impairment.",
-    "strongest_counterargument": "A skeptic would observe that krill oil's efficacy is indistinguishable from fish oil in most comparisons (see 2026 RCT showing krill and fish oil had similar lipid effects), yet costs substantially more. The joint/arthritis evidence consists of three small RCTs (n = 235, 262, unreported) published in the same 6-year window in specialized journals; without pooled effect size, one cannot rule out publication bias or selective outcome reporting. The inflammation outcome spans only 7 primary human RCTs with a median n of 235 and three with n < 60\u2014adequate for statistical significance under favorable assumptions, but not for ruling out small-study effects or assessing clinical meaningfulness. That no high-tier evidence exists despite 16 years of research (2010\u20132026) suggests either true modest effect size or that the literature has not yet enrolled a sufficiently large, well-designed trial.",
-    "what_would_change_the_picture": "A pre-registered, adequately powered (n \u2265 500) multi-center RCT comparing krill oil to both placebo and fish oil, with pre-specified primary outcomes (e.g., WOMAC score for OA, LDL-C change, or objective cognitive testing), published with full statistical reporting including confidence intervals and subgroup analyses. Alternatively, a systematic review with extracted and reported pooled effect sizes, heterogeneity metrics, and GRADE quality assessment would allow readers to quantify the evidence base rather than rely on narrative synthesis.",
+    "mechanism_check": "Krill oil is rich in phospholipid-bound omega-3 fatty acids (EPA/DHA) and astaxanthin, which have plausible anti-inflammatory mechanisms in vitro and in animals (e.g., inhibition of NF-\u03baB, reduction of IL-6). The jump from these biomarker changes to clinically meaningful improvement in osteoarthritis pain (SMD \u20130.24) or lipid changes in humans is moderate-to-large: animal models of inflammation or hyperlipidemia do not reliably predict effect size in human populations, and the majority of human RCTs are small (n<300). The mechanism is coherent, but the inferential gap between mechanism and clinical grade remains substantial.",
+    "strongest_counterargument": "A skeptic would note that three independent meta-analyses published in 2024\u20132026 likely pool the same 3 primary RCTs, creating the illusion of robust consensus; in reality, independent evidence is 3\u20137 small trials per outcome, most published recently and clustered in time, raising concerns about publication bias and outcome cherry-picking in a commercial space. Furthermore, the SMD of \u20130.24 for joint pain, while statistically significant, is clinically modest and could be inflated by selective reporting of favorable outcomes or failure to disclose non-significant secondary endpoints. Animal studies, which make up 30\u201360% of the evidence base depending on outcome, do not substantiate human claims.",
+    "what_would_change_the_picture": "Publication of a pre-registered, adequately powered (n\u2265200) multi-center RCT in a high-impact medical journal, with transparent reporting of all outcomes and analysis plan, plus independent replication in a non-overlapping population, would substantially increase confidence. Alternatively, a large prospective observational cohort (n\u22651000) with adjustment for baseline characteristics and concurrent interventions would help validate or refute the modest effect sizes currently reported.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

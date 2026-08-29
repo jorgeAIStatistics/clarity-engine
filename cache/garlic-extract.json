@@ -1,19 +1,217 @@
 {
-  "name": "Garlic Extract",
-  "category": "herb",
-  "overall_score": 79,
+  "name": "garlic-extract",
+  "category": "supplement",
+  "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 50,
+  "study_count": 29,
   "claims": [
+    {
+      "outcome": "cholesterol / lipids",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 9,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 4,
+        "n_animal_studies": 5,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:19627203",
+        "PMID:34627133",
+        "PMID:9811286",
+        "PMID:36640154",
+        "PMID:27627701",
+        "PMID:29604599",
+        "PMID:11238804",
+        "PMID:10892409",
+        "PMID:29747745"
+      ],
+      "studies": [
+        {
+          "pmid": "36640154",
+          "title": "Effect of garlic extract on markers of lipid metabolism and inflammation in coronary artery disease (CAD) patients: A systematic review and meta-analysis.",
+          "year": "2023",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "34627133",
+          "title": "Effects of garlic extract on lipid profile in patients with coronary artery disease: A systematic review and meta-analysis of randomised clinical trials.",
+          "year": "2021",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "29604599",
+          "title": "Garlic extract favorably modifies markers of endothelial function in obese patients -randomized double blind placebo-controlled nutritional intervention.",
+          "year": "2018",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "9811286",
+          "title": "Garlic extract therapy in children with hypercholesterolemia.",
+          "year": "1998",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "19627203",
+          "title": "The antidiabetic effect of onion and garlic in experimental diabetic rats: meta-analysis.",
+          "year": "2009",
+          "design": "Meta-analysis",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "29747745",
+          "title": "The potential effect of garlic extract and curcumin nanoparticles against complication accompanied with experimentally induced diabetes in rats.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "27627701",
+          "title": "Antiobesity Effect of Garlic Extract Fermented by Lactobacillus plantarum BL2 in Diet-Induced Obese Mice.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "11238804",
+          "title": "Study of garlic extracts and fractions on cholesterol plasma levels and vascular reactivity in cholesterol-fed rats.",
+          "year": "2001",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "10892409",
+          "title": "Comparative effects of garlic and aspirin on diabetic cardiovascular complications.",
+          "year": "2000",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "11238804",
+            "metric": "mean_diff",
+            "value": -51,
+            "ci_low": -102.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs hypercholesterolemic group",
+            "direction": "benefit",
+            "quote": "Plasma concentration of cholesterol was 58 mg/dL (100%) at the beginning of the study and increased to 102 mg/dL (153%; hypercholesterolemic group) at the end of the treatment. Plasma total cholesterol decreased in all groups treated with garlic"
+          }
+        ],
+        "n_not_reported": 8,
+        "n_total": 9
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
+      },
+      "headline_effect": null,
+      "summary": "For cholesterol / lipids, garlic-extract has moderate human evidence (9 studies)."
+    },
+    {
+      "outcome": "blood sugar",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 3,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:19627203",
+        "PMID:10892409",
+        "PMID:29747745"
+      ],
+      "studies": [
+        {
+          "pmid": "19627203",
+          "title": "The antidiabetic effect of onion and garlic in experimental diabetic rats: meta-analysis.",
+          "year": "2009",
+          "design": "Meta-analysis",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "29747745",
+          "title": "The potential effect of garlic extract and curcumin nanoparticles against complication accompanied with experimentally induced diabetes in rats.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "10892409",
+          "title": "Comparative effects of garlic and aspirin on diabetic cardiovascular complications.",
+          "year": "2000",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 3,
+        "n_total": 3
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For blood sugar, garlic-extract has only preliminary or animal evidence (3 studies)."
+    },
     {
       "outcome": "blood pressure",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 13,
+      "n_studies": 4,
       "grade_reasons": [
-        "Limited human evidence: 4 primary human studies and 9 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Imprecision: modest verified sample (~79 participants across 1 of 4 studies); effect estimate may be unstable.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
         "mechanistic": 30,
@@ -21,97 +219,24 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 13,
+        "n_human_studies": 4,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:26764326",
-        "PMID:40580481",
-        "PMID:25557383",
-        "PMID:8064171",
-        "PMID:16856110",
-        "PMID:33301861",
-        "PMID:22895963",
-        "PMID:25239480",
         "PMID:9811286",
         "PMID:23169470",
-        "PMID:16484554",
-        "PMID:23633303",
-        "PMID:35505122"
+        "PMID:35505122",
+        "PMID:36640154"
       ],
       "studies": [
         {
-          "pmid": "26764326",
-          "title": "Garlic Lowers Blood Pressure in Hypertensive Individuals, Regulates Serum Cholesterol, and Stimulates Immunity: An Updated Meta-analysis and Review.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 2300
-        },
-        {
-          "pmid": "25557383",
-          "title": "Effect of garlic on blood pressure: a meta-analysis.",
-          "year": "2015",
+          "pmid": "36640154",
+          "title": "Effect of garlic extract on markers of lipid metabolism and inflammation in coronary artery disease (CAD) patients: A systematic review and meta-analysis.",
+          "year": "2023",
           "design": "Meta-analysis",
           "population": "human",
           "n": null
-        },
-        {
-          "pmid": "25239480",
-          "title": "A systematic review and metaanalysis on the effects of garlic preparations on blood pressure in individuals with hypertension.",
-          "year": "2015",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 482
-        },
-        {
-          "pmid": "8064171",
-          "title": "A meta-analysis of the effect of garlic on blood pressure.",
-          "year": "1994",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 415
-        },
-        {
-          "pmid": "40580481",
-          "title": "Effects of Garlic Supplementation on Cardiovascular Risk Factors in Adults: A Comprehensive Updated Systematic Review and Meta-Analysis of Randomized Controlled",
-          "year": "2026",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 7137
-        },
-        {
-          "pmid": "33301861",
-          "title": "Anticancer potential of garlic and its bioactive constituents: A systematic and comprehensive review.",
-          "year": "2021",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "23633303",
-          "title": "Garlic for peripheral arterial occlusive disease.",
-          "year": "2013",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 78
-        },
-        {
-          "pmid": "22895963",
-          "title": "Garlic for the prevention of cardiovascular morbidity and mortality in hypertensive patients.",
-          "year": "2012",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "16856110",
-          "title": "Garlic for preventing pre-eclampsia and its complications.",
-          "year": "2006",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 100
         },
         {
           "pmid": "35505122",
@@ -130,14 +255,6 @@
           "n": 79
         },
         {
-          "pmid": "16484554",
-          "title": "Aged garlic extract retards progression of coronary artery calcification.",
-          "year": "2006",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "9811286",
           "title": "Garlic extract therapy in children with hypercholesterolemia.",
           "year": "1998",
@@ -148,236 +265,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 4,
+        "n_total": 4
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For blood pressure, Garlic Extract has moderate human evidence (13 studies)."
-    },
-    {
-      "outcome": "cholesterol / lipids",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 11,
-      "grade_reasons": [
-        "Precision: ~10493 participants verified across 3 of 11 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 1 primary human studies and 9 pooled analyses retrieved \u2014 below the threshold for the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 10,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:26764326",
-        "PMID:40580481",
-        "PMID:23590705",
-        "PMID:19250134",
-        "PMID:10975959",
-        "PMID:8363171",
-        "PMID:38822550",
-        "PMID:19627203",
-        "PMID:34627133",
-        "PMID:33301861",
-        "PMID:9811286"
-      ],
-      "studies": [
-        {
-          "pmid": "34627133",
-          "title": "Effects of garlic extract on lipid profile in patients with coronary artery disease: A systematic review and meta-analysis of randomised clinical trials.",
-          "year": "2021",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "26764326",
-          "title": "Garlic Lowers Blood Pressure in Hypertensive Individuals, Regulates Serum Cholesterol, and Stimulates Immunity: An Updated Meta-analysis and Review.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 2300
-        },
-        {
-          "pmid": "23590705",
-          "title": "Effect of garlic on serum lipids: an updated meta-analysis.",
-          "year": "2013",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "19250134",
-          "title": "Garlic supplementation and serum cholesterol: a meta-analysis.",
-          "year": "2009",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 1056
-        },
-        {
-          "pmid": "19627203",
-          "title": "The antidiabetic effect of onion and garlic in experimental diabetic rats: meta-analysis.",
-          "year": "2009",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "10975959",
-          "title": "Garlic for treating hypercholesterolemia. A meta-analysis of randomized clinical trials.",
-          "year": "2000",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "8363171",
-          "title": "Effect of garlic on total serum cholesterol. A meta-analysis.",
-          "year": "1993",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40580481",
-          "title": "Effects of Garlic Supplementation on Cardiovascular Risk Factors in Adults: A Comprehensive Updated Systematic Review and Meta-Analysis of Randomized Controlled",
-          "year": "2026",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 7137
-        },
-        {
-          "pmid": "33301861",
-          "title": "Anticancer potential of garlic and its bioactive constituents: A systematic and comprehensive review.",
-          "year": "2021",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "9811286",
-          "title": "Garlic extract therapy in children with hypercholesterolemia.",
-          "year": "1998",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "38822550",
-          "title": "Therapeutic effect of ginger garlic powder in rats with induced diabetes.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cholesterol / lipids, Garlic Extract has moderate human evidence (11 studies)."
-    },
-    {
-      "outcome": "blood sugar",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 5,
-      "grade_reasons": [
-        "Precision: ~7650 participants verified across 2 of 5 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 0 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 2,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:40580481",
-        "PMID:26693740",
-        "PMID:38822550",
-        "PMID:19627203",
-        "PMID:38742546"
-      ],
-      "studies": [
-        {
-          "pmid": "26693740",
-          "title": "Garlic intake lowers fasting blood glucose: meta-analysis of randomized controlled trials.",
-          "year": "2015",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 513
-        },
-        {
-          "pmid": "19627203",
-          "title": "The antidiabetic effect of onion and garlic in experimental diabetic rats: meta-analysis.",
-          "year": "2009",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40580481",
-          "title": "Effects of Garlic Supplementation on Cardiovascular Risk Factors in Adults: A Comprehensive Updated Systematic Review and Meta-Analysis of Randomized Controlled",
-          "year": "2026",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 7137
-        },
-        {
-          "pmid": "38822550",
-          "title": "Therapeutic effect of ginger garlic powder in rats with induced diabetes.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "38742546",
-          "title": "Effects of garlic-derived fructan and oligofructose mixtures on intestinal health and constipation relief in mice.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For blood sugar, Garlic Extract has moderate human evidence (5 studies)."
+      "summary": "For blood pressure, garlic-extract has moderate human evidence (4 studies)."
     },
     {
       "outcome": "cardiovascular",
@@ -385,45 +282,45 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 21,
+      "n_studies": 13,
       "grade_reasons": [
-        "Precision: ~11677 participants verified across 9 of 21 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 5 primary human studies and 15 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~95 participants verified across 2 of 13 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 4 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 35,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 20,
-        "n_animal_studies": 1,
+        "n_human_studies": 6,
+        "n_animal_studies": 7,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:26764326",
-        "PMID:40580481",
-        "PMID:25557383",
-        "PMID:23590705",
-        "PMID:19250134",
-        "PMID:8064171",
-        "PMID:10975959",
-        "PMID:8363171",
-        "PMID:38822550",
-        "PMID:16856110",
         "PMID:19627203",
         "PMID:34627133",
-        "PMID:33301861",
-        "PMID:22895963",
-        "PMID:25239480",
         "PMID:9811286",
         "PMID:23169470",
-        "PMID:16484554",
-        "PMID:23633303",
         "PMID:35505122",
-        "PMID:16484565"
+        "PMID:36640154",
+        "PMID:26507778",
+        "PMID:27627701",
+        "PMID:14585852",
+        "PMID:29604599",
+        "PMID:11238804",
+        "PMID:10892409",
+        "PMID:29747745"
       ],
       "studies": [
+        {
+          "pmid": "36640154",
+          "title": "Effect of garlic extract on markers of lipid metabolism and inflammation in coronary artery disease (CAD) patients: A systematic review and meta-analysis.",
+          "year": "2023",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null
+        },
         {
           "pmid": "34627133",
           "title": "Effects of garlic extract on lipid profile in patients with coronary artery disease: A systematic review and meta-analysis of randomised clinical trials.",
@@ -433,121 +330,17 @@
           "n": null
         },
         {
-          "pmid": "26764326",
-          "title": "Garlic Lowers Blood Pressure in Hypertensive Individuals, Regulates Serum Cholesterol, and Stimulates Immunity: An Updated Meta-analysis and Review.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 2300
-        },
-        {
-          "pmid": "25557383",
-          "title": "Effect of garlic on blood pressure: a meta-analysis.",
-          "year": "2015",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "25239480",
-          "title": "A systematic review and metaanalysis on the effects of garlic preparations on blood pressure in individuals with hypertension.",
-          "year": "2015",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 482
-        },
-        {
-          "pmid": "23590705",
-          "title": "Effect of garlic on serum lipids: an updated meta-analysis.",
-          "year": "2013",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "19250134",
-          "title": "Garlic supplementation and serum cholesterol: a meta-analysis.",
-          "year": "2009",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 1056
-        },
-        {
-          "pmid": "19627203",
-          "title": "The antidiabetic effect of onion and garlic in experimental diabetic rats: meta-analysis.",
-          "year": "2009",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "10975959",
-          "title": "Garlic for treating hypercholesterolemia. A meta-analysis of randomized clinical trials.",
-          "year": "2000",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "8064171",
-          "title": "A meta-analysis of the effect of garlic on blood pressure.",
-          "year": "1994",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 415
-        },
-        {
-          "pmid": "8363171",
-          "title": "Effect of garlic on total serum cholesterol. A meta-analysis.",
-          "year": "1993",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40580481",
-          "title": "Effects of Garlic Supplementation on Cardiovascular Risk Factors in Adults: A Comprehensive Updated Systematic Review and Meta-Analysis of Randomized Controlled",
-          "year": "2026",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 7137
-        },
-        {
-          "pmid": "33301861",
-          "title": "Anticancer potential of garlic and its bioactive constituents: A systematic and comprehensive review.",
-          "year": "2021",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "23633303",
-          "title": "Garlic for peripheral arterial occlusive disease.",
-          "year": "2013",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 78
-        },
-        {
-          "pmid": "22895963",
-          "title": "Garlic for the prevention of cardiovascular morbidity and mortality in hypertensive patients.",
-          "year": "2012",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "16856110",
-          "title": "Garlic for preventing pre-eclampsia and its complications.",
-          "year": "2006",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 100
-        },
-        {
           "pmid": "35505122",
           "title": "Improved microvascular reactivity after aged garlic extract intake is not mediated by hydrogen sulfide in older adults at risk for cardiovascular disease: a ran",
           "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null
+        },
+        {
+          "pmid": "29604599",
+          "title": "Garlic extract favorably modifies markers of endothelial function in obese patients -randomized double blind placebo-controlled nutritional intervention.",
+          "year": "2018",
           "design": "RCT",
           "population": "human",
           "n": null
@@ -561,22 +354,6 @@
           "n": 79
         },
         {
-          "pmid": "16484554",
-          "title": "Aged garlic extract retards progression of coronary artery calcification.",
-          "year": "2006",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "16484565",
-          "title": "Aged garlic extract may be safe for patients on warfarin therapy.",
-          "year": "2006",
-          "design": "RCT",
-          "population": "human",
-          "n": 30
-        },
-        {
           "pmid": "9811286",
           "title": "Garlic extract therapy in children with hypercholesterolemia.",
           "year": "1998",
@@ -585,9 +362,57 @@
           "n": null
         },
         {
-          "pmid": "38822550",
-          "title": "Therapeutic effect of ginger garlic powder in rats with induced diabetes.",
-          "year": "2024",
+          "pmid": "19627203",
+          "title": "The antidiabetic effect of onion and garlic in experimental diabetic rats: meta-analysis.",
+          "year": "2009",
+          "design": "Meta-analysis",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "29747745",
+          "title": "The potential effect of garlic extract and curcumin nanoparticles against complication accompanied with experimentally induced diabetes in rats.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "26507778",
+          "title": "Aged garlic extract enhances heme oxygenase-1 and glutamate-cysteine ligase modifier subunit expression via the nuclear factor erythroid 2-related factor 2-anti",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "27627701",
+          "title": "Antiobesity Effect of Garlic Extract Fermented by Lactobacillus plantarum BL2 in Diet-Induced Obese Mice.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "14585852",
+          "title": "Garlic extract and two diallyl sulphides inhibit methicillin-resistant Staphylococcus aureus infection in BALB/cA mice.",
+          "year": "2003",
+          "design": "Animal",
+          "population": "animal",
+          "n": 16
+        },
+        {
+          "pmid": "11238804",
+          "title": "Study of garlic extracts and fractions on cholesterol plasma levels and vascular reactivity in cholesterol-fed rats.",
+          "year": "2001",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "10892409",
+          "title": "Comparative effects of garlic and aspirin on diabetic cardiovascular complications.",
+          "year": "2000",
           "design": "Animal",
           "population": "animal",
           "n": null
@@ -595,98 +420,99 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 13,
+        "n_total": 13
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cardiovascular, Garlic Extract has moderate human evidence (21 studies)."
+      "summary": "For cardiovascular, garlic-extract has moderate human evidence (13 studies)."
     }
   ],
   "effects_established": [
-    "blood pressure",
     "cholesterol / lipids",
-    "blood sugar",
+    "blood pressure",
     "cardiovascular"
   ],
-  "effects_promising": [],
+  "effects_promising": [
+    "blood sugar"
+  ],
   "effects_emerging": [],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787607974.800769,
+  "_cached_at": 1788017043.2330618,
   "explanation": {
-    "what_it_is": "Garlic extract is a concentrated preparation made from the bulbs of Allium sativum, a pungent bulbous plant used for thousands of years in cooking and traditional medicine. It contains sulfur-containing compounds\u2014particularly allicin, ajoene, and diallyl disulfide\u2014that form when garlic cells are crushed or cut. People typically consume it as a supplement in capsule, tablet, or liquid form, often standardized to contain specific levels of these active compounds.",
-    "how_it_works": "Garlic's bioactive sulfur compounds are believed to work through several overlapping pathways. Allicin and related compounds may inhibit HMG-CoA reductase, an enzyme central to cholesterol synthesis in the liver, which could lower circulating lipids. They appear to act as mild vasodilators\u2014compounds that relax blood vessel walls\u2014potentially via hydrogen sulfide production or nitric oxide enhancement, which could reduce blood pressure. In the digestive system, garlic-derived compounds may modulate glucose metabolism and improve insulin sensitivity, possibly by affecting enzymes involved in carbohydrate breakdown. Additionally, these compounds have antioxidant and anti-inflammatory properties that could reduce oxidative stress on blood vessel walls and improve overall cardiovascular function.",
+    "what_it_is": "Garlic extract is a concentrated preparation derived from garlic (Allium sativum) bulbs, containing the plant's bioactive sulfur compounds, particularly allicin and its breakdown products. It is available as a liquid extract, powder, or aged extract formulation. People consume it as a dietary supplement, typically in capsule or tablet form, to support cardiovascular and metabolic health.",
+    "how_it_works": "Garlic extract's primary active compounds\u2014allicin, S-allyl cysteine, and ajoene\u2014are sulfur-based molecules that form when garlic cells are damaged. Once absorbed, these compounds appear to work through several pathways: they may reduce cholesterol synthesis in the liver, improve blood vessel function by promoting nitric oxide release (which relaxes blood vessel walls), and lower inflammation markers in the bloodstream. The extract may also have mild antiplatelet effects, potentially improving blood flow. These mechanisms are plausible targets for cardiovascular and metabolic benefit, though the magnitude of effect in humans remains modest and inconsistent across studies.",
     "outcome_detail": [
-      {
-        "outcome": "blood pressure",
-        "grade": "Moderate",
-        "what_studies_show": "Multiple meta-analyses and systematic reviews involving thousands of participants demonstrate that garlic supplementation is associated with modest reductions in blood pressure, particularly in people with existing hypertension. A 2016 meta-analysis of 2,300 participants and a 2015 meta-analysis of 482 individuals both found statistically significant lowering effects. A 2026 systematic review including 7,137 adults and a 1994 meta-analysis of 415 participants further support this pattern, though the magnitude of effect tends to be small\u2014typically in the range of a few millimeters of mercury.",
-        "why_this_grade": "The evidence comes from numerous pooled analyses and meta-analyses of randomized controlled trials, providing reasonable confidence that an effect exists. However, the grade is Moderate rather than Strong because the body of evidence consists primarily of secondary analyses (9 meta-analyses) rather than multiple large primary trials, and sample sizes and methodological quality vary considerably across the underlying studies."
-      },
       {
         "outcome": "cholesterol / lipids",
         "grade": "Moderate",
-        "what_studies_show": "Meta-analyses spanning from 2000 to 2021 consistently show that garlic supplementation produces measurable reductions in total serum cholesterol and other lipid markers. A 2016 meta-analysis of 2,300 participants found garlic both lowered blood pressure and regulated serum cholesterol. A 2021 meta-analysis specifically examined garlic extract in patients with coronary artery disease, while a 2009 study of 1,056 participants focused on cholesterol effects. A 2013 update and a 2000 meta-analysis on hypercholesterolemia treatment also documented improvements in lipid profiles.",
-        "why_this_grade": "Although more than 10,000 participants' data are represented across identified studies, the retrieved records include only 1 primary human trial and 9 pooled analyses. This reliance on meta-analyses rather than a portfolio of independent large trials, combined with variable methodologies in the underlying studies, justifies the Moderate rating rather than Strong."
+        "what_studies_show": "A 2023 meta-analysis and a 2021 systematic review examined garlic extract in coronary artery disease patients, both finding favorable effects on lipid markers. A 2018 randomized double-blind trial in obese patients and a 1998 RCT in hypercholesterolemic children reported improvements in endothelial function and lipid profiles, respectively. Animal studies (including a 2009 meta-analysis in diabetic rats and 2018 nanoparticle study) consistently showed similar lipid-lowering trends, though these do not directly confirm human benefit.",
+        "why_this_grade": "Four human studies\u2014including meta-analyses and randomized trials\u2014provide evidence of a modest benefit on lipid profiles, particularly in patients with cardiovascular disease or metabolic risk. However, the grade is capped at Moderate because sample sizes could not be reliably verified from the abstracts, leaving precision uncertain; the true effect size may be smaller or less stable than the data suggest."
       },
       {
         "outcome": "blood sugar",
+        "grade": "Preliminary",
+        "what_studies_show": "All three studies retrieved were conducted in animals: a 2009 meta-analysis of diabetic rats, a 2018 animal study of garlic extract with curcumin nanoparticles, and a 2000 comparative study in diabetic animals. All reported reductions in blood glucose or improved glycemic markers in their respective models.",
+        "why_this_grade": "Evidence is entirely animal-based and has not been replicated in human trials. Animal models do not reliably predict human efficacy, especially for metabolic outcomes influenced by diet, genetics, and behavior; therefore, any potential blood-sugar benefit in humans remains unproven."
+      },
+      {
+        "outcome": "blood pressure",
         "grade": "Moderate",
-        "what_studies_show": "Limited human data suggest that garlic intake may lower fasting blood glucose levels. A 2015 meta-analysis of 513 participants in randomized controlled trials found that garlic lowered fasting glucose. A 2026 systematic review of 7,137 adults in cardiovascular risk factor studies likely included glucose measures as secondary outcomes. Supporting this, a 2009 meta-analysis examined the antidiabetic effect of garlic in experimental diabetic rats, and a 2024 animal study assessed therapeutic effects of ginger-garlic powder in diabetes-induced rodents, indicating biological plausibility.",
-        "why_this_grade": "The Moderate grade reflects that human evidence comes entirely from meta-analyses (0 primary trials retrieved) covering a modest number of individuals for this outcome, whereas animal studies support the mechanism. The evidence base is both limited in volume and skewed toward secondary analyses, preventing a Strong classification."
+        "what_studies_show": "A 2013 randomized controlled trial in 79 hypertensive participants found that aged garlic extract reduced blood pressure in a dose-dependent manner. A 2022 RCT reported improved microvascular reactivity after aged garlic extract intake. Two meta-analyses (2023) and an additional RCT (1998) also assessed blood pressure or vascular function in relevant populations, all showing favorable trends.",
+        "why_this_grade": "All four studies are human trials, with one clearly verified sample of 79 participants. However, the grade remains Moderate due to imprecision\u2014only one study has a confirmed modest sample size, and sample sizes for the other three could not be verified from the abstracts. Additionally, evidence rests on a single meta-analysis / systematic review without independent replication, limiting confidence that the finding is robust."
       },
       {
         "outcome": "cardiovascular",
         "grade": "Moderate",
-        "what_studies_show": "A broad body of meta-analyses and systematic reviews encompassing at least 11,677 verified participants across cardiovascular endpoints collectively show that garlic supplementation is associated with improvements in multiple cardiovascular risk factors\u2014including blood pressure, cholesterol, and triglycerides\u2014as well as markers of arterial health. Key studies include a 2016 meta-analysis of 2,300 individuals, a 2021 review of garlic extract in coronary artery disease patients, and a 2015 blood pressure meta-analysis of 482 participants. These effects appear consistent across different garlic formulations and dosing regimens.",
-        "why_this_grade": "The evidence base is substantial in participant numbers and represents diverse cardiovascular outcomes, but relies heavily on meta-analyses and systematic reviews (15 pooled analyses, 5 primary trials) rather than a large portfolio of independent randomized trials. Precision varies because many abstracts lack sample sizes; verified sample sizes come from only 9 of 21 studies. This combination\u2014good breadth but limited depth of primary evidence\u2014aligns with a Moderate rating."
+        "what_studies_show": "Six human studies were retrieved, including two meta-analyses (2023, 2021) examining lipid and inflammatory markers in coronary artery disease patients, three randomized trials (2022, 2018, 2013) measuring endothelial function, microvascular reactivity, and blood pressure, and one RCT in children (1998). Seven animal studies provided supporting mechanistic data. Most human trials reported improvements in markers of vascular function or lipid profiles.",
+        "why_this_grade": "The Moderate grade reflects a reasonable body of human evidence (4 primary trials + 3 pooled analyses), but precision is compromised: only two of thirteen studies had verified sample sizes (totaling ~95 participants), and most abstracts omitted this detail. The evidence remains below the threshold for Strong because the number of primary human studies is limited and the verified participant count is relatively small."
       }
     ],
-    "evidence_base": "The research on garlic extract is predominantly human-based (at least 36 human studies across all outcomes, with only 3 animal studies retrieved). Nearly all retrieved human evidence comes from meta-analyses, systematic reviews, and pooled analyses rather than individual primary trials, which means the studies synthesize existing randomized controlled trials but do not themselves represent new data collection. The literature spans decades\u2014from a 1994 meta-analysis to a 2026 systematic review\u2014with most activity in the 2009\u20132021 period. This pattern suggests mature, well-synthesized evidence for traditional cardiovascular outcomes (pressure, lipids), but also that confidence rests more on aggregating many smaller studies than on large, definitive primary trials.",
-    "emerging_research": "Recent work has broadened garlic's studied scope beyond classic cardiovascular markers. A 2024 animal study examined garlic-derived compounds (fructan and oligofructose mixtures) for intestinal health and constipation relief, suggesting potential gut-microbiota interactions. A 2021 systematic review touched on garlic's anticancer potential and bioactive constituent profiles, though this remains very preliminary in humans. The 2026 comprehensive systematic review of 7,137 adults on cardiovascular risk factors represents the most recent large synthesis and may establish updated effect sizes, but human cancer and gastrointestinal outcomes remain largely in the pre-clinical or hypothesis-generating stage.",
-    "open_questions": "Among the studies retrieved here, all four major outcomes (blood pressure, lipids, blood sugar, cardiovascular) rely on meta-analyses rather than primary randomized trials, and many abstracts omit participant sample sizes, making it difficult to assess true precision. The retrieved records do not include any studies of garlic in specific populations such as children, pregnant women, or people with severe kidney or liver disease, so whether effects generalize to these groups remains unclear from this sample. Additionally, most retrieved studies appear to measure short-to-medium-term outcomes; the records provided do not show long-term follow-ups (>1 year), so durability of any effects is unknown based on these abstracts alone. It is important to note that you are seeing only a sample of ~40 abstracts per outcome\u2014other primary trials, long-term cohorts, or population-specific studies may exist in the broader literature but are not represented here.",
-    "caveats": "Garlic extract is generally well-tolerated, but can cause digestive upset, bad breath, and body odor in some users; in rare cases, people with garlic sensitivity may experience allergic reactions. Garlic has mild anticoagulant properties and may interact with blood-thinning medications (warfarin, aspirin) or increase bleeding risk in people with clotting disorders, so those taking anticoagulants should consult a healthcare provider before supplementing. Quality varies substantially across commercial products\u2014many contain far less of the active sulfur compounds than claimed\u2014so third-party testing and reputable brands are advisable.",
+    "evidence_base": "The research on garlic extract is predominantly human-based for cardiovascular and blood pressure outcomes (6 human studies retrieved, alongside animal work), but entirely animal-based for blood sugar. Studies span from 1998 to 2023, with a concentration of recent systematic reviews and randomized trials in the 2018\u20132023 period. Meta-analyses and RCTs dominate the human evidence; animal studies contribute mechanistic plausibility but do not confirm human benefit. Overall, the evidence is moderate in quantity and quality\u2014suggestive of modest benefits in lipid and blood pressure control\u2014but limited by inconsistent sample size reporting and a relatively small verified participant count, which constrains confidence in the precision of effect estimates.",
+    "emerging_research": "Recent work has begun to explore aged garlic extract (a fermented form) separately from fresh extract, with 2022 trials investigating whether benefits are mediated by hydrogen sulfide production. Nanoparticle formulations combining garlic extract with compounds like curcumin are also under investigation (2018 animal study), though clinical translation remains early. These approaches suggest refinement of delivery methods and formulation chemistry, but human efficacy data for these newer variants are not yet robust.",
+    "open_questions": "Among the studies retrieved here, all human blood-pressure evidence and most cardiovascular trials appear to be relatively short-term (weeks to a few months); no long-term safety or sustained benefit data are visible in the provided records. The blood-sugar outcome has no human evidence at all\u2014only animal models, leaving a critical gap. Additionally, the retrieved studies do not clearly represent diverse populations; most focus on patients with existing cardiovascular disease or metabolic risk factors, so efficacy in healthy individuals or other age groups is not addressed in these records. Because this is a sample of approximately 40 abstracts per outcome, I cannot characterize the broader literature landscape, only note what is absent from the data provided here.",
+    "caveats": "Garlic extract can potentiate blood-thinning medications (e.g., warfarin, aspirin) and may interact with certain blood pressure medications; users on anticoagulants or antihypertensives should consult their physician. Extract quality and allicin content vary widely among commercial products due to differences in processing and storage; standardization is inconsistent across brands. Pregnant women, nursing mothers, and individuals with garlic allergies should avoid supplementation.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence base consists almost entirely of meta-analyses and systematic reviews (9 of 10 pooled analyses per outcome) rather than primary human trials, making it impossible to extract a pooled effect or assess study quality; the underlying primary evidence is largely hidden.",
+    "headline": "The human evidence base for garlic extract is thin (\u22644 primary trials per outcome), small in aggregate sample size, and relies heavily on non-overlapping meta-analyses that remain unindependently verified\u2014effect estimates are unstable and could shift materially with modest additional studies.",
     "concerns": [
       {
-        "issue": "Overwhelming reliance on meta-analyses obscures primary evidence",
-        "detail": "For blood pressure: 9 of 13 records are pooled analyses (meta-analyses and systematic reviews), leaving only 4 primary RCTs. For cholesterol: 9 of 11 records are pooled analyses, with only 1 primary RCT visible. For blood sugar: 0 primary human studies are in the retrieved set, only 3 pooled analyses. This structure means readers and appraisers cannot see the actual trial designs, quality, or heterogeneity driving the conclusions. The engine itself notes 'pooled effect: none extractable,' indicating the abstracts do not report the meta-analytic summary estimates.",
+        "issue": "Severe sample size opacity across all outcomes",
+        "detail": "Only 1 of 4 blood pressure studies and 2 of 13 cardiovascular studies report sample sizes in the abstracts (n=79 and n=16 noted). The engine notes that 'most abstracts omit sample size, so the true total is substantially larger,' but this hidden denominator means the actual precision of the pooled effects cannot be verified from the evidence provided. A single large study could dominate or reverse a pooled result if most trials are actually small.",
         "severity": "high"
       },
       {
-        "issue": "Sample size reporting is sparse and inconsistent across records",
-        "detail": "For blood pressure, only 7 of 13 studies report n; for cholesterol, only 3 of 11; for blood sugar, only 2 of 5. When sizes are reported, they are sometimes for the meta-analysis (e.g., n=2300, n=7137) not the primary trials within it. This prevents assessment of whether the evidence base is dominated by small, underpowered studies or adequately sized trials, and makes it impossible to judge how much a single large study might shift results.",
+        "issue": "Cholesterol/lipids grade relies on non-replicated meta-analyses",
+        "detail": "Three meta-analyses are listed for lipids (2023, 2021, and 2009), but the engine notes only 4 human trials total underlie them\u2014likely with substantial overlap. The engine explicitly states the meta-analyses lack independent replication. If these three meta-analyses largely cite the same 4 underlying RCTs, the appearance of convergence is an artifact of citation overlap, not true replication.",
         "severity": "high"
       },
       {
-        "issue": "Repeated citation of same studies across outcomes inflates apparent breadth",
-        "detail": "The 2016 meta-analysis (n=2300) on 'Garlic Lowers Blood Pressure, Regulates Serum Cholesterol' appears in both the blood pressure and cholesterol outcome lists. The 2026 systematic review (n=7137) appears in blood pressure, cholesterol, and blood sugar outcomes. This suggests the evidence base may be narrower than the number of records implies; the same underlying trials may be re-analyzed multiple times, creating an illusion of independent corroboration.",
+        "issue": "Blood sugar evidence is animal-only, contradicting Preliminary grade justification",
+        "detail": "All 3 blood sugar studies (0 human, 3 animal) are acknowledged by the engine as 'animal-only' and 'does not reliably translate to humans.' Yet the outcome is graded Preliminary rather than Not Sufficient or Insufficient. A Preliminary grade typically suggests early-stage human signal; this evidence base has none. The grade appears misaligned with the evidence composition.",
         "severity": "high"
       },
       {
-        "issue": "Heterogeneity in garlic preparation type is not visible",
-        "detail": "The records include references to 'aged garlic extract,' 'garlic extract,' 'garlic preparations,' and 'garlic-derived fructan' without clarity on whether these are equivalent or distinct. A 2022 RCT on 'aged garlic extract' and hydrogen sulfide suggests mechanistic investigation into a specific formulation, yet the abstracts do not clarify whether meta-analyses pool different preparations or homogenize across them. This matters clinically: if dosage, processing, or bioavailability vary, pooled estimates may mask preparation-specific effects or ineffectiveness.",
+        "issue": "Heavy reliance on animal evidence for cardiovascular claims",
+        "detail": "The cardiovascular outcome includes 6 animal studies and only 4 human RCTs (with 2 reporting sample sizes: n=16 and n=79). Animal models of cardiovascular dysfunction often do not recapitulate human disease biology or drug response. The inclusion of 7 animal studies in a 13-study cardiovascular portfolio inflates the apparent evidence base without proportional human validity.",
         "severity": "moderate"
       },
       {
-        "issue": "No pooled effect estimates are available to assess magnitude of benefit",
-        "detail": "The engine notes 'pooled effect: none extractable' for all four outcomes. The records provide titles and years but not the actual risk ratios, mean differences, confidence intervals, or heterogeneity statistics (I\u00b2) from meta-analyses. Without these, it is impossible to evaluate whether the effect sizes are clinically meaningful (e.g., a 1 mmHg vs. 5 mmHg blood pressure reduction) or whether heterogeneity is high enough to undermine a pooled conclusion.",
+        "issue": "No pooled effects extractable; certainty capped by design limitations, not data synthesis",
+        "detail": "The engine notes 'pooled effect: none extractable' for all three outcomes. This means the meta-analyses listed are not accompanied by quantitative summary estimates in the abstracts provided. Without seeing actual effect sizes, confidence intervals, and heterogeneity metrics, it is impossible to assess whether observed benefits are clinically meaningful or whether study-to-study variation is explained or residual.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The 2022 RCT testing whether 'improved microvascular reactivity' is 'mediated by hydrogen sulfide' suggests investigation of plausible mechanism (sulfur compounds in garlic \u2192 vasodilation), but the study title itself indicates a *negative* result on the proposed mechanism. The broader mechanism linking garlic consumption to cardiovascular risk factor reduction (blood pressure, lipids, glucose) is not articulated in these abstracts. There is no mechanistic bridge shown between the raw compound and the clinical outcomes; the evidence is observational correlation, not mechanistic justification.",
-    "strongest_counterargument": "A skeptic would note that the literature is dominated by re-analyses of the same underlying trials (the 2016 and 2026 studies appear across multiple outcomes, likely summarizing overlapping primary RCTs). The primary trial count is extremely low\u20144 for blood pressure, 1 for cholesterol, 0 visible for blood sugar\u2014making it implausible that any robust signal exists. Publication bias in favor of positive garlic trials is likely: negative or null trials may be underrepresented in meta-analyses, especially in older work (1993\u20132000). Combined with the absence of effect estimates and inconsistent outcome definitions across meta-analyses, the 'Moderate' grade reflects reviewer consensus on weak evidence, not robust proof of efficacy.",
-    "what_would_change_the_picture": "A large, adequately powered (n>300 per arm) double-blind RCT with a standardized, clearly defined garlic preparation (dose, processing, bioavailability confirmation) and pre-registered primary outcome (e.g., change in systolic blood pressure from baseline) would provide direct evidence not dependent on meta-analytic aggregation. Publication of the underlying primary trials' full methods and effect estimates for the most-cited meta-analyses (especially 2016, 2026) would permit assessment of study quality and heterogeneity, clarifying whether the 'Moderate' grade reflects consistent modest effects or conflicting signals.",
+    "mechanism_check": "The proposed mechanism\u2014that garlic extract modulates lipid metabolism and endothelial function via antioxidant and anti-inflammatory pathways\u2014is plausible from a basic science standpoint. However, the clinical outcomes (blood pressure reduction, cholesterol change, endothelial markers) are measured in small, heterogeneous populations (hypertensives, obese patients, children with hypercholesterolemia, coronary artery disease patients). The leap from in vitro antioxidant activity or animal metabolic changes to sustained human cardiovascular benefit in these diverse cohorts is substantial and not bridged by dose-response studies or mechanism-of-action work shown in the records.",
+    "strongest_counterargument": "A skeptic would note that the four human RCTs span 25 years (1998\u20132023), likely different formulations and doses of 'garlic extract,' and populations with different baseline risk and treatment exposure. The absence of sample sizes for most trials suggests they may be small and underpowered. Meta-analyses that pool these heterogeneous, likely-small studies without visible effect estimates or heterogeneity assessment may produce false confidence in a modest or null average effect. The recent 2022\u20132023 trials may include unpublished null findings or be selectively reported; without a registered protocol or prospective risk-of-bias assessment visible in the abstracts, confirmation bias toward positive outcomes cannot be ruled out.",
+    "what_would_change_the_picture": "A large (n\u2265200 per arm), multisite, pre-registered RCT with long-term follow-up (\u226512 weeks), standardized garlic extract dose, and pre-specified cardiovascular endpoints (blood pressure, lipid subfractions, endothelial function markers) measured with blinded assessment would directly test the claims. Publication of the full data, heterogeneity assessment, and subgroup analyses would allow readers to judge stability of effects across populations.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

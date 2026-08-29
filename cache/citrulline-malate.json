@@ -1,28 +1,28 @@
 {
-  "name": "Citrulline Malate",
+  "name": "citrulline-malate",
   "category": "supplement",
-  "overall_score": 95,
-  "tier": "Strong",
-  "study_count": 62,
+  "overall_score": 79,
+  "tier": "Moderate",
+  "study_count": 54,
   "claims": [
     {
       "outcome": "exercise performance",
-      "tier": "Strong",
-      "certainty": "high",
-      "score": 90,
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 23,
+      "n_studies": 21,
       "grade_reasons": [
-        "Precision: ~366 participants verified across 4 of 23 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Consistency: 5 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
+        "Precision: ~160 participants verified across 3 of 21 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
         "mechanistic": 30,
         "preclinical": 35,
-        "human": 90,
-        "overall": 90,
-        "ceiling": 90,
-        "n_human_studies": 22,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 20,
         "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -33,21 +33,19 @@
         "PMID:34010809",
         "PMID:31994989",
         "PMID:34319940",
+        "PMID:42356270",
         "PMID:42162613",
         "PMID:34176406",
         "PMID:26658899",
         "PMID:27017895",
-        "PMID:33308806",
         "PMID:25674699",
         "PMID:29210953",
         "PMID:29176388",
         "PMID:38874989",
         "PMID:30097067",
-        "PMID:42356270",
         "PMID:31456449",
         "PMID:29057836",
         "PMID:31343548",
-        "PMID:36501066",
         "PMID:25226311",
         "PMID:21664351"
       ],
@@ -67,14 +65,6 @@
           "design": "Meta-analysis",
           "population": "human",
           "n": 137
-        },
-        {
-          "pmid": "33308806",
-          "title": "Effect of citrulline on post-exercise rating of perceived exertion, muscle soreness, and blood lactate levels: A systematic review and meta-analysis.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 206
         },
         {
           "pmid": "42356270",
@@ -112,14 +102,6 @@
           "pmid": "34319940",
           "title": "Acute Citrulline-Malate Supplementation Increases Total Work in Short Lower-Body Isokinetic Tasks for Recreationally Active Females During Menstruation.",
           "year": "2023",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "36501066",
-          "title": "The Effect of a Single Dose of Citrulline on the Physical Performance of Soccer-Specific Exercise in Adult Elite Soccer Players (A Pilot Randomized Double-Blind",
-          "year": "2022",
           "design": "RCT",
           "population": "human",
           "n": null
@@ -238,17 +220,88 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "26808848",
+            "metric": "mean_diff",
+            "value": 7,
+            "ci_low": 0.0,
+            "ci_high": 14.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "none",
+            "quote": "TTE: [120 \u00b1 61 seconds CM vs. 113 \u00b1 50 seconds PL]"
+          },
+          {
+            "pmid": "20386132",
+            "metric": "mean_diff",
+            "value": 52.92,
+            "ci_low": 0.0,
+            "ci_high": 105.84,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "achieving 52.92% more repetitions and the 100% of response in the last set (S4')"
+          },
+          {
+            "pmid": "42162613",
+            "metric": "cohen_d",
+            "value": 1.38,
+            "ci_low": 0.0,
+            "ci_high": 2.76,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "The CM group showed significant improvement in sit-to-stand performance (\u0394 = -1.62 \u00b1 1.49 s; p = 0.023; d = 1.38)."
+          },
+          {
+            "pmid": "25674699",
+            "metric": "mean_diff",
+            "value": 3.8,
+            "ci_low": 0.0,
+            "ci_high": 7.6,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "chin-ups: PL = 28.4 \u00b1 7.1, CM = 32.2 \u00b1 5.6, p = .003"
+          },
+          {
+            "pmid": "21664351",
+            "metric": "mean_diff",
+            "value": 23,
+            "ci_low": 0.0,
+            "ci_high": 46.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs vehicle",
+            "direction": "benefit",
+            "quote": "it lead to a 23% enhancement of specific force production"
+          }
+        ],
+        "n_not_reported": 16,
+        "n_total": 21
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For exercise performance, Citrulline Malate is well-supported by human trials (23 studies)."
+      "summary": "For exercise performance, citrulline-malate has moderate human evidence (21 studies)."
     },
     {
       "outcome": "muscle strength",
@@ -256,9 +309,9 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 17,
+      "n_studies": 14,
       "grade_reasons": [
-        "Precision: ~148 participants verified across 2 of 17 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Precision: ~137 participants verified across 1 of 14 studies; most abstracts omit sample size, so the true total is substantially larger.",
         "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
       "layers": {
@@ -267,14 +320,13 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 15,
+        "n_human_studies": 12,
         "n_animal_studies": 2,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:31977835",
         "PMID:26808848",
-        "PMID:40470618",
         "PMID:34010809",
         "PMID:31994989",
         "PMID:34319940",
@@ -284,10 +336,8 @@
         "PMID:29210953",
         "PMID:19036344",
         "PMID:29176388",
-        "PMID:28664349",
         "PMID:34470906",
         "PMID:31343548",
-        "PMID:29945625",
         "PMID:21664351"
       ],
       "studies": [
@@ -312,14 +362,6 @@
           "title": "Effects of Citrulline Supplementation on Exercise Performance in Humans: A Review of the Current Literature.",
           "year": "2020",
           "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40470618",
-          "title": "Changes in resistance training performance, rating of perceived exertion, and blood biomarkers after six weeks of supplementation with L-citrulline vs. L-citrul",
-          "year": "2025",
-          "design": "RCT",
           "population": "human",
           "n": null
         },
@@ -364,28 +406,12 @@
           "n": null
         },
         {
-          "pmid": "29945625",
-          "title": "Eight weeks of resistance training in conjunction with glutathione and L-Citrulline supplementation increases lean mass and has no adverse effects on blood clin",
-          "year": "2018",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "26658899",
           "title": "Acute citrulline malate supplementation improves upper- and lower-body submaximal weightlifting exercise performance in resistance-trained females.",
           "year": "2017",
           "design": "RCT",
           "population": "human",
           "n": null
-        },
-        {
-          "pmid": "28664349",
-          "title": "The Effect of Citrulline/Malate on Blood Lactate Levels in Intensive Exercise.",
-          "year": "2017",
-          "design": "RCT",
-          "population": "human",
-          "n": 11
         },
         {
           "pmid": "26808848",
@@ -429,17 +455,46 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "34010809",
+            "metric": "hedges_g",
+            "value": 0.196,
+            "ci_low": 0.0,
+            "ci_high": 0.392,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "increased repetitions by 3 \u00b1 5 (6.4 \u00b1 7.9%) compared with placebo (p = .022) with a small SMD (0.196)"
+          },
+          {
+            "pmid": "21664351",
+            "metric": "mean_diff",
+            "value": 23,
+            "ci_low": 0.0,
+            "ci_high": 46.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs vehicle",
+            "direction": "benefit",
+            "quote": "During the stimulation period, it lead to a 23% enhancement of specific force production"
+          }
+        ],
+        "n_not_reported": 12,
+        "n_total": 14
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For muscle strength, Citrulline Malate has moderate human evidence (17 studies)."
+      "summary": "For muscle strength, citrulline-malate has moderate human evidence (14 studies)."
     },
     {
       "outcome": "recovery / soreness",
@@ -447,10 +502,9 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 15,
+      "n_studies": 12,
       "grade_reasons": [
-        "Precision: ~216 participants verified across 2 of 15 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
       ],
       "layers": {
         "mechanistic": 30,
@@ -458,7 +512,7 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 13,
+        "n_human_studies": 10,
         "n_animal_studies": 2,
         "note": "Human evidence present: human certainty sets the overall score."
       },
@@ -469,25 +523,14 @@
         "PMID:20386132",
         "PMID:36251983",
         "PMID:42162613",
-        "PMID:33308806",
         "PMID:19036344",
         "PMID:30097067",
         "PMID:34470906",
         "PMID:20499249",
         "PMID:29057836",
-        "PMID:36501066",
-        "PMID:19585317",
         "PMID:21664351"
       ],
       "studies": [
-        {
-          "pmid": "33308806",
-          "title": "Effect of citrulline on post-exercise rating of perceived exertion, muscle soreness, and blood lactate levels: A systematic review and meta-analysis.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 206
-        },
         {
           "pmid": "31977835",
           "title": "Effects of Citrulline Supplementation on Exercise Performance in Humans: A Review of the Current Literature.",
@@ -508,14 +551,6 @@
           "pmid": "40733006",
           "title": "Impact of Chronic Nitrate and Citrulline Malate Supplementation on Performance and Recovery in Spanish Professional Female Soccer Players: A Randomized Controll",
           "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "36501066",
-          "title": "The Effect of a Single Dose of Citrulline on the Physical Performance of Soccer-Specific Exercise in Adult Elite Soccer Players (A Pilot Randomized Double-Blind",
-          "year": "2022",
           "design": "RCT",
           "population": "human",
           "n": null
@@ -561,14 +596,6 @@
           "n": null
         },
         {
-          "pmid": "19585317",
-          "title": "Effects of L-citrulline oral supplementation on polymorphonuclear neutrophils oxidative burst and nitric oxide production after exercise.",
-          "year": "2009",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
           "pmid": "36251983",
           "title": "Effect of citrulline malate supplementation on muscle function and bioenergetics during short-term repeated bouts of fatiguing exercise.",
           "year": "2022",
@@ -602,17 +629,32 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "20386132",
+            "metric": "mean_diff",
+            "value": 40,
+            "ci_low": 0.0,
+            "ci_high": 80.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "A significant decrease of 40% in muscle soreness at 24 hours and 48 hours after the pectoral training session"
+          }
+        ],
+        "n_not_reported": 11,
+        "n_total": 12
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For recovery / soreness, Citrulline Malate has moderate human evidence (15 studies)."
+      "summary": "For recovery / soreness, citrulline-malate has moderate human evidence (12 studies)."
     },
     {
       "outcome": "blood pressure",
@@ -702,17 +744,32 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "24525046",
+            "metric": "mean_diff",
+            "value": -4.24,
+            "ci_low": -8.48,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "Mean pulmonary artery pressure significantly reduced from 83.34mmHg before receiving l-citrulline malate to 79.1mmHg after that (p=0.01)"
+          }
+        ],
+        "n_not_reported": 6,
+        "n_total": 7
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For blood pressure, Citrulline Malate has moderate human evidence (7 studies)."
+      "summary": "For blood pressure, citrulline-malate has moderate human evidence (7 studies)."
     }
   ],
   "effects_established": [
@@ -736,86 +793,86 @@
     "xlogp": null,
     "image_url": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=162762&t=l",
     "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/162762",
-    "matched_query": "Citrulline Malate",
+    "matched_query": "citrulline-malate",
     "source": "PubChem",
     "synonyms": [
+      "Citrulline malate",
       "70796-17-7",
       "Stimol",
       "L-citrulline malate",
       "PAB4036KHO",
-      "Citrulline malate (salt)",
-      "RefChem:126606"
+      "Citrulline malate (salt)"
     ]
   },
-  "_cached_at": 1787606801.535048,
+  "_cached_at": 1788016569.112225,
   "explanation": {
-    "what_it_is": "Citrulline malate is a compound combining L-citrulline (an amino acid, C\u2086H\u2081\u2083N\u2083O\u2082) with malate (a naturally occurring organic acid), sold under brand names like Stimol. It is not synthesized in the body in large amounts and must be obtained from food (e.g., watermelon) or supplements. People typically take it as a powder mixed in water or juice, usually 6\u20138 grams per dose, often before or after exercise.",
-    "how_it_works": "Citrulline is converted in the body to arginine, which is a substrate for nitric oxide synthase\u2014the enzyme that produces nitric oxide (NO), a signaling molecule that relaxes blood vessel walls and improves blood flow. Better blood flow during and after exercise increases oxygen and nutrient delivery to muscles, which can enhance performance and reduce the buildup of fatigue metabolites like lactate. The malate component is itself an intermediate in the citric acid cycle (the cell's main energy pathway), so it may support ATP production and energy metabolism during intense work. Together, these effects are proposed to improve strength output, reduce muscle fatigue, and speed recovery.",
+    "what_it_is": "Citrulline-malate is a compound combining L-citrulline (an amino acid) bonded to malate (a metabolic intermediate found naturally in apples and other fruits). It is sold as a supplement, often under the brand name Stimol, and is typically taken orally in powder or capsule form before or around workouts. The molecular formula is C\u2081\u2080H\u2081\u2089N\u2083O\u2088, with a molecular weight of 309.27 g/mol.",
+    "how_it_works": "Citrulline is converted in the body to arginine, which is a precursor to nitric oxide \u2014 a signaling molecule that relaxes blood vessel walls and improves blood flow. Better blood flow during exercise means more oxygen and nutrients reach working muscles, potentially delaying fatigue and supporting recovery. The malate component itself is involved in cellular energy production (the citric acid cycle), which may enhance ATP availability during intense muscular work. Together, citrulline-malate is theorized to reduce exercise-induced fatigue, improve muscular endurance, and support faster recovery by boosting both vascular function and aerobic energy metabolism.",
     "outcome_detail": [
       {
         "outcome": "exercise performance",
-        "grade": "Strong",
-        "what_studies_show": "Five independent meta-analyses and systematic reviews from 2020\u20132026 converge on the finding that citrulline malate enhances exercise performance in human subjects. One 2021 meta-analysis (n=137) specifically examined acute effects on repetition performance during strength training and found improvements in total work capacity. A 2020 meta-analysis (n=206) measured post-exercise rating of perceived exertion, muscle soreness, and blood lactate, all showing favorable trends. A 2026 RCT in older women (n=10) demonstrated enhanced lower-limb function with short-term supplementation. Across the retrieved studies, the effect is robust and has been replicated in diverse populations, from recreationally active individuals to elite athletes.",
-        "why_this_grade": "Strong evidence is supported by 22 human studies (1 animal) with consistency confirmed by 5 independent meta-analyses that agree on a benefit. Although most individual abstracts omit sample sizes, ~366 participants are verified across 4 studies, and the convergence of multiple systematic reviews provides strong replicated synthesis, despite precision limitations."
+        "grade": "Moderate",
+        "what_studies_show": "Multiple meta-analyses and systematic reviews (2022, 2021, 2026, 2020) in humans have examined citrulline-malate's effect on exercise performance, including repetition performance during strength training and lower-body function. An acute RCT in 2024 (n=13) found benefits for short-duration repeated sprint running, and a 2026 RCT (n=10) in physically active older women showed enhancements in lower-limb function. Across the retrieved records, studies examined both acute and chronic supplementation protocols, with performance outcomes ranging from resistance work capacity to sprint performance.",
+        "why_this_grade": "Twenty human studies support this outcome, including multiple meta-analyses and recent RCTs, but no pooled analysis in the records fully confirms agreement across all studies. Sample sizes are often omitted from abstracts; verified participant counts total ~160 across only 3 studies, so the true sample is larger but remains incompletely transparent. The evidence is consistent enough to warrant Moderate confidence, but heterogeneity in study designs and populations prevents a Strong rating."
       },
       {
         "outcome": "muscle strength",
         "grade": "Moderate",
-        "what_studies_show": "A 2022 meta-analysis of resistance-trained adults and a 2021 meta-analysis (n=137) both reported improvements in muscle strength outcomes following citrulline malate supplementation. A 2023 RCT found that acute supplementation increased total work in short lower-body isokinetic tasks in recreationally active individuals. However, a 2021 RCT found that acute citrulline malate was ineffective during aerobic cycling and subsequent anaerobic performance, and a 2018 RCT showed no improvement in German Volume Training performance or muscle soreness reduction. A 2025 RCT measured changes in resistance training performance and blood biomarkers after six weeks of supplementation.",
-        "why_this_grade": "Moderate evidence reflects 15 human studies showing promise but with inconsistency: several studies demonstrate strength gains, while others (including a notable 2021 RCT) report no effect, particularly in aerobic or mixed-modality tasks. No single pooled meta-analysis has confirmed agreement among all studies, and verified sample sizes (~148 participants across 2 studies) are modest, making the true effect estimate less certain."
+        "what_studies_show": "Twelve human studies, including meta-analyses (2022, 2021) and RCTs (2023, 2021, 2019), evaluated citrulline-malate's effect on muscle strength in resistance-trained and recreationally active adults. A 2023 RCT found acute supplementation increased total work in short lower-body isokinetic tasks for recreationally active participants. A 2021 RCT reported acute citrulline-malate was ineffective during aerobic cycling and subsequent anaerobic performance, and a 2019 RCT examined its effect on muscle fatigue in healthy adults. The 2020 systematic review summarized effects on exercise performance including strength-related outcomes.",
+        "why_this_grade": "Twelve human studies support moderate evidence, though only one provided a verified sample size (n=137 from a meta-analysis). Most abstracts omit sample sizes, so total participant numbers are substantially underreported. No independent replication of findings across all studies has been demonstrated in the records; inconsistency in outcomes (some showing benefit, others null effects) supports Moderate rather than Strong confidence."
       },
       {
         "outcome": "recovery / soreness",
         "grade": "Moderate",
-        "what_studies_show": "A 2020 meta-analysis (n=206) examined post-exercise rating of perceived exertion, muscle soreness, and blood lactate levels and found favorable effects on perceived recovery. A 2026 RCT in older women (n=10) reported enhanced lower-limb function and recovery markers. A 2025 RCT investigated chronic citrulline malate supplementation alongside nitrate on performance and recovery in professional athletes. However, a 2018 RCT explicitly tested whether citrulline malate reduced muscle soreness following German Volume Training and found no significant improvement.",
-        "why_this_grade": "Moderate evidence is based on 13 human studies, with a 2020 meta-analysis showing favorable trends in soreness and perceived exertion, but a notable 2018 RCT demonstrating no benefit. No pooled analysis has confirmed consistency across all studies; verified sample sizes (~216 participants across 2 studies) are limited, leaving the true magnitude and reliability of recovery benefits uncertain."
+        "what_studies_show": "Ten human studies examined citrulline-malate's effects on muscle recovery and soreness. A 2020 systematic review summarized effects on recovery, a 2026 RCT (n=10) in older women reported enhanced lower-limb function suggesting improved recovery, and a 2025 RCT examined chronic supplementation in Spanish professional athletes. However, contrasting findings appear: a 2018 RCT found citrulline-malate supplementation did not improve German Volume Training performance or reduce muscle soreness, and a 2017 RCT reported it was ineffective for muscle recovery in untrained young adult men. A 2016 RCT on acute supplementation and cycling performance also contributed to the body of literature.",
+        "why_this_grade": "Ten human studies support this outcome, but the findings are inconsistent: some show benefit, others show no effect. A single meta-analysis or systematic review exists (2020), but the records indicate its conclusion has not been independently replicated or verified. This inconsistency, combined with the lack of independent confirmation, justifies a Moderate grade rather than Strong."
       },
       {
         "outcome": "blood pressure",
         "grade": "Moderate",
-        "what_studies_show": "A 2024 RCT examined acute effects of citrulline malate supplementation on nocturnal blood pressure dipping after exercise in hypertensive individuals. A 2019 RCT measured post-exercise hypotension responses to citrulline malate in a hypertensive population, documenting inter-individual variation in response. A 2020 RCT studied effects on blood flow and energy metabolism during submaximal exercise. A 2016 RCT and a 2015 RCT measured cardiovascular dynamics and blood pressure changes during and after lower-body resistance exercise. A 2010 RCT (n=15) specifically compared oral citrulline supplementation effects on blood pressure and right ventricular function.",
-        "why_this_grade": "Moderate evidence is based on 7 human RCTs with no animal studies. Imprecision is a significant limitation: only ~40 participants are verified across 2 of the 7 studies, meaning the true total sample is unknown and the effect estimate may be unstable. The studies focus on hypertensive and exercising populations, but the modest verified sample and lack of pooled analysis prevent a strong grading."
+        "what_studies_show": "Seven human RCTs (2024, 2020, 2019, 2016, 2015, 2010) examined citrulline-malate supplementation and blood pressure outcomes. A 2024 RCT investigated acute effects on nocturnal blood pressure dipping after exercise in hypertensive individuals, a 2020 RCT assessed effects on blood flow during submaximal exercise, and a 2019 RCT studied inter-individual responses to post-exercise hypotension in hypertensive patients. Earlier studies (2016, 2015, 2010) examined cardiovascular dynamics and blood pressure response to supplementation during and after resistance exercise. A 2010 RCT (n=15) directly compared L-arginine and L-citrulline on blood pressure and right ventricular function.",
+        "why_this_grade": "Seven human RCTs support a Moderate grade, but the evidence is imprecise: only ~40 participants were verified across 2 of 7 studies, and most abstracts do not report full sample sizes. The true total participant count is substantially larger but remains incompletely documented. This imprecision means the effect estimate may be unstable, preventing a Strong rating."
       }
     ],
-    "evidence_base": "The research base for citrulline malate is predominantly human (22 human studies for exercise performance, 15 for strength, 13 for recovery, 7 for blood pressure) with very few animal studies. The evidence is dominated by randomized controlled trials (RCTs) and systematic reviews/meta-analyses conducted from 2010 to 2026, with notable convergence in 2020\u20132026 publications. However, most individual study abstracts do not report sample sizes, so true participant totals are substantially higher than verified counts but remain uncertain. This pattern of strong synthesis-level agreement combined with incomplete precision reporting suggests moderate-to-strong confidence in exercise and performance outcomes, but more caution around recovery, soreness, and blood pressure, where consistency across studies is lower.",
-    "emerging_research": "Recent work (2025\u20132026) has expanded focus to special populations, including physically active older women and professional athletes, suggesting investigation into age-related and sport-specific effects. A 2026 three-level meta-analysis and several 2025 RCTs examining chronic dosing regimens alongside other nitric oxide boosters (e.g., nitrate) point to interest in optimizing combination protocols and long-term supplementation safety. Early interest in nocturnal blood pressure dipping and inter-individual responder variation (noted in 2019 and 2024 studies) hints at emerging precision-medicine approaches, though these remain preliminary.",
-    "open_questions": "Among the retrieved studies, there is notable heterogeneity in task type (strength vs. aerobic, acute vs. chronic dosing), and some populations are better represented than others\u2014hypertensive and resistance-trained individuals appear frequently, while other demographics are sparse in the sample provided. Critically, none of the abstracts provided specify follow-up durations beyond 12 weeks, making it unclear whether short-term benefits persist with long-term use. The inconsistency in recovery and soreness outcomes (with at least one 2018 RCT showing no effect) suggests that study design, exercise modality, or participant characteristics may influence results, but the retrieved records do not fully characterize which factors predict response. Since you are viewing only a sample of ~40 abstracts per outcome, you cannot conclude what the full literature may contain regarding long-term safety, rare adverse events, or effects in untested populations.",
-    "caveats": "Citrulline malate is generally well tolerated, but gastrointestinal distress can occur at high doses; quality varies by manufacturer, so third-party testing is advisable. It is not approved by the FDA as a drug, and supplement purity/contamination risks exist. Although it is not known to cause serious interactions, individuals on blood pressure medications or nitrate-based drugs should consult a physician before supplementing, as additive hypotensive effects are theoretically possible.",
+    "evidence_base": "The evidence base for citrulline-malate is primarily human (20, 12, 10, and 7 human studies across the four outcomes respectively), with very few animal studies included (totaling 1\u20132 per outcome). Research is dominated by RCTs, meta-analyses, and systematic reviews published between 2010 and 2026, indicating active recent investigation. However, most abstracts omit sample sizes, so participant counts are substantially underreported; verified totals are modest (ranging from ~40 to ~160 participants) across the retrieved records. This pattern suggests the true human evidence base is larger than these verified numbers, but the available abstract data limits confidence in precision and consistency.",
+    "emerging_research": "Recent trials (2024\u20132026) have begun examining citrulline-malate in specific populations, including hypertensive individuals (2024 blood pressure study), professionally active athletes (2025 recovery study), and older women (2026 lower-limb function study). These studies expand beyond younger, healthy, recreationally active cohorts typical of earlier work. A 2026 systematic review with three-level meta-analysis represents the most recent synthesis of exercise performance evidence. These directions suggest growing interest in population-specific responses and more rigorous meta-analytic integration, though results remain early and not yet independently replicated across independent groups.",
+    "open_questions": "Among the studies retrieved here, most abstracts omit participant sample sizes, so we cannot fully characterize the precision or representativeness of the overall evidence base. None of the retrieved records appear to follow participants beyond the immediate post-supplementation or acute recovery period, leaving questions about sustained effects of chronic supplementation over weeks or months. The retrieved studies show heterogeneity in outcomes and protocols (acute vs. chronic dosing, different exercise modalities, varying populations), but the abstracts do not indicate whether any formal heterogeneity analysis or subgroup comparisons were performed to explain which populations or protocols respond best. It is important to note that these observations apply only to the sample of ~40 abstracts per outcome provided to this review; they do not characterize the completeness of research in the field globally.",
+    "caveats": "Citrulline-malate is generally recognized as safe in food and supplement form, but supplement quality and purity vary by manufacturer \u2014 third-party testing is advisable. It may have mild interactions with blood pressure medications or medications affecting nitric oxide pathways (e.g., nitrates, PDE5 inhibitors like sildenafil), so individuals on such medications should consult a healthcare provider. Pregnant or nursing individuals should avoid supplementation without medical guidance, and those with kidney or liver disease should seek professional advice before use.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Exercise performance evidence is genuinely solid (5 independent meta-analyses converge), but muscle strength, recovery, and blood pressure rest on small underpowered trials with inconsistent results and pervasive sample-size reporting gaps that obscure true precision.",
+    "headline": "Most individual trials are small and unreported in sample size; no meta-analysis provides a pooled effect estimate; and conflicting results within the retrieved records (e.g., 2021 'ineffective' vs. 2017 'improves' performance) are never reconciled, making it unclear whether citrulline-malate actually works.",
     "concerns": [
       {
-        "issue": "Massive sample-size reporting opacity",
-        "detail": "Across all outcomes, the vast majority of abstracts omit sample size entirely. For muscle strength, only 2 of 17 studies report n; for recovery/soreness, only 2 of 15; for blood pressure, only 2 of 7. The engine notes the verified total is 'substantially larger' than the visible ~148\u2013216 participants, but we cannot assess heterogeneity, outlier influence, or true precision without knowing how many participants actually enrolled in the unreported trials. This silence itself is a red flag: small negative studies are less likely to be prominently reported.",
+        "issue": "Sample size transparency and precision crisis",
+        "detail": "Across 21 exercise performance studies, only 3 report sample sizes (10, 13, 137). For muscle strength (14 studies), only 1 reports n=137; the other 13 are opaque. For recovery (12 studies), only 1 reports n=10. The engine notes 'true total is substantially larger' but cannot verify it from abstracts. This opacity makes it impossible to assess whether pooled evidence is stable or dominated by a few small underpowered trials.",
         "severity": "high"
       },
       {
-        "issue": "Inconsistency unexplained for 3 of 4 outcomes",
-        "detail": "For muscle strength, recovery/soreness, and blood pressure, the engine explicitly flags 'inconsistency' and notes 'no pooled analysis confirms they agree.' In contrast, exercise performance is graded Strong partly because 5 independent meta-analyses exist and 'adequately powered' converge. The three Moderate-graded outcomes lack that synthesis consensus. Without seeing effect direction, heterogeneity statistics (I\u00b2), or forest plots, we cannot tell whether studies are contradictory or simply measuring different constructs (e.g., time to exhaustion vs. 1-rep max).",
+        "issue": "Directly contradictory trial results, unreconciled",
+        "detail": "Within the exercise performance record: a 2021 RCT concluded 'ineffective during aerobic cycling and subsequent anaerobic'; a 2017 RCT concluded 'improves upper- and lower-body submaximal weightlifting'; a 2023 RCT concluded 'Increases Total Work'; a 2018 RCT concluded 'does not improve...performance or reduce muscle soreness'. The retrieved systematic reviews (2020, 2026) and meta-analyses (2021, 2022) do not appear to have resolved this heterogeneity\u2014no pooled effect estimate is extractable from the records. The Moderate grade rests on 'inconsistency: several studies exist but no pooled analysis confirms they agree.'",
         "severity": "high"
       },
       {
-        "issue": "Blood pressure evidence is underpowered and sparse",
-        "detail": "Only 7 trials total, with verified participants of ~40 across just 2 studies. The engine explicitly notes 'Imprecision: modest verified sample... effect estimate may be unstable.' A single large responder or methodological quirk in one trial could shift the apparent direction. The outcome is graded Moderate\u2014but the precision justification is weak, and clinical relevance (e.g., is a 2 mmHg shift meaningful?) is not addressed in the abstracts.",
+        "issue": "No extractable pooled effect across any outcome",
+        "detail": "Despite 16 RCTs and 4 meta-analyses or systematic reviews in the exercise performance domain, the engine reports 'pooled effect: none extractable' for all four outcomes (exercise performance, muscle strength, recovery, blood pressure). This means the reviews either did not perform meta-analysis, reported heterogeneity without a summary estimate, or their conclusions are not available in the abstracts. Without a pooled effect, the Moderate grade cannot be anchored to a quantitative finding.",
         "severity": "high"
       },
       {
-        "issue": "Acute dosing dominance, chronic generalizability unclear",
-        "detail": "Titles across all outcomes emphasize 'acute' or 'short-term' supplementation (e.g., '3 days,' 'single dose,' 'short-duration'). The 2018 trial 'Eight weeks of resistance training in conjunction with glutathione and L-Citrulline supplementation' is an exception, but most abstracts do not disclose whether the benefit persists with habitual use or fades with tolerance. Practical users care about chronic efficacy; the retrieved abstracts do not clearly address this.",
+        "issue": "Blood pressure evidence is minimally powered",
+        "detail": "Only 7 trials on blood pressure (6 RCTs, 1 clinical trial); only 2 report sample sizes (15, 25 \u2192 ~40 verified participants). The engine notes 'effect estimate may be unstable.' A single well-run larger trial could substantially shift the apparent effect, and the current evidence base is too sparse to support confident claims about blood pressure benefit.",
         "severity": "moderate"
       },
       {
-        "issue": "Heterogeneity in populations and exercise modalities",
-        "detail": "Abstracts mention 'resistance-trained adults,' 'untrained young adults,' 'older adults,' 'soccer-specific exercise,' 'cycling,' 'isokinetic tasks,' and 'German Volume Training.' Without detailed summary tables, we cannot determine whether a given outcome (e.g., muscle strength) generalizes across these populations or is driven by results in one specific group (e.g., upper-body resistance only). This is especially problematic given small Ns per study.",
+        "issue": "Publication year and design quality variation unchecked",
+        "detail": "Exercise performance trials span 2010\u20132026 (16 years); muscle strength spans 2009\u20132023. Two abstracts are marked 'Unclassified' rather than RCT. Systematic reviews did not extract or report risk-of-bias assessments in these abstracts. Older trials (2009\u20132016) may reflect different methodological standards or undisclosed conflicts. No summary of funding sources, registration, or bias risk is visible in the records.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Citrulline is a nitric oxide precursor, and NO supports vasodilation, blood flow, and oxygen delivery\u2014a biologically plausible mechanism for acute exercise performance. However, the leap from acute vasodilation to chronic muscle strength or durable recovery is larger and less direct. The abstracts do not report NO, endothelial function, or microvascular outcomes that would bridge mechanism to chronic benefit. The mechanism supports acute performance; it does not obviously explain why muscle soreness or strength adaptation would persist across training cycles.",
-    "strongest_counterargument": "A skeptic would note that the Moderate grades for strength, recovery, and blood pressure are driven by small, heterogeneous trials with contradictory results and pervasive failure to report sample sizes\u2014classic hallmarks of a literature vulnerable to publication bias and type I error. The one Strong outcome (exercise performance) rests on meta-analyses, but even there, only 4 of 23 studies report sample size, and no pooled effect size is visible in these abstracts. Small acute improvements in single-bout performance (e.g., +1\u20132 repetitions) do not translate reliably to practical strength gain or long-term athletic benefit.",
-    "what_would_change_the_picture": "Publication of the underlying data (effect sizes, 95% CIs, sample sizes, heterogeneity metrics) from the 5 exercise-performance meta-analyses would clarify whether the Strong grade reflects a genuinely robust effect or consensus among small studies with high bias risk. For muscle strength and recovery, a single adequately powered (n \u2265 100 per arm), long-term (\u22658 weeks) RCT in a homogeneous population using a standardized strength/soreness outcome would resolve whether acute benefits translate to meaningful chronic benefit.",
+    "mechanism_check": "Citrulline-malate plausibly increases NO bioavailability and ATP regeneration via malate, which could enhance blood flow and reduce fatigue during repeated muscular effort. However, the leap from mechanism to the CLINICAL claims (e.g., 'improves muscle strength,' 'reduces soreness') depends on whether trials actually measured these outcomes robustly and consistently. The contradictory trial results (ineffective vs. effective) suggest either the mechanism is context-dependent (e.g., only works in certain exercise modalities or populations) or trial heterogeneity (different doses, timing, populations) obscures a weak or absent effect. The mechanism does not explain why some trials show benefit and others do not.",
+    "strongest_counterargument": "A well-informed skeptic would observe that across 20+ human trials spanning 16 years, no meta-analysis has produced a pooled estimate, reviews have not reconciled directly contradictory results (2021 'ineffective' vs. 2017 'improves'), and most trials remain unreported in sample size and thus potentially underpowered. The Moderate grade appears to rest on the mere existence of multiple studies and a plausible mechanism, not on convergent evidence. It is entirely consistent with these records that citrulline-malate has little or no effect, and that apparent benefits in some trials reflect small-sample noise, investigator bias, or publication bias favoring positive findings.",
+    "what_would_change_the_picture": "A high-quality, pre-registered multi-center RCT with >150 participants per arm, standardized dosing and timing, blinded outcome assessment, and primary endpoints in a single exercise modality (e.g., repeated lower-body resistance sets) would provide a decisive test. Alternatively, a rigorous meta-analysis that extracts individual trial data, quantifies heterogeneity by dose/modality/population, and reports pooled estimates with 95% confidence intervals and assessment of publication bias would clarify whether inconsistency reflects genuine effect variation or absence of effect masked by noise.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

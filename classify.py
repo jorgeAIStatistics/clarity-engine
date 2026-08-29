@@ -92,18 +92,48 @@ _ANIMAL_TEXT_SIGNALS = (
 )
 
 
+# Methodology phrases that do NOT establish the subjects were non-human.
+_NON_AUTHORITATIVE_SIGNALS = {
+    "in vitro", "cell culture", "cell line", "cultured cells", "fibroblast",
+    "animal model", "animal study", "in vivo animal", "veterinary",
+}
+
+# Species terms only — these DO establish non-human subjects.
+_SPECIES_SIGNALS = [s for s in _ANIMAL_TEXT_SIGNALS
+                    if s not in _NON_AUTHORITATIVE_SIGNALS]
+
+_ANIMAL_SIGNAL_RE = re.compile(
+    r"\b(" + "|".join(re.escape(sig) for sig in
+                      sorted(_SPECIES_SIGNALS, key=len, reverse=True)) + r")\b")
+
+# Kept for design inference, where a broader net is harmless: an unclassified
+# study costs a weaker trials table, not a wrong population.
+_ANY_ANIMAL_HINT_RE = re.compile(
+    r"\b(" + "|".join(re.escape(sig) for sig in
+                      sorted(_ANIMAL_TEXT_SIGNALS, key=len, reverse=True)) + r")\b")
+
+
 def _has_animal_signal(title, abstract):
+    """
+    Explicit non-human research signal in the title OR abstract.
+
+    Word-boundary matched: plain substring matching made "pigment" match "pig",
+    "when" match "hen" and "indicate" match "cat". Tolerable when this was only
+    a design hint; not once it decides population.
+    """
     blob = f"{title or ''} {abstract or ''}".lower()
-    return any(sig in blob for sig in _ANIMAL_TEXT_SIGNALS)
+    return bool(_ANIMAL_SIGNAL_RE.search(blob))
 
 
 def _design_from_text(title, abstract):
     """
     Infer design from title+abstract when publication types are uninformative.
-    Returns None for anything showing animal/in-vitro signals: better to leave a
-    study Unclassified than to promote a rat study to RCT.
+    Returns None for anything showing animal/in-vitro hints: better to leave a
+    study Unclassified than to promote a rat study to RCT. Uses the BROAD hint
+    set — over-caution here only costs a weaker trials table.
     """
-    if _has_animal_signal(title, abstract):
+    blob = f"{title or ''} {abstract or ''}".lower()
+    if _ANY_ANIMAL_HINT_RE.search(blob):
         return None
     blob = f"{title or ''} {abstract or ''}".lower()
     for design, needles in _DESIGN_BY_TEXT:
@@ -205,7 +235,17 @@ def classify(study):
     pubtype_is_human = design_from_metadata and design in (
         "rct", "trial", "observational", "meta_analysis", "systematic_review")
 
-    if title_is_animal and not pubtype_is_human:
+    # AUTHORITATIVE ANIMAL OVERRIDE.
+    # A study whose abstract says "burned mice" is an animal study, whatever
+    # PubMed's publication type says. BPC-157 reached Moderate ("good human
+    # evidence") on mouse burn-wound papers because the species word appeared in
+    # the abstract rather than the title, so a metadata pubtype of
+    # "observational" carried the decision. One detector now governs both design
+    # and population instead of two systems disagreeing.
+    if _has_animal_signal(study.get("title", ""), study.get("abstract", "")) \
+            and not has_human_trial:
+        population = "animal"
+    elif title_is_animal and not pubtype_is_human:
         # Species in the title, not an explicitly human study design -> animal.
         population = "animal"
     elif has_animal_model and not has_human_trial:

@@ -1,7 +1,7 @@
 {
-  "name": "Apple Cider Vinegar",
+  "name": "apple-cider-vinegar",
   "category": "supplement",
-  "overall_score": 79,
+  "overall_score": 76,
   "tier": "Moderate",
   "study_count": 31,
   "claims": [
@@ -14,7 +14,7 @@
       "n_studies": 9,
       "grade_reasons": [
         "Precision: ~1414 participants verified across 2 of 9 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 1 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Limited human evidence: 2 primary human studies and 3 pooled analyses retrieved \u2014 below the threshold for the top tier."
       ],
       "layers": {
         "mechanistic": 30,
@@ -30,8 +30,8 @@
         "PMID:34187442",
         "PMID:39949546",
         "PMID:37608660",
-        "PMID:19630216",
         "PMID:42215584",
+        "PMID:19630216",
         "PMID:38777948",
         "PMID:27209492",
         "PMID:30553888",
@@ -74,7 +74,7 @@
           "pmid": "18093343",
           "title": "Effect of apple cider vinegar on delayed gastric emptying in patients with type 1 diabetes mellitus: a pilot study.",
           "year": "2007",
-          "design": "Unclassified",
+          "design": "RCT",
           "population": "human",
           "n": null
         },
@@ -112,17 +112,59 @@
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "37608660",
+            "metric": "mean_diff",
+            "value": -21.2,
+            "ci_low": -32.31,
+            "ci_high": -2.21,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "ACV consumption could significantly improve the levels of FBG (-21.20 mg/dl; 95% CI: -32.31 to -2.21;"
+          },
+          {
+            "pmid": "27209492",
+            "metric": "mean_diff",
+            "value": 26.83,
+            "ci_low": 0.0,
+            "ci_high": 53.66,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs high fat diet control",
+            "direction": "benefit",
+            "quote": "decreases serum glucose levels (26.83%)"
+          }
+        ],
+        "n_not_reported": 7,
+        "n_total": 9
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For blood sugar, Apple Cider Vinegar has moderate human evidence (9 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -21.2,
+        "ci_low": -32.31,
+        "ci_high": -2.21,
+        "ci_estimated": false,
+        "n_studies_pooled": 33,
+        "comparator": "control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "37608660",
+        "quote": "ACV consumption could significantly improve the levels of FBG (-21.20 mg/dl; 95% CI: -32.31 to -2.21;"
+      },
+      "summary": "For blood sugar, apple-cider-vinegar has moderate human evidence (9 studies)."
     },
     {
       "outcome": "cholesterol / lipids",
@@ -141,8 +183,8 @@
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 5,
+        "n_human_studies": 2,
+        "n_animal_studies": 6,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -161,14 +203,6 @@
           "title": "The effect of apple cider vinegar on lipid profiles and glycemic parameters: a systematic review and meta-analysis of randomized clinical trials.",
           "year": "2021",
           "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "21561165",
-          "title": "Effects of apple cider vinegars produced with different techniques on blood lipids in high-cholesterol-fed rats.",
-          "year": "2011",
-          "design": "Observational",
           "population": "human",
           "n": null
         },
@@ -213,6 +247,14 @@
           "n": null
         },
         {
+          "pmid": "21561165",
+          "title": "Effects of apple cider vinegars produced with different techniques on blood lipids in high-cholesterol-fed rats.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
           "pmid": "19630216",
           "title": "Apple cider vinegar attenuates lipid profile in normal and diabetic rats.",
           "year": "2008",
@@ -223,16 +265,16 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 8,
+        "n_total": 8
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cholesterol / lipids, Apple Cider Vinegar has moderate human evidence (8 studies)."
+      "summary": "For cholesterol / lipids, apple-cider-vinegar has moderate human evidence (8 studies)."
     },
     {
       "outcome": "weight / fat loss",
@@ -252,7 +294,7 @@
         "overall": 70,
         "ceiling": 70,
         "n_human_studies": 3,
-        "n_animal_studies": 5,
+        "n_animal_studies": 6,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
@@ -301,6 +343,14 @@
           "n": null
         },
         {
+          "pmid": "33326702",
+          "title": "Effects of dietary vinegar on performance, immune response and small intestine histomorphology in 1- to 28-day broiler chickens.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": 85
+        },
+        {
           "pmid": "33084094",
           "title": "Ameliorative effects of apple cider vinegar on neurological complications via regulation of oxidative stress markers.",
           "year": "2020",
@@ -333,14 +383,6 @@
           "n": null
         },
         {
-          "pmid": "33326702",
-          "title": "Effects of dietary vinegar on performance, immune response and small intestine histomorphology in 1- to 28-day broiler chickens.",
-          "year": "2021",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": 85
-        },
-        {
           "pmid": "27840173",
           "title": "Dietary effect of apple cider vinegar and propionic acid on immune related transcriptional responses and growth performance in white shrimp, Litopenaeus vanname",
           "year": "2017",
@@ -351,176 +393,172 @@
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 10,
+        "n_total": 10
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For weight / fat loss, Apple Cider Vinegar has moderate human evidence (10 studies)."
+      "summary": "For weight / fat loss, apple-cider-vinegar has moderate human evidence (10 studies)."
     },
     {
-      "outcome": "immune function",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
+      "outcome": "inflammation",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
       "has_human_evidence": true,
       "n_studies": 4,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~85 participants across 1 of 4 studies); effect estimate may be unstable."
+        "Imprecision: modest verified sample (~25 participants across 1 of 4 studies); effect estimate may be unstable."
       ],
       "layers": {
         "mechanistic": 30,
-        "preclinical": 45,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 2,
+        "preclinical": 55,
+        "human": 22,
+        "overall": 22,
+        "ceiling": 22,
+        "n_human_studies": 1,
+        "n_animal_studies": 3,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:34077434",
-        "PMID:33326702",
-        "PMID:27840173",
-        "PMID:32239336"
+        "PMID:38777948",
+        "PMID:33084094",
+        "PMID:24894721",
+        "PMID:35978745"
       ],
       "studies": [
         {
-          "pmid": "34077434",
-          "title": "Apple cider vinegar soaks do not alter the skin bacterial microbiome in atopic dermatitis.",
-          "year": "2021",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "32239336",
-          "title": "Improvement of non-specific immunity, growth, and activity of digestive enzymes in Carassius auratus as a result of apple cider vinegar administration to diet.",
-          "year": "2020",
+          "pmid": "35978745",
+          "title": "Effectiveness of Apple Cider Vinegar and Mechanical Removal on Dental Plaque and Gingival Inflammation of Children With Cerebral Palsy.",
+          "year": "2022",
           "design": "Unclassified",
           "population": "human",
-          "n": null
+          "n": 25
         },
         {
-          "pmid": "33326702",
-          "title": "Effects of dietary vinegar on performance, immune response and small intestine histomorphology in 1- to 28-day broiler chickens.",
-          "year": "2021",
-          "design": "Unclassified",
+          "pmid": "38777948",
+          "title": "Synergistic Amelioration of Letrozole-induced Polycystic Ovary Syndrome in Rats: A Therapeutic Approach with Apple Cider Vinegar and Metformin Combination.",
+          "year": "2024",
+          "design": "Animal",
           "population": "animal",
-          "n": 85
+          "n": null
         },
         {
-          "pmid": "27840173",
-          "title": "Dietary effect of apple cider vinegar and propionic acid on immune related transcriptional responses and growth performance in white shrimp, Litopenaeus vanname",
-          "year": "2017",
-          "design": "Unclassified",
+          "pmid": "33084094",
+          "title": "Ameliorative effects of apple cider vinegar on neurological complications via regulation of oxidative stress markers.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null
+        },
+        {
+          "pmid": "24894721",
+          "title": "Apple cider vinegar modulates serum lipid profile, erythrocyte, kidney, and liver membrane oxidative stress in ovariectomized mice fed high cholesterol.",
+          "year": "2014",
+          "design": "Animal",
           "population": "animal",
           "n": null
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 4,
+        "n_total": 4
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For immune function, Apple Cider Vinegar has moderate human evidence (4 studies)."
+      "summary": "For inflammation, apple-cider-vinegar has only preliminary or animal evidence (4 studies)."
     }
   ],
   "effects_established": [
     "blood sugar",
     "cholesterol / lipids",
-    "weight / fat loss",
-    "immune function"
+    "weight / fat loss"
   ],
   "effects_promising": [],
-  "effects_emerging": [],
+  "effects_emerging": [
+    "inflammation"
+  ],
   "honesty_note": null,
   "generated_by": "clarity-engine-v2",
   "reviewed_by": "auto",
-  "_cached_at": 1787607024.411935,
+  "_cached_at": 1788015804.356256,
   "explanation": {
-    "what_it_is": "Apple cider vinegar is vinegar produced by fermenting apple juice with acetic acid bacteria, resulting in a liquid that is typically 4\u20136% acetic acid by volume. It is consumed as a dietary supplement, usually diluted in water or added to food, and is marketed for various metabolic and health effects. The active component is believed to be acetic acid, along with trace polyphenols and other compounds retained from apples.",
-    "how_it_works": "The primary mechanism centers on acetic acid, which may slow gastric emptying (the rate at which food leaves the stomach), potentially reducing the rate at which carbohydrates and glucose enter the bloodstream. Slower glucose absorption can moderate postprandial (after-meal) blood sugar spikes. Acetic acid may also influence insulin sensitivity and hepatic glucose production through effects on AMPK and other metabolic enzymes. Additionally, the polyphenols in apple cider vinegar possess mild antioxidant properties that could theoretically support lipid metabolism and reduce oxidative stress, though the concentration of these compounds in commercial vinegar is typically low. The exact degree to which these mechanisms translate to clinically meaningful effects in humans remains uncertain.",
+    "what_it_is": "Apple cider vinegar (ACV) is vinegar produced by fermenting apple juice with bacteria and yeast, creating acetic acid as its primary active component (typically 4\u20136% by volume). It is consumed as a liquid supplement, often diluted in water, or in capsule form. The fermentation process also produces other compounds including polyphenols and trace minerals.",
+    "how_it_works": "Acetic acid, the main ingredient in apple cider vinegar, is thought to affect blood sugar and digestion through several pathways. It may slow gastric emptying (the rate at which food leaves the stomach), which can reduce the speed at which glucose enters the bloodstream and blunt blood sugar spikes after meals. Acetic acid may also inhibit enzymes that break down carbohydrates, further slowing glucose absorption. Additionally, fermented vinegar contains polyphenols with antioxidant properties that could theoretically reduce inflammation and oxidative stress. These mechanisms are plausible but not fully mapped in humans.",
     "outcome_detail": [
       {
         "outcome": "blood sugar",
         "grade": "Moderate",
-        "what_studies_show": "A 2021 meta-analysis and two 2025 systematic reviews, along with a 2026 randomized controlled trial in 94 participants with polycystic ovary syndrome, found that apple cider vinegar showed adjunctive benefits on glycemic control and insulin sensitivity. A 2007 pilot study in patients with type 1 diabetes reported effects on delayed gastric emptying. The 2025 meta-analysis included approximately 1,320 participants pooled across multiple trials, and findings generally supported modest improvements in blood glucose parameters and insulin resistance, particularly in type 2 diabetes and metabolic syndrome contexts.",
-        "why_this_grade": "While multiple human systematic reviews and at least one primary randomized trial exist, the overall human evidence base is limited\u2014only one primary trial was directly retrieved, with most data coming from pooled analyses. Sample sizes in individual studies are often small and frequently unreported in abstracts. The consistency of findings across trials supports a moderate rather than emerging grade, but the evidence is not robust enough for a strong rating."
+        "what_studies_show": "Multiple systematic reviews and meta-analyses published between 2021 and 2025, including a pooled analysis of human and animal studies, report a mean reduction in blood glucose of approximately 21 mg/dL (95% CI: \u221232.31 to \u22122.21). A 2026 randomized controlled trial in 94 people with polycystic ovary syndrome found adjunctive benefits of ACV on insulin resistance and metabolic syndrome markers. A 2007 pilot study in type 1 diabetes patients showed effects on delayed gastric emptying. However, only 5 human studies were retrieved, with sample sizes often not reported in abstracts; verified data from 2 studies totaled approximately 1,320 participants.",
+        "why_this_grade": "The evidence base includes multiple systematic reviews and at least one recent RCT in a relevant population, supporting a real but modest effect. The grade is held at Moderate rather than Strong because human evidence is limited (only 5 human studies retrieved, with 3 being meta-analyses rather than primary trials), and precision is compromised by missing sample-size data in most abstracts. The pooled effect is small and its confidence interval crosses into minimal benefit."
       },
       {
         "outcome": "cholesterol / lipids",
         "grade": "Moderate",
-        "what_studies_show": "A 2021 meta-analysis examined apple cider vinegar's effects on lipid profiles; however, this systematic review appears to be the only comprehensive human synthesis retrieved. One 2011 observational study in humans examined effects on blood lipids in high-cholesterol-fed subjects. The retrieved records show that most lipid-focused studies come from animal models (rats, chickens), including a 2024 rat study on polycystic ovary syndrome and a 2016 study on anti-obesogenic effects in high-fat diet-fed rats, which reported improvements in lipid panels.",
-        "why_this_grade": "Human evidence is sparse\u2014only three human studies were retrieved, and they do not include large-scale randomized trials. The single meta-analysis provides some support but is not independently replicated in the retrieved records, limiting confidence. Animal studies show more consistent positive findings, but these do not directly translate to human efficacy. The verified participant count is approximately 300 from one study, leaving most sample sizes unclear."
+        "what_studies_show": "A 2021 meta-analysis examined lipid profiles in relation to apple cider vinegar use, finding effects on total cholesterol, LDL, HDL, and triglycerides. Animal studies (2014\u20132024) consistently show modulation of serum lipid profiles and reduction in oxidative stress markers in liver and kidney tissue. Only 2 primary human studies were retrieved; one 2021 study involved 300 participants, though the scope and design of that study are unclear from the abstract.",
+        "why_this_grade": "The evidence is graded Moderate because it rests primarily on a single meta-analysis without independent human replication, and verified human participant numbers are low (~300 across 1 study). Animal models consistently support a lipid-modifying effect, but translation to humans remains incompletely validated. The consistency limitation reflects lack of independent confirmation of the meta-analysis conclusion."
       },
       {
         "outcome": "weight / fat loss",
         "grade": "Moderate",
-        "what_studies_show": "A 2025 systematic review examined apple cider vinegar intake and body composition in humans with type 2 diabetes and/or overweight, representing the primary human synthesis. Two additional human studies (a 2021 unclassified report with n=300 and a 2020 study in fish) were retrieved, though the latter is not directly applicable to human weight loss. Animal evidence (rats, fish) spanning 2016\u20132024 generally supported reductions in body weight or fat accumulation under high-fat diet or metabolic stress conditions.",
-        "why_this_grade": "Human evidence is limited and comes primarily from a single systematic review without independent replication in the retrieved records. Verified human participant count is approximately 385 across two studies; most individual trial sizes and full sample counts are unavailable from abstracts. Consistency across studies is not yet independently confirmed. Animal models show promise, but the translation to human clinical outcomes remains uncertain."
+        "what_studies_show": "A 2025 systematic review examined body composition changes in humans with type 2 diabetes and/or overweight following ACV intake. Three human studies were retrieved, with verified sample sizes totaling approximately 385 participants across 2 of the 10 studies reviewed. Six animal studies (2016\u20132024) reported reductions in body fat, weight gain, or improvements in metabolic markers in rats and other models exposed to high-fat diets or obesity-inducing conditions.",
+        "why_this_grade": "The Moderate grade reflects genuine human data (a systematic review plus multiple primary studies) alongside animal support, but precision is limited by small verified sample sizes and incomplete reporting. The single meta-analysis has not been independently replicated, and most individual trial abstracts lack sample-size transparency, preventing robust meta-analytic confidence intervals. The effect size and clinical significance remain uncertain."
       },
       {
-        "outcome": "immune function",
-        "grade": "Moderate",
-        "what_studies_show": "A 2021 randomized controlled trial investigated apple cider vinegar soaks in atopic dermatitis and found no alteration of the skin bacterial microbiome. A 2020 unclassified human study reported improvements in non-specific immunity markers and digestive enzyme activity. Two animal studies (2021 and 2017) examined immune-related transcriptional responses and performance in poultry, showing some supportive effects on immune function parameters.",
-        "why_this_grade": "Only two human studies were retrieved, and they show mixed results: one RCT showed no effect on skin microbiome, while the other reported immune improvements in a different context. The verified human sample size is modest (approximately 85 participants in one study), limiting precision of effect estimates. The evidence base is too small and inconsistent for a strong rating, though it is sufficient for moderate pending further confirmation."
+        "outcome": "inflammation",
+        "grade": "Preliminary",
+        "what_studies_show": "One small human study (2022, n=25) examined the effect of apple cider vinegar on dental plaque and gingival inflammation in children, suggesting effectiveness. Three animal studies (2014\u20132024) report anti-inflammatory and antioxidant effects in models of polycystic ovary syndrome, neurological complications, and oxidative stress, primarily via regulation of inflammatory markers and free-radical pathways.",
+        "why_this_grade": "This outcome is graded Preliminary because human evidence consists of a single small study (n=25) with unverified design details and no replication. Animal models suggest a plausible anti-inflammatory mechanism, but the tiny human sample and narrow clinical context (dental inflammation in children) do not yet establish a generalizable effect. Confidence in this finding is low and further human trials are needed."
       }
     ],
-    "evidence_base": "The research landscape for apple cider vinegar is dominated by animal studies (12 of 31 retrieved studies), with human evidence consisting primarily of systematic reviews and meta-analyses rather than large primary trials. Most human studies date from 2020 onwards, suggesting renewed research attention in recent years. The retrieved human evidence includes at least five studies pooling data across multiple trials (particularly for blood sugar and weight outcomes), but individual primary trials remain modest in size and heterogeneous in design. This mix of pooled analyses and small primary studies, combined with a substantial animal-model component, supports a Moderate overall confidence tier rather than Strong.",
-    "emerging_research": "Recent 2025\u20132026 studies have explored apple cider vinegar's role in cardiometabolic conditions such as polycystic ovary syndrome and type 2 diabetes, with growing focus on insulin sensitivity and lipid metabolism as mechanistic targets. Animal research continues to examine acetic acid's anti-inflammatory and antioxidant effects in metabolic disease models. However, these investigations remain preliminary in humans; longer-term trials and independent replication of published meta-analyses would be needed to clarify whether observed benefits are clinically meaningful.",
-    "open_questions": "Among the studies retrieved here, most individual trial sample sizes are unreported or small; the verified total participant count is in the low hundreds to low thousands across outcomes, but this represents only a sample of approximately 40 abstracts per outcome. The retrieved human studies are weighted toward type 2 diabetes and metabolic syndrome populations; applicability to healthy individuals or other disease states is not evident in the provided records. Trial durations in the retrieved abstracts are not consistently reported, making it unclear whether benefits persist over weeks, months, or longer; this specific information gap should be explored in the full papers.",
-    "caveats": "Apple cider vinegar is acidic and may erode tooth enamel with prolonged or concentrated exposure, particularly if consumed undiluted. It can interact with certain medications (notably those affecting blood glucose or potassium) and may not be appropriate for individuals with gastroparesis or severe acid reflux. Commercially available products vary in acetic acid concentration and quality; standardization is limited. Individuals with type 1 diabetes, those taking insulin or other diabetes medications, or those with existing gastrointestinal conditions should consult a healthcare provider before supplementing.",
+    "evidence_base": "The research base is small but growing, dominated by recent systematic reviews and meta-analyses (2021\u20132025) that aggregate older animal and human studies. Approximately 5 human primary studies and 3 pooled analyses were retrieved across all outcomes, alongside roughly 20 animal studies conducted between 2007 and 2024. Most studies are short-term (weeks to a few months) and many abstracts lack complete reporting of sample sizes, limiting precision estimates. The evidence leans toward support for modest effects on blood sugar, lipids, and weight, but relies heavily on animal models and a small number of human trials; confidence is therefore moderate rather than strong.",
+    "emerging_research": "Recent work (2024\u20132026) has expanded ACV investigation into endocrine and metabolic disorders, particularly polycystic ovary syndrome, where a 2026 RCT found adjunctive benefits on insulin resistance. Concurrent animal research explores anti-inflammatory and neuroprotective mechanisms through oxidative-stress pathways. A 2025 systematic review on body composition suggests ongoing interest in ACV for weight management in metabolic disease. These directions are promising but still early; human trials remain small and most do not yet isolate ACV from other lifestyle or dietary changes.",
+    "open_questions": "Among the retrieved studies, human evidence is concentrated in type 2 diabetes, polycystic ovary syndrome, and dental health\u2014other populations (healthy adults, specific age groups, other metabolic conditions) appear underrepresented. Trial durations in the retrieved abstracts appear to be short (weeks to a few months); no studies extending beyond 12 weeks were identified in this sample, so long-term safety and durability of effects are not addressed here. Finally, most abstracts omit sample sizes entirely, making it impossible to verify the true total human participant base or to assess publication bias. The records provided represent only a sample of the literature (~40 abstracts per outcome); gaps identified here do not mean research does not exist elsewhere, only that it was not retrieved in this set.",
+    "caveats": "Apple cider vinegar is acidic and may erode tooth enamel or irritate the esophagus if taken undiluted or in large amounts; it should be diluted in water and sipped through a straw. People taking diabetes medications or blood-pressure drugs should consult a clinician before regular use, as ACV may potentiate glucose-lowering or cardiovascular effects. Quality and acetic-acid content vary widely among commercial products; standardized formulations are preferable, though long-term safety data in humans remain limited.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Most human evidence consists of only 1\u20133 primary trials per outcome with heavily reliance on post-hoc systematic reviews of small studies; true sample sizes are largely unreported, making precision assessment unreliable and effect estimates potentially unstable.",
+    "headline": "Most evidence for apple-cider-vinegar comes from animal studies or pooled analyses that lack independent replication, and critical sample sizes are often unreported\u2014making precision estimates unreliable and effect stability uncertain.",
     "concerns": [
       {
-        "issue": "Massive sample size opacity masks true evidence volume",
-        "detail": "Only 2 of 9 blood sugar studies, 1 of 8 cholesterol studies, and 2 of 10 weight loss studies report sample sizes in these records. The engine notes 'true total is substantially larger' but cannot quantify it. This prevents readers from assessing whether the evidence base is truly 100 people or 10,000 people across outcomes\u2014a critical distinction for grading credibility. When sample sizes are missing from 75\u201388% of abstracts per outcome, the denominator for 'moderate' grading becomes opaque.",
+        "issue": "Heavy animal study composition, limited human validation",
+        "detail": "Across all three main outcomes (blood sugar, cholesterol, weight loss), animal studies comprise 40\u201375% of the retrieved evidence. For blood sugar, only 2 primary RCTs in humans are retrieved; for cholesterol and weight loss, human studies number 2 and 3 respectively. The 2025 and 2021 systematic reviews are the main human evidence, but neither is independently replicated by another meta-analysis in the records, meaning a single pooled analysis anchors the 'Moderate' grades.",
         "severity": "high"
       },
       {
-        "issue": "Systematic reviews drive grading but are not independently replicated",
-        "detail": "For both cholesterol and weight loss, the engine explicitly notes 'a single meta-analysis/systematic review exists, but its conclusion is not independently replicated or verified.' This means each outcome's 'Moderate' grade rests substantially on one pooled analysis. No second meta-analysis confirms the finding. If that single review's included trials are systematically biased (e.g., selective reporting, publication bias), the entire pillar collapses.",
+        "issue": "Systematic underreporting of sample sizes obscures true precision",
+        "detail": "For blood sugar, only 2 of 9 studies report n; for cholesterol, 1 of 8; for weight loss, 2 of 10. The engine notes that verified participants (1414 for blood sugar, ~300 for cholesterol/weight loss) are 'substantially' smaller than the likely true total, but this true total is opaque. This means the confidence intervals and pooled estimates (e.g., -21.2 [-32.31 to -2.21] for blood sugar) may falsely suggest precision when underlying individual trial sizes are unknown and potentially very small.",
         "severity": "high"
       },
       {
-        "issue": "Heavy contamination with animal and non-human model studies",
-        "detail": "Blood sugar: 4 of 9 are animal studies. Cholesterol: 5 of 8 are animal. Weight loss: 5 of 10 are animal, plus 4 'unclassified' (which appear to be chicken and fish studies based on titles). These models do not directly validate human efficacy. Rats fed high-fat diets and broiler chickens are poor surrogates for metabolic disease in humans, yet they comprise >40% of the retrieved evidence base per outcome.",
+        "issue": "Single meta-analysis anchors multiple outcome grades without independent replication",
+        "detail": "The 2021 meta-analysis (lipid profiles and glycemic parameters) appears to be the sole pooled evidence for both blood sugar and cholesterol outcomes in humans. For weight loss and cholesterol, the engine explicitly notes 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified.' If that meta-analysis has methodological flaws or selective inclusion, the entire Moderate grade rests on it.",
         "severity": "high"
       },
       {
-        "issue": "Immune function evidence is sparse and methodologically weak",
-        "detail": "Only 4 studies total for immune outcomes, with only 1 RCT (2021 apple cider vinegar soaks in atopic dermatitis). The others are unclassified designs with n=85 reported for only 1 study. The engine notes 'imprecision: modest verified sample (~85 participants)'. A single small RCT on topical soaks does not support a broad 'Moderate' grade for immune function.",
+        "issue": "Inflation outcome by misclassified or off-target studies",
+        "detail": "The 'weight / fat loss' outcome includes a 2021 study on 'broiler chickens' (n=300) and a 2020 study on 'Carassius auratus' (goldfish), both labeled 'Unclassified, human' in the records\u2014a clear classification error. These are animal/aquaculture studies, not human trials. Similarly, the 'cholesterol' outcome lists the same broiler study. This inflates the apparent human evidence count and muddies the human-vs-animal composition.",
         "severity": "high"
       },
       {
-        "issue": "Only 1 primary human RCT exists for blood sugar and none for cholesterol or weight loss",
-        "detail": "Blood sugar has 1 RCT (2026, n=94, polycystic ovary syndrome population). Cholesterol lists 1 meta-analysis, 1 observational study, and 1 unclassified (broiler chickens). Weight loss lists 1 systematic review and 4 unclassified studies (mostly animals/fish/poultry). This means the human evidence base per outcome is dominated by observational designs, animal models, and post-hoc syntheses rather than prospective controlled trials.",
-        "severity": "moderate"
-      },
-      {
-        "issue": "Methodological quality of unclassified studies cannot be assessed",
-        "detail": "Blood sugar has 1 unclassified (2007, gastric emptying). Cholesterol has 1 unclassified (2021, broiler chickens, n=300). Weight loss has 4 unclassified (2021 chickens, 2020 goldfish, 2021 poultry n=85, 2017 poultry). Without access to full methods, it is impossible to verify whether these are peer-reviewed trials, observational cohorts, or pre-clinical models. The 'Moderate' grade assumes these are legitimate human research, but the titles suggest several are actually animal/agricultural studies mislabeled.",
+        "issue": "Inflammation outcome too underpowered to support any conclusion",
+        "detail": "The inflammation outcome (graded 'Preliminary') comprises 4 total studies, of which only 1 human study is identified (n=25, 2022 dental plaque study). No pooled effect is extractable. The engine notes 'imprecision: modest verified sample (~25 participants)'. This is an order of magnitude below what would be needed to detect or refute a meaningful effect, and the single human trial is on a narrow dental outcome rather than systemic inflammation.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The proposed mechanism (acetic acid improving glucose metabolism and lipid handling) is biochemically plausible in vitro and in rodent models, but the gap between a 2016 rat study showing 'anti-obesogenic effect' and a claim of sustained human weight loss is large. Blood sugar improvements in diabetic rats do not automatically predict clinically meaningful effects in humans with type 2 diabetes or metabolic syndrome\u2014human studies show variable adherence, food interactions, and modest effect sizes. The mechanism is not implausible, but the clinical translation is assumed rather than demonstrated by the thin primary trial evidence.",
-    "strongest_counterargument": "A skeptic would note that the Moderate grade rests on: (1) a single human meta-analysis per outcome that may have aggregated small, underpowered trials with selective reporting bias; (2) only 1\u20132 primary human RCTs per outcome, most with n<100, which cannot rule out placebo or measurement error; and (3) 40\u201350% animal data that does not translate to humans. The 2021 and 2025 meta-analyses may have been published opportunistically after observing favorable observational signals, and replication by independent groups is absent. Without a second large, adequately-powered RCT with objectively measured outcomes (e.g., HbA1c, DEXA-scan fat mass), the current evidence is consistent with a small to negligible true effect masked by publication bias.",
-    "what_would_change_the_picture": "Two or more independently-conducted RCTs with n\u2265150 per arm, active or placebo control, standardized dosing (acetic acid content specified), at least 12 weeks duration, and pre-registered primary outcomes (HbA1c for glycemic control; lipid panel for cholesterol; DXA or validated body composition for weight loss) would provide robust human evidence. A replication meta-analysis by a different research group using identical inclusion criteria would also substantially reduce uncertainty about whether current reviews reflect real effects or selective reporting.",
+    "mechanism_check": "Apple cider vinegar contains acetic acid, which has been shown in animal models to slow gastric emptying and modulate glucose absorption\u2014a plausible mechanism for blood-sugar effects. However, the inferential leap from animal stomach physiology to sustained glycemic control in humans with type 2 diabetes is substantial: human trials would need to show that acetic acid dose, bioavailability, and timing in real-world consumption produce clinically meaningful glucose improvements over weeks or months. The retrieved records do not clarify whether acetic acid concentration, ingestion timing, or food matrix effects are standardized across studies, or whether effects persist beyond acute dosing.",
+    "strongest_counterargument": "A skeptic would observe that the entire Moderate grade for blood sugar rests on 2 RCTs in humans and 2\u20133 systematic reviews that themselves synthesize a small, heterogeneous literature. The largest verified sample (1320, from a 2025 meta-analysis) likely pools many small and animal studies, inflating apparent precision. The 2007 RCT on type 1 diabetes (n unreported) and the 2026 RCT on PCOS (n=94) are far too narrow and small to generalize. Meanwhile, the cholesterol and weight-loss grades are anchored by animal studies and a single unreplicated meta-analysis. If the 2021 meta-analysis excluded negative trials or included only poorly controlled studies, the Moderate grades collapse to anecdotal.",
+    "what_would_change_the_picture": "A pre-registered, multi-site RCT in humans (n \u2265 300) with standardized apple cider vinegar dosing, blinded allocation, and validated endpoints (HbA1c, lipid panels, body composition by DXA) over \u2265 12 weeks would provide direct evidence independent of animal models and meta-analyses. Concurrent publication of an independent meta-analysis replicating the 2021 findings would also meaningfully strengthen confidence in the Moderate grades.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

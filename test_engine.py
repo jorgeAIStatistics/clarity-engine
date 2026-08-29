@@ -129,6 +129,33 @@ CLASSIFY_CASES = [
      "animal", "animal",
      "Same class: animal studies use identical trial vocabulary."),
 
+    ("species named only in the abstract is still animal",
+     {"publication_types": ["Journal Article"],
+      "title": "Pentadecapeptide BPC 157 cream improves burn-wound healing",
+      "abstract": "BPC 157 was administered topically or systemically in burned mice."},
+     "animal", "animal",
+     "BUG: the species word appeared in the abstract, not the title, so a PubMed "
+     "pubtype of 'observational' carried the decision and BPC-157 reached "
+     "Moderate ('good human evidence') on mouse burn studies."),
+
+    ("animal words inside longer words are not signals",
+     {"publication_types": ["Randomized Controlled Trial"],
+      "title": "Pigment epithelium changes when supplementation indicates benefit",
+      "abstract": "Adults were randomized to treatment or placebo."},
+     "rct", "human",
+     "BUG: substring matching made 'pigment' match 'pig', 'when' match 'hen' and "
+     "'indicate' match 'cat'. Harmless as a design hint, catastrophic once the "
+     "detector governs population."),
+
+    ("human trial citing in-vitro work stays human",
+     {"publication_types": ["Randomized Controlled Trial"],
+      "title": "Efficacy of berberine in patients with type 2 diabetes mellitus",
+      "abstract": "In vitro studies suggest AMPK activation. We randomized 116 patients."},
+     "rct", "human",
+     "BUG: 'in vitro' and 'cell culture' were treated as authoritative animal "
+     "signals, but human trials routinely cite them in their background. This "
+     "flagged 87 of 128 profiles and would have demoted real human evidence."),
+
     ("genuine human RCT tagged in metadata",
      {"publication_types": ["Randomized Controlled Trial"],
       "title": "Creatine supplementation in older adults",
