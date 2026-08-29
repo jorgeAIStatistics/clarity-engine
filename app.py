@@ -37,6 +37,7 @@ from flask_cors import CORS
 
 import run
 import cache
+import ask
 
 app = Flask(__name__)
 CORS(app)  # allow the frontend origin to call this API
@@ -140,6 +141,58 @@ def profile():
         return jsonify({"profile": result, "source": "generated", "alias_note": alias_note})
     except Exception as e:
         return jsonify({"error": "generation failed", "detail": type(e).__name__}), 500
+
+
+@app.post("/api/ask")
+def ask_endpoint():
+    """
+    Grounded evidence assistant. Answers ONLY from a compound's already-graded
+    profile (ask.py enforces this). Never triggers a generation, so it can't
+    spend the daily budget — it's a reader of existing evidence, not a producer.
+    """
+    data = request.get_json(silent=True) or {}
+    topic = (data.get("topic") or "").strip()
+    category = (data.get("category") or "supplement").strip()
+    question = (data.get("question") or "").strip()
+    history = data.get("history") or []
+    ip = request.headers.get("X-Forwarded-For", request.remote_addr or "unknown")
+
+    if not _valid_topic(topic):
+        return jsonify({"error": "invalid topic"}), 400
+    if not question:
+        return jsonify({"error": "empty question"}), 400
+    if len(question) > 500:
+        return jsonify({"error": "question too long"}), 400
+    if _rate_limited(ip):
+        return jsonify({"error": "one moment between questions, please"}), 429
+
+    # Resolve aliases the same way /api/profile does, so "Ozempic" finds the
+    # semaglutide profile the assistant should speak from.
+    try:
+        import aliases as _aliases
+        resolved, resolved_cat, _ = _aliases.resolve(topic)
+        if resolved and resolved.lower() != topic.lower():
+            topic = resolved
+            if resolved_cat:
+                category = resolved_cat
+    except Exception:
+        pass
+
+    profile = cache.get(topic)
+    if not profile:
+        return jsonify({"error": "no graded profile for this compound yet; open it first",
+                        "answer": "Open this compound's profile first, then ask — "
+                                  "the assistant answers only from graded evidence."}), 404
+
+    if not isinstance(history, list):
+        history = []
+    try:
+        result = ask.ask(profile, question, history=history)
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({"error": "assistant failed", "detail": type(e).__name__,
+                        "answer": "Something went wrong reaching the assistant. "
+                                  "The graded evidence on this page is still complete."}), 500
 
 
 if __name__ == "__main__":
