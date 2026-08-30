@@ -37,6 +37,7 @@ from flask_cors import CORS
 
 import run
 import cache
+import db
 import ask
 
 app = Flask(__name__)
@@ -193,6 +194,30 @@ def ask_endpoint():
         return jsonify({"error": "assistant failed", "detail": type(e).__name__,
                         "answer": "Something went wrong reaching the assistant. "
                                   "The graded evidence on this page is still complete."}), 500
+
+
+@app.get("/api/catalog")
+def catalog():
+    try:
+        rows = db.list_catalog()
+        if rows:
+            return jsonify({"catalog": rows, "source": "db"})
+    except Exception:
+        pass
+    internal = {"effect_sizes", "llm_population", "explanations", "appraisals",
+                "pubchem", "directions", "outcomes", "citations",
+                "effect-sizes", "llm-population"}
+    out = []
+    for slug in cache.list_cached():
+        if slug in internal:
+            continue
+        prof = cache.get(slug)
+        if not prof or not prof.get("claims"):
+            continue
+        out.append({"slug": slug, "name": prof.get("name"),
+                    "category": prof.get("category"), "tier": prof.get("tier"),
+                    "study_count": prof.get("study_count", 0)})
+    return jsonify({"catalog": out, "source": "files"})
 
 
 if __name__ == "__main__":
