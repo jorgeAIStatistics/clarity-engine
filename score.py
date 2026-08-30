@@ -92,18 +92,24 @@ def _citation_weight(study):
 
 
 def _confidence_tier(score):
-    if score >= 75:
+    # Thresholds raised so the label carries weight: "Gold Standard" should mean
+    # an overwhelming, replicated evidence base (~90+), not merely solid (75+).
+    if score >= 88:
         return "Gold Standard"
-    if score >= 50:
+    if score >= 65:
         return "Moderate-High"
-    if score >= 25:
+    if score >= 35:
         return "Emerging"
     return "Preliminary"
 
 
-def calculate_compound_score(studies, single_source_bias=False):
+def calculate_compound_score(studies, single_source_bias=False, direction=None):
     """
-    Roll a list of graded Study objects into a 0-100 score with a 95% CI.
+    Roll a list of graded Study objects into a 0-100 EVIDENCE-STRENGTH score
+    with a 95% CI. The score reflects how much good evidence exists, NOT which
+    way it points — pass `direction` ("favors_treatment" | "null_result" |
+    "favors_control" | "unclear" | None) to have it reported alongside, so the
+    UI can show "82/100 · worsens" for a well-studied negative finding.
     See module docstring for the method. Returns a structured dict.
     """
     # ---- edge case: no studies -------------------------------------------
@@ -112,6 +118,7 @@ def calculate_compound_score(studies, single_source_bias=False):
             "final_score": 0.0,
             "confidence_interval": {"lower": 0.0, "upper": 0.0},
             "confidence_tier": "Preliminary",
+            "direction": direction or "unclear",
             "breakdown": {
                 "n_studies": 0,
                 "note": "No studies provided — score is zero by definition.",
@@ -179,28 +186,31 @@ def calculate_compound_score(studies, single_source_bias=False):
 
     # ---- 4. non-linear diminishing-returns curve -------------------------
     scaled_base = min(100.0, CURVE_COEFF * (total_points ** CURVE_EXP)) if total_points > 0 else 0.0
+    # Tame top-end saturation: without this, any well-studied outcome pins at
+    # exactly 100 and the score stops discriminating among strong compounds.
+    # A gentle compression above 90 keeps 100 rare (reserved for the truly
+    # overwhelming) while barely touching mid-range scores.
+    if scaled_base > 90:
+        scaled_base = 90 + (scaled_base - 90) * 0.55
 
-    # ---- 5. multipliers & penalties --------------------------------------
+    # ---- 5. score = EVIDENCE STRENGTH (direction is separate) -------------
+    # CRITICAL: the score measures HOW MUCH good evidence exists, NOT which way
+    # it points. Multiplying by p_supportive (as before) zeroed out well-studied
+    # NEGATIVE findings — caffeine worsens sleep, which is a STRONG finding, was
+    # scoring 0/100. Direction is now reported separately (see `direction`
+    # param) and shown as its own tag. A high score + "worsens" is honest and
+    # useful; a high score forced to 0 because the effect is negative is not.
     n_total = len(studies)
     p_supportive = n_supportive / n_total if n_total else 0.0
-    score = scaled_base * p_supportive
+    score = scaled_base
     if single_source_bias:
         score *= SINGLE_SOURCE_PENALTY
     final_score = max(0.0, min(100.0, score))
 
-    # ---- 6. 95% CI via proportion-variance SE (Laplace-smoothed) ---------
-    # Laplace smoothing keeps SE finite at the 0%/100% edges where p(1-p)=0.
-    #
-    # The margin is expressed directly in SCORE POINTS, not as a fraction of the
-    # score. The spec's original `MoE = 1.96 * SE * final_score` multiplied a
-    # points-scale SE by the score again, producing margins of 100-1700 that
-    # pinned every interval to [0, 100] (useless). Both SE terms below are
-    # already in points on the 0-100 scale:
-    #   - proportion term: consistency uncertainty, scaled to the score so a
-    #     50/50 split on few studies widens the band and a clean consensus
-    #     narrows it;
-    #   - data-thinness term: a bounded points penalty that grows as human
-    #     sample size shrinks, so sparse human evidence -> wider band.
+    # ---- 6. 95% CI ------------------------------------------------------
+    # Consistency (do studies agree with each other?) and data-thinness both
+    # widen the band; neither drags the point score. p_supportive here is a
+    # proxy for agreement: a 50/50 split widens the interval.
     p_smooth = (n_supportive + 1) / (n_total + 2)
     prop_se_points = math.sqrt(p_smooth * (1 - p_smooth) / (n_total + 2)) * final_score
     thinness_points = min(30.0, 15.0 / math.sqrt(human_sample_total + 1) * 10.0)
@@ -215,6 +225,7 @@ def calculate_compound_score(studies, single_source_bias=False):
         "final_score": final_score,
         "confidence_interval": {"lower": ci_lower, "upper": ci_upper},
         "confidence_tier": _confidence_tier(final_score),
+        "direction": direction or "unclear",
         "breakdown": {
             "n_studies": n_total,
             "high_tier_points": round(high_tier_points, 3),

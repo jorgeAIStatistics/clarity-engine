@@ -52,51 +52,44 @@ def _study_to_tier(s):
     return "Emerging" if pop == "human" else "Preliminary"
 
 
-def _outcome_supportive(g):
+def _outcome_direction(g):
     """
-    Outcome-level supportive flag from the grade's direction (per-study direction
-    isn't extracted). Returns True (supportive), False (not), or None (unknown ->
-    exclude from the consistency ratio). Matches the agreed rule.
+    Normalize the outcome's direction to the scorer's vocabulary. This is now
+    REPORTED alongside the evidence-strength score (not used to gate it), so a
+    well-studied negative finding scores high with a 'worsens' tag instead of 0.
     """
     d = g.get("direction")
-    if d in ("null_result", "favors_control", "no_significant_difference"):
-        return False
+    if d in ("null_result", "no_significant_difference"):
+        return "null_result"
+    if d == "favors_control":
+        return "favors_control"
     if d in ("favors_treatment", "positive", "statistically_significant_benefit"):
-        return True
+        return "favors_treatment"
     if g.get("null_result") is True:
-        return False
-    return None   # unknown / indeterminate -> excluded from consistency
+        return "null_result"
+    return "unclear"
 
 
 def _build_study_objs(primary, g):
     """
-    Build score.Study objects for one outcome's studies. All studies inherit the
-    OUTCOME's supportive flag (per-study direction isn't available). Studies with
-    unknown direction are excluded from the consistency ratio by marking them
-    supportive only when the outcome is supportive, and dropping them entirely
-    when direction is unknown. Returns (study_objs, n_excluded).
+    Build score.Study objects for one outcome's studies. Since direction is now
+    decoupled from the score (reported separately), every study is marked as
+    agreeing with the outcome's consensus — the score measures evidence STRENGTH,
+    and the consistency term in the CI reflects agreement, which at the
+    outcome-direction level is uniform. Returns (study_objs, direction).
     """
     import score as _score
-    supportive = _outcome_supportive(g)
-    objs, n_excluded = [], 0
+    direction = _outcome_direction(g)
+    objs = []
     for s in primary:
         tier = _study_to_tier(s)
         n = s.get("sample_size")
         n = int(n) if isinstance(n, (int, float)) and n > 0 else None
         c = s.get("citation_count")
         c = int(c) if isinstance(c, (int, float)) and c >= 0 else None
-        if supportive is None:
-            # No direction signal for this outcome — exclude from consistency by
-            # omitting from the set entirely, but still count its POINTS by
-            # marking supportive (so evidence volume registers). We track the
-            # exclusion so the breakdown can note consistency wasn't assessable.
-            n_excluded += 1
-            objs.append(_score.Study(tier=tier, is_supportive=True,
-                                     sample_size=n, citation_count=c))
-        else:
-            objs.append(_score.Study(tier=tier, is_supportive=supportive,
-                                     sample_size=n, citation_count=c))
-    return objs, n_excluded
+        objs.append(_score.Study(tier=tier, is_supportive=True,
+                                 sample_size=n, citation_count=c))
+    return objs, direction
 
 
 def _compound_aggregate(claim_bundles):
@@ -341,11 +334,11 @@ def research(topic, category="supplement", use_cache=True, retmax=40, verbose=Tr
             import citations as _citations
             import score as _score
             _citations.enrich_studies(primary)          # attaches citation_count in place
-            _study_objs, _n_excluded = _build_study_objs(primary, g)
+            _study_objs, _direction = _build_study_objs(primary, g)
             if _study_objs:
                 outcome_score = _score.calculate_compound_score(
-                    _study_objs, single_source_bias=(len(primary) == 1))
-                outcome_score["consistency_excluded"] = _n_excluded
+                    _study_objs, single_source_bias=(len(primary) == 1),
+                    direction=_direction)
         except Exception as e:
             print(f"    [{outcome}] scoring skipped: {type(e).__name__}: {e}")
 
