@@ -179,17 +179,6 @@ SEARCH_TERMS = {
     "melatonin": "melatonin supplementation",
     "biotin": "biotin supplementation",
     "niacin": "niacin supplementation OR nicotinic acid supplementation",
-    # Bare "nicotinamide adenine dinucleotide" returns the cofactor's biochemistry
-    # (redox, enzyme mechanism, metabolism) — not supplementation trials — so the
-    # clinical scope filtered it down to ~1 study. NAD+ itself is poorly oral-
-    # bioavailable; the human trials use the precursors NR and NMN. Folding those
-    # in reflects the shared pharmacology, but the profile MUST state that the
-    # human evidence rests on precursors, not NAD+ directly (CLAUDE.md provenance).
-    "nad": ("nicotinamide adenine dinucleotide OR NAD+ supplementation OR "
-            "nicotinamide riboside OR nicotinamide mononucleotide"),
-    "nicotinamide adenine dinucleotide": (
-        "nicotinamide adenine dinucleotide OR NAD+ supplementation OR "
-        "nicotinamide riboside OR nicotinamide mononucleotide"),
     "thiamine": "thiamine supplementation",
     "folate": "folic acid supplementation",
     "zma": "zinc magnesium aspartate OR ZMA supplementation",
@@ -242,14 +231,35 @@ _CLINICAL_SCOPE = (
 _PRECLINICAL_SCOPE = '(animals[mh] NOT humans[mh])'
 
 
-def search_topic(topic, outcome=None, retmax=40, include_preclinical=True):
+# Synthesis scope — meta-analyses and systematic reviews ONLY. These are what
+# move an outcome from Moderate to Strong (grade.py and direction.py both prefer
+# pooled evidence), yet in a single relevance-sorted pass they compete with
+# primary trials for slots and often lose. Retrieving them in a guaranteed,
+# separate pass is higher-leverage for grade accuracy than raw volume: a compound
+# with real meta-analyses will now actually surface them.
+_SYNTHESIS_SCOPE = (
+    '("meta-analysis"[pt] OR "systematic review"[pt] '
+    'OR "meta-analysis"[ti] OR "systematic review"[ti])'
+)
+
+
+def search_topic(topic, outcome=None, retmax=60, include_preclinical=True,
+                 reserve_synthesis=12):
     """
     Fetch studies for a topic, scoped to intervention research.
 
-    Two-pass: clinical-scoped first (the evidence that matters for grading),
-    then a preclinical pass to fill remaining slots so animal-only compounds
-    still produce a profile. Falls back to an unscoped query only if the scoped
-    one returns almost nothing, so obscure compounds aren't left empty.
+    Three-pass, in priority order:
+      1. SYNTHESIS pass — meta-analyses / systematic reviews (reserved slots).
+         These decide whether an outcome can reach Strong, so they are fetched
+         first and never crowded out by primary trials.
+      2. CLINICAL pass — RCTs and other intervention research, filling most slots.
+      3. PRECLINICAL pass — animal work, only to keep animal-only compounds from
+         returning empty.
+    Falls back to an unscoped query if scoping starves an obscure compound.
+
+    retmax raised 40 -> 60: the old ceiling capped well-studied compounds
+    (creatine, omega-3) below the evidence needed to grade them Strong. The
+    synthesis reservation, not the raw bump, is what most improves accuracy.
     """
     base = _query_for(topic)
     # Outcome names use " / " to join synonyms ("gut / digestion", "mood /
@@ -262,10 +272,27 @@ def search_topic(topic, outcome=None, retmax=40, include_preclinical=True):
         expanded = " OR ".join(f'"{p}"' if " " in p else p for p in parts)
         outcome_clause = f' AND ({expanded})'
 
+    ids = []
 
+    # PASS 1 — syntheses first, in their own reserved budget. Sorted by relevance
+    # within PubMed; these are the pooled analyses that justify a top tier.
+    reserve = max(0, min(reserve_synthesis, retmax))
+    if reserve:
+        syn_q = f'{base}{outcome_clause} AND {_SYNTHESIS_SCOPE}'
+        for pid in esearch(syn_q, retmax=reserve):
+            if pid not in ids:
+                ids.append(pid)
+
+    # PASS 2 — clinical intervention research fills the remaining slots.
     clinical_q = f'{base}{outcome_clause} AND {_CLINICAL_SCOPE}'
-    ids = esearch(clinical_q, retmax=retmax)
+    for pid in esearch(clinical_q, retmax=retmax):
+        if pid not in ids:
+            ids.append(pid)
+        if len(ids) >= retmax:
+            break
 
+    # PASS 3 — preclinical only if we're still thin, so animal-only compounds
+    # still produce a profile without displacing human evidence above.
     if include_preclinical and len(ids) < int(retmax * 0.6):
         pre_q = f'{base}{outcome_clause} AND {_PRECLINICAL_SCOPE}'
         for pid in esearch(pre_q, retmax=retmax - len(ids)):
@@ -277,7 +304,7 @@ def search_topic(topic, outcome=None, retmax=40, include_preclinical=True):
     if len(ids) < 5:
         ids = esearch(f'{base}{outcome_clause}', retmax=retmax)
 
-    return efetch(ids)
+    return efetch(ids[:retmax])
 
 
 if __name__ == "__main__":
