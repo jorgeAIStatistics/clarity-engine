@@ -166,6 +166,30 @@ def list_cached():
         return []
 
 
+def list_catalog():
+    """
+    Cheap catalog listing: slug, name, category, tier, study_count for EVERY
+    stored profile, from indexed top-level columns (no JSON parsing). This is
+    what the landing page loads once so every card shows its REAL grade on
+    arrival, instead of "Ungraded" until each is clicked.
+    """
+    if not available():
+        return []
+    try:
+        with _connect() as conn:
+            _ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT slug, name, category, tier, study_count "
+                    "FROM profiles ORDER BY slug")
+                rows = cur.fetchall()
+        return [{"slug": r[0], "name": r[1], "category": r[2],
+                 "tier": r[3], "study_count": r[4]} for r in rows]
+    except Exception as e:
+        print(f"  [db] list_catalog failed ({type(e).__name__})")
+        return []
+
+
 def sync_from_files(cache_dir="cache", verbose=True):
     """
     Load every JSON profile from disk into Postgres.
