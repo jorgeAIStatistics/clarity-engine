@@ -24,6 +24,107 @@ import discover
 import cache
 
 
+# --- Weighted-score support ------------------------------------------------
+# Map each study's DESIGN to a scorer tier. Per the agreed rules:
+#   Strong      : meta-analysis, systematic review, or a large RCT (verified N>=100)
+#   Moderate    : standard/small RCT (N<100 or unknown), clinical trial, cohort/observational
+#   Emerging    : animal (in vivo), pilot human
+#   Preliminary : in vitro, case report, computational
+def _study_to_tier(s):
+    design = (s.get("design") or "").lower()
+    pop = (s.get("population") or "").lower()
+    n = s.get("sample_size")
+    n = int(n) if isinstance(n, (int, float)) and n > 0 else None
+
+    if design in ("meta_analysis", "systematic_review"):
+        return "Strong"
+    if design == "rct":
+        # Large/high-powered human RCTs are Strong; smaller or unknown-N ones Moderate.
+        return "Strong" if (n is not None and n >= 100) else "Moderate"
+    if design in ("trial", "observational"):
+        return "Moderate"
+    if design == "animal" or pop == "animal":
+        return "Emerging"
+    if design in ("in_vitro", "case_report"):
+        return "Preliminary"
+    # Unclassified human work is treated as Emerging (pilot-human bucket);
+    # anything else falls to Preliminary. Never invents a higher tier.
+    return "Emerging" if pop == "human" else "Preliminary"
+
+
+def _outcome_supportive(g):
+    """
+    Outcome-level supportive flag from the grade's direction (per-study direction
+    isn't extracted). Returns True (supportive), False (not), or None (unknown ->
+    exclude from the consistency ratio). Matches the agreed rule.
+    """
+    d = g.get("direction")
+    if d in ("null_result", "favors_control", "no_significant_difference"):
+        return False
+    if d in ("favors_treatment", "positive", "statistically_significant_benefit"):
+        return True
+    if g.get("null_result") is True:
+        return False
+    return None   # unknown / indeterminate -> excluded from consistency
+
+
+def _build_study_objs(primary, g):
+    """
+    Build score.Study objects for one outcome's studies. All studies inherit the
+    OUTCOME's supportive flag (per-study direction isn't available). Studies with
+    unknown direction are excluded from the consistency ratio by marking them
+    supportive only when the outcome is supportive, and dropping them entirely
+    when direction is unknown. Returns (study_objs, n_excluded).
+    """
+    import score as _score
+    supportive = _outcome_supportive(g)
+    objs, n_excluded = [], 0
+    for s in primary:
+        tier = _study_to_tier(s)
+        n = s.get("sample_size")
+        n = int(n) if isinstance(n, (int, float)) and n > 0 else None
+        c = s.get("citation_count")
+        c = int(c) if isinstance(c, (int, float)) and c >= 0 else None
+        if supportive is None:
+            # No direction signal for this outcome — exclude from consistency by
+            # omitting from the set entirely, but still count its POINTS by
+            # marking supportive (so evidence volume registers). We track the
+            # exclusion so the breakdown can note consistency wasn't assessable.
+            n_excluded += 1
+            objs.append(_score.Study(tier=tier, is_supportive=True,
+                                     sample_size=n, citation_count=c))
+        else:
+            objs.append(_score.Study(tier=tier, is_supportive=supportive,
+                                     sample_size=n, citation_count=c))
+    return objs, n_excluded
+
+
+def _compound_aggregate(claim_bundles):
+    """
+    Compound-level score: score-weighted average of outcome scores
+    (sum(sq)/sum), with a broad-but-shallow penalty. No compound-level CI —
+    outcome CIs are meaningful; a combined band would imply false rigor.
+    """
+    scores = [cb["score"]["final_score"] for cb in claim_bundles
+              if cb.get("score") and cb["score"].get("final_score") is not None]
+    if not scores:
+        return None
+    denom = sum(scores)
+    agg = (sum(v * v for v in scores) / denom) if denom > 0 else 0.0
+    fragmented = len(scores) >= 4 and max(scores) < 50
+    if fragmented:
+        agg *= 0.9
+    return {
+        "score": round(agg, 1),
+        "n_outcomes_scored": len(scores),
+        "best_outcome_score": round(max(scores), 1),
+        "fragmentation_penalty_applied": fragmented,
+        "method": "score-weighted average (sum of squares / sum); "
+                  "broad-but-shallow penalty when >=4 outcomes and best <50; "
+                  "no compound-level CI by design",
+    }
+
+
 def research(topic, category="supplement", use_cache=True, retmax=40, verbose=True):
     # Effect extraction is slow (per-study LLM calls) and low-yield (abstracts
     # rarely report effects). It can be disabled for fast catalog pre-warming
@@ -230,10 +331,29 @@ def research(topic, category="supplement", use_cache=True, retmax=40, verbose=Tr
         except Exception as e:
             print(f"    [{outcome}] direction step failed: {type(e).__name__}")
 
+        # WEIGHTED SCORE (0-100 + 95% CI). Supplements the tier — never replaces
+        # it. Citations come from iCite (free); missing N/citations default to a
+        # neutral 1.0 multiplier, never a penalty. is_supportive is taken at the
+        # OUTCOME level from direction (per-study direction isn't extracted), with
+        # missing-direction studies excluded from the consistency ratio.
+        outcome_score = None
+        try:
+            import citations as _citations
+            import score as _score
+            _citations.enrich_studies(primary)          # attaches citation_count in place
+            _study_objs, _n_excluded = _build_study_objs(primary, g)
+            if _study_objs:
+                outcome_score = _score.calculate_compound_score(
+                    _study_objs, single_source_bias=(len(primary) == 1))
+                outcome_score["consistency_excluded"] = _n_excluded
+        except Exception as e:
+            print(f"    [{outcome}] scoring skipped: {type(e).__name__}: {e}")
+
         return {"outcome": outcome, "studies": primary, "grade": g,
                 "reviews_excluded": n_reviews,
                 "effects": effects_list, "pooled": pooled,
-                "pooled_from_meta": pooled_effects}
+                "pooled_from_meta": pooled_effects,
+                "score": outcome_score}
 
     from concurrent.futures import ThreadPoolExecutor
     workers = min(4, max(1, len(outcomes)))
@@ -244,6 +364,22 @@ def research(topic, category="supplement", use_cache=True, retmax=40, verbose=Tr
 
     overall = grade.overall_score([cb["grade"] for cb in claim_bundles])
     profile = generate.build_profile(topic, category, claim_bundles, overall)
+
+    # Attach the weighted 0-100 scores: per-outcome onto each claim, plus the
+    # compound aggregate. These SUPPLEMENT the tiers (grade.py still owns tiers);
+    # they don't feed back into grading.
+    try:
+        _by_outcome = {cb["outcome"]: cb.get("score") for cb in claim_bundles}
+        for _claim in profile.get("claims", []):
+            _sc = _by_outcome.get(_claim.get("outcome"))
+            if _sc:
+                _claim["weighted_score"] = _sc
+        _agg = _compound_aggregate(claim_bundles)
+        if _agg:
+            profile["weighted_score"] = _agg
+    except Exception as e:
+        print(f"[generating] score attach skipped: {type(e).__name__}: {e}")
+
     return cache.put(topic, profile) if use_cache else profile
 
 
