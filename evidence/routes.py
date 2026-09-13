@@ -61,14 +61,14 @@ def assessment(entity_id):
 @blueprint.post('/api/evidence/match')
 def evidence_match():
     body=request.get_json(silent=True)
-    if not isinstance(body,dict) or set(body)!={'text'}:return jsonify(error='Provide a text field.'),400
+    if not isinstance(body,dict) or set(body) not in ({'text'},{'text','workspace'}) or ('workspace' in body and not isinstance(body['workspace'],bool)):return jsonify(error='Provide a text field and optional workspace boolean.'),400
     from .matcher import match, library_index, research_input_error
     # Validate before any index construction; the bounded query is never logged.
     text=body['text']
     if not isinstance(text,str) or not 20<=len(text.strip())<=12000:return jsonify(error='Enter between 20 and 12,000 characters.'),400
     if research_input_error(text):return jsonify(error=research_input_error(text)),400
     try:
-        result=match(text,library_index(int(time.time()//3600)))
+        result=match(text,library_index(int(time.time()//3600)),study_limit=48 if body.get('workspace') else 12)
         from .feedback import token_for
         result['feedback_token']=token_for(result)
         response=jsonify(result);response.headers['Cache-Control']='no-store';return response

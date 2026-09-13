@@ -81,3 +81,21 @@ class ReviewSignalTests(unittest.TestCase):
    self.assertEqual(signal['corrections'],8);self.assertEqual(signal['priority_boost'],12)
    self.assertFalse(store.all('published'))
   finally:store.close()
+
+class WorkspaceCandidateTests(unittest.TestCase):
+ def test_workspace_candidate_window_remains_bounded(self):
+  index=documents(CATALOG['entities'])
+  result=match(QUESTION,index,study_limit=1000)
+  self.assertLessEqual(len(result['studies']),48)
+  self.assertGreaterEqual(len(result['studies']),len(match(QUESTION,index)['studies']))
+
+class WorkspaceRouteTests(unittest.TestCase):
+ def test_workspace_flag_is_strict_and_uses_larger_bounded_window(self):
+  from app import app
+  client=app.test_client()
+  with patch('evidence.matcher.library_index',return_value=documents(CATALOG['entities'])):
+   response=client.post('/api/evidence/match',json={'text':QUESTION,'workspace':True})
+   self.assertEqual(response.status_code,200)
+   self.assertLessEqual(len(response.json['studies']),48)
+   self.assertEqual(client.post('/api/evidence/match',json={'text':QUESTION,'workspace':'yes'}).status_code,400)
+   self.assertEqual(client.post('/api/evidence/match',json={'text':QUESTION,'workspace':True,'private_file':'no'}).status_code,400)

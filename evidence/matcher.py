@@ -110,7 +110,8 @@ def passage(text,query):
     start=best.start();end=min(best.end(),start+500)
     return {'text':text[start:end],'start':start,'end':end,'basis':'retained source text with presentation markup removed and HTML entities decoded','truncated':end<best.end()}
 
-def match(text,index,limit=8):
+def match(text,index,limit=8,study_limit=12):
+    study_limit=max(1,min(48,int(study_limit)))
     if not isinstance(text,str) or not 20<=len(text.strip())<=12000:raise ValueError('Enter between 20 and 12,000 characters of research text.')
     if research_input_error(text):raise ValueError(research_input_error(text))
     query=expanded_tokens(text)
@@ -164,7 +165,7 @@ def match(text,index,limit=8):
         candidate=next((row for row in source_matches if entity_id in row[1]['entity_ids'] and row not in chosen),None)
         if candidate:chosen.append(candidate)
     for row in source_matches:
-        if len(chosen)>=12:break
+        if len(chosen)>=study_limit:break
         if row not in chosen:chosen.append(row)
     chosen.sort(key=lambda row:-row[0])
     def public(doc):return {k:v for k,v in doc.items() if not k.startswith('_')}
@@ -175,7 +176,7 @@ def match(text,index,limit=8):
         quote=max(quotes,key=lambda q:len(tokens(q)&query))
         start=source['_text'].index(quote)
         return {'text':quote,'start':start,'end':start+len(quote),'basis':'retained quote-backed finding','truncated':False}
-    results=[{**public(s),'score':round(v,3),'matched_terms':sorted(s['_tokens']&query)[:12],'passage':source_passage(s),'findings':[f for f in s.get('findings',[]) if set(f['entity_ids']) & (primary_ids if primary_ids.intersection(s['entity_ids']) else matched_ids)]} for v,s in chosen[:12]]
+    results=[{**public(s),'score':round(v,3),'matched_terms':sorted(s['_tokens']&query)[:12],'passage':source_passage(s),'findings':[f for f in s.get('findings',[]) if set(f['entity_ids']) & (primary_ids if primary_ids.intersection(s['entity_ids']) else matched_ids)]} for v,s in chosen[:study_limit]]
     gaps=[]
     if not results:gaps.append('No retained study passages matched. Search the original literature before concluding that evidence is absent.')
     for field,label in [('population','Population'),('n','Sample size')]:
