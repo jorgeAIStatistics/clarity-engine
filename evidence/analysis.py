@@ -7,7 +7,7 @@ import math
 import re
 from .profile import layer_for
 
-VERSION='study-analysis-v1'
+VERSION='study-analysis-v2'
 MEASURES={'mean_diff':'Mean difference','smd':'Standardized mean difference','hr':'Hazard ratio','rr':'Risk ratio','or':'Odds ratio','risk_diff':'Risk difference'}
 RATIOS={'hr','rr','or'}
 
@@ -47,6 +47,13 @@ def analyse_effect(effect,studies):
     elif not values[1]<=values[0]<=values[2]:reason='Estimate is outside its interval'
     elif metric in RATIOS and min(values)<=0:reason='Ratio estimates must be positive'
     elif not quote or not all(any(abs(v-n)<1e-8 for n in numerical_tokens(quote)) for v in values):reason='Numerical extraction cannot be traced to the retained passage'
+    # A numerical token match alone cannot establish an interval or contrast.
+    if not reason and re.search(r'\b(?:p25|p75|interquartile|IQR)\b',quote,re.I):
+        reason='Quartiles are not a confidence interval; interval semantics require review'
+    if not reason and metric=='mean_diff' and re.search(r'\b(?:mean change|mean increase|mean decrease|beta|β)\b',quote,re.I) and not re.search(r'between[- ]group|difference in (?:mean )?change',quote,re.I):
+        reason='Within-group change or regression coefficient is not a verified between-group mean difference'
+    if not reason and metric=='or' and re.search(r'\bRR\b|relative risk|risk ratio',quote,re.I) and not re.search(r'\bOR\b|odds ratio',quote,re.I):
+        reason='Reported risk ratio conflicts with extracted odds-ratio label'
     if reason:return {'eligible':False,'reason':reason,'pmid':effect.get('pmid')}
     value,low,high=values;null=1 if metric in RATIOS else 0
     crossing=low<=null<=high

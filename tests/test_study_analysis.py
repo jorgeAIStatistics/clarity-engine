@@ -37,3 +37,10 @@ class StudyAnalysisTests(unittest.TestCase):
         e={**EFFECT,'metric':'hr','value':.8,'ci_low':.64,'ci_high':1,'quote':'HR 0.8 (95% CI 0.64 to 1.0)'}
         result=analyse_effect(e,{'123':SOURCE})
         self.assertEqual(result['null'],1);self.assertIn('boundary',result['interpretation'])
+
+    def test_quartiles_are_not_confidence_intervals(self):
+        effect={**EFFECT,'value':15.25,'ci_low':10.57,'ci_high':19.68,'quote':'+15.25 ng/mL (p25 = 10.57; p75 = 19.68)'}
+        self.assertFalse(analyse_effect(effect,{'123':SOURCE})['eligible'])
+    def test_within_group_and_metric_conflicts_are_withheld(self):
+        for change in [dict(quote='mean change 0.68 (95% CI 0.26 to 1.11) in the intervention group'),dict(metric='or',quote='RR 0.68 (95% CI 0.26 to 1.11)')]:
+            self.assertFalse(analyse_effect({**EFFECT,**change},{'123':SOURCE})['eligible'])
