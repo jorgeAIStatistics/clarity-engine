@@ -39,3 +39,14 @@ Matcher v2 accepts text prepared from local CSV/TSV parsing. API limits remain
 and personal-health patterns are rejected before index construction. These guards
 are not a de-identification system: only aggregate, non-identifying research content
 is permitted. Matching returns relevance and source passages, never agreement grades.
+
+## Question-depth pass — 2026-09-13
+
+Selected enrichment now retains 38 unique publications and 64 non-intervention
+finding rows, without adding empty entity profiles. New prediction records
+PMID 22797450 and 31216866 add explicitly comparator-dependent C-index changes
+across ApoB, LDL-C, non-HDL-C and Lp(a). The ApoB/apoA-I combination is not labeled
+as ApoB alone. New ALK records PMID 32418886 and 35843080 retain ALEX and J-ALEX
+settings, doses, crossover limitations, immature survival context and the reported
+95.0405% confidence interval. Same-cohort reports are flagged for potential overlap.
+All new extracts remain automated and pass source-span/hash/estimate validation.

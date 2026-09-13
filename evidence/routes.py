@@ -69,6 +69,21 @@ def evidence_match():
     if research_input_error(text):return jsonify(error=research_input_error(text)),400
     try:
         result=match(text,library_index(int(time.time()//3600)))
+        from .feedback import token_for
+        result['feedback_token']=token_for(result)
         response=jsonify(result);response.headers['Cache-Control']='no-store';return response
     except ValueError as error:return jsonify(error=str(error)),400
     except Exception:return jsonify(error='Library matching is temporarily unavailable. Please try again.'),503
+
+@blueprint.post('/api/evidence/match/feedback')
+def matcher_feedback():
+    from .feedback import record_feedback
+    from living_research.store import Store
+    store=None
+    try:
+        store=Store();response=jsonify(record_feedback(store,request.get_json(silent=True)))
+        response.headers['Cache-Control']='no-store';return response
+    except ValueError as error:return jsonify(error=str(error)),400
+    except Exception:return jsonify(error='Feedback could not be saved. Please try again.'),503
+    finally:
+        if store:store.close()

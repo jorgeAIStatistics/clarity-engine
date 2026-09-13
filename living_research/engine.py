@@ -106,6 +106,11 @@ class Monitor:
         try:
             sync_targets(self.store,targets if targets is not None else discover_targets(),self.config)
             due=[t for t in self.store.all('target') if t['enabled'] and (t['id'] in only if only else t['next_due']<=time.time())]
+            from evidence.feedback import improvement_signals
+            signals=improvement_signals(self.store)
+            for target in due:
+                target['improvement_signal']=signals.get(target['id'],{})
+                target['feedback_priority_boost']=target['improvement_signal'].get('priority_boost',0)
             due.sort(key=lambda t:(-priority_score(t,time.time()),t['next_due'],t['id']))
             for target in due[:self.config['max_targets']]:
                 self.store.renew(run_id)

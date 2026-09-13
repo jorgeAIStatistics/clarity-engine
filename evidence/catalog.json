@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "catalog_version": "2026-09-13-source-depth-v2",
+  "catalog_version": "2026-09-13-question-depth-v3",
   "frameworks": {
     "intervention": {
       "question": "Does this intervention help?",
@@ -109,6 +109,11 @@
           "name": "All-cause mortality",
           "question_type": "association",
           "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Incremental CVD discrimination",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
       "studies": [
@@ -174,7 +179,7 @@
           "limitations": [
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
-          "cohort_id": "UK-Biobank-apoB-2024"
+          "cohort_id": "UK-Biobank"
         },
         {
           "id": "pmid:39256087",
@@ -281,6 +286,134 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "ODYSSEY OUTCOMES"
+        },
+        {
+          "id": "pmid:22797450",
+          "pmid": "22797450",
+          "doi": "10.1001/jama.2012.6571",
+          "title": "Lipid-related markers and cardiovascular disease prediction.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22797450/",
+          "year": "2012",
+          "design": "Individual participant data meta-analysis",
+          "population": "Human; 165,544 participants without baseline CVD in 37 prospective cohorts",
+          "n": 165544,
+          "exposure": "ApoB plus ApoA-I added to conventional risk factors, total cholesterol and HDL-C",
+          "comparator": "Model without the additional apolipoprotein pair",
+          "abstract": "Context The value of assessing various emerging lipid-related markers for prediction of first cardiovascular events is debated. Objective To determine whether adding information on apolipoprotein B and apolipoprotein A-I, lipoprotein(a), or lipoprotein-associated phospholipase A2 to total cholesterol and high-density lipoprotein cholesterol (HDL-C) improves cardiovascular disease (CVD) risk prediction. Design, setting, and participants Individual records were available for 165,544 participants without baseline CVD in 37 prospective cohorts (calendar years of recruitment: 1968-2007) with up to 15,126 incident fatal or nonfatal CVD outcomes (10,132 CHD and 4994 stroke outcomes) during a median follow-up of 10.4 years (interquartile range, 7.6-14 years). Main outcome measures Discrimination of CVD outcomes and reclassification of participants across predicted 10-year risk categories of low (<10%), intermediate (10%-<20%), and high (≥20%) risk. Results The addition of information on various lipid-related markers to total cholesterol, HDL-C, and other conventional risk factors yielded improvement in the model's discrimination: C-index change, 0.0006 (95% CI, 0.0002-0.0009) for the combination of apolipoprotein B and A-I; 0.0016 (95% CI, 0.0009-0.0023) for lipoprotein(a); and 0.0018 (95% CI, 0.0010-0.0026) for lipoprotein-associated phospholipase A2 mass. Net reclassification improvements were less than 1% with the addition of each of these markers to risk scores containing conventional risk factors. We estimated that for 100,000 adults aged 40 years or older, 15,436 would be initially classified at intermediate risk using conventional risk factors alone. Additional testing with a combination of apolipoprotein B and A-I would reclassify 1.1%; lipoprotein(a), 4.1%; and lipoprotein-associated phospholipase A2 mass, 2.7% of people to a 20% or higher predicted CVD risk category and, therefore, in need of statin treatment under Adult Treatment Panel III guidelines. Conclusion In a study of individuals without known CVD, the addition of information on the combination of apolipoprotein B and A-I, lipoprotein(a), or lipoprotein-associated phospholipase A2 mass to risk scores containing total cholesterol and HDL-C led to slight improvement in CVD prediction.",
+          "findings": [
+            {
+              "outcome": "Incremental CVD discrimination",
+              "effect": {
+                "measure": "C-index change",
+                "estimate": 0.0006,
+                "lower": 0.0002,
+                "upper": 0.0009,
+                "confidence_level": 95,
+                "units": "ApoB plus ApoA-I; not ApoB alone",
+                "origin": "reported"
+              },
+              "quote": "The addition of information on various lipid-related markers to total cholesterol, HDL-C, and other conventional risk factors yielded improvement in the model's discrimination: C-index change, 0.0006 (95% CI, 0.0002-0.0009) for the combination of apolipoprotein B and A-I; 0.0016 (95% CI, 0.0009-0.0023) for lipoprotein(a); and 0.0018 (95% CI, 0.0010-0.0026) for lipoprotein-associated phospholipase A2 mass.",
+              "source_span": {
+                "text": "The addition of information on various lipid-related markers to total cholesterol, HDL-C, and other conventional risk factors yielded improvement in the model's discrimination: C-index change, 0.0006 (95% CI, 0.0002-0.0009) for the combination of apolipoprotein B and A-I; 0.0016 (95% CI, 0.0009-0.0023) for lipoprotein(a); and 0.0018 (95% CI, 0.0010-0.0026) for lipoprotein-associated phospholipase A2 mass.",
+                "start": 963,
+                "end": 1371,
+                "source_id": "pmid:22797450",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The addition of information on various lipid-related markers to total cholesterol, HDL-C, and other conventional risk factors yielded improvement in the model's discrimination: C-index change, 0.0006 (95% CI, 0.0002-0.0009) for the combination of apolipoprotein B and A-I; 0.0016 (95% CI, 0.0009-0.0023) for lipoprotein(a); and 0.0018 (95% CI, 0.0010-0.0026) for lipoprotein-associated phospholipase A2 mass.",
+          "population_span": {
+            "text": "Individual records were available for 165,544 participants without baseline CVD in 37 prospective cohorts (calendar years of recruitment: 1968-2007) with up to 15,126 incident fatal or nonfatal CVD outcomes (10,132 CHD and 4994 stroke outcomes) during a median follow-up of 10.4 years (interquartile range, 7.6-14 years).",
+            "start": 440,
+            "end": 761,
+            "source_id": "pmid:22797450",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Net reclassification improvements were less than 1% with the addition of each of these markers to risk scores containing conventional risk factors.",
+            "start": 1372,
+            "end": 1519,
+            "source_id": "pmid:22797450",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "61d201981adefdbb2b25a65504f8f58b6b4a712fcc899c22a62073f2297b78a4"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "Emerging Risk Factors Collaboration"
+        },
+        {
+          "id": "pmid:31216866",
+          "pmid": "31216866",
+          "doi": "10.1161/circulationaha.119.041149",
+          "title": "Comparison of Conventional Lipoprotein Tests and Apolipoproteins in the Prediction of Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31216866/",
+          "year": "2019",
+          "design": "Prospective cohort",
+          "population": "Human; 346,686 UK Biobank participants without baseline CVD and not taking statins",
+          "n": 346686,
+          "exposure": "ApoB added to a model containing total cholesterol, HDL-C and classical risk factors",
+          "comparator": "Same prediction model without added ApoB",
+          "abstract": "Background Total cholesterol and high-density lipoprotein cholesterol (HDL-C) measurements are central to cardiovascular disease (CVD) risk assessment, but there is continuing debate around the utility of other lipids for risk prediction. Methods Participants from UK Biobank without baseline CVD and not taking statins, with relevant lipid measurements (n=346 686), were included in the primary analysis. An incident fatal or nonfatal CVD event occurred in 6216 participants (1656 fatal) over a median of 8.9 years. Associations of nonfasting lipid measurements (total cholesterol, HDL-C, non-HDL-C, direct and calculated low-density lipoprotein cholesterol [LDL-C], and apolipoproteins [Apo] A1 and B) with CVD were compared using Cox models adjusting for classical risk factors, and predictive utility was determined by the C-index and net reclassification index. Prediction was also tested in 68 649 participants taking a statin with or without baseline CVD (3515 CVD events). Results ApoB, LDL-C, and non-HDL-C were highly correlated (r>0.90), while HDL-C was strongly correlated with ApoA1 (r=0.92). After adjustment for classical risk factors, 1 SD increase in ApoB, direct LDL-C, and non-HDL-C had similar associations with composite fatal/nonfatal CVD events (hazard ratio, 1.23, 1.20, 1.21, respectively). Associations for 1 SD increase in HDL-C and ApoA1 were also similar (hazard ratios, 0.81 [both]). Adding either total cholesterol and HDL-C, or ApoB and ApoA, to a CVD risk prediction model (C-index, 0.7378) yielded similar improvement in discrimination (C-index change, 0.0084; 95% CI, 0.0065, 0.0104, and 0.0089; 95% CI, 0.0069, 0.0109, respectively). Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C. Results for predictive utility were similar for a fatal CVD outcome, and in a discordance analysis. In participants taking a statin, classical risk factors (C-index, 0.7118) were improved by non-HDL-C (C-index change, 0.0030; 95% CI, 0.0012, 0.0048) or ApoB (C-index change, 0.0030; 95% CI, 0.0011, 0.0048). However, adding ApoB or LDL-C to a model already containing non-HDL-C did not further improve discrimination. Conclusions Measurement of total cholesterol and HDL-C in the nonfasted state is sufficient to capture the lipid-associated risk in CVD prediction, with no meaningful improvement from addition of apolipoproteins, direct or calculated LDL-C.",
+          "findings": [
+            {
+              "outcome": "Incremental CVD discrimination",
+              "effect": {
+                "measure": "C-index change",
+                "estimate": 0.0004,
+                "lower": 0.0,
+                "upper": 0.0008,
+                "confidence_level": 95,
+                "units": "addition of ApoB; not a risk ratio",
+                "origin": "reported"
+              },
+              "quote": "Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C.",
+              "source_span": {
+                "text": "Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C.",
+                "start": 1670,
+                "end": 1857,
+                "source_id": "pmid:31216866",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C.",
+          "population_span": {
+            "text": "Participants from UK Biobank without baseline CVD and not taking statins, with relevant lipid measurements (n=346 686), were included in the primary analysis.",
+            "start": 247,
+            "end": 405,
+            "source_id": "pmid:31216866",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "An incident fatal or nonfatal CVD event occurred in 6216 participants (1656 fatal) over a median of 8.9 years.",
+            "start": 406,
+            "end": 516,
+            "source_id": "pmid:31216866",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "28fede088cceb294b20875e355ccf3bca37c7604a74e0449b0af8687bd718fb8"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "UK-Biobank"
         }
       ],
       "sources": [
@@ -305,6 +438,18 @@
         {
           "title": "Alirocumab and Cardiovascular Outcomes after Acute Coronary Syndrome.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Lipid-related markers and cardiovascular disease prediction.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22797450/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Comparison of Conventional Lipoprotein Tests and Apolipoproteins in the Prediction of Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31216866/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -361,7 +506,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "3 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "text": "Added incremental prediction or survival follow-up records. Cohort overlap and appraisal requirements remain explicit; grades unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -405,6 +550,11 @@
         },
         {
           "name": "All-cause mortality",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Incremental CVD discrimination",
           "question_type": "study_specific",
           "assessment": "Automated extraction; appraisal pending"
         }
@@ -472,7 +622,7 @@
           "limitations": [
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
-          "cohort_id": "UK-Biobank-apoB-2024"
+          "cohort_id": "UK-Biobank"
         },
         {
           "id": "pmid:21067804",
@@ -814,6 +964,70 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "ODYSSEY OUTCOMES"
+        },
+        {
+          "id": "pmid:31216866",
+          "pmid": "31216866",
+          "doi": "10.1161/circulationaha.119.041149",
+          "title": "Comparison of Conventional Lipoprotein Tests and Apolipoproteins in the Prediction of Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31216866/",
+          "year": "2019",
+          "design": "Prospective cohort",
+          "population": "Human; 346,686 UK Biobank participants without baseline CVD and not taking statins",
+          "n": 346686,
+          "exposure": "ApoB added to a model containing total cholesterol, HDL-C and classical risk factors",
+          "comparator": "Same prediction model without added ApoB",
+          "abstract": "Background Total cholesterol and high-density lipoprotein cholesterol (HDL-C) measurements are central to cardiovascular disease (CVD) risk assessment, but there is continuing debate around the utility of other lipids for risk prediction. Methods Participants from UK Biobank without baseline CVD and not taking statins, with relevant lipid measurements (n=346 686), were included in the primary analysis. An incident fatal or nonfatal CVD event occurred in 6216 participants (1656 fatal) over a median of 8.9 years. Associations of nonfasting lipid measurements (total cholesterol, HDL-C, non-HDL-C, direct and calculated low-density lipoprotein cholesterol [LDL-C], and apolipoproteins [Apo] A1 and B) with CVD were compared using Cox models adjusting for classical risk factors, and predictive utility was determined by the C-index and net reclassification index. Prediction was also tested in 68 649 participants taking a statin with or without baseline CVD (3515 CVD events). Results ApoB, LDL-C, and non-HDL-C were highly correlated (r>0.90), while HDL-C was strongly correlated with ApoA1 (r=0.92). After adjustment for classical risk factors, 1 SD increase in ApoB, direct LDL-C, and non-HDL-C had similar associations with composite fatal/nonfatal CVD events (hazard ratio, 1.23, 1.20, 1.21, respectively). Associations for 1 SD increase in HDL-C and ApoA1 were also similar (hazard ratios, 0.81 [both]). Adding either total cholesterol and HDL-C, or ApoB and ApoA, to a CVD risk prediction model (C-index, 0.7378) yielded similar improvement in discrimination (C-index change, 0.0084; 95% CI, 0.0065, 0.0104, and 0.0089; 95% CI, 0.0069, 0.0109, respectively). Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C. Results for predictive utility were similar for a fatal CVD outcome, and in a discordance analysis. In participants taking a statin, classical risk factors (C-index, 0.7118) were improved by non-HDL-C (C-index change, 0.0030; 95% CI, 0.0012, 0.0048) or ApoB (C-index change, 0.0030; 95% CI, 0.0011, 0.0048). However, adding ApoB or LDL-C to a model already containing non-HDL-C did not further improve discrimination. Conclusions Measurement of total cholesterol and HDL-C in the nonfasted state is sufficient to capture the lipid-associated risk in CVD prediction, with no meaningful improvement from addition of apolipoproteins, direct or calculated LDL-C.",
+          "findings": [
+            {
+              "outcome": "Incremental CVD discrimination",
+              "effect": {
+                "measure": "C-index change",
+                "estimate": 0.0004,
+                "lower": 0.0,
+                "upper": 0.0008,
+                "confidence_level": 95,
+                "units": "addition of ApoB; not a risk ratio",
+                "origin": "reported"
+              },
+              "quote": "Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C.",
+              "source_span": {
+                "text": "Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C.",
+                "start": 1670,
+                "end": 1857,
+                "source_id": "pmid:31216866",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C.",
+          "population_span": {
+            "text": "Participants from UK Biobank without baseline CVD and not taking statins, with relevant lipid measurements (n=346 686), were included in the primary analysis.",
+            "start": 247,
+            "end": 405,
+            "source_id": "pmid:31216866",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "An incident fatal or nonfatal CVD event occurred in 6216 participants (1656 fatal) over a median of 8.9 years.",
+            "start": 406,
+            "end": 516,
+            "source_id": "pmid:31216866",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "28fede088cceb294b20875e355ccf3bca37c7604a74e0449b0af8687bd718fb8"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "UK-Biobank"
         }
       ],
       "sources": [
@@ -858,6 +1072,12 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
           "accessed": "2026-09-13",
           "kind": "study"
+        },
+        {
+          "title": "Comparison of Conventional Lipoprotein Tests and Apolipoproteins in the Prediction of Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31216866/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
       "review_status": "automated_appraisal",
@@ -891,7 +1111,8 @@
         "apob",
         "non-hdl-c",
         "lpa",
-        "triglycerides"
+        "triglycerides",
+        "cac"
       ],
       "changing_marker": "Evaluate clinical outcomes from the specific lipid-lowering intervention; do not infer the size of benefit from a laboratory change alone.",
       "measurement": {
@@ -912,7 +1133,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "6 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "text": "Added incremental prediction or survival follow-up records. Cohort overlap and appraisal requirements remain explicit; grades unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -2614,7 +2835,9 @@
       },
       "related": [
         "apob",
-        "non-hdl-c"
+        "non-hdl-c",
+        "ldl-c",
+        "lpa"
       ],
       "test_performance": {
         "sensitivity": null,
@@ -4056,6 +4279,11 @@
           "name": "Cardiovascular events",
           "question_type": "study_specific",
           "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Incremental CVD discrimination",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
       "studies": [
@@ -4121,7 +4349,7 @@
           "limitations": [
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
-          "cohort_id": "UK-Biobank-apoB-2024"
+          "cohort_id": "UK-Biobank"
         },
         {
           "id": "pmid:30403574",
@@ -4186,6 +4414,70 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "ODYSSEY OUTCOMES"
+        },
+        {
+          "id": "pmid:31216866",
+          "pmid": "31216866",
+          "doi": "10.1161/circulationaha.119.041149",
+          "title": "Comparison of Conventional Lipoprotein Tests and Apolipoproteins in the Prediction of Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31216866/",
+          "year": "2019",
+          "design": "Prospective cohort",
+          "population": "Human; 346,686 UK Biobank participants without baseline CVD and not taking statins",
+          "n": 346686,
+          "exposure": "ApoB added to a model containing total cholesterol, HDL-C and classical risk factors",
+          "comparator": "Same prediction model without added ApoB",
+          "abstract": "Background Total cholesterol and high-density lipoprotein cholesterol (HDL-C) measurements are central to cardiovascular disease (CVD) risk assessment, but there is continuing debate around the utility of other lipids for risk prediction. Methods Participants from UK Biobank without baseline CVD and not taking statins, with relevant lipid measurements (n=346 686), were included in the primary analysis. An incident fatal or nonfatal CVD event occurred in 6216 participants (1656 fatal) over a median of 8.9 years. Associations of nonfasting lipid measurements (total cholesterol, HDL-C, non-HDL-C, direct and calculated low-density lipoprotein cholesterol [LDL-C], and apolipoproteins [Apo] A1 and B) with CVD were compared using Cox models adjusting for classical risk factors, and predictive utility was determined by the C-index and net reclassification index. Prediction was also tested in 68 649 participants taking a statin with or without baseline CVD (3515 CVD events). Results ApoB, LDL-C, and non-HDL-C were highly correlated (r>0.90), while HDL-C was strongly correlated with ApoA1 (r=0.92). After adjustment for classical risk factors, 1 SD increase in ApoB, direct LDL-C, and non-HDL-C had similar associations with composite fatal/nonfatal CVD events (hazard ratio, 1.23, 1.20, 1.21, respectively). Associations for 1 SD increase in HDL-C and ApoA1 were also similar (hazard ratios, 0.81 [both]). Adding either total cholesterol and HDL-C, or ApoB and ApoA, to a CVD risk prediction model (C-index, 0.7378) yielded similar improvement in discrimination (C-index change, 0.0084; 95% CI, 0.0065, 0.0104, and 0.0089; 95% CI, 0.0069, 0.0109, respectively). Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C. Results for predictive utility were similar for a fatal CVD outcome, and in a discordance analysis. In participants taking a statin, classical risk factors (C-index, 0.7118) were improved by non-HDL-C (C-index change, 0.0030; 95% CI, 0.0012, 0.0048) or ApoB (C-index change, 0.0030; 95% CI, 0.0011, 0.0048). However, adding ApoB or LDL-C to a model already containing non-HDL-C did not further improve discrimination. Conclusions Measurement of total cholesterol and HDL-C in the nonfasted state is sufficient to capture the lipid-associated risk in CVD prediction, with no meaningful improvement from addition of apolipoproteins, direct or calculated LDL-C.",
+          "findings": [
+            {
+              "outcome": "Incremental CVD discrimination",
+              "effect": {
+                "measure": "C-index change",
+                "estimate": 0.0004,
+                "lower": 0.0,
+                "upper": 0.0008,
+                "confidence_level": 95,
+                "units": "addition of ApoB; not a risk ratio",
+                "origin": "reported"
+              },
+              "quote": "Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C.",
+              "source_span": {
+                "text": "Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C.",
+                "start": 1670,
+                "end": 1857,
+                "source_id": "pmid:31216866",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "Once total and HDL-C were in the model, no further substantive improvement was achieved with the addition of ApoB (C-index change, 0.0004; 95% CI, 0.0000, 0.0008) or any measure of LDL-C.",
+          "population_span": {
+            "text": "Participants from UK Biobank without baseline CVD and not taking statins, with relevant lipid measurements (n=346 686), were included in the primary analysis.",
+            "start": 247,
+            "end": 405,
+            "source_id": "pmid:31216866",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "An incident fatal or nonfatal CVD event occurred in 6216 participants (1656 fatal) over a median of 8.9 years.",
+            "start": 406,
+            "end": 516,
+            "source_id": "pmid:31216866",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "28fede088cceb294b20875e355ccf3bca37c7604a74e0449b0af8687bd718fb8"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "UK-Biobank"
         }
       ],
       "sources": [
@@ -4198,6 +4490,12 @@
         {
           "title": "Alirocumab and Cardiovascular Outcomes after Acute Coronary Syndrome.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Comparison of Conventional Lipoprotein Tests and Apolipoproteins in the Prediction of Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31216866/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -4256,7 +4554,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "text": "Added incremental prediction or survival follow-up records. Cohort overlap and appraisal requirements remain explicit; grades unchanged.",
           "review_status": "automated_appraisal"
         }
       ]
@@ -4739,6 +5037,11 @@
           "name": "Ischemic stroke",
           "question_type": "study_specific",
           "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Incremental CVD discrimination",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
       "studies": [
@@ -4825,7 +5128,7 @@
           "limitations": [
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
-          "cohort_id": "ERFC-Lpa-2009"
+          "cohort_id": "Emerging Risk Factors Collaboration"
         },
         {
           "id": "pmid:18362252",
@@ -4890,6 +5193,70 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "Reykjavik"
+        },
+        {
+          "id": "pmid:22797450",
+          "pmid": "22797450",
+          "doi": "10.1001/jama.2012.6571",
+          "title": "Lipid-related markers and cardiovascular disease prediction.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22797450/",
+          "year": "2012",
+          "design": "Individual participant data meta-analysis",
+          "population": "Human; 165,544 participants without baseline CVD in 37 prospective cohorts",
+          "n": 165544,
+          "exposure": "Lp(a) added to conventional risk factors, total cholesterol and HDL-C",
+          "comparator": "Model without Lp(a)",
+          "abstract": "Context The value of assessing various emerging lipid-related markers for prediction of first cardiovascular events is debated. Objective To determine whether adding information on apolipoprotein B and apolipoprotein A-I, lipoprotein(a), or lipoprotein-associated phospholipase A2 to total cholesterol and high-density lipoprotein cholesterol (HDL-C) improves cardiovascular disease (CVD) risk prediction. Design, setting, and participants Individual records were available for 165,544 participants without baseline CVD in 37 prospective cohorts (calendar years of recruitment: 1968-2007) with up to 15,126 incident fatal or nonfatal CVD outcomes (10,132 CHD and 4994 stroke outcomes) during a median follow-up of 10.4 years (interquartile range, 7.6-14 years). Main outcome measures Discrimination of CVD outcomes and reclassification of participants across predicted 10-year risk categories of low (<10%), intermediate (10%-<20%), and high (≥20%) risk. Results The addition of information on various lipid-related markers to total cholesterol, HDL-C, and other conventional risk factors yielded improvement in the model's discrimination: C-index change, 0.0006 (95% CI, 0.0002-0.0009) for the combination of apolipoprotein B and A-I; 0.0016 (95% CI, 0.0009-0.0023) for lipoprotein(a); and 0.0018 (95% CI, 0.0010-0.0026) for lipoprotein-associated phospholipase A2 mass. Net reclassification improvements were less than 1% with the addition of each of these markers to risk scores containing conventional risk factors. We estimated that for 100,000 adults aged 40 years or older, 15,436 would be initially classified at intermediate risk using conventional risk factors alone. Additional testing with a combination of apolipoprotein B and A-I would reclassify 1.1%; lipoprotein(a), 4.1%; and lipoprotein-associated phospholipase A2 mass, 2.7% of people to a 20% or higher predicted CVD risk category and, therefore, in need of statin treatment under Adult Treatment Panel III guidelines. Conclusion In a study of individuals without known CVD, the addition of information on the combination of apolipoprotein B and A-I, lipoprotein(a), or lipoprotein-associated phospholipase A2 mass to risk scores containing total cholesterol and HDL-C led to slight improvement in CVD prediction.",
+          "findings": [
+            {
+              "outcome": "Incremental CVD discrimination",
+              "effect": {
+                "measure": "C-index change",
+                "estimate": 0.0016,
+                "lower": 0.0009,
+                "upper": 0.0023,
+                "confidence_level": 95,
+                "units": "addition of Lp(a); not a risk ratio",
+                "origin": "reported"
+              },
+              "quote": "The addition of information on various lipid-related markers to total cholesterol, HDL-C, and other conventional risk factors yielded improvement in the model's discrimination: C-index change, 0.0006 (95% CI, 0.0002-0.0009) for the combination of apolipoprotein B and A-I; 0.0016 (95% CI, 0.0009-0.0023) for lipoprotein(a); and 0.0018 (95% CI, 0.0010-0.0026) for lipoprotein-associated phospholipase A2 mass.",
+              "source_span": {
+                "text": "The addition of information on various lipid-related markers to total cholesterol, HDL-C, and other conventional risk factors yielded improvement in the model's discrimination: C-index change, 0.0006 (95% CI, 0.0002-0.0009) for the combination of apolipoprotein B and A-I; 0.0016 (95% CI, 0.0009-0.0023) for lipoprotein(a); and 0.0018 (95% CI, 0.0010-0.0026) for lipoprotein-associated phospholipase A2 mass.",
+                "start": 963,
+                "end": 1371,
+                "source_id": "pmid:22797450",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The addition of information on various lipid-related markers to total cholesterol, HDL-C, and other conventional risk factors yielded improvement in the model's discrimination: C-index change, 0.0006 (95% CI, 0.0002-0.0009) for the combination of apolipoprotein B and A-I; 0.0016 (95% CI, 0.0009-0.0023) for lipoprotein(a); and 0.0018 (95% CI, 0.0010-0.0026) for lipoprotein-associated phospholipase A2 mass.",
+          "population_span": {
+            "text": "Individual records were available for 165,544 participants without baseline CVD in 37 prospective cohorts (calendar years of recruitment: 1968-2007) with up to 15,126 incident fatal or nonfatal CVD outcomes (10,132 CHD and 4994 stroke outcomes) during a median follow-up of 10.4 years (interquartile range, 7.6-14 years).",
+            "start": 440,
+            "end": 761,
+            "source_id": "pmid:22797450",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Net reclassification improvements were less than 1% with the addition of each of these markers to risk scores containing conventional risk factors.",
+            "start": 1372,
+            "end": 1519,
+            "source_id": "pmid:22797450",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "61d201981adefdbb2b25a65504f8f58b6b4a712fcc899c22a62073f2297b78a4"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "Emerging Risk Factors Collaboration"
         }
       ],
       "sources": [
@@ -4902,6 +5269,12 @@
         {
           "title": "Lipoprotein(a) levels and risk of future coronary heart disease: large-scale prospective data.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/18362252/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Lipid-related markers and cardiovascular disease prediction.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22797450/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -4936,7 +5309,8 @@
       "related": [
         "apob",
         "ldl-c",
-        "non-hdl-c"
+        "non-hdl-c",
+        "cac"
       ],
       "changing_marker": "Marker associations do not establish the benefit of targeting a marker.",
       "measurement": {
@@ -4955,7 +5329,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "text": "Added incremental prediction or survival follow-up records. Cohort overlap and appraisal requirements remain explicit; grades unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -5136,6 +5510,11 @@
           "name": "Progression-free survival",
           "question_type": "study_specific",
           "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Overall survival",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
       "studies": [
@@ -5266,6 +5645,155 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "J-ALEX"
+        },
+        {
+          "id": "pmid:32418886",
+          "pmid": "32418886",
+          "doi": "10.1016/j.annonc.2020.04.478",
+          "title": "Updated overall survival and final progression-free survival data for patients with treatment-naive advanced ALK-positive non-small-cell lung cancer in the ALEX study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32418886/",
+          "year": "2020",
+          "design": "Randomized controlled trial follow-up",
+          "population": "Human; Stage III/IV ALK-positive NSCLC; 152 alectinib and 151 crizotinib participants",
+          "n": null,
+          "exposure": "Alectinib 600 mg twice daily",
+          "comparator": "Crizotinib 250 mg twice daily",
+          "abstract": "Background The ALEX study demonstrated significantly improved progression-free survival (PFS) with alectinib versus crizotinib in treatment-naive ALK-positive non-small-cell lung cancer (NSCLC) at the primary data cut-off (9 February 2017). We report mature PFS (cut-off: 30 November 2018) and overall survival (OS) data up to 5 years (cut-off: 29 November 2019). Patients and methods Patients with stage III/IV ALK-positive NSCLC were randomized to receive twice-daily alectinib 600 mg (n = 152) or crizotinib 250 mg (n = 151) until disease progression, toxicity, withdrawal or death. Primary end point: investigator-assessed PFS. Secondary end points included objective response rate, OS and safety. Results Mature PFS data showed significantly prolonged investigator-assessed PFS with alectinib [hazard ratio (HR) 0.43, 95% confidence interval (CI) 0.32-0.58; median PFS 34.8 versus 10.9 months crizotinib]. Median duration of OS follow-up: 48.2 months alectinib, 23.3 months crizotinib. OS data remain immature (37% of events). Median OS was not reached with alectinib versus 57.4 months with crizotinib (stratified HR 0.67, 95% CI 0.46-0.98). The 5-year OS rate was 62.5% (95% CI 54.3-70.8) with alectinib and 45.5% (95% CI 33.6-57.4) with crizotinib, with 34.9% and 8.6% of patients still on study treatment, respectively. The OS benefit of alectinib was seen in patients with central nervous system metastases at baseline [HR 0.58 (95% CI 0.34-1.00)] and those without [HR 0.76 (95% CI 0.45-1.26)]. Median treatment duration was longer with alectinib (28.1 versus 10.8 months), and no new safety signals were observed. Conclusions Mature PFS data from ALEX confirmed significant improvement in PFS for alectinib over crizotinib in ALK-positive NSCLC. OS data remain immature, with a higher 5-year OS rate with alectinib versus crizotinib. This is the first global randomized study to show clinically meaningful improvement in OS for a next-generation tyrosine kinase inhibitor versus crizotinib in treatment-naive ALK-positive NSCLC. Clinical trials number NCT02075840.",
+          "findings": [
+            {
+              "outcome": "Progression-free survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.43,
+                "lower": 0.32,
+                "upper": 0.58,
+                "confidence_level": 95,
+                "units": "updated ALEX analysis",
+                "origin": "reported"
+              },
+              "quote": "Mature PFS data showed significantly prolonged investigator-assessed PFS with alectinib [hazard ratio (HR) 0.43, 95% confidence interval (CI) 0.32-0.58; median PFS 34.8 versus 10.9 months crizotinib].",
+              "source_span": {
+                "text": "Mature PFS data showed significantly prolonged investigator-assessed PFS with alectinib [hazard ratio (HR) 0.43, 95% confidence interval (CI) 0.32-0.58; median PFS 34.8 versus 10.9 months crizotinib].",
+                "start": 710,
+                "end": 910,
+                "source_id": "pmid:32418886",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Overall survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.67,
+                "lower": 0.46,
+                "upper": 0.98,
+                "confidence_level": 95,
+                "units": "updated ALEX analysis; OS immature",
+                "origin": "reported"
+              },
+              "quote": "Median OS was not reached with alectinib versus 57.4 months with crizotinib (stratified HR 0.67, 95% CI 0.46-0.98).",
+              "source_span": {
+                "text": "Median OS was not reached with alectinib versus 57.4 months with crizotinib (stratified HR 0.67, 95% CI 0.46-0.98).",
+                "start": 1032,
+                "end": 1147,
+                "source_id": "pmid:32418886",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "Mature PFS data showed significantly prolonged investigator-assessed PFS with alectinib [hazard ratio (HR) 0.43, 95% confidence interval (CI) 0.32-0.58; median PFS 34.8 versus 10.9 months crizotinib].",
+          "population_span": {
+            "text": "Patients with stage III/IV ALK-positive NSCLC were randomized to receive twice-daily alectinib 600 mg (n = 152) or crizotinib 250 mg (n = 151) until disease progression, toxicity, withdrawal or death.",
+            "start": 385,
+            "end": 585,
+            "source_id": "pmid:32418886",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "OS data remain immature (37% of events).",
+            "start": 991,
+            "end": 1031,
+            "source_id": "pmid:32418886",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "90324d3f982c50ae4f49abd1fb8bb2d9231acdfc26c4d917040cd622a51311df"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ALEX"
+        },
+        {
+          "id": "pmid:35843080",
+          "pmid": "35843080",
+          "doi": "10.1016/j.esmoop.2022.100527",
+          "title": "Final overall survival analysis from the phase III J-ALEX study of alectinib versus crizotinib in ALK inhibitor-naïve Japanese patients with ALK-positive non-small-cell lung cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35843080/",
+          "year": "2022",
+          "design": "Randomized controlled trial follow-up",
+          "population": "Human; ALK-inhibitor-naive Japanese adults; 103 alectinib and 104 crizotinib participants",
+          "n": null,
+          "exposure": "Alectinib 300 mg twice daily",
+          "comparator": "Crizotinib 250 mg twice daily",
+          "abstract": "Background Mature progression-free survival (PFS) data from the phase III J-ALEX study showed superiority for alectinib versus crizotinib [hazard ratio (HR) 0.37, 95% confidence interval (CI) 0.26-0.52; median PFS 34.1 versus 10.2 months, respectively] in advanced ALK (anaplastic lymphoma kinase)-positive non-small-cell lung cancer (NSCLC). Overall survival (OS) data were immature (HR 0.80, 99.8799% CI 0.35-1.82) at the time of data cut-off (30 June 2018). We report final OS data after ≥5 years of follow-up. Patients and methods ALK inhibitor naive Japanese patients who were chemotherapy naive or had received one prior chemotherapy regimen were enrolled. Patients were randomized to receive alectinib 300 mg (n = 103) or crizotinib 250 mg (n = 104) twice daily until progressive disease, unacceptable toxicity, death, or withdrawal. The primary endpoint was independent review facility-assessed PFS, with OS (not fully powered) as a secondary endpoint. Results Median duration of OS follow-up was 68.6 months with alectinib and 68.0 months with crizotinib. Treatment with alectinib did not prolong OS relative to crizotinib (HR 1.03, 95.0405% CI 0.67-1.58; P = 0.9105). Five-year OS rates were 60.9% (95% CI 51.4-70.3) with alectinib and 64.1% (95% CI 54.9-73.4) with crizotinib. In total, 91.3% (n = 95/104) of crizotinib-treated patients and 46.6% (n = 48/103) of alectinib-treated patients received at least one subsequent anticancer therapy. After study drug discontinuation, 78.8% of patients in the crizotinib arm switched to alectinib, while 10.7% of patients in the alectinib arm switched to crizotinib as a first subsequent anticancer therapy. Patients randomized to crizotinib tended to switch treatment earlier than those randomized to alectinib. Conclusion Final OS analysis from J-ALEX did not show superiority of alectinib to crizotinib; this result was most likely confounded by treatment crossover. Alectinib remains a standard of care for the treatment of patients with advanced ALK-positive NSCLC.",
+          "findings": [
+            {
+              "outcome": "Overall survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 1.03,
+                "lower": 0.67,
+                "upper": 1.58,
+                "confidence_level": 95.0405,
+                "units": "final J-ALEX analysis; secondary endpoint",
+                "origin": "reported"
+              },
+              "quote": "Treatment with alectinib did not prolong OS relative to crizotinib (HR 1.03, 95.0405% CI 0.67-1.58; P = 0.9105).",
+              "source_span": {
+                "text": "Treatment with alectinib did not prolong OS relative to crizotinib (HR 1.03, 95.0405% CI 0.67-1.58; P = 0.9105).",
+                "start": 1065,
+                "end": 1177,
+                "source_id": "pmid:35843080",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "Treatment with alectinib did not prolong OS relative to crizotinib (HR 1.03, 95.0405% CI 0.67-1.58; P = 0.9105).",
+          "population_span": {
+            "text": "ALK inhibitor naive Japanese patients who were chemotherapy naive or had received one prior chemotherapy regimen were enrolled.",
+            "start": 535,
+            "end": 662,
+            "source_id": "pmid:35843080",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "After study drug discontinuation, 78.8% of patients in the crizotinib arm switched to alectinib, while 10.7% of patients in the alectinib arm switched to crizotinib as a first subsequent anticancer therapy.",
+            "start": 1454,
+            "end": 1660,
+            "source_id": "pmid:35843080",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "6a8975c05dc1b5b7f2cb2b8f55e7908bc0d887fa132af17c97e0daa8fbbdb5db"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "J-ALEX"
         }
       ],
       "sources": [
@@ -5278,6 +5806,18 @@
         {
           "title": "Alectinib versus crizotinib in patients with ALK-positive non-small-cell lung cancer (J-ALEX): an open-label, randomised phase 3 trial.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/28501140/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Updated overall survival and final progression-free survival data for patients with treatment-naive advanced ALK-positive non-small-cell lung cancer in the ALEX study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32418886/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Final overall survival analysis from the phase III J-ALEX study of alectinib versus crizotinib in ALK inhibitor-naïve Japanese patients with ALK-positive non-small-cell lung cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35843080/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -5330,7 +5870,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "text": "Added incremental prediction or survival follow-up records. Cohort overlap and appraisal requirements remain explicit; grades unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
