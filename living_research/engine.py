@@ -7,6 +7,7 @@ from evidence.service import CATALOG, assessment_framework
 from .providers import PubMed, EuropePMC, ClinicalTrials, IncompleteSearch, digest, identities
 from .extraction import Extractor, VERSION, source_text
 from .triage import classify
+from .synthesis import build_synthesis
 
 DEFAULTS={'initial_lookback_days':30,'overlap_days':7,'interval_days':7,'max_targets':25,'max_records':300,'max_llm_calls':20,'max_llm_calls_per_day':100,'sources':['pubmed','europe_pmc','clinical_trials']}
 PROVIDERS={'pubmed':PubMed,'europe_pmc':EuropePMC,'clinical_trials':ClinicalTrials}
@@ -201,6 +202,8 @@ class Monitor:
             proposal.update(status=result['status'],extraction=result)
             facts=result.get('facts',{})
             if facts.get('relevance',{}).get('value')=='unrelated':proposal['status']='excluded'
+            proposal['synthesis']=build_synthesis(proposal,self.store.get('published',proposal['target_id'],{'version':0,'updates':[]}),self.config.get('synthesis_threshold',40))
+            self.store.put('audit',str(uuid.uuid4()),{'action':'extraction_and_synthesis','proposal_id':proposal['id'],'target_id':proposal['target_id'],'at':now_iso(),'extraction_status':proposal['status'],'synthesis_status':proposal['synthesis']['status']})
             proposal['proposed_evidence_note']='; '.join(facts[field]['value'] for field in ('population','outcomes','effect_sizes','direction','limitations') if field in facts)
         except Exception as error:
             proposal['extraction_attempts']=proposal.get('extraction_attempts',0)+1

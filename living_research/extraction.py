@@ -26,7 +26,7 @@ def validate_extraction(result,paper):
         # Retain reported numbers verbatim; never infer a sample size/effect/CI.
         quoted_numbers=set(re.findall(r'\d+(?:\.\d+)?',quote))
         if any(n not in quoted_numbers for n in re.findall(r'\d+(?:\.\d+)?',value)):raise ValueError('Numeric claim not supported by its quote')
-        verified[field]={'value':value,'quote':quote,'source_url':paper['url'],'method':'LLM-extracted','human_verified':False}
+        verified[field]={'value':value,'quote':quote,'source_url':paper['url'],'source_span':{'start':source.index(quote),'end':source.index(quote)+len(quote),'text_basis':'title + newline + abstract + newline + conflicts'},'method':'LLM-extracted','human_verified':False}
     return verified
 
 class Extractor:

@@ -18,3 +18,19 @@ def published_research(target_id):
         return jsonify(target_id=target_id,monitoring_status='unavailable',last_checked=None,version=0,updates=[]),503
     finally:
         if store:store.close()
+
+@blueprint.get('/api/living-research/status')
+def research_status():
+    store=None
+    try:
+        store=Store()
+        worker=store.get('worker','scheduler',{})
+        age=time.time()-worker.get('heartbeat',0)
+        active=bool(worker) and age<max(900,worker.get('poll_seconds',3600)*2)
+        return jsonify(version='layered-synthesis-v1',scheduler='active' if active else 'not_running',
+            heartbeat=worker.get('heartbeat'),llm_enabled=worker.get('llm_enabled',False),
+            last_run_status=worker.get('last_run_status'),publication_policy='human_review_required')
+    except Exception:
+        return jsonify(scheduler='unavailable'),503
+    finally:
+        if store:store.close()

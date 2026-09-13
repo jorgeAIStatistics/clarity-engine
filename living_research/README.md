@@ -169,3 +169,27 @@ Official source references:
 - NCBI E-utilities: https://www.ncbi.nlm.nih.gov/books/NBK25499/
 - Europe PMC: https://europepmc.org/RestfulWebService
 - ClinicalTrials.gov: https://clinicaltrials.gov/data-about-studies/learn-about-api
+
+### Existing Render service deployment
+
+The root Blueprint and Procfile now start `python production.py`. This supervises
+one threaded Gunicorn process and one scheduler process on the existing service.
+The scheduler starts only with a PostgreSQL DSN; it enables quote extraction only
+when ANTHROPIC_API_KEY is present. Set CLARITY_RESEARCH_ENABLED=0 to disable the
+scheduler independently. No new Render service or subscription is created.
+
+The default policy allows 20 AI calls per run, 100 per UTC day, and 25 due targets
+per hourly pass. All stored intervention and catalog profiles are discovered.
+Conditions remain cross-domain navigation contexts, not independent graded
+profiles. Newly discovered source records do not become published claims until
+an operator approves and publishes the proposal through the CLI.
+
+`GET /api/living-research/status` reports a persisted scheduler heartbeat and the
+last completed run status. A deploy alone is not proof that monitoring is active.
+
+Synthesis module `synthesis.py` assembles threshold-qualified proposals from the
+reviewed baseline plus a direct-relevance candidate. Population layers, per-study
+outcomes and source quotations remain separate. It does not invent pooled
+estimates, change grades or reconstruct unavailable clinical curves. The full
+proposal returned by `proposals` includes this review artifact and audit ID links.
+Source spans use Python string offsets into `source_text(paper)`.

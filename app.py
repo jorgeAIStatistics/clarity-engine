@@ -22,6 +22,7 @@ app.config["MAX_CONTENT_LENGTH"] = 64 * 1024
 # public frontend origin(s). Local Vite origins are allowed for development.
 _raw_origins = os.environ.get("CLARITY_ALLOWED_ORIGINS", "").strip()
 _allowed_origins = [x.strip() for x in _raw_origins.split(",") if x.strip()] or [
+    "https://clarityevidence.com", "https://www.clarityevidence.com",
     "http://localhost:5173", "http://127.0.0.1:5173"
 ]
 CORS(app, resources={r"/api/*": {"origins": _allowed_origins}})

@@ -46,6 +46,7 @@ def main():
                 extractor=Extractor(args.llm,config['max_llm_calls'])
                 try:
                     result=Monitor(store,config,extractor=extractor).run(only=getattr(args,'only',None))
+                    if args.command=='watch':store.put('worker','scheduler',{'heartbeat':time.time(),'poll_seconds':args.poll_seconds,'llm_enabled':args.llm,'last_run_status':result['status']})
                     print(json.dumps(result),flush=True)
                     if args.command=='run' and result['status']!='completed':raise SystemExit(1)
                 except Exception as error:
