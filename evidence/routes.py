@@ -87,3 +87,15 @@ def matcher_feedback():
     except Exception:return jsonify(error='Feedback could not be saved. Please try again.'),503
     finally:
         if store:store.close()
+
+@blueprint.post('/api/research/definition')
+def research_definition():
+    from .matcher import research_input_error
+    from .study_definition import draft
+    body=request.get_json(silent=True)
+    if not isinstance(body,dict) or set(body)!={'text'} or not isinstance(body['text'],str) or not 5<=len(body['text'].strip())<=12000:
+        return jsonify(error='Provide a research abstract, question, PMID or DOI (5–12,000 characters).'),400
+    problem=research_input_error(body['text'])
+    if problem:return jsonify(error=problem),400
+    result=draft(body['text'])
+    response=jsonify(result);response.headers['Cache-Control']='no-store';return response
