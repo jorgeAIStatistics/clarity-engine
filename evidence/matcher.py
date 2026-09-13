@@ -13,9 +13,16 @@ from functools import lru_cache
 from .service import CATALOG
 from .profile import layer_for
 
-VERSION='evidence-matcher-v1'
+VERSION='evidence-matcher-v2-tabular'
 STOP=set('the a an and or of to in for with by as is was were be been on from at this that we our study studies patients results methods abstract introduction'.split())
 CONCEPTS=[('apob','apolipoprotein b'),('hba1c','glycated hemoglobin','glycated haemoglobin','hemoglobin a1c'),('ldl c','ldl cholesterol','low density lipoprotein cholesterol'),('non hdl c','non hdl cholesterol'),('cystatin c','cystatin c based egfr'),('hs crp','high sensitivity c reactive protein'),('psa','prostate specific antigen'),('rct','randomized controlled trial','randomised controlled trial')]
+
+def research_input_error(text):
+    if re.search(r'\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b|\b(?:patient|participant|subject)[ _-]*(?:id|identifier|name)\b|\b(?:mrn|ssn|date[ _-]*of[ _-]*birth|dob|first[ _-]*name|last[ _-]*name|phone[ _-]*number|home[ _-]*address)\b', text, re.I):
+        return 'Patient identifiers or contact fields detected. Use aggregate research content without identifying fields.'
+    if re.search(r'\b(?:my|your)\s+(?:blood|lab|test|medical|health)\s*(?:results?|values?|tests?|records?|report)?\b|\bwhat\s+(?:should|can)\s+i\s+take\b',text,re.I):
+        return 'Personal-health interpretation is outside this tool. Use a study description or aggregate research results.'
+    return ''
 
 def normalize(text):return re.sub(r'[^a-z0-9]+',' ',str(text).lower()).strip()
 def tokens(text):return set(normalize(text).split())-STOP
@@ -58,7 +65,7 @@ def documents(profiles):
                 abstract=html.unescape(re.sub(r'</?(?:h[1-6]|p|div|span|b|i|em|strong|sup|sub|br)\b[^>]*>', ' ',abstract,flags=re.I)).strip()
                 studies[identity]={'id':identity,'title':title,'url':url,'pmid':pmid,'design':source.get('design') or source.get('study_type'),
                     'population':source.get('population'),'n':source.get('n'),'layer':layer_for(source),'entity_ids':[],
-                    '_text':abstract,'_tokens':tokens(title+' '+abstract), 'agreement':'not_assessed','review_status':source.get('review_status','not_recorded')}
+                    '_passages':[f['quote'] for f in source.get('findings',[]) if f.get('quote') and f['quote'] in abstract], '_text':abstract,'_tokens':tokens(title+' '+abstract), 'agreement':'not_assessed','review_status':source.get('review_status','not_recorded')}
             if key not in studies[identity]['entity_ids']:studies[identity]['entity_ids'].append(key)
     counts=Counter(entity_id for s in studies.values() for entity_id in s['entity_ids'])
     for entity in entities:entity['study_count']=counts[entity['id']]
@@ -77,7 +84,8 @@ def _library_index(bucket):
     for key in cache.list_cached():
         p=cache.get(key,max_age_days=100000)
         if isinstance(p,dict) and p.get('name') and p.get('claims') and p['name'] not in seen:
-            profiles.append(p);seen.add(p['name'])
+            from .enrichment import enriched_profile
+            profiles.append(enriched_profile(p));seen.add(p['name'])
     return documents(profiles)
 
 def passage(text,query):
@@ -90,6 +98,7 @@ def passage(text,query):
 
 def match(text,index,limit=8):
     if not isinstance(text,str) or not 20<=len(text.strip())<=12000:raise ValueError('Enter between 20 and 12,000 characters of research text.')
+    if research_input_error(text):raise ValueError(research_input_error(text))
     query=expanded_tokens(text)
     if not query:raise ValueError('Include a research topic or entity name.')
     entities,studies=index;all_docs=entities+studies
@@ -99,7 +108,12 @@ def match(text,index,limit=8):
     entity_matches=[]
     for e in entities:
         exact=[a for a in e['aliases'] if ' '+normalize(a)+' ' in normalized]
+        # EGFR (oncology) and eGFR (kidney function) share spelling, not meaning.
+        oncology=bool(query & {'cancer','nsclc','tumor','mutation','mutated','osimertinib'})
+        renal=bool(query & {'kidney','renal','creatinine','cystatin','glomerular'})
+        if normalize(' '.join(exact))=='egfr' and ((e['id']=='entity:creatinine-egfr' and oncology and not renal) or (e['entity_type']=='precision_oncology' and renal and not oncology)):exact=[]
         value=score(e)+(10 if exact else 0)
+        if e['id']=='entity:creatinine-egfr' and oncology and not renal and not exact:value=0
         if value>0:entity_matches.append((value,e,exact))
     entity_matches.sort(key=lambda r:(-r[0],r[1]['name']))
     selected=entity_matches[:limit]
@@ -111,7 +125,13 @@ def match(text,index,limit=8):
         if overlap and value>0:source_matches.append((value,s))
     source_matches.sort(key=lambda r:(-r[0],r[1]['id']))
     def public(doc):return {k:v for k,v in doc.items() if not k.startswith('_')}
-    results=[{**public(s),'score':round(v,3),'matched_terms':sorted(s['_tokens']&query)[:12],'passage':passage(s['_text'],query)} for v,s in source_matches[:12]]
+    def source_passage(source):
+        quotes=source.get('_passages',[])
+        if not quotes:return passage(source['_text'],query)
+        quote=max(quotes,key=lambda q:len(tokens(q)&query))
+        start=source['_text'].index(quote)
+        return {'text':quote,'start':start,'end':start+len(quote),'basis':'retained quote-backed finding','truncated':False}
+    results=[{**public(s),'score':round(v,3),'matched_terms':sorted(s['_tokens']&query)[:12],'passage':source_passage(s)} for v,s in source_matches[:12]]
     gaps=[]
     if not results:gaps.append('No retained study passages matched. Search the original literature before concluding that evidence is absent.')
     for field,label in [('population','Population'),('n','Sample size')]:

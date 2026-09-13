@@ -13,7 +13,8 @@ def published_research(target_id):
         target=store.get('target',target_id,{})
         published=store.get('published',target_id,{'version':0,'updates':[]})
         pending=store.pending_count(target_id)
-        return jsonify({**published,'updates_pending_review':pending,'target_id':target_id,'last_checked':target.get('last_checked'),'last_attempt':target.get('last_attempt'),'monitoring_status':target.get('last_status','not_started')})
+        state=target.get('last_status') or ('queued' if target.get('enabled') else 'not_scheduled')
+        return jsonify({**published,'updates_pending_review':pending,'target_id':target_id,'last_checked':target.get('last_checked'),'last_attempt':target.get('last_attempt'),'monitoring_status':state})
     except Exception:
         return jsonify(target_id=target_id,monitoring_status='unavailable',last_checked=None,version=0,updates=[]),503
     finally:

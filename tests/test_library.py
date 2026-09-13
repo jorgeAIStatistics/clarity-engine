@@ -11,5 +11,5 @@ class LibraryTests(unittest.TestCase):
         self.assertEqual(len(compounds),1)
         self.assertEqual(compounds[0]['path'],'/compound/example-compound')
         self.assertFalse(compounds[0]['available'])
-        self.assertEqual(result['counts']['biomarker'],12)
+        self.assertEqual(result['counts']['biomarker'],14)
         self.assertEqual(len({e['id'] for e in result['entries']}),len(result['entries']))

@@ -15,6 +15,7 @@ def validate_enrichment(catalog, snapshot):
             seen.add(pmid)
             source=sources[pmid];text=source['abstract']
             if study.get('doi')!=source.get('doi') or study['url']!=f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/':raise ValueError('Source identity mismatch')
+            if study['extraction'].get('source_sha256')!=source['sha256']:raise ValueError('Extraction source hash mismatch')
             if study['abstract']!=text or hashlib.sha256(text.encode()).hexdigest()!=source['sha256']:raise ValueError('Source integrity mismatch')
             if study['review_status']!='automated_appraisal' or study['extraction']['human_verified']:raise ValueError('Enrichment cannot claim human verification')
             if study.get('n') is not None and (isinstance(study['n'],bool) or study['n']<=0):raise ValueError('Invalid sample size')

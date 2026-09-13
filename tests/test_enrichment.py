@@ -27,3 +27,17 @@ class EnrichmentTests(unittest.TestCase):
   from evidence.matcher import expanded_tokens
   t=expanded_tokens('eGFR creatinine kidney function');self.assertIn('glomerular',t);self.assertNotIn('epidermal',t)
   self.assertIn('epidermal',expanded_tokens('EGFR mutated NSCLC'))
+
+ def test_expanded_precision_profiles_have_multiple_sources(self):
+  for id in ['alk-alectinib','brca-olaparib','egfr-adjuvant-osimertinib','lpa']:
+   e=next(e for e in CATALOG['entities'] if e['id']==id)
+   self.assertGreaterEqual(len(e['studies']),2)
+   self.assertTrue(all(s.get('findings') for s in e['studies']))
+ def test_nonstandard_confidence_levels_preserved(self):
+  levels={s['pmid']:[f['effect']['confidence_level'] for f in s.get('findings',[])] for e in CATALOG['entities'] for s in e['studies']}
+  self.assertEqual(levels['32955177'],[99.06,99.12]);self.assertEqual(levels['28501140'],[99.7]);self.assertEqual(levels['37272535'],[95.03,95.03])
+ def test_intervention_overlays_grounded_and_grade_independent(self):
+  from evidence.enrichment import OVERLAYS,enriched_profile
+  self.assertTrue(validate_enrichment({'entities':list(OVERLAYS['profiles'].values())},SNAPSHOT))
+  original={'name':'Creatine','tier':'Original','claims':[]};updated=enriched_profile(original)
+  self.assertEqual(updated['tier'],'Original');self.assertEqual(original['claims'],[]);self.assertTrue(updated['claims'][0]['studies'])

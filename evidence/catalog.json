@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "catalog_version": "2026-09-13-source-enrichment-v1",
+  "catalog_version": "2026-09-13-source-depth-v2",
   "frameworks": {
     "intervention": {
       "question": "Does this intervention help?",
@@ -92,8 +92,8 @@
       "outcomes": [
         {
           "name": "Cardiovascular events",
-          "question_type": "association",
-          "assessment": "Not yet assessed"
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         },
         {
           "name": "Coronary artery disease",
@@ -217,6 +217,70 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": null
+        },
+        {
+          "id": "pmid:30403574",
+          "pmid": "30403574",
+          "doi": "10.1056/nejmoa1801174",
+          "title": "Alirocumab and Cardiovascular Outcomes after Acute Coronary Syndrome.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
+          "year": "2018",
+          "design": "Randomized controlled trial",
+          "population": "Human; 18,924 adults after acute coronary syndrome with elevated LDL-C, non-HDL-C or ApoB despite statins",
+          "n": 18924,
+          "exposure": "Alirocumab 75 mg every 2 weeks; dose adjusted to LDL-C 25–50 mg/dL",
+          "comparator": "Placebo",
+          "abstract": "Background Patients who have had an acute coronary syndrome are at high risk for recurrent ischemic cardiovascular events. We sought to determine whether alirocumab, a human monoclonal antibody to proprotein convertase subtilisin-kexin type 9 (PCSK9), would improve cardiovascular outcomes after an acute coronary syndrome in patients receiving high-intensity statin therapy. Methods We conducted a multicenter, randomized, double-blind, placebo-controlled trial involving 18,924 patients who had an acute coronary syndrome 1 to 12 months earlier, had a low-density lipoprotein (LDL) cholesterol level of at least 70 mg per deciliter (1.8 mmol per liter), a non-high-density lipoprotein cholesterol level of at least 100 mg per deciliter (2.6 mmol per liter), or an apolipoprotein B level of at least 80 mg per deciliter, and were receiving statin therapy at a high-intensity dose or at the maximum tolerated dose. Patients were randomly assigned to receive alirocumab subcutaneously at a dose of 75 mg (9462 patients) or matching placebo (9462 patients) every 2 weeks. The dose of alirocumab was adjusted under blinded conditions to target an LDL cholesterol level of 25 to 50 mg per deciliter (0.6 to 1.3 mmol per liter). The primary end point was a composite of death from coronary heart disease, nonfatal myocardial infarction, fatal or nonfatal ischemic stroke, or unstable angina requiring hospitalization. Results The median duration of follow-up was 2.8 years. A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001). A total of 334 patients (3.5%) in the alirocumab group and 392 patients (4.1%) in the placebo group died (hazard ratio, 0.85; 95% CI, 0.73 to 0.98). The absolute benefit of alirocumab with respect to the composite primary end point was greater among patients who had a baseline LDL cholesterol level of 100 mg or more per deciliter than among patients who had a lower baseline level. The incidence of adverse events was similar in the two groups, with the exception of local injection-site reactions (3.8% in the alirocumab group vs. 2.1% in the placebo group). Conclusions Among patients who had a previous acute coronary syndrome and who were receiving high-intensity statin therapy, the risk of recurrent ischemic cardiovascular events was lower among those who received alirocumab than among those who received placebo. (Funded by Sanofi and Regeneron Pharmaceuticals; ODYSSEY OUTCOMES ClinicalTrials.gov number, NCT01663402 .).",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.85,
+                "lower": 0.78,
+                "upper": 0.93,
+                "confidence_level": 95,
+                "units": "median 2.8-year follow-up; lipid markers were eligibility criteria",
+                "origin": "reported"
+              },
+              "quote": "A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001).",
+              "source_span": {
+                "text": "A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001).",
+                "start": 1469,
+                "end": 1685,
+                "source_id": "pmid:30403574",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001).",
+          "population_span": {
+            "text": "We conducted a multicenter, randomized, double-blind, placebo-controlled trial involving 18,924 patients who had an acute coronary syndrome 1 to 12 months earlier, had a low-density lipoprotein (LDL) cholesterol level of at least 70 mg per deciliter (1.8 mmol per liter), a non-high-density lipoprotein cholesterol level of at least 100 mg per deciliter (2.6 mmol per liter), or an apolipoprotein B level of at least 80 mg per deciliter, and were receiving statin therapy at a high-intensity dose or at the maximum tolerated dose.",
+            "start": 384,
+            "end": 914,
+            "source_id": "pmid:30403574",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "The median duration of follow-up was 2.8 years.",
+            "start": 1421,
+            "end": 1468,
+            "source_id": "pmid:30403574",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "cdc5d8625f9e2cc7ccc7269dab402428879f54710aca730fba915bce7c6209fe"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ODYSSEY OUTCOMES"
         }
       ],
       "sources": [
@@ -235,6 +299,12 @@
         {
           "title": "Role of apolipoprotein B in the clinical management of cardiovascular risk in adults: An Expert Clinical Consensus from the National Lipid Association.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/39256087/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Alirocumab and Cardiovascular Outcomes after Acute Coronary Syndrome.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -269,7 +339,9 @@
       "related": [
         "ldl-c",
         "cac",
-        "non-hdl-c"
+        "non-hdl-c",
+        "lpa",
+        "triglycerides"
       ],
       "changing_marker": "Changes in the marker and changes in cardiovascular events are separate endpoints. Assess intervention trials before attributing clinical benefit to marker reduction.",
       "measurement": {
@@ -289,7 +361,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "3 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -328,8 +400,8 @@
         },
         {
           "name": "Cardiovascular events",
-          "question_type": "association",
-          "assessment": "Not yet assessed"
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         },
         {
           "name": "All-cause mortality",
@@ -550,6 +622,198 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "JUPITER"
+        },
+        {
+          "id": "pmid:26039521",
+          "pmid": "26039521",
+          "doi": "10.1056/nejmoa1410489",
+          "title": "Ezetimibe Added to Statin Therapy after Acute Coronary Syndromes.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26039521/",
+          "year": "2015",
+          "design": "Randomized controlled trial",
+          "population": "Human; 18,144 adults hospitalized for recent acute coronary syndrome",
+          "n": 18144,
+          "exposure": "Simvastatin 40 mg plus ezetimibe 10 mg daily",
+          "comparator": "Simvastatin 40 mg plus placebo",
+          "abstract": "Background Statin therapy reduces low-density lipoprotein (LDL) cholesterol levels and the risk of cardiovascular events, but whether the addition of ezetimibe, a nonstatin drug that reduces intestinal cholesterol absorption, can reduce the rate of cardiovascular events further is not known. Methods We conducted a double-blind, randomized trial involving 18,144 patients who had been hospitalized for an acute coronary syndrome within the preceding 10 days and had LDL cholesterol levels of 50 to 100 mg per deciliter (1.3 to 2.6 mmol per liter) if they were receiving lipid-lowering therapy or 50 to 125 mg per deciliter (1.3 to 3.2 mmol per liter) if they were not receiving lipid-lowering therapy. The combination of simvastatin (40 mg) and ezetimibe (10 mg) (simvastatin-ezetimibe) was compared with simvastatin (40 mg) and placebo (simvastatin monotherapy). The primary end point was a composite of cardiovascular death, nonfatal myocardial infarction, unstable angina requiring rehospitalization, coronary revascularization (≥30 days after randomization), or nonfatal stroke. The median follow-up was 6 years. Results The median time-weighted average LDL cholesterol level during the study was 53.7 mg per deciliter (1.4 mmol per liter) in the simvastatin-ezetimibe group, as compared with 69.5 mg per deciliter (1.8 mmol per liter) in the simvastatin-monotherapy group (P<0.001). The Kaplan-Meier event rate for the primary end point at 7 years was 32.7% in the simvastatin-ezetimibe group, as compared with 34.7% in the simvastatin-monotherapy group (absolute risk difference, 2.0 percentage points; hazard ratio, 0.936; 95% confidence interval, 0.89 to 0.99; P=0.016). Rates of prespecified muscle, gallbladder, and hepatic adverse effects and cancer were similar in the two groups. Conclusions When added to statin therapy, ezetimibe resulted in incremental lowering of LDL cholesterol levels and improved cardiovascular outcomes. Moreover, lowering LDL cholesterol to levels below previous targets provided additional benefit. (Funded by Merck; IMPROVE-IT ClinicalTrials.gov number, NCT00202878.).",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.936,
+                "lower": 0.89,
+                "upper": 0.99,
+                "confidence_level": 95,
+                "units": "7-year event analysis",
+                "origin": "reported"
+              },
+              "quote": "The Kaplan-Meier event rate for the primary end point at 7 years was 32.7% in the simvastatin-ezetimibe group, as compared with 34.7% in the simvastatin-monotherapy group (absolute risk difference, 2.0 percentage points; hazard ratio, 0.936; 95% confidence interval, 0.89 to 0.99; P=0.016).",
+              "source_span": {
+                "text": "The Kaplan-Meier event rate for the primary end point at 7 years was 32.7% in the simvastatin-ezetimibe group, as compared with 34.7% in the simvastatin-monotherapy group (absolute risk difference, 2.0 percentage points; hazard ratio, 0.936; 95% confidence interval, 0.89 to 0.99; P=0.016).",
+                "start": 1389,
+                "end": 1679,
+                "source_id": "pmid:26039521",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The Kaplan-Meier event rate for the primary end point at 7 years was 32.7% in the simvastatin-ezetimibe group, as compared with 34.7% in the simvastatin-monotherapy group (absolute risk difference, 2.0 percentage points; hazard ratio, 0.936; 95% confidence interval, 0.89 to 0.99; P=0.016).",
+          "population_span": {
+            "text": "We conducted a double-blind, randomized trial involving 18,144 patients who had been hospitalized for an acute coronary syndrome within the preceding 10 days and had LDL cholesterol levels of 50 to 100 mg per deciliter (1.3 to 2.6 mmol per liter) if they were receiving lipid-lowering therapy or 50 to 125 mg per deciliter (1.3 to 3.2 mmol per liter) if they were not receiving lipid-lowering therapy.",
+            "start": 301,
+            "end": 702,
+            "source_id": "pmid:26039521",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "The median follow-up was 6 years.",
+            "start": 1084,
+            "end": 1117,
+            "source_id": "pmid:26039521",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "ee268b3813f2f3d02d4dd8f4b80c3f6a2d211f6c381867ac88d1382529ebbdbe"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "IMPROVE-IT"
+        },
+        {
+          "id": "pmid:28304224",
+          "pmid": "28304224",
+          "doi": "10.1056/nejmoa1615664",
+          "title": "Evolocumab and Clinical Outcomes in Patients with Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28304224/",
+          "year": "2017",
+          "design": "Randomized controlled trial",
+          "population": "Human; 27,564 statin-treated adults with ASCVD and LDL-C ≥70 mg/dL",
+          "n": 27564,
+          "exposure": "Evolocumab 140 mg every 2 weeks or 420 mg monthly",
+          "comparator": "Placebo",
+          "abstract": "Background Evolocumab is a monoclonal antibody that inhibits proprotein convertase subtilisin-kexin type 9 (PCSK9) and lowers low-density lipoprotein (LDL) cholesterol levels by approximately 60%. Whether it prevents cardiovascular events is uncertain. Methods We conducted a randomized, double-blind, placebo-controlled trial involving 27,564 patients with atherosclerotic cardiovascular disease and LDL cholesterol levels of 70 mg per deciliter (1.8 mmol per liter) or higher who were receiving statin therapy. Patients were randomly assigned to receive evolocumab (either 140 mg every 2 weeks or 420 mg monthly) or matching placebo as subcutaneous injections. The primary efficacy end point was the composite of cardiovascular death, myocardial infarction, stroke, hospitalization for unstable angina, or coronary revascularization. The key secondary efficacy end point was the composite of cardiovascular death, myocardial infarction, or stroke. The median duration of follow-up was 2.2 years. Results At 48 weeks, the least-squares mean percentage reduction in LDL cholesterol levels with evolocumab, as compared with placebo, was 59%, from a median baseline value of 92 mg per deciliter (2.4 mmol per liter) to 30 mg per deciliter (0.78 mmol per liter) (P<0.001). Relative to placebo, evolocumab treatment significantly reduced the risk of the primary end point (1344 patients [9.8%] vs. 1563 patients [11.3%]; hazard ratio, 0.85; 95% confidence interval [CI], 0.79 to 0.92; P<0.001) and the key secondary end point (816 [5.9%] vs. 1013 [7.4%]; hazard ratio, 0.80; 95% CI, 0.73 to 0.88; P<0.001). The results were consistent across key subgroups, including the subgroup of patients in the lowest quartile for baseline LDL cholesterol levels (median, 74 mg per deciliter [1.9 mmol per liter]). There was no significant difference between the study groups with regard to adverse events (including new-onset diabetes and neurocognitive events), with the exception of injection-site reactions, which were more common with evolocumab (2.1% vs. 1.6%). Conclusions In our trial, inhibition of PCSK9 with evolocumab on a background of statin therapy lowered LDL cholesterol levels to a median of 30 mg per deciliter (0.78 mmol per liter) and reduced the risk of cardiovascular events. These findings show that patients with atherosclerotic cardiovascular disease benefit from lowering of LDL cholesterol levels below current targets. (Funded by Amgen; FOURIER ClinicalTrials.gov number, NCT01764633 .).",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.85,
+                "lower": 0.79,
+                "upper": 0.92,
+                "confidence_level": 95,
+                "units": "median 2.2-year follow-up",
+                "origin": "reported"
+              },
+              "quote": "Relative to placebo, evolocumab treatment significantly reduced the risk of the primary end point (1344 patients [9.8%] vs. 1563 patients [11.3%]; hazard ratio, 0.85; 95% confidence interval [CI], 0.79 to 0.92; P<0.001) and the key secondary end point (816 [5.9%] vs. 1013 [7.4%]; hazard ratio, 0.80; 95% CI, 0.73 to 0.88; P<0.001).",
+              "source_span": {
+                "text": "Relative to placebo, evolocumab treatment significantly reduced the risk of the primary end point (1344 patients [9.8%] vs. 1563 patients [11.3%]; hazard ratio, 0.85; 95% confidence interval [CI], 0.79 to 0.92; P<0.001) and the key secondary end point (816 [5.9%] vs. 1013 [7.4%]; hazard ratio, 0.80; 95% CI, 0.73 to 0.88; P<0.001).",
+                "start": 1270,
+                "end": 1602,
+                "source_id": "pmid:28304224",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "Relative to placebo, evolocumab treatment significantly reduced the risk of the primary end point (1344 patients [9.8%] vs. 1563 patients [11.3%]; hazard ratio, 0.85; 95% confidence interval [CI], 0.79 to 0.92; P<0.001) and the key secondary end point (816 [5.9%] vs. 1013 [7.4%]; hazard ratio, 0.80; 95% CI, 0.73 to 0.88; P<0.001).",
+          "population_span": {
+            "text": "We conducted a randomized, double-blind, placebo-controlled trial involving 27,564 patients with atherosclerotic cardiovascular disease and LDL cholesterol levels of 70 mg per deciliter (1.8 mmol per liter) or higher who were receiving statin therapy.",
+            "start": 261,
+            "end": 512,
+            "source_id": "pmid:28304224",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "The median duration of follow-up was 2.2 years.",
+            "start": 950,
+            "end": 997,
+            "source_id": "pmid:28304224",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "4b1f658b2df49279afbcaec390f6f2c5026cc8d331081ea6ae6a884607fef802"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "FOURIER"
+        },
+        {
+          "id": "pmid:30403574",
+          "pmid": "30403574",
+          "doi": "10.1056/nejmoa1801174",
+          "title": "Alirocumab and Cardiovascular Outcomes after Acute Coronary Syndrome.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
+          "year": "2018",
+          "design": "Randomized controlled trial",
+          "population": "Human; 18,924 adults after acute coronary syndrome with elevated LDL-C, non-HDL-C or ApoB despite statins",
+          "n": 18924,
+          "exposure": "Alirocumab 75 mg every 2 weeks; dose adjusted to LDL-C 25–50 mg/dL",
+          "comparator": "Placebo",
+          "abstract": "Background Patients who have had an acute coronary syndrome are at high risk for recurrent ischemic cardiovascular events. We sought to determine whether alirocumab, a human monoclonal antibody to proprotein convertase subtilisin-kexin type 9 (PCSK9), would improve cardiovascular outcomes after an acute coronary syndrome in patients receiving high-intensity statin therapy. Methods We conducted a multicenter, randomized, double-blind, placebo-controlled trial involving 18,924 patients who had an acute coronary syndrome 1 to 12 months earlier, had a low-density lipoprotein (LDL) cholesterol level of at least 70 mg per deciliter (1.8 mmol per liter), a non-high-density lipoprotein cholesterol level of at least 100 mg per deciliter (2.6 mmol per liter), or an apolipoprotein B level of at least 80 mg per deciliter, and were receiving statin therapy at a high-intensity dose or at the maximum tolerated dose. Patients were randomly assigned to receive alirocumab subcutaneously at a dose of 75 mg (9462 patients) or matching placebo (9462 patients) every 2 weeks. The dose of alirocumab was adjusted under blinded conditions to target an LDL cholesterol level of 25 to 50 mg per deciliter (0.6 to 1.3 mmol per liter). The primary end point was a composite of death from coronary heart disease, nonfatal myocardial infarction, fatal or nonfatal ischemic stroke, or unstable angina requiring hospitalization. Results The median duration of follow-up was 2.8 years. A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001). A total of 334 patients (3.5%) in the alirocumab group and 392 patients (4.1%) in the placebo group died (hazard ratio, 0.85; 95% CI, 0.73 to 0.98). The absolute benefit of alirocumab with respect to the composite primary end point was greater among patients who had a baseline LDL cholesterol level of 100 mg or more per deciliter than among patients who had a lower baseline level. The incidence of adverse events was similar in the two groups, with the exception of local injection-site reactions (3.8% in the alirocumab group vs. 2.1% in the placebo group). Conclusions Among patients who had a previous acute coronary syndrome and who were receiving high-intensity statin therapy, the risk of recurrent ischemic cardiovascular events was lower among those who received alirocumab than among those who received placebo. (Funded by Sanofi and Regeneron Pharmaceuticals; ODYSSEY OUTCOMES ClinicalTrials.gov number, NCT01663402 .).",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.85,
+                "lower": 0.78,
+                "upper": 0.93,
+                "confidence_level": 95,
+                "units": "median 2.8-year follow-up; lipid markers were eligibility criteria",
+                "origin": "reported"
+              },
+              "quote": "A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001).",
+              "source_span": {
+                "text": "A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001).",
+                "start": 1469,
+                "end": 1685,
+                "source_id": "pmid:30403574",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001).",
+          "population_span": {
+            "text": "We conducted a multicenter, randomized, double-blind, placebo-controlled trial involving 18,924 patients who had an acute coronary syndrome 1 to 12 months earlier, had a low-density lipoprotein (LDL) cholesterol level of at least 70 mg per deciliter (1.8 mmol per liter), a non-high-density lipoprotein cholesterol level of at least 100 mg per deciliter (2.6 mmol per liter), or an apolipoprotein B level of at least 80 mg per deciliter, and were receiving statin therapy at a high-intensity dose or at the maximum tolerated dose.",
+            "start": 384,
+            "end": 914,
+            "source_id": "pmid:30403574",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "The median duration of follow-up was 2.8 years.",
+            "start": 1421,
+            "end": 1468,
+            "source_id": "pmid:30403574",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "cdc5d8625f9e2cc7ccc7269dab402428879f54710aca730fba915bce7c6209fe"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ODYSSEY OUTCOMES"
         }
       ],
       "sources": [
@@ -574,6 +838,24 @@
         {
           "title": "Rosuvastatin to prevent vascular events in men and women with elevated C-reactive protein.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/18997196/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Ezetimibe Added to Statin Therapy after Acute Coronary Syndromes.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26039521/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Evolocumab and Clinical Outcomes in Patients with Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28304224/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Alirocumab and Cardiovascular Outcomes after Acute Coronary Syndrome.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -607,7 +889,9 @@
       },
       "related": [
         "apob",
-        "non-hdl-c"
+        "non-hdl-c",
+        "lpa",
+        "triglycerides"
       ],
       "changing_marker": "Evaluate clinical outcomes from the specific lipid-lowering intervention; do not infer the size of benefit from a laboratory change alone.",
       "measurement": {
@@ -628,7 +912,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "6 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -677,6 +961,16 @@
         },
         {
           "name": "Specificity for diabetes",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Incident diabetes — ARIC",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Coronary heart disease — ARIC",
           "question_type": "study_specific",
           "assessment": "Automated extraction; appraisal pending"
         }
@@ -766,6 +1060,91 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "HbA1c-accuracy-2020"
+        },
+        {
+          "id": "pmid:20200384",
+          "pmid": "20200384",
+          "doi": "10.1056/nejmoa0908359",
+          "title": "Glycated hemoglobin, diabetes, and cardiovascular risk in nondiabetic adults.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20200384/",
+          "year": "2010",
+          "design": "Prospective cohort",
+          "population": "Human; 11,092 Black or White ARIC adults without diabetes or cardiovascular disease",
+          "n": 11092,
+          "exposure": "HbA1c 6.0% to <6.5%",
+          "comparator": "HbA1c 5.0% to <5.5%; multivariable adjustment",
+          "abstract": "Background Fasting glucose is the standard measure used to diagnose diabetes in the United States. Recently, glycated hemoglobin was also recommended for this purpose. Methods We compared the prognostic value of glycated hemoglobin and fasting glucose for identifying adults at risk for diabetes or cardiovascular disease. We measured glycated hemoglobin in whole-blood samples from 11,092 black or white adults who did not have a history of diabetes or cardiovascular disease and who attended the second visit (occurring in the 1990-1992 period) of the Atherosclerosis Risk in Communities (ARIC) study. Results The glycated hemoglobin value at baseline was associated with newly diagnosed diabetes and cardiovascular outcomes. For glycated hemoglobin values of less than 5.0%, 5.0 to less than 5.5%, 5.5 to less than 6.0%, 6.0 to less than 6.5%, and 6.5% or greater, the multivariable-adjusted hazard ratios (with 95% confidence intervals) for diagnosed diabetes were 0.52 (0.40 to 0.69), 1.00 (reference), 1.86 (1.67 to 2.08), 4.48 (3.92 to 5.13), and 16.47 (14.22 to 19.08), respectively. For coronary heart disease, the hazard ratios were 0.96 (0.74 to 1.24), 1.00 (reference), 1.23 (1.07 to 1.41), 1.78 (1.48 to 2.15), and 1.95 (1.53 to 2.48), respectively. The hazard ratios for stroke were similar. In contrast, glycated hemoglobin and death from any cause were found to have a J-shaped association curve. All these associations remained significant after adjustment for the baseline fasting glucose level. The association between the fasting glucose levels and the risk of cardiovascular disease or death from any cause was not significant in models with adjustment for all covariates as well as glycated hemoglobin. For coronary heart disease, measures of risk discrimination showed significant improvement when glycated hemoglobin was added to models including fasting glucose. Conclusions In this community-based population of nondiabetic adults, glycated hemoglobin was similarly associated with a risk of diabetes and more strongly associated with risks of cardiovascular disease and death from any cause as compared with fasting glucose. These data add to the evidence supporting the use of glycated hemoglobin as a diagnostic test for diabetes.",
+          "findings": [
+            {
+              "outcome": "Incident diabetes — ARIC",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 4.48,
+                "lower": 3.92,
+                "upper": 5.13,
+                "confidence_level": 95,
+                "units": "category-specific association",
+                "origin": "reported"
+              },
+              "quote": "For glycated hemoglobin values of less than 5.0%, 5.0 to less than 5.5%, 5.5 to less than 6.0%, 6.0 to less than 6.5%, and 6.5% or greater, the multivariable-adjusted hazard ratios (with 95% confidence intervals) for diagnosed diabetes were 0.52 (0.40 to 0.69), 1.00 (reference), 1.86 (1.67 to 2.08), 4.48 (3.92 to 5.13), and 16.47 (14.22 to 19.08), respectively.",
+              "source_span": {
+                "text": "For glycated hemoglobin values of less than 5.0%, 5.0 to less than 5.5%, 5.5 to less than 6.0%, 6.0 to less than 6.5%, and 6.5% or greater, the multivariable-adjusted hazard ratios (with 95% confidence intervals) for diagnosed diabetes were 0.52 (0.40 to 0.69), 1.00 (reference), 1.86 (1.67 to 2.08), 4.48 (3.92 to 5.13), and 16.47 (14.22 to 19.08), respectively.",
+                "start": 728,
+                "end": 1091,
+                "source_id": "pmid:20200384",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Coronary heart disease — ARIC",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 1.78,
+                "lower": 1.48,
+                "upper": 2.15,
+                "confidence_level": 95,
+                "units": "category-specific association",
+                "origin": "reported"
+              },
+              "quote": "For glycated hemoglobin values of less than 5.0%, 5.0 to less than 5.5%, 5.5 to less than 6.0%, 6.0 to less than 6.5%, and 6.5% or greater, the multivariable-adjusted hazard ratios (with 95% confidence intervals) for diagnosed diabetes were 0.52 (0.40 to 0.69), 1.00 (reference), 1.86 (1.67 to 2.08), 4.48 (3.92 to 5.13), and 16.47 (14.22 to 19.08), respectively. For coronary heart disease, the hazard ratios were 0.96 (0.74 to 1.24), 1.00 (reference), 1.23 (1.07 to 1.41), 1.78 (1.48 to 2.15), and 1.95 (1.53 to 2.48), respectively.",
+              "source_span": {
+                "text": "For glycated hemoglobin values of less than 5.0%, 5.0 to less than 5.5%, 5.5 to less than 6.0%, 6.0 to less than 6.5%, and 6.5% or greater, the multivariable-adjusted hazard ratios (with 95% confidence intervals) for diagnosed diabetes were 0.52 (0.40 to 0.69), 1.00 (reference), 1.86 (1.67 to 2.08), 4.48 (3.92 to 5.13), and 16.47 (14.22 to 19.08), respectively. For coronary heart disease, the hazard ratios were 0.96 (0.74 to 1.24), 1.00 (reference), 1.23 (1.07 to 1.41), 1.78 (1.48 to 2.15), and 1.95 (1.53 to 2.48), respectively.",
+                "start": 728,
+                "end": 1262,
+                "source_id": "pmid:20200384",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "For glycated hemoglobin values of less than 5.0%, 5.0 to less than 5.5%, 5.5 to less than 6.0%, 6.0 to less than 6.5%, and 6.5% or greater, the multivariable-adjusted hazard ratios (with 95% confidence intervals) for diagnosed diabetes were 0.52 (0.40 to 0.69), 1.00 (reference), 1.86 (1.67 to 2.08), 4.48 (3.92 to 5.13), and 16.47 (14.22 to 19.08), respectively.",
+          "population_span": {
+            "text": "We measured glycated hemoglobin in whole-blood samples from 11,092 black or white adults who did not have a history of diabetes or cardiovascular disease and who attended the second visit (occurring in the 1990-1992 period) of the Atherosclerosis Risk in Communities (ARIC) study.",
+            "start": 323,
+            "end": 603,
+            "source_id": "pmid:20200384",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "We measured glycated hemoglobin in whole-blood samples from 11,092 black or white adults who did not have a history of diabetes or cardiovascular disease and who attended the second visit (occurring in the 1990-1992 period) of the Atherosclerosis Risk in Communities (ARIC) study.",
+            "start": 323,
+            "end": 603,
+            "source_id": "pmid:20200384",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "b539d065ffc824a32a2f54d3721be2ec196ad06156388533eb046eff5cdd5e5a"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ARIC"
         }
       ],
       "sources": [
@@ -778,6 +1157,12 @@
         {
           "title": "Diagnostic accuracy of tests for type 2 diabetes and prediabetes: A systematic review and meta-analysis.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/33216783/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Glycated hemoglobin, diabetes, and cardiovascular risk in nondiabetic adults.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20200384/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -831,7 +1216,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -1007,7 +1392,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ]
@@ -1194,6 +1579,16 @@
           "name": "Total fractures",
           "question_type": "study_specific",
           "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Invasive cancer",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Major cardiovascular events",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
       "studies": [
@@ -1260,6 +1655,91 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "VITAL"
+        },
+        {
+          "id": "pmid:30415629",
+          "pmid": "30415629",
+          "doi": "10.1056/nejmoa1809944",
+          "title": "Vitamin D Supplements and Prevention of Cancer and Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30415629/",
+          "year": "2019",
+          "design": "Randomized controlled trial",
+          "population": "Human; 25,871 men ≥50 and women ≥55 in the United States",
+          "n": 25871,
+          "exposure": "Vitamin D3 2,000 IU daily",
+          "comparator": "Placebo",
+          "abstract": "Background It is unclear whether supplementation with vitamin D reduces the risk of cancer or cardiovascular disease, and data from randomized trials are limited. Methods We conducted a nationwide, randomized, placebo-controlled trial, with a two-by-two factorial design, of vitamin D 3 (cholecalciferol) at a dose of 2000 IU per day and marine n-3 (also called omega-3) fatty acids at a dose of 1 g per day for the prevention of cancer and cardiovascular disease among men 50 years of age or older and women 55 years of age or older in the United States. Primary end points were invasive cancer of any type and major cardiovascular events (a composite of myocardial infarction, stroke, or death from cardiovascular causes). Secondary end points included site-specific cancers, death from cancer, and additional cardiovascular events. This article reports the results of the comparison of vitamin D with placebo. Results A total of 25,871 participants, including 5106 black participants, underwent randomization. Supplementation with vitamin D was not associated with a lower risk of either of the primary end points. During a median follow-up of 5.3 years, cancer was diagnosed in 1617 participants (793 in the vitamin D group and 824 in the placebo group; hazard ratio, 0.96; 95% confidence interval [CI], 0.88 to 1.06; P=0.47). A major cardiovascular event occurred in 805 participants (396 in the vitamin D group and 409 in the placebo group; hazard ratio, 0.97; 95% CI, 0.85 to 1.12; P=0.69). In the analyses of secondary end points, the hazard ratios were as follows: for death from cancer (341 deaths), 0.83 (95% CI, 0.67 to 1.02); for breast cancer, 1.02 (95% CI, 0.79 to 1.31); for prostate cancer, 0.88 (95% CI, 0.72 to 1.07); for colorectal cancer, 1.09 (95% CI, 0.73 to 1.62); for the expanded composite end point of major cardiovascular events plus coronary revascularization, 0.96 (95% CI, 0.86 to 1.08); for myocardial infarction, 0.96 (95% CI, 0.78 to 1.19); for stroke, 0.95 (95% CI, 0.76 to 1.20); and for death from cardiovascular causes, 1.11 (95% CI, 0.88 to 1.40). In the analysis of death from any cause (978 deaths), the hazard ratio was 0.99 (95% CI, 0.87 to 1.12). No excess risks of hypercalcemia or other adverse events were identified. Conclusions Supplementation with vitamin D did not result in a lower incidence of invasive cancer or cardiovascular events than placebo. (Funded by the National Institutes of Health and others; VITAL ClinicalTrials.gov number, NCT01169259 .).",
+          "findings": [
+            {
+              "outcome": "Invasive cancer",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.96,
+                "lower": 0.88,
+                "upper": 1.06,
+                "confidence_level": 95,
+                "units": "median 5.3 years",
+                "origin": "reported"
+              },
+              "quote": "During a median follow-up of 5.3 years, cancer was diagnosed in 1617 participants (793 in the vitamin D group and 824 in the placebo group; hazard ratio, 0.96; 95% confidence interval [CI], 0.88 to 1.06; P=0.47).",
+              "source_span": {
+                "text": "During a median follow-up of 5.3 years, cancer was diagnosed in 1617 participants (793 in the vitamin D group and 824 in the placebo group; hazard ratio, 0.96; 95% confidence interval [CI], 0.88 to 1.06; P=0.47).",
+                "start": 1118,
+                "end": 1330,
+                "source_id": "pmid:30415629",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Major cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.97,
+                "lower": 0.85,
+                "upper": 1.12,
+                "confidence_level": 95,
+                "units": "median 5.3 years",
+                "origin": "reported"
+              },
+              "quote": "A major cardiovascular event occurred in 805 participants (396 in the vitamin D group and 409 in the placebo group; hazard ratio, 0.97; 95% CI, 0.85 to 1.12; P=0.69).",
+              "source_span": {
+                "text": "A major cardiovascular event occurred in 805 participants (396 in the vitamin D group and 409 in the placebo group; hazard ratio, 0.97; 95% CI, 0.85 to 1.12; P=0.69).",
+                "start": 1331,
+                "end": 1497,
+                "source_id": "pmid:30415629",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "During a median follow-up of 5.3 years, cancer was diagnosed in 1617 participants (793 in the vitamin D group and 824 in the placebo group; hazard ratio, 0.96; 95% confidence interval [CI], 0.88 to 1.06; P=0.47).",
+          "population_span": {
+            "text": "We conducted a nationwide, randomized, placebo-controlled trial, with a two-by-two factorial design, of vitamin D 3 (cholecalciferol) at a dose of 2000 IU per day and marine n-3 (also called omega-3) fatty acids at a dose of 1 g per day for the prevention of cancer and cardiovascular disease among men 50 years of age or older and women 55 years of age or older in the United States.",
+            "start": 171,
+            "end": 555,
+            "source_id": "pmid:30415629",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "This article reports the results of the comparison of vitamin D with placebo.",
+            "start": 835,
+            "end": 912,
+            "source_id": "pmid:30415629",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "423ee7de5ea02d3307d0d607bcb10de14526a45f8c68819cd2039ea8639979b5"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "VITAL"
         }
       ],
       "sources": [
@@ -1272,6 +1752,12 @@
         {
           "title": "Supplemental Vitamin D and Incident Fractures in Midlife and Older Adults.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/35939577/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Vitamin D Supplements and Prevention of Cancer and Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30415629/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -1320,7 +1806,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -1548,7 +2034,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -1823,7 +2309,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ]
@@ -1996,7 +2482,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ]
@@ -2127,7 +2613,8 @@
         }
       },
       "related": [
-        "apob"
+        "apob",
+        "non-hdl-c"
       ],
       "test_performance": {
         "sensitivity": null,
@@ -2143,7 +2630,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ]
@@ -2365,7 +2852,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ]
@@ -2715,7 +3202,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ]
@@ -2963,7 +3450,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -3021,13 +3508,13 @@
       "outcomes": [
         {
           "name": "Disease-free survival",
-          "question_type": "treatment_response",
-          "assessment": "Study-specific summary; full appraisal pending"
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         },
         {
           "name": "Overall survival",
-          "question_type": "treatment_response",
-          "assessment": "Study-specific summary; full appraisal pending"
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
       "studies": [
@@ -3094,6 +3581,91 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "HERA"
+        },
+        {
+          "id": "pmid:28215665",
+          "pmid": "28215665",
+          "doi": "10.1016/s0140-6736(16)32616-2",
+          "title": "11 years' follow-up of trastuzumab after adjuvant chemotherapy in HER2-positive early breast cancer: final analysis of the HERceptin Adjuvant (HERA) trial.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28215665/",
+          "year": "2017",
+          "design": "Randomized controlled trial",
+          "population": "Human; 5,099 intention-to-treat participants with HER2-positive early breast cancer across three groups",
+          "n": 5099,
+          "exposure": "One year trastuzumab: 8 mg/kg loading then 6 mg/kg every 3 weeks",
+          "comparator": "Observation",
+          "abstract": "Background Clinical trials have shown that trastuzumab, a recombinant monoclonal antibody against HER2 receptor, significantly improves overall survival and disease-free survival in women with HER2-positive early breast cancer, but long-term follow-up data are needed. We report the results of comparing observation with two durations of trastuzumab treatment at a median follow-up of 11 years, for patients enrolled in the HERA (HERceptin Adjuvant) trial. Methods HERA (BIG 1-01) is an international, multicentre, open-label, phase 3 randomised trial of 5102 women with HER2-positive early breast cancer, who were enrolled from hospitals in 39 countries between Dec 7, 2001, and June 20, 2005. After completion of all primary therapy (including, surgery, chemotherapy, and radiotherapy as indicated), patients were randomly assigned (1:1:1) to receive trastuzumab for 1 year (once at 8 mg/kg of bodyweight intravenously, then 6 mg/kg once every 3 weeks) or for 2 years (with the same dose schedule), or to the observation group. Primary endpoint is disease-free survival, and analyses are in the intention-to-treat population. Hazard ratios (HRs) were estimated from Cox models, and survival curves were estimated by the Kaplan-Meier method. Comparison of 2 years versus 1 year of trastuzumab is based on 366-day landmark analyses. This study is registered with ClinicalTrials.gov (NCT00045032). Findings Of the 5102 women randomly assigned in the HERA trial, three patients had no evidence of having provided written informed consent to participate. We followed up the intention-to-treat population of 5099 patients (1697 in observation, 1702 in 1-year trastuzumab, and 1700 in 2-years trastuzumab groups). After a median follow-up of 11 years (IQR 10·09-11·53), random assignment to 1 year of trastuzumab significantly reduced the risk of a disease-free survival event (HR 0·76, 95% CI 0·68-0·86) and death (0·74, 0·64-0·86) compared with observation. 2 years of adjuvant trastuzumab did not improve disease free-survival outcomes compared with 1 year of this drug (HR 1·02, 95% CI 0·89-1·17). Estimates of 10-year disease-free survival were 63% for observation, 69% for 1 year of trastuzumab, and 69% for 2 years of trastuzumab. 884 (52%) patients assigned to the observation group selectively crossed over to receive trastuzumab. Cardiac toxicity remained low in all groups and occurred mostly during the treatment phase. The incidence of secondary cardiac endpoints was 122 (7·3%) in the 2-years trastuzumab group, 74 (4·4%) in the 1-year trastuzumab group, and 15 (0·9%) in the observation group. Interpretation 1 year of adjuvant trastuzumab after chemotherapy for patients with HER2-positive early breast cancer significantly improves long-term disease-free survival, compared with observation. 2 years of trastuzumab had no additional benefit. Funding F Hoffmann-La Roche (Roche).",
+          "findings": [
+            {
+              "outcome": "Disease-free survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.76,
+                "lower": 0.68,
+                "upper": 0.86,
+                "confidence_level": 95,
+                "units": "one-year treatment comparison",
+                "origin": "reported"
+              },
+              "quote": "After a median follow-up of 11 years (IQR 10·09-11·53), random assignment to 1 year of trastuzumab significantly reduced the risk of a disease-free survival event (HR 0·76, 95% CI 0·68-0·86) and death (0·74, 0·64-0·86) compared with observation.",
+              "source_span": {
+                "text": "After a median follow-up of 11 years (IQR 10·09-11·53), random assignment to 1 year of trastuzumab significantly reduced the risk of a disease-free survival event (HR 0·76, 95% CI 0·68-0·86) and death (0·74, 0·64-0·86) compared with observation.",
+                "start": 1709,
+                "end": 1954,
+                "source_id": "pmid:28215665",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Overall survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.74,
+                "lower": 0.64,
+                "upper": 0.86,
+                "confidence_level": 95,
+                "units": "one-year treatment comparison",
+                "origin": "reported"
+              },
+              "quote": "After a median follow-up of 11 years (IQR 10·09-11·53), random assignment to 1 year of trastuzumab significantly reduced the risk of a disease-free survival event (HR 0·76, 95% CI 0·68-0·86) and death (0·74, 0·64-0·86) compared with observation.",
+              "source_span": {
+                "text": "After a median follow-up of 11 years (IQR 10·09-11·53), random assignment to 1 year of trastuzumab significantly reduced the risk of a disease-free survival event (HR 0·76, 95% CI 0·68-0·86) and death (0·74, 0·64-0·86) compared with observation.",
+                "start": 1709,
+                "end": 1954,
+                "source_id": "pmid:28215665",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "After a median follow-up of 11 years (IQR 10·09-11·53), random assignment to 1 year of trastuzumab significantly reduced the risk of a disease-free survival event (HR 0·76, 95% CI 0·68-0·86) and death (0·74, 0·64-0·86) compared with observation.",
+          "population_span": {
+            "text": "We followed up the intention-to-treat population of 5099 patients (1697 in observation, 1702 in 1-year trastuzumab, and 1700 in 2-years trastuzumab groups).",
+            "start": 1552,
+            "end": 1708,
+            "source_id": "pmid:28215665",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "884 (52%) patients assigned to the observation group selectively crossed over to receive trastuzumab.",
+            "start": 2233,
+            "end": 2334,
+            "source_id": "pmid:28215665",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "6c635e2c1de1a42c67e76da999c7fc9d9811b299e1821398ad20d3e2c02a0f20"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "HERA"
         }
       ],
       "sources": [
@@ -3112,6 +3684,12 @@
         {
           "title": "Trastuzumab after adjuvant chemotherapy in HER2-positive breast cancer.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/16236737/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "11 years' follow-up of trastuzumab after adjuvant chemotherapy in HER2-positive early breast cancer: final analysis of the HERceptin Adjuvant (HERA) trial.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28215665/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -3140,7 +3718,8 @@
         }
       },
       "related": [
-        "egfr-osimertinib"
+        "egfr-osimertinib",
+        "brca-olaparib"
       ],
       "disease_context": {
         "cancer_type": "Breast cancer",
@@ -3158,7 +3737,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -3408,7 +3987,9 @@
         }
       },
       "related": [
-        "her2-trastuzumab"
+        "her2-trastuzumab",
+        "alk-alectinib",
+        "egfr-adjuvant-osimertinib"
       ],
       "disease_context": {
         "cancer_type": "Non-small cell lung cancer",
@@ -3446,7 +4027,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ]
@@ -3541,12 +4122,82 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "UK-Biobank-apoB-2024"
+        },
+        {
+          "id": "pmid:30403574",
+          "pmid": "30403574",
+          "doi": "10.1056/nejmoa1801174",
+          "title": "Alirocumab and Cardiovascular Outcomes after Acute Coronary Syndrome.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
+          "year": "2018",
+          "design": "Randomized controlled trial",
+          "population": "Human; 18,924 adults after acute coronary syndrome with elevated LDL-C, non-HDL-C or ApoB despite statins",
+          "n": 18924,
+          "exposure": "Alirocumab 75 mg every 2 weeks; dose adjusted to LDL-C 25–50 mg/dL",
+          "comparator": "Placebo",
+          "abstract": "Background Patients who have had an acute coronary syndrome are at high risk for recurrent ischemic cardiovascular events. We sought to determine whether alirocumab, a human monoclonal antibody to proprotein convertase subtilisin-kexin type 9 (PCSK9), would improve cardiovascular outcomes after an acute coronary syndrome in patients receiving high-intensity statin therapy. Methods We conducted a multicenter, randomized, double-blind, placebo-controlled trial involving 18,924 patients who had an acute coronary syndrome 1 to 12 months earlier, had a low-density lipoprotein (LDL) cholesterol level of at least 70 mg per deciliter (1.8 mmol per liter), a non-high-density lipoprotein cholesterol level of at least 100 mg per deciliter (2.6 mmol per liter), or an apolipoprotein B level of at least 80 mg per deciliter, and were receiving statin therapy at a high-intensity dose or at the maximum tolerated dose. Patients were randomly assigned to receive alirocumab subcutaneously at a dose of 75 mg (9462 patients) or matching placebo (9462 patients) every 2 weeks. The dose of alirocumab was adjusted under blinded conditions to target an LDL cholesterol level of 25 to 50 mg per deciliter (0.6 to 1.3 mmol per liter). The primary end point was a composite of death from coronary heart disease, nonfatal myocardial infarction, fatal or nonfatal ischemic stroke, or unstable angina requiring hospitalization. Results The median duration of follow-up was 2.8 years. A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001). A total of 334 patients (3.5%) in the alirocumab group and 392 patients (4.1%) in the placebo group died (hazard ratio, 0.85; 95% CI, 0.73 to 0.98). The absolute benefit of alirocumab with respect to the composite primary end point was greater among patients who had a baseline LDL cholesterol level of 100 mg or more per deciliter than among patients who had a lower baseline level. The incidence of adverse events was similar in the two groups, with the exception of local injection-site reactions (3.8% in the alirocumab group vs. 2.1% in the placebo group). Conclusions Among patients who had a previous acute coronary syndrome and who were receiving high-intensity statin therapy, the risk of recurrent ischemic cardiovascular events was lower among those who received alirocumab than among those who received placebo. (Funded by Sanofi and Regeneron Pharmaceuticals; ODYSSEY OUTCOMES ClinicalTrials.gov number, NCT01663402 .).",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.85,
+                "lower": 0.78,
+                "upper": 0.93,
+                "confidence_level": 95,
+                "units": "median 2.8-year follow-up; lipid markers were eligibility criteria",
+                "origin": "reported"
+              },
+              "quote": "A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001).",
+              "source_span": {
+                "text": "A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001).",
+                "start": 1469,
+                "end": 1685,
+                "source_id": "pmid:30403574",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001).",
+          "population_span": {
+            "text": "We conducted a multicenter, randomized, double-blind, placebo-controlled trial involving 18,924 patients who had an acute coronary syndrome 1 to 12 months earlier, had a low-density lipoprotein (LDL) cholesterol level of at least 70 mg per deciliter (1.8 mmol per liter), a non-high-density lipoprotein cholesterol level of at least 100 mg per deciliter (2.6 mmol per liter), or an apolipoprotein B level of at least 80 mg per deciliter, and were receiving statin therapy at a high-intensity dose or at the maximum tolerated dose.",
+            "start": 384,
+            "end": 914,
+            "source_id": "pmid:30403574",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "The median duration of follow-up was 2.8 years.",
+            "start": 1421,
+            "end": 1468,
+            "source_id": "pmid:30403574",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "cdc5d8625f9e2cc7ccc7269dab402428879f54710aca730fba915bce7c6209fe"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ODYSSEY OUTCOMES"
         }
       ],
       "sources": [
         {
           "title": "Discordance among apoB, non-high-density lipoprotein cholesterol, and triglycerides: implications for cardiovascular prevention.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38700053/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Alirocumab and Cardiovascular Outcomes after Acute Coronary Syndrome.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -3581,7 +4232,9 @@
       "related": [
         "apob",
         "ldl-c",
-        "cac"
+        "cac",
+        "lpa",
+        "triglycerides"
       ],
       "changing_marker": "Marker associations do not establish the benefit of targeting a marker.",
       "measurement": {
@@ -3603,7 +4256,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ]
@@ -3781,7 +4434,7 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ],
@@ -3805,7 +4458,7 @@
       "conditions": [
         "Cancer"
       ],
-      "context": "This biomarker-selected trial does not compare treatment effects in biomarker-positive and biomarker-negative populations. The initial report does not establish mature overall survival.",
+      "context": "Initial and final analyses describe the same KEYNOTE-177 trial. Overall-survival superiority did not meet the prespecified significance threshold; crossover must be considered (PMID 35427471).",
       "evidence_question": "Does this biological feature change prognosis or treatment response?",
       "population": "Human adults with previously untreated metastatic MSI-H / dMMR colorectal cancer",
       "exposure": "Pembrolizumab 200 mg every 3 weeks",
@@ -3813,6 +4466,11 @@
       "outcomes": [
         {
           "name": "Progression-free survival",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Overall survival",
           "question_type": "study_specific",
           "assessment": "Automated extraction; appraisal pending"
         }
@@ -3881,12 +4539,103 @@
             "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
           ],
           "cohort_id": "KEYNOTE-177"
+        },
+        {
+          "id": "pmid:35427471",
+          "pmid": "35427471",
+          "doi": "10.1016/s1470-2045(22)00197-8",
+          "title": "Pembrolizumab versus chemotherapy for microsatellite instability-high or mismatch repair-deficient metastatic colorectal cancer (KEYNOTE-177): final analysis of a randomised, open-label, phase 3 study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35427471/",
+          "year": "2022",
+          "design": "Randomized controlled trial",
+          "population": "Human; 307 adults with previously untreated metastatic MSI-H/dMMR colorectal cancer",
+          "n": 307,
+          "exposure": "Pembrolizumab 200 mg every 3 weeks",
+          "comparator": "Investigator-choice chemotherapy",
+          "abstract": "Background Pembrolizumab has shown improved progression-free survival versus chemotherapy in patients with newly diagnosed microsatellite instability-high or mismatch repair-deficient metastatic colorectal cancer. However, the treatment's effect on overall survival in this cohort of patients was unknown. Here, we present the final overall survival analysis of the KEYNOTE-177 study. Methods This randomised, open-label, phase 3 study was done in 193 academic medical centres and hospitals in 23 countries. We recruited patients aged at least 18 years, with an Eastern Cooperative Oncology Group performance status of 0 or 1, and who had previously untreated microsatellite instability-high or mismatch repair-deficient metastatic colorectal cancer. Patients were randomly assigned (1:1) in blocks of four using an interactive voice response system or integrated web response system to intravenous pembrolizumab 200 mg every 3 weeks or to the investigator's choice of intravenous mFOLFOX6 (oxaliplatin 85 mg/m 2 on day 1, leucovorin 400 mg/m 2 on day 1, and fluorouracil 400 mg/m 2 bolus on day 1 followed by a continuous infusion of 1200 mg/m 2 per day for 2 days on days 1-2) or intravenous FOLFIRI (irinotecan 180 mg/m 2 on day 1, leucovorin 400 mg/m 2 on day 1, and fluorouracil 400 mg/m 2 bolus on day 1 followed by a continuous infusion of 1200 mg/m 2 per day for 2 days on days 1-2), every 2 weeks with or without intravenous bevacizumab 5 mg/kg every 2 weeks or intravenous weekly cetuximab (first dose 400 mg/m 2 , then 250 mg/m 2 for every subsequent dose). Patients receiving chemotherapy could cross over to pembrolizumab for up to 35 treatment cycles after progression. The co-primary endpoints were overall survival and progression-free survival in the intention-to-treat population. KEYNOTE-177 is registered at ClinicalTrials.gov, NCT02563002, and is no longer enrolling patients. Findings Between Feb 11, 2016, and Feb 19, 2018, 852 patients were screened, of whom 307 (36%) were randomly assigned to pembrolizumab (n=153) or chemotherapy (n=154). 93 (60%) patients crossed over from chemotherapy to anti-PD-1 or anti-PD-L1 therapy (56 patients to on-study pembrolizumab and 37 patients to off-study therapy). At final analysis (median follow-up of 44·5 months [IQR 39·7-49·8]), median overall survival was not reached (NR; 95% CI 49·2-NR) with pembrolizumab vs 36·7 months (27·6-NR) with chemotherapy (hazard ratio [HR] 0·74; 95% CI 0·53-1·03; p=0·036). Superiority of pembrolizumab versus chemotherapy for overall survival was not demonstrated because the prespecified α of 0·025 needed for statistical significance was not achieved. At this updated analysis, median progression-free survival was 16·5 months (95% CI 5·4-38·1) with pembrolizumab versus 8·2 months (6·1-10·2) with chemotherapy (HR 0·59, 95% CI 0·45-0·79). Treatment-related adverse events of grade 3 or worse occurred in 33 (22%) of 153 patients in the pembrolizumab group versus 95 (66%) of 143 patients in the chemotherapy group. Common adverse events of grade 3 or worse that were attributed to pembrolizumab were increased alanine aminotransferase, colitis, diarrhoea, and fatigue in three (2%) patients each, and those attributed to chemotherapy were decreased neutrophil count (in 24 [17%] patients), neutropenia (22 [15%]), diarrhoea (14 [10%]), and fatigue (13 [9%]). Serious adverse events attributed to study treatment occurred in 25 (16%) patients in the pembrolizumab group and in 41 (29%) patients in the chemotherapy group. No deaths attributed to pembrolizumab occurred; one death due to intestinal perforation was attributed to chemotherapy. Interpretation In this updated analysis, although pembrolizumab continued to show durable antitumour activity and fewer treatment-related adverse events compared with chemotherapy, there was no significant difference in overall survival between the two treatment groups. These findings support pembrolizumab as an efficacious first-line therapy in patients with microsatellite instability-high or mismatch repair-deficient metastatic colorectal cancer. Funding MSD.",
+          "findings": [
+            {
+              "outcome": "Overall survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.74,
+                "lower": 0.53,
+                "upper": 1.03,
+                "confidence_level": 95,
+                "units": "prespecified significance threshold not met",
+                "origin": "reported"
+              },
+              "quote": "At final analysis (median follow-up of 44·5 months [IQR 39·7-49·8]), median overall survival was not reached (NR; 95% CI 49·2-NR) with pembrolizumab vs 36·7 months (27·6-NR) with chemotherapy (hazard ratio [HR] 0·74; 95% CI 0·53-1·03; p=0·036). Superiority of pembrolizumab versus chemotherapy for overall survival was not demonstrated because the prespecified α of 0·025 needed for statistical significance was not achieved.",
+              "source_span": {
+                "text": "At final analysis (median follow-up of 44·5 months [IQR 39·7-49·8]), median overall survival was not reached (NR; 95% CI 49·2-NR) with pembrolizumab vs 36·7 months (27·6-NR) with chemotherapy (hazard ratio [HR] 0·74; 95% CI 0·53-1·03; p=0·036). Superiority of pembrolizumab versus chemotherapy for overall survival was not demonstrated because the prespecified α of 0·025 needed for statistical significance was not achieved.",
+                "start": 2228,
+                "end": 2653,
+                "source_id": "pmid:35427471",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Progression-free survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.59,
+                "lower": 0.45,
+                "upper": 0.79,
+                "confidence_level": 95,
+                "units": "median 44.5-month follow-up",
+                "origin": "reported"
+              },
+              "quote": "At this updated analysis, median progression-free survival was 16·5 months (95% CI 5·4-38·1) with pembrolizumab versus 8·2 months (6·1-10·2) with chemotherapy (HR 0·59, 95% CI 0·45-0·79).",
+              "source_span": {
+                "text": "At this updated analysis, median progression-free survival was 16·5 months (95% CI 5·4-38·1) with pembrolizumab versus 8·2 months (6·1-10·2) with chemotherapy (HR 0·59, 95% CI 0·45-0·79).",
+                "start": 2654,
+                "end": 2841,
+                "source_id": "pmid:35427471",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "At final analysis (median follow-up of 44·5 months [IQR 39·7-49·8]), median overall survival was not reached (NR; 95% CI 49·2-NR) with pembrolizumab vs 36·7 months (27·6-NR) with chemotherapy (hazard ratio [HR] 0·74; 95% CI 0·53-1·03; p=0·036). Superiority of pembrolizumab versus chemotherapy for overall survival was not demonstrated because the prespecified α of 0·025 needed for statistical significance was not achieved.",
+          "population_span": {
+            "text": "We recruited patients aged at least 18 years, with an Eastern Cooperative Oncology Group performance status of 0 or 1, and who had previously untreated microsatellite instability-high or mismatch repair-deficient metastatic colorectal cancer.",
+            "start": 508,
+            "end": 750,
+            "source_id": "pmid:35427471",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "93 (60%) patients crossed over from chemotherapy to anti-PD-1 or anti-PD-L1 therapy (56 patients to on-study pembrolizumab and 37 patients to off-study therapy).",
+            "start": 2066,
+            "end": 2227,
+            "source_id": "pmid:35427471",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "77d0546b3b26bfb82f46339cff43cc15bc81b931de8e731d3cf07c6f7cdfed9f"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "KEYNOTE-177"
         }
       ],
       "sources": [
         {
           "title": "Pembrolizumab in Microsatellite-Instability-High Advanced Colorectal Cancer.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/33264544/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Pembrolizumab versus chemotherapy for microsatellite instability-high or mismatch repair-deficient metastatic colorectal cancer (KEYNOTE-177): final analysis of a randomised, open-label, phase 3 study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35427471/",
           "accessed": "2026-09-13",
           "kind": "study"
         }
@@ -3958,10 +4707,1210 @@
         {
           "date": "2026-09-13",
           "kind": "source_enrichment",
-          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
           "review_status": "automated_appraisal"
         }
       ]
+    },
+    {
+      "id": "lpa",
+      "name": "Lipoprotein(a)",
+      "entity_type": "biomarker",
+      "category": "Lipids",
+      "summary": "Prospective studies examine Lp(a) concentration in relation to coronary heart disease and stroke.",
+      "roles": [
+        "risk"
+      ],
+      "conditions": [
+        "Cardiovascular"
+      ],
+      "context": "Observational associations do not establish effects of lowering Lp(a). The meta-analysis may include cohorts reported separately.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "Lp(a) concentration",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Coronary heart disease",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Ischemic stroke",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "pmid:19622820",
+          "pmid": "19622820",
+          "doi": "10.1001/jama.2009.1063",
+          "title": "Lipoprotein(a) concentration and the risk of coronary heart disease, stroke, and nonvascular mortality.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19622820/",
+          "year": "2009",
+          "design": "Individual participant data meta-analysis",
+          "population": "Human; 126,634 participants in 36 prospective studies; preexisting CHD/stroke excluded",
+          "n": 126634,
+          "exposure": "3.5-fold higher usual Lp(a)",
+          "comparator": "Lower Lp(a), adjusted for conventional risk factors",
+          "abstract": "Context Circulating concentration of lipoprotein(a) (Lp[a]), a large glycoprotein attached to a low-density lipoprotein-like particle, may be associated with risk of coronary heart disease (CHD) and stroke. Objective To assess the relationship of Lp(a) concentration with risk of major vascular and nonvascular outcomes. Study selection Long-term prospective studies that recorded Lp(a) concentration and subsequent major vascular morbidity and/or cause-specific mortality published between January 1970 and March 2009 were identified through electronic searches of MEDLINE and other databases, manual searches of reference lists, and discussion with collaborators. Data extraction Individual records were provided for each of 126,634 participants in 36 prospective studies. During 1.3 million person-years of follow-up, 22,076 first-ever fatal or nonfatal vascular disease outcomes or nonvascular deaths were recorded, including 9336 CHD outcomes, 1903 ischemic strokes, 338 hemorrhagic strokes, 751 unclassified strokes, 1091 other vascular deaths, 8114 nonvascular deaths, and 242 deaths of unknown cause. Within-study regression analyses were adjusted for within-person variation and combined using meta-analysis. Analyses excluded participants with known preexisting CHD or stroke at baseline. Data synthesis Lipoprotein(a) concentration was weakly correlated with several conventional vascular risk factors and it was highly consistent within individuals over several years. Associations of Lp(a) with CHD risk were broadly continuous in shape. In the 24 cohort studies, the rates of CHD in the top and bottom thirds of baseline Lp(a) distributions, respectively, were 5.6 (95% confidence interval [CI], 5.4-5.9) per 1000 person-years and 4.4 (95% CI, 4.2-4.6) per 1000 person-years. The risk ratio for CHD, adjusted for age and sex only, was 1.16 (95% CI, 1.11-1.22) per 3.5-fold higher usual Lp(a) concentration (ie, per 1 SD), and it was 1.13 (95% CI, 1.09-1.18) following further adjustment for lipids and other conventional risk factors. The corresponding adjusted risk ratios were 1.10 (95% CI, 1.02-1.18) for ischemic stroke, 1.01 (95% CI, 0.98-1.05) for the aggregate of nonvascular mortality, 1.00 (95% CI, 0.97-1.04) for cancer deaths, and 1.00 (95% CI, 0.95-1.06) for nonvascular deaths other than cancer. Conclusion Under a wide range of circumstances, there are continuous, independent, and modest associations of Lp(a) concentration with risk of CHD and stroke that appear exclusive to vascular outcomes.",
+          "findings": [
+            {
+              "outcome": "Coronary heart disease",
+              "effect": {
+                "measure": "risk ratio",
+                "estimate": 1.13,
+                "lower": 1.09,
+                "upper": 1.18,
+                "confidence_level": 95,
+                "units": "per 3.5-fold higher Lp(a)",
+                "origin": "reported"
+              },
+              "quote": "The risk ratio for CHD, adjusted for age and sex only, was 1.16 (95% CI, 1.11-1.22) per 3.5-fold higher usual Lp(a) concentration (ie, per 1 SD), and it was 1.13 (95% CI, 1.09-1.18) following further adjustment for lipids and other conventional risk factors.",
+              "source_span": {
+                "text": "The risk ratio for CHD, adjusted for age and sex only, was 1.16 (95% CI, 1.11-1.22) per 3.5-fold higher usual Lp(a) concentration (ie, per 1 SD), and it was 1.13 (95% CI, 1.09-1.18) following further adjustment for lipids and other conventional risk factors.",
+                "start": 1790,
+                "end": 2048,
+                "source_id": "pmid:19622820",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Ischemic stroke",
+              "effect": {
+                "measure": "risk ratio",
+                "estimate": 1.1,
+                "lower": 1.02,
+                "upper": 1.18,
+                "confidence_level": 95,
+                "units": "per 3.5-fold higher Lp(a)",
+                "origin": "reported"
+              },
+              "quote": "The corresponding adjusted risk ratios were 1.10 (95% CI, 1.02-1.18) for ischemic stroke, 1.01 (95% CI, 0.98-1.05) for the aggregate of nonvascular mortality, 1.00 (95% CI, 0.97-1.04) for cancer deaths, and 1.00 (95% CI, 0.95-1.06) for nonvascular deaths other than cancer.",
+              "source_span": {
+                "text": "The corresponding adjusted risk ratios were 1.10 (95% CI, 1.02-1.18) for ischemic stroke, 1.01 (95% CI, 0.98-1.05) for the aggregate of nonvascular mortality, 1.00 (95% CI, 0.97-1.04) for cancer deaths, and 1.00 (95% CI, 0.95-1.06) for nonvascular deaths other than cancer.",
+                "start": 2049,
+                "end": 2322,
+                "source_id": "pmid:19622820",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The risk ratio for CHD, adjusted for age and sex only, was 1.16 (95% CI, 1.11-1.22) per 3.5-fold higher usual Lp(a) concentration (ie, per 1 SD), and it was 1.13 (95% CI, 1.09-1.18) following further adjustment for lipids and other conventional risk factors.",
+          "population_span": {
+            "text": "Individual records were provided for each of 126,634 participants in 36 prospective studies.",
+            "start": 682,
+            "end": 774,
+            "source_id": "pmid:19622820",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Analyses excluded participants with known preexisting CHD or stroke at baseline.",
+            "start": 1218,
+            "end": 1298,
+            "source_id": "pmid:19622820",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "35cfdd3f1e9e27c423df9549c9a83352eee7fe8bd0e7b16aedbd16889f7a5f51"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ERFC-Lpa-2009"
+        },
+        {
+          "id": "pmid:18362252",
+          "pmid": "18362252",
+          "doi": "10.1001/archinte.168.6.598",
+          "title": "Lipoprotein(a) levels and risk of future coronary heart disease: large-scale prospective data.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18362252/",
+          "year": "2008",
+          "design": "Nested case-control cohort",
+          "population": "Human; Reykjavik Study: 2,047 coronary cases and 3,921 controls",
+          "n": null,
+          "exposure": "Top third of baseline Lp(a)",
+          "comparator": "Bottom third; adjusted for conventional risk factors",
+          "abstract": "Background Large-scale prospective data are needed to determine whether associations between lipoprotein(a) (Lp[a]) and coronary heart disease (CHD) risk are independent of established risk factors, to characterize the shape of this relationship, and to quantify associations in relevant subgroups. Methods Levels of Lp(a) were measured in samples obtained at baseline from 2047 patients who had first-ever nonfatal myocardial infarction or who died of CHD during the study and from 3921 control participants in the Reykjavik Study (n=18 569), as well as in paired samples obtained 12 years apart from 372 participants to quantify within-person fluctuations. Results Baseline Lp(a) levels had little or no correlation with known cardiovascular risk factors, such as age, sex, total cholesterol level, and blood pressure. The Lp(a) values were highly consistent from decade to decade, with a regression dilution ratio (calculated on the log scale) of 0.92 (95% confidence interval, 0.85-0.99). The odds ratio for CHD, unaltered after adjustment for several established risk factors (age, sex, smoking status, blood pressure, total cholesterol, triglycerides level, diabetes mellitus, and body mass index), was 1.60 (95% confidence interval, 1.38-1.85) in a comparison of extreme thirds of baseline Lp(a) levels. Odds ratios were progressively higher with increasing Lp(a) levels and did not vary materially by several individual- or study-level characteristics. Conclusions There are independent, continuous associations between Lp(a) levels and risk of future CHD in a broad range of individuals. Levels of Lp(a) are highly stable within individuals across many years and are only weakly correlated with known risk factors. Further assessment of their possible role in CHD prevention is warranted.",
+          "findings": [
+            {
+              "outcome": "Coronary heart disease",
+              "effect": {
+                "measure": "odds ratio",
+                "estimate": 1.6,
+                "lower": 1.38,
+                "upper": 1.85,
+                "confidence_level": 95,
+                "units": "extreme thirds of baseline Lp(a)",
+                "origin": "reported"
+              },
+              "quote": "The odds ratio for CHD, unaltered after adjustment for several established risk factors (age, sex, smoking status, blood pressure, total cholesterol, triglycerides level, diabetes mellitus, and body mass index), was 1.60 (95% confidence interval, 1.38-1.85) in a comparison of extreme thirds of baseline Lp(a) levels.",
+              "source_span": {
+                "text": "The odds ratio for CHD, unaltered after adjustment for several established risk factors (age, sex, smoking status, blood pressure, total cholesterol, triglycerides level, diabetes mellitus, and body mass index), was 1.60 (95% confidence interval, 1.38-1.85) in a comparison of extreme thirds of baseline Lp(a) levels.",
+                "start": 993,
+                "end": 1310,
+                "source_id": "pmid:18362252",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The odds ratio for CHD, unaltered after adjustment for several established risk factors (age, sex, smoking status, blood pressure, total cholesterol, triglycerides level, diabetes mellitus, and body mass index), was 1.60 (95% confidence interval, 1.38-1.85) in a comparison of extreme thirds of baseline Lp(a) levels.",
+          "population_span": {
+            "text": "Levels of Lp(a) were measured in samples obtained at baseline from 2047 patients who had first-ever nonfatal myocardial infarction or who died of CHD during the study and from 3921 control participants in the Reykjavik Study (n=18 569), as well as in paired samples obtained 12 years apart from 372 participants to quantify within-person fluctuations.",
+            "start": 307,
+            "end": 658,
+            "source_id": "pmid:18362252",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Levels of Lp(a) were measured in samples obtained at baseline from 2047 patients who had first-ever nonfatal myocardial infarction or who died of CHD during the study and from 3921 control participants in the Reykjavik Study (n=18 569), as well as in paired samples obtained 12 years apart from 372 participants to quantify within-person fluctuations.",
+            "start": 307,
+            "end": 658,
+            "source_id": "pmid:18362252",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "ee9dab657b9b2f715a96b5319701f88790498e698d6fac886ffd46f273de132a"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "Reykjavik"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lipoprotein(a) concentration and the risk of coronary heart disease, stroke, and nonvascular mortality.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19622820/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Lipoprotein(a) levels and risk of future coronary heart disease: large-scale prospective data.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18362252/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "apob",
+        "ldl-c",
+        "non-hdl-c"
+      ],
+      "changing_marker": "Marker associations do not establish the benefit of targeting a marker.",
+      "measurement": {
+        "units": "Study-specific; inspect the source assay",
+        "reference_range": "This profile does not define a diagnostic threshold or treatment target."
+      },
+      "aliases": [
+        "Lp(a)",
+        "lipoprotein a"
+      ],
+      "influences": [],
+      "figures": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": []
+    },
+    {
+      "id": "triglycerides",
+      "name": "Triglycerides",
+      "entity_type": "biomarker",
+      "category": "Lipids",
+      "summary": "REDUCE-IT reports cardiovascular outcomes with icosapent ethyl in statin-treated adults selected for elevated triglycerides.",
+      "roles": [
+        "risk"
+      ],
+      "conditions": [
+        "Cardiovascular"
+      ],
+      "context": "The selected trial tests icosapent ethyl, not a triglyceride target or generic fish-oil supplements. Clinical outcomes cannot be inferred from a marker change alone.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "Fasting triglycerides 135–499 mg/dL for trial eligibility",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Cardiovascular events",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "pmid:30415628",
+          "pmid": "30415628",
+          "doi": "10.1056/nejmoa1812792",
+          "title": "Cardiovascular Risk Reduction with Icosapent Ethyl for Hypertriglyceridemia.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30415628/",
+          "year": "2019",
+          "design": "Randomized controlled trial",
+          "population": "Human; 8,179 statin-treated adults with CVD or diabetes/risk factors; TG 135–499 and LDL-C 41–100 mg/dL",
+          "n": 8179,
+          "exposure": "Icosapent ethyl 2 g twice daily (4 g/day)",
+          "comparator": "Placebo",
+          "abstract": "Background Patients with elevated triglyceride levels are at increased risk for ischemic events. Icosapent ethyl, a highly purified eicosapentaenoic acid ethyl ester, lowers triglyceride levels, but data are needed to determine its effects on ischemic events. Methods We performed a multicenter, randomized, double-blind, placebo-controlled trial involving patients with established cardiovascular disease or with diabetes and other risk factors, who had been receiving statin therapy and who had a fasting triglyceride level of 135 to 499 mg per deciliter (1.52 to 5.63 mmol per liter) and a low-density lipoprotein cholesterol level of 41 to 100 mg per deciliter (1.06 to 2.59 mmol per liter). The patients were randomly assigned to receive 2 g of icosapent ethyl twice daily (total daily dose, 4 g) or placebo. The primary end point was a composite of cardiovascular death, nonfatal myocardial infarction, nonfatal stroke, coronary revascularization, or unstable angina. The key secondary end point was a composite of cardiovascular death, nonfatal myocardial infarction, or nonfatal stroke. Results A total of 8179 patients were enrolled (70.7% for secondary prevention of cardiovascular events) and were followed for a median of 4.9 years. A primary end-point event occurred in 17.2% of the patients in the icosapent ethyl group, as compared with 22.0% of the patients in the placebo group (hazard ratio, 0.75; 95% confidence interval [CI], 0.68 to 0.83; P<0.001); the corresponding rates of the key secondary end point were 11.2% and 14.8% (hazard ratio, 0.74; 95% CI, 0.65 to 0.83; P<0.001). The rates of additional ischemic end points, as assessed according to a prespecified hierarchical schema, were significantly lower in the icosapent ethyl group than in the placebo group, including the rate of cardiovascular death (4.3% vs. 5.2%; hazard ratio, 0.80; 95% CI, 0.66 to 0.98; P=0.03). A larger percentage of patients in the icosapent ethyl group than in the placebo group were hospitalized for atrial fibrillation or flutter (3.1% vs. 2.1%, P=0.004). Serious bleeding events occurred in 2.7% of the patients in the icosapent ethyl group and in 2.1% in the placebo group (P=0.06). Conclusions Among patients with elevated triglyceride levels despite the use of statins, the risk of ischemic events, including cardiovascular death, was significantly lower among those who received 2 g of icosapent ethyl twice daily than among those who received placebo. (Funded by Amarin Pharma; REDUCE-IT ClinicalTrials.gov number, NCT01492361 .).",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.75,
+                "lower": 0.68,
+                "upper": 0.83,
+                "confidence_level": 95,
+                "units": "median 4.9 years; drug-specific result",
+                "origin": "reported"
+              },
+              "quote": "A primary end-point event occurred in 17.2% of the patients in the icosapent ethyl group, as compared with 22.0% of the patients in the placebo group (hazard ratio, 0.75; 95% confidence interval [CI], 0.68 to 0.83; P<0.001); the corresponding rates of the key secondary end point were 11.2% and 14.8% (hazard ratio, 0.74; 95% CI, 0.65 to 0.83; P<0.001).",
+              "source_span": {
+                "text": "A primary end-point event occurred in 17.2% of the patients in the icosapent ethyl group, as compared with 22.0% of the patients in the placebo group (hazard ratio, 0.75; 95% confidence interval [CI], 0.68 to 0.83; P<0.001); the corresponding rates of the key secondary end point were 11.2% and 14.8% (hazard ratio, 0.74; 95% CI, 0.65 to 0.83; P<0.001).",
+                "start": 1245,
+                "end": 1598,
+                "source_id": "pmid:30415628",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "A primary end-point event occurred in 17.2% of the patients in the icosapent ethyl group, as compared with 22.0% of the patients in the placebo group (hazard ratio, 0.75; 95% confidence interval [CI], 0.68 to 0.83; P<0.001); the corresponding rates of the key secondary end point were 11.2% and 14.8% (hazard ratio, 0.74; 95% CI, 0.65 to 0.83; P<0.001).",
+          "population_span": {
+            "text": "We performed a multicenter, randomized, double-blind, placebo-controlled trial involving patients with established cardiovascular disease or with diabetes and other risk factors, who had been receiving statin therapy and who had a fasting triglyceride level of 135 to 499 mg per deciliter (1.52 to 5.63 mmol per liter) and a low-density lipoprotein cholesterol level of 41 to 100 mg per deciliter (1.06 to 2.59 mmol per liter).",
+            "start": 268,
+            "end": 695,
+            "source_id": "pmid:30415628",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "A total of 8179 patients were enrolled (70.7% for secondary prevention of cardiovascular events) and were followed for a median of 4.9 years.",
+            "start": 1103,
+            "end": 1244,
+            "source_id": "pmid:30415628",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "f224fa5cb07e95b4b3aed4b2ca01726aadc6bc85de41ee0a58c707f8cec5b96d"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "REDUCE-IT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cardiovascular Risk Reduction with Icosapent Ethyl for Hypertriglyceridemia.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30415628/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "apob",
+        "ldl-c",
+        "non-hdl-c"
+      ],
+      "changing_marker": "Marker associations do not establish the benefit of targeting a marker.",
+      "measurement": {
+        "units": "mg/dL",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [
+        "TG",
+        "triglyceride"
+      ],
+      "influences": [],
+      "figures": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": []
+    },
+    {
+      "id": "alk-alectinib",
+      "name": "ALK-positive lung cancer × alectinib",
+      "entity_type": "precision_oncology",
+      "category": "Targeted therapy",
+      "summary": "ALEX and J-ALEX compare alectinib with crizotinib in ALK-positive advanced lung cancer, using different doses and populations.",
+      "roles": [
+        "predictive"
+      ],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "Biomarker-selected treatment trials do not by themselves establish a treatment-by-biomarker interaction. Endpoint, setting and follow-up remain study-specific.",
+      "evidence_question": "Does this biological feature change prognosis or treatment response?",
+      "population": "ALK-positive advanced NSCLC; population differs between ALEX and J-ALEX",
+      "exposure": "600 mg twice daily (ALEX); 300 mg twice daily (J-ALEX)",
+      "comparator": "Crizotinib 250 mg twice daily",
+      "outcomes": [
+        {
+          "name": "Progression-free survival",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "pmid:28586279",
+          "pmid": "28586279",
+          "doi": "10.1056/nejmoa1704795",
+          "title": "Alectinib versus Crizotinib in Untreated ALK-Positive Non-Small-Cell Lung Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28586279/",
+          "year": "2017",
+          "design": "Randomized controlled trial",
+          "population": "Human; 303 adults with previously untreated advanced ALK-positive NSCLC",
+          "n": 303,
+          "exposure": "Alectinib 600 mg twice daily",
+          "comparator": "Crizotinib 250 mg twice daily",
+          "abstract": "Background Alectinib, a highly selective inhibitor of anaplastic lymphoma kinase (ALK), has shown systemic and central nervous system (CNS) efficacy in the treatment of ALK-positive non-small-cell lung cancer (NSCLC). We investigated alectinib as compared with crizotinib in patients with previously untreated, advanced ALK-positive NSCLC, including those with asymptomatic CNS disease. Methods In a randomized, open-label, phase 3 trial, we randomly assigned 303 patients with previously untreated, advanced ALK-positive NSCLC to receive either alectinib (600 mg twice daily) or crizotinib (250 mg twice daily). The primary end point was investigator-assessed progression-free survival. Secondary end points were independent review committee-assessed progression-free survival, time to CNS progression, objective response rate, and overall survival. Results During a median follow-up of 17.6 months (crizotinib) and 18.6 months (alectinib), an event of disease progression or death occurred in 62 of 152 patients (41%) in the alectinib group and 102 of 151 patients (68%) in the crizotinib group. The rate of investigator-assessed progression-free survival was significantly higher with alectinib than with crizotinib (12-month event-free survival rate, 68.4% [95% confidence interval (CI), 61.0 to 75.9] with alectinib vs. 48.7% [95% CI, 40.4 to 56.9] with crizotinib; hazard ratio for disease progression or death, 0.47 [95% CI, 0.34 to 0.65]; P<0.001); the median progression-free survival with alectinib was not reached. The results for independent review committee-assessed progression-free survival were consistent with those for the primary end point. A total of 18 patients (12%) in the alectinib group had an event of CNS progression, as compared with 68 patients (45%) in the crizotinib group (cause-specific hazard ratio, 0.16; 95% CI, 0.10 to 0.28; P<0.001). A response occurred in 126 patients in the alectinib group (response rate, 82.9%; 95% CI, 76.0 to 88.5) and in 114 patients in the crizotinib group (response rate, 75.5%; 95% CI, 67.8 to 82.1) (P=0.09). Grade 3 to 5 adverse events were less frequent with alectinib (41% vs. 50% with crizotinib). Conclusions As compared with crizotinib, alectinib showed superior efficacy and lower toxicity in primary treatment of ALK-positive NSCLC. (Funded by F. Hoffmann-La Roche; ALEX ClinicalTrials.gov number, NCT02075840 .).",
+          "findings": [
+            {
+              "outcome": "Progression-free survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.47,
+                "lower": 0.34,
+                "upper": 0.65,
+                "confidence_level": 95,
+                "units": "investigator assessed",
+                "origin": "reported"
+              },
+              "quote": "The rate of investigator-assessed progression-free survival was significantly higher with alectinib than with crizotinib (12-month event-free survival rate, 68.4% [95% confidence interval (CI), 61.0 to 75.9] with alectinib vs. 48.7% [95% CI, 40.4 to 56.9] with crizotinib; hazard ratio for disease progression or death, 0.47 [95% CI, 0.34 to 0.65]; P<0.001); the median progression-free survival with alectinib was not reached.",
+              "source_span": {
+                "text": "The rate of investigator-assessed progression-free survival was significantly higher with alectinib than with crizotinib (12-month event-free survival rate, 68.4% [95% confidence interval (CI), 61.0 to 75.9] with alectinib vs. 48.7% [95% CI, 40.4 to 56.9] with crizotinib; hazard ratio for disease progression or death, 0.47 [95% CI, 0.34 to 0.65]; P<0.001); the median progression-free survival with alectinib was not reached.",
+                "start": 1098,
+                "end": 1525,
+                "source_id": "pmid:28586279",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The rate of investigator-assessed progression-free survival was significantly higher with alectinib than with crizotinib (12-month event-free survival rate, 68.4% [95% confidence interval (CI), 61.0 to 75.9] with alectinib vs. 48.7% [95% CI, 40.4 to 56.9] with crizotinib; hazard ratio for disease progression or death, 0.47 [95% CI, 0.34 to 0.65]; P<0.001); the median progression-free survival with alectinib was not reached.",
+          "population_span": {
+            "text": "In a randomized, open-label, phase 3 trial, we randomly assigned 303 patients with previously untreated, advanced ALK-positive NSCLC to receive either alectinib (600 mg twice daily) or crizotinib (250 mg twice daily).",
+            "start": 395,
+            "end": 612,
+            "source_id": "pmid:28586279",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "During a median follow-up of 17.6 months (crizotinib) and 18.6 months (alectinib), an event of disease progression or death occurred in 62 of 152 patients (41%) in the alectinib group and 102 of 151 patients (68%) in the crizotinib group.",
+            "start": 859,
+            "end": 1097,
+            "source_id": "pmid:28586279",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "c74e80025013c7028d518f37c776a7b536c2d2aab766f9b802c4c8134515b86c"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ALEX"
+        },
+        {
+          "id": "pmid:28501140",
+          "pmid": "28501140",
+          "doi": "10.1016/s0140-6736(17)30565-2",
+          "title": "Alectinib versus crizotinib in patients with ALK-positive non-small-cell lung cancer (J-ALEX): an open-label, randomised phase 3 trial.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28501140/",
+          "year": "2017",
+          "design": "Randomized controlled trial",
+          "population": "Human; 207 ALK-inhibitor-naive Japanese adults with advanced NSCLC; zero or one prior chemotherapy regimen",
+          "n": 207,
+          "exposure": "Alectinib 300 mg twice daily",
+          "comparator": "Crizotinib 250 mg twice daily",
+          "abstract": "Background Alectinib, a potent, highly selective, CNS-active inhibitor of anaplastic lymphoma kinase (ALK), showed promising efficacy and tolerability in the single-arm phase 1/2 AF-001JP trial in Japanese patients with ALK-positive non-small-cell lung cancer. Given those promising results, we did a phase 3 trial to directly compare the efficacy and safety of alectinib and crizotinib. Methods J-ALEX was a randomised, open-label, phase 3 trial that recruited ALK inhibitor-naive Japanese patients with ALK-positive non-small-cell lung cancer, who were chemotherapy-naive or had received one previous chemotherapy regimen, from 41 study sites in Japan. Patients were randomly assigned (1:1) via an interactive web response system using a permuted-block method stratified by Eastern Cooperative Oncology Group performance status, treatment line, and disease stage to receive oral alectinib 300 mg twice daily or crizotinib 250 mg twice daily until progressive disease, unacceptable toxicity, death, or withdrawal. The primary endpoint was progression-free survival assessed by an independent review facility. The efficacy analysis was done in the intention-to-treat population, and safety analyses were done in all patients who received at least one dose of the study drug. The study is ongoing and patient recruitment is closed. This study is registered with the Japan Pharmaceutical Information Center (number JapicCTI-132316). Findings Between Nov 18, 2013, and Aug 4, 2015, 207 patients were recruited and assigned to the alectinib (n=103) or crizotinib (n=104) groups. At data cutoff for the second interim analysis, 24 patients in the alectinib group had discontinued treatment compared with 61 in the crizotinib group, mostly due to lack of efficacy or adverse events. At the second interim analysis (data cutoff date Dec 3, 2015), an independent data monitoring committee determined that the primary endpoint of the study had been met (hazard ratio 0·34 [99·7% CI 0·17-0·71], stratified log-rank p<0·0001) and recommended an immediate release of the data. Median progression-free survival had not yet been reached with alectinib (95% CI 20·3-not estimated) and was 10·2 months (8·2-12·0) with crizotinib. Grade 3 or 4 adverse events occurred at a greater frequency with crizotinib (54 [52%] of 104) than alectinib (27 [26%] of 103). Dose interruptions due to adverse events were also more prevalent with crizotinib (77 [74%] of 104) than with alectinib (30 [29%] of 103), and more patients receiving crizotinib (21 [20%]) than alectinib (nine [9%]) discontinued the study drug because of an adverse event. No adverse events with a fatal outcome occurred in either treatment group. Interpretation These results provide the first head-to-head comparison of alectinib and crizotinib and have the potential to change the standard of care for the first-line treatment of ALK-positive non-small-cell lung cancer. The dose of alectinib (300 mg twice daily) used in this study is lower than the approved dose in countries other than Japan; however, this limitation is being addressed in the ongoing ALEX study. Funding Chugai Pharmaceutical Co, Ltd.",
+          "findings": [
+            {
+              "outcome": "Progression-free survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.34,
+                "lower": 0.17,
+                "upper": 0.71,
+                "confidence_level": 99.7,
+                "units": "independent review facility",
+                "origin": "reported"
+              },
+              "quote": "At the second interim analysis (data cutoff date Dec 3, 2015), an independent data monitoring committee determined that the primary endpoint of the study had been met (hazard ratio 0·34 [99·7% CI 0·17-0·71], stratified log-rank p<0·0001) and recommended an immediate release of the data.",
+              "source_span": {
+                "text": "At the second interim analysis (data cutoff date Dec 3, 2015), an independent data monitoring committee determined that the primary endpoint of the study had been met (hazard ratio 0·34 [99·7% CI 0·17-0·71], stratified log-rank p<0·0001) and recommended an immediate release of the data.",
+                "start": 1777,
+                "end": 2064,
+                "source_id": "pmid:28501140",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "At the second interim analysis (data cutoff date Dec 3, 2015), an independent data monitoring committee determined that the primary endpoint of the study had been met (hazard ratio 0·34 [99·7% CI 0·17-0·71], stratified log-rank p<0·0001) and recommended an immediate release of the data.",
+          "population_span": {
+            "text": "J-ALEX was a randomised, open-label, phase 3 trial that recruited ALK inhibitor-naive Japanese patients with ALK-positive non-small-cell lung cancer, who were chemotherapy-naive or had received one previous chemotherapy regimen, from 41 study sites in Japan.",
+            "start": 396,
+            "end": 654,
+            "source_id": "pmid:28501140",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "The dose of alectinib (300 mg twice daily) used in this study is lower than the approved dose in countries other than Japan; however, this limitation is being addressed in the ongoing ALEX study.",
+            "start": 2916,
+            "end": 3111,
+            "source_id": "pmid:28501140",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "53821ce0008671a0c967d55b1406ae1965ddca0153af068e95dec8b5f5606a53"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "J-ALEX"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Alectinib versus Crizotinib in Untreated ALK-Positive Non-Small-Cell Lung Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28586279/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Alectinib versus crizotinib in patients with ALK-positive non-small-cell lung cancer (J-ALEX): an open-label, randomised phase 3 trial.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28501140/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "assessments": {
+        "Assay validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Prognostic evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Treatment interaction": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical benefit": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Applicability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "egfr-osimertinib"
+      ],
+      "disease_context": {
+        "cancer_type": "Non-small-cell lung cancer",
+        "stage": "Advanced",
+        "molecular_subtype": "ALK-positive",
+        "biomarker": "ALK-positive",
+        "therapy": "Alectinib",
+        "treatment_line": "See trial eligibility"
+      },
+      "figures": [],
+      "aliases": [
+        "ALK-positive",
+        "Alectinib",
+        "ALK",
+        "ALEX",
+        "J-ALEX"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": []
+    },
+    {
+      "id": "brca-olaparib",
+      "name": "BRCA-mutated breast cancer × olaparib",
+      "entity_type": "precision_oncology",
+      "category": "Targeted therapy",
+      "summary": "OlympiAD reports progression-free and overall survival with olaparib versus chemotherapy in germline BRCA-mutated, HER2-negative metastatic breast cancer.",
+      "roles": [
+        "predictive"
+      ],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "Biomarker-selected treatment trials do not by themselves establish a treatment-by-biomarker interaction. Endpoint, setting and follow-up remain study-specific.",
+      "evidence_question": "Does this biological feature change prognosis or treatment response?",
+      "population": "Germline BRCA-mutated, HER2-negative metastatic breast cancer; ≤2 prior chemotherapy lines",
+      "exposure": "Olaparib 300 mg twice daily",
+      "comparator": "Physician-choice capecitabine, eribulin or vinorelbine",
+      "outcomes": [
+        {
+          "name": "Progression-free survival",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Overall survival",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "pmid:28578601",
+          "pmid": "28578601",
+          "doi": "10.1056/nejmoa1706450",
+          "title": "Olaparib for Metastatic Breast Cancer in Patients with a Germline BRCA Mutation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28578601/",
+          "year": "2017",
+          "design": "Randomized controlled trial",
+          "population": "Human; 302 adults with germline BRCA-mutated, HER2-negative metastatic breast cancer",
+          "n": 302,
+          "exposure": "Olaparib 300 mg twice daily",
+          "comparator": "Physician-choice single-agent chemotherapy",
+          "abstract": "Background Olaparib is an oral poly(adenosine diphosphate-ribose) polymerase inhibitor that has promising antitumor activity in patients with metastatic breast cancer and a germline BRCA mutation. Methods We conducted a randomized, open-label, phase 3 trial in which olaparib monotherapy was compared with standard therapy in patients with a germline BRCA mutation and human epidermal growth factor receptor type 2 (HER2)-negative metastatic breast cancer who had received no more than two previous chemotherapy regimens for metastatic disease. Patients were randomly assigned, in a 2:1 ratio, to receive olaparib tablets (300 mg twice daily) or standard therapy with single-agent chemotherapy of the physician's choice (capecitabine, eribulin, or vinorelbine in 21-day cycles). The primary end point was progression-free survival, which was assessed by blinded independent central review and was analyzed on an intention-to-treat basis. Results Of the 302 patients who underwent randomization, 205 were assigned to receive olaparib and 97 were assigned to receive standard therapy. Median progression-free survival was significantly longer in the olaparib group than in the standard-therapy group (7.0 months vs. 4.2 months; hazard ratio for disease progression or death, 0.58; 95% confidence interval, 0.43 to 0.80; P<0.001). The response rate was 59.9% in the olaparib group and 28.8% in the standard-therapy group. The rate of grade 3 or higher adverse events was 36.6% in the olaparib group and 50.5% in the standard-therapy group, and the rate of treatment discontinuation due to toxic effects was 4.9% and 7.7%, respectively. Conclusions Among patients with HER2-negative metastatic breast cancer and a germline BRCA mutation, olaparib monotherapy provided a significant benefit over standard therapy; median progression-free survival was 2.8 months longer and the risk of disease progression or death was 42% lower with olaparib monotherapy than with standard therapy. (Funded by AstraZeneca; OlympiAD ClinicalTrials.gov number, NCT02000622 .).",
+          "findings": [
+            {
+              "outcome": "Progression-free survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.58,
+                "lower": 0.43,
+                "upper": 0.8,
+                "confidence_level": 95,
+                "units": "blinded independent central review",
+                "origin": "reported"
+              },
+              "quote": "Median progression-free survival was significantly longer in the olaparib group than in the standard-therapy group (7.0 months vs. 4.2 months; hazard ratio for disease progression or death, 0.58; 95% confidence interval, 0.43 to 0.80; P<0.001).",
+              "source_span": {
+                "text": "Median progression-free survival was significantly longer in the olaparib group than in the standard-therapy group (7.0 months vs. 4.2 months; hazard ratio for disease progression or death, 0.58; 95% confidence interval, 0.43 to 0.80; P<0.001).",
+                "start": 1083,
+                "end": 1327,
+                "source_id": "pmid:28578601",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "Median progression-free survival was significantly longer in the olaparib group than in the standard-therapy group (7.0 months vs. 4.2 months; hazard ratio for disease progression or death, 0.58; 95% confidence interval, 0.43 to 0.80; P<0.001).",
+          "population_span": {
+            "text": "We conducted a randomized, open-label, phase 3 trial in which olaparib monotherapy was compared with standard therapy in patients with a germline BRCA mutation and human epidermal growth factor receptor type 2 (HER2)-negative metastatic breast cancer who had received no more than two previous chemotherapy regimens for metastatic disease.",
+            "start": 205,
+            "end": 544,
+            "source_id": "pmid:28578601",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "The primary end point was progression-free survival, which was assessed by blinded independent central review and was analyzed on an intention-to-treat basis.",
+            "start": 779,
+            "end": 937,
+            "source_id": "pmid:28578601",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "f87ba5e56b67c9773cea4f622735018b397be38e016f483868b6630af50d07e4"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "OlympiAD"
+        },
+        {
+          "id": "pmid:30689707",
+          "pmid": "30689707",
+          "doi": "10.1093/annonc/mdz012",
+          "title": "OlympiAD final overall survival and tolerability results: Olaparib versus chemotherapy treatment of physician's choice in patients with a germline BRCA mutation and HER2-negative metastatic breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30689707/",
+          "year": "2019",
+          "design": "Randomized controlled trial",
+          "population": "Human; Germline BRCA-mutated, HER2-negative metastatic breast cancer; ≤2 prior chemotherapy lines",
+          "n": null,
+          "exposure": "Olaparib 300 mg twice daily",
+          "comparator": "Physician-choice single-agent chemotherapy",
+          "abstract": "Background In the OlympiAD study, olaparib was shown to improve progression-free survival compared with chemotherapy treatment of physician's choice (TPC) in patients with a germline BRCA1 and/or BRCA2 mutation (BRCAm) and human epidermal growth factor receptor 2 (HER2)-negative metastatic breast cancer (mBC). We now report the planned final overall survival (OS) results, and describe the most common adverse events (AEs) to better understand olaparib tolerability in this population. Patients and methods OlympiAD, a Phase III, randomized, controlled, open-label study (NCT02000622), enrolled patients with a germline BRCAm and HER2-negative mBC who had received ≤2 lines of chemotherapy for mBC. Patients were randomized to olaparib tablets (300 mg bid) or predeclared TPC (capecitabine, vinorelbine, or eribulin). OS and safety were secondary end points. Results A total of 205 patients were randomized to olaparib and 97 to TPC. At 64% data maturity, median OS was 19.3 months with olaparib versus 17.1 months with TPC (HR 0.90, 95% CI 0.66-1.23; P = 0.513); median follow-up was 25.3 and 26.3 months, respectively. HR for OS with olaparib versus TPC in prespecified subgroups were: prior chemotherapy for mBC [no (first-line setting): 0.51, 95% CI 0.29-0.90; yes (second/third-line): 1.13, 0.79-1.64]; receptor status (triple negative: 0.93, 0.62-1.43; hormone receptor positive: 0.86, 0.55-1.36); prior platinum (yes: 0.83, 0.49-1.45; no: 0.91, 0.64-1.33). Adverse events during olaparib treatment were generally low grade and manageable by supportive treatment or dose modification. There was a low rate of treatment discontinuation (4.9%), and the risk of developing anemia did not increase with extended olaparib exposure. Conclusions While there was no statistically significant improvement in OS with olaparib compared to TPC, there was the possibility of meaningful OS benefit among patients who had not received chemotherapy for metastatic disease. Olaparib was generally well-tolerated, with no evidence of cumulative toxicity during extended exposure. Please see the article online for additional video content.",
+          "findings": [
+            {
+              "outcome": "Overall survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.9,
+                "lower": 0.66,
+                "upper": 1.23,
+                "confidence_level": 95,
+                "units": "secondary endpoint; 64% data maturity",
+                "origin": "reported"
+              },
+              "quote": "At 64% data maturity, median OS was 19.3 months with olaparib versus 17.1 months with TPC (HR 0.90, 95% CI 0.66-1.23; P = 0.513); median follow-up was 25.3 and 26.3 months, respectively.",
+              "source_span": {
+                "text": "At 64% data maturity, median OS was 19.3 months with olaparib versus 17.1 months with TPC (HR 0.90, 95% CI 0.66-1.23; P = 0.513); median follow-up was 25.3 and 26.3 months, respectively.",
+                "start": 936,
+                "end": 1122,
+                "source_id": "pmid:30689707",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "At 64% data maturity, median OS was 19.3 months with olaparib versus 17.1 months with TPC (HR 0.90, 95% CI 0.66-1.23; P = 0.513); median follow-up was 25.3 and 26.3 months, respectively.",
+          "population_span": {
+            "text": "OlympiAD, a Phase III, randomized, controlled, open-label study (NCT02000622), enrolled patients with a germline BRCAm and HER2-negative mBC who had received ≤2 lines of chemotherapy for mBC.",
+            "start": 509,
+            "end": 700,
+            "source_id": "pmid:30689707",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "OS and safety were secondary end points.",
+            "start": 820,
+            "end": 860,
+            "source_id": "pmid:30689707",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "85ea8ffb35391d99eddf607f68c42c8b2c6bad527b3ebb49b147090207bdabca"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "OlympiAD"
+        },
+        {
+          "id": "pmid:36893711",
+          "pmid": "36893711",
+          "doi": "10.1016/j.ejca.2023.01.031",
+          "title": "OlympiAD extended follow-up for overall survival and safety: Olaparib versus chemotherapy treatment of physician's choice in patients with a germline BRCA mutation and HER2-negative metastatic breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36893711/",
+          "year": "2023",
+          "design": "Randomized controlled trial follow-up",
+          "population": "Human; 302 adults from OlympiAD; germline BRCA-mutated HER2-negative metastatic breast cancer",
+          "n": 302,
+          "exposure": "Olaparib 300 mg twice daily",
+          "comparator": "Physician-choice chemotherapy",
+          "abstract": "Background In the Phase III OlympiAD study, olaparib significantly prolonged progression-free survival versus chemotherapy treatment of physician's choice (TPC) in patients with germline BRCA-mutated (gBRCAm), human epidermal growth factor receptor 2-negative metastatic breast cancer (mBC). In the final pre-specified analysis (64% maturity), median overall survival (OS) was 19.3 months for olaparib and 17.1 months for TPC (P = 0.513). Post-hoc extended follow-up, 25.7 months longer than previously reported for OS, is reported. Patients and methods Patients with gBRCAm, human epidermal growth factor receptor 2-negative mBC, who had received ≤2 lines of chemotherapy for metastatic disease, were randomised 2:1 to olaparib (300 mg bid) or TPC. During extended follow-up, OS was analysed every 6 months using the stratified log-rank test (overall population) and Cox proportional hazards model (pre-specified subgroups). Results In the overall population (302 patients; 76.8% maturity), median OS was 19.3 months for olaparib and 17.1 months for TPC (hazard ratio 0.89, 95% confidence interval 0.67-1.18); median follow-up was 18.9 and 15.5 months, respectively. Three-year survival was 27.9% for olaparib versus 21.2% for TPC. With olaparib, 8.8% of patients received study treatment for ≥3 years versus none with TPC. In first-line mBC, median OS was longer for olaparib than TPC (22.6 versus 14.7 months; hazard ratio 0.55, 95% confidence interval 0.33-0.95) and 3-year survival was 40.8% for olaparib versus 12.8% for TPC. No new serious adverse events related to olaparib were observed. Conclusions OS was consistent with previous analyses from OlympiAD. These findings support the possibility of meaningful long-term survival benefit with olaparib, particularly in first-line mBC.",
+          "findings": [
+            {
+              "outcome": "Overall survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.89,
+                "lower": 0.67,
+                "upper": 1.18,
+                "confidence_level": 95,
+                "units": "post-hoc follow-up",
+                "origin": "reported"
+              },
+              "quote": "In the overall population (302 patients; 76.8% maturity), median OS was 19.3 months for olaparib and 17.1 months for TPC (hazard ratio 0.89, 95% confidence interval 0.67-1.18); median follow-up was 18.9 and 15.5 months, respectively.",
+              "source_span": {
+                "text": "In the overall population (302 patients; 76.8% maturity), median OS was 19.3 months for olaparib and 17.1 months for TPC (hazard ratio 0.89, 95% confidence interval 0.67-1.18); median follow-up was 18.9 and 15.5 months, respectively.",
+                "start": 934,
+                "end": 1167,
+                "source_id": "pmid:36893711",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "In the overall population (302 patients; 76.8% maturity), median OS was 19.3 months for olaparib and 17.1 months for TPC (hazard ratio 0.89, 95% confidence interval 0.67-1.18); median follow-up was 18.9 and 15.5 months, respectively.",
+          "population_span": {
+            "text": "Patients with gBRCAm, human epidermal growth factor receptor 2-negative mBC, who had received ≤2 lines of chemotherapy for metastatic disease, were randomised 2:1 to olaparib (300 mg bid) or TPC.",
+            "start": 554,
+            "end": 749,
+            "source_id": "pmid:36893711",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Post-hoc extended follow-up, 25.7 months longer than previously reported for OS, is reported.",
+            "start": 439,
+            "end": 532,
+            "source_id": "pmid:36893711",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "d4279a1d05559c952bcfeabe08ee67572ab0bee07996683a90a926f68415e6f4"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "OlympiAD"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Olaparib for Metastatic Breast Cancer in Patients with a Germline BRCA Mutation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28578601/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "OlympiAD final overall survival and tolerability results: Olaparib versus chemotherapy treatment of physician's choice in patients with a germline BRCA mutation and HER2-negative metastatic breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30689707/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "OlympiAD extended follow-up for overall survival and safety: Olaparib versus chemotherapy treatment of physician's choice in patients with a germline BRCA mutation and HER2-negative metastatic breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36893711/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "assessments": {
+        "Assay validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Prognostic evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Treatment interaction": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical benefit": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Applicability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "her2-trastuzumab"
+      ],
+      "disease_context": {
+        "cancer_type": "Breast cancer",
+        "stage": "Metastatic",
+        "molecular_subtype": "Germline BRCA1/2; HER2-negative",
+        "biomarker": "Germline BRCA1/2; HER2-negative",
+        "therapy": "Olaparib",
+        "treatment_line": "See trial eligibility"
+      },
+      "figures": [],
+      "aliases": [
+        "Germline BRCA1/2; HER2-negative",
+        "Olaparib",
+        "BRCA",
+        "BRCA1",
+        "BRCA2",
+        "OlympiAD"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "3 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": []
+    },
+    {
+      "id": "egfr-adjuvant-osimertinib",
+      "name": "Resected EGFR-mutated lung cancer × osimertinib",
+      "entity_type": "precision_oncology",
+      "category": "Targeted therapy",
+      "summary": "ADAURA reports disease-free and overall survival after resection of EGFR-mutated stage IB–IIIA lung cancer.",
+      "roles": [
+        "predictive"
+      ],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "Biomarker-selected treatment trials do not by themselves establish a treatment-by-biomarker interaction. Endpoint, setting and follow-up remain study-specific.",
+      "evidence_question": "Does this biological feature change prognosis or treatment response?",
+      "population": "Completely resected EGFR-mutated stage IB–IIIA NSCLC",
+      "exposure": "Osimertinib 80 mg daily for up to 3 years",
+      "comparator": "Placebo",
+      "outcomes": [
+        {
+          "name": "Overall survival — stage II–IIIA",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Overall survival — stage IB–IIIA",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Disease-free survival — stage II–IIIA",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Disease-free survival — stage IB–IIIA",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "pmid:37272535",
+          "pmid": "37272535",
+          "doi": "10.1056/nejmoa2304594",
+          "title": "Overall Survival with Osimertinib in Resected EGFR -Mutated NSCLC.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37272535/",
+          "year": "2023",
+          "design": "Randomized controlled trial",
+          "population": "Human; 682 randomized adults with resected EGFR-mutated stage IB–IIIA NSCLC; primary subgroup stage II–IIIA",
+          "n": 682,
+          "exposure": "Osimertinib 80 mg daily for up to 3 years",
+          "comparator": "Placebo",
+          "abstract": "Background Among patients with resected, epidermal growth factor receptor ( EGFR )-mutated, stage IB to IIIA non-small-cell lung cancer (NSCLC), adjuvant osimertinib therapy, with or without previous adjuvant chemotherapy, resulted in significantly longer disease-free survival than placebo in the ADAURA trial. We report the results of the planned final analysis of overall survival. Methods In this phase 3, double-blind trial, we randomly assigned eligible patients in a 1:1 ratio to receive osimertinib (80 mg once daily) or placebo until disease recurrence was observed, the trial regimen was completed (3 years), or a discontinuation criterion was met. The primary end point was investigator-assessed disease-free survival among patients with stage II to IIIA disease. Secondary end points included disease-free survival among patients with stage IB to IIIA disease, overall survival, and safety. Results Of 682 patients who underwent randomization, 339 received osimertinib and 343 received placebo. Among patients with stage II to IIIA disease, the 5-year overall survival was 85% in the osimertinib group and 73% in the placebo group (overall hazard ratio for death, 0.49; 95.03% confidence interval [CI], 0.33 to 0.73; P<0.001). In the overall population (patients with stage IB to IIIA disease), the 5-year overall survival was 88% in the osimertinib group and 78% in the placebo group (overall hazard ratio for death, 0.49; 95.03% CI, 0.34 to 0.70; P<0.001). One new serious adverse event, pneumonia related to coronavirus disease 2019, was reported after the previously published data-cutoff date (the event was not considered by the investigator to be related to the trial regimen, and the patient fully recovered). Adjuvant osimertinib had a safety profile consistent with that in the primary analysis. Conclusions Adjuvant osimertinib provided a significant overall survival benefit among patients with completely resected, EGFR -mutated, stage IB to IIIA NSCLC. (Funded by AstraZeneca; ADAURA ClinicalTrials.gov number, NCT02511106.).",
+          "findings": [
+            {
+              "outcome": "Overall survival — stage II–IIIA",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.49,
+                "lower": 0.33,
+                "upper": 0.73,
+                "confidence_level": 95.03,
+                "units": "stage-specific analysis",
+                "origin": "reported"
+              },
+              "quote": "Among patients with stage II to IIIA disease, the 5-year overall survival was 85% in the osimertinib group and 73% in the placebo group (overall hazard ratio for death, 0.49; 95.03% confidence interval [CI], 0.33 to 0.73; P<0.001).",
+              "source_span": {
+                "text": "Among patients with stage II to IIIA disease, the 5-year overall survival was 85% in the osimertinib group and 73% in the placebo group (overall hazard ratio for death, 0.49; 95.03% confidence interval [CI], 0.33 to 0.73; P<0.001).",
+                "start": 1007,
+                "end": 1238,
+                "source_id": "pmid:37272535",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Overall survival — stage IB–IIIA",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.49,
+                "lower": 0.34,
+                "upper": 0.7,
+                "confidence_level": 95.03,
+                "units": "overall trial population",
+                "origin": "reported"
+              },
+              "quote": "In the overall population (patients with stage IB to IIIA disease), the 5-year overall survival was 88% in the osimertinib group and 78% in the placebo group (overall hazard ratio for death, 0.49; 95.03% CI, 0.34 to 0.70; P<0.001).",
+              "source_span": {
+                "text": "In the overall population (patients with stage IB to IIIA disease), the 5-year overall survival was 88% in the osimertinib group and 78% in the placebo group (overall hazard ratio for death, 0.49; 95.03% CI, 0.34 to 0.70; P<0.001).",
+                "start": 1239,
+                "end": 1470,
+                "source_id": "pmid:37272535",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "Among patients with stage II to IIIA disease, the 5-year overall survival was 85% in the osimertinib group and 73% in the placebo group (overall hazard ratio for death, 0.49; 95.03% confidence interval [CI], 0.33 to 0.73; P<0.001).",
+          "population_span": {
+            "text": "Of 682 patients who underwent randomization, 339 received osimertinib and 343 received placebo.",
+            "start": 911,
+            "end": 1006,
+            "source_id": "pmid:37272535",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "The primary end point was investigator-assessed disease-free survival among patients with stage II to IIIA disease.",
+            "start": 659,
+            "end": 774,
+            "source_id": "pmid:37272535",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "e39bae178fa8a98514a16677e5c23dcedb0f99d9320eccb51b4f885c2a61db86"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ADAURA"
+        },
+        {
+          "id": "pmid:32955177",
+          "pmid": "32955177",
+          "doi": "10.1056/nejmoa2027071",
+          "title": "Osimertinib in Resected EGFR -Mutated Non-Small-Cell Lung Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32955177/",
+          "year": "2020",
+          "design": "Randomized controlled trial",
+          "population": "Human; 682 randomized adults with completely resected EGFR-mutated stage IB–IIIA NSCLC",
+          "n": 682,
+          "exposure": "Osimertinib 80 mg daily for 3 years",
+          "comparator": "Placebo",
+          "abstract": "Background Osimertinib is standard-of-care therapy for previously untreated epidermal growth factor receptor ( EGFR ) mutation-positive advanced non-small-cell lung cancer (NSCLC). The efficacy and safety of osimertinib as adjuvant therapy are unknown. Methods In this double-blind, phase 3 trial, we randomly assigned patients with completely resected EGFR mutation-positive NSCLC in a 1:1 ratio to receive either osimertinib (80 mg once daily) or placebo for 3 years. The primary end point was disease-free survival among patients with stage II to IIIA disease (according to investigator assessment). The secondary end points included disease-free survival in the overall population of patients with stage IB to IIIA disease, overall survival, and safety. Results A total of 682 patients underwent randomization (339 to the osimertinib group and 343 to the placebo group). At 24 months, 90% of the patients with stage II to IIIA disease in the osimertinib group (95% confidence interval [CI], 84 to 93) and 44% of those in the placebo group (95% CI, 37 to 51) were alive and disease-free (overall hazard ratio for disease recurrence or death, 0.17; 99.06% CI, 0.11 to 0.26; P<0.001). In the overall population, 89% of the patients in the osimertinib group (95% CI, 85 to 92) and 52% of those in the placebo group (95% CI, 46 to 58) were alive and disease-free at 24 months (overall hazard ratio for disease recurrence or death, 0.20; 99.12% CI, 0.14 to 0.30; P<0.001). At 24 months, 98% of the patients in the osimertinib group (95% CI, 95 to 99) and 85% of those in the placebo group (95% CI, 80 to 89) were alive and did not have central nervous system disease (overall hazard ratio for disease recurrence or death, 0.18; 95% CI, 0.10 to 0.33). Overall survival data were immature; 29 patients died (9 in the osimertinib group and 20 in the placebo group). No new safety concerns were noted. Conclusions In patients with stage IB to IIIA EGFR mutation-positive NSCLC, disease-free survival was significantly longer among those who received osimertinib than among those who received placebo. (Funded by AstraZeneca; ADAURA ClinicalTrials.gov number, NCT02511106.).",
+          "findings": [
+            {
+              "outcome": "Disease-free survival — stage II–IIIA",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.17,
+                "lower": 0.11,
+                "upper": 0.26,
+                "confidence_level": 99.06,
+                "units": "stage-specific analysis",
+                "origin": "reported"
+              },
+              "quote": "At 24 months, 90% of the patients with stage II to IIIA disease in the osimertinib group (95% confidence interval [CI], 84 to 93) and 44% of those in the placebo group (95% CI, 37 to 51) were alive and disease-free (overall hazard ratio for disease recurrence or death, 0.17; 99.06% CI, 0.11 to 0.26; P<0.001).",
+              "source_span": {
+                "text": "At 24 months, 90% of the patients with stage II to IIIA disease in the osimertinib group (95% confidence interval [CI], 84 to 93) and 44% of those in the placebo group (95% CI, 37 to 51) were alive and disease-free (overall hazard ratio for disease recurrence or death, 0.17; 99.06% CI, 0.11 to 0.26; P<0.001).",
+                "start": 875,
+                "end": 1185,
+                "source_id": "pmid:32955177",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Disease-free survival — stage IB–IIIA",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.2,
+                "lower": 0.14,
+                "upper": 0.3,
+                "confidence_level": 99.12,
+                "units": "overall trial population",
+                "origin": "reported"
+              },
+              "quote": "In the overall population, 89% of the patients in the osimertinib group (95% CI, 85 to 92) and 52% of those in the placebo group (95% CI, 46 to 58) were alive and disease-free at 24 months (overall hazard ratio for disease recurrence or death, 0.20; 99.12% CI, 0.14 to 0.30; P<0.001).",
+              "source_span": {
+                "text": "In the overall population, 89% of the patients in the osimertinib group (95% CI, 85 to 92) and 52% of those in the placebo group (95% CI, 46 to 58) were alive and disease-free at 24 months (overall hazard ratio for disease recurrence or death, 0.20; 99.12% CI, 0.14 to 0.30; P<0.001).",
+                "start": 1186,
+                "end": 1470,
+                "source_id": "pmid:32955177",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "At 24 months, 90% of the patients with stage II to IIIA disease in the osimertinib group (95% confidence interval [CI], 84 to 93) and 44% of those in the placebo group (95% CI, 37 to 51) were alive and disease-free (overall hazard ratio for disease recurrence or death, 0.17; 99.06% CI, 0.11 to 0.26; P<0.001).",
+          "population_span": {
+            "text": "In this double-blind, phase 3 trial, we randomly assigned patients with completely resected EGFR mutation-positive NSCLC in a 1:1 ratio to receive either osimertinib (80 mg once daily) or placebo for 3 years.",
+            "start": 261,
+            "end": 469,
+            "source_id": "pmid:32955177",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Overall survival data were immature; 29 patients died (9 in the osimertinib group and 20 in the placebo group).",
+            "start": 1749,
+            "end": 1860,
+            "source_id": "pmid:32955177",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "53a636e31011c39ead3c1212d595491b1a01661db81bbb173b85194f4617fd43"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ADAURA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Overall Survival with Osimertinib in Resected EGFR -Mutated NSCLC.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37272535/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Osimertinib in Resected EGFR -Mutated Non-Small-Cell Lung Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32955177/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "assessments": {
+        "Assay validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Prognostic evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Treatment interaction": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical benefit": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Applicability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "egfr-osimertinib"
+      ],
+      "disease_context": {
+        "cancer_type": "Non-small-cell lung cancer",
+        "stage": "Completely resected stage IB–IIIA",
+        "molecular_subtype": "EGFR-mutated",
+        "biomarker": "EGFR-mutated",
+        "therapy": "Osimertinib",
+        "treatment_line": "See trial eligibility"
+      },
+      "figures": [],
+      "aliases": [
+        "EGFR-mutated",
+        "Osimertinib",
+        "EGFR",
+        "ADAURA"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "2 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": []
     }
   ]
 }

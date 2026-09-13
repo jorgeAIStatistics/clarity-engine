@@ -30,3 +30,8 @@ class ProfileContractTests(unittest.TestCase):
         self.assertGreater(a['impact_score'],b['impact_score'])
         self.assertFalse(a['clinical_impact_established'])
         self.assertEqual(b['relevance'],'awaiting_grounded_review')
+
+class HumanCancerLayerTests(unittest.TestCase):
+    def test_human_non_small_cell_trial_not_mechanism(self):
+        from evidence.profile import layer_for
+        self.assertEqual(layer_for({'population':'Human non-small-cell lung cancer','design':'Randomized controlled trial'}),'interventional')

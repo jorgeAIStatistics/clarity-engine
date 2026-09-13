@@ -39,7 +39,7 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(screening_metrics(.008,.01)['number_needed_to_harm'],500)
     def test_catalog(self):
         self.assertTrue(validate_catalog(CATALOG))
-        self.assertEqual(len(list_entities('biomarker')),12)
+        self.assertEqual(len(list_entities('biomarker')),14)
         self.assertIn('egfr-osimertinib',[e['id'] for e in list_entities(query='EGFR')])
         self.assertNotIn('Efficacy',assessment_framework('biomarker')['dimensions'])
         exported=Path(__file__).resolve().parents[2]/'clarity-web/src/evidence/catalog.json'

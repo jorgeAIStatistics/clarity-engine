@@ -14,7 +14,7 @@ def layer_for(study):
     if study.get('is_protocol') or re.search(r'\b(?:study protocol|trial protocol|protocol for (?:a|an|the) .{0,40}trial)\b',str(study.get('title','')).lower()) or 'protocol' in design:return 'protocol'
     if re.search(r'guideline|practice recommendation|regulatory',design):return 'guidelines'
     if re.search(r'animal|mouse|mice|rat\b|preclinical',population) or 'animal' in design:return 'preclinical'
-    if re.search(r'in.?vitro|cell|mechanis',population+' '+design):return 'mechanism'
+    if re.search(r'in.?vitro|cell[- ](?:line|culture|based)|mechanis',population+' '+design):return 'mechanism'
     if re.search(r'meta.analysis|systematic review',design):return 'synthesis'
     if 'human' not in population:return 'unclassified'
     if re.search(r'random|rct|clinical trial|intervention',design):return 'interventional'

@@ -29,3 +29,20 @@ class MatcherTests(unittest.TestCase):
     def test_passage_preserves_decimal_numbers(self):
         text='The difference was 0.25 kg (p<0.05). A second sentence.'
         self.assertEqual(passage(text,{'difference'})['text'],'The difference was 0.25 kg (p<0.05).')
+
+class ResearchScopeTests(unittest.TestCase):
+    def test_personal_input_rejected_before_retrieval(self):
+        from evidence.matcher import match,research_input_error
+        for query in ['patient_id,Marker\n12345,ApoB','Here are my blood test results: LDL 150','email: test@example.com in this table']:
+            self.assertTrue(research_input_error(query))
+            with self.assertRaises(ValueError):match(query,([],[]))
+    def test_research_descriptions_allowed(self):
+        from evidence.matcher import research_input_error
+        self.assertFalse(research_input_error('Aggregate HbA1c results in a cohort of patients with diabetes'))
+    def test_oncology_table_does_not_rank_renal_egfr_first(self):
+        from evidence.matcher import documents,match
+        from evidence.service import CATALOG
+        result=match('topic: EGFR; context: resected lung cancer; outcome: disease-free survival',documents(CATALOG['entities']))
+        self.assertNotEqual(result['entities'][0]['id'],'entity:creatinine-egfr')
+        self.assertEqual(result['entities'][0]['entity_type'],'precision_oncology')
+        self.assertTrue(any('hazard ratio' in s['passage']['text'].lower() for s in result['studies']))

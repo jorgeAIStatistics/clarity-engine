@@ -29,7 +29,7 @@ class LivingResearchTests(unittest.TestCase):
     def monitor(self,provider=None):return Monitor(self.store,providers={'pubmed':provider or Provider()},extractor=Extractor())
     def test_all_new_domains_discovered(self):
         targets=discover_targets(False)
-        self.assertEqual(len(targets),21)
+        self.assertEqual(len(targets),26)
         self.assertEqual({t['entity_type'] for t in targets},{'biomarker','diagnostic','screening','precision_oncology'})
     def test_bridge_deduplication(self):
         groups=deduplicate([{'source':'pubmed','pmid':'123'},{'source':'europe_pmc','doi':'https://doi.org/10.1/ABC'},{'source':'pubmed','pmid':'123','doi':'10.1/abc'}])

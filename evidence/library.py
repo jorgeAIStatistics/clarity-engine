@@ -10,6 +10,7 @@ PATHS={'biomarker':'biomarkers','diagnostic':'diagnostics','screening':'screenin
 
 def build_library():
     import generate
+    from .enrichment import OVERLAYS
     entries={};audit=[]
     for key in cache.list_cached():
         p=cache.get(key,max_age_days=100000)
@@ -18,6 +19,13 @@ def build_library():
         analysis=analyse_profile(p)
         current=p.get('engine_version')==generate.ENGINE_VERSION and int(p.get('schema_version') or 0)>=generate.PROFILE_SCHEMA_VERSION
         row={'id':'compound:'+slug,'name':p['name'],'entity_type':'intervention','category':p.get('category') or 'intervention','aliases':p.get('aliases',[]),'path':'/compound/'+slug,'outcomes':[c['outcome'] for c in p['claims']],'conditions':[],'review_status':'refresh_required' if analysis['coverage']['protocols'] or not current else 'automated_appraisal','available':current,'generated_at':p.get('generated_at'),'summary':analysis['summary'],'coverage':analysis['coverage'],'maturity':p.get('display_tier') or p.get('tier'),'analysis_version':analysis['version'],'quantified_outcome_names':[o['name'] for o in analysis['outcomes'] if o['effects']]}
+        selected=OVERLAYS['profiles'].get(slug)
+        if selected:
+            records=[s for claim in p['claims'] for s in claim.get('studies',[])]+selected['studies']
+            identities={str(s.get('pmid') or s.get('doi') or s.get('id') or s.get('url')) for s in records if s.get('pmid') or s.get('doi') or s.get('id') or s.get('url')}
+            names=list(dict.fromkeys(row['quantified_outcome_names']+[f['outcome'] for s in selected['studies'] for f in s.get('findings',[])]))
+            row['coverage']={**row['coverage'],'linked_studies':len(identities),'quantified_outcomes':len(names),'selected_publications':len(selected['studies'])}
+            row['quantified_outcome_names']=names;row['last_enriched_at']='2026-09-13'
         old=entries.get(row['id'])
         if not old or str(row['generated_at'] or '')>str(old['generated_at'] or ''):entries[row['id']]=row
         audit.append({'id':row['id'],'withheld_estimates':sum(len(o['withheld']) for o in analysis['outcomes']),'protocols':analysis['coverage']['protocols']})

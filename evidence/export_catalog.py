@@ -15,3 +15,6 @@ if __name__=='__main__':
     destination=Path(sys.argv[1])
     destination.with_name('catalog-index.json').write_text(json.dumps({'entities':[{k:e.get(k) for k in ('id','name','aliases','summary','entity_type')} for e in CATALOG['entities']]},ensure_ascii=False,separators=(',',':'))+'\n')
     destination.with_name('frameworks.json').write_text(json.dumps({'frameworks':CATALOG['frameworks']},ensure_ascii=False,separators=(',',':'))+'\n')
+
+    from .enrichment import OVERLAYS
+    (destination.parent.parent.parent/'public'/'intervention-enrichment.json').write_text(json.dumps(OVERLAYS,ensure_ascii=False,separators=(',',':'))+'\n')

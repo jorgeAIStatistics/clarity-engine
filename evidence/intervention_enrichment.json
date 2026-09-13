@@ -1,0 +1,532 @@
+{
+  "version": "selected-enrichment-v2",
+  "profiles": {
+    "vitamin-d3": {
+      "id": "vitamin-d3",
+      "name": "Vitamin D3",
+      "entity_type": "intervention",
+      "studies": [
+        {
+          "id": "pmid:35939577",
+          "pmid": "35939577",
+          "doi": "10.1056/nejmoa2202106",
+          "title": "Supplemental Vitamin D and Incident Fractures in Midlife and Older Adults.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35939577/",
+          "year": "2022",
+          "design": "Randomized controlled trial",
+          "population": "Human; Men ≥50 and women ≥55; not selected for vitamin D deficiency",
+          "n": 25871,
+          "exposure": "Vitamin D3 2,000 IU daily",
+          "comparator": "Placebo",
+          "abstract": "Background Vitamin D supplements are widely recommended for bone health in the general population, but data on whether they prevent fractures have been inconsistent. Methods In an ancillary study of the Vitamin D and Omega-3 Trial (VITAL), we tested whether supplemental vitamin D 3 would result in a lower risk of fractures than placebo. VITAL was a two-by-two factorial, randomized, controlled trial that investigated whether supplemental vitamin D 3 (2000 IU per day), n-3 fatty acids (1 g per day), or both would prevent cancer and cardiovascular disease in men 50 years of age or older and women 55 years of age or older in the United States. Participants were not recruited on the basis of vitamin D deficiency, low bone mass, or osteoporosis. Incident fractures were reported by participants on annual questionnaires and adjudicated by centralized medical-record review. The primary end points were incident total, nonvertebral, and hip fractures. Proportional-hazards models were used to estimate the treatment effect in intention-to-treat analyses. Results Among 25,871 participants (50.6% women [13,085 of 25,871] and 20.2% Black [5106 of 25,304]), we confirmed 1991 incident fractures in 1551 participants over a median follow-up of 5.3 years. Supplemental vitamin D 3 , as compared with placebo, did not have a significant effect on total fractures (which occurred in 769 of 12,927 participants in the vitamin D group and in 782 of 12,944 participants in the placebo group; hazard ratio, 0.98; 95% confidence interval [CI], 0.89 to 1.08; P = 0.70), nonvertebral fractures (hazard ratio, 0.97; 95% CI, 0.87 to 1.07; P = 0.50), or hip fractures (hazard ratio, 1.01; 95% CI, 0.70 to 1.47; P = 0.96). There was no modification of the treatment effect according to baseline characteristics, including age, sex, race or ethnic group, body-mass index, or serum 25-hydroxyvitamin D levels. There were no substantial between-group differences in adverse events as assessed in the parent trial. Conclusions Vitamin D 3 supplementation did not result in a significantly lower risk of fractures than placebo among generally healthy midlife and older adults who were not selected for vitamin D deficiency, low bone mass, or osteoporosis. (Funded by the National Institute of Arthritis and Musculoskeletal and Skin Diseases; VITAL ClinicalTrials.gov number, NCT01704859.).",
+          "findings": [
+            {
+              "outcome": "Total fractures",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.98,
+                "lower": 0.89,
+                "upper": 1.08,
+                "confidence_level": 95,
+                "units": "vitamin D versus placebo",
+                "origin": "reported"
+              },
+              "quote": "Supplemental vitamin D 3 , as compared with placebo, did not have a significant effect on total fractures (which occurred in 769 of 12,927 participants in the vitamin D group and in 782 of 12,944 participants in the placebo group; hazard ratio, 0.98; 95% confidence interval [CI], 0.89 to 1.08; P = 0.70), nonvertebral fractures (hazard ratio, 0.97; 95% CI, 0.87 to 1.07; P = 0.50), or hip fractures (hazard ratio, 1.01; 95% CI, 0.70 to 1.47; P = 0.96).",
+              "source_span": {
+                "text": "Supplemental vitamin D 3 , as compared with placebo, did not have a significant effect on total fractures (which occurred in 769 of 12,927 participants in the vitamin D group and in 782 of 12,944 participants in the placebo group; hazard ratio, 0.98; 95% confidence interval [CI], 0.89 to 1.08; P = 0.70), nonvertebral fractures (hazard ratio, 0.97; 95% CI, 0.87 to 1.07; P = 0.50), or hip fractures (hazard ratio, 1.01; 95% CI, 0.70 to 1.47; P = 0.96).",
+                "start": 1255,
+                "end": 1708,
+                "source_id": "pmid:35939577",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "Supplemental vitamin D 3 , as compared with placebo, did not have a significant effect on total fractures (which occurred in 769 of 12,927 participants in the vitamin D group and in 782 of 12,944 participants in the placebo group; hazard ratio, 0.98; 95% confidence interval [CI], 0.89 to 1.08; P = 0.70), nonvertebral fractures (hazard ratio, 0.97; 95% CI, 0.87 to 1.07; P = 0.50), or hip fractures (hazard ratio, 1.01; 95% CI, 0.70 to 1.47; P = 0.96).",
+          "population_span": {
+            "text": "VITAL was a two-by-two factorial, randomized, controlled trial that investigated whether supplemental vitamin D 3 (2000 IU per day), n-3 fatty acids (1 g per day), or both would prevent cancer and cardiovascular disease in men 50 years of age or older and women 55 years of age or older in the United States.",
+            "start": 339,
+            "end": 647,
+            "source_id": "pmid:35939577",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Participants were not recruited on the basis of vitamin D deficiency, low bone mass, or osteoporosis.",
+            "start": 648,
+            "end": 749,
+            "source_id": "pmid:35939577",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "94d3c3a819b39d3019cc9df0c7640a7566a97bce372405a6e3ac07c705a6f4f9"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "VITAL"
+        },
+        {
+          "id": "pmid:30415629",
+          "pmid": "30415629",
+          "doi": "10.1056/nejmoa1809944",
+          "title": "Vitamin D Supplements and Prevention of Cancer and Cardiovascular Disease.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30415629/",
+          "year": "2019",
+          "design": "Randomized controlled trial",
+          "population": "Human; 25,871 men ≥50 and women ≥55 in the United States",
+          "n": 25871,
+          "exposure": "Vitamin D3 2,000 IU daily",
+          "comparator": "Placebo",
+          "abstract": "Background It is unclear whether supplementation with vitamin D reduces the risk of cancer or cardiovascular disease, and data from randomized trials are limited. Methods We conducted a nationwide, randomized, placebo-controlled trial, with a two-by-two factorial design, of vitamin D 3 (cholecalciferol) at a dose of 2000 IU per day and marine n-3 (also called omega-3) fatty acids at a dose of 1 g per day for the prevention of cancer and cardiovascular disease among men 50 years of age or older and women 55 years of age or older in the United States. Primary end points were invasive cancer of any type and major cardiovascular events (a composite of myocardial infarction, stroke, or death from cardiovascular causes). Secondary end points included site-specific cancers, death from cancer, and additional cardiovascular events. This article reports the results of the comparison of vitamin D with placebo. Results A total of 25,871 participants, including 5106 black participants, underwent randomization. Supplementation with vitamin D was not associated with a lower risk of either of the primary end points. During a median follow-up of 5.3 years, cancer was diagnosed in 1617 participants (793 in the vitamin D group and 824 in the placebo group; hazard ratio, 0.96; 95% confidence interval [CI], 0.88 to 1.06; P=0.47). A major cardiovascular event occurred in 805 participants (396 in the vitamin D group and 409 in the placebo group; hazard ratio, 0.97; 95% CI, 0.85 to 1.12; P=0.69). In the analyses of secondary end points, the hazard ratios were as follows: for death from cancer (341 deaths), 0.83 (95% CI, 0.67 to 1.02); for breast cancer, 1.02 (95% CI, 0.79 to 1.31); for prostate cancer, 0.88 (95% CI, 0.72 to 1.07); for colorectal cancer, 1.09 (95% CI, 0.73 to 1.62); for the expanded composite end point of major cardiovascular events plus coronary revascularization, 0.96 (95% CI, 0.86 to 1.08); for myocardial infarction, 0.96 (95% CI, 0.78 to 1.19); for stroke, 0.95 (95% CI, 0.76 to 1.20); and for death from cardiovascular causes, 1.11 (95% CI, 0.88 to 1.40). In the analysis of death from any cause (978 deaths), the hazard ratio was 0.99 (95% CI, 0.87 to 1.12). No excess risks of hypercalcemia or other adverse events were identified. Conclusions Supplementation with vitamin D did not result in a lower incidence of invasive cancer or cardiovascular events than placebo. (Funded by the National Institutes of Health and others; VITAL ClinicalTrials.gov number, NCT01169259 .).",
+          "findings": [
+            {
+              "outcome": "Invasive cancer",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.96,
+                "lower": 0.88,
+                "upper": 1.06,
+                "confidence_level": 95,
+                "units": "median 5.3 years",
+                "origin": "reported"
+              },
+              "quote": "During a median follow-up of 5.3 years, cancer was diagnosed in 1617 participants (793 in the vitamin D group and 824 in the placebo group; hazard ratio, 0.96; 95% confidence interval [CI], 0.88 to 1.06; P=0.47).",
+              "source_span": {
+                "text": "During a median follow-up of 5.3 years, cancer was diagnosed in 1617 participants (793 in the vitamin D group and 824 in the placebo group; hazard ratio, 0.96; 95% confidence interval [CI], 0.88 to 1.06; P=0.47).",
+                "start": 1118,
+                "end": 1330,
+                "source_id": "pmid:30415629",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Major cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.97,
+                "lower": 0.85,
+                "upper": 1.12,
+                "confidence_level": 95,
+                "units": "median 5.3 years",
+                "origin": "reported"
+              },
+              "quote": "A major cardiovascular event occurred in 805 participants (396 in the vitamin D group and 409 in the placebo group; hazard ratio, 0.97; 95% CI, 0.85 to 1.12; P=0.69).",
+              "source_span": {
+                "text": "A major cardiovascular event occurred in 805 participants (396 in the vitamin D group and 409 in the placebo group; hazard ratio, 0.97; 95% CI, 0.85 to 1.12; P=0.69).",
+                "start": 1331,
+                "end": 1497,
+                "source_id": "pmid:30415629",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "During a median follow-up of 5.3 years, cancer was diagnosed in 1617 participants (793 in the vitamin D group and 824 in the placebo group; hazard ratio, 0.96; 95% confidence interval [CI], 0.88 to 1.06; P=0.47).",
+          "population_span": {
+            "text": "We conducted a nationwide, randomized, placebo-controlled trial, with a two-by-two factorial design, of vitamin D 3 (cholecalciferol) at a dose of 2000 IU per day and marine n-3 (also called omega-3) fatty acids at a dose of 1 g per day for the prevention of cancer and cardiovascular disease among men 50 years of age or older and women 55 years of age or older in the United States.",
+            "start": 171,
+            "end": 555,
+            "source_id": "pmid:30415629",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "This article reports the results of the comparison of vitamin D with placebo.",
+            "start": 835,
+            "end": 912,
+            "source_id": "pmid:30415629",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "423ee7de5ea02d3307d0d607bcb10de14526a45f8c68819cd2039ea8639979b5"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "VITAL"
+        }
+      ],
+      "outcomes": [],
+      "sources": []
+    },
+    "fish-oil": {
+      "id": "fish-oil",
+      "name": "Fish oil",
+      "entity_type": "intervention",
+      "studies": [
+        {
+          "id": "pmid:30415637",
+          "pmid": "30415637",
+          "doi": "10.1056/nejmoa1811403",
+          "title": "Marine n-3 Fatty Acids and Prevention of Cardiovascular Disease and Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30415637/",
+          "year": "2019",
+          "design": "Randomized controlled trial",
+          "population": "Human; 25,871 US men ≥50 and women ≥55; primary prevention",
+          "n": 25871,
+          "exposure": "Marine omega-3 fatty acids 1 g/day",
+          "comparator": "Placebo",
+          "abstract": "Background Higher intake of marine n-3 (also called omega-3) fatty acids has been associated with reduced risks of cardiovascular disease and cancer in several observational studies. Whether supplementation with n-3 fatty acids has such effects in general populations at usual risk for these end points is unclear. Methods We conducted a randomized, placebo-controlled trial, with a two-by-two factorial design, of vitamin D 3 (at a dose of 2000 IU per day) and marine n-3 fatty acids (at a dose of 1 g per day) in the primary prevention of cardiovascular disease and cancer among men 50 years of age or older and women 55 years of age or older in the United States. Primary end points were major cardiovascular events (a composite of myocardial infarction, stroke, or death from cardiovascular causes) and invasive cancer of any type. Secondary end points included individual components of the composite cardiovascular end point, the composite end point plus coronary revascularization (expanded composite of cardiovascular events), site-specific cancers, and death from cancer. Safety was also assessed. This article reports the results of the comparison of n-3 fatty acids with placebo. Results A total of 25,871 participants, including 5106 black participants, underwent randomization. During a median follow-up of 5.3 years, a major cardiovascular event occurred in 386 participants in the n-3 group and in 419 in the placebo group (hazard ratio, 0.92; 95% confidence interval [CI], 0.80 to 1.06; P=0.24). Invasive cancer was diagnosed in 820 participants in the n-3 group and in 797 in the placebo group (hazard ratio, 1.03; 95% CI, 0.93 to 1.13; P=0.56). In the analyses of key secondary end points, the hazard ratios were as follows: for the expanded composite end point of cardiovascular events, 0.93 (95% CI, 0.82 to 1.04); for total myocardial infarction, 0.72 (95% CI, 0.59 to 0.90); for total stroke, 1.04 (95% CI, 0.83 to 1.31); for death from cardiovascular causes, 0.96 (95% CI, 0.76 to 1.21); and for death from cancer (341 deaths from cancer), 0.97 (95% CI, 0.79 to 1.20). In the analysis of death from any cause (978 deaths overall), the hazard ratio was 1.02 (95% CI, 0.90 to 1.15). No excess risks of bleeding or other serious adverse events were observed. Conclusions Supplementation with n-3 fatty acids did not result in a lower incidence of major cardiovascular events or cancer than placebo. (Funded by the National Institutes of Health and others; VITAL ClinicalTrials.gov number, NCT01169259 .).",
+          "findings": [
+            {
+              "outcome": "Major cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.92,
+                "lower": 0.8,
+                "upper": 1.06,
+                "confidence_level": 95,
+                "units": "median 5.3 years; not high-dose purified EPA",
+                "origin": "reported"
+              },
+              "quote": "During a median follow-up of 5.3 years, a major cardiovascular event occurred in 386 participants in the n-3 group and in 419 in the placebo group (hazard ratio, 0.92; 95% confidence interval [CI], 0.80 to 1.06; P=0.24).",
+              "source_span": {
+                "text": "During a median follow-up of 5.3 years, a major cardiovascular event occurred in 386 participants in the n-3 group and in 419 in the placebo group (hazard ratio, 0.92; 95% confidence interval [CI], 0.80 to 1.06; P=0.24).",
+                "start": 1290,
+                "end": 1510,
+                "source_id": "pmid:30415637",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Invasive cancer",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 1.03,
+                "lower": 0.93,
+                "upper": 1.13,
+                "confidence_level": 95,
+                "units": "median 5.3 years",
+                "origin": "reported"
+              },
+              "quote": "Invasive cancer was diagnosed in 820 participants in the n-3 group and in 797 in the placebo group (hazard ratio, 1.03; 95% CI, 0.93 to 1.13; P=0.56).",
+              "source_span": {
+                "text": "Invasive cancer was diagnosed in 820 participants in the n-3 group and in 797 in the placebo group (hazard ratio, 1.03; 95% CI, 0.93 to 1.13; P=0.56).",
+                "start": 1511,
+                "end": 1661,
+                "source_id": "pmid:30415637",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "During a median follow-up of 5.3 years, a major cardiovascular event occurred in 386 participants in the n-3 group and in 419 in the placebo group (hazard ratio, 0.92; 95% confidence interval [CI], 0.80 to 1.06; P=0.24).",
+          "population_span": {
+            "text": "We conducted a randomized, placebo-controlled trial, with a two-by-two factorial design, of vitamin D 3 (at a dose of 2000 IU per day) and marine n-3 fatty acids (at a dose of 1 g per day) in the primary prevention of cardiovascular disease and cancer among men 50 years of age or older and women 55 years of age or older in the United States.",
+            "start": 323,
+            "end": 666,
+            "source_id": "pmid:30415637",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "This article reports the results of the comparison of n-3 fatty acids with placebo.",
+            "start": 1106,
+            "end": 1189,
+            "source_id": "pmid:30415637",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "6484ed5727e30c6bbe12661adc16877f23dcc06b8724a9aee870565a502595df"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "VITAL"
+        }
+      ],
+      "outcomes": [
+        {
+          "name": "Major cardiovascular events",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Invasive cancer",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Marine n-3 Fatty Acids and Prevention of Cardiovascular Disease and Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30415637/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ]
+    },
+    "creatine": {
+      "id": "creatine",
+      "name": "Creatine",
+      "entity_type": "intervention",
+      "studies": [
+        {
+          "id": "pmid:37968687",
+          "pmid": "37968687",
+          "doi": "10.1186/s12916-023-03146-5",
+          "title": "The effects of creatine supplementation on cognitive performance-a randomised controlled study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37968687/",
+          "year": "2023",
+          "design": "Randomized crossover controlled trial",
+          "population": "Human; 123 participants; approximately half vegetarian and half omnivorous",
+          "n": 123,
+          "exposure": "Creatine 5 g/day for 6 weeks in each crossover period",
+          "comparator": "Placebo",
+          "abstract": "Background Creatine is an organic compound that facilitates the recycling of energy-providing adenosine triphosphate (ATP) in muscle and brain tissue. It is a safe, well-studied supplement for strength training. Previous studies have shown that supplementation increases brain creatine levels, which might increase cognitive performance. The results of studies that have tested cognitive performance differ greatly, possibly due to different populations, supplementation regimens, and cognitive tasks. This is the largest study on the effect of creatine supplementation on cognitive performance to date. Methods Our trial was preregistered, cross-over, double-blind, placebo-controlled, and randomised, with daily supplementation of 5 g for 6 weeks each. We tested participants on Raven's Advanced Progressive Matrices (RAPM) and on the Backward Digit Span (BDS). In addition, we included eight exploratory cognitive tests. About half of our 123 participants were vegetarians and half were omnivores. Results Bayesian evidence supported a small beneficial effect of creatine. The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008). There was no indication that creatine improved the performance of our exploratory cognitive tasks. Side effects were reported significantly more often for creatine than for placebo supplementation (p = 0.002, RR = 4.25). Vegetarians did not benefit more from creatine than omnivores. Conclusions Our study, in combination with the literature, implies that creatine might have a small beneficial effect. Larger studies are needed to confirm or rule out this effect. Given the safety and broad availability of creatine, this is well worth investigating; a small effect could have large benefits when scaled over time and over many people. Trial registration The trial was prospectively registered (drks.de identifier: DRKS00017250, https://osf.io/xpwkc/ ).",
+          "findings": [
+            {
+              "outcome": "Backward digit span",
+              "effect": {
+                "measure": "partial eta squared",
+                "estimate": 0.029,
+                "lower": null,
+                "upper": null,
+                "confidence_level": null,
+                "units": "not a risk ratio; p=0.064",
+                "origin": "reported"
+              },
+              "quote": "The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008).",
+              "source_span": {
+                "text": "The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008).",
+                "start": 1076,
+                "end": 1193,
+                "source_id": "pmid:37968687",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Raven advanced progressive matrices",
+              "effect": {
+                "measure": "partial eta squared",
+                "estimate": 0.008,
+                "lower": null,
+                "upper": null,
+                "confidence_level": null,
+                "units": "not a risk ratio; p=0.327",
+                "origin": "reported"
+              },
+              "quote": "The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008).",
+              "source_span": {
+                "text": "The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008).",
+                "start": 1076,
+                "end": 1193,
+                "source_id": "pmid:37968687",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008).",
+          "population_span": {
+            "text": "About half of our 123 participants were vegetarians and half were omnivores.",
+            "start": 924,
+            "end": 1000,
+            "source_id": "pmid:37968687",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Our trial was preregistered, cross-over, double-blind, placebo-controlled, and randomised, with daily supplementation of 5 g for 6 weeks each.",
+            "start": 612,
+            "end": 754,
+            "source_id": "pmid:37968687",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "5c39e40ea2b35b2e268820ccd227cca0a06ba199ac7e9b039de425b199c7f1ee"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "DRKS00017250"
+        }
+      ],
+      "outcomes": [
+        {
+          "name": "Backward digit span",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Raven advanced progressive matrices",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The effects of creatine supplementation on cognitive performance-a randomised controlled study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37968687/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ]
+    },
+    "creatine-monohydrate": {
+      "id": "creatine-monohydrate",
+      "name": "Creatine monohydrate",
+      "entity_type": "intervention",
+      "studies": [
+        {
+          "id": "pmid:37968687",
+          "pmid": "37968687",
+          "doi": "10.1186/s12916-023-03146-5",
+          "title": "The effects of creatine supplementation on cognitive performance-a randomised controlled study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37968687/",
+          "year": "2023",
+          "design": "Randomized crossover controlled trial",
+          "population": "Human; 123 participants; approximately half vegetarian and half omnivorous",
+          "n": 123,
+          "exposure": "Creatine 5 g/day for 6 weeks in each crossover period",
+          "comparator": "Placebo",
+          "abstract": "Background Creatine is an organic compound that facilitates the recycling of energy-providing adenosine triphosphate (ATP) in muscle and brain tissue. It is a safe, well-studied supplement for strength training. Previous studies have shown that supplementation increases brain creatine levels, which might increase cognitive performance. The results of studies that have tested cognitive performance differ greatly, possibly due to different populations, supplementation regimens, and cognitive tasks. This is the largest study on the effect of creatine supplementation on cognitive performance to date. Methods Our trial was preregistered, cross-over, double-blind, placebo-controlled, and randomised, with daily supplementation of 5 g for 6 weeks each. We tested participants on Raven's Advanced Progressive Matrices (RAPM) and on the Backward Digit Span (BDS). In addition, we included eight exploratory cognitive tests. About half of our 123 participants were vegetarians and half were omnivores. Results Bayesian evidence supported a small beneficial effect of creatine. The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008). There was no indication that creatine improved the performance of our exploratory cognitive tasks. Side effects were reported significantly more often for creatine than for placebo supplementation (p = 0.002, RR = 4.25). Vegetarians did not benefit more from creatine than omnivores. Conclusions Our study, in combination with the literature, implies that creatine might have a small beneficial effect. Larger studies are needed to confirm or rule out this effect. Given the safety and broad availability of creatine, this is well worth investigating; a small effect could have large benefits when scaled over time and over many people. Trial registration The trial was prospectively registered (drks.de identifier: DRKS00017250, https://osf.io/xpwkc/ ).",
+          "findings": [
+            {
+              "outcome": "Backward digit span",
+              "effect": {
+                "measure": "partial eta squared",
+                "estimate": 0.029,
+                "lower": null,
+                "upper": null,
+                "confidence_level": null,
+                "units": "not a risk ratio; p=0.064",
+                "origin": "reported"
+              },
+              "quote": "The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008).",
+              "source_span": {
+                "text": "The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008).",
+                "start": 1076,
+                "end": 1193,
+                "source_id": "pmid:37968687",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Raven advanced progressive matrices",
+              "effect": {
+                "measure": "partial eta squared",
+                "estimate": 0.008,
+                "lower": null,
+                "upper": null,
+                "confidence_level": null,
+                "units": "not a risk ratio; p=0.327",
+                "origin": "reported"
+              },
+              "quote": "The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008).",
+              "source_span": {
+                "text": "The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008).",
+                "start": 1076,
+                "end": 1193,
+                "source_id": "pmid:37968687",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The creatine effect bordered significance for BDS (p = 0.064, η 2 P = 0.029) but not RAPM (p = 0.327, η 2 P = 0.008).",
+          "population_span": {
+            "text": "About half of our 123 participants were vegetarians and half were omnivores.",
+            "start": 924,
+            "end": 1000,
+            "source_id": "pmid:37968687",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Our trial was preregistered, cross-over, double-blind, placebo-controlled, and randomised, with daily supplementation of 5 g for 6 weeks each.",
+            "start": 612,
+            "end": 754,
+            "source_id": "pmid:37968687",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "5c39e40ea2b35b2e268820ccd227cca0a06ba199ac7e9b039de425b199c7f1ee"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "DRKS00017250"
+        }
+      ],
+      "outcomes": [
+        {
+          "name": "Backward digit span",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Raven advanced progressive matrices",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The effects of creatine supplementation on cognitive performance-a randomised controlled study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37968687/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "1 selected publication records indexed. Reported estimates retain source passages; evidence grades are unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ]
+    }
+  }
+}
