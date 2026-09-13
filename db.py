@@ -358,15 +358,15 @@ def set_ask_feedback(event_id, helpful):
         return False
 
 
-def profile_snapshot():
-    """Read indexing inputs in one connection, not one connection per profile."""
-    if not available():return None
-    try:
-        with _connect() as conn:
-            _ensure_schema(conn)
-            with conn.cursor() as cur:
-                cur.execute('SELECT slug, profile FROM profiles ORDER BY slug')
-                return {slug:profile if isinstance(profile,dict) else json.loads(profile) for slug,profile in cur.fetchall()}
-    except Exception as error:
-        print(f'  [db] snapshot failed ({type(error).__name__}); falling back to files')
-        return None
+def iter_profiles():
+    """Stream indexing inputs through one server-side cursor and connection."""
+    if not available():return
+    with _connect() as conn:
+        _ensure_schema(conn)
+        with conn.cursor(name='clarity_profile_index') as cur:
+            cur.execute('SELECT slug, profile FROM profiles ORDER BY slug')
+            while True:
+                row=cur.fetchone()
+                if row is None:break
+                slug,profile=row
+                yield slug,profile if isinstance(profile,dict) else json.loads(profile)

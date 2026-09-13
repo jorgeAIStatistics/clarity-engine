@@ -116,23 +116,26 @@ def list_cached():
     return sorted(fn[:-5] for fn in os.listdir(CACHE_DIR) if fn.endswith(".json"))
 
 
-def profile_snapshot():
-    """Index all stored profiles without a database round trip per cached slug.
+def iter_profiles():
+    """Stream stored profiles; avoid per-profile DB connections and full snapshots.
 
-    The caller assesses freshness; indexing includes old profiles with explicit
-    refresh status. A failed database read falls back to local files once.
+    If the database fails partway through, retain its completed entries and use
+    local files for remaining slugs. Callers assess freshness independently.
     """
-    database=_db()
+    database=_db();seen=set()
     if database:
-        result=database.profile_snapshot()
-        if result:return result
-    result={}
+        try:
+            for slug,profile in database.iter_profiles():
+                seen.add(slug)
+                yield slug,profile
+        except Exception as error:
+            print(f'  [cache] index stream unavailable ({type(error).__name__}); using local records')
     if os.path.isdir(CACHE_DIR):
         for filename in sorted(os.listdir(CACHE_DIR)):
-            if not filename.endswith('.json'):continue
+            if filename in {'retrieval.json','citations.json','translations.json'}:continue
+            if not filename.endswith('.json') or filename[:-5] in seen:continue
             try:
                 with open(os.path.join(CACHE_DIR,filename),encoding='utf-8') as source:
                     profile=json.load(source)
-                if isinstance(profile,dict):result[filename[:-5]]=profile
+                if isinstance(profile,dict):yield filename[:-5],profile
             except (OSError,ValueError):continue
-    return result

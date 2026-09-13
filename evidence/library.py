@@ -12,7 +12,7 @@ def build_library():
     import generate
     from .enrichment import OVERLAYS
     entries={};audit=[]
-    for key,p in cache.profile_snapshot().items():
+    for key,p in cache.iter_profiles():
         if not isinstance(p,dict) or not p.get('name') or not p.get('claims'):continue
         slug=cache._slug(p['name'])
         analysis=analyse_profile(p)
