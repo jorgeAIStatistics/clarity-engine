@@ -1,29 +1,37 @@
 {
   "name": "GHK-Cu",
   "category": "peptide",
-  "overall_score": 22,
-  "tier": "Preliminary",
-  "study_count": 16,
+  "overall_score": 47,
+  "tier": "Emerging",
+  "study_count": 24,
+  "unique_human_study_count": 2,
+  "unique_animal_study_count": 22,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 39,
   "claims": [
     {
       "outcome": "tendon / tissue healing",
       "tier": "Preliminary",
       "certainty": "very_low",
       "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 7,
+      "has_human_evidence": true,
+      "n_studies": 13,
       "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+        "Imprecision: modest verified sample (~24 participants across 1 of 13 studies); effect estimate may be unstable.",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 1,
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
-        "human": 0,
-        "overall": 55,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 7,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "human": 22,
+        "overall": 22,
+        "ceiling": 22,
+        "n_human_studies": 1,
+        "n_animal_studies": 12,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:28370978",
@@ -32,152 +40,742 @@
         "PMID:25731775",
         "PMID:2244543",
         "PMID:11045606",
-        "PMID:8842360"
+        "PMID:8842360",
+        "PMID:40672369",
+        "PMID:40766919",
+        "PMID:35936787",
+        "PMID:15655171",
+        "PMID:1522753",
+        "PMID:3169264"
       ],
       "studies": [
         {
+          "id": "pmid:15655171",
+          "pmid": "15655171",
+          "title": "Effects of copper tripeptide on the growth and expression of growth factors by normal and irradiated fibroblasts.",
+          "year": "2005",
+          "design": "Observational",
+          "population": "human",
+          "n": null,
+          "doi": "10.1001/archfaci.7.1.27",
+          "epmc_id": "MED:15655171",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15655171/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Objective</h4>To evaluate the effects of copper tripeptide (GHK-Cu) on the growth and autocrine production of basic fibroblast growth factor, transforming growth factor beta1, and vascular endothelial growth factor by normal and irradiated fibroblasts in a serum-free in vitro environment.<h4>Methods</h4>Primary human dermal fibroblast cell lines were established after explantation from intraoperative specimens obtained from patients who had undergone radiation therapy for head and neck cancer. Normal and irradiated fibroblasts were propagated in serum- and growth factor-free media. Treatment groups were exposed to GHK-Cu (1 x 10(-9) mol/L). We measured cell counts and production of basic fibroblast growth factor, transforming growth factor beta1, and vascular endothelial growth factor.<h4>Results</h4>Irradiated fibroblasts survived and replicated in serum-free media. The population-doubling times of normal and irradiated fibroblasts exposed to GHK-Cu were faster than those of nontreated controls. Irradiated fibroblasts treated with GHK-Cu doubled at a rate that approximated that of untreated controls, and produced significantly more basic fibroblast growth factor and vascular endothelial growth factor than untreated controls early after GHK-Cu exposure.<h4>Conclusions</h4>Irradiated fibroblasts survive and replicate in serum-free media, establishing this model as ideal for evaluating growth factor production in vitro. Copper tripeptide accelerates the growth of normal and irradiated fibroblasts to the point where treated irradiated fibroblasts approximate the population-doubling time of normal controls. An early increase in basic fibroblast growth factor and vascular endothelial growth factor production by GHK-Cu-treated irradiated fibroblasts may improve wound healing.",
+          "journal": "Archives of facial plastic surgery"
+        },
+        {
+          "id": "pmid:40672369",
+          "pmid": "40672369",
+          "title": "Exploring the beneficial effects of GHK-Cu on an experimental model of colitis and the underlying mechanisms.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fphar.2025.1551843",
+          "epmc_id": "MED:40672369",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40672369/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Introduction</h4>Ulcerative colitis (UC) is a chronic inflammatory bowel disease (IBD) characterized by mucosal damage and impaired epithelial barrier function. While glycyl-l-histidyl-l-lysine-copper (GHK-Cu) exhibits known anti-inflammatory properties, its therapeutic mechanisms in UC remain undefined. This study was designed to systematically evaluate the therapeutic potential of GHK-Cu in a dextran sulfate sodium (DSS)-induced murine model of UC, with particular emphasis on elucidating its regulatory effects on the NAD-dependent deacetylase sirtuin-1 (SIRT1)/signal transducer and activator of transcription 3 (STAT3) signaling pathway.<h4>Methods</h4>UC was induced in BALB/c mice with 3% DSS for 14 days. The protein expression levels of tight junction associated protein-1 (ZO-1), Occludin, inflammatory factors interleukin (IL)-6, IL-1β and tumor necrosis factor (TNF)-α, SIRT1, STAT3, p-STAT3, and retinoic acid receptor-related orphan receptor gamma t (RORγt) were detected by Western blot. Histopathological changes were evaluated by Hematoxylin and Eosin (H&E) and Alcian blue-periodic acid-Schiff (AB-PAS). Network pharmacology and molecular docking were used to predict the core targets of GHK Cu in the treatment of UC. An in vitro UC model was also established in mouse peritoneal macrophages (MPMs) using lipopolysaccharide (LPS), and a co culture model was constructed using mouse colonic epithelial cells (MCECs) and MPMs to examine the role of GHK Cu in promoting mucosal healing. STAT3 was silenced by gene transfection technology to verify the core role of STAT3 in GHK Cu treatment of UC.<h4>Results</h4>GHK-Cu alleviated weight loss, improved the disease activity index (DAI), reduced colonic edema and shortening, attenuated inflammatory damage, increased goblet cell numbers, suppressed inflammatory cytokines such as TNF-α, IL-6, and IL-1β, and promoted mucosal repair. Additionally, a co-culture system of MCECs and MPMs revealed that GHK-Cu facilitated MCECs healing, impaired by DSS, by upregulating ZO-1 and Occludin expression. Subsequently, network pharmacology and molecular docking identified SIRT1 as a potential target of GHK-Cu. Results showed that GHK-Cu upregulated SIRT1 protein expression and suppressed the expression of phosphorylated p-STAT3 in colon tissue and MCECs of the co-culture model. Our findings revealed that after transfection with STAT3-targeting siRNA (siSTAT3), the stimulant effect of GHK-Cu on the healing of MCECs and the effect on the protein expression of ZO-1 and Occludin is canceled. Nevertheless, after transfection with siSTAT3, it could inhibit the expression of inflammatory factors in conjunction with GHK-Cu. Furthermore, we found that GHK-Cu could inhibit RORγt expression in the colon tissue of UC mice.<h4>Discussion</h4>This study found that GHK-Cu demonstrated significant therapeutic effects in DSS-induced UC in mice. GHK-Cu may promote mucosal healing and enhance tight junction protein expression by regulat",
+          "journal": "Frontiers in pharmacology"
+        },
+        {
+          "id": "pmid:40766919",
+          "pmid": "40766919",
+          "title": "Behavioral and neuropathological features of Alzheimer's disease are attenuated in 5xFAD mice treated with intranasal GHK peptide.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.31491/apt.2024.09.148",
+          "epmc_id": "MED:40766919",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40766919/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Alzheimer's disease (AD) is a complex neurodegenerative disease and a leading cause of morbidity and mortality. Efforts to find disease modifying treatments have met with limited success. The naturally occurring peptide GHK (glycyl-L-histidyl-L-lysine), in its Cu-bound form, supports angiogenesis, remodeling, and tissue repair, has anti-inflammatory and antioxidant properties, and has been shown to improve cognitive performance in aging mice. These features raised the question of whether GHK-Cu could alleviate neurodegeneration observed in AD. Male and female 5xFAD transgenic mice on the C57BL/6J background at 4 months of age were given 15 mg/kg GHK-Cu intranasally 3 times per week for 3 months until 7 months of age. Results showed that intranasal GHK-Cu treatment delayed cognitive impairment, reduced amyloid plaques, and lowered MCP1-mediated inflammation levels in the frontal cortex and hippocampus. These observations provide the rationale for conducting additional studies to investigate the potential of GHK-Cu peptide as a promising treatment for AD.",
+          "journal": "Aging pathobiology and therapeutics"
+        },
+        {
+          "id": "pmid:35936787",
+          "pmid": "35936787",
+          "title": "Glycyl-L-histidyl-L-lysine-Cu<sup>2+</sup> attenuates cigarette smoke-induced pulmonary emphysema and inflammation by reducing oxidative stress pathway.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fmolb.2022.925700",
+          "epmc_id": "MED:35936787",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35936787/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<b>Background:</b> Chronic obstructive pulmonary disease (COPD) is a common respiratory disorder manifested as chronic airway inflammation and persistent airflow limitation with the essential mechanism as inflammatory response and oxidative stress induced by toxic exposures such as cigarette smoke (CS). Glycyl-L-histidyl-L-lysine (GHK) is a nontoxic tripeptide involved in the process of healing and regeneration as a natural product. With the combination of Cu(II), glycyl-L-histidyl-L-lysine-Cu<sup>2+</sup> (GHK-Cu) improves antioxidative and anti-inflammatory bioavailability, and they might offer potential therapeutic properties for COPD. Thus, the present study aimed to identify the potential effects of GHK-Cu on emphysema induced by cigarette smoke. <b>Methods:</b> In the <i>in vivo</i> experiment, C57BL/6J mice were exposed to CS for 12 weeks to induce pulmonary emphysema. GHK-Cu was injected intraperitoneally at doses of 0.2, 2 and 20 μg/g/day in 100 µl of saline on alternative days from the 1st day after CS exposure. The effects of GHK-Cu on the morphology of CS-induced emphysema, the inflammatory response and oxidative stress were evaluated. The antioxidative effect of GHK-Cu on human alveolar epithelial A549 cells was assessed <i>in vitro</i>. <b>Results:</b> GHK-Cu treatment attenuated the CS-induced emphysematous changes and partially reversed the matrix metalloprotein -9 (MMP-9)/tissue inhibitor of metalloproteinases-1 (TIMP-1) imbalance in the lung tissue. GHK-Cu reduced the inflammation and oxidation by decreasing the expression of inflammatory cytokines (IL-1β and TNF-α) in the bronchoalveolar lavage and the enzymatic activity of MPO and MDA in the lung homogenate while restoring the T-AOC and GSH content. Furthermore, administration of GHK-Cu reversed the increase in NF-κB expression induced by CS and increased the Nrf2 level, as an antioxidant defense component, in mice with chronic CS exposure. In CSE-exposed human alveolar epithelial A549 cells, GHK-Cu also inhibited oxidative stress by suppressing MDA levels and restoring T-AOC and GSH levels, which were modulated by upregulating Nrf2 expression. <b>Conclusion:</b> GHK-Cu treatment attenuated CS-induced emphysema by anti-inflammation by downregulating NF-κB and antioxidation via upregulation of the Nrf2/Keap1 in lung tissues.",
+          "journal": "Frontiers in molecular biosciences"
+        },
+        {
+          "id": "pmid:31809714",
           "pmid": "31809714",
           "title": "Protective effects of GHK-Cu in bleomycin-induced pulmonary fibrosis via anti-oxidative stress and anti-inflammation pathways.",
           "year": "2020",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31809714/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Idiopathic pulmonary fibrosis (IPF) is a serious lung problem with advancing and diffusive pulmonary fibrosis as the pathologic basis, and with oxidative stress and inflammation as the key pathogenesis. Glycyl-L-histidyl-l-lysine (GHK) is a tripeptide participating into wound healing and regeneration. GHK-Cu complexes improve GHK bioavailability. Thus, the current study aimed to explore the therapeutic role of GHK-Cu on bleomycin (BLM)-induced pulmonary fibrosis in a mouse model. BLM (3 mg/kg) was administered via tracheal instillation (TI) to induce a pulmonary fibrosis model in C57BL/6j mice 21 days after the challenge of BLM. GHK-Cu was injected intraperitoneally (i.p.) at different dosage of 0.2, 2 and 20 μg/g/day in 0.5 ml PBS on alternate day. The histological changes, inflammation response, the collagen deposition and epithelial-mesenchymal transition (EMT) was evaluated in the lung tissue. EMT was evaluated by ɑ-SMA and fibronectin expression in the lung tissue. NF-κB p65, Nrf2 and TGFβ1/Smad2/3 signalling pathways were detected by immunoblotting analysis. GHK-Cu complex inhibited BLM-induced inflammatory and fibrotic pathological changes, alleviated the inflammatory response in the BALF by reducing the levels of the inflammatory cytokines, TNF-ɑ and IL-6 and the activity of MPO as well as reduced collagen deposition. In addition, the GHK-Cu treatment significantly reversed the MMP-9/TIMP-1 imbalance and partially prevented EMT via Nrf2, NF-κB and TGFβ1 pathways, as well as Smad2/3 phosphorylation. GHK-Cu presented a protective effect in BLM-induced inflammation and oxidative stress by inhibiting EMT progression and suppressing TGFβ1/Smad2/3 signalling in pulmonary fibrosis.",
+          "journal": "Life sciences"
         },
         {
+          "id": "pmid:28370978",
           "pmid": "28370978",
           "title": "GHK-Cu-liposomes accelerate scald wound healing in mice by promoting cell proliferation and angiogenesis.",
           "year": "2017",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28370978/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Glycyl-l-histidyl-l-lysine (GHK)-Cu is considered to be an activator of tissue remodeling, and has been used in cosmetic products. In this study, we prepared liposomes encapsulating GHK-Cu and analyzed their effect on human umbilical vein endothelial cells (HUVECs) proliferation and scald wound healing in mice. The nanoscaled GHK-Cu-liposomes promoted HUVECs proliferation, with a 33.1% increased rate. Flow cytometry analysis showed increased cell number at G1 stage and decreased cell number at G2 stage after GHK-Cu-liposomes treatment. Western blotting indicated that the expression of vascular endothelial growth factor and fibroblast grow factors-2 were both enhanced, as well as cell cycle-related proteins CDK4 and CyclinD1. In a mice scald model, angiogenesis in burned skin treated with GHK-Cu-liposomes was better compared with free GHK-Cu, and immunofluorescence analysis showed enhanced signal of CD31 and Ki67 in GHK-Cu-liposomes treated mice. Moreover, the wound healing time was shortened to 14 days post injury. Our results provide the evidence that GHK-Cu-liposomes could be utilized as a treatment for skin wounds.",
+          "journal": "Wound repair and regeneration : official publication of the Wound Healing Society [and] the European Tissue Repair Society"
         },
         {
+          "id": "pmid:27517151",
           "pmid": "27517151",
           "title": "The tri-peptide GHK-Cu complex ameliorates lipopolysaccharide-induced acute lung injury in mice.",
           "year": "2016",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27517151/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The tripeptide-copper complex glycyl-l-histidyl-l-lysine-Cu (II) (GHK-Cu) is involved in wound healing and tissue remodeling. Although GHK-Cu exhibits anti-aging and tissue renewing properties, its roles in acute lung injury (ALI)/acute respiratory distress syndrome (ARDS) are still unknown. Therefore, we examined the effects of GHK-Cu in lipopolysaccharide (LPS)-induced RAW 264.7 macrophages in vitro and ALI in mice in vivo. GHK-Cu treatment reduced reactive oxygen species (ROS) production, increased superoxide dismutase (SOD) activity while decreased TNF-α and IL-6 production through the suppression of NF-κB p65 and p38 MAPK signaling in vitro and in vivo model of ALI. Moreover, GHK-Cu attenuated LPS-induced lung histological alterations, suppressed the infiltration of inflammatory cells into the lung parenchyma in LPS-induced ALI in mice. Taken together, these findings demonstrate that GHK-Cu possesses a protective effect in LPS-induced ALI by inhibiting excessive inflammatory responses; accordingly it may represent a novel therapeutic approach for ALI/ARDS.",
+          "journal": "Oncotarget"
         },
         {
+          "id": "pmid:25731775",
           "pmid": "25731775",
           "title": "Tripeptide-copper complex GHK-Cu (II) transiently improved healing outcome in a rat model of ACL reconstruction.",
           "year": "2015",
           "design": "Animal",
           "population": "animal",
-          "n": 24
+          "n": 24,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25731775/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "After anterior cruciate ligament reconstruction (ACLR), the biological healing of the graft is a rate-limiting step which can contribute to graft failure. The tripeptide-copper complex glycyl-L-histidyl-L-lysine-Cu(II) (GHK-Cu) is a well-known activator of tissue remodeling. We investigated whether GHK-Cu can improve graft healing following ACLR. Seventy-two rats underwent unilateral ACLR were randomized to saline, 0.3 or 3 mg/ml GHK-Cu groups (n = 24). Post-operational intra-articular injections were given from week 2, once a week, for 4 weeks. Gait analysis was performed pre-injury and at harvesting time. At 6 or 12 weeks post-operation, knee specimens were harvested for knee laxity test, graft pull-out test, and histology. At 6 weeks post-ACLR, GHK-Cu groups resulted in a smaller side-to-side difference in knee laxity as compared to the saline group (p = 0.009), but there was no significant difference at 12 weeks post-operation. The graft complex in the 0.3 mg/ml GHK-Cu group had higher stiffness than saline group at 6 weeks post-operation (p = 0.026), but there was no significant difference in ultimate load, gait parameters, and histological scores among treatment groups. All grafts failed mid-substance during pull-out test. Intra-articular supplementation with a bioactive small molecule GHK-Cu improved graft healing following ACLR in rat, but the beneficial effects could not last as treatment discontinued.",
+          "journal": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society"
         },
         {
+          "id": "pmid:11045606",
           "pmid": "11045606",
           "title": "The tripeptide-copper complex glycyl-L-histidyl-L-lysine-Cu2+ stimulates matrix metalloproteinase-2 expression by fibroblast cultures.",
           "year": "2000",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11045606/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Glycyl-histidyl-lysine-Cu2+ (GHK-Cu) is a tripeptide-copper complex known to be a potent wound healing agent. We previously showed its ability to stimulate in vitro and in vivo the synthesis of extracellular matrix components. The aim of this study was to determine the effects of GHK-Cu on MMP-2 synthesis by dermal fibroblasts in culture. We showed that GHK-Cu increased MMP-2 levels in conditioned media of cultured fibroblasts. This effect was reproduced by copper ions but not by the tripeptide GHK alone. This stimulation was accompanied by an increase of MMP-2 mRNA level. We also showed that GHK-Cu increased the secretion of the tissue inhibitors of metalloproteinases, TIMP-1 and TIMP-2. Taken together, our results underline that GHK-Cu is not only an activator of connective tissue production but also of the remodeling of the extracellular matrix. It is able to modulate MMP expression by acting directly on wound fibroblasts.",
+          "journal": "Life sciences"
         },
         {
+          "id": "pmid:8842360",
           "pmid": "8842360",
           "title": "Morphological features of bone healing under the effect of collagen-graft-glycosaminoglycan copolymer supplemented with the tripeptide Gly-His-Lys.",
           "year": "1996",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8842360/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The authors prepared 7.5% and 12.5% collagen gel, and supplemented it with the tripeptide Gly-His-Lys (GHK), perfloxacine and hypersulphated glycosaminoglycan (HSGAG). By means of 125l marking, its absorption was followed from small polyurethane sponges placed under the skin of rats. The absorption of gel without HSGAG was found to be faster. Antibodies against collagen (type I, II and III) or collagen gel were generated either in rabbits or in minipigs, in which collagen gel was tested. Microbiological tests proved the sterility of the collagen gel. The collagen gel supplemented with GHK, pefloxacine and HSGAG was named Colladel, and was used in a model experiment in guinea-pigs for filling artificially created bone defects in diaphyses of femurs, and with cementless endoprostheses. The healing process was followed by means of RTG and NMR, and histologically. The slowest healing process was found in unfilled bone defects. Defects filled with Colladel without GHK healed substantially more quickly, and the most accelerated healing was connected with complete Colladel application. When Colladel was used with cementless endoprostheses, vivid osteogenic activity at the interface of trabecular bone and metal stem was detectable in the course of the experiment.",
+          "journal": "Biomaterials"
         },
         {
+          "id": "pmid:1522753",
+          "pmid": "1522753",
+          "title": "Stimulation of sulfated glycosaminoglycan synthesis by the tripeptide-copper complex glycyl-L-histidyl-L-lysine-Cu2+.",
+          "year": "1992",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/0024-3205(92)90504-i",
+          "epmc_id": "MED:1522753",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1522753/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Glycyl-L-histidyl-L-lysine-copper (II) complex (GHK-Cu) is a naturally occurring tripeptide with potential healing properties. We studied the effect of GHK-Cu on the synthesis of glycosaminoglycans (GAGs) by normal human fibroblasts in culture. Cells were incubated with 3H glucosamine and 35S sulfate and the radioactivity of isolated GAGs was determined. GHK-Cu induced a dose-dependent increase of the synthesis of total GAGs secreted into the culture medium and those associated with the cell layer. The effect of GHK-Cu was biphasic with a maximal stimulation at 10(-9) to 10(-8) M. At higher concentrations, the rate of synthesis returned progressively to that of control cultures. Electrophoretic analysis of the different GAG populations showed that GHK-Cu preferentially stimulated the synthesis of extracellular dermatan sulfate and cell layer associated heparan sulfate. No influence of GHK-Cu on the synthesis of hyaluronic acid was observed. GHK-Cu stimulation of GAG synthesis may be one of the phenomenons implicated in the wound healing properties of the peptide.",
+          "journal": "Life sciences"
+        },
+        {
+          "id": "pmid:2244543",
           "pmid": "2244543",
           "title": "Effects of glycyl-histidyl-lysyl chelated Cu(II) on ferritin dependent lipid peroxidation.",
           "year": "1990",
           "design": "In vitro",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2244543/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The copper binding tripeptide, glycyl-L-histidyl-L-lysine [GHK:Cu(II)] has a plethora of biological effects related to the wound healing process. The presence of iron complexes in damaged tissues is detrimental to wound healing, due to local inflammation, as well as microbial infection mediated by iron. To test if the wound healing properties of GHK:Cu(II) are due to an affect on iron metabolism, we examined the effects of GHK:Cu(II) on iron catalyzed lipid peroxidation. GHK:Cu(II) inhibited lipid peroxidation only if the iron source was ferritin. Whereas GHK:Cu(II) inhibited ferritin iron release it did not exhibit significant superoxide dismutase-like or ceruloplasmin-like activity. We propose that GHK:Cu(II) binds to the channels of ferritin involved in iron release and physically prevents the release of Fe(II). Thus, a biological effect of GHK:Cu(II), possibly related to wound healing, may be the inhibition of ferritin iron release in damaged tissues, preventing inflammation and microbial infections.",
+          "journal": "Advances in experimental medicine and biology"
+        },
+        {
+          "id": "pmid:3169264",
+          "pmid": "3169264",
+          "title": "Stimulation of collagen synthesis in fibroblast cultures by the tripeptide-copper complex glycyl-L-histidyl-L-lysine-Cu2+.",
+          "year": "1988",
+          "design": "In vitro",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/0014-5793(88)80509-x",
+          "epmc_id": "MED:3169264",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3169264/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Glycyl-L-histidyl-L-lysine (GHK) is a tripeptide with affinity for copper(II) ions and was isolated from human plasma. This peptide appears to play a physiological role in wound healing. We report the stimulating effect of GHK-Cu on collagen synthesis by fibroblasts. The stimulation began between 10(-12) and 10(-11) M, maximized at 10(-9) M, and was independent of any change in cell number. The presence of a GHK triplet in the alpha 2(I) chain of type I collagen suggests that the tripeptide might be liberated by proteases at the site of a wound and exert in situ healing effects.",
+          "journal": "FEBS letters"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 13,
+        "n_total": 13
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For tendon / tissue healing, GHK-Cu has only preliminary or animal evidence (7 studies)."
+      "summary": "For tendon / tissue healing, GHK-Cu has only preliminary, sparse-human, or preclinical evidence (13 graded studies).",
+      "weighted_score": {
+        "final_score": 42.9,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 13,
+          "high_tier_points": 22.437,
+          "low_tier_points_pre_cap": 20.864,
+          "low_tier_points_post_cap": 20.864,
+          "low_tier_cap_applied": false,
+          "total_points_R": 43.302,
+          "scaled_base_score": 42.887,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 32.7622,
+          "se_consistency_component": 2.7622,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 64.214,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.226,
+              "points": 4.903,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.265,
+              "points": 5.058,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.257,
+              "points": 5.03,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.185,
+              "points": 4.738,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.21,
+              "points": 4.839,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.285,
+              "points": 5.142,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.201,
+              "points": 4.805,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.105,
+              "points": 4.419,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 4.648,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.247,
+              "points": 22.437,
+              "supportive": true
+            },
+            {
+              "idx": 11,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.249,
+              "points": 4.998,
+              "supportive": true
+            },
+            {
+              "idx": 12,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.319,
+              "points": 5.276,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la cicatrización de tendones / tejidos, GHK-Cu tiene solo evidencia preliminar, escasa en humanos, o preclínica (13 estudios calificados)."
     },
     {
-      "outcome": "stress / anxiety",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 4,
+      "outcome": "cognition",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 11,
       "grade_reasons": [
-        "Indirectness: no clearly human-population evidence detected.",
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 3,
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
-        "human": 0,
-        "overall": 55,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 3,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 10,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:40766919",
+        "PMID:38045355",
+        "PMID:42245779",
+        "PMID:42619529",
         "PMID:42084774",
+        "PMID:41997403",
+        "PMID:40672369",
+        "PMID:37062921",
+        "EPMC:PMC:PMC13232416",
         "PMID:38879894",
-        "PMID:31809714",
-        "PMID:41511598"
+        "PMID:34546033"
       ],
       "studies": [
         {
-          "pmid": "38879894",
-          "title": "The glycyl-l-histidyl-l-lysine-Cu",
+          "id": "pmid:42619529",
+          "pmid": "42619529",
+          "title": "The Regenerative Potential of GHK-Cu in Aesthetic Medicine.",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null,
+          "doi": "10.1093/asj/sjag169",
+          "epmc_id": "MED:42619529",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42619529/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The age-related decline in tissue regenerative capacity drives demand for interventions restoring physiological repair mechanisms. Glycyl-L-histidyl-L-lysine-copper (GHK-Cu) has demonstrated significant regenerative, anti-inflammatory, and antioxidant properties in preclinical models, prompting its increasing integration into aesthetic practice despite a paucity of standardized clinical guidelines. This systematic review evaluates the efficacy, safety, and regenerative mechanisms of GHK-Cu in aesthetic medicine to clarify its clinical utility and inform future research. A systematic search of PubMed, Embase, and Cochrane CENTRAL was conducted from database inception through March 2026, following PRISMA guidelines. Eligible studies included clinical and preclinical models investigating GHK-Cu as a standalone intervention for aesthetic applications. 20 studies (18 preclinical; 2 RCTs) were included. Preclinical data consistently demonstrated that GHK-Cu enhances extracellular matrix synthesis (type I collagen and glycosaminoglycans), modulates metalloproteinase activity, and promotes angiogenesis and cellular proliferation. It also exhibited significant anti-inflammatory effects by suppressing TGF-β and IL-6. Clinically, GHK-Cu improved patient-reported satisfaction after laser resurfacing and significantly reduced wrinkle volume and depth compared with controls. Additionally, advanced delivery systems, including microneedles and liposomes, markedly improved its transdermal bioavailability and efficacy. GHK-Cu demonstrates a reasonable biological basis for use as a regenerative agent in aesthetic medicine, supported by available preclinical data. Nevertheless, the findings reported across studies were constrained by methodological variability and a limited number of well-designed clinical trials. Future research incorporating larger, controlled trials with standardized formulations, dosing regimens, and delivery methods will be necessary to close the translational gap and inform the development of consistent therapeutic protocols in clinical practice.",
+          "journal": "Aesthetic surgery journal"
+        },
+        {
+          "id": "pmid:42245779",
+          "pmid": "42245779",
+          "title": "Middle-aged mice treated with GHK-Cu peptide administered intraperitoneally or intranasally show behavioral rescue but divergent hippocampal aging programs.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42245779/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Age-related cognitive decline (ARCD) is driven by conserved biological mechanisms of aging, yet no gerotherapeutic directly targets these processes in the brain. Glycyl-L-histidyl-L-lysine complexed with copper (GHK-Cu) is an endogenous peptide with regenerative and anti-inflammatory properties that declines with age. Whether its effects on cognitive aging depend on delivery route or exposure duration remains unclear. Aged C57BL/6J mice (20-21 months) received GHK-Cu (15 mg/kg) via short-term intraperitoneal (IP; 5 days) or longer-term intranasal (IN; 8 weeks) administration. Hippocampal-dependent escape learning was assessed using a spatial navigation task. Molecular effects were evaluated using hippocampal immunohistochemistry and bulk RNA sequencing. Differential gene expression was analyzed using DESeq2 with false discovery rate (FDR) correction, and pathway-level changes were assessed via gene set enrichment analysis (GSEA). IN GHK-Cu improved escape latency across Trials 2-4 in both sexes (",
+          "journal": "Research square"
+        },
+        {
+          "id": "pmid:42084774",
+          "pmid": "42084774",
+          "title": "The GHK-Cu delays aging in Caenorhabditis elegans via coordinated regulation of mitochondrial function and activation of DAF-16/SKN-1 pathways.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1007/s10522-026-10444-x",
+          "epmc_id": "MED:42084774",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42084774/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Aging is a complex biological process characterized by progressive functional decline across tissues and increased susceptibility to age-related diseases, with oxidative stress being a key contributing factor. Glycine-Histidine-Lysine (GHK), a naturally occurring tripeptide present in human plasma and urine, possesses potent antioxidant properties; however, its broader anti-aging potential remains inadequately explored. In this study, we employed the model organism Caenorhabditis elegans to systematically investigate the anti-aging effects of GHK-Cu (GHK complexed with copper) and elucidate its underlying molecular mechanisms. Our results demonstrated that GHK-Cu significantly extended lifespan of C. elegans and ameliorated mutiple aging-related phenotypes, including enhanced resistance to oxidative and thermal stress, improved motility, pharyngeal pumping, defecation rhythm, and reduced lipofuscin/lipid accumulation. Mechanistically, GHK-Cu preserved mitochondrial function by increasing mitochondrial membrane potential, alleviating age-related mitochondrial network fragmentation, shifting mitochondrial dynamics toward fusion via regulating drp-1 and fzo-1 expression, and promoting ATP biosynthesis. Meanwhile, GHK-Cu activating DAF-16 and SKN-1 pathway, and upregulating sod-3, gst-4, gcs-1, lys-7 and lys-8. This study provides the first mechanistic evidence that GHK-Cu delays aging through coordinated regulation of mitochondrial function and activation of both DAF-16 and SKN-1 pathways. Our findings identify novel molecular targets for developing anti-aging interventions and underscore the potential of GHK-Cu's as a multifaceted geroprotective compound.",
+          "journal": "Biogerontology"
+        },
+        {
+          "id": "pmid:41997403",
+          "pmid": "41997403",
+          "title": "Glycyl-L-histidyl-L-lysine-Cu2&lt;sup&gt;+&lt;/sup&gt; (GHK-Cu) Attenuates CuSO&lt;sub&gt;4&lt;/sub&gt; or LPS induced-inflammation in Zebrafish larvae model.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.ejphar.2026.178880",
+          "epmc_id": "MED:41997403",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41997403/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Inflammation serves as a basic defense mechanism against both internal and external threats, while the unresolved or excessive inflammation can lead to irreversible tissue damage. Glycyl-L-histidyl-L-lysine-Cu<sup>2+</sup> (GHK-Cu), a bioactive tripeptide complex known for its anti-aging and tissue repair properties, is extensively utilized in dermatological and hair care formulations. However, the role of GHK-Cu in regulating inflammation is less known. In this study, we explored the anti-inflammatory effects of GHK-Cu against the acute inflammation induced by copper sulfate (CuSO<sub>4</sub>) and lipopolysaccharide (LPS) in zebrafish larvae. GHK-Cu notably decreased the migration of neutrophils and macrophages, suppressed the expression of pro-inflammatory cytokines (tnf-a, il-1β, il6) and increased the expression of the anti-inflammatory cytokine il-10. Moreover, GHK-Cu mitigated oxidative stress by reducing levels of nitric oxide (NO) and reactive oxygen species (ROS), and improved superoxide dismutase (SOD) activity. Furthermore, pathway analysis revealed that GHK-Cu administration downregulated the JAK1 pathway. In summary, this study highlights the dual role of GHK-Cu in both anti-inflammatory and anti-oxidant properties, which provides the theoretical evidences supporting its addition as a functional cosmetic ingredient.",
+          "journal": "European journal of pharmacology"
+        },
+        {
+          "id": "epmc:pmc:pmc13232416",
+          "pmid": null,
+          "title": "Middle-aged mice treated with GHK-Cu peptide administered intraperitoneally or intranasally show behavioral rescue but divergent hippocampal aging programs",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": "PMC:PMC13232416",
+          "url": "https://europepmc.org/article/PMC/PMC13232416",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": null,
+          "journal": "Research square"
+        },
+        {
+          "id": "pmid:40672369",
+          "pmid": "40672369",
+          "title": "Exploring the beneficial effects of GHK-Cu on an experimental model of colitis and the underlying mechanisms.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fphar.2025.1551843",
+          "epmc_id": "MED:40672369",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40672369/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Introduction</h4>Ulcerative colitis (UC) is a chronic inflammatory bowel disease (IBD) characterized by mucosal damage and impaired epithelial barrier function. While glycyl-l-histidyl-l-lysine-copper (GHK-Cu) exhibits known anti-inflammatory properties, its therapeutic mechanisms in UC remain undefined. This study was designed to systematically evaluate the therapeutic potential of GHK-Cu in a dextran sulfate sodium (DSS)-induced murine model of UC, with particular emphasis on elucidating its regulatory effects on the NAD-dependent deacetylase sirtuin-1 (SIRT1)/signal transducer and activator of transcription 3 (STAT3) signaling pathway.<h4>Methods</h4>UC was induced in BALB/c mice with 3% DSS for 14 days. The protein expression levels of tight junction associated protein-1 (ZO-1), Occludin, inflammatory factors interleukin (IL)-6, IL-1β and tumor necrosis factor (TNF)-α, SIRT1, STAT3, p-STAT3, and retinoic acid receptor-related orphan receptor gamma t (RORγt) were detected by Western blot. Histopathological changes were evaluated by Hematoxylin and Eosin (H&E) and Alcian blue-periodic acid-Schiff (AB-PAS). Network pharmacology and molecular docking were used to predict the core targets of GHK Cu in the treatment of UC. An in vitro UC model was also established in mouse peritoneal macrophages (MPMs) using lipopolysaccharide (LPS), and a co culture model was constructed using mouse colonic epithelial cells (MCECs) and MPMs to examine the role of GHK Cu in promoting mucosal healing. STAT3 was silenced by gene transfection technology to verify the core role of STAT3 in GHK Cu treatment of UC.<h4>Results</h4>GHK-Cu alleviated weight loss, improved the disease activity index (DAI), reduced colonic edema and shortening, attenuated inflammatory damage, increased goblet cell numbers, suppressed inflammatory cytokines such as TNF-α, IL-6, and IL-1β, and promoted mucosal repair. Additionally, a co-culture system of MCECs and MPMs revealed that GHK-Cu facilitated MCECs healing, impaired by DSS, by upregulating ZO-1 and Occludin expression. Subsequently, network pharmacology and molecular docking identified SIRT1 as a potential target of GHK-Cu. Results showed that GHK-Cu upregulated SIRT1 protein expression and suppressed the expression of phosphorylated p-STAT3 in colon tissue and MCECs of the co-culture model. Our findings revealed that after transfection with STAT3-targeting siRNA (siSTAT3), the stimulant effect of GHK-Cu on the healing of MCECs and the effect on the protein expression of ZO-1 and Occludin is canceled. Nevertheless, after transfection with siSTAT3, it could inhibit the expression of inflammatory factors in conjunction with GHK-Cu. Furthermore, we found that GHK-Cu could inhibit RORγt expression in the colon tissue of UC mice.<h4>Discussion</h4>This study found that GHK-Cu demonstrated significant therapeutic effects in DSS-induced UC in mice. GHK-Cu may promote mucosal healing and enhance tight junction protein expression by regulat",
+          "journal": "Frontiers in pharmacology"
+        },
+        {
+          "id": "pmid:40766919",
+          "pmid": "40766919",
+          "title": "Behavioral and neuropathological features of Alzheimer's disease are attenuated in 5xFAD mice treated with intranasal GHK peptide.",
           "year": "2024",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": "10.31491/apt.2024.09.148",
+          "epmc_id": "MED:40766919",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40766919/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Alzheimer's disease (AD) is a complex neurodegenerative disease and a leading cause of morbidity and mortality. Efforts to find disease modifying treatments have met with limited success. The naturally occurring peptide GHK (glycyl-L-histidyl-L-lysine), in its Cu-bound form, supports angiogenesis, remodeling, and tissue repair, has anti-inflammatory and antioxidant properties, and has been shown to improve cognitive performance in aging mice. These features raised the question of whether GHK-Cu could alleviate neurodegeneration observed in AD. Male and female 5xFAD transgenic mice on the C57BL/6J background at 4 months of age were given 15 mg/kg GHK-Cu intranasally 3 times per week for 3 months until 7 months of age. Results showed that intranasal GHK-Cu treatment delayed cognitive impairment, reduced amyloid plaques, and lowered MCP1-mediated inflammation levels in the frontal cortex and hippocampus. These observations provide the rationale for conducting additional studies to investigate the potential of GHK-Cu peptide as a promising treatment for AD.",
+          "journal": "Aging pathobiology and therapeutics"
         },
         {
-          "pmid": "31809714",
-          "title": "Protective effects of GHK-Cu in bleomycin-induced pulmonary fibrosis via anti-oxidative stress and anti-inflammation pathways.",
-          "year": "2020",
+          "id": "pmid:38879894",
+          "pmid": "38879894",
+          "title": "The glycyl-l-histidyl-l-lysine-Cu<sup>2+</sup> tripeptide complex attenuates lung inflammation and fibrosis in silicosis by targeting peroxiredoxin 6.",
+          "year": "2024",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": "10.1016/j.redox.2024.103237",
+          "epmc_id": "MED:38879894",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38879894/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Silicosis is the most common type of pneumoconiosis, having a high incidence in workers chronically exposed to crystalline silica (CS). No specific medication exists for this condition. GHK, a tripeptide naturally occurring in human blood and urine, has antioxidant effects. We aimed to investigate the therapeutic effect of GHK-Cu on silicosis and its potential underlying molecular mechanism. An experimental silicosis mouse model was established to observe the effects of GHK-Cu on lung inflammation and fibrosis. Moreover, the effects of GHK-Cu on the alveolar macrophages (AM) were examined using the RAW264.7 cell line. Its molecular target, peroxiredoxin 6 (PRDX6), has been identified, and GHK-Cu can bind to PRDX6, thus attenuating lung inflammation and fibrosis in silicosis mice without significant systemic toxicity. These effects were partly related to the inhibition of the CS-induced oxidative stress in AM induced by GHK-Cu. Thus, our results suggest that GHK-Cu acts as a potential drug by attenuating alveolar macrophage oxidative stress. This, in turn, attenuates the progression of pulmonary inflammation and fibrosis, which provides a reference for the treatment of silicosis.",
+          "journal": "Redox biology"
         },
         {
-          "pmid": "42084774",
-          "title": "The GHK-Cu delays aging in\u00a0Caenorhabditis elegans\u00a0via coordinated regulation of mitochondrial function and activation of DAF-16/SKN-1 pathways.",
-          "year": "2026",
-          "design": "Unclassified",
+          "id": "pmid:38045355",
+          "pmid": "38045355",
+          "title": "Behavioral and neuropathological features of Alzheimer's disease are attenuated in 5xFAD mice treated with intranasal GHK peptide.",
+          "year": "2023",
+          "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38045355/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Efforts to find disease modifying treatments for Alzheimer's disease (AD) have met with limited success in part because the focus has been on testing drugs that target a specific pathogenic mechanism. Multiple pathways have been implicated in the pathogenesis of AD. Hence, the probability of more effective treatment for AD is likely increased by using an intervention that targets more than one pathway. The naturally occurring peptide GHK (glycyl-L-histidyl-L-lysine), as a GHK-Cu complex, supports angiogenesis, remodeling, and tissue repair, has anti-inflammatory and antioxidant properties, and has been shown to improve cognitive performance in aging mice. In order to test GHK-Cu as a neurotherapeutic for AD, male and female 5xFAD transgenic mice on the C57BL/6 background at 4 months of age were given 15 mg/kg GHK-Cu intranasally 3 times per week for 3 months until 7 months of age. Results showed that intranasal GHK-Cu treatment delayed cognitive impairment, reduced amyloid plaques, and lowered inflammation levels in the frontal cortex and hippocampus. These observations suggest additional studies are warranted to investigate the potential of GHK-Cu peptide as a promising treatment for AD.",
+          "journal": "bioRxiv : the preprint server for biology"
         },
         {
-          "pmid": "41511598",
-          "title": "Anxiolytic Effect of GHK-PGP Peptide and Its Structural Analogues in a Test with Punished Behavior.",
-          "year": "2025",
-          "design": "Unclassified",
-          "population": "unknown",
-          "n": null
+          "id": "pmid:37062921",
+          "pmid": "37062921",
+          "title": "Synergy of GHK-Cu and hyaluronic acid on collagen IV upregulation via fibroblast and ex-vivo skin tests.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1111/jocd.15763",
+          "epmc_id": "MED:37062921",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37062921/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Introduction</h4>GHK-Cu and HA are two commonly used skin care ingredients, both of which were reported to enhance collagen synthesis. This work aims to investigate their co-effect on collagen regulation.<h4>Materials and methods</h4>In cell experiments, human dermal fibroblasts were treated by a series of GHK-Cu and HA combinations, and the expressions of collagen I, IV, and VII were measured by qRT-PCR. The best formula screened out from cell experiments were further studied by ex-vivo skin model, and the content of collagen IV was quantified by immunofluorescence method.<h4>Results</h4>The combination GHK-Cu and HA was found to promote the generation of collagen I, IV, and VII. Especially, they form a synergy on collagen IV. At the ratio of 1:9, GHK-Cu and LMW HA deliver the strongest effect to elevate collagen IV synthesis by 25.4 times in cell test and 2.03 times in ex-vivo skin test.<h4>Conclusion</h4>The co-effect of GHK-Cu and HA was revealed. Their synergy brings an insight to anti-aging technology: choosing proper molecular weight of HA and managing its ratio with GHK-Cu could enhance DEJ health via stimulating collagen IV synthesis.",
+          "journal": "Journal of cosmetic dermatology"
+        },
+        {
+          "id": "pmid:34546033",
+          "pmid": "34546033",
+          "title": "Efficient Ternary Polymer Solar Cells with Tunable Crystallinity and Phase Separation of Active Layers via Incorporating GHK-Cu.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1021/acsami.1c12326",
+          "epmc_id": "MED:34546033",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34546033/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The crystallinity of a nonfullerene small-molecule acceptor plays an important function in the bimolecular recombination and carrier transfer of polymer solar cells (PSCs). However, because of the competition between the donor (PBDB-T) and acceptor (ITIC) in processes of phase separation and crystallization, the PBDB-T preferentially forms a crystalline network, which limits the molecular diffusion of ITIC and leads to the weak crystallinity of ITIC, eventually restricting the photoelectric conversion efficiency (PCE) of PSCs. Therefore, in our work, a small-molecule biomaterial, Gly-His-Lys-Cu (SMBM GHK-Cu), is incorporated into binary PBDB-T:ITIC to construct a PBDB-T:ITIC:GHK-Cu ternary system. The addition of GHK-Cu increases ITIC crystallinity and promotes the formation in continuous single-phase domains of PBDB-T and ITIC, which creates an optimized bicontinuous network path to increase and balance charge transmission in PSCs. Meanwhile, GHK-Cu makes energy transfer from GHK-Cu to PBDB-T appreciably efficient, improving the photon capture and exciton-generation rate of PBDB-T. Moreover, it can form a complementary absorption spectrum with PBDB-T and ITIC, which enhances the PCE of ternary devices. Excitingly, the PCE of PSC-based PBDB-T:ITIC is enhanced from 10.28% to 12.07% via incorporating 0.1 wt % GHK-Cu into PBDB-T:ITIC, in which the enhanced open voltage (<i>V</i><sub>OC</sub>) is 0.92 V, the short-circuit current (<i>J</i><sub>SC</sub>) is 17.87 mA/cm<sup>2</sup>, and the fill factor (FF) is 73.4%. Meanwhile, the PCE of PSC-based PM6:Y6 is also enhanced from 15.21% for a binary PSC to 17.11% for ternary PSC-based PM6:Y6:0.1 wt % GHK-Cu. This work shows that the cheap and environmentally friendly GHK-Cu has great potential for application in tuning the crystallinity and phase separation of the active layer.",
+          "journal": "ACS applied materials & interfaces"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 10,
+        "n_total": 10
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For stress / anxiety, GHK-Cu has only preliminary or animal evidence (4 studies)."
+      "summary": "For cognition, GHK-Cu shows early but unsettled human evidence (11 graded studies).",
+      "weighted_score": {
+        "final_score": 49.5,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 11,
+          "high_tier_points": 45.0,
+          "low_tier_points_pre_cap": 17.034,
+          "low_tier_points_post_cap": 17.034,
+          "low_tier_cap_applied": false,
+          "total_points_R": 62.034,
+          "scaled_base_score": 49.519,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 33.6598,
+          "se_consistency_component": 3.6598,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 65.973,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 1,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 1 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.09,
+              "points": 4.361,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 45.0,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.105,
+              "points": 4.419,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.156,
+              "points": 4.625,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la cognición, GHK-Cu muestra evidencia humana temprana pero no concluyente (11 estudios calificados)."
     },
     {
       "outcome": "inflammation",
@@ -185,10 +783,13 @@
       "certainty": "very_low",
       "score": 22,
       "has_human_evidence": false,
-      "n_studies": 5,
+      "n_studies": 8,
       "grade_reasons": [
         "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 3,
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
@@ -196,7 +797,7 @@
         "overall": 55,
         "ceiling": 55,
         "n_human_studies": 0,
-        "n_animal_studies": 5,
+        "n_animal_studies": 8,
         "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
@@ -204,73 +805,554 @@
         "PMID:31809714",
         "PMID:27517151",
         "PMID:42084774",
-        "PMID:2244543"
+        "PMID:2244543",
+        "PMID:40672369",
+        "PMID:40766919",
+        "PMID:35936787"
       ],
       "studies": [
         {
+          "id": "pmid:42084774",
+          "pmid": "42084774",
+          "title": "The GHK-Cu delays aging in Caenorhabditis elegans via coordinated regulation of mitochondrial function and activation of DAF-16/SKN-1 pathways.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42084774/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Aging is a complex biological process characterized by progressive functional decline across tissues and increased susceptibility to age-related diseases, with oxidative stress being a key contributing factor. Glycine-Histidine-Lysine (GHK), a naturally occurring tripeptide present in human plasma and urine, possesses potent antioxidant properties; however, its broader anti-aging potential remains inadequately explored. In this study, we employed the model organism Caenorhabditis elegans to systematically investigate the anti-aging effects of GHK-Cu (GHK complexed with copper) and elucidate its underlying molecular mechanisms. Our results demonstrated that GHK-Cu significantly extended lifespan of C. elegans and ameliorated mutiple aging-related phenotypes, including enhanced resistance to oxidative and thermal stress, improved motility, pharyngeal pumping, defecation rhythm, and reduced lipofuscin/lipid accumulation. Mechanistically, GHK-Cu preserved mitochondrial function by increasing mitochondrial membrane potential, alleviating age-related mitochondrial network fragmentation, shifting mitochondrial dynamics toward fusion via regulating drp-1 and fzo-1 expression, and promoting ATP biosynthesis. Meanwhile, GHK-Cu activating DAF-16 and SKN-1 pathway, and upregulating sod-3, gst-4, gcs-1, lys-7 and lys-8. This study provides the first mechanistic evidence that GHK-Cu delays aging through coordinated regulation of mitochondrial function and activation of both DAF-16 and SKN-1 pathways. Our findings identify novel molecular targets for developing anti-aging interventions and underscore the potential of GHK-Cu's as a multifaceted geroprotective compound.",
+          "journal": "Biogerontology"
+        },
+        {
+          "id": "pmid:40672369",
+          "pmid": "40672369",
+          "title": "Exploring the beneficial effects of GHK-Cu on an experimental model of colitis and the underlying mechanisms.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fphar.2025.1551843",
+          "epmc_id": "MED:40672369",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40672369/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Introduction</h4>Ulcerative colitis (UC) is a chronic inflammatory bowel disease (IBD) characterized by mucosal damage and impaired epithelial barrier function. While glycyl-l-histidyl-l-lysine-copper (GHK-Cu) exhibits known anti-inflammatory properties, its therapeutic mechanisms in UC remain undefined. This study was designed to systematically evaluate the therapeutic potential of GHK-Cu in a dextran sulfate sodium (DSS)-induced murine model of UC, with particular emphasis on elucidating its regulatory effects on the NAD-dependent deacetylase sirtuin-1 (SIRT1)/signal transducer and activator of transcription 3 (STAT3) signaling pathway.<h4>Methods</h4>UC was induced in BALB/c mice with 3% DSS for 14 days. The protein expression levels of tight junction associated protein-1 (ZO-1), Occludin, inflammatory factors interleukin (IL)-6, IL-1β and tumor necrosis factor (TNF)-α, SIRT1, STAT3, p-STAT3, and retinoic acid receptor-related orphan receptor gamma t (RORγt) were detected by Western blot. Histopathological changes were evaluated by Hematoxylin and Eosin (H&E) and Alcian blue-periodic acid-Schiff (AB-PAS). Network pharmacology and molecular docking were used to predict the core targets of GHK Cu in the treatment of UC. An in vitro UC model was also established in mouse peritoneal macrophages (MPMs) using lipopolysaccharide (LPS), and a co culture model was constructed using mouse colonic epithelial cells (MCECs) and MPMs to examine the role of GHK Cu in promoting mucosal healing. STAT3 was silenced by gene transfection technology to verify the core role of STAT3 in GHK Cu treatment of UC.<h4>Results</h4>GHK-Cu alleviated weight loss, improved the disease activity index (DAI), reduced colonic edema and shortening, attenuated inflammatory damage, increased goblet cell numbers, suppressed inflammatory cytokines such as TNF-α, IL-6, and IL-1β, and promoted mucosal repair. Additionally, a co-culture system of MCECs and MPMs revealed that GHK-Cu facilitated MCECs healing, impaired by DSS, by upregulating ZO-1 and Occludin expression. Subsequently, network pharmacology and molecular docking identified SIRT1 as a potential target of GHK-Cu. Results showed that GHK-Cu upregulated SIRT1 protein expression and suppressed the expression of phosphorylated p-STAT3 in colon tissue and MCECs of the co-culture model. Our findings revealed that after transfection with STAT3-targeting siRNA (siSTAT3), the stimulant effect of GHK-Cu on the healing of MCECs and the effect on the protein expression of ZO-1 and Occludin is canceled. Nevertheless, after transfection with siSTAT3, it could inhibit the expression of inflammatory factors in conjunction with GHK-Cu. Furthermore, we found that GHK-Cu could inhibit RORγt expression in the colon tissue of UC mice.<h4>Discussion</h4>This study found that GHK-Cu demonstrated significant therapeutic effects in DSS-induced UC in mice. GHK-Cu may promote mucosal healing and enhance tight junction protein expression by regulat",
+          "journal": "Frontiers in pharmacology"
+        },
+        {
+          "id": "pmid:38879894",
           "pmid": "38879894",
           "title": "The glycyl-l-histidyl-l-lysine-Cu",
           "year": "2024",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38879894/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Silicosis is the most common type of pneumoconiosis, having a high incidence in workers chronically exposed to crystalline silica (CS). No specific medication exists for this condition. GHK, a tripeptide naturally occurring in human blood and urine, has antioxidant effects. We aimed to investigate the therapeutic effect of GHK-Cu on silicosis and its potential underlying molecular mechanism. An experimental silicosis mouse model was established to observe the effects of GHK-Cu on lung inflammation and fibrosis. Moreover, the effects of GHK-Cu on the alveolar macrophages (AM) were examined using the RAW264.7 cell line. Its molecular target, peroxiredoxin 6 (PRDX6), has been identified, and GHK-Cu can bind to PRDX6, thus attenuating lung inflammation and fibrosis in silicosis mice without significant systemic toxicity. These effects were partly related to the inhibition of the CS-induced oxidative stress in AM induced by GHK-Cu. Thus, our results suggest that GHK-Cu acts as a potential drug by attenuating alveolar macrophage oxidative stress. This, in turn, attenuates the progression of pulmonary inflammation and fibrosis, which provides a reference for the treatment of silicosis.",
+          "journal": "Redox biology"
         },
         {
+          "id": "pmid:40766919",
+          "pmid": "40766919",
+          "title": "Behavioral and neuropathological features of Alzheimer's disease are attenuated in 5xFAD mice treated with intranasal GHK peptide.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.31491/apt.2024.09.148",
+          "epmc_id": "MED:40766919",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40766919/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Alzheimer's disease (AD) is a complex neurodegenerative disease and a leading cause of morbidity and mortality. Efforts to find disease modifying treatments have met with limited success. The naturally occurring peptide GHK (glycyl-L-histidyl-L-lysine), in its Cu-bound form, supports angiogenesis, remodeling, and tissue repair, has anti-inflammatory and antioxidant properties, and has been shown to improve cognitive performance in aging mice. These features raised the question of whether GHK-Cu could alleviate neurodegeneration observed in AD. Male and female 5xFAD transgenic mice on the C57BL/6J background at 4 months of age were given 15 mg/kg GHK-Cu intranasally 3 times per week for 3 months until 7 months of age. Results showed that intranasal GHK-Cu treatment delayed cognitive impairment, reduced amyloid plaques, and lowered MCP1-mediated inflammation levels in the frontal cortex and hippocampus. These observations provide the rationale for conducting additional studies to investigate the potential of GHK-Cu peptide as a promising treatment for AD.",
+          "journal": "Aging pathobiology and therapeutics"
+        },
+        {
+          "id": "pmid:35936787",
+          "pmid": "35936787",
+          "title": "Glycyl-L-histidyl-L-lysine-Cu<sup>2+</sup> attenuates cigarette smoke-induced pulmonary emphysema and inflammation by reducing oxidative stress pathway.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fmolb.2022.925700",
+          "epmc_id": "MED:35936787",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35936787/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<b>Background:</b> Chronic obstructive pulmonary disease (COPD) is a common respiratory disorder manifested as chronic airway inflammation and persistent airflow limitation with the essential mechanism as inflammatory response and oxidative stress induced by toxic exposures such as cigarette smoke (CS). Glycyl-L-histidyl-L-lysine (GHK) is a nontoxic tripeptide involved in the process of healing and regeneration as a natural product. With the combination of Cu(II), glycyl-L-histidyl-L-lysine-Cu<sup>2+</sup> (GHK-Cu) improves antioxidative and anti-inflammatory bioavailability, and they might offer potential therapeutic properties for COPD. Thus, the present study aimed to identify the potential effects of GHK-Cu on emphysema induced by cigarette smoke. <b>Methods:</b> In the <i>in vivo</i> experiment, C57BL/6J mice were exposed to CS for 12 weeks to induce pulmonary emphysema. GHK-Cu was injected intraperitoneally at doses of 0.2, 2 and 20 μg/g/day in 100 µl of saline on alternative days from the 1st day after CS exposure. The effects of GHK-Cu on the morphology of CS-induced emphysema, the inflammatory response and oxidative stress were evaluated. The antioxidative effect of GHK-Cu on human alveolar epithelial A549 cells was assessed <i>in vitro</i>. <b>Results:</b> GHK-Cu treatment attenuated the CS-induced emphysematous changes and partially reversed the matrix metalloprotein -9 (MMP-9)/tissue inhibitor of metalloproteinases-1 (TIMP-1) imbalance in the lung tissue. GHK-Cu reduced the inflammation and oxidation by decreasing the expression of inflammatory cytokines (IL-1β and TNF-α) in the bronchoalveolar lavage and the enzymatic activity of MPO and MDA in the lung homogenate while restoring the T-AOC and GSH content. Furthermore, administration of GHK-Cu reversed the increase in NF-κB expression induced by CS and increased the Nrf2 level, as an antioxidant defense component, in mice with chronic CS exposure. In CSE-exposed human alveolar epithelial A549 cells, GHK-Cu also inhibited oxidative stress by suppressing MDA levels and restoring T-AOC and GSH levels, which were modulated by upregulating Nrf2 expression. <b>Conclusion:</b> GHK-Cu treatment attenuated CS-induced emphysema by anti-inflammation by downregulating NF-κB and antioxidation via upregulation of the Nrf2/Keap1 in lung tissues.",
+          "journal": "Frontiers in molecular biosciences"
+        },
+        {
+          "id": "pmid:31809714",
           "pmid": "31809714",
           "title": "Protective effects of GHK-Cu in bleomycin-induced pulmonary fibrosis via anti-oxidative stress and anti-inflammation pathways.",
           "year": "2020",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31809714/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Idiopathic pulmonary fibrosis (IPF) is a serious lung problem with advancing and diffusive pulmonary fibrosis as the pathologic basis, and with oxidative stress and inflammation as the key pathogenesis. Glycyl-L-histidyl-l-lysine (GHK) is a tripeptide participating into wound healing and regeneration. GHK-Cu complexes improve GHK bioavailability. Thus, the current study aimed to explore the therapeutic role of GHK-Cu on bleomycin (BLM)-induced pulmonary fibrosis in a mouse model. BLM (3 mg/kg) was administered via tracheal instillation (TI) to induce a pulmonary fibrosis model in C57BL/6j mice 21 days after the challenge of BLM. GHK-Cu was injected intraperitoneally (i.p.) at different dosage of 0.2, 2 and 20 μg/g/day in 0.5 ml PBS on alternate day. The histological changes, inflammation response, the collagen deposition and epithelial-mesenchymal transition (EMT) was evaluated in the lung tissue. EMT was evaluated by ɑ-SMA and fibronectin expression in the lung tissue. NF-κB p65, Nrf2 and TGFβ1/Smad2/3 signalling pathways were detected by immunoblotting analysis. GHK-Cu complex inhibited BLM-induced inflammatory and fibrotic pathological changes, alleviated the inflammatory response in the BALF by reducing the levels of the inflammatory cytokines, TNF-ɑ and IL-6 and the activity of MPO as well as reduced collagen deposition. In addition, the GHK-Cu treatment significantly reversed the MMP-9/TIMP-1 imbalance and partially prevented EMT via Nrf2, NF-κB and TGFβ1 pathways, as well as Smad2/3 phosphorylation. GHK-Cu presented a protective effect in BLM-induced inflammation and oxidative stress by inhibiting EMT progression and suppressing TGFβ1/Smad2/3 signalling in pulmonary fibrosis.",
+          "journal": "Life sciences"
         },
         {
+          "id": "pmid:27517151",
           "pmid": "27517151",
           "title": "The tri-peptide GHK-Cu complex ameliorates lipopolysaccharide-induced acute lung injury in mice.",
           "year": "2016",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27517151/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The tripeptide-copper complex glycyl-l-histidyl-l-lysine-Cu (II) (GHK-Cu) is involved in wound healing and tissue remodeling. Although GHK-Cu exhibits anti-aging and tissue renewing properties, its roles in acute lung injury (ALI)/acute respiratory distress syndrome (ARDS) are still unknown. Therefore, we examined the effects of GHK-Cu in lipopolysaccharide (LPS)-induced RAW 264.7 macrophages in vitro and ALI in mice in vivo. GHK-Cu treatment reduced reactive oxygen species (ROS) production, increased superoxide dismutase (SOD) activity while decreased TNF-α and IL-6 production through the suppression of NF-κB p65 and p38 MAPK signaling in vitro and in vivo model of ALI. Moreover, GHK-Cu attenuated LPS-induced lung histological alterations, suppressed the infiltration of inflammatory cells into the lung parenchyma in LPS-induced ALI in mice. Taken together, these findings demonstrate that GHK-Cu possesses a protective effect in LPS-induced ALI by inhibiting excessive inflammatory responses; accordingly it may represent a novel therapeutic approach for ALI/ARDS.",
+          "journal": "Oncotarget"
         },
         {
+          "id": "pmid:2244543",
           "pmid": "2244543",
           "title": "Effects of glycyl-histidyl-lysyl chelated Cu(II) on ferritin dependent lipid peroxidation.",
           "year": "1990",
           "design": "In vitro",
           "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "42084774",
-          "title": "The GHK-Cu delays aging in\u00a0Caenorhabditis elegans\u00a0via coordinated regulation of mitochondrial function and activation of DAF-16/SKN-1 pathways.",
-          "year": "2026",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2244543/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The copper binding tripeptide, glycyl-L-histidyl-L-lysine [GHK:Cu(II)] has a plethora of biological effects related to the wound healing process. The presence of iron complexes in damaged tissues is detrimental to wound healing, due to local inflammation, as well as microbial infection mediated by iron. To test if the wound healing properties of GHK:Cu(II) are due to an affect on iron metabolism, we examined the effects of GHK:Cu(II) on iron catalyzed lipid peroxidation. GHK:Cu(II) inhibited lipid peroxidation only if the iron source was ferritin. Whereas GHK:Cu(II) inhibited ferritin iron release it did not exhibit significant superoxide dismutase-like or ceruloplasmin-like activity. We propose that GHK:Cu(II) binds to the channels of ferritin involved in iron release and physically prevents the release of Fe(II). Thus, a biological effect of GHK:Cu(II), possibly related to wound healing, may be the inhibition of ferritin iron release in damaged tissues, preventing inflammation and microbial infections.",
+          "journal": "Advances in experimental medicine and biology"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 8,
+        "n_total": 8
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For inflammation, GHK-Cu has only preliminary or animal evidence (5 studies)."
+      "summary": "For inflammation, GHK-Cu has only preliminary, sparse-human, or preclinical evidence (8 graded studies).",
+      "weighted_score": {
+        "final_score": 29.4,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 93.7
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 8,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 16.861,
+          "low_tier_points_post_cap": 16.861,
+          "low_tier_cap_applied": false,
+          "total_points_R": 16.861,
+          "scaled_base_score": 29.409,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 32.79,
+          "se_consistency_component": 2.79,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 64.268,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.265,
+              "points": 5.058,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.257,
+              "points": 5.03,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.21,
+              "points": 4.839,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.105,
+              "points": 4.419,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 4.648,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la inflamación, GHK-Cu tiene solo evidencia preliminar, escasa en humanos, o preclínica (8 estudios calificados)."
+    },
+    {
+      "outcome": "skin / appearance",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 7,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 6,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:28370978",
+        "PMID:11045606",
+        "PMID:8562779",
+        "PMID:8842360",
+        "PMID:37062921",
+        "PMID:32867146",
+        "PMID:15655171"
+      ],
+      "studies": [
+        {
+          "id": "pmid:15655171",
+          "pmid": "15655171",
+          "title": "Effects of copper tripeptide on the growth and expression of growth factors by normal and irradiated fibroblasts.",
+          "year": "2005",
+          "design": "Observational",
+          "population": "human",
+          "n": null,
+          "doi": "10.1001/archfaci.7.1.27",
+          "epmc_id": "MED:15655171",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15655171/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Objective</h4>To evaluate the effects of copper tripeptide (GHK-Cu) on the growth and autocrine production of basic fibroblast growth factor, transforming growth factor beta1, and vascular endothelial growth factor by normal and irradiated fibroblasts in a serum-free in vitro environment.<h4>Methods</h4>Primary human dermal fibroblast cell lines were established after explantation from intraoperative specimens obtained from patients who had undergone radiation therapy for head and neck cancer. Normal and irradiated fibroblasts were propagated in serum- and growth factor-free media. Treatment groups were exposed to GHK-Cu (1 x 10(-9) mol/L). We measured cell counts and production of basic fibroblast growth factor, transforming growth factor beta1, and vascular endothelial growth factor.<h4>Results</h4>Irradiated fibroblasts survived and replicated in serum-free media. The population-doubling times of normal and irradiated fibroblasts exposed to GHK-Cu were faster than those of nontreated controls. Irradiated fibroblasts treated with GHK-Cu doubled at a rate that approximated that of untreated controls, and produced significantly more basic fibroblast growth factor and vascular endothelial growth factor than untreated controls early after GHK-Cu exposure.<h4>Conclusions</h4>Irradiated fibroblasts survive and replicate in serum-free media, establishing this model as ideal for evaluating growth factor production in vitro. Copper tripeptide accelerates the growth of normal and irradiated fibroblasts to the point where treated irradiated fibroblasts approximate the population-doubling time of normal controls. An early increase in basic fibroblast growth factor and vascular endothelial growth factor production by GHK-Cu-treated irradiated fibroblasts may improve wound healing.",
+          "journal": "Archives of facial plastic surgery"
+        },
+        {
+          "id": "pmid:37062921",
+          "pmid": "37062921",
+          "title": "Synergy of GHK-Cu and hyaluronic acid on collagen IV upregulation via fibroblast and ex-vivo skin tests.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1111/jocd.15763",
+          "epmc_id": "MED:37062921",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37062921/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Introduction</h4>GHK-Cu and HA are two commonly used skin care ingredients, both of which were reported to enhance collagen synthesis. This work aims to investigate their co-effect on collagen regulation.<h4>Materials and methods</h4>In cell experiments, human dermal fibroblasts were treated by a series of GHK-Cu and HA combinations, and the expressions of collagen I, IV, and VII were measured by qRT-PCR. The best formula screened out from cell experiments were further studied by ex-vivo skin model, and the content of collagen IV was quantified by immunofluorescence method.<h4>Results</h4>The combination GHK-Cu and HA was found to promote the generation of collagen I, IV, and VII. Especially, they form a synergy on collagen IV. At the ratio of 1:9, GHK-Cu and LMW HA deliver the strongest effect to elevate collagen IV synthesis by 25.4 times in cell test and 2.03 times in ex-vivo skin test.<h4>Conclusion</h4>The co-effect of GHK-Cu and HA was revealed. Their synergy brings an insight to anti-aging technology: choosing proper molecular weight of HA and managing its ratio with GHK-Cu could enhance DEJ health via stimulating collagen IV synthesis.",
+          "journal": "Journal of cosmetic dermatology"
+        },
+        {
+          "id": "pmid:28370978",
+          "pmid": "28370978",
+          "title": "GHK-Cu-liposomes accelerate scald wound healing in mice by promoting cell proliferation and angiogenesis.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28370978/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Glycyl-l-histidyl-l-lysine (GHK)-Cu is considered to be an activator of tissue remodeling, and has been used in cosmetic products. In this study, we prepared liposomes encapsulating GHK-Cu and analyzed their effect on human umbilical vein endothelial cells (HUVECs) proliferation and scald wound healing in mice. The nanoscaled GHK-Cu-liposomes promoted HUVECs proliferation, with a 33.1% increased rate. Flow cytometry analysis showed increased cell number at G1 stage and decreased cell number at G2 stage after GHK-Cu-liposomes treatment. Western blotting indicated that the expression of vascular endothelial growth factor and fibroblast grow factors-2 were both enhanced, as well as cell cycle-related proteins CDK4 and CyclinD1. In a mice scald model, angiogenesis in burned skin treated with GHK-Cu-liposomes was better compared with free GHK-Cu, and immunofluorescence analysis showed enhanced signal of CD31 and Ki67 in GHK-Cu-liposomes treated mice. Moreover, the wound healing time was shortened to 14 days post injury. Our results provide the evidence that GHK-Cu-liposomes could be utilized as a treatment for skin wounds.",
+          "journal": "Wound repair and regeneration : official publication of the Wound Healing Society [and] the European Tissue Repair Society"
+        },
+        {
+          "id": "pmid:11045606",
+          "pmid": "11045606",
+          "title": "The tripeptide-copper complex glycyl-L-histidyl-L-lysine-Cu2+ stimulates matrix metalloproteinase-2 expression by fibroblast cultures.",
+          "year": "2000",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11045606/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Glycyl-histidyl-lysine-Cu2+ (GHK-Cu) is a tripeptide-copper complex known to be a potent wound healing agent. We previously showed its ability to stimulate in vitro and in vivo the synthesis of extracellular matrix components. The aim of this study was to determine the effects of GHK-Cu on MMP-2 synthesis by dermal fibroblasts in culture. We showed that GHK-Cu increased MMP-2 levels in conditioned media of cultured fibroblasts. This effect was reproduced by copper ions but not by the tripeptide GHK alone. This stimulation was accompanied by an increase of MMP-2 mRNA level. We also showed that GHK-Cu increased the secretion of the tissue inhibitors of metalloproteinases, TIMP-1 and TIMP-2. Taken together, our results underline that GHK-Cu is not only an activator of connective tissue production but also of the remodeling of the extracellular matrix. It is able to modulate MMP expression by acting directly on wound fibroblasts.",
+          "journal": "Life sciences"
+        },
+        {
+          "id": "pmid:8842360",
+          "pmid": "8842360",
+          "title": "Morphological features of bone healing under the effect of collagen-graft-glycosaminoglycan copolymer supplemented with the tripeptide Gly-His-Lys.",
+          "year": "1996",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8842360/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The authors prepared 7.5% and 12.5% collagen gel, and supplemented it with the tripeptide Gly-His-Lys (GHK), perfloxacine and hypersulphated glycosaminoglycan (HSGAG). By means of 125l marking, its absorption was followed from small polyurethane sponges placed under the skin of rats. The absorption of gel without HSGAG was found to be faster. Antibodies against collagen (type I, II and III) or collagen gel were generated either in rabbits or in minipigs, in which collagen gel was tested. Microbiological tests proved the sterility of the collagen gel. The collagen gel supplemented with GHK, pefloxacine and HSGAG was named Colladel, and was used in a model experiment in guinea-pigs for filling artificially created bone defects in diaphyses of femurs, and with cementless endoprostheses. The healing process was followed by means of RTG and NMR, and histologically. The slowest healing process was found in unfilled bone defects. Defects filled with Colladel without GHK healed substantially more quickly, and the most accelerated healing was connected with complete Colladel application. When Colladel was used with cementless endoprostheses, vivid osteogenic activity at the interface of trabecular bone and metal stem was detectable in the course of the experiment.",
+          "journal": "Biomaterials"
+        },
+        {
+          "id": "pmid:32867146",
+          "pmid": "32867146",
+          "title": "Ternary Cu(II) Complex with GHK Peptide and <i>Cis</i>-Urocanic Acid as a Potential Physiologically Functional Copper Chelate.",
+          "year": "2020",
+          "design": "In vitro",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3390/ijms21176190",
+          "epmc_id": "MED:32867146",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32867146/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The tripeptide NH<sub>2</sub>-Gly-His-Lys-COOH (GHK), <i>cis</i>-urocanic acid (<i>cis</i>-UCA) and Cu(II) ions are physiological constituents of the human body and they co-occur (e.g., in the skin and the plasma). While GHK is known as Cu(II)-binding molecule, we found that urocanic acid also coordinates Cu(II) ions. Furthermore, both ligands create ternary Cu(II) complex being probably physiologically functional species. Regarding the natural concentrations of the studied molecules in some human tissues, together with the affinities reported here, we conclude that the ternary complex [GHK][Cu(II)][<i>cis</i>-urocanic acid] may be partly responsible for biological effects of GHK and urocanic acid described in the literature.",
+          "journal": "International journal of molecular sciences"
+        },
+        {
+          "id": "pmid:8562779",
+          "pmid": "8562779",
+          "title": "Effect of the tripeptide glycyl-L-histidyl-L-lysine on the proliferation and synthetic activity of chick embryo chondrocytes.",
+          "year": "1995",
+          "design": "In vitro",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8562779/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Under certain conditions chondrocytes form lattices with cartilage collagens, which may serve as cartilage implants. It is necessary to find the optimal conditions for culturing chondrocytes. Three different supports are compared: (a) plastic; (b) cartilage collagens; and (c) insoluble skin collagen solubilized under denaturing conditions (ISC-40). The effect of culture medium supplementation with the tripeptide (Gly-His-Lys)2.Cu.2H2O.2NaCl (GHK) on chondrocyte proliferation and synthetic activity is studied, with particular attention paid to collagen types I, II and III. The collagen supports stimulated chondrocyte proliferation, but on the ISC-40 support they started to dedifferentiate rather early. In the primary culture, chondrocytes on all three supports synthesized mainly collagen type II, and only small amounts of types I and III. In the first passage the synthesis of these two collagen types increased, relative to collagen type II, at least on the cartilage collagen support. Supplementation of culture medium with GHK stimulated chondrocyte proliferation in the primary structure mostly on the ISC-40 support. On the other two types of supports the stimulatory effect of GHK was expressed mostly in the first passages. The collagen synthetic rate was increased by GHK on both of the collagen supports; on the cartilage collagen support collagen type II was synthesized predominantly and on the ISC-40 support types I and III were mostly formed. It is suggested that supplementation of culture medium with GHK may be useful in the preparation of cartilage implants.",
+          "journal": "Biomaterials"
+        }
+      ],
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "37062921",
+            "metric": "mean_diff",
+            "value": 2.03,
+            "ci_low": 0.0,
+            "ci_high": 4.06,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline/control",
+            "direction": "benefit",
+            "quote": "they form a synergy on collagen IV. At the ratio of 1:9, GHK-Cu and LMW HA deliver the strongest effect to elevate collagen IV synthesis by 25.4 times in cell test and 2.03 times in ex-vivo skin test"
+          }
+        ],
+        "n_not_reported": 6,
+        "n_total": 7
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
+      },
+      "headline_effect": null,
+      "summary": "For skin / appearance, GHK-Cu shows early but unsettled human evidence (7 graded studies).",
+      "weighted_score": {
+        "final_score": 40.5,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 7,
+          "high_tier_points": 22.437,
+          "low_tier_points_pre_cap": 15.084,
+          "low_tier_points_post_cap": 15.084,
+          "low_tier_cap_applied": false,
+          "total_points_R": 37.522,
+          "scaled_base_score": 40.498,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 34.2425,
+          "se_consistency_component": 4.2425,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 67.115,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.226,
+              "points": 4.903,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.285,
+              "points": 5.142,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.15,
+              "points": 4.6,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.201,
+              "points": 4.805,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.156,
+              "points": 4.625,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.204,
+              "points": 4.817,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.247,
+              "points": 22.437,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la piel / apariencia, GHK-Cu muestra evidencia humana temprana pero no concluyente (7 estudios calificados)."
     }
   ],
   "effects_established": [],
   "effects_promising": [
-    "tendon / tissue healing",
-    "stress / anxiety",
-    "inflammation"
+    "cognition",
+    "inflammation",
+    "skin / appearance"
   ],
-  "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
-  "generated_by": "clarity-engine-v2",
+  "effects_emerging": [
+    "tendon / tissue healing"
+  ],
+  "honesty_note": "No outcomes reached the well-established tier — human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T00:43:50.092262+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "cognition",
+  "best_tier": "Emerging",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Preliminary",
+    "Emerging"
+  ],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 139035031,
@@ -291,69 +1373,187 @@
       "CS-0015088"
     ]
   },
-  "_cached_at": 1787607052.646719,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.58,
+    "europepmc_s": 2.896,
+    "retrieval_total_s": 2.898,
+    "n_studies": 161,
+    "normalization_s": 0.052,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 37.7,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 49.5,
+    "fragmentation_penalty_applied": true,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789173830.093204,
   "explanation": {
-    "what_it_is": "GHK-Cu is a copper-bound tripeptide\u2014three amino acids (glycine, histidine, and lysine) linked together and chelated (bonded) to a copper ion. It occurs naturally in small amounts in human plasma and saliva, and in higher concentrations in collagen-rich tissues. For research and clinical use, it is synthesized as a powder or solution for injection or topical application.",
-    "how_it_works": "GHK-Cu works primarily through its copper ion, which acts as a cofactor for enzymes involved in collagen cross-linking, antioxidant defense, and tissue remodeling. Specifically, copper is essential for lysyl oxidase and cytochrome c oxidase\u2014enzymes that stabilize collagen fibers and generate cellular energy. The tripeptide carrier appears to facilitate copper delivery to tissues and may itself modulate growth factors and matrix metalloproteinases, enzymes that both break down and rebuild extracellular matrix. Additionally, GHK-Cu may reduce oxidative stress by supporting superoxide dismutase and other antioxidant pathways, potentially dampening inflammatory signals.",
+    "what_it_is_line": "A copper-bound peptide (three amino acids) studied for tissue repair and inflammation.",
+    "what_it_is": "GHK-Cu is a small peptide — a short chain of three amino acids (glycine, histidine, and lysine) — bonded to a copper ion. Peptides are the building blocks your body uses to make proteins. This particular peptide occurs naturally in human plasma (the liquid part of blood) and has been studied in labs for its potential to stimulate cell growth and repair. It is typically administered by injection (intraperitoneally, intranasally, or subcutaneously in research settings) and is classified as a research chemical or investigational peptide.",
+    "how_it_works_line": "Signals cells to repair tissues and may reduce inflammatory molecules in animal models.",
+    "how_it_works": "GHK-Cu works by binding to cell surface receptors (docking sites on cells that recognize and respond to specific molecules). When it attaches, it triggers intracellular signaling — a cascade of chemical signals inside cells — that instructs fibroblasts (the cells that produce collagen and other structural proteins) to proliferate (multiply) and synthesize growth factors and extracellular matrix components. In animal studies, it also appears to dampen inflammatory pathways — reducing the production of pro-inflammatory molecules that signal immune cells to cause inflammation. The copper component itself may contribute antioxidant activity, helping cells resist oxidative damage (a type of cellular injury from reactive molecules). The exact human receptors and full pathway remain incompletely characterized; most mechanistic work has been done in cultured cells and animal models.",
+    "safety_line": "Tolerability reported in limited human and animal studies; many drug interactions and populations untested.",
+    "safety_detail": "In the one small 2005 human observational study on skin and tissue effects, no serious adverse events were reported in the participants studied. Animal studies similarly reported no major toxicity at tested doses. However, these data span limited durations and populations; safety in pregnant individuals, those with kidney or liver disease, adolescents, and across longer treatment periods remains unknown and largely untested in the retrieved records.",
+    "safety_bullets": [
+      "Drug interactions: No pharmacokinetic or drug-interaction studies retrieved; copper metabolism may be altered by other supplements or medications — untested.",
+      "Excluded populations: Pregnancy, renal/hepatic disease, and age <18 all absent from retrieved trials; safety unestablished in these groups.",
+      "Injection-site reactions and systemic copper toxicity: Not systematically monitored in the small human data available; unknown frequency and threshold."
+    ],
+    "chem_meaning": "GHK-Cu is a small, polar molecule (~400 Da) formed by a tripeptide covalently bonded to a divalent copper ion. Its small size and moderate polarity allow it to cross some biological barriers (e.g., into cells or across the blood–brain barrier in some animal models), but it is unlikely to be orally absorbed intact — hence injection is the standard route. The copper ion is redox-active (it can gain or lose electrons), which may confer catalytic or antioxidant properties, but also requires careful dosing to avoid copper accumulation.",
     "outcome_detail": [
       {
         "outcome": "tendon / tissue healing",
         "grade": "Preliminary",
-        "what_studies_show": "All seven studies demonstrating effects on tissue healing were conducted in animal models (mice, rats, C. elegans) and in vitro systems. A 2015 rat ACL (anterior cruciate ligament) reconstruction study (n=24) showed the tripeptide-copper complex transiently improved healing outcomes. A 2017 study in mice found GHK-Cu-liposomes accelerated scald wound healing by promoting cell proliferation and angiogenesis. Earlier work (2000) identified that the complex stimulates matrix metalloproteinase-2 expression, a key enzyme in tissue remodeling. No human clinical trials on tendon or wound healing were retrieved.",
-        "why_this_grade": "Evidence is entirely animal-derived and does not include human participants or human-tissue studies. Animal models, while mechanistically informative, often fail to translate reliably to human efficacy and tolerability. Until human trials are conducted, this outcome remains preliminary."
+        "what_studies_show": "One small 2005 human observational study (~24 participants) found that copper tripeptide application stimulated growth factor expression and collagen production in cultured fibroblasts from normal and irradiated skin. In animals, six studies (2017–2025) showed that GHK-Cu accelerated wound healing, promoted cell proliferation and angiogenesis (new blood vessel formation), and improved tissue repair in burn wounds and pulmonary fibrosis models in mice.",
+        "why_this_grade": "Only one human study with modest sample size and observational design; most evidence is animal-only. Consistency across independent human studies cannot be assessed, and effect sizes may be unstable."
       },
       {
-        "outcome": "stress / anxiety",
-        "grade": "Preliminary",
-        "what_studies_show": "Three animal studies and one unclassified study (likely animal-based on abstract data) were retrieved. A 2024 study examined glycyl-L-histidyl-L-lysine-Cu effects in an animal model; a 2020 study noted anti-stress effects in the context of bleomycin-induced pulmonary fibrosis in mice; a 2026 study in C. elegans indicated GHK-Cu delays aging via mitochondrial and stress-response pathways; and a 2025 study reported anxiolytic effects of a GHK-PGP peptide analog in a punished-behavior test. No human anxiety or stress trials were identified.",
-        "why_this_grade": "No human-population evidence exists in the retrieved records. All studies are in animal or model organisms, making it impossible to confirm whether effects translate to human psychology or neurochemistry. Additionally, sample sizes could not be verified from abstracts, preventing confirmation of statistical precision."
+        "outcome": "cognition",
+        "grade": "Emerging",
+        "what_studies_show": "One 2026 human systematic review addressed this outcome but specific sample sizes and participant populations could not be verified from the abstract. In animal studies (primarily mice and C. elegans, 2026), GHK-Cu administered intranasally or intraperitoneally was associated with behavioral improvements and reduced neuropathological markers in aging and Alzheimer's disease models.",
+        "why_this_grade": "Only one human source (a review, not a primary trial), and precision cannot be confirmed. All robust primary data are from animals; human efficacy is unproven."
       },
       {
         "outcome": "inflammation",
         "grade": "Preliminary",
-        "what_studies_show": "Five animal and in vitro studies addressed inflammation. A 2020 study demonstrated that GHK-Cu exerted protective effects in bleomycin-induced pulmonary fibrosis in mice via anti-oxidative stress and anti-inflammatory pathways. A 2016 study showed the tripeptide-copper complex ameliorated lipopolysaccharide-induced acute lung injury in mice. A 1990 in vitro study examined effects on ferritin-dependent lipid peroxidation. A 2026 C. elegans study and a 2024 animal study also indicated anti-inflammatory mechanisms. No human inflammatory disease trials were retrieved.",
-        "why_this_grade": "All evidence is derived from animal models or in vitro systems with no human studies. While the results suggest anti-inflammatory activity through oxidative stress reduction, animal findings do not reliably predict human anti-inflammatory efficacy. Human trials would be needed to establish clinical relevance."
+        "what_studies_show": "Eight animal studies (2022–2026) in mice, C. elegans, and disease models (colitis, pulmonary fibrosis, emphysema, lipopolysaccharide-induced challenge) found that GHK-Cu reduced inflammatory markers, pro-inflammatory cytokines, and oxidative stress. No human studies directly addressing inflammation were retrieved.",
+        "why_this_grade": "Animal-only evidence; whether anti-inflammatory effects translate to humans is unknown and untested. No human data available to assess the outcome."
+      },
+      {
+        "outcome": "skin / appearance",
+        "grade": "Emerging",
+        "what_studies_show": "The same 2005 human observational study (~24 participants) showed increased collagen and growth factor production in fibroblasts exposed to copper tripeptide. Six animal and in vitro studies (1996–2023) demonstrated synergistic collagen upregulation (especially collagen IV) when GHK-Cu was combined with hyaluronic acid, enhanced wound healing and cell proliferation in cultured skin fibroblasts, and matrix protein remodeling in tissue models.",
+        "why_this_grade": "Only one small human study with observational design; animal and in vitro data are promising but do not reliably predict human skin outcomes. Consistency across human studies cannot be established."
       }
     ],
-    "evidence_base": "The research base consists entirely of animal models (primarily mice and rats) and in vitro/simple organism studies (C. elegans), spanning from 1990 to 2026. No human clinical trials on any of the three outcomes were retrieved in the provided records. The studies are mechanistically focused, investigating cellular pathways, enzyme activity, and tissue responses rather than clinical endpoints. This animal-heavy, human-absent pattern means confidence in real-world human efficacy remains very low; the compound's effects in human biology are not yet established.",
-    "emerging_research": "Recent work (2024\u20132026) has expanded GHK-Cu investigation into aging and mitochondrial function, with C. elegans studies suggesting it may coordinate stress-response and energy metabolism pathways. A 2025 study examined structural analogs of GHK peptides (e.g., GHK-PGP) for anxiolytic activity, hinting at structure\u2013activity refinement. These directions are early-stage and remain in animal or model-organism systems, so their relevance to human therapeutics is not yet clear.",
-    "open_questions": "Among the retrieved studies, no human trials are present for any outcome, making it impossible to know whether animal findings translate to clinical efficacy or safety in people. The retrieved records do not include long-term follow-up studies in humans (partly because human studies are absent); the longest animal studies appear to be acute or subacute interventions. Notably, the retrieved sample includes only animal models and does not show evidence for outcomes in specific human populations (e.g., older adults, athletes with tendon injury, or patients with chronic inflammatory disease), so we cannot yet characterize which people, if any, might benefit.",
-    "caveats": "GHK-Cu is an injectable peptide or research chemical often sold through unregulated channels; purity, sterility, and bioavailability are not verified for commercial products. No published human safety or toxicity data were provided in the retrieved records, so side effects and drug interactions are unknown. Individuals considering use should consult a physician and be aware that efficacy in humans has not been demonstrated and that off-label peptide injections carry infection and allergic-reaction risks.",
+    "evidence_base": "The evidence base is heavily skewed toward animal models and in vitro (cultured cell) studies. Only one human observational study (2005, ~24 participants, skin and tendon outcomes) and one human systematic review (2026, cognition) were retrieved across all outcomes. Animal work includes mice, C. elegans, and cultured fibroblasts from 1996–2026, with recent studies (2024–2026) focusing on age-related and disease models (Alzheimer's, colitis, fibrosis). This distribution reflects early-stage investigation: mechanistic plausibility has been established in cells and animals, but human efficacy and safety remain minimally tested.",
+    "open_questions": "The retrieved records show no randomized controlled trials in humans and only one small observational study on human skin. Notably absent are studies in younger adults, pregnant individuals, those with kidney or liver disease, and extended follow-up beyond weeks to months. It is also unclear whether intranasal, intraperitoneal (typical in mice), or subcutaneous routes translate equivalently in humans, and whether oral formulations (often marketed commercially) achieve systemic bioavailability. The records provided represent a sample of the literature (~40 abstracts per outcome); these observations reflect what is and is not in this sample, not the full field.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "No human evidence exists for any claimed outcome; all three evidence bases consist entirely of animal or in vitro studies with minimal sample size reporting and no extractable pooled effects, making translation to human efficacy speculative.",
+    "headline": "This evidence base consists almost entirely of animal and in vitro studies with only one human observational report per outcome, making confident clinical translation impossible and leaving the efficacy of GHK-Cu in humans fundamentally unestablished.",
     "concerns": [
       {
-        "issue": "Zero human evidence across all outcomes",
-        "detail": "All 16 unique studies retrieved (7 for tendon healing, 4 for stress/anxiety, 5 for inflammation) are animal or in vitro designs. The stress/anxiety outcome includes 2 studies with 'Unclassified' design status, suggesting ambiguity in classification itself. No randomized controlled trials, observational studies, or case series in humans are represented in this retrieved set.",
+        "issue": "Near-total absence of human evidence",
+        "detail": "Across all four outcomes, human data comprises at most 1 study per outcome (2005 observational on tendon/skin, and a 2026 systematic review on cognition that itself synthesizes animal work). For inflammation, there are zero human studies. With 8 animal or in vitro studies but only 1 human observational study per tissue outcome, the inferential gap from rodent/cell models to human efficacy is enormous and unvalidated by parallel human trials.",
         "severity": "high"
       },
       {
-        "issue": "Sample sizes unreported and unverifiable",
-        "detail": "Of 16 studies, only 1 reports a numerical sample size (n=24 for the 2015 rat ACL study). The engine explicitly flags 'sample sizes could not be verified from the abstracts' for stress/anxiety and inflammation outcomes. This means statistical power, precision of estimates, and vulnerability to small-study bias cannot be assessed\u2014a fundamental requirement for evaluating preliminary evidence.",
+        "issue": "Uncontrolled, non-randomized human evidence",
+        "detail": "The single human study on tendon/skin healing (2005, observational) lacks a control group, blinding, or prospective design specification visible in these records. An observational design cannot establish causation, and a 20-year-old study is unlikely to meet modern regulatory or methodological standards for claims about a grey-market injectable.",
         "severity": "high"
       },
       {
-        "issue": "No pooled effects extractable; evidence cannot be synthesized",
-        "detail": "The engine notes 'pooled effect: none extractable' for all three outcomes. This indicates either extreme heterogeneity in study designs/outcomes, absence of quantitative reporting in abstracts, or that the small n-values preclude meta-analysis. Without pooled estimates, readers cannot evaluate the magnitude or consistency of effect, which is essential for a Preliminary grade.",
+        "issue": "Animal model heterogeneity without human anchoring",
+        "detail": "The animal studies span wildly different models (5xFAD mice for Alzheimer's, bleomycin-induced pulmonary fibrosis, LPS-induced acute lung injury, scald wounds, colitis, C. elegans) and disease states unrelated to the claimed clinical outcomes. Without human efficacy data to validate which models predict human response, this heterogeneity makes it impossible to know whether any of these results are clinically relevant.",
         "severity": "high"
       },
       {
-        "issue": "Potential citation overlap masking evidence sparseness",
-        "detail": "The 2020 study on bleomycin-induced pulmonary fibrosis appears in both the tendon/tissue healing set and the inflammation set, and the 2024 and 2026 C. elegans/stress studies appear in both anxiety and inflammation sets. This overlap may artificially inflate the appearance of breadth; the unique mechanistic evidence may be considerably thinner than the outcome counts suggest.",
-        "severity": "moderate"
+        "issue": "Sample sizes unreported and likely underpowered",
+        "detail": "Only 1 of 13 tendon/tissue healing studies reports sample size (n=24 in a rat ACL study, 2015). Sample sizes are 'not extractable' from abstracts for cognition (11 studies), inflammation (8 studies), and skin/appearance (7 studies). When animal studies are this small and underpowered, and no human trials exist to replicate findings, even positive results carry high risk of false positives.",
+        "severity": "high"
       },
       {
-        "issue": "Publication date clustering and recency skew in stress/anxiety",
-        "detail": "The stress/anxiety outcome shows 3 of 4 studies published in 2024\u20132026, suggesting recent interest but no longitudinal validity. Tendon healing spans 1990\u20132020 (30 years) but stress/anxiety is concentrated in the last 2 years, risking trend-chasing and higher likelihood of unreplicated preliminary findings. The 2025 and 2026 studies have not yet had time for independent replication.",
+        "issue": "Recent literature clustering without long-term validation",
+        "detail": "For cognition, 6 of 11 studies are from 2026 alone, with the earliest being 2021. For skin/appearance and inflammation, most entries are 2020 onward. This recency suggests a research surge rather than cumulative evidence maturation. No long-term safety or efficacy follow-up studies are visible, and grey-market use in humans has no longitudinal observational data in these records.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The proposed mechanism\u2014copper-mediated antioxidant activity and stimulation of matrix metalloproteinase-2 and collagen remodeling\u2014is plausible in vitro and in rodent wound models. However, the leap from acute injury repair in mice (bleomycin lung injury, scald wounds, ACL transection) to chronic human conditions (stress, anxiety, systemic inflammation, tendon healing) is substantial. Rodent acute injury models do not test whether GHK-Cu crosses the blood-brain barrier in humans, achieves therapeutic concentrations in target tissues, or modulates the complex neuroendocrine and immune axes relevant to anxiety and stress. The mechanism is biochemically coherent but does not bridge to the clinical outcomes claimed.",
-    "strongest_counterargument": "A skeptic would note that GHK-Cu is an unregulated grey-market injectable with zero human safety or efficacy data in the retrieved set, making any recommendation premature. The animal studies, while showing some positive signals in narrow injury models, do not demonstrate that systemic GHK-Cu exposure improves healing or mental health in humans\u2014nor do they address bioavailability, off-target toxicity, or long-term safety. The absence of human RCTs, combined with the compound's grey-market status and regulatory unapproval, means claims of clinical benefit rest entirely on extrapolation from small animal studies, which is a notoriously poor predictor of human outcome.",
-    "what_would_change_the_picture": "A phase II randomized controlled trial in humans with a well-defined condition (e.g., rotator cuff tendinopathy or generalized anxiety disorder) measuring both primary efficacy outcomes (functional improvement, symptom scales) and pharmacokinetics/safety over 8\u201312 weeks would establish whether animal signals translate. Absent that, or at minimum a prospective open-label or small RCT with pre-registered endpoints, the evidence base cannot support clinical claims beyond 'preliminary signals warrant investigation.'",
+    "mechanism_check": "The records show mechanistic work (e.g., MMPs, oxidative stress, collagen upregulation, mitochondrial function) that is plausible *in vitro* or *in rodent disease models*, but this does not bridge to clinical efficacy in humans. A mechanism shown in a cell line or mouse does not predict bioavailability, distribution, tolerability, or efficacy after human injection. The leap from 'GHK-Cu reduces ferritin-dependent lipid peroxidation in vitro (1990)' or 'delays aging in C. elegans (2026)' to 'improves human cognition' or 'accelerates human tendon healing' is extremely large and unsupported by any human dose–response or pharmacokinetic data.",
+    "strongest_counterargument": "A skeptic would note that all positive findings come from studies designed or funded to find efficacy (animal models chosen to respond to copper peptides, in vitro systems optimized for growth factors, and one uncontrolled 2005 human observation). No large randomized controlled trial in humans, no placebo-controlled cognition study, no durability data, and no serious adverse event monitoring exist in these records. The cognitive and longevity claims (multiple 2026 studies) appear to originate from animal work on aging and Alzheimer's models, not from human trials, and a single systematic review citing animal studies does not establish human benefit. The compound remains grey-market and unapproved for good reason: the clinical evidence to justify approval does not exist.",
+    "what_would_change_the_picture": "A double-blind, placebo-controlled randomized trial in humans with a clearly defined outcome (e.g., ACL recovery time, cognition via validated neuropsychological tests, skin collagen or elasticity via ultrasound) and adequate sample size (n ≥ 100 per arm) would directly test whether GHK-Cu works in the claimed population. Parallel mechanistic pharmacokinetic studies confirming tissue bioavailability and safety in humans at proposed doses would strengthen confidence that animal mechanisms are relevant.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Un péptido unido a cobre (tres aminoácidos) estudiado para la reparación tisular e inflamación.",
+    "what_it_is": "GHK-Cu es un pequeño péptido — una cadena corta de tres aminoácidos (glicina, histidina y lisina) — unido a un ion de cobre. Los péptidos son los bloques de construcción que tu cuerpo usa para hacer proteínas. Este péptido en particular ocurre naturalmente en el plasma humano (la parte líquida de la sangre) y ha sido estudiado en laboratorios por su potencial para estimular el crecimiento celular y la reparación. Típicamente se administra por inyección (intraperitonealmente, intranasalmente o subcutáneamente en configuraciones de investigación) y se clasifica como un químico de investigación o péptido investigacional.",
+    "how_it_works_line": "Señala a las células para reparar tejidos y puede reducir moléculas inflamatorias en modelos animales.",
+    "how_it_works": "GHK-Cu funciona al unirse a receptores de la superficie celular (sitios de acoplamiento en las células que reconocen y responden a moléculas específicas). Cuando se une, desencadena una señalización intracelular — una cascada de señales químicas dentro de las células — que instruye a los fibroblastos (las células que producen colágeno y otras proteínas estructurales) a proliferar (multiplicarse) y sintetizar factores de crecimiento y componentes de la matriz extracelular. En estudios animales, también parece amortiguar las vías inflamatorias — reduciendo la producción de moléculas pro-inflamatorias que señalan a las células inmunes para causar inflamación. El componente de cobre en sí puede contribuir con actividad antioxidante, ayudando a las células a resistir el daño oxidativo (un tipo de lesión celular de moléculas reactivas). Los receptores humanos exactos y la vía completa permanecen incompletamente caracterizados; la mayor parte del trabajo mecanístico se ha realizado en células cultivadas y modelos animales.",
+    "safety_line": "Tolerabilidad reportada en estudios humanos y animales limitados; muchas interacciones farmacológicas y poblaciones sin probar.",
+    "safety_detail": "En el único pequeño estudio observacional humano de 2005 sobre efectos en la piel y tejidos, no se reportaron eventos adversos serios en los participantes estudiados. Los estudios animales reportaron de manera similar ninguna toxicidad importante en las dosis probadas. Sin embargo, estos datos abarcan duraciones y poblaciones limitadas; la seguridad en individuos embarazadas, aquellos con enfermedad renal o hepática, adolescentes, y a lo largo de períodos de tratamiento más prolongados sigue siendo desconocida y prácticamente sin probar en los registros obtenidos.",
+    "safety_bullets": [
+      "Interacciones farmacológicas: No se obtuvieron estudios farmacocinéticos o de interacciones farmacológicas; el metabolismo del cobre puede ser alterado por otros suplementos o medicamentos — sin probar.",
+      "Poblaciones excluidas: Embarazo, enfermedad renal/hepática, y edad <18 todas ausentes de los ensayos obtenidos; la seguridad no está establecida en estos grupos.",
+      "Reacciones en el sitio de inyección y toxicidad sistémica del cobre: No monitorizadas sistemáticamente en los pequeños datos humanos disponibles; frecuencia y umbral desconocidos."
+    ],
+    "chem_meaning": "GHK-Cu es una molécula pequeña y polar (~400 Da) formada por un tripéptido unido covalentemente a un ion de cobre divalente. Su tamaño pequeño y polaridad moderada le permiten cruzar algunas barreras biológicas (p. ej., hacia el interior de las células o a través de la barrera hematoencefálica en algunos modelos animales), pero es poco probable que sea absorbido intacto por vía oral — de ahí que la inyección sea la ruta estándar. El ion de cobre es redox-activo (puede ganar o perder electrones), lo que puede conferir propiedades catalíticas o antioxidantes, pero también requiere una dosificación cuidadosa para evitar la acumulación de cobre.",
+    "outcome_detail": [
+      {
+        "outcome": "tendon / tissue healing",
+        "grade": "Preliminar",
+        "what_studies_show": "Un pequeño estudio observacional humano de 2005 (~24 participantes) encontró que la aplicación de tripéptido de cobre estimuló la expresión de factores de crecimiento y la producción de colágeno en fibroblastos cultivados de piel normal e irradiada. En animales, seis estudios (2017–2025) mostraron que GHK-Cu aceleró la cicatrización de heridas, promovió la proliferación celular y la angiogénesis (formación de nuevos vasos sanguíneos), y mejoró la reparación tisular en modelos de quemaduras y fibrosis pulmonar en ratones.",
+        "why_this_grade": "Solo un estudio humano con tamaño de muestra modesto y diseño observacional; la mayoría de la evidencia es solo en animales. La consistencia entre estudios humanos independientes no puede ser evaluada, y los tamaños de efecto pueden ser inestables.",
+        "outcome_key": "tendon / tissue healing",
+        "outcome_es": "cicatrización de tendones / reparación tisular"
+      },
+      {
+        "outcome": "cognition",
+        "grade": "Emergente",
+        "what_studies_show": "Una revisión sistemática humana de 2026 abordó este resultado pero los tamaños de muestra específicos y las poblaciones de participantes no pudieron ser verificados del resumen. En estudios animales (principalmente ratones y C. elegans, 2026), GHK-Cu administrado intranasalmente o intraperitonealmente se asoció con mejoras conductuales y marcadores neuropatológicos reducidos en modelos de envejecimiento y enfermedad de Alzheimer.",
+        "why_this_grade": "Solo una fuente humana (una revisión, no un ensayo primario), y la precisión no puede ser confirmada. Todos los datos primarios robustos provienen de animales; la eficacia humana no está probada.",
+        "outcome_key": "cognition",
+        "outcome_es": "cognición"
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Preliminar",
+        "what_studies_show": "Ocho estudios animales (2022–2026) en ratones, C. elegans, y modelos de enfermedad (colitis, fibrosis pulmonar, enfisema, desafío inducido por lipopolisacárido) encontraron que GHK-Cu redujo los marcadores inflamatorios, citocinas pro-inflamatorias y estrés oxidativo. No se obtuvieron estudios humanos que abordaran directamente la inflamación.",
+        "why_this_grade": "Evidencia solo en animales; si los efectos anti-inflamatorios se traducen a humanos es desconocido y sin probar. No hay datos humanos disponibles para evaluar el resultado.",
+        "outcome_key": "inflammation",
+        "outcome_es": "inflamación"
+      },
+      {
+        "outcome": "skin / appearance",
+        "grade": "Emergente",
+        "what_studies_show": "El mismo estudio observacional humano de 2005 (~24 participantes) mostró aumento en la producción de colágeno y factores de crecimiento en fibroblastos expuestos a tripéptido de cobre. Seis estudios animales e in vitro (1996–2023) demostraron regulación sinérgica del colágeno (especialmente colágeno IV) cuando GHK-Cu fue combinado con ácido hialurónico, cicatrización mejorada de heridas y proliferación celular en fibroblastos de piel cultivados, y remodelación de proteínas de la matriz en modelos de tejidos.",
+        "why_this_grade": "Solo un pequeño estudio humano con diseño observacional; los datos animales e in vitro son prometedores pero no predicen confiablemente los resultados de piel humana. La consistencia entre estudios humanos no puede ser establecida.",
+        "outcome_key": "skin / appearance",
+        "outcome_es": "piel / apariencia"
+      }
+    ],
+    "evidence_base": "La base de evidencia está fuertemente sesgada hacia modelos animales y estudios in vitro (células cultivadas). Solo un estudio observacional humano (2005, ~24 participantes, resultados de piel y tendones) y una revisión sistemática humana (2026, cognición) fueron obtenidos en todos los resultados. El trabajo animal incluye ratones, C. elegans, y fibroblastos cultivados de 1996–2026, con estudios recientes (2024–2026) enfocados en modelos relacionados con la edad y la enfermedad (Alzheimer, colitis, fibrosis). Esta distribución refleja investigación en etapa temprana: la plausibilidad mecanística ha sido establecida en células y animales, pero la eficacia y seguridad humanas permanecen mínimamente probadas.",
+    "open_questions": "Los registros obtenidos no muestran ensayos controlados aleatorios en humanos y solo un pequeño estudio observacional sobre piel humana. Notablemente ausentes son estudios en adultos más jóvenes, individuos embarazadas, aquellos con enfermedad renal o hepática, y seguimiento extendido más allá de semanas a meses. También es poco claro si las rutas intranasal, intraperitoneal (típica en ratones), o subcutánea se traducen equivalentemente en humanos, y si las formulaciones orales (frecuentemente comercializadas) logran biodisponibilidad sistémica. Los registros proporcionados representan una muestra de la literatura (~40 resúmenes por resultado); estas observaciones reflejan lo que sí está y lo que no está en esta muestra, no el campo completo.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "Esta base de evidencia consiste casi enteramente en estudios en animales e in vitro, con apenas un reporte observacional humano por resultado, lo que hace imposible la traducción clínica confiable y deja la eficacia de GHK-Cu en humanos fundamentalmente no establecida.",
+    "concerns": [
+      {
+        "issue": "Ausencia casi total de evidencia humana",
+        "detail": "En los cuatro resultados, los datos humanos comprenden como máximo 1 estudio por resultado (observacional de 2005 sobre tendón/piel, y una revisión sistemática de 2026 sobre cognición que en sí misma sintetiza trabajo animal). Para inflamación, no hay estudios humanos. Con 8 estudios en animales o in vitro pero solo 1 estudio observacional humano por resultado tisular, la brecha inferencial entre modelos en roedores/células y eficacia humana es enorme y no validada por ensayos humanos paralelos.",
+        "severity": "high"
+      },
+      {
+        "issue": "Evidencia humana no controlada y no aleatoria",
+        "detail": "El único estudio humano sobre cicatrización de tendón/piel (2005, observacional) carece de grupo control, enmascaramiento o especificación de diseño prospectivo visible en estos registros. Un diseño observacional no puede establecer causalidad, y un estudio de 20 años es poco probable que cumpla los estándares metodológicos o regulatorios modernos para reclamaciones sobre un inyectable de mercado gris.",
+        "severity": "high"
+      },
+      {
+        "issue": "Heterogeneidad del modelo animal sin anclaje humano",
+        "detail": "Los estudios en animales abarcan modelos muy diferentes (ratones 5xFAD para Alzheimer, fibrosis pulmonar inducida por bleomicina, lesión pulmonar aguda inducida por LPS, quemaduras por escaldado, colitis, C. elegans) y estados de enfermedad no relacionados con los resultados clínicos reclamados. Sin datos de eficacia humana para validar qué modelos predicen la respuesta humana, esta heterogeneidad hace imposible saber si alguno de estos resultados es clínicamente relevante.",
+        "severity": "high"
+      },
+      {
+        "issue": "Tamaños de muestra no informados y probablemente insuficientes",
+        "detail": "Solo 1 de 13 estudios de cicatrización de tendón/tejido reporta el tamaño de muestra (n=24 en un estudio de LCA en ratas, 2015). Los tamaños de muestra son 'no extraíbles' de resúmenes para cognición (11 estudios), inflamación (8 estudios) y piel/apariencia (7 estudios). Cuando los estudios en animales son tan pequeños e insuficientes, y no existen ensayos humanos para replicar hallazgos, incluso resultados positivos conllevan alto riesgo de falsos positivos.",
+        "severity": "high"
+      },
+      {
+        "issue": "Agrupamiento reciente de literatura sin validación a largo plazo",
+        "detail": "Para cognición, 6 de 11 estudios son solo de 2026, siendo el más antiguo de 2021. Para piel/apariencia e inflamación, la mayoría de las entradas son de 2020 en adelante. Esta recencia sugiere un auge de investigación en lugar de maduración de evidencia acumulativa. No hay estudios de seguimiento de seguridad o eficacia a largo plazo visibles, y el uso de mercado gris en humanos no tiene datos observacionales longitudinales en estos registros.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Los registros muestran trabajo mecanístico (p. ej., MMPs, estrés oxidativo, regulación de colágeno, función mitocondrial) que es plausible *in vitro* o *en modelos de enfermedad en roedores*, pero esto no cierra la brecha hacia eficacia clínica en humanos. Un mecanismo demostrado en un cultivo celular o ratón no predice biodisponibilidad, distribución, tolerabilidad o eficacia después de inyección humana. El salto de 'GHK-Cu reduce la peroxidación lipídica dependiente de ferritina in vitro (1990)' o 'retrasa el envejecimiento en C. elegans (2026)' a 'mejora la cognición humana' o 'acelera la cicatrización de tendón humano' es extremadamente grande e insoportado por ningún dato de dosis-respuesta o farmacocinético humano.",
+    "strongest_counterargument": "Un escéptico señalaría que todos los hallazgos positivos provienen de estudios diseñados o financiados para encontrar eficacia (modelos animales elegidos para responder a péptidos de cobre, sistemas in vitro optimizados para factores de crecimiento, y una observación humana no controlada de 2005). No existe ensayo controlado aleatorizado grande en humanos, no hay estudio de cognición controlado con placebo, no hay datos de durabilidad, y no existe monitoreo de eventos adversos graves en estos registros. Las reclamaciones cognitivas y de longevidad (múltiples estudios de 2026) parecen originarse de trabajo animal sobre envejecimiento y modelos de Alzheimer, no de ensayos humanos, y una revisión sistemática única citando estudios animales no establece beneficio humano. El compuesto permanece de mercado gris y no aprobado por buena razón: la evidencia clínica para justificar la aprobación no existe.",
+    "what_would_change_the_picture": "Un ensayo aleatorizado controlado con placebo doble ciego en humanos con un resultado claramente definido (p. ej., tiempo de recuperación de LCA, cognición mediante pruebas neuropsicológicas validadas, colágeno de piel o elasticidad mediante ultrasonido) y tamaño de muestra adecuado (n ≥ 100 por rama) probaría directamente si GHK-Cu funciona en la población reclamada. Los estudios farmacocinéticos mecanísticos paralelos que confirmen la biodisponibilidad tisular y seguridad en humanos en dosis propuestas fortalecerían la confianza de que los mecanismos animales son relevantes.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

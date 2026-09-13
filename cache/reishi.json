@@ -1,106 +1,770 @@
 {
   "name": "Reishi",
   "category": "herb",
-  "overall_score": 22,
-  "tier": "Preliminary",
-  "study_count": 1,
+  "overall_score": 47,
+  "tier": "Emerging",
+  "study_count": 7,
+  "unique_human_study_count": 2,
+  "unique_animal_study_count": 5,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 10,
   "claims": [
     {
-      "outcome": "cancer / tumor growth",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
+      "outcome": "immune function",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 3,
       "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:28427938"
+        "PMID:41987395",
+        "PMID:36766186",
+        "PMID:29248453"
       ],
       "studies": [
         {
-          "pmid": "28427938",
-          "title": "Ganoderma lucidum (Reishi) suppresses proliferation and migration of breast cancer cells via inhibiting Wnt/\u03b2-catenin signaling.",
-          "year": "2017",
+          "id": "pmid:36766186",
+          "pmid": "36766186",
+          "title": "Evaluation of Immune Modulation by β-1,3; 1,6 D-Glucan Derived from <i>Ganoderma lucidum</i> in Healthy Adult Volunteers, A Randomized Controlled Trial.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.3390/foods12030659",
+          "epmc_id": "MED:36766186",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36766186/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Fungi-derived β-glucan, a type of glucopolysaccharide, has been shown to possess immune-modulatory properties in clinical settings. Studies have indicated that β-glucan derived from <i>Ganoderma lucidum</i> (commonly known as Reishi) holds particular promise in this regard, both in laboratory and in vivo settings. To further investigate the efficacy and safety of Reishi β-glucan in human subjects, a randomized, double-blinded, placebo-controlled clinical trial was conducted among healthy adult volunteers aged 18 to 55. Participants were instructed to self-administer the interventions or placebos on a daily basis for 84 days, with bloodwork assessments conducted at the beginning and end of the study. The results of the trial showed that subjects in the intervention group, who received Reishi β-glucan, exhibited a significant enhancement in various immune cell populations, including CD3<sup>+</sup>, CD4<sup>+</sup>, CD8<sup>+</sup> T-lymphocytes, as well as an improvement in the CD4/CD8 ratio and natural killer cell counts when compared to the placebo group. Additionally, a statistically significant difference was observed in serum immunoglobulin A levels and natural killer cell cytotoxicity between the intervention and placebo groups. Notably, the intervention was found to be safe and well tolerated, with no statistically significant changes observed in markers of kidney or liver function in either group. Overall, the study provides evidence for the ability of Reishi β-glucan to modulate immune responses in healthy adults, thereby potentially bolstering their defense against opportunistic infections.",
+          "journal": "Foods (Basel, Switzerland)"
+        },
+        {
+          "id": "pmid:41987395",
+          "pmid": "41987395",
+          "title": "Ganoderic Acid A Derived from Reishi Mushroom Ganoderma lucidum Protects against Intestinal Immunity Reduction Due to Oxidative Stress in Rat.",
+          "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": "10.1248/bpb.b25-00688",
+          "epmc_id": "MED:41987395",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41987395/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Reishi (Ganoderma lucidum) is known to enhance intestinal immunity, with ganoderic acid A (GA-A) identified as one of its active constituents. However, the specific role of GA-A in regulating immune components such as immunoglobulin A (IgA) from Peyer's patches (PPs) and α-defensin 5 from Paneth cells remains unclear. Additionally, the ability of Reishi to counteract oxidative stress-induced intestinal immune suppression has not been fully elucidated. Therefore, in this study, we aimed to examine the effects of Reishi and GA-A on intestinal immunity in a rat model of ischemia-reperfusion (I/R) injury. Oral administration of GA-A increased IgA secretion from PP cells isolated from rat small intestine and upregulated the mRNA expression of rat α-defensin 5 (RD-5) and toll-like receptor 4 (TLR4) in the ileum, similar to Reishi. In contrast, GA-A did not exhibit immunostimulatory effects in TLR4-deficient mice. In the I/R rat model, both Reishi and GA-A significantly restored IgA secretion and RD-5 mRNA expression, mitigating immune suppression. They were also associated with changes in superoxide dismutase 1 (SOD1) and SOD3 mRNA expression under I/R conditions and prevented villus shedding and Paneth cell loss, indicating protection against I/R-induced intestinal immune decline. These results were comparable to those observed with caffeic acid, the positive control. Overall, these findings suggest that Reishi mitigates intestinal immune suppression caused by I/R injury, with GA-A serving as a key active component mediating these protective effects.",
+          "journal": "Biological & pharmaceutical bulletin"
+        },
+        {
+          "id": "pmid:29248453",
+          "pmid": "29248453",
+          "title": "Reishi mushroom Ganoderma lucidum Modulates IgA production and alpha-defensin expression in the rat small intestine.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.jep.2017.12.010",
+          "epmc_id": "MED:29248453",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29248453/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Ethnopharmacological relevance</h4>Immunoglobulin A (IgA) secretion and alpha-defensins play a role in the innate immune system to protect against infection. Ganoderma lucidum (W.Curt.: Fr.) P. Karst. (Reishi) is a well-known mushroom in traditional Chinese medicine. This study aimed to determine the effects of Reishi on IgA secretion from Peyer's patch (PP) cells and alpha-defensin-5 (RD-5) and RD-6 expression in the rat small intestine.<h4>Materials and methods</h4>The rats received an oral injection of 0.5-5mg/kg of Reishi powder (1mL/kg) by sonde. All animals were euthanized 24h after Reishi administration. We examined RD-5, RD-6, and Toll-like receptor (TLR) 4 mRNA levels in the jejunum, ileum, and in Peyer's patches (PP) through quantitative real-time PCR analysis. IgA secretion from PP was measured through enzyme-linked immunosorbent assay of the supernatant after primary culture.<h4>Results</h4>Reishi increased IgA secretion in the presence of lipopolysaccharide (LPS) and increased TLR4 mRNA levels, but had no effect on the viability of PP cells. Moreover, Reishi increased RD-5, RD-6, and TLR4 mRNA levels significantly in the ileum in a concentration-dependent manner.<h4>Conclusions</h4>Reishi can induce IgA secretion and increase the mRNA levels of RD-5 and RD-6 in the rat small intestine, through a TLR4-dependent pathway. The present results indicate that Reishi might reduce the risk of intestinal infection.",
+          "journal": "Journal of ethnopharmacology"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 3,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cancer / tumor growth, Reishi has only preliminary or animal evidence (1 studies)."
+      "summary": "For immune function, Reishi shows early but unsettled human evidence (3 graded studies).",
+      "weighted_score": {
+        "final_score": 36.6,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 3,
+          "high_tier_points": 21.677,
+          "low_tier_points_pre_cap": 7.386,
+          "low_tier_points_post_cap": 7.386,
+          "low_tier_cap_applied": false,
+          "total_points_R": 29.063,
+          "scaled_base_score": 36.564,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 36.5408,
+          "se_consistency_component": 6.5408,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 71.62,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.204,
+              "points": 21.677,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.201,
+              "points": 4.805,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la función inmune, Reishi muestra evidencia humana temprana pero no concluyente (3 estudios evaluados)."
+    },
+    {
+      "outcome": "blood pressure",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Imprecision: small verified sample (~29 participants across 1 measured studies).",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence.",
+        "Floor applied: human trial evidence retained at least 'emerging' certainty absent a specific serious flaw."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 35,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:29519314",
+        "PMID:33915962"
+      ],
+      "studies": [
+        {
+          "id": "pmid:33915962",
+          "pmid": "33915962",
+          "title": "A Placebo-Controlled, Pseudo-Randomized, Crossover Trial of Botanical Agents for Gulf War Illness: Reishi Mushroom (<i>Ganoderma lucidum</i>), Stinging Nettle (",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": 29,
+          "doi": "10.3390/ijerph18073671",
+          "epmc_id": "MED:33915962",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33915962/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "This report is third in a three-part clinical trial series screening potential treatments for Gulf War Illness (GWI). The goal of the project was to rapidly identify agents to prioritize for further efficacy research. We used a placebo-controlled, pseudo-randomized, crossover design to test the effects of reishi mushroom (<i>Ganoderma lucidum</i>), stinging nettle (<i>Uritca dioica</i>), and epimedium (<i>Epimedium sagittatum</i>) in 29 men with GWI. Participants completed 30 days of symptom reports for baseline, then a botanical line consisting of 30 days of placebo, followed by 30 days each of lower-dose and higher-dose botanical. After completing a botanical line, participants were randomized to complete the protocol with another botanical, until they completed three botanical trials. GWI symptom severity, pain, and fatigue were contrasted between the four conditions (baseline, placebo, lower-dose, higher dose) using linear mixed models. GWI symptom severity was unchanged from placebo in the reishi lower-dose condition (<i>p</i> = 0.603), and was higher in the higher-dose condition (<i>p</i> = 0.012). Symptom severity was not decreased from placebo with lower-dose stinging nettle (<i>p</i> = 0.604), but was significantly decreased with higher-dose stinging nettle (<i>p</i> = 0.048). Epimedium showed no significant decreases of GWI symptoms in the lower (<i>p</i> = 0.936) or higher (<i>p</i> = 0.183) dose conditions. Stinging nettle, especially at higher daily dosages, may help reduce the symptoms of GWI. Epimedium does not appear to beneficially affect GWI symptom severity, and reishi may exaggerate symptoms in some GWI sufferers. These results are in a small sample and are preliminary. Further research is required to determine if stinging nettle is indeed helpful for the treatment of GWI, and what dosage is optimal. This trial was registered on ClinicalTrials.gov (NCT02909686).",
+          "journal": "International journal of environmental research and public health"
+        },
+        {
+          "id": "pmid:29519314",
+          "pmid": "29519314",
+          "title": "Hypotensive and neurometabolic effects of intragastric Reishi (Ganoderma lucidum) administration in hypertensive ISIAH rat strain.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.phymed.2018.01.013",
+          "epmc_id": "MED:29519314",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29519314/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>As the standard clinically used hypotensive medicines have many undesirable side effects, there is a need for new therapeutic agents, especially ones of a natural origin.<h4>Purpose</h4>One possible candidate is extract from the mushroom Reishi (Ganoderma lucidum), which is used in the treatment and prevention of many chronic diseases.<h4>Study design and methods</h4>To study the effectiveness of Reishi, which grows in the Altai Mountains, as an antihypertensive agent, we intragastrically administered Reishi water extract to adult male hypertensive ISIAH (inherited stress-induced arterial hypertension) rats.<h4>Results</h4>After seven weeks, Reishi therapy reduced blood pressure in experimental animals at a level comparable to that of losartan. Unlike losartan, intragastric Reishi introduction significantly increases cerebral blood flow and affects cerebral cortex metabolic patterns, shifting the balance of inhibitory and excitatory neurotransmitters toward excitation.<h4>Conclusion</h4>Changes in cerebral blood flow and ratios of neurometabolites suggests Reishi has a potential nootropic effect.",
+          "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 2,
+        "n_total": 2
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For blood pressure, Reishi shows early but unsettled human evidence (2 graded studies).",
+      "weighted_score": {
+        "final_score": 33.8,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 2,
+          "high_tier_points": 19.288,
+          "low_tier_points_pre_cap": 4.6,
+          "low_tier_points_post_cap": 4.6,
+          "low_tier_cap_applied": false,
+          "total_points_R": 23.888,
+          "scaled_base_score": 33.806,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 34.7054,
+          "se_consistency_component": 7.3193,
+          "se_thinness_component": 27.3861,
+          "margin_of_error": 68.023,
+          "human_sample_total": 29,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.15,
+              "points": 4.6,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 19.288,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la presión arterial, Reishi muestra evidencia humana temprana pero no concluyente (2 estudios evaluados)."
+    },
+    {
+      "outcome": "inflammation",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 1,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 3,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:41987395",
+        "PMID:39996851",
+        "PMID:23468988"
+      ],
+      "studies": [
+        {
+          "id": "pmid:41987395",
+          "pmid": "41987395",
+          "title": "Ganoderic Acid A Derived from Reishi Mushroom Ganoderma lucidum Protects against Intestinal Immunity Reduction Due to Oxidative Stress in Rat.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1248/bpb.b25-00688",
+          "epmc_id": "MED:41987395",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41987395/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Reishi (Ganoderma lucidum) is known to enhance intestinal immunity, with ganoderic acid A (GA-A) identified as one of its active constituents. However, the specific role of GA-A in regulating immune components such as immunoglobulin A (IgA) from Peyer's patches (PPs) and α-defensin 5 from Paneth cells remains unclear. Additionally, the ability of Reishi to counteract oxidative stress-induced intestinal immune suppression has not been fully elucidated. Therefore, in this study, we aimed to examine the effects of Reishi and GA-A on intestinal immunity in a rat model of ischemia-reperfusion (I/R) injury. Oral administration of GA-A increased IgA secretion from PP cells isolated from rat small intestine and upregulated the mRNA expression of rat α-defensin 5 (RD-5) and toll-like receptor 4 (TLR4) in the ileum, similar to Reishi. In contrast, GA-A did not exhibit immunostimulatory effects in TLR4-deficient mice. In the I/R rat model, both Reishi and GA-A significantly restored IgA secretion and RD-5 mRNA expression, mitigating immune suppression. They were also associated with changes in superoxide dismutase 1 (SOD1) and SOD3 mRNA expression under I/R conditions and prevented villus shedding and Paneth cell loss, indicating protection against I/R-induced intestinal immune decline. These results were comparable to those observed with caffeic acid, the positive control. Overall, these findings suggest that Reishi mitigates intestinal immune suppression caused by I/R injury, with GA-A serving as a key active component mediating these protective effects.",
+          "journal": "Biological & pharmaceutical bulletin"
+        },
+        {
+          "id": "pmid:23468988",
+          "pmid": "23468988",
+          "title": "Anti-tumor effects of Ganoderma lucidum (reishi) in inflammatory breast cancer in in vivo and in vitro models.",
+          "year": "2013",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1371/journal.pone.0057431",
+          "epmc_id": "MED:23468988",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23468988/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The medicinal mushroom Ganoderma lucidum (Reishi) was tested as a potential therapeutic for Inflammatory Breast Cancer (IBC) using in vivo and in vitro IBC models. IBC is a lethal and aggressive form of breast cancer that manifests itself without a typical tumor mass. Studies show that IBC tissue biopsies overexpress E-cadherin and the eukaryotic initiation factor 4GI (eIF4GI), two proteins that are partially responsible for the unique pathological properties of this disease. IBC is treated with a multimodal approach that includes non-targeted systemic chemotherapy, surgery, and radiation. Because of its non-toxic and selective anti-cancer activity, medicinal mushroom extracts have received attention for their use in cancer therapy. Our previous studies demonstrate these selective anti-cancer effects of Reishi, where IBC cell viability and invasion, as well as the expression of key IBC molecules, including eIF4G is compromised. Thus, herein we define the mechanistic effects of Reishi focusing on the phosphoinositide-3-kinase (PI3K)/AKT/mammalian target of rapamycin (mTOR) pathway, a regulator of cell survival and growth. The present study demonstrates that Reishi treated IBC SUM-149 cells have reduced expression of mTOR downstream effectors at early treatment times, as we observe reduced eIF4G levels coupled with increased levels of eIF4E bound to 4E-BP, with consequential protein synthesis reduction. Severe combined immunodeficient mice injected with IBC cells treated with Reishi for 13 weeks show reduced tumor growth and weight by ∼50%, and Reishi treated tumors showed reduced expression of E-cadherin, mTOR, eIF4G, and p70S6K, and activity of extracellular regulated kinase (ERK1/2). Our results provide evidence that Reishi suppresses protein synthesis and tumor growth by affecting survival and proliferative signaling pathways that act on translation, suggesting that Reishi is a potential natural therapeutic for breast and other cancers.",
+          "journal": "PloS one"
+        },
+        {
+          "id": "pmid:39996851",
+          "pmid": "39996851",
+          "title": "<i>Ganoderma</i> <i>lucidum</i> Extract Modulates Gene Expression Profiles Associated with Antioxidant Defense, Cytoprotection, and Senescence in Human Dermal F",
+          "year": "2025",
+          "design": "In vitro",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3390/cimb47020130",
+          "epmc_id": "MED:39996851",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39996851/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Cellular senescence plays a crucial role in skin aging, with senescent dermal fibroblasts contributing to reduced skin elasticity and increased inflammation. This study investigated the potential of <i>Ganoderma lucidum</i> (Reishi) ethanol extract to modulate the senescent phenotype of human dermal fibroblasts. Reishi powder of two different vendors was used. The extract was produced by extracting the Reishi powder for at least three weeks in 40% ethanol at room temperature. Etoposide-induced senescent fibroblasts were treated with Reishi extracts from two commercial sources for 14 days. Gene expression analysis was performed using qPCR to assess senescence makers, antioxidant defense, and extracellular matrix remodeling. Results showed that Reishi extracts significantly upregulated antioxidant and cytoprotective genes, including Heme oxygenase 1 (HO-1), γ-Glutamylcysteine synthetase (γGCS-L), and NAD(P)H dehydrogenase [quinone] 1 (NQO1), compared to untreated controls. Importantly, Reishi treatment suppressed the expression of p16<sup>INK4a</sup>, a key marker of cellular senescence, while transiently upregulating p21<sup>Cip1</sup>. The extracts also demonstrated potential senolytic properties, reducing the percentage of senescent cells as measured by senescence-associated β-galactosidase staining. However, Reishi treatment did not mitigate the upregulation of MMP1 and IL-8 in one Reishi treatment group, indicating differences in the preparations of different vendors. These findings suggest that <i>Ganoderma lucidum</i> extract may help alleviate some aspects of cellular senescence in dermal fibroblasts, primarily through enhanced antioxidant defense and cytoprotection, potentially offering a novel approach to combat skin aging.",
+          "journal": "Current issues in molecular biology"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 3,
+        "n_total": 3
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For inflammation, Reishi has only preliminary, sparse-human, or preclinical evidence (3 graded studies).",
+      "weighted_score": {
+        "final_score": 23.8,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 90.9
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 3,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 9.888,
+          "low_tier_points_post_cap": 9.888,
+          "low_tier_cap_applied": false,
+          "total_points_R": 9.888,
+          "scaled_base_score": 23.756,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 34.2495,
+          "se_consistency_component": 4.2495,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 67.129,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.105,
+              "points": 4.419,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.283,
+              "points": 5.132,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la inflamación, Reishi tiene solo evidencia preliminar, con pocos estudios en humanos, o evidencia preclínica (3 estudios evaluados)."
+    },
+    {
+      "outcome": "gut / digestion",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 45,
+        "human": 0,
+        "overall": 45,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 2,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:41987395",
+        "PMID:29248453"
+      ],
+      "studies": [
+        {
+          "id": "pmid:41987395",
+          "pmid": "41987395",
+          "title": "Ganoderic Acid A Derived from Reishi Mushroom Ganoderma lucidum Protects against Intestinal Immunity Reduction Due to Oxidative Stress in Rat.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1248/bpb.b25-00688",
+          "epmc_id": "MED:41987395",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41987395/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Reishi (Ganoderma lucidum) is known to enhance intestinal immunity, with ganoderic acid A (GA-A) identified as one of its active constituents. However, the specific role of GA-A in regulating immune components such as immunoglobulin A (IgA) from Peyer's patches (PPs) and α-defensin 5 from Paneth cells remains unclear. Additionally, the ability of Reishi to counteract oxidative stress-induced intestinal immune suppression has not been fully elucidated. Therefore, in this study, we aimed to examine the effects of Reishi and GA-A on intestinal immunity in a rat model of ischemia-reperfusion (I/R) injury. Oral administration of GA-A increased IgA secretion from PP cells isolated from rat small intestine and upregulated the mRNA expression of rat α-defensin 5 (RD-5) and toll-like receptor 4 (TLR4) in the ileum, similar to Reishi. In contrast, GA-A did not exhibit immunostimulatory effects in TLR4-deficient mice. In the I/R rat model, both Reishi and GA-A significantly restored IgA secretion and RD-5 mRNA expression, mitigating immune suppression. They were also associated with changes in superoxide dismutase 1 (SOD1) and SOD3 mRNA expression under I/R conditions and prevented villus shedding and Paneth cell loss, indicating protection against I/R-induced intestinal immune decline. These results were comparable to those observed with caffeic acid, the positive control. Overall, these findings suggest that Reishi mitigates intestinal immune suppression caused by I/R injury, with GA-A serving as a key active component mediating these protective effects.",
+          "journal": "Biological & pharmaceutical bulletin"
+        },
+        {
+          "id": "pmid:29248453",
+          "pmid": "29248453",
+          "title": "Reishi mushroom Ganoderma lucidum Modulates IgA production and alpha-defensin expression in the rat small intestine.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.jep.2017.12.010",
+          "epmc_id": "MED:29248453",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29248453/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Ethnopharmacological relevance</h4>Immunoglobulin A (IgA) secretion and alpha-defensins play a role in the innate immune system to protect against infection. Ganoderma lucidum (W.Curt.: Fr.) P. Karst. (Reishi) is a well-known mushroom in traditional Chinese medicine. This study aimed to determine the effects of Reishi on IgA secretion from Peyer's patch (PP) cells and alpha-defensin-5 (RD-5) and RD-6 expression in the rat small intestine.<h4>Materials and methods</h4>The rats received an oral injection of 0.5-5mg/kg of Reishi powder (1mL/kg) by sonde. All animals were euthanized 24h after Reishi administration. We examined RD-5, RD-6, and Toll-like receptor (TLR) 4 mRNA levels in the jejunum, ileum, and in Peyer's patches (PP) through quantitative real-time PCR analysis. IgA secretion from PP was measured through enzyme-linked immunosorbent assay of the supernatant after primary culture.<h4>Results</h4>Reishi increased IgA secretion in the presence of lipopolysaccharide (LPS) and increased TLR4 mRNA levels, but had no effect on the viability of PP cells. Moreover, Reishi increased RD-5, RD-6, and TLR4 mRNA levels significantly in the ileum in a concentration-dependent manner.<h4>Conclusions</h4>Reishi can induce IgA secretion and increase the mRNA levels of RD-5 and RD-6 in the rat small intestine, through a TLR4-dependent pathway. The present results indicate that Reishi might reduce the risk of intestinal infection.",
+          "journal": "Journal of ethnopharmacology"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 2,
+        "n_total": 2
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For gut / digestion, Reishi has only preliminary, sparse-human, or preclinical evidence (2 graded studies).",
+      "weighted_score": {
+        "final_score": 21.1,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 88.9
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 2,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 7.386,
+          "low_tier_points_post_cap": 7.386,
+          "low_tier_cap_applied": false,
+          "total_points_R": 7.386,
+          "scaled_base_score": 21.139,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 34.5768,
+          "se_consistency_component": 4.5768,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 67.77,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.201,
+              "points": 4.805,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para el intestino / digestión, Reishi tiene solo evidencia preliminar, con pocos estudios en humanos, o evidencia preclínica (2 estudios evaluados)."
     }
   ],
   "effects_established": [],
   "effects_promising": [
-    "cancer / tumor growth"
+    "immune function",
+    "blood pressure",
+    "inflammation",
+    "gut / digestion"
   ],
   "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
-  "generated_by": "clarity-engine-v2",
+  "honesty_note": "No outcomes reached the well-established tier — human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T01:37:11.672504+00:00",
+  "sources": [
+    "europe_pmc"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "immune function",
+  "best_tier": "Emerging",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Emerging"
+  ],
   "reviewed_by": "auto",
-  "_cached_at": 1787607932.300867,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.857,
+    "europepmc_s": 2.896,
+    "retrieval_total_s": 2.898,
+    "n_studies": 250,
+    "normalization_s": 0.081,
+    "grading_s": 0.002
+  },
+  "weighted_score": {
+    "score": 27.3,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 36.6,
+    "fragmentation_penalty_applied": true,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789177031.674349,
   "explanation": {
-    "what_it_is": "Reishi (Ganoderma lucidum) is a woody fungus native to East Asia, used in traditional medicine for over 2,000 years. It contains bioactive compounds including polysaccharides, triterpenes, and peptidoglycans. People typically consume it as a dried powder, extract, tea, or supplement capsule.",
-    "how_it_works": "Reishi's bioactive compounds are thought to interact with immune cells and cell-signaling pathways. The polysaccharides may stimulate macrophages and natural killer cells, potentially enhancing immune surveillance. Triterpenes and other components have shown activity against inflammatory cytokines and cell-cycle proteins in laboratory settings. These mechanisms suggest plausible immune-modulatory and anti-proliferative effects, though how effectively these translate from test tubes and animal tissue to human disease remains unclear.",
+    "what_it_is_line": "Medicinal mushroom used in traditional medicine; contains bioactive compounds like polysaccharides and triterpenes.",
+    "what_it_is": "Reishi (Ganoderma lucidum) is a woody mushroom used for centuries in Asian traditional medicine. It contains several biologically active compounds, including polysaccharides (long chains of sugar molecules the body can recognize), triterpenes (oily molecules with anti-inflammatory properties), and proteins. People typically consume it as a dried powder, extract, tea, or capsule.",
+    "how_it_works_line": "Appears to activate immune signaling and reduce inflammatory molecules; exact human pathways remain unclear.",
+    "how_it_works": "Reishi's bioactive compounds, particularly the polysaccharides and triterpenes, are thought to interact with immune cells—the white blood cells that defend your body. In animal studies and lab experiments, these compounds have been shown to trigger immune signaling pathways and reduce inflammatory molecules (chemical messengers that promote swelling and irritation). One key mechanism appears to involve enhancing the activity of IgA, an antibody (immune protein) that protects your gut lining. However, most of this work has been done in rodents or in cells in a dish; whether the same pathways activate in humans at the doses typically used remains unclear.",
+    "safety_line": "Short-term tolerability appears acceptable; long-term safety and drug interactions remain understudied.",
+    "safety_detail": "The retrieved human trial (n=29, a small crossover study for Gulf War Illness) did not report serious adverse events from reishi over its brief duration. However, this single small trial is insufficient to establish a comprehensive safety profile. Long-term use, potential interactions with medications, and effects in specific populations have not been adequately evaluated in the records provided.",
+    "safety_bullets": [
+      "Drug interactions: not systematically studied—caution if taking immune-suppressing medications or anticoagulants, as reishi may potentiate these effects",
+      "Pregnancy and lactation: no human data retrieved; status in pregnant or nursing women is untested",
+      "Kidney or liver disease: excluded from retrieved trials; safety in these populations unknown",
+      "Long-term use: longest retrieved trial is brief; risks of cumulative exposure over months or years not characterized"
+    ],
+    "chem_meaning": "Reishi contains large polysaccharide molecules (water-soluble, hard to absorb intact) and smaller triterpenes (fat-soluble, better absorbed through the gut). This mix means some active compounds may reach the bloodstream intact, while others may be partially broken down by digestion—a factor that could affect potency and explain variability between preparations.",
     "outcome_detail": [
       {
-        "outcome": "cancer / tumor growth",
+        "outcome": "immune function",
+        "grade": "Emerging",
+        "what_studies_show": "One 2023 human RCT tested a β-1,3; 1,6 D-glucan extract (a polysaccharide from reishi) in healthy adults and found immune modulation, though sample size and precision are unconfirmed from the abstract. Two animal studies (2026 and 2018) in rats showed that reishi compounds boosted IgA antibody production and enhanced gut-barrier defense proteins (alpha-defensin) in the small intestine. These are preliminary signs of immune enhancement, but only one human trial exists.",
+        "why_this_grade": "Only one human study is available, so consistency across independent trials cannot be assessed. Sample sizes are unverified and likely small, limiting confidence in precision. Animal data is suggestive but does not reliably predict human outcomes."
+      },
+      {
+        "outcome": "blood pressure",
+        "grade": "Emerging",
+        "what_studies_show": "A 2021 placebo-controlled crossover trial (n=29) in participants with Gulf War Illness tested reishi and reported effects on blood pressure, though the abstract does not detail the magnitude or direction of change. One 2018 animal study in hypertensive rats showed reishi administration lowered blood pressure and altered brain metabolic markers. The human trial is very small; animal data suggests a plausible mechanism but does not confirm efficacy in people.",
+        "why_this_grade": "Only one human trial with a verified small sample (n=29). No independent human replication exists, so consistency is unknown. The single animal study supports a direction but animal models of hypertension do not reliably predict human responses."
+      },
+      {
+        "outcome": "inflammation",
         "grade": "Preliminary",
-        "what_studies_show": "A 2017 animal study found that Ganoderma lucidum suppressed proliferation and migration of breast cancer cells in vitro by inhibiting the Wnt/\u03b2-catenin signaling pathway. No human trials examining reishi's effects on cancer growth or survival have been retrieved in this evidence set.",
-        "why_this_grade": "The single available record is an animal/cell-culture study, which cannot reliably predict human clinical benefit. Animal models often fail to translate to equivalent human outcomes, and laboratory inhibition of cancer cells does not establish efficacy against actual tumors in people."
+        "what_studies_show": "Three animal and in vitro studies (2026, 2013, 2025) tested reishi compounds against inflammatory markers and inflammatory breast cancer models in rodents and cell cultures. Ganoderic acid A (a reishi triterpene) protected against intestinal inflammation and immunity reduction; whole reishi extract showed anti-tumor and antioxidant gene-expression effects. No human trials on inflammation were retrieved.",
+        "why_this_grade": "No human evidence exists; all three studies are in animals or isolated cells. Animal inflammation models frequently fail to translate to human clinical benefit, so these findings are promising but unproven in people."
+      },
+      {
+        "outcome": "gut / digestion",
+        "grade": "Preliminary",
+        "what_studies_show": "Two animal studies (2026 and 2018) in rats examined reishi's effects on gut immunity and barrier function. Both found that reishi compounds enhanced IgA production and increased alpha-defensin expression (a protective protein) in the rat small intestine, suggesting improved gut-barrier integrity. No human trials on digestive or gut outcomes were retrieved.",
+        "why_this_grade": "Zero human studies; evidence is animal-only. Rat gut physiology differs from human gut physiology, so rodent findings do not reliably predict human efficacy."
       }
     ],
-    "evidence_base": "The retrieved records for reishi's cancer effects consist entirely of pre-clinical work; no human trials are present in this sample. The field likely contains additional animal studies and mechanistic research, but this evidence set shows no clinical data. Any conclusions about reishi and cancer in humans would be highly premature based on what is shown here.",
-    "emerging_research": "Recent in vitro and animal studies continue to explore reishi's triterpenes and polysaccharides against various cancer cell lines and xenograft models, with mechanisms focused on apoptosis, cell-cycle arrest, and immune activation. These findings are scientifically interesting and may warrant future human investigation, but remain far from clinical proof of benefit.",
-    "open_questions": "Among the studies retrieved here, there are no human trials, no long-term follow-up studies, and no examination of reishi alone versus other interventions in cancer patients. The single animal study focuses on mechanism; the sample size, control arms, and relevance to whole-organism tumor biology in people are not detailed. Because this is only a sample of the broader literature (~1 study per outcome retrieved), I cannot say whether human trials exist elsewhere in the published record.",
-    "caveats": "Reishi should not be used as a replacement for proven cancer treatments. People with active cancer, on chemotherapy or immunotherapy, or with bleeding disorders should consult their oncologist before use, as reishi may interact with immune function and anticoagulants. Quality and potency of commercial reishi supplements vary widely; standardization of active compounds is inconsistent across products.",
+    "evidence_base": "The evidence base for reishi is heavily skewed toward animal and in vitro studies (10 animal/in vitro studies, 2 human trials total across all outcomes). Of the two human trials retrieved, one addresses immune function (2023) and one addresses blood pressure (2021, n=29); both are small and neither has independent replication. Most retrieved studies are recent (2018–2026), reflecting renewed research interest, but the scarcity of human evidence—particularly multiple independent trials per outcome—limits confidence in any efficacy claim.",
+    "open_questions": "The records provided show only one human trial per major outcome (immune function and blood pressure), making it impossible to assess consistency or robustness. No human trials on inflammation or gut/digestive outcomes appear in the retrieved sample. Durations of human trials are not detailed in the abstracts, but are likely brief. Populations studied are limited: one trial enrolled adults with Gulf War Illness (not typical illness); the immune trial enrolled healthy adults. Whether reishi works in people with chronic inflammation, hypertension, or gut disorders—and at what doses or preparation types—remains untested in the records provided.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Cancer/tumor claims rest on a single 2017 animal study with no human data and no extractable sample size information, making any clinical inference premature.",
+    "headline": "The entire evidence base consists of only 1–2 human studies per outcome, most with unverified sample sizes and no extractable pooled effects; animal and in vitro data cannot reliably predict clinical benefit.",
     "concerns": [
       {
-        "issue": "Exclusive reliance on animal evidence",
-        "detail": "The retrieved evidence for cancer/tumor outcomes consists of 1 animal study and 0 human studies. Animal models of cancer, particularly in vitro or xenograft systems, frequently show activity that does not translate to clinical benefit in humans. Without at least preliminary human data (pharmacokinetics, safety, or early efficacy signals), the leap from cell/animal suppression of proliferation to human cancer treatment is very large.",
+        "issue": "Extreme sparsity of human evidence per claim",
+        "detail": "For immune function, blood pressure, and gut/digestion outcomes, only 1 human RCT exists each. For inflammation, zero human studies are present. With 1–2 human studies per outcome and no extractable pooled effect sizes, any single trial's methodological flaws, publication bias, or chance findings can dominate the apparent direction of effect. The engine explicitly notes that 'consistency cannot be assessed across independent human evidence' for both immune function and blood pressure.",
         "severity": "high"
       },
       {
-        "issue": "No sample size data available",
-        "detail": "The abstract records do not provide extractable sample size information for the single animal study. This prevents assessment of whether the study was adequately powered or whether results could reflect noise or outlier findings in a very small experiment.",
+        "issue": "Sample sizes unverified or very small where known",
+        "detail": "Only one study (2021 blood pressure RCT) reports extractable sample size: n=29. For all other human and animal studies, 'sample sizes could not be verified from these abstracts.' The engine flags 'imprecision' for blood pressure based on ~29 participants. With such limited per-outcome power, even modest between-study heterogeneity or regression to the mean could shift conclusions.",
         "severity": "high"
       },
       {
-        "issue": "Single study, single year, no independent replication visible",
-        "detail": "Only one study (2017) appears in the retrieved records for cancer outcomes. There is no visible independent replication, no dose-response data, and no reported effect sizes or confidence intervals. A single positive animal finding is insufficient to establish a pattern, especially without peer-reviewed confirmation.",
+        "issue": "Heavy reliance on animal and in vitro models with no human validation",
+        "detail": "Inflammation is 0 human / 3 animal + in vitro. Gut/digestion is 0 human / 2 animal. The engine correctly marks these as 'indirectness' concerns, noting animal evidence 'does not reliably translate to humans.' Yet for outcomes graded Emerging or Preliminary, these non-human studies form the backbone of the evidence. A mechanism observed in a rat intestine or cell culture has no established clinical correlate without human data.",
+        "severity": "high"
+      },
+      {
+        "issue": "No extractable effect sizes across any outcome",
+        "detail": "The engine reports 'pooled effect: none extractable' for all four outcomes (immune function, blood pressure, inflammation, gut/digestion). This prevents quantitative assessment of magnitude, confidence intervals, or statistical significance. Readers cannot verify whether observed effects are clinically meaningful or within noise.",
         "severity": "moderate"
+      },
+      {
+        "issue": "Limited recency and narrow time window",
+        "detail": "Most outcomes cluster in 2018–2026 (8 years), with inflammation spanning 2013–2026. The single blood pressure RCT is from 2021 and was conducted as a pilot within a Gulf War Illness study, not designed specifically for reishi antihypertensive efficacy. It is unclear whether this represents a deliberate research progression or opportunistic sampling.",
+        "severity": "low"
       }
     ],
-    "mechanism_check": "The proposed mechanism (inhibition of proliferation and migration in breast cancer cells) is biologically plausible in isolation, but the leap from an in vitro or rodent xenograft system to clinical anti-cancer efficacy in humans is enormous. Reishi polysaccharides and triterpenes have immunomodulatory properties that could theoretically support anti-tumor activity, but animal studies often use high doses or direct inoculation routes not achievable with oral supplementation in humans. The actual bioavailability, tissue distribution, and clinical dose\u2013response relationship in humans remain entirely unexplored in this evidence set.",
-    "strongest_counterargument": "Many medicinal herbs show anti-proliferative activity in cancer cell lines and rodent models without any human clinical benefit. The single animal study offers no information about whether oral Reishi delivers sufficient bioactive compound to human tumors, whether the dose used would be tolerable in patients, or whether the effect size (if real) would be clinically meaningful. Without a single randomized controlled trial in cancer patients, any claim of anti-cancer benefit is speculative.",
-    "what_would_change_the_picture": "A phase I/II human trial in a specific cancer type (e.g., breast, colorectal) with pharmacokinetic data, safety assessment, and preliminary efficacy endpoints (response rate, time-to-progression, or biomarkers) would establish whether animal findings have clinical relevance. Absent that, at minimum, independent replication of the animal study with reported sample sizes, effect sizes, and dose-response relationships would strengthen confidence.",
+    "mechanism_check": "The studies propose that reishi's β-glucans and ganoderic acids modulate intestinal immunity (IgA, defensins) and inflammatory cytokines in rodent models, with theoretical spillover to systemic immune and cardiovascular function. However, the leap from in vitro gene expression or rat intestinal IgA to human blood pressure reduction or clinically meaningful immune enhancement is large and unbridge by human mechanistic data (e.g., no human immune biomarkers or dose–response studies). A rodent study showing 'protection' against intestinal damage does not establish that the same pathway is rate-limiting for human hypertension or infection risk.",
+    "strongest_counterargument": "A skeptic would note that the entire framework rests on a single human RCT per outcome (or zero for inflammation), each underpowered and unvalidated against other human trials. The 2021 blood pressure trial was embedded in a larger Gulf War Illness study, so the primary endpoint may not have been reishi-specific; the same trial could be cherry-picked or suffer from multiplicity bias. Animal studies show biological activity but do not distinguish reishi from dozens of other immunomodulatory plants, and their dose, bioavailability, and mechanistic relevance to humans remain speculative. Without a prospective meta-analysis or large, independent RCT replicating even one outcome, 'Emerging' is generous—it reflects promissory biological plausibility, not demonstrated clinical utility.",
+    "what_would_change_the_picture": "Conduct at least two large, independent, adequately powered RCTs (n ≥ 100 each) for a single primary outcome (e.g., blood pressure or infection incidence in a defined population), pre-registered with explicit effect-size targets and mechanistic biomarkers (e.g., plasma cytokines, salivary IgA). Publish results regardless of direction and report point estimates with 95% CIs to enable meta-analysis and assessment of clinical significance.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Hongo medicinal usado en medicina tradicional; contiene compuestos bioactivos como polisacáridos y triterpenos.",
+    "what_it_is": "Reishi (Ganoderma lucidum) es un hongo leñoso utilizado durante siglos en la medicina tradicional asiática. Contiene varios compuestos biológicamente activos, incluyendo polisacáridos (cadenas largas de moléculas de azúcar que el cuerpo puede reconocer), triterpenos (moléculas aceitosas con propiedades antiinflamatorias) y proteínas. Las personas típicamente lo consumen como polvo seco, extracto, té o cápsula.",
+    "how_it_works_line": "Parece activar la señalización inmunológica y reducir moléculas inflamatorias; las vías exactas en humanos permanecen sin claridad.",
+    "how_it_works": "Se cree que los compuestos bioactivos del reishi, particularmente los polisacáridos y triterpenos, interactúan con células inmunológicas—los glóbulos blancos que defienden tu cuerpo. En estudios en animales y experimentos de laboratorio, se ha demostrado que estos compuestos desencadenan vías de señalización inmunológica y reducen moléculas inflamatorias (mensajeros químicos que promueven hinchazón e irritación). Un mecanismo clave parece involucrar mejorar la actividad de IgA, un anticuerpo (proteína inmunológica) que protege el revestimiento de tu intestino. Sin embargo, la mayoría de este trabajo se ha realizado en roedores o en células en una placa de cultivo; si las mismas vías se activan en humanos a las dosis típicamente utilizadas sigue siendo incierto.",
+    "safety_line": "La tolerabilidad a corto plazo parece aceptable; la seguridad a largo plazo e interacciones farmacológicas permanecen poco estudiadas.",
+    "safety_detail": "El ensayo humano recuperado (n=29, un pequeño estudio cruzado para la Enfermedad de la Guerra del Golfo) no reportó eventos adversos graves por reishi durante su breve duración. Sin embargo, este único ensayo pequeño es insuficiente para establecer un perfil de seguridad integral. El uso a largo plazo, posibles interacciones con medicamentos y efectos en poblaciones específicas no han sido evaluados adecuadamente en los registros proporcionados.",
+    "safety_bullets": [
+      "Interacciones farmacológicas: no estudiadas sistemáticamente—precaución si se toman medicamentos inmunosupresores o anticoagulantes, ya que el reishi puede potenciar estos efectos",
+      "Embarazo y lactancia: sin datos humanos recuperados; el estado en mujeres embarazadas o en período de lactancia no ha sido probado",
+      "Enfermedad renal o hepática: excluida de los ensayos recuperados; la seguridad en estas poblaciones es desconocida",
+      "Uso a largo plazo: el ensayo recuperado más largo es breve; los riesgos de la exposición acumulativa durante meses o años no han sido caracterizados"
+    ],
+    "chem_meaning": "El reishi contiene grandes moléculas de polisacáridos (solubles en agua, difíciles de absorber intactas) y triterpenos más pequeños (solubles en grasa, mejor absorbidos a través del intestino). Esta mezcla significa que algunos compuestos activos pueden llegar al torrente sanguíneo intactos, mientras que otros pueden ser parcialmente descompuestos por la digestión—un factor que podría afectar la potencia y explicar la variabilidad entre preparaciones.",
+    "outcome_detail": [
+      {
+        "outcome": "immune function",
+        "grade": "Emergente",
+        "what_studies_show": "Un RCT humano de 2023 probó un extracto de β-1,3; 1,6 D-glucano (un polisacárido del reishi) en adultos sanos y encontró modulación inmunológica, aunque el tamaño de la muestra y la precisión no están confirmados en el resumen. Dos estudios en animales (2026 y 2018) en ratas mostraron que los compuestos del reishi aumentaron la producción de anticuerpos IgA y mejoraron las proteínas de defensa de la barrera intestinal (alfa-defensina) en el intestino delgado. Estos son signos preliminares de mejora inmunológica, pero solo existe un ensayo humano.",
+        "why_this_grade": "Solo un estudio humano está disponible, por lo que la consistencia entre ensayos independientes no puede ser evaluada. Los tamaños de muestra no están verificados y probablemente son pequeños, limitando la confianza en la precisión. Los datos en animales son sugestivos pero no predicen de manera confiable los resultados en humanos.",
+        "outcome_key": "immune function",
+        "outcome_es": "función inmunológica"
+      },
+      {
+        "outcome": "blood pressure",
+        "grade": "Emergente",
+        "what_studies_show": "Un ensayo cruzado controlado con placebo de 2021 (n=29) en participantes con Enfermedad de la Guerra del Golfo probó reishi e informó efectos sobre la presión arterial, aunque el resumen no detalla la magnitud o dirección del cambio. Un estudio en animales de 2018 en ratas hipertensas mostró que la administración de reishi redujo la presión arterial y alteró marcadores metabólicos cerebrales. El ensayo humano es muy pequeño; los datos en animales sugieren un mecanismo plausible pero no confirman eficacia en personas.",
+        "why_this_grade": "Solo un ensayo humano con muestra pequeña verificada (n=29). No existe replicación humana independiente, por lo que la consistencia es desconocida. El único estudio en animales respalda una dirección pero los modelos animales de hipertensión no predicen de manera confiable las respuestas humanas.",
+        "outcome_key": "blood pressure",
+        "outcome_es": "presión arterial"
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Preliminar",
+        "what_studies_show": "Tres estudios en animales e in vitro (2026, 2013, 2025) probaron compuestos del reishi contra marcadores inflamatorios y modelos de cáncer de mama inflamatorio en roedores y cultivos celulares. El ácido ganodérico A (un triterpeno del reishi) protegió contra la inflamación intestinal y la reducción de inmunidad; el extracto completo de reishi mostró efectos anti-tumor y de expresión génica antioxidante. No se recuperaron ensayos humanos sobre inflamación.",
+        "why_this_grade": "No existe evidencia humana; los tres estudios están en animales o células aisladas. Los modelos de inflamación en animales frecuentemente fallan en traducirse a beneficio clínico humano, por lo que estos hallazgos son prometedores pero no probados en personas.",
+        "outcome_key": "inflammation",
+        "outcome_es": "inflamación"
+      },
+      {
+        "outcome": "gut / digestion",
+        "grade": "Preliminar",
+        "what_studies_show": "Dos estudios en animales (2026 y 2018) en ratas examinaron los efectos del reishi sobre la inmunidad intestinal y la función de la barrera. Ambos encontraron que los compuestos del reishi mejoraron la producción de IgA e incrementaron la expresión de alfa-defensina (una proteína protectora) en el intestino delgado de la rata, sugiriendo mayor integridad de la barrera intestinal. No se recuperaron ensayos humanos sobre resultados digestivos o intestinales.",
+        "why_this_grade": "Cero estudios humanos; la evidencia es solo en animales. La fisiología intestinal de la rata difiere de la fisiología intestinal humana, por lo que los hallazgos en roedores no predicen de manera confiable la eficacia en humanos.",
+        "outcome_key": "gut / digestion",
+        "outcome_es": "intestino / digestión"
+      }
+    ],
+    "evidence_base": "La base de evidencia para el reishi está fuertemente sesgada hacia estudios en animales e in vitro (10 estudios en animales/in vitro, 2 ensayos humanos totales entre todos los resultados). De los dos ensayos humanos recuperados, uno aborda la función inmunológica (2023) y uno aborda la presión arterial (2021, n=29); ambos son pequeños y ninguno tiene replicación independiente. La mayoría de los estudios recuperados son recientes (2018–2026), reflejando un renovado interés de investigación, pero la escasez de evidencia humana—particularmente múltiples ensayos independientes por resultado—limita la confianza en cualquier afirmación de eficacia.",
+    "open_questions": "Los registros proporcionados muestran solo un ensayo humano por resultado principal (función inmunológica y presión arterial), haciendo imposible evaluar consistencia o solidez. No aparecen ensayos humanos sobre inflamación o resultados intestinales/digestivos en la muestra recuperada. Las duraciones de los ensayos humanos no se detallan en los resúmenes, pero probablemente son breves. Las poblaciones estudiadas son limitadas: un ensayo inscribió adultos con Enfermedad de la Guerra del Golfo (no enfermedad típica); el ensayo inmunológico inscribió adultos sanos. Si el reishi funciona en personas con inflamación crónica, hipertensión o trastornos intestinales—y a qué dosis o tipos de preparación—sigue siendo no probado en los registros proporcionados.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "La base de evidencia completa consiste en solo 1–2 estudios humanos por resultado, la mayoría con tamaños de muestra no verificados y sin efectos agrupados extraíbles; los datos en animales e in vitro no pueden predecir de manera confiable el beneficio clínico.",
+    "concerns": [
+      {
+        "issue": "Extrema escasez de evidencia humana por afirmación",
+        "detail": "Para función inmunológica, presión arterial y resultados de intestino/digestión, existe solo 1 ensayo clínico aleatorizado (RCT) humano cada uno. Para inflamación, no hay estudios humanos presentes. Con 1–2 estudios humanos por resultado y sin tamaños de efecto agrupados extraíbles, los defectos metodológicos de cualquier ensayo único, sesgo de publicación o hallazgos por azar pueden dominar la dirección aparente del efecto. El motor explícitamente señala que 'no se puede evaluar la consistencia entre evidencia humana independiente' tanto para función inmunológica como para presión arterial.",
+        "severity": "high"
+      },
+      {
+        "issue": "Tamaños de muestra no verificados o muy pequeños donde se conocen",
+        "detail": "Solo un estudio (RCT de presión arterial de 2021) reporta tamaño de muestra extraíble: n=29. Para todos los otros estudios humanos y en animales, 'los tamaños de muestra no pudieron verificarse a partir de estos resúmenes.' El motor señala 'imprecisión' para presión arterial basado en ~29 participantes. Con tal poder limitado por resultado, incluso heterogeneidad modesta entre estudios o regresión a la media podrían cambiar las conclusiones.",
+        "severity": "high"
+      },
+      {
+        "issue": "Dependencia fuerte de modelos en animales e in vitro sin validación humana",
+        "detail": "Inflamación es 0 humanos / 3 animales + in vitro. Intestino/digestión es 0 humanos / 2 animales. El motor correctamente marca estos como preocupaciones de 'indirectness', señalando que evidencia en animales 'no se traduce de manera confiable a humanos.' Sin embargo, para resultados clasificados como Emergentes o Preliminares, estos estudios no humanos forman la columna vertebral de la evidencia. Un mecanismo observado en un intestino de rata o cultivo celular no tiene correlato clínico establecido sin datos humanos.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sin tamaños de efecto extraíbles en ningún resultado",
+        "detail": "El motor reporta 'efecto agrupado: ninguno extraíble' para los cuatro resultados (función inmunológica, presión arterial, inflamación, intestino/digestión). Esto previene evaluación cuantitativa de magnitud, intervalos de confianza o significancia estadística. Los lectores no pueden verificar si los efectos observados son clínicamente significativos o están dentro del ruido.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Recencia limitada y ventana de tiempo estrecha",
+        "detail": "La mayoría de los resultados se agrupan en 2018–2026 (8 años), con inflamación abarcando 2013–2026. El RCT único de presión arterial es de 2021 y fue conducido como piloto dentro de un estudio de Enfermedad de la Guerra del Golfo, no diseñado específicamente para eficacia antihipertensiva del reishi. No está claro si esto representa una progresión deliberada de investigación o muestreo oportunista.",
+        "severity": "low"
+      }
+    ],
+    "mechanism_check": "Los estudios proponen que los β-glucanos y ácidos ganodéricos del reishi modulan la inmunidad intestinal (IgA, defensinas) y citocinas inflamatorias en modelos de roedores, con desbordamiento teórico a función inmunológica sistémica y cardiovascular. Sin embargo, el salto de expresión génica in vitro o IgA intestinal de rata a reducción de presión arterial humana o mejora inmunológica clínicamente significativa es grande y no está cerrado por datos mecanísticos humanos (p. ej., sin biomarcadores inmunológicos humanos o estudios dosis-respuesta). Un estudio en roedores que muestra 'protección' contra daño intestinal no establece que la misma vía sea limitante de velocidad para hipertensión humana o riesgo de infección.",
+    "strongest_counterargument": "Un escéptico señalaría que el marco completo descansa en un único RCT humano por resultado (o cero para inflamación), cada uno infrautilizado y no validado contra otros ensayos humanos. El ensayo de presión arterial de 2021 estaba incrustado en un estudio más grande de Enfermedad de la Guerra del Golfo, por lo que el punto final primario puede no haber sido específico de reishi; el mismo ensayo podría ser seleccionado o sufrir sesgo de multiplicidad. Los estudios en animales muestran actividad biológica pero no distinguen reishi de docenas de otras plantas inmunomoduladoras, y su dosis, biodisponibilidad y relevancia mecanística para humanos permanecen especulativas. Sin un metanálisis prospectivo o un RCT grande e independiente que replique incluso un resultado, 'Emergente' es generoso—refleja plausibilidad biológica promisoria, no utilidad clínica demostrada.",
+    "what_would_change_the_picture": "Conducir al menos dos RCTs grandes e independientes, adecuadamente alimentados (n ≥ 100 cada uno) para un único resultado primario (p. ej., presión arterial o incidencia de infección en una población definida), preregistrados con objetivos explícitos de tamaño de efecto y biomarcadores mecanísticos (p. ej., citocinas plasmáticas, IgA salival). Publicar resultados independientemente de la dirección e informar estimaciones puntuales con IC al 95% para permitir metanálisis y evaluación de significancia clínica.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

@@ -1,32 +1,48 @@
-# Render Blueprint — one-click deploy config for the Clarity Engine API.
-# In Render: New > Blueprint, point at your repo, and it reads this file.
+# Clarity production Blueprint.
+# Public launch defaults: non-sleeping web service + persistent paid Postgres.
 services:
   - type: web
     name: clarity-engine-api
     runtime: python
-    plan: free                # free tier: fine for demo; spins down when idle
+    plan: 0.5c-512mb
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --timeout 120 --workers 2
+    # One process keeps the in-memory rate/budget counters coherent; threads
+    # preserve useful concurrency for I/O-heavy PubMed/LLM requests.
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --timeout 120 --workers 1 --threads 4
     envVars:
+      - key: CLARITY_ALLOW_LIVE_GENERATION
+        value: "0"              # launch serves audited, pre-generated profiles only
       - key: CLARITY_DAILY_CAP
-        value: "20"           # circuit breaker: max new generations/day
+        value: "20"
+      - key: CLARITY_IP_INTERVAL
+        value: "3.0"
+      - key: CLARITY_ASK_IP_INTERVAL
+        value: "0.35"
+      - key: CLARITY_ENGINE_VERSION
+        value: "2026.09-launch.2"
+      - key: CLARITY_STORE_ASK_TEXT
+        value: "0"
+      - key: CLARITY_ASK_HASH_SALT
+        generateValue: true
+      # Required launch configuration. Render prompts for these values instead
+      # of committing them to the repository.
       - key: CLARITY_CONTACT_EMAIL
-        value: "you@example.com"   # <- put your email (NCBI courtesy)
-      # ANTHROPIC_API_KEY: set this in the Render dashboard (Secret), NOT here,
-      # so the key never lives in your repo. Leave UNSET to run zero-cost
-      # (grading works; population-classifier + effect extraction are skipped).
+        sync: false
+      - key: CLARITY_ALLOWED_ORIGINS
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CLARITY_ASK_MODEL
+        sync: false
       - key: PYTHONUNBUFFERED
         value: "1"
-      # Supplied automatically by Render from the database below. Without this
-      # the service falls back to files, which are wiped on every restart.
       - key: DATABASE_URL
         fromDatabase:
           name: clarity-db
           property: connectionString
 
 databases:
-  # Free tier expires after 90 days; upgrade before then or the catalog is lost.
   - name: clarity-db
-    plan: free
+    plan: 0.5c-1g
     databaseName: clarity
     user: clarity

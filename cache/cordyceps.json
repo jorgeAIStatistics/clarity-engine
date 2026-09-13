@@ -1,120 +1,216 @@
 {
   "name": "Cordyceps",
   "category": "herb",
-  "overall_score": 73,
+  "overall_score": 70,
   "tier": "Moderate",
-  "study_count": 17,
+  "study_count": 19,
+  "unique_human_study_count": 4,
+  "unique_animal_study_count": 15,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 27,
   "claims": [
     {
-      "outcome": "exercise performance",
+      "outcome": "immune function",
       "tier": "Emerging",
       "certainty": "low",
       "score": 47,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 5,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Imprecision: small verified sample (~10 participants across 1 measured studies).",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence.",
+        "Floor applied: human trial evidence retained at least 'emerging' certainty absent a specific serious flaw."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
+        "mechanistic": 30,
+        "preclinical": 55,
         "human": 47,
         "overall": 47,
         "ceiling": 47,
         "n_human_studies": 1,
-        "n_animal_studies": 0,
+        "n_animal_studies": 4,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:15118196"
-      ],
-      "studies": [
-        {
-          "pmid": "15118196",
-          "title": "Cordyceps Sinensis (CordyMax Cs-4) supplementation does not improve endurance exercise performance.",
-          "year": "2004",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For exercise performance, Cordyceps shows early but unsettled evidence (1 studies)."
-    },
-    {
-      "outcome": "immune function",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 3,
-      "grade_reasons": [
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:26457607",
+        "PMID:42302943",
+        "PMID:28578127",
         "PMID:38580687",
-        "PMID:42302943"
+        "PMID:28882795",
+        "PMID:42364904"
       ],
       "studies": [
         {
-          "pmid": "26457607",
-          "title": "Cordyceps sinensis (a traditional Chinese medicine) for kidney transplant recipients.",
-          "year": "2015",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 447
-        },
-        {
+          "id": "pmid:38580687",
           "pmid": "38580687",
           "title": "A randomized controlled clinical trial examining the effects of Cordyceps militaris beverage on the immune response in healthy adults.",
           "year": "2024",
           "design": "RCT",
           "population": "human",
-          "n": 10
+          "n": 10,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38580687/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cordyceps militaris (L.) Link (C. militaris) contains various beneficial substances, including polysaccharides (galactomannan), nucleotides (adenosine and cordycepin), cordycepic acid, amino acids, and sterols (ergosterol and beta-sitosterol). It also contains other essential nutrients, such as protein, vitamins (E, K, B1, B2, and B12), and minerals (potassium, sodium, calcium, magnesium, iron, zinc, and selenium). Due to the numerous health benefits of supplements and products containing C. militaris extract, their popularity has increased. However, the immunostimulant effect of C. militaris remains unclear. Therefore, this study developed a functional beverage from the submerged fermentation of C. militaris (FCM) and aimed to investigate the potential of FCM in healthy male and female volunteers in Phayao Province, Thailand. This study provides essential information for the development of healthy drink products. Healthy men and women were provided either FCM containing 2.85 mg of cordycepin or placebo for 8 weeks (n = 10 for each gender). The immune cell markers, immunoglobulins, and safety parameters were assessed initially at baseline and at 4 and 8 weeks. The NK cell activity markedly increased in the male FCM group from baseline (p = 0.049) to 4 weeks after receiving FCM. Compared with those in the placebo group, the NK activity in women who received FCM for 8 weeks significantly increased (p = 0.023) from baseline. Within-group analysis revealed that the IL-1β levels were markedly reduced in the male FCM group (p = 0.049). Furthermore, the IL-6 levels decreased from baseline in the female FCM group (p = 0.047). The blood sugar, lipid, and safety indices were not different between the experimental groups. FCM can potentially be developed as an immune-boosting supplement without liver, kidney, or blood component toxicity.",
+          "journal": "Scientific reports"
         },
         {
+          "id": "pmid:42302943",
           "pmid": "42302943",
           "title": "Cordyceps sinensis polysaccharide disrupts the macrophage pyroptosis-neutrophil extracellular traps axis to ameliorate acute lung injury.",
           "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42302943/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cordyceps sinensis (Berk.) Sacc., a traditional Chinese medicine known for treating pulmonary diseases, contains vital bioactive polysaccharides. However, their specific therapeutic efficacy and underlying mechanisms in alleviating pulmonary inflammatory injury remain unclear. This study aims to clarify the therapeutic effects of Cordyceps sinensis polysaccharide (CSP) on lipopolysaccharide (LPS)-induced acute lung injury (ALI) in mice and explored its underlying mechanism, focusing on the macrophage pyroptosis-neutrophil extracellular traps (NETs) signaling axis, to identify a potential ALI treatment. The mouse model of ALI was established via intratracheal instillation of LPS. CSP was administered via nebulization for intervention, with dexamethasone (DEX) serving as the positive control. Lung histopathology, immune cell infiltration, and inflammatory mediators were assessed by H&E, IHC, flow cytometry, Western blot, and qRT-PCR. Transcriptomic analysis was conducted to screen the core signaling pathways regulated by CSP. In vitro, a bone marrow-derived macrophage (BMDM) pyroptosis model and a pyroptotic extracellular vesicle (EV)-induced NETs formation system were utilized to verify the direct effects and molecular mechanism of CSP. CSP significantly ameliorated ALI lung damage, restored lung barrier function, reduced pulmonary immune-inflammatory cell infiltration and systemic inflammation, and downregulated pro-inflammatory cytokines (IL-6, TNF-α). Transcriptomic analysis linked its effects to the NOD-like receptor and NETs formation pathways. Mechanistically, CSP inhibited macrophage NLRP3 inflammasome activation and pyroptosis. Crucially, CSP suppressed neutrophil NETs formation induced by pyroptotic macrophage-derived EVs, blocking the macrophage-neutrophil inflammatory cascade. Targeting the macrophage pyroptosis-NETs signaling axis, CSP exerts multi-level inhibitory effects on excessive pulmonary inflammatory responses, providing significant therapeutic protection against ALI. These findings suggest CSP is a promising natural candidate drug for ALI treatment.",
+          "journal": "Journal of ethnopharmacology"
+        },
+        {
+          "id": "pmid:28578127",
+          "pmid": "28578127",
+          "title": "Effects of Cordyceps militaris spent mushroom substrate on mucosal and serum immune parameters, disease resistance and growth performance of Nile tilapia, (Oreo",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28578127/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The aim of present study was determination effects of dietary administration of C. militaris spent mushroom substrate (SMS) on mucosal and serum immune parameters, disease resistance, and growth performance of Nile tilapia (Oreochromis niloticus). Two hundred twenty five fish of similar weight (37.28 ± 0.10 g) were assigned to the following diets [0 (T1- Control), 5 (T2), 10 (T3), 20 (T4) and 40 g kg",
+          "journal": "Fish & shellfish immunology"
+        },
+        {
+          "id": "pmid:42364904",
+          "pmid": "42364904",
+          "title": "Cordyceps cateniannulata: a promising biological control agent for coffee leaf miner (Leucoptera coffeella).",
+          "year": "2026",
+          "design": "In vitro",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.jip.2026.108686",
+          "epmc_id": "MED:42364904",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42364904/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The entomopathogenic fungus Cordyceps cateniannulata is a promising biocontrol agent against arthropod pests and has recently shown to be pathogenic to the coffee leaf miner under laboratory conditions. Considering the significant losses caused by this pest in coffee production and the limited use of fungal pathogens as tools to tackle this pest, we investigated the effects of Cordyceps cateniannulata on the coffee leaf miner in an in planta experiment and comparing the ability of C. cateniannulata, Beauveria bassiana and their mixture in the same assay. Prior to this, their in vitro interaction was evaluated. The growth of C. cateniannulata was unaffected by B. bassiana, whereas growth of B. bassiana was inhibited by 21.93% by C. cateniannulata. In the in planta experiment, fungal applications were initiated during larval stage and continued during pupation. All three treatments caused a high, and similar, mortality of coffee leaf miner pupae, with no additive or synergistic effect with the mixture. In the mixture, though, C. cateniannulata dominated sporulation from dead pupae, with a mean sporulation rate of 67%, compared to B. bassiana with 17%. Given that no fungus-induced mortality was observed in larvae within mines, exposure during pupation may represent a more susceptible stage for fungal infection under the conditions tested. While neither fungus gave rapid control of larvae, we propose that the effect on pupae, and thereby adults, could be of practical interest in suppressing populations of this coffee pest.",
+          "journal": "Journal of invertebrate pathology"
+        },
+        {
+          "id": "pmid:28882795",
+          "pmid": "28882795",
+          "title": "Effects of Cordyceps militaris spent mushroom substrate and Lactobacillus plantarum on mucosal, serum immunology and growth performance of Nile tilapia (Oreochr",
+          "year": "2017",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28882795/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "An 8-weeks feeding trial was performed to investigate the possible effects of supplementation of Nile tilapia diet with Cordyceps militaris spent mushroom substrate (SMS) single or combined with Lactobacillus plantarum on immune parameters and growth performance. For this aim, Nile tilapia fingerlings were fed with four experimental diets namely: Diet 1 (0 - control), Diet 2 (10 g kg",
+          "journal": "Fish & shellfish immunology"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 5,
+        "n_total": 5
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For immune function, Cordyceps has moderate human evidence (3 studies)."
+      "summary": "For immune function, Cordyceps shows early but unsettled human evidence (5 graded studies).",
+      "weighted_score": {
+        "final_score": 38.4,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 5,
+          "high_tier_points": 21.251,
+          "low_tier_points_pre_cap": 11.618,
+          "low_tier_points_post_cap": 11.618,
+          "low_tier_cap_applied": false,
+          "total_points_R": 32.869,
+          "scaled_base_score": 38.409,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 35.08,
+          "se_consistency_component": 5.08,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 68.757,
+          "human_sample_total": 10,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.201,
+              "points": 4.805,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.181,
+              "points": 21.251,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.276,
+              "points": 5.103,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la función inmunológica, Cordyceps muestra evidencia temprana pero no concluyente en humanos (5 estudios clasificados)."
     },
     {
       "outcome": "kidney function",
@@ -122,10 +218,14 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 7,
+      "n_studies": 11,
       "grade_reasons": [
-        "Limited human evidence: 2 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~443 participants verified across 3 of 11 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
@@ -133,88 +233,342 @@
         "overall": 70,
         "ceiling": 70,
         "n_human_studies": 4,
-        "n_animal_studies": 3,
+        "n_animal_studies": 7,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:36480757",
         "PMID:38149724",
-        "PMID:25519252",
-        "PMID:26457607",
-        "PMID:38580687",
         "PMID:19545680",
         "PMID:37560890",
-        "PMID:36480757"
+        "PMID:28463017",
+        "PMID:38580687",
+        "PMID:36843056",
+        "PMID:21335937",
+        "PMID:24632844",
+        "PMID:42008479",
+        "PMID:40630128"
       ],
       "studies": [
         {
-          "pmid": "26457607",
-          "title": "Cordyceps sinensis (a traditional Chinese medicine) for kidney transplant recipients.",
-          "year": "2015",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 447
-        },
-        {
-          "pmid": "25519252",
-          "title": "Cordyceps sinensis (a traditional Chinese medicine) for treating chronic kidney disease.",
-          "year": "2014",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 1746
-        },
-        {
+          "id": "pmid:38580687",
           "pmid": "38580687",
           "title": "A randomized controlled clinical trial examining the effects of Cordyceps militaris beverage on the immune response in healthy adults.",
           "year": "2024",
           "design": "RCT",
           "population": "human",
-          "n": 10
+          "n": 10,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38580687/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cordyceps militaris (L.) Link (C. militaris) contains various beneficial substances, including polysaccharides (galactomannan), nucleotides (adenosine and cordycepin), cordycepic acid, amino acids, and sterols (ergosterol and beta-sitosterol). It also contains other essential nutrients, such as protein, vitamins (E, K, B1, B2, and B12), and minerals (potassium, sodium, calcium, magnesium, iron, zinc, and selenium). Due to the numerous health benefits of supplements and products containing C. militaris extract, their popularity has increased. However, the immunostimulant effect of C. militaris remains unclear. Therefore, this study developed a functional beverage from the submerged fermentation of C. militaris (FCM) and aimed to investigate the potential of FCM in healthy male and female volunteers in Phayao Province, Thailand. This study provides essential information for the development of healthy drink products. Healthy men and women were provided either FCM containing 2.85 mg of cordycepin or placebo for 8 weeks (n = 10 for each gender). The immune cell markers, immunoglobulins, and safety parameters were assessed initially at baseline and at 4 and 8 weeks. The NK cell activity markedly increased in the male FCM group from baseline (p = 0.049) to 4 weeks after receiving FCM. Compared with those in the placebo group, the NK activity in women who received FCM for 8 weeks significantly increased (p = 0.023) from baseline. Within-group analysis revealed that the IL-1β levels were markedly reduced in the male FCM group (p = 0.049). Furthermore, the IL-6 levels decreased from baseline in the female FCM group (p = 0.047). The blood sugar, lipid, and safety indices were not different between the experimental groups. FCM can potentially be developed as an immune-boosting supplement without liver, kidney, or blood component toxicity.",
+          "journal": "Scientific reports"
         },
         {
+          "id": "pmid:19545680",
           "pmid": "19545680",
           "title": "Clinical application of Cordyceps sinensis on immunosuppressive therapy in renal transplantation.",
           "year": "2009",
           "design": "RCT",
           "population": "human",
-          "n": 202
+          "n": 202,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19545680/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "We sought to explore the adjunctive effects of Cordyceps sinensis (CS) in clinical renal transplantation. Patients (n = 202) were divided randomly by lottery into a treatment (n = 93) and a control group (n = 109). Patients in the treatment group were treated with CS 1.0 g 3 times a day in addition to the immunosuppressive regimen given to the control group. We compared patient and graft survivals, incidence, time and severity of acute rejection episodes, chronic allograft nephropathy (CAN), hepatotoxicity and nephrotoxicity, biochemistry parameters including indicators of liver and kidney functions, fats, proteinuria, dosages, and whole blood concentrations of cyclosporine (CsA). Patient and graft survival rates, serum creatinine (SCr), and blood urea nitrogen (BUN) were not significantly different between the 2 groups (P > .05). Serum uric acid (UA) and 24-hour urinary total protein (24-hour UTP) were significantly lower in the treatment group than in the control group (P < .05). The incidences (11.83% vs 15.60%) and times to acute renal allograft rejection (23.48 +/- 7.22 vs 22.27 +/- 8.03 days posttransplantation) were not significantly different between the treated and control groups (P > .05). Patients receiving thymoglobulin antirejection therapy (3 cases) were fewer in the heated versus control group (13 cases; P = .014). The incidences of hepatotoxicity and nephrotoxicity in the treated group were 12.90% and 19.35%, significantly lower than 24.77% and 33.94% in the control group, respectively (P < .05). At 2 to 6 months posttransplantation, the CsA dosages in the treated group were significantly lower than those in the control group (P < .05). The whole blood trough CsA concentrations in the treated group were significantly lower than those in the control group at 3 to 6 months posttransplantation (P < .05). The decreasing trends of the 2 aforementioned parameters in the treatment group were approximately linear among treated subjects compared with approximately quadratic in the control group (P < .05). The incidence of CAN in the treated group was 7.53%, which was significantly lower than 18.35% in the control group (P = .024). The 24-hour UTP level in CAN patients within the treated group was significantly lower than the control group after transplantation (P = .045). The differences in total bilirubin, SCr, serum UA, and total cholesterol levels among otherwise normal patients in the treated group were significantly lower than those among the control group (P < .05). The use of CS may allow decreased dosages and concentrations of CsA causing fewer side effects without an increased risk of acute rejection. In addition, CS with reduced dose CsA may decrease proteinuria and retard CAN progression.",
+          "journal": "Transplantation proceedings"
         },
         {
+          "id": "pmid:28463017",
+          "pmid": "28463017",
+          "title": "Unintentional ingestion of Cordyceps fungus-infected cicada nymphs causing ibotenic acid poisoning in Southern Vietnam.",
+          "year": "2017",
+          "design": "Observational",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28463017/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cordyceps fungus found in infected cicada nymphs (\"cicada flowers\") is utilized in traditional Chinese medicine. Cordyceps fungus toxicity in humans has not been previously reported. We report 60 cases of apparent Cordyceps poisoning in Southern Vietnam. We retrospectively collected demographic and clinical data from the medical records (21 cases) and by telephone interview (39 cases) of patients admitted to seven hospitals in Southern Vietnam following ingestion of cicada flowers between 2008 and 2015. We also determined the species of Cordyceps present in the cicada flowers and performed a partial chemical analysis of the fungus. Sixty cases of toxic effects following ingestion of cicada flowers were documented. Symptom onset occurred within 60 minutes following ingestion. Symptoms included dizziness, vomiting, salivation, mydriasis, jaw stiffness, urinary retention, seizures, agitated delirium, hallucinations, somnolence and coma. None of the patients suffered liver or kidney injury. There was one fatality. The Cordyceps fungus involved in these poisoning was identified as Ophiocordyceps heteropoda. The presence of ibotenic acid was confirmed, but musimol and muscarine were absent. Cicada infected with Ophiocordyceps heteropoda in Vietnam contain ibotenic acid and are associated with a clinical syndrome consistent with its effects.",
+          "journal": "Clinical toxicology (Philadelphia, Pa.)"
+        },
+        {
+          "id": "pmid:21335937",
+          "pmid": "21335937",
+          "title": "Effect of Cordyceps sinensis on renal function of patients with chronic allograft nephropathy.",
+          "year": "2011",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 231,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21335937/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To investigate the effect of Cordyceps sinensis (Bailing capsule, fermented agent of C. sinensis) on renal function of patients with chronic allograft nephropathy (CAN). A total of 231 CAN patients who underwent transplantation between 2005 and 2008 and experienced chronic graft dysfunction were randomly divided into 2 groups. Patients in group A (n = 122) were treated with immunosuppressive agents and C. sinensis (2.0 g/day, 3 times a day), while patients in group B (n = 109) were treated with traditional immunosuppressive drugs. Serum creatinine (SCr), blood urea nitrogen (BUN), creatinine clearance rate (C(Cr)) and urinary protein in 24 h (24-hour Upro) of all patients were measured before and after treatment. Urinary concentrations of transforming growth factor (TGF)-β(1), retinol-binding protein (RBP) and β(2)-microglobulin (β(2)-MG) were detected at the same time. After 6-month treatment with C. sinensis, SCr and C(Cr) in group A were significantly improved (p < 0.05), while there was no significant improvement observed for group B. There was no significant change in BUN in groups A and B (p > 0.05). 24-hour Upro, RBP and β(2)-MG were lower in group A after treatment with C. sinensis (p < 0.05 or p < 0.01), and urinary TGF-β(1) in group A was significantly lower than the values before C. sinensis treatment (p < 0.05), but showed no change in patients of group B. In group A, renal function had improved in 72 cases, stabilized in 38 cases, and worsened in 12 cases. In group B, renal function had improved in 14 cases, stabilized in 50 cases, and worsened in 45 cases (p < 0.05). C. sinensis therapy is advantageous in improving renal function of CAN patients by retarding CAN progression.",
+          "journal": "Urologia internationalis"
+        },
+        {
+          "id": "pmid:42008479",
+          "pmid": "42008479",
+          "title": "Effects of Cordyceps Polysaccharides on D-Galactose-induced Renal Senescence.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3791/69579",
+          "epmc_id": "MED:42008479",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42008479/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Chronic kidney disease (CKD) poses a significant global health concern. Aging of renal tubular epithelial cells (RTECs) impairs kidney regeneration and repair and promotes CKD progression through the release of the senescence-associated secretory phenotype (SASP). Cordyceps sinensis, whose key bioactive constituents include Cordyceps polysaccharides (CCP), is incorporated into multiple clinical preparations for CKD and has demonstrated therapeutic benefits. To examine the role of CCP in renal aging, a D-galactose-induced renal senescence model was established in mice, with CCP administered as an intervention. Treatment outcomes were evaluated using senescence-related staining and assessments of renal function. A D-galactose-induced aging model in HK-2 cells was further established to investigate underlying cellular mechanisms. JC-1 staining and reactive oxygen species (ROS) detection were used to assess mitochondrial changes following CCP treatment under senescent conditions. Immunofluorescence, western blotting, and quantitative PCR (RT-PCR) were performed to evaluate the effects of CCP on MAPK phosphorylation, NF-κB nuclear translocation, and NLRP3 inflammasome activation. The results show that CCP attenuates tubulointerstitial cell senescence, renal injury, and fibrosis, while improving mitochondrial function in both cellular and animal models of D-galactose-induced senescence. These effects are associated with modulation of the ROS/MAPK/NF-κB/NLRP3 signaling pathway.",
+          "journal": "Journal of visualized experiments : JoVE"
+        },
+        {
+          "id": "pmid:40630128",
+          "pmid": "40630128",
+          "title": "Wild &lt;i&gt;Cordyceps sinensis&lt;/i&gt; exhibits far lower arsenic accumulation and hepatorenal toxicity in mice compared to equivalent dose of inorganic ars",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fphar.2025.1625045",
+          "epmc_id": "MED:40630128",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40630128/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Introduction</h4>Wild Cordyceps sinensis (<i>C. sinensis</i>) is a Chinese medicinal material known for its renal and pulmonary benefits. However, inorganic arsenic in wild Cordyceps sinensis may accumulate in the body following prolonged consumption; therefore, rigorous safety evaluations are needed.<h4>Methods</h4>This study compared the impacts of wild Cordyceps sinensis at the maximum clinical dose and equivalent doses of inorganic arsenic (16.36 mg/kg) to its total arsenic dose on organ indices, arsenic accumulation, and functional and pathological changes in the liver and kidney in mice, aiming to explore the safety of consuming wild Cordyceps sinensis. Arsenic accumulation in organs was measured via ICP-MS, while serum markers of liver and kidney functions were assessed via ELISA and biochemical assay kits. Histopathology was observed through H&E staining.<h4>Result</h4>Compared with those in the control group, no significant adverse effects on body weight, organ indices, arsenic accumulation, liver or kidney function, or liver or kidney pathology were observed in the Cordyceps group. In contrast, inorganic arsenic exposure resulted in significant arsenic accumulation in organs, especially in the liver and kidneys (<i>p</i> < 0.01), liver and kidney function impairment (<i>p</i> < 0.01), and pathological changes, including hepatic steatosis, mild edema, balloon degeneration, and renal tubular epithelial cell edema and degeneration, with the aggregation of eosinophils in the renal capsule.<h4>Conclusion</h4>These findings indicate that, at the maximum clinical dose, wild Cordyceps sinensis does not cause measurable hepatorenal toxicity in long-term and exhibits markedly greater safety compared to a mixture of inorganic arsenic compounds (sodium arsenate and sodium arsenite) at an equivalent total arsenic dose.",
+          "journal": "Frontiers in pharmacology"
+        },
+        {
+          "id": "pmid:38149724",
           "pmid": "38149724",
           "title": "Cordyceps cicadae polysaccharides attenuate diabetic nephropathy via the miR-30a-3p/TRIM16 axis.",
           "year": "2024",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38149724/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The molecular mechanism of the protective effect of Cordyceps cicadae polysaccharides (CCPs) on renal tubulointerstitial fibrosis in diabetic nephropathy (DN) is still unclear. This study aims to further understand the molecular mechanisms behind the therapeutic benefits of CCP on diabetic nephropathy. Mice were randomly assigned into six groups (n = 8). Cordyceps cicadae polysaccharide dissolved in 5% dimethyl sulfoxide was administered by gavage for 12 consecutive weeks. The CCP doses were divided into low, medium, and high, 75, 150, and 300 mg/kg/day, respectively. The efficacy of CCP was determined by assessing the renal function and histological alterations in diabetic db/db mice. The degree of glomerular mesangial dilatation and sclerosis was evaluated using semiquantitative markers. Cell viability, apoptosis, epithelial-mesenchymal transition (EMT), inflammation, oxidative stress, and mitochondrial reactive oxygen species (ROS) in high glucose (HG)-cultured MPC5 podocytes were determined. The interaction of miR-30a-3p and tripartite motif-containing protein 16 (TRIM16) was examined by luciferase reporter assay. Western blotting, reverse transcription-polymerase chain reaction, and immunofluorescence were used to analyze gene and protein expressions. The in vivo findings illustrated that CCP may protect mice with type 2 diabetes from inflammation and oxidative damage (P < 0.05). Furthermore, CCP has a therapeutic value in protecting renal function and morphology in diabetic nephropathy by reversing podocyte EMT. The in vitro results indicated that CCP dose-dependently inhibited HG-induced apoptosis, EMT, inflammation, oxidative stress, and mitochondrial ROS levels in MPC5 podocytes (P < 0.05). Luciferase reporter assay confirmed the interaction between miR-30a-3p and TRIM16 in MPC5 podocytes cultured in high glucose (P < 0.05). The protective effect of CCP on HG-induced MPC5 can be achieved by miR-30a-3p/TRIM16 axis.",
+          "journal": "Journal of diabetes investigation"
         },
         {
+          "id": "pmid:37560890",
           "pmid": "37560890",
           "title": "Antihyperuricemic and Renal Protective Effect of Cordyceps chanhua (Ascomycetes) Fruiting Bodies in Acute Hyperuricemia and Chronic Gout Rodent Models.",
           "year": "2023",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37560890/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cordyceps chanhua has been widely used in traditional Chinese medicine. The uric acid-lowering effect of artificially cultivated fruiting bodies of C. chanhua (FBCC) was studied using the acute hyperuricemia (AH) and chronic gout (CG) animal models. The AH mice and CG rats were randomly divided into 6 groups: the negative control group, model group, positive control group, low-dose group, medium-dose group, and high-dose group of FBCC, respectively. Serum uric acid, creatinine, urea nitrogen, and liver xanthine oxidase (XOD) activity were detected. Renal tubulointerstitial injury and urate crystals in CG rats were evaluated. The results showed that the uric acid content in AH mice with the high-dose FBCC group decreased statistically (P < 0.05). In the CG rats, the serum uric acid level in all FBCC groups and the serum creatinine value in the high-dose group exhibited a significant decrease (P < 0.05); the scores of renal tubulointerstitial damage and urate deposit were reduced in the high-dose group of FBCC. FBCC can reduce uric acid and improve renal function, demonstrating it as a beneficial supplement for uric acid-lowering and gout-relieving drugs.",
+          "journal": "International journal of medicinal mushrooms"
         },
         {
+          "id": "pmid:36843056",
+          "pmid": "36843056",
+          "title": "Protective Mechanism of Cordyceps sinensis Treatment on Acute Kidney Injury-Induced Acute Lung Injury through AMPK/mTOR Signaling Pathway.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36843056/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To investigate protective effect of Cordyceps sinensis (CS) through autophagy-associated adenosine monophosphate-activated protein kinase (AMPK)/mammalian target of rapamycin (mTOR) signaling pathway in acute kidney injury (AKI)-induced acute lung injury (ALI). Forty-eight male Sprague-Dawley rats were divided into 4 groups according to a random number table, including the normal saline (NS)-treated sham group (sham group), NS-treated ischemia reperfusion injury (IRI) group (IRI group), and low- (5 g/kg·d) and high-dose (10 g/kg·d) CS-treated IRI groups (CS1 and CS2 groups), 12 rats in each group. Nephrectomy of the right kidney was performed on the IRI rat model that was subjected to 60 min of left renal pedicle occlusion followed by 12, 24, 48, and 72 h of reperfusion. The wet-to-dry (W/D) ratio of lung, levels of serum creatinine (Scr), blood urea nitrogen (BUN), inflammatory cytokines such as interleukin- β and tumor necrosis factor- α, and biomarkers of oxidative stress such as superoxide dismutase, malonaldehyde (MDA) and myeloperoxidase (MPO), were assayed. Histological examinations were conducted to determine damage of tissues in the kidney and lung. The protein expressions of light chain 3 II/light chain 3 I (LC3-II/LC3-I), uncoordinated-51-like kinase 1 (ULK1), P62, AMPK and mTOR were measured by Western blot and immunohistochemistry, respectively. The renal IRI induced pulmonary injury following AKI, resulting in significant increases in W/D ratio of lung, and the levels of Scr, BUN, inflammatory cytokines, MDA and MPO (P<0.01); all of these were reduced in the CS groups (P<0.05 or P<0.01). Compared with the IRI groups, the expression levels of P62 and mTOR were significantly lower (P<0.05 or P<0.01), while those of LC3-II/LC3-I, ULK1, and AMPK were significantly higher in the CS2 group (P<0.05 or P<0.01). CS had a potential in treating lung injury following renal IRI through activation of the autophagy-related AMPK/mTOR signaling pathway in AKI-induced ALI.",
+          "journal": "Chinese journal of integrative medicine"
+        },
+        {
+          "id": "pmid:36480757",
           "pmid": "36480757",
           "title": "The effect of low-dose Cordyceps on ischemia-reperfusion injury of the kidney in rats.",
           "year": "2022",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36480757/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "None of studies have been conducted in terms of demonstrating the same effect with the low dose in cordycepin. In our study, we analyzed the histopathological and biochemical changes of low-dose Cordycepin(c) on a rat model in the kidney. Twenty-four male Wistar Albino rats were randomly allocated to three groups (n = 8): the sham-control group (Group 1), the renal I/R-untreated (Group 2) group, and the I/R-C-treated (Group 3) group. Cordyceps was administered intraperitoneally at 5 mg/kg twice. Renal histological changes were compared and the relevant parameters of oxidative stress and inflammation were detected. In blood and tissue biochemistry, it was observed that IL-1 Beta, IL 6, TNF alpha, MDA, TOS, and OSI increased in Group 2 and decreased in Group 3. It was determined that TAS values were increased in Group 3, and decreased in Group 2. In the histopathological evaluation, while Group 1 was evaluated as normal, significant kidney damage was detected in Group 2. It was determined that there was a significant decrease in kidney damage in Group 3. These results suggest that low dose Cordycepin was as effective as normal dose on renal ischemic reperfusion and reduction of damage. Ninguno de los estudios se ha realizado en términos de demostrar el mismo efecto con la dosis baja de cordicepina. En nuestro estudio, analizamos los cambios histopatológicos y bioquímicos de Cordycepin(c) en dosis bajas en un modelo de rata con isquemia-reperfusión (I/R) inducida en el riñón. Veinticuatro ratas macho Wistar Albino se asignaron al azar a tres grupos (n = 8): el grupo de control simulado (Grupo 1), el grupo sin tratamiento I/R renal (Grupo 2) y el grupo tratado con I/R-C (Grupo 3). Cordyceps se administró por vía intraperitoneal a 5 mg/kg dos veces. Se compararon los cambios histológicos renales y se detectaron los parámetros relevantes de estrés oxidativo e inflamación. En bioquímica sanguínea y tisular se observó que IL-1 Beta, IL 6, TNF alfa, MDA, TOS y OSI aumentaron en el Grupo 2 y disminuyeron en el Grupo 3. Se determinó que los valores de TAS aumentaron en el Grupo 3, y disminuyó en el Grupo 2. En la evaluación histopatológica, mientras que el Grupo 1 fue evaluado como normal, se detectó daño renal significativo en el Grupo 2. Se determinó que hubo una disminución significativa del daño renal en el grupo 3. Estos resultados sugieren que la cordicepina en dosis bajas fue tan efectiva como la dosis normal en la reperfusión isquémica renal y la reducción del daño.",
+          "journal": "Cirugia y cirujanos"
+        },
+        {
+          "id": "pmid:24632844",
+          "pmid": "24632844",
+          "title": "Cordyceps sinensis protects against liver and heart injuries in a rat model of chronic kidney disease: a metabolomic analysis.",
+          "year": "2014",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24632844/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To test the hypothesis that the traditional Chinese medicine Cordyceps sinensis could improve the metabolic function of extrarenal organs to achieve its anti-chronic kidney disease (CKD) effects. Male SD rats were divided into CKD rats (with 5/6-nephrectomy), CKD rats treated with Cordyceps sinensis (4 mg•kg-1•d-1, po), and sham-operated rats. After an 8-week treatment, metabolites were extracted from the hearts and livers of the rats, and then subjected to (1)H-NMR-based metabolomic analysis. Oxidative stress, energy metabolism, amino acid and protein metabolism and choline metabolism were considered as links between CKD and extrarenal organ dysfunction. Within the experimental period of 8 weeks, the metabolic disorders in the liver were more pronounced than in the heart, suggesting that CKD-related extrarenal organ dysfunctions occurred sequentially rather than simultaneously. Oral administration of Cordyceps sinensis exerted statistically significant rescue effects on the liver and heart by reversely regulating levels of those metabolites that are typically perturbed in CKD. Oral administration of Cordyceps sinensis significantly attenuates the liver and heart injuries in CKD rats. The (1)H NMR-based metabolomic approach has provided a systematic view for understanding of CKD and the drug treatment, which can also be used to elucidate the mechanisms of action of other traditional Chinese medicines.",
+          "journal": "Acta pharmacologica Sinica"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 11,
+        "n_total": 11
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For kidney function, Cordyceps has moderate human evidence (7 studies)."
+      "summary": "For kidney function, Cordyceps has moderate human evidence (11 graded studies).",
+      "weighted_score": {
+        "final_score": 68.0,
+        "confidence_interval": {
+          "lower": 38.0,
+          "upper": 98.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 11,
+          "high_tier_points": 121.023,
+          "low_tier_points_pre_cap": 16.149,
+          "low_tier_points_post_cap": 16.149,
+          "low_tier_cap_applied": false,
+          "total_points_R": 137.172,
+          "scaled_base_score": 68.019,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 15.3048,
+          "se_consistency_component": 5.027,
+          "se_thinness_component": 10.2778,
+          "margin_of_error": 29.997,
+          "human_sample_total": 212,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.105,
+              "points": 4.419,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.135,
+              "points": 4.542,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.805,
+              "C_k": 1.198,
+              "points": 97.354,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.09,
+              "points": 4.361,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 20.914,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.181,
+              "points": 21.251,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.143,
+              "points": 4.573,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.201,
+              "points": 4.805,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.215,
+              "points": 4.859,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la función renal, Cordyceps tiene evidencia moderada en humanos (11 estudios clasificados)."
     },
     {
       "outcome": "inflammation",
@@ -222,10 +576,13 @@
       "certainty": "very_low",
       "score": 22,
       "has_human_evidence": false,
-      "n_studies": 6,
+      "n_studies": 8,
       "grade_reasons": [
         "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
@@ -233,162 +590,626 @@
         "overall": 55,
         "ceiling": 55,
         "n_human_studies": 0,
-        "n_animal_studies": 6,
+        "n_animal_studies": 8,
         "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:39537075",
-        "PMID:35282803",
-        "PMID:38149724",
         "PMID:42302943",
         "PMID:36480757",
-        "PMID:39001695"
+        "PMID:38149724",
+        "PMID:35282803",
+        "PMID:36843056",
+        "PMID:39537075",
+        "PMID:24632844",
+        "EPMC:AGR:IND609444130"
       ],
       "studies": [
         {
+          "id": "pmid:42302943",
           "pmid": "42302943",
           "title": "Cordyceps sinensis polysaccharide disrupts the macrophage pyroptosis-neutrophil extracellular traps axis to ameliorate acute lung injury.",
           "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42302943/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cordyceps sinensis (Berk.) Sacc., a traditional Chinese medicine known for treating pulmonary diseases, contains vital bioactive polysaccharides. However, their specific therapeutic efficacy and underlying mechanisms in alleviating pulmonary inflammatory injury remain unclear. This study aims to clarify the therapeutic effects of Cordyceps sinensis polysaccharide (CSP) on lipopolysaccharide (LPS)-induced acute lung injury (ALI) in mice and explored its underlying mechanism, focusing on the macrophage pyroptosis-neutrophil extracellular traps (NETs) signaling axis, to identify a potential ALI treatment. The mouse model of ALI was established via intratracheal instillation of LPS. CSP was administered via nebulization for intervention, with dexamethasone (DEX) serving as the positive control. Lung histopathology, immune cell infiltration, and inflammatory mediators were assessed by H&E, IHC, flow cytometry, Western blot, and qRT-PCR. Transcriptomic analysis was conducted to screen the core signaling pathways regulated by CSP. In vitro, a bone marrow-derived macrophage (BMDM) pyroptosis model and a pyroptotic extracellular vesicle (EV)-induced NETs formation system were utilized to verify the direct effects and molecular mechanism of CSP. CSP significantly ameliorated ALI lung damage, restored lung barrier function, reduced pulmonary immune-inflammatory cell infiltration and systemic inflammation, and downregulated pro-inflammatory cytokines (IL-6, TNF-α). Transcriptomic analysis linked its effects to the NOD-like receptor and NETs formation pathways. Mechanistically, CSP inhibited macrophage NLRP3 inflammasome activation and pyroptosis. Crucially, CSP suppressed neutrophil NETs formation induced by pyroptotic macrophage-derived EVs, blocking the macrophage-neutrophil inflammatory cascade. Targeting the macrophage pyroptosis-NETs signaling axis, CSP exerts multi-level inhibitory effects on excessive pulmonary inflammatory responses, providing significant therapeutic protection against ALI. These findings suggest CSP is a promising natural candidate drug for ALI treatment.",
+          "journal": "Journal of ethnopharmacology"
         },
         {
-          "pmid": "39537075",
-          "title": "The effects of Cordyceps polysaccharides on ischemic brain injury in rats via intervening with IL-23/IL-17 axis and the intestinal barrier.",
-          "year": "2024",
+          "id": "epmc:agr:ind609444130",
+          "pmid": null,
+          "title": "Neomycin-sensitive gut bacteria-derived brassicasterol mediates the anti-obesity effects of Cordyceps militaris polysaccharide",
+          "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": "AGR:IND609444130",
+          "url": "https://europepmc.org/article/AGR/IND609444130",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Diet-based modulation of the gut microbiota has emerged as a promising strategy to alleviate obesity and its related complications. Our previous study demonstrated that polysaccharide derived from Cordyceps militaris (CMP) exerts anti-obesity effects, yet the specific mechanism linking gut microbiota to its metabolic impact remains unclear. Herein, we utilized murine models with distinct gut microbial profiles created via antibiotic cocktails to investigate these mechanisms. The protective effects of CMP against high-fat diet (HFD)-induced obesity and associated metabolic disturbances were substantially impaired in mice depleted of neomycin-sensitive gut bacteria. Metagenomic analyses further established that CMP required these bacteria to restore gut microbial homeostasis. Notably, we observed that CMP elevated hepatic levels of brassicasterol in a manner dependent on neomycin-sensitive gut bacteria. Brassicasterol treatment alone replicated the anti-obesity effects of CMP, as indicated by reduced body weight gain, improved lipid and glucose metabolism, and decreased inflammation. Through transcriptomic and functional analyses, we identified hepatic Apoa4 as a key downstream effector of brassicasterol. Our results indicated that brassicasterol upregulated Apoa4, facilitating lipid transport and suppressing inflammation both in vitro and in vivo. Collectively, our findings indicate that CMP exerts its anti-obesity effects through a neomycin-sensitive gut bacteria–brassicasterol–Apoa4 pathway. This work expands the mechanistic understanding of CMP and highlights a novel microbiota–metabolite–host regulatory axis for dietary intervention in metabolic disorders.",
+          "journal": "Food Research International."
         },
         {
+          "id": "pmid:38149724",
           "pmid": "38149724",
           "title": "Cordyceps cicadae polysaccharides attenuate diabetic nephropathy via the miR-30a-3p/TRIM16 axis.",
           "year": "2024",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38149724/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The molecular mechanism of the protective effect of Cordyceps cicadae polysaccharides (CCPs) on renal tubulointerstitial fibrosis in diabetic nephropathy (DN) is still unclear. This study aims to further understand the molecular mechanisms behind the therapeutic benefits of CCP on diabetic nephropathy. Mice were randomly assigned into six groups (n = 8). Cordyceps cicadae polysaccharide dissolved in 5% dimethyl sulfoxide was administered by gavage for 12 consecutive weeks. The CCP doses were divided into low, medium, and high, 75, 150, and 300 mg/kg/day, respectively. The efficacy of CCP was determined by assessing the renal function and histological alterations in diabetic db/db mice. The degree of glomerular mesangial dilatation and sclerosis was evaluated using semiquantitative markers. Cell viability, apoptosis, epithelial-mesenchymal transition (EMT), inflammation, oxidative stress, and mitochondrial reactive oxygen species (ROS) in high glucose (HG)-cultured MPC5 podocytes were determined. The interaction of miR-30a-3p and tripartite motif-containing protein 16 (TRIM16) was examined by luciferase reporter assay. Western blotting, reverse transcription-polymerase chain reaction, and immunofluorescence were used to analyze gene and protein expressions. The in vivo findings illustrated that CCP may protect mice with type 2 diabetes from inflammation and oxidative damage (P < 0.05). Furthermore, CCP has a therapeutic value in protecting renal function and morphology in diabetic nephropathy by reversing podocyte EMT. The in vitro results indicated that CCP dose-dependently inhibited HG-induced apoptosis, EMT, inflammation, oxidative stress, and mitochondrial ROS levels in MPC5 podocytes (P < 0.05). Luciferase reporter assay confirmed the interaction between miR-30a-3p and TRIM16 in MPC5 podocytes cultured in high glucose (P < 0.05). The protective effect of CCP on HG-induced MPC5 can be achieved by miR-30a-3p/TRIM16 axis.",
+          "journal": "Journal of diabetes investigation"
         },
         {
+          "id": "pmid:39537075",
+          "pmid": "39537075",
+          "title": "The effects of Cordyceps polysaccharides on ischemic brain injury in rats via intervening with IL-23/IL-17 axis and the intestinal barrier.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39537075/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cordyceps polysaccharide (CSP) has been shown to exhibit anti-inflammatory and antioxidant effects, with potential applications in ischemic stroke. This work is to explore the interventional potential of CSP in MCAO rats and the effects on the intestinal and cerebral IL-23/IL-17 axis. We conducted pharmacological experiments and mechanism exploration in MCAO rats. Our research showed that CSP improved the neurological function and cerebral pathological morphology, reduced cerebral infarction volume and water content in MCAO rats. We also found that CSP significantly decreased the IL-1β, TNF-α and IL-6 in the ischemic brain and enhanced the ability of MCAO rats to resist oxidative stress. Additionally, CSP improved intestinal barrier, inhibited the activation of the TLR4/Myd88/NF-κβ signaling pathway and IL-23/IL-17 axis. The study results demonstrated the effectiveness of CSP in interfering with MCAO rats. The mechanism appears to be related to protecting the intestinal barrier and inhibiting the IL-23/IL-17 axis.",
+          "journal": "International journal of biological macromolecules"
+        },
+        {
+          "id": "pmid:36843056",
+          "pmid": "36843056",
+          "title": "Protective Mechanism of Cordyceps sinensis Treatment on Acute Kidney Injury-Induced Acute Lung Injury through AMPK/mTOR Signaling Pathway.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36843056/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To investigate protective effect of Cordyceps sinensis (CS) through autophagy-associated adenosine monophosphate-activated protein kinase (AMPK)/mammalian target of rapamycin (mTOR) signaling pathway in acute kidney injury (AKI)-induced acute lung injury (ALI). Forty-eight male Sprague-Dawley rats were divided into 4 groups according to a random number table, including the normal saline (NS)-treated sham group (sham group), NS-treated ischemia reperfusion injury (IRI) group (IRI group), and low- (5 g/kg·d) and high-dose (10 g/kg·d) CS-treated IRI groups (CS1 and CS2 groups), 12 rats in each group. Nephrectomy of the right kidney was performed on the IRI rat model that was subjected to 60 min of left renal pedicle occlusion followed by 12, 24, 48, and 72 h of reperfusion. The wet-to-dry (W/D) ratio of lung, levels of serum creatinine (Scr), blood urea nitrogen (BUN), inflammatory cytokines such as interleukin- β and tumor necrosis factor- α, and biomarkers of oxidative stress such as superoxide dismutase, malonaldehyde (MDA) and myeloperoxidase (MPO), were assayed. Histological examinations were conducted to determine damage of tissues in the kidney and lung. The protein expressions of light chain 3 II/light chain 3 I (LC3-II/LC3-I), uncoordinated-51-like kinase 1 (ULK1), P62, AMPK and mTOR were measured by Western blot and immunohistochemistry, respectively. The renal IRI induced pulmonary injury following AKI, resulting in significant increases in W/D ratio of lung, and the levels of Scr, BUN, inflammatory cytokines, MDA and MPO (P<0.01); all of these were reduced in the CS groups (P<0.05 or P<0.01). Compared with the IRI groups, the expression levels of P62 and mTOR were significantly lower (P<0.05 or P<0.01), while those of LC3-II/LC3-I, ULK1, and AMPK were significantly higher in the CS2 group (P<0.05 or P<0.01). CS had a potential in treating lung injury following renal IRI through activation of the autophagy-related AMPK/mTOR signaling pathway in AKI-induced ALI.",
+          "journal": "Chinese journal of integrative medicine"
+        },
+        {
+          "id": "pmid:36480757",
           "pmid": "36480757",
           "title": "The effect of low-dose Cordyceps on ischemia-reperfusion injury of the kidney in rats.",
           "year": "2022",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36480757/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "None of studies have been conducted in terms of demonstrating the same effect with the low dose in cordycepin. In our study, we analyzed the histopathological and biochemical changes of low-dose Cordycepin(c) on a rat model in the kidney. Twenty-four male Wistar Albino rats were randomly allocated to three groups (n = 8): the sham-control group (Group 1), the renal I/R-untreated (Group 2) group, and the I/R-C-treated (Group 3) group. Cordyceps was administered intraperitoneally at 5 mg/kg twice. Renal histological changes were compared and the relevant parameters of oxidative stress and inflammation were detected. In blood and tissue biochemistry, it was observed that IL-1 Beta, IL 6, TNF alpha, MDA, TOS, and OSI increased in Group 2 and decreased in Group 3. It was determined that TAS values were increased in Group 3, and decreased in Group 2. In the histopathological evaluation, while Group 1 was evaluated as normal, significant kidney damage was detected in Group 2. It was determined that there was a significant decrease in kidney damage in Group 3. These results suggest that low dose Cordycepin was as effective as normal dose on renal ischemic reperfusion and reduction of damage. Ninguno de los estudios se ha realizado en términos de demostrar el mismo efecto con la dosis baja de cordicepina. En nuestro estudio, analizamos los cambios histopatológicos y bioquímicos de Cordycepin(c) en dosis bajas en un modelo de rata con isquemia-reperfusión (I/R) inducida en el riñón. Veinticuatro ratas macho Wistar Albino se asignaron al azar a tres grupos (n = 8): el grupo de control simulado (Grupo 1), el grupo sin tratamiento I/R renal (Grupo 2) y el grupo tratado con I/R-C (Grupo 3). Cordyceps se administró por vía intraperitoneal a 5 mg/kg dos veces. Se compararon los cambios histológicos renales y se detectaron los parámetros relevantes de estrés oxidativo e inflamación. En bioquímica sanguínea y tisular se observó que IL-1 Beta, IL 6, TNF alfa, MDA, TOS y OSI aumentaron en el Grupo 2 y disminuyeron en el Grupo 3. Se determinó que los valores de TAS aumentaron en el Grupo 3, y disminuyó en el Grupo 2. En la evaluación histopatológica, mientras que el Grupo 1 fue evaluado como normal, se detectó daño renal significativo en el Grupo 2. Se determinó que hubo una disminución significativa del daño renal en el grupo 3. Estos resultados sugieren que la cordicepina en dosis bajas fue tan efectiva como la dosis normal en la reperfusión isquémica renal y la reducción del daño.",
+          "journal": "Cirugia y cirujanos"
         },
         {
-          "pmid": "39001695",
-          "title": "Effect of cordyceps militaris on growth performance, antioxidant capacity, and intestinal epithelium functions in weaned pigs.",
-          "year": "2024",
-          "design": "Unclassified",
+          "id": "pmid:24632844",
+          "pmid": "24632844",
+          "title": "Cordyceps sinensis protects against liver and heart injuries in a rat model of chronic kidney disease: a metabolomic analysis.",
+          "year": "2014",
+          "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24632844/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To test the hypothesis that the traditional Chinese medicine Cordyceps sinensis could improve the metabolic function of extrarenal organs to achieve its anti-chronic kidney disease (CKD) effects. Male SD rats were divided into CKD rats (with 5/6-nephrectomy), CKD rats treated with Cordyceps sinensis (4 mg•kg-1•d-1, po), and sham-operated rats. After an 8-week treatment, metabolites were extracted from the hearts and livers of the rats, and then subjected to (1)H-NMR-based metabolomic analysis. Oxidative stress, energy metabolism, amino acid and protein metabolism and choline metabolism were considered as links between CKD and extrarenal organ dysfunction. Within the experimental period of 8 weeks, the metabolic disorders in the liver were more pronounced than in the heart, suggesting that CKD-related extrarenal organ dysfunctions occurred sequentially rather than simultaneously. Oral administration of Cordyceps sinensis exerted statistically significant rescue effects on the liver and heart by reversely regulating levels of those metabolites that are typically perturbed in CKD. Oral administration of Cordyceps sinensis significantly attenuates the liver and heart injuries in CKD rats. The (1)H NMR-based metabolomic approach has provided a systematic view for understanding of CKD and the drug treatment, which can also be used to elucidate the mechanisms of action of other traditional Chinese medicines.",
+          "journal": "Acta pharmacologica Sinica"
         },
         {
+          "id": "pmid:35282803",
           "pmid": "35282803",
           "title": "Cordyceps Improves Obesity and its Related Inflammation via Modulation of",
           "year": "2022",
           "design": "Unclassified",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35282803/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Dysbiotic gut microbiota has been identified as a primary mediator of inherent inflammation that underlies the pathogenesis of obesity. Cordyceps comprises the larval body and the stroma of",
+          "journal": "The American journal of Chinese medicine"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 7,
+        "n_total": 7
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Cordyceps has only preliminary or animal evidence (6 studies)."
+      "summary": "For inflammation, Cordyceps has only preliminary, sparse-human, or preclinical evidence (8 graded studies).",
+      "weighted_score": {
+        "final_score": 28.9,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 93.1
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 8,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 16.197,
+          "low_tier_points_post_cap": 16.197,
+          "low_tier_cap_applied": false,
+          "total_points_R": 16.197,
+          "scaled_base_score": 28.94,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 32.7455,
+          "se_consistency_component": 2.7455,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 64.181,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 1,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 1 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.105,
+              "points": 4.419,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.135,
+              "points": 4.542,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.181,
+              "points": 4.722,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.143,
+              "points": 4.573,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 4.648,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.215,
+              "points": 4.859,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la inflamación, Cordyceps tiene solo evidencia preliminar, limitada en humanos, o preclínica (8 estudios clasificados)."
+    },
+    {
+      "outcome": "blood sugar",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 3,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:38149724",
+        "PMID:22226943",
+        "EPMC:AGR:IND609444130"
+      ],
+      "studies": [
+        {
+          "id": "epmc:agr:ind609444130",
+          "pmid": null,
+          "title": "Neomycin-sensitive gut bacteria-derived brassicasterol mediates the anti-obesity effects of Cordyceps militaris polysaccharide",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": "AGR:IND609444130",
+          "url": "https://europepmc.org/article/AGR/IND609444130",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Diet-based modulation of the gut microbiota has emerged as a promising strategy to alleviate obesity and its related complications. Our previous study demonstrated that polysaccharide derived from Cordyceps militaris (CMP) exerts anti-obesity effects, yet the specific mechanism linking gut microbiota to its metabolic impact remains unclear. Herein, we utilized murine models with distinct gut microbial profiles created via antibiotic cocktails to investigate these mechanisms. The protective effects of CMP against high-fat diet (HFD)-induced obesity and associated metabolic disturbances were substantially impaired in mice depleted of neomycin-sensitive gut bacteria. Metagenomic analyses further established that CMP required these bacteria to restore gut microbial homeostasis. Notably, we observed that CMP elevated hepatic levels of brassicasterol in a manner dependent on neomycin-sensitive gut bacteria. Brassicasterol treatment alone replicated the anti-obesity effects of CMP, as indicated by reduced body weight gain, improved lipid and glucose metabolism, and decreased inflammation. Through transcriptomic and functional analyses, we identified hepatic Apoa4 as a key downstream effector of brassicasterol. Our results indicated that brassicasterol upregulated Apoa4, facilitating lipid transport and suppressing inflammation both in vitro and in vivo. Collectively, our findings indicate that CMP exerts its anti-obesity effects through a neomycin-sensitive gut bacteria–brassicasterol–Apoa4 pathway. This work expands the mechanistic understanding of CMP and highlights a novel microbiota–metabolite–host regulatory axis for dietary intervention in metabolic disorders.",
+          "journal": "Food Research International."
+        },
+        {
+          "id": "pmid:38149724",
+          "pmid": "38149724",
+          "title": "Cordyceps cicadae polysaccharides attenuate diabetic nephropathy via the miR-30a-3p/TRIM16 axis.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38149724/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The molecular mechanism of the protective effect of Cordyceps cicadae polysaccharides (CCPs) on renal tubulointerstitial fibrosis in diabetic nephropathy (DN) is still unclear. This study aims to further understand the molecular mechanisms behind the therapeutic benefits of CCP on diabetic nephropathy. Mice were randomly assigned into six groups (n = 8). Cordyceps cicadae polysaccharide dissolved in 5% dimethyl sulfoxide was administered by gavage for 12 consecutive weeks. The CCP doses were divided into low, medium, and high, 75, 150, and 300 mg/kg/day, respectively. The efficacy of CCP was determined by assessing the renal function and histological alterations in diabetic db/db mice. The degree of glomerular mesangial dilatation and sclerosis was evaluated using semiquantitative markers. Cell viability, apoptosis, epithelial-mesenchymal transition (EMT), inflammation, oxidative stress, and mitochondrial reactive oxygen species (ROS) in high glucose (HG)-cultured MPC5 podocytes were determined. The interaction of miR-30a-3p and tripartite motif-containing protein 16 (TRIM16) was examined by luciferase reporter assay. Western blotting, reverse transcription-polymerase chain reaction, and immunofluorescence were used to analyze gene and protein expressions. The in vivo findings illustrated that CCP may protect mice with type 2 diabetes from inflammation and oxidative damage (P < 0.05). Furthermore, CCP has a therapeutic value in protecting renal function and morphology in diabetic nephropathy by reversing podocyte EMT. The in vitro results indicated that CCP dose-dependently inhibited HG-induced apoptosis, EMT, inflammation, oxidative stress, and mitochondrial ROS levels in MPC5 podocytes (P < 0.05). Luciferase reporter assay confirmed the interaction between miR-30a-3p and TRIM16 in MPC5 podocytes cultured in high glucose (P < 0.05). The protective effect of CCP on HG-induced MPC5 can be achieved by miR-30a-3p/TRIM16 axis.",
+          "journal": "Journal of diabetes investigation"
+        },
+        {
+          "id": "pmid:22226943",
+          "pmid": "22226943",
+          "title": "Effect of Cordyceps sinensis and taurine either alone or in combination on streptozotocin induced diabetes.",
+          "year": "2012",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22226943/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The present study aimed to investigate the antidiabetic effects of Cordyceps sinensis, taurine and their combination in comparison with glibenclamide both in vivo and in vitro using streptozotocin rat model. The diabetic rats were orally given glibenclamide, C. sinensis, taurine or Cordyceps and taurine combination for 21 days. Their effects were studied both in vivo and in vitro. Oral administration of Cordyceps, taurine and their combination decreased serum glucose, fructosamine, total cholesterol, triglycerides levels, insulin resistance index and pancreatic malondialdehyde content. Cordyceps significantly increased serum insulin, HDL-cholesterol, total antioxidant capacity levels, β cell function percent, and pancreatic reduced glutathione (GSH) content. However, taurine was unable to elevate pancreatic GSH level to a significant level. These natural products and their combinations were more effective than glibenclamide in reducing insulin resistance index and they had stronger antioxidant properties. Cordyceps and taurine significantly enhanced glucose uptake by diaphragms of normal and diabetic rats in absence and presence of insulin. In conclusion, Cordyceps and taurine either alone or in combination have less potent hypoglycemic effects than glibenclamide; however, they have more ability to reduce insulin resistance and stronger antioxidant properties.",
+          "journal": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 2,
+        "n_total": 2
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For blood sugar, Cordyceps has only preliminary, sparse-human, or preclinical evidence (3 graded studies).",
+      "weighted_score": {
+        "final_score": 23.6,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 90.6
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 3,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 9.684,
+          "low_tier_points_post_cap": 9.684,
+          "low_tier_cap_applied": false,
+          "total_points_R": 9.684,
+          "scaled_base_score": 23.558,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 34.2142,
+          "se_consistency_component": 4.2142,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 67.06,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 1,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 1 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.135,
+              "points": 4.542,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.212,
+              "points": 4.849,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para el azúcar en sangre, Cordyceps tiene solo evidencia preliminar, limitada en humanos, o preclínica (3 estudios clasificados)."
     }
   ],
   "effects_established": [
-    "immune function",
     "kidney function"
   ],
   "effects_promising": [
-    "exercise performance",
-    "inflammation"
+    "immune function",
+    "inflammation",
+    "blood sugar"
   ],
   "effects_emerging": [],
   "honesty_note": null,
-  "generated_by": "clarity-engine-v2",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T00:23:48.457854+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "kidney function",
+  "best_tier": "Moderate",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Emerging",
+    "Moderate"
+  ],
   "reviewed_by": "auto",
-  "_cached_at": 1787607922.066946,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.9,
+    "europepmc_s": 2.477,
+    "retrieval_total_s": 2.479,
+    "n_studies": 250,
+    "normalization_s": 0.084,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 47.1,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 68.0,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789172628.459014,
   "explanation": {
-    "what_it_is": "Cordyceps is a genus of fungi (parasitic fungi that infect insects in nature) traditionally used in Chinese medicine, now cultivated commercially for supplements. The most studied species are *Cordyceps sinensis* and *Cordyceps militaris*, sold as powders, capsules, or beverages. Active compounds include polysaccharides, nucleosides (adenosine, cordycepin), and sterols that are believed to drive its biological effects.",
-    "how_it_works": "Cordyceps polysaccharides and cordycepin appear to work through multiple pathways: they may modulate immune cell activity (particularly macrophages and T cells) via pattern-recognition receptors, influence inflammatory cytokine signaling (IL-17, IL-23 axes), and reduce oxidative stress through upregulation of antioxidant enzymes. In the kidney, active compounds have been shown in animal studies to protect against injury by dampening maladaptive immune responses and reducing fibrosis-promoting signals. The mechanisms are not fully mapped in humans, but the evidence suggests effects on both innate and adaptive immunity rather than a single target.",
+    "what_it_is_line": "A medicinal fungus (mushroom) used in traditional Chinese medicine for energy and wellness.",
+    "what_it_is": "Cordyceps is a genus of fungi — a type of mushroom — that parasitizes insects, most notably cicadas. The most studied species are Cordyceps sinensis (wild-harvested from the Himalayan plateau) and Cordyceps militaris (cultivated in labs). People typically consume it as a dried powder, a beverage, or an extract. It contains polysaccharides (long-chain sugar molecules) and other compounds that are believed to be responsible for its effects.",
+    "how_it_works_line": "Appears to activate immune cells and reduce certain inflammatory signals in animal studies.",
+    "how_it_works": "The main active components are polysaccharides — these are large carbohydrate molecules that your immune cells can recognize and respond to. In animal studies, Cordyceps polysaccharides seem to stimulate macrophages and neutrophils (types of immune cells that fight infection and clear debris), and they appear to dampen inflammatory signals like IL-23 and IL-17 (small messenger molecules that tell immune cells to ramp up inflammation). Some studies also suggest Cordyceps may protect kidney cells during injury and may influence how your body handles blood sugar through changes in gut bacteria. However, most of this evidence comes from lab and animal models — whether these mechanisms actually translate to meaningful effects in humans remains largely untested.",
+    "safety_line": "Tolerated well in small human trials; long-term safety and drug interactions are not well characterized.",
+    "safety_detail": "The one small human trial on immune function (n=10, 2024) and the trials on kidney function (ranging from n=10 to n=231, conducted 2009–2024) reported no serious adverse events during their study periods. However, these trials were short, involved small or narrow populations, and did not systematically track rare or delayed harms. One case report noted that unintentional ingestion of Cordyceps-infected cicada nymphs caused ibotenic acid poisoning (a toxic compound from a different fungus), though this was specific to wild-harvested material.",
+    "safety_bullets": [
+      "No known severe drug interactions reported in retrieved trials, but herb–drug interactions with immunosuppressants (e.g., in transplant patients) are not rigorously tested.",
+      "Pregnancy, breastfeeding, and pediatric use are absent from retrieved studies — safety in these populations is unknown.",
+      "Kidney disease patients appear in some trials, but dosing adjustments and safety in severe renal impairment are not systematically studied.",
+      "Wild-harvested Cordyceps may carry mold toxins or heavy metals; cultivated forms appear safer but long-term exposure studies are limited."
+    ],
+    "chem_meaning": "Cordyceps polysaccharides are large, polar (water-loving) molecules — they dissolve well in water, which is why they are commonly prepared as teas or extracts. Their size and complexity mean they do not readily cross cell membranes on their own; instead, they are recognized by immune cell surface receptors (docking points), triggering internal signaling cascades. This is why they work mainly as immune modulators rather than as direct chemical signals throughout the body.",
     "outcome_detail": [
       {
-        "outcome": "exercise performance",
-        "grade": "Emerging",
-        "what_studies_show": "A single 2004 randomized controlled trial (CordyMax Cs-4 formulation) found that Cordyceps sinensis supplementation did not improve endurance exercise performance in a small cohort. Sample sizes could not be verified from the abstract, making precision assessment uncertain.",
-        "why_this_grade": "Only one human study addresses this outcome and it showed no benefit. With no replication, no independent confirmation, and unverified sample size, the evidence is too thin and inconsistent to claim efficacy. The finding is preliminary."
-      },
-      {
         "outcome": "immune function",
-        "grade": "Moderate",
-        "what_studies_show": "A 2015 meta-analysis of kidney transplant recipients (n=447) and a 2024 randomized controlled trial of *Cordyceps militaris* beverage (n=10) both examined immune outcomes. A 2026 animal study showed that *Cordyceps sinensis* polysaccharide modulated macrophage and neutrophil responses. The human trials are small and the meta-analysis pools heterogeneous interventions, limiting certainty.",
-        "why_this_grade": "Two human studies support immune effects, but only one meta-analysis examines this outcome across multiple trials, and that analysis itself awaits independent replication. Sample sizes are modest (especially the RCT at n=10) and consistency cannot be fully assessed. Grade reflects meaningful but not robust human evidence."
+        "grade": "Emerging",
+        "what_studies_show": "One small randomized controlled trial (n=10, 2024) with Cordyceps militaris beverage reported measurable effects on immune markers, though results were not detailed in the abstract. Animal studies (2017–2026) using Cordyceps militaris and C. sinensis polysaccharides showed that they enhanced mucosal and serum immune responses, improved disease resistance in models, and modulated macrophage function. The evidence is limited to very small human sample sizes and no replication across independent human studies.",
+        "why_this_grade": "Only one human trial with 10 participants addresses immune outcomes directly. Consistency cannot be assessed with a single study, and the sample is very small, making precision poor. Animal data is supportive but does not reliably predict human outcomes."
       },
       {
         "outcome": "kidney function",
         "grade": "Moderate",
-        "what_studies_show": "Four human studies\u2014two meta-analyses (2015, n=447 in transplant recipients; 2014, n=1746 in chronic kidney disease) and two RCTs (2024 and 2009, n=10 and n=202 respectively)\u2014examined kidney outcomes. Three animal studies (2024, 2023, 2022) showed protective effects in diabetic nephropathy and acute hyperuricemia models. The human evidence rests primarily on two trials and two pooled analyses; effect sizes and heterogeneity data are limited.",
-        "why_this_grade": "Moderate human evidence from both primary trials and meta-analyses supports benefit in kidney disease and transplantation contexts. However, only two primary human studies underpin the data (supplemented by meta-analyses), and sample sizes are modest to small. This falls short of strong evidence but exceeds preliminary status."
+        "what_studies_show": "Four human studies (2009–2024) examined kidney-related outcomes. A 2009 RCT (n=202) on kidney transplant patients given Cordyceps sinensis reported clinical benefits; a 2011 unclassified trial (n=231) on chronic allograft nephropathy also reported positive findings; and two smaller recent trials (2024, n=10 each) measured kidney markers with Cordyceps militaris beverage. Animal studies (2022–2025) using polysaccharides or whole extracts showed protection against kidney injury from aging, ischemia, and acute insults. Together, ~443 participants are verified across a subset of studies, with larger numbers likely in trials that omitted sample size in abstracts.",
+        "why_this_grade": "Multiple independent human trials exist with clinically relevant sample sizes (largest n=231), supporting a moderate grade. No pooled analysis confirms they agree on magnitude or consistency, and heterogeneity may exist. Human evidence outweighs animal studies, grounding confidence at Moderate."
       },
       {
         "outcome": "inflammation",
         "grade": "Preliminary",
-        "what_studies_show": "All six studies retrieved are animal-based: they demonstrate that *Cordyceps* polysaccharides reduce inflammatory markers (IL-17, IL-23 signaling) and macrophage activation in models of brain ischemia, diabetic nephropathy, kidney ischemia-reperfusion injury, and obesity-related inflammation. No human studies directly measuring inflammatory biomarkers were found in the records provided.",
-        "why_this_grade": "Evidence is exclusively animal; animal models do not reliably predict human inflammatory responses. Without human data, this outcome remains preliminary and speculative regarding clinical relevance."
+        "what_studies_show": "Eight animal studies (2022–2026) demonstrated anti-inflammatory effects of Cordyceps polysaccharides or extracts across diverse models: diabetic kidney injury, ischemic brain and kidney injury, and acute kidney injury with lung involvement. These studies reported reductions in inflammatory cytokines (IL-23, IL-17) and dampening of immune cell activation pathways (macrophage pyroptosis, neutrophil extracellular traps). No human trials specifically measured inflammation as a primary outcome.",
+        "why_this_grade": "All evidence is from animal models; no human data are available. While the findings are consistent across models, animal-only evidence does not reliably predict human efficacy and is classified as Preliminary."
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Preliminary",
+        "what_studies_show": "Three animal studies (2012–2026) examined blood sugar control. A 2012 study tested Cordyceps sinensis and taurine in streptozotocin-induced diabetes; a 2024 study showed Cordyceps cicadae polysaccharides attenuated diabetic kidney damage via a specific genetic pathway (miR-30a-3p/TRIM16 axis); and a 2026 study suggested anti-obesity effects mediated by gut bacteria-derived molecules (brassicasterol). No human trials on blood sugar outcomes were retrieved.",
+        "why_this_grade": "All three studies are animal-only. Animal models of diabetes do not consistently predict effects in humans. Without human evidence, this outcome is classified as Preliminary, indicating that translation to people is unproven."
       }
     ],
-    "evidence_base": "The research base is mixed: kidney function and immune outcomes have human trials and meta-analyses (totaling ~2,400 participants across studies), while inflammation rests entirely on animal work. Most human studies are small (n=10\u2013202) and span 2004\u20132024, with recent trials using cultivated *Cordyceps militaris*. Animal studies dominate inflammation research and supply mechanistic insight, but translation to human efficacy is uncertain. Overall, the field shows growing interest and moderate human evidence for kidney and immune effects, but inflammation and exercise performance are less established in people.",
-    "emerging_research": "Recent work (2024\u20132026) has focused on *Cordyceps militaris* polysaccharides and their impact on specific immune pathways (macrophage pyroptosis, IL-23/IL-17 axes) in animal disease models, including diabetic nephropathy and ischemic injury. This suggests refined understanding of how fungal polysaccharides modulate immune tolerance, particularly relevant to transplant and kidney disease contexts. However, these remain early-stage animal findings; human trials testing these specific mechanisms are not yet evident in the retrieved records.",
-    "open_questions": "Among the studies retrieved here, human evidence for kidney function comes from small trials and meta-analyses of mixed quality\u2014the 2014 meta-analysis included 1,746 people but does not specify effect sizes or long-term durability. Exercise performance rests on a single 2004 trial; no recent replication appears in the records. Inflammation is purely animal-based with no human safety or efficacy data retrieved. The retrieved records do not include long-term follow-up (most trials appear \u226412 weeks), and outcomes in specific populations (e.g., athletes, healthy adults without kidney disease) are not well represented.",
-    "caveats": "*Cordyceps sinensis* supplements vary widely in quality and cordycepin content depending on whether they are wild-harvested, lab-cultured, or fermented\u2014standardization is inconsistent across products. As an immunomodulatory agent, *Cordyceps* may interact with immunosuppressants or be inappropriate for people with autoimmune conditions; people taking transplant-related medications should consult a clinician. Injectable or IV cordyceps formulations are not standard pharmaceuticals and carry research-chemical risks; oral supplements are more widely used but evidence for purity and bioavailability is limited.",
+    "evidence_base": "The evidence for Cordyceps is mixed in maturity: kidney function is anchored by four human trials ranging from n=10 to n=231 (2009–2024), supporting a Moderate grade; immune function rests on a single tiny human trial (n=10) and animal studies, earning Emerging status. Inflammation and blood sugar have only animal evidence (2012–2026), classified as Preliminary. Overall, human data are sparse and heterogeneous, with short trial durations. Animal studies are recent and consistent in direction but do not reliably predict human outcomes. Confidence is moderate for kidney function and low for other outcomes.",
+    "open_questions": "Within the records provided: immune function is represented by only one human study, so it is unclear whether effects are reproducible or how large they are. Kidney function includes multiple human trials, but whether they agree on efficacy and safety in different patient populations (transplant vs. chronic nephropathy vs. healthy) is not pooled or directly addressed. Inflammation and blood sugar have zero human data, so feasibility and effect size in people are completely unknown. Notably absent from all retrieved trials: pregnant or nursing individuals, children, severely immunocompromised populations, and long-term follow-up (most trials are weeks to months). Whether Cordyceps' effects persist or accumulate over years is untested.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Evidence for cordyceps is thin and mixed: exercise performance rests on a single small trial showing no benefit, immune and kidney claims rely heavily on meta-analyses of small primary studies, and inflammation data exist only in animals.",
+    "headline": "The evidence base relies heavily on animal studies and animal-only outcomes; human evidence is sparse (≤4 studies per outcome), underpowered (median n=10 for immune function), and lacks pooled analysis to confirm consistency.",
     "concerns": [
       {
-        "issue": "Exercise performance: single negative trial only",
-        "detail": "The 'Emerging' grade for exercise performance is based entirely on one 2004 RCT that found cordyceps did NOT improve endurance performance. Sample sizes cannot be extracted from the abstract, so the trial's precision is unknown. A single study\u2014especially one showing a null result\u2014cannot establish efficacy, and this outcome should be understood as currently unsupported rather than 'emerging.'",
+        "issue": "Animal-only evidence for two key claims",
+        "detail": "Both inflammation (8/8 animal) and blood sugar (3/3 animal) rest entirely on animal studies with no human data. The engine correctly flags this as 'indirectness'; animal models of immune dysregulation and glucose control often fail to reproduce in humans. This means two of four graded outcomes have zero translational support.",
         "severity": "high"
       },
       {
-        "issue": "Kidney function evidence dominated by two large meta-analyses",
-        "detail": "Of 4 human studies cited for kidney function, two are meta-analyses (2014, 2015) enrolling 447 and 1,746 participants respectively. Only 2 primary RCTs are listed (n=10 and n=202), and the smaller RCT is extremely underpowered. The 'Moderate' grade rests largely on pooled analyses of unstated primary trial quality and consistency; the engine itself notes 'Limited human evidence' below top tier, yet the grade remained Moderate.",
+        "issue": "Severe underpowering of human immune function evidence",
+        "detail": "Only one human RCT addresses immune function (n=10, 2024), making this the sole human data point. The engine notes this produces 'imprecision,' but the practical implication is stark: a single small trial cannot reliably establish efficacy. One outlier result or unblinded bias would dramatically shift inference.",
         "severity": "high"
       },
       {
-        "issue": "Immune function: very small RCT alongside meta-analysis",
-        "detail": "One of the two human immune function studies is an RCT with n=10 (2024), which is unable to detect realistic effect sizes and carries extreme sampling variability. The meta-analysis (n=447, 2015) is single and not independently replicated. The engine notes consistency cannot be assessed beyond the one meta-analysis; a single pooled analysis is not sufficient to claim 'Moderate' confidence without knowing whether the underlying primary studies were methodologically sound.",
+        "issue": "Kidney function graded 'Moderate' despite inconsistency signals",
+        "detail": "Three human studies (n=10, 202, 231) exist for kidney outcomes, but the engine explicitly states 'consistency cannot be assessed' and notes the grade is 'held at moderate pending review.' No pooled meta-analysis is extractable, meaning disagreement among trials is unresolved. Two RCTs with n=10 and n=202 are dramatically different in scale; smaller trial could easily differ from larger due to chance.",
         "severity": "high"
       },
       {
-        "issue": "Inflammation: animal-only evidence with unknown sample sizes",
-        "detail": "All 6 studies on inflammation are animal models (rats, likely); none are human trials. Four are unclassified by study design or have design details not stated. No sample sizes are extractable from the abstracts provided. The engine correctly flags 'Indirectness' but the 'Preliminary' grade still appears optimistic given this is zero human data and mechanistic leap to clinical relevance is unverified.",
+        "issue": "Sparse and inconsistent reporting of sample sizes",
+        "detail": "For immune function, only 1 of 5 studies reports n; for inflammation, zero of 8; for blood sugar, zero of 3. This makes it impossible to assess whether the true evidence base is underpowered or merely poorly reported. The kidney function outcome is the exception (3 of 11 reported), but still leaves 8 studies opaque to scrutiny.",
         "severity": "moderate"
       },
       {
-        "issue": "Meta-analyses lack stated replication and quality assessment visibility",
-        "detail": "Three meta-analyses are cited (2014, 2015 for kidney; 2015 for immune function). The engine notes that for immune function, 'a single meta-analysis exists, but its conclusion is not independently replicated or verified.' For the kidney meta-analyses, no information is visible about which primary studies were pooled, their methodological quality, or heterogeneity; this limits confidence in the pooled estimates. Sample size reporting is also incomplete (4 of 7 studies for kidney report n).",
+        "issue": "Multiple cordyceps species and preparation types not unified",
+        "detail": "Trials use C. militaris, C. sinensis, C. cicadae, and C. cateniannulata, often as beverages, polysaccharides, or spent substrate. No subgroup analysis or head-to-head comparison is visible in the records. This heterogeneity limits whether observed effects generalize to a consumer purchasing 'cordyceps' without knowing which species or formulation.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The studies cite polysaccharide components and immunomodulatory or anti-inflammatory pathways (e.g., macrophage pyroptosis, miR-30a-3p/TRIM16 axis, IL-23 signaling). These are plausible mechanisms in animal models, but the leap from rodent ischemia-reperfusion models or in vitro immune assays to human kidney transplant outcomes or chronic kidney disease is large and not bridged by mechanistic human data. The mechanism is biologically coherent but does not validate the clinical claims in the absence of robust human efficacy trials.",
-    "strongest_counterargument": "A well-informed skeptic would note that the single exercise trial found *no* benefit, and for kidney function the evidence rests on two meta-analyses (2014, 2015) whose primary trial quality is not visible here; those meta-analyses may have pooled weak or high-bias studies. The immune function RCT is underpowered (n=10), and inflammation is purely animal-based. Taken together, there is no compelling human evidence that cordyceps improves any of these outcomes\u2014the 'Moderate' grades for immune and kidney function appear generous given the methodological thinness of the underlying primary research.",
-    "what_would_change_the_picture": "Large, well-controlled RCTs (n\u2265100\u2013200) in specific patient populations (e.g., chronic kidney disease, post-transplant immunosuppression, or exercise-limited populations) with pre-registered primary outcomes and transparent reporting of safety and adherence would be needed. Independent replication of the kidney and immune meta-analyses, with quality assessment of included trials and sensitivity analyses for publication bias, would also clarify whether the current pooled results are robust or driven by small, low-quality studies.",
+    "mechanism_check": "Animal studies identify plausible mechanisms (e.g., macrophage pyroptosis disruption, miR-30a-3p/TRIM16 axis for diabetic nephropathy), but these are mechanistic pathways in rodent models, not evidence that the same pathways are rate-limiting in human disease. The leap from 'cordyceps polysaccharides modulate an inflammatory pathway in mice' to 'cordyceps improves kidney function in humans' is substantial and depends entirely on whether the pathway is relevant at human physiological doses—something the animal studies do not establish. For blood sugar and inflammation, this gap is especially wide because there are zero human trials to bridge it.",
+    "strongest_counterargument": "A skeptic would note that the kidney function outcome, the most mature in the evidence base, rests on three human trials of very unequal weight (n=10, 202, 231), with no meta-analysis confirming they point the same direction. The observational study is a case report of poisoning, not evidence of benefit. The two RCTs may disagree (common in small trials), and the engine's hedging ('held at moderate pending review') suggests the graders themselves are uncertain. For immune function and inflammation, the evidence is frankly pre-clinical: animal models do not reliably predict human efficacy, and the complete absence of human inflammation or blood-sugar trials makes any claim about these outcomes speculative.",
+    "what_would_change_the_picture": "A well-powered (n≥100 per arm) RCT using a single standardized cordyceps preparation with pre-registered primary outcomes and adequate blinding for immune, inflammatory, or metabolic endpoints would provide direct human evidence. Alternatively, a prospective meta-analysis pooling the three kidney function RCTs with sensitivity analysis for trial size would clarify whether effects are consistent or driven by a single outlier study.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Un hongo medicinal (champiñón) utilizado en la medicina tradicional china para la energía y el bienestar.",
+    "what_it_is": "Cordyceps es un género de hongos —un tipo de champiñón— que parasita insectos, especialmente cicadas. Las especies más estudiadas son Cordyceps sinensis (cosechada silvestremente en la meseta del Himalaya) y Cordyceps militaris (cultivada en laboratorios). Las personas típicamente la consumen como polvo seco, bebida o extracto. Contiene polisacáridos (moléculas de azúcar de cadena larga) y otros compuestos que se cree son responsables de sus efectos.",
+    "how_it_works_line": "Parece activar células inmunitarias y reducir ciertos señales inflamatorios en estudios animales.",
+    "how_it_works": "Los principales componentes activos son polisacáridos —estas son moléculas de carbohidrato grandes que tus células inmunitarias pueden reconocer y responder. En estudios animales, los polisacáridos de Cordyceps parecen estimular macrófagos y neutrófilos (tipos de células inmunitarias que combaten la infección y limpian desechos), y parecen amortiguar señales inflamatorias como IL-23 e IL-17 (pequeñas moléculas mensajeras que indican a las células inmunitarias que intensifiquen la inflamación). Algunos estudios también sugieren que Cordyceps puede proteger las células renales durante la lesión y puede influir en cómo tu cuerpo maneja el azúcar en la sangre a través de cambios en las bacterias intestinales. Sin embargo, la mayoría de esta evidencia proviene de modelos de laboratorio y animales —si estos mecanismos realmente se traducen en efectos significativos en humanos sigue siendo en gran medida no probado.",
+    "safety_line": "Bien tolerado en pequeños ensayos humanos; la seguridad a largo plazo y las interacciones farmacológicas no están bien caracterizadas.",
+    "safety_detail": "El único pequeño ensayo humano sobre función inmunitaria (n=10, 2024) y los ensayos sobre función renal (que van desde n=10 hasta n=231, realizados 2009–2024) no reportaron eventos adversos graves durante sus períodos de estudio. Sin embargo, estos ensayos fueron cortos, involucraron poblaciones pequeñas o restringidas, y no rastrearon sistemáticamente daños raros o retrasados. Un reporte de caso señaló que la ingesta involuntaria de ninfas de cicadas infectadas por Cordyceps causó envenenamiento por ácido iboténico (un compuesto tóxico de un hongo diferente), aunque esto fue específico del material cosechado silvestremente.",
+    "safety_bullets": [
+      "Sin interacciones farmacológicas graves conocidas reportadas en ensayos recuperados, pero las interacciones hierba-fármaco con inmunosupresores (por ejemplo, en pacientes trasplantados) no están rigurosamente probadas.",
+      "El uso en embarazo, lactancia y pediátrico están ausentes en los estudios recuperados —la seguridad en estas poblaciones es desconocida.",
+      "Pacientes con enfermedad renal aparecen en algunos ensayos, pero ajustes de dosis y seguridad en insuficiencia renal grave no están estudiados sistemáticamente.",
+      "Cordyceps cosechada silvestremente puede llevar toxinas de moho o metales pesados; las formas cultivadas parecen más seguras pero los estudios de exposición a largo plazo son limitados."
+    ],
+    "chem_meaning": "Los polisacáridos de Cordyceps son moléculas grandes y polares (amantes del agua) —se disuelven bien en agua, por eso se preparan comúnmente como tés o extractos. Su tamaño y complejidad significan que no cruzan fácilmente las membranas celulares por sí solas; en cambio, son reconocidos por receptores en la superficie de células inmunitarias (puntos de acoplamiento), desencadenando cascadas de señalización interna. Por eso funcionan principalmente como moduladores inmunitarios en lugar de como señales químicas directas en todo el cuerpo.",
+    "outcome_detail": [
+      {
+        "outcome": "immune function",
+        "grade": "Emergente",
+        "what_studies_show": "Un pequeño ensayo controlado aleatorizado (n=10, 2024) con bebida de Cordyceps militaris reportó efectos medibles en marcadores inmunitarios, aunque los resultados no fueron detallados en el resumen. Estudios animales (2017–2026) utilizando polisacáridos de Cordyceps militaris y C. sinensis mostraron que mejoraron respuestas inmunitarias mucosas y séricas, mejoraron la resistencia a enfermedades en modelos y modularon la función de macrófagos. La evidencia se limita a tamaños de muestra humanos muy pequeños y sin replicación en estudios humanos independientes.",
+        "why_this_grade": "Solo un ensayo humano con 10 participantes aborda resultados inmunitarios directamente. La consistencia no puede evaluarse con un único estudio, y la muestra es muy pequeña, haciendo que la precisión sea deficiente. Los datos animales son de apoyo pero no predicen confiablemente resultados humanos.",
+        "outcome_key": "immune function",
+        "outcome_es": "función inmunitaria"
+      },
+      {
+        "outcome": "kidney function",
+        "grade": "Moderada",
+        "what_studies_show": "Cuatro estudios humanos (2009–2024) examinaron resultados relacionados con los riñones. Un ECA de 2009 (n=202) en pacientes trasplantados de riñón tratados con Cordyceps sinensis reportó beneficios clínicos; un ensayo sin clasificar de 2011 (n=231) sobre nefropatía de aloinjerto crónico también reportó hallazgos positivos; y dos ensayos recientes más pequeños (2024, n=10 cada uno) midieron marcadores renales con bebida de Cordyceps militaris. Estudios animales (2022–2025) utilizando polisacáridos o extractos completos mostraron protección contra lesión renal por envejecimiento, isquemia e insultos agudos. Juntos, ~443 participantes están verificados en un subconjunto de estudios, con números probablemente mayores en ensayos que omitieron tamaño de muestra en resúmenes.",
+        "why_this_grade": "Existen múltiples ensayos humanos independientes con tamaños de muestra clínicamente relevantes (mayor n=231), apoyando una calificación Moderada. Ningún análisis agrupado confirma que coincidan en magnitud o consistencia, y puede existir heterogeneidad. La evidencia humana supera los estudios animales, fundamentando la confianza en Moderada.",
+        "outcome_key": "kidney function",
+        "outcome_es": "función renal"
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Preliminar",
+        "what_studies_show": "Ocho estudios animales (2022–2026) demostraron efectos antiinflamatorios de polisacáridos o extractos de Cordyceps en modelos diversos: lesión renal diabética, lesión cerebral e isquémica renal, y lesión renal aguda con afectación pulmonar. Estos estudios reportaron reducciones en citocinas inflamatorias (IL-23, IL-17) y amortiguación de vías de activación de células inmunitarias (piroptosis de macrófagos, trampas extracelulares de neutrófilos). Ningún ensayo humano midió específicamente inflamación como resultado primario.",
+        "why_this_grade": "Toda la evidencia proviene de modelos animales; no hay datos humanos disponibles. Si bien los hallazgos son consistentes en modelos, la evidencia solo en animales no predice confiablemente la eficacia humana y se clasifica como Preliminar.",
+        "outcome_key": "inflammation",
+        "outcome_es": "inflamación"
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Preliminar",
+        "what_studies_show": "Tres estudios animales (2012–2026) examinaron el control del azúcar en sangre. Un estudio de 2012 probó Cordyceps sinensis y taurina en diabetes inducida por estreptozotocina; un estudio de 2024 mostró que polisacáridos de Cordyceps cicadae atenuaron daño renal diabético a través de una vía genética específica (eje miR-30a-3p/TRIM16); y un estudio de 2026 sugirió efectos anti-obesidad mediados por moléculas derivadas de bacterias intestinales (brassicasterol). No se recuperaron ensayos humanos sobre resultados de azúcar en sangre.",
+        "why_this_grade": "Los tres estudios son solo en animales. Los modelos animales de diabetes no predicen consistentemente efectos en humanos. Sin evidencia humana, este resultado se clasifica como Preliminar, indicando que la traducción a personas no está probada.",
+        "outcome_key": "blood sugar",
+        "outcome_es": "azúcar en sangre"
+      }
+    ],
+    "evidence_base": "La evidencia para Cordyceps tiene madurez mixta: la función renal está anclada por cuatro ensayos humanos que van desde n=10 hasta n=231 (2009–2024), apoyando una calificación Moderada; la función inmunitaria descansa en un único ensayo humano diminuto (n=10) y estudios animales, ganando estado Emergente. Inflamación y azúcar en sangre tienen solo evidencia animal (2012–2026), clasificada como Preliminar. En general, los datos humanos son escasos y heterogéneos, con duraciones de ensayo cortas. Los estudios animales son recientes y consistentes en dirección pero no predicen confiablemente resultados humanos. La confianza es moderada para función renal y baja para otros resultados.",
+    "open_questions": "Dentro de los registros proporcionados: la función inmunitaria está representada por solo un estudio humano, por lo que es incierto si los efectos son reproducibles o cuán grandes son. La función renal incluye múltiples ensayos humanos, pero si coinciden en eficacia y seguridad en diferentes poblaciones de pacientes (trasplante vs. nefropatía crónica vs. saludable) no está agrupado ni abordado directamente. Inflamación y azúcar en sangre tienen cero datos humanos, por lo que la viabilidad y tamaño del efecto en personas son completamente desconocidos. Notablemente ausente de todos los ensayos recuperados: individuos embarazadas o en lactancia, niños, poblaciones gravemente inmunodeprimidas, y seguimiento a largo plazo (la mayoría de los ensayos duran semanas a meses). Si los efectos de Cordyceps persisten o se acumulan en años no está probado.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "La base de evidencia depende fuertemente de estudios en animales y resultados solo en animales; la evidencia en humanos es escasa (≤4 estudios por resultado), insuficientemente potente (mediana n=10 para función inmunológica), y carece de análisis agrupado para confirmar consistencia.",
+    "concerns": [
+      {
+        "issue": "Evidencia solo en animales para dos afirmaciones clave",
+        "detail": "Tanto la inflamación (8/8 animal) como el azúcar en sangre (3/3 animal) descansan enteramente en estudios en animales sin datos en humanos. El motor correctamente señala esto como 'indirectness'; los modelos animales de disregulación inmunológica y control de glucosa frecuentemente fallan en reproducirse en humanos. Esto significa que dos de cuatro resultados clasificados tienen cero apoyo translacional.",
+        "severity": "high"
+      },
+      {
+        "issue": "Insuficiencia severa de potencia de la evidencia de función inmunológica en humanos",
+        "detail": "Solo un ensayo clínico aleatorizado en humanos aborda función inmunológica (n=10, 2024), lo que lo convierte en el único punto de datos en humanos. El motor señala que esto produce 'imprecision', pero la implicación práctica es clara: un único ensayo pequeño no puede establecer eficacia de manera confiable. Un resultado atípico o sesgo no enmascarado cambiaría dramáticamente la inferencia.",
+        "severity": "high"
+      },
+      {
+        "issue": "Función renal clasificada 'Moderada' a pesar de señales de inconsistencia",
+        "detail": "Existen tres estudios en humanos (n=10, 202, 231) para resultados renales, pero el motor explícitamente establece que 'la consistencia no puede ser evaluada' y señala que la clasificación está 'mantenida en moderada pendiente de revisión.' No hay metanálisis agrupado extraíble, lo que significa que el desacuerdo entre ensayos no se ha resuelto. Dos ensayos clínicos aleatorizados con n=10 y n=202 son dramáticamente diferentes en escala; el ensayo más pequeño podría fácilmente diferir del más grande debido al azar.",
+        "severity": "high"
+      },
+      {
+        "issue": "Reporte escaso e inconsistente de tamaños de muestra",
+        "detail": "Para función inmunológica, solo 1 de 5 estudios reporta n; para inflamación, cero de 8; para azúcar en sangre, cero de 3. Esto hace imposible evaluar si la verdadera base de evidencia está insuficientemente potente o meramente mal reportada. El resultado de función renal es la excepción (3 de 11 reportados), pero aún deja 8 estudios opacos al escrutinio.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Múltiples especies de cordyceps y tipos de preparación no unificados",
+        "detail": "Los ensayos utilizan C. militaris, C. sinensis, C. cicadae, y C. cateniannulata, frecuentemente como bebidas, polisacáridos, o sustrato gastado. No hay análisis de subgrupos ni comparación directa visible en los registros. Esta heterogeneidad limita si los efectos observados generalizan a un consumidor que compra 'cordyceps' sin saber cuál especie o formulación es.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Los estudios en animales identifican mecanismos plausibles (p. ej., disrupción de piroptosis de macrófagos, eje miR-30a-3p/TRIM16 para nefropatía diabética), pero estas son vías mecanísticas en modelos de roedores, no evidencia de que las mismas vías sean limitantes en enfermedad humana. El salto de 'polisacáridos de cordyceps modulan una vía inflamatoria en ratones' a 'cordyceps mejora función renal en humanos' es sustancial y depende completamente de si la vía es relevante a dosis fisiológicas en humanos—algo que los estudios en animales no establecen. Para azúcar en sangre e inflamación, esta brecha es especialmente amplia porque hay cero ensayos en humanos para cerrarla.",
+    "strongest_counterargument": "Un escéptico señalaría que el resultado de función renal, el más maduro en la base de evidencia, descansa en tres ensayos en humanos de peso muy desigual (n=10, 202, 231), sin metanálisis confirmando que apunten en la misma dirección. El estudio observacional es un reporte de caso de envenenamiento, no evidencia de beneficio. Los dos ensayos clínicos aleatorizados pueden estar en desacuerdo (común en ensayos pequeños), y la cautela del motor ('mantenida en moderada pendiente de revisión') sugiere que los evaluadores mismos están inciertos. Para función inmunológica e inflamación, la evidencia es francamente preclínica: los modelos animales no predicen confiablemente eficacia en humanos, y la ausencia completa de ensayos en humanos sobre inflamación o azúcar en sangre hace que cualquier afirmación sobre estos resultados sea especulativa.",
+    "what_would_change_the_picture": "Un ensayo clínico aleatorizado bien potenciado (n≥100 por brazo) utilizando una única preparación de cordyceps estandarizada con resultados primarios pre-registrados y enmascaramiento adecuado para resultados inmunológicos, inflamatorios o metabólicos proporcionaría evidencia directa en humanos. Alternativamente, un metanálisis prospectivo agrupando los tres ensayos clínicos aleatorizados de función renal con análisis de sensibilidad para tamaño de ensayo aclararía si los efectos son consistentes o impulsados por un único estudio atípico.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

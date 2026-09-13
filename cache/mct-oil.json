@@ -1,316 +1,369 @@
 {
-  "name": "mct-oil",
-  "category": "supplement",
-  "overall_score": 76,
+  "name": "MCT Oil",
+  "category": "fat",
+  "overall_score": 73,
   "tier": "Moderate",
-  "study_count": 28,
+  "study_count": 19,
+  "unique_human_study_count": 13,
+  "unique_animal_study_count": 6,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 25,
   "claims": [
-    {
-      "outcome": "weight / fat loss",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 4,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:28689741",
-        "PMID:18326600",
-        "PMID:18845704",
-        "PMID:30990747"
-      ],
-      "studies": [
-        {
-          "pmid": "28689741",
-          "title": "Coconut oil has less satiating properties than medium chain triglyceride oil.",
-          "year": "2017",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "18326600",
-          "title": "Weight-loss diet that includes consumption of medium-chain triacylglycerol oil leads to a greater rate of weight and fat mass loss than does olive oil.",
-          "year": "2008",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "18845704",
-          "title": "Medium chain triglyceride oil consumption as part of a weight loss diet does not lead to an adverse metabolic profile when compared to olive oil.",
-          "year": "2008",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "30990747",
-          "title": "Medium-chain triglyceride diet stimulates less GIP secretion and suppresses body weight and fat mass gain compared with long-chain triglyceride diet.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [
-          {
-            "pmid": "18326600",
-            "metric": "mean_diff",
-            "value": -1.67,
-            "ci_low": -3.34,
-            "ci_high": 0.0,
-            "ci_estimated": true,
-            "converted": false,
-            "tier": "dashed",
-            "status": "derived",
-            "comparator": "vs olive oil",
-            "direction": "benefit",
-            "quote": "MCT oil consumption resulted in lower endpoint body weight than did olive oil (-1.67 +/- 0.67 kg, unadjusted P = 0.013)"
-          }
-        ],
-        "n_not_reported": 3,
-        "n_total": 4
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "effects not poolable (mixed or unit-bearing metrics)"
-      },
-      "headline_effect": null,
-      "summary": "For weight / fat loss, mct-oil has moderate human evidence (4 studies)."
-    },
     {
       "outcome": "cholesterol / lipids",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 21,
+      "n_studies": 19,
       "grade_reasons": [
-        "Precision: ~162 participants verified across 3 of 21 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Precision: ~140 participants verified across 2 of 19 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified — held at moderate."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 12,
-        "n_animal_studies": 9,
+        "n_human_studies": 13,
+        "n_animal_studies": 6,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:34255085",
-        "PMID:33268017",
-        "PMID:35470782",
         "PMID:28689741",
         "PMID:27885786",
+        "PMID:33268017",
         "PMID:17468085",
-        "PMID:34397733",
-        "PMID:41942638",
         "PMID:32801267",
-        "PMID:20513174",
-        "PMID:27115157",
-        "PMID:31869355",
+        "PMID:35470782",
+        "PMID:34397733",
         "PMID:22030098",
-        "PMID:39377959",
+        "PMID:27115157",
+        "PMID:20513174",
+        "PMID:41942638",
         "PMID:9988780",
-        "PMID:18845704",
-        "PMID:30553406",
-        "PMID:2366103",
-        "PMID:6686684",
-        "PMID:22181977",
-        "PMID:30990747"
+        "PMID:36904147",
+        "PMID:39766621",
+        "PMID:39377959",
+        "PMID:40337100",
+        "PMID:35433045",
+        "PMID:37721993"
       ],
       "studies": [
         {
+          "id": "pmid:34255085",
           "pmid": "34255085",
           "title": "Medium-Chain Triglyceride Oil and Blood Lipids: A Systematic Review and Meta-Analysis of Randomized Trials.",
           "year": "2021",
           "design": "Meta-analysis",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34255085/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Dietary saturated fat raises total cholesterol and LDL cholesterol levels. It is unclear whether these effects differ by the fatty acid chain lengths of saturated fats; particularly, it is unclear whether medium-chain fatty acids increase lipid levels. We conducted a systematic review to determine the effects of medium-chain triglyceride (MCT) oil, consisting almost exclusively of medium-chain fatty acids (6:0-10:0), on blood lipids. We searched Medline and Embase through March 2020 for randomized trials with a minimum 2-week intervention period that compared MCT oil with another fat or oil. Outcomes were total cholesterol, LDL cholesterol, HDL cholesterol, and triglyceride levels. Included studies were restricted to adults above 18 years of age. Studies conducted in populations receiving enteral or parenteral nutrition were excluded. Data were pooled using a random-effects meta-analysis. Seven articles were included in the meta-analysis; LDL cholesterol and HDL cholesterol were reported in 6 studies. MCT oil intake did not affect total cholesterol (0.04 mmol/L; 95% CI, -0.11 to 0.20; I2 = 33.6%), LDL cholesterol (0.02 mmol/L; 95% CI, -0.13 to 0.17; I2 = 28.7%), or HDL cholesterol (-0.01 mmol/L; 95% CI, -0.10 to 0.09; I2 = 74.1%) levels, but did increase triglycerides (0.14 mmol/L; 95% CI, 0.01-0.27; I2 = 42.8%). Subgroup analyses showed that the effects of MCT oil on total cholesterol and LDL cholesterol differed based on the fatty acid profile of the control oil (Pinteraction = 0.003 and 0.008, respectively), with MCT oil increasing total cholesterol and LDL cholesterol when compared to a comparator consisting predominantly of unsaturated fatty acids, and with some evidence for reductions when compared to longer-chain SFAs. MCT oil does not affect total cholesterol, LDL cholesterol, or HDL cholesterol levels, but does cause a small increase in triglycerides.",
+          "journal": "The Journal of nutrition"
         },
         {
+          "id": "pmid:39377959",
           "pmid": "39377959",
           "title": "Comparison of the Effect of Omega-3 vs. MCT Supplementation on Iron-Related Indices in Patients Undergoing Dialysis.",
           "year": "2025",
           "design": "RCT",
           "population": "human",
-          "n": 120
+          "n": 120,
+          "doi": "10.1007/s12011-024-04349-4",
+          "epmc_id": "MED:39377959",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39377959/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Chronic kidney disease (CKD), characterized by progressive kidney failure, significantly increases mortality and comorbidity risks such as anemia. This study contrasts the impacts of omega-3 and medium-chain triglycerides (MCT) oil on levels of iron, ferritin, total iron-binding capacity (TIBC), hemoglobin (Hb), and transferrin saturation in patients with CKD undergoing dialysis. This interventional trial was conducted on 120 patients with CKD undergoing dialysis in Rasht, Iran. For 8 weeks, the omega-3 group was orally administered three 1000-mg capsules of omega-3 fatty acid supplement, and the MCT group was administered three 1000-mg capsules containing MCT oil daily. Serum concentrations of ferritin, iron, TIBC, Hb, and transferrin saturation were assessed pre-intervention and after the intervention. There was a significant increase in serum iron levels in the MCT group compared to the omega-3 group (103.72 ± 57.8 vs. 77.48±40.13; P = 0.031). No effect was found regarding other iron-related factors such as TIBC, Hb, transferrin saturation, and ferritin levels. The results of our study indicated that taking MCT oil increased serum iron levels compared to omega-3 supplementation in patients with CKD undergoing dialysis. Further research is needed to better understand the potential benefits of MCT oils in patients with CKD.",
+          "journal": "Biological trace element research"
         },
         {
+          "id": "pmid:34397733",
           "pmid": "34397733",
           "title": "Efficacy of medium-chain triglyceride oil massage on growth in preterm infants: a randomized controlled trial: A CONSORT-compliant article.",
           "year": "2021",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34397733/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Medium-chain triglyceride (MCT) oil consists of 8-12 carbons with higher absorption and provides better calories than long-chain triglyceride oil. This study was to explore the effect of MCT oil massage on growth in preterm infants. A prospective, single-blind, randomized (two treatments and one control) study was conducted. Preterm infants weighing between 1500 and 2000 g were recruited and randomly assigned to three groups: the MCT oil massage, massage alone and no massage groups. The standardized massage intervention consisted of two 5-min phases, including tactile and kinesthetic stimulation, which were given three times a day for 7 consecutive days. Premature infants in the oil massage group received massage with 10 mL/kg/day of MCT oil divided equally into three applications. Weight, length and head circumference were measured in the three groups at birth and on study days 1 to 7. Forty-eight neonates were evaluated with 16 in each of three groups. The linear mixed effect model was adjusted for other factors, and results showed that weight gain on the 4th day in the oil massage group was greater than that in the no massage group (P < .05). From the 5th to 7th day, weight gain in the oil massage group was greater than that in the other two groups (P < .05). Regarding head circumference and height, this study found that the MCT oil massage group did not have better results than the other two groups. No adverse events were noted in the massage groups. The results indicate that preterm infant daily massage with MCT oil is an effective intervention for weight gain that should be recognized as part of low-birth-weight infant developmental care. clinicaltrials.gov identifier NCT04281563, Registered on 24 February 2020.",
+          "journal": "Medicine"
         },
         {
+          "id": "pmid:28689741",
           "pmid": "28689741",
           "title": "Coconut oil has less satiating properties than medium chain triglyceride oil.",
           "year": "2017",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28689741/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "It is well established that the consumption of medium-chain triglycerides (MCT) can increase satiety and reduce food intake. Many media articles promote the use of coconut oil for weight loss advocating similar health benefits to that of MCT. The aim of this study was to examine the effect of MCT oil compared to coconut oil and control oil on food intake and satiety. Following an overnight fast, participants consumed a test breakfast smoothie containing 205kcal of either (i) MCT oil (ii) coconut oil or (iii) vegetable oil (control) on three separate test days. Participants recorded appetite ratings on visual analogue scales and were presented with an ad libitum lunch meal of preselected sandwiches 180min after consumption of the breakfast. The results showed a significant difference in energy and macronutrient intakes at the ad libitum meal between the three oils with the MCT oil reducing food intake compared to the coconut and control oil. Differences in food intake throughout the day were found for energy and fat, with the control having increased food intake compared to the MCT and coconut. The MCT also increased fullness over the three hours after breakfast compared to the control and coconut oils. The coconut oil was also reported as being less palatable than the MCT oil. The results of this study confirm the differences that exist between MCT and coconut oil such that coconut oil cannot be promoted as having similar effects to MCT oil on food intake and satiety.",
+          "journal": "Physiology & behavior"
         },
         {
+          "id": "pmid:27885786",
           "pmid": "27885786",
           "title": "Effects of flaxseed oil on blood hepcidin and hematologic factors in hemodialysis patients.",
           "year": "2017",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27885786/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "In hemodialysis (HD) patients, one of the common complications is renal anemia. Therefore, the present study was designed to investigate the effects of flaxseed oil consumption on blood hepcidin and hematologic factors in HD patients. In this randomized, double-blind, clinical trial, 38 HD patients were randomly assigned to either the flaxseed oil or the control group. The patients in the flaxseed oil group received 6 g/d flaxseed oil for 8 wk, whereas the control group received 6 g/d medium chain triglycerides (MCT) oil. At baseline and the end of week 8, serum hepcidin, and blood hemoglobin, hematocrit, red blood cells (RBCs), mean corpuscular volume (MCV), mean corpuscular hemoglobin (MCH), and mean corpuscular hemoglobin concentration (MCHC) were measured after a 12- to 14-h fast. Flaxseed oil consumption significantly reduced serum hepcidin concentration up to 25% during 8 weeks, and the reduction was significant in comparison with the MCT oil group. In addition, the number of RBCs, blood hemoglobin, hematocrit, MCH and MCHC increased significantly in the flaxseed oil group up to 6%, 10%, 6%, 5%, and 2%, respectively, and these elevations were significant in comparison with the MCT oil group. There was no significant difference between the two groups in mean changes of MCV. This study indicates that daily consumption of 6 g flaxseed oil reduces serum hepcidin and improves hematologic factors in HD patients.",
+          "journal": "Hemodialysis international. International Symposium on Home Hemodialysis"
         },
         {
+          "id": "pmid:27115157",
           "pmid": "27115157",
           "title": "Effect of flaxseed oil on serum systemic and vascular inflammation markers and oxidative stress in hemodialysis patients: a randomized controlled trial.",
           "year": "2016",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27115157/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The aim of this study was to investigate the effects of flaxseed oil consumption on serum systemic and vascular inflammation markers, and oxidative stress in hemodialysis (HD) patients. In this randomized, double-blind, clinical trial, 34 HD patients were randomly assigned to either the flaxseed oil or the control group. The patients in the flaxseed oil group received 6 g/day flaxseed oil for 8 week, whereas the control group received 6 g/day medium-chain triglycerides (MCT) oil. At baseline and the end of week 8, serum concentrations of high-sensitive C-reactive protein (hs-CRP), soluble intercellular adhesion molecule type 1 (sICAM-1), soluble vascular cell adhesion molecule type 1 (sVCAM-1), sE-selectin, and malondialdehyde (MDA) were measured after a 12- to 14-h fast. Serum hs-CRP, a systemic inflammation marker, and sVCAM-1, a vascular inflammation marker, reduced significantly in the flaxseed oil group at the end of week 8 compared to baseline (P < 0.05), and the reductions were significant in comparison with the MCT oil group (P < 0.05). There were no significant differences between the two groups in mean changes in serum sICAM-1, sE-selectin, and MDA. This study indicates that daily consumption of 6 g flaxseed oil reduces serum hs-CRP and sVCAM-1, which are two risk factors for CVD. Therefore, the inclusion of flaxseed oil in the usual diet of HD patients can be considered as a strategy for reducing CVD risk factors.",
+          "journal": "International urology and nephrology"
         },
         {
+          "id": "pmid:22030098",
           "pmid": "22030098",
           "title": "Substrate oxidation and cardiac performance during exercise in disorders of long chain fatty acid oxidation.",
           "year": "2012",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22030098/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The use of long-chain fatty acids (LCFAs) for energy is inhibited in inherited disorders of long-chain fatty acid oxidation (FAO). Increased energy demands during exercise can lead to cardiomyopathy and rhabdomyolysis. Medium-chain triglycerides (MCTs) bypass the block in long-chain FAO and may provide an alternative energy substrate to exercising muscle. To determine the influence of isocaloric MCT versus carbohydrate (CHO) supplementation prior to exercise on substrate oxidation and cardiac workload in participants with carnitine palmitoyltransferase 2 (CPT2), very long-chain acyl-CoA dehydrogenase (VLCAD) and long-chain 3-hydroxyacyl CoA dehydrogenase (LCHAD) deficiencies. Eleven subjects completed two 45-minute, moderate intensity, treadmill exercise studies in a randomized crossover design. An isocaloric oral dose of CHO or MCT-oil was administered prior to exercise; hemodynamic and metabolic indices were assessed during exertion. When exercise was pretreated with MCT, respiratory exchange ratio (RER), steady state heart rate and generation of glycolytic intermediates significantly decreased while circulating ketone bodies significantly increased. MCT supplementation prior to exercise increases the oxidation of medium chain fats, decreases the oxidation of glucose and acutely lowers cardiac workload during exercise for the same amount of work performed when compared with CHO pre-supplementation. We propose that MCT may expand the usable energy supply, particularly in the form of ketone bodies, and improve the oxidative capacity of the heart in this population.",
+          "journal": "Molecular genetics and metabolism"
         },
         {
-          "pmid": "18845704",
-          "title": "Medium chain triglyceride oil consumption as part of a weight loss diet does not lead to an adverse metabolic profile when compared to olive oil.",
-          "year": "2008",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
+          "id": "pmid:17468085",
           "pmid": "17468085",
           "title": "Diet supplemented with MCT oil in the management of childhood diarrhea.",
           "year": "2007",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17468085/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "This study was undertaken to determine the effect of medium-chain triglyceride (MCT) oil supplementation on the duration and episodes of diarrhea attacks, and specifically its effect on the clinical manifestations of patients. Seventeen children aged 6 months to 47 months old with a mean age of 19.6 months, suffering from acute diarrhea at the Pediatric Ward of the Philippine General Hospital Medical Center and other neighboring health centers were studied. A double-blind randomized design was employed. Physical and clinical assessment was performed by a physician prior to enrolment in the study. Dietary, anthropometric, and biochemical assessment were undertaken by clinical investigators before and after the supplementation. The subjects were randomly assigned to either the MCT oil- supplemented diet or the non-MCT oil diet. Daily monitoring of food intake and the frequency or episodes of diarrhea attacks was done. Subjects were closely monitored for any possible adverse reactions. The baseline characteristics of the subjects were not significantly different for any of age, height, weight, cholesterol or triglyceride concentrations between the two groups. Nutrient intakes at baseline and during intervention were also not significantly different. There were no differences in cholesterol and triglyceride between the two groups after supplementation. Stool frequencies of the MCT group and the non-MCT group at baseline, after the 6th hr, and at 12th hour, were not different. No subject developed fat malabsorption during the intervention, as assessed with Sudan Black stain. There was statistical significant difference in the rate of weight gain among subjects in the MCT group compared to subjects in the non-MCT group , but a trend in this direction (0.22 + 0.22 kg/day vs -.048 + .26 kg/day), (p=.042). MCT oil may promote weight gain (although what this constitutes in body compositional terms is uncertain) and shows a trend towards shorter duration of intervention among children with acute diarrhea. Limited sample size precludes conclusions on these possibilities. MCT oil did not cause vomiting, dehydration, or fat intolerance. MCT oil did not cause an elevation in cholesterol and triglyceride levels. More studies, with larger sample size, and longer duration will be worthwhile to assess the effect of MCT oil on childhood diarrhea.",
+          "journal": "Asia Pacific journal of clinical nutrition"
         },
         {
+          "id": "pmid:9988780",
           "pmid": "9988780",
           "title": "A cross-over study of the effect of a single oral feeding of medium chain triglyceride oil vs. canola oil on post-ingestion plasma triglyceride levels in health",
           "year": "1999",
           "design": "RCT",
           "population": "human",
-          "n": 20
+          "n": 20,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9988780/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Due to its unique absorption and metabolism characteristics, medium chain triglyceride (MCT) oil, consisting of fatty acids with 8-12 carbons, has been used therapeutically since the 1950s in the treatment of fat malabsorption, cystic fibrosis, epilepsy, weight control, and to increase exercise performance. Medium chain triglycerides are easily hydrolyzed in the intestines and the fatty acids are transported directly to the liver via the portal venous system, in contrast to long-chain fatty acids (LCFAs), which are incorporated into chylomicrons for transport through the lymphatic system or peripheral circulation. Medium chain fatty acids (MCFAs) do not require carnitine to cross the double mitochondrial membrane of the hepatocyte, thus they quickly enter the mitochondria and undergo rapid beta-oxidation, whereas most LCFAs are packaged into triglycerides in the hepatocyte. In this single-blind, randomized, cross-over study, 20 healthy men ingested a single dose of either 71 g of MCT oil or canola oil. Blood samples were taken at baseline and at hours one through five post-ingestion to compare the effect of a single oral dosing of MCT oil versus canola oil on post-ingestion plasma triglyceride levels. Mean triglyceride values after canola oil increased 47 percent above baseline (p <0.001), while mean triglyceride values after MCT oil decreased 15 percent from baseline (p <0.001), which is consistent with several other studies involving short- and longer-term feeding with MCT oil. The effect of long-term usage of MCT oil on triglycerides is yet to be established.",
+          "journal": "Alternative medicine review : a journal of clinical therapeutic"
         },
         {
+          "id": "pmid:35470782",
           "pmid": "35470782",
           "title": "Efficacy of supplemental MCT oil on seizure reduction of adult drug-resistant epilepsy - a single-center open-label pilot study.",
           "year": "2023",
           "design": "Clinical trial",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35470782/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "We set out to determine whether adding medium chain triglyceride (MCT) oil as a dietary supplement to standard diet in adult subjects with intractable epilepsy in a U.S. neurology clinical practice was associated with a reduction in number of seizures. We secondarily aimed to determine whether subjects experienced any side effects and whether there was a presence of urinary ketones while using MCT oil as a dietary supplement. Adult patients with intractable epilepsy were recruited at standard of care clinical visits with their epileptologist. Once enrolled, subjects were instructed to supplement their diet with MCT oil as tolerated twice daily for three months (including a 1-2 week titration period, followed by a 1-2 week tapering off window) while keeping a seizure diary to record total number of seizures, presence of urinary ketones, and any side effects. Our data although limited by small sample size, shows that there is an estimated 42% reduction ( MCT oil supplementation reduced seizure frequency in study participants. The reported side effects included mild nausea, stomachache, loose stools. A placebo-controlled study will be more informative.",
+          "journal": "Nutritional neuroscience"
         },
         {
-          "pmid": "31869355",
-          "title": "Effects of medium chain triglycerides supplementation on insulin sensitivity and beta cell function: A feasibility study.",
-          "year": "2019",
-          "design": "Clinical trial",
+          "id": "pmid:40337100",
+          "pmid": "40337100",
+          "title": "Nutrition With Skimmed Breast Milk in an Infant With Long Chain 3-Hydroxyacyl-coA Dehydrogenase Deficiency.",
+          "year": "2025",
+          "design": "Unclassified",
           "population": "human",
-          "n": 22
+          "n": null,
+          "doi": "10.1002/jmd2.70018",
+          "epmc_id": "MED:40337100",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40337100/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The current standard diet for long-chain 3-hydroxyacyl-CoA dehydrogenase deficiency (LCHADD) in the first months of life includes a special formula low in long-chain triglycerides (LCT) and enriched in medium-chain triglycerides (MCT). It involves the interruption of breastfeeding, withholding its nutritional and nonnutritional benefits. We describe the clinical case of a late preterm with 36 weeks gestational age diagnosed with LCHADD through newborn screening (NBS) who developed necrotizing enterocolitis (NEC) and sepsis due to <i>Escherichia coli</i> (<i>E. coli</i>) at 7 days of life. During hospital admission, the patient was fed skimmed breast milk supplemented with MCT oil and a low-fat MCT-enriched formula. Because the family wished to continue pumping milk after discharge, they were trained to defat milk using a non-refrigerated benchtop centrifuge. At home, a similar feeding regime was followed for 4 months. Hospital and home-produced skimmed breast milk met the dietary treatment requirement of < 1.0 g/dL of fat content. Growth and development during the first 5 months of life were normal, with an improved serum acylcarnitine profile and no decompensation. In this report, we demonstrated that breast milk defatting is a safe and feasible option for patients with LCHADD during hospital admission and at home, providing the benefits of human milk in these patients. This approach could influence dietary management guidelines for metabolic disorders or expand breast milk feeding options for medically complex infants.",
+          "journal": "JIMD reports"
         },
         {
+          "id": "pmid:36904147",
+          "pmid": "36904147",
+          "title": "Beta-Hydroxybutyrate (BHB), Glucose, Insulin, Octanoate (C8), and Decanoate (C10) Responses to a Medium-Chain Triglyceride (MCT) Oil with and without Glucose: A",
+          "year": "2023",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null,
+          "doi": "10.3390/nu15051148",
+          "epmc_id": "MED:36904147",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36904147/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "MCTs are increasingly being used to promote ketogenesis by patients on ketogenic diet therapy, but also by people with other conditions and by the general public for the perceived potential benefits. However, consumption of carbohydrates with MCTs and untoward gastrointestinal side effects, especially at higher doses, could decrease the sustainability of the ketogenic response. This single-center study investigated the impact of consuming carbohydrate as glucose with MCT oil compared to MCT alone on the BHB response. The effects of MCT oil versus MCT oil plus glucose on blood glucose, insulin response, levels of C8, C10, BHB, and cognitive function were determined, and side effects were monitored. A significant plasma BHB increase with a peak at 60 min was observed in 19 healthy participants (24.4 ± 3.9 years) after consuming MCT oil alone, and a more delayed but slightly higher peak was observed after consuming MCT oil plus glucose. A significant increase in blood glucose and insulin levels occurred only after MCT oil plus glucose intake. The overall mean plasma levels of C8 and C10 were higher with the intake of MCT oil alone. MCT oil plus glucose consumption showed improved scores for the arithmetic and vocabulary subtests.",
+          "journal": "Nutrients"
+        },
+        {
+          "id": "pmid:35433045",
+          "pmid": "35433045",
+          "title": "Examining the Effect of Consuming C<sub>8</sub> Medium-Chain Triglyceride Oil for 14 Days on Markers of NLRP3 Activation in Healthy Humans.",
+          "year": "2022",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null,
+          "doi": "10.1155/2022/7672759",
+          "epmc_id": "MED:35433045",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35433045/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Chronic, low-grade inflammation is associated with the development of numerous diseases and is mediated in part by overactivation of the NLRP3 inflammasome. The ketone body beta-hydroxybutyrate (<i>β</i>HB) suppresses the NLRP3 inflammasome and alters intracellular signalling pathways in vitro and in animal models; however, this effect has not yet been shown in vivo in humans. The purpose of this single-arm pilot trial was to determine if consuming 15 mL of C<sub>8</sub> medium-chain triglyceride (trioctanoin; MCT) oil, which induces mild elevation of <i>β</i>HB, twice daily (30 mL total) for 14 days would suppress markers of NLRP3 inflammasome activation in young, healthy humans while following their habitual diet. Consuming a single dose of 15 mL of C<sub>8</sub> MCT oil significantly raised blood <i>β</i>HB from fasting at 60 minutes and 120 minutes post ingestion (both <i>P</i> < 0.05). However, consumption of C<sub>8</sub> MCT oil for 14 days did not impact markers of monocyte NLRP3 inflammasome activation compared to baseline. Specifically, caspase-1 activation and secretion of its downstream product interleukin (IL)-1<i>β</i> were unchanged following 14 days of C<sub>8</sub> MCT oil supplementation when measured in unstimulated and LPS-stimulated whole blood cultures (all <i>P</i> > 0.05). Acetylation of histone H3 on the lysine residue 9 was unchanged (<i>P</i> < 0.05) and acetylation of lysine residue 14 was decreased (<i>P</i> < 0.05) following 14 days of supplementation. Thus, adding twice daily C<sub>8</sub> MCT oil supplementation to the habitual diet of young, healthy humans does not appear to suppress NLRP3 inflammasome activation.",
+          "journal": "Journal of nutrition and metabolism"
+        },
+        {
+          "id": "pmid:33268017",
           "pmid": "33268017",
           "title": "Medium-chain triglycerides dietary supplement improves cognitive abilities in canine epilepsy.",
           "year": "2021",
           "design": "RCT",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33268017/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cognitive impairments (CI) have recently been identified in canine epilepsy patients. A medium-chain triglyceride (MCT) enriched diet has been demonstrated to improve cognition in aged dogs and seizure control in canine epilepsy. This study evaluates the short-term effects of MCT-oil consumption on cognitive abilities in dogs with epilepsy, a naturally occurring animal model. A 6-month multicenter, prospective, randomized, double-blinded, controlled cross-over diet trial was conducted comparing dietary supplementation (DS) of MCT oil to a control oil. Allocation to dietary oil supplements, consisting of 9% total caloric intake, was block-randomized and supplemented into each dogs' diet for 3 months followed by a respective switch of DS-oil for a further 3 months. Noninvasive cognitive tests and a validated psychometric tool were utilized to evaluate cognitive function and perturbations associated with dietary intervention. Twenty-nine dogs completed the trial, of which 18 completed noninvasive cognitive testing. Spatial-working memory (P = 0.008), problem-solving ability (P = 0.048), and owner-reported trainability (P = 0.041) were significantly improved during MCT-oil supplementation compared to control-DS. MCT-oil DS improves cognition in dogs with epilepsy when compared to a control-DS. MCT supplementation may represent a promising option to address CI associated with epilepsy.",
+          "journal": "Epilepsy & behavior : E&B"
         },
         {
+          "id": "pmid:41942638",
           "pmid": "41942638",
           "title": "Oral administration of MCT oil reduces anxiety-like behavior and is associated with differences in serum BDNF responses in a rat model of PTSD.",
           "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41942638/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Post-traumatic stress disorder (PTSD) is characterized by neuroinflammatory and neurotrophic dysregulation, and effective interventions remain limited. Medium-chain triglyceride (MCT) oil, a dietary source of ketone bodies, may offer a practical means to elevate circulating β-hydroxybutyrate (BHB), a molecule with reported anti-inflammatory and neuroprotective properties. This study investigated whether oral administration of MCT oil modulates behavioral and molecular stress responses in a single prolonged stress (SPS) rat model of PTSD. Repeated oral MCT administration significantly increased circulating BHB levels and reduced anxiety-like behavior in the elevated plus maze, without affecting locomotor activity. Under acute restraint stress, serum brain-derived neurotrophic factor (BDNF) levels were significantly lower in MCT-treated rats than in long-chain triglyceride (LCT)-treated controls. Inflammatory cytokine expression remained unchanged in serum and brain tissue. These findings suggest that oral MCT oil attenuates anxiety-like behavior under SPS conditions and is associated with differences in serum BDNF responses during acute stress. Therefore, MCT oil may represent a feasible dietary approach for influencing stress-related behavioral responses.",
+          "journal": "Scientific reports"
         },
         {
+          "id": "pmid:39766621",
+          "pmid": "39766621",
+          "title": "The Effect of Medium-Chain Triglycerides Oil on <i>Candida albicans</i> and <i>Streptococcus mutans</i> in Planktonic and Mucosal Models.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3390/antibiotics13121231",
+          "epmc_id": "MED:39766621",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39766621/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Despite MCT oil's potential antimicrobial benefits for gastrointestinal health, its effects on disrupting cariogenic pathogens on oral mucosal surfaces remain underexplored. This study evaluated the impact of MCT oil on the adhesion and invasion of <i>Candida albicans</i> and <i>Streptoccocus mutans</i> using planktonic and mucosal models. First, a planktonic model was used to assess the impact of various concentrations of MCT on the growth of <i>S. mutans</i> and <i>C. albicans</i>. Subsequently, a mucosal model was established by seeding TR-146 human buccal mucosal epithelial cells on a 3 µm porous transwell membrane, forming an epithelial barrier. MCT oil was then applied to the epithelial barriers in different durations (10, 30, and 60 min). Subsequently, <i>C. albicans</i> and <i>S. mutans</i> were introduced in the transwell and their adherence to the epithelial cells and their transmigration through the barriers was assessed using colony-forming unit counts and the barrier integrity was assessed by trans epithelial electrical resistance (TEER). Furthermore, cytotoxicity of MCT oil on mucosal cells was assessed by AlamarBlue assay. We found that higher MCT concentrations (90% and 100%) significantly inhibited <i>C. albicans</i> and <i>S. mutans</i> growth in planktonic conditions. Additionally, MCT oil reduced <i>S. mutans</i> adhesion to epithelial cells, highlighting its potential to interfere with bacterial attachment and colonization to oral mucosa. However, the oil had limited effects on <i>C. albicans</i> adhesion and transmigration. MCT demonstrated no cytotoxic effects on the viability of epithelial cells. The study findings highlight the potential benefits of MCT oil, particularly in oral bacterial inhibition, for oral health applications.",
+          "journal": "Antibiotics (Basel, Switzerland)"
+        },
+        {
+          "id": "pmid:37721993",
+          "pmid": "37721993",
+          "title": "Evaluating Potential Anxiolytic Effects of Minor Cannabinoids and Terpenes After Acute and Chronic Oral Administration in Rats.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1089/can.2023.0083",
+          "epmc_id": "MED:37721993",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37721993/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<b>Background:</b> Cannabis and its primary psychoactive constituent delta-9-tetrahydrocannabinol (D9-THC) produce biphasic, dose-dependent effects on anxiety. In addition to D9-THC, cannabis contains other \"minor\" cannabinoids and terpenes with purported therapeutic potential for the treatment of anxiety. Empirical data on potential therapeutic effects of these compounds is limited. The current study evaluated the effects of selected minor cannabinoids and terpenes in a battery of tests sensitive to anxiolytic and anxiogenic drugs. <b>Methods:</b> In Experiment 1, adult male Sprague Dawley rats (<i>N</i>=7-8/group) were administered acute oral doses of one of five minor cannabinoids: delta-8-tetrahydrocannabinol (D8-THC; 10 mg/kg), tetrahydrocannabivarin (32 mg/kg), cannabidiolic acid (32 mg/kg), cannabidivarin (32 mg/kg), and cannabigerol (100 mg/kg), or one of five terpenes: D-limonene (17 mg/kg), ⍺-pinene (100 mg/kg), ⍺-terpineol (10 mg/kg), bisabolol (100 mg/kg), and β-caryophyllene (17 mg/kg), or vehicle (medium-chain triglycerides [MCT] oil). Ethyl alcohol was tested as an active comparator. Thirty minutes post-administration, the marble burying test, the three-chamber social interaction test, and the novelty-induced hypophagia test were completed; motor activity was assessed throughout testing. Experiment 2 examined the potential anxiolytic effects of minor cannabinoids when administered chronically; rats administered MCT oil or minor cannabinoids in Experiment 1 continued receiving once-daily doses for 21 days and were assessed using the same test battery after 7, 14, and 21 days of administration. <b>Results and Conclusions:</b> When compared to vehicle, acute administration of bisabolol and D-limonene increased the amount of food consumed and bisabolol-, D-limonene-, ⍺-pinene-, and β-caryophyllene decreased percent time spent in the outer zone in the novelty-induced hypophagia test, suggestive of an anxiolytic effect. Only ethanol increased social interaction. After acute administration, anxiogenic effects in the marble burying test were observed for D8-THC, but not for other minor cannabinoids and terpenes. Throughout chronic administration, only D8-THC displayed anxiogenic effects in the novelty-induced hypophagia test. The other cannabinoids did not show anxiolytic or anxiogenic effects in any of the tests at the doses or times tested. The minor cannabinoids and terpenes did not impair or stimulate general motor activity. These data provide a foundation for future studies investigating cannabinoid/terpene interactions.",
+          "journal": "Cannabis and cannabinoid research"
+        },
+        {
+          "id": "pmid:32801267",
           "pmid": "32801267",
           "title": "Preventive effects of medium-chain triglycerides supplementation on the oxidative capacity in skeletal muscle under cachectic condition.",
           "year": "2020",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32801267/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cachexia is a multifactorial condition characterized by muscle mass loss and induces metabolic dysfunction of the skeletal muscles. The preventive effects of medium-chain triglycerides (MCT) supplementation on the oxidative capacity in skeletal muscle under cachectic condition were investigated in the present study. ICR mice were randomly divided into four groups; control, lipopolysaccharide (LPS), LPS plus long-chain triglycerides (LCT) and LPS plus MCT supplementation. LCT and MCT oil were administered to the LPS + LCT and LPS + MCT groups orally (5.0 g/kg body weight/day) by a catheter for one week. Cachexia was induced in the LPS, LPS + LCT, and LPS + MCT groups via LPS injection (7.5 mg/kg body weight, i.p.) after the supplementation. LPS induced a reduction of ketone bodies concentration in blood plasma. LPS also induced a decrease in succinate dehydrogenase activity and PGC-1α expression level in tibialis anterior muscles. Meanwhile, MCT supplementation suppressed a decrease in ketone bodies concentration and succinate dehydrogenase activity. In addition, MCT supplementation increased the level of citrate synthase activity in the muscles. These results suggested the preventive effect of MCT supplementation on oxidative capacity in skeletal muscle and the involvements of ketone bodies regulation under cachectic condition.",
+          "journal": "Biomedical research (Tokyo, Japan)"
         },
         {
-          "pmid": "30553406",
-          "title": "Medium-chain triglyceride reinforce the hepatic damage caused by fructose intake in mice.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "30990747",
-          "title": "Medium-chain triglyceride diet stimulates less GIP secretion and suppresses body weight and fat mass gain compared with long-chain triglyceride diet.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "22181977",
-          "title": "Role of oil vehicle on hepatic cell proliferation in PCB-treated rats.",
-          "year": "2011",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
+          "id": "pmid:20513174",
           "pmid": "20513174",
           "title": "Ease of oral administration and owner-perceived acceptability of triglyceride oil, dissolving thin film strip, and gelatin capsule formulations to healthy cats.",
           "year": "2010",
           "design": "Animal",
           "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "2366103",
-          "title": "Effect of various triglycerides on plasma cholecystokinin levels in rats.",
-          "year": "1990",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "6686684",
-          "title": "Differential effects of medium- and long-chain triglycerides on food intake of normal and diabetic rats.",
-          "year": "1983",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20513174/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To compare owner-assessed ease of administration and overall acceptability of 3 chemically inactive formulations administered PO to cats. 90 healthy client-owned cats. Cats were randomly assigned to receive 1 of 3 formulations PO once daily for 14 days: medium chain triglyceride (MCT) oil, dissolving thin film strips (proprietary ingredients), or gelatin capsules filled with microcrystalline cellulose. Owners administered the formulations and rated ease of administration daily on a 10-cm visual analogue scale (VAS). At the end of the study, owners rated overall acceptability of formulations from their own perspective and their overall perception of acceptability to their cat. Mean VAS scores for daily ease of administration of MCT oil and film strips were significantly higher than scores for gelatin capsules at all time points, except on days 2, 4, and 7. There was no difference between MCT oil and film strip formulation scores. Mean VAS scores were 8.8 (MCT oil), 8.9 (film strips), and 7.4 (gelatin capsules) for overall acceptability to owners and 8.0 (MCT oil), 8.3 (film strips), and 6.7 (gelatin capsules) for overall owner-perceived acceptability to cats. Daily ease of administration on 11 of 14 days and overall owner-perceived acceptability to cats were scored significantly higher for film strips and MCT oil, compared with scores for gelatin capsules. Overall acceptability to owners followed a similar pattern; however, the differences were not significant. Dissolving thin film strip or MCT oil vehicles may allow for easier PO administration of medication to cats than does administration of gelatin capsules.",
+          "journal": "American journal of veterinary research"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 21,
-        "n_total": 21
+        "n_not_reported": 19,
+        "n_total": 19
       },
       "pooled": {
         "verified": null,
@@ -318,94 +371,270 @@
         "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cholesterol / lipids, mct-oil has moderate human evidence (21 studies)."
+      "summary": "For cholesterol / lipids, MCT Oil has moderate human evidence (19 graded studies).",
+      "weighted_score": {
+        "final_score": 74.6,
+        "confidence_interval": {
+          "lower": 43.1,
+          "upper": 100.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 19,
+          "high_tier_points": 157.061,
+          "low_tier_points_pre_cap": 15.891,
+          "low_tier_points_post_cap": 15.891,
+          "low_tier_cap_applied": false,
+          "total_points_R": 172.952,
+          "scaled_base_score": 74.627,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 16.1003,
+          "se_consistency_component": 3.468,
+          "se_thinness_component": 12.6323,
+          "margin_of_error": 31.557,
+          "human_sample_total": 140,
+          "studies_missing_sample_size": 9,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "9 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.188,
+              "points": 53.473,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.242,
+              "points": 22.355,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.105,
+              "points": 19.887,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.185,
+              "points": 21.322,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.135,
+              "points": 20.438,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 4.286,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.172,
+              "points": 21.095,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.143,
+              "points": 20.576,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.255,
+              "points": 22.587,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.237,
+              "points": 22.265,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.15,
+              "points": 4.6,
+              "supportive": true
+            },
+            {
+              "idx": 11,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 12,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.195,
+              "points": 21.513,
+              "supportive": true
+            },
+            {
+              "idx": 13,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.201,
+              "points": 4.805,
+              "supportive": true
+            },
+            {
+              "idx": 14,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            },
+            {
+              "idx": 15,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.579,
+              "C_k": 1.0,
+              "points": 71.063,
+              "supportive": true
+            },
+            {
+              "idx": 16,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 4.286,
+              "supportive": true
+            },
+            {
+              "idx": 17,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 4.286,
+              "supportive": true
+            },
+            {
+              "idx": 18,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 4.648,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para colesterol / lípidos, el Aceite MCT tiene evidencia humana moderada (19 estudios clasificados)."
     },
     {
       "outcome": "cognition",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:33268017"
-      ],
-      "studies": [
-        {
-          "pmid": "33268017",
-          "title": "Medium-chain triglycerides dietary supplement improves cognitive abilities in canine epilepsy.",
-          "year": "2021",
-          "design": "RCT",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 1,
-        "n_total": 1
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "no usable effects"
-      },
-      "headline_effect": null,
-      "summary": "For cognition, mct-oil has only preliminary or animal evidence (1 studies)."
-    },
-    {
-      "outcome": "stress / anxiety",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
       "has_human_evidence": true,
       "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 25,
         "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
         "n_human_studies": 1,
         "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:41942638",
-        "PMID:27115157"
+        "PMID:33268017",
+        "PMID:36904147"
       ],
       "studies": [
         {
-          "pmid": "27115157",
-          "title": "Effect of flaxseed oil on serum systemic and vascular inflammation markers and oxidative stress in hemodialysis patients: a randomized controlled trial.",
-          "year": "2016",
-          "design": "RCT",
+          "id": "pmid:36904147",
+          "pmid": "36904147",
+          "title": "Beta-Hydroxybutyrate (BHB), Glucose, Insulin, Octanoate (C8), and Decanoate (C10) Responses to a Medium-Chain Triglyceride (MCT) Oil with and without Glucose: A",
+          "year": "2023",
+          "design": "Unclassified",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": "10.3390/nu15051148",
+          "epmc_id": "MED:36904147",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36904147/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "MCTs are increasingly being used to promote ketogenesis by patients on ketogenic diet therapy, but also by people with other conditions and by the general public for the perceived potential benefits. However, consumption of carbohydrates with MCTs and untoward gastrointestinal side effects, especially at higher doses, could decrease the sustainability of the ketogenic response. This single-center study investigated the impact of consuming carbohydrate as glucose with MCT oil compared to MCT alone on the BHB response. The effects of MCT oil versus MCT oil plus glucose on blood glucose, insulin response, levels of C8, C10, BHB, and cognitive function were determined, and side effects were monitored. A significant plasma BHB increase with a peak at 60 min was observed in 19 healthy participants (24.4 ± 3.9 years) after consuming MCT oil alone, and a more delayed but slightly higher peak was observed after consuming MCT oil plus glucose. A significant increase in blood glucose and insulin levels occurred only after MCT oil plus glucose intake. The overall mean plasma levels of C8 and C10 were higher with the intake of MCT oil alone. MCT oil plus glucose consumption showed improved scores for the arithmetic and vocabulary subtests.",
+          "journal": "Nutrients"
         },
         {
-          "pmid": "41942638",
-          "title": "Oral administration of MCT oil reduces anxiety-like behavior and is associated with differences in serum BDNF responses in a rat model of PTSD.",
-          "year": "2026",
-          "design": "Animal",
+          "id": "pmid:33268017",
+          "pmid": "33268017",
+          "title": "Medium-chain triglycerides dietary supplement improves cognitive abilities in canine epilepsy.",
+          "year": "2021",
+          "design": "RCT",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33268017/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cognitive impairments (CI) have recently been identified in canine epilepsy patients. A medium-chain triglyceride (MCT) enriched diet has been demonstrated to improve cognition in aged dogs and seizure control in canine epilepsy. This study evaluates the short-term effects of MCT-oil consumption on cognitive abilities in dogs with epilepsy, a naturally occurring animal model. A 6-month multicenter, prospective, randomized, double-blinded, controlled cross-over diet trial was conducted comparing dietary supplementation (DS) of MCT oil to a control oil. Allocation to dietary oil supplements, consisting of 9% total caloric intake, was block-randomized and supplemented into each dogs' diet for 3 months followed by a respective switch of DS-oil for a further 3 months. Noninvasive cognitive tests and a validated psychometric tool were utilized to evaluate cognitive function and perturbations associated with dietary intervention. Twenty-nine dogs completed the trial, of which 18 completed noninvasive cognitive testing. Spatial-working memory (P = 0.008), problem-solving ability (P = 0.048), and owner-reported trainability (P = 0.041) were significantly improved during MCT-oil supplementation compared to control-DS. MCT-oil DS improves cognition in dogs with epilepsy when compared to a control-DS. MCT supplementation may represent a promising option to address CI associated with epilepsy.",
+          "journal": "Epilepsy & behavior : E&B"
         }
       ],
       "effects": {
@@ -419,11 +648,234 @@
         "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For stress / anxiety, mct-oil has moderate human evidence (2 studies)."
+      "summary": "For cognition, MCT Oil shows early but unsettled human evidence (2 graded studies).",
+      "weighted_score": {
+        "final_score": 35.0,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 2,
+          "high_tier_points": 21.322,
+          "low_tier_points_pre_cap": 4.805,
+          "low_tier_points_post_cap": 4.805,
+          "low_tier_cap_applied": false,
+          "total_points_R": 26.128,
+          "scaled_base_score": 35.04,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 37.5864,
+          "se_consistency_component": 7.5864,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 73.669,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.185,
+              "points": 21.322,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.201,
+              "points": 4.805,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para cognición, el Aceite MCT muestra evidencia humana temprana pero no concluyente (2 estudios clasificados)."
+    },
+    {
+      "outcome": "stress / anxiety",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 4,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:41942638",
+        "PMID:37721993",
+        "PMID:27115157",
+        "PMID:34397733"
+      ],
+      "studies": [
+        {
+          "id": "pmid:34397733",
+          "pmid": "34397733",
+          "title": "Efficacy of medium-chain triglyceride oil massage on growth in preterm infants: a randomized controlled trial: A CONSORT-compliant article.",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.1097/md.0000000000026794",
+          "epmc_id": "MED:34397733",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34397733/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>Medium-chain triglyceride (MCT) oil consists of 8-12 carbons with higher absorption and provides better calories than long-chain triglyceride oil. This study was to explore the effect of MCT oil massage on growth in preterm infants.<h4>Methods</h4>A prospective, single-blind, randomized (two treatments and one control) study was conducted. Preterm infants weighing between 1500 and 2000 g were recruited and randomly assigned to three groups: the MCT oil massage, massage alone and no massage groups. The standardized massage intervention consisted of two 5-min phases, including tactile and kinesthetic stimulation, which were given three times a day for 7 consecutive days. Premature infants in the oil massage group received massage with 10 mL/kg/day of MCT oil divided equally into three applications. Weight, length and head circumference were measured in the three groups at birth and on study days 1 to 7.<h4>Results</h4>Forty-eight neonates were evaluated with 16 in each of three groups. The linear mixed effect model was adjusted for other factors, and results showed that weight gain on the 4th day in the oil massage group was greater than that in the no massage group (P < .05). From the 5th to 7th day, weight gain in the oil massage group was greater than that in the other two groups (P < .05). Regarding head circumference and height, this study found that the MCT oil massage group did not have better results than the other two groups. No adverse events were noted in the massage groups.<h4>Conclusion</h4>The results indicate that preterm infant daily massage with MCT oil is an effective intervention for weight gain that should be recognized as part of low-birth-weight infant developmental care.<h4>Trial registration</h4>clinicaltrials.gov identifier NCT04281563, Registered on 24 February 2020.",
+          "journal": "Medicine"
+        },
+        {
+          "id": "pmid:27115157",
+          "pmid": "27115157",
+          "title": "Effect of flaxseed oil on serum systemic and vascular inflammation markers and oxidative stress in hemodialysis patients: a randomized controlled trial.",
+          "year": "2016",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27115157/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The aim of this study was to investigate the effects of flaxseed oil consumption on serum systemic and vascular inflammation markers, and oxidative stress in hemodialysis (HD) patients. In this randomized, double-blind, clinical trial, 34 HD patients were randomly assigned to either the flaxseed oil or the control group. The patients in the flaxseed oil group received 6 g/day flaxseed oil for 8 week, whereas the control group received 6 g/day medium-chain triglycerides (MCT) oil. At baseline and the end of week 8, serum concentrations of high-sensitive C-reactive protein (hs-CRP), soluble intercellular adhesion molecule type 1 (sICAM-1), soluble vascular cell adhesion molecule type 1 (sVCAM-1), sE-selectin, and malondialdehyde (MDA) were measured after a 12- to 14-h fast. Serum hs-CRP, a systemic inflammation marker, and sVCAM-1, a vascular inflammation marker, reduced significantly in the flaxseed oil group at the end of week 8 compared to baseline (P < 0.05), and the reductions were significant in comparison with the MCT oil group (P < 0.05). There were no significant differences between the two groups in mean changes in serum sICAM-1, sE-selectin, and MDA. This study indicates that daily consumption of 6 g flaxseed oil reduces serum hs-CRP and sVCAM-1, which are two risk factors for CVD. Therefore, the inclusion of flaxseed oil in the usual diet of HD patients can be considered as a strategy for reducing CVD risk factors.",
+          "journal": "International urology and nephrology"
+        },
+        {
+          "id": "pmid:41942638",
+          "pmid": "41942638",
+          "title": "Oral administration of MCT oil reduces anxiety-like behavior and is associated with differences in serum BDNF responses in a rat model of PTSD.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41942638/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Post-traumatic stress disorder (PTSD) is characterized by neuroinflammatory and neurotrophic dysregulation, and effective interventions remain limited. Medium-chain triglyceride (MCT) oil, a dietary source of ketone bodies, may offer a practical means to elevate circulating β-hydroxybutyrate (BHB), a molecule with reported anti-inflammatory and neuroprotective properties. This study investigated whether oral administration of MCT oil modulates behavioral and molecular stress responses in a single prolonged stress (SPS) rat model of PTSD. Repeated oral MCT administration significantly increased circulating BHB levels and reduced anxiety-like behavior in the elevated plus maze, without affecting locomotor activity. Under acute restraint stress, serum brain-derived neurotrophic factor (BDNF) levels were significantly lower in MCT-treated rats than in long-chain triglyceride (LCT)-treated controls. Inflammatory cytokine expression remained unchanged in serum and brain tissue. These findings suggest that oral MCT oil attenuates anxiety-like behavior under SPS conditions and is associated with differences in serum BDNF responses during acute stress. Therefore, MCT oil may represent a feasible dietary approach for influencing stress-related behavioral responses.",
+          "journal": "Scientific reports"
+        },
+        {
+          "id": "pmid:37721993",
+          "pmid": "37721993",
+          "title": "Evaluating Potential Anxiolytic Effects of Minor Cannabinoids and Terpenes After Acute and Chronic Oral Administration in Rats.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1089/can.2023.0083",
+          "epmc_id": "MED:37721993",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37721993/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<b>Background:</b> Cannabis and its primary psychoactive constituent delta-9-tetrahydrocannabinol (D9-THC) produce biphasic, dose-dependent effects on anxiety. In addition to D9-THC, cannabis contains other \"minor\" cannabinoids and terpenes with purported therapeutic potential for the treatment of anxiety. Empirical data on potential therapeutic effects of these compounds is limited. The current study evaluated the effects of selected minor cannabinoids and terpenes in a battery of tests sensitive to anxiolytic and anxiogenic drugs. <b>Methods:</b> In Experiment 1, adult male Sprague Dawley rats (<i>N</i>=7-8/group) were administered acute oral doses of one of five minor cannabinoids: delta-8-tetrahydrocannabinol (D8-THC; 10 mg/kg), tetrahydrocannabivarin (32 mg/kg), cannabidiolic acid (32 mg/kg), cannabidivarin (32 mg/kg), and cannabigerol (100 mg/kg), or one of five terpenes: D-limonene (17 mg/kg), ⍺-pinene (100 mg/kg), ⍺-terpineol (10 mg/kg), bisabolol (100 mg/kg), and β-caryophyllene (17 mg/kg), or vehicle (medium-chain triglycerides [MCT] oil). Ethyl alcohol was tested as an active comparator. Thirty minutes post-administration, the marble burying test, the three-chamber social interaction test, and the novelty-induced hypophagia test were completed; motor activity was assessed throughout testing. Experiment 2 examined the potential anxiolytic effects of minor cannabinoids when administered chronically; rats administered MCT oil or minor cannabinoids in Experiment 1 continued receiving once-daily doses for 21 days and were assessed using the same test battery after 7, 14, and 21 days of administration. <b>Results and Conclusions:</b> When compared to vehicle, acute administration of bisabolol and D-limonene increased the amount of food consumed and bisabolol-, D-limonene-, ⍺-pinene-, and β-caryophyllene decreased percent time spent in the outer zone in the novelty-induced hypophagia test, suggestive of an anxiolytic effect. Only ethanol increased social interaction. After acute administration, anxiogenic effects in the marble burying test were observed for D8-THC, but not for other minor cannabinoids and terpenes. Throughout chronic administration, only D8-THC displayed anxiogenic effects in the novelty-induced hypophagia test. The other cannabinoids did not show anxiolytic or anxiogenic effects in any of the tests at the doses or times tested. The minor cannabinoids and terpenes did not impair or stimulate general motor activity. These data provide a foundation for future studies investigating cannabinoid/terpene interactions.",
+          "journal": "Cannabis and cannabinoid research"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 4,
+        "n_total": 4
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For stress / anxiety, MCT Oil has moderate human evidence (4 graded studies).",
+      "weighted_score": {
+        "final_score": 42.7,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 4,
+          "high_tier_points": 35.541,
+          "low_tier_points_pre_cap": 7.228,
+          "low_tier_points_post_cap": 7.228,
+          "low_tier_cap_applied": false,
+          "total_points_R": 42.769,
+          "scaled_base_score": 42.675,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 36.4928,
+          "se_consistency_component": 6.4928,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 71.526,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 2,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "2 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 4.648,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.237,
+              "points": 22.265,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.143,
+              "points": 20.576,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para estrés / ansiedad, el Aceite MCT tiene evidencia humana moderada (4 estudios clasificados)."
     }
   ],
   "effects_established": [
-    "weight / fat loss",
     "cholesterol / lipids",
     "stress / anxiety"
   ],
@@ -432,77 +884,193 @@
   ],
   "effects_emerging": [],
   "honesty_note": null,
-  "generated_by": "clarity-engine-v2",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T01:12:39.540310+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "cholesterol / lipids",
+  "best_tier": "Moderate",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Emerging",
+    "Moderate"
+  ],
   "reviewed_by": "auto",
-  "_cached_at": 1788018006.1261,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.628,
+    "europepmc_s": 3.546,
+    "retrieval_total_s": 3.549,
+    "n_studies": 250,
+    "normalization_s": 0.105,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 56.6,
+    "n_outcomes_scored": 3,
+    "best_outcome_score": 74.6,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789175559.541306,
   "explanation": {
-    "what_it_is": "Medium-chain triglyceride (MCT) oil is a fat composed of saturated fatty acids with 6\u201312 carbon atoms, shorter than the long-chain fats found in most foods. It is derived from coconut oil, palm oil, or synthesized in the lab. MCT oil is typically consumed as a liquid supplement, often added to coffee, smoothies, or taken by the spoon, and is absorbed and metabolized faster than conventional dietary fats.",
-    "how_it_works": "MCT oil is rapidly absorbed in the small intestine and transported directly to the liver via the portal blood, where it is quickly broken down into ketone bodies or burned for energy\u2014bypassing the slow, complex digestion required for long-chain fats. This rapid metabolism may increase energy expenditure and fat oxidation in the short term. MCT may also influence hormones involved in appetite and satiety (such as GIP, glucose-dependent insulinotropic peptide) and affect how the body stores or mobilizes fat. Because it is more readily available for immediate energy, the theory is that MCT could help shift the body toward using stored fat for fuel, though the magnitude of this effect in real-world weight loss remains modest.",
+    "what_it_is_line": "A fat made from coconut or palm oil, with shorter carbon chains than typical dietary fats.",
+    "what_it_is": "MCT oil is a type of fat extracted mainly from coconut or palm oil. Unlike most dietary fats (which have long chains of carbon atoms), MCT fats have shorter chains — hence the name 'medium-chain triglyceride.' Your body absorbs and processes MCT oil differently than regular fat; it goes more directly to the liver and is used quickly for energy rather than stored. People typically take it as a liquid supplement, sometimes added to coffee or smoothies.",
+    "how_it_works_line": "Rapidly absorbed and converted to energy; may influence blood lipids and metabolism via the liver.",
+    "how_it_works": "When you eat MCT oil, your digestive system breaks it down and sends it straight to your liver, where it is converted into energy molecules (called ketones) or burned for immediate fuel — much faster than longer-chain fats. This rapid processing may influence how your body manages cholesterol and other blood lipids, and might affect your brain's fuel supply during low-carbohydrate states. The exact mechanisms by which MCT oil stabilizes lipid levels or supports cognition are not fully established in the records provided; the evidence shows associations, but the pathways require further study.",
+    "safety_line": "Mild gastrointestinal side effects reported in short-term trials; long-term and specific-population data limited.",
+    "safety_detail": "Trials retrieved did not report serious adverse events. Most studies were short-term (weeks to a few months), so durability of tolerability is unknown. No studies in the records addressed pregnant individuals, people with kidney or liver disease, or adolescents, so safety in those groups remains untested.",
+    "safety_bullets": [
+      "Gastrointestinal effects (nausea, loose stools) reported in some participants; typical in short trials but longer-term frequency unknown.",
+      "No data retrieved on interactions with medications or supplements — untested with common drugs.",
+      "Pregnancy, kidney disease, liver disease, and adolescents absent from retrieved trials — safety unconfirmed in these populations.",
+      "Long-term safety (years of regular use) not addressed in the available records."
+    ],
+    "chem_meaning": "MCT oil molecules are small and water-soluble relative to long-chain fats, allowing them to be absorbed directly into the bloodstream via the portal vein (rather than through the lymphatic system like regular fat). This structural difference means MCT oil reaches the liver quickly and bypasses the usual fat-storage pathway, which is why it is metabolized so rapidly for energy.",
     "outcome_detail": [
-      {
-        "outcome": "weight / fat loss",
-        "grade": "Moderate",
-        "what_studies_show": "Three human randomized trials examined MCT oil in weight-loss diets. A 2008 RCT found that a weight-loss diet including MCT oil led to greater weight loss compared to control; another 2008 RCT confirmed that MCT oil consumption did not cause adverse metabolic changes. A 2017 RCT showed MCT oil had less satiating properties than coconut oil. One animal study (2019) found MCT diet suppressed body weight and fat mass gain compared to control, with effects linked to lower GIP secretion.",
-        "why_this_grade": "Human evidence shows a consistent pattern favoring MCT for weight loss when part of a structured diet, but sample sizes in the retrieved abstracts could not be verified, limiting precision. The evidence is graded Moderate because the human trials exist and align in direction, but uncertainty about participant numbers prevents a higher tier."
-      },
       {
         "outcome": "cholesterol / lipids",
         "grade": "Moderate",
-        "what_studies_show": "A 2021 systematic review and meta-analysis of randomized trials evaluated MCT oil and blood lipid levels across multiple studies. Twelve human RCTs and nine animal studies were retrieved; a 2025 human RCT (n=120) in dialysis patients compared MCT and omega-3 supplementation on iron-related and lipid markers. Studies span 2016\u20132025, examining lipid profiles in diverse populations including hemodialysis patients, preterm infants, and general healthy or at-risk groups.",
-        "why_this_grade": "Although 12 human trials were included, the majority of abstracts did not report sample sizes, so the true number of total participants is unknown\u2014precision cannot be confirmed. A single meta-analysis exists but has not been independently replicated or verified in the retrieved records, capping confidence at Moderate rather than Strong."
+        "what_studies_show": "A 2021 meta-analysis of randomized trials found that MCT oil has effects on blood lipid levels (cholesterol and related markers). Several individual RCTs from 2016–2025, including a 2025 trial in 120 patients undergoing dialysis and studies examining MCT oil massage in preterm infants and its satiety properties compared to coconut oil, contributed data on lipid outcomes. The majority of the 13 human and 6 animal studies did not report exact sample sizes in their abstracts, so the true number of verified participants is substantially larger than the 140 that could be confirmed from two studies.",
+        "why_this_grade": "Multiple human RCTs show consistent direction, and a meta-analysis synthesized findings; however, the meta-analysis is not yet independently replicated, and precise sample sizes are missing from most records, preventing full confidence."
       },
       {
         "outcome": "cognition",
-        "grade": "Preliminary",
-        "what_studies_show": "A single 2021 animal RCT found that MCT oil dietary supplement improved cognitive abilities in canine epilepsy. No human studies on cognition and MCT oil appear in the retrieved records.",
-        "why_this_grade": "Evidence is animal-only (dogs with epilepsy) and does not reliably translate to human cognitive function. A single animal study is too limited and indirect to support human efficacy claims; the grade remains Preliminary pending human trials."
+        "grade": "Emerging",
+        "what_studies_show": "One human study from 2023 examined cognitive responses (including blood glucose, insulin, and ketone levels) after MCT oil ingestion. One animal trial from 2021 found that MCT oil supplementation improved cognitive abilities in dogs with epilepsy. Sample sizes could not be verified from the abstracts.",
+        "why_this_grade": "Only one human study addresses cognition in the records provided, so consistency across independent human trials cannot be assessed. No large or well-powered human cognitive trial has been retrieved. This outcome remains preliminary in humans."
       },
       {
         "outcome": "stress / anxiety",
         "grade": "Moderate",
-        "what_studies_show": "One human study (2016 RCT) examined flaxseed oil (a related lipid) on inflammatory and oxidative stress markers in hemodialysis patients. One animal study (2026) reported that oral MCT oil administration reduced anxiety-like behavior in animals and was associated with differences in serum BDNF (brain-derived neurotrophic factor).",
-        "why_this_grade": "Only one human study and one animal study address stress or anxiety; sample sizes could not be verified from abstracts, limiting precision. The human evidence is indirect (measuring inflammation rather than anxiety directly), and animal findings suggest a possible mechanism but do not establish human efficacy. Moderate grade reflects the small and mixed evidence base."
+        "what_studies_show": "Two human RCTs (one 2021 trial on MCT oil massage in preterm infants and one 2016 study on oil effects in hemodialysis patients) and two animal studies (from 2026 and 2023) examined stress or anxiety-related outcomes. A 2026 animal study reported that oral MCT oil reduced anxiety-like behavior in rodents and was associated with changes in a growth factor called BDNF (brain-derived neurotrophic factor), which supports nerve health. Sample sizes in the abstracts could not be verified.",
+        "why_this_grade": "Human evidence exists, but it is sparse (two trials) and sample sizes are unconfirmed. Animal data are supportive but cannot directly confirm effects in people. The grade reflects plausible promise without robust human confirmation."
       }
     ],
-    "evidence_base": "The research base for MCT oil is predominantly human randomized trials (approximately 13 human studies retrieved), with a smaller animal component (approximately 11 animal studies). Most trials are recent (2016\u20132025) and focus on weight loss, lipid metabolism, and markers of inflammation in specific populations (hemodialysis patients, preterm infants, people with epilepsy). The evidence is mechanistic and applied\u2014studies measure metabolic and biochemical outcomes rather than long-term disease prevention. Confidence is moderate because many trials lack clear sample-size reporting in their abstracts, and few outcomes have been independently replicated or verified by separate meta-analyses.",
-    "emerging_research": "A 2026 animal study suggests MCT oil may modulate anxiety-related behavior through changes in BDNF, a neurotropic factor involved in brain plasticity and mood\u2014a direction not yet explored in humans. Recent trials (2025) continue to examine MCT in specialized populations (dialysis patients, preterm infants), broadening understanding of whether benefits or risks differ by health status. These are early observations; human studies on anxiety and cognitive function remain absent or very limited in the retrieved records.",
-    "open_questions": "Among the studies retrieved here, no trials followed participants beyond several weeks to months; long-term safety and sustained efficacy remain uncharacterized in the provided records. Human evidence for cognition and anxiety is either absent or extremely sparse (one or fewer human studies per outcome), so it is unclear whether any benefits observed in animals translate to these domains in people. The retrieved lipid studies span diverse populations (hemodialysis, infants, general adults), making it unclear whether MCT oil's effects on cholesterol and triglycerides are consistent across different health states or whether certain groups benefit more than others.",
-    "caveats": "MCT oil is a food supplement and generally well-tolerated, but high intakes may cause gastrointestinal side effects (bloating, cramping, diarrhea) in some people. Quality and purity vary by brand; MCT is often sold as a stand-alone product or in blends, so verify labeling. MCT may interact with certain medications or be contraindicated in conditions affecting fat absorption; consult a healthcare provider before use, especially if pregnant, nursing, or taking medications for lipid management or diabetes.",
+    "evidence_base": "The evidence is dominated by short-term human RCTs (weeks to a few months) and a single meta-analysis for lipids; animal trials are present but smaller in number. Most studies are from 2016 onward, reflecting recent interest. For cognition and stress/anxiety, human data are minimal (1–2 trials each), so confidence is lower. The records provided include ~13 human and 6 animal studies across all outcomes, but many lack precise sample-size reporting in their abstracts.",
+    "open_questions": "The retrieved records do not include long-term trials (6+ months), so whether benefits or tolerability persist is unknown. Populations studied are limited: preterm infants, hemodialysis patients, and dogs with epilepsy appear, but healthy adults, older adults, and people with metabolic disorders (obesity, diabetes) are underrepresented in the sample shown. For cognition, only one human study exists in the records — far too few to assess whether MCT oil truly supports brain function in people.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Most trials are small and underpowered (median n=22 across lipid studies), sample sizes are absent from most abstracts, and no pooled effect sizes are extractable\u2014making it impossible to assess precision or clinical significance of claimed benefits.",
+    "headline": "Sample sizes are largely unreported across all outcomes, preventing verification of whether evidence base achieves sufficient precision; additionally, cognition evidence rests on just one human study, making claims premature.",
     "concerns": [
       {
-        "issue": "Systematic missing of sample size data",
-        "detail": "Across 21 lipid studies, only 3 report sample sizes (n=20, 22, 120), and the engine explicitly notes abstracts omit this critical descriptor for most records. For weight/fat loss (4 studies) and stress/anxiety (2 studies), sample sizes are completely non-extractable from abstracts. Without n, confidence intervals cannot be calculated, and heterogeneity cannot be properly assessed.",
+        "issue": "Unreported sample sizes across majority of trials",
+        "detail": "Of 19 lipids studies, only 2 report sample size in abstracts (n=20, n=120). For cognition, zero of 2 studies report sample size. For stress/anxiety, zero of 4 studies report sample size. The engine notes precision is 'substantially larger' than verified but unconfirmed—this opacity means effect size, heterogeneity, and whether results are driven by one large trial or many small ones cannot be assessed from the available records.",
         "severity": "high"
       },
       {
-        "issue": "Study selection confounding in lipid outcome",
-        "detail": "Of 21 studies labeled under 'cholesterol/lipids,' several titles indicate they actually examine unrelated outcomes: flaxseed oil (not MCT), iron indices, childhood diarrhea, and fatty acid oxidation disorders. These appear to be false-positive retrievals rather than genuine evidence for MCT's lipid effects. This contamination inflates the apparent evidence base and obscures the true size of rigorous MCT-specific trials.",
+        "issue": "Cognition evidence base too small and homogeneous for confident inference",
+        "detail": "Only one human RCT on cognition exists in the retrieved records (2023, sample size unknown); the second study is in canine epilepsy (animal model). The engine explicitly states 'consistency cannot be assessed across independent human evidence.' A single human trial, even if positive, cannot establish efficacy in a population.",
         "severity": "high"
       },
       {
-        "issue": "Single meta-analysis, unverified and unreplicated",
-        "detail": "The lipid outcome relies on one 2021 meta-analysis as its highest-level evidence, but the engine notes this conclusion is 'not independently replicated or verified'\u2014held at moderate precisely because there is no corroborating systematic review. A single meta-analysis can mask publication bias, cherry-picking of studies, or methodological error and should not be treated as definitive.",
+        "issue": "Lipids outcome mixes heterogeneous interventions and populations without transparency",
+        "detail": "The 19 lipids studies appear to include MCT oil, coconut oil, flaxseed oil, and omega-3 comparisons—yet only the 2021 meta-analysis title explicitly references lipids. Studies titled 'growth in preterm infants,' 'childhood diarrhea,' and 'drug-resistant epilepsy' are classified as lipids trials but their lipid outcomes are not visible in these abstracts, preventing verification that they are appropriate to pool or interpret as lipids evidence.",
         "severity": "high"
       },
       {
-        "issue": "Cognition graded on single animal study",
-        "detail": "The cognition outcome is graded 'Preliminary' based on one 2021 RCT in dogs, explicitly flagged by the engine as indirectness (animal-only). This does not meet a standard threshold for clinical efficacy claims in humans and should carry minimal persuasive weight.",
+        "issue": "Single meta-analysis without independent replication",
+        "detail": "The 2021 systematic review and meta-analysis on lipids is the only systematic summary in the lipids outcome records. The engine explicitly notes its conclusion is 'not independently replicated or verified.' Without a second meta-analysis or independent replication of its methods and findings, the meta-analytic result cannot be confirmed as robust.",
         "severity": "moderate"
       },
       {
-        "issue": "Weight/fat loss evidence is thin and heterogeneous",
-        "detail": "Only 3 human RCTs support weight/fat loss, spanning 2008\u20132017, with no extractable sample sizes or pooled effect. Titles suggest mixed findings: one reports MCT 'leads to greater' weight loss, another states it 'does not lead to adverse' effects (a safety claim, not efficacy), and one compares MCT unfavorably to coconut oil. The small number and apparent directional inconsistency weaken confidence in a robust effect.",
+        "issue": "Stress/anxiety evidence rests on only 2 human RCTs, both small and underpowered by definition",
+        "detail": "Only 2 human RCTs on stress/anxiety appear in records; sample sizes are not reported for either. One is titled 'growth in preterm infants' (stress outcome not evident from title), the other 'flaxseed oil on inflammation' (stress outcome similarly unclear). With n unconfirmed and no pooled effect extractable, the evidence base for stress/anxiety claims cannot be quantified and may not be specifically designed to measure anxiety.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The biological plausibility of MCT \u2192 increased fat oxidation \u2192 weight loss is straightforward, but the clinical evidence does not clearly demonstrate this chain works in real patients. The 2019 animal study on GIP secretion and body weight is a mechanistic observation, not proof of human clinical benefit. For lipids, no mechanistic explanation is visible in the retrieved abstracts, and the heterogeneous study selection (flaxseed, iron indices, diarrhea) suggests the outcome label may not map cleanly to MCT's actual effects.",
-    "strongest_counterargument": "A skeptic would note that the lipid evidence base is contaminated by off-target studies, the single meta-analysis lacks independent replication, and the weight-loss trials are small, underpowered, and show inconsistent direction of effect. The fact that sample sizes are missing from most abstracts is itself a red flag: published abstracts usually include n when results are positive and robust. The stress/anxiety outcome rests on one human RCT of unknown sample size plus one animal study, offering no credible human evidence. Grading these as 'Moderate' conflates a large number of studies with actual evidence quality.",
-    "what_would_change_the_picture": "Retrieve and appraise full-text reports to extract verified sample sizes and calculate pooled effect sizes with 95% confidence intervals for each outcome. Conduct an independent systematic review of MCT-specific trials (excluding flaxseed, iron, and diarrhea studies) to verify the 2021 meta-analysis conclusion. Identify and conduct at least one additional adequately powered (n>100) RCT on cognition in humans, since current evidence is animal-only.",
+    "mechanism_check": "MCT oils are known to be rapidly absorbed and metabolized to ketone bodies, which have documented metabolic and neurological effects in some conditions (e.g., epilepsy). However, the proposed mechanism for anxiety reduction or general cognition enhancement beyond ketone production is not visible in these abstracts, and the leap from in vitro ketogenesis to clinically meaningful cognitive or anxiolytic outcomes in healthy or general populations is substantial. The lipids mechanism is plausible—MCT oil does alter lipid metabolism—but whether the clinical magnitude of lipid changes claimed is proportional to the mechanism is not transparent from the records.",
+    "strongest_counterargument": "A skeptic would observe that only one human cognition trial exists, with unreported sample size, making any 'emerging' grade premature at best. For lipids, the single meta-analysis conclusion is unverified by independent replication, and the 19 trials appear to conflate MCT, coconut, and flaxseed oils without transparent outcome alignment—making it unclear whether the pooled result actually reflects MCT oil's effect or is confounded by heterogeneous interventions. The absence of reported sample sizes across most trials means the evidence base could be driven by a handful of large trials or a swarm of underpowered small ones; either scenario undermines confidence in effect size. Without these specifics, 'Moderate' grades rest on opacity rather than robust data.",
+    "what_would_change_the_picture": "For cognition: at least 2–3 independently conducted RCTs in humans with pre-registered outcomes, reported sample sizes, and consistent cognitive assessment tools. For lipids and stress/anxiety: a transparent, recent systematic review that explicitly specifies MCT oil (not coconut or flaxseed), reports pooled sample sizes and effect sizes, and assesses heterogeneity across trial populations and designs. For all outcomes: complete sample size reporting in all trials, allowing meta-analytic precision to be verified and small-trial bias to be evaluated.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Una grasa elaborada a partir de aceite de coco o palma, con cadenas de carbono más cortas que las grasas dietéticas típicas.",
+    "what_it_is": "El aceite MCT es un tipo de grasa extraída principalmente del aceite de coco o palma. A diferencia de la mayoría de las grasas dietéticas (que tienen cadenas largas de átomos de carbono), las grasas MCT tienen cadenas más cortas, de ahí el nombre 'triglicérido de cadena media'. Tu cuerpo absorbe y procesa el aceite MCT de manera diferente a las grasas regulares; va más directamente al hígado y se utiliza rápidamente para generar energía en lugar de almacenarse. Las personas generalmente lo toman como suplemento líquido, a veces añadido al café o batidos.",
+    "how_it_works_line": "Se absorbe rápidamente y se convierte en energía; puede influir en los lípidos sanguíneos y el metabolismo a través del hígado.",
+    "how_it_works": "Cuando consumes aceite MCT, tu sistema digestivo lo descompone y lo envía directamente al hígado, donde se convierte en moléculas de energía (llamadas cetonas) o se quema como combustible inmediato, mucho más rápido que las grasas de cadena larga. Este procesamiento rápido puede influir en cómo tu cuerpo gestiona el colesterol y otros lípidos sanguíneos, y podría afectar el aporte de combustible del cerebro durante estados de bajo contenido de carbohidratos. Los mecanismos exactos por los cuales el aceite MCT estabiliza los niveles de lípidos o respalda la cognición no están completamente establecidos en los registros proporcionados; la evidencia muestra asociaciones, pero las vías requieren estudios adicionales.",
+    "safety_line": "Efectos gastrointestinales leves reportados en ensayos a corto plazo; datos a largo plazo y en poblaciones específicas limitados.",
+    "safety_detail": "Los ensayos recuperados no reportaron eventos adversos graves. La mayoría de los estudios fueron a corto plazo (semanas a pocos meses), por lo que la durabilidad de la tolerabilidad es desconocida. Ningún estudio en los registros abordó a personas embarazadas, personas con enfermedad renal o hepática, o adolescentes, por lo que la seguridad en esos grupos sigue sin ser probada.",
+    "safety_bullets": [
+      "Efectos gastrointestinales (náuseas, heces blandas) reportados en algunos participantes; típicos en ensayos a corto plazo pero la frecuencia a largo plazo es desconocida.",
+      "No hay datos recuperados sobre interacciones con medicamentos o suplementos; sin probar con fármacos comunes.",
+      "Embarazo, enfermedad renal, enfermedad hepática y adolescentes ausentes en los ensayos recuperados; seguridad no confirmada en estas poblaciones.",
+      "La seguridad a largo plazo (años de uso regular) no fue abordada en los registros disponibles."
+    ],
+    "chem_meaning": "Las moléculas de aceite MCT son pequeñas y solubles en agua en relación con las grasas de cadena larga, permitiéndoles ser absorbidas directamente en el torrente sanguíneo a través de la vena porta (en lugar de a través del sistema linfático como la grasa regular). Esta diferencia estructural significa que el aceite MCT llega rápidamente al hígado e evita la ruta habitual de almacenamiento de grasas, razón por la cual se metaboliza tan rápidamente para generar energía.",
+    "outcome_detail": [
+      {
+        "outcome": "cholesterol / lipids",
+        "grade": "Moderada",
+        "what_studies_show": "Un metanálisis de 2021 de ensayos aleatorizados encontró que el aceite MCT tiene efectos en los niveles de lípidos sanguíneos (colesterol y marcadores relacionados). Varios ensayos clínicos aleatorizados individuales de 2016–2025, incluyendo un ensayo de 2025 en 120 pacientes en diálisis y estudios que examinan el masaje con aceite MCT en recién nacidos prematuros y sus propiedades de saciedad comparadas con el aceite de coco, contribuyeron datos sobre resultados de lípidos. La mayoría de los 13 estudios humanos y 6 estudios animales no reportaron tamaños exactos de muestra en sus resúmenes, por lo que el verdadero número de participantes verificados es sustancialmente mayor que los 140 que pudieron confirmarse a partir de dos estudios.",
+        "why_this_grade": "Múltiples ensayos clínicos aleatorizados humanos muestran dirección consistente, y un metanálisis sintetizó hallazgos; sin embargo, el metanálisis aún no ha sido replicado de forma independiente, y los tamaños exactos de muestra faltan en la mayoría de los registros, impidiendo confianza plena.",
+        "outcome_key": "cholesterol / lipids",
+        "outcome_es": "colesterol / lípidos"
+      },
+      {
+        "outcome": "cognition",
+        "grade": "Emergente",
+        "what_studies_show": "Un estudio humano de 2023 examinó respuestas cognitivas (incluyendo glucosa en sangre, insulina y niveles de cetonas) después de la ingestión de aceite MCT. Un ensayo animal de 2021 encontró que la suplementación con aceite MCT mejoró las habilidades cognitivas en perros con epilepsia. Los tamaños de muestra no pudieron verificarse a partir de los resúmenes.",
+        "why_this_grade": "Solo un estudio humano aborda la cognición en los registros proporcionados, por lo que la consistencia entre ensayos humanos independientes no puede ser evaluada. Ningún ensayo cognitivo humano grande o bien potenciado ha sido recuperado. Este resultado sigue siendo preliminar en humanos.",
+        "outcome_key": "cognition",
+        "outcome_es": "cognición"
+      },
+      {
+        "outcome": "stress / anxiety",
+        "grade": "Moderada",
+        "what_studies_show": "Dos ensayos clínicos aleatorizados humanos (un ensayo de 2021 sobre masaje con aceite MCT en recién nacidos prematuros y un estudio de 2016 sobre efectos del aceite en pacientes en hemodiálisis) y dos estudios animales (de 2026 y 2023) examinaron resultados relacionados con el estrés o ansiedad. Un estudio animal de 2026 reportó que el aceite MCT oral redujo el comportamiento similar a la ansiedad en roedores y estuvo asociado con cambios en un factor de crecimiento llamado BDNF (factor neurotrófico derivado del cerebro), que respalda la salud nerviosa. Los tamaños de muestra en los resúmenes no pudieron verificarse.",
+        "why_this_grade": "La evidencia humana existe, pero es escasa (dos ensayos) y los tamaños de muestra no están confirmados. Los datos animales son de apoyo pero no pueden confirmar directamente efectos en personas. La calificación refleja una promesa plausible sin confirmación robusta en humanos.",
+        "outcome_key": "stress / anxiety",
+        "outcome_es": "estrés / ansiedad"
+      }
+    ],
+    "evidence_base": "La evidencia está dominada por ensayos clínicos aleatorizados humanos a corto plazo (semanas a pocos meses) y un único metanálisis para lípidos; hay ensayos animales presentes pero en número menor. La mayoría de los estudios son de 2016 en adelante, reflejando interés reciente. Para cognición y estrés/ansiedad, los datos humanos son mínimos (1–2 ensayos cada uno), por lo que la confianza es menor. Los registros proporcionados incluyen aproximadamente 13 estudios humanos y 6 estudios animales en todos los resultados, pero muchos carecen de reportes precisos de tamaño de muestra en sus resúmenes.",
+    "open_questions": "Los registros recuperados no incluyen ensayos a largo plazo (6+ meses), por lo que si los beneficios o la tolerabilidad persisten es desconocido. Las poblaciones estudiadas son limitadas: recién nacidos prematuros, pacientes en hemodiálisis y perros con epilepsia aparecen, pero adultos sanos, adultos mayores y personas con trastornos metabólicos (obesidad, diabetes) están subrrepresentados en la muestra mostrada. Para cognición, solo un estudio humano existe en los registros, demasiados pocos para evaluar si el aceite MCT realmente respalda la función cerebral en personas.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "Los tamaños de muestra en gran medida no se reportan en todos los desenlaces, lo que impide verificar si la base de evidencia alcanza la precisión suficiente; además, la evidencia de cognición descansa en solo un estudio en humanos, lo que hace que los reclamos sean prematuros.",
+    "concerns": [
+      {
+        "issue": "Tamaños de muestra no reportados en la mayoría de los ensayos",
+        "detail": "De 19 estudios de lípidos, solo 2 reportan el tamaño de muestra en resúmenes (n=20, n=120). Para cognición, cero de 2 estudios reportan tamaño de muestra. Para estrés/ansiedad, cero de 4 estudios reportan tamaño de muestra. El motor indica que la precisión es 'sustancialmente mayor' que la verificada pero no confirmada—esta opacidad significa que el tamaño del efecto, la heterogeneidad, y si los resultados son impulsados por un ensayo grande o muchos pequeños no pueden ser evaluados a partir de los registros disponibles.",
+        "severity": "high"
+      },
+      {
+        "issue": "Base de evidencia sobre cognición demasiado pequeña y homogénea para inferencia confiable",
+        "detail": "Solo existe un ECA en humanos sobre cognición en los registros recuperados (2023, tamaño de muestra desconocido); el segundo estudio es en epilepsia canina (modelo animal). El motor explícitamente establece que 'la consistencia no puede ser evaluada entre evidencia humana independiente.' Un único ensayo en humanos, incluso si es positivo, no puede establecer eficacia en una población.",
+        "severity": "high"
+      },
+      {
+        "issue": "Desenlace de lípidos mezcla intervenciones y poblaciones heterogéneas sin transparencia",
+        "detail": "Los 19 estudios de lípidos parecen incluir aceite MCT, aceite de coco, aceite de linaza y comparaciones de omega-3—sin embargo, solo el título del metanálisis de 2021 explícitamente hace referencia a lípidos. Estudios titulados 'crecimiento en infantes prematuros,' 'diarrea infantil,' y 'epilepsia resistente a fármacos' se clasifican como ensayos de lípidos pero sus desenlaces de lípidos no son visibles en estos resúmenes, lo que impide verificar que sean apropiados para agrupar o interpretar como evidencia de lípidos.",
+        "severity": "high"
+      },
+      {
+        "issue": "Metanálisis único sin replicación independiente",
+        "detail": "La revisión sistemática y metanálisis de 2021 sobre lípidos es el único resumen sistemático en los registros de desenlaces de lípidos. El motor explícitamente señala que su conclusión 'no está replicada o verificada de forma independiente.' Sin un segundo metanálisis o replicación independiente de sus métodos y hallazgos, el resultado del metanálisis no puede ser confirmado como robusto.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Evidencia de estrés/ansiedad descansa en solo 2 ECA en humanos, ambos pequeños y infrapotenciados por definición",
+        "detail": "Solo 2 ECA en humanos sobre estrés/ansiedad aparecen en registros; los tamaños de muestra no se reportan para ninguno. Uno se titula 'crecimiento en infantes prematuros' (desenlace de estrés no evidente del título), el otro 'aceite de linaza sobre inflamación' (desenlace de estrés similarmente poco claro). Con n no confirmado y sin efecto agrupado extraíble, la base de evidencia para reclamos de estrés/ansiedad no puede ser cuantificada y puede no estar específicamente diseñada para medir ansiedad.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Se sabe que los aceites MCT son absorbidos y metabolizados rápidamente a cuerpos cetónicos, que tienen efectos metabólicos y neurológicos documentados en algunas condiciones (p. ej., epilepsia). Sin embargo, el mecanismo propuesto para reducción de ansiedad o mejora general de cognición más allá de la producción de cetonas no es visible en estos resúmenes, y el salto de la cetogénesis in vitro a desenlaces cognitivos o ansiolíticos clínicamente significativos en poblaciones sanas o generales es sustancial. El mecanismo de lípidos es plausible—el aceite MCT sí altera el metabolismo de lípidos—pero si la magnitud clínica de cambios de lípidos reclamados es proporcional al mecanismo no es transparente a partir de los registros.",
+    "strongest_counterargument": "Un escéptico observaría que solo existe un ensayo de cognición en humanos, con tamaño de muestra no reportado, lo que hace que cualquier calificación 'emergente' sea prematura en el mejor de los casos. Para lípidos, la conclusión del metanálisis único no está verificada por replicación independiente, y los 19 ensayos parecen confundir aceites MCT, de coco y de linaza sin alineación de desenlaces transparente—lo que hace poco claro si el resultado agrupado realmente refleja el efecto del aceite MCT o está confundido por intervenciones heterogéneas. La ausencia de tamaños de muestra reportados en la mayoría de ensayos significa que la base de evidencia podría ser impulsada por un puñado de ensayos grandes o una multitud de pequeños infrapotenciados; cualquiera de estos escenarios socava la confianza en el tamaño del efecto. Sin estos detalles, las calificaciones 'Moderada' descansan en opacidad en lugar de datos robustos.",
+    "what_would_change_the_picture": "Para cognición: al menos 2–3 ECA conducidos independientemente en humanos con desenlaces pre-registrados, tamaños de muestra reportados y herramientas de evaluación cognitiva consistentes. Para lípidos y estrés/ansiedad: una revisión sistemática reciente y transparente que explícitamente especifique aceite MCT (no coco o linaza), reporte tamaños de muestra agrupados y tamaños de efecto, y evalúe heterogeneidad entre poblaciones y diseños de ensayos. Para todos los desenlaces: reporte completo del tamaño de muestra en todos los ensayos, permitiendo que la precisión del metanálisis sea verificada y el sesgo de ensayos pequeños sea evaluado.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

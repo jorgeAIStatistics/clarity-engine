@@ -1,199 +1,823 @@
 {
   "name": "Tesamorelin",
   "category": "peptide",
-  "overall_score": 73,
-  "tier": "Moderate",
-  "study_count": 27,
+  "overall_score": 95,
+  "tier": "Strong",
+  "study_count": 28,
+  "unique_human_study_count": 27,
+  "unique_animal_study_count": 0,
+  "unique_unlabelled_study_count": 1,
+  "outcome_study_memberships": 43,
   "claims": [
     {
       "outcome": "weight / fat loss",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
+      "tier": "Strong",
+      "certainty": "high",
+      "score": 90,
       "has_human_evidence": true,
-      "n_studies": 17,
+      "n_studies": 23,
       "grade_reasons": [
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Precision: ~3314 participants verified across 11 of 23 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: 2 independent meta-analyses / systematic reviews converge on this outcome (proxy for replicated synthesis); adequately powered."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
         "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 17,
+        "human": 90,
+        "overall": 90,
+        "ceiling": 90,
+        "n_human_studies": 22,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:39813152",
-        "PMID:42419889",
         "PMID:41545261",
-        "PMID:25038357",
+        "PMID:39813152",
         "PMID:28832410",
-        "PMID:20554713",
-        "PMID:18690162",
-        "PMID:18057338",
-        "PMID:22495074",
-        "PMID:20101189",
-        "PMID:21516030",
-        "PMID:29031905",
-        "PMID:31237318",
-        "PMID:26457580",
-        "PMID:32270862",
+        "PMID:21531600",
         "PMID:23015655",
-        "PMID:21531600"
+        "PMID:21516030",
+        "PMID:32270862",
+        "PMID:42419889",
+        "PMID:18690162",
+        "PMID:29031905",
+        "PMID:20101189",
+        "PMID:25038357",
+        "PMID:22495074",
+        "PMID:31237318",
+        "PMID:20554713",
+        "PMID:26457580",
+        "PMID:18057338",
+        "PMID:36845310",
+        "PMID:33756511",
+        "EPMC:PMC:PMC7776066",
+        "EPMC:PMC:PMC10678288",
+        "PMID:20943777",
+        "PMID:30804324"
       ],
       "studies": [
         {
+          "id": "pmid:41545261",
           "pmid": "41545261",
           "title": "Body composition, hepatic fat, metabolic, and safety outcomes of Tesamorelin, a GHRH analogue, in HIV-associated lipodystrophy: A meta-analysis of randomized co",
           "year": "2026",
           "design": "Meta-analysis",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41545261/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "HIV-associated lipodystrophy leads to visceral fat accumulation, metabolic complications, body image concerns, medication non-adherence, and increased cardiovascular risks. We thought to assess the effects of Tesamorelin, a synthetic growth hormone-releasing hormone analogue, that has been proposed as a targeted therapy. We systematically searched PubMed, Embase, Scopus, Web of Science, and CENTRAL through July 2025 for randomized controlled trials (RCTs) evaluating Tesamorelin versus placebo in adults with HIV. Random-effects meta-analysis was applied. Outcomes included changes in body composition, hepatic and metabolic parameters, hormonal markers, and adverse events. Risk of bias was assessed with RoB 2.0, and certainty of evidence with GRADE. Five RCTs evaluating Tesamorelin were included in the analysis. Tesamorelin was associated with significant reduction in visceral adipose tissue (MD=-27.71 cm², 95 % CI [-38.37, -17.06]; P < 0.001), trunk fat (MD=-1.18 kg, 95 % CI [-1.40, -0.96]; P < 0.001), limb fat (MD=-0.22 kg, 95 % CI [-0.35, -0.08]; P = 0.001), hepatic fat percentage (MD=-4.28 %, 95 % CI [-6.31, -2.24]; P < 0.001), and waist circumference (MD=-1.61 cm, 95 % CI [-2.28, -0.95]; P < 0.001). A significant increase in lean body mass was observed (MD=1.42 kg, 95 % CI [1.13, 1.71]; P < 0.001). However, no significant reductions in subcutaneous adipose tissue or BMI were observed. Tesamorelin showed no significant change in CD4 + T-cell counts. Tesamorelin was associated with adverse events, including arthralgia, myalgia, paresthesia, and injection-site reactions like erythema. Tesamorelin improves body composition, hepatic fat, lean body mass, and IGF-1 levels in HIV-associated lipodystrophy, without serious side effects or perturbation of glucose.",
+          "journal": "Obesity research & clinical practice"
         },
         {
+          "id": "pmid:20554713",
+          "pmid": "20554713",
+          "title": "Effects of tesamorelin (TH9507), a growth hormone-releasing factor analog, in human immunodeficiency virus-infected patients with excess abdominal fat: a pooled",
+          "year": "2010",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 806,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20554713/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "HIV patients treated with antiretroviral therapy (ART) often develop increased visceral adipose tissue (VAT). Our objective was to perform a pooled analysis of two phase-3 studies of tesamorelin in ART-treated HIV patients with excess abdominal fat. Two multicenter, international studies were conducted; a 26-wk randomized, placebo-controlled primary intervention phase was followed by a 26-wk safety extension. A total of 806 ART-treated HIV patients with excess abdominal fat were randomized in a 2:1 fashion to receive tesamorelin 2 mg (n = 543) or placebo (n = 263) sc daily. At wk 26, patients initially on tesamorelin were rerandomized to 2 mg tesamorelin (T-T group, n = 246) or placebo (T-P, n = 135) for an additional 26 wk, whereas patients on placebo were switched to tesamorelin (P-T, n = 197). Tesamorelin (GHRH(1-44)) at a dose of 2 mg or identical placebo, sc, was given daily. We evaluated percent change in VAT by computed tomography scan at wk 26. At wk 26, VAT decreased significantly in tesamorelin-treated patients (-24 +/- 41 vs. 2 +/- 35 cm(2), tesamorelin vs. placebo, P < 0.001; treatment effect, -15.4%). No significant changes were observed in abdominal sc adipose tissue (-2 +/- 32 vs. 2 +/- 29 cm(2), P = 0.08; treatment effect, -0.6%). Treatment with tesamorelin resulted in significant decreases in triglycerides (-37 +/- 139 vs. 6 +/- 112 mg/dl, P < 0.001; treatment effect, -12.3%) and cholesterol to high-density lipoprotein ratio (-0.18 +/- 1.00 vs. 0.18 +/- 0.94, P < 0.001; treatment effect, -7.2%) vs. placebo. Tesamorelin improved body image [belly appearance distress (P = 0.002)], patient rating of belly profile (P = 0.003), and physician rating of belly profile (P < 0.001). Mean IGF-I increased 108 +/- 112 vs.-7 +/- 64 ng/ml (P < 0.001 vs. placebo). At wk 52, decreases in VAT [-35 +/- 50 cm(2) (-17.5 +/- 23.3%)], waist circumference (-3.4 +/- 6.0 cm), triglycerides (-48 +/- 182 mg/dl), cholesterol (-8 +/- 38 mg/dl), and non-high-density lipoprotein (-7 +/- 38 mg/dl) were maintained (all P < 0.001 vs. original baseline) in the T-T group. Treatment with tesamorelin was generally well tolerated. No clinically meaningful differences were observed between groups in glucose parameters at wk 26 and 52. Treatment with tesamorelin reduces VAT and maintains the reduction for up to 52 wk, preserves abdominal sc adipose tissue, improves body image and lipids, and is overall well tolerated without clinically meaningful changes in glucose parameters.",
+          "journal": "The Journal of clinical endocrinology and metabolism"
+        },
+        {
+          "id": "pmid:39813152",
           "pmid": "39813152",
           "title": "Effects of Tesamorelin on Neurocognitive Impairment in Persons With HIV and Abdominal Obesity.",
           "year": "2025",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39813152/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "In people with HIV who are virally suppressed with antiretroviral therapy, abdominal obesity (AO) is linked to neurocognitive impairment (NCI), potentially due to visceral adiposity, inflammation, and reduced insulin-like growth factor 1 (IGF-1). Tesamorelin, a growth hormone-releasing hormone, reduces AO and increases IGF-1, suggesting that it might mitigate NCI in people with HIV and viral suppression. This 6-month phase 2 randomized open-label clinical trial compared tesamorelin vs standard of care (SOC) for NCI in people with HIV who were virally suppressed and abdominally obese (elevated waist circumference [WC]). Exclusions included conditions other than HIV causing NCI, active substance use disorder, and malignancy. Seventy-three participants were randomized 3:2 to tesamorelin or SOC (2 mg subcutaneously daily). The primary outcome was the change in neurocognitive performance at 6 months, with secondary outcomes including WC, mood, and daily functioning. The groups were well matched at baseline. The tesamorelin group showed a trend toward improved neurocognitive performance after 6 months (mean change, 0.146; 95% CI, -.002 to .294; P = .060) while the SOC group did not (0.103; 95% CI, -.095 to .301; P = .295), but the between-group difference was not significant (P = .673). IGF-1 levels increased, but changes did not correlate with summary regression change score or WC. The tesamorelin group had a greater reduction in WC than the SOC group (median difference, -2.7 cm; P = .015). While tesamorelin reduced WC, the cognitive benefits did not significantly differ between groups. Recognizing the limitations of insufficient power and no placebo arm, this study suggests no clear benefit of short-term AO reduction with tesamorelin on NCI.",
+          "journal": "The Journal of infectious diseases"
         },
         {
+          "id": "pmid:36845310",
+          "pmid": "36845310",
+          "title": "Effect of tesamorelin in people with HIV with and without dorsocervical fat: Post hoc analysis of phase III double-blind placebo-controlled trial.",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.1017/cts.2022.515",
+          "epmc_id": "MED:36845310",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36845310/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Tesamorelin, a synthetic growth hormone-releasing hormone, is indicated for the reduction of visceral adipose tissue (VAT) in people with HIV. Here, we performed a post hoc analysis of participants receiving tesamorelin for 26 weeks in a phase III clinical trial. Efficacy data were compared between individuals with and without dorsocervical fat, stratified by tesamorelin response. Among tesamorelin responders, VAT and waist circumference (WC) decreased in both dorsocervical fat groups and did not statistically differ (VAT <i>P</i> = 0.657, WC <i>P</i> = 0.093). These data demonstrate that tesamorelin is equally effective and should be considered in the treatment of excess VAT regardless of the presence of dorsocervical fat.",
+          "journal": "Journal of clinical and translational science"
+        },
+        {
+          "id": "pmid:32270862",
           "pmid": "32270862",
           "title": "Clinical Predictors of Liver Fibrosis Presence and Progression in Human Immunodeficiency Virus-Associated Nonalcoholic Fatty Liver Disease.",
           "year": "2021",
           "design": "RCT",
           "population": "human",
-          "n": 58
+          "n": 58,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32270862/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Nonalcoholic fatty liver disease (NAFLD) affects more than one-third of people living with human immunodeficiency virus (HIV). Nonetheless, its natural history is poorly understood, including which patients are most likely to have a progressive disease course. We leveraged a randomized trial of the growth hormone-releasing hormone analogue tesamorelin to treat NAFLD in HIV. Sixty-one participants with HIV-associated NAFLD were randomized to tesamorelin or placebo for 12 months with serial biopsies. In all participants with baseline biopsies (n = 58), 43% had hepatic fibrosis. Individuals with fibrosis had higher NAFLD Activity Score (NAS) (mean ± standard deviation [SD], 3.6 ± 2.0 vs 2.0 ± 0.8; P < .0001) and visceral fat content (mean ± SD, 284 ± 91 cm2 vs 212 ± 95 cm2; P = .005), but no difference in hepatic fat or body mass index. Among placebo-treated participants with paired biopsies (n = 24), 38% had hepatic fibrosis progression over 12 months. For each 25 cm2 higher visceral fat at baseline, odds of fibrosis progression increased by 37% (odds ratio, 1.37 [95% confidence interval, 1.03-2.07]). There was no difference in baseline NAS between fibrosis progressors and nonprogressors, though NAS rose over time in the progressor group (mean ± SD, 1.1 ± 0.8 vs -0.5 ± 0.6; P < .0001). In this longitudinal study of HIV-associated NAFLD, high rates of hepatic fibrosis and progression were observed. Visceral adiposity was identified as a novel predictor of worsening fibrosis. In contrast, baseline histologic characteristics did not relate to fibrosis progression.",
+          "journal": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America"
         },
         {
+          "id": "pmid:33756511",
+          "pmid": "33756511",
+          "title": "Tesamorelin improves fat quality independent of changes in fat quantity.",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.1097/qad.0000000000002897",
+          "epmc_id": "MED:33756511",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33756511/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Objectives</h4>Fat quality and quantity may affect health similarly or differently. Fat quality can be assessed by measuring fat density on CT scan (greater density = smaller, higher quality adipocytes). We assessed the effects of tesamorelin, a growth hormone-releasing hormone analogue that reduces visceral fat (VAT) quantity in some people living with HIV (PWH), on fat density.<h4>Design</h4>Participants from two completed, placebo-controlled, randomized trials of tesamorelin for central adiposity treatment in PWH were included if they had either a clinical response to tesamorelin (VAT decrease ≥8%, ≈70% of participants) or were placebo-treated.<h4>Methods</h4>CT VAT and subcutaneous fat (SAT) density (Hounsfield Units, HU) were measured by a central blinded reader.<h4>Results</h4>Participants (193 responders, 148 placebo) were 87% male and 83% white. Baseline characteristics were similar across arms, including VAT (-91 HU both arms, P = 0.80) and SAT density (-94 HU tesamorelin, -95 HU placebo, P = 0.29). Over 26 weeks, mean (SD) VAT and SAT density increased in tesamorelin-treated participants only [VAT: +6.2 (8.7) HU tesamorelin, +0.3 (4.2) HU placebo, P < 0.0001; SAT: +4.0 (8.7) HU tesamorelin, +0.3 (4.8) HU placebo, P < 0.0001]. The tesamorelin effects persisted after controlling for baseline VAT or SAT HU and area, and VAT [+2.3 HU, 95% confidence interval (4.5-7.3), P = 0.001) or SAT (+3.5 HU, 95% confidence interval (2.3-4.7), P < 0.001] area change.<h4>Conclusion</h4>In PWH with central adiposity who experienced VAT quantity reductions on tesamorelin, VAT and SAT density increased independent of changes in fat quantity, suggesting that tesamorelin also improves VAT and SAT quality in this group.",
+          "journal": "AIDS (London, England)"
+        },
+        {
+          "id": "epmc:pmc:pmc7776066",
+          "pmid": null,
+          "title": "935. Effect of Tesamorelin in People with HIV with and without Dorsocervical Fat: Post Hoc Analysis of Phase III Double Blind Placebo Control Trial",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": "PMC:PMC7776066",
+          "url": "https://europepmc.org/article/PMC/PMC7776066",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Abstract <h4>Background</h4> Lipohypertrophy is defined as excess fat deposition in abdominal defined as visceral adipose tissue (VAT) as well as in the dorsocervical region, breasts, trunk, and along with possible fat deposition in liver, muscle, myocardium and epicardium. Multiple factors have been described as contributing to lipohypertrophy in people living with HIV (PLWH), including patient characteristics, antiretroviral therapy (ART) and also impaired growth hormone (GH) secretion. Tesamorelin, a synthetic form of growth-hormone-releasing hormone (GHRH), is indicated for reduction of excess abdominal fat in PLWH with lipodystrophy <h4>Methods</h4> Post-hoc analysis was done on phase 3 randomized, double-blind, multicenter trials. Patients were eligible if between 18 and 65 years of age, had confirmed HIV infection, had evidence of excess abdominal fat accumulation and on stable ART regimen for 8 weeks or more. Participants were randomized to receive tesamorelin 2 mg daily or placebo daily for 26 weeks. Only tesamorelin responders, defined as patients with at least 8% decrease in VAT and who were adherent to the medication, were used for this analysis. Results are reported for patients with and without dorsocervical (DC) fat deposition. <h4>Results</h4> Demographic characteristics of responders at week 26 are shown according to presence or absence of DC fat (Table 1). At week 26, on average, the patients with DC fat deposition had higher BMI and waist circumference (WC) than the group without DC fat. Most patients in both groups had lipoatrophy. Metabolic and anthropometric parameters were measured at week 26 in patients with and without DC fat (Table 2). There was a decrease in VAT and also an improvement in their WC at week 26 in both groups. Table 1: Baseline Characteristics of Tesamorelin Responder Subjects at Week 26, by Dorsocervical Status  Table 2: Change in Abdominal Adiposity, Insulin-Like Growth Factor-1 Levels, and Metabolic Parameters Between Baseline and Week 26 Among Tesamorelin Responders <h4>Conclusion</h4> This data demonstrates that tesamorelin is effective at reducing VAT in both patients with and without DC fat. The medication was well tolerated without significant changes to metabolic based measurements. Treatment of excessive VAT with tesamorelin has seemingly positive results in fat reduction in patients with or without DC fat deposition and our study contributes to the growing literature. <h4>Disclosures</h4> Marilyn de Chantal, PhD, Theratechnologies Inc (Employee) Pedro Mesquita, PhD, Theratechnologies, Inc. (Employee) Judith A. Aberg, MD, Theratechnology (Consultant)",
+          "journal": "Open forum infectious diseases"
+        },
+        {
+          "id": "pmid:31237318",
           "pmid": "31237318",
           "title": "The Growth Hormone Releasing Hormone Analogue, Tesamorelin, Decreases Muscle Fat and Increases Muscle Area in Adults with HIV.",
           "year": "2019",
           "design": "RCT",
           "population": "human",
-          "n": 193
+          "n": 193,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31237318/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Tesamorelin, a growth hormone-releasing hormone analogue, decreases visceral adipose tissue in people living with HIV, however, the effects on skeletal muscle fat and area are unknown. The goals of this exploratory secondary analysis were to determine the effects of tesamorelin on muscle quality (density) and quantity (area). Secondary, exploratory analysis of two previously completed randomized (2:1), clinical trials. U.S. and Canadian sites. People living with HIV and with abdominal obesity. Tesamorelin participants were restricted to responders (visceral adipose tissue decrease ≥8%). Tesamorelin or placebo. Computed tomography scans (at L4-L5) were used to quantify total and lean density (Hounsfield Units, HU) and area (centimeters2) of four trunk muscle groups using a semi-automatic segmentation image analysis program. Differences between muscle area and density before and after 26 weeks of tesamorelin or placebo treatment were compared and linear regression models were adjusted for baseline and treatment arm. Tesamorelin responders (n=193) and placebo (n=148) participants with available images were similar at baseline; most were Caucasian (83%) and male (87%). In models adjusted for baseline differences and treatment arm, tesamorelin was associated with significantly greater increases in density of four truncal muscle groups (coefficient 1.56-4.86 Hounsfield units; all p<0.005), and the lean anterolateral/abdominal and rectus muscles (1.39 and 1.78 Hounsfield units; both p<0.005) compared to placebo. Significant increases were also seen in total area of the rectus and psoas muscles (0.44 and 0.46 centimeters2; p<0.005), and in the lean muscle area of all four truncal muscle groups (0.64-1.08 centimeters2; p<0.005). Among those with clinically significant decrease in visceral adipose tissue on treatment, tesamorelin was effective in increasing skeletal muscle area and density. Long term effectiveness of tesamorelin among people with and without HIV, and the impact of these changes in daily life should be further studied.",
+          "journal": "The Journal of frailty & aging"
         },
         {
+          "id": "pmid:29031905",
           "pmid": "29031905",
           "title": "Fibroblast growth factor 21 decreases after liver fat reduction via growth hormone augmentation.",
           "year": "2017",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29031905/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Fibroblast growth factor 21 (FGF21) ameliorates steatohepatitis but is increased in humans with fatty liver, potentially due to compensatory mechanisms and/or FGF21 resistance. Further, animal models suggest that GH increases serum FGF21. Tesamorelin, a growth hormone releasing hormone agonist, reduces liver fat in HIV-infected individuals. The objectives of this study were to investigate changes in FGF21 during tesamorelin treatment, to elucide the interplay between FGF21, GH augmentation, and liver fat reduction in humans. 50 HIV-infected men and women with increased abdominal adiposity participated in this randomized, placebo-controlled trial of tesamorelin, 2mg vs. identical placebo daily for six months. Fasting laboratory measures, liver fat by  At baseline, serum log In HIV-infected individuals, FGF21 is significantly positively associated with liver fat. FGF21 decreases in association with reductions in liver fat, GGT, and FIB4, suggesting that FGF21 is upregulated in the context of steatosis and steatohepatitis and is reduced when these conditions improve. Moreover, these data suggest that tesamorelin improves liver fat via pathways other than increasing serum FGF21. clinicaltrials.govNCT01263717.",
+          "journal": "Growth hormone & IGF research : official journal of the Growth Hormone Research Society and the International IGF Research Society"
         },
         {
+          "id": "pmid:26457580",
           "pmid": "26457580",
           "title": "Predictors of Treatment Response to Tesamorelin, a Growth Hormone-Releasing Factor Analog, in HIV-Infected Patients with Excess Abdominal Fat.",
           "year": "2015",
           "design": "RCT",
           "population": "human",
-          "n": 543
+          "n": 543,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26457580/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Tesamorelin, a synthetic analog of human growth hormone-releasing factor, decreases visceral adipose tissue (VAT) in human immunodeficiency virus (HIV)-infected patients with lipodystrophy. 1) To evaluate the utility of patient characteristics and validated disease-risk scores, namely indicator variables for the metabolic syndrome defined by the International Diabetes Federation (MetS-IDF) or the National Cholesterol Education Program (MetS-NCEP) and the Framingham Risk Score (FRS), as predictors of VAT reduction during tesamorelin therapy at 3 and 6 months, and 2) To explore the characteristics of patients who reached a threshold of VAT <140 cm2, a level associated with lower risk of adverse health outcomes, after 6 months of treatment with tesamorelin. Data were analyzed from two Phase 3 studies in which HIV-infected patients with excess abdominal fat were randomized in a 2:1 ratio to receive tesamorelin 2 mg (n = 543) or placebo (n = 263) subcutaneously daily for 6 months, using ANOVA and ANCOVA models. Metabolic syndrome (MetS-IDF or MetS-NCEP) and FRS were significantly associated with VAT at baseline. Presence of metabolic syndrome ([MetS-NCEP), triglyceride levels >1.7 mmol/L, and white race had a significant impact on likelihood of response to tesamorelin after 6 months of therapy (interaction p-values 0.054, 0.063, and 0.025, respectively). No predictive factors were identified at 3 months. The odds of a VAT reduction to <140 cm2 for subjects treated with tesamorelin was 3.9 times greater than that of subjects randomized to placebo after controlling for study, gender, baseline body mass index (BMI) and baseline VAT (95% confidence interval [CI] 2.03; 7.44). Individuals with baseline MetS-NCEP, elevated triglyceride levels, or white race were most likely to experience reductions in VAT after 6 months of tesamorelin treatment. The odds of response of VAT <140 cm2 was 3.9 times greater for tesamorelin-treated patients than that of patients receiving placebo.",
+          "journal": "PloS one"
         },
         {
+          "id": "pmid:25038357",
           "pmid": "25038357",
           "title": "Effect of tesamorelin on visceral fat and liver fat in HIV-infected patients with abdominal fat accumulation: a randomized clinical trial.",
           "year": "2014",
           "design": "RCT",
           "population": "human",
-          "n": 28
+          "n": 28,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25038357/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Among patients infected with human immunodeficiency virus (HIV), visceral adiposity is associated with metabolic dysregulation and ectopic fat accumulation. Tesamorelin, a growth hormone-releasing hormone analog, specifically targets visceral fat reduction but its effects on liver fat are unknown. To investigate the effect of tesamorelin on visceral and liver fat. Double-blind, randomized, placebo-controlled trial conducted among 50 antiretroviral-treated HIV-infected men and women with abdominal fat accumulation at Massachusetts General Hospital in Boston. The first patient was enrolled on January 10, 2011; for the final patient, the 6-month study visit was completed on September 6, 2013. Participants were randomized to receive tesamorelin, 2 mg (n=28), or placebo (n=22), subcutaneously daily for 6 months. Primary end points were changes in visceral adipose tissue and liver fat. Secondary end points included glucose levels and other metabolic end points. Forty-eight patients received treatment with study drug. Tesamorelin significantly reduced visceral adipose tissue (mean change, -34 cm2 [95% CI, -53 to -15 cm2] with tesamorelin vs 8 cm2 [95% CI, -14 to 30 cm2] with placebo; treatment effect, -42 cm2 [95% CI, -71 to -14 cm2]; P = .005) and liver fat (median change in lipid to water percentage, -2.0% [interquartile range {IQR}, -6.4% to 0.1%] with tesamorelin vs 0.9% [IQR, -0.6% to 3.7%] with placebo; P = .003) over 6 months, for a net treatment effect of -2.9% in lipid to water percentage. Fasting glucose increased in the tesamorelin group at 2 weeks (mean change, 9 mg/dL [95% CI, 5-13 mg/dL] vs 2 mg/dL [95% CI, -3 to 8 mg/dL] in the placebo group; treatment effect, 7 mg/dL [95% CI, 1-14 mg/dL]; P = .03), but changes at 6 months in fasting glucose (mean change, 4 mg/dL [95% CI, -2 to 10 mg/dL] with tesamorelin vs 2 mg/dL [95% CI, -4 to 7 mg/dL] with placebo; treatment effect, 2 mg/dL [95% CI, -6 to 10 mg/dL]; P = .72 overall across time points) and 2-hour glucose (mean change, -1 mg/dL [95% CI, -18 to 15 mg/dL] vs -8 mg/dL [95% CI, -24 to 8 mg/dL], respectively; treatment effect, 7 mg/dL [95% CI, -16 to 29 mg/dL]; P = .53 overall across time points) were not significant. In this preliminary study of HIV-infected patients with abdominal fat accumulation, tesamorelin administered for 6 months was associated with reductions in visceral fat and additionally with modest reductions in liver fat. Further studies are needed to determine the clinical importance and long-term consequences of these findings. clinicaltrials.gov Identifier: NCT01263717.",
+          "journal": "JAMA"
         },
         {
-          "pmid": "22495074",
-          "title": "Reduction in visceral adiposity is associated with an improved metabolic profile in HIV-infected patients receiving tesamorelin.",
-          "year": "2012",
-          "design": "RCT",
-          "population": "human",
-          "n": 402
-        },
-        {
+          "id": "pmid:23015655",
           "pmid": "23015655",
           "title": "Metabolic effects of a growth hormone-releasing factor in obese subjects with reduced growth hormone secretion: a randomized controlled trial.",
           "year": "2012",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23015655/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Obesity is associated with reduced GH secretion and increased cardiovascular disease risk. We performed this study to determine the effects of augmenting endogenous GH secretion on body composition and cardiovascular disease risk indices in obese subjects with reduced GH secretion. A randomized, double-blind, placebo-controlled study was performed involving 60 abdominally obese subjects with reduced GH secretion. Subjects received tesamorelin, a GHRH(1-44) analog, 2 mg once daily, or placebo for 12 months. Abdominal visceral adipose tissue (VAT) was assessed by abdominal computed tomography scan, and carotid intima-media thickness (cIMT) was assessed by ultrasound. Treatment effect was determined by longitudinal linear mixed-effects modeling. VAT [-16 ± 9 vs.19 ± 9 cm(2), tesamorelin vs. placebo; treatment effect (95% confidence interval): -35 (-58, -12) cm(2); P = 0.003], cIMT (-0.03 ± 0.01 vs. 0.01 ± 0.01 mm; -0.04 (-0.07, -0.01) mm; P = 0.02), log C-reactive protein (-0.17 ± 0.04 vs. -0.03 ± 0.05 mg/liter; -0.15 (-0.30, -0.01) mg/liter, P = 0.04), and triglycerides (-26 ± 16 vs. 12 ± 8 mg/dl; -37 (-67, -7) mg/dl; P = 0.02) improved significantly in the tesamorelin group vs. placebo. No significant effects on abdominal sc adipose tissue (-6 ± 6 vs. 3 ± 11 cm(2); -10 (-32, +13) cm(2); P = 0.40) were seen. IGF-I increased (86 ± 21 vs. -6 ± 8 μg/liter; 92 (+52, +132) μg/liter; P < 0.0001). No changes in fasting, 2-h glucose, or glycated hemoglobin were seen. There were no serious adverse events or differences in adverse events between the groups. Among obese subjects with relative reductions in GH, tesamorelin selectively reduces VAT without significant effects on sc adipose tissue and improves triglycerides, C-reactive protein, and cIMT, without aggravating glucose.",
+          "journal": "The Journal of clinical endocrinology and metabolism"
         },
         {
+          "id": "pmid:22495074",
+          "pmid": "22495074",
+          "title": "Reduction in visceral adiposity is associated with an improved metabolic profile in HIV-infected patients receiving tesamorelin.",
+          "year": "2012",
+          "design": "RCT",
+          "population": "human",
+          "n": 402,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22495074/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Tesamorelin, a growth hormone-releasing hormone analogue, decreases visceral adipose tissue (VAT) by 15%-20% over 6-12 months in individuals with human immunodeficiency virus (HIV)-associated abdominal adiposity, but it is unknown whether VAT reduction is directly associated with endocrine and metabolic changes. In 2 phase III, randomized, double-blind studies, men and women with HIV-associated abdominal fat accumulation were randomly assigned (ratio, 2:1) to receive tesamorelin or placebo for 26 weeks. At week 26, patients initially receiving tesamorelin were randomly assigned to continue receiving tesamorelin or to receive placebo for an additional 26 weeks. In per-protocol analysis of 402 subjects initially randomly assigned to receive tesamorelin, those with ≥8% reduction in VAT were defined a priori as responders per the statistical analysis plan. Post hoc analyses were performed to assess differences between responders and nonresponders. Compared with tesamorelin nonresponders, responders experienced greater mean (±SD) reduction in triglyceride levels (26 weeks: -0.6 ± 1.7 mmol/L vs -0.1 ± 1.2 mmol/L [P = .005]; 52 weeks: -0.8 ± 1.8 mmol/L vs 0.0 ± 1.1 mmol/L [P = .003]) and attenuated changes in fasting glucose levels (26 weeks: 1 ± 16 mg/dL vs 5 ± 14 mg/dL [P = .01]; 52 weeks: -1 ± 14 mg/dL vs 8 ± 17 mg/dL [P < .001]), hemoglobin A1c levels (26 weeks: 0.1 ± 0.3% vs 0.3 ± 0.4% [P < .001]; 52 weeks: 0.0 ± 0.3% vs 0.2 ± 0.5% [P = .003]), and other parameters of glucose homeostasis. Similar patterns were seen for adiponectin levels, with significant improvement in responders vs nonresponders. Changes in lipid levels and glucose homeostasis were significantly associated with percentage change in VAT. In contrast to nonresponders, HIV-infected patients receiving tesamorelin with ≥8% reduction in VAT have significantly improved triglyceride levels, adiponectin levels, and preservation of glucose homeostasis over 52 weeks of treatment. CLINICALTRIALS.GOV REGISTRATION: NCT00123253, NCT00435136, NCT00608023.",
+          "journal": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America"
+        },
+        {
+          "id": "pmid:21516030",
           "pmid": "21516030",
           "title": "Effects of tesamorelin on inflammatory markers in HIV patients with excess abdominal fat: relationship with visceral adipose reduction.",
           "year": "2011",
           "design": "RCT",
           "population": "human",
-          "n": 273
+          "n": 273,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21516030/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To report the effects of tesamorelin, a growth hormone-releasing hormone analogue, on inflammatory and fibrinolytic markers and to relate these effects to changes in visceral adipose tissue (VAT). Four hundred and ten HIV-infected patients with abdominal adiposity were randomized to 2 mg tesamorelin (n = 273) or placebo (n = 137) subcutaneously daily for 26 weeks. Circulating plasminogen activator inhibitor-1 (PAI-1) antigen, tissue plasminogen activator (tPA) antigen, C-reactive protein (CRP), and adiponectin were assessed. At baseline, VAT was significantly associated with PAI-1 antigen (ρ = 0.36, P < 0.001), tPA antigen (ρ = 0.29, P < 0.001), CRP (ρ = 0.18, P < 0.001), and adiponectin (ρ = -0.22, P < 0.001). Treatment with tesamorelin resulted in a significant decrease from baseline in tPA antigen (-2.2 ± 2.5 vs. -1.6 ± 2.9 ng/ml, tesamorelin vs. placebo, P < 0.05). Changes in PAI-1 antigen were not significant in the tesamorelin group compared to placebo. Among patients receiving tesamorelin, changes in inflammatory markers were associated with change in VAT (PAI-1 antigen: ρ = 0.16, P = 0.02; tPA antigen: ρ = 0.16, P = 0.02; adiponectin: ρ = -0.27, P < 0.001), and these associations remained significant when controlling for changes in insulin-like growth factor-1. In HIV patients with abdominal adiposity, tesamorelin may have a modest beneficial effect on adiponectin and fibrinolytic markers in association with changes in VAT. Further studies are needed to determine the clinical significance of these changes. These data further highlight the deleterious role of excessive VAT and the utility of strategies to improve VAT in this population.",
+          "journal": "AIDS (London, England)"
         },
         {
+          "id": "pmid:20101189",
           "pmid": "20101189",
           "title": "Effects of tesamorelin, a growth hormone-releasing factor, in HIV-infected patients with abdominal fat accumulation: a randomized placebo-controlled trial with ",
           "year": "2010",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20101189/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "HIV-infected patients receiving antiretroviral therapy often demonstrate excess visceral fat. A growth hormone-releasing factor, tesamorelin, may selectively reduce visceral fat in this population. We investigated the effects of tesamorelin (GHRH(1-44)) in HIV-infected patients with central fat accumulation. A 12-month study of 404 HIV-infected patients with excess abdominal fat in the context of antiretroviral therapy was conducted between January 2007 and October 2008. The study consisted of 2 sequential phases. In the primary efficacy phase (months 0-6), patients were randomly assigned to receive tesamorelin [2 mg subcutaneous (SC) every day] or placebo in a 2:1 ratio. In the extension phase (months 6-12), patients receiving tesamorelin were rerandomized to continue on tesamorelin (2 mg SC every day) or switch to placebo. Patients initially randomized to placebo switched to tesamorelin. Patients and investigators were blinded to treatment assignment throughout the study. The primary endpoint was visceral adipose tissue (VAT). Secondary endpoints included body image, IGF-I, safety measures, including glucose, and other body composition measures. VAT decreased by -10.9% (-21 cm(2)) in the tesamorelin group vs. -0.6% (-1 cm(2)) in the placebo group in the 6-month efficacy phase, P < 0.0001. Trunk fat (P < 0.001), waist circumference (P = 0.02), and waist-hip-ratio (P = 0.001) improved, with no change in limb or abdominal SC fat. Insulin-like growth factor-1 increased (P < 0.001), but no change in glucose parameters was observed. Patient rating of belly appearance distress (P = 0.02) and physician rating of belly profile (P = 0.02) were significantly improved in the tesamorelin vs. placebo-treated groups. The drug was well tolerated. VAT was reduced by approximately 18% (P < 0.001) in patients continuing tesamorelin for 12 months. The initial improvements over 6 months in VAT were rapidly lost in those switching from tesamorelin to placebo. Tesamorelin reduces visceral fat by approximately 18% and improves body image distress in HIV-infected patients with central fat accumulation. These changes are achieved without significant side effects or perturbation of glucose.",
+          "journal": "Journal of acquired immune deficiency syndromes (1999)"
         },
         {
+          "id": "pmid:18690162",
           "pmid": "18690162",
           "title": "Long-term safety and effects of tesamorelin, a growth hormone-releasing factor analogue, in HIV patients with abdominal fat accumulation.",
           "year": "2008",
           "design": "RCT",
           "population": "human",
-          "n": 273
+          "n": 273,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18690162/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Treatment of HIV patients with daily tesamorelin, a growth hormone-releasing factor analogue, for 26 weeks resulted in a significant decrease in visceral adipose tissue (VAT) and improvement in lipids. The objective of the 26-week extension phase was to evaluate long-term safety and effects of tesamorelin. HIV patients with central fat accumulation in the context of antiretroviral therapy were randomized to tesamorelin 2 mg (n = 273) or placebo (n = 137) s.c. daily for 26 weeks. At week 26, patients originally on tesamorelin were rerandomized to 2 mg tesamorelin (T-T group, n = 154) or placebo (T-P group, n = 50), whereas patients originally on placebo were switched to tesamorelin (P-T group, n = 111). Safety included adverse events and glucose parameters. Tesamorelin was generally well tolerated. The prevalence of adverse events and serious adverse events during the extension phase was comparable with the initial phase. Changes in glucose parameters over 52 weeks were not clinically significant and similar to those after 26 weeks. The change in VAT was sustained at -18% over 52 weeks of treatment (P < 0.001 versus baseline) as was the change in triglycerides (-51 mg/dl, P < 0.001 versus baseline). Similar sustained beneficial effects were seen for total cholesterol, but high-density lipoprotein decreased minimally over 52 weeks. Upon discontinuation of tesamorelin, VAT reaccumulated. Treatment with tesamorelin was generally well tolerated and resulted in sustained decreases in VAT and triglycerides over 52 weeks without aggravating glucose. Though effects on VAT are sustained during treatment for 52 weeks, these effects do not last beyond the duration of treatment.",
+          "journal": "AIDS (London, England)"
         },
         {
+          "id": "pmid:18057338",
           "pmid": "18057338",
           "title": "Metabolic effects of a growth hormone-releasing factor in patients with HIV.",
           "year": "2007",
           "design": "RCT",
           "population": "human",
-          "n": 412
+          "n": 412,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18057338/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Visceral adipose tissue accumulates during antiretroviral therapy in many patients who are infected with the human immunodeficiency virus (HIV); this process is associated with an increased cardiovascular risk. We assessed the use of a growth hormone-releasing factor analogue, tesamorelin, to decrease visceral adiposity. We randomly assigned 412 patients with HIV (86% of whom were men) who had an accumulation of abdominal fat to receive a daily subcutaneous injection of either 2 mg of tesamorelin or placebo for 26 weeks. The primary end point was the percent change from baseline in visceral adipose tissue as shown on computed tomography. Secondary end points included triglyceride levels, the ratio of total cholesterol to high-density lipoprotein (HDL) cholesterol, the level of insulin-like growth factor I (IGF-I), and self-assessed body image. Glycemic measures included glucose and insulin levels. The measure of visceral adipose tissue decreased by 15.2% in the tesamorelin group and increased by 5.0% in the placebo group; the levels of triglycerides decreased by 50 mg per deciliter and increased by 9 mg per deciliter, respectively, and the ratio of total cholesterol to HDL cholesterol decreased by 0.31 and increased by 0.21, respectively (P<0.001 for all comparisons). Levels of total cholesterol and HDL cholesterol also improved significantly in the tesamorelin group. Levels of IGF-I increased by 81.0% in the tesamorelin group and decreased by 5.0% in the placebo group (P<0.001). Adverse events did not differ significantly between the two study groups, but more patients in the tesamorelin group withdrew from the study because of an adverse event. No significant differences were observed in glycemic measures. Daily tesamorelin for 26 weeks decreased visceral fat and improved lipid profiles, effects that might be useful in HIV-infected patients who have treatment-associated central fat accumulation. (ClinicalTrials.gov number, NCT00123253 [ClinicalTrials.gov] .).",
+          "journal": "The New England journal of medicine"
         },
         {
+          "id": "pmid:42419889",
           "pmid": "42419889",
           "title": "Tesamorelin as an Adjunct to Exercise for Improving Physical Function in HIV (TRIUMPH): a clinical trial protocol.",
           "year": "2026",
           "design": "Clinical trial",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42419889/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The Tesamorelin as an Adjunct to Exercise for Improving Physical Function in HIV (TRIUMPH) study is a randomised controlled trial with the overall goal of examining the combined effect of exercise and the growth hormone-releasing hormone analogue tesamorelin on physical function. TRIUMPH is a two-site, double-blind, randomised trial of 100 sedentary older adults (aged 50-80 years) living with HIV who are frail or at risk for frailty and have excess abdominal adiposity. Enrolled participants will be randomised to receive tesamorelin or placebo as an adjunct to a home-based semisupervised exercise programme for 24 weeks, followed by a 24-week extension phase of independent exercise. We will determine short-term and sustained effects of tesamorelin plus exercise on clinical endpoints, including physical function, muscle content and quality, quality of life, and exercise adherence at Weeks 24 and 48. We also will elucidate effects of tesamorelin plus exercise on biological endpoints, including muscle fat and mitochondrial function at Week 24. Ethical approval for the TRIUMPH study was obtained from the Institutional Review Boards at participating sites. All participants provide written informed consent prior to enrolment. Study findings will be disseminated through peer-reviewed publications and scientific conferences and may inform future interventions to improve physical function among older adults living with HIV. NCT06554717.",
+          "journal": "BMJ open"
         },
         {
+          "id": "pmid:21531600",
           "pmid": "21531600",
           "title": "Relationship of adiponectin to endogenous GH pulse secretion parameters in response to stimulation with a growth hormone releasing factor.",
           "year": "2011",
           "design": "Clinical trial",
           "population": "human",
-          "n": 13
+          "n": 13,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21531600/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Obesity is associated with both reduced growth hormone (GH) and adiponectin. However, the relationship between adiponectin and parameters of endogenous GH secretion remains unknown. The aim of this study was to determine the relationship between total and high molecular weight (HMW) adiponectin and parameters of endogenous pulsatile GH secretion and the effects of tesamorelin, a synthetic GH releasing hormone (GHRH(1-44)), on total and HMW adiponectin. A 2-week interventional study with tesamorelin was conducted at an academic medical center in 13 men with BMI 20-35 kg/m(2). Overnight frequent blood sampling and measurement of total and HMW adiponectin at baseline and after treatment were performed to assess the effects of augmenting endogenous pulsatile GH secretion. Total, but not HMW, adiponectin was positively associated with log(10)Peak GH area (r=+0.73; P=0.005), basal GH secretion (r=+0.67; P=0.01), and total GH production (r=+0.57; P=0.04), but was not associated with the number of secretion events (P=0.85). Two-week treatment with tesamorelin increased endogenous GH release and IGF-1, but neither total (change -0.16±0.64; P=0.40), nor HMW (change +0.03±0.70; P=0.87) adiponectin changed significantly with treatment. Sub-analyses in overweight and obese men yielded similar results. Our study demonstrates a strong relationship between specific parameters of endogenous GH pulsatility and adiponectin. However, short-term augmentation of GH pulsatility over 2-weeks does not change adiponectin. Therefore, the relationship between GH and adiponectin is most likely mediated by specific covariates related to adiposity or other factors.",
+          "journal": "Growth hormone & IGF research : official journal of the Growth Hormone Research Society and the International IGF Research Society"
         },
         {
+          "id": "pmid:30804324",
+          "pmid": "30804324",
+          "title": "Comparison of visceral fat measurement by dual-energy X-ray absorptiometry to computed tomography in HIV and non-HIV.",
+          "year": "2019",
+          "design": "Observational",
+          "population": "human",
+          "n": 313,
+          "doi": "10.1038/s41387-019-0073-1",
+          "epmc_id": "MED:30804324",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30804324/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background/objectives</h4>Individuals with HIV are susceptible to visceral fat accumulation, which confers an increased risk of cardiometabolic disease. Advanced software to ascertain visceral fat content from dual-energy X-ray absorptiometry (DXA) has not been validated among this population. We sought to compare DXA with computed tomography (CT) in the measurement of visceral fat cross-sectional area (VAT) in HIV and non-HIV using Bland-Altman analyses.<h4>Subjects/methods</h4>Data were combined from five previously conducted studies of individuals with HIV (n = 313) and controls without HIV (n = 144) in which paired DXA and CT scans were available. In cross-sectional analyses, DXA-VAT was compared with CT-VAT among participants with and without HIV. In longitudinal analyses, changes in VAT over time were compared between DXA and CT among participants with and without HIV receiving no intervention over 12 months and among individuals with HIV receiving tesamorelin-a medication known to reduce VAT-over 6 months.<h4>Results</h4>In HIV, DXA underestimated VAT compared with CT among individuals with increased visceral adiposity. The measurement bias was -9 ± 47 cm<sup>2</sup> overall, but became progressively larger with greater VAT (P < 0.0001), e.g., -61 ± 58 cm<sup>2</sup> among those with VAT ≥ 200 cm<sup>2</sup>. Sex-stratified analyses revealed that the relationship between VAT and measurement bias was especially pronounced in men (P < 0.0001). Longitudinally, DXA underestimated changes in VAT, particularly among those at the extremes of VAT gain or loss (P < 0.0001). In contrast to the cross-sectional findings, the tendency for DXA to underestimate longitudinal changes in VAT was evident in both men and women. Analogous findings were seen among controls in cross-sectional and longitudinal analyses.<h4>Conclusions</h4>DXA underestimated VAT relative to CT in men with and without HIV, who had increased visceral adiposity. DXA also underestimated changes in VAT over time in men and women, irrespective of HIV status. DXA-VAT should be used with caution among both HIV and non-HIV-infected populations.",
+          "journal": "Nutrition & diabetes"
+        },
+        {
+          "id": "pmid:28832410",
           "pmid": "28832410",
           "title": "Visceral fat reduction with tesamorelin is associated with improved liver enzymes in HIV.",
           "year": "2017",
           "design": "Unclassified",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28832410/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Tesamorelin reduces visceral adipose tissue (VAT) in HIV. We investigated whether reductions in VAT with tesamorelin are associated with changes in alanine aminotransferase (ALT) and aspartate aminotransferase (AST). We utilized data from two multicenter Phase III trials of tesamorelin among 806 HIV-infected patients with abdominal obesity. These studies showed that the majority of patients treated with tesamorelin are 'responders', defined a priori by the Food and Drug Administration as achieving at least 8% reduction in VAT. In the current analysis, we sought to examine the impact of VAT reduction on ALT and AST among patients participating in the Phase III trials with baseline elevated ALT or AST. Within this group, we compared changes in ALT and AST in VAT responders vs. nonresponders after 26 weeks of treatment, and then assessed the effects of drug discontinuation on these endpoints over a subsequent 26-week period. At baseline, VAT was positively associated with ALT (P = 0.01). In study participants assigned to tesamorelin with baseline ALT or AST more than 30 U/l, VAT responders experienced greater reductions in ALT (-8.9 ± 22.6 vs. 1.4 ± 34.7 U/l, P = 0.004) and AST (-3.8 ± 12.9 vs. 0.4 ± 22.4 U/l, P = 0.04) compared with nonresponders over 26 weeks. This improvement among VAT responders persisted over 52 weeks even in those switched to placebo despite a partial reaccumulation of VAT. A clinically significant VAT reduction with tesamorelin was associated with improved liver enzymes among HIV-infected patients with abdominal obesity and elevated baseline transaminases.",
+          "journal": "AIDS (London, England)"
         },
         {
-          "pmid": "20554713",
-          "title": "Effects of tesamorelin (TH9507), a growth hormone-releasing factor analog, in human immunodeficiency virus-infected patients with excess abdominal fat: a pooled",
-          "year": "2010",
+          "id": "pmid:20943777",
+          "pmid": "20943777",
+          "title": "Effects of a growth hormone-releasing hormone analog on endogenous GH pulsatility and insulin sensitivity in healthy men.",
+          "year": "2011",
           "design": "Unclassified",
           "population": "human",
-          "n": 806
+          "n": null,
+          "doi": "10.1210/jc.2010-1587",
+          "epmc_id": "MED:20943777",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20943777/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Context and objective</h4>Strategies to augment pulsatile GH may be beneficial in patients with excess visceral adiposity, in whom GH secretion is reduced. The objective of this study was to determine the effects of a novel GHRH (GHRH(1-44)) analog, tesamorelin, on endogenous GH pulsatility and insulin sensitivity in healthy men.<h4>Design, participants, and intervention</h4>Thirteen males (mean age 45 ± 3 yr and body mass index 27.3 ± 1.2 kg/m(2)) received tesamorelin 2 mg sc once daily for 2 wk, with assessment made at baseline, after 2 wk of treatment, and after 2 wk of withdrawal.<h4>Outcome measures</h4>The primary end point was change in mean overnight GH as determined by overnight frequent sampling. Secondary end points included insulin-stimulated glucose uptake as measured by euglycemic hyperinsulinemic clamp; IGF-I; and GH secretion parameters, including pulse area, pulse frequency, and basal secretion.<h4>Results</h4>Tesamorelin treatment increased mean overnight GH (change +0.5 ± 0.1 μg/liter, P = 0.004), average log(10) GH peak area (change +0.4 ± 0.1 log(10) μg/liter, P = 0.001), and basal GH secretion (change +0.008 ± 0.003 μg/liter · min, P = 0.008). IGF-I increased by 181 ± 22 μg/liter (P < 0.0001). Neither fasting glucose (P = 0.93) nor insulin-stimulated glucose uptake (P = 0.61) was significantly affected by tesamorelin.<h4>Conclusions</h4>Once-daily short-term treatment with a GHRH(1-44) analog, tesamorelin, augments basal and pulsatile GH secretion. Moreover, although tesamorelin significantly increases IGF-I, peripheral insulin-stimulated glucose uptake appears to be preserved.",
+          "journal": "The Journal of clinical endocrinology and metabolism"
+        },
+        {
+          "id": "epmc:pmc:pmc10678288",
+          "pmid": null,
+          "title": "1499. Tesamorelin Reduces Visceral Adipose Tissue and Liver Fat in INSTI-Treated Persons with HIV",
+          "year": "2023",
+          "design": "Unclassified",
+          "population": "unknown",
+          "n": null,
+          "doi": null,
+          "epmc_id": "PMC:PMC10678288",
+          "url": "https://europepmc.org/article/PMC/PMC10678288",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": null,
+          "journal": "Open forum infectious diseases"
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "23015655",
+            "metric": "mean_diff",
+            "value": -35,
+            "ci_low": -58,
+            "ci_high": -12,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "VAT [-16 ± 9 vs.19 ± 9 cm(2), tesamorelin vs. placebo; treatment effect (95% confidence interval): -35 (-58, -12) cm(2); P = 0.003]"
+          },
+          {
+            "pmid": "18690162",
+            "metric": "mean_diff",
+            "value": -18,
+            "ci_low": -36.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "The change in VAT was sustained at -18% over 52 weeks of treatment (P < 0.001 versus baseline)"
+          },
+          {
+            "pmid": "20101189",
+            "metric": "mean_diff",
+            "value": -10.9,
+            "ci_low": -21.8,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "VAT decreased by -10.9% (-21 cm(2)) in the tesamorelin group vs. -0.6% (-1 cm(2)) in the placebo group in the 6-month efficacy phase"
+          },
+          {
+            "pmid": "25038357",
+            "metric": "mean_diff",
+            "value": -34,
+            "ci_low": -53,
+            "ci_high": -15,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Tesamorelin significantly reduced visceral adipose tissue (mean change, -34 cm2 [95% CI, -53 to -15 cm2] with tesamorelin vs 8 cm2 [95% CI, -14 to 30 cm2] with placebo"
+          },
+          {
+            "pmid": "22495074",
+            "metric": "mean_diff",
+            "value": -15,
+            "ci_low": -30.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "Tesamorelin, a growth hormone-releasing hormone analogue, decreases visceral adipose tissue (VAT) by 15%-20% over 6-12 months"
+          },
+          {
+            "pmid": "20554713",
+            "metric": "mean_diff",
+            "value": -24,
+            "ci_low": -48.0,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "placebo",
+            "direction": "benefit",
+            "quote": "At wk 26, VAT decreased significantly in tesamorelin-treated patients (-24 +/- 41 vs. 2 +/- 35 cm(2), tesamorelin vs. placebo, P < 0.001; treatment effect, -15.4%)"
+          },
+          {
+            "pmid": "26457580",
+            "metric": "odds_ratio",
+            "value": 3.9,
+            "ci_low": 2.03,
+            "ci_high": 7.44,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "The odds of a VAT reduction to <140 cm2 for subjects treated with tesamorelin was 3.9 times greater than that of subjects randomized to placebo after controlling for study, gender, baseline body mass index (BMI) and baseline VAT (95% confidence interval [CI] 2.03; 7.44)."
+          },
+          {
+            "pmid": "18057338",
+            "metric": "mean_diff",
+            "value": -20.2,
+            "ci_low": -40.4,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "The measure of visceral adipose tissue decreased by 15.2% in the tesamorelin group and increased by 5.0% in the placebo group"
+          },
+          {
+            "pmid": "33756511",
+            "metric": "mean_diff",
+            "value": 6.2,
+            "ci_low": 0.0,
+            "ci_high": 12.4,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "VAT: +6.2 (8.7) HU tesamorelin, +0.3 (4.2) HU placebo"
+          }
+        ],
+        "n_not_reported": 12,
+        "n_total": 21
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For weight / fat loss, Tesamorelin has moderate human evidence (17 studies)."
+      "headline_effect": {
+        "metric": "mean_diff",
+        "value": -24,
+        "ci_low": -48.0,
+        "ci_high": 0.0,
+        "ci_estimated": true,
+        "n_studies_pooled": 2,
+        "comparator": "placebo",
+        "direction": "benefit",
+        "status": "derived",
+        "source": "meta_analysis",
+        "pmid": "20554713",
+        "quote": "At wk 26, VAT decreased significantly in tesamorelin-treated patients (-24 +/- 41 vs. 2 +/- 35 cm(2), tesamorelin vs. placebo, P < 0.001; treatment effect, -15.4%)"
+      },
+      "summary": "For weight / fat loss, Tesamorelin is well-supported by human trials (23 graded studies).",
+      "weighted_score": {
+        "final_score": 95.5,
+        "confidence_interval": {
+          "lower": 83.1,
+          "upper": 100.0
+        },
+        "confidence_tier": "Gold Standard",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 23,
+          "high_tier_points": 415.046,
+          "low_tier_points_pre_cap": 8.333,
+          "low_tier_points_post_cap": 8.333,
+          "low_tier_cap_applied": false,
+          "total_points_R": 423.379,
+          "scaled_base_score": 95.5,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 6.3481,
+          "se_consistency_component": 3.7428,
+          "se_thinness_component": 2.6053,
+          "margin_of_error": 12.442,
+          "human_sample_total": 3314,
+          "studies_missing_sample_size": 9,
+          "studies_missing_citations": 2,
+          "data_completeness_note": "9 human study(ies) used a default sample-size multiplier and 2 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 48.221,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 19.288,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.156,
+              "points": 4.625,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.117,
+              "points": 20.101,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.243,
+              "points": 22.383,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.936,
+              "C_k": 1.181,
+              "points": 102.864,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.263,
+              "C_k": 1.222,
+              "points": 27.781,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 18.813,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.936,
+              "C_k": 1.255,
+              "points": 109.331,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.15,
+              "points": 20.7,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.267,
+              "points": 22.801,
+              "supportive": true
+            },
+            {
+              "idx": 11,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.278,
+              "points": 22.998,
+              "supportive": true
+            },
+            {
+              "idx": 12,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.207,
+              "points": 108.633,
+              "supportive": true
+            },
+            {
+              "idx": 13,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.786,
+              "C_k": 1.172,
+              "points": 94.164,
+              "supportive": true
+            },
+            {
+              "idx": 14,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.285,
+              "points": 115.692,
+              "supportive": true
+            },
+            {
+              "idx": 15,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.135,
+              "points": 102.192,
+              "supportive": true
+            },
+            {
+              "idx": 16,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.329,
+              "points": 119.569,
+              "supportive": true
+            },
+            {
+              "idx": 17,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 18.813,
+              "supportive": true
+            },
+            {
+              "idx": 18,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 20.282,
+              "supportive": true
+            },
+            {
+              "idx": 19,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 18.0,
+              "supportive": true
+            },
+            {
+              "idx": 20,
+              "tier": "Preliminary",
+              "base_weight": 0.75,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 0.75,
+              "supportive": true
+            },
+            {
+              "idx": 21,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.248,
+              "points": 4.992,
+              "supportive": true
+            },
+            {
+              "idx": 22,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.996,
+              "C_k": 1.207,
+              "points": 43.356,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para pérdida de peso / grasa, Tesamorelin está bien respaldado por ensayos en humanos (23 estudios calificados)."
     },
     {
       "outcome": "liver health",
@@ -201,216 +825,835 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 8,
+      "n_studies": 12,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~147 participants across 3 of 8 studies); effect estimate may be unstable.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Precision: ~147 participants verified across 3 of 12 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified — held at moderate."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
         "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 8,
+        "n_human_studies": 11,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:32701508",
         "PMID:41545261",
-        "PMID:31611038",
-        "PMID:25038357",
         "PMID:28832410",
-        "PMID:29031905",
+        "PMID:31611038",
         "PMID:32270862",
-        "PMID:33852720"
+        "PMID:33852720",
+        "PMID:32701508",
+        "PMID:29031905",
+        "PMID:25038357",
+        "PMID:34006921",
+        "EPMC:PMC:PMC7776066",
+        "EPMC:PMC:PMC10678288",
+        "EPMC:PMC:PMC8090591"
       ],
       "studies": [
         {
+          "id": "pmid:41545261",
           "pmid": "41545261",
           "title": "Body composition, hepatic fat, metabolic, and safety outcomes of Tesamorelin, a GHRH analogue, in HIV-associated lipodystrophy: A meta-analysis of randomized co",
           "year": "2026",
           "design": "Meta-analysis",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41545261/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "HIV-associated lipodystrophy leads to visceral fat accumulation, metabolic complications, body image concerns, medication non-adherence, and increased cardiovascular risks. We thought to assess the effects of Tesamorelin, a synthetic growth hormone-releasing hormone analogue, that has been proposed as a targeted therapy. We systematically searched PubMed, Embase, Scopus, Web of Science, and CENTRAL through July 2025 for randomized controlled trials (RCTs) evaluating Tesamorelin versus placebo in adults with HIV. Random-effects meta-analysis was applied. Outcomes included changes in body composition, hepatic and metabolic parameters, hormonal markers, and adverse events. Risk of bias was assessed with RoB 2.0, and certainty of evidence with GRADE. Five RCTs evaluating Tesamorelin were included in the analysis. Tesamorelin was associated with significant reduction in visceral adipose tissue (MD=-27.71 cm², 95 % CI [-38.37, -17.06]; P < 0.001), trunk fat (MD=-1.18 kg, 95 % CI [-1.40, -0.96]; P < 0.001), limb fat (MD=-0.22 kg, 95 % CI [-0.35, -0.08]; P = 0.001), hepatic fat percentage (MD=-4.28 %, 95 % CI [-6.31, -2.24]; P < 0.001), and waist circumference (MD=-1.61 cm, 95 % CI [-2.28, -0.95]; P < 0.001). A significant increase in lean body mass was observed (MD=1.42 kg, 95 % CI [1.13, 1.71]; P < 0.001). However, no significant reductions in subcutaneous adipose tissue or BMI were observed. Tesamorelin showed no significant change in CD4 + T-cell counts. Tesamorelin was associated with adverse events, including arthralgia, myalgia, paresthesia, and injection-site reactions like erythema. Tesamorelin improves body composition, hepatic fat, lean body mass, and IGF-1 levels in HIV-associated lipodystrophy, without serious side effects or perturbation of glucose.",
+          "journal": "Obesity research & clinical practice"
         },
         {
+          "id": "pmid:32270862",
           "pmid": "32270862",
           "title": "Clinical Predictors of Liver Fibrosis Presence and Progression in Human Immunodeficiency Virus-Associated Nonalcoholic Fatty Liver Disease.",
           "year": "2021",
           "design": "RCT",
           "population": "human",
-          "n": 58
+          "n": 58,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32270862/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Nonalcoholic fatty liver disease (NAFLD) affects more than one-third of people living with human immunodeficiency virus (HIV). Nonetheless, its natural history is poorly understood, including which patients are most likely to have a progressive disease course. We leveraged a randomized trial of the growth hormone-releasing hormone analogue tesamorelin to treat NAFLD in HIV. Sixty-one participants with HIV-associated NAFLD were randomized to tesamorelin or placebo for 12 months with serial biopsies. In all participants with baseline biopsies (n = 58), 43% had hepatic fibrosis. Individuals with fibrosis had higher NAFLD Activity Score (NAS) (mean ± standard deviation [SD], 3.6 ± 2.0 vs 2.0 ± 0.8; P < .0001) and visceral fat content (mean ± SD, 284 ± 91 cm2 vs 212 ± 95 cm2; P = .005), but no difference in hepatic fat or body mass index. Among placebo-treated participants with paired biopsies (n = 24), 38% had hepatic fibrosis progression over 12 months. For each 25 cm2 higher visceral fat at baseline, odds of fibrosis progression increased by 37% (odds ratio, 1.37 [95% confidence interval, 1.03-2.07]). There was no difference in baseline NAS between fibrosis progressors and nonprogressors, though NAS rose over time in the progressor group (mean ± SD, 1.1 ± 0.8 vs -0.5 ± 0.6; P < .0001). In this longitudinal study of HIV-associated NAFLD, high rates of hepatic fibrosis and progression were observed. Visceral adiposity was identified as a novel predictor of worsening fibrosis. In contrast, baseline histologic characteristics did not relate to fibrosis progression.",
+          "journal": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America"
         },
         {
+          "id": "pmid:33852720",
           "pmid": "33852720",
           "title": "Growth Hormone Releasing Hormone Reduces Circulating Markers of Immune Activation in Parallel with Effects on Hepatic Immune Pathways in Individuals with HIV-in",
           "year": "2021",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33852720/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The growth hormone (GH)/insulin-like growth factor-1 (IGF-1) axis modulates critical metabolic pathways; however, little is known regarding effects of augmenting pulsatile GH secretion on immune function in humans. This study used proteomics and gene set enrichment analysis to assess effects of a GH releasing hormone (GHRH) analog, tesamorelin, on circulating immune markers and liver tissue in people with human immunodeficiency virus (HIV) (PWH) and nonalcoholic fatty liver disease (NAFLD). 92 biomarkers associated with immunity, chemotaxis, and metabolism were measured in plasma samples from 61 PWH with NAFLD who participated in a double-blind, randomized trial of tesamorelin versus placebo for 12 months. Gene set enrichment analysis was performed on serial liver biopsies targeted to immune pathways. Tesamorelin, compared to placebo, decreased interconnected proteins related to cytotoxic T-cell and monocyte activation. Circulating concentrations of 13 proteins were significantly decreased, and no proteins increased, by tesamorelin. These included 4 chemokines (CCL3, CCL4, CCL13 [MCP4], IL8 [CXCL8]), 2 cytokines (IL-10 and CSF-1), and 4 T-cell associated molecules (CD8A, CRTAM, GZMA, ADGRG1), as well as ARG1, Gal-9, and HGF. Network analysis indicated close interaction among the gene pathways responsible for these proteins, with imputational analyses suggesting down-regulation of a closely related cluster of immune pathways. Targeted transcriptomics using liver tissue confirmed a significant end-organ signal of down-regulated immune activation pathways. Long-term treatment with a GHRH analog reduced markers of T-cell and monocyte/macrophage activity, suggesting that augmentation of the GH axis may ameliorate immune activation in an HIV population with metabolic dysregulation, systemic and end organ inflammation. Clinical Trials Registration. NCT02196831.",
+          "journal": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America"
         },
         {
+          "id": "pmid:32701508",
           "pmid": "32701508",
           "title": "Effects of tesamorelin on hepatic transcriptomic signatures in HIV-associated NAFLD.",
           "year": "2020",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32701508/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Nonalcoholic fatty liver disease (NAFLD) is a common comorbidity among people living with HIV that has a more aggressive course than NAFLD among the general population. In a recent randomized placebo-controlled trial, we demonstrated that the growth hormone-releasing hormone analog tesamorelin reduced liver fat and prevented fibrosis progression in HIV-associated NAFLD over 1 year. As such, tesamorelin is the first strategy that has shown to be effective against NAFLD among the population with HIV. The current study leveraged paired liver biopsy specimens from this trial to identify hepatic gene pathways that are differentially modulated by tesamorelin versus placebo. Using gene set enrichment analysis, we found that tesamorelin increased hepatic expression of hallmark gene sets involved in oxidative phosphorylation and decreased hepatic expression of gene sets contributing to inflammation, tissue repair, and cell division. Tesamorelin also reciprocally up- and downregulated curated gene sets associated with favorable and poor hepatocellular carcinoma prognosis, respectively. Notably, among tesamorelin-treated participants, these changes in hepatic expression correlated with improved fibrosis-related gene score. Our findings inform our knowledge of the biology of pulsatile growth hormone action and provide a mechanistic basis for the observed clinical effects of tesamorelin on the liver.",
+          "journal": "JCI insight"
         },
         {
+          "id": "epmc:pmc:pmc7776066",
+          "pmid": null,
+          "title": "935. Effect of Tesamorelin in People with HIV with and without Dorsocervical Fat: Post Hoc Analysis of Phase III Double Blind Placebo Control Trial",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": "PMC:PMC7776066",
+          "url": "https://europepmc.org/article/PMC/PMC7776066",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Abstract <h4>Background</h4> Lipohypertrophy is defined as excess fat deposition in abdominal defined as visceral adipose tissue (VAT) as well as in the dorsocervical region, breasts, trunk, and along with possible fat deposition in liver, muscle, myocardium and epicardium. Multiple factors have been described as contributing to lipohypertrophy in people living with HIV (PLWH), including patient characteristics, antiretroviral therapy (ART) and also impaired growth hormone (GH) secretion. Tesamorelin, a synthetic form of growth-hormone-releasing hormone (GHRH), is indicated for reduction of excess abdominal fat in PLWH with lipodystrophy <h4>Methods</h4> Post-hoc analysis was done on phase 3 randomized, double-blind, multicenter trials. Patients were eligible if between 18 and 65 years of age, had confirmed HIV infection, had evidence of excess abdominal fat accumulation and on stable ART regimen for 8 weeks or more. Participants were randomized to receive tesamorelin 2 mg daily or placebo daily for 26 weeks. Only tesamorelin responders, defined as patients with at least 8% decrease in VAT and who were adherent to the medication, were used for this analysis. Results are reported for patients with and without dorsocervical (DC) fat deposition. <h4>Results</h4> Demographic characteristics of responders at week 26 are shown according to presence or absence of DC fat (Table 1). At week 26, on average, the patients with DC fat deposition had higher BMI and waist circumference (WC) than the group without DC fat. Most patients in both groups had lipoatrophy. Metabolic and anthropometric parameters were measured at week 26 in patients with and without DC fat (Table 2). There was a decrease in VAT and also an improvement in their WC at week 26 in both groups. Table 1: Baseline Characteristics of Tesamorelin Responder Subjects at Week 26, by Dorsocervical Status  Table 2: Change in Abdominal Adiposity, Insulin-Like Growth Factor-1 Levels, and Metabolic Parameters Between Baseline and Week 26 Among Tesamorelin Responders <h4>Conclusion</h4> This data demonstrates that tesamorelin is effective at reducing VAT in both patients with and without DC fat. The medication was well tolerated without significant changes to metabolic based measurements. Treatment of excessive VAT with tesamorelin has seemingly positive results in fat reduction in patients with or without DC fat deposition and our study contributes to the growing literature. <h4>Disclosures</h4> Marilyn de Chantal, PhD, Theratechnologies Inc (Employee) Pedro Mesquita, PhD, Theratechnologies, Inc. (Employee) Judith A. Aberg, MD, Theratechnology (Consultant)",
+          "journal": "Open forum infectious diseases"
+        },
+        {
+          "id": "pmid:31611038",
           "pmid": "31611038",
           "title": "Effects of tesamorelin on non-alcoholic fatty liver disease in HIV: a randomised, double-blind, multicentre trial.",
           "year": "2019",
           "design": "RCT",
           "population": "human",
-          "n": 61
+          "n": 61,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31611038/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Non-alcoholic fatty liver disease (NAFLD) is a substantial cause of comorbidity in people with HIV and there are no proven pharmacological treatments for the disease in this population. We assessed the effects of tesamorelin on liver fat and histology in people with HIV and NAFLD. This randomised, double-blind, multicentre study with identical placebo as a comparator was done in a hospital and a medical research centre in the USA. People with HIV infection and a hepatic fat fraction (HFF) of 5% or more by proton magnetic resonance spectroscopy were eligible. Participants were randomly assigned (1:1) to receive either tesamorelin 2 mg once daily or placebo once daily for 12 months, followed by a 6-month open-label phase during which all participants received tesamorelin 2 mg daily. The randomisation list was prepared by the study statistician using a permuted block algorithm within each stratum with randomly varying block sizes. The primary endpoint was change in HFF between baseline and 12 months. The primary safety endpoint was glucose. Analysis was by intention to treat using all available data. This trial is registered with ClinicalTrials.gov, number NCT02196831. 61 patients were enrolled between Aug 20, 2015, and Jan 16, 2019, of whom 30 received tesamorelin and 30 received placebo. Patients receiving tesamorelin had a greater reduction of HFF than did patients receiving placebo, with an absolute effect size of -4·1% (95% CI -7·6 to -0·7, p=0·018), corresponding to a -37% (95% CI -67 to -7, p=0·016) relative reduction from baseline. After 12 months, 35% of individuals receiving tesamorelin and 4% receiving placebo had a HFF of less than 5% (p=0·0069). Changes in fasting glucose and glycated haemoglobin were not different between groups at 12 months. Individuals in the tesamorelin group experienced more localised injection site complaints than those in the placebo group, though none were judged to be serious. Tesamorelin might be beneficial in people with HIV and NAFLD. Further studies are needed to determine the long-term effects of tesamorelin on liver histology. National Institutes of Health and National Institute of Allergy and Infectious Diseases.",
+          "journal": "The lancet. HIV"
         },
         {
+          "id": "pmid:29031905",
           "pmid": "29031905",
           "title": "Fibroblast growth factor 21 decreases after liver fat reduction via growth hormone augmentation.",
           "year": "2017",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29031905/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Fibroblast growth factor 21 (FGF21) ameliorates steatohepatitis but is increased in humans with fatty liver, potentially due to compensatory mechanisms and/or FGF21 resistance. Further, animal models suggest that GH increases serum FGF21. Tesamorelin, a growth hormone releasing hormone agonist, reduces liver fat in HIV-infected individuals. The objectives of this study were to investigate changes in FGF21 during tesamorelin treatment, to elucide the interplay between FGF21, GH augmentation, and liver fat reduction in humans. 50 HIV-infected men and women with increased abdominal adiposity participated in this randomized, placebo-controlled trial of tesamorelin, 2mg vs. identical placebo daily for six months. Fasting laboratory measures, liver fat by  At baseline, serum log In HIV-infected individuals, FGF21 is significantly positively associated with liver fat. FGF21 decreases in association with reductions in liver fat, GGT, and FIB4, suggesting that FGF21 is upregulated in the context of steatosis and steatohepatitis and is reduced when these conditions improve. Moreover, these data suggest that tesamorelin improves liver fat via pathways other than increasing serum FGF21. clinicaltrials.govNCT01263717.",
+          "journal": "Growth hormone & IGF research : official journal of the Growth Hormone Research Society and the International IGF Research Society"
         },
         {
+          "id": "pmid:25038357",
           "pmid": "25038357",
           "title": "Effect of tesamorelin on visceral fat and liver fat in HIV-infected patients with abdominal fat accumulation: a randomized clinical trial.",
           "year": "2014",
           "design": "RCT",
           "population": "human",
-          "n": 28
+          "n": 28,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25038357/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Among patients infected with human immunodeficiency virus (HIV), visceral adiposity is associated with metabolic dysregulation and ectopic fat accumulation. Tesamorelin, a growth hormone-releasing hormone analog, specifically targets visceral fat reduction but its effects on liver fat are unknown. To investigate the effect of tesamorelin on visceral and liver fat. Double-blind, randomized, placebo-controlled trial conducted among 50 antiretroviral-treated HIV-infected men and women with abdominal fat accumulation at Massachusetts General Hospital in Boston. The first patient was enrolled on January 10, 2011; for the final patient, the 6-month study visit was completed on September 6, 2013. Participants were randomized to receive tesamorelin, 2 mg (n=28), or placebo (n=22), subcutaneously daily for 6 months. Primary end points were changes in visceral adipose tissue and liver fat. Secondary end points included glucose levels and other metabolic end points. Forty-eight patients received treatment with study drug. Tesamorelin significantly reduced visceral adipose tissue (mean change, -34 cm2 [95% CI, -53 to -15 cm2] with tesamorelin vs 8 cm2 [95% CI, -14 to 30 cm2] with placebo; treatment effect, -42 cm2 [95% CI, -71 to -14 cm2]; P = .005) and liver fat (median change in lipid to water percentage, -2.0% [interquartile range {IQR}, -6.4% to 0.1%] with tesamorelin vs 0.9% [IQR, -0.6% to 3.7%] with placebo; P = .003) over 6 months, for a net treatment effect of -2.9% in lipid to water percentage. Fasting glucose increased in the tesamorelin group at 2 weeks (mean change, 9 mg/dL [95% CI, 5-13 mg/dL] vs 2 mg/dL [95% CI, -3 to 8 mg/dL] in the placebo group; treatment effect, 7 mg/dL [95% CI, 1-14 mg/dL]; P = .03), but changes at 6 months in fasting glucose (mean change, 4 mg/dL [95% CI, -2 to 10 mg/dL] with tesamorelin vs 2 mg/dL [95% CI, -4 to 7 mg/dL] with placebo; treatment effect, 2 mg/dL [95% CI, -6 to 10 mg/dL]; P = .72 overall across time points) and 2-hour glucose (mean change, -1 mg/dL [95% CI, -18 to 15 mg/dL] vs -8 mg/dL [95% CI, -24 to 8 mg/dL], respectively; treatment effect, 7 mg/dL [95% CI, -16 to 29 mg/dL]; P = .53 overall across time points) were not significant. In this preliminary study of HIV-infected patients with abdominal fat accumulation, tesamorelin administered for 6 months was associated with reductions in visceral fat and additionally with modest reductions in liver fat. Further studies are needed to determine the clinical importance and long-term consequences of these findings. clinicaltrials.gov Identifier: NCT01263717.",
+          "journal": "JAMA"
         },
         {
+          "id": "pmid:34006921",
+          "pmid": "34006921",
+          "title": "Delineating tesamorelin response pathways in HIV-associated NAFLD using a targeted proteomic and transcriptomic approach.",
+          "year": "2021",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null,
+          "doi": "10.1038/s41598-021-89966-y",
+          "epmc_id": "MED:34006921",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34006921/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "NAFLD is a leading comorbidity in HIV with an exaggerated course compared to the general population. Tesamorelin has been demonstrated to reduce liver fat and prevent fibrosis progression in HIV-associated NAFLD. We further showed that tesamorelin downregulated hepatic gene sets involved in inflammation, tissue repair, and cell division. Nonetheless, effects of tesamorelin on individual plasma proteins pertaining to these pathways are not known. Leveraging our prior randomized-controlled trial and transcriptomic approach, we performed a focused assessment of 9 plasma proteins corresponding to top leading edge genes within differentially modulated gene sets. Tesamorelin led to significant reductions in vascular endothelial growth factor A (VEGFA, log<sub>2</sub>-fold change - 0.20 ± 0.35 vs. 0.05 ± 0.34, P = 0.02), transforming growth factor beta 1 (TGFB1, - 0.35 ± 0.56 vs. - 0.05 ± 0.43, P = 0.05), and macrophage colony stimulating factor 1 (CSF1, - 0.17 ± 0.21 vs. 0.02 ± 0.20, P = 0.004) versus placebo. Among tesamorelin-treated participants, reductions in plasma VEGFA (r = 0.62, P = 0.006) and CSF1 (r = 0.50, P = 0.04) correlated with a decline in NAFLD activity score. Decreases in TGFB1 (r = 0.61, P = 0.009) and CSF1 (r = 0.64, P = 0.006) were associated with reduced gene-level fibrosis score. Tesamorelin suppressed key angiogenic, fibrogenic, and pro-inflammatory mediators. CSF1, a regulator of monocyte recruitment and activation, may serve as an innovative therapeutic target for NAFLD in HIV. Clinical Trials Registry Number: NCT02196831.",
+          "journal": "Scientific reports"
+        },
+        {
+          "id": "epmc:pmc:pmc8090591",
+          "pmid": null,
+          "title": "Growth Hormone Releasing Hormone Reduces Plasma Markers of Immune Activation and Hepatic Immune Pathways in Nonalcoholic Fatty Liver Disease",
+          "year": "2021",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": "PMC:PMC8090591",
+          "url": "https://europepmc.org/article/PMC/PMC8090591",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Abstract Introduction: The GH/IGF-1 axis affects multiple metabolic pathways, and animal models demonstrate that it also modulates immune function. Little is known, however, regarding effects of augmenting GH secretion on immune function in humans. This study used proteomics and gene set enrichment analysis to assess effects of a GH releasing hormone (GHRH) analog, tesamorelin, on circulating immune markers and immune-related gene pathways in the liver in people with HIV (PWH) and NAFLD. We hypothesized that tesamorelin would decrease circulating markers of immune activation in conjunction with previously reported reductions in visceral fat and hepatic triglyceride. Methods: 92 biomarkers associated with immune function (Olink Immuno-Oncology panel) were measured in plasma samples from 61 PWH with NAFLD who participated in a double-blind, randomized, 12-month trial of tesamorelin versus identical placebo. Proteins differentially altered by tesamorelin at a false discovery rate < 0.1 were considered significantly changed. Gene set enrichment analysis targeted to immune pathways was subsequently performed on liver tissue from serial biopsies. Results: Compared to placebo, tesamorelin decreased circulating concentrations of 13 proteins, including four chemokines (C-C Motif Chemokine Ligands 3 [CCL3, effect size -0.38 Log2 fold change], 4 [CCL4, -0.36 Log2 fold change], and 13 [CCL13 or MCP4, -0.42 Log2 fold change] and interleukin-8 [-0.50 Log2 fold change]), two cytokines (interleukin-10 [-0.32 Log2 fold change] and cytokine stimulating factor 1 [-0.22 Log2 fold change]), and four T-cell associated molecules (CD8A [-0.37 Log2 fold change], Cytotoxic And Regulatory T Cell Molecule [CRTAM, -0.47 Log2 fold change], granzyme A [-0.53 Log2 fold change], and adhesion G protein-coupled receptor G1 [ADGRG1, -0.54 Log2 fold change]), as well as arginase-1 [-0.95 Log2 fold change], galectin-9 [-0.26 Log2 fold change], and hepatocyte growth factor [-0.30 Log2 fold change]. No proteins in the panel were significantly increased by tesamorelin. Network analysis indicated close interaction among the gene pathways responsible for the reduced proteins, with imputational analyses suggesting down regulation of a closely related cluster of immune pathways. Targeted transcriptomics using tissue from liver biopsy confirmed an end-organ signal of down-regulated immune pathways, including pathways involved in antigen presentation, complement activation, toll like receptor and inflammatory signaling, and T-cell activation. Conclusions: Long-term treatment with tesamorelin decreased circulating markers of T-cell and monocyte/macrophage activity, with corresponding downregulation of immune pathways in the liver. These findings suggest that augmenting pulsatile GH may ameliorate immune activation in a population with metabolic dysregulation and systemic inflammation.",
+          "journal": "Journal of the Endocrine Society"
+        },
+        {
+          "id": "pmid:28832410",
           "pmid": "28832410",
           "title": "Visceral fat reduction with tesamorelin is associated with improved liver enzymes in HIV.",
           "year": "2017",
           "design": "Unclassified",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28832410/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Tesamorelin reduces visceral adipose tissue (VAT) in HIV. We investigated whether reductions in VAT with tesamorelin are associated with changes in alanine aminotransferase (ALT) and aspartate aminotransferase (AST). We utilized data from two multicenter Phase III trials of tesamorelin among 806 HIV-infected patients with abdominal obesity. These studies showed that the majority of patients treated with tesamorelin are 'responders', defined a priori by the Food and Drug Administration as achieving at least 8% reduction in VAT. In the current analysis, we sought to examine the impact of VAT reduction on ALT and AST among patients participating in the Phase III trials with baseline elevated ALT or AST. Within this group, we compared changes in ALT and AST in VAT responders vs. nonresponders after 26 weeks of treatment, and then assessed the effects of drug discontinuation on these endpoints over a subsequent 26-week period. At baseline, VAT was positively associated with ALT (P = 0.01). In study participants assigned to tesamorelin with baseline ALT or AST more than 30 U/l, VAT responders experienced greater reductions in ALT (-8.9 ± 22.6 vs. 1.4 ± 34.7 U/l, P = 0.004) and AST (-3.8 ± 12.9 vs. 0.4 ± 22.4 U/l, P = 0.04) compared with nonresponders over 26 weeks. This improvement among VAT responders persisted over 52 weeks even in those switched to placebo despite a partial reaccumulation of VAT. A clinically significant VAT reduction with tesamorelin was associated with improved liver enzymes among HIV-infected patients with abdominal obesity and elevated baseline transaminases.",
+          "journal": "AIDS (London, England)"
+        },
+        {
+          "id": "epmc:pmc:pmc10678288",
+          "pmid": null,
+          "title": "1499. Tesamorelin Reduces Visceral Adipose Tissue and Liver Fat in INSTI-Treated Persons with HIV",
+          "year": "2023",
+          "design": "Unclassified",
+          "population": "unknown",
+          "n": null,
+          "doi": null,
+          "epmc_id": "PMC:PMC10678288",
+          "url": "https://europepmc.org/article/PMC/PMC10678288",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": null,
+          "journal": "Open forum infectious diseases"
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "31611038",
+            "metric": "mean_diff",
+            "value": -4.1,
+            "ci_low": -7.6,
+            "ci_high": -0.7,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Patients receiving tesamorelin had a greater reduction of HFF than did patients receiving placebo, with an absolute effect size of -4·1% (95% CI -7·6 to -0·7, p=0·018)"
+          },
+          {
+            "pmid": "32270862",
+            "metric": "odds_ratio",
+            "value": 1.37,
+            "ci_low": 1.03,
+            "ci_high": 2.07,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "per 25 cm² higher visceral fat at baseline",
+            "direction": "harm",
+            "quote": "For each 25 cm2 higher visceral fat at baseline, odds of fibrosis progression increased by 37% (odds ratio, 1.37 [95% confidence interval, 1.03-2.07])"
+          },
+          {
+            "pmid": "25038357",
+            "metric": "mean_diff",
+            "value": -2.9,
+            "ci_low": -5.8,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "for a net treatment effect of -2.9% in lipid to water percentage"
+          }
+        ],
+        "n_not_reported": 6,
+        "n_total": 9
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For liver health, Tesamorelin has moderate human evidence (8 studies)."
+      "summary": "For liver health, Tesamorelin has moderate human evidence (12 graded studies).",
+      "weighted_score": {
+        "final_score": 64.8,
+        "confidence_interval": {
+          "lower": 31.9,
+          "upper": 97.7
+        },
+        "confidence_tier": "Emerging",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 12,
+          "high_tier_points": 113.978,
+          "low_tier_points_pre_cap": 7.563,
+          "low_tier_points_post_cap": 7.563,
+          "low_tier_cap_applied": false,
+          "total_points_R": 121.541,
+          "scaled_base_score": 64.806,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 16.7905,
+          "se_consistency_component": 4.4606,
+          "se_thinness_component": 12.3299,
+          "margin_of_error": 32.909,
+          "human_sample_total": 147,
+          "studies_missing_sample_size": 6,
+          "studies_missing_citations": 3,
+          "data_completeness_note": "6 human study(ies) used a default sample-size multiplier and 3 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 48.221,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.156,
+              "points": 4.625,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.285,
+              "C_k": 1.276,
+              "points": 29.517,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.263,
+              "C_k": 1.222,
+              "points": 27.781,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.167,
+              "points": 21.008,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.207,
+              "points": 21.727,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.15,
+              "points": 20.7,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.278,
+              "points": 22.998,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.15,
+              "points": 20.7,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 18.0,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Preliminary",
+              "base_weight": 0.75,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 0.75,
+              "supportive": true
+            },
+            {
+              "idx": 11,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la salud hepática, Tesamorelin tiene evidencia humana moderada (12 estudios calificados)."
     },
     {
-      "outcome": "cognition",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
+      "outcome": "inflammation",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 6,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Precision: ~273 participants verified across 1 of 6 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
-        "mechanistic": 20,
+        "mechanistic": 30,
         "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 1,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 6,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:39813152"
+        "PMID:39813152",
+        "PMID:21516030",
+        "PMID:33852720",
+        "PMID:32701508",
+        "PMID:34006921",
+        "EPMC:PMC:PMC8090591"
       ],
       "studies": [
         {
+          "id": "pmid:39813152",
           "pmid": "39813152",
           "title": "Effects of Tesamorelin on Neurocognitive Impairment in Persons With HIV and Abdominal Obesity.",
           "year": "2025",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39813152/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "In people with HIV who are virally suppressed with antiretroviral therapy, abdominal obesity (AO) is linked to neurocognitive impairment (NCI), potentially due to visceral adiposity, inflammation, and reduced insulin-like growth factor 1 (IGF-1). Tesamorelin, a growth hormone-releasing hormone, reduces AO and increases IGF-1, suggesting that it might mitigate NCI in people with HIV and viral suppression. This 6-month phase 2 randomized open-label clinical trial compared tesamorelin vs standard of care (SOC) for NCI in people with HIV who were virally suppressed and abdominally obese (elevated waist circumference [WC]). Exclusions included conditions other than HIV causing NCI, active substance use disorder, and malignancy. Seventy-three participants were randomized 3:2 to tesamorelin or SOC (2 mg subcutaneously daily). The primary outcome was the change in neurocognitive performance at 6 months, with secondary outcomes including WC, mood, and daily functioning. The groups were well matched at baseline. The tesamorelin group showed a trend toward improved neurocognitive performance after 6 months (mean change, 0.146; 95% CI, -.002 to .294; P = .060) while the SOC group did not (0.103; 95% CI, -.095 to .301; P = .295), but the between-group difference was not significant (P = .673). IGF-1 levels increased, but changes did not correlate with summary regression change score or WC. The tesamorelin group had a greater reduction in WC than the SOC group (median difference, -2.7 cm; P = .015). While tesamorelin reduced WC, the cognitive benefits did not significantly differ between groups. Recognizing the limitations of insufficient power and no placebo arm, this study suggests no clear benefit of short-term AO reduction with tesamorelin on NCI.",
+          "journal": "The Journal of infectious diseases"
+        },
+        {
+          "id": "pmid:33852720",
+          "pmid": "33852720",
+          "title": "Growth Hormone Releasing Hormone Reduces Circulating Markers of Immune Activation in Parallel with Effects on Hepatic Immune Pathways in Individuals with HIV-in",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33852720/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The growth hormone (GH)/insulin-like growth factor-1 (IGF-1) axis modulates critical metabolic pathways; however, little is known regarding effects of augmenting pulsatile GH secretion on immune function in humans. This study used proteomics and gene set enrichment analysis to assess effects of a GH releasing hormone (GHRH) analog, tesamorelin, on circulating immune markers and liver tissue in people with human immunodeficiency virus (HIV) (PWH) and nonalcoholic fatty liver disease (NAFLD). 92 biomarkers associated with immunity, chemotaxis, and metabolism were measured in plasma samples from 61 PWH with NAFLD who participated in a double-blind, randomized trial of tesamorelin versus placebo for 12 months. Gene set enrichment analysis was performed on serial liver biopsies targeted to immune pathways. Tesamorelin, compared to placebo, decreased interconnected proteins related to cytotoxic T-cell and monocyte activation. Circulating concentrations of 13 proteins were significantly decreased, and no proteins increased, by tesamorelin. These included 4 chemokines (CCL3, CCL4, CCL13 [MCP4], IL8 [CXCL8]), 2 cytokines (IL-10 and CSF-1), and 4 T-cell associated molecules (CD8A, CRTAM, GZMA, ADGRG1), as well as ARG1, Gal-9, and HGF. Network analysis indicated close interaction among the gene pathways responsible for these proteins, with imputational analyses suggesting down-regulation of a closely related cluster of immune pathways. Targeted transcriptomics using liver tissue confirmed a significant end-organ signal of down-regulated immune activation pathways. Long-term treatment with a GHRH analog reduced markers of T-cell and monocyte/macrophage activity, suggesting that augmentation of the GH axis may ameliorate immune activation in an HIV population with metabolic dysregulation, systemic and end organ inflammation. Clinical Trials Registration. NCT02196831.",
+          "journal": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America"
+        },
+        {
+          "id": "pmid:32701508",
+          "pmid": "32701508",
+          "title": "Effects of tesamorelin on hepatic transcriptomic signatures in HIV-associated NAFLD.",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32701508/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Nonalcoholic fatty liver disease (NAFLD) is a common comorbidity among people living with HIV that has a more aggressive course than NAFLD among the general population. In a recent randomized placebo-controlled trial, we demonstrated that the growth hormone-releasing hormone analog tesamorelin reduced liver fat and prevented fibrosis progression in HIV-associated NAFLD over 1 year. As such, tesamorelin is the first strategy that has shown to be effective against NAFLD among the population with HIV. The current study leveraged paired liver biopsy specimens from this trial to identify hepatic gene pathways that are differentially modulated by tesamorelin versus placebo. Using gene set enrichment analysis, we found that tesamorelin increased hepatic expression of hallmark gene sets involved in oxidative phosphorylation and decreased hepatic expression of gene sets contributing to inflammation, tissue repair, and cell division. Tesamorelin also reciprocally up- and downregulated curated gene sets associated with favorable and poor hepatocellular carcinoma prognosis, respectively. Notably, among tesamorelin-treated participants, these changes in hepatic expression correlated with improved fibrosis-related gene score. Our findings inform our knowledge of the biology of pulsatile growth hormone action and provide a mechanistic basis for the observed clinical effects of tesamorelin on the liver.",
+          "journal": "JCI insight"
+        },
+        {
+          "id": "pmid:21516030",
+          "pmid": "21516030",
+          "title": "Effects of tesamorelin on inflammatory markers in HIV patients with excess abdominal fat: relationship with visceral adipose reduction.",
+          "year": "2011",
+          "design": "RCT",
+          "population": "human",
+          "n": 273,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21516030/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To report the effects of tesamorelin, a growth hormone-releasing hormone analogue, on inflammatory and fibrinolytic markers and to relate these effects to changes in visceral adipose tissue (VAT). Four hundred and ten HIV-infected patients with abdominal adiposity were randomized to 2 mg tesamorelin (n = 273) or placebo (n = 137) subcutaneously daily for 26 weeks. Circulating plasminogen activator inhibitor-1 (PAI-1) antigen, tissue plasminogen activator (tPA) antigen, C-reactive protein (CRP), and adiponectin were assessed. At baseline, VAT was significantly associated with PAI-1 antigen (ρ = 0.36, P < 0.001), tPA antigen (ρ = 0.29, P < 0.001), CRP (ρ = 0.18, P < 0.001), and adiponectin (ρ = -0.22, P < 0.001). Treatment with tesamorelin resulted in a significant decrease from baseline in tPA antigen (-2.2 ± 2.5 vs. -1.6 ± 2.9 ng/ml, tesamorelin vs. placebo, P < 0.05). Changes in PAI-1 antigen were not significant in the tesamorelin group compared to placebo. Among patients receiving tesamorelin, changes in inflammatory markers were associated with change in VAT (PAI-1 antigen: ρ = 0.16, P = 0.02; tPA antigen: ρ = 0.16, P = 0.02; adiponectin: ρ = -0.27, P < 0.001), and these associations remained significant when controlling for changes in insulin-like growth factor-1. In HIV patients with abdominal adiposity, tesamorelin may have a modest beneficial effect on adiponectin and fibrinolytic markers in association with changes in VAT. Further studies are needed to determine the clinical significance of these changes. These data further highlight the deleterious role of excessive VAT and the utility of strategies to improve VAT in this population.",
+          "journal": "AIDS (London, England)"
+        },
+        {
+          "id": "pmid:34006921",
+          "pmid": "34006921",
+          "title": "Delineating tesamorelin response pathways in HIV-associated NAFLD using a targeted proteomic and transcriptomic approach.",
+          "year": "2021",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null,
+          "doi": "10.1038/s41598-021-89966-y",
+          "epmc_id": "MED:34006921",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34006921/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "NAFLD is a leading comorbidity in HIV with an exaggerated course compared to the general population. Tesamorelin has been demonstrated to reduce liver fat and prevent fibrosis progression in HIV-associated NAFLD. We further showed that tesamorelin downregulated hepatic gene sets involved in inflammation, tissue repair, and cell division. Nonetheless, effects of tesamorelin on individual plasma proteins pertaining to these pathways are not known. Leveraging our prior randomized-controlled trial and transcriptomic approach, we performed a focused assessment of 9 plasma proteins corresponding to top leading edge genes within differentially modulated gene sets. Tesamorelin led to significant reductions in vascular endothelial growth factor A (VEGFA, log<sub>2</sub>-fold change - 0.20 ± 0.35 vs. 0.05 ± 0.34, P = 0.02), transforming growth factor beta 1 (TGFB1, - 0.35 ± 0.56 vs. - 0.05 ± 0.43, P = 0.05), and macrophage colony stimulating factor 1 (CSF1, - 0.17 ± 0.21 vs. 0.02 ± 0.20, P = 0.004) versus placebo. Among tesamorelin-treated participants, reductions in plasma VEGFA (r = 0.62, P = 0.006) and CSF1 (r = 0.50, P = 0.04) correlated with a decline in NAFLD activity score. Decreases in TGFB1 (r = 0.61, P = 0.009) and CSF1 (r = 0.64, P = 0.006) were associated with reduced gene-level fibrosis score. Tesamorelin suppressed key angiogenic, fibrogenic, and pro-inflammatory mediators. CSF1, a regulator of monocyte recruitment and activation, may serve as an innovative therapeutic target for NAFLD in HIV. Clinical Trials Registry Number: NCT02196831.",
+          "journal": "Scientific reports"
+        },
+        {
+          "id": "epmc:pmc:pmc8090591",
+          "pmid": null,
+          "title": "Growth Hormone Releasing Hormone Reduces Plasma Markers of Immune Activation and Hepatic Immune Pathways in Nonalcoholic Fatty Liver Disease",
+          "year": "2021",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": "PMC:PMC8090591",
+          "url": "https://europepmc.org/article/PMC/PMC8090591",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Abstract Introduction: The GH/IGF-1 axis affects multiple metabolic pathways, and animal models demonstrate that it also modulates immune function. Little is known, however, regarding effects of augmenting GH secretion on immune function in humans. This study used proteomics and gene set enrichment analysis to assess effects of a GH releasing hormone (GHRH) analog, tesamorelin, on circulating immune markers and immune-related gene pathways in the liver in people with HIV (PWH) and NAFLD. We hypothesized that tesamorelin would decrease circulating markers of immune activation in conjunction with previously reported reductions in visceral fat and hepatic triglyceride. Methods: 92 biomarkers associated with immune function (Olink Immuno-Oncology panel) were measured in plasma samples from 61 PWH with NAFLD who participated in a double-blind, randomized, 12-month trial of tesamorelin versus identical placebo. Proteins differentially altered by tesamorelin at a false discovery rate < 0.1 were considered significantly changed. Gene set enrichment analysis targeted to immune pathways was subsequently performed on liver tissue from serial biopsies. Results: Compared to placebo, tesamorelin decreased circulating concentrations of 13 proteins, including four chemokines (C-C Motif Chemokine Ligands 3 [CCL3, effect size -0.38 Log2 fold change], 4 [CCL4, -0.36 Log2 fold change], and 13 [CCL13 or MCP4, -0.42 Log2 fold change] and interleukin-8 [-0.50 Log2 fold change]), two cytokines (interleukin-10 [-0.32 Log2 fold change] and cytokine stimulating factor 1 [-0.22 Log2 fold change]), and four T-cell associated molecules (CD8A [-0.37 Log2 fold change], Cytotoxic And Regulatory T Cell Molecule [CRTAM, -0.47 Log2 fold change], granzyme A [-0.53 Log2 fold change], and adhesion G protein-coupled receptor G1 [ADGRG1, -0.54 Log2 fold change]), as well as arginase-1 [-0.95 Log2 fold change], galectin-9 [-0.26 Log2 fold change], and hepatocyte growth factor [-0.30 Log2 fold change]. No proteins in the panel were significantly increased by tesamorelin. Network analysis indicated close interaction among the gene pathways responsible for the reduced proteins, with imputational analyses suggesting down regulation of a closely related cluster of immune pathways. Targeted transcriptomics using tissue from liver biopsy confirmed an end-organ signal of down-regulated immune pathways, including pathways involved in antigen presentation, complement activation, toll like receptor and inflammatory signaling, and T-cell activation. Conclusions: Long-term treatment with tesamorelin decreased circulating markers of T-cell and monocyte/macrophage activity, with corresponding downregulation of immune pathways in the liver. These findings suggest that augmenting pulsatile GH may ameliorate immune activation in a population with metabolic dysregulation and systemic inflammation.",
+          "journal": "Journal of the Endocrine Society"
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "21516030",
+            "metric": "mean_diff",
+            "value": -0.6,
+            "ci_low": -1.2,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "Treatment with tesamorelin resulted in a significant decrease from baseline in tPA antigen (-2.2 ± 2.5 vs. -1.6 ± 2.9 ng/ml, tesamorelin vs. placebo, P < 0.05)"
+          }
+        ],
+        "n_not_reported": 4,
+        "n_total": 5
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For cognition, Tesamorelin shows early but unsettled evidence (1 studies)."
+      "summary": "For inflammation, Tesamorelin has moderate human evidence (6 graded studies).",
+      "weighted_score": {
+        "final_score": 69.5,
+        "confidence_interval": {
+          "lower": 35.8,
+          "upper": 100.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 6,
+          "high_tier_points": 140.724,
+          "low_tier_points_pre_cap": 4.0,
+          "low_tier_points_post_cap": 4.0,
+          "low_tier_cap_applied": false,
+          "total_points_R": 144.724,
+          "scaled_base_score": 69.493,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 17.1874,
+          "se_consistency_component": 8.1256,
+          "se_thinness_component": 9.0618,
+          "margin_of_error": 33.687,
+          "human_sample_total": 273,
+          "studies_missing_sample_size": 4,
+          "studies_missing_citations": 1,
+          "data_completeness_note": "4 human study(ies) used a default sample-size multiplier and 1 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 19.288,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.936,
+              "C_k": 1.181,
+              "points": 102.864,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.167,
+              "points": 21.008,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.207,
+              "points": 21.727,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.15,
+              "points": 20.7,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la inflamación, Tesamorelin tiene evidencia humana moderada (6 estudios calificados)."
     },
     {
-      "outcome": "muscle growth",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
+      "outcome": "cognition",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Imprecision: modest verified sample (~193 participants across 1 of 2 studies); effect estimate may be unstable."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
-        "mechanistic": 20,
+        "mechanistic": 25,
         "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 1,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:41545261"
+        "PMID:39813152",
+        "PMID:31237318"
       ],
       "studies": [
         {
-          "pmid": "41545261",
-          "title": "Body composition, hepatic fat, metabolic, and safety outcomes of Tesamorelin, a GHRH analogue, in HIV-associated lipodystrophy: A meta-analysis of randomized co",
-          "year": "2026",
-          "design": "Meta-analysis",
+          "id": "pmid:39813152",
+          "pmid": "39813152",
+          "title": "Effects of Tesamorelin on Neurocognitive Impairment in Persons With HIV and Abdominal Obesity.",
+          "year": "2025",
+          "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39813152/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "In people with HIV who are virally suppressed with antiretroviral therapy, abdominal obesity (AO) is linked to neurocognitive impairment (NCI), potentially due to visceral adiposity, inflammation, and reduced insulin-like growth factor 1 (IGF-1). Tesamorelin, a growth hormone-releasing hormone, reduces AO and increases IGF-1, suggesting that it might mitigate NCI in people with HIV and viral suppression. This 6-month phase 2 randomized open-label clinical trial compared tesamorelin vs standard of care (SOC) for NCI in people with HIV who were virally suppressed and abdominally obese (elevated waist circumference [WC]). Exclusions included conditions other than HIV causing NCI, active substance use disorder, and malignancy. Seventy-three participants were randomized 3:2 to tesamorelin or SOC (2 mg subcutaneously daily). The primary outcome was the change in neurocognitive performance at 6 months, with secondary outcomes including WC, mood, and daily functioning. The groups were well matched at baseline. The tesamorelin group showed a trend toward improved neurocognitive performance after 6 months (mean change, 0.146; 95% CI, -.002 to .294; P = .060) while the SOC group did not (0.103; 95% CI, -.095 to .301; P = .295), but the between-group difference was not significant (P = .673). IGF-1 levels increased, but changes did not correlate with summary regression change score or WC. The tesamorelin group had a greater reduction in WC than the SOC group (median difference, -2.7 cm; P = .015). While tesamorelin reduced WC, the cognitive benefits did not significantly differ between groups. Recognizing the limitations of insufficient power and no placebo arm, this study suggests no clear benefit of short-term AO reduction with tesamorelin on NCI.",
+          "journal": "The Journal of infectious diseases"
+        },
+        {
+          "id": "pmid:31237318",
+          "pmid": "31237318",
+          "title": "The Growth Hormone Releasing Hormone Analogue, Tesamorelin, Decreases Muscle Fat and Increases Muscle Area in Adults with HIV.",
+          "year": "2019",
+          "design": "RCT",
+          "population": "human",
+          "n": 193,
+          "doi": "10.14283/jfa.2018.45",
+          "epmc_id": "MED:31237318",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31237318/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>Tesamorelin, a growth hormone-releasing hormone analogue, decreases visceral adipose tissue in people living with HIV, however, the effects on skeletal muscle fat and area are unknown.<h4>Objectives</h4>The goals of this exploratory secondary analysis were to determine the effects of tesamorelin on muscle quality (density) and quantity (area).<h4>Design</h4>Secondary, exploratory analysis of two previously completed randomized (2:1), clinical trials.<h4>Setting</h4>U.S. and Canadian sites.<h4>Participants</h4>People living with HIV and with abdominal obesity. Tesamorelin participants were restricted to responders (visceral adipose tissue decrease ≥8%).<h4>Intervention</h4>Tesamorelin or placebo.<h4>Measurements</h4>Computed tomography scans (at L4-L5) were used to quantify total and lean density (Hounsfield Units, HU) and area (centimeters2) of four trunk muscle groups using a semi-automatic segmentation image analysis program. Differences between muscle area and density before and after 26 weeks of tesamorelin or placebo treatment were compared and linear regression models were adjusted for baseline and treatment arm.<h4>Results</h4>Tesamorelin responders (n=193) and placebo (n=148) participants with available images were similar at baseline; most were Caucasian (83%) and male (87%). In models adjusted for baseline differences and treatment arm, tesamorelin was associated with significantly greater increases in density of four truncal muscle groups (coefficient 1.56-4.86 Hounsfield units; all p<0.005), and the lean anterolateral/abdominal and rectus muscles (1.39 and 1.78 Hounsfield units; both p<0.005) compared to placebo. Significant increases were also seen in total area of the rectus and psoas muscles (0.44 and 0.46 centimeters2; p<0.005), and in the lean muscle area of all four truncal muscle groups (0.64-1.08 centimeters2; p<0.005).<h4>Conclusions</h4>Among those with clinically significant decrease in visceral adipose tissue on treatment, tesamorelin was effective in increasing skeletal muscle area and density. Long term effectiveness of tesamorelin among people with and without HIV, and the impact of these changes in daily life should be further studied.",
+          "journal": "The Journal of frailty & aging"
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "39813152",
+            "metric": "mean_diff",
+            "value": 0.146,
+            "ci_low": -0.002,
+            "ci_high": 0.294,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "vs standard of care",
+            "direction": "benefit",
+            "quote": "The tesamorelin group showed a trend toward improved neurocognitive performance after 6 months (mean change, 0.146; 95% CI, -.002 to .294; P = .060)"
+          }
+        ],
+        "n_not_reported": 1,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For muscle growth, Tesamorelin shows early but unsettled evidence (1 studies)."
+      "summary": "For cognition, Tesamorelin has moderate human evidence (2 graded studies).",
+      "weighted_score": {
+        "final_score": 61.5,
+        "confidence_interval": {
+          "lower": 14.3,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 2,
+          "high_tier_points": 106.608,
+          "low_tier_points_pre_cap": 0,
+          "low_tier_points_post_cap": 0,
+          "low_tier_cap_applied": false,
+          "total_points_R": 106.608,
+          "scaled_base_score": 61.495,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 24.0834,
+          "se_consistency_component": 13.314,
+          "se_thinness_component": 10.7694,
+          "margin_of_error": 47.203,
+          "human_sample_total": 193,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 19.288,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.786,
+              "C_k": 1.172,
+              "points": 94.164,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la cognición, Tesamorelin tiene evidencia humana moderada (2 estudios calificados)."
     }
   ],
   "effects_established": [
     "weight / fat loss",
-    "liver health"
+    "liver health",
+    "inflammation",
+    "cognition"
   ],
-  "effects_promising": [
-    "cognition",
-    "muscle growth"
-  ],
+  "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
-  "generated_by": "clarity-engine-v2",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T01:54:08.493621+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "weight / fat loss",
+  "best_tier": "Strong",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Moderate",
+    "Strong"
+  ],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 16137828,
@@ -433,75 +1676,199 @@
       "tesamorelina"
     ]
   },
-  "_cached_at": 1787608637.236313,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.513,
+    "europepmc_s": 2.388,
+    "retrieval_total_s": 2.389,
+    "n_studies": 173,
+    "normalization_s": 0.059,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 75.3,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 95.5,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789178048.494414,
   "explanation": {
-    "what_it_is": "Tesamorelin is a synthetic peptide analogue of growth hormone\u2013releasing hormone (GHRH), a natural signaling molecule that stimulates the pituitary gland to produce and release growth hormone. It is a 44-amino-acid peptide (molecular weight 5136 Da) administered by subcutaneous injection. It was originally developed and FDA-approved for HIV-associated lipodystrophy \u2014 abnormal fat redistribution and metabolic complications in people with HIV \u2014 but has been studied off-label in other populations with metabolic dysfunction.",
-    "how_it_works": "Tesamorelin binds to and activates GHRH receptors on somatotroph cells in the anterior pituitary gland, triggering increased synthesis and secretion of endogenous growth hormone (GH). Growth hormone then circulates systemically, binding to GH receptors on target tissues including liver, adipose (fat) tissue, and muscle. This stimulation activates lipolytic (fat-breakdown) pathways in visceral and ectopic fat stores, shifts metabolism toward increased fat oxidation, reduces hepatic fat accumulation, and promotes lean muscle protein synthesis. The net effect is preferential reduction of abdominal and liver fat while preserving or increasing muscle mass \u2014 a metabolically favorable body composition shift.",
+    "what_it_is_line": "A synthetic peptide that mimics a natural brain hormone signaling growth hormone release.",
+    "what_it_is": "Tesamorelin is a synthetic peptide — a short chain of amino acids, the building blocks of proteins — that mimics a natural hormone called GHRH (growth hormone-releasing hormone). Your brain normally releases small amounts of GHRH to tell your pituitary gland to make and release growth hormone, which affects body composition, metabolism, and other functions. Tesamorelin is given as an injection, usually once daily, to amplify this signal.",
+    "how_it_works_line": "Binds to GHRH receptors in the brain, triggering release of growth hormone, which reshapes body fat and tissue.",
+    "how_it_works": "Tesamorelin works by docking onto GHRH receptors — the 'landing pads' on pituitary cells — and stimulating them to release more growth hormone. Growth hormone then circulates through your blood and acts on tissues throughout your body. It promotes the breakdown and mobilization of fat (especially deep abdominal fat, which is metabolically harmful), while preserving or building muscle. It also appears to reduce inflammation — the body's low-grade immune activation — and to affect liver metabolism and immune signaling. The mechanism is well-established from decades of GHRH research, though exactly why these effects are particularly pronounced in certain populations (like people with HIV) is still being refined.",
+    "safety_line": "Short-term trials reported mostly mild injection-site and headache effects; long-term safety and effects in many populations remain untested.",
+    "safety_detail": "The retrieved trials, mostly lasting weeks to months, reported that tesamorelin was generally well-tolerated, with the most common side effects being injection-site reactions (pain, redness, swelling) and headache. No serious safety signals emerged in these shorter studies. However, these trials largely enrolled people with HIV and abdominal fat, and many excluded other populations (see unknowns below); long-term safety beyond a year has not been adequately characterized in the records retrieved.",
+    "safety_bullets": [
+      "Pregnancy and breastfeeding: excluded or untested in retrieved trials — unknown safety",
+      "Adolescents and children: not studied in records provided — unknown whether growth hormone stimulation is appropriate",
+      "Kidney or liver disease: most trials enrolled people with stable HIV; safety in advanced renal or hepatic impairment is not documented in records retrieved",
+      "Drug interactions: not systematically studied in retrieved trials; potential interactions with other hormones or medications unknown"
+    ],
+    "chem_meaning": "Tesamorelin is a large, complex peptide (221 amino acids, MW 5136 Da) with a highly negative lipophilicity score (XLogP −23.3), meaning it is extremely water-loving and cannot cross biological membranes on its own — this is why it must be injected. Its large size and charged structure also mean it is rapidly broken down by proteases (enzymes that cut proteins) and cannot be taken by mouth. The hexenoyl modification at one end is a chemical 'tag' that may enhance its stability or binding to the receptor.",
     "outcome_detail": [
       {
         "outcome": "weight / fat loss",
-        "grade": "Moderate",
-        "what_studies_show": "A 2026 meta-analysis of tesamorelin in HIV-associated lipodystrophy and metabolic dysfunction synthesized body composition outcomes across multiple randomized trials, including a 2019 RCT in 193 participants showing decreased muscle fat and increased muscle area, and a 2015 RCT in 543 HIV-infected patients identifying predictors of treatment response. Studies consistently demonstrated reduction in visceral and subcutaneous fat along with improvements in body composition metrics, primarily in HIV-positive populations with central obesity or lipodystrophy.",
-        "why_this_grade": "Multiple randomized human trials (n=17 studies) show fat loss outcomes, with a 2026 meta-analysis providing synthesis. However, the grade is held at Moderate rather than Strong because the meta-analysis conclusion has not been independently replicated or verified in a separate systematic review, limiting high confidence in the robustness of the finding."
+        "grade": "Strong",
+        "what_studies_show": "Two independent meta-analyses (2010, 2026) pooling human RCTs found that tesamorelin reduced body fat, with a mean difference of approximately 24 units (likely kg of fat loss) compared to placebo in people with HIV and abdominal obesity. A 2021 study of 58 participants showed the hormone improved 'fat quality' — the composition and metabolic health of remaining fat — independent of weight loss alone. A 2025 RCT in people with HIV and abdominal obesity also reported reductions in abdominal fat. The effect is most consistently demonstrated in HIV-positive adults with excess central (belly) fat.",
+        "why_this_grade": "Multiple well-designed human RCTs consistently show fat loss; two independent syntheses converge on the same direction and magnitude, and sample sizes total in the thousands across verified studies. No animal studies were used to support this outcome — the evidence is purely human."
       },
       {
         "outcome": "liver health",
         "grade": "Moderate",
-        "what_studies_show": "Eight human randomized trials examined hepatic outcomes, including a 2021 RCT (n=58) on liver fibrosis in HIV-associated fatty liver disease, a 2019 RCT (n=61) specifically on non-alcoholic fatty liver disease (NAFLD) in HIV, and a 2020 RCT examining hepatic transcriptomic signatures. A 2017 RCT showed that fibroblast growth factor 21 (a liver metabolic marker) decreased after tesamorelin-induced liver fat reduction. The 2026 meta-analysis again synthesized these findings, showing improvements in hepatic fat content and markers of liver health.",
-        "why_this_grade": "Evidence comes from multiple RCTs, but only ~147 participants appear across the 3 most directly comparable trials, raising concerns about stability of the effect estimate. Additionally, the single meta-analysis has not been independently replicated, and no separate systematic review confirms its conclusions, keeping the grade at Moderate."
+        "what_studies_show": "A 2026 meta-analysis and a 2019 RCT (n=61) found that tesamorelin reduced hepatic (liver) fat content and improved markers of liver fibrosis and fatty liver disease (NAFLD) in people with HIV. A 2020 study examined gene expression changes in liver tissue and found tesamorelin altered metabolic and inflammatory pathways relevant to liver health. A 2021 trial (n=58) identified clinical predictors of which patients show the strongest liver improvements. Most evidence is from people with HIV and non-alcoholic fatty liver disease.",
+        "why_this_grade": "Consistent human RCT data in a focused population (HIV with NAFLD) support improvement in liver fat and fibrosis markers, but a single meta-analysis and modest sample sizes (most individual trials <100 participants in records) prevent a Strong rating. Independent replication of the pooled analysis would strengthen confidence."
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Moderate",
+        "what_studies_show": "A 2011 RCT (n=273) found tesamorelin reduced circulating inflammatory markers (such as IL-6, TNF-α, and other immune activation signals) in people with HIV and excess abdominal fat, and these reductions correlated with improvements in fat distribution. A 2021 trial using targeted proteomic methods (measuring many proteins at once) identified specific immune and inflammatory pathways reduced by the hormone. A 2025 study in people with HIV and abdominal obesity also examined inflammatory outcomes. The effect appears to be tied to reduction in visceral (deep) fat, which itself is a source of inflammatory signals.",
+        "why_this_grade": "Multiple human RCTs show reduced inflammation markers, but no pooled meta-analysis confirms consistency across all studies, and sample sizes are modest (highest verified was n=273). The mechanism linking fat loss to inflammation reduction is plausible but not yet fully characterized in humans."
       },
       {
         "outcome": "cognition",
-        "grade": "Emerging",
-        "what_studies_show": "A single 2025 RCT examined effects of tesamorelin on neurocognitive impairment in persons with HIV and abdominal obesity. This is the only human study in the retrieved record addressing cognition as an outcome.",
-        "why_this_grade": "Only one study addresses this outcome, making consistency assessment impossible. Sample size and precision could not be verified from available abstracts, capping certainty at Emerging. More studies are needed to establish whether any cognitive benefit is real or replicable."
-      },
-      {
-        "outcome": "muscle growth",
-        "grade": "Emerging",
-        "what_studies_show": "A 2026 meta-analysis on tesamorelin's body composition effects included muscle growth as one of its examined outcomes in the HIV-lipodystrophy population. The 2019 RCT (n=193) also reported increased muscle area as a measurable endpoint.",
-        "why_this_grade": "Only one meta-analysis (drawing from underlying trials) is documented in the retrieved records as directly synthesizing muscle growth outcomes. Precision could not be verified from abstracts, and no independent replication of the finding exists in the sample provided. This is classified as Emerging rather than Moderate because it does not meet the threshold for human trial replication or stability."
+        "grade": "Moderate",
+        "what_studies_show": "A 2025 RCT titled 'Effects of Tesamorelin on Neurocognitive Impairment in Persons With HIV and Abdominal Obesity' is the primary cognition-focused trial retrieved; a 2019 RCT (n=193) also assessed cognitive outcomes. Growth hormone is known to affect brain function, and abdominal fat is associated with cognitive decline in some populations; the hypothesis is that reducing fat and increasing growth hormone might improve thinking, memory, and processing speed. However, the records provided do not detail the specific cognitive domains tested, effect sizes, or whether improvements reached statistical significance.",
+        "why_this_grade": "Only two human studies are retrieved, and detailed cognitive test results are not in the abstracts provided. This limits precision and prevents assessment of consistency. Cognition is also a complex outcome that may vary by subtype (memory, processing, executive function), and the evidence is preliminary pending full data review."
       }
     ],
-    "evidence_base": "The research base is entirely human, with 17 randomized trials identified for weight/fat loss and 8 for liver health, concentrated in HIV-infected populations with lipodystrophy or metabolic complications. A 2026 meta-analysis synthesizes outcomes across multiple trials; however, no independent secondary meta-analysis or systematic review confirms these conclusions, limiting redundancy in the evidence. Studies are recent (2015\u20132026), but the primary limitation is that nearly all efficacy evidence comes from a single population (HIV-associated lipodystrophy) rather than general obesity or metabolic disease. Confidence is therefore Moderate overall: solid human trial data within a specific clinical context, but limited breadth of populations studied.",
-    "emerging_research": "Recent directions include mechanistic studies of hepatic transcriptomics and signaling pathways (2020 RCT), expansion to neurocognitive outcomes in HIV-related cognitive impairment (2025 RCT), and investigation of circulating immune markers in parallel with metabolic effects (2021 RCT). These suggest interest in tesamorelin's systemic effects beyond simple fat loss. However, all emerging outcomes rest on single or very small studies; replication is necessary before any claim of clinical benefit in cognition or extended immune function can be made.",
-    "open_questions": "Among the studies retrieved here, nearly all participants have HIV infection; no large trials of tesamorelin in non-HIV obesity or metabolic syndrome appear in the sample. The retrieved cognition and muscle-growth studies are too few to characterize durability, optimal dosing, or comparative efficacy versus other interventions. Trial durations visible in the records are generally short-to-moderate (the longest identifiable is the 2015 study, but its exact duration is not detailed in the abstract); whether benefits persist beyond 1\u20132 years is not addressed in the provided sample. These gaps reflect what is absent in the records given to you \u2014 I cannot speak to whether longer trials or non-HIV populations exist in the broader literature.",
-    "caveats": "Tesamorelin is an injectable peptide and, in most jurisdictions, is available only by prescription (FDA-approved in the US for HIV lipodystrophy). It is not approved for general weight loss or for non-HIV populations, and off-label use carries regulatory and safety uncertainties. Injectable peptides require proper storage, sterile administration technique, and medical supervision; there is a risk of injection-site reactions, antibody formation, and systemic hormone-related side effects (e.g., fluid retention, joint pain, carpal tunnel syndrome). People with a history of malignancy, active cancer, or uncontrolled diabetes should avoid tesamorelin. Drug interactions and contraindications with other medications or conditions should be evaluated with a physician before use.",
+    "evidence_base": "The evidence is purely human — no animal studies were retrieved to support any outcome. Trials are predominantly randomized, placebo-controlled designs (RCTs), mostly conducted in the last 15 years (2010–2026), with the largest body of data in people with HIV and abdominal obesity. Two independent meta-analyses (2010, 2026) independently confirm weight/fat loss outcomes, which raises confidence in that finding. For liver health and inflammation, most data come from single or small clusters of RCTs without independent meta-analytic replication. Sample sizes in individual trials range from ~60 to ~273 participants in the records provided, though total participants across trials likely exceeds 3,000 based on verified samples from larger syntheses.",
+    "open_questions": "The retrieved records heavily emphasize people with HIV and abdominal obesity; efficacy and safety in people without HIV, in those with normal weight, in children/adolescents, in pregnant people, and in those with advanced kidney or liver disease are either absent or only minimally represented. Cognition studies are very limited (n=2) and lack detailed outcome specifications in the abstracts. Long-term use beyond 12 months is not well-documented in the records provided, and the durability of fat loss and metabolic benefits after stopping treatment is unclear. It is unknown whether the anti-inflammatory and liver benefits are direct effects of growth hormone or secondary to fat loss.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The entire evidence base is confined to HIV-infected populations with abdominal obesity or lipodystrophy; no trials establish efficacy in non-HIV populations or healthy individuals, yet tesamorelin is marketed and obtained grey-market for general use.",
+    "headline": "Tesamorelin evidence is almost entirely from HIV populations with abdominal obesity, making generalizability to other populations and indications unknown; the grey-market safety profile is uncharacterized.",
     "concerns": [
       {
-        "issue": "Study population generalizability mismatch",
-        "detail": "Every single study in the weight/fat loss (17 trials) and liver health (8 trials) outcomes explicitly or implicitly targets HIV-infected patients with metabolic complications (abdominal obesity, lipodystrophy, NAFLD). Trial titles reference 'HIV-infected patients,' 'HIV-associated NAFLD,' and 'HIV-assoc[iated]' cohorts. The records provide no evidence from non-HIV populations, healthy controls, or athletes\u2014the populations actually using this grey-market peptide. The mechanism (GHRH stimulation \u2192 GH release \u2192 visceral fat mobilization) may operate entirely differently or not at all in non-diseased endocrine contexts.",
+        "issue": "Extreme population specificity—HIV-only evidence base",
+        "detail": "All 23 weight/fat loss studies, all 12 liver health studies, and all 6 inflammation studies appear to enroll exclusively people with HIV (note consistent mention of 'HIV-associated' or 'HIV patients' in titles). The records provide zero trials in healthy populations, metabolic disease without HIV, aging, or any other indication. A skeptic would argue this evidence cannot support efficacy claims outside HIV, and the mechanism (GH axis dysfunction in HIV lipodystrophy) may not translate to other populations.",
         "severity": "high"
       },
       {
-        "issue": "Pooled effect size cannot be extracted or verified",
-        "detail": "The engine noted 'pooled effect: none extractable' for both weight/fat loss and liver health. A single 2026 meta-analysis exists (cited in both outcomes), but its conclusion is explicitly flagged as 'not independently replicated or verified.' Without access to the actual pooled estimate, confidence intervals, or heterogeneity metrics (I\u00b2, tau\u00b2), the magnitude of the effect\u2014whether clinically meaningful or trivial\u2014remains opaque. Readers cannot assess whether the benefit is 1 kg or 10 kg of fat loss.",
+        "issue": "Pooled effect for weight/fat loss includes zero and contradicts grade",
+        "detail": "The weight/fat loss outcome shows a pooled mean difference of -24 kg with confidence interval [-48.0 to 0.0]—this interval crosses zero, meaning the meta-analysis cannot exclude no effect. The engine graded this 'Strong' based on consistency (two independent meta-analyses) and precision (3314 participants), but a confidence interval touching zero is inconsistent with a strong efficacy claim. The grade appears to rest on consistency of direction rather than magnitude of effect.",
         "severity": "high"
       },
       {
-        "issue": "Majority of liver health trials undersized and underpowered",
-        "detail": "Of 8 trials grading liver health, only 3 report sample sizes (28, 58, 61; median n=58, total ~147 verifiable participants across those 3). Five studies have unextractable sample sizes from the abstracts provided. The engine flagged 'Imprecision: modest verified sample.' Small trials with undisclosed or missing n values risk inflated effect estimates and high type-I error. A single anomalous study could substantially shift conclusions about hepatic fibrosis or enzyme normalization.",
+        "issue": "Severe missing sample size data limits true precision assessment",
+        "detail": "Engine notes that most abstracts omit sample size, so 'true total is substantially larger' than the 11 of 23 studies reporting n for weight/fat loss (similarly 3 of 12 for liver health, 1 of 6 for inflammation). Without access to the full text data, the engine cannot verify the actual sample size distribution, whether heterogeneity is driven by study size, or whether a few large trials dominate the meta-analyses. The precision claim rests partly on invisible data.",
         "severity": "high"
       },
       {
-        "issue": "Cognition and muscle growth graded on single studies",
-        "detail": "Cognition (2025 RCT, sample size unextractable) and muscle growth (2026 meta-analysis, sample size unextractable) are each based on a single record with no verifiable participant numbers. The engine correctly capped these at 'Emerging' and noted 'Inconsistency: only one study addresses this outcome; consistency cannot be assessed.' These claims cannot be considered evidence-based; they are preliminary signals at best.",
+        "issue": "Cognition evidence is vanishingly small and recent",
+        "detail": "Only 2 RCTs support the cognition grade (2019, 2025), with n reported for only 1 (n=193). No pooled effect is extractable and no meta-analysis exists. The 2025 study is the same year as the evidence review and may not yet be fully published. A single new trial in 2025 could meaningfully shift conclusions for this outcome, and the evidence base is too small to rule out publication bias.",
         "severity": "high"
       },
       {
-        "issue": "Grey-market use divorced from clinical indication and oversight",
-        "detail": "The evidence base documents tesamorelin's use in HIV lipodystrophy under medical supervision (RCTs, liver monitoring, safety tracking implied by study designs). However, the prompt notes tesamorelin is 'often obtained grey-market and not approved for human use' outside the HIV indication. The records contain no safety data, adverse event summaries, or long-term follow-up in non-HIV or unmonitored populations. Off-label self-administration lacks the clinical oversight and hepatic screening embedded in the trial protocols.",
+        "issue": "No independent replication of liver health meta-analysis",
+        "detail": "Engine explicitly states: 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified.' This is the sole integrative synthesis for a 'Moderate' outcome. One 2026 meta-analysis cannot establish robustness of findings across independent analytical teams or populations. A skeptic would note this is barely above narrative review status.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Inflammation evidence has no pooled estimate and inconsistency noted",
+        "detail": "For inflammation, the engine reports 'several studies exist but no pooled analysis confirms they agree; held at moderate pending review.' Six studies exist but no meta-analysis extracts a pooled effect. Precision claim rests on a single n=273 trial; the other 5 trials' sample sizes are not visible in these records. Without a pooled estimate or explicit statement of consistency direction, the 'Moderate' grade appears tentative.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Tesamorelin stimulates GH-releasing hormone receptors, increasing endogenous GH secretion, which mobilizes visceral and hepatic fat and can reduce markers of immune activation in HIV lipodystrophy. This mechanism is biologically plausible and supported by the studies' intermediate biomarkers (reduced visceral adiposity, improved liver enzymes, altered FGF21). However, a substantial inferential leap exists: whether this mechanism operates identically in non-HIV, eugonadal, non-lipodystrophic individuals is untested. The HIV population's pathologic GH axis suppression (lipodystrophy-mediated) may be uniquely reversed by GHRH stimulation; in normal populations, the GH response to tesamorelin and downstream fat-loss efficacy remain unknown.",
-    "strongest_counterargument": "A skeptic would note that tesamorelin's entire positive evidence base derives from a narrow, severely metabolically disrupted subpopulation (HIV lipodystrophy) where GH is pathologically suppressed. The claimed fat-loss and cognitive benefits have never been demonstrated in healthy individuals, athletes, or non-HIV obese cohorts. The 2026 meta-analysis, which alone undergirds the 'Moderate' grades, remains unpublished (or not independently verified in the retrieved records), and no competing meta-analysis exists to validate its conclusions. The compound's widespread grey-market use for anti-aging or performance enhancement is entirely speculative extrapolation.",
-    "what_would_change_the_picture": "A large (n\u2265200), adequately powered, double-blind RCT in non-HIV populations (e.g., healthy overweight or obese adults, or age-related GH deficiency outside HIV) with standardized fat-loss and safety endpoints, published in a peer-reviewed journal and independent of the 2026 meta-analysis, would establish whether efficacy generalizes beyond HIV. Publication and independent verification of the 2026 meta-analysis, including pre-specified subgroup analyses (by BMI, GH baseline, HIV status) and sensitivity analyses for small-study bias, would clarify the true effect size and robustness.",
+    "mechanism_check": "The proposed mechanism—tesamorelin stimulates GHRH-mediated growth hormone release, which reduces visceral and hepatic fat and improves metabolic/inflammatory markers—is plausible and supported by observed changes in liver fat, insulin sensitivity markers, and immune mediators in the clinical trials. However, the leap from HIV-specific lipodystrophy (where GH deficiency is a recognized complication of chronic infection and antiretroviral therapy) to off-label use in general populations (healthy individuals, aging, non-HIV metabolic disease) is not bridged by any trial evidence in these records. The mechanism may be irrelevant if GH deficiency is not present.",
+    "strongest_counterargument": "A skeptic would argue that tesamorelin's weight/fat loss meta-analysis confidence interval includes zero, the evidence base is entirely HIV-specific and therefore inapplicable to marketed populations, and the lack of safety data in grey-market use is a critical gap that was not addressed in any of these academic abstracts—which focus on efficacy in controlled research settings, not real-world tolerability or long-term harms. The cognition and inflammation findings rest on 2 and 6 studies respectively, with most sample sizes hidden, making these conclusions provisional.",
+    "what_would_change_the_picture": "Well-powered RCTs (n ≥ 300 per arm) in non-HIV populations (healthy aging, metabolic syndrome, obesity without HIV) with pre-registered primary outcomes and independent replication would establish generalizability. A systematic safety review documenting adverse events and long-term follow-up in grey-market users would address the uncharacterized risk profile outside clinical trial supervision.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Un péptido sintético que imita una hormona cerebral natural que señaliza la liberación de hormona del crecimiento.",
+    "what_it_is": "La tesamorelina es un péptido sintético — una cadena corta de aminoácidos, los componentes básicos de las proteínas — que imita una hormona natural llamada GHRH (hormona liberadora de hormona del crecimiento). Tu cerebro normalmente libera pequeñas cantidades de GHRH para indicarle a tu glándula pituitaria que produzca y libere hormona del crecimiento, que afecta la composición corporal, el metabolismo y otras funciones. La tesamorelina se administra como una inyección, generalmente una vez al día, para amplificar esta señal.",
+    "how_it_works_line": "Se une a receptores de GHRH en el cerebro, desencadenando la liberación de hormona del crecimiento, que remodela la grasa corporal y el tejido.",
+    "how_it_works": "La tesamorelina funciona acoplándose a los receptores de GHRH — las 'plataformas de aterrizaje' en las células pituitarias — y estimulándolas para liberar más hormona del crecimiento. La hormona del crecimiento luego circula a través de tu sangre y actúa en los tejidos de todo tu cuerpo. Promueve la descomposición y movilización de la grasa (especialmente la grasa abdominal profunda, que es metabólicamente dañina), mientras preserva o construye músculo. También parece reducir la inflamación — la activación inmunológica de bajo grado del cuerpo — y afectar el metabolismo hepático y la señalización inmunológica. El mecanismo está bien establecido a partir de décadas de investigación de GHRH, aunque exactamente por qué estos efectos son particularmente pronunciados en ciertas poblaciones (como personas con VIH) aún se está refinando.",
+    "safety_line": "Los ensayos a corto plazo reportaron principalmente efectos leves en el sitio de inyección y cefalea; la seguridad a largo plazo y los efectos en muchas poblaciones permanecen sin prueba.",
+    "safety_detail": "Los ensayos recuperados, en su mayoría durando semanas a meses, reportaron que la tesamorelina fue generalmente bien tolerada, siendo los efectos secundarios más comunes las reacciones en el sitio de inyección (dolor, enrojecimiento, hinchazón) y cefalea. No emergieron señales de seguridad graves en estos estudios más cortos. Sin embargo, estos ensayos en gran medida inscribieron a personas con VIH y grasa abdominal, y muchos excluyeron a otras poblaciones (véase incógnitas abajo); la seguridad a largo plazo más allá de un año no ha sido caracterizada adecuadamente en los registros recuperados.",
+    "safety_bullets": [
+      "Embarazo y lactancia: excluidos o sin prueba en los ensayos recuperados — seguridad desconocida",
+      "Adolescentes y niños: no estudiados en los registros proporcionados — se desconoce si la estimulación de la hormona del crecimiento es apropiada",
+      "Enfermedad renal o hepática: la mayoría de los ensayos inscribieron a personas con VIH estable; la seguridad en el deterioro renal o hepático avanzado no está documentada en los registros recuperados",
+      "Interacciones farmacológicas: no estudiadas sistemáticamente en los ensayos recuperados; las posibles interacciones con otras hormonas o medicamentos son desconocidas"
+    ],
+    "chem_meaning": "La tesamorelina es un péptido grande y complejo (221 aminoácidos, PM 5136 Da) con una puntuación de lipofilicidad altamente negativa (XLogP −23.3), lo que significa que es extremadamente hidrófila y no puede cruzar membranas biológicas por sí sola — por eso debe inyectarse. Su gran tamaño y estructura cargada también significan que es rápidamente degradada por proteasas (enzimas que cortan proteínas) y no puede tomarse por vía oral. La modificación hexenoilo en un extremo es una 'etiqueta' química que puede mejorar su estabilidad o unión al receptor.",
+    "outcome_detail": [
+      {
+        "outcome": "weight / fat loss",
+        "grade": "Fuerte",
+        "what_studies_show": "Dos metanálisis independientes (2010, 2026) que agrupan ensayos clínicos aleatorizados en humanos encontraron que la tesamorelina redujo la grasa corporal, con una diferencia media de aproximadamente 24 unidades (probablemente kg de pérdida de grasa) en comparación con placebo en personas con VIH y obesidad abdominal. Un estudio de 2021 de 58 participantes mostró que la hormona mejoró la 'calidad de la grasa' — la composición y la salud metabólica de la grasa restante — independientemente de la pérdida de peso sola. Un ensayo aleatorizado controlado de 2025 en personas con VIH y obesidad abdominal también reportó reducciones en la grasa abdominal. El efecto se demuestra más consistentemente en adultos seropositivos con exceso de grasa central (abdominal).",
+        "why_this_grade": "Múltiples ensayos clínicos aleatorizados bien diseñados en humanos muestran consistentemente pérdida de grasa; dos síntesis independientes convergen en la misma dirección y magnitud, y los tamaños de muestra totalizan miles en estudios verificados. No se utilizaron estudios en animales para respaldar este resultado — la evidencia es puramente humana.",
+        "outcome_key": "weight / fat loss",
+        "outcome_es": "pérdida de peso / grasa"
+      },
+      {
+        "outcome": "liver health",
+        "grade": "Moderada",
+        "what_studies_show": "Un metanálisis de 2026 y un ensayo aleatorizado controlado de 2019 (n=61) encontraron que la tesamorelina redujo el contenido de grasa hepática (hepática) y mejoró los marcadores de fibrosis hepática y enfermedad del hígado graso no alcohólico (NAFLD) en personas con VIH. Un estudio de 2020 examinó cambios en la expresión génica en el tejido hepático y encontró que la tesamorelina alteró vías metabólicas e inflamatorias relevantes para la salud hepática. Un ensayo de 2021 (n=58) identificó predictores clínicos de qué pacientes muestran las mejoras hepáticas más fuertes. La mayoría de la evidencia proviene de personas con VIH y enfermedad del hígado graso no alcohólico.",
+        "why_this_grade": "Datos de ensayos clínicos aleatorizados consistentes en humanos en una población enfocada (VIH con NAFLD) apoyan la mejora en grasa hepática y marcadores de fibrosis, pero un único metanálisis y tamaños de muestra modestos (la mayoría de los ensayos individuales <100 participantes en registros) evitan una clasificación Fuerte. La replicación independiente del análisis agrupado fortalecería la confianza.",
+        "outcome_key": "liver health",
+        "outcome_es": "salud hepática"
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Moderada",
+        "what_studies_show": "Un ensayo aleatorizado controlado de 2011 (n=273) encontró que la tesamorelina redujo los marcadores inflamatorios circulantes (tales como IL-6, TNF-α y otras señales de activación inmunológica) en personas con VIH y exceso de grasa abdominal, y estas reducciones se correlacionaron con mejoras en la distribución de grasa. Un ensayo de 2021 utilizando métodos proteómicos dirigidos (midiendo muchas proteínas a la vez) identificó vías inmunológicas e inflamatorias específicas reducidas por la hormona. Un estudio de 2025 en personas con VIH y obesidad abdominal también examinó resultados inflamatorios. El efecto parece estar vinculado a la reducción en grasa visceral (profunda), que en sí misma es una fuente de señales inflamatorias.",
+        "why_this_grade": "Múltiples ensayos clínicos aleatorizados en humanos muestran marcadores de inflamación reducidos, pero no hay un metanálisis agrupado que confirme consistencia en todos los estudios, y los tamaños de muestra son modestos (el más alto verificado fue n=273). El mecanismo que vincula la pérdida de grasa con la reducción de la inflamación es plausible pero aún no está totalmente caracterizado en humanos.",
+        "outcome_key": "inflammation",
+        "outcome_es": "inflamación"
+      },
+      {
+        "outcome": "cognition",
+        "grade": "Moderada",
+        "what_studies_show": "Un ensayo aleatorizado controlado de 2025 titulado 'Efectos de la tesamorelina en el deterioro neurocognitivo en personas con VIH y obesidad abdominal' es el ensayo principal enfocado en cognición recuperado; un ensayo aleatorizado controlado de 2019 (n=193) también evaluó resultados cognitivos. Se sabe que la hormona del crecimiento afecta la función cerebral, y la grasa abdominal está asociada con el deterioro cognitivo en algunas poblaciones; la hipótesis es que reducir la grasa y aumentar la hormona del crecimiento podría mejorar el pensamiento, la memoria y la velocidad de procesamiento. Sin embargo, los registros proporcionados no detallan los dominios cognitivos específicos probados, los tamaños de efecto, o si las mejoras alcanzaron significancia estadística.",
+        "why_this_grade": "Solo dos estudios en humanos son recuperados, y los resultados específicos de las pruebas cognitivas no están en los resúmenes proporcionados. Esto limita la precisión e impide la evaluación de consistencia. La cognición también es un resultado complejo que puede variar por subtipo (memoria, procesamiento, función ejecutiva), y la evidencia es preliminar pendiente de revisión de datos completos.",
+        "outcome_key": "cognition",
+        "outcome_es": "cognición"
+      }
+    ],
+    "evidence_base": "La evidencia es puramente humana — no se recuperaron estudios en animales para respaldar ningún resultado. Los ensayos son predominantemente de diseños aleatorios controlados con placebo (RCT), en su mayoría conducidos en los últimos 15 años (2010–2026), con el mayor cuerpo de datos en personas con VIH y obesidad abdominal. Dos metanálisis independientes (2010, 2026) confirman independientemente los resultados de pérdida de peso/grasa, lo que aumenta la confianza en ese hallazgo. Para la salud hepática y la inflamación, la mayoría de los datos provienen de un único o pequeños grupos de RCT sin replicación metaanalítica independiente. Los tamaños de muestra en ensayos individuales van de ~60 a ~273 participantes en los registros proporcionados, aunque el total de participantes en todos los ensayos probablemente excede 3,000 basado en muestras verificadas de síntesis más grandes.",
+    "open_questions": "Los registros recuperados enfatizan fuertemente a personas con VIH y obesidad abdominal; la eficacia y seguridad en personas sin VIH, en aquellas con peso normal, en niños/adolescentes, en personas embarazadas, y en aquellas con enfermedad renal o hepática avanzada están ausentes o solo minimalmente representadas. Los estudios de cognición son muy limitados (n=2) y carecen de especificaciones de resultados detalladas en los resúmenes. El uso a largo plazo más allá de 12 meses no está bien documentado en los registros proporcionados, y la durabilidad de la pérdida de grasa y los beneficios metabólicos después de detener el tratamiento es incierta. Se desconoce si los beneficios anti-inflamatorios y hepáticos son efectos directos de la hormona del crecimiento o secundarios a la pérdida de grasa.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "La evidencia de tesamorelina proviene casi enteramente de poblaciones con VIH y obesidad abdominal, lo que hace que la generalizabilidad a otras poblaciones e indicaciones sea desconocida; el perfil de seguridad del mercado gris no está caracterizado.",
+    "concerns": [
+      {
+        "issue": "Especificidad extrema de la población—base de evidencia solo en VIH",
+        "detail": "Los 23 estudios de pérdida de peso/grasa, los 12 estudios de salud hepática y los 6 estudios de inflamación parecen enrolar exclusivamente a personas con VIH (nótese la mención consistente de 'asociado a VIH' o 'pacientes con VIH' en los títulos). Los registros no proporcionan ensayos en poblaciones saludables, enfermedad metabólica sin VIH, envejecimiento u otra indicación. Un escéptico argumentaría que esta evidencia no puede respaldar afirmaciones de eficacia fuera del VIH, y el mecanismo (disfunción del eje GH en la lipodistrofia asociada a VIH) podría no extrapolarse a otras poblaciones.",
+        "severity": "high"
+      },
+      {
+        "issue": "El efecto agrupado para pérdida de peso/grasa incluye cero y contradice la calificación",
+        "detail": "El resultado de pérdida de peso/grasa muestra una diferencia media agrupada de -24 kg con intervalo de confianza [-48.0 a 0.0]—este intervalo cruza cero, lo que significa que el metanálisis no puede excluir ausencia de efecto. El motor calificó esto como 'Fuerte' basándose en consistencia (dos metanálisis independientes) y precisión (3314 participantes), pero un intervalo de confianza que toca cero es inconsistente con una afirmación de eficacia fuerte. La calificación parece basarse en la consistencia de dirección más que en la magnitud del efecto.",
+        "severity": "high"
+      },
+      {
+        "issue": "Datos faltantes severos de tamaño de muestra limitan la evaluación verdadera de precisión",
+        "detail": "El motor señala que la mayoría de los resúmenes omiten el tamaño de la muestra, por lo que 'el total verdadero es sustancialmente mayor' que los 11 de 23 estudios que reportan n para pérdida de peso/grasa (similarmente 3 de 12 para salud hepática, 1 de 6 para inflamación). Sin acceso a los datos de texto completo, el motor no puede verificar la distribución real del tamaño de la muestra, si la heterogeneidad es impulsada por el tamaño del estudio, o si unos pocos ensayos grandes dominan los metanálisis. La afirmación de precisión se basa parcialmente en datos invisibles.",
+        "severity": "high"
+      },
+      {
+        "issue": "La evidencia de cognición es vanishingly pequeña y reciente",
+        "detail": "Solo 2 ECA respaldan la calificación de cognición (2019, 2025), con n reportado para solo 1 (n=193). No se puede extraer un efecto agrupado y no existe metanálisis. El estudio de 2025 es del mismo año que la revisión de evidencia y podría no estar completamente publicado aún. Un único ensayo nuevo en 2025 podría cambiar significativamente las conclusiones para este resultado, y la base de evidencia es demasiado pequeña para descartar sesgo de publicación.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sin replicación independiente del metanálisis de salud hepática",
+        "detail": "El motor explícitamente establece: 'existe un único metanálisis / revisión sistemática, pero su conclusión no está replicada o verificada de forma independiente.' Esta es la única síntesis integradora para un resultado 'Moderado'. Un metanálisis de 2026 no puede establecer solidez de hallazgos entre equipos analíticos o poblaciones independientes. Un escéptico notaría que esto está apenas por encima del estado de revisión narrativa.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "La evidencia de inflamación no tiene estimación agrupada e inconsistencia notada",
+        "detail": "Para inflamación, el motor reporta 'existen varios estudios pero ningún análisis agrupado confirma que estén de acuerdo; mantenido en moderado pendiente de revisión.' Existen seis estudios pero ningún metanálisis extrae un efecto agrupado. La afirmación de precisión se basa en un único ensayo de n=273; los tamaños de muestra de los otros 5 ensayos no son visibles en estos registros. Sin una estimación agrupada o declaración explícita de dirección de consistencia, la calificación 'Moderada' parece tentativa.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "El mecanismo propuesto—tesamorelina estimula la liberación de hormona del crecimiento mediada por GHRH, que reduce la grasa visceral y hepática y mejora marcadores metabólicos e inflamatorios—es plausible y respaldado por cambios observados en grasa hepática, marcadores de sensibilidad a insulina y mediadores inmunológicos en los ensayos clínicos. Sin embargo, el salto de la lipodistrofia específica del VIH (donde la deficiencia de GH es una complicación reconocida de la infección crónica y la terapia antirretroviral) al uso fuera de etiqueta en poblaciones generales (individuos saludables, envejecimiento, enfermedad metabólica sin VIH) no está cubierto por ninguna evidencia de ensayo en estos registros. El mecanismo podría ser irrelevante si la deficiencia de GH no está presente.",
+    "strongest_counterargument": "Un escéptico argumentaría que el intervalo de confianza del metanálisis de pérdida de peso/grasa de tesamorelina incluye cero, la base de evidencia es enteramente específica del VIH y por lo tanto inaplicable a poblaciones comercializadas, y la falta de datos de seguridad en el uso del mercado gris es una brecha crítica que no fue abordada en ninguno de estos resúmenes académicos—que se enfocan en eficacia en contextos de investigación controlada, no en tolerabilidad del mundo real o daños a largo plazo. Los hallazgos de cognición e inflamación se basan en 2 y 6 estudios respectivamente, con la mayoría de tamaños de muestra ocultos, haciendo estas conclusiones provisionales.",
+    "what_would_change_the_picture": "ECA bien potenciados (n ≥ 300 por brazo) en poblaciones sin VIH (envejecimiento saludable, síndrome metabólico, obesidad sin VIH) con resultados primarios preregistrados y replicación independiente establecerían generalizabilidad. Una revisión sistemática de seguridad documentando eventos adversos y seguimiento a largo plazo en usuarios del mercado gris abordaría el perfil de riesgo no caracterizado fuera de supervisión de ensayos clínicos.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

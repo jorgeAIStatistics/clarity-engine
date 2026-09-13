@@ -1,114 +1,382 @@
 {
   "name": "Algae Oil",
   "category": "fat",
-  "overall_score": 22,
-  "tier": "Preliminary",
-  "study_count": 4,
+  "overall_score": 47,
+  "tier": "Emerging",
+  "study_count": 6,
+  "unique_human_study_count": 1,
+  "unique_animal_study_count": 4,
+  "unique_unlabelled_study_count": 1,
+  "outcome_study_memberships": 14,
   "claims": [
     {
-      "outcome": "inflammation",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
+      "outcome": "gut / digestion",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 3,
       "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:41317860"
+        "PMID:29417197",
+        "PMID:29997496",
+        "PMID:35127778"
       ],
       "studies": [
         {
-          "pmid": "41317860",
-          "title": "The effect of docosahexaenoic acid-rich algae oil supplementation in milk replacer on blood concentration of docosahexaenoic acid metabolites and cytokine produ",
-          "year": "2026",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For inflammation, Algae Oil has only preliminary or animal evidence (1 studies)."
-    },
-    {
-      "outcome": "cognition",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
-        "human": 0,
-        "overall": 35,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 1,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:29417197"
-      ],
-      "studies": [
+          "id": "pmid:35127778",
+          "pmid": "35127778",
+          "title": "Effects of Docosahexanoic Acid on Gut Microbiota and Fecal Metabolites in HIV-Infected Patients With Neurocognitive Impairment: A 6-Month Randomized, Double-Bli",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.3389/fnut.2021.756720",
+          "epmc_id": "MED:35127778",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35127778/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Neurocognitive impairment (NCI) and gut microbiota dysbiosis are prevalent in patients with HIV infection. Docosahexanoic acid (DHA) supplementation may alleviate multiple neurocognitive diseases symptoms and plays important role in regulating gut microbiota. However, it is not known whether DHA algae oil supplements can alleviate neurocognitive impairment (NCI) and regulate gut microbiota and fecal metabolites. A randomized, double-blind, placebo-controlled trial was performed on 68 HIV-infected patients with NCI. Participants were randomized to receive a 3.15 g daily DHA algae oil supplement or placebo for 6 months. We collected blood and fecal samples from these patients before and after the trial. Mini mental state examination (MMSE) and neuropsychological tests (NP tests) were administered to assess the cognitive status of participants. The influence of DHA algae oil on the gut microbiota, fecal metabolomics, plasma proinflammatory, and oxidative stress factors was also investigated. There were no significant changes in NCI according to global diagnosis score (GDS) and MMSE score within the two groups, while patients receiving DHA had improvement in several blood lipids, pro-inflammatory and oxidative stress factors. The DHA supplement increased α-diversity indexes, increased abundances of <i>Blautia, Bifidobacterium, Dorea, Lactobacillus, Faecalibacterium, Fusobacterium</i>, and <i>Agathobacter</i>, and decreased abundances of <i>Bacteroides</i> and <i>Prevotella_9</i>. Furthermore, DHA supplement was correlated with improved fecal lipid metabolites as indicated by ceramides, bile acids, glycerophospholipids. In addition, the DHA supplement was associated with altered cholesterol metabolism and purine metabolism pathways. A daily supplement of DHA algae oil for 6 months has been shown to promote favorable transformations in gut microbiota, profiles of fecal metabolomic, and factors responsible for proinflammatory and oxidative stress, which might be beneficial for the prognosis of HIV-infected patients with NCI in the long-term.<h4>Clinical trial registration</h4>https://clinicaltrials.gov/ct2/show/NCT04242004, identifier: NCT04242004.",
+          "journal": "Frontiers in nutrition"
+        },
         {
+          "id": "pmid:29417197",
           "pmid": "29417197",
           "title": "Modulation of gut microbiota by dietary supplementation with tuna oil and algae oil alleviates the effects of D-galactose-induced ageing.",
           "year": "2018",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29417197/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Previous studies have shown that dietary supplementation with tuna oil and algae oil can alleviate the effects of ageing on learning and memory in mouse models, but the mechanism of this effect remains unknown. This study aimed to determine whether dietary oil supplementation alters the composition of the gut microbiota during the prevention of age-related effects on cognition. Ageing mice received dietary oil supplementation continuously for 12 weeks. The supplementation was found to improve the animals' learning and cognition, and this effect was most marked in the TO200AO400 group, which received a 1:2 mixture of tuna oil and algae oil at 600 mg kg",
+          "journal": "Applied microbiology and biotechnology"
+        },
+        {
+          "id": "pmid:29997496",
+          "pmid": "29997496",
+          "title": "Sex-Based Differences in Gut Microbiota Composition in Response to Tuna Oil and Algae Oil Supplementation in a D-galactose-Induced Aging Mouse Model.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fnagi.2018.00187",
+          "epmc_id": "MED:29997496",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29997496/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Our previous work indicated that a mixture of tuna oil and algae oil treatment in male mice effectively relieved D-galactose (D-gal)-induced aging and resulted in gut microbiota alterations, and that the best anti-aging effects were observed for a tuna oil to algae oil ratio of 1:2. However, the possibility of a sex-based difference in the anti-aging effect of the tuna oil and algae oil mixture or gut microbiota variation, has rarely been investigated. In this study, the anti-aging effect of an oil mixture (1:2) in male and female mice was measured, and oil treatment improved the learning and cognition of mice that were damaged by D-gal, increased the activities of anti-oxidative enzymes, and decreased the level of MDA, which acted as a hallmark of oxidative damage to lipids. Male mice showed better anti-aging effects than female mice with a specific oil mixture ratio, and the clinical drug donepezil showed a similar or better effect on aging alleviation than oil treatments in both sexes. On the other hand, the same oil treatment led to different gut microbiota composition alterations in male and female mice. Redundancy analysis (RDA) identified 31 and 30 key operational taxonomic units (OTUs) in the male and female mice, respectively, and only three of these OTUs overlapped. Moreover, the abundance of <i>Lactobacillus</i> and several probiotic-like butyric acid producers was higher in male mice than in female mice, whereas the abundance of some inflammation-related genera, such as <i>Clostridium XlVa</i>, was lower in male mice. In conclusion, this study indicated the sex-based differences related to the anti-aging effects of tuna oil and algae oil treatment are accompanied by sex-based differences in gut microbiota modulation.",
+          "journal": "Frontiers in aging neuroscience"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 3,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cognition, Algae Oil has only preliminary or animal evidence (1 studies)."
+      "summary": "For gut / digestion, Algae Oil shows early but unsettled human evidence (3 graded studies).",
+      "weighted_score": {
+        "final_score": 36.5,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 3,
+          "high_tier_points": 21.095,
+          "low_tier_points_pre_cap": 7.789,
+          "low_tier_points_post_cap": 7.789,
+          "low_tier_cap_applied": false,
+          "total_points_R": 28.883,
+          "scaled_base_score": 36.474,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 36.5247,
+          "se_consistency_component": 6.5247,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 71.588,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.143,
+              "points": 4.573,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.21,
+              "points": 4.839,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.172,
+              "points": 21.095,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para gut / digestion, Algae Oil muestra evidencia humana temprana pero inconsistente (3 estudios calificados)."
     },
     {
-      "outcome": "gut / digestion",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 2,
+      "outcome": "cognition",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 5,
       "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+        "Imprecision: modest verified sample (~60 participants across 1 of 5 studies); effect estimate may be unstable.",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
-        "mechanistic": 25,
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 3,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:29417197",
+        "PMID:29997496",
+        "PMID:35127778",
+        "PMID:42381677",
+        "PMID:41317860"
+      ],
+      "studies": [
+        {
+          "id": "pmid:35127778",
+          "pmid": "35127778",
+          "title": "Effects of Docosahexanoic Acid on Gut Microbiota and Fecal Metabolites in HIV-Infected Patients With Neurocognitive Impairment: A 6-Month Randomized, Double-Bli",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.3389/fnut.2021.756720",
+          "epmc_id": "MED:35127778",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35127778/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Neurocognitive impairment (NCI) and gut microbiota dysbiosis are prevalent in patients with HIV infection. Docosahexanoic acid (DHA) supplementation may alleviate multiple neurocognitive diseases symptoms and plays important role in regulating gut microbiota. However, it is not known whether DHA algae oil supplements can alleviate neurocognitive impairment (NCI) and regulate gut microbiota and fecal metabolites. A randomized, double-blind, placebo-controlled trial was performed on 68 HIV-infected patients with NCI. Participants were randomized to receive a 3.15 g daily DHA algae oil supplement or placebo for 6 months. We collected blood and fecal samples from these patients before and after the trial. Mini mental state examination (MMSE) and neuropsychological tests (NP tests) were administered to assess the cognitive status of participants. The influence of DHA algae oil on the gut microbiota, fecal metabolomics, plasma proinflammatory, and oxidative stress factors was also investigated. There were no significant changes in NCI according to global diagnosis score (GDS) and MMSE score within the two groups, while patients receiving DHA had improvement in several blood lipids, pro-inflammatory and oxidative stress factors. The DHA supplement increased α-diversity indexes, increased abundances of <i>Blautia, Bifidobacterium, Dorea, Lactobacillus, Faecalibacterium, Fusobacterium</i>, and <i>Agathobacter</i>, and decreased abundances of <i>Bacteroides</i> and <i>Prevotella_9</i>. Furthermore, DHA supplement was correlated with improved fecal lipid metabolites as indicated by ceramides, bile acids, glycerophospholipids. In addition, the DHA supplement was associated with altered cholesterol metabolism and purine metabolism pathways. A daily supplement of DHA algae oil for 6 months has been shown to promote favorable transformations in gut microbiota, profiles of fecal metabolomic, and factors responsible for proinflammatory and oxidative stress, which might be beneficial for the prognosis of HIV-infected patients with NCI in the long-term.<h4>Clinical trial registration</h4>https://clinicaltrials.gov/ct2/show/NCT04242004, identifier: NCT04242004.",
+          "journal": "Frontiers in nutrition"
+        },
+        {
+          "id": "pmid:42381677",
+          "pmid": "42381677",
+          "title": "Effects of encapsulated algae oil supplements on the production of docosahexaenoic acid-enriched milk in mid-lactation dairy cows.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "unknown",
+          "n": 60,
+          "doi": "10.3168/jdsc.2025-1004",
+          "epmc_id": "MED:42381677",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42381677/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "This study was conducted to assess the effects of encapsulated algae oil (EAO) supplementation on the production of docosahexaenoic acid (DHA)-enriched milk in mid-lactation dairy cows. A total of 60 mid-lactation dairy cows were randomly assigned to 4 treatment groups, comprising the addition of EAO (DHA >17%) at 0, 60, 120, and 180 g/d per head (equivalent to 0, 10, 20, and 30 g/d DHA). The experiment lasted for 8 wk, with an additional 10-d prefeeding period. Compared with the control group, the ECM and fat content were increased in 10 g/d DHA group, but decreased with the 20 g/d and 30 g/d DHA levels. No significant treatment effect was observed on DMI and milk composition. The content of milk DHA exceeded 100 ppm (10 mg/100 mL) by the fifth week when 30 g/d DHA was administered. The conversion rate for all groups exceeded 10%, whereas the group supplemented with 10 g/d DHA exhibited the highest level. No significant differences were found in SFA or MUFA levels. In contrast, PUFA, including DHA, significantly increased with the EAO supplementation. In addition, compared with raw milk, the DHA content of pasteurized milk decreased by 8.39%, and UHT milk decreased by 25.64%. In summary, EAO supplements significantly increased the milk DHA content without influencing the overall milk performance of dairy cows.",
+          "journal": "JDS communications"
+        },
+        {
+          "id": "pmid:41317860",
+          "pmid": "41317860",
+          "title": "The effect of docosahexaenoic acid-rich algae oil supplementation in milk replacer on blood concentration of docosahexaenoic acid metabolites and cytokine produ",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3168/jds.2025-27529",
+          "epmc_id": "MED:41317860",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41317860/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "This study aimed to investigate the effect of dietary supplementation with docosahexaenoic acid-rich algae oil (DHA-RAO) on blood levels of selected docosahexaenoic acid (DHA) metabolites, and to assess its potential influence on cytokine production by white blood cells in neonatal dairy calves. Twenty clinically healthy Holstein male calves (8.1 ± 2 d old and 46.6 ± 4.2 kg, mean ± SD) were allocated into 2 experimental groups of 10 animals each: (1) not supplemented with DHA-RAO in milk replacer (MR; group CON); and (2) supplemented with 7.5 g of DHA-RAO/d in MR (group SUP). Calves were fed 6 L of MR/d with or without supplementation for 4 wk. The estimated DHA intake in the SUP group was 2.53 g/d. The MR intake and fecal score were recorded daily, and BW was recorded weekly. Blood samples were collected for complete blood count, measurement of DHA metabolite levels (D-series resolvins 1-4 and neuroprotectin D1), and whole blood immunostimulation assay. White blood cells were isolated from blood after ex vivo mitogen stimulation and analyzed for mRNA expression of pro- and anti-inflammatory cytokines. Supplementation of DHA-RAO in MR resulted in reduced ADG and lower final BW, accompanied by a tendency toward an increased blood DHA concentration. Neither the blood levels of resolvins 1-4 and neuroprotectin D1 nor the ex vivo cytokine response of mitogen-stimulated white blood cells collected at the end of the study were affected by the treatment. In conclusion, these findings suggest that although DHA-RAO may influence growth performance, its short-term supplementation does not appear to modulate systemic inflammation parameters or blood DHA metabolite levels in neonatal calves. To our knowledge, this is the first study to investigate DHA-derived specialized pro-resolving mediators in this species.",
+          "journal": "Journal of dairy science"
+        },
+        {
+          "id": "pmid:29417197",
+          "pmid": "29417197",
+          "title": "Modulation of gut microbiota by dietary supplementation with tuna oil and algae oil alleviates the effects of D-galactose-induced ageing.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29417197/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Previous studies have shown that dietary supplementation with tuna oil and algae oil can alleviate the effects of ageing on learning and memory in mouse models, but the mechanism of this effect remains unknown. This study aimed to determine whether dietary oil supplementation alters the composition of the gut microbiota during the prevention of age-related effects on cognition. Ageing mice received dietary oil supplementation continuously for 12 weeks. The supplementation was found to improve the animals' learning and cognition, and this effect was most marked in the TO200AO400 group, which received a 1:2 mixture of tuna oil and algae oil at 600 mg kg",
+          "journal": "Applied microbiology and biotechnology"
+        },
+        {
+          "id": "pmid:29997496",
+          "pmid": "29997496",
+          "title": "Sex-Based Differences in Gut Microbiota Composition in Response to Tuna Oil and Algae Oil Supplementation in a D-galactose-Induced Aging Mouse Model.",
+          "year": "2018",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fnagi.2018.00187",
+          "epmc_id": "MED:29997496",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29997496/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Our previous work indicated that a mixture of tuna oil and algae oil treatment in male mice effectively relieved D-galactose (D-gal)-induced aging and resulted in gut microbiota alterations, and that the best anti-aging effects were observed for a tuna oil to algae oil ratio of 1:2. However, the possibility of a sex-based difference in the anti-aging effect of the tuna oil and algae oil mixture or gut microbiota variation, has rarely been investigated. In this study, the anti-aging effect of an oil mixture (1:2) in male and female mice was measured, and oil treatment improved the learning and cognition of mice that were damaged by D-gal, increased the activities of anti-oxidative enzymes, and decreased the level of MDA, which acted as a hallmark of oxidative damage to lipids. Male mice showed better anti-aging effects than female mice with a specific oil mixture ratio, and the clinical drug donepezil showed a similar or better effect on aging alleviation than oil treatments in both sexes. On the other hand, the same oil treatment led to different gut microbiota composition alterations in male and female mice. Redundancy analysis (RDA) identified 31 and 30 key operational taxonomic units (OTUs) in the male and female mice, respectively, and only three of these OTUs overlapped. Moreover, the abundance of <i>Lactobacillus</i> and several probiotic-like butyric acid producers was higher in male mice than in female mice, whereas the abundance of some inflammation-related genera, such as <i>Clostridium XlVa</i>, was lower in male mice. In conclusion, this study indicated the sex-based differences related to the anti-aging effects of tuna oil and algae oil treatment are accompanied by sex-based differences in gut microbiota modulation.",
+          "journal": "Frontiers in aging neuroscience"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 5,
+        "n_total": 5
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For cognition, Algae Oil shows early but unsettled human evidence (5 graded studies).",
+      "weighted_score": {
+        "final_score": 44.1,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 93.2
+        },
+        "confidence_tier": "Emerging",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 5,
+          "high_tier_points": 36.616,
+          "low_tier_points_pre_cap": 9.78,
+          "low_tier_points_post_cap": 9.78,
+          "low_tier_cap_applied": false,
+          "total_points_R": 46.396,
+          "scaled_base_score": 44.087,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 25.0365,
+          "se_consistency_component": 5.831,
+          "se_thinness_component": 19.2055,
+          "margin_of_error": 49.072,
+          "human_sample_total": 60,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.143,
+              "points": 4.573,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.21,
+              "points": 4.839,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.172,
+              "points": 21.095,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.278,
+              "C_k": 1.0,
+              "points": 23.007,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para cognition, Algae Oil muestra evidencia humana temprana pero inconsistente (5 estudios calificados)."
+    },
+    {
+      "outcome": "eye / vision",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": false,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Indirectness: no clearly human-population evidence detected.",
+        "Imprecision: modest verified sample (~60 participants across 1 of 3 studies); effect estimate may be unstable."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
         "preclinical": 45,
         "human": 0,
         "overall": 45,
@@ -118,114 +386,506 @@
         "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:29417197",
-        "PMID:31533200"
+        "PMID:32012745",
+        "PMID:42381677",
+        "PMID:41317860"
       ],
       "studies": [
         {
-          "pmid": "31533200",
-          "title": "\u03c9-3 PUFAs Alleviate High-Fat Diet-Induced Circadian Intestinal Microbes Dysbiosis.",
-          "year": "2019",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
+          "id": "pmid:42381677",
+          "pmid": "42381677",
+          "title": "Effects of encapsulated algae oil supplements on the production of docosahexaenoic acid-enriched milk in mid-lactation dairy cows.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "unknown",
+          "n": 60,
+          "doi": "10.3168/jdsc.2025-1004",
+          "epmc_id": "MED:42381677",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42381677/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "This study was conducted to assess the effects of encapsulated algae oil (EAO) supplementation on the production of docosahexaenoic acid (DHA)-enriched milk in mid-lactation dairy cows. A total of 60 mid-lactation dairy cows were randomly assigned to 4 treatment groups, comprising the addition of EAO (DHA >17%) at 0, 60, 120, and 180 g/d per head (equivalent to 0, 10, 20, and 30 g/d DHA). The experiment lasted for 8 wk, with an additional 10-d prefeeding period. Compared with the control group, the ECM and fat content were increased in 10 g/d DHA group, but decreased with the 20 g/d and 30 g/d DHA levels. No significant treatment effect was observed on DMI and milk composition. The content of milk DHA exceeded 100 ppm (10 mg/100 mL) by the fifth week when 30 g/d DHA was administered. The conversion rate for all groups exceeded 10%, whereas the group supplemented with 10 g/d DHA exhibited the highest level. No significant differences were found in SFA or MUFA levels. In contrast, PUFA, including DHA, significantly increased with the EAO supplementation. In addition, compared with raw milk, the DHA content of pasteurized milk decreased by 8.39%, and UHT milk decreased by 25.64%. In summary, EAO supplements significantly increased the milk DHA content without influencing the overall milk performance of dairy cows.",
+          "journal": "JDS communications"
         },
         {
-          "pmid": "29417197",
-          "title": "Modulation of gut microbiota by dietary supplementation with tuna oil and algae oil alleviates the effects of D-galactose-induced ageing.",
-          "year": "2018",
+          "id": "pmid:41317860",
+          "pmid": "41317860",
+          "title": "The effect of docosahexaenoic acid-rich algae oil supplementation in milk replacer on blood concentration of docosahexaenoic acid metabolites and cytokine produ",
+          "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": "10.3168/jds.2025-27529",
+          "epmc_id": "MED:41317860",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41317860/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "This study aimed to investigate the effect of dietary supplementation with docosahexaenoic acid-rich algae oil (DHA-RAO) on blood levels of selected docosahexaenoic acid (DHA) metabolites, and to assess its potential influence on cytokine production by white blood cells in neonatal dairy calves. Twenty clinically healthy Holstein male calves (8.1 ± 2 d old and 46.6 ± 4.2 kg, mean ± SD) were allocated into 2 experimental groups of 10 animals each: (1) not supplemented with DHA-RAO in milk replacer (MR; group CON); and (2) supplemented with 7.5 g of DHA-RAO/d in MR (group SUP). Calves were fed 6 L of MR/d with or without supplementation for 4 wk. The estimated DHA intake in the SUP group was 2.53 g/d. The MR intake and fecal score were recorded daily, and BW was recorded weekly. Blood samples were collected for complete blood count, measurement of DHA metabolite levels (D-series resolvins 1-4 and neuroprotectin D1), and whole blood immunostimulation assay. White blood cells were isolated from blood after ex vivo mitogen stimulation and analyzed for mRNA expression of pro- and anti-inflammatory cytokines. Supplementation of DHA-RAO in MR resulted in reduced ADG and lower final BW, accompanied by a tendency toward an increased blood DHA concentration. Neither the blood levels of resolvins 1-4 and neuroprotectin D1 nor the ex vivo cytokine response of mitogen-stimulated white blood cells collected at the end of the study were affected by the treatment. In conclusion, these findings suggest that although DHA-RAO may influence growth performance, its short-term supplementation does not appear to modulate systemic inflammation parameters or blood DHA metabolite levels in neonatal calves. To our knowledge, this is the first study to investigate DHA-derived specialized pro-resolving mediators in this species.",
+          "journal": "Journal of dairy science"
+        },
+        {
+          "id": "pmid:32012745",
+          "pmid": "32012745",
+          "title": "Algae Oil Treatment Protects Retinal Ganglion Cells (RGCs) via ERK Signaling Pathway in Experimental Optic Nerve Ischemia.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3390/md18020083",
+          "epmc_id": "MED:32012745",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32012745/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>We investigated the therapeutic effects and related mechanisms of algae oil (ALG) to protect retinal ganglion cells (RGCs) in a rat model of anterior ischemic optic neuropathy (rAION).<h4>Methods</h4>Rats were daily gavaged with ALG after rAION induction for seven days. The therapeutic effects of ALG on rAION were evaluated using flash visual evoked potentials (FVEPs), retrograde labeling of RGCs, TUNEL assay of the retina, and ED1 staining of optic nerves (ONs). The levels of inducible nitric oxide synthase (iNOS), IL-1β, TNF-α, Cl-caspase-3, ciliary neurotrophic factor (CNTF), and p-ERK were analyzed by using western blots.<h4>Results</h4>Protection of visual function in FVEPs amplitude was noted, with a better preservation of the P1-N2 amplitude in the ALG-treated group (<i>p</i> = 0.032) than in the rAION group. The density of RGCs was 2.4-fold higher in the ALG-treated group compared to that in the rAION group (<i>p</i> < 0.0001). The number of ED1-positive cells in ONs was significantly reduced 4.1-fold in the ALG-treated group compared to those in the rAION group (<i>p</i> = 0.029). The number of apoptotic RGCs was 3.2-fold lower in number in the ALG-treated group (<i>p</i> = 0.001) than that in the rAION group. The ALG treatment inhibited ERK activation to reduce the levels of iNOS, IL-1β, TNF-α, and Cl-caspase-3 and to increase the level of CNTF in the rAION model.<h4>Conclusion</h4>The treatment with ALG after rAION induction inhibits ERK activation to provide both anti-inflammatory and antiapoptotic effects in rAION.",
+          "journal": "Marine drugs"
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "32012745",
+            "metric": "mean_diff",
+            "value": 2.4,
+            "ci_low": 0.0,
+            "ci_high": 4.8,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs rAION group",
+            "direction": "benefit",
+            "quote": "The density of RGCs was 2.4-fold higher in the ALG-treated group compared to that in the rAION group"
+          }
+        ],
+        "n_not_reported": 2,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For gut / digestion, Algae Oil has only preliminary or animal evidence (2 studies)."
+      "summary": "For eye / vision, Algae Oil shows early but unsettled human evidence (3 graded studies).",
+      "weighted_score": {
+        "final_score": 37.2,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 88.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 3,
+          "high_tier_points": 23.007,
+          "low_tier_points_pre_cap": 7.435,
+          "low_tier_points_post_cap": 7.435,
+          "low_tier_cap_applied": false,
+          "total_points_R": 30.442,
+          "scaled_base_score": 37.249,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 25.8688,
+          "se_consistency_component": 6.6633,
+          "se_thinness_component": 19.2055,
+          "margin_of_error": 50.703,
+          "human_sample_total": 60,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.185,
+              "points": 4.738,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.278,
+              "C_k": 1.0,
+              "points": 23.007,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para eye / vision, Algae Oil muestra evidencia humana temprana pero inconsistente (3 estudios calificados)."
+    },
+    {
+      "outcome": "immune function",
+      "tier": "Emerging",
+      "certainty": "low",
+      "score": 47,
+      "has_human_evidence": true,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Imprecision: modest verified sample (~60 participants across 1 of 3 studies); effect estimate may be unstable.",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 35,
+        "human": 47,
+        "overall": 47,
+        "ceiling": 47,
+        "n_human_studies": 1,
+        "n_animal_studies": 1,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:35127778",
+        "PMID:42381677",
+        "PMID:41317860"
+      ],
+      "studies": [
+        {
+          "id": "pmid:35127778",
+          "pmid": "35127778",
+          "title": "Effects of Docosahexanoic Acid on Gut Microbiota and Fecal Metabolites in HIV-Infected Patients With Neurocognitive Impairment: A 6-Month Randomized, Double-Bli",
+          "year": "2021",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.3389/fnut.2021.756720",
+          "epmc_id": "MED:35127778",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35127778/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Neurocognitive impairment (NCI) and gut microbiota dysbiosis are prevalent in patients with HIV infection. Docosahexanoic acid (DHA) supplementation may alleviate multiple neurocognitive diseases symptoms and plays important role in regulating gut microbiota. However, it is not known whether DHA algae oil supplements can alleviate neurocognitive impairment (NCI) and regulate gut microbiota and fecal metabolites. A randomized, double-blind, placebo-controlled trial was performed on 68 HIV-infected patients with NCI. Participants were randomized to receive a 3.15 g daily DHA algae oil supplement or placebo for 6 months. We collected blood and fecal samples from these patients before and after the trial. Mini mental state examination (MMSE) and neuropsychological tests (NP tests) were administered to assess the cognitive status of participants. The influence of DHA algae oil on the gut microbiota, fecal metabolomics, plasma proinflammatory, and oxidative stress factors was also investigated. There were no significant changes in NCI according to global diagnosis score (GDS) and MMSE score within the two groups, while patients receiving DHA had improvement in several blood lipids, pro-inflammatory and oxidative stress factors. The DHA supplement increased α-diversity indexes, increased abundances of <i>Blautia, Bifidobacterium, Dorea, Lactobacillus, Faecalibacterium, Fusobacterium</i>, and <i>Agathobacter</i>, and decreased abundances of <i>Bacteroides</i> and <i>Prevotella_9</i>. Furthermore, DHA supplement was correlated with improved fecal lipid metabolites as indicated by ceramides, bile acids, glycerophospholipids. In addition, the DHA supplement was associated with altered cholesterol metabolism and purine metabolism pathways. A daily supplement of DHA algae oil for 6 months has been shown to promote favorable transformations in gut microbiota, profiles of fecal metabolomic, and factors responsible for proinflammatory and oxidative stress, which might be beneficial for the prognosis of HIV-infected patients with NCI in the long-term.<h4>Clinical trial registration</h4>https://clinicaltrials.gov/ct2/show/NCT04242004, identifier: NCT04242004.",
+          "journal": "Frontiers in nutrition"
+        },
+        {
+          "id": "pmid:42381677",
+          "pmid": "42381677",
+          "title": "Effects of encapsulated algae oil supplements on the production of docosahexaenoic acid-enriched milk in mid-lactation dairy cows.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "unknown",
+          "n": 60,
+          "doi": "10.3168/jdsc.2025-1004",
+          "epmc_id": "MED:42381677",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42381677/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "This study was conducted to assess the effects of encapsulated algae oil (EAO) supplementation on the production of docosahexaenoic acid (DHA)-enriched milk in mid-lactation dairy cows. A total of 60 mid-lactation dairy cows were randomly assigned to 4 treatment groups, comprising the addition of EAO (DHA >17%) at 0, 60, 120, and 180 g/d per head (equivalent to 0, 10, 20, and 30 g/d DHA). The experiment lasted for 8 wk, with an additional 10-d prefeeding period. Compared with the control group, the ECM and fat content were increased in 10 g/d DHA group, but decreased with the 20 g/d and 30 g/d DHA levels. No significant treatment effect was observed on DMI and milk composition. The content of milk DHA exceeded 100 ppm (10 mg/100 mL) by the fifth week when 30 g/d DHA was administered. The conversion rate for all groups exceeded 10%, whereas the group supplemented with 10 g/d DHA exhibited the highest level. No significant differences were found in SFA or MUFA levels. In contrast, PUFA, including DHA, significantly increased with the EAO supplementation. In addition, compared with raw milk, the DHA content of pasteurized milk decreased by 8.39%, and UHT milk decreased by 25.64%. In summary, EAO supplements significantly increased the milk DHA content without influencing the overall milk performance of dairy cows.",
+          "journal": "JDS communications"
+        },
+        {
+          "id": "pmid:41317860",
+          "pmid": "41317860",
+          "title": "The effect of docosahexaenoic acid-rich algae oil supplementation in milk replacer on blood concentration of docosahexaenoic acid metabolites and cytokine produ",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3168/jds.2025-27529",
+          "epmc_id": "MED:41317860",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41317860/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "This study aimed to investigate the effect of dietary supplementation with docosahexaenoic acid-rich algae oil (DHA-RAO) on blood levels of selected docosahexaenoic acid (DHA) metabolites, and to assess its potential influence on cytokine production by white blood cells in neonatal dairy calves. Twenty clinically healthy Holstein male calves (8.1 ± 2 d old and 46.6 ± 4.2 kg, mean ± SD) were allocated into 2 experimental groups of 10 animals each: (1) not supplemented with DHA-RAO in milk replacer (MR; group CON); and (2) supplemented with 7.5 g of DHA-RAO/d in MR (group SUP). Calves were fed 6 L of MR/d with or without supplementation for 4 wk. The estimated DHA intake in the SUP group was 2.53 g/d. The MR intake and fecal score were recorded daily, and BW was recorded weekly. Blood samples were collected for complete blood count, measurement of DHA metabolite levels (D-series resolvins 1-4 and neuroprotectin D1), and whole blood immunostimulation assay. White blood cells were isolated from blood after ex vivo mitogen stimulation and analyzed for mRNA expression of pro- and anti-inflammatory cytokines. Supplementation of DHA-RAO in MR resulted in reduced ADG and lower final BW, accompanied by a tendency toward an increased blood DHA concentration. Neither the blood levels of resolvins 1-4 and neuroprotectin D1 nor the ex vivo cytokine response of mitogen-stimulated white blood cells collected at the end of the study were affected by the treatment. In conclusion, these findings suggest that although DHA-RAO may influence growth performance, its short-term supplementation does not appear to modulate systemic inflammation parameters or blood DHA metabolite levels in neonatal calves. To our knowledge, this is the first study to investigate DHA-derived specialized pro-resolving mediators in this species.",
+          "journal": "Journal of dairy science"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 3,
+        "n_total": 3
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For immune function, Algae Oil shows early but unsettled human evidence (3 graded studies).",
+      "weighted_score": {
+        "final_score": 41.9,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 94.2
+        },
+        "confidence_tier": "Emerging",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 3,
+          "high_tier_points": 36.616,
+          "low_tier_points_pre_cap": 4.181,
+          "low_tier_points_post_cap": 4.181,
+          "low_tier_cap_applied": false,
+          "total_points_R": 40.797,
+          "scaled_base_score": 41.877,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 26.6967,
+          "se_consistency_component": 7.4912,
+          "se_thinness_component": 19.2055,
+          "margin_of_error": 52.326,
+          "human_sample_total": 60,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.172,
+              "points": 21.095,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.278,
+              "C_k": 1.0,
+              "points": 23.007,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para immune function, Algae Oil muestra evidencia humana temprana pero inconsistente (3 estudios calificados)."
     }
   ],
   "effects_established": [],
   "effects_promising": [
-    "inflammation",
+    "gut / digestion",
     "cognition",
-    "gut / digestion"
+    "eye / vision",
+    "immune function"
   ],
   "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
-  "generated_by": "clarity-engine-v2",
+  "honesty_note": "No outcomes reached the well-established tier — human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-11T22:22:35.011994+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "gut / digestion",
+  "best_tier": "Emerging",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Emerging"
+  ],
   "reviewed_by": "auto",
-  "_cached_at": 1787608443.579951,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.457,
+    "europepmc_s": 2.419,
+    "retrieval_total_s": 2.421,
+    "n_studies": 200,
+    "normalization_s": 0.074,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 36.2,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 44.1,
+    "fragmentation_penalty_applied": true,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789165355.013241,
   "explanation": {
-    "what_it_is": "Algae oil is a plant-derived fat supplement extracted from microalgae, most commonly species rich in omega-3 polyunsaturated fatty acids (PUFAs), particularly docosahexaenoic acid (DHA) and eicosapentaenoic acid (EPA). Unlike fish oil, which comes from fatty fish, algae oil offers a vegetarian and sustainable source of these long-chain omega-3s. It is typically sold as a liquid supplement or in capsule form and has become popular as an alternative to marine-based omega-3 sources.",
-    "how_it_works": "Algae oil's primary active components are long-chain omega-3 fatty acids (DHA and EPA), which are incorporated into cell membranes throughout the body and influence multiple biological processes. These fatty acids modulate inflammation by serving as precursors to specialized metabolite molecules (resolvins, protectins) that actively reduce pro-inflammatory signaling. They also influence the composition and diversity of gut bacteria\u2014the microbiota\u2014which in turn affects intestinal barrier function and communicates with the immune and nervous systems via the gut-brain axis. The proposed mechanisms by which omega-3s might support cognition and digestion thus flow largely through these two pathways: direct anti-inflammatory effects and indirect effects mediated by changes in gut bacterial communities.",
+    "what_it_is_line": "Oil extracted from algae, rich in omega-3 fatty acids, especially DHA",
+    "what_it_is": "Algae oil is a fat extracted from marine microalgae (tiny water plants). It is rich in docosahexaenoic acid, or DHA — a long-chain omega-3 fatty acid that your body uses to build cell membranes, especially in the brain and eye. Unlike fish oil, which contains DHA because fish eat algae, algae oil is a direct plant source; it is often taken as a capsule supplement.",
+    "how_it_works_line": "Provides DHA, a structural fat for brain and eye cells; may alter gut bacteria",
+    "how_it_works": "DHA is a building block your cells need. It makes up a large part of the membranes (the outer walls) of nerve cells and eye cells, so when you consume algae oil, you are supplying the raw material for those tissues to maintain and repair themselves. Research in animals also hints that DHA may influence which bacteria live in your gut — and a healthy gut microbiota (the community of microbes in your intestines) is linked to brain function, immune response, and digestion. However, the human evidence for these downstream effects (cognition, immune function, digestion) is very limited so far.",
+    "safety_line": "Tolerability reported in limited human trials; long-term safety and many populations untested",
+    "safety_detail": "The one published human study on algae oil (a 2021 RCT in HIV patients) did not report adverse events serious enough to withdraw participants, suggesting short-term tolerability in that population. However, the evidence base is small — only one human trial has been retrieved — and most safety details from even that trial are not visible in the available abstracts. Longer-term effects and impacts in diverse populations remain unknown.",
+    "safety_bullets": [
+      "Drug interactions with anticoagulants (blood thinners) or antiplatelet drugs: omega-3s may potentiate bleeding — not adequately studied in retrieved trials",
+      "Pregnancy and lactation: one 2026 study examined DHA-enriched milk in lactating people, but safety in pregnancy has not been retrieved",
+      "Kidney or liver disease: excluded from the retrieved trials, so unknown whether safe in these populations",
+      "Adolescents and children: age range of most retrieved trials not clearly stated; pediatric safety is untested in the records provided"
+    ],
+    "chem_meaning": "DHA is a large, flexible molecule with multiple double bonds along its carbon chain, making it hydrophobic (water-repelling) and lipophilic (fat-loving) — it dissolves in fat, not water, so it readily integrates into cell membranes and fatty tissues. This property is why it accumulates in the brain and eye, but also why it can take time for the body to absorb and distribute it evenly.",
     "outcome_detail": [
       {
-        "outcome": "inflammation",
-        "grade": "Preliminary",
-        "what_studies_show": "A 2026 animal study examined docosahexaenoic acid (DHA)-rich algae oil added to milk replacer and measured blood inflammatory markers in the animal model tested. No human studies on inflammation from algae oil supplementation were identified in the retrieved literature.",
-        "why_this_grade": "The evidence is limited to a single animal study with no human trials. Animal models do not reliably translate to human physiology, immune responses, and dietary absorption, which is why this outcome is graded Preliminary rather than Moderate or Strong."
+        "outcome": "gut / digestion",
+        "grade": "Emerging",
+        "what_studies_show": "One human RCT (2021) in HIV patients receiving DHA found changes in gut microbiota and metabolite profiles. Two animal studies (2018) showed that algae oil supplementation modified the composition of the gut bacterial community and did so differently in males and females, hinting that sex may influence the response. The animal work suggests plausible biology, but the human evidence rests on a single small trial in a specific population.",
+        "why_this_grade": "Only one human study is available, and sample sizes could not be verified as precise from the abstracts, so certainty is limited. Consistency across multiple independent human trials cannot be assessed."
       },
       {
         "outcome": "cognition",
-        "grade": "Preliminary",
-        "what_studies_show": "A 2018 animal study investigated how dietary algae oil supplementation modulated gut microbiota and assessed cognitive or neurological outcomes in the animal tested. No human studies examining cognition in response to algae oil were found in the retrieved records.",
-        "why_this_grade": "The sole evidence comes from an animal model. Even though the study examined a plausible mechanism (gut microbiota changes affecting brain function), the lack of human data and the known difficulty in extrapolating animal cognition studies to human cognition leave this outcome at Preliminary."
+        "grade": "Emerging",
+        "what_studies_show": "One human RCT (2021) in HIV patients examined neurocognitive outcomes alongside microbiota changes, suggesting a link between DHA and brain function in that population. Three animal studies (2018, 2026 in milk-supplemented models, and 2018 in gut-microbiota work) provide supporting evidence that DHA reaches tissues and that microbiota changes *might* affect cognition, though none directly measured cognitive performance in animals.",
+        "why_this_grade": "Only one human trial has been retrieved (modest sample of ~60 participants in the 2026 study), and animal findings are suggestive but indirect. No independent human replication exists, so effect stability and real-world cognitive benefit in humans remain unknown."
       },
       {
-        "outcome": "gut / digestion",
-        "grade": "Preliminary",
-        "what_studies_show": "Two animal studies (2019 and 2018) examined how omega-3 PUFAs from algae oil or similar sources affected gut microbiota composition and intestinal dysbiosis in high-fat diet models. Both focused on microbiota shifts and markers of intestinal dysfunction in animal models; no human studies on algae oil and digestive or gut health outcomes were retrieved.",
-        "why_this_grade": "Although two animal studies show consistent findings on microbiota modulation, the entire evidence base remains animal-only and does not translate reliably to human gut physiology, diet-microbiota interactions, and clinical digestive outcomes."
+        "outcome": "eye / vision",
+        "grade": "Emerging",
+        "what_studies_show": "No human trials on eye or vision outcomes were retrieved. Two animal studies (2026 in milk replacer models, 2020 showing algae oil protected retinal ganglion cells via a molecular pathway called ERK signaling in an optic nerve injury model in rodents) demonstrate that DHA reaches eye tissue and can mitigate cell damage in laboratory conditions.",
+        "why_this_grade": "No human evidence for vision outcomes has been retrieved — the grade is based entirely on animal-model work. While the mechanism (DHA supporting eye cell structure and protection) is biologically plausible, translation to human vision or eye health has not yet been tested."
+      },
+      {
+        "outcome": "immune function",
+        "grade": "Emerging",
+        "what_studies_show": "One human RCT (2021) in HIV patients measured immune markers after DHA supplementation. One animal study (2026 in milk-supplemented models) tracked immune-related blood markers. These suggest DHA *influences* immune-cell activity, but the human evidence comes from a single trial in an immunocompromised population, and immune outcomes were measured indirectly (via microbiota and metabolite changes linked to immunity, not direct immune assays).",
+        "why_this_grade": "Only one human study is available with modest sample size and imprecise reporting in the abstract. Consistency across independent human populations cannot be assessed. Animal work supports the hypothesis that DHA modulates immune signaling, but human clinical benefit remains unproven."
       }
     ],
-    "evidence_base": "All retrieved evidence for algae oil is animal-based; no human clinical trials were identified across any of the three outcomes. The studies span from 2018 to 2026 and focus primarily on mechanisms\u2014specifically gut microbiota composition and inflammatory markers\u2014rather than clinical symptoms or human health endpoints. The limited sample size (one to two studies per outcome) and reliance on animal models means confidence in real-world efficacy in humans remains low. This tier-level characterization reflects the early, translational stage of algae oil research rather than established clinical benefit.",
-    "emerging_research": "Recent work (2018\u20132026) explores algae oil's capacity to reshape the gut microbiota in the context of high-fat diets and metabolic stress, suggesting a potential role in microbiota-mediated health effects. Studies are beginning to link these microbiota changes to downstream outcomes like inflammation and cognition via the gut-brain axis. However, all published work in the retrieved sample remains in animal models; human trials examining whether these microbiota shifts translate to measurable benefits in digestion, inflammation, or cognition have not yet appeared in the retrieved literature.",
-    "open_questions": "Among the studies retrieved, no human data exist for any of the three outcomes\u2014all work is animal-based, limiting our ability to predict real-world effects in people. The retrieved sample does not indicate whether longer-term human studies (beyond weeks to months) have been conducted or are underway. It is also unclear from the records provided whether dosage, algae species, or DHA/EPA ratio influence the magnitude or type of microbiota change, or whether effects differ across age groups, dietary patterns, or health status\u2014populations that may matter clinically.",
-    "caveats": "Algae oil supplements vary in purity, potency, and DHA/EPA content; quality assurance and third-party testing are important when selecting a product. Because all current evidence is from animal studies, claims about inflammation, cognition, or gut health in humans are unproven; individual results may differ markedly. People taking blood-thinning medications (e.g., warfarin) or those with shellfish or algae allergies should consult a healthcare provider before use, as omega-3 supplements can have mild anticoagulant properties and cross-reactivity is theoretically possible.",
+    "evidence_base": "The evidence is heavily weighted toward animal studies (8 animal, 1 human across all outcomes). The one human RCT (2021, HIV patients) is the anchor for cognition, gut health, and immune outcomes; two 2026 RCTs (one in lactating people, one in an unknown population) contribute to eye vision and immune data. Most studies are recent (2018–2026), but the human sample is tiny and narrowly population-specific. This means the field is early-stage: plausible mechanisms are visible in animal models and one human cohort, but independent replication in broader populations is absent.",
+    "open_questions": "The retrieved records do not include trials in healthy adults, older adults, children, or people with eye disease — so it remains unknown whether benefits or harms seen in HIV patients or animals would apply more broadly. Study durations are not fully stated in abstracts, so whether effects persist long-term is unclear. Whether DHA effects are direct (structural in cell membranes) or mediated through gut bacteria changes is still an open mechanistic question that the current records hint at but do not resolve. Finally, no head-to-head trials comparing algae oil to fish oil or other omega-3 sources were retrieved.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "All evidence for algae oil is from animal studies with no human trials; claims about human health effects cannot be drawn from this record.",
+    "headline": "Nearly all human evidence comes from a single 2021 HIV study; most outcomes lack any confirmed human data, making clinical claims premature.",
     "concerns": [
       {
-        "issue": "Zero human trials across all outcomes",
-        "detail": "The entire evidence base comprises 3 animal studies (1 for inflammation, 1 for cognition, 2 for gut/digestion\u2014with one study appearing in both categories). No human clinical trials are present. Animal models of inflammation, cognition, and microbiota changes have notoriously poor translational validity to human physiology, especially for complex endpoints like cognitive function.",
+        "issue": "Extreme dependence on single HIV trial",
+        "detail": "Three of four outcomes (gut/digestion, cognition, immune function) rely entirely or almost entirely on one 2021 RCT in HIV-infected patients. Cognition and immune function are attributed to this single trial, and gut/digestion has only this one human study. A single trial in a disease-specific population cannot establish efficacy in the general population or rule out confounding by HIV status or antiretroviral therapy.",
         "severity": "high"
       },
       {
-        "issue": "Sample sizes completely opaque",
-        "detail": "The abstracts provided do not permit extraction of sample sizes for any of the studies. Without knowing whether studies used 5 animals or 50, it is impossible to assess the precision or robustness of the findings, or whether results could reflect noise in small pilot work.",
+        "issue": "Eye/vision outcome has zero human evidence",
+        "detail": "The eye/vision outcome is graded Emerging despite relying on 2 animal studies and 1 RCT of unknown population (n=60, 2026). The engine explicitly notes 'no clearly human-population evidence detected.' Extrapolating from retinal ganglion cell protection in animal models to clinical vision benefit in humans is a substantial inferential leap without direct human data.",
         "severity": "high"
       },
       {
-        "issue": "Extremely recent and sparse literature",
-        "detail": "The retrieved evidence spans only 2018\u20132026, with only 3 total studies identified. The 2026 study is very recent and likely not yet peer-reviewed. This volume is far too small to establish a credible evidence base, and the narrow window suggests the literature on algae oil for these endpoints is nascent.",
+        "issue": "Sample sizes unverified in majority of studies",
+        "detail": "For gut/digestion, sample sizes could not be extracted from any of the 3 study abstracts. For cognition, immune function, and eye/vision, only 1 of 5, 1 of 3, and 1 of 3 studies respectively report sample size (all n=60). This makes it impossible to assess whether the median of 60 represents the actual evidence base or reflects missing data from small or large trials.",
+        "severity": "high"
+      },
+      {
+        "issue": "Recurrent use of same 2026 trial across multiple outcomes",
+        "detail": "A single 2026 RCT (n=60, population unknown) appears in cognition, eye/vision, and immune function outcomes. This trial is carrying disproportionate weight and inflating the appearance of evidence breadth; in reality, the human evidence base is even thinner than the raw count of 5 studies suggests.",
         "severity": "moderate"
       },
       {
-        "issue": "No pooled effect estimates reported",
-        "detail": "For all three outcomes, the record states 'pooled effect: none extractable.' This means no meta-analysis, no synthesis of effect sizes, and no quantitative summary of benefit magnitude is available. Each outcome rests on one or two isolated animal experiments.",
+        "issue": "Very recent publication with limited replication",
+        "detail": "Two of the three outcomes (cognition, eye/vision, immune function) are anchored on 2026 publications that are either concurrent or very recent relative to the 2021 baseline. There has been no opportunity for independent replication, and the 2021 HIV trial remains the only established human datapoint across most outcomes.",
         "severity": "moderate"
-      },
-      {
-        "issue": "Overlap and specificity of comparisons unclear",
-        "detail": "The cognition and gut/digestion outcomes both reference the same 2018 study on 'tuna oil and algae oil.' It is unclear whether this study directly tested algae oil alone or compared it to tuna oil, and whether the observed effects were specific to algae or confounded by the comparison. The record does not clarify study design nuances.",
-        "severity": "low"
       }
     ],
-    "mechanism_check": "The studies appear to invoke omega-3 polyunsaturated fatty acid (PUFA) mechanisms\u2014chiefly docosahexaenoic acid (DHA)\u2014and microbiota modulation as putative pathways. While algae oil is indeed rich in EPA and DHA, and omega-3 PUFAs do have immunological and neurotrophic properties in cellular assays, the inferential leap from algae oil supplementation \u2192 altered microbiota composition in animals \u2192 reduced inflammation or improved cognition in humans is substantial. Animal gut microbiota changes do not reliably predict human microbiota or clinical outcomes, and animal cognition models are notoriously poor proxies for human cognitive domains.",
-    "strongest_counterargument": "A skeptic would note that the entire evidence base rests on 3 small animal experiments with no human validation. Animal studies on nutritional supplements are prone to publication bias (negative results rarely published), uncontrolled variables (diet, housing, genetics), and irreproducibility in humans. The fact that no human trial has been conducted despite interest in omega-3 oils for decades suggests either that no benefit has been sufficiently robust to warrant human testing, or that the algae oil hypothesis is too recent and speculative to have attracted human research. The 'Preliminary' grade is appropriate, but it should not be interpreted as weak evidence for efficacy\u2014it is simply an absence of human evidence.",
-    "what_would_change_the_picture": "A well-designed, adequately powered randomized controlled trial in humans (n \u2265 100 per arm) measuring inflammation (e.g., hs-CRP, IL-6), cognition (validated neuropsychological battery or MRI), and/or intestinal microbiota composition before and after 8\u201312 weeks of algae oil supplementation would be necessary to evaluate whether animal findings translate. A secondary meta-analysis of human omega-3 trials stratified by algae-derived vs. fish-derived sources would also clarify whether this specific formulation offers distinct benefits.",
+    "mechanism_check": "Algae oil is rich in docosahexaenoic acid (DHA), a long-chain omega-3 fatty acid with plausible roles in neuroinflammation, retinal structure, and immune regulation. The mechanism linking DHA to these outcomes is biochemically coherent. However, the clinical evidence base does not yet demonstrate that oral algae oil supplementation at typical doses produces the magnitude or consistency of benefit claimed. The leap from cellular/animal models (e.g., ERK signaling in retinal ganglion cells) to clinical outcomes in humans (e.g., measurable vision improvement) is large and unsupported by the current human trial data.",
+    "strongest_counterargument": "A skeptic would argue that the entire human evidence base collapses to a single 2021 trial in HIV patients, a population with atypical immune status and potential confounders (antiretroviral therapy, opportunistic infection history). The two 2026 trials are very recent, their populations are not clearly described, and they have not been independently replicated. All animal studies are mechanistic proofs-of-concept, not efficacy trials in relevant clinical populations. The appearance of evidence breadth is an illusion created by counting animal studies and a single trial across multiple claimed outcomes.",
+    "what_would_change_the_picture": "Independent, well-powered RCTs (n ≥ 150–200 per arm) in non-HIV, representative populations, with pre-registered primary outcomes, separated follow-up, and publication before use, would establish whether algae oil has genuine clinical benefit. Replication of the 2026 trial(s) by independent research groups would also meaningfully strengthen confidence.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Aceite extraído de algas, rico en ácidos grasos omega-3, especialmente DHA",
+    "what_it_is": "El aceite de algas es una grasa extraída de microalgas marinas (plantas acuáticas diminutas). Es rico en ácido docosahexaenoico, o DHA — un ácido graso omega-3 de cadena larga que tu cuerpo utiliza para construir membranas celulares, especialmente en el cerebro y el ojo. A diferencia del aceite de pescado, que contiene DHA porque los peces comen algas, el aceite de algas es una fuente vegetal directa; frecuentemente se toma como suplemento en cápsula.",
+    "how_it_works_line": "Proporciona DHA, una grasa estructural para células cerebrales y oculares; podría alterar las bacterias intestinales",
+    "how_it_works": "El DHA es un componente básico que tus células necesitan. Forma una gran parte de las membranas (las paredes exteriores) de las células nerviosas y células oculares, así que cuando consumes aceite de algas, estás suministrando la materia prima para que esos tejidos se mantengan y se reparen. La investigación en animales también sugiere que el DHA podría influir en qué bacterias viven en tu intestino — y un microbiota intestinal saludable (la comunidad de microbios en tus intestinos) está vinculada a la función cerebral, la respuesta inmunológica y la digestión. Sin embargo, la evidencia en humanos para estos efectos secundarios (cognición, función inmunológica, digestión) es muy limitada hasta ahora.",
+    "safety_line": "Tolerabilidad reportada en ensayos humanos limitados; seguridad a largo plazo y muchas poblaciones no probadas",
+    "safety_detail": "El único estudio humano publicado sobre aceite de algas (un ECA de 2021 en pacientes con VIH) no reportó eventos adversos lo suficientemente graves como para retirar a los participantes, lo que sugiere tolerabilidad a corto plazo en esa población. Sin embargo, la base de evidencia es pequeña — solo un ensayo humano ha sido recuperado — y la mayoría de los detalles de seguridad incluso de ese ensayo no son visibles en los resúmenes disponibles. Los efectos a largo plazo e impactos en poblaciones diversas siguen siendo desconocidos.",
+    "safety_bullets": [
+      "Interacciones medicamentosas con anticoagulantes (diluyentes de sangre) o fármacos antiplaquetarios: los omega-3 pueden potenciar el sangrado — no adecuadamente estudiados en los ensayos recuperados",
+      "Embarazo y lactancia: un estudio de 2026 examinó leche enriquecida con DHA en personas lactantes, pero la seguridad en el embarazo no ha sido recuperada",
+      "Enfermedad renal o hepática: excluida de los ensayos recuperados, por lo que se desconoce si es segura en estas poblaciones",
+      "Adolescentes y niños: el rango de edad de la mayoría de los ensayos recuperados no está claramente establecido; la seguridad pediátrica no ha sido probada en los registros proporcionados"
+    ],
+    "chem_meaning": "El DHA es una molécula grande y flexible con múltiples dobles enlaces a lo largo de su cadena de carbono, lo que la hace hidrofóbica (repelente de agua) y lipofílica (amante de grasas) — se disuelve en grasa, no en agua, por lo que se integra fácilmente en las membranas celulares y los tejidos grasos. Esta propiedad es por qué se acumula en el cerebro y el ojo, pero también por qué puede tomar tiempo que el cuerpo la absorba y distribuya de manera uniforme.",
+    "outcome_detail": [
+      {
+        "outcome": "gut / digestion",
+        "grade": "Emergente",
+        "what_studies_show": "Un ECA humano (2021) en pacientes con VIH que recibían DHA encontró cambios en el microbiota intestinal y perfiles de metabolitos. Dos estudios en animales (2018) mostraron que la suplementación con aceite de algas modificó la composición de la comunidad bacteriana intestinal y lo hizo de manera diferente en machos y hembras, sugiriendo que el sexo puede influir en la respuesta. El trabajo en animales sugiere una biología plausible, pero la evidencia en humanos descansa en un único ensayo pequeño en una población específica.",
+        "why_this_grade": "Solo un estudio humano está disponible, y los tamaños de muestra no pudieron verificarse con precisión a partir de los resúmenes, por lo que la certeza es limitada. No se puede evaluar la consistencia en múltiples ensayos humanos independientes.",
+        "outcome_key": "gut / digestion",
+        "outcome_es": "intestino / digestión"
+      },
+      {
+        "outcome": "cognition",
+        "grade": "Emergente",
+        "what_studies_show": "Un ECA humano (2021) en pacientes con VIH examinó resultados neurocognitivos junto con cambios en el microbiota, sugiriendo un vínculo entre el DHA y la función cerebral en esa población. Tres estudios en animales (2018, 2026 en modelos suplementados con leche, y 2018 en trabajo de microbiota intestinal) proporcionan evidencia de apoyo de que el DHA llega a los tejidos y que cambios en el microbiota *podrían* afectar la cognición, aunque ninguno midió directamente el desempeño cognitivo en animales.",
+        "why_this_grade": "Solo un ensayo humano ha sido recuperado (muestra modesta de ~60 participantes en el estudio de 2026), y los hallazgos en animales son sugestivos pero indirectos. No existe replicación humana independiente, por lo que la estabilidad del efecto y el beneficio cognitivo real en humanos siguen siendo desconocidos.",
+        "outcome_key": "cognition",
+        "outcome_es": "cognición"
+      },
+      {
+        "outcome": "eye / vision",
+        "grade": "Emergente",
+        "what_studies_show": "No se recuperaron ensayos humanos sobre resultados de ojo o visión. Dos estudios en animales (2026 en modelos de reemplazo de leche, 2020 mostrando que el aceite de algas protegió las células ganglionares de la retina a través de una vía molecular llamada señalización ERK en un modelo de lesión del nervio óptico en roedores) demuestran que el DHA llega al tejido ocular y puede mitigar el daño celular en condiciones de laboratorio.",
+        "why_this_grade": "No se ha recuperado evidencia humana para resultados de visión — la calificación se basa enteramente en trabajo en modelos animales. Si bien el mecanismo (DHA apoyando la estructura y protección de las células oculares) es biológicamente plausible, la traslación a la visión humana o la salud ocular aún no ha sido probada.",
+        "outcome_key": "eye / vision",
+        "outcome_es": "ojo / visión"
+      },
+      {
+        "outcome": "immune function",
+        "grade": "Emergente",
+        "what_studies_show": "Un ECA humano (2021) en pacientes con VIH midió marcadores inmunológicos después de la suplementación con DHA. Un estudio en animales (2026 en modelos suplementados con leche) rastreó marcadores de sangre relacionados con la inmunidad. Estos sugieren que el DHA *influye* en la actividad de células inmunológicas, pero la evidencia humana proviene de un único ensayo en una población inmunodeprimida, y los resultados inmunológicos fueron medidos indirectamente (a través de cambios en el microbiota y metabolitos vinculados a la inmunidad, no ensayos inmunológicos directos).",
+        "why_this_grade": "Solo un estudio humano está disponible con tamaño de muestra modesto e informe impreciso en el resumen. No se puede evaluar la consistencia en poblaciones humanas independientes. El trabajo en animales apoya la hipótesis de que el DHA modula la señalización inmunológica, pero el beneficio clínico humano sigue siendo no probado.",
+        "outcome_key": "immune function",
+        "outcome_es": "función inmunológica"
+      }
+    ],
+    "evidence_base": "La evidencia está fuertemente ponderada hacia estudios en animales (8 animales, 1 humano en todos los resultados). El único ECA humano (2021, pacientes con VIH) es el ancla para cognición, salud intestinal y resultados inmunológicos; dos ECAs de 2026 (uno en personas lactantes, uno en una población desconocida) contribuyen a datos de visión y oculares e inmunológicos. La mayoría de los estudios son recientes (2018–2026), pero la muestra humana es diminuta y específica de una población estrecha. Esto significa que el campo está en etapa temprana: los mecanismos plausibles son visibles en modelos animales y una cohorte humana, pero la replicación independiente en poblaciones más amplias está ausente.",
+    "open_questions": "Los registros recuperados no incluyen ensayos en adultos sanos, adultos mayores, niños, o personas con enfermedad ocular — por lo que sigue siendo desconocido si los beneficios o daños observados en pacientes con VIH o animales se aplicarían más ampliamente. Las duraciones de los estudios no están completamente establecidas en los resúmenes, por lo que si los efectos persisten a largo plazo no está claro. Si los efectos del DHA son directos (estructurales en las membranas celulares) o mediados a través de cambios en las bacterias intestinales sigue siendo una pregunta mecanística abierta que los registros actuales sugieren pero no resuelven. Finalmente, no se recuperaron ensayos de comparación directa entre aceite de algas y aceite de pescado u otras fuentes de omega-3.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "Casi toda la evidencia en humanos proviene de un único estudio de VIH de 2021; la mayoría de los resultados carecen de datos confirmados en humanos, lo que hace que los reclamos clínicos sean prematuros.",
+    "concerns": [
+      {
+        "issue": "Dependencia extrema de un único ensayo de VIH",
+        "detail": "Tres de cuatro resultados (función gastrointestinal/digestiva, cognición, función inmunológica) se basan enteramente o casi enteramente en un único ensayo clínico aleatorizado de 2021 en pacientes infectados por VIH. La cognición y la función inmunológica se atribuyen a este único ensayo, y la función gastrointestinal/digestiva tiene solo este estudio en humanos. Un único ensayo en una población específica de enfermedad no puede establecer eficacia en la población general ni descartar confusión por estado de VIH o terapia antirretroviral.",
+        "severity": "high"
+      },
+      {
+        "issue": "El resultado de ojo/visión no tiene evidencia en humanos",
+        "detail": "El resultado de ojo/visión se califica como Emergente a pesar de basarse en 2 estudios en animales y 1 ensayo clínico aleatorizado de población desconocida (n=60, 2026). El motor explícitamente señala 'no se detectó evidencia humana clara de población'. Extrapolar la protección de las células ganglionares de la retina en modelos animales al beneficio clínico de visión en humanos es un salto inferencial sustancial sin datos directos en humanos.",
+        "severity": "high"
+      },
+      {
+        "issue": "Tamaños de muestra no verificados en la mayoría de los estudios",
+        "detail": "Para función gastrointestinal/digestiva, los tamaños de muestra no pudieron extraerse de ninguno de los 3 resúmenes de estudio. Para cognición, función inmunológica y ojo/visión, solo 1 de 5, 1 de 3 y 1 de 3 estudios respectivamente reportan tamaño de muestra (todos n=60). Esto hace imposible evaluar si la mediana de 60 representa la base de evidencia real o refleja datos faltantes de ensayos pequeños o grandes.",
+        "severity": "high"
+      },
+      {
+        "issue": "Uso recurrente del mismo ensayo de 2026 en múltiples resultados",
+        "detail": "Un único ensayo clínico aleatorizado de 2026 (n=60, población desconocida) aparece en resultados de cognición, ojo/visión y función inmunológica. Este ensayo está cargando con un peso desproporcionado e inflando la apariencia de amplitud de evidencia; en realidad, la base de evidencia en humanos es aún más delgada de lo que sugiere el recuento bruto de 5 estudios.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Publicación muy reciente con replicación limitada",
+        "detail": "Dos de los tres resultados (cognición, ojo/visión, función inmunológica) están anclados en publicaciones de 2026 que son concurrentes o muy recientes en relación con la línea de base de 2021. No ha habido oportunidad para replicación independiente, y el ensayo de VIH de 2021 sigue siendo el único punto de datos en humanos establecido en la mayoría de los resultados.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "El aceite de algas es rico en ácido docosahexaenoico (DHA), un ácido graso omega-3 de cadena larga con roles plausibles en neuroinflammation, estructura retiniana y regulación inmunológica. El mecanismo que vincula DHA a estos resultados es coherente bioquímicamente. Sin embargo, la base de evidencia clínica aún no demuestra que la suplementación oral de aceite de algas a dosis típicas produzca la magnitud o consistencia de beneficio reclamado. El salto de modelos celulares/animales (p.ej., señalización ERK en células ganglionares de la retina) a resultados clínicos en humanos (p.ej., mejora medible de visión) es grande y no está respaldado por los datos actuales de ensayos en humanos.",
+    "strongest_counterargument": "Un escéptico argumentaría que toda la base de evidencia en humanos se reduce a un único ensayo de 2021 en pacientes con VIH, una población con estado inmunológico atípico y confusores potenciales (terapia antirretroviral, historial de infecciones oportunistas). Los dos ensayos de 2026 son muy recientes, sus poblaciones no están claramente descritas y no han sido replicados independientemente. Todos los estudios en animales son pruebas de concepto mecanísticas, no ensayos de eficacia en poblaciones clínicas relevantes. La apariencia de amplitud de evidencia es una ilusión creada al contar estudios en animales y un único ensayo en múltiples resultados reclamados.",
+    "what_would_change_the_picture": "Ensayos clínicos aleatorizados independientes bien potenciados (n ≥ 150–200 por brazo) en poblaciones no-VIH y representativas, con resultados primarios pre-registrados, seguimiento separado y publicación antes del uso, establecerían si el aceite de algas tiene beneficio clínico genuino. La replicación del/los ensayo/s de 2026 por grupos de investigación independientes también fortalecería significativamente la confianza.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

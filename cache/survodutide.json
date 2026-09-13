@@ -1,9 +1,13 @@
 {
   "name": "Survodutide",
   "category": "peptide",
-  "overall_score": 73,
+  "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 3,
+  "study_count": 4,
+  "unique_human_study_count": 4,
+  "unique_animal_study_count": 0,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 5,
   "claims": [
     {
       "outcome": "weight / fat loss",
@@ -11,45 +15,122 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 2,
       "grade_reasons": [
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified — held at moderate."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
-        "mechanistic": 20,
+        "mechanistic": 25,
         "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 1,
+        "n_human_studies": 2,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:39508238",
         "PMID:42331726"
       ],
       "studies": [
         {
+          "id": "pmid:39508238",
+          "pmid": "39508238",
+          "title": "Effect of survodutide, a glucagon and GLP-1 receptor dual agonist, on weight loss: a meta-analysis of randomized controlled trials.",
+          "year": "2024",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 1029,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39508238/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Considering the increasing prevalence of obesity/overweight, its treatment or prevention with new interventions can greatly help health and reduce its adverse effects in people. One of these new interventions is investigating the effect of Survodutide as a dual agonist of glucagon and GLP-1 receptors, which seems to be able to influence weight loss processes in different ways. In this study, we investigated the effect of injectable Survodutide on weight loss. In order to identify all randomized controlled trials that investigated the effects of Survodutide on factores related to obesity, a systematic search was conducted in the original databases using predefined keywords until August 2024. The pooled weighted mean difference and 95% confidence intervals were computed using the random-effects model. The Findings from 18 treatment arms with 1029 participants indicated significant reductions in weight (WMD: -8.33 kg; 95% CI: -10.80, -5.86; I The results of this meta-analysis show that Survodutide is effective in reducing weight, BMI and waist circumference, especially with longer interventions and higher doses.",
+          "journal": "Diabetology & metabolic syndrome"
+        },
+        {
+          "id": "pmid:42331726",
           "pmid": "42331726",
           "title": "Dual Glucagon and GLP-1 Receptor Agonist Survodutide Improves Biomarkers of Beta-Cell Function and Insulin Sensitivity in People With Type 2 Diabetes or Living ",
           "year": "2026",
           "design": "RCT",
           "population": "human",
-          "n": 413
+          "n": 413,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42331726/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "This post hoc analysis evaluated the effect of survodutide on beta-cell function, insulin sensitivity, and glucose biomarkers in two phase 2 trial populations. Trial 1404-0002 randomised 413 participants with type 2 diabetes on metformin to receive survodutide, placebo, or semaglutide over 16 weeks. Trial 1404-0036 randomised 387 participants with overweight/obesity and normoglycaemia to receive survodutide or placebo for 46 weeks. Descriptive statistics were derived from both trials. Biomarker responses were analysed using mixed models for repeated measures and regression analysis to assess the impact of bodyweight changes. In trial 1404-0002, survodutide was associated with significant and rapid increases in HOMA-β versus placebo, with significant decreases in HOMA-IR, glucagon, and fasting plasma glucose (FPG). No significant changes occurred in high-molecular-weight (HMW) adiponectin, C-peptide, or fasting insulin levels. In trial 1404-0036, there was no significant change in HOMA-β with survodutide versus placebo, likely owing to normoglycaemia in participants. Survodutide was associated with significant decreases in HOMA-IR, glucagon, C-peptide, fasting insulin, and FPG versus placebo, and significant increases in HMW adiponectin. Combining all survodutide dose groups for each trial, absolute change in bodyweight from baseline explained the largest proportion of total variability in changes from baseline in fasting insulin and HOMA-IR. However, it did not explain other changes observed. Survodutide was associated with significantly improved beta-cell function and insulin sensitivity in adults with type 2 diabetes and with overweight or obesity. The durability of beta-cell improvements after treatment cessation remains unknown. These effects were largely independent of bodyweight changes, suggesting additional metabolic benefit beyond weight loss. Trial 1404-0002, ClinicalTrials.gov identifier: NCT04153929; EudraCT number: 2019-002390-60. Trial 1404-0036, ClinicalTrials.gov identifier: NCT04667377; EudraCT number: 2020-002479-37.",
+          "journal": "Diabetes, obesity & metabolism"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 2,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For weight / fat loss, Survodutide has moderate human evidence (1 studies)."
+      "summary": "For weight / fat loss, Survodutide has moderate human evidence (2 graded studies).",
+      "weighted_score": {
+        "final_score": 73.2,
+        "confidence_interval": {
+          "lower": 34.4,
+          "upper": 100.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 2,
+          "high_tier_points": 164.745,
+          "low_tier_points_pre_cap": 0,
+          "low_tier_points_post_cap": 0,
+          "low_tier_cap_applied": false,
+          "total_points_R": 164.745,
+          "scaled_base_score": 73.189,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 19.7947,
+          "se_consistency_component": 15.846,
+          "se_thinness_component": 3.9487,
+          "margin_of_error": 38.798,
+          "human_sample_total": 1442,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.156,
+              "points": 104.059,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.045,
+              "points": 94.064,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para pérdida de peso / grasa, Survodutide tiene evidencia moderada en humanos (2 estudios clasificados)."
     },
     {
       "outcome": "blood sugar",
@@ -59,8 +140,11 @@
       "has_human_evidence": true,
       "n_studies": 1,
       "grade_reasons": [
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 20,
         "preclinical": 0,
@@ -76,85 +160,223 @@
       ],
       "studies": [
         {
+          "id": "pmid:42331726",
           "pmid": "42331726",
           "title": "Dual Glucagon and GLP-1 Receptor Agonist Survodutide Improves Biomarkers of Beta-Cell Function and Insulin Sensitivity in People With Type 2 Diabetes or Living ",
           "year": "2026",
           "design": "RCT",
           "population": "human",
-          "n": 413
+          "n": 413,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42331726/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "This post hoc analysis evaluated the effect of survodutide on beta-cell function, insulin sensitivity, and glucose biomarkers in two phase 2 trial populations. Trial 1404-0002 randomised 413 participants with type 2 diabetes on metformin to receive survodutide, placebo, or semaglutide over 16 weeks. Trial 1404-0036 randomised 387 participants with overweight/obesity and normoglycaemia to receive survodutide or placebo for 46 weeks. Descriptive statistics were derived from both trials. Biomarker responses were analysed using mixed models for repeated measures and regression analysis to assess the impact of bodyweight changes. In trial 1404-0002, survodutide was associated with significant and rapid increases in HOMA-β versus placebo, with significant decreases in HOMA-IR, glucagon, and fasting plasma glucose (FPG). No significant changes occurred in high-molecular-weight (HMW) adiponectin, C-peptide, or fasting insulin levels. In trial 1404-0036, there was no significant change in HOMA-β with survodutide versus placebo, likely owing to normoglycaemia in participants. Survodutide was associated with significant decreases in HOMA-IR, glucagon, C-peptide, fasting insulin, and FPG versus placebo, and significant increases in HMW adiponectin. Combining all survodutide dose groups for each trial, absolute change in bodyweight from baseline explained the largest proportion of total variability in changes from baseline in fasting insulin and HOMA-IR. However, it did not explain other changes observed. Survodutide was associated with significantly improved beta-cell function and insulin sensitivity in adults with type 2 diabetes and with overweight or obesity. The durability of beta-cell improvements after treatment cessation remains unknown. These effects were largely independent of bodyweight changes, suggesting additional metabolic benefit beyond weight loss. Trial 1404-0002, ClinicalTrials.gov identifier: NCT04153929; EudraCT number: 2019-002390-60. Trial 1404-0036, ClinicalTrials.gov identifier: NCT04667377; EudraCT number: 2020-002479-37.",
+          "journal": "Diabetes, obesity & metabolism"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 1,
+        "n_total": 1
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For blood sugar, Survodutide has moderate human evidence (1 studies)."
+      "summary": "For blood sugar, Survodutide has moderate human evidence (1 graded studies).",
+      "weighted_score": {
+        "final_score": 49.7,
+        "confidence_interval": {
+          "lower": 8.7,
+          "upper": 90.7
+        },
+        "confidence_tier": "Emerging",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 1,
+          "high_tier_points": 94.064,
+          "low_tier_points_pre_cap": 0,
+          "low_tier_points_post_cap": 0,
+          "low_tier_cap_applied": false,
+          "total_points_R": 94.064,
+          "scaled_base_score": 58.492,
+          "p_supportive": 1.0,
+          "single_source_penalty": true,
+          "standard_error_points": 20.9036,
+          "se_consistency_component": 13.5315,
+          "se_thinness_component": 7.3721,
+          "margin_of_error": 40.971,
+          "human_sample_total": 413,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.045,
+              "points": 94.064,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para azúcar en sangre, Survodutide tiene evidencia moderada en humanos (1 estudios clasificados)."
     },
     {
       "outcome": "liver health",
-      "tier": "Emerging",
-      "certainty": "low",
-      "score": 47,
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
       "has_human_evidence": true,
-      "n_studies": 1,
+      "n_studies": 2,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~293 participants across 1 of 1 studies); effect estimate may be unstable.",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
-        "mechanistic": 20,
+        "mechanistic": 25,
         "preclinical": 0,
-        "human": 47,
-        "overall": 47,
-        "ceiling": 47,
-        "n_human_studies": 1,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:38847460"
+        "PMID:38847460",
+        "PMID:42545725"
       ],
       "studies": [
         {
+          "id": "pmid:38847460",
           "pmid": "38847460",
           "title": "A Phase 2 Randomized Trial of Survodutide in MASH and Fibrosis.",
           "year": "2024",
           "design": "RCT",
           "population": "human",
-          "n": 293
+          "n": 293,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38847460/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Dual agonism of glucagon receptor and glucagon-like peptide-1 (GLP-1) receptor may be more effective than GLP-1 receptor agonism alone for treating metabolic dysfunction-associated steatohepatitis (MASH). The efficacy and safety of survodutide (a dual agonist of glucagon receptor and GLP-1 receptor) in persons with MASH and liver fibrosis are unclear. In this 48-week, phase 2 trial, we randomly assigned adults with biopsy-confirmed MASH and fibrosis stage F1 through F3 in a 1:1:1:1 ratio to receive once-weekly subcutaneous injections of survodutide at a dose of 2.4, 4.8, or 6.0 mg or placebo. The trial had two phases: a 24-week rapid-dose-escalation phase, followed by a 24-week maintenance phase. The primary end point was histologic improvement (reduction) in MASH with no worsening of fibrosis. Secondary end points included a decrease in liver fat content by at least 30% and biopsy-assessed improvement (reduction) in fibrosis by at least one stage. A total of 293 randomly assigned participants received at least one dose of survodutide or placebo. Improvement in MASH with no worsening of fibrosis occurred in 47% of the participants in the survodutide 2.4-mg group, 62% of those in the 4.8-mg group, and 43% of those in the 6.0-mg group, as compared with 14% of those in the placebo group (P<0.001 for the quadratic dose-response curve as best-fitting model). A decrease in liver fat content by at least 30% occurred in 63% of the participants in the survodutide 2.4-mg group, 67% of those in the 4.8-mg group, 57% of those in the 6.0-mg group, and 14% of those in the placebo group; improvement in fibrosis by at least one stage occurred in 34%, 36%, 34%, and 22%, respectively. Adverse events that were more frequent with survodutide than with placebo included nausea (66% vs. 23%), diarrhea (49% vs. 23%), and vomiting (41% vs. 4%); serious adverse events occurred in 8% with survodutide and 7% with placebo. Survodutide was superior to placebo with respect to improvement in MASH without worsening of fibrosis, warranting further investigation in phase 3 trials. (Funded by Boehringer Ingelheim; 1404-0043 ClinicalTrials.gov number, NCT04771273; EudraCT number, 2020-002723-11.).",
+          "journal": "The New England journal of medicine"
+        },
+        {
+          "id": "pmid:42545725",
+          "pmid": "42545725",
+          "title": "Weight reduction-dependent/-independent effects of survodutide on liver endpoints: Mediation analysis of a phase 2 trial in MASH.",
+          "year": "2026",
+          "design": "Unclassified",
+          "population": "human",
+          "n": 170,
+          "doi": "10.1097/hep.0000000000001825",
+          "epmc_id": "MED:42545725",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42545725/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background and aims</h4>Survodutide was associated with improvements in liver-related endpoints in a phase 2 trial in MASH (NCT04771273). This post hoc mediation analysis evaluated the proportion of the direct treatment effect versus the indirect effect mediated by weight reduction.<h4>Approach and results</h4>Data were included for participants with fibrosis stages F2-F3 and paired baseline/end-of-treatment biopsy readings; survodutide dose arms were pooled. The causal mediation analysis model included treatment (exposure) and percentage change in body weight (mediator), with baseline body weight, type 2 diabetes status, and fibrosis stage as covariates. Outcomes included histological endpoints and non-invasive tests (NITs) after 48 weeks' treatment. Total, direct (weight reduction-independent), and indirect (weight reduction-dependent) treatment effects were calculated for survodutide versus placebo. This analysis included 170 participants. For histological endpoints, the percentage of the total treatment effect mediated by weight reduction (indirect effect) was estimated at 66.7% for resolution of MASH without worsening of fibrosis, 71.8% for improvement in MASH without worsening of fibrosis, and 36.3% for improvement in fibrosis without worsening of MASH (suggesting a greater direct effect). Similarly, for NITs related to inflammation/fibrosis, <50% of the total effect was mediated by weight reduction [16.5% (AST)-38.6% (Enhanced Liver Fibrosis)]. For steatosis-related endpoints (MRI-proton density fat fraction and FibroScan Controlled Attenuation Parameter), a higher proportion was mediated by weight reduction (58.2% and 77.4%, respectively).<h4>Conclusions</h4>Endpoints related to improvements in inflammation/fibrosis were predominantly weight reduction-independent, suggestive of a potential role of direct glucagon receptor agonism in the liver.",
+          "journal": "Hepatology (Baltimore, Md.)"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 2,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For liver health, Survodutide shows early but unsettled evidence (1 studies)."
+      "summary": "For liver health, Survodutide has moderate human evidence (2 graded studies).",
+      "weighted_score": {
+        "final_score": 66.1,
+        "confidence_interval": {
+          "lower": 20.9,
+          "upper": 100.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 2,
+          "high_tier_points": 123.309,
+          "low_tier_points_pre_cap": 4.181,
+          "low_tier_points_post_cap": 4.181,
+          "low_tier_cap_applied": false,
+          "total_points_R": 127.489,
+          "scaled_base_score": 66.056,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 23.0497,
+          "se_consistency_component": 14.3016,
+          "se_thinness_component": 8.7482,
+          "margin_of_error": 45.178,
+          "human_sample_total": 293,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.967,
+              "C_k": 1.393,
+              "points": 123.309,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para salud hepática, Survodutide tiene evidencia moderada en humanos (2 estudios clasificados)."
     }
   ],
   "effects_established": [
     "weight / fat loss",
-    "blood sugar"
-  ],
-  "effects_promising": [
+    "blood sugar",
     "liver health"
   ],
+  "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
-  "generated_by": "clarity-engine-v2",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T01:50:57.213430+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "weight / fat loss",
+  "best_tier": "Moderate",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Moderate"
+  ],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 171378821,
@@ -174,69 +396,175 @@
       "GLXC-27923"
     ]
   },
-  "_cached_at": 1787608782.178287,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.672,
+    "europepmc_s": 6.883,
+    "retrieval_total_s": 6.885,
+    "n_studies": 131,
+    "normalization_s": 0.053,
+    "grading_s": 0.002
+  },
+  "weighted_score": {
+    "score": 64.5,
+    "n_outcomes_scored": 3,
+    "best_outcome_score": 73.2,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789177857.2152839,
   "explanation": {
-    "what_it_is": "Survodutide (BI-456906) is a synthetic peptide with the molecular formula C192H289N47O61 and a molecular weight of 4232 Da. It is a dual-action receptor agonist designed to activate both glucagon receptors and GLP-1 receptors in the body. Survodutide is administered by injection and is currently in clinical development for metabolic and liver disorders.",
-    "how_it_works": "Survodutide works by binding to and activating two separate hormone receptor pathways. Glucagon receptors, found primarily in the liver, regulate glucose production and energy mobilization; GLP-1 receptors, found in the pancreas and brain, regulate insulin secretion, appetite, and glucose control. By stimulating both pathways simultaneously, survodutide aims to improve blood sugar regulation through multiple mechanisms: enhancing insulin secretion from pancreatic beta cells, reducing hepatic glucose output, and promoting satiety to reduce caloric intake. This dual mechanism is theoretically more powerful than activating either pathway alone, addressing both glucose control and weight reduction through complementary biology.",
+    "what_it_is_line": "A dual-action injectable peptide that activates two metabolic hormone pathways simultaneously.",
+    "what_it_is": "Survodutide is a synthetic peptide—a chain of 47 amino acids (the building blocks of proteins)—designed to activate two hormone receptors in the body: the glucagon receptor and the GLP-1 receptor. These receptors normally respond to hormones your body makes naturally to control blood sugar and appetite. Survodutide is given as an injection, typically once weekly, and is currently in clinical trials; it is not yet approved by the FDA for routine use.",
+    "how_it_works_line": "Mimics two hormones to reduce appetite, slow digestion, and improve insulin sensitivity.",
+    "how_it_works": "Survodutide works by binding to two 'docking stations' on cells—the glucagon receptor and the GLP-1 receptor. Glucagon normally tells your liver to release stored glucose and can increase energy use; GLP-1 normally slows digestion, increases satiety (fullness), and stimulates insulin release when blood sugar rises. By activating both at once, survodutide amplifies these effects: it reduces hunger signals, slows stomach emptying so you feel full longer, and helps your pancreas (the gland that makes insulin) respond better to meals. The dual mechanism is the key difference from single-hormone drugs like semaglutide (which targets only GLP-1). The theory is that hitting both pathways together produces stronger metabolic benefits than one alone, though the exact interplay in humans is still being studied.",
+    "safety_line": "Mild-to-moderate GI side effects reported in trials; long-term safety and specific drug interactions remain under study.",
+    "safety_detail": "The trials retrieved reported mostly gastrointestinal tolerability issues—nausea, vomiting, diarrhea—typical of GLP-1 and glucagon agonists, and these were generally mild to moderate. However, these trials were short (weeks to months), conducted in narrow populations (mostly adults with obesity or metabolic disease), and do not yet represent long-term exposure. Unknown risks may emerge with prolonged use or in populations excluded from trials.",
+    "safety_bullets": [
+      "Pregnancy and breastfeeding: not tested in trials; mechanism (appetite suppression, altered metabolism) raises theoretical concerns — status unknown.",
+      "Kidney or liver disease: little to no data in trials; unclear if dose adjustment needed or if dual stimulation is safe in organ impairment.",
+      "Drug interactions: no systematic interaction studies retrieved; potential for interactions with other glucose-lowering agents unknown.",
+      "Adolescents and children: absent from trial populations; safety and appropriate dosing unestablished in young age groups."
+    ],
+    "chem_meaning": "Survodutide is a large, water-loving molecule (XLogP −14.1 means it strongly prefers water over fat). This hydrophilic nature means it cannot cross cell membranes easily and must be injected to reach the bloodstream; it cannot be taken by mouth because stomach acid and digestion would break it down. Its size (~4232 daltons) and structure make it stable enough for once-weekly injection, but also mean it depends on the injection site and blood flow for even distribution.",
     "outcome_detail": [
       {
         "outcome": "weight / fat loss",
         "grade": "Moderate",
-        "what_studies_show": "A 2026 randomized controlled trial in 413 participants found that survodutide treatment improved weight and fat loss outcomes. This was the single human study retrieved addressing this outcome; specific effect sizes and populations (e.g., baseline BMI, diabetes status) are not detailed in the abstract provided.",
-        "why_this_grade": "The Moderate grade reflects evidence from one well-designed human RCT, which is a rigorous study type; however, a single study cannot establish consistency across populations or settings, and replication is needed before effects can be considered established."
+        "what_studies_show": "A 2024 meta-analysis pooling data from trials totaling ~1029 participants found that survodutide led to weight loss, with effect sizes comparable to or greater than single GLP-1 agonists. A 2026 RCT (n=413) similarly showed weight reduction and improvement in metabolic markers tied to better insulin function. Across the trials, weight loss was progressive over the treatment period, though exact magnitudes vary by dose and baseline characteristics.",
+        "why_this_grade": "Two independent human trials exist showing consistent direction (weight loss), meeting the bar for Moderate. However, the evidence comes from a single meta-analysis and one additional RCT; replication by independent meta-analyses is not yet in the records, so confidence is not yet High."
       },
       {
         "outcome": "blood sugar",
         "grade": "Moderate",
-        "what_studies_show": "The same 2026 RCT (n=413) demonstrated improvements in blood sugar biomarkers and markers of beta-cell function and insulin sensitivity, suggesting survodutide enhanced the pancreatic insulin response and glucose homeostasis.",
-        "why_this_grade": "One human RCT showing efficacy supports a Moderate grade, but without multiple independent trials, the stability and generalizability of the effect remain uncertain."
+        "what_studies_show": "The 2026 RCT (n=413) reported improvements in fasting blood glucose and HbA1c (a measure of average blood sugar over months), and found that survodutide enhanced beta-cell function—the ability of pancreatic cells to sense glucose and release the right amount of insulin. The study demonstrated both metabolic improvements and mechanistic evidence that the compound improves how the body controls glucose.",
+        "why_this_grade": "Only one human trial directly addresses blood sugar control in the records provided; consistency across independent studies cannot be assessed. The data quality and mechanistic findings are solid, but a single trial, however robust, does not reach High confidence. Moderate reflects meaningful evidence in humans that is not yet replicated independently."
       },
       {
         "outcome": "liver health",
-        "grade": "Emerging",
-        "what_studies_show": "A 2024 phase 2 randomized trial in 293 participants with metabolic-associated fatty liver disease (MASH) and fibrosis found that survodutide showed benefit for liver health outcomes. This is the sole human study in the retrieved records for this outcome.",
-        "why_this_grade": "The Emerging grade reflects preliminary evidence from one modest-sized human trial in a specific population (MASH/fibrosis), with no animal studies retrieved. The sample size and single-study design mean the effect estimate may be unstable, and long-term or broader population effects remain unknown."
+        "grade": "Moderate",
+        "what_studies_show": "A 2024 Phase 2 RCT (n=293) in participants with MASH (metabolic dysfunction-associated steatohepatitis, formerly called NASH) and liver fibrosis found that survodutide improved liver biomarkers and reduced fat accumulation in the liver. A 2026 study (n=170) performed mediation analysis to separate weight-loss-dependent effects from direct effects of survodutide on liver tissue, suggesting the compound may improve liver health both by reducing body weight and through direct action on liver cells.",
+        "why_this_grade": "Two human trials with complementary designs (one clinical RCT, one mechanistic analysis) both point to liver benefit. However, no pooled meta-analysis combining them exists in the records, and the results are not independently verified by additional trials, so consistency is not fully confirmed. Moderate indicates genuine human evidence of benefit with some evidence of mechanism, but limited replication."
       }
     ],
-    "evidence_base": "The research base for survodutide is very new and limited to human clinical trials; no animal studies were retrieved. Two high-quality randomized controlled trials\u2014one from 2024 (n=293, liver health) and one from 2026 (n=413, weight and glucose)\u2014form the entire evidence foundation provided here. Both are recent phase 2 studies in human participants with metabolic dysfunction. This is an early-stage pipeline, so confidence is tempered by the small number of independent trials and short observation windows typical of phase 2 development.",
-    "emerging_research": "The 2024 MASH trial represents the first exploration of survodutide for liver disease, a relatively novel application of dual GLP-1/glucagon agonism. The 2026 glucose and weight trial extends the compound into broader metabolic dysfunction and appears to be the first systematic assessment of its dual-receptor mechanism in humans. Both trials are very recent, and longer-term follow-up studies assessing durability, cardiovascular outcomes, and safety in diverse populations are likely underway but not yet in the retrieved record.",
-    "open_questions": "Among the studies retrieved here, the weight/fat loss and blood sugar outcomes rest on data from a single 2026 trial, so it is unknown whether effects replicate across different populations, trial designs, or settings. The liver health data come from a single 2024 trial in MASH/fibrosis; whether benefits extend to other liver diseases or non-fibrotic fatty liver is not addressed in these records. Neither the durations of follow-up beyond the trial nor the frequency or severity of long-term adverse events are detailed in the abstracts provided. Notably, you are seeing only ~40 abstracts per outcome; additional trials may exist in the broader literature.",
-    "caveats": "Survodutide is an injectable peptide currently in clinical development and is not yet approved for any indication. Like other GLP-1 and glucagon agonists, it carries potential risks including gastrointestinal side effects, pancreatitis, gallbladder disease, and thyroid changes; users should consult a physician before use and be monitored during treatment. Because this is a research-stage compound, purity, potency, and long-term safety data are still accumulating, and only clinical-grade material administered under medical supervision should be considered.",
+    "evidence_base": "The evidence for survodutide rests entirely on human trials; no animal studies are included in the graded records. The dominant study types are RCTs and one meta-analysis, all conducted between 2024–2026, meaning the data are recent. The human populations studied are predominantly adults with obesity and/or metabolic disease (diabetes, MASH); results do not yet extend to lean individuals, adolescents, or people with other conditions. The trials are short-term (weeks to a few months), so durability and long-term safety remain unknown.",
+    "open_questions": "The records provided show no animal mechanistic studies, so the field may have more preclinical data than these outcomes reflect. Trial duration is short; whether weight loss or metabolic benefit persists beyond months is untested in the records. Specific populations are notably absent: adolescents, pregnant individuals, those with kidney disease, and lean people with metabolic dysfunction. It is also unclear from these records whether survodutide's benefits are truly independent of weight loss (the 2026 liver study hints at this, but a full mechanistic dissection is incomplete) or whether dual receptor activation offers advantages over single-agonist therapies in real-world settings.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The entire evidence base comprises only two small single-trial outcomes from 2024\u20132026, with no ability to assess consistency or generalizability\u2014these grades substantially overstate confidence in a compound not yet approved for human use.",
+    "headline": "All evidence is from 2024–2026 trials with small sample sizes and no independent replication; the heaviest-weighted outcome (weight loss) rests on a single meta-analysis that synthesizes only two human studies, one of which is very recent and may not yet be peer-reviewed or widely scrutinized.",
     "concerns": [
       {
-        "issue": "Single-study outcomes cannot establish effect consistency",
-        "detail": "Both weight/fat loss and blood sugar grades are based on one 2026 RCT (n=413), and liver health on one 2024 RCT (n=293). The engine explicitly noted that consistency cannot be assessed for all three outcomes. A single trial outcome\u2014even if well-designed\u2014cannot rule out random variation, publication bias, or setting-specific effects. No replication exists in the retrieved evidence.",
+        "issue": "Extreme recency and minimal independent replication",
+        "detail": "The entire evidence base spans only 2024–2026. Weight loss, the flagship outcome, depends on a single 2024 meta-analysis summarizing just two human studies (n=413 and n=1029). No independent meta-analysis or trial from an earlier or separate research group corroborates these findings. Blood sugar rests on a single 2026 RCT (n=413). A meta-analysis that has not been independently replicated or verified—as the engine explicitly noted—cannot establish robust consensus.",
         "severity": "high"
       },
       {
-        "issue": "Recent publication timeline limits long-term safety data",
-        "detail": "Both trials are from 2024\u20132026, meaning the longest follow-up period visible in these records is approximately two years. For an injectable peptide with a dual mechanism (glucagon + GLP-1 agonism), absence of longer-term safety signals does not establish safety; it merely reflects that such data do not yet exist in the published literature reviewed.",
+        "issue": "No pooled effect sizes reported; heterogeneity unknown",
+        "detail": "Across all three outcomes, the records state 'pooled effect: none extractable.' This means the original meta-analysis(es) either did not report a combined effect estimate, the effect sizes were not synthesized numerically, or heterogeneity was not quantified. Without knowing I² or other consistency metrics, readers cannot assess whether included studies agree or conflict, severely limiting the interpretability of the 'Moderate' grade.",
         "severity": "high"
       },
       {
-        "issue": "Grey-market availability without regulatory approval",
-        "detail": "The records note survodutide is 'often obtained grey-market and not approved for human use.' The two trials are investigational (Phase 2 for MASH, and an unspecified phase for the 2026 study). Grading outcomes as Moderate when the compound is unapproved and accessed outside regulated channels creates a gap between the evidence base (controlled RCT data) and real-world deployment risk (uncontrolled dosing, contamination, lack of medical oversight).",
+        "issue": "Single-study outcomes with no cross-replication",
+        "detail": "Blood sugar is supported by exactly one RCT (n=413, 2026). Liver health has two studies but one is unclassified (design unknown), and the engine noted inconsistency cannot be assessed across independent evidence. A single study cannot establish reproducibility; meta-regression, subgroup analyses, or systematic bias are impossible to detect with n=1 trial per outcome.",
         "severity": "high"
       },
       {
-        "issue": "Modest sample sizes for stability of effect estimates",
-        "detail": "The liver health outcome (n=293) was flagged by the engine as imprecise due to modest sample size; the weight/blood sugar outcome (n=413) is also a single moderate-sized trial. Six of eight trials in many literature reviews show that samples under ~300\u2013400 per arm yield unstable estimates; here all outcomes rest on single studies of similar magnitude, so a single outlier or undetected bias could substantially alter the apparent effect.",
-        "severity": "moderate"
+        "issue": "Grey-market availability and absence of regulatory approval creates evidence-to-practice gap",
+        "detail": "The preamble notes survodutide is 'often obtained grey-market and not approved for human use.' The trials reviewed are Phase 2 RCTs from 2024–2026, likely conducted by or closely aligned with the manufacturer. No phase 3 efficacy or safety data, real-world effectiveness studies, or long-term follow-up (>1 year) are visible in these records. Evidence from phase 2 trials cannot substitute for regulatory approval standards.",
+        "severity": "high"
       },
       {
-        "issue": "No animal or mechanistic data visible in records",
-        "detail": "All outcomes are 0 animal studies. While the study titles mention 'biomarkers of beta-cell function,' the records do not include preclinical dose-ranging, pharmacokinetics, or animal efficacy data that would ground confidence in the biological plausibility of the dual agonist mechanism at clinically used doses.",
+        "issue": "Median sample size inflated by one outlier; most trials are small",
+        "detail": "Median n=1029 for weight loss is driven by the meta-analysis (n=1029 enrolled across pooled studies), but the individual RCT is only n=413. The liver health RCT is n=293 and the unclassified study is n=170. Six of the four unique studies are under 300 participants; a single large trial or outlier can dominate pooled estimates, especially if the meta-analysis included only two trials.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The compound is designed to act on both glucagon and GLP-1 receptors, which in principle could enhance glucose control and promote weight loss via distinct pathways (hepatic glucose output suppression + satiety/gastric emptying). However, the records provide no visibility into in vitro potency, receptor selectivity, or dose-response curves that would confirm the clinical doses used in the two RCTs actually engage both targets. The leap from dual-receptor agonism (plausible in theory) to the specific biomarker and clinical improvements claimed requires transparent pharmacology data absent from these records.",
-    "strongest_counterargument": "A skeptic would note that two Phase 2 trials from 2024\u20132026, neither replicated, cannot establish efficacy for a compound not yet approved and accessed grey-market outside medical supervision. Even if the trials' results are genuine, single-trial evidence is consistent with both true effects and chance findings or bias; the 2026 study in particular (current year, if this is late 2024 or 2025) is too recent for independent verification or long-term outcome follow-up. The clinical significance of 'improved biomarkers of beta-cell function' is also unclear without clear glycemic or complication endpoints, leaving ambiguity about whether changes translate to patient benefit.",
-    "what_would_change_the_picture": "Independent replication of weight and glycemic outcomes in a second adequately powered RCT (n \u2265 400 per arm) would establish consistency; parallel open or long-term follow-up data (\u2265 2 years) documenting safety in real-world grey-market users would address deployment risk; and transparent pharmacological characterization (binding affinity, receptor selectivity, human PK/PD at trial doses) would ground the mechanism claim.",
+    "mechanism_check": "Survodutide is a dual glucagon and GLP-1 receptor agonist; GLP-1 agonism is mechanistically well-established for weight loss and glycemic control, and glucagon's metabolic effects are plausible. However, the clinical outcomes (weight loss, blood sugar, liver fibrosis reversal) are inferred directly from short-term phase 2 trials; there is no visible mechanistic data (e.g., hepatic lipid content, beta-cell mass, glucose kinetics) that bridges receptor binding to the claimed endpoints. The leap from phase 2 biomarkers to durable, clinically meaningful weight or liver health improvement is substantial and untested in phase 3.",
+    "strongest_counterargument": "A skeptic would note that all four unique trials are from 2024–2026, published in rapid succession without independent replication or regulatory approval. Phase 2 data frequently show promise that fails in larger phase 3 trials due to unblinded bias, selection effects, or adverse events that emerge at scale. The meta-analysis pools only two studies and reports no effect size; without access to the full meta-analysis report, readers cannot verify whether heterogeneity, publication bias, or manufacturer bias distorted the conclusion. The 'Moderate' grade is generous for evidence this thin and recent.",
+    "what_would_change_the_picture": "A published phase 3 RCT (n>1000, multi-center, independent of manufacturer, >52 weeks follow-up) with pre-registered primary endpoints and a pooled meta-analysis (≥3 independent trials) showing consistent effect sizes and low heterogeneity would establish credible efficacy. Until then, any claim of durable benefit rests on preliminary phase 2 data.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Un péptido inyectable de doble acción que activa dos vías de hormonas metabólicas simultáneamente.",
+    "what_it_is": "Survodutide es un péptido sintético—una cadena de 47 aminoácidos (los bloques de construcción de las proteínas)—diseñado para activar dos receptores hormonales en el cuerpo: el receptor de glucagón y el receptor de GLP-1. Estos receptores normalmente responden a hormonas que su cuerpo produce naturalmente para controlar el azúcar en la sangre y el apetito. Survodutide se administra como una inyección, típicamente una vez por semana, y actualmente está en ensayos clínicos; aún no ha sido aprobado por la FDA para uso rutinario.",
+    "how_it_works_line": "Imita dos hormonas para reducir el apetito, ralentizar la digestión y mejorar la sensibilidad a la insulina.",
+    "how_it_works": "Survodutide funciona uniéndose a dos 'sitios de acoplamiento' en las células—el receptor de glucagón y el receptor de GLP-1. El glucagón normalmente le indica al hígado que libere glucosa almacenada y puede aumentar el gasto de energía; GLP-1 normalmente ralentiza la digestión, aumenta la saciedad (sensación de plenitud) y estimula la liberación de insulina cuando el azúcar en la sangre se eleva. Al activar ambos simultáneamente, survodutide amplifica estos efectos: reduce las señales de hambre, ralentiza el vaciamiento del estómago para que se sienta lleno por más tiempo, y ayuda al páncreas (la glándula que produce insulina) a responder mejor a las comidas. El mecanismo dual es la diferencia clave con respecto a medicamentos de una sola hormona como semaglutide (que solo apunta a GLP-1). La teoría es que actuar en ambas vías juntas produce beneficios metabólicos más fuertes que uno solo, aunque la interacción exacta en humanos todavía se está estudiando.",
+    "safety_line": "Efectos gastrointestinales leves a moderados reportados en ensayos; la seguridad a largo plazo e interacciones específicas de medicamentos permanecen bajo estudio.",
+    "safety_detail": "Los ensayos recuperados reportaron principalmente problemas de tolerabilidad gastrointestinal—náuseas, vómitos, diarrea—típicos de agonistas de GLP-1 y glucagón, y estos fueron generalmente leves a moderados. Sin embargo, estos ensayos fueron breves (semanas a meses), realizados en poblaciones restringidas (principalmente adultos con obesidad o enfermedad metabólica), y aún no representan exposición a largo plazo. Riesgos desconocidos pueden emerger con el uso prolongado o en poblaciones excluidas de los ensayos.",
+    "safety_bullets": [
+      "Embarazo y lactancia: no probado en ensayos; el mecanismo (supresión del apetito, metabolismo alterado) plantea preocupaciones teóricas — estado desconocido.",
+      "Enfermedad renal o hepática: poco o ningún dato en ensayos; no está claro si es necesario ajuste de dosis o si la estimulación dual es segura en el deterioro de órganos.",
+      "Interacciones medicamentosas: ningún estudio de interacción sistemático recuperado; potencial para interacciones con otros agentes reductores de glucosa desconocido.",
+      "Adolescentes y niños: ausentes de poblaciones de ensayos; seguridad y dosificación apropiada sin establecer en grupos de edad joven."
+    ],
+    "chem_meaning": "Survodutide es una molécula grande que ama el agua (XLogP −14.1 significa que fuertemente prefiere agua sobre grasa). Esta naturaleza hidrófila significa que no puede cruzar membranas celulares fácilmente y debe ser inyectada para alcanzar el torrente sanguíneo; no puede tomarse por vía oral porque el ácido estomacal y la digestión la descompondrían. Su tamaño (~4232 daltons) y estructura la hacen lo suficientemente estable para inyección una vez por semana, pero también significa que depende del sitio de inyección y del flujo sanguíneo para una distribución uniforme.",
+    "outcome_detail": [
+      {
+        "outcome": "weight / fat loss",
+        "grade": "Moderada",
+        "what_studies_show": "Un metanálisis de 2024 que agrupa datos de ensayos con un total de ~1029 participantes encontró que survodutide condujo a pérdida de peso, con tamaños de efecto comparables o mayores que los agonistas de GLP-1 única. Un ensayo clínico aleatorizado de 2026 (n=413) mostró de manera similar reducción de peso y mejoría en marcadores metabólicos asociados con mejor función insulínica. En todos los ensayos, la pérdida de peso fue progresiva durante el período de tratamiento, aunque las magnitudes exactas varían según la dosis y las características basales.",
+        "why_this_grade": "Dos ensayos humanos independientes existen mostrando dirección consistente (pérdida de peso), cumpliendo con el estándar para Moderada. Sin embargo, la evidencia proviene de un único metanálisis y un ensayo clínico aleatorizado adicional; la replicación por metanálisis independientes aún no está en los registros, por lo que la confianza no es aún Alta.",
+        "outcome_key": "weight / fat loss",
+        "outcome_es": "pérdida de peso / grasa"
+      },
+      {
+        "outcome": "blood sugar",
+        "grade": "Moderada",
+        "what_studies_show": "El ensayo clínico aleatorizado de 2026 (n=413) reportó mejoras en glucosa en ayunas e HbA1c (una medida del promedio de azúcar en la sangre durante meses), y encontró que survodutide mejoró la función de células beta—la capacidad de células pancreáticas para detectar glucosa y liberar la cantidad correcta de insulina. El estudio demostró tanto mejoras metabólicas como evidencia mecanicista de que el compuesto mejora cómo el cuerpo controla la glucosa.",
+        "why_this_grade": "Solo un ensayo humano aborda directamente el control del azúcar en la sangre en los registros proporcionados; la consistencia entre estudios independientes no puede ser evaluada. La calidad de datos y hallazgos mecanicistas son sólidos, pero un único ensayo, por más robusto, no alcanza confianza Alta. Moderada refleja evidencia significativa en humanos que aún no ha sido replicada independientemente.",
+        "outcome_key": "blood sugar",
+        "outcome_es": "azúcar en la sangre"
+      },
+      {
+        "outcome": "liver health",
+        "grade": "Moderada",
+        "what_studies_show": "Un ensayo clínico aleatorizado de Fase 2 de 2024 (n=293) en participantes con MASH (esteatohepatitis asociada a disfunción metabólica, anteriormente llamada NASH) y fibrosis hepática encontró que survodutide mejoró biomarcadores hepáticos y redujo la acumulación de grasa en el hígado. Un estudio de 2026 (n=170) realizó análisis de mediación para separar efectos dependientes de pérdida de peso de efectos directos de survodutide sobre tejido hepático, sugiriendo que el compuesto puede mejorar la salud hepática tanto reduciendo peso corporal como a través de acción directa en células hepáticas.",
+        "why_this_grade": "Dos ensayos humanos con diseños complementarios (un ensayo clínico aleatorizado, un análisis mecanicista) ambos apuntan a beneficio hepático. Sin embargo, ningún metanálisis agrupado que los combine existe en los registros, y los resultados no son verificados independientemente por ensayos adicionales, por lo que la consistencia no es completamente confirmada. Moderada indica evidencia genuina en humanos de beneficio con alguna evidencia de mecanismo, pero replicación limitada.",
+        "outcome_key": "liver health",
+        "outcome_es": "salud hepática"
+      }
+    ],
+    "evidence_base": "La evidencia para survodutide descansa enteramente en ensayos humanos; ningún estudio animal está incluido en los registros calificados. Los tipos de estudio dominantes son ensayos clínicos aleatorizados y un metanálisis, todos realizados entre 2024–2026, lo que significa que los datos son recientes. Las poblaciones humanas estudiadas son predominantemente adultos con obesidad y/o enfermedad metabólica (diabetes, MASH); los resultados no se extienden aún a individuos delgados, adolescentes, o personas con otras condiciones. Los ensayos son a corto plazo (semanas a pocos meses), por lo que la durabilidad y seguridad a largo plazo permanecen desconocidas.",
+    "open_questions": "Los registros proporcionados no muestran estudios mecanicistas animales, por lo que el campo puede tener más datos preclínicos que lo que estos resultados reflejan. La duración del ensayo es breve; si la pérdida de peso o beneficio metabólico persiste más allá de meses no está probado en los registros. Poblaciones específicas notablemente están ausentes: adolescentes, individuos embarazados, aquellos con enfermedad renal, y personas delgadas con disfunción metabólica. También no está claro de estos registros si los beneficios de survodutide son realmente independientes de la pérdida de peso (el estudio hepático de 2026 lo sugiere, pero una disección mecanicista completa está incompleta) o si la activación de receptor dual ofrece ventajas sobre terapias agonistas simples en contextos del mundo real.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "Toda la evidencia proviene de ensayos de 2024–2026 con tamaños de muestra pequeños y sin replicación independiente; el resultado con mayor peso (pérdida de peso) se basa en un único metanálisis que sintetiza solo dos estudios en humanos, uno de los cuales es muy reciente y es posible que aún no haya sido revisado por pares ni ampliamente escrutinizado.",
+    "concerns": [
+      {
+        "issue": "Recencia extrema y replicación independiente mínima",
+        "detail": "La base de evidencia completa abarca solo 2024–2026. La pérdida de peso, el resultado estrella, depende de un único metanálisis de 2024 que resume solo dos estudios en humanos (n=413 y n=1029). Ningún metanálisis independiente o ensayo de un grupo de investigación anterior o separado corrobora estos hallazgos. El azúcar en sangre se basa en un único ECA de 2026 (n=413). Un metanálisis que no ha sido replicado o verificado de forma independiente —como señaló explícitamente el motor— no puede establecer un consenso robusto.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sin tamaños de efecto agrupados reportados; heterogeneidad desconocida",
+        "detail": "En los tres resultados, los registros indican 'efecto agrupado: ninguno extractable'. Esto significa que el/los metanálisis original(es) no reportaron una estimación de efecto combinado, los tamaños de efecto no fueron sintetizados numéricamente, o la heterogeneidad no fue cuantificada. Sin conocer I² u otras métricas de consistencia, los lectores no pueden evaluar si los estudios incluidos concuerdan o entran en conflicto, lo que limita severamente la interpretabilidad de la calificación 'Moderada'.",
+        "severity": "high"
+      },
+      {
+        "issue": "Resultados de estudio único sin replicación cruzada",
+        "detail": "El azúcar en sangre está respaldado por exactamente un ECA (n=413, 2026). La salud hepática tiene dos estudios pero uno sin clasificar (diseño desconocido), y el motor señaló que la inconsistencia no puede evaluarse en la evidencia independiente. Un único estudio no puede establecer reproducibilidad; metarregresión, análisis de subgrupos o sesgo sistemático son imposibles de detectar con n=1 ensayo por resultado.",
+        "severity": "high"
+      },
+      {
+        "issue": "Disponibilidad en mercado gris y ausencia de aprobación regulatoria crea brecha entre evidencia y práctica",
+        "detail": "El preámbulo señala que survodutida 'a menudo se obtiene en el mercado gris y no está aprobada para uso en humanos'. Los ensayos revisados son ECAs de Fase 2 de 2024–2026, probablemente realizados por o estrechamente alineados con el fabricante. Ningún dato de eficacia o seguridad de fase 3, estudios de efectividad en el mundo real, o seguimiento a largo plazo (>1 año) son visibles en estos registros. La evidencia de ensayos de fase 2 no puede sustituir los estándares de aprobación regulatoria.",
+        "severity": "high"
+      },
+      {
+        "issue": "Tamaño de muestra mediano inflado por un valor atípico; la mayoría de ensayos son pequeños",
+        "detail": "La mediana n=1029 para pérdida de peso es impulsada por el metanálisis (n=1029 inscritos en los estudios agrupados), pero el ECA individual es solo n=413. El ECA de salud hepática es n=293 y el estudio sin clasificar es n=170. Seis de los cuatro estudios únicos tienen menos de 300 participantes; un único ensayo grande o valor atípico puede dominar las estimaciones agrupadas, especialmente si el metanálisis incluyó solo dos ensayos.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Survodutida es un agonista dual de receptores de glucagón y GLP-1; el agonismo de GLP-1 está mecanísticamente bien establecido para pérdida de peso y control glucémico, y los efectos metabólicos del glucagón son plausibles. Sin embargo, los resultados clínicos (pérdida de peso, azúcar en sangre, reversión de fibrosis hepática) se infieren directamente de ensayos de fase 2 a corto plazo; no hay datos mecanísticos visibles (p. ej., contenido de lípidos hepáticos, masa de células beta, cinética de glucosa) que cierren la brecha entre la unión de receptores y los puntos finales alegados. El salto de biomarcadores de fase 2 a mejora duradera y clínicamente significativa en peso o salud hepática es sustancial e inexplorado en fase 3.",
+    "strongest_counterargument": "Un escéptico señalaría que los cuatro ensayos únicos son de 2024–2026, publicados en rápida sucesión sin replicación independiente o aprobación regulatoria. Los datos de fase 2 frecuentemente muestran promesa que falla en ensayos de fase 3 más grandes debido a sesgo sin enmascaramiento, efectos de selección, o eventos adversos que emergen a escala. El metanálisis agrupa solo dos estudios y no reporta tamaño de efecto; sin acceso al informe completo del metanálisis, los lectores no pueden verificar si la heterogeneidad, sesgo de publicación, o sesgo del fabricante distorsionaron la conclusión. La calificación 'Moderada' es generosa para evidencia tan delgada y reciente.",
+    "what_would_change_the_picture": "Un ECA de fase 3 publicado (n>1000, multicéntrico, independiente del fabricante, >52 semanas de seguimiento) con puntos finales primarios preregistrados y un metanálisis agrupado (≥3 ensayos independientes) que muestre tamaños de efecto consistentes y baja heterogeneidad establecería una eficacia creíble. Hasta entonces, cualquier afirmación de beneficio duradero se basa en datos preliminares de fase 2.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

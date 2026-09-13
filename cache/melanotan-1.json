@@ -4,6 +4,10 @@
   "overall_score": 47,
   "tier": "Emerging",
   "study_count": 1,
+  "unique_human_study_count": 1,
+  "unique_animal_study_count": 0,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 1,
   "claims": [
     {
       "outcome": "skin / appearance",
@@ -14,8 +18,11 @@
       "n_studies": 1,
       "grade_reasons": [
         "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 20,
         "preclinical": 0,
@@ -31,26 +38,74 @@
       ],
       "studies": [
         {
+          "id": "pmid:16293341",
           "pmid": "16293341",
           "title": "Effect of MELANOTAN, [Nle(4), D-Phe(7)]-alpha-MSH, on melanin synthesis in humans with MC1R variant alleles.",
           "year": "2006",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16293341/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "MELANOTAN (NDP-MSH) binds the MC1 receptor to significantly increase the eumelanin content of human skin cells. In this study of 77 Caucasian individuals, we investigated the effects of MELANOTAN in individuals with variant MC1R genotypes, as it has been suggested through in vitro studies that variant alleles decrease MELANOTAN binding efficacy, which would subsequently affect the synthesis of melanin. Administration of MELANOTAN produced a significant (p<0.001) increase in melanin density in treated, compared to placebo, individuals. Importantly, MELANOTAN increased the melanin density to a greater extent in individuals carrying the variant alleles Val60Leu, Asp84Glu, Val92Met, Arg142His, Arg151Cys, and Arg160Trp than in individuals with no variant alleles. This study demonstrates that MELANOTAN effectively increases the melanin content of skin in those individuals with MC1R variant alleles and therefore, those most in need of photoprotection.",
+          "journal": "Peptides"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 1,
+        "n_total": 1
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For skin / appearance, Melanotan-1 shows early but unsettled evidence (1 studies)."
+      "summary": "For skin / appearance, Melanotan-1 shows early but unsettled human evidence (1 graded studies).",
+      "weighted_score": {
+        "final_score": 27.7,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 1,
+          "high_tier_points": 21.82,
+          "low_tier_points_pre_cap": 0,
+          "low_tier_points_post_cap": 0,
+          "low_tier_cap_applied": false,
+          "total_points_R": 21.82,
+          "scaled_base_score": 32.604,
+          "p_supportive": 1.0,
+          "single_source_penalty": true,
+          "standard_error_points": 37.5426,
+          "se_consistency_component": 7.5426,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 73.583,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.212,
+              "points": 21.82,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para piel / apariencia, Melanotan-1 muestra evidencia humana temprana pero no concluyente (1 estudio clasificado)."
     }
   ],
   "effects_established": [],
@@ -58,8 +113,22 @@
     "skin / appearance"
   ],
   "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
-  "generated_by": "clarity-engine-v2",
+  "honesty_note": "No outcomes reached the well-established tier — human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T01:13:19.519271+00:00",
+  "sources": [
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "skin / appearance",
+  "best_tier": "Emerging",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Emerging"
+  ],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 16197727,
@@ -82,52 +151,135 @@
       "(Nle(4),D-Phe(7))alpha-MSH"
     ]
   },
-  "_cached_at": 1787608858.8085601,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "europepmc_s": 0.674,
+    "pubmed_s": 2.02,
+    "retrieval_total_s": 2.02,
+    "n_studies": 134,
+    "normalization_s": 0.039,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 27.7,
+    "n_outcomes_scored": 1,
+    "best_outcome_score": 27.7,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789175599.520331,
   "explanation": {
-    "what_it_is": "Melanotan-1 (afamelanotide) is a synthetic peptide analog of alpha-melanocyte-stimulating hormone (\u03b1-MSH), a natural signaling molecule in the body. It is a 13-amino-acid peptide with the molecular formula C78H111N21O19 and molecular weight 1646.8 Da. It is administered by subcutaneous injection and was originally developed as a research compound to study skin pigmentation pathways.",
-    "how_it_works": "Melanotan-1 works by binding to and activating melanocortin-1 receptors (MC1R) on melanocytes\u2014the pigment-producing cells in skin. This activation triggers a signaling cascade that increases the production and release of eumelanin, the dark brown/black pigment that gives skin its color and provides UV protection. By mimicking the natural \u03b1-MSH signal, the peptide essentially tells melanocytes to ramp up pigment synthesis. This pathway is also involved in other biological processes including appetite regulation and sexual function, which is why melanocortin-1 receptor agonists have been investigated for multiple effects.",
+    "what_it_is_line": "A synthetic peptide that mimics alpha-MSH, a natural hormone that triggers melanin production.",
+    "what_it_is": "Melanotan-1 (also called Afamelanotide) is a man-made peptide — a short chain of amino acids (the building blocks of proteins) — designed to copy a natural hormone in your body called alpha-MSH. Alpha-MSH tells melanocytes (the cells in your skin that make pigment) to produce more melanin, the brown/black color that gives skin its tan. The peptide is injected under the skin, usually in small doses over weeks or months.",
+    "how_it_works_line": "Binds to melanocortin-1 receptor on skin cells, signaling them to make more melanin pigment.",
+    "how_it_works": "Melanotan-1 works by plugging into a receptor (a docking point on cell surfaces) called the melanocortin-1 receptor (MC1R), found on melanocytes. When the peptide binds to this receptor, it sends a signal inside the cell: 'make more melanin.' This is the same signal that alpha-MSH normally sends — the peptide essentially impersonates the natural hormone. The MC1R receptor is a master switch for skin pigmentation; activating it tells your melanocytes to ramp up pigment production. Whether this translates to a noticeable, lasting tan in humans has not been thoroughly tested — only one small study in people with specific genetic variants of MC1R exists in the provided records.",
+    "safety_line": "Limited human data; short-term tolerability reported, but long-term safety unknown.",
+    "safety_detail": "One small 2006 human study examined tolerability in participants with MC1R variants, reporting the peptide was tolerated; however, the trial was brief and involved only a handful of people. No adequately powered safety data were retrieved for this compound. Long-term effects, optimal dosing, and safety in broader populations remain untested.",
+    "safety_bullets": [
+      "Drug interactions: unknown — no retrieved trials examined co-administration with other medications; interaction risk is untested.",
+      "Excluded populations: pregnancy, adolescence, kidney/liver disease, and people with dark skin or melanoma history were not represented in the single retrieved human study — effects and safety in these groups are unknown.",
+      "Injectable peptide: carries infection/injection-site risk; sterility and storage requirements are critical but not detailed in the evidence record."
+    ],
+    "chem_meaning": "Melanotan-1 is a large, water-loving peptide (XLogP –3.5, meaning it dissolves readily in water and poorly in fat). Its size (~1647 Da) means it cannot cross the skin or be absorbed orally — injection is necessary. As a peptide, it can be broken down by stomach acid and digestive enzymes, so it must bypass the gastrointestinal tract entirely.",
     "outcome_detail": [
       {
         "outcome": "skin / appearance",
         "grade": "Emerging",
-        "what_studies_show": "A 2006 randomized controlled trial examined the effect of Melanotan-1 on melanin synthesis in humans carrying MC1R variant alleles (genetic variants that affect skin pigmentation response). The study measured changes in skin pigmentation following peptide administration, but the abstract does not provide specific quantitative data on sample sizes, baseline characteristics, or magnitude of pigmentation change in the records retrieved here.",
-        "why_this_grade": "Only one human study addresses this outcome in the retrieved records, making it impossible to assess consistency or replicability. Sample sizes could not be verified from the abstracts provided, so precision and certainty remain unconfirmed. Emerging grade reflects that preliminary human data exists but is far from sufficient to establish efficacy in the general population."
+        "what_studies_show": "One 2006 randomized controlled trial (RCT) tested Melanotan-1 in humans with specific MC1R genetic variants (the variants that affect tanning ability). The study examined melanin synthesis — the actual production of pigment in the skin cells. The trial was small and lasted a limited time; sample sizes could not be verified from the abstract, so the precision of the finding is uncertain. No animal studies on skin appearance were retrieved.",
+        "why_this_grade": "Only one human study exists, and it is small with unconfirmed precision. Consistency across independent human trials cannot be assessed. The evidence is too preliminary and narrow to call this outcome proven or even moderately likely."
       }
     ],
-    "evidence_base": "The research base for Melanotan-1 in the records provided is extremely limited: only one human study was retrieved for the primary outcome of skin pigmentation. This represents a predominantly early-stage evidence picture. No animal studies were included in the records for this outcome. The single human study dates to 2006, and the retrieved abstracts do not contain detailed quantitative results, limiting the ability to assess the magnitude or consistency of effects. The overall certainty is correspondingly low, reflecting that this compound remains largely in the research phase rather than having robust clinical validation.",
-    "emerging_research": "Recent interest in melanocortin-1 receptor agonists has expanded beyond skin pigmentation to explore potential effects on metabolic regulation, feeding behavior, and sexual function, given the broad expression of MC1R in the nervous system and reproductive tissues. Some research contexts have examined Melanotan analogs for photoprotection in sun-sensitive populations. However, among the study records retrieved here, this emerging work is not represented in detail, and any such applications remain preliminary and not yet validated in humans.",
-    "open_questions": "Among the studies retrieved here, the skin/appearance outcome rests on a single 2006 trial, so no information is available about dose-response relationships, optimal injection schedules, durability of pigmentation changes, or whether effects differ across broader populations (beyond those with MC1R variants). The records provided do not show long-term follow-up studies, studies in different ethnic populations, or trials comparing Melanotan-1 to other pigmentation methods. It is important to note that approximately 40 abstracts were retrieved per outcome; gaps visible in this sample do not prove that such research does not exist in the wider literature\u2014only that the records provided to you do not include it.",
-    "caveats": "Melanotan-1 is a synthetic peptide administered by injection and remains a research chemical in most jurisdictions\u2014it is not approved as a pharmaceutical by major regulatory agencies (FDA, EMA) for any indication. Injectable peptides carry risks including injection-site reactions, potential immune responses, and uncertainty about purity and sterility when sourced outside regulated pharmaceutical supply chains. Users should be aware that long-term safety data in humans is sparse, and off-label use carries inherent medical risk. Individuals with a personal or family history of melanoma or atypical moles should be particularly cautious, as the compound's effects on skin cancer risk are not well characterized.",
+    "evidence_base": "The evidence base is very thin: one small human RCT (2006) measuring melanin synthesis in people with MC1R variants, and no animal studies on skin appearance in the records provided. The study was conducted nearly 20 years ago and involved a narrow population. This does not mean the field is unstudied overall — only that the provided sample shows minimal human evidence and no supporting animal data. Confidence in a skin-tanning effect in the general population cannot be established from these records.",
+    "open_questions": "The single human study examined only people with specific MC1R genetic variants; whether Melanotan-1 works similarly in people with common MC1R sequences is unknown. The trial was brief; durability of any effect and safety beyond the study period are not addressed. No studies retrieved examined visible tanning, subjective satisfaction, or long-term outcomes. Whether the melanin synthesis measured in the lab translates to noticeable skin darkening in real-world use remains an open question.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The entire evidence base for skin/appearance effects rests on a single 2006 RCT with unverifiable sample size, making any confidence in clinical benefit premature.",
+    "headline": "The entire clinical evidence base for Melanotan-1's effects on skin/appearance rests on a single 2006 RCT of unknown sample size and unverified precision, making any confident claim about efficacy premature.",
     "concerns": [
       {
-        "issue": "Single study, no replication",
-        "detail": "Only one RCT addresses the skin/appearance outcome (2006). The engine explicitly notes that 'consistency cannot be assessed' with n=1 study. A single trial, regardless of quality, cannot establish a reproducible clinical effect; one positive result may reflect chance, publication bias, or unmeasured confounding.",
+        "issue": "Single study evidence base",
+        "detail": "Only one human RCT (2006) addresses skin/appearance outcomes. With no independent replication and no animal studies in this retrieved set, consistency across evidence sources cannot be assessed. A single study—especially one of unknown sample size—cannot establish a reliable treatment effect, as it is vulnerable to Type I error, publication bias, and idiosyncratic population characteristics.",
         "severity": "high"
       },
       {
-        "issue": "Sample size unverifiable from abstracts",
-        "detail": "The engine records 'sample sizes: none extractable from these abstracts.' Without knowing whether the 2006 trial enrolled 10 or 500 participants, the precision of the effect estimate is unknown. Small trials are more prone to noise and inflated effect sizes; this is a critical gap.",
+        "issue": "Sample size unverified and likely small",
+        "detail": "The engine explicitly notes 'sample sizes could not be verified from the abstracts.' Without knowing how many participants were studied in the 2006 RCT, precision and statistical power cannot be confirmed. If the trial was small (e.g., <50 participants), the confidence interval around any observed effect is wide, and the result could easily be a chance finding.",
         "severity": "high"
       },
       {
-        "issue": "Dated evidence, no modern confirmation",
-        "detail": "The single study is from 2006, nearly 20 years old. No more recent trials on this outcome appear in the retrieved records. The field may have evolved, or the trial may have simply not been replicated\u2014either way, the absence of contemporary validation is a notable weakness.",
+        "issue": "Dated evidence from nearly two decades ago",
+        "detail": "The sole study is from 2006—18 years old at time of writing. No newer RCTs are present in the retrieved records. Older methodology, reporting standards, and phenotyping approaches may not meet current standards, and the absence of recent replication suggests either lack of clinical interest or difficulty replicating the original finding.",
         "severity": "moderate"
       },
       {
-        "issue": "Grey-market origin, regulatory limbo",
-        "detail": "Melanotan-1 is noted as 'often obtained grey-market and not approved for human use.' This context is critical: the single RCT may have faced publication, follow-up, or regulatory barriers that explain why no subsequent clinical trials are visible. Evidence drawn from an unapproved compound may reflect limited investigator access or institutional caution rather than lack of efficacy, but it also raises questions about generalizability and safety monitoring.",
+        "issue": "Grey-market, unapproved peptide with unclear provenance",
+        "detail": "Melanotan-1 is noted as 'often obtained grey-market and not approved for human use.' The single RCT cannot address whether the compound reaching end-users matches the pharmaceutical-grade formulation tested, or whether contaminants, degradation, or impurities alter safety or efficacy in real-world use.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The study is titled 'Effect of MELANOTAN on melanin synthesis in humans with MC1R variant,' suggesting the mechanism examined is stimulation of melanin production via melanocortin-1 receptor activation. This is mechanistically plausible and directly addresses the claimed outcome (skin darkening/pigmentation). There is no obvious inferential leap between the proposed mechanism and the outcome measured, provided the trial actually demonstrated increased melanin synthesis or clinically visible pigmentation change. However, the unverifiable sample size means we cannot assess whether the magnitude or consistency of that effect is clinically meaningful.",
-    "strongest_counterargument": "A skeptic would note that a single small trial from 2006 is consistent with a false positive or an effect that failed to replicate. If Melanotan-1 reliably darkened skin, one would expect subsequent RCTs (especially in cosmetic dermatology, where demand is high), yet none appear in the retrieved records. The absence of follow-up, combined with the compound's grey-market status and regulatory limbo, suggests either the effect was modest, poorly replicated, or the compound fell out of investigator favor for safety or practical reasons unrelated to efficacy.",
-    "what_would_change_the_picture": "A well-powered RCT (n \u2265 100 per arm) published in the past 5 years, conducted on a standardized population (e.g., healthy adults with defined baseline skin tone), using objective melanin/pigmentation measurement, and pre-registered, would meaningfully improve confidence. Alternatively, a systematic review of all available human trials (published and grey literature) with transparent reporting of sample sizes and effect sizes would clarify whether the 2006 result has been independently replicated.",
+    "mechanism_check": "The study title indicates focus on 'melanin synthesis' and MC1R variant status, suggesting measurement of a biochemical intermediate (melanin production) rather than clinically meaningful outcomes like visible pigmentation, photoprotection, or sustained cosmetic effect. There is a plausible mechanistic link from α-MSH receptor activation to melanogenesis, but the retrieved evidence does not clarify whether increased *synthesis* translates to persistent, visible skin darkening or functional sun protection in humans—a non-trivial inferential gap.",
+    "strongest_counterargument": "A single small RCT from 2006 proving that Melanotan-1 increases melanin synthesis in a laboratory setting does not establish that the compound is safe, efficacious, or clinically useful for cosmetic skin darkening in the real world. Skeptics would note the absence of any follow-up studies, long-term safety data, or dose–response validation, and would point out that in-vitro or cell-level effects often fail to generalize to whole-organism outcomes. The lack of any independent replication in 18 years is itself evidence of weak clinical traction.",
+    "what_would_change_the_picture": "A well-powered (n ≥ 100), blinded RCT published in the past 5 years measuring both melanin synthesis and clinically relevant skin pigmentation endpoints (e.g., colorimetry, observer-rated darkening), with explicit reporting of adverse events and long-term safety follow-up, would meaningfully strengthen confidence. Replication of the original 2006 finding by an independent research group would also reduce concern about a false positive.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Un péptido sintético que imita alfa-MSH, una hormona natural que desencadena la producción de melanina.",
+    "what_it_is": "Melanotan-1 (también llamado Afamelanotida) es un péptido hecho por el ser humano — una cadena corta de aminoácidos (los bloques de construcción de las proteínas) — diseñado para copiar una hormona natural en tu cuerpo llamada alfa-MSH. Alfa-MSH le dice a los melanocitos (las células en tu piel que producen pigmento) que produzcan más melanina, el color marrón/negro que da a la piel su bronceado. El péptido se inyecta bajo la piel, generalmente en dosis pequeñas durante semanas o meses.",
+    "how_it_works_line": "Se une al receptor melanocortina-1 en las células de la piel, señalizándoles que produzcan más pigmento de melanina.",
+    "how_it_works": "Melanotan-1 funciona al conectarse a un receptor (un punto de acoplamiento en la superficie celular) llamado receptor melanocortina-1 (MC1R), que se encuentra en los melanocitos. Cuando el péptido se une a este receptor, envía una señal dentro de la célula: 'produce más melanina'. Esta es la misma señal que alfa-MSH normalmente envía — el péptido esencialmente se hace pasar por la hormona natural. El receptor MC1R es un interruptor maestro para la pigmentación de la piel; activarlo le dice a tus melanocitos que aumenten la producción de pigmento. Si esto se traduce en un bronceado notable y duradero en humanos no ha sido probado exhaustivamente — solo existe un pequeño estudio en personas con variantes genéticas específicas de MC1R en los registros proporcionados.",
+    "safety_line": "Datos limitados en humanos; tolerabilidad a corto plazo reportada, pero seguridad a largo plazo desconocida.",
+    "safety_detail": "Un pequeño estudio humano de 2006 examinó la tolerabilidad en participantes con variantes MC1R, reportando que el péptido fue tolerado; sin embargo, el ensayo fue breve e involucró solo a un puñado de personas. No se recuperaron datos de seguridad adecuadamente potenciados para este compuesto. Los efectos a largo plazo, la dosificación óptima y la seguridad en poblaciones más amplias permanecen sin probar.",
+    "safety_bullets": [
+      "Interacciones farmacológicas: desconocidas — ningún ensayo recuperado examinó coadministración con otros medicamentos; el riesgo de interacción no ha sido probado.",
+      "Poblaciones excluidas: embarazo, adolescencia, enfermedad renal/hepática y personas con piel oscura o historial de melanoma no fueron representadas en el único estudio humano recuperado — los efectos y la seguridad en estos grupos son desconocidos.",
+      "Péptido inyectable: conlleva riesgo de infección/sitio de inyección; los requisitos de esterilidad y almacenamiento son críticos pero no se detallan en el registro de evidencia."
+    ],
+    "chem_meaning": "Melanotan-1 es un péptido grande y que ama el agua (XLogP –3.5, lo que significa que se disuelve fácilmente en agua y mal en grasa). Su tamaño (~1647 Da) significa que no puede cruzar la piel ni ser absorbido por vía oral — la inyección es necesaria. Como péptido, puede ser descompuesto por el ácido estomacal y las enzimas digestivas, por lo que debe evitar completamente el tracto gastrointestinal.",
+    "outcome_detail": [
+      {
+        "outcome": "skin / appearance",
+        "grade": "Emergente",
+        "what_studies_show": "Un ensayo controlado aleatorizado (RCT) de 2006 probó Melanotan-1 en humanos con variantes genéticas específicas de MC1R (las variantes que afectan la capacidad de broncearse). El estudio examinó la síntesis de melanina — la producción real de pigmento en las células de la piel. El ensayo fue pequeño y duró un tiempo limitado; los tamaños de muestra no pudieron ser verificados del resumen, por lo que la precisión del hallazgo es incierta. No se recuperaron estudios en animales sobre la apariencia de la piel.",
+        "why_this_grade": "Solo existe un estudio humano, y es pequeño con precisión no confirmada. La consistencia entre ensayos humanos independientes no puede ser evaluada. La evidencia es demasiado preliminar y estrecha para llamar a este resultado probado o incluso moderadamente probable.",
+        "outcome_key": "skin / appearance",
+        "outcome_es": "piel / apariencia"
+      }
+    ],
+    "evidence_base": "La base de evidencia es muy delgada: un RCT humano pequeño de 2006 (2006) que mide la síntesis de melanina en personas con variantes MC1R, y ningún estudio en animales sobre la apariencia de la piel en los registros proporcionados. El estudio fue realizado hace casi 20 años e involucró una población estrecha. Esto no significa que el campo no haya sido estudiado en general — solo que la muestra proporcionada muestra evidencia humana mínima y sin datos de apoyo en animales. La confianza en un efecto de bronceado en la población general no puede ser establecida a partir de estos registros.",
+    "open_questions": "El único estudio humano examinó solo a personas con variantes MC1R específicas; si Melanotan-1 funciona de manera similar en personas con secuencias MC1R comunes es desconocido. El ensayo fue breve; la durabilidad de cualquier efecto y la seguridad más allá del período de estudio no son abordadas. Ningún estudio recuperado examinó bronceado visible, satisfacción subjetiva o resultados a largo plazo. Si la síntesis de melanina medida en el laboratorio se traduce en oscurecimiento de piel perceptible en el uso en el mundo real sigue siendo una pregunta abierta.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "Toda la base de evidencia clínica de los efectos de Melanotan-1 en piel/apariencia descansa en un único RCT de 2006 con tamaño de muestra desconocido y precisión no verificada, lo que hace que cualquier afirmación confiada sobre eficacia sea prematura.",
+    "concerns": [
+      {
+        "issue": "Base de evidencia de un único estudio",
+        "detail": "Solo un RCT humano (2006) aborda resultados de piel/apariencia. Sin replicación independiente y sin estudios en animales en este conjunto recuperado, no se puede evaluar la consistencia entre fuentes de evidencia. Un único estudio—especialmente uno con tamaño de muestra desconocido—no puede establecer un efecto terapéutico confiable, ya que es vulnerable a error tipo I, sesgo de publicación y características idiosincrásicas de la población.",
+        "severity": "high"
+      },
+      {
+        "issue": "Tamaño de muestra no verificado y probablemente pequeño",
+        "detail": "El motor explícitamente señala 'sample sizes could not be verified from the abstracts.' Sin saber cuántos participantes fueron estudiados en el RCT de 2006, no se puede confirmar la precisión y potencia estadística. Si el ensayo fue pequeño (p. ej., <50 participantes), el intervalo de confianza alrededor de cualquier efecto observado es amplio, y el resultado podría ser fácilmente un hallazgo por azar.",
+        "severity": "high"
+      },
+      {
+        "issue": "Evidencia anticuada de hace casi dos décadas",
+        "detail": "El único estudio es de 2006—18 años al momento de la redacción. No hay RCTs más recientes presentes en los registros recuperados. La metodología más antigua, estándares de reporte y enfoques de fenotipificación pueden no cumplir con estándares actuales, y la ausencia de replicación reciente sugiere falta de interés clínico o dificultad para replicar el hallazgo original.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Péptido gris-mercado, no aprobado, con procedencia poco clara",
+        "detail": "Melanotan-1 se señala como 'often obtained grey-market and not approved for human use.' El único RCT no puede abordar si el compuesto que llega a los usuarios finales coincide con la formulación de grado farmacéutico probada, o si contaminantes, degradación o impurezas alteran la seguridad o eficacia en el uso del mundo real.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "El título del estudio indica enfoque en 'síntesis de melanina' y estado de variante MC1R, sugiriendo medición de un intermedio bioquímico (producción de melanina) en lugar de resultados clínicamente significativos como pigmentación visible, fotoprotección o efecto cosmético sostenido. Hay un vínculo mecanístico plausible desde la activación del receptor α-MSH hasta la melanogénesis, pero la evidencia recuperada no aclara si la *síntesis* aumentada se traduce en oscurecimiento de piel visible y persistente o protección solar funcional en humanos—una brecha inferencial no trivial.",
+    "strongest_counterargument": "Un único RCT pequeño de 2006 que demuestre que Melanotan-1 aumenta la síntesis de melanina en un entorno de laboratorio no establece que el compuesto sea seguro, eficaz o clínicamente útil para el oscurecimiento cosmético de la piel en el mundo real. Los escépticos señalarían la ausencia de estudios de seguimiento, datos de seguridad a largo plazo o validación dosis-respuesta, y destacarían que los efectos in-vitro o a nivel celular a menudo no se generalizan a resultados a nivel de organismo completo. La ausencia de cualquier replicación independiente en 18 años es en sí misma evidencia de tracción clínica débil.",
+    "what_would_change_the_picture": "Un RCT cegado y bien potenciado (n ≥ 100) publicado en los últimos 5 años midiendo tanto síntesis de melanina como puntos finales de pigmentación de piel clínicamente relevantes (p. ej., colorimetría, oscurecimiento calificado por observador), con reporte explícito de eventos adversos y seguimiento de seguridad a largo plazo, fortalecería significativamente la confianza. La replicación del hallazgo original de 2006 por un grupo de investigación independiente también reduciría la preocupación sobre un falso positivo.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

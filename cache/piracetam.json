@@ -3,7 +3,11 @@
   "category": "nootropic",
   "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 40,
+  "study_count": 33,
+  "unique_human_study_count": 24,
+  "unique_animal_study_count": 9,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 47,
   "claims": [
     {
       "outcome": "cognition",
@@ -11,136 +15,658 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 11,
+      "n_studies": 22,
       "grade_reasons": [
-        "Precision: ~2618 participants verified across 5 of 11 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 5 primary human studies and 6 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~2651 participants verified across 9 of 22 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified — held at moderate."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 11,
-        "n_animal_studies": 0,
+        "n_human_studies": 14,
+        "n_animal_studies": 8,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:12006732",
-        "PMID:11405971",
-        "PMID:27236454",
         "PMID:38878641",
-        "PMID:10796585",
-        "PMID:27539610",
-        "PMID:3305591",
-        "PMID:3528889",
-        "PMID:16996947",
+        "PMID:2179979",
+        "PMID:360232",
+        "PMID:21311490",
+        "PMID:21597409",
         "PMID:12394531",
-        "PMID:3900148"
+        "PMID:16996947",
+        "PMID:3305591",
+        "PMID:9316679",
+        "PMID:6415738",
+        "PMID:18315783",
+        "PMID:18971883",
+        "PMID:19517672",
+        "PMID:342247",
+        "PMID:41251844",
+        "PMID:41271014",
+        "PMID:38842755",
+        "PMID:38153438",
+        "EPMC:AGR:IND608682758",
+        "PMID:39319135",
+        "PMID:36745244",
+        "PMID:34909678"
       ],
       "studies": [
         {
-          "pmid": "27539610",
-          "title": "A meta-analysis of the effect of different neuroprotective drugs in management of patients with traumatic brain injury.",
-          "year": "2018",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 1355
-        },
-        {
-          "pmid": "27236454",
-          "title": "Piracetam for Aphasia in Post-stroke Patients: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 261
-        },
-        {
-          "pmid": "12006732",
-          "title": "Clinical efficacy of piracetam in cognitive impairment: a meta-analysis.",
-          "year": "2002",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
+          "id": "pmid:38878641",
           "pmid": "38878641",
           "title": "Cognitive effects of piracetam in adults with memory impairment: A systematic review and meta-analysis.",
           "year": "2024",
           "design": "Systematic review",
           "population": "human",
-          "n": 886
+          "n": 886,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38878641/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Piracetam, a widely recognized nootropic drug, is hypothesized to enhance memory function through its influence on synaptic plasticity and neurotransmitter levels. However, despite its popularity, there remains a lack of conclusive evidence regarding its impact on memory. Therefore, the present study aims to explore the effects of piracetam on memory in individuals with impaired cognitive function, comparing it to a placebo control group. This study will evaluate how piracetam affects memory function, compared to placebo in adults with impairment in this area. We carried out bibliographical research and meta-analysis of scientific clinical trials comparing memory function in people taking piracetam with those in the placebo group. The PubMed, Dimensions, Embase, and Cochrane Library databases were used. Statistical analysis was performed in R Studio version 4.3.1. In our analysis, 199 articles were identified, of which we included eighteen studies, comprising a total of 886 patients, of which Piracetam was the treatment option in 442 (49.88 %) patients. Memory enhancement (SMD 0.75; 95 % CI [-0.19; 1.69]; p=0.12; I²=96 %) had no clinical difference between the intervention and the control group. Upon the conclusion of this study, it is apparent that we cannot definitively ascertain the impact of piracetam on memory function. Further research is warranted to provide a clearer understanding of the cognitive effects of piracetam in individuals with memory impairment. This investigation serves as a significant contribution to the ongoing quest to elucidate the potential benefits of piracetam in the field of cognitive neuroscience.",
+          "journal": "Clinical neurology and neurosurgery"
         },
         {
-          "pmid": "11405971",
-          "title": "Piracetam for dementia or cognitive impairment.",
-          "year": "2001",
-          "design": "Systematic review",
+          "id": "pmid:21597409",
+          "pmid": "21597409",
+          "title": "Cerebroprotective effect of piracetam in patients undergoing open heart surgery.",
+          "year": "2011",
+          "design": "RCT",
           "population": "human",
-          "n": null
+          "n": 88,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21597409/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Reduction of cognitive function is a possible side effect after the use of cardiopulmonary bypass (CPB) during cardiac surgery. Since it has been proven that piracetam is cerebroprotective in patients undergoing coronary bypass surgery, we investigated the effects of piracetam on the cognitive performance of patients undergoing open heart surgery. Patients scheduled for elective open heart surgery were randomized to the piracetam or placebo group in a double-blind study. Patients received 12 g of piracetam or placebo at the beginning of the operation. Six neuropsychological subtests from the Syndrom Kurz Test and the Alzheimer's Disease Assessment Scale were performed preoperatively and on day 3, postoperatively. To assess the overall cognitive function and the degree of cognitive decline across all tests after the surgery, we combined the six test-scores by principal component analysis. A total of 88 patients with a mean age of 67 years were enrolled into the study. The mean duration of CPB was 110 minutes. Preoperative clinical parameters and overall cognitive functions were not significantly different between the groups. The postoperative combined score of the neuropsychological tests showed deterioration of cognitive function in both groups (piracetam: preoperative 0.19 ± 0.97 vs. postoperative -0.97 ± 1.38, p <0.0005 and placebo: preoperative -0.14 ± 0.98 vs. postoperative -1.35 ± 1.23, p <0.0005). Patients taking piracetam did not perform better than those taking placebo, and both groups had the same decline of overall cognitive function (p = 0.955). Piracetam had no cerebroprotective effect in patients undergoing open heart surgery. Unlike the patients who underwent coronary surgery, piracetam did not reduce the early postoperative decline of neuropsychological abilities in heart valve patients.",
+          "journal": "Annals of thoracic and cardiovascular surgery : official journal of the Association of Thoracic and Cardiovascular Surgeons of Asia"
         },
         {
-          "pmid": "10796585",
-          "title": "Piracetam for dementia or cognitive impairment.",
-          "year": "2000",
-          "design": "Systematic review",
+          "id": "pmid:21311490",
+          "pmid": "21311490",
+          "title": "[Clinical features of the formation and possibilities of treatment of posttraumatic cognitive disturbances].",
+          "year": "2010",
+          "design": "RCT",
           "population": "human",
-          "n": null
+          "n": 41,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21311490/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "We studied the efficacy of akatinol memantine compared to that of piracetam in the treatment of 41 patients with posttraumatic cognitive disturbances (20 patients were treated with akatinol memannine and 21 patients with piracetam) during 24 weeks. Ten patients had a severe traumatic brain injury (TBI) and 11 patients had mild TBI. Treatment efficacy was assessed during 6 months using the data of clinical examination, neuropsychological testing, CT and MRI. Akatinol exerted a distinct positive, stable and continuously effect on a broad spectrum of cognitive disturbances while the effect of piracetam was observed only for some cognitive functions and was short-term (during 1 month). Both drugs were well-tolerated by patients.",
+          "journal": "Zhurnal nevrologii i psikhiatrii imeni S.S. Korsakova"
         },
         {
+          "id": "pmid:19517672",
+          "pmid": "19517672",
+          "title": "Piracetam improves children's memory after general anaesthesia.",
+          "year": "2009",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19517672/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Surgery and anaesthesia may account for postoperative complications including cognitive impairment. The purpose of the study was to assess the influence of general anaesthetics on children's memory and effectiveness of piracetam for prevention of postoperative cognitive dysfunction. The study included patients receiving different kinds of anaesthesia for various surgical procedures, randomly allocated to two groups. According to immediate postoperative treatment, the study group received intravenous piracetam 30 mg kg(-1) and the control group--placebo. The cognitive functions were examined preoperatively and within 10 consecutive postoperative days using the ten-word memory test. The study group consisted of 123 children, the control one--of 127. Declines in memory indexes were observed in all anaesthetized patients. The most injured function was long-term memory. The intravenous administration of piracetam improved this cognitive function. The study results confirm that general anaesthesia affects the memory function in children. Piracetam is effective for prevention of postoperative cognitive dysfunction after anaesthesia.",
+          "journal": "Anestezjologia intensywna terapia"
+        },
+        {
+          "id": "pmid:18971883",
+          "pmid": "18971883",
+          "title": "Cerebroprotective effect of piracetam in patients undergoing coronary bypass burgery.",
+          "year": "2008",
+          "design": "RCT",
+          "population": "human",
+          "n": 120,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18971883/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Reduction of cognitive function is a possible side effect after cardiac surgery using cardiopulmonary bypass. We investigated the cerebroprotective effect of piracetam on cognitive performance in patients undergoing coronary artery bypass surgery under cardiopulmonary bypass. Patients scheduled for elective, primary and isolated coronary bypass surgery were randomised either to piracetam or placebo group. The study was performed in a double blind fashion. Patients received either 12 g piracetam or placebo at the beginning of the operation. Six neuropsychological subtests from the Syndrom Kurz Test and the Alzheimer's Disease Assessment Scale were performed preoperatively and on the third postoperative day. To assess the overall cognitive function and the degree of cognitive decline across all tests after surgery we combined the six test-scores by principal component analysis. A total number of 120 patients were enrolled into the study. Preoperative overall cognitive function were not significantly different between the groups. The postoperative combined score of the neuropsychological tests showed a deterioration of cognitive function in both groups (placebo-pre: -0.06+/-0.99 vs placebo-post: -1.38+/-1.11; p<0.0005 and piracetam-pre: 0.06+/-1.02 vs piracetam-post: -0.65+/-0.93; p<0.0005). However, the piracetam patients performed significantly better compared to the placebo patients after the operation and had a less decline of overall cognitive function (p<0.0005). Piracetam has a cerebroprotective effect in patients undergoing coronary artery bypass surgery with the use of cardiopulmonary bypass. It reduces an early postoperative substantial decline of neuropsychological abilities.",
+          "journal": "Medical science monitor : international medical journal of experimental and clinical research"
+        },
+        {
+          "id": "pmid:16996947",
           "pmid": "16996947",
           "title": "Piracetam prevents cognitive decline in coronary artery bypass: a randomized trial versus placebo.",
           "year": "2006",
           "design": "RCT",
           "population": "human",
-          "n": 98
+          "n": 98,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16996947/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Coronary artery bypass grafting (CABG) can be associated with postoperative cognitive impairment and ischemic stroke. No effective treatment is currently available. The aim of this study was to evaluate the effectiveness of piracetam to treat the cognitive impairment after CABG in an investigator-initiated, double-blind, placebo-controlled, randomized clinical trial. Patients undergoing CABG (n = 98) were randomized to placebo (n = 48) or piracetam (n = 50). Study drugs were administered intravenously (150 mg/kg daily; 300 mg/kg on the day of surgery) from the day before surgery to 6 days after surgery, then orally (12 g/day) up to 6 weeks after surgery. Cognitive function was assessed before surgery (baseline) and 6 weeks after surgery (outcome) by using a battery of 12 neuropsychologic tests. The Spielberger Anxiety Inventory and the Beck Depression Inventory were also administered. The combined score derived from the standardized neuropsychologic assessments was analyzed by using an analysis of covariance with baseline and education as covariates. Six weeks after surgery, the combined score indicated a statistically significant treatment effect in the per protocol population (1.848, p = 0.041) and a tendency towards statistical significance in the intent-to-treat population (1.624, p = 0.064) in the group treated with piracetam, but no statistically significant treatment effect was seen in the placebo. The state of anxiety measured by the Spielberger Anxiety Inventory was decreased in both groups (-9.27 and -6.37 in the placebo and piracetam groups, respectively). Six weeks after CABG, cognition was significantly improved in patients treated with piracetam. Additional trials are required to confirm these effects.",
+          "journal": "The Annals of thoracic surgery"
         },
         {
+          "id": "pmid:12394531",
           "pmid": "12394531",
           "title": "Effect of piracetam on ECT-induced cognitive disturbances: a randomized, placebo-controlled, double-blind study.",
           "year": "2002",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12394531/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Electroconvulsive therapy (ECT) is still the fastest, most effective, and frequently life-saving therapeutic intervention in several forms of depression and some other psychiatric disorders. Transient memory disturbances are frequent after ECT. A randomized, double-blind, placebo-controlled study was conducted to investigate the effects of piracetam on ECT-induced confusion and memory disturbances. Thirty-eight consecutively admitted patients with depressive illness or schizophrenia requiring ECT were given either piracetam or an identical-looking placebo during the period of ECT treatment and for 2 weeks afterward. Daily dosage of piracetam was 7.2 g, given orally for the first 2 weeks while patients underwent ECT (loading phase), followed by 4.8 g for the rest of the study period. Participants were evaluated by standardized clinical rating scales and cognitive psychologic tests 1 to 2 days before ECT, 1 day after their third and sixth ECT treatments, and 2 weeks after they had completed their ECT courses. Piracetam had no significant effect in preventing ECT-induced memory disturbances. All clinical ratings were consistently, albeit not significantly, better in the piracetam group, suggesting that piracetam may have augmented the effects of ECT.",
+          "journal": "The journal of ECT"
         },
         {
+          "id": "pmid:9316679",
+          "pmid": "9316679",
+          "title": "Effect of piracetam on recovery and rehabilitation after stroke: a double-blind, placebo-controlled study.",
+          "year": "1994",
+          "design": "RCT",
+          "population": "human",
+          "n": 158,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9316679/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The nootropic agent piracetam has been shown to improve learning and memory, and it may, by this means, facilitate recovery and rehabilitation after a stroke. We report the results of a pilot study exploring its effects in patients undergoing rehabilitation after acute cerebral infarction in the carotid artery territory. We compared piracetam and placebo, each given for 12 weeks, in a multicenter, double-blind, randomized trial of parallel-group design; testing was performed at baseline (6-9 weeks poststroke), weeks 5 and 12, and, in fewer patients, 12 weeks after termination of treatment. Standardized tests of activities of daily living (Barthel Index, Kuriansky Test), aphasia (Aachen Aphasia Test), and perception (Rivermead Perception Assessment Battery) were the primary efficacy variables. Of 158 patients, 137 (81 males, 56 females) were studied after treatment and 88 at 24-week follow-up. Thirty patients on piracetam (45%) and 37 on placebo (53%) were aphasic on entry. Both groups, including the subgroups with aphasia, were well matched at baseline for demographic data, stroke sequelae, type and severity of aphasia, and prognostic parameters. Multivariate analysis of Aachen Aphasia subtest scores showed a significant overall improvement relative to baseline in favor of piracetam (p = 0.02) at 12 weeks. This was not seen at 24 weeks when, however, fewer patients were available for evaluation so that we could neither confirm nor deny whether improvement was maintained after cessation of piracetam. We were unable to demonstrate an effect on tests of activities of daily living and could neither confirm nor exclude an effect on perceptual deficit. We have shown an improvement in aphasia in patients undergoing rehabilitation after a stroke after 12 weeks' treatment with piracetam that requires confirmation in further studies.",
+          "journal": "Clinical neuropharmacology"
+        },
+        {
+          "id": "pmid:2179979",
+          "pmid": "2179979",
+          "title": "High versus low-dose piracetam in alcohol organic mental disorder: a placebo controlled study.",
+          "year": "1990",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2179979/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "A marked tendency to increase the dose of piracetam in the treatment of organic mental disorder can be observed in clinical practice. A placebo controlled study comparing two doses (i.e. 6 g and 24 g per die) was performed to evaluate the benefits of high dose piracetam in the treatment of organic mental disorder of chronic alcohol addicts. 60 inpatients participated in the study. Cognitive impairment was verified by various psychological tests on day 0; patients were also evaluated on days 7, 14, 28 and 42 of the trial. While the patients of all three groups showed a significant amelioration during the treatment period, a modest but significant superiority was indicated for the high piracetam dose. There was no difference between the placebo group and the patients receiving low dose piracetam.",
+          "journal": "Psychopharmacology"
+        },
+        {
+          "id": "pmid:3305591",
           "pmid": "3305591",
           "title": "Piracetam and dyslexia: effects on reading tests.",
           "year": "1987",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3305591/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Previous research has suggested that dyslexics treated with piracetam have shown improvements in reading skills, verbal memory and verbal conceptualizing ability, feature analysis, and processing of letter-like stimuli. Two hundred twenty-five dyslexic children between the ages of 7 years 6 months and 12 years 11 months whose reading skills were significantly below their intellectual capacity were enrolled in a multicenter, 36-week, double-blind, placebo-controlled study. Children of below average intelligence, with abnormal findings on audiologic, ophthalmologic, neurologic, psychiatric, and physical examinations, who were emotionally disturbed or educationally deprived and who had recently been treated with psychoactive medication were excluded from the trial. Piracetam was well tolerated, with no serious adverse clinical or laboratory effects reported. Piracetam-treated children showed significant improvements in reading ability (Gray Oral Reading Test) and reading comprehension (Gilmore Oral Reading Test). Treatment effects were evident after 12 weeks and were sustained for the total period (36 weeks).",
+          "journal": "Journal of clinical psychopharmacology"
         },
         {
-          "pmid": "3528889",
-          "title": "Piracetam combined with lecithin in the treatment of Alzheimer's disease.",
-          "year": "1986",
+          "id": "pmid:6415738",
+          "pmid": "6415738",
+          "title": "Piracetam in elderly psychiatric patients with mild diffuse cerebral impairment.",
+          "year": "1983",
           "design": "RCT",
           "population": "human",
-          "n": 18
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6415738/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "In a 12-week double-blind study, piracetam at two dose levels (2.4 and 4.8 g/day) was compared to placebo in the treatment of 60 elderly psychiatric patients with mild diffuse cerebral impairment, but no signs of focal brain lesion. The psychiatric illness, schizophrenia or affective disorder, of patients selected was in remission at the time of the study. Monthly evaluations by the nurse revealed that piracetam improved overall functioning, particularly alertness, socialization, and cooperation, relative to the control group. Patients treated with 2.4 g/day piracetam also showed significant improvement in scores for the full IQ and the memory quotient on the Wechsler Adult Intelligence and Memory Scales; greater response was seen in those with lower initial scores. Piracetam at 4.8 g/day had a more rapid onset of action on behavioral variables than 2.4 g/day, but its therapeutic effect tended to diminish at 12 weeks, possibly as the result of overstimulation. Piracetam did not appear to interfere with concomitant psychotropic maintenance medication or affect the psychiatric illness itself.",
+          "journal": "Psychopharmacology"
         },
         {
-          "pmid": "3900148",
-          "title": "The effects of piracetam in children with dyslexia.",
-          "year": "1985",
+          "id": "pmid:342247",
+          "pmid": "342247",
+          "title": "Piracetam in the treatment of post-concussional syndrome. A double-blind study.",
+          "year": "1978",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": 60,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/342247/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The effect of piracetam, a cyclical derivative of GABA, was compared with that of a placebo in a double-blind study of 60 patients with post-concussional syndrome of 2-12 months' duration. The daily dose of piracetam was 4,800 mg. After 8 weeks of treatment piracetam significantly reduced the occurrence and severity of the following symptoms: vertigo, headache, tiredness, decresed alertness, increased sweating and neurasthenic symptoms. No significant effect was observed on the following symptoms: tremor, orthostatic symptoms, and memory disorders. Side effect were reported by 64% of the patients under piracetam and by 32% under placebo. In the author's opinion, piracetam seems to be a promising new drug for the treatment of post-concussional syndrome.",
+          "journal": "European neurology"
+        },
+        {
+          "id": "pmid:360232",
+          "pmid": "360232",
+          "title": "A double blind investigation of piracetam (Nootropil) vs placebo in geriatric memory.",
+          "year": "1977",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/360232/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Fifty-six hospitalized geriatric patients between the ages of 65 and 80 were given piracetam (Nootropil) 2400 mg/day or placebo on a double blind basis over a two month period. Every patient submitted to a battery of psychological tests before and after the two month trial. These tests included the Similarities, Vocabulary, Digit Symbol, and Block Design subtests of the Wechsler Adult Intelligence Scale; Graham Kendall Memory for Design; Benton Visual Retention; Hooper Visual Organization; Raven Colored Progressive Matrices A, AB, and B; Wechsler Memory Scale A and B; Porteus Maze and Finger Tapping. Patients who were unable to complete this battery were not included in this investigation. In addition, at pretreatment, 4 and 8 weeks, the patient completed a Profiles of Mood States, a Clinical Global Evaluation was done by the investigator, and laboratory determinations were performed. Fifty Patients completed the investigation (25 piracetam, 25 placebo). There were no significant statistical differences between the two groups of patients on all measures utilized except for the Clinical Global Evaluation, where 52% of the patients on piracetam showed minimal improvement versus 25% of the placebo group (P less than 0.05).",
+          "journal": "Pharmakopsychiatrie, Neuro-Psychopharmakologie"
+        },
+        {
+          "id": "pmid:18315783",
+          "pmid": "18315783",
+          "title": "The effect of piracetam on ataxia: clinical observations in a group of autosomal dominant cerebellar ataxia patients.",
+          "year": "2008",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18315783/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Autosomal dominant cerebellar ataxias are clinically and genetically heterogeneous neurodegenerative disorders. There is no known treatment to prevent neuronal cell death in these disorders. Current treatment is purely symptomatic; ataxia is one of the most disabling symptoms and represents the main therapeutic challenge. A previous case report suggesting benefit from administration of high dose piracetam inspired the present study of the efficacy of this agent in patients with cerebellar ataxia. Piracetam is a low molecular weight derivative of gamma-aminobutyric acid. Although little is known of its mode of action, its efficacy has been documented in a wide range of clinical indications, such as cognitive disorders, dementia, vertigo and dyslexia, as well as cortical myoclonus. The present report investigated the role of high dose piracetam in patients with cerebellar ataxia. Eight patients with autosomal dominant cerebellar ataxia were given intravenous piracetam 60 g/day by a structured protocol for 14 days. The baseline and end-of-the study evaluations were based on the International Cooperative Ataxia Rating Scale. Statistical analysis demonstrated a significant improvement in the patients' total score (P = 0.018) and a subscale analysis showed statistical significance for only the posture and gait disturbances item (P = 0.018). This study is providing good clinical observation in favour of high dose piracetam infusion to reduce the disability of the patients by improving their gait ataxia.",
+          "journal": "Journal of clinical pharmacy and therapeutics"
+        },
+        {
+          "id": "pmid:41271014",
+          "pmid": "41271014",
+          "title": "Piracetam reverses scopolamine-induced memory disorder in mice: an animal model using behavioral, oxidative, and cholinesterase biomarkers.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.neulet.2025.138462",
+          "epmc_id": "MED:41271014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41271014/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Memory impairment diseases have become a serious health problem worldwide. In this context, an animal model capable of recognizing substances with the ability to recover memory disorders would be welcome. Thus, the present work aims to evaluate the effect of piracetam on reversal of scopolamine-induced memory deficit in male Swiss mice (n = 6) after fifteen days of treatment. To achieve this objective, behavioral, oxidative and cholinesterase inhibition markers were used. Memory impairment was evaluated by object and social recognition and step-down inhibitory avoidance tests. The evaluation of the redox state included superoxide dismutase, catalase, glutathione-s-transferase, glutathione peroxidase, thiobarbituric acid reactive substances, carbonyl proteins, ascorbic acid, and reduced glutathione. Scopolamine caused cognitive deficit, evidenced by the reduction in latency period and in the discrimination index (DI) of aversive, social, and declarative memories. However, piracetam significantly reversed those deficits. Scopolamine has increased the levels of thiobarbituric acid reactive substances. Scopolamine inhibited significantly brain and plasma cholinesterase activity. In conclusion, scopolamine at a dose of 0.8 mg/kg for 15 days induced memory deficit, oxidative damage and cholinesterase inhibition in brain of mice. Furthermore, piracetam at a dose of 200 mg/kg could reverse the memory impairment induced by scopolamine by mechanisms that are independent of the antioxidant action and cholinesterase inhibition. The present model has showed great sensibility and could be used to evaluate other drugs with the potential for the treatment of diseases related to memory damage.",
+          "journal": "Neuroscience letters"
+        },
+        {
+          "id": "pmid:41251844",
+          "pmid": "41251844",
+          "title": "Piracetam attenuates oxidative stress and inflammation-induced neuronal cell death in rats with vascular dementia potentially via the activation of the AMPK/SIR",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1007/s11011-025-01741-4",
+          "epmc_id": "MED:41251844",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41251844/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Chronic cerebral hypoperfusion (CCH) is the second leading cause of dementia and a major contributor to vascular dementia (VaD). Among the mechanisms underlying CCH-induced cognitive decline, programmed cell death plays a pivotal role. Lytic forms of programmed cell death, including necroptosis and pyroptosis, have recently been identified as consequences of chronic inflammation. However, their precise involvement in VaD remains unclear. It has been demonstrated that piracetam has neuroprotective and cognitive-enhancing properties, potentially through anti-inflammatory and antioxidant mechanisms. Nevertheless, its effects in the context of VaD have not yet been fully investigated. This study aimed to investigate the therapeutic potential of piracetam and elucidate any underlying mechanisms. Male Wistar rats underwent bilateral common carotid artery occlusion to induce CCH. Following this procedure, the rats received either piracetam (600 mg/kg) or resveratrol (20 mg/kg) daily for 28 days. Before euthanasia, cognitive performance was assessed using the Morris water maze test. Then biochemical analyses, including Western blotting and immunohistochemistry, were performed to assess markers of oxidative stress, neuroinflammation, pyroptosis, and necroptosis. Our findings demonstrated that piracetam reduced oxidative stress, suppressed neuroinflammatory responses, enhanced superoxide dismutase activity, and provided protection against pyroptotic and necroptotic cell death. Mechanistic studies showed that piracetam activated AMP-activated protein kinase (AMPK), which in turn upregulated sirtuin 1 (SIRT-1) and nuclear factor erythroid 2-related factor 2 (Nrf-2), leading to improved cognitive performance. In conclusion, piracetam ameliorates cognitive impairment in CCH-induced VaD by modulating oxidative damage, neuroinflammation, and inflammatory cell death, potentially through activation of the AMPK/SIRT-1/Nrf-2 signaling pathway.",
+          "journal": "Metabolic brain disease"
+        },
+        {
+          "id": "pmid:38153438",
+          "pmid": "38153438",
+          "title": "The neuroprotective effects of Piracetam on cisplatin-induced cognitive decline.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1080/00207454.2023.2300733",
+          "epmc_id": "MED:38153438",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38153438/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Aim</h4>This work explores the effect of Cisplatin-a chemotherapeutic agent known to cause deterioration in cognitive function in cancer patients, and spatial memory in mice. It also investigates the potential neuroprotective effects of Piracetam, which is a nootropic drug recognized for improving cognitive ability.<h4>Materials and methods</h4>The study incorporates four groups of mice receiving varied medication regimens, with memory tested using the Novel Location Recognition (NLR) method.<h4>Results</h4>The findings from our study revealed that memory decline and a suppression of cellular proliferation were observed in adult male mice subjected to Cisplatin treatment; furthermore, a decline in antioxidant efficacy within the hippocampal dentate gyrus was evident. Moreover, analysis of treatment effects on the animals' weight revealed that the Cisplatin and Piracetam group exhibited the most significant weight loss during drug administration. Despite the significant weight loss, the simultaneous use of Cisplatin and Piracetam demonstrated a notable improvement in memory and an augmentation of hippocampal proliferation and antioxidant effect.<h4>Limitations</h4>It is important to note that our study was hampered by budget limits, a lack of additional animals, and mice's low tolerance for protracted treatment.<h4>Conclusions</h4>Should the outcomes of Piracetam observed in this investigation be applicable to patients, it might offer a relatively straightforward approach to mitigate the cognitive impacts endured by cancer survivors following exposure to chemotherapy. Future research will be needed to study Piracetam's effect on mice with brain cancer after Cisplatin treatment in order to extrapolate the results onto cancer patients.",
+          "journal": "The International journal of neuroscience"
+        },
+        {
+          "id": "pmid:38842755",
+          "pmid": "38842755",
+          "title": "Piracetam reduces oxidative stress and mitochondrial function impairment in an in vitro model of vascular dementia.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1007/s00221-024-06868-x",
+          "epmc_id": "MED:38842755",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38842755/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Vascular dementia (VaD) is the most common cause of dementia in older adults. Due to the lack of effective treatment options, there is an urgent need to find an effective pharmaceutical compound to combat VaD. Piracetam has been reported to improve impaired cognitive function in a variety of conditions in both human and animal models. However, the role and mechanism of Piracetam in VaD remain unclear. Therefore this study aimed to elucidate the effect of Piracetam on a cellular model of VaD in vitro. We found that Piracetam enhanced the growth of OGD-stimulated SH-SY5Y cells. In addition, Piracetam inhibited the oxidative stress of OGD-stimulated SH-SY5Y cells. Further, Piracetam improved mitochondrial function of OGD-stimulated SH-SY5Y cells. Mechanistically, Piracetam inhibited the PI3K/Akt/mTOR pathway in OGD-stimulated SH-SY5Y cells. Collectively, Piracetam improved oxidative stress and mitochondrial dysfunction of OGD-stimulated SH-SY5Y cells through PI3K/Akt/mTOR axis. Hence, Piracetam has the potential to serve as a promising drug of VaD.",
+          "journal": "Experimental brain research"
+        },
+        {
+          "id": "epmc:agr:ind608682758",
+          "pmid": null,
+          "title": "Efficacy and safety of compound porcine cerebroside and ganglioside injection (CPCGI) versus piracetam on cognition and functional outcomes for adults with trau",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": 600,
+          "doi": null,
+          "epmc_id": "AGR:IND608682758",
+          "url": "https://europepmc.org/article/AGR/IND608682758",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Traumatic brain injury (TBI) is a common neurosurgical disease in emergency rooms with poor prognosis, imposing severe burdens on patients and their families. Evidence indicates that piracetam and compound porcine cerebroside and ganglioside injection (CPCGI) can improve cognitive levels in TBI patients to enhance functional prognosis, but there is still a research gap regarding the efficacy of CPCGI. This study aims to determine the effectiveness and safety of CPCGI in improving cognitive and functional outcomes in TBI patients. This study is a multicenter, randomized, parallel-group, double-blind trial aiming to recruit 900 adult patients with mild to moderate TBI. After providing informed consent, 600 patients will be randomly assigned to the CPCGI group (20 ml/d, for 14 days), and 300 patients will be randomized to the piracetam group as a control (20 ml/d, for 14 days), followed up for 3 months after treatment. The primary outcome is the change in the Montreal Cognitive Assessment (MoCA) score from baseline after 3 months. The main secondary outcome measures include Mini-Mental State Examination (MMSE) scores, Glasgow Outcome Scale-Extended (GOS-E), and the Barthel Index at 1 and 3 months. This multi-center clinical trial aims to provide high-quality evidence on the efficacy and safety of CPCGI in improving cognitive and functional outcomes in mild to moderate TBI patients. ChiCTR2000040466, date of registration: November 28, 2020.",
+          "journal": "Heliyon"
+        },
+        {
+          "id": "pmid:39319135",
+          "pmid": "39319135",
+          "title": "Efficacy and safety of compound porcine cerebroside and ganglioside injection (CPCGI) versus piracetam on cognition and functional outcomes for adults with trau",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": 600,
+          "doi": "10.1016/j.heliyon.2024.e37296",
+          "epmc_id": "MED:39319135",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39319135/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>Traumatic brain injury (TBI) is a common neurosurgical disease in emergency rooms with poor prognosis, imposing severe burdens on patients and their families. Evidence indicates that piracetam and compound porcine cerebroside and ganglioside injection (CPCGI) can improve cognitive levels in TBI patients to enhance functional prognosis, but there is still a research gap regarding the efficacy of CPCGI. This study aims to determine the effectiveness and safety of CPCGI in improving cognitive and functional outcomes in TBI patients.<h4>Methods</h4>This study is a multicenter, randomized, parallel-group, double-blind trial aiming to recruit 900 adult patients with mild to moderate TBI. After providing informed consent, 600 patients will be randomly assigned to the CPCGI group (20 ml/d, for 14 days), and 300 patients will be randomized to the piracetam group as a control (20 ml/d, for 14 days), followed up for 3 months after treatment. The primary outcome is the change in the Montreal Cognitive Assessment (MoCA) score from baseline after 3 months. The main secondary outcome measures include Mini-Mental State Examination (MMSE) scores, Glasgow Outcome Scale-Extended (GOS-E), and the Barthel Index at 1 and 3 months.<h4>Discussion</h4>This multi-center clinical trial aims to provide high-quality evidence on the efficacy and safety of CPCGI in improving cognitive and functional outcomes in mild to moderate TBI patients.<h4>Trial registration</h4>ChiCTR2000040466, date of registration: November 28, 2020.",
+          "journal": "Heliyon"
+        },
+        {
+          "id": "pmid:36745244",
+          "pmid": "36745244",
+          "title": "Neuroprotective effect of piracetam-loaded magnetic chitosan nanoparticles against thiacloprid-induced neurotoxicity in albino rats.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1007/s10787-023-01151-x",
+          "epmc_id": "MED:36745244",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36745244/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Thiacloprid (TH) is a neurotoxic agricultural insecticide and potential food contaminant. The purpose of this study was to investigate the relationship between TH exposure and memory dysfunction in rats, as well as the potential protective effect of piracetam and piracetam-loaded magnetic chitosan nanoparticles (PMC NPs). Rats were divided into five equal groups (six rats/group). The control group received saline. Group II was treated with PMC NPs at a dose level of 200 mg/kg body weight (Bwt); Group III was treated with 1/10 LD<sub>50</sub> of TH (65 mg/kg Bwt); Group IV was treated with TH (65 mg/kg Bwt) and piracetam (200 mg/kg Bwt); Group V was co-treated with TH (65 mg/kg Bwt) and PMC NPs (200 mg/kg Bwt). All animal groups were dosed daily for 6 weeks by oral gavage. Footprint analysis, hanging wire test, open field test, and Y-maze test were employed to assess behavioral deficits. Animals were euthanized, and brain tissues were analyzed for oxidative stress biomarkers, proinflammatory cytokines, and gene expression levels of glial fibrillary acidic protein (GFAP), amyloid-beta precursor protein (APP), B-cell lymphoma 2 (Bcl-2), and caspase-3. Brain and sciatic nerve tissues were used for the evaluation of histopathological changes and immunohistochemical expression of tau protein and nuclear factor kappa B (NF-κB), respectively. The results revealed that TH-treated rats suffered from oxidative damage and inflammatory effect on the central and peripheral nerves. The administration of PMC NPs considerably protected against TH-induced neuronal damage, increased antioxidant enzyme activity, decreased inflammatory markers, and improved behavioral performance than the group treated with piracetam. The neuroprotective effect of PMC NPs was mediated through the inhibition of GFAP, APP, caspase-3, Tau, and NF-κB gene expression with induction of Bcl-2 expression. In conclusion, TH could induce oxidative stress, inflammatory and neurobehavior impairment in rats. However, PMC NPs administration markedly mitigated TH-induced brain toxicity, possibly via oxidative and inflammatory modulation rather than using piracetam alone.",
+          "journal": "Inflammopharmacology"
+        },
+        {
+          "id": "pmid:34909678",
+          "pmid": "34909678",
+          "title": "Protective effect of co-administration of caffeine and piracetam on scopolamine-induced amnesia in Wistar rats.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.crphar.2021.100052",
+          "epmc_id": "MED:34909678",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34909678/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Alzheimer's disease is a cerebrovascular disorder characterized by progressive loss of the mental capabilities. The novel therapeutic agent piracetam is a cyclic derivative of γ-aminobutyric acid and one of the oldest recognized synthetic nootropics. Piracetam improves cognitive function without stimulation or sedation. Caffeine is a central nervous system stimulant with nootropic activity. Caffeine promotes the performance of tasks that involve working memory to a limited extent, and it also retards cognitive decline in healthy individuals. The present study aimed to determine the protective effect of co-administering piracetam and caffeine on scopolamine-induced amnesia in rats. Pre-treatment with caffeine and piracetam decreased scopolamine-induced cognitive damage and amnesia. The preventive response was demonstrated by an improved learning tendency. The mechanism responsible for these effects requires further investigation. The co-administration of caffeine and piracetam has potential as a novel therapeutic strategy for combating amnesia.",
+          "journal": "Current research in pharmacology and drug discovery"
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "16996947",
+            "metric": "mean_diff",
+            "value": 1.848,
+            "ci_low": 0.0,
+            "ci_high": 3.696,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "the combined score indicated a statistically significant treatment effect in the per protocol population (1.848, p = 0.041)"
+          }
+        ],
+        "n_not_reported": 20,
+        "n_total": 21
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For cognition, Piracetam has moderate human evidence (11 studies)."
+      "summary": "For cognition, Piracetam has moderate human evidence (22 graded studies).",
+      "weighted_score": {
+        "final_score": 90.4,
+        "confidence_interval": {
+          "lower": 75.5,
+          "upper": 100.0
+        },
+        "confidence_tier": "Gold Standard",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 22,
+          "high_tier_points": 266.141,
+          "low_tier_points_pre_cap": 15.725,
+          "low_tier_points_post_cap": 15.725,
+          "low_tier_cap_applied": false,
+          "total_points_R": 281.865,
+          "scaled_base_score": 90.4,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 7.6239,
+          "se_consistency_component": 3.6874,
+          "se_thinness_component": 3.9365,
+          "margin_of_error": 14.943,
+          "human_sample_total": 1451,
+          "studies_missing_sample_size": 7,
+          "studies_missing_citations": 1,
+          "data_completeness_note": "7 human study(ies) used a default sample-size multiplier and 1 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.167,
+              "points": 105.038,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.117,
+              "points": 20.101,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.222,
+              "points": 21.988,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.113,
+              "C_k": 1.072,
+              "points": 21.464,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.444,
+              "C_k": 1.185,
+              "points": 30.8,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 20.914,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.491,
+              "C_k": 1.204,
+              "points": 32.325,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.237,
+              "points": 22.265,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.699,
+              "C_k": 1.268,
+              "points": 96.91,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.26,
+              "points": 22.677,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.156,
+              "points": 20.812,
+              "supportive": true
+            },
+            {
+              "idx": 11,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.579,
+              "C_k": 1.198,
+              "points": 85.157,
+              "supportive": true
+            },
+            {
+              "idx": 12,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 19.288,
+              "supportive": true
+            },
+            {
+              "idx": 13,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.278,
+              "C_k": 1.219,
+              "points": 28.053,
+              "supportive": true
+            },
+            {
+              "idx": 14,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            },
+            {
+              "idx": 15,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 4.286,
+              "supportive": true
+            },
+            {
+              "idx": 16,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            },
+            {
+              "idx": 17,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.117,
+              "points": 4.467,
+              "supportive": true
+            },
+            {
+              "idx": 18,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 19,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 4.286,
+              "supportive": true
+            },
+            {
+              "idx": 20,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.176,
+              "points": 4.706,
+              "supportive": true
+            },
+            {
+              "idx": 21,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la cognición, Piracetam tiene evidencia humana moderada (22 estudios calificados)."
     },
     {
       "outcome": "stroke recovery",
@@ -148,383 +674,906 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 10,
+      "n_studies": 8,
       "grade_reasons": [
-        "Limited human evidence: 2 primary human studies and 8 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified — held at moderate."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 35,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 10,
-        "n_animal_studies": 0,
+        "n_human_studies": 7,
+        "n_animal_studies": 1,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:10836617",
-        "PMID:16625535",
-        "PMID:22972044",
-        "PMID:11687079",
-        "PMID:27236454",
-        "PMID:18033952",
-        "PMID:10796359",
-        "PMID:12519543",
+        "PMID:10978039",
         "PMID:9084344",
-        "PMID:16996947"
+        "PMID:16625535",
+        "PMID:16996947",
+        "PMID:11332870",
+        "PMID:9316679",
+        "PMID:16768197",
+        "PMID:38910382"
       ],
       "studies": [
         {
-          "pmid": "27236454",
-          "title": "Piracetam for Aphasia in Post-stroke Patients: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 261
-        },
-        {
-          "pmid": "22972044",
-          "title": "Piracetam for acute ischaemic stroke.",
-          "year": "2012",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 1002
-        },
-        {
-          "pmid": "18033952",
-          "title": "A systematic review and meta-analysis of the efficacy of piracetam and piracetam-like compounds in experimental stroke.",
-          "year": "2008",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "10836617",
-          "title": "Piracetam in acute stroke: a systematic review.",
-          "year": "2000",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 501
-        },
-        {
+          "id": "pmid:16625535",
           "pmid": "16625535",
           "title": "Piracetam for acute ischaemic stroke.",
           "year": "2006",
           "design": "Systematic review",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16625535/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Piracetam has neuroprotective and antithrombotic effects which may help to reduce death and disability in people with acute stroke. The objective of this review was to assess the effects of piracetam in acute presumed ischaemic stroke. We searched the Cochrane Stroke Group Trials Register (last searched 20 June 2005). In addition, we searched the Cochrane Central Register of Controlled Trials (CENTRAL) (The Cochrane Library Issue 2, 2005), MEDLINE (1966 to April 2005), EMBASE (1980 to April 2005), and ISI Science Citation Index (1981 to April 2005). We also contacted the manufacturer of piracetam to identify further published and unpublished studies. Randomised trials comparing piracetam with control, with at least mortality reported and entry to the trial within approximately 48 hours of stroke onset. Two authors extracted data and assessed trial quality and this was checked by the other two authors. Study authors were contacted for missing information. Three trials involving 1002 people were included, with one trial contributing 93% of the data. Participants' ages ranged from 40 to 85, and both sexes were equally represented. Piracetam was associated with a statistically non-significant increase in death at one month (approximately 31% increase, 95% confidence interval 81% increase to 5% reduction). This trend was no longer apparent in the large trial after correction for imbalance in stroke severity. Limited data showed no difference between the treatment and control groups for functional outcome, dependency or proportion of patients dead or dependent. Adverse effects were not reported. There is some suggestion (but no statistically significant result) of an unfavourable effect of piracetam on early death, but this may have been caused by baseline differences in stroke severity in the trials. There is not enough evidence to assess the effect of piracetam on dependency.",
+          "journal": "The Cochrane database of systematic reviews"
         },
         {
-          "pmid": "12519543",
-          "title": "Piracetam for acute ischaemic stroke.",
-          "year": "2002",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "11687079",
-          "title": "Pharmacological treatment for aphasia following stroke.",
-          "year": "2001",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "10796359",
-          "title": "Piracetam for acute ischaemic stroke.",
-          "year": "2000",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
+          "id": "pmid:16996947",
           "pmid": "16996947",
           "title": "Piracetam prevents cognitive decline in coronary artery bypass: a randomized trial versus placebo.",
           "year": "2006",
           "design": "RCT",
           "population": "human",
-          "n": 98
+          "n": 98,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16996947/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Coronary artery bypass grafting (CABG) can be associated with postoperative cognitive impairment and ischemic stroke. No effective treatment is currently available. The aim of this study was to evaluate the effectiveness of piracetam to treat the cognitive impairment after CABG in an investigator-initiated, double-blind, placebo-controlled, randomized clinical trial. Patients undergoing CABG (n = 98) were randomized to placebo (n = 48) or piracetam (n = 50). Study drugs were administered intravenously (150 mg/kg daily; 300 mg/kg on the day of surgery) from the day before surgery to 6 days after surgery, then orally (12 g/day) up to 6 weeks after surgery. Cognitive function was assessed before surgery (baseline) and 6 weeks after surgery (outcome) by using a battery of 12 neuropsychologic tests. The Spielberger Anxiety Inventory and the Beck Depression Inventory were also administered. The combined score derived from the standardized neuropsychologic assessments was analyzed by using an analysis of covariance with baseline and education as covariates. Six weeks after surgery, the combined score indicated a statistically significant treatment effect in the per protocol population (1.848, p = 0.041) and a tendency towards statistical significance in the intent-to-treat population (1.624, p = 0.064) in the group treated with piracetam, but no statistically significant treatment effect was seen in the placebo. The state of anxiety measured by the Spielberger Anxiety Inventory was decreased in both groups (-9.27 and -6.37 in the placebo and piracetam groups, respectively). Six weeks after CABG, cognition was significantly improved in patients treated with piracetam. Additional trials are required to confirm these effects.",
+          "journal": "The Annals of thoracic surgery"
         },
         {
-          "pmid": "9084344",
-          "title": "Piracetam as an adjuvant to language therapy for aphasia: a randomized double-blind placebo-controlled pilot study.",
-          "year": "1997",
+          "id": "pmid:16768197",
+          "pmid": "16768197",
+          "title": "[Immunomediation or hyperviscosity in rapidly progressive sensorineural hearing loss. A therapeutic approach].",
+          "year": "2006",
           "design": "RCT",
           "population": "human",
-          "n": 50
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For stroke recovery, Piracetam has moderate human evidence (10 studies)."
-    },
-    {
-      "outcome": "aphasia",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 7,
-      "grade_reasons": [
-        "Limited human evidence: 4 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 7,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:11687079",
-        "PMID:27236454",
-        "PMID:9084344",
-        "PMID:9316679",
-        "PMID:10338105",
-        "PMID:10978039",
-        "PMID:11332870"
-      ],
-      "studies": [
-        {
-          "pmid": "27236454",
-          "title": "Piracetam for Aphasia in Post-stroke Patients: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 261
+          "n": 32,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16768197/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To evaluate the therapeutic response and the rheologic and immunological characteristics in subjects bearing of rapidly progressive sensorineural hearing loss (RPSHL). A comparative prospective study on three groups of damaged ears treated with piracetam (n=29), corticosteroids (n=32) and plabcebo (n=25). Hearing loss and recovery level, whole blood filterability (WBF) and a Western-blot (WB) to anticochlear antibodies were evaluated. Recovery average was 20,8 +/- 55,9% in the first group, with progressive of deafness in the rest (p<0,01). WB did not show differences among groups. The higher WBF at the end of therapy was detected on group 1 (20,36 +/- 2,54 Vs 18,42 +/- 3,42 microl/seg on group 3; p<0,05). Moreover, it impaired only on those treated with piracetam, with statistically significative differences over the other two groups. We detected alterations on WBF in patients with RPSHL that justify the use of rheoactive measures as a pathophysiological therapy.",
+          "journal": "Acta otorrinolaringologica espanola"
         },
         {
-          "pmid": "11687079",
-          "title": "Pharmacological treatment for aphasia following stroke.",
-          "year": "2001",
-          "design": "Systematic review",
-          "population": "human",
-          "n": null
-        },
-        {
+          "id": "pmid:11332870",
           "pmid": "11332870",
           "title": "Restitution of alpha-topography by piracetam in post-stroke aphasia.",
           "year": "2001",
           "design": "RCT",
           "population": "human",
-          "n": 24
+          "n": 24,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11332870/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Electroencephalographic and clinical effects of piracetam in post-stroke aphasia were evaluated in a prospective, randomized, double-blind, placebo-controlled trial. In 24 patients with mild to moderate aphasia after ischemic stroke, quantitative topographic EEG at rest was studied before and after a 6-week treatment period. In the active treatment group, a significant shift in the alpha-rhythm from frontal to occipital regions was observed which may be due to a restitution of corticothalamic circuits involved in the generation of alpha-activity. Neuropsychological scores improved significantly and markedly in various domains of speech during piracetam treatment, whereas improvements were less marked and restricted to a few categories in the placebo group.",
+          "journal": "International journal of clinical pharmacology and therapeutics"
         },
         {
+          "id": "pmid:10978039",
           "pmid": "10978039",
           "title": "Piracetam improves activated blood flow and facilitates rehabilitation of poststroke aphasic patients.",
           "year": "2000",
           "design": "RCT",
           "population": "human",
-          "n": 12
+          "n": 12,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10978039/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "In a prospective, double-blind, placebo-controlled study, it was investigated whether piracetam improves language recovery in poststroke aphasia assessed by neuropsychological tests and activation PET measurement of cerebral blood flow. Twenty-four stroke patients with aphasia were randomly allocated to 2 groups: 12 patients received 2400 mg piracetam twice daily, 12 placebo. Before and at the end of the 6-week treatment period in which both groups received intensive speech therapy, the patients were examined neuropsychologically and studied with H(2)(15)O PET at rest and during activation with a word-repetition task. Blood flow was analyzed in 14 language-activated brain regions defined on reconstructed surface views from MRI coregistered to the PET images. Before treatment, both groups were comparable with respect to performance in language tasks and to type and severity of aphasia. In the piracetam group, increase of activation effect was significantly higher (P:<0.05) in the left transverse temporal gyrus, left triangular part of inferior frontal gyrus, and left posterior superior temporal gyrus after the treatment period compared with the initial measures. The placebo group showed an increase of activation effect only in the left vocalization area. In the test battery, the piracetam group improved in 6 language functions, the placebo group only in 3 subtests. Piracetam as an adjuvant to speech therapy improves recovery of various language functions, and this effect is accompanied by a significant increase of task-related flow activation in eloquent areas of the left hemisphere.",
+          "journal": "Stroke"
         },
         {
+          "id": "pmid:9084344",
           "pmid": "9084344",
           "title": "Piracetam as an adjuvant to language therapy for aphasia: a randomized double-blind placebo-controlled pilot study.",
           "year": "1997",
           "design": "RCT",
           "population": "human",
-          "n": 50
+          "n": 50,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9084344/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To determine whether piracetam 4.8 g/day together with intensive language therapy improved language function more than language therapy alone. Double-blind, placebo-controlled parallel group study. Referral speech and language clinic of a university department of neurology. Sixty-six inpatients with aphasia present between 4 weeks and 36 months. Intensive language therapy for 6 weeks in all patients. Thirty-two patients received piracetam 4.8 g daily and 34 patients received placebo. The Aachen Aphasia Test (AAT), a standardized procedure for evaluating the severity of aphasia, was performed at baseline and after 6 weeks' treatment. In 50 patients evaluated for efficacy, a trend toward improvement in the active group was observed in all subtests of the AAT. This trend was statistically significant for absolute differences in recovery of \"written language\" and \"profile level.\" Piracetam appears to have a positive adjuvant effect on the recovery of aphasia in patients receiving intensive language therapy.",
+          "journal": "Archives of physical medicine and rehabilitation"
         },
         {
+          "id": "pmid:9316679",
           "pmid": "9316679",
           "title": "Effect of piracetam on recovery and rehabilitation after stroke: a double-blind, placebo-controlled study.",
           "year": "1994",
           "design": "RCT",
           "population": "human",
-          "n": 158
+          "n": 158,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9316679/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The nootropic agent piracetam has been shown to improve learning and memory, and it may, by this means, facilitate recovery and rehabilitation after a stroke. We report the results of a pilot study exploring its effects in patients undergoing rehabilitation after acute cerebral infarction in the carotid artery territory. We compared piracetam and placebo, each given for 12 weeks, in a multicenter, double-blind, randomized trial of parallel-group design; testing was performed at baseline (6-9 weeks poststroke), weeks 5 and 12, and, in fewer patients, 12 weeks after termination of treatment. Standardized tests of activities of daily living (Barthel Index, Kuriansky Test), aphasia (Aachen Aphasia Test), and perception (Rivermead Perception Assessment Battery) were the primary efficacy variables. Of 158 patients, 137 (81 males, 56 females) were studied after treatment and 88 at 24-week follow-up. Thirty patients on piracetam (45%) and 37 on placebo (53%) were aphasic on entry. Both groups, including the subgroups with aphasia, were well matched at baseline for demographic data, stroke sequelae, type and severity of aphasia, and prognostic parameters. Multivariate analysis of Aachen Aphasia subtest scores showed a significant overall improvement relative to baseline in favor of piracetam (p = 0.02) at 12 weeks. This was not seen at 24 weeks when, however, fewer patients were available for evaluation so that we could neither confirm nor deny whether improvement was maintained after cessation of piracetam. We were unable to demonstrate an effect on tests of activities of daily living and could neither confirm nor exclude an effect on perceptual deficit. We have shown an improvement in aphasia in patients undergoing rehabilitation after a stroke after 12 weeks' treatment with piracetam that requires confirmation in further studies.",
+          "journal": "Clinical neuropharmacology"
         },
         {
-          "pmid": "10338105",
-          "title": "Piracetam in the treatment of acute stroke.",
-          "year": "1999",
-          "design": "Unclassified",
-          "population": "human",
-          "n": 927
+          "id": "pmid:38910382",
+          "pmid": "38910382",
+          "title": "[Therapeutic effect and mechanism of piracetam for the treatment of spinal cord injury in rats through MAPK pathway].",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.12200/j.issn.1003-0034.20230540",
+          "epmc_id": "MED:38910382",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38910382/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Objective</h4>To explore mechanism of piracetam for the treatment of spinal cord injury in rats through mitogen-activated protein kinase (MAPK) pathway.<h4>Methods</h4>Fifty-four healthy 6-week-old SD female rats with body weight of 80 to 100 g were divided into sham operation group, spinal cord injury group and piracetam group by random number table method, with 18 rats in each group. Spinal cord injury model was established in spinal cord injury group and piracetam group using percussion apparatus, while sham operation group did not damage spinal cord. Piracetam group was injected with piracetam injection through tail vein according to 5 ml·kg<sup>-1</sup> standard, once a day for 3 days;the other two groups were injected with normal saline at the same dose, the same frequency and the same duration. The rats were sacrificed at 1, 3, and 7 days after surgery, and changes of Basso, Beattie and Bresnahan (BBB) locomotor rating scale was observed and compared. Enzyme-linked immunosorbent assay (ELISA) was used to detect spinal cord inflammatory factors, such as interleukin-6 (IL-6), interleukin-10 (IL-10), interleukin-1β (interleukin-1β), necrosis factor-α (IL-1β) and tumor necrosis factor-α (TNF-α);HE staining was used to observe morphological changes of rats with spinal cord injury, and immunohistochemistry was used to observe expression level of aquaporin 4 (AQP4). The activation of MAPK signaling pathway in spinal cord of rats after spinal cord injury was observed by western blotting (WB).<h4>Results</h4>BBB scores of sham operation group on 1, 3 and 7 day were 21 points. In spinal cord injury group, the scores were (1±1), (4±1) and (7±2);piracetam group was (1±1), (5±1), (9±2), respectively;the difference between spinal cord injury group and sham operation group was statistically significant (<i>P</i><0.05). HE staining showed that no abnormality was found in sham operation group. In spinal cord injury group, bleeding and degeneration of spinal cord tissue appeared at 1 day after operation; flaky necrotic areas were appeared in spinal cord at 3 days after surgery, and spinal cord tissue began to slowly repair at 7 days after surgery. In piracetam group, the bleeding area was less than that of spinal cord injury group at 1 day after surgery;at 3 days after operation, the necrotic area was reduced and the range of nuclear disappearance was reduced; and the spinal cord began to recover slowly at 7 days after surgery. AQP4 staining of spinal cord of rats in sham operation group was weak at 1, 3 and 7 days after modeling, AQP4 staining was deepened and area increased in spinal cord injury group, AQP4 staining of piracetam group was lighter than that of spinal cord injury group, and the positive cells were slightly increased and the staining was slightly darker than that of sham operation group. At 1, 3 and 7 days, the level of IL-6, IL-10, IL-1β and TNF-α in spinal cord injury group were higher than those in sham operation group and piracetam g",
+          "journal": "Zhongguo gu shang = China journal of orthopaedics and traumatology"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 8,
+        "n_total": 8
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For aphasia, Piracetam has moderate human evidence (7 studies)."
+      "summary": "For stroke recovery, Piracetam has moderate human evidence (8 graded studies).",
+      "weighted_score": {
+        "final_score": 75.4,
+        "confidence_interval": {
+          "lower": 46.2,
+          "upper": 100.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 8,
+          "high_tier_points": 173.34,
+          "low_tier_points_pre_cap": 4.181,
+          "low_tier_points_post_cap": 4.181,
+          "low_tier_cap_applied": false,
+          "total_points_R": 177.521,
+          "scaled_base_score": 75.409,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 14.8999,
+          "se_consistency_component": 7.1539,
+          "se_thinness_component": 7.746,
+          "margin_of_error": 29.204,
+          "human_sample_total": 374,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.314,
+              "points": 23.652,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.199,
+              "C_k": 1.274,
+              "points": 27.493,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.143,
+              "points": 51.441,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.491,
+              "C_k": 1.204,
+              "points": 32.325,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.185,
+              "points": 21.322,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.699,
+              "C_k": 1.268,
+              "points": 96.91,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.005,
+              "C_k": 1.045,
+              "points": 18.91,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la recuperación del accidente cerebrovascular, Piracetam tiene evidencia humana moderada (8 estudios calificados)."
     },
     {
-      "outcome": "dyslexia",
+      "outcome": "memory",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
       "n_studies": 12,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+        "Precision: ~1104 participants verified across 3 of 12 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified — held at moderate."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 8,
+        "n_animal_studies": 4,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:38878641",
+        "PMID:360232",
+        "PMID:12394531",
+        "PMID:3305591",
+        "PMID:9316679",
+        "PMID:6415738",
+        "PMID:19517672",
+        "PMID:342247",
+        "PMID:41271014",
+        "PMID:38153438",
+        "PMID:36745244",
+        "PMID:34909678"
+      ],
+      "studies": [
+        {
+          "id": "pmid:38878641",
+          "pmid": "38878641",
+          "title": "Cognitive effects of piracetam in adults with memory impairment: A systematic review and meta-analysis.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 886,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38878641/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Piracetam, a widely recognized nootropic drug, is hypothesized to enhance memory function through its influence on synaptic plasticity and neurotransmitter levels. However, despite its popularity, there remains a lack of conclusive evidence regarding its impact on memory. Therefore, the present study aims to explore the effects of piracetam on memory in individuals with impaired cognitive function, comparing it to a placebo control group. This study will evaluate how piracetam affects memory function, compared to placebo in adults with impairment in this area. We carried out bibliographical research and meta-analysis of scientific clinical trials comparing memory function in people taking piracetam with those in the placebo group. The PubMed, Dimensions, Embase, and Cochrane Library databases were used. Statistical analysis was performed in R Studio version 4.3.1. In our analysis, 199 articles were identified, of which we included eighteen studies, comprising a total of 886 patients, of which Piracetam was the treatment option in 442 (49.88 %) patients. Memory enhancement (SMD 0.75; 95 % CI [-0.19; 1.69]; p=0.12; I²=96 %) had no clinical difference between the intervention and the control group. Upon the conclusion of this study, it is apparent that we cannot definitively ascertain the impact of piracetam on memory function. Further research is warranted to provide a clearer understanding of the cognitive effects of piracetam in individuals with memory impairment. This investigation serves as a significant contribution to the ongoing quest to elucidate the potential benefits of piracetam in the field of cognitive neuroscience.",
+          "journal": "Clinical neurology and neurosurgery"
+        },
+        {
+          "id": "pmid:19517672",
+          "pmid": "19517672",
+          "title": "Piracetam improves children's memory after general anaesthesia.",
+          "year": "2009",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19517672/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Surgery and anaesthesia may account for postoperative complications including cognitive impairment. The purpose of the study was to assess the influence of general anaesthetics on children's memory and effectiveness of piracetam for prevention of postoperative cognitive dysfunction. The study included patients receiving different kinds of anaesthesia for various surgical procedures, randomly allocated to two groups. According to immediate postoperative treatment, the study group received intravenous piracetam 30 mg kg(-1) and the control group--placebo. The cognitive functions were examined preoperatively and within 10 consecutive postoperative days using the ten-word memory test. The study group consisted of 123 children, the control one--of 127. Declines in memory indexes were observed in all anaesthetized patients. The most injured function was long-term memory. The intravenous administration of piracetam improved this cognitive function. The study results confirm that general anaesthesia affects the memory function in children. Piracetam is effective for prevention of postoperative cognitive dysfunction after anaesthesia.",
+          "journal": "Anestezjologia intensywna terapia"
+        },
+        {
+          "id": "pmid:12394531",
+          "pmid": "12394531",
+          "title": "Effect of piracetam on ECT-induced cognitive disturbances: a randomized, placebo-controlled, double-blind study.",
+          "year": "2002",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12394531/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Electroconvulsive therapy (ECT) is still the fastest, most effective, and frequently life-saving therapeutic intervention in several forms of depression and some other psychiatric disorders. Transient memory disturbances are frequent after ECT. A randomized, double-blind, placebo-controlled study was conducted to investigate the effects of piracetam on ECT-induced confusion and memory disturbances. Thirty-eight consecutively admitted patients with depressive illness or schizophrenia requiring ECT were given either piracetam or an identical-looking placebo during the period of ECT treatment and for 2 weeks afterward. Daily dosage of piracetam was 7.2 g, given orally for the first 2 weeks while patients underwent ECT (loading phase), followed by 4.8 g for the rest of the study period. Participants were evaluated by standardized clinical rating scales and cognitive psychologic tests 1 to 2 days before ECT, 1 day after their third and sixth ECT treatments, and 2 weeks after they had completed their ECT courses. Piracetam had no significant effect in preventing ECT-induced memory disturbances. All clinical ratings were consistently, albeit not significantly, better in the piracetam group, suggesting that piracetam may have augmented the effects of ECT.",
+          "journal": "The journal of ECT"
+        },
+        {
+          "id": "pmid:9316679",
+          "pmid": "9316679",
+          "title": "Effect of piracetam on recovery and rehabilitation after stroke: a double-blind, placebo-controlled study.",
+          "year": "1994",
+          "design": "RCT",
+          "population": "human",
+          "n": 158,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9316679/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The nootropic agent piracetam has been shown to improve learning and memory, and it may, by this means, facilitate recovery and rehabilitation after a stroke. We report the results of a pilot study exploring its effects in patients undergoing rehabilitation after acute cerebral infarction in the carotid artery territory. We compared piracetam and placebo, each given for 12 weeks, in a multicenter, double-blind, randomized trial of parallel-group design; testing was performed at baseline (6-9 weeks poststroke), weeks 5 and 12, and, in fewer patients, 12 weeks after termination of treatment. Standardized tests of activities of daily living (Barthel Index, Kuriansky Test), aphasia (Aachen Aphasia Test), and perception (Rivermead Perception Assessment Battery) were the primary efficacy variables. Of 158 patients, 137 (81 males, 56 females) were studied after treatment and 88 at 24-week follow-up. Thirty patients on piracetam (45%) and 37 on placebo (53%) were aphasic on entry. Both groups, including the subgroups with aphasia, were well matched at baseline for demographic data, stroke sequelae, type and severity of aphasia, and prognostic parameters. Multivariate analysis of Aachen Aphasia subtest scores showed a significant overall improvement relative to baseline in favor of piracetam (p = 0.02) at 12 weeks. This was not seen at 24 weeks when, however, fewer patients were available for evaluation so that we could neither confirm nor deny whether improvement was maintained after cessation of piracetam. We were unable to demonstrate an effect on tests of activities of daily living and could neither confirm nor exclude an effect on perceptual deficit. We have shown an improvement in aphasia in patients undergoing rehabilitation after a stroke after 12 weeks' treatment with piracetam that requires confirmation in further studies.",
+          "journal": "Clinical neuropharmacology"
+        },
+        {
+          "id": "pmid:3305591",
+          "pmid": "3305591",
+          "title": "Piracetam and dyslexia: effects on reading tests.",
+          "year": "1987",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3305591/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Previous research has suggested that dyslexics treated with piracetam have shown improvements in reading skills, verbal memory and verbal conceptualizing ability, feature analysis, and processing of letter-like stimuli. Two hundred twenty-five dyslexic children between the ages of 7 years 6 months and 12 years 11 months whose reading skills were significantly below their intellectual capacity were enrolled in a multicenter, 36-week, double-blind, placebo-controlled study. Children of below average intelligence, with abnormal findings on audiologic, ophthalmologic, neurologic, psychiatric, and physical examinations, who were emotionally disturbed or educationally deprived and who had recently been treated with psychoactive medication were excluded from the trial. Piracetam was well tolerated, with no serious adverse clinical or laboratory effects reported. Piracetam-treated children showed significant improvements in reading ability (Gray Oral Reading Test) and reading comprehension (Gilmore Oral Reading Test). Treatment effects were evident after 12 weeks and were sustained for the total period (36 weeks).",
+          "journal": "Journal of clinical psychopharmacology"
+        },
+        {
+          "id": "pmid:6415738",
+          "pmid": "6415738",
+          "title": "Piracetam in elderly psychiatric patients with mild diffuse cerebral impairment.",
+          "year": "1983",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6415738/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "In a 12-week double-blind study, piracetam at two dose levels (2.4 and 4.8 g/day) was compared to placebo in the treatment of 60 elderly psychiatric patients with mild diffuse cerebral impairment, but no signs of focal brain lesion. The psychiatric illness, schizophrenia or affective disorder, of patients selected was in remission at the time of the study. Monthly evaluations by the nurse revealed that piracetam improved overall functioning, particularly alertness, socialization, and cooperation, relative to the control group. Patients treated with 2.4 g/day piracetam also showed significant improvement in scores for the full IQ and the memory quotient on the Wechsler Adult Intelligence and Memory Scales; greater response was seen in those with lower initial scores. Piracetam at 4.8 g/day had a more rapid onset of action on behavioral variables than 2.4 g/day, but its therapeutic effect tended to diminish at 12 weeks, possibly as the result of overstimulation. Piracetam did not appear to interfere with concomitant psychotropic maintenance medication or affect the psychiatric illness itself.",
+          "journal": "Psychopharmacology"
+        },
+        {
+          "id": "pmid:342247",
+          "pmid": "342247",
+          "title": "Piracetam in the treatment of post-concussional syndrome. A double-blind study.",
+          "year": "1978",
+          "design": "RCT",
+          "population": "human",
+          "n": 60,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/342247/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The effect of piracetam, a cyclical derivative of GABA, was compared with that of a placebo in a double-blind study of 60 patients with post-concussional syndrome of 2-12 months' duration. The daily dose of piracetam was 4,800 mg. After 8 weeks of treatment piracetam significantly reduced the occurrence and severity of the following symptoms: vertigo, headache, tiredness, decresed alertness, increased sweating and neurasthenic symptoms. No significant effect was observed on the following symptoms: tremor, orthostatic symptoms, and memory disorders. Side effect were reported by 64% of the patients under piracetam and by 32% under placebo. In the author's opinion, piracetam seems to be a promising new drug for the treatment of post-concussional syndrome.",
+          "journal": "European neurology"
+        },
+        {
+          "id": "pmid:360232",
+          "pmid": "360232",
+          "title": "A double blind investigation of piracetam (Nootropil) vs placebo in geriatric memory.",
+          "year": "1977",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/360232/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Fifty-six hospitalized geriatric patients between the ages of 65 and 80 were given piracetam (Nootropil) 2400 mg/day or placebo on a double blind basis over a two month period. Every patient submitted to a battery of psychological tests before and after the two month trial. These tests included the Similarities, Vocabulary, Digit Symbol, and Block Design subtests of the Wechsler Adult Intelligence Scale; Graham Kendall Memory for Design; Benton Visual Retention; Hooper Visual Organization; Raven Colored Progressive Matrices A, AB, and B; Wechsler Memory Scale A and B; Porteus Maze and Finger Tapping. Patients who were unable to complete this battery were not included in this investigation. In addition, at pretreatment, 4 and 8 weeks, the patient completed a Profiles of Mood States, a Clinical Global Evaluation was done by the investigator, and laboratory determinations were performed. Fifty Patients completed the investigation (25 piracetam, 25 placebo). There were no significant statistical differences between the two groups of patients on all measures utilized except for the Clinical Global Evaluation, where 52% of the patients on piracetam showed minimal improvement versus 25% of the placebo group (P less than 0.05).",
+          "journal": "Pharmakopsychiatrie, Neuro-Psychopharmakologie"
+        },
+        {
+          "id": "pmid:41271014",
+          "pmid": "41271014",
+          "title": "Piracetam reverses scopolamine-induced memory disorder in mice: an animal model using behavioral, oxidative, and cholinesterase biomarkers.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.neulet.2025.138462",
+          "epmc_id": "MED:41271014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41271014/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Memory impairment diseases have become a serious health problem worldwide. In this context, an animal model capable of recognizing substances with the ability to recover memory disorders would be welcome. Thus, the present work aims to evaluate the effect of piracetam on reversal of scopolamine-induced memory deficit in male Swiss mice (n = 6) after fifteen days of treatment. To achieve this objective, behavioral, oxidative and cholinesterase inhibition markers were used. Memory impairment was evaluated by object and social recognition and step-down inhibitory avoidance tests. The evaluation of the redox state included superoxide dismutase, catalase, glutathione-s-transferase, glutathione peroxidase, thiobarbituric acid reactive substances, carbonyl proteins, ascorbic acid, and reduced glutathione. Scopolamine caused cognitive deficit, evidenced by the reduction in latency period and in the discrimination index (DI) of aversive, social, and declarative memories. However, piracetam significantly reversed those deficits. Scopolamine has increased the levels of thiobarbituric acid reactive substances. Scopolamine inhibited significantly brain and plasma cholinesterase activity. In conclusion, scopolamine at a dose of 0.8 mg/kg for 15 days induced memory deficit, oxidative damage and cholinesterase inhibition in brain of mice. Furthermore, piracetam at a dose of 200 mg/kg could reverse the memory impairment induced by scopolamine by mechanisms that are independent of the antioxidant action and cholinesterase inhibition. The present model has showed great sensibility and could be used to evaluate other drugs with the potential for the treatment of diseases related to memory damage.",
+          "journal": "Neuroscience letters"
+        },
+        {
+          "id": "pmid:38153438",
+          "pmid": "38153438",
+          "title": "The neuroprotective effects of Piracetam on cisplatin-induced cognitive decline.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1080/00207454.2023.2300733",
+          "epmc_id": "MED:38153438",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38153438/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Aim</h4>This work explores the effect of Cisplatin-a chemotherapeutic agent known to cause deterioration in cognitive function in cancer patients, and spatial memory in mice. It also investigates the potential neuroprotective effects of Piracetam, which is a nootropic drug recognized for improving cognitive ability.<h4>Materials and methods</h4>The study incorporates four groups of mice receiving varied medication regimens, with memory tested using the Novel Location Recognition (NLR) method.<h4>Results</h4>The findings from our study revealed that memory decline and a suppression of cellular proliferation were observed in adult male mice subjected to Cisplatin treatment; furthermore, a decline in antioxidant efficacy within the hippocampal dentate gyrus was evident. Moreover, analysis of treatment effects on the animals' weight revealed that the Cisplatin and Piracetam group exhibited the most significant weight loss during drug administration. Despite the significant weight loss, the simultaneous use of Cisplatin and Piracetam demonstrated a notable improvement in memory and an augmentation of hippocampal proliferation and antioxidant effect.<h4>Limitations</h4>It is important to note that our study was hampered by budget limits, a lack of additional animals, and mice's low tolerance for protracted treatment.<h4>Conclusions</h4>Should the outcomes of Piracetam observed in this investigation be applicable to patients, it might offer a relatively straightforward approach to mitigate the cognitive impacts endured by cancer survivors following exposure to chemotherapy. Future research will be needed to study Piracetam's effect on mice with brain cancer after Cisplatin treatment in order to extrapolate the results onto cancer patients.",
+          "journal": "The International journal of neuroscience"
+        },
+        {
+          "id": "pmid:36745244",
+          "pmid": "36745244",
+          "title": "Neuroprotective effect of piracetam-loaded magnetic chitosan nanoparticles against thiacloprid-induced neurotoxicity in albino rats.",
+          "year": "2023",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1007/s10787-023-01151-x",
+          "epmc_id": "MED:36745244",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36745244/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Thiacloprid (TH) is a neurotoxic agricultural insecticide and potential food contaminant. The purpose of this study was to investigate the relationship between TH exposure and memory dysfunction in rats, as well as the potential protective effect of piracetam and piracetam-loaded magnetic chitosan nanoparticles (PMC NPs). Rats were divided into five equal groups (six rats/group). The control group received saline. Group II was treated with PMC NPs at a dose level of 200 mg/kg body weight (Bwt); Group III was treated with 1/10 LD<sub>50</sub> of TH (65 mg/kg Bwt); Group IV was treated with TH (65 mg/kg Bwt) and piracetam (200 mg/kg Bwt); Group V was co-treated with TH (65 mg/kg Bwt) and PMC NPs (200 mg/kg Bwt). All animal groups were dosed daily for 6 weeks by oral gavage. Footprint analysis, hanging wire test, open field test, and Y-maze test were employed to assess behavioral deficits. Animals were euthanized, and brain tissues were analyzed for oxidative stress biomarkers, proinflammatory cytokines, and gene expression levels of glial fibrillary acidic protein (GFAP), amyloid-beta precursor protein (APP), B-cell lymphoma 2 (Bcl-2), and caspase-3. Brain and sciatic nerve tissues were used for the evaluation of histopathological changes and immunohistochemical expression of tau protein and nuclear factor kappa B (NF-κB), respectively. The results revealed that TH-treated rats suffered from oxidative damage and inflammatory effect on the central and peripheral nerves. The administration of PMC NPs considerably protected against TH-induced neuronal damage, increased antioxidant enzyme activity, decreased inflammatory markers, and improved behavioral performance than the group treated with piracetam. The neuroprotective effect of PMC NPs was mediated through the inhibition of GFAP, APP, caspase-3, Tau, and NF-κB gene expression with induction of Bcl-2 expression. In conclusion, TH could induce oxidative stress, inflammatory and neurobehavior impairment in rats. However, PMC NPs administration markedly mitigated TH-induced brain toxicity, possibly via oxidative and inflammatory modulation rather than using piracetam alone.",
+          "journal": "Inflammopharmacology"
+        },
+        {
+          "id": "pmid:34909678",
+          "pmid": "34909678",
+          "title": "Protective effect of co-administration of caffeine and piracetam on scopolamine-induced amnesia in Wistar rats.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.crphar.2021.100052",
+          "epmc_id": "MED:34909678",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34909678/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Alzheimer's disease is a cerebrovascular disorder characterized by progressive loss of the mental capabilities. The novel therapeutic agent piracetam is a cyclic derivative of γ-aminobutyric acid and one of the oldest recognized synthetic nootropics. Piracetam improves cognitive function without stimulation or sedation. Caffeine is a central nervous system stimulant with nootropic activity. Caffeine promotes the performance of tasks that involve working memory to a limited extent, and it also retards cognitive decline in healthy individuals. The present study aimed to determine the protective effect of co-administering piracetam and caffeine on scopolamine-induced amnesia in rats. Pre-treatment with caffeine and piracetam decreased scopolamine-induced cognitive damage and amnesia. The preventive response was demonstrated by an improved learning tendency. The mechanism responsible for these effects requires further investigation. The co-administration of caffeine and piracetam has potential as a novel therapeutic strategy for combating amnesia.",
+          "journal": "Current research in pharmacology and drug discovery"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 12,
+        "n_total": 12
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For memory, Piracetam has moderate human evidence (12 graded studies).",
+      "weighted_score": {
+        "final_score": 82.5,
+        "confidence_interval": {
+          "lower": 62.6,
+          "upper": 100.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 12,
+          "high_tier_points": 211.139,
+          "low_tier_points_pre_cap": 11.358,
+          "low_tier_points_post_cap": 11.358,
+          "low_tier_cap_applied": false,
+          "total_points_R": 222.497,
+          "scaled_base_score": 82.538,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 10.1935,
+          "se_consistency_component": 5.6811,
+          "se_thinness_component": 4.5124,
+          "margin_of_error": 19.979,
+          "human_sample_total": 1104,
+          "studies_missing_sample_size": 5,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "5 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.167,
+              "points": 105.038,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.222,
+              "points": 21.988,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 20.914,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.237,
+              "points": 22.265,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.699,
+              "C_k": 1.268,
+              "points": 96.91,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.26,
+              "points": 22.677,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 19.288,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.278,
+              "C_k": 1.219,
+              "points": 28.053,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 4.286,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.117,
+              "points": 4.467,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.176,
+              "points": 4.706,
+              "supportive": true
+            },
+            {
+              "idx": 11,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la memoria, Piracetam tiene evidencia humana moderada (12 estudios calificados)."
+    },
+    {
+      "outcome": "breath-holding spells",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 5,
+      "grade_reasons": [
+        "Precision: ~487 participants verified across 2 of 5 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified — held at moderate."
+      ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
         "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 11,
+        "n_human_studies": 5,
         "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:3305591",
-        "PMID:3900148",
-        "PMID:6494395",
-        "PMID:3522507",
-        "PMID:1765729",
-        "PMID:3522510",
-        "PMID:3881545",
-        "PMID:18315783",
-        "PMID:3522509",
-        "PMID:3685231",
-        "PMID:6828622",
-        "PMID:6512121"
+        "PMID:39692893",
+        "PMID:22302459",
+        "PMID:37651975",
+        "PMID:38733854",
+        "PMID:35127574"
       ],
       "studies": [
         {
-          "pmid": "1765729",
-          "title": "A trial of piracetam in two subgroups of students with dyslexia enrolled in summer tutoring.",
-          "year": "1991",
+          "id": "pmid:39692893",
+          "pmid": "39692893",
+          "title": "Efficacy of piracetam in children with breath-holding spells: a systematic review and meta-analysis.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 437,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39692893/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "A number of randomized-controlled trials (RCTs) have been conducted comparing the efficacy of piracetam with placebo and other medications in children with breath-holding spells (BHS). However, no systematic review has yet collated all this evidence. All RCTs comparing the efficacy and/or safety of piracetam with placebo or other medications in children with BHS were included. The pooled estimates were compared for the number of participants with a favorable response, the change in monthly frequency of BHS, compliance, and adverse effects in both groups. The ROB 2.0 tool was used to assess the risk of bias, and the GRADE system was used to determine the certainty of the collated evidence. We included 5 RCTs (437 participants) in the review. Piracetam group had significantly more participants with favorable responses at 1, 2 and 3 months after randomization, as compared to placebo group (RR: 6.5 (95% CI-1.8-23.2), I2 = 75%, p = 0.004, RR: 4.7 (95% CI-3.3-6.7), I2 = 49%, p < 0.0001, RR: 5.4 (95% CI-3.4-8.5), I2 = 0%, p < 0.0001 respectively). Number of participants with complete response or total cessation of attacks was more in the piracetam group compared to placebo (RR: 5.7 (95% CI-1.4-23.2), I2 = 88%, p = 0.01). Change in the average number of BHS was significantly more in the piracetam group, as compared to the placebo group (mean difference-4.9 (95% CI-0.7-9.0), I2 = 99%, p = 0.02). Number of participants with treatment-emergent adverse effects were comparable in both piracetam and placebo groups (RR: 1.9 (95% CI-0.5-7.6), I",
+          "journal": "European journal of pediatrics"
+        },
+        {
+          "id": "pmid:37651975",
+          "pmid": "37651975",
+          "title": "Docosahexaenoic Acid Plus Piracetam Versus Piracetam Alone for Treatment of Breath-Holding Spells in Children: A Randomized Clinical Trial.",
+          "year": "2023",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": 50,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37651975/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Piracetam is the most widely used drug in breath-holding spells (BHS); however, its efficacy might not be satisfying to parents. This study aimed to compare the efficacy of docosahexaenoic acid (DHA) plus piracetam with piracetam alone in reducing the frequency and severity of BHS in infants and preschool children. This randomized clinical trial included two groups diagnosed with BHS. Group I included 50 patients who received DHA plus piracetam. Group II (control group) included 50 children who were managed with piracetam plus a placebo. Children were re-evaluated at one, three, and six months after treatment. Occurrences of BHS and drug side effects were recorded. The primary outcome was to evaluate the effect of the combined treatment of piracetam and DHA on the frequency and severity of spells. BHS were reported in only 16% of children six months after treatment with piracetam and DHA compared with 50% of those treated with piracetam only (P value = 0.001). DHA plus piracetam is more effective than piracetam alone in decreasing the frequency and severity of BHS in children.",
+          "journal": "Pediatric neurology"
         },
         {
-          "pmid": "3305591",
-          "title": "Piracetam and dyslexia: effects on reading tests.",
-          "year": "1987",
+          "id": "pmid:35127574",
+          "pmid": "35127574",
+          "title": "The Comparison of Levetiracetam and Piracetam Effectiveness on Breath-Holding Spells in Children: A Randomized Controlled Clinical Trial.",
+          "year": "2021",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": "10.4103/abr.abr_234_20",
+          "epmc_id": "MED:35127574",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35127574/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>We aimed to compare the effectiveness of Levetiracetam and Piracetam on the severity and frequency of spells in children with severe breath-holding spells (BHS), i.e. bening, paroxysmal, and nonepileptic events that are common in early childhood.<h4>Materials and methods</h4>This study is a randomized controlled clinical trial in 71 children from 6 months to 6 years of age with BHS. They were randomly assigned to the two study groups (Levetiracetam and Piracetam group). The frequency and severity of BHS and the response to treatment were recorded on monthly visits during our 3 months follow-up.<h4>Results</h4>There was a significant decline in the average number of frequency of spells before and after 3 months of treatment in each group in this study. Levetiracetam had significant effects on the average incidence of the loss of consciousness and seizure-like movements in our study, while Piracetam had no significant effect on the loss of consciousness. Our result showed better response in the Levetiracetam group (88.9% partial or complete response after treatment) compared with the Piracetam group (77.1% partial or complete response after treatment); however, it was not significant. It seems that Levetiracetam had better effect than Piracetam in some aspects in the treatment of BHS.<h4>Conclusions</h4>Both Piracetam and Levetiracetam are safe and had significant effects on the frequency of BHS in our study, however, levetiracetam showed superior effects on the severity of BHS.",
+          "journal": "Advanced biomedical research"
         },
         {
-          "pmid": "3685231",
-          "title": "The effects of piracetam upon visual event-related potentials in dyslexic children.",
-          "year": "1987",
+          "id": "pmid:22302459",
+          "pmid": "22302459",
+          "title": "Double-blind, placebo-controlled trial on the effect of piracetam on breath-holding spells.",
+          "year": "2012",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22302459/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Breath-holding spells (BHS) are apparently frightening events occurring in otherwise healthy children.The aim of this study was to evaluate the efficacy of piracetam in the treatment of breath-holding spells. Forty patients with BHS (who were classified into two groups)were involved in a double-blinded placebo-controlled prospective study. Piracetam was given to group A while group B received placebo. Patients were followed monthly for a total period of 4 months. The numbers of attacks/month before and monthly after treatment were documented, and the overall number of attacks/month after treatment was calculated in both groups. The median number of attacks/month before treatment in the two groups was 5.5 and 5,respectively, while after the first month of treatment, it was 2 and 5, respectively. The median overall number of attacks/month after treatment in both groups was 1 and 5, respectively.There was a significant decline of number of attacks after piracetam treatment compared to placebo (p value<0.001). There were no reported side effects of the piracetam throughout the study period. In conclusion, piracetam is a safe and effective drug for the treatment of breath-holding spells in children.",
+          "journal": "European journal of pediatrics"
         },
         {
-          "pmid": "3522507",
-          "title": "Piracetam and event-related potentials in dyslexic males.",
-          "year": "1986",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "3522510",
-          "title": "The effect of piracetam on short- and long-term verbal retrieval in dyslexic boys.",
-          "year": "1986",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "3522509",
-          "title": "Evaluation of the efficacy of piracetam in treating information processing, reading and writing disorders in dyslexic children.",
-          "year": "1986",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "3900148",
-          "title": "The effects of piracetam in children with dyslexia.",
-          "year": "1985",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "6494395",
-          "title": "Effect of piracetam on the single word and prose reading of dyslexic children.",
-          "year": "1984",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "6828622",
-          "title": "Effects of Piracetam on dyslexic's verbal conceptualizing ability.",
-          "year": "1983",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "18315783",
-          "title": "The effect of piracetam on ataxia: clinical observations in a group of autosomal dominant cerebellar ataxia patients.",
-          "year": "2008",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "3881545",
-          "title": "Effect of Piracetam on dyslexic's reading ability.",
-          "year": "1985",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "6512121",
-          "title": "Effect of piracetam on verbal memory of dyslexic boys.",
-          "year": "1984",
+          "id": "pmid:38733854",
+          "pmid": "38733854",
+          "title": "Effect of Piracetam and Iron Treatment on Heart Rate Variability in Patients With Breath-Holding Spell.",
+          "year": "2024",
           "design": "Unclassified",
-          "population": "unknown",
-          "n": null
+          "population": "human",
+          "n": null,
+          "doi": "10.1016/j.pediatrneurol.2024.04.002",
+          "epmc_id": "MED:38733854",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38733854/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>Breath-holding spells are a benign condition primarily seen in 3% to 5% of healthy children aged between six months and five years. Although no specific treatment is recommended due to its benign nature, iron and piracetam are used in severe or recurrent cases. We planned to compare the heart rate variability (HRV) before and after treatment with 24-hour Holter monitoring in patients receiving iron and piracetam treatment and investigate the treatment's effectiveness.<h4>Methods</h4>Twenty-five patients who applied to the outpatient clinic between 2013 and 2015 due to breath-holding spells were included in the study. The patients who received piracetam and iron therapy and underwent 24-hour rhythm Holter monitoring were evaluated retrospectively.<h4>Results</h4>Fourteen (56%) of these patients were evaluated as having cyanotic-type and 11 (44%) patients were assessed as having pale-type breath-holding spells. A significant difference was found only between hourly peak heart rate and total power in the group receiving iron treatment. Significant differences were also found among the minimum heart rate, mean heart rate, the standard deviation of RR intervals, the mean square root of the sum of the squares of their difference between adjacent RR intervals, spectpow, and low frequency before and after the treatment in the patients who started piracetam treatment (P < 0.05).<h4>Conclusions</h4>Our study is critical as it is the first to investigate the effects of treatment options on various HRV in patients with breath-holding spells. There were statistically significant changes in HRV parameters in patients receiving piracetam, and the number of attacks decreased significantly. Piracetam treatment contributes positively to the breath-holding spell with regard to efficacy and HRV, therefore it can be used to treat breath-holding spells.",
+          "journal": "Pediatric neurology"
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "22302459",
+            "metric": "mean_diff",
+            "value": 4,
+            "ci_low": 0.0,
+            "ci_high": 8.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs placebo",
+            "direction": "benefit",
+            "quote": "The median overall number of attacks/month after treatment in both groups was 1 and 5, respectively"
+          }
+        ],
+        "n_not_reported": 4,
+        "n_total": 5
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For dyslexia, Piracetam has moderate human evidence (12 studies)."
+      "summary": "For breath-holding spells, Piracetam has moderate human evidence (5 graded studies).",
+      "weighted_score": {
+        "final_score": 67.3,
+        "confidence_interval": {
+          "lower": 36.5,
+          "upper": 98.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 5,
+          "high_tier_points": 129.291,
+          "low_tier_points_pre_cap": 4.181,
+          "low_tier_points_post_cap": 4.181,
+          "low_tier_cap_applied": false,
+          "total_points_R": 133.472,
+          "scaled_base_score": 67.279,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 15.6885,
+          "se_consistency_component": 8.8983,
+          "se_thinness_component": 6.7902,
+          "margin_of_error": 30.749,
+          "human_sample_total": 487,
+          "studies_missing_sample_size": 2,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "2 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.072,
+              "points": 96.441,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.176,
+              "points": 21.175,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.199,
+              "C_k": 1.09,
+              "points": 23.53,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.117,
+              "points": 20.101,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para los episodios de apnea voluntaria, Piracetam tiene evidencia humana moderada (5 estudios calificados)."
     }
   ],
   "effects_established": [
     "cognition",
     "stroke recovery",
-    "aphasia",
-    "dyslexia"
+    "memory",
+    "breath-holding spells"
   ],
   "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
-  "generated_by": "clarity-engine-v2",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T01:30:30.233580+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "cognition",
+  "best_tier": "Moderate",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Moderate"
+  ],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 4843,
@@ -547,75 +1596,185 @@
       "Normabrain"
     ]
   },
-  "_cached_at": 1787607328.190017,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.835,
+    "europepmc_s": 3.828,
+    "retrieval_total_s": 3.83,
+    "n_studies": 250,
+    "normalization_s": 0.09,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 79.8,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 90.4,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789176630.234432,
   "explanation": {
-    "what_it_is": "Piracetam (2-oxo-1-pyrrolidin-1-yl acetamide, molecular formula C\u2086H\u2081\u2080N\u2082O\u2082) is a synthetic nootropic compound first developed in the 1970s. It is a cyclic derivative of the neurotransmitter GABA, though it does not directly bind GABA receptors. People typically take it orally in tablet or powder form, with doses ranging from 1.2 to 4.8 grams daily in clinical studies.",
-    "how_it_works": "Piracetam's precise mechanism of action remains incompletely understood, but evidence suggests it influences neuronal membrane fluidity and enhances communication between brain hemispheres, possibly through effects on phospholipid metabolism and ion transport. It may increase acetylcholine availability and modulate cerebral blood flow, which could help preserve or restore neural function after injury. The compound appears to stabilize nerve cell membranes and may reduce the spread of abnormal electrical activity\u2014effects potentially beneficial in stroke, cognitive decline, and reading disorders. Unlike many nootropics, piracetam does not act as a sedative or stimulant, making it a mild neuroenhancer rather than a psychoactive drug.",
+    "what_it_is_line": "Small water-soluble molecule originally designed to enhance brain cell function and communication.",
+    "what_it_is": "Piracetam is a synthetic compound (chemical formula C₆H₁₀N₂O₂) first created in the 1970s to study how small molecules affect brain function. It is not found naturally in the body. People typically take it as an oral tablet or capsule, and it is sometimes given intravenously in clinical settings. It belongs to a class of compounds called nootropics — substances thought to enhance mental processes.",
+    "how_it_works_line": "Mechanism in humans remains unclear; likely affects cell membranes and communication between brain cells.",
+    "how_it_works": "Piracetam's precise mechanism of action is not fully established. In laboratory and animal studies, it appears to influence the fluidity and function of cell membranes (the outer layers of cells) and may affect how neurons (brain cells) communicate with each other. Some research suggests it might influence neurotransmitters — chemical messengers that carry signals between brain cells — though the exact pathways are not well characterized in humans. Because it is water-loving (XLogP –1.3), it dissolves easily in blood and can cross from the bloodstream into the brain. The clinical effects observed in trials may emerge from cumulative changes to cell health and communication rather than a single dominant mechanism.",
+    "safety_line": "Mostly well-tolerated in short-term trials; long-term safety and specific interactions remain incompletely tested.",
+    "safety_detail": "The trials retrieved show few serious adverse events reported, and mild side effects (gastrointestinal upset, insomnia, hyperactivity in some patients) appear infrequent. However, most studies are short-term (weeks to a few months), and many do not systematically report side effects or exclude particular populations. The lack of reported harms does not establish safety — it reflects incomplete monitoring and limited scope.",
+    "safety_bullets": [
+      "Long-term safety (beyond months) — not adequately tested in retrieved trials; duration of most studies is short.",
+      "Drug interactions — no robust data on interactions with other medications retrieved; potential effects unknown.",
+      "Pregnancy and breastfeeding — not included in retrieved trials; safety entirely untested in these populations.",
+      "Kidney disease — excluded from nearly all trials, so efficacy and tolerability in renal impairment are unknown."
+    ],
+    "chem_meaning": "Piracetam is a small, water-soluble molecule (MW 142 — smaller than most drugs), which means it dissolves readily in blood and can be absorbed orally without needing special delivery systems. Its negative lipophilicity (XLogP –1.3) indicates it is quite hydrophilic (water-loving), making it easy for the body to transport but potentially harder to cross fatty barriers like cell membranes; however, it does accumulate in brain tissue in animal studies, suggesting active or passive uptake into the central nervous system.",
     "outcome_detail": [
       {
         "outcome": "cognition",
         "grade": "Moderate",
-        "what_studies_show": "A 2024 systematic review and meta-analysis of cognitive effects in adults with memory impairment (n=886), along with earlier meta-analyses from 2018 (n=1355, examining neuroprotection in traumatic brain injury), 2016, 2002, and systematic reviews from 2000\u20132001, collectively examined piracetam's impact on general cognitive function and dementia-related decline. Study designs included randomized controlled trials and pooled analyses; the retrieved studies report modest benefits in memory and cognitive processing, though effect sizes and duration of benefit vary across trials.",
-        "why_this_grade": "The evidence base comprises 5 primary human studies and 6 pooled analyses (meta-analyses and systematic reviews), which falls short of the volume expected for a Strong grade. Across verified abstracts, sample sizes total approximately 2,618 participants, but many abstracts omit exact numbers, limiting precision in assessing true effect magnitude. The Moderate grade reflects genuine human trial data supporting cognition outcomes, yet acknowledges the limited number of independent primary studies and incomplete reporting."
+        "what_studies_show": "A 2024 systematic review and meta-analysis of 886 adults with memory impairment found piracetam produced measurable improvements in cognitive function. Earlier randomized trials in patients undergoing cardiac surgery (2008, n=120; 2006, n=98) and open-heart surgery (2011, n=88) reported that piracetam reduced cognitive decline after the procedure. A 2009 RCT found it improved children's memory recovery after general anesthesia. Across 14 human and 8 animal studies in the records, cognition showed consistent benefit in specific contexts (postoperative recovery, memory impairment in adults), but the effect sizes and durability vary.",
+        "why_this_grade": "Multiple RCTs in humans show benefit in defined populations, supported by a meta-analysis; however, only one systematic review exists and its findings are not yet independently replicated, limiting confidence to Moderate."
       },
       {
         "outcome": "stroke recovery",
         "grade": "Moderate",
-        "what_studies_show": "Meta-analyses from 2012 (n=1002, acute ischaemic stroke), 2008, 2006, 2002, and 2000 (n=501), alongside systematic reviews, collectively evaluated piracetam's efficacy in acute ischaemic stroke and post-stroke recovery. A 2016 meta-analysis (n=261) overlapped with aphasia recovery outcomes. The pooled evidence suggests piracetam confers measurable benefits on functional recovery after stroke, though the magnitude and clinical significance remain modest.",
-        "why_this_grade": "Only 2 primary human studies and 8 pooled analyses were retrieved\u2014a limited set of independent investigations. Sample sizes are substantial (over 1,000 participants in larger trials), but the reliance on meta-analyses rather than new primary RCTs limits the current evidence tier. Results support benefit in stroke recovery, but the evidence base is not large or diverse enough for a Strong rating."
+        "what_studies_show": "A 2006 systematic review of piracetam in acute ischemic stroke found evidence of benefit. Smaller RCTs focusing on post-stroke aphasia (language loss) — including a 2001 trial (n=24) and 2000 trial (n=12) on brain activation and aphasia rehabilitation, and a 1997 pilot (n=50) testing piracetam as an adjuvant to language therapy — reported improvements in speech recovery and language function. The 2006 RCT on coronary artery bypass (n=98) also included stroke-adjacent outcomes.",
+        "why_this_grade": "Human trials exist and a systematic review was published, but consistency is limited to a single meta-analysis with no independent replication, and sample sizes in individual studies are small. Animal evidence is sparse (1 of 8 studies)."
       },
       {
-        "outcome": "aphasia",
+        "outcome": "memory",
         "grade": "Moderate",
-        "what_studies_show": "Four randomized controlled trials (1994, n=158; 1997, n=50; 2000, n=12; 2001, n=24) and two systematic reviews (2001) examined piracetam as an adjuvant to speech therapy in post-stroke aphasia. The 2016 meta-analysis (n=261) also synthesized these and related data. Individual trials reported improvements in language recovery metrics and brain activation patterns (via event-related potentials and blood flow imaging), particularly when piracetam was combined with speech therapy.",
-        "why_this_grade": "The evidence includes 4 primary RCTs and 2 pooled analyses, but sample sizes in individual trials are small (12\u2013158 participants), and the total retrieved evidence base is modest. The studies do show human efficacy for aphasia recovery, meeting the threshold for Moderate, yet the limited number of primary trials and small participant counts prevent a Strong classification."
+        "what_studies_show": "A 2024 meta-analysis of 886 adults with memory impairment found piracetam improved memory performance. Earlier trials show benefit in specific contexts: a 2009 RCT in children recovering from anesthesia, a 2002 RCT on memory disturbance after electroconvulsive therapy (ECT), a 1994 RCT (n=158) on recovery after stroke, a 1987 RCT on reading in dyslexia, and a 1983 RCT in elderly psychiatric patients with mild cognitive impairment. Across 8 human and 4 animal studies, memory improvements appear most robust in recovery scenarios (post-anesthesia, post-ECT, post-stroke).",
+        "why_this_grade": "Human trials and a meta-analysis support memory benefit, but only one systematic review exists with no independent confirmation, and most individual studies are small or do not report sample sizes."
       },
       {
-        "outcome": "dyslexia",
+        "outcome": "breath-holding spells",
         "grade": "Moderate",
-        "what_studies_show": "Eleven randomized controlled trials spanning 1986\u20131991 investigated piracetam in dyslexic children and students, examining effects on reading ability, verbal retrieval, and electrophysiological measures (event-related potentials). Trials measured outcomes including reading performance, information processing speed, and neurophysiological markers of brain function. The retrieved studies collectively reported improvements in reading-related measures and processing in dyslexic populations.",
-        "why_this_grade": "Although 11 human RCTs were identified, the abstracts provided did not include exact sample sizes for most studies, preventing precise verification of total participant numbers and limiting confidence in effect-size estimation. The evidence is solidly human-based and spans multiple independent trials over a 5-year period, supporting a Moderate grade, but imprecision in reported sample sizes caps the rating below Strong."
+        "what_studies_show": "A 2024 systematic review and meta-analysis of 437 children found piracetam reduced the frequency and severity of breath-holding spells. A 2023 RCT (n=50) compared piracetam alone to piracetam with docosahexaenoic acid (fish oil), both showing benefit. A 2021 RCT compared piracetam to levetiracetam (an anticonvulsant), and a 2012 double-blind placebo-controlled trial also showed benefit. A 2024 unclassified study examined effects on heart rate variability in children with breath-holding spells. Across 5 human studies, all in children, piracetam appeared effective at reducing spell occurrence.",
+        "why_this_grade": "All 5 records are human trials in a specific pediatric population with consistent positive findings; however, only one meta-analysis exists and is not independently replicated, and no animal data support the mechanism in this context."
       }
     ],
-    "evidence_base": "The evidence base for piracetam is exclusively human; no animal studies were retrieved among the records provided. The literature is dominated by randomized controlled trials (particularly for dyslexia and aphasia) and meta-analyses or systematic reviews synthesizing older primary studies (especially for cognition and stroke recovery). Most primary trials were conducted in the 1990s\u2013early 2000s, with more recent meta-analyses aggregating and re-examining those results through 2024. This pattern\u2014older primary data summarized repeatedly in modern reviews\u2014means the current evidence is robust in breadth but relies on trial designs and populations established decades ago; newer large-scale trials for piracetam appear limited in the retrieved records.",
-    "emerging_research": "Recent systematic reviews (2024) continue to examine piracetam's cognitive effects in memory impairment using updated methodology, though no novel mechanisms or patient populations emerged from the retrieved abstracts. Most research activity appears concentrated in synthesizing and re-evaluating existing trial data rather than launching new primary investigations. Future directions visible in the literature include more precise quantification of benefit duration and exploration of combination therapies (e.g., piracetam plus speech or behavioral therapy), though these remain largely preliminary.",
-    "open_questions": "Among the studies retrieved here, sample sizes in individual aphasia and dyslexia trials are small (12\u2013158 participants), and the retrieval provides limited detail on long-term follow-up\u2014most trials appear to measure outcomes over weeks to a few months rather than years. The retrieved records do not clearly show whether piracetam benefits apply equally across age groups, disease severities, or comorbidity profiles; populations in the studies span children with dyslexia to older adults with dementia, but direct comparisons are not evident in the abstracts provided. Note: this characterizes only the ~40 abstracts supplied per outcome; the full literature may include additional trials or longer-term data not represented in this sample.",
-    "caveats": "Piracetam is not approved by the FDA in the United States, though it is available in many other countries and is sold as a dietary supplement in the US. Quality and purity can vary substantially between suppliers; purchasers should verify third-party testing. The compound is generally well tolerated with few reported adverse effects, but it can interact with anticoagulants (warfarin) and may potentiate other drugs; anyone on blood thinners or multiple medications should consult a healthcare provider. Pregnant or nursing women and those with severe renal impairment should avoid piracetam pending further safety data.",
+    "evidence_base": "The evidence for piracetam rests entirely on human trials and systematic reviews; no large, modern multi-center studies are present in the records. Most trials are small to medium-sized (n=12 to n=886 per trial), with many older studies (1980s–2000s) and a few recent systematic reviews (2024). Across all outcomes, only one meta-analysis per outcome exists, with no independent replication. This limits confidence to Moderate: the trials show consistent benefit in specific populations (cardiac surgery, stroke recovery, memory impairment, childhood breath-holding spells), but the evidence rests on a thin layer of primary studies and a single synthetic summary per outcome.",
+    "open_questions": "The retrieved records do not clarify the mechanism of action in humans or identify which patients benefit most. Nearly all trials involve either short-term recovery (postoperative, post-anesthesia) or specific pediatric or geriatric populations; healthy adults and long-term preventive use are not well represented. No studies of sufficient duration or size were retrieved to establish whether benefits persist beyond months, and excluded populations (pregnancy, kidney disease, adolescence) are entirely untested. Sample size information is missing from most abstracts, so the true precision of the evidence base is unknown.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence base for piracetam rests almost entirely on small RCTs and meta-analyses from 15\u201340 years ago; no primary outcome shows a directly extractable pooled effect, and recent large trials are absent.",
+    "headline": "Each outcome relies on a single meta-analysis to support the 'Moderate' grade, with no independent replication of those conclusions and most individual trials too small or incompletely reported to verify the pooled effect.",
     "concerns": [
       {
-        "issue": "Pooled effect entirely non-extractable",
-        "detail": "Across all four outcomes (cognition, stroke recovery, aphasia, dyslexia), the records state 'pooled effect: none extractable.' This means the grading engine could not synthesize a summary statistic from the retrieved evidence. For outcomes graded Moderate based on 2\u20135 primary RCTs plus multiple meta-analyses, the inability to extract or report a pooled direction and magnitude of effect is a critical transparency problem\u2014readers cannot verify what the aggregate data actually show.",
+        "issue": "Single meta-analysis per outcome, no replication",
+        "detail": "All four outcomes (cognition, stroke recovery, memory, breath-holding spells) are explicitly noted by the engine as having only one meta-analysis/systematic review, with no independently replicated conclusions. This means the entire 'Moderate' grade for each outcome depends on a single synthesis study. If that meta-analysis has methodological flaws (selective inclusion, bias assessment errors, or outcome cherry-picking), the grade collapses.",
         "severity": "high"
       },
       {
-        "issue": "Heavy reliance on meta-analyses of small, dated trials",
-        "detail": "For cognition and stroke recovery, 6 of 10\u201311 studies are meta-analyses or systematic reviews published 2000\u20132024, many summarizing RCTs from the 1980s\u20131990s. The primary RCT evidence is sparse (2 for stroke recovery, 5 for cognition). A 2012 meta-analysis on stroke (n=1002) and 2024 systematic review on cognition (n=886) are the newest primary syntheses, but the underlying trial populations are much older. If methodological standards, outcome measurement, or publication bias have shifted over decades, the pooled estimates may not reflect modern evidence quality.",
+        "issue": "Severe reporting incompleteness masks true sample size",
+        "detail": "For cognition, only 9 of 22 studies report sample size; for memory, only 3 of 12 report n; for stroke recovery, 6 of 8 report n. The engine notes that 'most abstracts omit sample size, so the true total is substantially larger,' but this also means the effect size estimates in the retrieved meta-analyses may be based on incomplete denominator information or selective reporting of larger studies. Without all raw data, we cannot verify whether the pooled estimates are biased.",
         "severity": "high"
       },
       {
-        "issue": "Dyslexia evidence lacks any reported sample sizes",
-        "detail": "For dyslexia (12 trials retrieved, mostly RCTs from 1983\u20132008), the records state 'sample sizes: none extractable from these abstracts.' This means precision cannot be verified from the available data. A single trial in this set could have n=500 and another n=10; without sizes, the heterogeneity and true cumulative evidence weight are opaque. The engine itself capped the grade below top tier specifically because 'precision is unconfirmed.'",
+        "issue": "Majority of individual trials are very small",
+        "detail": "Across cognition (median n=120 but median reflects only 9 reported; many RCTs are n<100), stroke recovery (median n=50), and memory (median n=158, but only 3 trials reported), sample sizes cluster at 12–60 participants in several trials. Six of the nine reported cognition trials are ≤98 participants. Small trials are prone to random variation, publication bias, and inflated effect sizes; a single large outlier (e.g., the 2024 886-participant systematic review) can dominate but also mask heterogeneity.",
         "severity": "high"
       },
       {
-        "issue": "Primary RCT sample sizes extremely small for some outcomes",
-        "detail": "Aphasia has primary RCTs with n=12 and n=24; cognition has one from 1986 with n=18; dyslexia trials have unknown but likely small ns. For outcomes where the smallest primary studies fall below n=20 and no recent large confirmatory RCT exists, a single methodological flaw (e.g., allocation bias, selective outcome reporting) in the largest contributing trial could substantially shift belief. The 2016 aphasia meta-analysis (n=261) is the largest pooled estimate, but it aggregates small, heterogeneous trials.",
+        "issue": "Dated literature with large gap in recent replication",
+        "detail": "For cognition and memory, the earliest trial is 1977 and 1978 respectively, creating a 25–50 year span. Most recent primary RCTs predate 2012; the 2024 and 2026 entries appear to be systematic reviews and animal studies, not new RCTs. This raises concern that the original efficacy claims are not being independently tested in modern, well-controlled conditions, and older trials may not meet current standards for blinding, baseline balance, or outcome registration.",
         "severity": "moderate"
       },
       {
-        "issue": "Literature aged, no recent large primary trials",
-        "detail": "The most recent primary RCTs for cognition, stroke recovery, and aphasia are from 2006\u20132016. For dyslexia, the last trial in the retrieved set is 2008. The median year across all outcomes is in the late 1990s\u2013early 2000s. Modern pragmatic, large-scale RCTs examining piracetam against contemporary comparators in contemporary populations are not present in these records. This creates vulnerability to historical bias\u2014older trials may reflect different patient selection, concomitant care, or outcome definitions than current practice would sustain.",
+        "issue": "Outcome heterogeneity within 'cognition' label",
+        "detail": "The cognition outcome bundles stroke recovery, post-anaesthesia memory, post-ECT cognitive disturbance, dyslexia, and post-concussion syndrome into one grade. These are mechanistically distinct populations with different baselines and recovery trajectories. Pooling them obscures whether piracetam benefits a specific sub-population (e.g., post-stroke aphasia) or broadly, and inflates the appearance of consistency across disparate conditions.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The records contain only clinical outcomes (cognition, aphasia, stroke recovery, dyslexia) and do not report mechanistic studies. The engine does not provide information on proposed biological pathways (e.g., membrane fluidity, neuroprotection, cerebral blood flow). Without access to mechanism data from these records, it is not possible to evaluate whether piracetam's postulated biology bridges to the clinical claims. The absence of mechanism detail in the retrieved abstracts is itself notable, as it suggests the evidence base may be primarily empirical/outcome-driven rather than mechanistically grounded.",
-    "strongest_counterargument": "A skeptic would note that no primary outcome has an extractable pooled effect reported, the largest primary RCTs for stroke recovery and aphasia enrolled fewer than 100 participants (and many fewer than 50), and the literature is predominantly 15\u201340 years old with no recent confirmatory large trial. The 2012 and 2024 meta-analyses are post-hoc aggregations of small studies; if individual trials were underpowered, selectively reported, or conducted under methodological standards that would not pass modern scrutiny, the meta-analytic summary itself would be misleading without a detailed sensitivity or risk-of-bias breakdown (which is not reported here). The grade of 'Moderate' rests on the mere existence of multiple reviews, not on demonstrable consistency or magnitude of benefit.",
-    "what_would_change_the_picture": "A large (n\u2265300 per arm), recent, double-blind RCT with pre-specified primary outcomes and transparent outcome reporting would resolve the question of piracetam's efficacy in any single population. Alternatively, a high-quality systematic review with explicit risk-of-bias assessment, heterogeneity analysis, and a directly reported pooled effect size (with 95% CI and I\u00b2) across modern trials would clarify whether the existing literature supports the Moderate grade or warrants downgrade due to risk of bias and publication bias.",
+    "mechanism_check": "The proposed mechanism is not visible in the abstracts provided, so a specific leap cannot be identified. However, the outcomes claimed span cognitive enhancement, neuroprotection in trauma, and symptom suppression in breath-holding spells—mechanistically distinct endpoints. For piracetam to support all four, it would need to act via a very broad mechanism (e.g., membrane fluidity or vascular rheology), but the abstracts do not articulate how these mechanisms translate to the specific clinical outcomes observed in each trial population.",
+    "strongest_counterargument": "A skeptic would note that the entire evidence base rests on four single meta-analyses, each of which aggregates heterogeneous, mostly small, and incompletely reported RCTs from a 50-year span. The 2024 memory/cognition meta-analysis (n=886) is recent and large, but its methodology is not described in these abstracts, and the engine explicitly flags that its conclusion has not been independently replicated. The older trials (1977–2000) do not meet modern standards for pre-registration and transparent reporting, making them susceptible to bias. No pooled effect size is extractable from the records, so the magnitude of benefit is unknown—it could be clinically negligible even if statistically significant in a large but heterogeneous synthesis.",
+    "what_would_change_the_picture": "Two independent, pre-registered meta-analyses conducted by different groups using the same inclusion criteria and population, with sensitivity analyses excluding studies with unreported sample sizes or high risk of bias, would establish whether the effect is robust. Alternatively, a large, modern RCT (n ≥ 500) in a single, well-defined population (e.g., stroke-related cognitive decline) with pre-specified outcomes and transparent data release would directly test whether the 'Moderate' grade reflects true efficacy or methodological artifact.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Molécula pequeña soluble en agua diseñada originalmente para mejorar la función y comunicación de las células cerebrales.",
+    "what_it_is": "La piracetam es un compuesto sintético (fórmula química C₆H₁₀N₂O₂) creado por primera vez en los años 70 para estudiar cómo las moléculas pequeñas afectan la función cerebral. No se encuentra de forma natural en el cuerpo. Las personas típicamente la toman como tableta u cápsula oral, y a veces se administra por vía intravenosa en entornos clínicos. Pertenece a una clase de compuestos llamados nootrópicos — sustancias que se cree mejoran los procesos mentales.",
+    "how_it_works_line": "El mecanismo en humanos permanece sin claridad; probablemente afecta las membranas celulares y la comunicación entre células cerebrales.",
+    "how_it_works": "El mecanismo de acción preciso de la piracetam no está completamente establecido. En estudios de laboratorio y animales, parece influir en la fluidez y función de las membranas celulares (las capas externas de las células) y puede afectar cómo las neuronas (células cerebrales) se comunican entre sí. Algunas investigaciones sugieren que podría influir en los neurotransmisores — mensajeros químicos que transportan señales entre células cerebrales — aunque las vías exactas no están bien caracterizadas en humanos. Porque es hidrofílica (XLogP –1.3), se disuelve fácilmente en la sangre y puede cruzar del torrente sanguíneo al cerebro. Los efectos clínicos observados en los ensayos pueden surgir de cambios acumulativos en la salud celular y la comunicación en lugar de un único mecanismo dominante.",
+    "safety_line": "Generalmente bien tolerada en ensayos a corto plazo; la seguridad a largo plazo e interacciones específicas permanecen incompletamente probadas.",
+    "safety_detail": "Los ensayos recuperados muestran pocos eventos adversos serios reportados, y los efectos secundarios leves (malestar gastrointestinal, insomnio, hiperactividad en algunos pacientes) parecen poco frecuentes. Sin embargo, la mayoría de los estudios son a corto plazo (semanas a pocos meses), y muchos no reportan sistemáticamente los efectos secundarios o excluyen poblaciones particulares. La ausencia de daños reportados no establece seguridad — refleja un monitoreo incompleto y un alcance limitado.",
+    "safety_bullets": [
+      "Seguridad a largo plazo (más allá de meses) — no adecuadamente probada en los ensayos recuperados; la duración de la mayoría de los estudios es corta.",
+      "Interacciones farmacológicas — sin datos robustos sobre interacciones con otros medicamentos recuperados; los efectos potenciales son desconocidos.",
+      "Embarazo y lactancia — no incluidas en los ensayos recuperados; la seguridad está completamente sin probar en estas poblaciones.",
+      "Enfermedad renal — excluida de casi todos los ensayos, por lo que la eficacia y tolerabilidad en el deterioro renal son desconocidas."
+    ],
+    "chem_meaning": "La piracetam es una molécula pequeña soluble en agua (PM 142 — más pequeña que la mayoría de los fármacos), lo que significa que se disuelve fácilmente en la sangre y puede absorberse oralmente sin necesidad de sistemas de administración especiales. Su lipofilia negativa (XLogP –1.3) indica que es bastante hidrófila (amante del agua), lo que facilita que el cuerpo la transporte pero potencialmente dificulta el cruce de barreras grasas como las membranas celulares; sin embargo, se acumula en el tejido cerebral en estudios animales, sugiriendo un transporte activo o pasivo hacia el sistema nervioso central.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Moderada",
+        "what_studies_show": "Una revisión sistemática y metanálisis de 2024 de 886 adultos con deterioro de la memoria encontró que la piracetam produjo mejoras medibles en la función cognitiva. Ensayos aleatorizados anteriores en pacientes sometidos a cirugía cardíaca (2008, n=120; 2006, n=98) y cirugía a corazón abierto (2011, n=88) reportaron que la piracetam redujo el deterioro cognitivo después del procedimiento. Un ensayo clínico aleatorizado de 2009 encontró que mejoró la recuperación de la memoria en niños después de anestesia general. En 14 estudios humanos y 8 estudios animales en los registros, la cognición mostró beneficio consistente en contextos específicos (recuperación postoperatoria, deterioro de la memoria en adultos), pero los tamaños del efecto y la durabilidad varían.",
+        "why_this_grade": "Múltiples ensayos clínicos aleatorizados en humanos muestran beneficio en poblaciones definidas, respaldados por un metanálisis; sin embargo, solo existe una revisión sistemática y sus hallazgos aún no han sido replicados de forma independiente, limitando la confianza a Moderada.",
+        "outcome_key": "cognition"
+      },
+      {
+        "outcome": "stroke recovery",
+        "grade": "Moderada",
+        "what_studies_show": "Una revisión sistemática de 2006 sobre piracetam en accidente cerebrovascular isquémico agudo encontró evidencia de beneficio. Ensayos clínicos aleatorizados más pequeños enfocados en afasia post-accidente cerebrovascular (pérdida del lenguaje) — incluyendo un ensayo de 2001 (n=24) y un ensayo de 2000 (n=12) sobre activación cerebral y rehabilitación de la afasia, y un estudio piloto de 1997 (n=50) probando piracetam como adyuvante de la terapia del lenguaje — reportaron mejoras en la recuperación del habla y la función del lenguaje. El ensayo clínico aleatorizado de 2006 sobre cirugía de derivación coronaria (n=98) también incluyó resultados adyacentes al accidente cerebrovascular.",
+        "why_this_grade": "Existen ensayos humanos y una revisión sistemática fue publicada, pero la consistencia se limita a un único metanálisis sin replicación independiente, y los tamaños de muestra en estudios individuales son pequeños. La evidencia animal es escasa (1 de 8 estudios).",
+        "outcome_key": "stroke recovery"
+      },
+      {
+        "outcome": "memory",
+        "grade": "Moderada",
+        "what_studies_show": "Un metanálisis de 2024 de 886 adultos con deterioro de la memoria encontró que la piracetam mejoró el rendimiento de la memoria. Ensayos anteriores muestran beneficio en contextos específicos: un ensayo clínico aleatorizado de 2009 en niños recuperándose de anestesia, un ensayo clínico aleatorizado de 2002 sobre alteración de la memoria después de terapia electroconvulsiva (TEC), un ensayo clínico aleatorizado de 1994 (n=158) sobre recuperación después del accidente cerebrovascular, un ensayo clínico aleatorizado de 1987 sobre lectura en dislexia, y un ensayo clínico aleatorizado de 1983 en pacientes psiquiátricos ancianos con deterioro cognitivo leve. En 8 estudios humanos y 4 estudios animales, las mejoras en la memoria parecen más robustas en escenarios de recuperación (post-anestesia, post-TEC, post-accidente cerebrovascular).",
+        "why_this_grade": "Ensayos humanos y un metanálisis respaldan el beneficio en la memoria, pero solo existe una revisión sistemática sin confirmación independiente, y la mayoría de los estudios individuales son pequeños o no reportan tamaños de muestra.",
+        "outcome_key": "memory"
+      },
+      {
+        "outcome": "breath-holding spells",
+        "grade": "Moderada",
+        "what_studies_show": "Una revisión sistemática y metanálisis de 2024 de 437 niños encontró que la piracetam redujo la frecuencia y severidad de los episodios de apnea. Un ensayo clínico aleatorizado de 2023 (n=50) comparó piracetam solo con piracetam y ácido docosahexaenoico (aceite de pescado), ambos mostrando beneficio. Un ensayo clínico aleatorizado de 2021 comparó piracetam con levetiracetam (un anticonvulsivo), y un ensayo de doble ciego controlado con placebo de 2012 también mostró beneficio. Un estudio sin clasificar de 2024 examinó los efectos sobre la variabilidad de la frecuencia cardíaca en niños con episodios de apnea. En 5 estudios humanos, todos en niños, la piracetam pareció efectiva en reducir la ocurrencia de episodios.",
+        "why_this_grade": "Los 5 registros son ensayos humanos en una población pediátrica específica con hallazgos positivos consistentes; sin embargo, solo existe un metanálisis y no ha sido replicado de forma independiente, y no hay datos animales que respalden el mecanismo en este contexto.",
+        "outcome_key": "breath-holding spells"
+      }
+    ],
+    "evidence_base": "La evidencia para la piracetam se basa completamente en ensayos humanos y revisiones sistemáticas; no hay estudios grandes y modernos multicéntricos presentes en los registros. La mayoría de los ensayos son de tamaño pequeño a mediano (n=12 a n=886 por ensayo), con muchos estudios más antiguos (años 80–2000) y algunas revisiones sistemáticas recientes (2024). En todos los resultados, solo existe un metanálisis por resultado, sin replicación independiente. Esto limita la confianza a Moderada: los ensayos muestran beneficio consistente en poblaciones específicas (cirugía cardíaca, recuperación de accidente cerebrovascular, deterioro de la memoria, episodios de apnea infantil), pero la evidencia se basa en una capa delgada de estudios primarios y un único resumen sintético por resultado.",
+    "open_questions": "Los registros recuperados no clarifican el mecanismo de acción en humanos ni identifican qué pacientes se benefician más. Casi todos los ensayos implican recuperación a corto plazo (postoperatoria, post-anestesia) o poblaciones pediátricas o geriátricas específicas; adultos sanos y uso preventivo a largo plazo no están bien representados. No se recuperaron estudios de duración o tamaño suficiente para establecer si los beneficios persisten más allá de meses, y las poblaciones excluidas (embarazo, enfermedad renal, adolescencia) están completamente sin probar. La información del tamaño de muestra falta en la mayoría de los resúmenes, por lo que la verdadera precisión de la base de evidencia es desconocida.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "Cada resultado se basa en un único metanálisis para sustentar la calificación 'Moderada', sin replicación independiente de esas conclusiones y la mayoría de los ensayos individuales demasiado pequeños o reportados incompletamente para verificar el efecto agrupado.",
+    "concerns": [
+      {
+        "issue": "Un único metanálisis por resultado, sin replicación",
+        "detail": "Los cuatro resultados (cognición, recuperación del accidente cerebrovascular, memoria, crisis de apnea) están explícitamente señalados por el motor como teniendo solo un metanálisis/revisión sistemática, sin conclusiones replicadas independientemente. Esto significa que la calificación 'Moderada' para cada resultado depende de un único estudio sintetizado. Si ese metanálisis tiene defectos metodológicos (inclusión selectiva, errores en la evaluación de sesgos, o selección de resultados), la calificación se desmorona.",
+        "severity": "high"
+      },
+      {
+        "issue": "Incompletitud severa del reporte enmascara el verdadero tamaño de muestra",
+        "detail": "Para cognición, solo 9 de 22 estudios reportan tamaño de muestra; para memoria, solo 3 de 12 reportan n; para recuperación del accidente cerebrovascular, 6 de 8 reportan n. El motor señala que 'la mayoría de resúmenes omiten tamaño de muestra, por lo que el total verdadero es sustancialmente mayor', pero esto también significa que las estimaciones de tamaño de efecto en los metanálisis recuperados pueden estar basadas en información incompleta del denominador o reporte selectivo de estudios más grandes. Sin todos los datos crudos, no podemos verificar si las estimaciones agrupadas están sesgadas.",
+        "severity": "high"
+      },
+      {
+        "issue": "La mayoría de los ensayos individuales son muy pequeños",
+        "detail": "En cognición (mediana n=120 pero la mediana refleja solo 9 reportados; muchos ECA son n<100), recuperación del accidente cerebrovascular (mediana n=50), y memoria (mediana n=158, pero solo 3 ensayos reportados), los tamaños de muestra se agrupan en 12–60 participantes en varios ensayos. Seis de los nueve ensayos de cognición reportados tienen ≤98 participantes. Los ensayos pequeños son propensos a variación aleatoria, sesgo de publicación y tamaños de efecto inflados; un único valor atípico grande (p. ej., la revisión sistemática de 2024 con 886 participantes) puede dominar pero también enmascarar heterogeneidad.",
+        "severity": "high"
+      },
+      {
+        "issue": "Literatura anticuada con gran brecha en replicación reciente",
+        "detail": "Para cognición y memoria, el ensayo más antiguo es 1977 y 1978 respectivamente, creando un lapso de 25–50 años. La mayoría de ECA primarios recientes son anteriores a 2012; las entradas de 2024 y 2026 parecen ser revisiones sistemáticas y estudios en animales, no nuevos ECA. Esto genera preocupación de que las afirmaciones originales de eficacia no estén siendo evaluadas independientemente en condiciones modernas y bien controladas, y los ensayos más antiguos pueden no cumplir con los estándares actuales de cegamiento, balance basal o registro de resultados.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Heterogeneidad de resultados dentro de la etiqueta 'cognición'",
+        "detail": "El resultado cognición agrupa recuperación del accidente cerebrovascular, memoria post-anestesia, perturbación cognitiva post-ECT, dislexia y síndrome post-conmoción en una calificación. Estas son poblaciones mecánicamente distintas con líneas basales y trayectorias de recuperación diferentes. Agruparlas oscurece si el piracetam beneficia a una sub-población específica (p. ej., afasia post-accidente cerebrovascular) o ampliamente, e infla la apariencia de consistencia en condiciones dispares.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "El mecanismo propuesto no es visible en los resúmenes proporcionados, por lo que no se puede identificar un salto específico. Sin embargo, los resultados reivindicados abarcan mejora cognitiva, neuroprotección en trauma y supresión de síntomas en crisis de apnea—puntos finales mecánicamente distintos. Para que el piracetam apoye los cuatro, necesitaría actuar a través de un mecanismo muy amplio (p. ej., fluidez de membrana o reología vascular), pero los resúmenes no articulan cómo estos mecanismos se traducen en los resultados clínicos específicos observados en cada población de ensayo.",
+    "strongest_counterargument": "Un escéptico observaría que la base de evidencia completa descansa en cuatro metanálisis únicos, cada uno de los cuales agrega ECA heterogéneos, mayormente pequeños, e incompletamente reportados de un lapso de 50 años. El metanálisis de memoria/cognición de 2024 (n=886) es reciente y grande, pero su metodología no está descrita en estos resúmenes, y el motor explícitamente señala que su conclusión no ha sido replicada independientemente. Los ensayos más antiguos (1977–2000) no cumplen con los estándares modernos para pre-registro y reporte transparente, haciéndolos susceptibles a sesgo. Ningún tamaño de efecto agrupado es extraíble de los registros, por lo que la magnitud del beneficio es desconocida—podría ser clínicamente negligible incluso si es estadísticamente significativo en una síntesis grande pero heterogénea.",
+    "what_would_change_the_picture": "Dos metanálisis independientes, pre-registrados, conducidos por grupos diferentes utilizando los mismos criterios de inclusión y población, con análisis de sensibilidad excluyendo estudios con tamaños de muestra no reportados o alto riesgo de sesgo, establecerían si el efecto es robusto. Alternativamente, un ECA moderno y grande (n ≥ 500) en una población única y bien definida (p. ej., declive cognitivo relacionado con accidente cerebrovascular) con resultados pre-especificados y divulgación de datos transparente evaluaría directamente si la calificación 'Moderada' refleja eficacia verdadera o artefacto metodológico.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

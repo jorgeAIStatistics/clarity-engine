@@ -1,102 +1,165 @@
 {
-  "name": "rapamycin",
-  "category": "supplement",
+  "name": "Rapamycin",
+  "category": "longevity",
   "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 19,
+  "study_count": 20,
+  "unique_human_study_count": 8,
+  "unique_animal_study_count": 12,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 22,
   "claims": [
     {
-      "outcome": "immune function",
+      "outcome": "cardiovascular",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
       "n_studies": 7,
       "grade_reasons": [
-        "Precision: ~1223 participants verified across 1 of 7 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified — held at moderate."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 1,
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 4,
+        "n_human_studies": 2,
+        "n_animal_studies": 5,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:36399256",
-        "PMID:40132910",
-        "PMID:40974246",
-        "PMID:30563829",
-        "PMID:32712065",
-        "PMID:26691741",
-        "PMID:33653802"
+        "PMID:38310895",
+        "PMID:31761958",
+        "PMID:28177677",
+        "PMID:42544714",
+        "PMID:41749460",
+        "PMID:42372235",
+        "EPMC:AGR:IND609003025"
       ],
       "studies": [
         {
-          "pmid": "40132910",
-          "title": "mTOR inhibition modulates vaccine-induced immune responses to generate memory T cells in patients with solid tumors.",
-          "year": "2025",
-          "design": "RCT",
+          "id": "pmid:38310895",
+          "pmid": "38310895",
+          "title": "Targeting ageing with rapamycin and its derivatives in humans: a systematic review.",
+          "year": "2024",
+          "design": "Systematic review",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38310895/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Rapamycin and its derivatives (rapalogs) are inhibitors of mTOR, a major regulator of the ageing process. We aimed to summarise the effects of rapamycin and its derivatives on the severity of ageing-related physiological changes and disease in adults. A search across five databases yielded 18 400 unique articles, resulting in 19 included studies. Rapamycin and its derivatives improved physiological parameters associated with ageing in the immune, cardiovascular, and integumentary systems of healthy individuals or individuals with ageing-related diseases. Overall, no significant effects on the endocrine, muscular, or neurological systems were found. The effects of rapamycin or its derivatives on the respiratory, digestive, renal, and reproductive systems were not assessed. No serious adverse events attributed to rapamycin and its derivatives were reported in healthy individuals; however, there were increased numbers of infections and increases in total cholesterol, LDL cholesterol, and triglycerides in individuals with ageing-related diseases. Future studies should assess the remaining unexamined systems and test the effects of long-term exposure to rapamycin and its derivatives.",
+          "journal": "The lancet. Healthy longevity"
         },
         {
-          "pmid": "33653802",
-          "title": "Rapamycin enhances BCG-specific \u03b3\u03b4 T cells during intravesical BCG therapy for non-muscle invasive bladder cancer: a randomized, double-blind study.",
-          "year": "2021",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "30563829",
-          "title": "Rapamycin Prevents Surgery-Induced Immune Dysfunction in Patients with Bladder Cancer.",
+          "id": "pmid:31761958",
+          "pmid": "31761958",
+          "title": "Topical rapamycin reduces markers of senescence and aging in human skin: an exploratory, prospective, randomized trial.",
           "year": "2019",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31761958/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Aging is a major risk factor for the majority of human diseases, and the development of interventions to reduce the intrinsic rate of aging is expected to reduce the risk for age-related diseases including cardiovascular disease, cancer, and dementia. In the skin, aging manifests itself in photodamage and dermal atrophy, with underlying tissue reduction and impaired barrier function. To determine whether rapamycin, an FDA-approved drug targeting the mechanistic target of rapamycin (mTOR) complex, can reduce senescence and markers of aging in human skin, an exploratory, placebo-controlled, interventional trial was conducted in a clinical dermatology setting. Participants were greater than 40 years of age with evidence of age-related photoaging and dermal volume loss and no major morbidities. Thirty-six participants were enrolled in the study, and nineteen discontinued or were lost to follow-up. A significant (P = 0.008) reduction in p16",
+          "journal": "GeroScience"
         },
         {
-          "pmid": "36399256",
-          "title": "Rapamycin not dietary restriction improves resilience against pathogens: a meta-analysis.",
-          "year": "2023",
-          "design": "Meta-analysis",
-          "population": "animal",
-          "n": 1223
-        },
-        {
-          "pmid": "40974246",
-          "title": "Rapamycin's Role in Periodontal Health and Therapeutics: A Scoping Review.",
+          "id": "pmid:42544714",
+          "pmid": "42544714",
+          "title": "Rapamycin-induced fatty liver in mice is attenuated by chloroquine co-treatment in an ERRα-dependent manner.",
           "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": "10.1530/joe-26-0176",
+          "epmc_id": "MED:42544714",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42544714/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Metabolic dysfunction-associated steatotic liver disease (MASLD), previously known as non-alcoholic fatty liver disease (NAFLD), remains a major health concern worldwide. Hepatic steatosis manifests by the aberrant accumulation of lipids in hepatocytes. We have previously shown that pharmacological inhibition of mTOR complex 1 (mTORC1) by rapamycin, a widely utilized potent immunosuppressant, induces MASLD under normal conditions. Notably, this phenotype was found exacerbated in mice with genetic or pharmacological inhibition of the master transcriptional regulator of energy metabolism, nuclear receptor ERRα. In this study, we show that combining antimalarial drug chloroquine with rapamycin attenuates the severity of hepatic lipid deposition observed with rapamycin monotherapy. Bulk mRNA-seq profiling showed that chloroquine co-injection reverses the upregulation of a large proportion of genes linked to lipid metabolism homeostasis found induced by rapamycin alone. Interrogation of these genes for direct transcriptional regulators identified ERRα among top candidates. Using a mouse model with genetic ERRα ablation, we demonstrate a crucial dependency on ERRα activity for the observed amelioration of rapamycin-induced hepatic steatosis by chloroquine addition. In ERRα-null liver, chloroquine failed to reverse and, in some instances, aggravated the upregulation of lipid metabolism genes by rapamycin, with evidence linking the impaired management of hepatic lipid overload to the underlying mitochondrial dysfunction. Together, these findings underscore a critical role of ERRα in reversing MASLD.",
+          "journal": "The Journal of endocrinology"
         },
         {
-          "pmid": "32712065",
-          "title": "Effects of co-administration of rapamycin and evening primrose/hemp seed oil supplement on immunologic factors and cell membrane fatty acids in experimental aut",
-          "year": "2020",
+          "id": "pmid:41749460",
+          "pmid": "41749460",
+          "title": "Rapamycin Reduces Amyloid-β Plaques and Improves Behavioral Performance in a Sex-Dependent Manner in Mouse Models of Amyloidosis.",
+          "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": "10.1002/cns.70807",
+          "epmc_id": "MED:41749460",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41749460/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>Alzheimer's disease (AD), the most common form of dementia, lacks effective disease-modifying treatments. Rapamycin, an mTOR inhibitor with immunomodulatory properties, may mitigate AD pathology by restoring microglial functions.<h4>Methods</h4>Rapamycin was orally administered to 2-month-old 5xFAD and hAPP<sup>NL</sup>.<h4>Results</h4>Rapamycin treatment reduced the cerebral Aβ plaque burden, alleviated dystrophic neurites, suppressed glial hyperactivation, and increased plaque-associated microglial density in both mouse models, with more pronounced effects in female mice. These pathological improvements were associated with attenuated deficits in hippocampal-dependent memory tasks (spontaneous alternation in the Y-maze and contextual fear conditioning tasks). Mechanistically, rapamycin enhances microglial lysosomal degradation, promotes lipid droplet clearance in BV2 cells, and increases Aβ phagocytic clearance in primary microglial cells.<h4>Conclusions</h4>Our findings suggest that rapamycin reduces amyloid pathology and associated behavioral deficits in AD mice, an effect associated with enhanced microglial lysosomal activity and Aβ clearance, highlighting its therapeutic potential in AD treatment.",
+          "journal": "CNS neuroscience & therapeutics"
         },
         {
-          "pmid": "26691741",
-          "title": "Blood-brain barrier leakage after status epilepticus in rapamycin-treated rats II: Potential mechanisms.",
-          "year": "2016",
+          "id": "pmid:42372235",
+          "pmid": "42372235",
+          "title": "Rapamycin Attenuates Age-Related Changes in Marmoset Submandibular Gland: A Non-Human Primate Model of Human Oral Aging.",
+          "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": "10.14336/ad.2026.0057",
+          "epmc_id": "MED:42372235",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42372235/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The aging of salivary glands (SGs) leads to xerostomia, impaired oral defenses, and a compromised quality of life, yet the biology of human submandibular gland (SMG) aging remains poorly understood due to limited availability of human tissues and differences in anatomy and physiology between rodent and human SGs. The common marmoset (Callithrix jacchus) is a short-lived non-human primate (NHP) with SMG histology that closely resembles humans and has the potential to provide a translational model for investigating SG aging. In this study, we examined the age-associated structural and molecular alterations that occur in marmoset SMGs and evaluated whether chronic oral rapamycin treatment, a gerotherapeutic mTOR inhibitor, mitigates these age-related changes. Histological and immunofluorescence analyses revealed that there was a substantial decline in mucous and serous acinar units, expansion of ductal and collagen-rich stromal compartments, increased extracellular matrix remodeling, elevated dysregulation of lipid metabolism, and increased numbers of apoptotic and senescent cells in the SMG with aging. Rapamycin treatment was associated with partial preservation of acinar structure and a reduction in fibrosis, lipid accumulation, and number of apoptotic and senescent cells that resulted in an overall tissue phenotype that more closely resembled that of younger animals. These findings suggest that the aging marmoset SMG recapitulates key features of human SG aging and that rapamycin treatment was associated with an attenuation in the hallmarks of SG degeneration. The results suggest that the marmoset represents a valuable NHP model for studying SG aging biology and testing therapeutic strategies aimed at attenuating age-related structural degeneration associated with SG dysfunction.",
+          "journal": "Aging and disease"
+        },
+        {
+          "id": "epmc:agr:ind609003025",
+          "pmid": null,
+          "title": "Rhodosporidium toruloides—a new surrogate model to study rapamycin induced effects on human aging and cancer",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": "AGR:IND609003025",
+          "url": "https://europepmc.org/article/AGR/IND609003025",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The haploid, olegenious yeast Rhodosporidium toruloides accumulates intracellular lipids and carotenoids upon metabolic stress. Target of Rapamycin (TOR) signaling, essential for cell proliferation, is known to affect cellular lipid accumulation. In contrast to the conventional surrugate cell model S. cerevisiae, which harbours two TOR kinases within its TOR complex, R. toruloides only harbours one TOR kinase, mimicking mammalian systems. We used a proteomics centered approach to probe the cellular response, of the two R. toruloides haplotypes, IFO0559 and IFO0880 upon treatment with the TOR inhibitor rapamycin, with an original focus on difference in carotenoid and lipid accumulation. Unexpectedly, IFO0880 displayed severe growth arrest in response to rapamycin, while IFO0559 did not. Proteomic anaysis revealed differential expression of several proteins involved in cell cycle control, lipogensis, amino acid metabolism and autophagy between the two haplotypes. Among those we identified several proteins previously described in both mammalian oncogenic and aging contexts. This differential haplotype response to rapamycin treatment positions R. toruloides as a promising cell surrugate model to study cellular mechanisms underlying rapamycin response especially for systems with high lipid contents, an emerging hallmark of different forms of mammalian cancer and age related disease.",
+          "journal": "Cell. Mol. Life Sci"
+        },
+        {
+          "id": "pmid:28177677",
+          "pmid": "28177677",
+          "title": "mTORC1 inhibitors rapamycin and metformin affect cardiovascular markers differentially in ZDF rats.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28177677/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Mammalian target for rapamycin complex 1 (mTORC1) is a common target for the action of immunosuppressant macrolide rapamycin and glucose-lowering metformin. Inhibition of mTORC1 can exert both beneficial and detrimental effects in different pathologies. Here, we investigated the differential effects of rapamycin (1.2 mg/kg per day delivered subcutaneously for 6 weeks) and metformin (300 mg/kg per day delivered orally for 11 weeks) treatments on male Zucker diabetic fatty (ZDF) rats that mimic the cardiorenal pathology of type 2 diabetic patients and progress to insulin insufficiency. Rapamycin and metformin improved proteinuria, and rapamycin also reduced urinary gamma glutamyl transferase (GGT) indicating improvement of tubular health. Metformin reduced food and water intake, and urinary sodium and potassium, whereas rapamycin increased urinary sodium. Metformin reduced plasma alkaline phosphatase, but induced transaminitis as evidenced by significant increases in plasma AST and ALT. Metformin also induced hyperinsulinemia, but did not suppress fasting plasma glucose after ZDF rats reached 17 weeks of age, and worsened lipid profile. Rapamycin also induced mild transaminitis. Additionally, both rapamycin and metformin increased plasma uric acid and creatinine, biomarkers for cardiovascular and renal disease. These observations define how rapamycin and metformin differentially modulate metabolic profiles that regulate cardiorenal pathology in conditions of severe type 2 diabetes. La cible du complexe 1 de la rapamycine chez les mammifères (mTORC1) est une cible courante pour l’action de la rapamycine, un macrolide, et de la metformine, un hypoglycémiant. L’inhibition de la mTORC1 peut exercer des effets bénéﬁques comme néfastes dans le cadre de différentes pathologies. Dans les présents travaux, nous avons étudié les effets différentiels de l’exposition à la rapamycine (à 1,2 mg/kg par jour par voie sous-cutanée pendant 6 semaines) et à la metformine (à 300 mg/kg par jour par voie orale pendant 11 semaines) chez des rats Zucker diabétiques obèses (ZDF) qui reproduisent la pathologie cardiorénale des patients atteints de diabète de type 2 ainsi que l’évolution vers le déﬁcit en insuline. La rapamycine et la metformine ont permis d’atténuer la protéinurie, et la rapamycine a aussi permis de diminuer les taux urinaires de gamma glutamyl transférase (GGT), ce qui correspond à une amélioration sur le plan de la santé des tubules. La metformine a entraîné une diminution de l’absorption d’aliments et d’eau, ainsi que de la production de sodium et de potassium urinaire, alors que la rapamycine a entraîné une augmentation des concentrations urinaires de sodium. La metformine a entraîné une diminution des taux de phosphatase alcaline dans le plasma, mais elle a provoqué une hausse des transaminases mise en évidence par une augmentation de l’activité plasmatique de l’AST et de l’ALT. La metformine a aussi provoqué une hyperinsulinémie, mais elle n’a pas ent",
+          "journal": "Canadian journal of physiology and pharmacology"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 7,
-        "n_total": 7
+        "n_not_reported": 6,
+        "n_total": 6
       },
       "pooled": {
         "verified": null,
@@ -104,58 +167,633 @@
         "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For immune function, rapamycin has moderate human evidence (7 studies)."
+      "summary": "For cardiovascular, Rapamycin has moderate human evidence (7 graded studies).",
+      "weighted_score": {
+        "final_score": 56.6,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 7,
+          "high_tier_points": 74.744,
+          "low_tier_points_pre_cap": 11.845,
+          "low_tier_points_post_cap": 11.845,
+          "low_tier_cap_applied": false,
+          "total_points_R": 86.589,
+          "scaled_base_score": 56.586,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 35.9277,
+          "se_consistency_component": 5.9277,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 70.418,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 2,
+          "studies_missing_citations": 1,
+          "data_completeness_note": "2 human study(ies) used a default sample-size multiplier and 1 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.316,
+              "points": 59.224,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.336,
+              "points": 24.056,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.15,
+              "points": 4.6,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para cardiovascular, la Rapamicina tiene evidencia humana moderada (7 estudios clasificados)."
     },
     {
-      "outcome": "cognition",
+      "outcome": "skin / appearance",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 2,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 1,
+      "layers": {
+        "mechanistic": 25,
+        "preclinical": 0,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 2,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:31761958",
+        "PMID:25692384"
+      ],
+      "studies": [
+        {
+          "id": "pmid:31761958",
+          "pmid": "31761958",
+          "title": "Topical rapamycin reduces markers of senescence and aging in human skin: an exploratory, prospective, randomized trial.",
+          "year": "2019",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31761958/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Aging is a major risk factor for the majority of human diseases, and the development of interventions to reduce the intrinsic rate of aging is expected to reduce the risk for age-related diseases including cardiovascular disease, cancer, and dementia. In the skin, aging manifests itself in photodamage and dermal atrophy, with underlying tissue reduction and impaired barrier function. To determine whether rapamycin, an FDA-approved drug targeting the mechanistic target of rapamycin (mTOR) complex, can reduce senescence and markers of aging in human skin, an exploratory, placebo-controlled, interventional trial was conducted in a clinical dermatology setting. Participants were greater than 40 years of age with evidence of age-related photoaging and dermal volume loss and no major morbidities. Thirty-six participants were enrolled in the study, and nineteen discontinued or were lost to follow-up. A significant (P = 0.008) reduction in p16",
+          "journal": "GeroScience"
+        },
+        {
+          "id": "pmid:25692384",
+          "pmid": "25692384",
+          "title": "Clinical and Histologic Analysis of the Efficacy of Topical Rapamycin Therapy Against Hypomelanotic Macules in Tuberous Sclerosis Complex.",
+          "year": "2015",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25692384/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Tuberous sclerosis complex (TSC) is an autosomal dominant disorder leading to the aberrant activation of the mammalian target of rapamycin complex 1. Although the efficacy of mammalian target of rapamycin complex 1 inhibitors against tumors in patients with TSC, including facial angiofibroma, has been well investigated, their efficacy against hypomelanotic macules in patients with TSC is unknown. To evaluate objectively the efficacy of topical rapamycin treatment of hypomelanotic macules in patients with TSC and to elucidate the mechanisms of how rapamycin improves the macules. We performed a prospective, baseline-controlled trial of 6 patients with TSC and hypomelanotic macules in non-sun-exposed and sun-exposed skin at the Department of Dermatology, Osaka University, from August 4, 2011, through September 27, 2012. Rapamycin gel, 0.2%, was applied to the lesions twice a day for 12 weeks. Histologic examinations and blood tests were conducted at the start and completion of treatment. Blood rapamycin levels were analyzed at completion. Topical rapamycin treatment for hypomelanotic macules. Objective evaluation of rapamycin treatment of hypomelanotic macules in TSC with δ-L (L indicates the brightness of the color) levels on spectrophotometry at the start and completion (12 weeks) of treatment and at 4 and 12 weeks after discontinuation of treatment (16 and 24 weeks, respectively). Improvement of hypomelanotic macules (in δ-L values) was significant at 12 weeks (mean [SD], 2.501 [1.694]; P < .05), 16 weeks (1.956 [1.567]; P < .01), and 24 weeks (1.836 [1.638]; P < .001). Although efficacy tended to be prominent in sun-exposed skin, we did not observe significant differences (in δ-L values) between sun-exposed and non-sun-exposed skin at 12 weeks (mean [SD], 1.859 [0.629] and 3.142 [2.221], respectively), 16 weeks ( 1.372 [0.660] and 2.539 [2.037], respectively), and 24 weeks (1.201 [0.821] and 2.471 [2.064], respectively). No adverse events were observed, and rapamycin was not detected in the blood of any patient. Electron microscopic analysis of hypomelanotic macules revealed that topical rapamycin treatment significantly improved the uniformity of the melanosome numbers in the TSC melanocytes (pretreatment macules: mean [SD], 25.71 [21.90] [range, 5-63]; posttreatment macules: 42.43 [3.60] [range, 38-49]; P < .001). Moreover, rapamycin treatment induced the recovery of melanosomes in TSC-knocked-down melanocytes from depleted amounts (mean [SD], 16.43 [11.84]) to normal levels (42.83 [14.39]; P < .001). Topical rapamycin treatment was effective and safe against hypomelanotic macules arising from TSC. This efficacy of rapamycin was corroborated as stemming from the improvement of impaired melanogenesis in TSC melanocytes.",
+          "journal": "JAMA dermatology"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 2,
+        "n_total": 2
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For skin / appearance, Rapamycin has moderate human evidence (2 graded studies).",
+      "weighted_score": {
+        "final_score": 41.0,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 2,
+          "high_tier_points": 38.598,
+          "low_tier_points_pre_cap": 0,
+          "low_tier_points_post_cap": 0,
+          "low_tier_cap_applied": false,
+          "total_points_R": 38.598,
+          "scaled_base_score": 40.959,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 38.8679,
+          "se_consistency_component": 8.8679,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 76.181,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 2,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "2 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.336,
+              "points": 24.056,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.252,
+              "points": 22.539,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para piel / apariencia, la Rapamicina tiene evidencia humana moderada (2 estudios clasificados)."
+    },
+    {
+      "outcome": "immune function",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 10,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified — held at moderate."
+      ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 3,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 3,
+        "n_animal_studies": 7,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:38310895",
+        "PMID:40132910",
+        "PMID:26691741",
+        "PMID:30563829",
+        "PMID:32712065",
+        "PMID:41939913",
+        "PMID:42024459",
+        "PMID:42207784",
+        "PMID:41724910",
+        "PMID:41855773"
+      ],
+      "studies": [
+        {
+          "id": "pmid:38310895",
+          "pmid": "38310895",
+          "title": "Targeting ageing with rapamycin and its derivatives in humans: a systematic review.",
+          "year": "2024",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38310895/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Rapamycin and its derivatives (rapalogs) are inhibitors of mTOR, a major regulator of the ageing process. We aimed to summarise the effects of rapamycin and its derivatives on the severity of ageing-related physiological changes and disease in adults. A search across five databases yielded 18 400 unique articles, resulting in 19 included studies. Rapamycin and its derivatives improved physiological parameters associated with ageing in the immune, cardiovascular, and integumentary systems of healthy individuals or individuals with ageing-related diseases. Overall, no significant effects on the endocrine, muscular, or neurological systems were found. The effects of rapamycin or its derivatives on the respiratory, digestive, renal, and reproductive systems were not assessed. No serious adverse events attributed to rapamycin and its derivatives were reported in healthy individuals; however, there were increased numbers of infections and increases in total cholesterol, LDL cholesterol, and triglycerides in individuals with ageing-related diseases. Future studies should assess the remaining unexamined systems and test the effects of long-term exposure to rapamycin and its derivatives.",
+          "journal": "The lancet. Healthy longevity"
+        },
+        {
+          "id": "pmid:40132910",
+          "pmid": "40132910",
+          "title": "mTOR inhibition modulates vaccine-induced immune responses to generate memory T cells in patients with solid tumors.",
+          "year": "2025",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40132910/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Perturbation of the mechanistic target of rapamycin (mTOR) pathway can instruct effector versus memory cell fate of tumor antigen-specific T cells in preclinical models. In this study, we sought to understand the impact of rapamycin (sirolimus), an mTOR inhibitor, on reprogramming vaccine-induced T cells to enhance memory responses in patients with solid tumors following completion of their standard therapy. We conducted three phase I clinical trials employing New York esophageal squamous cell carcinoma-1 (NY-ESO-1) vaccination approaches, with or without schedule-varied rapamycin. T cell phenotypes, functions, and Vβ usage in peripheral blood were analyzed to ask whether rapamycin influenced the generation of vaccine-induced T cells with memory attributes. The addition of rapamycin to all vaccination approaches was safe and well tolerated. Immediate (days 1-14 postvaccination) or delayed (days 15-28 postvaccination) administration of rapamycin led to a significant increase in the generation of vaccine-induced NY-ESO-1-specific T cells exhibiting central memory phenotypes (CD45RO Our novel finding is that delayed administration of rapamycin to patients during the contraction phase of vaccine-induced antitumor immune responses was particularly effective in increasing the frequency of memory T cells up to 1 year postvaccination in patients with solid tumors. Further studies are warranted to identify the impact of this approach on the durability of clinical remission. NCT00803569, NCT01536054, NCT01522820.",
+          "journal": "Journal for immunotherapy of cancer"
+        },
+        {
+          "id": "pmid:30563829",
+          "pmid": "30563829",
+          "title": "Rapamycin Prevents Surgery-Induced Immune Dysfunction in Patients with Bladder Cancer.",
+          "year": "2019",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30563829/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The mechanistic target of rapamycin (mTOR) integrates environmental inputs to regulate cellular growth and metabolism in tumors. However, mTOR also regulates T-cell differentiation and activation, rendering applications of mTOR inhibitors toward treating cancer complex. Preclinical data support distinct biphasic effects of rapamycin, with higher doses directly suppressing tumor cell growth and lower doses enhancing T-cell immunity. To address the translational relevance of these findings, the effects of the mTOR complex 1 (mTORC1) inhibitor, rapamycin, on tumor and T cells were monitored in patients undergoing cystectomy for bladder cancer. MB49 syngeneic murine bladder cancer models were tested to gain mechanistic insights. Surgery-induced T-cell exhaustion in humans and mice and was associated with increased pulmonary metastasis and decreased PD-L1 antibody efficacy in mouse bladder cancer. At 3 mg orally daily, rapamycin concentrations were 2-fold higher in bladder tissues than in blood. Rapamycin significantly inhibited tumor mTORC1, shown by decreased rpS6 phosphorylation in treated versus control patients (",
+          "journal": "Cancer immunology research"
+        },
+        {
+          "id": "pmid:41939913",
+          "pmid": "41939913",
+          "title": "Rapamycin treatment ameliorates HLA-B27-mediated gut inflammation and alters the microbiome in experimental spondyloarthritis.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fimmu.2026.1755132",
+          "epmc_id": "MED:41939913",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41939913/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Objective</h4>To determine whether rapamycin affects HLA-B27-mediated gut inflammation in experimental spondyloarthritis (SpA).<h4>Methods</h4>HLA-B27/human β<sub>2</sub>-microglobulin transgenic (B27-Tg) rats with gut inflammation were treated with rapamycin (1.5 mg/kg intraperitoneally, 3 times a week) or vehicle for 5 weeks. Healthy age-matched wild type (WT) rats were treated in parallel. Gut inflammation was evaluated via stool scoring and histological assessment. Transcriptome and microbiome analyses were performed on colon tissue and cecal luminal contents, respectively. Bulk immune cells were isolated from the colonic lamina propria of B27-Tg and WT animals, treated with rapamycin <i>ex vivo</i>, and pro-inflammatory cytokine expression was measured using qPCR.<h4>Results</h4>Rapamycin treatment reduced stool and colon histological scores in B27-Tg rats compared to vehicle-treated B27-Tg controls. Transcriptome analysis revealed that rapamycin reduced expression of key pro-inflammatory cytokines like <i>Il17a, Il17f</i>, <i>Tnf</i>, <i>Il1a</i>, <i>IL1b</i>, and <i>Il22</i> in B27-Tg colon tissue compared to vehicle-treated B27-Tg controls. <i>Ex vivo</i> treatment of bulk immune cells isolated from B27-Tg rat colon with rapamycin reduced expression of <i>Il17a, Il17f</i>, <i>Ifng</i>, and <i>Il22</i> compared to vehicle-treated cells. Rapamycin treatment decreased the abundance of cecum microbiota associated with inflammation in B27-Tg rats. Rapamycin also altered the gut microbiome in WT rats, without associated changes in the tissue transcriptome.<h4>Conclusion</h4>Our study demonstrates that rapamycin treatment substantially reduces HLA-B27-mediated gut inflammation in experimental SpA. Results from this pre-clinical model suggest further evaluation of rapamycin as a therapeutic strategy in HLA-B27 associated diseases is warranted.",
+          "journal": "Frontiers in immunology"
+        },
+        {
+          "id": "pmid:42024459",
+          "pmid": "42024459",
+          "title": "Coadministration of rapamycin with a DNA/MVA SIV vaccine improves memory CD8+ T cell response.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1172/jci.insight.193752",
+          "epmc_id": "MED:42024459",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42024459/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Inhibiting the mammalian target of rapamycin (mTOR) during acute viral infection generates highly functional memory CD8+ T cells. We investigated the effects of inhibiting mTOR by using rapamycin during the effector and contraction phases of the immune response to a DNA prime and Modified Vaccinia Ankara (MVA) boost SIV vaccination in rhesus macaques. Rapamycin administered either during MVA boosts alone (DMR) or during both primes and boosts (DRMR) reduced the contraction of effector CD8+ T cells, resulting in higher frequencies of SIV-specific memory CD8+ T cells with enhanced quality, as indicated by expression of Bcl2 and CD127. Additionally, rapamycin reduced the frequency of proliferating CCR5+CD4+ T cells in the blood following the MVA boost. After SIVmac251 infection, rapamycin-treated macaques demonstrated marked expansion of SIV-specific CD8+ T cells (reaching up to 50% in blood and 25% in gut). The heightened expansion of SIV-specific CD8+ T cells in the DMR group was associated with markedly lower (2-logs compared with unvaccinated and 1-log compared with DM) peak viral load in the gut and set-point viremia, along with improved survival after infection. Thus, inhibiting the mTOR pathway during MVA boosts of a DNA/MVA vaccine enhances vaccine efficacy by improving memory CD4+ and CD8+ T cell function.",
+          "journal": "JCI insight"
+        },
+        {
+          "id": "pmid:42207784",
+          "pmid": "42207784",
+          "title": "Long-term rapamycin treatment suppresses IL-17-producing gamma delta T cells and blunts neuroinflammation in aging.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1371/journal.pone.0343183",
+          "epmc_id": "MED:42207784",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42207784/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Aging is the gradual accumulation of structural and functional changes in an organism over time, including immune remodeling and a progressive increase in basal inflammation, or inflammaging. The mTOR pathway is a central driver of aging-related diseases, such as cancer, chronic inflammation and neurodegeneration; pharmacological inhibition with rapamycin is associated with reduced aged-related morbidity and increased lifespan across species. Nonetheless, concerns remain about the use of rapamycin, a well-established immunosuppressant in transplant medicine, as an anti-aging intervention. Here, we evaluated the impact of prolonged low-dose dietary rapamycin on the aging immune system. Treatment did not significantly alter innate or adaptive immune cell populations, including brain resident microglia; however, it attenuated the age-associated accumulation of IL-17-producing γδ T cells, particularly in the peritoneal cavity. After a peripheral inflammatory LPS challenge, circulating IL-17 levels were significantly reduced and correlated with an attenuation of microglia inflammatory phenotype. These findings suggest that prolonged low-dose rapamycin exposure exerts minor systemic immune changes, while selectively limiting age-related γδ T cell expansion and neuroinflammation associated with systemic inflammation.",
+          "journal": "PloS one"
+        },
+        {
+          "id": "pmid:41724910",
+          "pmid": "41724910",
+          "title": "Functional analysis of target of rapamycin in regulating mycelial growth and development in Penicillium italicum.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1007/s10123-026-00789-1",
+          "epmc_id": "MED:41724910",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41724910/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Citrus fruits are highly valued for their nutritional benefits and global economic significance. They are susceptible to many fungal pathogens during postharvest storage. Citrus blue mold, caused by the fungus Penicillium italicum, is a major citrus disease, leading to significant economic losses every year. P. italicum spreads rapidly after infection, and the molecular mechanisms regulating its growth and development are largely unknown. Target of rapamycin (TOR) is a central regulator of cell growth, metabolism, and stress responses in eukaryotes. In this study, we investigated the role of TOR in P. italicum using rapamycin, a specific TOR inhibitor. We found that P. italicum possesses a single TOR gene. Rapamycin treatment significantly inhibited mycelial growth of P. italicum by up to 50%, leading to small, twisted mycelia cells and disordered growth orientation. The distribution of mycelial layers was also affected by rapamycin treatment. In addition, rapamycin strongly suppressed conidia formation, while it did not influence conidial germination. These observations suggest that PiTOR regulates mycelial growth and differentiation, but not conidial germination in P. italicum. Transcriptomic analysis showed that rapamycin treatment led to 322 upregulated genes and 149 downregulated genes. Gene ontology (GO) annotation analysis revealed that many dysregulated genes were involved in membrane integrity, consistent with the observed morphological abnormalities. GO enrichment analysis further showed that downregulated genes were associated with cell wall components, whereas upregulated DEGs were linked to amino acid metabolic and catabolic processes, suggesting a crucial role of PiTOR in regulating cell growth and metabolism. This study enhances our understanding of TOR signaling in phytopathogenic fungi and facilitates the development of potential strategies for controlling citrus blue mold.",
+          "journal": "International microbiology : the official journal of the Spanish Society for Microbiology"
+        },
+        {
+          "id": "pmid:41855773",
+          "pmid": "41855773",
+          "title": "Rapamycin treatment reduces CD11c&lt;sup&gt;+&lt;/sup&gt; microglia and increases amyloid plaque load in 5xFAD mice.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.expneurol.2026.115709",
+          "epmc_id": "MED:41855773",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41855773/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The mammalian target of rapamycin (mTOR) is involved in immune regulation and in the metabolism of β-amyloid (Aβ) and tau peptides in Alzheimer's disease (AD). In this study, we investigated the effects of the mTOR inhibitor, rapamycin, on central and peripheral immune profiles, proteasome activity, Aβ pathology, and spontaneous exploratory activity and place recognition in the 5xFAD mouse model of amyloid pathology. Using flow cytometry, we found that rapamycin induced changes in immune cell numbers and phenotypes in 5xFAD mice, notably a significant decrease of CD11c<sup>+</sup> microglia in cortex and hippocampus of 5xFAD mice. This was associated with increased Aβ plaque load. Concomitantly, we observed a decrease in immunoproteasome content and activity. In peripheral blood, rapamycin treatment resulted in higher percentages of granulocytes, whereas splenic T lymphocytes were reduced. No changes in the open field and modified Y-maze tests were observed following rapamycin treatment in wild-type and 5xFAD mice. Our results reveal detrimental effects of rapamycin on amyloid plaque accumulation and CD11c<sup>+</sup> disease-associated microglial subsets in cortex and hippocampus of 5xFAD mice, which is an important finding given two ongoing phase 2 clinical studies of rapamycin treatment in AD.",
+          "journal": "Experimental neurology"
+        },
+        {
+          "id": "pmid:32712065",
+          "pmid": "32712065",
+          "title": "Effects of co-administration of rapamycin and evening primrose/hemp seed oil supplement on immunologic factors and cell membrane fatty acids in experimental aut",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32712065/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The immune response is influenced by the administration of omega-3 polyunsaturated fatty acids (PUFA). Multiple sclerosis (MS) and its animal model, experimental autoimmune encephalomyelitis (EAE) are affected by PUFA. The combination of evening primrose/hemp seed oil (EPO/HSO) has essential fatty acids (EFAs) for human optimal health due to the favorable ratio of omega-6/omega-3 and antioxidantal properties. The study was conducted to evaluate the effects of EPO/HSO on improving the membrane fatty acids composition of spleen and blood cells and immunologic factors in compared to rapamycin (RAPA) in the EAE model. Chronic-EAE was induced by induction of MOG in C57BL/6J mice (female, age: 6-8 weeks, weight 18-21). Mice were assigned to 5 groups (6/group) to evaluate the therapeutic effects of EPO/HSO supplement in comparison with rapamycin: A group; EPO/HSO + RAPA, B group; RAPA, C group; EPO/HSO. Results were compared to two control groups (EAE and naive). The fatty acid profile of the spleen and blood cell membrane was evaluated. Real-time-polymerase chain reaction was used for the evaluate the genes expression levels of interleukin (IL) -4, IL-5, and IL-13 in lymphocytes. Also, IL-4 of serum was evaluated by enzyme-linked immunosorbent assay (ELISA). Our findings indicated that EPO/HSO therapy significantly increased the percentage of essential fatty acids in cell membrane of the spleen and blood. The relative expression of IL-4, IL-5, and IL-13 genes in lymphocytes and serum level of IL-4 was significantly increased in the HSO/EPO treated group versus other groups. These results point to potential therapeutic effects on the repair of the structure of cell membranes and suppression of inflammation by EPO/HSO in EAE.",
+          "journal": "Gene"
+        },
+        {
+          "id": "pmid:26691741",
+          "pmid": "26691741",
+          "title": "Blood-brain barrier leakage after status epilepticus in rapamycin-treated rats II: Potential mechanisms.",
+          "year": "2016",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26691741/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Blood-brain barrier (BBB) leakage may play a pro-epileptogenic role after status epilepticus. In the accompanying contrast-enhanced magnetic resonance imaging (CE-MRI) study we showed that the mammalian target of rapamycin (mTOR) inhibitor rapamycin reduced BBB leakage and seizure activity during the chronic epileptic phase. Given rapamycin's role in growth and immune response, the potential therapeutic effects of rapamycin after status epilepticus with emphasis on brain inflammation and brain vasculature were investigated. Seven weeks after kainic acid-induced status epilepticus, rats were perfusion fixed and (immuno)histochemistry was performed using several glial and vascular markers. In addition, an in vitro model for the human BBB was used to determine the effects of rapamycin on transendothelial electrical resistance as a measure for BBB integrity. (Immuno)histochemistry showed that local blood vessel density, activated microglia, and astrogliosis were reduced in rapamycin-treated rats compared to vehicle-treated rats. In vitro studies showed that rapamycin could attenuate TNFα-induced endothelial barrier breakdown. These data suggest that rapamycin improves BBB function during the chronic epileptic phase by a reduction of local brain inflammation and blood vessel density that can contribute to a milder form of epilepsy.",
+          "journal": "Epilepsia"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 10,
+        "n_total": 10
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For immune function, Rapamycin has moderate human evidence (10 graded studies).",
+      "weighted_score": {
+        "final_score": 59.4,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
+        },
+        "confidence_tier": "Emerging",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 10,
+          "high_tier_points": 83.156,
+          "low_tier_points_pre_cap": 14.709,
+          "low_tier_points_post_cap": 14.709,
+          "low_tier_cap_applied": false,
+          "total_points_R": 97.864,
+          "scaled_base_score": 59.426,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 34.7413,
+          "se_consistency_component": 4.7413,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 68.093,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 3,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "3 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.316,
+              "points": 59.224,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.143,
+              "points": 20.576,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.24,
+              "points": 4.961,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.217,
+              "points": 21.907,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.143,
+              "points": 4.573,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 4.286,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para función inmunológica, la Rapamicina tiene evidencia humana moderada (10 estudios clasificados)."
+    },
+    {
+      "outcome": "mood / depression",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
       "n_studies": 3,
       "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
-        "preclinical": 45,
+        "preclinical": 0,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 2,
+        "n_human_studies": 3,
+        "n_animal_studies": 0,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:40132910",
-        "PMID:38185381",
-        "PMID:38640155"
+        "PMID:40188830",
+        "PMID:35101523",
+        "PMID:32092760"
       ],
       "studies": [
         {
-          "pmid": "40132910",
-          "title": "mTOR inhibition modulates vaccine-induced immune responses to generate memory T cells in patients with solid tumors.",
+          "id": "pmid:40188830",
+          "pmid": "40188830",
+          "title": "Influence of rapamycin on safety and healthspan metrics after one year: PEARL trial results.",
           "year": "2025",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40188830/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "This 48-week decentralized, double-blinded, randomized, placebo-controlled trial (NCT04488601) evaluated the long-term safety of intermittent low-dose rapamycin in a healthy, normative-aging human cohort. Participants received placebo, 5 mg or 10 mg compounded rapamycin weekly. The primary outcome measure was visceral adiposity (by DXA scan), secondary outcomes were blood biomarkers, and lean tissue and bone mineral content (by DXA scan). Established surveys were utilized to evaluate health and well-being. Safety was assessed through adverse events and blood biomarker monitoring. Adverse and serious adverse events were similar across all groups. Visceral adiposity did not change significantly (η Low-dose, intermittent rapamycin administration over 48 weeks is relatively safe in healthy, normative-aging adults, and was associated with significant improvements in lean tissue mass and pain in women. Future work will evaluate benefits of a broader range of rapamycin doses on healthspan metrics for longevity, and will aim to more comprehensively establish efficacy.",
+          "journal": "Aging"
         },
         {
-          "pmid": "38640155",
-          "title": "Effect and Mechanism of Rapamycin on Cognitive Deficits in Animal Models of Alzheimer's Disease: A Systematic Review and Meta-analysis of Preclinical Studies.",
-          "year": "2024",
-          "design": "Systematic review",
-          "population": "animal",
-          "n": null
+          "id": "pmid:35101523",
+          "pmid": "35101523",
+          "title": "mTORC1 inhibitor effects on rapid ketamine-induced reductions in suicidal ideation in patients with treatment-resistant depression.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35101523/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Suicide is a public health crisis with limited treatment options. Ketamine has demonstrated rapid and robust improvements in suicidal ideation (SI). The parent study for the secondary pilot analyses presented here was a double-blind, cross-over trial that found pretreatment with the mechanistic target of rapamycin complex 1 (mTORC1) prolonged the antidepressant effects of ketamine. Here we examined the effect of mTORC1 inhibition on ketamine's antisuicidal effects. Twenty patients in a major depressive episode were randomized to pretreatment with oral rapamycin (6 mg) or placebo prior to IV ketamine (0.5 mg/kg). We found ketamine administration resulted in significant improvements across all measures with the largest effect at 24 h with only the Beck Scale for Suicide remaining significant at the two-week follow-up. There were no significant main effects of pretreatment. While these analyses are pilot in nature and overall severity of SI was relatively low, the antisuicidal findings (no effect of rapamycin) being in contrast to the antidepressant effects (prolonged effect with rapamycin), suggest the rapid-acting antisuicidal and antidepressant effects of ketamine may be mechanistically distinct and the trajectories of response, recovery, and relapse may be independent. These findings provide additional evidence of ketamine's antisuicidal effects and highlight the importance of future studies that continue to examine potential differences in mechanisms and trajectory of outcomes.",
+          "journal": "Journal of affective disorders"
         },
         {
-          "pmid": "38185381",
-          "title": "Evaluating the effects of single, multiple, and delayed systemic rapamycin injections to contextual fear reconsolidation: Implications for the neurobiology of m",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
+          "id": "pmid:32092760",
+          "pmid": "32092760",
+          "title": "Modulation of the antidepressant effects of ketamine by the mTORC1 inhibitor rapamycin.",
+          "year": "2020",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32092760/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Twenty-four hours after administration, ketamine exerts rapid and robust antidepressant effects that are thought to be mediated by activation of the mechanistic target of rapamycin complex 1 (mTORC1). To test this hypothesis, depressed patients were pretreated with rapamycin, an mTORC1 inhibitor, prior to receiving ketamine. Twenty patients suffering a major depressive episode were randomized to pretreatment with oral rapamycin (6 mg) or placebo 2 h prior to the intravenous administration of ketamine 0.5 mg/kg in a double-blind cross-over design with treatment days separated by at least 2 weeks. Depression severity was assessed using Montgomery-Åsberg Depression Rating Scale (MADRS). Rapamycin pretreatment did not alter the antidepressant effects of ketamine at the 24-h timepoint. Over the subsequent 2-weeks, we found a significant treatment by time interaction (F",
+          "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology"
         }
       ],
       "effects": {
@@ -169,199 +807,92 @@
         "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cognition, rapamycin has moderate human evidence (3 studies)."
-    },
-    {
-      "outcome": "mood / depression",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 5,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 2,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:40188830",
-        "PMID:35101523",
-        "PMID:32092760",
-        "PMID:41413564",
-        "PMID:28777104"
-      ],
-      "studies": [
-        {
-          "pmid": "40188830",
-          "title": "Influence of rapamycin on safety and healthspan metrics after one year: PEARL trial results.",
-          "year": "2025",
-          "design": "RCT",
-          "population": "human",
-          "n": null
+      "summary": "For mood / depression, Rapamycin has moderate human evidence (3 graded studies).",
+      "weighted_score": {
+        "final_score": 44.9,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 100.0
         },
-        {
-          "pmid": "35101523",
-          "title": "mTORC1 inhibitor effects on rapid ketamine-induced reductions in suicidal ideation in patients with treatment-resistant depression.",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "32092760",
-          "title": "Modulation of the antidepressant effects of ketamine by the mTORC1 inhibitor rapamycin.",
-          "year": "2020",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "41413564",
-          "title": "Intestinal \u03b3\u03b4 T17-IL-17A signaling disrupts hippocampal mitophagy in stress-induced depression and is restored by arketamine.",
-          "year": "2025",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "28777104",
-          "title": "Mood-stabilizing effects of rapamycin and its analog temsirolimus: relevance to autophagy.",
-          "year": "2018",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
+        "confidence_tier": "Emerging",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 3,
+          "high_tier_points": 48.513,
+          "low_tier_points_pre_cap": 0,
+          "low_tier_points_post_cap": 0,
+          "low_tier_cap_applied": false,
+          "total_points_R": 48.513,
+          "scaled_base_score": 44.882,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 38.0287,
+          "se_consistency_component": 8.0287,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 74.536,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 3,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "3 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.215,
+              "points": 21.865,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.224,
+              "points": 22.027,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.327,
+              "points": 23.891,
+              "supportive": true
+            }
+          ]
         }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 5,
-        "n_total": 5
       },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "no usable effects"
-      },
-      "headline_effect": null,
-      "summary": "For mood / depression, rapamycin has moderate human evidence (5 studies)."
-    },
-    {
-      "outcome": "skin / appearance",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 4,
-      "grade_reasons": [
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 0,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 4,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:31761958",
-        "PMID:27409709",
-        "PMID:37463422",
-        "PMID:19950289"
-      ],
-      "studies": [
-        {
-          "pmid": "27409709",
-          "title": "Rapamycin and rapalogs for tuberous sclerosis complex.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 263
-        },
-        {
-          "pmid": "37463422",
-          "title": "A novel rapamycin cream formulation improves facial angiofibromas associated with tuberous sclerosis complex: a double-blind randomized placebo-controlled trial",
-          "year": "2023",
-          "design": "RCT",
-          "population": "human",
-          "n": 107
-        },
-        {
-          "pmid": "31761958",
-          "title": "Topical rapamycin reduces markers of senescence and aging in human skin: an exploratory, prospective, randomized trial.",
-          "year": "2019",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "19950289",
-          "title": "Rapamycin versus methotrexate in early diffuse systemic sclerosis: results from a randomized, single-blind pilot study.",
-          "year": "2009",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [
-          {
-            "pmid": "37463422",
-            "metric": "odds_ratio",
-            "value": 5.14,
-            "ci_low": 1.7,
-            "ci_high": 15.57,
-            "ci_estimated": false,
-            "converted": false,
-            "tier": "solid",
-            "status": "verified",
-            "comparator": "vs placebo",
-            "direction": "benefit",
-            "quote": "rapamycin 1%: 61% (OR 5.14, 95% CI 1.70-15.57; P = 0.004)"
-          }
-        ],
-        "n_not_reported": 3,
-        "n_total": 4
-      },
-      "pooled": {
-        "verified": {
-          "value": 5.14,
-          "ci_low": -1.795,
-          "ci_high": 12.075,
-          "n_studies": 1
-        },
-        "exploratory": {
-          "value": 5.14,
-          "ci_low": -1.795,
-          "ci_high": 12.075,
-          "n_studies": 1
-        },
-        "note": null
-      },
-      "headline_effect": null,
-      "summary": "For skin / appearance, rapamycin has moderate human evidence (4 studies)."
+      "summary_es": "Para estado de ánimo / depresión, la Rapamicina tiene evidencia humana moderada (3 estudios clasificados)."
     }
   ],
   "effects_established": [
+    "cardiovascular",
+    "skin / appearance",
     "immune function",
-    "cognition",
-    "mood / depression",
-    "skin / appearance"
+    "mood / depression"
   ],
   "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
-  "generated_by": "clarity-engine-v2",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T01:36:52.295731+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "cardiovascular",
+  "best_tier": "Moderate",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Moderate"
+  ],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 5284616,
@@ -384,75 +915,185 @@
       "AY-22989"
     ]
   },
-  "_cached_at": 1788018779.207696,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 2.188,
+    "europepmc_s": 8.488,
+    "retrieval_total_s": 8.49,
+    "n_studies": 250,
+    "normalization_s": 0.097,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 51.7,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 59.4,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789177012.29673,
   "explanation": {
-    "what_it_is": "Rapamycin (also called sirolimus) is a macrolide antibiotic with immunosuppressive and anti-aging properties, derived from soil bacteria. It has the molecular formula C\u2085\u2081H\u2087\u2089NO\u2081\u2083 and is available as oral tablets, intravenous infusions, and topical creams. Originally approved as an immunosuppressant for transplant recipients, it is now being explored in research for broader health applications including immune function, cognition, and skin aging.",
-    "how_it_works": "Rapamycin works primarily by inhibiting mTORC1 (mechanistic target of rapamycin complex 1), a cellular master switch that controls protein synthesis, cell growth, and energy metabolism. By slowing mTORC1 activity, it triggers autophagy \u2014 the cell's 'recycling' process \u2014 and shifts immune cells toward memory formation rather than immediate inflammatory response. This mechanism may spare cognitive function and dampen depression-related inflammatory pathways. The drug also appears to reduce cellular senescence (aging), which is why topical formulations show promise for skin appearance; however, systemic immunosuppression is a significant trade-off that limits its use in healthy people.",
+    "what_it_is_line": "Immunosuppressant drug that slows cell growth by blocking a key nutrient-sensing pathway.",
+    "what_it_is": "Rapamycin (also called sirolimus) is a natural compound originally isolated from soil bacteria. It's a large, complex lipophilic molecule (C₅₁H₇₉NO₁₃, MW 914.2) that is highly fat-soluble, meaning it crosses cell membranes easily. It's used clinically as an immunosuppressant in transplant medicine and is taken orally as a tablet or liquid, though in research contexts it's also applied topically or studied via injection.",
+    "how_it_works_line": "Blocks mTORC1, a cellular nutrient sensor that controls growth, by binding to FKBP12 and preventing mTORC1 activation.",
+    "how_it_works": "Rapamycin works by inhibiting a cellular machine called mTORC1 (mechanistic target of rapamycin complex 1) — think of it as a nutrient sensor that tells your cells whether to grow and divide or to recycle their own components. When rapamycin enters a cell, it binds tightly to a helper protein called FKBP12, and this complex then blocks mTORC1 from activating. By slowing mTORC1, rapamycin causes cells to reduce protein synthesis (the process of building new proteins) and ramp up autophagy — a cellular recycling program that breaks down damaged or old components. This shift in cellular behavior is why rapamycin is used in transplant medicine: it suppresses immune cell proliferation. In aging research, the hypothesis is that chronic mTORC1 suppression might mimic some metabolic effects of calorie restriction, which is known to extend lifespan in animals — but whether that translates to meaningful human longevity benefits remains an open question.",
+    "safety_line": "Approved immunosuppressant with known risks; long-term efficacy at low doses for aging not yet established.",
+    "safety_detail": "Rapamycin is an FDA-approved drug and has a long clinical safety record in transplant patients at higher doses over years. The trials in the records provided — mostly 1-2 year studies at lower doses — reported tolerability, though sample sizes could not be verified from abstracts. However, rapamycin carries established risks including metabolic effects, cytopenias (low blood cell counts), and infections due to immune suppression; long-term use at antiaging doses in otherwise-healthy people has not been rigorously studied.",
+    "safety_bullets": [
+      "Drug interactions: rapamycin is metabolized by CYP3A4; co-administration with CYP3A4 inhibitors (e.g., some antivirals, macrolides) may increase blood levels and adverse effects — untested in most aging studies.",
+      "Excluded populations: pregnancy, nursing, and severe kidney or liver disease were not included in the trials retrieved; effects in these groups are unknown.",
+      "Long-term metabolic effects: chronic mTORC1 inhibition may affect glucose metabolism and lipid profiles; studies in the records are short-term, so long-term metabolic safety is incompletely characterized.",
+      "Immune suppression: rapamycin suppresses T-cell proliferation; magnitude and clinical significance of this effect at antiaging doses in immunocompetent individuals is not fully quantified in the records."
+    ],
+    "chem_meaning": "Rapamycin is a large, highly lipophilic macrocyclic compound (XLogP ≈ 6), meaning it is extremely fat-soluble and readily crosses cell membranes and the blood–brain barrier. Its size (914 Da) and complexity make it poorly absorbed orally and dependent on active transport in the gut; it is also extensively protein-bound in blood. This chemistry explains why rapamycin can reach intracellular targets like mTORC1 efficiently, but also why it accumulates in fatty tissues and has a long half-life — properties that matter for dosing and potential long-term effects.",
     "outcome_detail": [
       {
-        "outcome": "immune function",
+        "outcome": "cardiovascular",
         "grade": "Moderate",
-        "what_studies_show": "Three human randomized trials demonstrate that rapamycin modulates immune responses in specific contexts: enhancing vaccine-induced memory T cells in cancer patients (2025 RCT), boosting BCG-specific immune cells in bladder cancer therapy (2021 RCT), and preventing immune dysfunction after surgery in bladder cancer patients (2019 RCT). A 2023 meta-analysis of animal studies (n=1223 total participants) found rapamycin improved resilience against pathogens, though two additional animal studies examined co-administration with supplements and periodontal health applications.",
-        "why_this_grade": "The three human trials show consistent immune modulation, but all occur in disease-specific or clinical contexts (cancer, surgery) rather than healthy populations. A single meta-analysis exists to consolidate findings, but it is not independently replicated, and most study abstracts lack confirmed sample sizes, limiting precision confidence."
-      },
-      {
-        "outcome": "cognition",
-        "grade": "Moderate",
-        "what_studies_show": "Only one human RCT is included (2025 study on mTOR inhibition and vaccine responses, which also touches cognition). Two animal studies \u2014 a 2024 systematic review examining rapamycin's effect on cognitive deficits in Alzheimer's disease models and a 2024 study on rapamycin injections and contextual fear learning \u2014 provide preliminary evidence that mTORC1 inhibition may support memory processes.",
-        "why_this_grade": "Human evidence is extremely limited (one trial), and sample sizes across all studies could not be verified from abstracts. A single meta-analysis exists for animal data but has not been independently replicated. This combination of sparse human data and unconfirmed precision keeps the grade at Moderate rather than higher."
-      },
-      {
-        "outcome": "mood / depression",
-        "grade": "Moderate",
-        "what_studies_show": "Three human RCTs show rapamycin's potential in depression contexts: a 2025 trial (PEARL) examining safety and healthspan including mood metrics, and two studies (2022, 2020) demonstrating that rapamycin (an mTORC1 inhibitor) may enhance or modulate ketamine's rapid anti-suicidal and antidepressant effects in treatment-resistant depression. Two animal studies (2025, 2018) found mood-stabilizing effects linked to intestinal immune signaling and autophagy pathways.",
-        "why_this_grade": "The three human trials focus on augmentation of ketamine or clinical depression populations, not general mood in healthy people. Sample sizes could not be verified from the abstracts provided, limiting precision. A single meta-analysis or systematic review exists but has not been independently replicated, holding the grade at Moderate."
+        "what_studies_show": "A 2024 systematic review and five animal studies examined rapamycin's cardiovascular effects. A 2019 RCT applied topical rapamycin and found reductions in skin senescence markers. Multiple animal models (2026 studies) showed rapamycin attenuated amyloid-beta plaques, improved behavioral outcomes in an Alzheimer's mouse model, and reduced age-related changes in non-human primates. The evidence includes both biomarker improvements and functional outcomes, but human cardiovascular trials with directly measured cardiac endpoints are sparse in the records provided.",
+        "why_this_grade": "Two human studies exist, though sample sizes could not be verified from abstracts, limiting precision. Animal models show promise, but translation to cardiovascular clinical benefit in humans remains untested; the grade reflects moderate confidence in the biological plausibility and early human data, with caution about unverified sample sizes."
       },
       {
         "outcome": "skin / appearance",
         "grade": "Moderate",
-        "what_studies_show": "Four human trials examine topical or systemic rapamycin for skin: a 2016 meta-analysis (n=263) and a 2023 RCT (n=107) both show rapamycin cream improves facial angiofibromas in tuberous sclerosis complex patients. A 2019 RCT found topical rapamycin reduced senescence markers and aging signs in healthy skin. A 2009 RCT compared rapamycin to methotrexate in systemic sclerosis patients.",
-        "why_this_grade": "All four studies are human trials with documented sample sizes, which is strong. However, consistency relies on a single meta-analysis (2016) that has not been independently replicated. Three of the four trials involve disease-specific populations (tuberous sclerosis, systemic sclerosis) rather than cosmetic aging in healthy individuals, narrowing the scope of confident generalization."
+        "what_studies_show": "A 2019 exploratory RCT applied topical rapamycin and found reductions in markers of senescence and aging in human skin. A 2015 RCT reported clinical and histologic improvements in hypomelanotic macules (white patches on skin). Both were human trials with direct skin assessment.",
+        "why_this_grade": "Only two small human trials exist; precision is unconfirmed because sample sizes could not be verified from the abstracts. No animal studies were included in this outcome category in the records. Moderate grade reflects real human data showing benefit, but limited sample size certainty and lack of independent replication."
+      },
+      {
+        "outcome": "immune function",
+        "grade": "Moderate",
+        "what_studies_show": "A 2024 systematic review, a 2025 RCT showing mTOR inhibition modulated vaccine-induced memory T cell responses in cancer patients, and a 2019 RCT demonstrating rapamycin prevented surgery-induced immune dysfunction in bladder cancer patients comprise the human evidence. Seven animal studies (2026 publications) showed rapamycin ameliorated HLA-B27-mediated gut inflammation, improved CD8+ memory T cell responses when coadministered with vaccines, and suppressed IL-17-producing immune cells in neuroinflammation models.",
+        "why_this_grade": "Three human trials exist with immunologic endpoints, but sample sizes could not be verified from abstracts. The single systematic review has not been independently replicated. Animal models consistently show immune modulation, supporting biological plausibility, but human efficacy for immune enhancement in healthy aging is not yet established; the grade reflects promising mechanistic evidence in a defined population (immunosuppressed or post-surgical patients) with caution about precision and generalizability."
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Moderate",
+        "what_studies_show": "Three human RCTs examined rapamycin's mood effects. A 2025 trial (PEARL) measured safety and healthspan metrics including mood after one year. A 2022 RCT investigated whether rapamycin modulated the rapid antidepressant effect of ketamine on suicidal ideation in treatment-resistant depression patients. A 2020 RCT examined the same question — how mTORC1 inhibition by rapamycin interacted with ketamine's antidepressant mechanism. All three were conducted in specific clinical populations (severe depression or suicidality), not healthy volunteers.",
+        "why_this_grade": "Three human trials exist, but all have unverified sample sizes from abstract review, capping precision. No animal studies of mood were retrieved for this outcome. The evidence is preliminary and specific to treatment-resistant depression with ketamine co-administration — whether rapamycin alone, or in healthy populations, improves mood is not established in the records. Moderate grade reflects early human data in a narrow clinical context, without independent replication or wide population testing."
       }
     ],
-    "evidence_base": "The retrieved studies show a mix of 11 human trials (mostly RCTs) and 6 animal studies. Human evidence predominates for skin (4 trials) and mood (3 trials), while immune function and cognition are more animal-heavy or disease-focused. Most human trials are recent (2019\u20132025), suggesting active clinical interest in rapamycin's off-label uses. However, the body of work is not large \u2014 typically 1\u20133 independent human studies per outcome \u2014 and many disease-specific or surgical contexts limit generalizability to healthy aging populations. No outcome rests on multiple independent meta-analyses, which constrains confidence.",
-    "emerging_research": "Recent directions include rapamycin's role in stress-induced immune signaling affecting mood (2025 animal work on \u03b3\u03b4 T17 cells and depression), its use as a topical anti-aging cream in healthy skin (2019), and its potential as an adjunct to ketamine in treatment-resistant psychiatric illness (2022, 2020). A 2025 PEARL trial is examining broader healthspan and safety metrics over one year, suggesting exploration of systemic benefits beyond immunosuppression. These are early-stage human applications; long-term safety and efficacy in non-immunocompromised populations remain unproven.",
-    "open_questions": "Among the studies retrieved here, human trials are overwhelmingly skewed toward disease states (cancer, sclerosis, treatment-resistant depression) or surgical contexts; no retrieved trial examines rapamycin's effects on immune function, cognition, or mood in healthy adults. For skin, most human data concerns tuberous sclerosis (a genetic condition), with limited independent replication of anti-aging effects in general aging. Trial durations are not uniformly reported in the abstracts; where mentioned, they span weeks to one year, but long-term safety and efficacy (years to decades) are not visible in this sample. These are limitations of the records provided \u2014 do not assume the broader literature lacks such studies.",
-    "caveats": "Rapamycin is an immunosuppressant and should not be used in healthy people except under strict clinical supervision; it increases infection and cancer risk with systemic use. Quality and purity vary widely in research-grade or off-label supplies; pharmaceutical-grade formulations (oral tablets, intravenous) have established manufacturing standards, while topical creams and compounded versions may not. It interacts with multiple medications (especially those metabolized via CYP3A4) and can cause serious side effects (delayed wound healing, mouth ulcers, elevated cholesterol). Pregnant or breastfeeding individuals, those with active infections, or people on other immunosuppressants should avoid rapamycin entirely.",
+    "evidence_base": "The evidence for rapamycin is predominantly human trials (3–3 per outcome, up to 2–3 per outcome with systematic review and RCTs) mixed with animal mechanistic studies. Trials are recent (2019–2026) and mostly 1–2 years in duration. Human studies are small with unverified sample sizes from abstract review, limiting precision. Animal models (mice, non-human primates, fungal surrogates) consistently show biological activity in senescence, immune function, and neuroinflammation, but do not directly prove clinical benefit in humans. The body of evidence is moderate overall — sufficient to suggest mTORC1 inhibition has biological plausibility in aging contexts, but not sufficient to establish clear clinical benefits outside specific populations (e.g., immunosuppressed transplant patients).",
+    "open_questions": "The records provided do not include large, long-term randomized trials in healthy aging populations — most human studies involve diseased or immune-suppressed groups (cancer, transplant, treatment-resistant depression) or topical application. Whether systemic rapamycin at antiaging doses improves lifespan, cognitive function, or general healthspan in otherwise-healthy people is not yet tested in the records. Studies are short-term (1–2 years maximum); cumulative long-term tolerability and metabolic effects at chronic low doses are incompletely characterized. Dose-response relationships and which populations might benefit most remain open.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "Rapamycin's effects on immune function, cognition, mood, and skin are graded 'Moderate' across all outcomes, but the evidence base is severely underpowered: most studies report no sample size, pooled effects cannot be extracted, and single meta-analyses without independent replication anchor each claim.",
+    "headline": "Sample sizes are not extractable from any abstract in this evidence base, making it impossible to assess whether observed effects represent true clinical signals or could be noise from underpowered trials.",
     "concerns": [
       {
-        "issue": "Pervasive sample size unreporting",
-        "detail": "Of 19 studies across all outcomes, sample sizes are explicitly reported in only 3 studies (immune function: 1 of 7; mood: 0 of 5; cognition: 0 of 3; skin: 2 of 4). The engine notes that 'most abstracts omit sample size.' This prevents assessment of whether effect sizes are clinically meaningful or driven by underpowered trials. A single small study with a favorable result could falsely inflate confidence in a 'Moderate' grade if the true n across that outcome is actually dozens of participants, not hundreds.",
+        "issue": "Unverifiable sample sizes across all outcomes",
+        "detail": "The engine explicitly flags that 'sample sizes could not be verified from the abstracts' for cardiovascular (7 studies), skin (2 studies), immune function (10 studies), and mood (3 studies). This is not a minor reporting gap—it means the magnitude of imprecision cannot be assessed. A single trial with n=200 and five with n=15 would pool identically in narratives, but with very different credibility.",
         "severity": "high"
       },
       {
-        "issue": "No independent replication of meta-analyses",
-        "detail": "Immune function, cognition, and skin each rely on exactly one meta-analysis or systematic review to support consistency. The engine explicitly notes this: 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate.' A meta-analysis of small or heterogeneous animal studies (immune function: 3 animal studies pooled; cognition: animal-only) can itself be biased or subject to publication bias without a second independent review confirming its findings.",
+        "issue": "Heavy reliance on animal studies with unknown translational validity",
+        "detail": "Cardiovascular (5 of 7 studies animal), immune function (7 of 10 studies animal). The cardiovascular outcome is graded Moderate despite being majority animal work; there is only 1 human RCT. Animal studies often show mTOR effects on markers, but whether ZDF rats or marmosets predict human clinical benefit is not established from these abstracts. No mechanistic bridge from animal models to human outcome is visible in the records.",
         "severity": "high"
       },
       {
-        "issue": "Animal-heavy evidence base driving clinical claims",
-        "detail": "Immune function (4 animal, 3 human); cognition (2 animal, 1 human); mood (2 animal, 3 human). The majority of cognition evidence is animal studies, yet a 'Moderate' grade is applied to a clinical outcome. Rodent models of Alzheimer's or contextual fear conditioning do not guarantee translational validity. The leap from rapamycin's mTOR inhibition in a rat hippocampus to human cognitive resilience or mood is inferentially substantial and unsupported by dose-response or mechanism studies in the records.",
-        "severity": "high"
+        "issue": "No independent replication of systematic review conclusions",
+        "detail": "The 2024 systematic review on 'Targeting ageing with rapamycin and its derivatives in humans' appears in both cardiovascular and immune function evidence bases. The engine notes this conclusion is 'not independently replicated or verified.' This single review anchors two moderate grades; if its methods are flawed or its inclusion criteria are loose, both grades rest on one foundation.",
+        "severity": "moderate"
       },
       {
-        "issue": "No extractable pooled effects across any outcome",
-        "detail": "The records state 'pooled effect: none extractable' for all four outcomes. This means the abstracts provided do not contain quantitative results (e.g., standardized mean differences, risk ratios) that would allow meta-analytic synthesis or comparison to control. Without quantitative effect sizes, the 'Moderate' grade rests on narrative consistency rather than magnitude of benefit. A single large study with a favorable result could dominate the perceived signal.",
-        "severity": "high"
+        "issue": "Narrow human evidence for skin outcome (n=2 RCTs, topical only)",
+        "detail": "The skin/appearance outcome is graded Moderate despite only 2 human RCTs, both on topical (not systemic) rapamycin. One trial is from 2015, one from 2019. No pooled effect is extractable, and no sample sizes are given. The grade cannot reflect confidence in systemic rapamycin for aging skin, only topical delivery in a tiny literature.",
+        "severity": "moderate"
       },
       {
-        "issue": "Narrow, disease-specific human samples",
-        "detail": "Human immune function studies focus on BCG therapy, post-surgical patients, or vaccine-specific responses (2025, 2021, 2019 RCTs). Mood studies pair rapamycin with ketamine (2022, 2020), not as monotherapy. Skin studies target tuberous sclerosis complex or systemic sclerosis, rare genetic/autoimmune conditions. Generalizability to healthy adults or common conditions (e.g., depression in the general population) is not supported by these records. A 'Moderate' grade for 'mood' based on ketamine-adjuvant trials is a misrepresentation of the evidence's scope.",
+        "issue": "Mood outcome consists entirely of ketamine co-administration studies",
+        "detail": "All 3 human RCTs on mood (2020–2025) examine rapamycin as a modulator of ketamine's antidepressant effect, not rapamycin monotherapy. This is a specific and mechanistically narrow intervention (mTORC1 inhibition in the context of acute ketamine), not a longevity or general mood claim. The outcome title 'mood / depression' obscures that these are ketamine-response studies.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Rapamycin's mTOR inhibition is well-established biochemically and has plausible links to immune memory (T cell differentiation via mTORC1 suppression) and autophagy-related neuroprotection. However, the clinical outcomes claimed (e.g., 'cognition' in healthy humans, or 'mood' as monotherapy) rest almost entirely on animal or disease-specific trial data. The 2025 RCT on vaccine-induced memory T cells is mechanistically coherent, but a single trial does not establish that systemic mTOR inhibition improves cognition or mood in non-immunocompromised populations. The inferential gap widens from basic mechanism (mTOR suppression \u2192 autophagy) to sustained clinical benefit (improved healthspan, depression resolution).",
-    "strongest_counterargument": "A skeptic would note that rapamycin carries well-known immunosuppressive side effects and toxicity (nephrotoxicity, hepatotoxicity, increased infection risk in some contexts). The 'Moderate' grades rest on small, heterogeneous, disease-specific trials with unextractable effect sizes and no independent meta-analytic replication. The cognition outcome is anchored to animal models and one unspecified human RCT; the mood outcome conflates adjuvant use with ketamine, not monotherapy benefit. Publication bias and selective reporting of abstracts (sample sizes missing in 16 of 19 studies) are uncontrolled. A well-powered, adequately-blinded RCT in a general adult population (e.g., age-related cognitive decline or depression in otherwise healthy subjects) does not exist in these records.",
-    "what_would_change_the_picture": "A multi-site RCT with sample size \u2265300, blinded dose-randomization (rapamycin vs. placebo), pre-specified cognitive or mood primary outcomes, and adequate safety monitoring in non-diseased adults would be the minimum standard. Alternatively, two or more independent meta-analyses of the existing literature, with transparent reporting of study heterogeneity, risk of bias, and funnel-plot analysis for publication bias, would provide stronger evidence for consistency.",
+    "mechanism_check": "The proposed mechanism (mTOR inhibition → altered cellular senescence, autophagy, and immune homeostasis → improved aging phenotypes) is biologically plausible at the cellular level, and some animal studies document reductions in amyloid plaques, improved immune memory, and reduced senescence markers. However, the leap from in vitro mTOR inhibition and animal models to human cardiovascular, skin, and mood benefit is large. The only human skin data are topical (local delivery, not systemic aging); mood data are ketamine-potentiation, not monotherapy aging claims; and the 1 human cardiovascular RCT is embedded in a 7-study pool that is 71% animal. No human study directly measures the proposed aging endpoint (lifespan, healthspan, or validated aging clocks).",
+    "strongest_counterargument": "A skeptic would note that this evidence base is top-heavy with animal models and a single human systematic review, and that human RCTs are mostly small, mechanistically narrow (topical skin, ketamine co-treatment), or of unknown sample size. The cardiovascular grade rests on a minority of human data; immune function is 70% animal; mood is entirely ketamine-dependent. Without extractable sample sizes, there is no way to know whether any human finding would survive a large, adequately powered trial. The evidence could reflect publication bias toward promising small trials rather than true drug effects.",
+    "what_would_change_the_picture": "A large (n≥500), adequately powered RCT measuring validated aging outcomes (epigenetic age, frailty index, or objective cardiovascular/immune endpoints) in a non-specialized population over 12+ months, with pre-registered outcomes and transparent sample size justification, would directly test whether systemic rapamycin slows aging in humans. Until then, the moderate grade appropriately reflects genuine mechanistic plausibility paired with insufficient human evidence to make a confident clinical claim.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Fármaco inmunosupresor que ralentiza el crecimiento celular al bloquear una vía clave de detección de nutrientes.",
+    "what_it_is": "La rapamicina (también llamada sirolimus) es un compuesto natural aislado originalmente de bacterias del suelo. Es una molécula lipófila grande y compleja (C₅₁H₇₉NO₁₃, MW 914.2) que es altamente soluble en grasas, lo que significa que atraviesa las membranas celulares fácilmente. Se utiliza clínicamente como inmunosupresor en medicina de trasplantes y se toma por vía oral como tableta o líquido, aunque en contextos de investigación también se aplica tópicamente o se estudia mediante inyección.",
+    "how_it_works_line": "Bloquea mTORC1, un sensor celular de nutrientes que controla el crecimiento, al unirse a FKBP12 e impedir la activación de mTORC1.",
+    "how_it_works": "La rapamicina funciona inhibiendo una maquinaria celular llamada mTORC1 (complejo 1 de la diana mecanística de rapamicina) — piénsalo como un sensor de nutrientes que le dice a tus células si deben crecer y dividirse o reciclar sus propios componentes. Cuando la rapamicina entra en una célula, se une firmemente a una proteína auxiliar llamada FKBP12, y este complejo bloquea entonces la activación de mTORC1. Al ralentizar mTORC1, la rapamicina hace que las células reduzcan la síntesis de proteínas (el proceso de construcción de nuevas proteínas) e incrementen la autofagia — un programa de reciclaje celular que descompone componentes dañados o antiguos. Este cambio en el comportamiento celular es la razón por la cual la rapamicina se utiliza en medicina de trasplantes: suprime la proliferación de células inmunes. En investigación del envejecimiento, la hipótesis es que la supresión crónica de mTORC1 podría imitar algunos efectos metabólicos de la restricción calórica, que se sabe extiende la vida útil en animales — pero si eso se traduce en beneficios significativos de longevidad en humanos sigue siendo una pregunta abierta.",
+    "safety_line": "Inmunosupresor aprobado con riesgos conocidos; la eficacia a largo plazo a dosis bajas para el envejecimiento aún no se ha establecido.",
+    "safety_detail": "La rapamicina es un fármaco aprobado por la FDA y tiene un largo historial de seguridad clínica en pacientes de trasplante a dosis más altas durante años. Los ensayos en los registros proporcionados — principalmente estudios de 1-2 años a dosis más bajas — reportaron tolerabilidad, aunque los tamaños de muestra no pudieron verificarse a partir de los resúmenes. Sin embargo, la rapamicina conlleva riesgos establecidos incluyendo efectos metabólicos, citopenias (conteos bajos de células sanguíneas) e infecciones debido a la supresión inmunológica; el uso a largo plazo a dosis antienvejecimiento en personas por lo demás sanas no ha sido estudiado rigorosamente.",
+    "safety_bullets": [
+      "Interacciones farmacológicas: la rapamicina es metabolizada por CYP3A4; la coadministración con inhibidores de CYP3A4 (p. ej., algunos antivirales, macrólidos) puede aumentar los niveles sanguíneos y los efectos adversos — sin pruebas en la mayoría de estudios de envejecimiento.",
+      "Poblaciones excluidas: el embarazo, la lactancia y la enfermedad renal o hepática grave no fueron incluidos en los ensayos recuperados; los efectos en estos grupos son desconocidos.",
+      "Efectos metabólicos a largo plazo: la inhibición crónica de mTORC1 puede afectar el metabolismo de la glucosa y los perfiles de lípidos; los estudios en los registros son a corto plazo, por lo que la seguridad metabólica a largo plazo está incompletamente caracterizada.",
+      "Supresión inmunológica: la rapamicina suprime la proliferación de células T; la magnitud y significado clínico de este efecto a dosis antienvejecimiento en individuos inmunocompetentes no está completamente cuantificado en los registros."
+    ],
+    "chem_meaning": "La rapamicina es un compuesto macrocíclico grande y altamente lipófilo (XLogP ≈ 6), lo que significa que es extremadamente soluble en grasas y atraviesa fácilmente las membranas celulares y la barrera hematoencefálica. Su tamaño (914 Da) y complejidad la hacen pobremente absorbida por vía oral y dependiente del transporte activo en el intestino; también está extensamente unida a proteínas en sangre. Esta química explica por qué la rapamicina puede alcanzar eficientemente objetivos intracelulares como mTORC1, pero también por qué se acumula en tejidos grasos y tiene una vida media prolongada — propiedades que importan para la dosificación y posibles efectos a largo plazo.",
+    "outcome_detail": [
+      {
+        "outcome": "cardiovascular",
+        "grade": "Moderada",
+        "what_studies_show": "Una revisión sistemática de 2024 y cinco estudios en animales examinaron los efectos cardiovasculares de la rapamicina. Un RCT de 2019 aplicó rapamicina tópica y encontró reducciones en marcadores de senescencia de la piel. Múltiples modelos en animales (estudios de 2026) mostraron que la rapamicina atenuó placas de amiloide-beta, mejoró los resultados conductuales en un modelo de Alzheimer en ratón y redujo los cambios relacionados con la edad en primates no humanos. La evidencia incluye tanto mejoras en biomarcadores como resultados funcionales, pero los ensayos cardiovasculares humanos con puntos finales cardíacos directamente medidos son escasos en los registros proporcionados.",
+        "why_this_grade": "Existen dos estudios humanos, aunque los tamaños de muestra no pudieron verificarse a partir de los resúmenes, limitando la precisión. Los modelos en animales muestran promesa, pero la traducción a beneficio clínico cardiovascular en humanos sigue siendo sin probar; la calificación refleja confianza moderada en la plausibilidad biológica y datos humanos tempranos, con precaución sobre tamaños de muestra no verificados.",
+        "outcome_key": "cardiovascular"
+      },
+      {
+        "outcome": "skin / appearance",
+        "grade": "Moderada",
+        "what_studies_show": "Un RCT exploratorio de 2019 aplicó rapamicina tópica y encontró reducciones en marcadores de senescencia y envejecimiento en piel humana. Un RCT de 2015 reportó mejoras clínicas e histológicas en máculas hipomelanóticas (manchas blancas en la piel). Ambos fueron ensayos humanos con evaluación directa de la piel.",
+        "why_this_grade": "Solo dos pequeños ensayos humanos existen; la precisión no está confirmada porque los tamaños de muestra no pudieron verificarse a partir de los resúmenes. Ningún estudio en animales fue incluido en esta categoría de resultados en los registros. La calificación moderada refleja datos humanos reales mostrando beneficio, pero tamaño de muestra limitado sin certeza y falta de replicación independiente.",
+        "outcome_key": "skin / appearance"
+      },
+      {
+        "outcome": "immune function",
+        "grade": "Moderada",
+        "what_studies_show": "Una revisión sistemática de 2024, un RCT de 2025 mostrando que la inhibición de mTOR moduló las respuestas de células T de memoria inducidas por vacuna en pacientes con cáncer, y un RCT de 2019 demostrando que la rapamicina previno la disfunción inmunológica inducida por cirugía en pacientes con cáncer de vejiga comprenden la evidencia humana. Siete estudios en animales (publicaciones de 2026) mostraron que la rapamicina amelioró la inflamación intestinal mediada por HLA-B27, mejoró las respuestas de células T CD8+ de memoria cuando se coadministró con vacunas y suprimió las células inmunes productoras de IL-17 en modelos de neuroinflamación.",
+        "why_this_grade": "Existen tres ensayos humanos con puntos finales inmunológicos, pero los tamaños de muestra no pudieron verificarse a partir de los resúmenes. La revisión sistemática única no ha sido replicada independientemente. Los modelos en animales muestran consistentemente modulación inmunológica, apoyando la plausibilidad biológica, pero la eficacia humana para la mejora inmunológica en el envejecimiento sano aún no está establecida; la calificación refleja evidencia mecanística promisoria en una población definida (pacientes inmunosuprimidos o posquirúrgicos) con precaución sobre precisión y generalizabilidad.",
+        "outcome_key": "immune function"
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Moderada",
+        "what_studies_show": "Tres RCT humanos examinaron los efectos del estado de ánimo de la rapamicina. Un ensayo de 2025 (PEARL) midió seguridad y métricas de healthspan incluyendo estado de ánimo después de un año. Un RCT de 2022 investigó si la rapamicina moduló el efecto antidepresivo rápido de la ketamina sobre la ideación suicida en pacientes con depresión resistente al tratamiento. Un RCT de 2020 examinó la misma pregunta — cómo la inhibición de mTORC1 por rapamicina interactuó con el mecanismo antidepresivo de la ketamina. Los tres fueron realizados en poblaciones clínicas específicas (depresión grave o suicidalidad), no en voluntarios sanos.",
+        "why_this_grade": "Existen tres ensayos humanos, pero todos tienen tamaños de muestra no verificados de la revisión de resúmenes, limitando la precisión. Ningún estudio en animales sobre estado de ánimo fue recuperado para este resultado. La evidencia es preliminar y específica para depresión resistente al tratamiento con coadministración de ketamina — si la rapamicina sola, o en poblaciones sanas, mejora el estado de ánimo no está establecido en los registros. La calificación moderada refleja datos humanos tempranos en un contexto clínico estrecho, sin replicación independiente o prueba amplia de población.",
+        "outcome_key": "mood / depression"
+      }
+    ],
+    "evidence_base": "La evidencia para rapamicina es predominantemente ensayos humanos (3–3 por resultado, hasta 2–3 por resultado con revisión sistemática y RCT) mezclados con estudios mecanísticos en animales. Los ensayos son recientes (2019–2026) y principalmente de 1–2 años de duración. Los estudios humanos son pequeños con tamaños de muestra no verificados de la revisión de resúmenes, limitando la precisión. Los modelos en animales (ratones, primates no humanos, sustitutos fúngicos) muestran consistentemente actividad biológica en senescencia, función inmunológica e neuroinflamación, pero no prueban directamente beneficio clínico en humanos. El cuerpo de evidencia es moderado en general — suficiente para sugerir que la inhibición de mTORC1 tiene plausibilidad biológica en contextos de envejecimiento, pero no suficiente para establecer beneficios clínicos claros fuera de poblaciones específicas (p. ej., pacientes inmunosuprimidos de trasplante).",
+    "open_questions": "Los registros proporcionados no incluyen ensayos grandes y a largo plazo aleatorizados en poblaciones de envejecimiento sano — la mayoría de estudios humanos involucran grupos enfermos o inmunosuprimidos (cáncer, trasplante, depresión resistente al tratamiento) o aplicación tópica. Si la rapamicina sistémica a dosis antienvejecimiento mejora la vida útil, función cognitiva o healthspan general en personas por lo demás sanas aún no ha sido probado en los registros. Los estudios son a corto plazo (máximo 1–2 años); la tolerabilidad a largo plazo acumulativa y los efectos metabólicos a dosis bajas crónicas están incompletamente caracterizados. Las relaciones dosis-respuesta y qué poblaciones podrían beneficiarse más permanecen abiertas.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "Los tamaños de muestra no se pueden extraer de ningún resumen en esta base de evidencia, lo que imposibilita evaluar si los efectos observados representan señales clínicas verdaderas o podrían ser ruido de ensayos con potencia insuficiente.",
+    "concerns": [
+      {
+        "issue": "Tamaños de muestra no verificables en todos los resultados",
+        "detail": "El motor explícitamente indica que 'los tamaños de muestra no pudieron verificarse a partir de los resúmenes' para cardiovascular (7 estudios), piel (2 estudios), función inmunológica (10 estudios) y estado de ánimo (3 estudios). Esta no es una laguna menor de notificación—significa que no se puede evaluar la magnitud de la imprecisión. Un único ensayo con n=200 y cinco con n=15 se agruparían idénticamente en narrativas, pero con credibilidad muy diferente.",
+        "severity": "high"
+      },
+      {
+        "issue": "Gran dependencia de estudios en animales con validez translacional desconocida",
+        "detail": "Cardiovascular (5 de 7 estudios en animales), función inmunológica (7 de 10 estudios en animales). El resultado cardiovascular se califica como Moderado a pesar de ser en su mayoría trabajo en animales; hay solo 1 ensayo clínico humano. Los estudios en animales a menudo muestran efectos de mTOR en marcadores, pero no está establecido a partir de estos resúmenes si las ratas ZDF o los titíes predicen beneficio clínico humano. No hay puente mecanístico visible en los registros entre modelos animales y resultado humano.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sin replicación independiente de las conclusiones de la revisión sistemática",
+        "detail": "La revisión sistemática de 2024 sobre 'Targeting ageing with rapamycin and its derivatives in humans' aparece tanto en bases de evidencia cardiovascular como de función inmunológica. El motor señala que esta conclusión 'no está replicada o verificada independientemente.' Esta revisión única ancla dos calificaciones moderadas; si sus métodos son defectuosos o sus criterios de inclusión son laxos, ambas calificaciones descansan en una única fundación.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Evidencia humana estrecha para resultado de piel (n=2 ensayos clínicos, solo tópico)",
+        "detail": "El resultado de piel/apariencia se califica como Moderado a pesar de solo 2 ensayos clínicos humanos, ambos sobre rapamicina tópica (no sistémica). Un ensayo es de 2015, otro de 2019. No se puede extraer efecto agrupado, y no se proporcionan tamaños de muestra. La calificación no puede reflejar confianza en rapamicina sistémica para piel envejecida, solo administración tópica en una literatura muy pequeña.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "El resultado de estado de ánimo consiste enteramente en estudios de coadministración de ketamina",
+        "detail": "Los 3 ensayos clínicos humanos sobre estado de ánimo (2020–2025) examinan rapamicina como modulador del efecto antidepresivo de la ketamina, no monoterapia con rapamicina. Esta es una intervención específica y mecanísticamente estrecha (inhibición de mTORC1 en el contexto de ketamina aguda), no una afirmación de longevidad o estado de ánimo general. El título del resultado 'estado de ánimo / depresión' oculta que estos son estudios de respuesta a ketamina.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "El mecanismo propuesto (inhibición de mTOR → alteración de senescencia celular, autofagia y homeostasis inmunológica → mejora de fenotipos de envejecimiento) es biológicamente plausible a nivel celular, y algunos estudios en animales documentan reducciones en placas amiloides, mejora de la memoria inmunológica y reducción de marcadores de senescencia. Sin embargo, el salto de inhibición de mTOR in vitro y modelos animales a beneficio cardiovascular, de piel y estado de ánimo humano es grande. Los únicos datos de piel humana son tópicos (administración local, no envejecimiento sistémico); los datos de estado de ánimo son potenciación de ketamina, no afirmaciones de monoterapia de envejecimiento; y el 1 ensayo clínico cardiovascular humano está incrustado en un conjunto de 7 estudios que es 71% animal. Ningún estudio humano mide directamente el punto final de envejecimiento propuesto (esperanza de vida, expectativa de vida saludable o relojes de envejecimiento validados).",
+    "strongest_counterargument": "Un escéptico señalaría que esta base de evidencia es excesivamente cargada de modelos animales y una única revisión sistemática humana, y que los ensayos clínicos humanos son mayormente pequeños, mecanísticamente estrechos (piel tópica, co-tratamiento con ketamina) o de tamaño de muestra desconocido. La calificación cardiovascular descansa en una minoría de datos humanos; la función inmunológica es 70% animal; el estado de ánimo es enteramente dependiente de ketamina. Sin tamaños de muestra extraíbles, no hay forma de saber si algún hallazgo humano sobreviviría un ensayo grande y adecuadamente potenciado. La evidencia podría reflejar sesgo de publicación hacia ensayos pequeños prometedores en lugar de efectos verdaderos del fármaco.",
+    "what_would_change_the_picture": "Un ensayo clínico grande (n≥500), adecuadamente potenciado midiendo resultados de envejecimiento validados (edad epigenética, índice de fragilidad o puntos finales cardiovasculares/inmunológicos objetivos) en una población no especializada durante 12+ meses, con resultados pre-registrados y justificación transparente del tamaño de muestra, probaría directamente si la rapamicina sistémica ralentiza el envejecimiento en humanos. Hasta entonces, la calificación moderada refleja apropiadamente plausibilidad mecanística genuina combinada con evidencia humana insuficiente para hacer una afirmación clínica confiada.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

@@ -1,421 +1,331 @@
 {
-  "citrulline-malate::clarity-engine-v2::appraise1::5174ce13f4": {
-    "headline": "Most individual trials are small and unreported in sample size; no meta-analysis provides a pooled effect estimate; and conflicting results within the retrieved records (e.g., 2021 'ineffective' vs. 2017 'improves' performance) are never reconciled, making it unclear whether citrulline-malate actually works.",
+  "resveratrol::clarity-engine::appraise1::e8da7e1c51": {
+    "headline": "Resveratrol shows modest, borderline effects on blood sugar and lipids in meta-analyses with wide confidence intervals that include no effect, while weight loss evidence is thin and inconsistent across small trials.",
     "concerns": [
       {
-        "issue": "Sample size transparency and precision crisis",
-        "detail": "Across 21 exercise performance studies, only 3 report sample sizes (10, 13, 137). For muscle strength (14 studies), only 1 reports n=137; the other 13 are opaque. For recovery (12 studies), only 1 reports n=10. The engine notes 'true total is substantially larger' but cannot verify it from abstracts. This opacity makes it impossible to assess whether pooled evidence is stable or dominated by a few small underpowered trials.",
+        "issue": "Lipid pooled effect crosses zero clinically",
+        "detail": "The mean difference for cholesterol/lipids is 1.49 mg/dL [-14.96 to 17.93], a 95% CI that spans both meaningful harm and benefit and includes zero. Despite 5 convergent meta-analyses and ~1768 verified participants, the pooled point estimate is negligible and compatible with no true effect. This is the outcome graded 'Strong,' yet the precision is insufficient to exclude null.",
         "severity": "high"
       },
       {
-        "issue": "Directly contradictory trial results, unreconciled",
-        "detail": "Within the exercise performance record: a 2021 RCT concluded 'ineffective during aerobic cycling and subsequent anaerobic'; a 2017 RCT concluded 'improves upper- and lower-body submaximal weightlifting'; a 2023 RCT concluded 'Increases Total Work'; a 2018 RCT concluded 'does not improve...performance or reduce muscle soreness'. The retrieved systematic reviews (2020, 2026) and meta-analyses (2021, 2022) do not appear to have resolved this heterogeneity\u2014no pooled effect estimate is extractable from the records. The Moderate grade rests on 'inconsistency: several studies exist but no pooled analysis confirms they agree.'",
+        "issue": "Blood sugar effect at threshold of null",
+        "detail": "The mean difference for blood sugar is -0.27 [-0.55 to 0.01], where the upper confidence bound touches zero and the point estimate is clinically marginal (0.27 mg/dL is <1% of typical fasting glucose). Although 6 meta-analyses converge here, the evidence ensemble does not clearly establish a meaningful glucose-lowering signal.",
         "severity": "high"
       },
       {
-        "issue": "No extractable pooled effect across any outcome",
-        "detail": "Despite 16 RCTs and 4 meta-analyses or systematic reviews in the exercise performance domain, the engine reports 'pooled effect: none extractable' for all four outcomes (exercise performance, muscle strength, recovery, blood pressure). This means the reviews either did not perform meta-analysis, reported heterogeneity without a summary estimate, or their conclusions are not available in the abstracts. Without a pooled effect, the Moderate grade cannot be anchored to a quantitative finding.",
+        "issue": "Weight/fat loss evidence is primarily animal and underpowered",
+        "detail": "Of 13 studies on weight loss, only 6 are human and 7 are animal. Only 4 of 13 report sample size (median 74). The single meta-analysis/systematic review is not replicated. This outcome is graded 'Moderate,' but the human evidence is sparse, fragmented, and small enough that one trial could shift the direction of any pooled estimate. No pooled effect is extractable, reflecting genuine inconsistency.",
         "severity": "high"
       },
       {
-        "issue": "Blood pressure evidence is minimally powered",
-        "detail": "Only 7 trials on blood pressure (6 RCTs, 1 clinical trial); only 2 report sample sizes (15, 25 \u2192 ~40 verified participants). The engine notes 'effect estimate may be unstable.' A single well-run larger trial could substantially shift the apparent effect, and the current evidence base is too sparse to support confident claims about blood pressure benefit.",
+        "issue": "Most individual study sample sizes go unreported",
+        "detail": "Across all outcomes, the engine notes that abstracts omit sample size for the majority of trials. For weight loss, only 4 of 13 studies report n; for blood sugar, 6 of 30; for lipids, 11 of 27; for bone health, 3 of 9. This creates opacity: the true total participant count may be much larger, but the distribution of effect sizes across small vs. large trials is unknowable, inviting selection bias concerns.",
         "severity": "moderate"
       },
       {
-        "issue": "Publication year and design quality variation unchecked",
-        "detail": "Exercise performance trials span 2010\u20132026 (16 years); muscle strength spans 2009\u20132023. Two abstracts are marked 'Unclassified' rather than RCT. Systematic reviews did not extract or report risk-of-bias assessments in these abstracts. Older trials (2009\u20132016) may reflect different methodological standards or undisclosed conflicts. No summary of funding sources, registration, or bias risk is visible in the records.",
+        "issue": "Bone health rests on very limited primary evidence",
+        "detail": "Only 2 primary human RCTs exist for bone health, supported by 3 pooled analyses. The median sample size is 36 and no pooled effect is extractable, indicating heterogeneity or insufficient data. Animal models (n=4) show mixed results: one 2018 study found resveratrol reduced bone mass and fracture strength, directly contradicting the positive interpretation of other animal work. Grading as 'Moderate' is appropriate but should flag that clinical replication is minimal.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Citrulline-malate plausibly increases NO bioavailability and ATP regeneration via malate, which could enhance blood flow and reduce fatigue during repeated muscular effort. However, the leap from mechanism to the CLINICAL claims (e.g., 'improves muscle strength,' 'reduces soreness') depends on whether trials actually measured these outcomes robustly and consistently. The contradictory trial results (ineffective vs. effective) suggest either the mechanism is context-dependent (e.g., only works in certain exercise modalities or populations) or trial heterogeneity (different doses, timing, populations) obscures a weak or absent effect. The mechanism does not explain why some trials show benefit and others do not.",
-    "strongest_counterargument": "A well-informed skeptic would observe that across 20+ human trials spanning 16 years, no meta-analysis has produced a pooled estimate, reviews have not reconciled directly contradictory results (2021 'ineffective' vs. 2017 'improves'), and most trials remain unreported in sample size and thus potentially underpowered. The Moderate grade appears to rest on the mere existence of multiple studies and a plausible mechanism, not on convergent evidence. It is entirely consistent with these records that citrulline-malate has little or no effect, and that apparent benefits in some trials reflect small-sample noise, investigator bias, or publication bias favoring positive findings.",
-    "what_would_change_the_picture": "A high-quality, pre-registered multi-center RCT with >150 participants per arm, standardized dosing and timing, blinded outcome assessment, and primary endpoints in a single exercise modality (e.g., repeated lower-body resistance sets) would provide a decisive test. Alternatively, a rigorous meta-analysis that extracts individual trial data, quantifies heterogeneity by dose/modality/population, and reports pooled estimates with 95% confidence intervals and assessment of publication bias would clarify whether inconsistency reflects genuine effect variation or absence of effect masked by noise.",
+    "mechanism_check": "The implicit mechanism for resveratrol's metabolic effects is typically SIRT1 activation \u2192 improved insulin signaling, mitochondrial function, and lipid oxidation. However, the clinical outcomes\u2014marginal reductions in fasting glucose (\u22120.27 mg/dL) and lipids (1.49 mg/dL, crossing zero)\u2014are so small that they do not clearly demonstrate the mechanism is operative at physiologically relevant doses in humans. Animal studies, which likely used higher concentrations, show larger signals, but translation to human dosing is not addressed in these abstracts. There is an inferential gap between 'SIRT1 activation observed in vitro/in vivo' and 'clinically meaningful metabolic improvement in humans,' and the point estimates do not convincingly bridge it.",
+    "strongest_counterargument": "A skeptic would argue that both blood sugar and lipids show effects so close to zero\u2014or with confidence intervals that include zero\u2014that they are consistent with publication bias or small-trial inflation (positive findings more likely to be published). The weight loss outcome cannot be pooled at all, suggesting genuine inconsistency; animal studies dominate and may not translate. The bone health outcome rests on only 2 human trials with contradictory animal follow-up. If one constrains analysis to large, well-powered RCTs alone (e.g., the 2017 n=74 trial on metabolic syndrome showing no benefit), the case for resveratrol dissolves. The 'Strong' grades for blood sugar and lipids appear to rest on meta-analytic convergence rather than robust point estimates.",
+    "what_would_change_the_picture": "A large (n\u2265500), adequately powered, multi-center RCT with preregistered endpoints and long-term follow-up (\u226512 weeks), directly comparing resveratrol to placebo in a single homogeneous population (e.g., patients with prediabetes or metabolic syndrome) would resolve whether the marginal effects observed in small trials reflect true benefit or noise. For weight loss specifically, consistent positive findings across human RCTs of sufficient size would be necessary to elevate that outcome from Moderate to Strong.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
-  "delta-sleep-inducing-peptide::clarity-engine-v2::appraise1::7dc30f4ca2": {
-    "headline": "All evidence for DSIP is animal-only and spans 24 years with no human trials, making clinical claims speculative; the evidence base cannot currently support human use recommendations.",
+  "selenium::clarity-engine::appraise1::c1d7a63a51": {
+    "headline": "Selenium shows strong evidence for thyroid autoimmunity and inflammation, but cognition and immune function claims rest on thin human trial data (4 RCTs each) with heavy reliance on animal studies and post-hoc observational work.",
     "concerns": [
       {
-        "issue": "Zero human evidence across all outcomes",
-        "detail": "Across sleep quality (3 studies), seizure/epilepsy (1 study), and stroke recovery (2 studies), not a single human trial is present. The engine explicitly notes this indirectness for each outcome. Animal models of sleep, seizure, and neuroprotection are notoriously poor predictors of human efficacy, making any inference to clinical practice unreliable.",
+        "issue": "Cognition outcome heavily animal-weighted",
+        "detail": "Of 23 cognition studies, 11 are animal models (48%), while only 4 are RCTs in humans. The engine itself flagged 'limited human evidence: 6 primary human studies' as below top-tier threshold. A single well-designed human RCT (e.g., 2022 meta-analysis n=1350) cannot credibly anchor a 'Moderate' grade when most retrieved abstracts omit sample size and animal studies dominate the retrieval set.",
         "severity": "high"
       },
       {
-        "issue": "Extreme evidence recency gap",
-        "detail": "The most recent study is from 2004 (20 years old at minimum from current standards). The oldest is from 1980. No recent attempts to translate these animal findings to human trials are visible in this sample, suggesting either the field has abandoned this line of research or translation efforts are not published in accessible literature.",
+        "issue": "Immune function: minimal primary human trial data",
+        "detail": "Only 4 RCTs in humans appear in the 17-study immune function set, with sample sizes of 23, 36, 502, and one undisclosed. The engine noted this was 'below the threshold for the top tier.' Two meta-analyses (2024 MS cohort n=2381; 2017 CHD cohort n=43998) pull from clinical populations, not generalizable immune-healthy subjects. A 2017 influenza vaccine RCT (n=23) is too small to support broad immune claims.",
         "severity": "high"
       },
       {
-        "issue": "Sample sizes not extractable; likely underpowered",
-        "detail": "The abstracts provided contain no usable sample size data. Given that these are animal studies from 1980\u20132004, they were likely small (typical of that era). Small studies are prone to false positives, and without knowing actual N values, the reliability of the reported effects cannot be assessed.",
+        "issue": "Pooled effect for inflammation near zero with wide CI",
+        "detail": "The reported SMD is -0.48 [-0.96 to 0], meaning the confidence interval includes zero effect. This contradicts a 'Strong' grade: the lower bound is nominally negative but the upper bound is null, and the point estimate is only small-to-moderate. The grade relies on synthesis consistency (4 meta-analyses converge) rather than effect magnitude, which is a weak foundation if the true effect is negligible.",
+        "severity": "high"
+      },
+      {
+        "issue": "Thyroid outcome: mix of autoimmune and euthyroid populations",
+        "detail": "The 2016 RCT (n=196) in subclinical hypothyroid patients, 2019 RCT (n=103) in Graves' patients on methimazole, and 2021 RCT (n=47) in Hashimoto's autoimmunity are mechanistically distinct (autoimmunity vs. thyroid hormone regulation). A 2021 RCT (n=120) on musculoskeletal health in older women is off-outcome entirely. Pooling across these heterogeneous indications without extractable pooled effect size obscures whether benefits apply to all thyroid disorders or only autoimmune subtypes.",
         "severity": "moderate"
       },
       {
-        "issue": "Outcome heterogeneity without mechanistic bridge",
-        "detail": "Three disparate clinical claims\u2014sleep quality, seizure suppression, and stroke recovery\u2014are drawn from overlapping small animal studies (note: the 2004 study appears in all three outcome grades). No mechanism is described linking DSIP to each outcome, making it unclear whether these represent one pleiotropic effect or unsupported extrapolation across unrelated systems.",
+        "issue": "Year range heavily recent; pre-2015 literature absent from retrieved set",
+        "detail": "Cognition studies span 2016\u20132026; immune function 2011\u20132026; inflammation 2011\u20132026. The thyroid evidence is most robust (2003\u20132026), but cognition and immune function sets are dominated by post-2020 publications. This temporal clustering raises the possibility of selective retrieval or late emergence of positive studies, and limits ability to assess whether earlier null or negative work was excluded.",
         "severity": "moderate"
-      },
-      {
-        "issue": "No pooled effect sizes; no meta-analysis possible",
-        "detail": "Each outcome records 'none extractable' for pooled effect. With only 1\u20133 studies per outcome and no reported effect sizes or metrics visible in abstracts, no quantitative synthesis is possible. Conclusions rest on narrative reports from heterogeneous animal models.",
-        "severity": "low"
       }
     ],
-    "mechanism_check": "The proposed mechanism (sleep induction via DSIP peptide signaling) is plausible at the animal level\u2014the 1980\u20132004 studies apparently tested this in cats and other models. However, the leap from 'cats show altered sleep cycles and EEG patterns' to 'humans will experience improved sleep quality' is substantial and untested. The seizure and stroke claims are even more speculative: they rest on single animal studies with no described mechanistic rationale, and peptide delivery across the human blood\u2013brain barrier in therapeutic doses is an additional unvalidated step.",
-    "strongest_counterargument": "A skeptic would note that DSIP had its main period of investigation in the 1980s\u2013early 2000s, then disappeared from the human clinical literature\u2014suggesting null or inconclusive translation to humans that deterred further research. The fact that no human trial appears in this sample despite decades of basic work implies either the effect does not replicate in human physiology or was never tested because early animal data were insufficiently promising. Zero human evidence, combined with apparent research abandonment, is the strongest signal against clinical efficacy.",
-    "what_would_change_the_picture": "A single adequately powered, blinded, placebo-controlled randomized trial in humans (N \u2265 50 per arm) measuring sleep quality by objective metrics (e.g., actigraphy, polysomnography) and clinically relevant outcomes (e.g., daytime function, quality of life) would provide the minimum evidence needed to move beyond speculation. For seizure or stroke claims, separate human trials in those populations would be required.",
+    "mechanism_check": "Selenium is a well-established selenoprotein cofactor (glutathione peroxidase, thioredoxin reductase) with plausible anti-inflammatory and antioxidant roles, directly supporting thyroid autoimmunity (where Th1-driven inflammation is the target) and general inflammation reduction. The leap to cognition is larger: the mechanism rests on oxidative stress reduction and selenoprotein P CNS delivery, but retrieved abstracts do not establish that peripheral selenium supplementation reliably reaches therapeutic concentrations in brain tissue, nor that this translates to measurable cognitive preservation in non-deficient populations. The immune function mechanism (natural killer cell support, T-cell function) is plausible but underdeveloped in the retrieved evidence.",
+    "strongest_counterargument": "A skeptic would note that the 'Strong' thyroid and inflammation grades rest almost entirely on meta-analytic convergence and consistency, not on large, high-quality primary RCTs\u2014and the inflammation pooled effect is zero at the upper CI bound. Cognition and immune function are Moderate largely because the engine downgraded them; yet both rest on the same 4-trial-per-outcome human RCT foundation, suggesting the distinction is arbitrary. The evidence could reflect publication bias (small, positive trials published; null or negative trials not retrieved) or population-specific benefit (e.g., selenium only helps Hashimoto's patients, not healthy people), with no way to detect this from the retrieval sample alone.",
+    "what_would_change_the_picture": "For cognition and immune function: a large, adequately powered RCT (n\u2265500) in cognitively healthy or immunocompetent non-deficient adults, with long-term follow-up (\u22651 year), would clarify whether benefit extends beyond autoimmune or critical-illness subgroups. For inflammation: a published pooled analysis reporting the point estimate and CI with explicit heterogeneity assessment would establish whether the near-zero effect is real or an artifact of averaging large clinical trials with small mechanistic studies.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
-  "garlic-extract::clarity-engine-v2::appraise1::9e3ce11327": {
-    "headline": "The human evidence base for garlic extract is thin (\u22644 primary trials per outcome), small in aggregate sample size, and relies heavily on non-overlapping meta-analyses that remain unindependently verified\u2014effect estimates are unstable and could shift materially with modest additional studies.",
+  "st. john's wort::clarity-engine::appraise1::90df3ec870": {
+    "headline": "The evidence base for St. John's Wort is severely underpowered for its main claim (mood/depression): three small RCTs totaling ~63 participants cannot reliably establish efficacy, and no pooled effect is reported despite four RCTs existing.",
     "concerns": [
       {
-        "issue": "Severe sample size opacity across all outcomes",
-        "detail": "Only 1 of 4 blood pressure studies and 2 of 13 cardiovascular studies report sample sizes in the abstracts (n=79 and n=16 noted). The engine notes that 'most abstracts omit sample size, so the true total is substantially larger,' but this hidden denominator means the actual precision of the pooled effects cannot be verified from the evidence provided. A single large study could dominate or reverse a pooled result if most trials are actually small.",
+        "issue": "Inadequate sample size for depression claim",
+        "detail": "Only 3 of 9 depression studies report sample sizes (n=17, 20, 26), yielding a verified total of ~63 participants across an undisclosed number of RCTs. The engine explicitly flags 'modest verified sample' and 'effect estimate may be unstable.' Six studies do not report n at all, obscuring whether the true denominator is substantially larger or confirming an uncontrolled literature. Even if all unreported studies had identical designs, a median n of 20 per trial suggests individual studies are underpowered to detect modest effects.",
         "severity": "high"
       },
       {
-        "issue": "Cholesterol/lipids grade relies on non-replicated meta-analyses",
-        "detail": "Three meta-analyses are listed for lipids (2023, 2021, and 2009), but the engine notes only 4 human trials total underlie them\u2014likely with substantial overlap. The engine explicitly states the meta-analyses lack independent replication. If these three meta-analyses largely cite the same 4 underlying RCTs, the appearance of convergence is an artifact of citation overlap, not true replication.",
+        "issue": "No extractable pooled effect despite multiple RCTs",
+        "detail": "Four RCTs exist for mood/depression (1998, 2004, 2005, 2023), but the engine reports 'pooled effect: none extractable.' This suggests heterogeneity, missing data, or incomparable interventions (e.g., the 2023 trial co-administered Ginkgo biloba, confounding the active ingredient). Without transparency on why pooling failed, readers cannot assess whether efficacy is genuinely established or merely scattered across disparate designs.",
         "severity": "high"
       },
       {
-        "issue": "Blood sugar evidence is animal-only, contradicting Preliminary grade justification",
-        "detail": "All 3 blood sugar studies (0 human, 3 animal) are acknowledged by the engine as 'animal-only' and 'does not reliably translate to humans.' Yet the outcome is graded Preliminary rather than Not Sufficient or Insufficient. A Preliminary grade typically suggests early-stage human signal; this evidence base has none. The grade appears misaligned with the evidence composition.",
+        "issue": "Confounding agent in largest mood trial",
+        "detail": "The 2023 RCT (n=26, the largest mood study) administered St. John's Wort *and* Ginkgo biloba together. This combination design precludes attribution of any effect to St. John's Wort alone and undermines this trial's contribution to isolating the herb's efficacy. It is neither a pure test nor clearly excluded from the pooled analysis.",
         "severity": "high"
       },
       {
-        "issue": "Heavy reliance on animal evidence for cardiovascular claims",
-        "detail": "The cardiovascular outcome includes 6 animal studies and only 4 human RCTs (with 2 reporting sample sizes: n=16 and n=79). Animal models of cardiovascular dysfunction often do not recapitulate human disease biology or drug response. The inclusion of 7 animal studies in a 13-study cardiovascular portfolio inflates the apparent evidence base without proportional human validity.",
+        "issue": "Inflammation outcome entirely animal-derived",
+        "detail": "All 5 inflammation studies are animal models (rat urethral stricture, mouse colorectal carcinogenesis, diabetic wound healing in rats/mice). The engine explicitly notes 'Indirectness: evidence is animal-only; does not reliably translate to humans.' Grading this outcome as 'Preliminary' rather than 'Insufficient' is generous given zero human confirmation; a single adverse event in a human trial could overturn these animal findings.",
+        "severity": "high"
+      },
+      {
+        "issue": "Tissue healing outcome rests on single human trial",
+        "detail": "The 2025 RCT (n=48, pressure injury healing) is the sole human evidence for tissue healing; two animal studies provide no replication. The engine flags 'Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence.' A single positive trial cannot establish reproducibility, especially if it was conducted by a group with undisclosed conflicts or if the control arm performed unexpectedly poorly.",
         "severity": "moderate"
       },
       {
-        "issue": "No pooled effects extractable; certainty capped by design limitations, not data synthesis",
-        "detail": "The engine notes 'pooled effect: none extractable' for all three outcomes. This means the meta-analyses listed are not accompanied by quantitative summary estimates in the abstracts provided. Without seeing actual effect sizes, confidence intervals, and heterogeneity metrics, it is impossible to assess whether observed benefits are clinically meaningful or whether study-to-study variation is explained or residual.",
+        "issue": "Stress/anxiety evidence microscopic and dated",
+        "detail": "Only 2 RCTs, n~46 combined, spanning 18 years (2005\u20132023). No trial after 2023 exists; methodological standards have evolved since 2005. The 2005 trial is a 'pilot study,' implicitly underpowered. This outcome cannot support a clinical recommendation and remains exploratory.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The proposed mechanism\u2014that garlic extract modulates lipid metabolism and endothelial function via antioxidant and anti-inflammatory pathways\u2014is plausible from a basic science standpoint. However, the clinical outcomes (blood pressure reduction, cholesterol change, endothelial markers) are measured in small, heterogeneous populations (hypertensives, obese patients, children with hypercholesterolemia, coronary artery disease patients). The leap from in vitro antioxidant activity or animal metabolic changes to sustained human cardiovascular benefit in these diverse cohorts is substantial and not bridged by dose-response studies or mechanism-of-action work shown in the records.",
-    "strongest_counterargument": "A skeptic would note that the four human RCTs span 25 years (1998\u20132023), likely different formulations and doses of 'garlic extract,' and populations with different baseline risk and treatment exposure. The absence of sample sizes for most trials suggests they may be small and underpowered. Meta-analyses that pool these heterogeneous, likely-small studies without visible effect estimates or heterogeneity assessment may produce false confidence in a modest or null average effect. The recent 2022\u20132023 trials may include unpublished null findings or be selectively reported; without a registered protocol or prospective risk-of-bias assessment visible in the abstracts, confirmation bias toward positive outcomes cannot be ruled out.",
-    "what_would_change_the_picture": "A large (n\u2265200 per arm), multisite, pre-registered RCT with long-term follow-up (\u226512 weeks), standardized garlic extract dose, and pre-specified cardiovascular endpoints (blood pressure, lipid subfractions, endothelial function markers) measured with blinded assessment would directly test the claims. Publication of the full data, heterogeneity assessment, and subgroup analyses would allow readers to judge stability of effects across populations.",
+    "mechanism_check": "St. John's Wort contains hyperforin and hypericin, with in vitro and animal evidence of serotonergic and anti-inflammatory properties. The leap from animal anti-inflammatory mechanisms (colorectal carcinogenesis suppression, systemic and topical wound healing) to human clinical outcomes is substantial: animal wound-healing models do not recapitulate human pressure injury chronicity, and mouse inflammation does not reliably predict human response to oral herbal extracts. For mood/depression, animal mechanism studies and human pharmacology are absent from the records; the inference from biochemical components to clinical antidepressant efficacy is indirect and relies entirely on the small clinical trials themselves, not on a mechanistic bridge.",
+    "strongest_counterargument": "A skeptical expert would note that the depression evidence meets the statistical threshold for a small, underpowered literature dominated by pilot and open-label designs (only 4 RCTs, ~63 verified participants), with no pooled effect reported and one confounded trial. Publication bias is not addressed: if St. John's Wort had been tested in 10 RCTs but only the positive 4 were retrieved, the true effect size could be null. The stress/anxiety and tissue healing grades rest on single or near-single human trials; replication is absent. The herb's known drug interactions (induces CYP3A4, reducing oral contraceptive and other medication efficacy) represent a documented clinical harm unaddressed in these records, suggesting a safety profile less favorable than implied by the 'Moderate' mood grade.",
+    "what_would_change_the_picture": "A pre-registered, adequately powered RCT (n \u2265 200) comparing St. John's Wort to placebo and to a reference antidepressant (e.g., sertraline) in mild-to-moderate depression, with published protocol and transparent reporting of all outcomes, would provide meaningful evidence. For inflammation and tissue healing, a prospective human RCT (n \u2265 100) using a validated clinical endpoint (e.g., inflammatory biomarker reduction in a disease state, or certified wound healing rate) would anchor the animal findings and permit evidence synthesis.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
-  "iodine::clarity-engine-v2::appraise1::e7b3059587": {
-    "headline": "Iodine's benefit for thyroid function is robust and well-replicated, but cognition claims rest on a thin primary evidence base (2 studies), and immune function claims are entirely unsupported in humans.",
+  "tesamorelin::clarity-engine::appraise1::99f08cc03f": {
+    "headline": "Tesamorelin evidence is almost entirely from HIV populations with abdominal obesity, making generalizability to other populations and indications unknown; the grey-market safety profile is uncharacterized.",
     "concerns": [
       {
-        "issue": "Cognition evidence is almost entirely synthetic",
-        "detail": "The Moderate grade for cognition is built on only 2 primary human studies (one RCT, one clinical trial from 2002\u20132009), with 5 of 7 records being meta-analyses or systematic reviews that pool the same limited primary data. This means the SMD 0.27 [0.1\u20130.44] rests on a narrow empirical foundation. A single new well-powered RCT showing null effect could substantially shift confidence, yet the field has produced no new primary evidence in 15 years (last primary trial: 2009).",
+        "issue": "Extreme population specificity\u2014HIV-only evidence base",
+        "detail": "All 23 weight/fat loss studies, all 12 liver health studies, and all 6 inflammation studies appear to enroll exclusively people with HIV (note consistent mention of 'HIV-associated' or 'HIV patients' in titles). The records provide zero trials in healthy populations, metabolic disease without HIV, aging, or any other indication. A skeptic would argue this evidence cannot support efficacy claims outside HIV, and the mechanism (GH axis dysfunction in HIV lipodystrophy) may not translate to other populations.",
         "severity": "high"
       },
       {
-        "issue": "Immune function unexamined in humans",
-        "detail": "The Preliminary grade for immune function is based on a single animal study (n=30, 2007). The engine correctly notes this does not reliably translate to humans. There is zero human evidence in the retrieved records for any immune outcome. Any claim that iodine modulates immune function in people is not supported by this evidence base.",
+        "issue": "Pooled effect for weight/fat loss includes zero and contradicts grade",
+        "detail": "The weight/fat loss outcome shows a pooled mean difference of -24 kg with confidence interval [-48.0 to 0.0]\u2014this interval crosses zero, meaning the meta-analysis cannot exclude no effect. The engine graded this 'Strong' based on consistency (two independent meta-analyses) and precision (3314 participants), but a confidence interval touching zero is inconsistent with a strong efficacy claim. The grade appears to rest on consistency of direction rather than magnitude of effect.",
         "severity": "high"
       },
       {
-        "issue": "Thyroid function outcome conflates iodine deficiency correction with supplementation in replete populations",
-        "detail": "The retrieved systematic reviews and meta-analyses (2013\u20132024) predominantly address iodine supplementation in populations with documented or probable iodine deficiency (pregnancy, postpartum, mild-to-moderate deficiency). The pooled effect (RR 0.32, meaning ~68% risk reduction) reflects prevention or correction of deficiency-related thyroid dysfunction. Whether iodine supplementation improves thyroid function in iodine-replete populations is not directly addressed in these records. A reader assuming benefit applies to all populations would over-generalize.",
+        "issue": "Severe missing sample size data limits true precision assessment",
+        "detail": "Engine notes that most abstracts omit sample size, so 'true total is substantially larger' than the 11 of 23 studies reporting n for weight/fat loss (similarly 3 of 12 for liver health, 1 of 6 for inflammation). Without access to the full text data, the engine cannot verify the actual sample size distribution, whether heterogeneity is driven by study size, or whether a few large trials dominate the meta-analyses. The precision claim rests partly on invisible data.",
+        "severity": "high"
+      },
+      {
+        "issue": "Cognition evidence is vanishingly small and recent",
+        "detail": "Only 2 RCTs support the cognition grade (2019, 2025), with n reported for only 1 (n=193). No pooled effect is extractable and no meta-analysis exists. The 2025 study is the same year as the evidence review and may not yet be fully published. A single new trial in 2025 could meaningfully shift conclusions for this outcome, and the evidence base is too small to rule out publication bias.",
+        "severity": "high"
+      },
+      {
+        "issue": "No independent replication of liver health meta-analysis",
+        "detail": "Engine explicitly states: 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified.' This is the sole integrative synthesis for a 'Moderate' outcome. One 2026 meta-analysis cannot establish robustness of findings across independent analytical teams or populations. A skeptic would note this is barely above narrative review status.",
         "severity": "moderate"
       },
       {
-        "issue": "Cognition studies target iodine-deficient populations; generalizability unclear",
-        "detail": "Both primary cognition studies (2002 and 2009) appear to have enrolled iodine-deficient or mildly deficient children (the 2009 RCT is titled 'Iodine supplementation improves cognition in mildly iodine-deficient children'). The SMD 0.27 reflects cognitive gain in deficiency correction, not enhancement in iodine-replete individuals. No retrieved records test cognition benefit in adequately iodine-nourished populations.",
-        "severity": "moderate"
-      },
-      {
-        "issue": "High proportion of abstracts missing sample sizes limits transparency",
-        "detail": "For cognition, only 3 of 7 studies report n in the abstracts; for thyroid function, only 14 of 34. While the engine estimates total participants from the n values that are visible, the missing denominators make it impossible to verify whether small underpowered studies are skewing pooled estimates, or to assess publication bias. Systematic reviews should report all component trial sizes; the absence of these in the retrieved abstracts is a red flag for incomplete reporting.",
+        "issue": "Inflammation evidence has no pooled estimate and inconsistency noted",
+        "detail": "For inflammation, the engine reports 'several studies exist but no pooled analysis confirms they agree; held at moderate pending review.' Six studies exist but no meta-analysis extracts a pooled effect. Precision claim rests on a single n=273 trial; the other 5 trials' sample sizes are not visible in these records. Without a pooled estimate or explicit statement of consistency direction, the 'Moderate' grade appears tentative.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Iodine is a structural component of thyroid hormones (T3, T4), so supplementation in deficient individuals directly restores thyroid hormone synthesis and normalizes TSH \u2014 this is biochemically straightforward and well-supported by the thyroid function evidence. For cognition, thyroid hormone is essential for cortical development and myelination in utero and infancy, so correcting iodine deficiency plausibly improves neurodevelopmental outcomes. However, the mechanism does not predict benefit in iodine-replete individuals, and no study in the retrieved records tests that population. The leap from 'correcting deficiency improves thyroid and cognition' to 'iodine supplementation enhances these functions broadly' is not supported by the evidence shown.",
-    "strongest_counterargument": "A skeptic would note that every cognition trial showing benefit recruited iodine-deficient children, not a representative sample of the population iodine supplements are typically marketed to (iodine-replete adults). The effect size is modest (SMD 0.27) and based on only two primary studies conducted 7\u201322 years ago with no recent replication. For immune function, a single 30-subject animal study (with unknown study quality) provides no human evidence whatsoever. For thyroid function, while replicated syntheses are encouraging, they do not distinguish between true disease prevention in deficiency and selective reporting of improvement in deficient subgroups.",
-    "what_would_change_the_picture": "For cognition: a new adequately powered RCT (n \u2265500) in iodine-replete children or adults, pre-registered and published regardless of outcome, would establish whether the benefit generalizes beyond deficiency correction. For immune function: any human randomized trial measuring immunological endpoints (antibody response, infection rates, lymphocyte function, etc.) with adequate sample size (n \u2265100) would move this from unexamined to evidence-informed.",
+    "mechanism_check": "The proposed mechanism\u2014tesamorelin stimulates GHRH-mediated growth hormone release, which reduces visceral and hepatic fat and improves metabolic/inflammatory markers\u2014is plausible and supported by observed changes in liver fat, insulin sensitivity markers, and immune mediators in the clinical trials. However, the leap from HIV-specific lipodystrophy (where GH deficiency is a recognized complication of chronic infection and antiretroviral therapy) to off-label use in general populations (healthy individuals, aging, non-HIV metabolic disease) is not bridged by any trial evidence in these records. The mechanism may be irrelevant if GH deficiency is not present.",
+    "strongest_counterargument": "A skeptic would argue that tesamorelin's weight/fat loss meta-analysis confidence interval includes zero, the evidence base is entirely HIV-specific and therefore inapplicable to marketed populations, and the lack of safety data in grey-market use is a critical gap that was not addressed in any of these academic abstracts\u2014which focus on efficacy in controlled research settings, not real-world tolerability or long-term harms. The cognition and inflammation findings rest on 2 and 6 studies respectively, with most sample sizes hidden, making these conclusions provisional.",
+    "what_would_change_the_picture": "Well-powered RCTs (n \u2265 300 per arm) in non-HIV populations (healthy aging, metabolic syndrome, obesity without HIV) with pre-registered primary outcomes and independent replication would establish generalizability. A systematic safety review documenting adverse events and long-term follow-up in grey-market users would address the uncharacterized risk profile outside clinical trial supervision.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
-  "l-theanine::clarity-engine-v2::appraise1::a12533f372": {
-    "headline": "Most human evidence comes from very small RCTs (median n=28\u201330), and the retrieved abstracts consistently omit sample sizes, making it impossible to verify whether the pooled totals support the Moderate grade or whether a few larger studies are driving apparent consensus.",
+  "urolithin a::clarity-engine::appraise1::345ae9291d": {
+    "headline": "Evidence for muscle strength and exercise performance rests almost entirely on a single n=42 trial from 2025, and cognition claims derive wholly from animal studies with no human validation.",
     "concerns": [
       {
-        "issue": "Severe sample size reporting opacity",
-        "detail": "Across all four outcomes, only 4 of 15 studies (cognition), 4 of 12 (stress/anxiety), 4 of 7 (sleep), and 5 of 12 (mood) report sample sizes in the retrieved abstracts. The engine estimates true totals (1253, 1406, etc.) but these cannot be verified from the records provided. A reader cannot assess whether the evidence base represents dozens of small underpowered trials or a few large adequately powered ones\u2014a critical distinction for interpreting 'Moderate' grade credibility.",
+        "issue": "Single-study evidence base for primary claims",
+        "detail": "Both muscle strength and exercise performance grades are Moderate, yet only 1 of 4 and 1 of 5 studies respectively report sample sizes, and that single reported n=42 RCT appears in both outcome lists (2025). The 2022 RCT on muscle strength and performance lacks a reported n, and the 2026 systematic review's conclusion is noted as 'not independently replicated or verified.' A single outlier result or methodological flaw in the 2025 trial could substantially shift\u2014or eliminate\u2014the pooled effect estimate.",
         "severity": "high"
       },
       {
-        "issue": "Clustering of outcomes in overlapping small trials",
-        "detail": "The same studies appear repeatedly across outcomes (2019 n=30 RCT, 2016 RCT, 2008 n=27 RCT studies appear in cognition, stress/anxiety, mood, and sleep). This means the evidence base is not independent: a single methodological flaw or population quirk in those trials inflates apparent support across multiple outcomes. The median sample size of 28\u201330 for primary human studies makes each trial susceptible to noise and regression to the mean.",
+        "issue": "No human data for cognition outcome",
+        "detail": "All 11 studies graded under cognition are animal-only (10 animal, 1 unclassified); the engine explicitly flags this as 'Indirectness: evidence is animal-only; does not reliably translate to humans.' The median sample size reported is n=15 in animals. No RCT, observational study, or case series in humans exists in this retrieved set. The Preliminary grade reflects this appropriately, but marketing or clinical promotion of cognitive benefits would rest on preclinical evidence alone.",
         "severity": "high"
       },
       {
-        "issue": "No extractable pooled effect across any outcome",
-        "detail": "Despite the presence of meta-analyses and systematic reviews (2014, 2026 for cognition and mood; 2026, 2025 for sleep), the engine reports 'none extractable' for pooled effects. This signals either that the abstracts do not report summary effect sizes, or that heterogeneity prevented meaningful pooling. Without knowing the effect size direction, magnitude, or confidence interval, the 'Moderate' grade rests on narrative rather than quantitative synthesis.",
+        "issue": "Median sample size of 42 across all muscular outcomes",
+        "detail": "Only 1 of 4 studies reports n for muscle strength and 1 of 5 for exercise performance. The engine notes 'effect estimate may be unstable' at this scale. Small trials are prone to publication bias, outcome switching, and random variation. Without knowing the sample sizes of the remaining 3 muscle-strength and 4 exercise-performance studies, it is impossible to assess whether the Moderate grade reflects a consensus of adequately powered trials or amplification of a single small positive result.",
         "severity": "high"
       },
       {
-        "issue": "Confounding by co-administered compounds",
-        "detail": "Multiple RCTs explicitly combine l-theanine with caffeine (2008 studies, 2020, 2023), L-tyrosine (2024), vitamin B6 (2022), vitamin D (2025), or GABA (2026). The isolated effect of l-theanine cannot be distinguished from additive or interactive effects with co-treatments, yet all trials are apparently pooled together under the 'l-theanine' outcome, biasing estimates upward if co-compounds are active.",
+        "issue": "Recency and lack of replication in human muscle studies",
+        "detail": "The human trials span 2021\u20132026, with the key evidence (2025, n=42 RCT) being the most recent. The 2022 RCT lacks a reported sample size, and the 2026 systematic review is the only attempt at synthesis\u2014but its conclusion 'is not independently replicated or verified,' per the engine. A three-study human evidence base (the unnamed 2022 RCT, the 2025 n=42 trial, and one more) is below the threshold for robust replication.",
         "severity": "moderate"
       },
       {
-        "issue": "Recency and publication year clustering in 2023\u20132026",
-        "detail": "Across outcomes, approximately half the retrieved records are from 2023 or later (cognition: 2 of 10 human; stress/anxiety: 4 of 8 human; mood: 4 of 10 human; sleep: 4 of 6 human). This rapid recent expansion may reflect genuine new research but also raises the possibility of selective retrieval or publication bias. No analysis of whether older (pre-2020) trials showed smaller or null effects is visible in the records.",
+        "issue": "Heterogeneous study populations and outcome operationalization not visible",
+        "detail": "Study titles suggest variation\u2014'Running Performance' (2025), 'Vascular Endothelial Function' (2022), and unspecified 'muscle strength' in the unnamed 2022 RCT\u2014yet the records do not detail whether these measure the same construct, use comparable instruments, or enrolled comparable populations. Pooled effect is noted as 'none extractable,' which may reflect this heterogeneity or simply lack of quantitative reporting in abstracts. The 2026 unclassified study on cardiac dysfunction may not belong in 'exercise performance' at all.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The retrieved abstracts do not provide mechanistic details, so the inference cannot be evaluated from these records. However, if l-theanine's putative mechanisms (e.g., GABA/glutamate modulation, alpha-wave enhancement) are being used to justify effects on cognition, stress, sleep, and mood simultaneously, there is a risk of post-hoc mechanism grafting: the same molecular target is invoked to explain disparate clinical outcomes without addressing why some outcomes succeed and others do not, or why effect sizes vary unpredictably across trials.",
-    "strongest_counterargument": "A skeptic would note that eight primary human RCTs (cognition, stress), five (stress/anxiety), and three (sleep) are well below the threshold for robust consensus, especially when most are underpowered (n=27\u201330), outcomes overlap significantly in the same small populations, and confounding co-interventions are rampant. Moreover, the absence of extractable pooled effects from published meta-analyses suggests either no meaningful signal or substantial heterogeneity that undermines the 'Moderate' confidence level. The high recency of published trials (2023\u20132026) raises questions about whether these represent genuine efficacy or early-stage enthusiasm before replication and negative studies appear.",
-    "what_would_change_the_picture": "A large (n\u2265200 per arm), multi-site RCT with l-theanine as a monotherapy (no co-administered compounds) and a pre-registered primary outcome would directly test whether the Moderate grade is justified. Additionally, publication and retrieval of the full text meta-analyses referenced here, with extractable pooled effect sizes and confidence intervals, would allow verification of whether the current grade reflects genuine moderate efficacy or merely publication bias and small-study effects masquerading as evidence.",
+    "mechanism_check": "The proposed mechanism\u2014urolithin A induces mitophagy (selective autophagy of mitochondria), improving mitochondrial function and energy availability\u2014is plausible at the cellular level and supported by animal data (e.g., the 2021 muscular dystrophy study). However, there is a substantial inferential leap from mitochondrial biogenesis in vitro or in rodent muscle to measurable improvements in human exercise performance or strength in healthy adults. The animal cognition studies invoke similar mitophagy and neuroinflammation reduction, but no human trial has measured whether these mechanisms translate to cognitive outcomes; the leap is even larger because cognition depends on neural systems not captured by simple cellular assays.",
+    "strongest_counterargument": "A skeptic would argue that the 'Moderate' grades rest on a single n=42 RCT (2025) whose results have not been independently replicated in humans, combined with a 2022 trial of unknown size and a 2026 meta-analysis that itself lacks external verification. The 2022 RCT titles mention mitochondrial biomarkers, not clinical outcomes, suggesting that positive effects may be biochemical signals without functional consequence. Cognition is graded Preliminary and animal-only, appropriately, but the overall 'Moderate' tier may mislead readers into believing human efficacy is established when it rests on a single small, recent, unreplicated trial.",
+    "what_would_change_the_picture": "An adequately powered (n \u2265 100\u2013150 per arm), well-registered RCT in humans measuring muscle strength or exercise capacity as a pre-specified primary outcome, with results replicated in an independent cohort, would ground the Moderate grade. For cognition, a phase IIb RCT in a specific cognitive disorder (e.g., mild cognitive impairment or mild Alzheimer's disease) with a validated cognitive scale as the primary outcome would move the evidence from Preliminary to Exploratory or Moderate.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
-  "metformin::clarity-engine-v2::appraise1::ab8b3205bd": {
-    "headline": "Most claims rest on small, mechanistic studies or animal models; human evidence for weight loss and inflammation is minimal, and no outcomes meet high-certainty thresholds despite metformin's established clinical use for diabetes.",
+  "vitamin c::clarity-engine::appraise1::d9987cdb26": {
+    "headline": "The evidence base is genuinely solid for common cold severity and vitamin C deficiency; other outcomes rest on non-extractable pooled effects and single meta-analyses, making confident quantification impossible.",
     "concerns": [
       {
-        "issue": "Inflammation evidence almost entirely animal-based",
-        "detail": "The inflammation outcome comprises 7 animal studies and only 1 human study (a systematic review of preclinical fracture-healing work). A skeptic would note that animal inflammation models often do not translate to clinical benefit in humans, and a single human systematic review cannot establish that metformin reduces human inflammation. This outcome should not support clinical claims about inflammation reduction.",
+        "issue": "Most effect sizes not pooled or reported",
+        "detail": "Four of five outcomes (deficiency, immune function, inflammation, iron status) show 'none extractable' for pooled effect, despite the engine claiming adequate power. This means the synoptic grades ('Moderate', 'Strong') cannot be tied to a quantified benefit magnitude. The reader sees a grade but not the actual effect size or confidence interval that justifies it. Only common cold reports a pooled effect (mean difference -15 days, 95% CI -21 to -9), which is interpretable.",
         "severity": "high"
       },
       {
-        "issue": "Weight/fat loss evidence severely underpowered",
-        "detail": "Only 3 studies total, with just 2 reporting sample sizes (n=30 and n=121, median 121). The engine flags imprecision: ~151 verified participants is a small base for a pooled claim. The single systematic review's conclusion is not independently replicated. A single outlier trial could substantially shift any pooled effect estimate, and the true effect size may be unstable or even null.",
+        "issue": "Heavy reliance on single meta-analyses for replication",
+        "detail": "Inflammation and iron status outcomes each cite only a single meta-analysis, with the engine explicitly noting the conclusion is 'not independently replicated or verified.' This violates the standard for evidence synthesis: a single meta-analysis can be misleading if its methods are flawed or if it captures publication bias. Common cold fares better with 3 independent syntheses converging; deficiency has 10. These two outcomes remain vulnerable to systematic error in their lone synthesis.",
         "severity": "high"
       },
       {
-        "issue": "Sample size reporting incomplete across all outcomes",
-        "detail": "The engine repeatedly notes that 'most abstracts omit sample size.' For blood sugar, only 3 of 11 studies report n; for cholesterol, 5 of 14. This means the true sample size and precision across the literature cannot be verified from these records. Pooled analyses may be inflated by selective reporting of larger trials in published abstracts, and many small trials may be hidden in the literature.",
+        "issue": "Immune function underpowered and underreported",
+        "detail": "Only 3 of 13 immune function studies report sample sizes (n=15, 27, 47; total ~89 verified participants). The engine explicitly flags 'Imprecision: effect estimate may be unstable.' A single larger trial or a coherent signal in unreported studies could shift the conclusion. This outcome was graded 'Moderate' despite the smallest verified sample base of any outcome.",
         "severity": "high"
       },
       {
-        "issue": "Pooled effect heterogeneous and poorly characterized",
-        "detail": "For cholesterol, a pooled mean difference of \u22120.24 mmol/L [\u22120.4 to \u22120.09] is provided, but the unit is ambiguous (lipid subtype, total cholesterol?) and no I\u00b2 or heterogeneity assessment is visible in these records. For blood sugar and weight loss, 'none extractable' is noted, yet meta-analyses and systematic reviews are in the list. Without explicit effect sizes, confidence intervals, and heterogeneity measures, readers cannot assess whether effects are consistent or driven by a few outlier studies.",
+        "issue": "Widespread missing sample size data limits precision claims",
+        "detail": "Even in common cold (graded 'Strong'), only 5 of 19 studies report sample sizes. For inflammation, only 11 of 33 report n. The engine acknowledges 'most abstracts omit sample size, so the true total is substantially larger,' but this cuts both ways: heterogeneity, small-study bias, and selective reporting cannot be fully assessed. The precision claim relies partly on an unknown denominator.",
         "severity": "moderate"
       },
       {
-        "issue": "Confounding in combination trials obscures metformin-specific effect",
-        "detail": "Several RCTs test metformin combined with other agents (probiotics, curcumin, atorvastatin, dapagliflozin, inositol). For example, the 2023 meta-analysis (n=1009) examines 'combined treatment of probiotics and metformin' \u2014 the isolated contribution of metformin to blood sugar or lipid outcomes cannot be disentangled. A skeptic would argue the evidence base conflates metformin monotherapy with polypharmacy.",
+        "issue": "Outcome heterogeneity masks mechanistic uncertainty",
+        "detail": "The 'Strong' tier groups together common cold severity reduction (mean diff -15 days) with deficiency prevention and iron absorption\u2014mechanistically and clinically distinct endpoints. Common cold is a symptomatic benefit; iron status is a biomarker; deficiency reversal is categorical. Grouping them under one tier obscures that the evidence quality differs sharply (common cold has replication; iron status does not).",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Metformin's established mechanism for blood sugar control (AMPK activation, reduced hepatic glucose production) is biologically plausible and well-documented in diabetes literature. However, the claim that it reduces inflammation rests almost entirely on animal mechanistic studies (STAT3 acetylation, Nrf2 signaling, myelopoiesis modulation) with minimal human clinical evidence. The leap from animal pathway manipulation to clinical inflammation reduction is large and unsupported by the retrieved human data.",
-    "strongest_counterargument": "A skeptic would note that metformin is a FDA-approved pharmaceutical for type 2 diabetes, not a supplement whose mechanism requires demonstration here \u2014 yet the retrieved evidence does not substantially exceed what was already known from decades of clinical use. For novel claims (inflammation, weight loss, lipid changes independent of glucose control), the evidence is thin: fewer than 3 human trials per outcome, many underpowered, and no consistency across studies. The absence of extractable pooled effects for two of four outcomes suggests either heterogeneous results or that included studies are too small or methodologically diverse to combine meaningfully.",
-    "what_would_change_the_picture": "Large, long-term RCTs (n\u2265500) comparing metformin monotherapy to placebo in non-diabetic populations, with pre-specified, clinically meaningful endpoints (weight loss \u22655%, inflammatory markers by validated assays, lipid subfractions), measured consistently across sites, would clarify whether observed effects are real or artifacts of small-sample heterogeneity. Until then, claims about weight loss and inflammation benefit rest on evidence insufficient for clinical confidence.",
+    "mechanism_check": "Vitamin C is a well-established cofactor for collagen synthesis, iron absorption (ferric to ferrous reduction), and antioxidant defense, which plausibly supports deficiency reversal and iron bioavailability. The leap to common cold severity reduction is empirical rather than mechanistic\u2014the clinical benefit (-15 days, primarily in exercising populations per older reviews) is observed but does not follow directly from antioxidant or immune function parameters, many of which show null results in the immune function outcome. Inflammation reduction is similarly empirical; no meta-analysis pooled effect is available, so the claimed benefit rests on a single synthesis of mixed RCTs, some with very small samples (n=10\u201320).",
+    "strongest_counterargument": "A skeptic would note that the 'Strong' grade for common cold rests on only 5 of 19 studies with disclosed sample sizes (true n unknown), and the benefit is driven by exercising military/athletic populations (e.g., 2022 RCT n=1444 in Korean Army recruits) where high oxidative stress may be a unique context; the effect does not replicate in general populations. For immune function, inflammation, and iron status, the absence of pooled effect sizes and reliance on single meta-analyses means the reader is asked to trust a grade divorced from a quantified magnitude of benefit. The deficiency outcome, though supported by 10 independent syntheses, is a tautology\u2014high-dose vitamin C obviously prevents scurvy\u2014and does not validate benefit in non-deficient populations.",
+    "what_would_change_the_picture": "For inflammation and iron status: independent, adequately powered meta-analyses with pre-specified subgroups (e.g., deficient vs. replete populations, chronic vs. acute disease) would resolve whether these effects are real or synthesis artifacts. For immune function: a single large (n>300) RCT measuring clinically relevant immune outcomes (infection incidence, not biomarkers) in a defined population would test whether the current underpowered literature is directionally correct.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
-  "noopept::clarity-engine-v2::appraise1::5b2463a9d7": {
-    "headline": "Only 1 human trial (n=60, 2011) supports cognition claims; all other evidence is animal studies, so efficacy in humans remains largely unvalidated.",
+  "zinc::clarity-engine::appraise1::8859ff0fae": {
+    "headline": "Zinc shows consistent evidence for immune function and inflammation, but heterogeneous populations, inconsistent dosing/formulation reporting, and lack of independent replication for blood sugar and gut outcomes limit confidence in those latter claims.",
     "concerns": [
       {
-        "issue": "Extreme animal-to-human imbalance for cognition",
-        "detail": "The cognition outcome (graded Moderate) rests on 15 animal studies and only 1 clinical trial. The single human trial enrolled 60 participants in 2011 and tested noopept in stroke-related cognitive impairment\u2014a specific, medically compromised population that may not generalize to healthy or mildly cognitively impaired individuals. No data on whether the effect persists, replicates, or extends to other cognitive domains or populations.",
+        "issue": "Blood sugar outcome lacks independent replication",
+        "detail": "The blood sugar grade (Moderate) rests on a single 2022 meta-analysis (n=265), with no independently-conducted systematic review to verify the conclusion. In contrast, immune function and inflammation each show 2\u20133 independent meta-analyses. A pooled effect of mean_diff -10.86 mg/dL appears precise, but replicability in the meta-analytic synthesis is undemonstrated, making this outcome vulnerable to selective reporting or methodological choices within that single analysis.",
         "severity": "high"
       },
       {
-        "issue": "All non-cognition outcomes lack any human evidence",
-        "detail": "Blood sugar (5 animal studies), inflammation (3 animal studies), and mood/depression (5 animal studies) are graded Preliminary but derive entirely from animal models. The engine explicitly flags these as having 'Indirectness: evidence is animal-only; does not reliably translate to humans.' Rodent models of streptozotocin-induced diabetes or microglia-dependent inflammation do not establish that noopept affects these pathways in human physiology.",
+        "issue": "Gut/digestion evidence is sparse and unmeta-replicated",
+        "detail": "Only 12 studies total (7 human, 5 animal), with a single systematic review that has not been independently replicated. Four studies report sample sizes (n: 15, 28, 52, 2370), but the median is inflated by one outlier; 8 of 12 studies do not report n at all. Without a second independent meta-analysis, and given heterogeneity in outcomes (diarrhea, parasitic infection, HPV clearance, HIV markers), the 'Moderate' grade overstates confidence in a coherent effect.",
         "severity": "high"
       },
       {
-        "issue": "Severe missing sample size data limits precision assessment",
-        "detail": "For cognition, only 2 of 16 studies report sample size (verified n=70 total across those 2). The engine notes 'most abstracts omit sample size,' making it impossible to assess whether the evidence base is actually powered. For blood sugar, only 1 of 5 reports n (n=10); for inflammation and mood/depression, no sample sizes are extractable. Studies with unreported n cannot be evaluated for risk of small-sample bias or meta-analytic stability.",
+        "issue": "Majority of studies omit sample size in abstracts",
+        "detail": "Across immune function (31 studies: 11 report n), inflammation (22 studies: 9 report n), and blood sugar (18 studies: 11 report n), 50\u201365% of abstracts do not disclose sample size. This prevents assessment of whether small studies cluster in one direction and large trials in another\u2014a common pattern in supplementation research\u2014and obscures whether the true total evidence base is robust or dominated by many small, underpowered trials.",
         "severity": "high"
       },
       {
-        "issue": "No extractable pooled effect across any outcome",
-        "detail": "None of the four outcomes show a pooled effect. This may reflect heterogeneous designs, outcome measures, or populations, but it also prevents quantitative synthesis. A 'Moderate' grade for cognition rests on narrative synthesis of 16 disparate studies, many animal, which is prone to cherry-picking and cannot account for publication bias or unobserved small negative trials.",
+        "issue": "Heterogeneity in populations obscures clinical specificity",
+        "detail": "The immune function studies span atopic dermatitis, acute diarrhea in children, oral lichen planus, HIV infection, obesity, HPV clearance, and pre-schooler immune markers. The inflammation outcome includes dysmenorrhea, acne, ADHD, Beh\u00e7et's disease, and neonatal respiratory distress. No study records report which populations show the largest effects or whether zinc is genuinely effective across this range or only in a subset. The pooled hedges_g -1.541 for inflammation is a large effect, but without subgroup analysis visible, it is unclear whether this reflects true uniformity or selective reporting of positive trials in heterogeneous conditions.",
         "severity": "moderate"
       },
       {
-        "issue": "Repeated use of same animal models and potentially same cohorts",
-        "detail": "The cognition and blood sugar literatures overlap (e.g., 2023, 2019 studies appear in both), and the blood sugar studies rely heavily on streptozotocin-induced diabetes in rats\u2014a narrow model. Cross-study contamination (same lab, same animals, same intervention) is not visible in these abstracts, but the narrow populations and concentrated authorship contexts suggest limited independent replication.",
+        "issue": "Dosing, formulation, and duration not synthesized in records",
+        "detail": "Study records include trials of zinc sulfate, zinc gluconate, chelated zinc peptides, and unspecified 'zinc supplementation,' spanning durations from brief interventions to chronic supplementation. No records report whether meta-analyses stratified by dose, chemical form, or duration, or whether these variables confound the pooled effects. Variation in formulation is particularly relevant because bioavailability differs markedly (e.g., zinc sulfate vs. oxide), yet this is invisible in the abstracted grades.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The animal studies propose plausible mechanisms\u2014NGF/BDNF upregulation (2008), HIF-1 transcription factor activation (2020), modulation of spinal microglia (2021)\u2014that could support neuroprotection and cognition. However, the leap from 'noopept increases BDNF in rat hippocampus' to 'noopept improves cognition in humans' is substantial and bridged by only one small, two-decade-old clinical trial in a stroke-specific population. The mechanism could be real but compartmentalized: rodent pharmacology does not reliably predict human cognitive benefit, especially outside the tested indication.",
-    "strongest_counterargument": "A skeptic would argue that a single 60-person trial from 2011, never replicated or built upon in the human literature, is insufficient to support a 'Moderate' grade for cognition in a general population. The animal literature, while mechanistically suggestive, may reflect publication bias (positive findings reported, null results not) and cannot compensate for lack of large, pre-registered, independent human trials. The compound may be active in rodent brains without producing clinically meaningful cognitive gain in humans, a pattern common in preclinical-to-clinical translation.",
-    "what_would_change_the_picture": "A blinded, placebo-controlled randomized trial enrolling \u2265200 cognitively normal or mildly impaired adults, with pre-specified cognitive endpoints (e.g., MMSE, Rey Auditory Verbal Learning Test) and adequate power, followed to completion and registered prospectively, would provide the human evidence needed to validate or refute claims. Replication of the 2011 stroke trial in a second independent cohort would also strengthen confidence that the effect is real and reproducible.",
+    "mechanism_check": "Zinc is a known cofactor for immune cell function (T-cell activation, NK cell killing, neutrophil chemotaxis) and is involved in redox regulation and NF-\u03baB signaling, which plausibly supports the immune function and inflammation outcomes. However, the clinical leap from in vitro mechanistic studies to broad population-level efficacy in heterogeneous conditions (acne, dysmenorrhea, HIV-associated inflammation, ADHD) is large. For blood sugar, the proposed mechanism (enhanced antioxidant response, IGF-1/IGFBP-3 modulation) is biologically plausible but more indirect; the records show no mechanistic validation that this pathway actually drives the observed -10.86 mg/dL glucose reduction in the meta-analysis.",
+    "strongest_counterargument": "A skeptic would observe that the evidence base is dominated by small, heterogeneous RCTs in diverse populations with incomplete reporting of sample sizes and methodology, and that the pooled effects\u2014especially for inflammation (hedges_g -1.541) and blood sugar (\u221210.86 mg/dL)\u2014are implausibly large for a micronutrient in otherwise adequately-nourished populations. They would note that the blood sugar and gut outcomes each rely on a single meta-analysis without independent replication, and that selective reporting of positive trials in high-impact journals could inflate the apparent effect size. Finally, they would argue that without stratified analysis by dose, formulation, and population subgroup, the grades conflate 'zinc works somewhere, in some form, at some dose' with genuine clinical utility.",
+    "what_would_change_the_picture": "Independent replication of the blood sugar and gut/digestion meta-analyses by separate research groups using pre-specified protocols; large (n \u2265 200) pragmatic RCTs reporting zinc dose, formulation, serum zinc levels at baseline and endpoint, and stratified subgroup effects by age, nutritional status, and disease etiology; and explicit accounting for studies that tested zinc in isolation versus combined micronutrient formulations.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
-  "pt-141::clarity-engine-v2::appraise1::04c5b9eccf": {
-    "headline": "The sexual function evidence rests on a 2026 meta-analysis of 8,994 participants, but this systematic review's conclusion is not independently replicated\u2014making it a single pillars that cannot be cross-validated against other pooled analyses in the retrieved record.",
+  "vip::clarity-engine::appraise1::2824182f2e": {
+    "headline": "No human evidence exists for the two largest clinical claims (joint/arthritis and cognition); the gut/digestion literature is substantial but lacks pooled analysis, and cardiovascular data come from tiny, decades-old trials with unclear relevance to modern use.",
     "concerns": [
       {
-        "issue": "Single unreplicated meta-analysis anchors main claim",
-        "detail": "The Moderate grade for sexual function is supported by one 2026 systematic review (n=8,994) that the engine explicitly notes is 'not independently replicated or verified.' Of the 10 sexual function studies retrieved, only 3 report sample sizes (267, 342, 8,994), meaning 7 abstracts omit this critical detail. If the meta-analysis incorporated different trials or made different inclusion/exclusion choices than a hypothetical independent review, the pooled effect could shift materially. No second meta-analysis exists in these records to test stability.",
+        "issue": "Zero human evidence for major claims",
+        "detail": "Joint/arthritis (the lead indication) rests entirely on 2 animal studies and 1 in vitro study with no human data. Cognition is based on a single n=10 animal study (2019). Animal models of osteoarthritis and neurodegeneration do not reliably predict human efficacy, yet these represent primary marketed claims for a grey-market injectable.",
         "severity": "high"
       },
       {
-        "issue": "Most sexual function trials lack published sample sizes in abstracts",
-        "detail": "Of 10 sexual function studies, only 3 report n in the retrieved abstracts (267, 342, 8,994). Seven studies\u2014including four RCTs from 2004\u20132019\u2014have no extractable sample size. This opacity prevents independent assessment of whether effect sizes are driven by large, well-powered trials or inflated by small, underpowered studies. The engine notes 'most abstracts omit sample size,' undermining transparency.",
+        "issue": "Gut literature lacks synthesis despite apparent consensus",
+        "detail": "44 studies exist (10 human RCTs), accumulating ~268+ participants, but the engine notes 'no pooled analysis confirms they agree' and the certainty is held at 'moderate pending review.' This suggests either genuine heterogeneity in outcomes across different GI indications (migraine, sarcoidosis, eczema, ulcers, erectile function, bile secretion) or a literature too fragmented to support a single efficacy claim.",
         "severity": "high"
       },
       {
-        "issue": "Blood pressure and weight loss evidence is fragmentary and underpowered",
-        "detail": "Blood pressure rests on a single 2017 RCT with no extractable sample size. Weight/fat loss rests on two RCTs, with only one reporting n=27. The engine caps these at 'Emerging' grade due to imprecision and inconsistency (single study per outcome). These outcomes cannot support confident claims about safety or efficacy.",
-        "severity": "high"
-      },
-      {
-        "issue": "Temporal clustering of trials in 2004\u20132008, then gap until 2019\u20132026",
-        "detail": "Sexual function trials cluster in 2004\u20132008 (5 RCTs) and 2004 (2 animals), then a gap occurs until 2019 (2 RCTs) and 2026 (1 meta-analysis). This pattern suggests older trials may have been superseded or development paused, but no explanation is visible in these abstracts. It is unclear whether the 2026 meta-analysis included unpublished or withdrawn studies from the earlier period.",
+        "issue": "Cardiovascular RCTs are tiny and ancient",
+        "detail": "Two human RCTs (1986, 1992) with only n=10 reported from one of them. These are 40+ years old, designed for acute mechanistic endpoints (airway function, bile secretion), not clinical benefit in modern cardiovascular disease. Mechanism may inform pharmacology but does not establish therapeutic utility in contemporary practice.",
         "severity": "moderate"
       },
       {
-        "issue": "Pooled effect cannot be extracted from any outcome",
-        "detail": "The engine notes 'pooled effect: none extractable' for all three outcomes. Although the 2026 meta-analysis presumably reports a pooled estimate, the abstract provided here does not include it. Readers cannot independently verify the magnitude, confidence interval, or heterogeneity of the claimed effect on sexual function.",
+        "issue": "Systematic absence of sample size reporting",
+        "detail": "Across 44 gut studies, only 10 report sample sizes explicitly. Across 3 joint studies, none report extractable n. This prevents assessment of whether small studies with outlier results are driving the grade, and suggests abstracts (or the literature itself) lack transparency about statistical power and precision.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "No data on grey-market product quality or dose equivalence",
+        "detail": "VIP is obtained grey-market and not approved for human use per the prompt. The evidence base does not include any studies on the actual preparations being sold, contamination risk, stability, or whether administered doses match those studied. Efficacy evidence for pharmaceutical-grade VIP does not transfer to unregulated analogues.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "PT-141 is a melanocortin receptor agonist proposed to enhance sexual arousal via central nervous system pathways (supported by 2007 and 2003 animal studies showing effects on female sexual function). This mechanism plausibly bridges to the clinical sexual function outcomes (desire, arousal, orgasm), as melanocortin signaling is neurobiologically implicated in sexual motivation. However, the mechanism does not straightforwardly explain the blood pressure or weight loss outcomes: melanocortin agonism is known to raise blood pressure in some contexts, yet the single blood pressure trial is presented as a safety/monitoring study, not efficacy evidence. The weight loss claim lacks clear mechanistic linkage in these records.",
-    "strongest_counterargument": "A skeptic would note that the Moderate grade for sexual function depends entirely on a single 2026 meta-analysis that has never been independently replicated. The older RCTs (2004\u20132008) were conducted when PT-141/bremelanotide was still in development, and regulatory interest may have waned\u2014the 11-year gap before 2019 trials raises questions about whether the compound encountered safety or efficacy obstacles. Furthermore, of the 10 sexual function studies, 7 omit sample sizes from their abstracts, suggesting either small pilot studies or selective reporting. A single outlier or bias in the 2026 meta-analysis could shift the pooled result, and no independent verification exists.",
-    "what_would_change_the_picture": "An independent second meta-analysis or systematic review using prospectively registered protocol and published full texts (not abstracts) of all included RCTs would establish whether the 2026 conclusion is robust. Alternatively, a large, high-quality Phase 3 or Phase 4 RCT published after 2026 comparing PT-141 to both placebo and active comparator, with preregistered outcomes and transparent reporting of sample size and effect size with confidence intervals, would provide a standalone benchmark.",
+    "mechanism_check": "VIP's proposed mechanism (NF-\u03baB inhibition, immunomodulation, vasodilation) is supported by animal and in vitro data and is biologically plausible. However, this does not close the inferential gap to clinical benefit in humans. Inhibition of NF-\u03baB in a disease model mouse does not predict whether infused VIP will reduce joint pain or swelling in a person with osteoarthritis; anti-inflammatory activity in cultured chondrocytes does not predict cartilage preservation in vivo. The mechanism is sound, but the leap from mechanism to the claimed clinical outcomes in humans is entirely unobserved.",
+    "strongest_counterargument": "A skeptic would note that VIP is an endogenous neuropeptide with well-characterized receptor biology\u2014yet despite decades of research (1986\u20132026), it has never gained regulatory approval for any indication, and the only human data are small, mechanistic, and decades old. If VIP were truly effective for arthritis, cognition, or common GI disorders, we would expect a clear regulatory pathway and larger, recent human trials; the absence of these suggests either that efficacy is marginal enough to not justify development, or that human trials have failed to replicate animal and in vitro promise. The grey-market status and lack of manufacturing oversight only compound this concern.",
+    "what_would_change_the_picture": "A large (n \u2265 100 per arm), recent, double-blind RCT in a single well-defined indication (e.g., active rheumatoid arthritis or osteoarthritis) with a validated primary outcome and pre-specified analysis would provide human-grade evidence. Alternatively, a systematic review and meta-analysis of the 10 existing human RCTs in gut indications, with risk-of-bias assessment and subgroup analysis, would clarify whether the moderate gut rating reflects true efficacy or publication bias and design heterogeneity.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
-  "saffron::clarity-engine-v2::appraise1::8d25808e6b": {
-    "headline": "The mood evidence is robust and internally consistent, but sleep, vision, and blood sugar rely heavily on meta-analyses of small primary trials with incomplete reporting\u2014effect sizes in these domains could be inflated by publication bias and selective pooling of underpowered studies.",
+  "cla::clarity-engine::appraise1::a78ab87c42": {
+    "headline": "No pooled meta-analyses confirm agreement across studies; most trials are small with incomplete sample size reporting, making it unclear whether observed effects are consistent or driven by outliers.",
     "concerns": [
       {
-        "issue": "Small primary trials, incomplete n reporting",
-        "detail": "For sleep, vision, and blood sugar outcomes, only 2\u20133 of 4\u20136 studies explicitly report sample sizes in these records. The engine notes that 'the true total is substantially larger' but cannot verify it from abstracts. This opacity is a red flag: if most primary trials are small (median n=50 for mood, n=120 for sleep), a few large outliers in unprovided abstracts could be inflating pooled estimates. Six of eight mood RCTs have unreported n; even the three reported (50, 50, 120) are modest. A single large negative trial omitted from synthesis could substantially shift results.",
+        "issue": "No quantified pooled effect; inconsistency unresolved",
+        "detail": "For weight/fat loss (10 human RCTs), cholesterol (3 human RCTs), and endurance (5 human RCTs), the engine explicitly states 'pooled effect: none extractable' and 'no pooled analysis confirms they agree.' The engine flags 'Inconsistency' as the reason for holding these at Moderate rather than upgrading them. Without a meta-analytic summary, individual study heterogeneity\u2014in population, CLA dose/isomer, intervention duration, and outcome measurement\u2014cannot be quantified, so we do not know if effects are robust or driven by a few favorable outliers.",
         "severity": "high"
       },
       {
-        "issue": "Meta-analyses outnumber primary trials in key domains",
-        "detail": "Blood sugar has 1 primary RCT but 5 pooled analyses (meta-analyses and systematic reviews). Sleep has 4 primary RCTs but 2 pooled analyses. This structure creates a risk of circular amplification: the same small trials may be reanalyzed across multiple syntheses, inflating apparent consistency. A 2025 systematic review and a 2022 meta-analysis on blood sugar may share overlapping included trials, giving false impression of independent replication. The engine notes only 1 primary human study for blood sugar\u2014pooled effect (SMD \u22120.9) could reflect heterogeneous subgroups or publication bias rather than robust effect.",
+        "issue": "Majority of trials omit sample size; precision severely underestimated",
+        "detail": "Weight/fat loss: only 5 of 27 studies report n (median 51); engine notes 'true total is substantially larger' but unknown. Endurance: only 4 of 22 report n (median 20, ~76 verified participants); most trials invisible. Cholesterol: 8 of 12 report n. This systematic underreporting in abstracts means confidence intervals and power calculations cannot be assessed for the majority of the evidence base. A single large, well-designed trial could shift the pooled estimate if it were ever computed.",
         "severity": "high"
       },
       {
-        "issue": "Very recent literature (2025 spike) with no replication lag",
-        "detail": "Mood outcome includes four 2025 RCTs and two 2025 systematic reviews; sleep and blood sugar are similarly recent-heavy. In supplement literature, positive findings often appear in concentrated recent bursts, sometimes driven by industry funding or selective reporting. None of these 2025 trials have had time for independent replication or failure-to-replicate to emerge in peer review. For comparison, the oldest mood meta-analysis is from 2013\u2014a 12-year gap before sustained publication suggests earlier skepticism or lower citation pressure. Recency without prior replication is a consistent marker of inflated early effect sizes.",
+        "issue": "Heavy reliance on animal studies (59% of weight/fat loss evidence)",
+        "detail": "Of 27 weight/fat loss studies, 13 are animal and only 10 are human RCTs (4 unclassified). Animal models of CLA metabolism and body composition do not reliably predict human outcomes, especially for voluntary fat loss in free-living humans. The animal studies cannot substitute for human evidence and inflate the apparent size of the literature without proportional increase in clinical relevance.",
         "severity": "high"
       },
       {
-        "issue": "Vision evidence insufficient for meaningful inference",
-        "detail": "Only 4 total studies (2 human RCTs, 2 animal) with verified n \u2264 124 across humans. The engine explicitly notes 'Imprecision: effect estimate may be unstable.' Two human trials on different retinal diseases (macular degeneration, Stargardt dystrophy) are not directly comparable; no pooled effect is extractable, yet the outcome is graded Moderate. This grading appears driven by the two animal studies, which do not clinically validate the human signal. Any human trial with n < 50 in a rare disease is prone to Type II error and random variation.",
+        "issue": "Muscle strength evidence is critically thin and uncontrolled",
+        "detail": "Only 1 human study (n=20, unclassified design, 2007) addresses muscle strength; the other 2 are animal studies. A single small uncontrolled trial is insufficient to establish an effect, yet the engine grades it 'Preliminary' rather than acknowledging it is essentially anecdotal. No RCT data exist for this outcome in humans.",
+        "severity": "high"
+      },
+      {
+        "issue": "Study designs poorly characterized; 4 unclassified weight/fat loss trials obscure transparency",
+        "detail": "Four of 27 weight/fat loss studies are labeled 'Unclassified,' preventing assessment of bias risk (randomization, blinding, allocation concealment). Similarly, 5 of 12 lipid studies are unclassified. Without design details, it is impossible to distinguish rigorous RCTs from observational or mechanistic studies, inflating apparent evidence quality.",
         "severity": "moderate"
       },
       {
-        "issue": "Composite outcomes and adjunct therapy obscure primary effects",
-        "detail": "The 2022 mood meta-analysis explicitly examines 'saffron, as an adjunct therapy'\u2014meaning co-administered with other treatments (likely SSRIs). The 2025 RCT examines 'Combined Scutellaria and Saffron Supplementation,' conflating two active ingredients. These designs cannot isolate the effect of saffron alone. If mood improvement is driven by SSRIs or co-treatments, and saffron adds marginal value, the pooled SMD \u22123.87 overstates the standalone effect. The engine's grading combines these adjunct and monotherapy trials without noting which is which.",
+        "issue": "Temporal inconsistency and risk of publication bias not addressed",
+        "detail": "Weight/fat loss studies span 2003\u20132026; endurance spans 2005\u20132022. No funnel plot or temporal trend analysis is visible in these records. Early studies may be more prone to publication bias (positive findings more likely to be published), and older trials (2003\u20132007) may reflect different CLA formulations or populations than recent work. The records do not show whether negative or null findings were systematically excluded.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "Saffron's bioactive compounds (crocin, safranal) are documented in animal models to inhibit monoamine reuptake and reduce neuroinflammation, a plausible mechanism for mood elevation. However, the human clinical trials do not report neurochemical or mechanistic markers (e.g., serotonin metabolites, inflammatory cytokines); they report only mood scores. For blood sugar and sleep, the mechanistic gap widens: animal neuroprotection and antioxidant activity are not directly linked to systemic glucose control or sleep architecture in humans. The vision outcome relies almost entirely on animal neuroprotection with only two small human RCTs in rare diseases\u2014a large leap from bench findings to clinical restoration of vision.",
-    "strongest_counterargument": "A well-informed skeptic would note that mood literature is concentrated in recent, often small trials by researchers and sponsors invested in saffron's popularity (particularly via branded extracts like Affron\u00ae). Meta-analyses of small, positive trials with unreported sample sizes and adjunct-therapy confounding are vulnerable to both publication bias and outcome reporting bias. For blood sugar and sleep, the evidence base is thin (\u22644 primary human trials per outcome), yet graded Moderate or Strong\u2014a grade that should require either larger sample sizes or higher consistency than these records show. The lack of long-term safety data, dose-response studies, and active-comparator trials (vs. placebo alone) further limits confidence in clinical applicability.",
-    "what_would_change_the_picture": "Large (n \u2265 200), adequately powered, double-blind, placebo-controlled RCTs of saffron monotherapy with pre-registered outcomes and complete sample-size reporting would resolve uncertainty for mood and sleep. For blood sugar, trials in confirmed diabetic populations with glycemic control as primary outcome (not adjunct to metformin) are needed. Publication of all registered trials (not just positive ones) and independent meta-analyses by non-industry-affiliated groups would help distinguish genuine effects from publication bias.",
-    "_generated": true,
-    "_model": "claude-haiku-4-5-20251001"
-  },
-  "thiamine::clarity-engine-v2::appraise1::1e08ffe054": {
-    "headline": "Most evidence is pooled analyses (meta-analyses and systematic reviews) of primary studies whose individual sample sizes and designs remain largely unreported; only 3 of 15 unique studies across all outcomes report sample size explicitly, making precision and heterogeneity assessment impossible.",
-    "concerns": [
-      {
-        "issue": "Opacity in primary study metadata",
-        "detail": "Across all three moderate-grade outcomes (cardiovascular, blood sugar, cognition), the engine flags that 'most abstracts omit sample size, so the true total is substantially larger'\u2014yet only 1 of 3 cardiovascular studies, 2 of 5 blood sugar studies, and 3 of 7 cognition studies report n. This means the actual composition and quality of the underlying primary literature cannot be assessed from these records. A pooled analysis citing a meta-analytic result is only as strong as the primary trials feeding it, and that foundation is invisible here.",
-        "severity": "high"
-      },
-      {
-        "issue": "No extractable pooled effects across moderate outcomes",
-        "detail": "For cardiovascular, blood sugar, and cognition\u2014all graded Moderate\u2014the engine notes 'pooled effect: none extractable.' This is unusual for a meta-analysis or systematic review. Either the abstracts do not contain quantitative summaries, or heterogeneity was too high to report a single effect. Without a point estimate, confidence interval, or I\u00b2 statistic, the reader cannot evaluate whether the effect size is clinically meaningful or whether studies agree.",
-        "severity": "high"
-      },
-      {
-        "issue": "Heavy reliance on pooled analyses without primary RCT breadth",
-        "detail": "Cognition (7 studies, 3 primary) and blood sugar (5 studies, 3 primary) both draw Moderate grades with only 3 primary human studies each; the rest are systematic reviews or meta-analyses that re-summarize the same primary literature. For cardiovascular, only 0 primary studies are noted\u2014all retrieved evidence is pooled analysis or unclassified. This creates a false impression of evidence breadth: the underlying primary evidence base is narrower and more homogeneous than the count of 7 or 5 studies suggests.",
-        "severity": "high"
-      },
-      {
-        "issue": "Outdated or heterogeneous clinical contexts",
-        "detail": "The cognition literature spans 1997\u20132025 (28 years), and study populations vary widely: breastfed infants (2021), alcohol withdrawal patients (2020), Alzheimer's model (2025), epilepsy (2005), and mood in unspecified adults (1997). Thiamine deficiency severity, dosing, duration, and biomarker assessment are likely to differ radically across these contexts. A Moderate grade implies some consistency, but the records show no pooled effect and diverse populations, raising the risk that any apparent benefit is specific to one subgroup (e.g., deficiency reversal in hospitalized patients) and not generalizable.",
-        "severity": "moderate"
-      },
-      {
-        "issue": "Immune function grade rests on single tiny trial",
-        "detail": "The Emerging grade for immune function is based on a single 2023 RCT with n=11. The engine correctly flags imprecision and notes 'consistency cannot be assessed.' With 11 participants, a single outlier or loss-to-follow-up could reverse the result. This study does not meet a minimum threshold for decision-making and should be clearly labeled as preliminary.",
-        "severity": "moderate"
-      }
-    ],
-    "mechanism_check": "Thiamine is a cofactor in carbohydrate metabolism and neuronal function, so a plausible mechanism exists for effects on cognition, blood sugar regulation, and cardiovascular complications of metabolic disease. However, the retrieved evidence does not distinguish between three scenarios: (1) thiamine reverses acute deficiency (a pharmacological correction, not a supplement benefit), (2) thiamine provides benefit in non-deficient populations (true supplementation), or (3) no real effect exists and observed associations reflect confounding or publication bias. The abstracts do not report baseline thiamine status or whether participants were deficient, so the mechanism-to-outcome link cannot be verified as applying to healthy supplementation vs. disease treatment.",
-    "strongest_counterargument": "A skeptic would note that thiamine is an essential micronutrient, and almost all modern populations consuming adequate food are not deficient. The retrieved evidence conflates two different claims: (1) that thiamine supplementation helps patients hospitalized with deficiency-related complications (e.g., Wernicke's encephalopathy, delirium in alcohol withdrawal), which is established, and (2) that thiamine supplementation improves cardiovascular health, blood sugar control, or cognition in the general population. The first is therapeutic replacement, not a supplement benefit. The reviews do not clearly separate these scenarios, and without explicit reporting of baseline thiamine status in the primary trials, the Moderate grades may conflate reversing a deficiency with providing supraphysiological benefit.",
-    "what_would_change_the_picture": "A pre-registered, adequately powered RCT (n \u2265 200) in a non-deficient population (baseline plasma thiamine measured, normal range) randomizing to thiamine or placebo, with a pre-specified primary outcome (e.g., incident heart failure, glycemic control, or cognitive decline over 2+ years) and transparent reporting of baseline characteristics and any subgroup effects would clarify whether the supplement works beyond deficiency reversal. Publication of the full meta-analytic summaries (pooled estimates, confidence intervals, I\u00b2, funnel plots) from the three pooled analyses would also allow assessment of true consistency and precision.",
-    "_generated": true,
-    "_model": "claude-haiku-4-5-20251001"
-  },
-  "vitamin-b6::clarity-engine-v2::appraise1::302cd01373": {
-    "headline": "The evidence base rests almost entirely on four small RCTs from 2018\u20132026 with no independent replication of their pooled findings, and critical outcome details (sample sizes, effect sizes, blinding status) are largely absent from the abstracts provided.",
-    "concerns": [
-      {
-        "issue": "No extractable pooled effect across any outcome",
-        "detail": "The engine explicitly notes that no pooled analysis exists for mood/depression, stress/anxiety, or inflammation outcomes. For mood/depression and stress/anxiety, individual RCTs exist (n=264\u2013307 each) but have not been meta-analyzed with published effect sizes and confidence intervals. This means the 'Moderate' grade rests on the subjective judgment that multiple small trials exist, not on quantitative synthesis of their agreement.",
-        "severity": "high"
-      },
-      {
-        "issue": "Small, potentially underpowered RCT sample sizes with confounding",
-        "detail": "The four mood/depression and stress/anxiety RCTs range from n=264 to n=307. Critically, three of the four stress/anxiety RCTs (2018, 2021, 2022) explicitly combine magnesium with vitamin B6, making it impossible to isolate B6's contribution. The 2026 RCT (n=267) tests B6 alone, but a single small trial cannot establish an effect independent of publication bias.",
-        "severity": "high"
-      },
-      {
-        "issue": "Cognition evidence base is obsolete and mechanistically unrelated",
-        "detail": "The cognition outcome rests on a 2000 systematic review of pregnancy supplementation (n=371, not reported per trial) and a 2014 animal study of TB vaccine efficacy. Neither addresses cognition in the general population. The 24-year gap between studies and the absence of modern human cognition trials means this grade is not grounded in current evidence.",
-        "severity": "high"
-      },
-      {
-        "issue": "Inflammation outcome mixed with animal models lacking clinical relevance",
-        "detail": "The inflammation grade (Moderate) is based on 5 studies, but only 1 is human (n=267, from the 2026 depression RCT) and 4 are animal models examining gut barrier function, TB vaccine, and IBD in transgenic mice (2013\u20132025). Animal efficacy in disease models does not establish that B6 reduces inflammation in healthy human populations.",
-        "severity": "moderate"
-      },
-      {
-        "issue": "Critical study details absent from abstracts: blinding, allocation concealment, effect sizes",
-        "detail": "The abstracts provided contain titles and basic design labels (RCT, animal, systematic review) but do not report whether trials were double-blinded, how allocation was concealed, or what the actual effect sizes and confidence intervals were. This makes it impossible to assess risk of bias or the magnitude of claimed effects. The engine notes sample sizes are 'omitted' in most inflammation abstracts, suggesting incomplete reporting.",
-        "severity": "moderate"
-      }
-    ],
-    "mechanism_check": "The biological plausibility of B6 in mood and stress is modest: B6 is a cofactor for neurotransmitter synthesis (serotonin, GABA, dopamine), and animal models show B6 depletion impairs stress response. However, most humans are not B6-deficient, so supplementing already-replete individuals faces a large inferential leap. The cognition mechanism is not addressed in the records. The inflammation mechanism in animal gut models does not translate clearly to mental health outcomes in humans.",
-    "strongest_counterargument": "A skeptic would note that the four RCTs showing mood and anxiety benefit are recent, small, and unpublished in aggregate form. Rapid publication of small positive trials in a trendy area raises publication bias concerns. Two of the four stress trials conflate B6 with magnesium, so their effects may be driven by the latter. The absence of a registered meta-analysis or independent replication of any pooled effect suggests the field has not yet reached consensus, and a single negative or null trial of adequate size could easily shift the conclusion.",
-    "what_would_change_the_picture": "A prospectively registered, large (n\u2265500), double-blind RCT of high-dose B6 vs. placebo in adults with clinically confirmed depression or generalized anxiety disorder, with pre-specified effect size, published before unblinding, would establish or refute efficacy. Alternatively, a formal systematic review with pooled meta-analysis of the existing RCTs, including assessment of bias and effect heterogeneity, would clarify whether the current moderate grade is justified or inflated by small-study effects.",
-    "_generated": true,
-    "_model": "claude-haiku-4-5-20251001"
-  },
-  "zinc::clarity-engine-v2::appraise1::3feebe8c7e": {
-    "headline": "Blood sugar and immune function evidence is reasonably robust with multiple independent meta-analyses, but gut/digestion and sexual function rest on single syntheses with no independent replication, and most individual RCTs across all outcomes are underpowered.",
-    "concerns": [
-      {
-        "issue": "Gut digestion: single meta-analysis, no replication",
-        "detail": "The systematic review outcome is supported by only one meta-analysis (2024), with no independent synthesis cited. The engine explicitly flags this: 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified.' Six of nine studies report n, with a median of 52; three trials enrolled \u226428 participants, making them individually underpowered for most digestive endpoints. A single outlier or methodological issue in one of the smaller trials could meaningfully affect any pooled estimate.",
-        "severity": "high"
-      },
-      {
-        "issue": "Sexual function: tiny evidence base, heavily dependent on one large trial",
-        "detail": "Only 5 studies total, with a single meta-analysis providing synthesis (not independently replicated). Two of three reportable sample sizes are from the same 2020 trial (n=2370) and the 2022 trial (n=757); these two studies dominate the evidence base. The oldest trial is from 1982 (n=12), and only 3 of 5 trials report sample size at all. No extractable pooled effect is available from the abstracts, and the outcome is graded only Moderate\u2014reflecting acknowledged uncertainty.",
-        "severity": "high"
-      },
-      {
-        "issue": "Immune function: 15 of 24 RCTs lack reported sample sizes",
-        "detail": "The engine notes 'most abstracts omit sample size, so the true total is substantially larger' than the 1190 verified across 9 studies. This opacity is problematic: underpowered trials are systematically more likely to show positive effects, and without n for two-thirds of the RCTs, selection bias or publication bias favoring positive findings cannot be assessed. The median n of reported studies is only 38, and trials with n\u226428 appear three times in the disclosed sample.",
-        "severity": "high"
-      },
-      {
-        "issue": "Blood sugar: meta-analyses pool heterogeneous populations and endpoints",
-        "detail": "The four meta-analyses are applied across type 2 diabetes, prediabetes, and obesity populations, with endpoints including glycemic control, insulin resistance, inflammation, and oxidative stress. Without seeing the underlying data, it is unclear whether all meta-analyses used identical inclusion criteria, risk-of-bias thresholds, or outcome definitions. Heterogeneity (I\u00b2, tau\u00b2) is not reported in the abstracts, and a pooled SMD of \u22120.52 [\u22120.96, \u22120.07] represents modest heterogeneity-vulnerable estimate that could reflect true variation in treatment effect rather than a single stable phenomenon.",
-        "severity": "moderate"
-      },
-      {
-        "issue": "Majority of individual RCTs lack pre-specified outcomes or blinding detail",
-        "detail": "Abstracts for most trials (especially older ones: 2002, 2005, 2007, 2009) do not disclose trial registration, primary/secondary outcome definitions, or allocation concealment. This is consistent with historical trial reporting practices but introduces risk of outcome switching and selective reporting. Modern trials (2020\u20132025) are more likely to have been registered, but the records here do not confirm registration status for any trial.",
-        "severity": "moderate"
-      }
-    ],
-    "mechanism_check": "Zinc is a known cofactor in enzymatic glucose metabolism and insulin signaling, and zinc deficiency impairs immune cell function and barrier integrity\u2014so the biological plausibility for blood sugar and immune outcomes is sound. However, the connection to sexual function and diarrheal gut integrity is less direct: sexual benefit appears to depend on correcting zinc deficiency in infertile men (mechanism clear for deficiency, not supplementation in replete individuals), and diarrhea benefit assumes zinc restores epithelial integrity\u2014a plausible mechanism, but the heterogeneity of diarrheal causes and the small underpowered trials make clinical translation uncertain.",
-    "strongest_counterargument": "A skeptic would note that the 'Strong' grades for blood sugar and immune function rest primarily on meta-analyses that may have pooled small, unpublished-bias-prone RCTs without transparent heterogeneity reporting. The blood sugar effect size (SMD \u22120.52) is modest and borders on clinically trivial when translated to glycated hemoglobin (roughly \u22120.3\u20130.5% HbA1c), and immune function has no extractable pooled effect reported at all\u2014the 'Strong' grade there appears to rest on narrative consistency across reviews rather than a quantified effect. Meanwhile, gut and sexual outcomes are supported by only single syntheses with no independent replication, and the oldest sexual function trial is from 1982\u2014four decades of potential confounding and bias.",
-    "what_would_change_the_picture": "For blood sugar and immune function: publication of registered, adequately powered RCTs (n\u2265300 per arm) with pre-specified outcomes, full ITT analysis, and transparent heterogeneity reporting would clarify whether effects are robust or inflated by publication bias. For gut digestion and sexual function: independent meta-analyses by different groups using standardized inclusion criteria and risk-of-bias tools would establish whether the single existing synthesis is replicable, and would identify sources of between-study heterogeneity.",
+    "mechanism_check": "CLA's proposed mechanism\u2014inhibition of lipoprotein lipase and upregulation of fat oxidation pathways\u2014is plausible *in vitro* and supported by animal studies (e.g., mitochondrial changes, CYP17A1 upregulation). However, a large inferential leap exists between cellular/animal endpoints and clinically meaningful weight loss or improved endurance in humans. The weight/fat loss outcome is modest in the retrieved human trials (median n=51, many showing marginal or non-significant reductions in hip circumference or body fat), and the endurance studies explicitly report 'no effect on peak oxygen uptake' (2014 trial, n=18), suggesting the mechanism does not translate robustly to human performance. The lipid effects remain poorly defined across studies.",
+    "strongest_counterargument": "A skeptic would note that across three outcomes graded Moderate (weight, lipids, endurance), the engine found no extractable pooled effect and flagged unresolved inconsistency in every case. In the absence of a quantified meta-analysis, individual small trials (median n=20\u201351) with incomplete reporting and mixed designs can appear supportive while actually reflecting noise, small-sample bias, or selective reporting. The 2006 trial explicitly titled 'does not prevent weight or body fat regain,' and a 2014 trial found 'no effect on peak oxygen uptake'\u2014findings that undercut the headline claim that CLA reliably produces the graded outcomes. The evidence is consistent with a null or negligible effect masked by poor synthesis and publication bias.",
+    "what_would_change_the_picture": "A pre-registered systematic review with meta-analysis pooling all human RCTs (specifying CLA isomer composition, dose, and duration a priori) would resolve inconsistency and quantify pooled effect size with confidence intervals. A large (n\u2265200), multi-site RCT in a clearly defined population (e.g., overweight adults, sedentary or exercising) with standardized body composition (DXA or MRI) and endurance measures (VO\u2082max) would establish clinical relevance and rule out small-study effects.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

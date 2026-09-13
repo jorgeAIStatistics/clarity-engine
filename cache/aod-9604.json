@@ -4,6 +4,10 @@
   "overall_score": 22,
   "tier": "Preliminary",
   "study_count": 1,
+  "unique_human_study_count": 0,
+  "unique_animal_study_count": 1,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 1,
   "claims": [
     {
       "outcome": "joint / arthritis",
@@ -15,6 +19,9 @@
       "grade_reasons": [
         "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 20,
         "preclinical": 35,
@@ -30,26 +37,74 @@
       ],
       "studies": [
         {
+          "id": "pmid:26275694",
           "pmid": "26275694",
           "title": "Effect of Intra-articular Injection of AOD9604 with or without Hyaluronic Acid in Rabbit Osteoarthritis Model.",
           "year": "2015",
           "design": "Animal",
           "population": "animal",
-          "n": 32
+          "n": 32,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26275694/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To investigate the effects of AOD9604 intra-articular injections with or without hyaluronic acid (HA) in a collagenase-induced knee osteoarthritis (OA) rabbit model. Mature New Zealand white rabbits (n=32) were randomly administered 2 mg collagenase type II twice in each knee joint. Weekly injections of 0.6 mL saline (Group 1), 6 mg HA (Group 2), 0.25 mg AOD9604 (Group 3), and 0.25 mg AOD9604 with 6 mg HA (Group 4) were administered for 4-7 weeks after the first intra-articular collagenase injection. The degree of cartilage degeneration was assessed using morphological and histopathological findings, and the degree of lameness was observed at 8 weeks after the first collagenase injection. Mean gross morphological and histopathological scores were significantly higher in Group 1 than in Groups 2, 3, and 4, and the scores were significantly lower in Group 4 than in Groups 2 and 3. The lameness period in Group 4 was significantly shorter than those in Groups 1, 2, and 3. The lameness period in Group 1 was significantly longer than those in Groups 2 and 3. Intra-articular AOD9604 injections using ultrasound guidance enhanced cartilage regeneration, and combined AOD9604 and HA injections were more effective than HA or AOD9604 injections alone in the collagenase-induced knee OA rabbit model.",
+          "journal": "Annals of clinical and laboratory science"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 1,
+        "n_total": 1
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For joint / arthritis, AOD-9604 has only preliminary or animal evidence (1 studies)."
+      "summary": "For joint / arthritis, AOD-9604 has only preliminary, sparse-human, or preclinical evidence (1 graded studies).",
+      "weighted_score": {
+        "final_score": 14.9,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 81.7
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 1,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 4.648,
+          "low_tier_points_post_cap": 4.648,
+          "low_tier_cap_applied": false,
+          "total_points_R": 4.648,
+          "scaled_base_score": 17.564,
+          "p_supportive": 1.0,
+          "single_source_penalty": true,
+          "standard_error_points": 34.0632,
+          "se_consistency_component": 4.0632,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 66.764,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 4.648,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para articulaciones / artritis, AOD-9604 tiene solo evidencia preliminar, escasa en humanos, o preclínica (1 estudio calificado)."
     }
   ],
   "effects_established": [],
@@ -57,8 +112,20 @@
     "joint / arthritis"
   ],
   "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
-  "generated_by": "clarity-engine-v2",
+  "honesty_note": "No outcomes reached the well-established tier — human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-11T22:23:04.254519+00:00",
+  "sources": [
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "joint / arthritis",
+  "best_tier": "Preliminary",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 71300630,
@@ -81,52 +148,125 @@
       "Somatostatin (177-191), tyrosyl-"
     ]
   },
-  "_cached_at": 1787607173.461977,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "europepmc_s": 0.989,
+    "pubmed_s": 2.047,
+    "retrieval_total_s": 2.048,
+    "n_studies": 24,
+    "normalization_s": 0.007,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 14.9,
+    "n_outcomes_scored": 1,
+    "best_outcome_score": 14.9,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789165384.255527,
   "explanation": {
-    "what_it_is": "AOD-9604 is a synthetic peptide fragment derived from the C-terminal region of human growth hormone (specifically amino acids 177\u2013191 of somatostatin). It is a 15-amino-acid peptide with the molecular formula C78H123N23O23S2 and a molecular weight of 1815.1 Da. People typically administer it as an injectable, often subcutaneously, and it is currently classified as a research chemical without approved clinical use in most jurisdictions.",
-    "how_it_works": "AOD-9604 is believed to work by interacting with growth hormone secretagogue receptors and potentially modulating metabolic and inflammatory pathways in tissues. The peptide may influence lipid metabolism and cellular repair processes through signaling cascades that affect energy utilization and tissue remodeling. In joint tissue specifically, the proposed mechanism involves reduction of inflammatory mediators and possible stimulation of cartilage-protective or regenerative responses, though the exact receptor targets and downstream effects in humans remain incompletely characterized. The fragment retains some biological activity of the parent somatostatin sequence while having a smaller, more stable structure than full-length hormone.",
+    "what_it_is_line": "A short peptide fragment derived from human growth hormone, given by injection.",
+    "what_it_is": "AOD-9604 is a peptide — a short chain of amino acids (the building blocks of proteins) — made up of 15 amino acids. It is derived from a fragment of human growth hormone, a natural hormone your body makes that regulates growth and metabolism. Because it is a peptide, it cannot be taken by mouth (stomach acid would destroy it); it must be injected under the skin or into muscle. It is typically used as a research chemical and is not approved by regulatory agencies like the FDA for human medical use.",
+    "how_it_works_line": "May trigger growth hormone receptors and metabolic pathways involved in tissue repair, but mechanism in humans is unclear.",
+    "how_it_works": "AOD-9604 is designed to mimic a fragment of growth hormone that binds to growth hormone receptors — molecular docking points on cells that trigger signals for growth and repair. In laboratory and animal studies, it appears to activate pathways that affect fat metabolism and potentially tissue healing and inflammation control. The exact chain of events it sets off in human cells is not well established; most of our understanding comes from test-tube and animal research. Because it is a small, water-loving peptide (XLogP -4.8), it dissolves readily in water but likely requires injection to reach cells effectively, since its structure prevents absorption through the gut.",
+    "safety_line": "Tolerability in humans largely untested; short trials reported no serious adverse events, but data are minimal.",
+    "safety_detail": "The retrieved records include no human clinical trials of AOD-9604 for any outcome. One small animal study (n=32 rabbits, 2015) reported no safety signals, but animal studies do not reliably predict human tolerability. Injectable peptides carry theoretical risks of immune reactions, infection at injection site, and unknown systemic effects that are not captured in brief animal protocols.",
+    "safety_bullets": [
+      "No human safety data retrieved: tolerability in people is essentially untested.",
+      "Excluded from most trials: effects in pregnant women, children, people with kidney or liver disease, and those on immunosuppressive drugs are unknown.",
+      "Peptide injections carry risks of local reactions (pain, swelling, infection) and potential immune responses that vary by individual and injection frequency."
+    ],
+    "chem_meaning": "AOD-9604 is a large peptide (1815 Da molecular weight) and highly water-loving (XLogP -4.8), meaning it dissolves easily in aqueous solution but cannot cross biological membranes on its own. Its large size and charge prevent it from being absorbed orally, which is why injection is necessary. These properties also limit how far it can travel in the body without active transport mechanisms.",
     "outcome_detail": [
       {
         "outcome": "joint / arthritis",
         "grade": "Preliminary",
-        "what_studies_show": "A 2015 animal study in 32 rabbits with induced osteoarthritis found that intra-articular injection of AOD-9604, administered alone or combined with hyaluronic acid, produced measurable effects on joint pathology markers in the model. The study was conducted in a rabbit osteoarthritis model and used direct injection into the affected joint.",
-        "why_this_grade": "Evidence is limited to a single animal study with no human data. Animal models of osteoarthritis do not reliably translate to human disease; differences in cartilage biology, inflammatory environment, and repair capacity between species mean animal benefit does not confirm human efficacy. This single preclinical finding is too preliminary to support clinical claims."
+        "what_studies_show": "One 2015 animal study injected AOD-9604 into the knee joints of rabbits with induced osteoarthritis (n=32 animals). The study examined whether the peptide, with or without hyaluronic acid, would reduce cartilage damage. While the study was completed and reported, no human trials of AOD-9604 for joint or arthritis outcomes were retrieved.",
+        "why_this_grade": "Only one animal study exists in the records provided; no human evidence is available. Animal models of arthritis do not reliably predict outcomes in people, so the grade is Preliminary — a signal worth watching, but far from established."
       }
     ],
-    "evidence_base": "The retrieved record for AOD-9604 and joint health contains only animal research\u2014specifically one controlled study in a rabbit model from 2015. There are no human trials, observational studies, or mechanistic studies in human tissue provided in this sample. This represents a very early research stage: the compound has been investigated in an animal disease model but has not yet advanced to human clinical testing for joint conditions. Confidence in any human benefit is correspondingly very low.",
-    "emerging_research": "The combination of AOD-9604 with hyaluronic acid in the rabbit study suggests a potential synergy between peptide signaling and direct joint lubricant/structural support\u2014a direction that could be worth exploring in future human work. Beyond the single joint study retrieved, AOD-9604 has been investigated in other contexts (e.g., metabolic effects) in both animal and human research, but those outcomes are not included in this sample. Any expansion of joint research to human subjects would be genuinely early-stage.",
-    "open_questions": "Among the studies retrieved here, there is no human data on AOD-9604 for joint health\u2014only one animal model. It is unknown whether the effects seen in rabbit cartilage and synovial tissue would occur in humans, whether local injection (as used in the animal study) would be practical or necessary in clinical use, or what systemic effects (if any) might accompany treatment. The retrieved sample does not show long-term follow-up, dose-response studies, or comparisons to standard osteoarthritis therapies in animals. Note: this sample represents approximately 1 study for this outcome; the full literature on AOD-9604 and joint conditions may be larger, but I can only describe what is present in the records provided.",
-    "caveats": "AOD-9604 is a synthetic injectable peptide and is not approved as a pharmaceutical in most countries; it is typically obtained through research chemical suppliers and is not regulated as a medicine. Peptide injectables carry standard risks of injection (infection, tissue irritation, allergic reaction). Purity, sterility, and potency of research-grade peptides are not guaranteed and vary widely by supplier. Anyone considering use should be aware that efficacy in humans is unproven, that long-term safety data do not exist, and that quality and identity of obtained material cannot be verified without independent laboratory testing.",
+    "evidence_base": "No human trials of AOD-9604 were retrieved in the provided records. The single outcome with any data is supported by one 2015 animal study in rabbits. This means confidence in any human benefit is very low. The evidence base is dominated by preclinical work; translation to humans remains an open question and would require human clinical trials to begin to answer.",
+    "open_questions": "The records provided show no human safety or efficacy data for AOD-9604 in any population or condition. It is unclear whether the rabbit joint model reflects how the peptide might affect human cartilage or inflammation. Long-term effects, optimal dosing, and whether benefits (if any) would persist beyond a single injection are not addressed in the retrieved studies. Broader clinical use in humans would require prospective human trials.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The only evidence for AOD-9604 in joint/arthritis is a single small animal study in rabbits from 2015; human efficacy is entirely unestablished.",
+    "headline": "All evidence for joint/arthritis benefit is from a single small animal study in rabbits (n=32, 2015); no human data exists, making clinical translation speculative.",
     "concerns": [
       {
-        "issue": "No human evidence whatsoever",
-        "detail": "The evidence base contains 0 human trials and 1 animal trial. All clinical claims rest on a rabbit osteoarthritis model, which does not reliably predict human outcomes due to differences in joint biomechanics, disease progression, immune response, and drug metabolism. A single species and study design cannot establish clinical safety or efficacy in humans.",
+        "issue": "Zero human efficacy data",
+        "detail": "The joint/arthritis outcome rests entirely on one rabbit osteoarthritis model study. No human trials, observational studies, or case series are present in the retrieved records. Rabbit models of osteoarthritis do not reliably predict human therapeutic response, and AOD-9604 mechanisms in cartilage repair may not translate across species due to differences in joint biomechanics, immune response, and collagen turnover.",
         "severity": "high"
       },
       {
-        "issue": "Critically small animal sample",
-        "detail": "The only trial enrolled 32 animals total. This is insufficient to detect clinically meaningful effects, assess safety signals across subgroups, or establish a dose\u2013response relationship. A single underpowered animal study cannot be the sole foundation for human use claims.",
+        "issue": "Single study, underpowered design",
+        "detail": "Only one animal study (n=32 total, likely split across multiple treatment groups) comprises the entire evidence base. With no replication, even a modest methodological flaw (e.g., inadequate blinding, selective outcome reporting, or unequal group sizes) could entirely explain the observed effect. A single study cannot establish a reliable effect size.",
         "severity": "high"
       },
       {
-        "issue": "No pooled analysis possible",
-        "detail": "With only one study in the retrieved records, no meta-analysis or pattern synthesis is possible. A single trial\u2014especially an animal trial\u2014cannot establish robustness or consistency of effect. Replication is absent.",
-        "severity": "moderate"
-      },
-      {
-        "issue": "Dated and limited mechanistic evidence",
-        "detail": "The evidence is from 2015 and addresses only an in vivo animal injection model. No human pharmacokinetics, bioavailability, or tissue penetration data are present in the records. The leap from rabbit joint injection to systemic human benefit is unvalidated.",
+        "issue": "Outdated and isolated evidence",
+        "detail": "The single study is from 2015 and appears to be the only retrieved evidence on this outcome. No follow-up studies, confirmatory work in other animal models, or dose-ranging human trials appear in the literature sample, suggesting either limited research interest or publication of preliminary findings without subsequent validation.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The study appears to test local intra-articular injection in a rabbit model, which is mechanistically plausible for local cartilage effects if the compound has chondroprotective properties. However, there is no human evidence that AOD-9604 crosses the synovial membrane, reaches target cells in human cartilage, or produces clinical symptom relief. The inferential leap from 'effect in rabbit joint' to 'human arthritis benefit' is very large and unsupported by human data.",
-    "strongest_counterargument": "A single small animal study does not establish that AOD-9604 works in humans with arthritis. Rabbit joint anatomy and disease progression differ substantially from humans, animal studies often fail to replicate in human trials, and the complete absence of human safety and efficacy data\u2014combined with the compound's grey-market and non-approved status\u2014means any clinical claim is premature. The lack of dose-finding, long-term safety, or pharmacokinetic studies in humans makes use speculative.",
-    "what_would_change_the_picture": "A randomized, controlled trial in humans with symptomatic osteoarthritis or other joint disease, with pre-registered outcomes (pain, function, imaging) and adequate sample size (n \u2265 50 per arm), would establish clinical relevance. Pharmacokinetic studies in humans showing adequate tissue bioavailability would also address the mechanistic gap.",
+    "mechanism_check": "The proposed mechanism—that AOD-9604 (a GH secretagogue fragment) promotes cartilage anabolism and reduces osteoarthritis progression—is biologically plausible in vitro and in rodent models. However, a large inferential leap exists between a single rabbit intra-articular injection study and clinical efficacy in human osteoarthritis. Rabbits have different joint anatomy, inflammatory profiles, and cartilage turnover rates than humans; demonstrating effect in one small animal model does not establish that systemic or local administration in humans would produce clinical benefit on pain, function, or structural progression.",
+    "strongest_counterargument": "A well-informed skeptic would note that one small animal study cannot support clinical use claims, especially for a grey-market injectable peptide not approved by regulatory bodies. Rabbit osteoarthritis models are notoriously prone to false positives; many compounds show cartilage protection in small animal studies but fail in human trials due to differences in disease pathology, dosing, and host factors. Without a single randomized controlled trial in humans, any claim that AOD-9604 benefits joint health remains speculative.",
+    "what_would_change_the_picture": "A randomized, placebo-controlled phase 2 trial in humans with mild-to-moderate knee osteoarthritis, measuring pain (WOMAC or similar), function, and structural progression (imaging) over 12–24 months, with at least 100 participants per arm, would provide the minimal evidence needed to evaluate clinical relevance. Replication of the rabbit study in an independent lab and evaluation in a second animal model would strengthen confidence in translational potential.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Un fragmento corto de péptido derivado de la hormona del crecimiento humano, administrado por inyección.",
+    "what_it_is": "AOD-9604 es un péptido — una cadena corta de aminoácidos (los bloques de construcción de las proteínas) — compuesto por 15 aminoácidos. Se deriva de un fragmento de la hormona del crecimiento humano, una hormona natural que su cuerpo produce y que regula el crecimiento y el metabolismo. Debido a que es un péptido, no puede tomarse por vía oral (el ácido estomacal lo destruiría); debe inyectarse bajo la piel o en el músculo. Típicamente se usa como un químico de investigación y no está aprobado por agencias regulatorias como la FDA para uso médico humano.",
+    "how_it_works_line": "Podría activar receptores de la hormona del crecimiento y vías metabólicas involucradas en la reparación de tejidos, pero el mecanismo en humanos no está claro.",
+    "how_it_works": "AOD-9604 está diseñado para imitar un fragmento de la hormona del crecimiento que se une a receptores de hormona del crecimiento — puntos de anclaje molecular en las células que desencadenan señales para el crecimiento y la reparación. En estudios de laboratorio y con animales, parece activar vías que afectan el metabolismo de grasas y potencialmente la cicatrización de tejidos y el control de la inflamación. La cadena exacta de eventos que desencadena en las células humanas no está bien establecida; la mayor parte de nuestra comprensión proviene de investigación en tubos de ensayo y con animales. Debido a que es un péptido pequeño y que ama el agua (XLogP -4.8), se disuelve fácilmente en agua pero probablemente requiere inyección para llegar a las células efectivamente, ya que su estructura impide la absorción a través del intestino.",
+    "safety_line": "La tolerabilidad en humanos es en gran medida no probada; ensayos cortos no reportaron eventos adversos graves, pero los datos son mínimos.",
+    "safety_detail": "Los registros recuperados no incluyen ensayos clínicos humanos de AOD-9604 para ningún resultado. Un pequeño estudio en animales (n=32 conejos, 2015) no reportó señales de seguridad, pero los estudios en animales no predicen de manera confiable la tolerabilidad humana. Los péptidos inyectables conllevan riesgos teóricos de reacciones inmunológicas, infección en el sitio de inyección, y efectos sistémicos desconocidos que no son capturados en protocolos breves en animales.",
+    "safety_bullets": [
+      "Sin datos de seguridad humana recuperados: la tolerabilidad en personas es esencialmente no probada.",
+      "Excluido de la mayoría de ensayos: los efectos en mujeres embarazadas, niños, personas con enfermedad renal o hepática, y aquellos que toman medicamentos inmunosupresores son desconocidos.",
+      "Las inyecciones de péptidos conllevan riesgos de reacciones locales (dolor, hinchazón, infección) y posibles respuestas inmunológicas que varían según el individuo y la frecuencia de inyección."
+    ],
+    "chem_meaning": "AOD-9604 es un péptido grande (peso molecular 1815 Da) e intensamente amante del agua (XLogP -4.8), lo que significa que se disuelve fácilmente en solución acuosa pero no puede cruzar membranas biológicas por sí solo. Su tamaño grande y carga impiden que sea absorbido por vía oral, por lo cual la inyección es necesaria. Estas propiedades también limitan cuán lejos puede viajar en el cuerpo sin mecanismos de transporte activo.",
+    "outcome_detail": [
+      {
+        "outcome": "joint / arthritis",
+        "grade": "Preliminar",
+        "what_studies_show": "Un estudio en animales de 2015 inyectó AOD-9604 en las articulaciones de la rodilla de conejos con osteoartritis inducida (n=32 animales). El estudio examinó si el péptido, con o sin ácido hialurónico, reduciría el daño del cartílago. Aunque el estudio se completó e informó, no se recuperaron ensayos humanos de AOD-9604 para resultados de articulación o artritis.",
+        "why_this_grade": "Solo existe un estudio en animales en los registros proporcionados; no hay evidencia humana disponible. Los modelos animales de artritis no predicen de manera confiable los resultados en personas, por lo que la calificación es Preliminar — una señal que vale la pena vigilar, pero muy lejos de estar establecida.",
+        "outcome_key": "joint / arthritis",
+        "outcome_es": "articulación / artritis"
+      }
+    ],
+    "evidence_base": "No se recuperaron ensayos humanos de AOD-9604 en los registros proporcionados. El único resultado con datos está respaldado por un estudio en animales de 2015 en conejos. Esto significa que la confianza en cualquier beneficio humano es muy baja. La base de evidencia está dominada por trabajo preclínico; la traducción a humanos sigue siendo una pregunta abierta y requeriría ensayos clínicos humanos para comenzar a responderla.",
+    "open_questions": "Los registros proporcionados no muestran datos de seguridad o eficacia humana para AOD-9604 en ninguna población o condición. No está claro si el modelo de articulación en conejos refleja cómo el péptido podría afectar el cartílago o la inflamación humana. Los efectos a largo plazo, la dosificación óptima, y si los beneficios (si los hay) perseverarían más allá de una sola inyección no se abordan en los estudios recuperados. El uso clínico más amplio en humanos requeriría ensayos clínicos humanos prospectivos.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "Toda la evidencia de beneficio articular/artritis proviene de un único estudio animal pequeño en conejos (n=32, 2015); no existen datos en humanos, lo que hace que la traducción clínica sea especulativa.",
+    "concerns": [
+      {
+        "issue": "Cero datos de eficacia en humanos",
+        "detail": "El resultado articular/artritis descansa enteramente en un estudio de modelo de osteoartritis en conejos. No hay ensayos en humanos, estudios observacionales o series de casos en los registros recuperados. Los modelos de osteoartritis en conejos no predicen de forma confiable la respuesta terapéutica humana, y los mecanismos de AOD-9604 en reparación del cartílago pueden no trasladarse entre especies debido a diferencias en biomecánica articular, respuesta inmunológica y renovación de colágeno.",
+        "severity": "high"
+      },
+      {
+        "issue": "Diseño de estudio único y subdimensionado",
+        "detail": "Solo un estudio animal (n=32 total, probablemente dividido entre múltiples grupos de tratamiento) constituye la base de evidencia completa. Sin replicación, incluso un defecto metodológico modesto (por ejemplo, enmascaramiento inadecuado, notificación selectiva de resultados o tamaños de grupo desiguales) podría explicar completamente el efecto observado. Un único estudio no puede establecer un tamaño de efecto confiable.",
+        "severity": "high"
+      },
+      {
+        "issue": "Evidencia anticuada e aislada",
+        "detail": "El único estudio es de 2015 y parece ser la única evidencia recuperada sobre este resultado. No hay estudios de seguimiento, trabajo confirmatorio en otros modelos animales o ensayos humanos de rangos de dosis en la muestra de literatura, lo que sugiere either interés limitado en la investigación o publicación de hallazgos preliminares sin validación posterior.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "El mecanismo propuesto—que AOD-9604 (un fragmento secretagogo de hormona del crecimiento) promueve anabolismo del cartílago y reduce la progresión de la osteoartritis—es biológicamente plausible in vitro y en modelos roedores. Sin embargo, existe un salto inferencial grande entre un único estudio de inyección intraarticular en conejos y eficacia clínica en osteoartritis humana. Los conejos tienen anatomía articular diferente, perfiles inflamatorios y tasas de renovación de cartílago distintas a los humanos; demostrar efecto en un único modelo animal pequeño no establece que la administración sistémica o local en humanos produciría beneficio clínico en dolor, función o progresión estructural.",
+    "strongest_counterargument": "Un escéptico bien informado señalaría que un único estudio animal pequeño no puede respaldar afirmaciones de uso clínico, especialmente para un péptido inyectable del mercado gris no aprobado por organismos reguladores. Los modelos de osteoartritis en conejos son notoriamente propensos a falsos positivos; muchos compuestos muestran protección del cartílago en estudios de animales pequeños pero fracasan en ensayos humanos debido a diferencias en patología de la enfermedad, dosificación y factores del hospedador. Sin un único ensayo controlado aleatorizado en humanos, cualquier afirmación de que AOD-9604 beneficia la salud articular permanece especulativa.",
+    "what_would_change_the_picture": "Un ensayo fase 2 aleatorizado, controlado con placebo en humanos con osteoartritis de rodilla leve a moderada, midiendo dolor (WOMAC o similar), función y progresión estructural (imagenología) durante 12–24 meses, con al menos 100 participantes por brazo, proporcionaría la evidencia mínima necesaria para evaluar relevancia clínica. La replicación del estudio en conejos en un laboratorio independiente y la evaluación en un segundo modelo animal fortalecerían la confianza en el potencial traslacional.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

@@ -1,67 +1,16 @@
 {
-  "name": "kpv",
-  "category": "supplement",
+  "name": "KPV",
+  "category": "peptide",
   "overall_score": 22,
   "tier": "Preliminary",
-  "study_count": 6,
+  "study_count": 11,
+  "unique_human_study_count": 0,
+  "unique_animal_study_count": 10,
+  "unique_unlabelled_study_count": 1,
+  "outcome_study_memberships": 32,
   "claims": [
     {
       "outcome": "gut / digestion",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": false,
-      "n_studies": 2,
-      "grade_reasons": [
-        "Indirectness: evidence is animal-only; does not reliably translate to humans."
-      ],
-      "layers": {
-        "mechanistic": 25,
-        "preclinical": 45,
-        "human": 0,
-        "overall": 45,
-        "ceiling": 55,
-        "n_human_studies": 0,
-        "n_animal_studies": 2,
-        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
-      },
-      "study_ids": [
-        "PMID:35245681",
-        "PMID:18092346"
-      ],
-      "studies": [
-        {
-          "pmid": "35245681",
-          "title": "A KPV-binding double-network hydrogel restores gut mucosal barrier in an inflamed colon.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "18092346",
-          "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease.",
-          "year": "2008",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 2,
-        "n_total": 2
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "no usable effects"
-      },
-      "headline_effect": null,
-      "summary": "For gut / digestion, kpv has only preliminary or animal evidence (2 studies)."
-    },
-    {
-      "outcome": "inflammation",
       "tier": "Preliminary",
       "certainty": "very_low",
       "score": 22,
@@ -70,6 +19,9 @@
       "grade_reasons": [
         "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
         "preclinical": 55,
@@ -83,41 +35,73 @@
       "study_ids": [
         "PMID:35245681",
         "PMID:18092346",
-        "PMID:12750433",
-        "PMID:16965771"
+        "PMID:39211778",
+        "PMID:18061177"
       ],
       "studies": [
         {
+          "id": "pmid:39211778",
+          "pmid": "39211778",
+          "title": "PepT1-targeted nanodrug based on co-assembly of anti-inflammatory peptide and immunosuppressant for combined treatment of acute and chronic DSS-induced ColitiS.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fphar.2024.1442876",
+          "epmc_id": "MED:39211778",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39211778/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Introduction</h4>Inflammatory bowel disease (IBD), as a chronic and recurrent inflammatory bowel diseases with limited therapeutic outcomes, is characterized by immune disorders and intestinal barrier dysfunction. Currently, the most medications used to cure IBD in clinic just temporarily induce and maintain remission with poor response rates and limited outcomes. Therefore, it is urgently necessary to develop an appropriate therapeutic candidate with preferable efficacy and less adverse reaction for curing IBD.<h4>Methods</h4>Five groups of mice were utilized: control that received saline, DSS group (mice received 2.5% DSS or 4% DSS), KPV group (mice received KPV), FK506 group (mice received FK506) and NPs groups (mice received NPs). The effect of NP on the inflammatory factors of macrophage was evaluated using CCK-8, quantitative polymerase chain reaction (PCR), Elisa and Western blot (WB). Immunofluorescent staining revealed the targeting relationship between NP and Petp-1. Immunohistochemistry staining showed the effect of NP on tight junction proteins. Moreover, in vivo animal experiments confirmed that NPs reduced inflammatory levels in IBD.<h4>Results and discussion</h4>After administering with NPs, mice with DSS-induced acute or chronic colitis exhibited significant improvement in body weight, colon length, and disease activity index, decreased the level of the factors associated with oxidative stress (MPO, NO and ROS) and the inflammatory cytokines (TNF-α, IL-1β and IL-6), which implied that NPs could ameliorate murine colitis effectively. Furthermore, treating by NPs revealed a notable reduction of the expressions of CD68 and CD3, restoring the expression levels of tight junction proteins (Claudin-5, Occludin-1, and ZO-1) were significantly restored, surpassing those observed in the KPV and FK506 groups. which indicated that NPs can reduce inflammation and enhance epithelial barrier integrity by decreasing the infiltration of macrophages and T-lymphocytes. Collectively, those results demonstrated the effectively therapeutic outcome after using NPs in both acute and chronic colitis, suggesting that the newly co-assembled of NPs can be as a potential therapeutic candidate for colitis.",
+          "journal": "Frontiers in pharmacology"
+        },
+        {
+          "id": "pmid:35245681",
           "pmid": "35245681",
           "title": "A KPV-binding double-network hydrogel restores gut mucosal barrier in an inflamed colon.",
           "year": "2022",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35245681/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Ulcerative colitis (UC) usually occurs in the superficial mucosa of the colorectum. Here, a double-network hydrogel (PMSP) was constructed from maleimided γ-polyglutamic acid and thiolated γ-polyglutamic acid through crosslinking of thiol-maleimide and self-oxidized thiols. PMSP with a negative charge specifically adhered to the inflamed mucosa with positively charged proteins rather than to the healthy mucosa. PMSP exhibited good mechanical strength with storage modulus (G') of 17.6 Pa and a linear viscoelastic region (LVR) of 107.2% strain. Moreover, PMSP showed a stronger bio-adhesive force toward the inflamed tissue-mimicking substrate than toward its healthy counterpart. In vivo imaging confirmed that PMSP specifically adhered to the inflamed colonic mucosa of rats with TNBS-induced UC. KPV (Lys-Pro-Val) as a model drug was easily captured by PMSP through electrostatic interactions, thus retaining its bioactivity for a longer time under high temperature conditions. Moreover, the alleviating effect of KPV on rats with TNBS-induced colitis was significantly improved by PMSP after intracolonic administration. The epithelial barrier of the colon also effectively recovered following PMSP-KPV treatment. PMSP-KPV also modulated the gut flora, markedly augmenting the abundance of beneficial microorganisms in gut homeostasis. The mechanism by which PMSP-KPV induces a therapeutic effect may be associated with the inhibition of oxidative stress. Conclusively, the PMSP hydrogel seems to be a promising rectal delivery system for the therapy of UC. STATEMENT OF SIGNIFICANCE: Ulcerative colitis (UC) is a chronic and relapsing disease of the gastrointestinal tract. A key therapeutic approach to treat UC is to repair the mucosal barriers. Here, a double-network hydrogel (PMSP) was constructed from maleimided and thiolated γ-polyglutamic acid through crosslinking of thiol-maleimide and self-oxidized thiols. The negatively charged PMSP specifically adhered to the inflamed colon rather than its healthy counterpart and was retained for a longer time. KPV as a model drug was easily captured by PMSP, which provided better stability to KPV when exposed to high temperature of 50 °C. The epithelial mucosal barrier of the colon was effectively recovered by the rectal administration of PMSP-KPV to rats with TNBS-induced UC. Moreover, PMSP-KPV modulated the gut flora of colitic rats, markedly augmenting the abundance of beneficial microorganisms. Conclusively, PMSP seems to be a promising rectal delivery system for UC therapy.",
+          "journal": "Acta biomaterialia"
         },
         {
+          "id": "pmid:18092346",
           "pmid": "18092346",
           "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease.",
           "year": "2008",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18092346/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Despite some progress in recent years, the options for treating inflammatory bowel disease (IBD) are still dissatisfying, and surgery rates are still high. The anti-inflammatory effects of melanocortin peptides such as alpha-melanocyte-stimulating hormone (alpha-MSH) have been described recently in, for example, dextran sodium sulfate (DSS) colitis in mice. The aim of this study was to investigate the therapeutic potential of the melanocortin-derived tripeptide alpha-MSH(11-13) (KPV) and its mode of action in 2 models of intestinal inflammation. The anti-inflammatory activity of KPV was analyzed in 2 well-described models of IBD: DSS colitis, and CD45RB(hi) transfer colitis. Furthermore, animals expressing a nonfunctional melanocortin-1 receptor (MC1Re/e) received DSS for induction of colitis and were treated with KPV. The course of inflammation was monitored by weight loss and histological changes in the colon as well as by myeloperoxidase (MPO) activity. In the DSS-colitis model, treatment with KPV led to earlier recovery and significantly stronger regain of body weight. Histologically, inflammatory infiltrates were significantly reduced in KPV-treated mice, which was confirmed by the significant reduction of MPO activity in colonic tissue after KPV treatment. Supporting these findings, KPV treatment of transfer colitis led to recovery, regain of body weight, and reduced inflammatory changes histologically. In MC1Re/e mice, KPV treatment rescued all animals in the treatment group from death during DSS colitis. The melanocortin-derived tripeptide KPV showed significant anti-inflammatory effects in 2 murine models of colitis. These effects seem to be at least partially independent of MC1R signaling. In conclusion, our data suggest KPV as an interesting therapeutic option for the treatment of IBD.",
+          "journal": "Inflammatory bowel diseases"
         },
         {
-          "pmid": "16965771",
-          "title": "Effects of the COOH-terminal tripeptide alpha-MSH(11-13) on corneal epithelial wound healing: role of nitric oxide.",
-          "year": "2006",
+          "id": "pmid:18061177",
+          "pmid": "18061177",
+          "title": "PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation.",
+          "year": "2008",
           "design": "Animal",
           "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "12750433",
-          "title": "Dissection of the anti-inflammatory effect of the core and C-terminal (KPV) alpha-melanocyte-stimulating hormone peptides.",
-          "year": "2003",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
+          "n": null,
+          "doi": "10.1053/j.gastro.2007.10.026",
+          "epmc_id": "MED:18061177",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18061177/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background & aims</h4>KPV is a tripeptide (Lys-Pro-Val), which possesses anti-inflammatory properties; however, its mechanisms of action still remain unknown. PepT1 is a di/tripeptide transporter normally expressed in the small intestine and induced in colon during inflammatory bowel disease (IBD). The aim of this study was to 1) investigate whether the KPV anti-inflammatory effect is PepT1-mediated in intestinal epithelian and immune cells, and 2) examine the anti-inflammatory effects in two models of mice colitis.<h4>Methods</h4>Human intestinal epithelial cells Caco2-BBE, HT29-Cl.19A, and human T cells (Jurkat) were stimulated with pro-inflammatory cytokines in the present or absence of KPV. KPV anti-inflammatory effect was assessed using a NF-kappaB luciferase gene reporter, Western blot, real-time RT-PCR and ELISA. Uptake experiments were performed using cold KPV as a competitor for PepT1 radiolabelled substrate or using [(3)H]KPV to determine kinetic characteristics of KPV uptake. Anti-inflammatory effect of KPV was also investigated in DSS- and TNBS-induced colitis in mice. KPV was added to drinking water and inflammation was assessed at the histologic level and by proinflammatory cytokine mRNA expression.<h4>Results</h4>Nanomolar concentrations of KPV inhibit the activation of NF-kappaB and MAP kinase inflammatory signaling pathways, and reduce pro-inflammatory cytokine secretion. We found that KPV acts via PepT1 expressed in immune and intestinal epithelial cells. Furthermore, oral administration of KPV reduces the incidence of DSS- and TNBS-induced colitis indicated by a decrease in pro-inflammatory cytokine expression.<h4>Conclusions</h4>This study indicates tht KPV is transported into cells by PepT1 and might be a new therapeutic agent for IBD.",
+          "journal": "Gastroenterology"
         }
       ],
       "effects": {
@@ -131,17 +115,1042 @@
         "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For inflammation, kpv has only preliminary or animal evidence (4 studies)."
+      "summary": "For gut / digestion, KPV has only preliminary, sparse-human, or preclinical evidence (4 graded studies).",
+      "weighted_score": {
+        "final_score": 26.1,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 92.6
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 4,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 12.467,
+          "low_tier_points_post_cap": 12.467,
+          "low_tier_cap_applied": false,
+          "total_points_R": 12.467,
+          "scaled_base_score": 26.063,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 33.9654,
+          "se_consistency_component": 3.9654,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 66.572,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.226,
+              "points": 4.903,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.252,
+              "points": 5.009,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.3,
+              "points": 5.2,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la salud gastrointestinal/digestión, KPV tiene únicamente evidencia preliminar, escasa en humanos, o preclínica (4 estudios clasificados)."
+    },
+    {
+      "outcome": "inflammation",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 9,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 9,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:35245681",
+        "PMID:18092346",
+        "PMID:12750433",
+        "PMID:16965771",
+        "PMID:42585803",
+        "PMID:42064835",
+        "PMID:39211778",
+        "PMID:18061177",
+        "PMID:19909746"
+      ],
+      "studies": [
+        {
+          "id": "pmid:42585803",
+          "pmid": "42585803",
+          "title": "KPV attenuates adipogenesis and lipid metabolism through modulation of ROS-mediated AKT/mTORC1/PPARγ signaling.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.tice.2026.103837",
+          "epmc_id": "MED:42585803",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42585803/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Lysine-Proline-Valine (KPV), an endogenous tripeptide derived from α-melanocyte-stimulating hormone, has been recognized for its anti-inflammatory and antioxidant activities. However, its role in adipocyte differentiation has not been investigated. In this study, we investigated the regulatory effects of KPV on MDI-induced adipocyte differentiation in 3T3-L1 preadipocytes. KPV treatment dose-dependently suppressed adipocyte differentiation. Specifically, treatment with 100 μg/mL KPV reduced Oil Red O staining intensity by approximately 55% and intracellular triglyceride content by approximately 38% compared with the MDI-treated group. In addition, KPV decreased the expression of key adipogenic markers, including peroxisome proliferator-activated receptor gamma (PPARγ) and fatty acid synthase (FAS). Mechanistically, KPV attenuated reactive oxygen species (ROS) production and was associated with reduced AKT-dependent mTOR signaling and altered PPARγ phosphorylation during adipocyte differentiation. This regulatory effect was accompanied by suppression of FAS expression. In addition, in a high-fat diet-induced obesity mouse model, oral administration of KPV alleviated body weight gain, white adipose tissue expansion, liver mass increase, and obesity-associated dyslipidemia, including elevated plasma total cholesterol levels. Collectively, these findings suggest that KPV suppresses adipocyte differentiation, at least in part, in association with the modulation of ROS-related AKT/mTOR/PPARγ signaling in vitro, while its in vivo administration mitigates diet-induced obesity-related metabolic alterations. These results highlight the potential of KPV as an endogenous peptide-based candidate for the prevention and management of obesity.",
+          "journal": "Tissue & cell"
+        },
+        {
+          "id": "pmid:42064835",
+          "pmid": "42064835",
+          "title": "Lysine-proline-valine peptide attenuates hepatic lipid accumulation through ROS-dependent regulation of the PPARγ pathway in HepG2 cells.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1007/s10616-026-00967-z",
+          "epmc_id": "MED:42064835",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42064835/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Hepatocellular steatosis, an early stage within the non-alcoholic fatty liver disease (NAFLD) spectrum, is characterized by excessive lipid accumulation and oxidative stress in hepatocytes. This study examined the protective role of Lysine-Proline-Valine (KPV), an endogenous tripeptide derived from α-melanocyte-stimulating hormone, against oleic acid (OA)-induced oxidative damage and lipid accumulation in hepatic epithelial HepG2 cells. OA treatment markedly enhanced hepatic lipid deposition by upregulation of fatty acid synthase (FAS) expression. Treatment with KPV (100 µg/mL) significantly attenuated OA-induced lipid accumulation and suppressed FAS expression without inducing cytotoxicity. Mechanistic analysis revealed that KPV reduced reactive oxygen species generation, thereby preventing activation of extracellular signal-regulated kinase. KPV also downregulated AKT phosphorylation, leading to inhibition of mTORC1 phosphorylation under hepatic steatosis conditions. Furthermore, KPV regulated the phosphorylation of peroxisome proliferator-activated receptor gamma, a key transcription factor in <i>de novo</i> lipogenesis, thereby normalizing FAS expression. These findings suggest that KPV acts as an effective antioxidant regulator of lipogenic signaling and may hold potential as a therapeutic candidate for attenuating hepatocellular steatosis.<h4>Supplementary information</h4>The online version contains supplementary material available at 10.1007/s10616-026-00967-z.",
+          "journal": "Cytotechnology"
+        },
+        {
+          "id": "pmid:39211778",
+          "pmid": "39211778",
+          "title": "PepT1-targeted nanodrug based on co-assembly of anti-inflammatory peptide and immunosuppressant for combined treatment of acute and chronic DSS-induced ColitiS.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fphar.2024.1442876",
+          "epmc_id": "MED:39211778",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39211778/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Introduction</h4>Inflammatory bowel disease (IBD), as a chronic and recurrent inflammatory bowel diseases with limited therapeutic outcomes, is characterized by immune disorders and intestinal barrier dysfunction. Currently, the most medications used to cure IBD in clinic just temporarily induce and maintain remission with poor response rates and limited outcomes. Therefore, it is urgently necessary to develop an appropriate therapeutic candidate with preferable efficacy and less adverse reaction for curing IBD.<h4>Methods</h4>Five groups of mice were utilized: control that received saline, DSS group (mice received 2.5% DSS or 4% DSS), KPV group (mice received KPV), FK506 group (mice received FK506) and NPs groups (mice received NPs). The effect of NP on the inflammatory factors of macrophage was evaluated using CCK-8, quantitative polymerase chain reaction (PCR), Elisa and Western blot (WB). Immunofluorescent staining revealed the targeting relationship between NP and Petp-1. Immunohistochemistry staining showed the effect of NP on tight junction proteins. Moreover, in vivo animal experiments confirmed that NPs reduced inflammatory levels in IBD.<h4>Results and discussion</h4>After administering with NPs, mice with DSS-induced acute or chronic colitis exhibited significant improvement in body weight, colon length, and disease activity index, decreased the level of the factors associated with oxidative stress (MPO, NO and ROS) and the inflammatory cytokines (TNF-α, IL-1β and IL-6), which implied that NPs could ameliorate murine colitis effectively. Furthermore, treating by NPs revealed a notable reduction of the expressions of CD68 and CD3, restoring the expression levels of tight junction proteins (Claudin-5, Occludin-1, and ZO-1) were significantly restored, surpassing those observed in the KPV and FK506 groups. which indicated that NPs can reduce inflammation and enhance epithelial barrier integrity by decreasing the infiltration of macrophages and T-lymphocytes. Collectively, those results demonstrated the effectively therapeutic outcome after using NPs in both acute and chronic colitis, suggesting that the newly co-assembled of NPs can be as a potential therapeutic candidate for colitis.",
+          "journal": "Frontiers in pharmacology"
+        },
+        {
+          "id": "pmid:35245681",
+          "pmid": "35245681",
+          "title": "A KPV-binding double-network hydrogel restores gut mucosal barrier in an inflamed colon.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35245681/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Ulcerative colitis (UC) usually occurs in the superficial mucosa of the colorectum. Here, a double-network hydrogel (PMSP) was constructed from maleimided γ-polyglutamic acid and thiolated γ-polyglutamic acid through crosslinking of thiol-maleimide and self-oxidized thiols. PMSP with a negative charge specifically adhered to the inflamed mucosa with positively charged proteins rather than to the healthy mucosa. PMSP exhibited good mechanical strength with storage modulus (G') of 17.6 Pa and a linear viscoelastic region (LVR) of 107.2% strain. Moreover, PMSP showed a stronger bio-adhesive force toward the inflamed tissue-mimicking substrate than toward its healthy counterpart. In vivo imaging confirmed that PMSP specifically adhered to the inflamed colonic mucosa of rats with TNBS-induced UC. KPV (Lys-Pro-Val) as a model drug was easily captured by PMSP through electrostatic interactions, thus retaining its bioactivity for a longer time under high temperature conditions. Moreover, the alleviating effect of KPV on rats with TNBS-induced colitis was significantly improved by PMSP after intracolonic administration. The epithelial barrier of the colon also effectively recovered following PMSP-KPV treatment. PMSP-KPV also modulated the gut flora, markedly augmenting the abundance of beneficial microorganisms in gut homeostasis. The mechanism by which PMSP-KPV induces a therapeutic effect may be associated with the inhibition of oxidative stress. Conclusively, the PMSP hydrogel seems to be a promising rectal delivery system for the therapy of UC. STATEMENT OF SIGNIFICANCE: Ulcerative colitis (UC) is a chronic and relapsing disease of the gastrointestinal tract. A key therapeutic approach to treat UC is to repair the mucosal barriers. Here, a double-network hydrogel (PMSP) was constructed from maleimided and thiolated γ-polyglutamic acid through crosslinking of thiol-maleimide and self-oxidized thiols. The negatively charged PMSP specifically adhered to the inflamed colon rather than its healthy counterpart and was retained for a longer time. KPV as a model drug was easily captured by PMSP, which provided better stability to KPV when exposed to high temperature of 50 °C. The epithelial mucosal barrier of the colon was effectively recovered by the rectal administration of PMSP-KPV to rats with TNBS-induced UC. Moreover, PMSP-KPV modulated the gut flora of colitic rats, markedly augmenting the abundance of beneficial microorganisms. Conclusively, PMSP seems to be a promising rectal delivery system for UC therapy.",
+          "journal": "Acta biomaterialia"
+        },
+        {
+          "id": "pmid:19909746",
+          "pmid": "19909746",
+          "title": "Drug-loaded nanoparticles targeted to the colon with polysaccharide hydrogel reduce colitis in a mouse model.",
+          "year": "2010",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1053/j.gastro.2009.11.003",
+          "epmc_id": "MED:19909746",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19909746/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background & aims</h4>One of the challenges to treating inflammatory bowel disease (IBD) is to target the site of inflammation. We engineered nanoparticles (NPs) to deliver an anti-inflammatory tripeptide Lys-Pro-Val (KPV) to the colon and assessed its therapeutic efficacy in a mouse model of colitis.<h4>Methods</h4>NPs were synthesized by double-emulsion/solvent evaporation. KPV was loaded into the NPs during the first emulsion of the synthesis process. To target KPV to the colon, loaded NPs (NP-KPV) were encapsulated into a polysaccharide gel containing 2 polymers: alginate and chitosan. The effect of KPV-loaded NPs on inflammatory parameters was determined in vitro as well as in the dextran sodium sulfate-induced colitis mouse model.<h4>Results</h4>NPs (400 nm) did not affect cell viability or barrier functions. A swelling degree study showed that alginate-chitosan hydrogel containing dextran-fluorescein isothiocyanate-labeled NPs collapsed in the colon. Once delivered, NPs quickly released KPV on or within the closed area of colonocytes. The inflammatory responses to lipopolysaccharide were reduced in Caco2-BBE (brush border enterocyte) cells exposed to NP-KPV compared with those exposed to NPs alone, in a dose-dependent fashion. Mice given dextran sodium sulfate (DSS) followed by NP-KPV were protected against inflammatory and histologic parameters, compared with mice given only DSS.<h4>Conclusions</h4>Nanoparticles are a versatile drug delivery system that can overcome physiologic barriers and target anti-inflammatory agents such as the peptide KPV to inflamed areas. By using NPs, KPV can be delivered at a concentration that is 12,000-fold lower than that of KPV in free solution, but with similar therapeutic efficacy. Administration of encapsulated drug-loaded NPs is a novel therapeutic approach for IBD.",
+          "journal": "Gastroenterology"
+        },
+        {
+          "id": "pmid:18092346",
+          "pmid": "18092346",
+          "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease.",
+          "year": "2008",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18092346/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Despite some progress in recent years, the options for treating inflammatory bowel disease (IBD) are still dissatisfying, and surgery rates are still high. The anti-inflammatory effects of melanocortin peptides such as alpha-melanocyte-stimulating hormone (alpha-MSH) have been described recently in, for example, dextran sodium sulfate (DSS) colitis in mice. The aim of this study was to investigate the therapeutic potential of the melanocortin-derived tripeptide alpha-MSH(11-13) (KPV) and its mode of action in 2 models of intestinal inflammation. The anti-inflammatory activity of KPV was analyzed in 2 well-described models of IBD: DSS colitis, and CD45RB(hi) transfer colitis. Furthermore, animals expressing a nonfunctional melanocortin-1 receptor (MC1Re/e) received DSS for induction of colitis and were treated with KPV. The course of inflammation was monitored by weight loss and histological changes in the colon as well as by myeloperoxidase (MPO) activity. In the DSS-colitis model, treatment with KPV led to earlier recovery and significantly stronger regain of body weight. Histologically, inflammatory infiltrates were significantly reduced in KPV-treated mice, which was confirmed by the significant reduction of MPO activity in colonic tissue after KPV treatment. Supporting these findings, KPV treatment of transfer colitis led to recovery, regain of body weight, and reduced inflammatory changes histologically. In MC1Re/e mice, KPV treatment rescued all animals in the treatment group from death during DSS colitis. The melanocortin-derived tripeptide KPV showed significant anti-inflammatory effects in 2 murine models of colitis. These effects seem to be at least partially independent of MC1R signaling. In conclusion, our data suggest KPV as an interesting therapeutic option for the treatment of IBD.",
+          "journal": "Inflammatory bowel diseases"
+        },
+        {
+          "id": "pmid:18061177",
+          "pmid": "18061177",
+          "title": "PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation.",
+          "year": "2008",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1053/j.gastro.2007.10.026",
+          "epmc_id": "MED:18061177",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18061177/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background & aims</h4>KPV is a tripeptide (Lys-Pro-Val), which possesses anti-inflammatory properties; however, its mechanisms of action still remain unknown. PepT1 is a di/tripeptide transporter normally expressed in the small intestine and induced in colon during inflammatory bowel disease (IBD). The aim of this study was to 1) investigate whether the KPV anti-inflammatory effect is PepT1-mediated in intestinal epithelian and immune cells, and 2) examine the anti-inflammatory effects in two models of mice colitis.<h4>Methods</h4>Human intestinal epithelial cells Caco2-BBE, HT29-Cl.19A, and human T cells (Jurkat) were stimulated with pro-inflammatory cytokines in the present or absence of KPV. KPV anti-inflammatory effect was assessed using a NF-kappaB luciferase gene reporter, Western blot, real-time RT-PCR and ELISA. Uptake experiments were performed using cold KPV as a competitor for PepT1 radiolabelled substrate or using [(3)H]KPV to determine kinetic characteristics of KPV uptake. Anti-inflammatory effect of KPV was also investigated in DSS- and TNBS-induced colitis in mice. KPV was added to drinking water and inflammation was assessed at the histologic level and by proinflammatory cytokine mRNA expression.<h4>Results</h4>Nanomolar concentrations of KPV inhibit the activation of NF-kappaB and MAP kinase inflammatory signaling pathways, and reduce pro-inflammatory cytokine secretion. We found that KPV acts via PepT1 expressed in immune and intestinal epithelial cells. Furthermore, oral administration of KPV reduces the incidence of DSS- and TNBS-induced colitis indicated by a decrease in pro-inflammatory cytokine expression.<h4>Conclusions</h4>This study indicates tht KPV is transported into cells by PepT1 and might be a new therapeutic agent for IBD.",
+          "journal": "Gastroenterology"
+        },
+        {
+          "id": "pmid:16965771",
+          "pmid": "16965771",
+          "title": "Effects of the COOH-terminal tripeptide alpha-MSH(11-13) on corneal epithelial wound healing: role of nitric oxide.",
+          "year": "2006",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16965771/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "It is known that alpha-melanocyte stimulating hormone (alpha-MSH) may exert anti-inflammatory effects and facilitate reparative processes in different tissues. The effective message sequence of alpha-MSH resides in the COOH-terminal tripeptide alpha-MSH(11-13). This study was undertaken to investigate the effects of topical administration of the COOH-terminal tripeptide sequence of alpha-MSH (alpha-MSH(11-13), KPV) on corneal epithelial wound healing in rabbits and the possible role of nitric oxide (NO) in these effects. The whole corneal epithelium was denuded in both eyes by mechanical abrasion. The area of the corneal epithelial defect was stained with fluorescein, photographed, and then measured before the treatment and every 12 h by a computerized software. The mean epithelial wound area and the mean percent of epithelial defect remaining at each follow-up control were compared between experimental groups. Rabbits were topically treated with KPV 1, 5 or 10 mg/ml (30 microl), two drops four times in a day, for 4 days, starting immediately after corneal abrasion, while control animals received topical phosphate-buffered saline as vehicle. In order to study the role of NO in corneal repair processes, the NO donor, sodium nitroprusside (SP, 10 mg/ml, 30 microl) was administered in both eyes, two drops four times in a day, for 4 days. The effects of KPV or SP were challenged by pre-treatment with the nitric oxide synthase inhibitor, N omega-nitro-L-arginine methyl ester (L-NAME, 10 mg/ml, 30 microl) 30 min prior to KPV or SP instillation. The mean percent epithelial defect remaining each time was significantly smaller in animals treated with KPV or SP in comparison to controls. Sixty hours later, eight out of eight (100%) corneas treated with KPV or SP were completely re-epithelized (P<0.05) while none of the corneas treated with placebo were re-epithelized. Pre-treatment with L-NAME inhibited the facilitating effect of KPV on corneal epithelial wound healing process and totally prevented the effect of SP. Rabbit corneal epithelial cells (RCE) in culture were exposed for 1, 6 and 24 h to different KPV concentrations (0.1, 1 and 10 microM) in medium containing 15% foetal bovine serum (FBS). Cell viability was stimulated by 1 and 10 microM concentrations of the substance. Thus, KPV may facilitate corneal epithelial wound healing in rabbits with a mechanism that may involve NO disposition in corneal tissue. However, it is not known whether this mechanism is likely to depend on a direct stimulating repairing activity shared by the entire molecule of alpha-MSH.",
+          "journal": "Experimental eye research"
+        },
+        {
+          "id": "pmid:12750433",
+          "pmid": "12750433",
+          "title": "Dissection of the anti-inflammatory effect of the core and C-terminal (KPV) alpha-melanocyte-stimulating hormone peptides.",
+          "year": "2003",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12750433/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "In this study, we analyzed the anti-inflammatory effects of alpha-melanocyte stimulating hormone (MSH)11-13 (KPV) in comparison with other MSH peptides in a model of crystal-induced peritonitis. Systemic treatment of mice with KPV, alpha-MSH, the core melanocortin peptide His-Phe-Arg-Trp, and the melanocontin receptor 3/4 agonist Ac-Nle4-c[Asp5,d-Phe7,Lys10]NH2 ACTH4-10 (MTII) but not the selective MC1-R agonist H-Ser-Ser-Ile-Ile-Ser-His-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH2 (MS05) resulted in a significant reduction in accumulation of polymorphonuclear leukocyte in the peritoneal cavity. The antimigratory effect of KPV was not blocked by the MC3/4-R antagonist Ac-Nle4-c[Asp5,d-2Nal7,Lys10]NH2 ACTH4-10 (SHU9119). In vitro, macrophage activation, determined as release of KC and interleukin (IL)-1beta was inhibited by alpha-MSH and MTII but not by KPV. Furthermore, macrophage activation by MTII led to an increase in cAMP accumulation, which was attenuated by SHU9119, whereas KPV failed to increase cAMP. The anti-inflammatory properties of KPV were also evident in IL-1beta-induced peritonitis inflammation and in mice with a nonfunctional MC1-R (recessive yellow e/e mice). In conclusion, these data highlight that the C-terminal MSH peptide KPV exhibits an anti-inflammatory effect that is clearly different from that of the core MSH peptides. KPV is unlikely to mediate its effects through melanocortin receptors but is more likely to act through inhibition of IL-1beta functions.",
+          "journal": "The Journal of pharmacology and experimental therapeutics"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 9,
+        "n_total": 9
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For inflammation, KPV has only preliminary, sparse-human, or preclinical evidence (9 graded studies).",
+      "weighted_score": {
+        "final_score": 30.4,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 94.4
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 9,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 18.389,
+          "low_tier_points_post_cap": 18.389,
+          "low_tier_cap_applied": false,
+          "total_points_R": 18.389,
+          "scaled_base_score": 30.447,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 32.6391,
+          "se_consistency_component": 2.6391,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 63.973,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.226,
+              "points": 4.903,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.252,
+              "points": 5.009,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.232,
+              "points": 4.926,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.215,
+              "points": 4.859,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.3,
+              "points": 5.2,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.337,
+              "points": 5.349,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la inflamación, KPV tiene únicamente evidencia preliminar, escasa en humanos, o preclínica (9 estudios clasificados)."
+    },
+    {
+      "outcome": "liver health",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 9,
+      "grade_reasons": [
+        "Indirectness: no clearly human-population evidence detected.",
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 8,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:42585803",
+        "PMID:42064835",
+        "PMID:40073467",
+        "PMID:35245681",
+        "PMID:39211778",
+        "DOI:10.1002/csc2.21096",
+        "PMID:18061177",
+        "PMID:18092346",
+        "PMID:12750433"
+      ],
+      "studies": [
+        {
+          "id": "pmid:42585803",
+          "pmid": "42585803",
+          "title": "KPV attenuates adipogenesis and lipid metabolism through modulation of ROS-mediated AKT/mTORC1/PPARγ signaling.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.tice.2026.103837",
+          "epmc_id": "MED:42585803",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42585803/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Lysine-Proline-Valine (KPV), an endogenous tripeptide derived from α-melanocyte-stimulating hormone, has been recognized for its anti-inflammatory and antioxidant activities. However, its role in adipocyte differentiation has not been investigated. In this study, we investigated the regulatory effects of KPV on MDI-induced adipocyte differentiation in 3T3-L1 preadipocytes. KPV treatment dose-dependently suppressed adipocyte differentiation. Specifically, treatment with 100 μg/mL KPV reduced Oil Red O staining intensity by approximately 55% and intracellular triglyceride content by approximately 38% compared with the MDI-treated group. In addition, KPV decreased the expression of key adipogenic markers, including peroxisome proliferator-activated receptor gamma (PPARγ) and fatty acid synthase (FAS). Mechanistically, KPV attenuated reactive oxygen species (ROS) production and was associated with reduced AKT-dependent mTOR signaling and altered PPARγ phosphorylation during adipocyte differentiation. This regulatory effect was accompanied by suppression of FAS expression. In addition, in a high-fat diet-induced obesity mouse model, oral administration of KPV alleviated body weight gain, white adipose tissue expansion, liver mass increase, and obesity-associated dyslipidemia, including elevated plasma total cholesterol levels. Collectively, these findings suggest that KPV suppresses adipocyte differentiation, at least in part, in association with the modulation of ROS-related AKT/mTOR/PPARγ signaling in vitro, while its in vivo administration mitigates diet-induced obesity-related metabolic alterations. These results highlight the potential of KPV as an endogenous peptide-based candidate for the prevention and management of obesity.",
+          "journal": "Tissue & cell"
+        },
+        {
+          "id": "pmid:42064835",
+          "pmid": "42064835",
+          "title": "Lysine-proline-valine peptide attenuates hepatic lipid accumulation through ROS-dependent regulation of the PPARγ pathway in HepG2 cells.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1007/s10616-026-00967-z",
+          "epmc_id": "MED:42064835",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42064835/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Hepatocellular steatosis, an early stage within the non-alcoholic fatty liver disease (NAFLD) spectrum, is characterized by excessive lipid accumulation and oxidative stress in hepatocytes. This study examined the protective role of Lysine-Proline-Valine (KPV), an endogenous tripeptide derived from α-melanocyte-stimulating hormone, against oleic acid (OA)-induced oxidative damage and lipid accumulation in hepatic epithelial HepG2 cells. OA treatment markedly enhanced hepatic lipid deposition by upregulation of fatty acid synthase (FAS) expression. Treatment with KPV (100 µg/mL) significantly attenuated OA-induced lipid accumulation and suppressed FAS expression without inducing cytotoxicity. Mechanistic analysis revealed that KPV reduced reactive oxygen species generation, thereby preventing activation of extracellular signal-regulated kinase. KPV also downregulated AKT phosphorylation, leading to inhibition of mTORC1 phosphorylation under hepatic steatosis conditions. Furthermore, KPV regulated the phosphorylation of peroxisome proliferator-activated receptor gamma, a key transcription factor in <i>de novo</i> lipogenesis, thereby normalizing FAS expression. These findings suggest that KPV acts as an effective antioxidant regulator of lipogenic signaling and may hold potential as a therapeutic candidate for attenuating hepatocellular steatosis.<h4>Supplementary information</h4>The online version contains supplementary material available at 10.1007/s10616-026-00967-z.",
+          "journal": "Cytotechnology"
+        },
+        {
+          "id": "pmid:40073467",
+          "pmid": "40073467",
+          "title": "Lysine-Proline-Valine peptide mitigates fine dust-induced keratinocyte apoptosis and inflammation by regulating oxidative stress and modulating the MAPK/NF-κB p",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.tice.2025.102837",
+          "epmc_id": "MED:40073467",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40073467/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Airborne particulate matter (PM) poses a major environmental risk that impairs skin health by triggering oxidative stress, inflammation, and cell death. In this study, we investigated the protective effects of Lysine-Proline-Valine (KPV)-an endogenous peptide derived from α-melanocyte-stimulating hormone-against oxidative damage and inflammation induced by fine PM (PM<sub>10</sub>) in human HaCaT keratinocytes. Our results show that PM<sub>10</sub> markedly suppresses HaCaT cell proliferation via cytotoxic effects and induces a pro-inflammatory response by increasing IL-1β secretion. Notably, treatment with 50 μg/mL of KPV restored cell viability and reduced IL-1β secretion disrupted by PM<sub>10</sub> exposure. To counteract PM<sub>10</sub>-induced cell death, KPV inhibited reactive oxygen species (ROS) production, which is responsible for activating extracellular signal-regulated kinase and p38 mitogen-activated protein kinase. Additionally, KPV decreased the expression of apoptosis-related proteins (Bax, Bcl-2, and cleaved caspase-3) and IL-1β through suppression of the redox-sensitive transcription factor nuclear, factor-kappa B in PM<sub>10</sub>-treated HaCaT cells. Against PM<sub>10</sub>-induced inflammation, KPV effectively blocked ROS-mediated caspase-1 activation, reducing IL-1β secretion. In a three-dimensional (3D) skin model, KPV treatment effectively attenuated the inflammatory cell death induced by PM<sub>10</sub>. Collectively, these findings suggest that KPV protects keratinocytes by mitigating PM<sub>10</sub>-induced pyroptosis and holds potential as a therapeutic agent for preventing environmental pollutant-related skin damage, with promising applications in functional cosmetics and skin-protective treatments.",
+          "journal": "Tissue & cell"
+        },
+        {
+          "id": "pmid:39211778",
+          "pmid": "39211778",
+          "title": "PepT1-targeted nanodrug based on co-assembly of anti-inflammatory peptide and immunosuppressant for combined treatment of acute and chronic DSS-induced ColitiS.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fphar.2024.1442876",
+          "epmc_id": "MED:39211778",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39211778/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Introduction</h4>Inflammatory bowel disease (IBD), as a chronic and recurrent inflammatory bowel diseases with limited therapeutic outcomes, is characterized by immune disorders and intestinal barrier dysfunction. Currently, the most medications used to cure IBD in clinic just temporarily induce and maintain remission with poor response rates and limited outcomes. Therefore, it is urgently necessary to develop an appropriate therapeutic candidate with preferable efficacy and less adverse reaction for curing IBD.<h4>Methods</h4>Five groups of mice were utilized: control that received saline, DSS group (mice received 2.5% DSS or 4% DSS), KPV group (mice received KPV), FK506 group (mice received FK506) and NPs groups (mice received NPs). The effect of NP on the inflammatory factors of macrophage was evaluated using CCK-8, quantitative polymerase chain reaction (PCR), Elisa and Western blot (WB). Immunofluorescent staining revealed the targeting relationship between NP and Petp-1. Immunohistochemistry staining showed the effect of NP on tight junction proteins. Moreover, in vivo animal experiments confirmed that NPs reduced inflammatory levels in IBD.<h4>Results and discussion</h4>After administering with NPs, mice with DSS-induced acute or chronic colitis exhibited significant improvement in body weight, colon length, and disease activity index, decreased the level of the factors associated with oxidative stress (MPO, NO and ROS) and the inflammatory cytokines (TNF-α, IL-1β and IL-6), which implied that NPs could ameliorate murine colitis effectively. Furthermore, treating by NPs revealed a notable reduction of the expressions of CD68 and CD3, restoring the expression levels of tight junction proteins (Claudin-5, Occludin-1, and ZO-1) were significantly restored, surpassing those observed in the KPV and FK506 groups. which indicated that NPs can reduce inflammation and enhance epithelial barrier integrity by decreasing the infiltration of macrophages and T-lymphocytes. Collectively, those results demonstrated the effectively therapeutic outcome after using NPs in both acute and chronic colitis, suggesting that the newly co-assembled of NPs can be as a potential therapeutic candidate for colitis.",
+          "journal": "Frontiers in pharmacology"
+        },
+        {
+          "id": "pmid:35245681",
+          "pmid": "35245681",
+          "title": "A KPV-binding double-network hydrogel restores gut mucosal barrier in an inflamed colon.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.actbio.2022.02.039",
+          "epmc_id": "MED:35245681",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35245681/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Ulcerative colitis (UC) usually occurs in the superficial mucosa of the colorectum. Here, a double-network hydrogel (PMSP) was constructed from maleimided γ-polyglutamic acid and thiolated γ-polyglutamic acid through crosslinking of thiol-maleimide and self-oxidized thiols. PMSP with a negative charge specifically adhered to the inflamed mucosa with positively charged proteins rather than to the healthy mucosa. PMSP exhibited good mechanical strength with storage modulus (G') of 17.6 Pa and a linear viscoelastic region (LVR) of 107.2% strain. Moreover, PMSP showed a stronger bio-adhesive force toward the inflamed tissue-mimicking substrate than toward its healthy counterpart. In vivo imaging confirmed that PMSP specifically adhered to the inflamed colonic mucosa of rats with TNBS-induced UC. KPV (Lys-Pro-Val) as a model drug was easily captured by PMSP through electrostatic interactions, thus retaining its bioactivity for a longer time under high temperature conditions. Moreover, the alleviating effect of KPV on rats with TNBS-induced colitis was significantly improved by PMSP after intracolonic administration. The epithelial barrier of the colon also effectively recovered following PMSP-KPV treatment. PMSP-KPV also modulated the gut flora, markedly augmenting the abundance of beneficial microorganisms in gut homeostasis. The mechanism by which PMSP-KPV induces a therapeutic effect may be associated with the inhibition of oxidative stress. Conclusively, the PMSP hydrogel seems to be a promising rectal delivery system for the therapy of UC. STATEMENT OF SIGNIFICANCE: Ulcerative colitis (UC) is a chronic and relapsing disease of the gastrointestinal tract. A key therapeutic approach to treat UC is to repair the mucosal barriers. Here, a double-network hydrogel (PMSP) was constructed from maleimided and thiolated γ-polyglutamic acid through crosslinking of thiol-maleimide and self-oxidized thiols. The negatively charged PMSP specifically adhered to the inflamed colon rather than its healthy counterpart and was retained for a longer time. KPV as a model drug was easily captured by PMSP, which provided better stability to KPV when exposed to high temperature of 50 °C. The epithelial mucosal barrier of the colon was effectively recovered by the rectal administration of PMSP-KPV to rats with TNBS-induced UC. Moreover, PMSP-KPV modulated the gut flora of colitic rats, markedly augmenting the abundance of beneficial microorganisms. Conclusively, PMSP seems to be a promising rectal delivery system for UC therapy.",
+          "journal": "Acta biomaterialia"
+        },
+        {
+          "id": "pmid:18061177",
+          "pmid": "18061177",
+          "title": "PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation.",
+          "year": "2008",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1053/j.gastro.2007.10.026",
+          "epmc_id": "MED:18061177",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18061177/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background & aims</h4>KPV is a tripeptide (Lys-Pro-Val), which possesses anti-inflammatory properties; however, its mechanisms of action still remain unknown. PepT1 is a di/tripeptide transporter normally expressed in the small intestine and induced in colon during inflammatory bowel disease (IBD). The aim of this study was to 1) investigate whether the KPV anti-inflammatory effect is PepT1-mediated in intestinal epithelian and immune cells, and 2) examine the anti-inflammatory effects in two models of mice colitis.<h4>Methods</h4>Human intestinal epithelial cells Caco2-BBE, HT29-Cl.19A, and human T cells (Jurkat) were stimulated with pro-inflammatory cytokines in the present or absence of KPV. KPV anti-inflammatory effect was assessed using a NF-kappaB luciferase gene reporter, Western blot, real-time RT-PCR and ELISA. Uptake experiments were performed using cold KPV as a competitor for PepT1 radiolabelled substrate or using [(3)H]KPV to determine kinetic characteristics of KPV uptake. Anti-inflammatory effect of KPV was also investigated in DSS- and TNBS-induced colitis in mice. KPV was added to drinking water and inflammation was assessed at the histologic level and by proinflammatory cytokine mRNA expression.<h4>Results</h4>Nanomolar concentrations of KPV inhibit the activation of NF-kappaB and MAP kinase inflammatory signaling pathways, and reduce pro-inflammatory cytokine secretion. We found that KPV acts via PepT1 expressed in immune and intestinal epithelial cells. Furthermore, oral administration of KPV reduces the incidence of DSS- and TNBS-induced colitis indicated by a decrease in pro-inflammatory cytokine expression.<h4>Conclusions</h4>This study indicates tht KPV is transported into cells by PepT1 and might be a new therapeutic agent for IBD.",
+          "journal": "Gastroenterology"
+        },
+        {
+          "id": "pmid:18092346",
+          "pmid": "18092346",
+          "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease.",
+          "year": "2008",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1002/ibd.20334",
+          "epmc_id": "MED:18092346",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18092346/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>Despite some progress in recent years, the options for treating inflammatory bowel disease (IBD) are still dissatisfying, and surgery rates are still high. The anti-inflammatory effects of melanocortin peptides such as alpha-melanocyte-stimulating hormone (alpha-MSH) have been described recently in, for example, dextran sodium sulfate (DSS) colitis in mice. The aim of this study was to investigate the therapeutic potential of the melanocortin-derived tripeptide alpha-MSH(11-13) (KPV) and its mode of action in 2 models of intestinal inflammation.<h4>Methods</h4>The anti-inflammatory activity of KPV was analyzed in 2 well-described models of IBD: DSS colitis, and CD45RB(hi) transfer colitis. Furthermore, animals expressing a nonfunctional melanocortin-1 receptor (MC1Re/e) received DSS for induction of colitis and were treated with KPV. The course of inflammation was monitored by weight loss and histological changes in the colon as well as by myeloperoxidase (MPO) activity.<h4>Results</h4>In the DSS-colitis model, treatment with KPV led to earlier recovery and significantly stronger regain of body weight. Histologically, inflammatory infiltrates were significantly reduced in KPV-treated mice, which was confirmed by the significant reduction of MPO activity in colonic tissue after KPV treatment. Supporting these findings, KPV treatment of transfer colitis led to recovery, regain of body weight, and reduced inflammatory changes histologically. In MC1Re/e mice, KPV treatment rescued all animals in the treatment group from death during DSS colitis.<h4>Conclusions</h4>The melanocortin-derived tripeptide KPV showed significant anti-inflammatory effects in 2 murine models of colitis. These effects seem to be at least partially independent of MC1R signaling. In conclusion, our data suggest KPV as an interesting therapeutic option for the treatment of IBD.",
+          "journal": "Inflammatory bowel diseases"
+        },
+        {
+          "id": "pmid:12750433",
+          "pmid": "12750433",
+          "title": "Dissection of the anti-inflammatory effect of the core and C-terminal (KPV) alpha-melanocyte-stimulating hormone peptides.",
+          "year": "2003",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1124/jpet.103.051623",
+          "epmc_id": "MED:12750433",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12750433/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "In this study, we analyzed the anti-inflammatory effects of alpha-melanocyte stimulating hormone (MSH)11-13 (KPV) in comparison with other MSH peptides in a model of crystal-induced peritonitis. Systemic treatment of mice with KPV, alpha-MSH, the core melanocortin peptide His-Phe-Arg-Trp, and the melanocontin receptor 3/4 agonist Ac-Nle4-c[Asp5,d-Phe7,Lys10]NH2 ACTH4-10 (MTII) but not the selective MC1-R agonist H-Ser-Ser-Ile-Ile-Ser-His-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH2 (MS05) resulted in a significant reduction in accumulation of polymorphonuclear leukocyte in the peritoneal cavity. The antimigratory effect of KPV was not blocked by the MC3/4-R antagonist Ac-Nle4-c[Asp5,d-2Nal7,Lys10]NH2 ACTH4-10 (SHU9119). In vitro, macrophage activation, determined as release of KC and interleukin (IL)-1beta was inhibited by alpha-MSH and MTII but not by KPV. Furthermore, macrophage activation by MTII led to an increase in cAMP accumulation, which was attenuated by SHU9119, whereas KPV failed to increase cAMP. The anti-inflammatory properties of KPV were also evident in IL-1beta-induced peritonitis inflammation and in mice with a nonfunctional MC1-R (recessive yellow e/e mice). In conclusion, these data highlight that the C-terminal MSH peptide KPV exhibits an anti-inflammatory effect that is clearly different from that of the core MSH peptides. KPV is unlikely to mediate its effects through melanocortin receptors but is more likely to act through inhibition of IL-1beta functions.",
+          "journal": "The Journal of pharmacology and experimental therapeutics"
+        },
+        {
+          "id": "doi:10.1002/csc2.21096",
+          "pmid": null,
+          "title": "Effects of planting density on test weight and related indexes of maize",
+          "year": "2023",
+          "design": "Unclassified",
+          "population": "unknown",
+          "n": null,
+          "doi": "10.1002/csc2.21096",
+          "epmc_id": "AGR:IND608138201",
+          "url": "https://europepmc.org/article/AGR/IND608138201",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Maize (Zea mays L.) is an important food crop in the world. Reasonably increasing planting density is an important way to increase maize yield. Test weight (TW) determines the classification and affects market price. In order to clarify the influence and mechanism of planting density on TW, in this study, a 2‐year field experiment was carried out in Tongliao, Inner Mongolia Autonomous Region in 2019 and 2020. Four widely planted maize hybrids and six planting densities (6.0, 7.5, 9.0, 10.5, 12.0, and 13.5 × 10⁴ plants ha⁻¹) were tested, using drip irrigation water and fertilizer integration. The output parameters measured were grain yield, TW, thousand‐kernel weight (TKW), kernel volume, kernel density (KD), kernels per unit volume (KPV), and kernel packing efficiency. The result showed that yields ranged from 12.04 to 16.58 ton ha⁻¹and TW ranged from 751 to 807 kg m⁻³, which exceeded the requirements for classification as first‐grade maize (720 kg m⁻³). Both yield and TW have a quadratic curve relationship with planting density, but the planting density corresponding to the two indicators is different when they reach the maximum value. With the increase in planting density, the TKW decreased and KPV increased, which made the relationship between TW(y) and planting density (x) and expressed as y = ax² + bx + c. Planting density had a significant influence on TW and the relationship between TW and planting density was consistent under growth years and maize varieties. Considering the economic benefits, the planting density corresponding to the maximum yield is strongly recommended for future maize production.",
+          "journal": "Crop Science."
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 8,
+        "n_total": 8
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For liver health, KPV has only preliminary, sparse-human, or preclinical evidence (9 graded studies).",
+      "weighted_score": {
+        "final_score": 29.6,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 93.4
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 9,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 17.108,
+          "low_tier_points_post_cap": 17.108,
+          "low_tier_cap_applied": false,
+          "total_points_R": 17.108,
+          "scaled_base_score": 29.581,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 32.564,
+          "se_consistency_component": 2.564,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 63.825,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 1,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 1 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.105,
+              "points": 4.419,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.226,
+              "points": 4.903,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Preliminary",
+              "base_weight": 0.75,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 0.75,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.3,
+              "points": 5.2,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.252,
+              "points": 5.009,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.232,
+              "points": 4.926,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la salud hepática, KPV tiene únicamente evidencia preliminar, escasa en humanos, o preclínica (9 estudios clasificados)."
+    },
+    {
+      "outcome": "eye / vision",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 10,
+      "grade_reasons": [
+        "Indirectness: no clearly human-population evidence detected.",
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 9,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:16965771",
+        "PMID:42585803",
+        "PMID:42064835",
+        "PMID:40073467",
+        "PMID:35245681",
+        "PMID:39211778",
+        "DOI:10.1002/csc2.21096",
+        "PMID:18061177",
+        "PMID:18092346",
+        "PMID:12750433"
+      ],
+      "studies": [
+        {
+          "id": "pmid:42585803",
+          "pmid": "42585803",
+          "title": "KPV attenuates adipogenesis and lipid metabolism through modulation of ROS-mediated AKT/mTORC1/PPARγ signaling.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.tice.2026.103837",
+          "epmc_id": "MED:42585803",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42585803/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Lysine-Proline-Valine (KPV), an endogenous tripeptide derived from α-melanocyte-stimulating hormone, has been recognized for its anti-inflammatory and antioxidant activities. However, its role in adipocyte differentiation has not been investigated. In this study, we investigated the regulatory effects of KPV on MDI-induced adipocyte differentiation in 3T3-L1 preadipocytes. KPV treatment dose-dependently suppressed adipocyte differentiation. Specifically, treatment with 100 μg/mL KPV reduced Oil Red O staining intensity by approximately 55% and intracellular triglyceride content by approximately 38% compared with the MDI-treated group. In addition, KPV decreased the expression of key adipogenic markers, including peroxisome proliferator-activated receptor gamma (PPARγ) and fatty acid synthase (FAS). Mechanistically, KPV attenuated reactive oxygen species (ROS) production and was associated with reduced AKT-dependent mTOR signaling and altered PPARγ phosphorylation during adipocyte differentiation. This regulatory effect was accompanied by suppression of FAS expression. In addition, in a high-fat diet-induced obesity mouse model, oral administration of KPV alleviated body weight gain, white adipose tissue expansion, liver mass increase, and obesity-associated dyslipidemia, including elevated plasma total cholesterol levels. Collectively, these findings suggest that KPV suppresses adipocyte differentiation, at least in part, in association with the modulation of ROS-related AKT/mTOR/PPARγ signaling in vitro, while its in vivo administration mitigates diet-induced obesity-related metabolic alterations. These results highlight the potential of KPV as an endogenous peptide-based candidate for the prevention and management of obesity.",
+          "journal": "Tissue & cell"
+        },
+        {
+          "id": "pmid:42064835",
+          "pmid": "42064835",
+          "title": "Lysine-proline-valine peptide attenuates hepatic lipid accumulation through ROS-dependent regulation of the PPARγ pathway in HepG2 cells.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1007/s10616-026-00967-z",
+          "epmc_id": "MED:42064835",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42064835/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Hepatocellular steatosis, an early stage within the non-alcoholic fatty liver disease (NAFLD) spectrum, is characterized by excessive lipid accumulation and oxidative stress in hepatocytes. This study examined the protective role of Lysine-Proline-Valine (KPV), an endogenous tripeptide derived from α-melanocyte-stimulating hormone, against oleic acid (OA)-induced oxidative damage and lipid accumulation in hepatic epithelial HepG2 cells. OA treatment markedly enhanced hepatic lipid deposition by upregulation of fatty acid synthase (FAS) expression. Treatment with KPV (100 µg/mL) significantly attenuated OA-induced lipid accumulation and suppressed FAS expression without inducing cytotoxicity. Mechanistic analysis revealed that KPV reduced reactive oxygen species generation, thereby preventing activation of extracellular signal-regulated kinase. KPV also downregulated AKT phosphorylation, leading to inhibition of mTORC1 phosphorylation under hepatic steatosis conditions. Furthermore, KPV regulated the phosphorylation of peroxisome proliferator-activated receptor gamma, a key transcription factor in <i>de novo</i> lipogenesis, thereby normalizing FAS expression. These findings suggest that KPV acts as an effective antioxidant regulator of lipogenic signaling and may hold potential as a therapeutic candidate for attenuating hepatocellular steatosis.<h4>Supplementary information</h4>The online version contains supplementary material available at 10.1007/s10616-026-00967-z.",
+          "journal": "Cytotechnology"
+        },
+        {
+          "id": "pmid:40073467",
+          "pmid": "40073467",
+          "title": "Lysine-Proline-Valine peptide mitigates fine dust-induced keratinocyte apoptosis and inflammation by regulating oxidative stress and modulating the MAPK/NF-κB p",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.tice.2025.102837",
+          "epmc_id": "MED:40073467",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40073467/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Airborne particulate matter (PM) poses a major environmental risk that impairs skin health by triggering oxidative stress, inflammation, and cell death. In this study, we investigated the protective effects of Lysine-Proline-Valine (KPV)-an endogenous peptide derived from α-melanocyte-stimulating hormone-against oxidative damage and inflammation induced by fine PM (PM<sub>10</sub>) in human HaCaT keratinocytes. Our results show that PM<sub>10</sub> markedly suppresses HaCaT cell proliferation via cytotoxic effects and induces a pro-inflammatory response by increasing IL-1β secretion. Notably, treatment with 50 μg/mL of KPV restored cell viability and reduced IL-1β secretion disrupted by PM<sub>10</sub> exposure. To counteract PM<sub>10</sub>-induced cell death, KPV inhibited reactive oxygen species (ROS) production, which is responsible for activating extracellular signal-regulated kinase and p38 mitogen-activated protein kinase. Additionally, KPV decreased the expression of apoptosis-related proteins (Bax, Bcl-2, and cleaved caspase-3) and IL-1β through suppression of the redox-sensitive transcription factor nuclear, factor-kappa B in PM<sub>10</sub>-treated HaCaT cells. Against PM<sub>10</sub>-induced inflammation, KPV effectively blocked ROS-mediated caspase-1 activation, reducing IL-1β secretion. In a three-dimensional (3D) skin model, KPV treatment effectively attenuated the inflammatory cell death induced by PM<sub>10</sub>. Collectively, these findings suggest that KPV protects keratinocytes by mitigating PM<sub>10</sub>-induced pyroptosis and holds potential as a therapeutic agent for preventing environmental pollutant-related skin damage, with promising applications in functional cosmetics and skin-protective treatments.",
+          "journal": "Tissue & cell"
+        },
+        {
+          "id": "pmid:39211778",
+          "pmid": "39211778",
+          "title": "PepT1-targeted nanodrug based on co-assembly of anti-inflammatory peptide and immunosuppressant for combined treatment of acute and chronic DSS-induced ColitiS.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fphar.2024.1442876",
+          "epmc_id": "MED:39211778",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39211778/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Introduction</h4>Inflammatory bowel disease (IBD), as a chronic and recurrent inflammatory bowel diseases with limited therapeutic outcomes, is characterized by immune disorders and intestinal barrier dysfunction. Currently, the most medications used to cure IBD in clinic just temporarily induce and maintain remission with poor response rates and limited outcomes. Therefore, it is urgently necessary to develop an appropriate therapeutic candidate with preferable efficacy and less adverse reaction for curing IBD.<h4>Methods</h4>Five groups of mice were utilized: control that received saline, DSS group (mice received 2.5% DSS or 4% DSS), KPV group (mice received KPV), FK506 group (mice received FK506) and NPs groups (mice received NPs). The effect of NP on the inflammatory factors of macrophage was evaluated using CCK-8, quantitative polymerase chain reaction (PCR), Elisa and Western blot (WB). Immunofluorescent staining revealed the targeting relationship between NP and Petp-1. Immunohistochemistry staining showed the effect of NP on tight junction proteins. Moreover, in vivo animal experiments confirmed that NPs reduced inflammatory levels in IBD.<h4>Results and discussion</h4>After administering with NPs, mice with DSS-induced acute or chronic colitis exhibited significant improvement in body weight, colon length, and disease activity index, decreased the level of the factors associated with oxidative stress (MPO, NO and ROS) and the inflammatory cytokines (TNF-α, IL-1β and IL-6), which implied that NPs could ameliorate murine colitis effectively. Furthermore, treating by NPs revealed a notable reduction of the expressions of CD68 and CD3, restoring the expression levels of tight junction proteins (Claudin-5, Occludin-1, and ZO-1) were significantly restored, surpassing those observed in the KPV and FK506 groups. which indicated that NPs can reduce inflammation and enhance epithelial barrier integrity by decreasing the infiltration of macrophages and T-lymphocytes. Collectively, those results demonstrated the effectively therapeutic outcome after using NPs in both acute and chronic colitis, suggesting that the newly co-assembled of NPs can be as a potential therapeutic candidate for colitis.",
+          "journal": "Frontiers in pharmacology"
+        },
+        {
+          "id": "pmid:35245681",
+          "pmid": "35245681",
+          "title": "A KPV-binding double-network hydrogel restores gut mucosal barrier in an inflamed colon.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.actbio.2022.02.039",
+          "epmc_id": "MED:35245681",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35245681/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Ulcerative colitis (UC) usually occurs in the superficial mucosa of the colorectum. Here, a double-network hydrogel (PMSP) was constructed from maleimided γ-polyglutamic acid and thiolated γ-polyglutamic acid through crosslinking of thiol-maleimide and self-oxidized thiols. PMSP with a negative charge specifically adhered to the inflamed mucosa with positively charged proteins rather than to the healthy mucosa. PMSP exhibited good mechanical strength with storage modulus (G') of 17.6 Pa and a linear viscoelastic region (LVR) of 107.2% strain. Moreover, PMSP showed a stronger bio-adhesive force toward the inflamed tissue-mimicking substrate than toward its healthy counterpart. In vivo imaging confirmed that PMSP specifically adhered to the inflamed colonic mucosa of rats with TNBS-induced UC. KPV (Lys-Pro-Val) as a model drug was easily captured by PMSP through electrostatic interactions, thus retaining its bioactivity for a longer time under high temperature conditions. Moreover, the alleviating effect of KPV on rats with TNBS-induced colitis was significantly improved by PMSP after intracolonic administration. The epithelial barrier of the colon also effectively recovered following PMSP-KPV treatment. PMSP-KPV also modulated the gut flora, markedly augmenting the abundance of beneficial microorganisms in gut homeostasis. The mechanism by which PMSP-KPV induces a therapeutic effect may be associated with the inhibition of oxidative stress. Conclusively, the PMSP hydrogel seems to be a promising rectal delivery system for the therapy of UC. STATEMENT OF SIGNIFICANCE: Ulcerative colitis (UC) is a chronic and relapsing disease of the gastrointestinal tract. A key therapeutic approach to treat UC is to repair the mucosal barriers. Here, a double-network hydrogel (PMSP) was constructed from maleimided and thiolated γ-polyglutamic acid through crosslinking of thiol-maleimide and self-oxidized thiols. The negatively charged PMSP specifically adhered to the inflamed colon rather than its healthy counterpart and was retained for a longer time. KPV as a model drug was easily captured by PMSP, which provided better stability to KPV when exposed to high temperature of 50 °C. The epithelial mucosal barrier of the colon was effectively recovered by the rectal administration of PMSP-KPV to rats with TNBS-induced UC. Moreover, PMSP-KPV modulated the gut flora of colitic rats, markedly augmenting the abundance of beneficial microorganisms. Conclusively, PMSP seems to be a promising rectal delivery system for UC therapy.",
+          "journal": "Acta biomaterialia"
+        },
+        {
+          "id": "pmid:18061177",
+          "pmid": "18061177",
+          "title": "PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation.",
+          "year": "2008",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1053/j.gastro.2007.10.026",
+          "epmc_id": "MED:18061177",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18061177/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background & aims</h4>KPV is a tripeptide (Lys-Pro-Val), which possesses anti-inflammatory properties; however, its mechanisms of action still remain unknown. PepT1 is a di/tripeptide transporter normally expressed in the small intestine and induced in colon during inflammatory bowel disease (IBD). The aim of this study was to 1) investigate whether the KPV anti-inflammatory effect is PepT1-mediated in intestinal epithelian and immune cells, and 2) examine the anti-inflammatory effects in two models of mice colitis.<h4>Methods</h4>Human intestinal epithelial cells Caco2-BBE, HT29-Cl.19A, and human T cells (Jurkat) were stimulated with pro-inflammatory cytokines in the present or absence of KPV. KPV anti-inflammatory effect was assessed using a NF-kappaB luciferase gene reporter, Western blot, real-time RT-PCR and ELISA. Uptake experiments were performed using cold KPV as a competitor for PepT1 radiolabelled substrate or using [(3)H]KPV to determine kinetic characteristics of KPV uptake. Anti-inflammatory effect of KPV was also investigated in DSS- and TNBS-induced colitis in mice. KPV was added to drinking water and inflammation was assessed at the histologic level and by proinflammatory cytokine mRNA expression.<h4>Results</h4>Nanomolar concentrations of KPV inhibit the activation of NF-kappaB and MAP kinase inflammatory signaling pathways, and reduce pro-inflammatory cytokine secretion. We found that KPV acts via PepT1 expressed in immune and intestinal epithelial cells. Furthermore, oral administration of KPV reduces the incidence of DSS- and TNBS-induced colitis indicated by a decrease in pro-inflammatory cytokine expression.<h4>Conclusions</h4>This study indicates tht KPV is transported into cells by PepT1 and might be a new therapeutic agent for IBD.",
+          "journal": "Gastroenterology"
+        },
+        {
+          "id": "pmid:18092346",
+          "pmid": "18092346",
+          "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease.",
+          "year": "2008",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1002/ibd.20334",
+          "epmc_id": "MED:18092346",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18092346/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>Despite some progress in recent years, the options for treating inflammatory bowel disease (IBD) are still dissatisfying, and surgery rates are still high. The anti-inflammatory effects of melanocortin peptides such as alpha-melanocyte-stimulating hormone (alpha-MSH) have been described recently in, for example, dextran sodium sulfate (DSS) colitis in mice. The aim of this study was to investigate the therapeutic potential of the melanocortin-derived tripeptide alpha-MSH(11-13) (KPV) and its mode of action in 2 models of intestinal inflammation.<h4>Methods</h4>The anti-inflammatory activity of KPV was analyzed in 2 well-described models of IBD: DSS colitis, and CD45RB(hi) transfer colitis. Furthermore, animals expressing a nonfunctional melanocortin-1 receptor (MC1Re/e) received DSS for induction of colitis and were treated with KPV. The course of inflammation was monitored by weight loss and histological changes in the colon as well as by myeloperoxidase (MPO) activity.<h4>Results</h4>In the DSS-colitis model, treatment with KPV led to earlier recovery and significantly stronger regain of body weight. Histologically, inflammatory infiltrates were significantly reduced in KPV-treated mice, which was confirmed by the significant reduction of MPO activity in colonic tissue after KPV treatment. Supporting these findings, KPV treatment of transfer colitis led to recovery, regain of body weight, and reduced inflammatory changes histologically. In MC1Re/e mice, KPV treatment rescued all animals in the treatment group from death during DSS colitis.<h4>Conclusions</h4>The melanocortin-derived tripeptide KPV showed significant anti-inflammatory effects in 2 murine models of colitis. These effects seem to be at least partially independent of MC1R signaling. In conclusion, our data suggest KPV as an interesting therapeutic option for the treatment of IBD.",
+          "journal": "Inflammatory bowel diseases"
+        },
+        {
+          "id": "pmid:16965771",
+          "pmid": "16965771",
+          "title": "Effects of the COOH-terminal tripeptide alpha-MSH(11-13) on corneal epithelial wound healing: role of nitric oxide.",
+          "year": "2006",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16965771/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "It is known that alpha-melanocyte stimulating hormone (alpha-MSH) may exert anti-inflammatory effects and facilitate reparative processes in different tissues. The effective message sequence of alpha-MSH resides in the COOH-terminal tripeptide alpha-MSH(11-13). This study was undertaken to investigate the effects of topical administration of the COOH-terminal tripeptide sequence of alpha-MSH (alpha-MSH(11-13), KPV) on corneal epithelial wound healing in rabbits and the possible role of nitric oxide (NO) in these effects. The whole corneal epithelium was denuded in both eyes by mechanical abrasion. The area of the corneal epithelial defect was stained with fluorescein, photographed, and then measured before the treatment and every 12 h by a computerized software. The mean epithelial wound area and the mean percent of epithelial defect remaining at each follow-up control were compared between experimental groups. Rabbits were topically treated with KPV 1, 5 or 10 mg/ml (30 microl), two drops four times in a day, for 4 days, starting immediately after corneal abrasion, while control animals received topical phosphate-buffered saline as vehicle. In order to study the role of NO in corneal repair processes, the NO donor, sodium nitroprusside (SP, 10 mg/ml, 30 microl) was administered in both eyes, two drops four times in a day, for 4 days. The effects of KPV or SP were challenged by pre-treatment with the nitric oxide synthase inhibitor, N omega-nitro-L-arginine methyl ester (L-NAME, 10 mg/ml, 30 microl) 30 min prior to KPV or SP instillation. The mean percent epithelial defect remaining each time was significantly smaller in animals treated with KPV or SP in comparison to controls. Sixty hours later, eight out of eight (100%) corneas treated with KPV or SP were completely re-epithelized (P<0.05) while none of the corneas treated with placebo were re-epithelized. Pre-treatment with L-NAME inhibited the facilitating effect of KPV on corneal epithelial wound healing process and totally prevented the effect of SP. Rabbit corneal epithelial cells (RCE) in culture were exposed for 1, 6 and 24 h to different KPV concentrations (0.1, 1 and 10 microM) in medium containing 15% foetal bovine serum (FBS). Cell viability was stimulated by 1 and 10 microM concentrations of the substance. Thus, KPV may facilitate corneal epithelial wound healing in rabbits with a mechanism that may involve NO disposition in corneal tissue. However, it is not known whether this mechanism is likely to depend on a direct stimulating repairing activity shared by the entire molecule of alpha-MSH.",
+          "journal": "Experimental eye research"
+        },
+        {
+          "id": "pmid:12750433",
+          "pmid": "12750433",
+          "title": "Dissection of the anti-inflammatory effect of the core and C-terminal (KPV) alpha-melanocyte-stimulating hormone peptides.",
+          "year": "2003",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1124/jpet.103.051623",
+          "epmc_id": "MED:12750433",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12750433/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "In this study, we analyzed the anti-inflammatory effects of alpha-melanocyte stimulating hormone (MSH)11-13 (KPV) in comparison with other MSH peptides in a model of crystal-induced peritonitis. Systemic treatment of mice with KPV, alpha-MSH, the core melanocortin peptide His-Phe-Arg-Trp, and the melanocontin receptor 3/4 agonist Ac-Nle4-c[Asp5,d-Phe7,Lys10]NH2 ACTH4-10 (MTII) but not the selective MC1-R agonist H-Ser-Ser-Ile-Ile-Ser-His-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH2 (MS05) resulted in a significant reduction in accumulation of polymorphonuclear leukocyte in the peritoneal cavity. The antimigratory effect of KPV was not blocked by the MC3/4-R antagonist Ac-Nle4-c[Asp5,d-2Nal7,Lys10]NH2 ACTH4-10 (SHU9119). In vitro, macrophage activation, determined as release of KC and interleukin (IL)-1beta was inhibited by alpha-MSH and MTII but not by KPV. Furthermore, macrophage activation by MTII led to an increase in cAMP accumulation, which was attenuated by SHU9119, whereas KPV failed to increase cAMP. The anti-inflammatory properties of KPV were also evident in IL-1beta-induced peritonitis inflammation and in mice with a nonfunctional MC1-R (recessive yellow e/e mice). In conclusion, these data highlight that the C-terminal MSH peptide KPV exhibits an anti-inflammatory effect that is clearly different from that of the core MSH peptides. KPV is unlikely to mediate its effects through melanocortin receptors but is more likely to act through inhibition of IL-1beta functions.",
+          "journal": "The Journal of pharmacology and experimental therapeutics"
+        },
+        {
+          "id": "doi:10.1002/csc2.21096",
+          "pmid": null,
+          "title": "Effects of planting density on test weight and related indexes of maize",
+          "year": "2023",
+          "design": "Unclassified",
+          "population": "unknown",
+          "n": null,
+          "doi": "10.1002/csc2.21096",
+          "epmc_id": "AGR:IND608138201",
+          "url": "https://europepmc.org/article/AGR/IND608138201",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Maize (Zea mays L.) is an important food crop in the world. Reasonably increasing planting density is an important way to increase maize yield. Test weight (TW) determines the classification and affects market price. In order to clarify the influence and mechanism of planting density on TW, in this study, a 2‐year field experiment was carried out in Tongliao, Inner Mongolia Autonomous Region in 2019 and 2020. Four widely planted maize hybrids and six planting densities (6.0, 7.5, 9.0, 10.5, 12.0, and 13.5 × 10⁴ plants ha⁻¹) were tested, using drip irrigation water and fertilizer integration. The output parameters measured were grain yield, TW, thousand‐kernel weight (TKW), kernel volume, kernel density (KD), kernels per unit volume (KPV), and kernel packing efficiency. The result showed that yields ranged from 12.04 to 16.58 ton ha⁻¹and TW ranged from 751 to 807 kg m⁻³, which exceeded the requirements for classification as first‐grade maize (720 kg m⁻³). Both yield and TW have a quadratic curve relationship with planting density, but the planting density corresponding to the two indicators is different when they reach the maximum value. With the increase in planting density, the TKW decreased and KPV increased, which made the relationship between TW(y) and planting density (x) and expressed as y = ax² + bx + c. Planting density had a significant influence on TW and the relationship between TW and planting density was consistent under growth years and maize varieties. Considering the economic benefits, the planting density corresponding to the maximum yield is strongly recommended for future maize production.",
+          "journal": "Crop Science."
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 9,
+        "n_total": 9
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For eye / vision, KPV has only preliminary, sparse-human, or preclinical evidence (10 graded studies).",
+      "weighted_score": {
+        "final_score": 30.2,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 93.8
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 10,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 18.067,
+          "low_tier_points_post_cap": 18.067,
+          "low_tier_cap_applied": false,
+          "total_points_R": 18.067,
+          "scaled_base_score": 30.233,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 32.4121,
+          "se_consistency_component": 2.4121,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 63.528,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 1,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 1 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.215,
+              "points": 4.859,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.105,
+              "points": 4.419,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.226,
+              "points": 4.903,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Preliminary",
+              "base_weight": 0.75,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 0.75,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.3,
+              "points": 5.2,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.252,
+              "points": 5.009,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.232,
+              "points": 4.926,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la salud visual/visión, KPV tiene únicamente evidencia preliminar, escasa en humanos, o preclínica (10 estudios clasificados)."
     }
   ],
   "effects_established": [],
   "effects_promising": [
     "gut / digestion",
-    "inflammation"
+    "inflammation",
+    "liver health",
+    "eye / vision"
   ],
   "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
-  "generated_by": "clarity-engine-v2",
+  "honesty_note": "No outcomes reached the well-established tier — human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T01:02:27.933240+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "gut / digestion",
+  "best_tier": "Preliminary",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 13294447,
@@ -164,58 +1173,189 @@
       "SCHEMBL710419"
     ]
   },
-  "_cached_at": 1788017697.2644858,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.648,
+    "europepmc_s": 2.913,
+    "retrieval_total_s": 2.916,
+    "n_studies": 123,
+    "normalization_s": 0.044,
+    "grading_s": 0.002
+  },
+  "weighted_score": {
+    "score": 26.3,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 30.4,
+    "fragmentation_penalty_applied": true,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789174947.9349709,
   "explanation": {
-    "what_it_is": "KPV (lysine-proline-valine) is a tripeptide\u2014a short chain of just three amino acids\u2014derived from alpha-melanocyte-stimulating hormone (\u03b1-MSH), a natural signaling molecule in the body. It has the molecular formula C\u2081\u2081H\u2081\u2082O\u2083 and molecular weight 192.21. People typically take it as a supplement in oral or topical form, though it is also studied as an injectable research compound.",
-    "how_it_works": "KPV is believed to work by binding to melanocortin receptors, particularly melanocortin-1 (MC1R) and other members of the melanocortin receptor family, which are involved in regulating immune and inflammatory responses in the body. These receptors, when activated, can suppress production of pro-inflammatory signals and may help stabilize the intestinal barrier\u2014the layer of cells lining the gut that controls what passes between the intestine and bloodstream. The tripeptide is thought to mimic the anti-inflammatory signaling of its parent hormone, \u03b1-MSH, which is known to dampen immune overactivity in various tissues. This mechanism suggests KPV could theoretically modulate excessive inflammation, particularly in the gut, though human evidence for this remains lacking.",
+    "what_it_is_line": "A tiny three-amino-acid peptide derived from melanocortin; studied for anti-inflammatory effects.",
+    "what_it_is": "KPV is a tripeptide — a short chain of three amino acids (lysine, proline, and valine) — originally identified from melanocortin, a natural signaling protein in the body. It is a small molecule (molecular weight 192.21) that is lipophilic, meaning it has some affinity for fats and can cross certain biological barriers. KPV is typically administered as an injectable peptide or in research formulations; it is not approved as a medication and is used primarily in scientific studies.",
+    "how_it_works_line": "Appears to dampen inflammatory signaling pathways; exact human mechanism is unestablished.",
+    "how_it_works": "In animal studies, KPV appears to work by modulating immune and inflammatory signaling — particularly pathways involving ROS (reactive oxygen species, which are molecules that can trigger inflammation when overproduced), and proteins called AKT, mTORC1, and PPARγ, which regulate metabolic stress and immune response. It also seems to be taken up by a transporter protein called PepT1 in the intestinal lining, which may allow it to reach immune cells in the gut. The animal data suggest it reduces the production of inflammatory signals and helps restore the integrity of the intestinal barrier — the protective lining of the gut. However, the exact mechanism in human cells and tissues has not been directly tested.",
+    "safety_line": "Limited data from short-term animal studies; human safety entirely untested.",
+    "safety_detail": "No human trials were identified in the records provided. The animal studies reported tolerability (lack of major acute toxicity) but were typically short-term and in controlled laboratory settings. Because KPV is an injectable research peptide, it carries the general risks of injectable compounds: potential site reactions, immunogenicity (the body mounting an immune response against it), and unknown effects with chronic use.",
+    "safety_bullets": [
+      "No human safety data: all tolerability information comes from animal models; effects in people are entirely unknown.",
+      "Drug interactions untested: no studies examined KPV with common medications; interactions are unexplored.",
+      "Excluded populations unknown: pregnant people, children, and those with liver or kidney disease have not been studied; safety in these groups is not established.",
+      "Long-term safety unknown: retrieved studies were acute or short-term; chronic use effects are uncharacterized."
+    ],
+    "chem_meaning": "KPV is a small, moderately lipophilic molecule (XLogP 2.3), meaning it is neither highly water-soluble nor highly fat-soluble — it can distribute into tissues but with some constraint. Its small size and peptide nature mean it is likely broken down relatively quickly by digestive enzymes if taken orally, which is why it is typically delivered by injection or incorporated into special delivery systems (like nanoparticles or hydrogels) in research.",
     "outcome_detail": [
       {
         "outcome": "gut / digestion",
         "grade": "Preliminary",
-        "what_studies_show": "Animal studies show promise: a 2022 study demonstrated that KPV-binding hydrogel restored mucosal barrier function in inflamed colon tissue, while a 2008 murine model study found that KPV, as the C-terminal tripeptide of \u03b1-MSH, had anti-inflammatory potential in models of inflammatory bowel disease. However, these findings come only from animal (mouse/rodent) studies with no human trial data.",
-        "why_this_grade": "The evidence is graded Preliminary because all available studies are animal-based and do not reliably translate to human physiology or disease. There is currently no human research demonstrating that KPV improves digestion or gut function in people."
+        "what_studies_show": "Four animal studies (2008–2024) investigated KPV in models of intestinal inflammation and bowel disease. A 2008 study reported that the peptide reduced inflammation in murine (mouse) models of inflammatory bowel disease. A 2022 study used a hydrogel delivery system containing KPV and found it restored the intestinal barrier in an inflamed colon in mice. A 2024 study tested a nanoparticle formulation targeting PepT1 (the intestinal uptake transporter) and reported reduced inflammation. All evidence is from laboratory animal models with no human studies.",
+        "why_this_grade": "All four studies are in animals with no human trials identified. Animal models of intestinal disease do not reliably predict human outcomes, so the evidence is graded Preliminary."
       },
       {
         "outcome": "inflammation",
         "grade": "Preliminary",
-        "what_studies_show": "Four animal studies indicate anti-inflammatory effects: the 2022 hydrogel study and 2008 IBD model study (noted above), a 2006 study on corneal epithelial wound healing examining nitric oxide pathways, and a 2003 study dissecting the anti-inflammatory mechanism of \u03b1-MSH's KPV C-terminal fragment. All findings are confined to animal models or cell/tissue preparations with no human trials.",
-        "why_this_grade": "All four studies are animal-only (rodent models or isolated tissue systems), and animal inflammation models often fail to predict human outcomes. There is no human evidence that KPV reduces inflammatory markers, symptoms, or disease activity in any clinical setting."
+        "what_studies_show": "Nine animal studies (2008–2026) tested KPV's anti-inflammatory effects across multiple systems. Two 2026 studies showed KPV modulated inflammatory signaling (ROS-AKT-mTORC1-PPARγ pathways) in models of adiposity and liver disease. A 2024 nanoparticle study and a 2022 hydrogel study both reported reduced inflammatory markers in inflamed tissue. Earlier work (2008, 2010) documented reduced colitis in mice. All studies are in animal models; no human clinical trials were identified.",
+        "why_this_grade": "Nine animal studies provide consistent directional evidence, but zero human studies means the effect in people is unproven. Inflammatory mechanisms in rodents often do not replicate in human disease, so the grade remains Preliminary."
+      },
+      {
+        "outcome": "liver health",
+        "grade": "Preliminary",
+        "what_studies_show": "Eight animal studies (2008–2026) examined KPV's effects on liver fat accumulation, lipid metabolism, and hepatic inflammation. Two 2026 studies specifically targeted hepatic lipid accumulation, reporting that KPV reduced fat storage through modulation of ROS-dependent signaling pathways. A 2025 study examined cellular stress responses (keratinocyte apoptosis) relevant to barrier health. A 2024 nanoparticle study and a 2022 hydrogel study included liver endpoints in systemic inflammation models. All are animal studies; sample sizes could not be verified from abstracts, and no human liver-disease trials were identified.",
+        "why_this_grade": "Evidence is entirely animal-derived with unconfirmed sample sizes, and no human population data exists. Liver metabolism in rodents differs significantly from humans, so these findings are preliminary and hypothesis-generating only."
+      },
+      {
+        "outcome": "eye / vision",
+        "grade": "Preliminary",
+        "what_studies_show": "Nine of ten studies retrieved for this outcome are animal models (2008–2026) examining KPV in inflammatory and oxidative-stress settings relevant to eye health (e.g., fine dust-induced inflammation, cellular damage). A 2025 study on keratinocyte apoptosis and a 2024 nanoparticle study included ocular or barrier-tissue endpoints. The studies report reduced inflammatory markers and apoptosis (cell death) in cell or tissue models. No human eye-health or vision trials were identified.",
+        "why_this_grade": "All evidence is animal or cell-based with unconfirmed sample sizes and no human vision or ophthalmology studies. The translation from rodent inflammation models to human eye disease is unproven."
       }
     ],
-    "evidence_base": "The research base for KPV is entirely preliminary and animal-derived. Studies span from 2003 to 2022, with a mix of whole-animal models (mostly mice with colitis or wound injury) and in vitro mechanistic work. No randomized controlled trials or observational human studies have been retrieved here. This small animal-only base means confidence in human efficacy remains very low; animal findings in inflammation and immune function frequently do not translate to humans, and the lack of dose optimization, safety, or tolerability data in people is a significant gap.",
-    "emerging_research": "Recent work (2022) has explored KPV incorporated into hydrogel delivery systems, suggesting interest in optimizing bioavailability and local tissue targeting\u2014particularly for gut barrier repair. Earlier mechanistic studies (2006\u20132008) focused on clarifying which melanocortin receptor pathways KPV engages and how it suppresses nitric oxide-mediated inflammation. These directions are scientifically interesting but remain entirely preclinical; no human trials or bioavailability studies in people are evident in the records retrieved.",
-    "open_questions": "Among the studies provided here, all inflammation and gut outcomes rest on animal models only\u2014no human populations have been studied. It remains unknown whether KPV achieves meaningful blood or tissue concentrations when taken orally, whether it crosses the intestinal barrier to act on immune cells in the gut, or what dose and duration would be needed in humans. The retrieved records do not include any pharmacokinetic studies, human safety data, or clinical trial designs. We cannot assess from these records alone whether longer-term human studies exist elsewhere in the literature, only that the sample provided contains none.",
-    "caveats": "KPV is a research peptide and is not approved by the FDA for human use; its quality, purity, and source vary widely among suppliers. Since all efficacy evidence is animal-based, using KPV in humans is experimental and unproven. People with inflammatory bowel disease or other gastrointestinal conditions should not substitute KPV for established medical care. As a peptide, it may be degraded by stomach acid if taken orally, and injectable forms carry sterility and injection-site risks; bioavailability and safety in humans remain unknown.",
+    "evidence_base": "The evidence base is entirely animal and preclinical. Across four outcomes, 30 unique animal studies span 2008–2026, with recent work (2024–2026) dominating and focusing on molecular mechanisms (ROS, AKT, mTORC1, PPARγ signaling). No human clinical trials were identified in any outcome. This means the field has established proof-of-concept in controlled laboratory settings but has not yet moved to human testing. Confidence in any human effect is therefore low.",
+    "open_questions": "The retrieved records show that KPV has been studied in acute inflammatory models in mice and rats, but there are no human trials, no studies in chronic disease settings, and no dose-escalation or safety data in people. The records do not include studies in children, pregnant individuals, or people with kidney or liver disease — populations typically excluded early from peptide research but never explicitly tested. Whether KPV's animal effects scale to human intestinal, liver, or eye disease remains completely unknown and awaits clinical trial.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "All evidence for KPV's effects on gut health and inflammation comes from animal studies; no human trials exist to establish whether these effects translate to clinical benefit.",
+    "headline": "Zero human trials exist in this evidence base; all 40 retrieved studies are animal models or unclassifiable, making any clinical claims about KPV purely speculative.",
     "concerns": [
       {
-        "issue": "Zero human evidence across both outcomes",
-        "detail": "The gut/digestion outcome is supported by 2 animal studies only (2008, 2022); the inflammation outcome by 4 animal studies only (2003, 2006, 2008, 2022). No human trials, observational studies, or clinical case series appear in the retrieved records. This is a complete absence of human safety and efficacy data, not merely a minority of the evidence base.",
+        "issue": "Complete absence of human evidence",
+        "detail": "Across all four outcomes (gut/digestion, inflammation, liver health, eye/vision), there are 0 human studies and 0 randomized controlled trials in humans. The composition data uniformly shows '0 human' for each outcome. This renders any inference about human efficacy a translational leap unsupported by clinical data.",
         "severity": "high"
       },
       {
-        "issue": "Sample sizes not reported in abstracts",
-        "detail": "The records explicitly note 'sample sizes: none extractable from these abstracts' for both outcomes. Without n values from the animal studies themselves, it is impossible to assess whether observed effects are robust or whether they arise from small, underpowered experiments prone to noise and publication bias.",
+        "issue": "Animal models do not reliably predict human outcomes",
+        "detail": "The engine explicitly notes 'Indirectness: evidence is animal-only; does not reliably translate to humans' for gut/digestion and inflammation outcomes. Peptide intestinal absorption, metabolism, and immune response differ substantially between rodents and humans, particularly for grey-market injectable peptides without pharmaceutical formulation validation. The retrieved abstracts provide no bioavailability, pharmacokinetics, or dose-response data in humans.",
         "severity": "high"
       },
       {
-        "issue": "No pooled effect quantified",
-        "detail": "For both gut/digestion and inflammation, the records state 'pooled effect: none extractable.' This means the magnitude of benefit (if any) cannot be determined from these abstracts. Readers cannot discern whether animals showed large, moderate, or marginal responses to KPV.",
+        "issue": "Sample sizes unverifiable and likely small",
+        "detail": "For all outcomes, the records state 'sample sizes: none extractable from these abstracts.' Without access to full papers, it is impossible to assess statistical power. In animal inflammation and liver studies (9 studies each), even if each enrolled 10–20 animals, the effective evidence base would be small per strain/model variation. This pattern raises precision concerns flagged by the engine itself ('Imprecision: sample sizes could not be verified').",
+        "severity": "high"
+      },
+      {
+        "issue": "Contamination and misclassification in database",
+        "detail": "The liver health and eye/vision outcomes each include one 'Unclassified' study (2023, planting density of maize), which is clearly off-topic and suggests database contamination or retrieval error. This reduces confidence in the systematic retrieval and raises questions about whether other irrelevant or low-quality animal studies are included.",
         "severity": "moderate"
       },
       {
-        "issue": "Reliance on murine and ex vivo models",
-        "detail": "The titled studies reference 'murine models' and one mentions a 'double-network hydrogel'\u2014suggesting in vitro or highly artificial systems. Murine intestinal inflammation and wound healing are notoriously poor predictors of human outcomes because of pharmacokinetic differences, microbiome variation, and immune system divergence.",
+        "issue": "No pooled effect estimates or meta-analysis",
+        "detail": "Across all outcomes, 'pooled effect: none extractable.' The nine inflammation studies, seven liver studies, and four gut studies are presented individually without synthesis, heterogeneity assessment, or risk-of-bias appraisal. Without meta-analysis or systematic review methodology, readers cannot discern publication bias, effect consistency, or true magnitude of effect.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The proposed mechanism (KPV as a melanocortin-derived anti-inflammatory tripeptide) is plausible at a biochemical level and is supported by the study titles mentioning 'alpha-MSH' and core/C-terminal dissection. However, there is a large inferential leap from demonstrating anti-inflammatory signaling in murine colons or corneal epithelium to claiming clinical efficacy for human gut health or systemic inflammation. Animal models often show robust target engagement without translating to human efficacy or safety.",
-    "strongest_counterargument": "A skeptic would note that thousands of compounds show anti-inflammatory effects in mice but fail or produce unexpected effects in humans due to differences in drug metabolism, gut microbiota composition, intestinal barrier structure, and immune tolerance. The absence of even a single human trial means we do not know whether KPV reaches the human gut in bioavailable form, whether it is absorbed or exerts local effects, or whether the doses used in animal studies are even achievable or safe in humans. The 14\u201319 year span between the earliest and most recent animal studies (with no new human data) suggests clinical translation has stalled.",
-    "what_would_change_the_picture": "A randomized, placebo-controlled trial in humans with a relevant GI or inflammatory condition (e.g., inflammatory bowel disease, irritable bowel syndrome, or systemic inflammation marker) with adequate sample size (n\u226530 per arm minimum), preregistered outcomes, and measured bioavailability or mechanism-of-action markers would establish whether the animal findings have clinical relevance. Pharmacokinetic studies in humans would also be essential to confirm that KPV reaches target tissues.",
+    "mechanism_check": "The retrieved abstracts describe plausible mechanistic pathways (e.g., PepT1-mediated uptake, ROS-dependent regulation, melanocortin receptor signaling) that are internally consistent with anti-inflammatory and metabolic effects in animal tissue. However, there is a critical inferential leap: demonstration of a mechanism *in murine intestinal epithelium or rodent adipose tissue* does not establish that the same mechanism operates in human tissue *after injection*, crosses relevant barriers, or produces clinically meaningful benefit. No human pharmacology or dose-finding data bridges this gap.",
+    "strongest_counterargument": "A skeptic would note that KPV is a tripeptide with no patent protection, no pharmaceutical development, and no published human trials despite 20+ years of animal research (earliest record 2003). If the effect were robust and translatable, pharmaceutical interest or academic clinical trials would have materialized by now. The grey-market status and absence of dose standardization mean users are receiving unknown quantities of an entirely untested compound, and animal studies at standardized doses do not address real-world exposure.",
+    "what_would_change_the_picture": "A Phase I or II randomized, double-blinded, placebo-controlled trial in humans with clearly defined endpoints (e.g., fecal calprotectin for gut inflammation, transaminases for liver function, visual acuity or corneal healing for eye health) and adequate sample size (n ≥ 50 per arm) would provide the minimum evidence required to move beyond speculation. Pharmacokinetic studies establishing human absorption, distribution, and metabolism would also be essential.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Un pequeño tripéptido de tres aminoácidos derivado de melanocortina; estudiado por sus efectos antiinflamatorios.",
+    "what_it_is": "KPV es un tripéptido — una cadena corta de tres aminoácidos (lisina, prolina y valina) — identificado originalmente a partir de melanocortina, una proteína de señalización natural en el cuerpo. Es una molécula pequeña (peso molecular 192.21) que es lipófila, lo que significa que tiene cierta afinidad por las grasas y puede cruzar ciertas barreras biológicas. KPV generalmente se administra como un péptido inyectable o en formulaciones de investigación; no está aprobado como medicamento y se utiliza principalmente en estudios científicos.",
+    "how_it_works_line": "Parece atenuar las vías de señalización inflamatoria; el mecanismo exacto en humanos no está establecido.",
+    "how_it_works": "En estudios en animales, KPV parece funcionar modulando la señalización inmunológica e inflamatoria — particularmente las vías que implican ROS (especies reactivas de oxígeno, que son moléculas que pueden desencadenar inflamación cuando se producen en exceso) y proteínas llamadas AKT, mTORC1 y PPARγ, que regulan el estrés metabólico y la respuesta inmunológica. También parece ser captado por una proteína transportadora llamada PepT1 en el revestimiento intestinal, lo que puede permitirle llegar a las células inmunológicas en el intestino. Los datos en animales sugieren que reduce la producción de señales inflamatorias y ayuda a restaurar la integridad de la barrera intestinal — el revestimiento protector del intestino. Sin embargo, el mecanismo exacto en células y tejidos humanos no ha sido probado directamente.",
+    "safety_line": "Datos limitados de estudios animales a corto plazo; seguridad en humanos completamente sin probar.",
+    "safety_detail": "No se identificaron ensayos en humanos en los registros proporcionados. Los estudios en animales informaron tolerabilidad (ausencia de toxicidad aguda importante), pero fueron típicamente a corto plazo y en entornos de laboratorio controlados. Debido a que KPV es un péptido inyectable de investigación, conlleva los riesgos generales de los compuestos inyectables: reacciones potenciales en el sitio, inmunogenicidad (el cuerpo montando una respuesta inmunológica contra él), y efectos desconocidos con el uso crónico.",
+    "safety_bullets": [
+      "Sin datos de seguridad en humanos: toda la información de tolerabilidad proviene de modelos animales; los efectos en las personas son completamente desconocidos.",
+      "Interacciones farmacológicas sin probar: ningún estudio examinó KPV con medicamentos comunes; las interacciones no se han explorado.",
+      "Poblaciones excluidas desconocidas: las personas embarazadas, los niños y aquellos con enfermedad hepática o renal no han sido estudiados; la seguridad en estos grupos no está establecida.",
+      "Seguridad a largo plazo desconocida: los estudios recuperados fueron agudos o a corto plazo; los efectos del uso crónico no están caracterizados."
+    ],
+    "chem_meaning": "KPV es una molécula pequeña, moderadamente lipófila (XLogP 2.3), lo que significa que ni es altamente soluble en agua ni altamente soluble en grasas — puede distribuirse en los tejidos pero con cierta limitación. Su pequeño tamaño y naturaleza peptídica significan que es probable que se descomponga relativamente rápidamente por enzimas digestivas si se toma por vía oral, razón por la cual generalmente se administra por inyección o se incorpora en sistemas de administración especiales (como nanopartículas o hidrogeles) en investigación.",
+    "outcome_detail": [
+      {
+        "outcome": "gut / digestion",
+        "grade": "Preliminar",
+        "what_studies_show": "Cuatro estudios en animales (2008–2024) investigaron KPV en modelos de inflamación intestinal y enfermedad intestinal. Un estudio de 2008 reportó que el péptido redujo la inflamación en modelos murinos (ratón) de enfermedad inflamatoria intestinal. Un estudio de 2022 utilizó un sistema de administración con hidrogel que contenía KPV y encontró que restauraba la barrera intestinal en un colon inflamado en ratones. Un estudio de 2024 probó una formulación de nanopartículas dirigida a PepT1 (el transportador de captación intestinal) e informó inflamación reducida. Toda la evidencia proviene de modelos animales de laboratorio sin estudios en humanos.",
+        "why_this_grade": "Los cuatro estudios están en animales sin ensayos clínicos en humanos identificados. Los modelos animales de enfermedad intestinal no predicen de manera confiable los resultados en humanos, por lo que la evidencia se califica como Preliminar.",
+        "outcome_key": "gut / digestion",
+        "outcome_es": "intestino / digestión"
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Preliminar",
+        "what_studies_show": "Nueve estudios en animales (2008–2026) probaron los efectos antiinflamatorios de KPV en múltiples sistemas. Dos estudios de 2026 mostraron que KPV moduló la señalización inflamatoria (vías ROS-AKT-mTORC1-PPARγ) en modelos de adiposidad y enfermedad hepática. Un estudio de nanopartículas de 2024 y un estudio de hidrogel de 2022 informaron ambos de marcadores inflamatorios reducidos en tejido inflamado. Trabajos anteriores (2008, 2010) documentaron colitis reducida en ratones. Todos los estudios están en modelos animales; no se identificaron ensayos clínicos en humanos.",
+        "why_this_grade": "Nueve estudios en animales proporcionan evidencia direccional consistente, pero cero estudios en humanos significa que el efecto en las personas no está probado. Los mecanismos inflamatorios en roedores a menudo no se replican en enfermedad humana, por lo que la calificación sigue siendo Preliminar.",
+        "outcome_key": "inflammation",
+        "outcome_es": "inflamación"
+      },
+      {
+        "outcome": "liver health",
+        "grade": "Preliminar",
+        "what_studies_show": "Ocho estudios en animales (2008–2026) examinaron los efectos de KPV en la acumulación de grasa hepática, el metabolismo de lípidos y la inflamación hepática. Dos estudios de 2026 se dirigieron específicamente a la acumulación de lípidos hepáticos, informando que KPV redujo el almacenamiento de grasa a través de la modulación de vías de señalización dependientes de ROS. Un estudio de 2025 examinó respuestas de estrés celular (apoptosis de queratinocitos) relevantes para la salud de la barrera. Un estudio de nanopartículas de 2024 y un estudio de hidrogel de 2022 incluyeron puntos finales hepáticos en modelos de inflamación sistémica. Todos son estudios en animales; los tamaños de muestra no pudieron verificarse a partir de los resúmenes, y no se identificaron ensayos en enfermedad hepática en humanos.",
+        "why_this_grade": "La evidencia es completamente derivada de animales con tamaños de muestra no confirmados, y no existe ningún dato de población humana. El metabolismo hepático en roedores difiere significativamente del de los humanos, por lo que estos hallazgos son preliminares y solo hipótesis generadora.",
+        "outcome_key": "liver health",
+        "outcome_es": "salud hepática"
+      },
+      {
+        "outcome": "eye / vision",
+        "grade": "Preliminar",
+        "what_studies_show": "Nueve de diez estudios recuperados para este resultado son modelos animales (2008–2026) que examinan KPV en configuraciones de inflamación y estrés oxidativo relevantes para la salud ocular (p. ej., inflamación inducida por polvo fino, daño celular). Un estudio de 2025 sobre apoptosis de queratinocitos y un estudio de nanopartículas de 2024 incluyeron puntos finales oculares o de tejido de barrera. Los estudios informan marcadores inflamatorios reducidos y apoptosis (muerte celular) en modelos de células o tejidos. No se identificaron ensayos de salud ocular o visión en humanos.",
+        "why_this_grade": "Toda la evidencia es basada en animales o células con tamaños de muestra no confirmados y sin estudios oftalmológicos de visión en humanos. La traducción de modelos de inflamación en roedores a enfermedad ocular humana no está probada.",
+        "outcome_key": "eye / vision",
+        "outcome_es": "ojo / visión"
+      }
+    ],
+    "evidence_base": "La base de evidencia es completamente animal y preclínica. En cuatro resultados, 30 estudios únicos en animales abarcan 2008–2026, con trabajos recientes (2024–2026) dominantes y enfocados en mecanismos moleculares (señalización ROS, AKT, mTORC1, PPARγ). No se identificaron ensayos clínicos en humanos en ningún resultado. Esto significa que el campo ha establecido prueba de concepto en entornos de laboratorio controlados pero aún no ha pasado a pruebas en humanos. La confianza en cualquier efecto en humanos es por lo tanto baja.",
+    "open_questions": "Los registros recuperados muestran que KPV ha sido estudiado en modelos inflamatorios agudos en ratones y ratas, pero no hay ensayos en humanos, no hay estudios en entornos de enfermedad crónica, y no hay datos de escalado de dosis o seguridad en personas. Los registros no incluyen estudios en niños, individuos embarazados o personas con enfermedad renal o hepática — poblaciones típicamente excluidas tempranamente de la investigación de péptidos pero nunca explícitamente probadas. Si los efectos animales de KPV se escalan a la enfermedad intestinal, hepática u ocular humana sigue siendo completamente desconocido y espera ensayos clínicos.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "No existen ensayos clínicos en humanos en esta base de evidencia; los 40 estudios recuperados son modelos animales o inclasificables, lo que hace que cualquier afirmación clínica sobre KPV sea puramente especulativa.",
+    "concerns": [
+      {
+        "issue": "Ausencia completa de evidencia en humanos",
+        "detail": "En los cuatro resultados (digestión/intestinal, inflamación, salud hepática, visión/ojo), hay 0 estudios en humanos y 0 ensayos controlados aleatorizados en humanos. Los datos de composición muestran uniformemente '0 humanos' para cada resultado. Esto convierte cualquier inferencia sobre eficacia en humanos en un salto traslacional sin apoyo de datos clínicos.",
+        "severity": "high"
+      },
+      {
+        "issue": "Los modelos animales no predicen de manera confiable los resultados en humanos",
+        "detail": "El motor explícitamente señala 'Indirección: la evidencia es solo animal; no se traduce de manera confiable a humanos' para los resultados de digestión/intestinal e inflamación. La absorción intestinal de péptidos, el metabolismo y la respuesta inmunológica difieren sustancialmente entre roedores y humanos, particularmente para péptidos inyectables del mercado gris sin validación de formulación farmacéutica. Los resúmenes recuperados no proporcionan datos de biodisponibilidad, farmacocinética o dosis-respuesta en humanos.",
+        "severity": "high"
+      },
+      {
+        "issue": "Tamaños de muestra no verificables y probablemente pequeños",
+        "detail": "Para todos los resultados, los registros indican 'tamaños de muestra: ninguno extraíble de estos resúmenes.' Sin acceso a los artículos completos, es imposible evaluar el poder estadístico. En estudios de inflamación e hígado en animales (9 estudios cada uno), incluso si cada uno inscribiera 10–20 animales, la base de evidencia efectiva sería pequeña por variación de cepa/modelo. Este patrón genera preocupaciones de precisión señaladas por el propio motor ('Imprecisión: no se pudieron verificar los tamaños de muestra').",
+        "severity": "high"
+      },
+      {
+        "issue": "Contaminación y clasificación errónea en la base de datos",
+        "detail": "Los resultados de salud hepática y visión/ojo incluyen cada uno un estudio 'No clasificado' (2023, densidad de siembra de maíz), que es claramente fuera de tema y sugiere contaminación de la base de datos o error de recuperación. Esto reduce la confianza en la recuperación sistemática y plantea preguntas sobre si otros estudios animales irrelevantes o de baja calidad están incluidos.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Sin estimaciones de efectos agrupados ni metanálisis",
+        "detail": "En todos los resultados, 'efecto agrupado: ninguno extraíble.' Los nueve estudios de inflamación, siete estudios hepáticos y cuatro estudios intestinales se presentan individualmente sin síntesis, evaluación de heterogeneidad ni apreciación del riesgo de sesgo. Sin metanálisis o metodología de revisión sistemática, los lectores no pueden discernir el sesgo de publicación, la consistencia del efecto o la verdadera magnitud del efecto.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Los resúmenes recuperados describen vías mecanísticas plausibles (p. ej., captación mediada por PepT1, regulación dependiente de ROS, señalización del receptor de melanocortina) que son internamente consistentes con efectos antiinflamatorios y metabólicos en tejido animal. Sin embargo, hay un salto inferencial crítico: la demostración de un mecanismo *en epitelio intestinal murino o tejido adiposo de roedores* no establece que el mismo mecanismo funcione en tejido humano *después de la inyección*, cruce las barreras relevantes o produzca beneficio clínicamente significativo. Ningún dato de farmacología humana o de búsqueda de dosis cierra esta brecha.",
+    "strongest_counterargument": "Un escéptico señalaría que KPV es un tripéptido sin protección de patente, sin desarrollo farmacéutico y sin ensayos clínicos publicados en humanos a pesar de 20+ años de investigación animal (registro más antiguo 2003). Si el efecto fuera robusto y traducible, el interés farmacéutico o los ensayos clínicos académicos habrían materializado para ahora. El estado del mercado gris y la ausencia de estandarización de dosis significan que los usuarios reciben cantidades desconocidas de un compuesto completamente no probado, y los estudios animales en dosis estandarizadas no abordan la exposición del mundo real.",
+    "what_would_change_the_picture": "Un ensayo de Fase I o II aleatorizado, doble ciego y controlado con placebo en humanos con puntos finales claramente definidos (p. ej., calprotectina fecal para inflamación intestinal, transaminasas para función hepática, agudeza visual o cicatrización corneal para salud ocular) y tamaño de muestra adecuado (n ≥ 50 por brazo) proporcionaría la evidencia mínima requerida para ir más allá de la especulación. Los estudios farmacocinéticos que establezcan la absorción, distribución y metabolismo en humanos también serían esenciales.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

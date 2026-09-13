@@ -3,57 +3,14 @@
   "category": "herb",
   "overall_score": 22,
   "tier": "Preliminary",
-  "study_count": 2,
+  "study_count": 3,
+  "unique_human_study_count": 1,
+  "unique_animal_study_count": 2,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 3,
   "claims": [
     {
-      "outcome": "cognition",
-      "tier": "Preliminary",
-      "certainty": "very_low",
-      "score": 22,
-      "has_human_evidence": true,
-      "n_studies": 1,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
-        "Inconsistency: only one study addresses this outcome; consistency cannot be assessed."
-      ],
-      "layers": {
-        "mechanistic": 20,
-        "preclinical": 0,
-        "human": 22,
-        "overall": 22,
-        "ceiling": 22,
-        "n_human_studies": 1,
-        "n_animal_studies": 0,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:39683536"
-      ],
-      "studies": [
-        {
-          "pmid": "39683536",
-          "title": "A Novel Supplement Consisting of Rice, Silkworm Pupae and a Mixture of Ginger and Holy Basil Improves Post-Stroke Cognitive Impairment.",
-          "year": "2024",
-          "design": "Unclassified",
-          "population": "human",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cognition, Holy Basil has only preliminary or animal evidence (1 studies)."
-    },
-    {
-      "outcome": "inflammation",
+      "outcome": "immune function",
       "tier": "Preliminary",
       "certainty": "very_low",
       "score": 22,
@@ -62,6 +19,9 @@
       "grade_reasons": [
         "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 20,
         "preclinical": 35,
@@ -77,90 +37,466 @@
       ],
       "studies": [
         {
+          "id": "pmid:35233841",
           "pmid": "35233841",
           "title": "The holy basil administration diminishes the NF-kB expression and protects alveolar epithelial cells from pneumonia infection through interferon gamma.",
           "year": "2022",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35233841/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Bacterial pneumonia is one of the most important causes of mortality in the United States. The bacteria Klebsiella pneumoniae (KP) accounts for a significant proportion of community and hospital-acquired infections. Here, we determine that the holy basil (Ocimum sanctum) extract improves cell viability and dampens the proinflammatory cytokine response in an in vitro model of pneumonia. For this, A549, a human alveolar basal epithelial cell line, was subjected to a lethal KP model following a 24-hr pretreatment with basil extract. Bacteremia, cell viability, apoptosis, MTT assay, phagocytic capacity, cytokines, and Khe gene expression were assessed in these cells following pneumonia. Cell morphology analysis showed that holy basil protected A549 cells from KP infection-mediated effects by inhibiting cell death due to apoptosis. Additionally, in the presence of basil, A549 cells demonstrated significantly higher bactericidal capacity and phagocytosis. Administration of holy basil led to reduced expression of hypoxia-inducible factor-1/2a, nuclear factor kappa B, and Khe in the KP-infected cells while increasing interferon (IFN)-γ expression. Our results suggest that basil significantly reduced cell death in the setting of KP infection, likely via attenuation of cytokine and IFN-γ mediated signaling pathways. Holy basil is a promising therapeutic agent for managing and treating bacterial pneumonia based on its potency.",
+          "journal": "Phytotherapy research : PTR"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 1,
+        "n_total": 1
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For inflammation, Holy Basil has only preliminary or animal evidence (1 studies)."
+      "summary": "For immune function, Holy Basil has only preliminary, sparse-human, or preclinical evidence (1 graded studies).",
+      "weighted_score": {
+        "final_score": 14.7,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 81.4
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 1,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 4.507,
+          "low_tier_points_post_cap": 4.507,
+          "low_tier_cap_applied": false,
+          "total_points_R": 4.507,
+          "scaled_base_score": 17.349,
+          "p_supportive": 1.0,
+          "single_source_penalty": true,
+          "standard_error_points": 34.0136,
+          "se_consistency_component": 4.0136,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 66.667,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 4.507,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la función inmunológica, Holy Basil tiene solo evidencia preliminar, escasa en humanos o preclínica (1 estudios clasificados)."
+    },
+    {
+      "outcome": "cognition",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": true,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier.",
+        "Inconsistency: only one human study addresses this outcome; consistency cannot be assessed across independent human evidence."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 0,
+        "human": 22,
+        "overall": 22,
+        "ceiling": 22,
+        "n_human_studies": 1,
+        "n_animal_studies": 0,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:39683536"
+      ],
+      "studies": [
+        {
+          "id": "pmid:39683536",
+          "pmid": "39683536",
+          "title": "A Novel Supplement Consisting of Rice, Silkworm Pupae and a Mixture of Ginger and Holy Basil Improves Post-Stroke Cognitive Impairment.",
+          "year": "2024",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39683536/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": null,
+          "journal": "Nutrients"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 1,
+        "n_total": 1
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For cognition, Holy Basil has only preliminary, sparse-human, or preclinical evidence (1 graded studies).",
+      "weighted_score": {
+        "final_score": 14.6,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 81.1
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 1,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 4.361,
+          "low_tier_points_post_cap": 4.361,
+          "low_tier_cap_applied": false,
+          "total_points_R": 4.361,
+          "scaled_base_score": 17.123,
+          "p_supportive": 1.0,
+          "single_source_penalty": true,
+          "standard_error_points": 33.9611,
+          "se_consistency_component": 3.9611,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 66.564,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.09,
+              "points": 4.361,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la cognición, Holy Basil tiene solo evidencia preliminar, escasa en humanos o preclínica (1 estudios clasificados)."
+    },
+    {
+      "outcome": "cholesterol / lipids",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 35,
+        "human": 0,
+        "overall": 35,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 1,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:39795274"
+      ],
+      "studies": [
+        {
+          "id": "pmid:39795274",
+          "pmid": "39795274",
+          "title": "Holy Basil (<i>Ocimum sanctum</i> L.) Flower and Fenofibrate Improve Lipid Profiles in Rats with Metabolic Dysfunction Associated Steatotic Liver Disease (MASLD",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3390/plants14010013",
+          "epmc_id": "MED:39795274",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39795274/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Metabolic dysfunction-associated steatotic liver disease (MASLD) is linked to choline metabolism. The present study investigated the effect of holy basil (<i>Ocimum sanctum</i> L.) flower water extract (OSLY) on MASLD with choline metabolism as an underlying mechanism. Rats with high-fat diet (HFD)-induced MASLD received 250-1000 mg/kg bw of OSLY, fenofibrate, or fenofibrate + 1000 mg/kg OSLY combination. Biochemical parameters, choline metabolites, and one-carbon gene transcription were analyzed. OSLY and fenofibrate independently reduced serum LDL cholesterol (<i>p</i> < 0.02), liver cholesterol (<i>p</i> < 0.001), and liver triglyceride levels (<i>p</i> < 0.001) in HFD-fed rats. Only OSLY reduced signs of liver injury and increased serum HDL. Fenofibrate influenced choline metabolism by decreasing liver glycerophosphocholine (GPC; <i>p</i> = 0.04), as well as increasing betaine (<i>p</i> < 0.001) and the betaine:choline ratio (<i>p</i> = 0.02) in HFD-fed rats. Fenofibrate (vs. HFD) increased the expression of one-carbon metabolism genes <i>Mthfd1l</i>, <i>Pemt</i>, <i>Smpd3</i>, and <i>Chka</i> (<i>p</i> < 0.04). The OSLY treatment decreased liver GPC (500 mg dose; <i>p</i> = 0.03) and increased <i>Smpd3</i> expression (1000 mg dose; <i>p</i> = 0.04). OSLY and fenofibrate showed weak synergistic effects on lipid and choline metabolism. Collectively, OSLY and fenofibrate independently improve lipid profiles in MASLD rats. The benefits of fenofibrate are partially mediated by choline/one-carbon metabolism, while those of OSLY are not mediated by this pathway. Holy basil flower extract merits further development as an alternative medicine for MASLD.",
+          "journal": "Plants (Basel, Switzerland)"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 1,
+        "n_total": 1
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For cholesterol / lipids, Holy Basil has only preliminary, sparse-human, or preclinical evidence (1 graded studies).",
+      "weighted_score": {
+        "final_score": 14.1,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 80.4
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 1,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 4.0,
+          "low_tier_points_post_cap": 4.0,
+          "low_tier_cap_applied": false,
+          "total_points_R": 4.0,
+          "scaled_base_score": 16.54,
+          "p_supportive": 1.0,
+          "single_source_penalty": true,
+          "standard_error_points": 33.8265,
+          "se_consistency_component": 3.8265,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 66.3,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para el colesterol / lípidos, Holy Basil tiene solo evidencia preliminar, escasa en humanos o preclínica (1 estudios clasificados)."
     }
   ],
   "effects_established": [],
   "effects_promising": [
-    "inflammation"
+    "immune function",
+    "cholesterol / lipids"
   ],
   "effects_emerging": [
     "cognition"
   ],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
-  "generated_by": "clarity-engine-v2",
+  "honesty_note": "No outcomes reached the well-established tier — human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T00:54:40.490726+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "cognition",
+  "best_tier": "Preliminary",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Preliminary"
+  ],
   "reviewed_by": "auto",
-  "_cached_at": 1787607940.863963,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.637,
+    "europepmc_s": 3.249,
+    "retrieval_total_s": 3.251,
+    "n_studies": 250,
+    "normalization_s": 0.094,
+    "grading_s": 0.002
+  },
+  "weighted_score": {
+    "score": 14.5,
+    "n_outcomes_scored": 3,
+    "best_outcome_score": 14.7,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789174480.492597,
   "explanation": {
-    "what_it_is": "Holy basil (Ocimum sanctum) is an aromatic herb native to South Asia, traditionally used in Ayurvedic medicine. It contains volatile oils, phenolic compounds, and alkaloids. People typically consume it as a dried leaf tea, extract, or as part of herbal supplement blends.",
-    "how_it_works": "Holy basil contains bioactive compounds\u2014particularly eugenol, rosmarinic acid, and apigenin\u2014that can interact with cellular signaling pathways. These molecules have been shown in laboratory and animal studies to modulate inflammatory mediators like NF-\u03baB (a protein complex that triggers immune responses) and may influence neurotransmitter activity relevant to cognition. The herb also has antioxidant properties, meaning its compounds can neutralize harmful free radicals in cells. However, exactly how these mechanisms translate to human benefit remains unclear and requires further study.",
+    "what_it_is_line": "An aromatic herb with compounds that may support stress and inflammation responses.",
+    "what_it_is": "Holy basil, also called Tulsi (*Ocimum sanctum*), is a plant native to India that has been used in traditional medicine for centuries. It contains volatile oils and other active compounds including eugenol and rosmarinic acid — molecules that interact with the body's stress and immune systems. People typically consume it as a tea, dried leaf powder, or in capsule form as a supplement.",
+    "how_it_works_line": "Appears to lower inflammatory signals and may help cells resist stress-related damage.",
+    "how_it_works": "Holy basil contains compounds that may reduce NF-κB — a key cellular 'master switch' that activates inflammation and immune responses when the body perceives a threat. When NF-κB is overactive, it can amplify chronic inflammation and oxidative stress (damage from rogue molecules). By dampening NF-κB signaling, holy basil may help prevent that cascade. The herb also contains molecules with antioxidant properties — they can neutralize harmful free radicals before they damage cells. Whether these mechanisms translate to measurable health benefits in people has not yet been rigorously tested in most areas.",
+    "safety_line": "Mild side effects reported in limited trials; long-term and specific-population data are sparse.",
+    "safety_detail": "The retrieved studies on cognition reported the supplement (a multi-ingredient formula containing holy basil) was well tolerated, but the trials were small and brief, limiting what we can conclude about safety over months or years. No serious adverse events were documented in the records provided, but absence of a reported harm in a small study does not establish that a compound is safe.",
+    "safety_bullets": [
+      "Interactions with blood thinners or diabetes medications are theoretically possible but not adequately studied — consult a clinician if you take these drugs.",
+      "Pregnancy and breastfeeding: not tested in these populations; unknowns outweigh reassurance.",
+      "Long-term use (beyond weeks to a few months) has not been formally studied in the records retrieved.",
+      "Individuals with liver or kidney disease were not included in the trials; effects in these populations remain untested."
+    ],
+    "chem_meaning": "Holy basil's active compounds are small, volatile molecules (oils) that easily disperse in water and cross cell membranes, which is why it works well as a tea. This chemical profile makes it readily absorbed but also quick to break down in the body, meaning effects may be transient unless taken regularly.",
     "outcome_detail": [
+      {
+        "outcome": "immune function",
+        "grade": "Preliminary",
+        "what_studies_show": "A 2022 animal study found that holy basil administration reduced NF-κB expression — a central inflammatory switch — and protected lung cells from pneumonia-related damage in a model organism. This suggests the herb can dampen an overactive immune inflammation signal in living tissue.",
+        "why_this_grade": "The evidence comes from a single animal study and has not been tested in humans. Animal results do not reliably predict human outcomes, so the grade is Preliminary."
+      },
       {
         "outcome": "cognition",
         "grade": "Preliminary",
-        "what_studies_show": "A 2024 human study examined a multi-ingredient supplement containing rice, silkworm pupae, ginger, and holy basil in a post-stress context. While the formulation appeared to show benefits, this single trial is the only human evidence retrieved on holy basil and cognitive outcomes, and sample size details could not be verified from the abstract.",
-        "why_this_grade": "Only one small human study addresses cognition, making it impossible to assess whether findings are consistent or reliable. Imprecision in reporting and the single-study limitation mean confidence is low and conclusions must be considered very preliminary."
+        "what_studies_show": "A 2024 human study tested a multi-ingredient supplement containing rice, silkworm pupae, ginger, and holy basil. The formula was reported to improve cognitive function after stress in the tested group, and was well tolerated.",
+        "why_this_grade": "Only one human study addresses this outcome, and the supplement contains multiple ingredients — so it is unclear which component (if any) was responsible. Sample size details could not be verified from the abstract, limiting precision. A single study cannot establish consistency across independent trials."
       },
       {
-        "outcome": "inflammation",
+        "outcome": "cholesterol / lipids",
         "grade": "Preliminary",
-        "what_studies_show": "A 2022 animal study found that holy basil administration reduced NF-\u03baB expression and protected lung epithelial cells in a pneumonia model, suggesting an anti-inflammatory effect at the cellular level.",
-        "why_this_grade": "The evidence is animal-only and does not reliably translate to humans. Animal findings on isolated pathways do not guarantee the same effects will occur in human disease or health, so this remains too preliminary to make clinical claims."
+        "what_studies_show": "A 2024 animal study found that holy basil flower, combined with the drug fenofibrate, improved lipid profiles (cholesterol and triglyceride levels) in rats with metabolic dysfunction. This suggests the herb may support lipid metabolism in living organisms.",
+        "why_this_grade": "The evidence is animal-only and has not been tested in humans. Animal models of metabolic disease do not reliably predict effects in people, so the grade is Preliminary."
       }
     ],
-    "evidence_base": "The retrieved literature on holy basil is very sparse: one human study on a multi-ingredient supplement (cognition outcome) and one animal study on inflammation. There are no robust randomized controlled trials in humans focused specifically on holy basil alone. The research base is too small and preliminary to support confident recommendations; findings are at an exploratory stage and mostly confined to animal models or small, complex multi-ingredient human studies.",
-    "emerging_research": "Recent work has begun exploring holy basil's effects on stress resilience and inflammatory markers, particularly in post-stress and infection contexts. These early directions are promising in theory based on the herb's chemical profile, but human trials remain scarce. As research expands, future studies may clarify whether traditional uses in Ayurvedic medicine align with measurable biological effects in modern populations.",
-    "open_questions": "Among the studies retrieved here, human evidence is limited to a single small trial using a multi-ingredient formula (making it unclear which component, if any, drove effects), and no human studies focusing on cognition or inflammation with holy basil alone were found. The animal inflammation study provides only indirect support. This sample does not show whether effects persist beyond short-term observation, whether they occur in healthy populations versus diseased ones, or whether holy basil used alone has benefits. We cannot know from these records what additional research may exist globally, but the retrieved literature shows this remains an understudied herb in rigorous human trials.",
-    "caveats": "Holy basil is generally considered safe at typical culinary and supplement doses, but formal safety and interaction data in humans remain limited. It may interact with blood-thinning or diabetes medications; anyone on prescription drugs should consult a healthcare provider before use. Quality and potency of commercial products vary widely; standardization is not assured. Pregnant and nursing individuals should seek medical guidance before use.",
+    "evidence_base": "The retrieved records include one human study (on cognition, a multi-ingredient formula) and two animal studies (on immune function and lipids). All three records are recent (2022–2024). The human trial did not separate holy basil's contribution from other ingredients, and was small with unverified sample size. Animal data are promising for mechanistic understanding but do not establish efficacy in people. Confidence is therefore limited; more rigorous human trials would be needed to move any outcome above Preliminary.",
+    "open_questions": "The human study used a multi-ingredient supplement, so it is unclear whether holy basil alone drives the observed cognitive benefit. Neither human trials for immune function or lipids were found in the records — only animal models. No studies in the provided data examined holy basil in older adults, children, pregnant individuals, or people with kidney or liver disease. The length of benefit (days, weeks, months, or longer) remains uncharacterized in human testing. Whether effects persist with continued use, or fade over time, is unknown.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The evidence base consists of a single human study (design unspecified, sample size unknown) and one animal study; neither can support reliable clinical conclusions about holy basil's efficacy.",
+    "headline": "The entire evidence base consists of one animal study per outcome with no human data for immune function or lipids, and a single unclassified human study of a multi-ingredient supplement for cognition—too preliminary to draw reliable conclusions about clinical efficacy.",
     "concerns": [
       {
-        "issue": "Single human study, design unknown, n opaque",
-        "detail": "The cognition outcome rests entirely on one 2024 study with unclassified design and no extractable sample size. The study is also a multi-ingredient formulation (rice, silkworm pupae, ginger, and holy basil), making it impossible to attribute any effect to holy basil alone. This is insufficient to establish even preliminary efficacy.",
+        "issue": "No human evidence for 2 of 3 outcomes",
+        "detail": "Immune function and cholesterol/lipids are each supported by only one animal study (2022 and 2024, respectively). Animal models do not reliably translate to human physiology or clinical outcomes. The engine explicitly notes this indirectness constraint for both. Without human trials, efficacy claims for these outcomes rest on preclinical data alone.",
         "severity": "high"
       },
       {
-        "issue": "Animal-only evidence for inflammation",
-        "detail": "The inflammation outcome is supported by one 2022 animal study examining NF-kB expression and alveolar epithelial cell protection. The engine explicitly notes this lacks indirectness\u2014animal models of inflammation do not reliably translate to human clinical benefit, and mechanistic endpoints (NF-kB suppression) do not establish therapeutic relevance.",
+        "issue": "Multi-ingredient confound in cognition trial",
+        "detail": "The single human study (2024) on cognition tested a mixture of rice, silkworm pupae, ginger, AND holy basil. The study design is classified as 'Unclassified,' and the abstract does not permit extraction of sample size. It is impossible to attribute any observed effect to holy basil alone rather than to synergistic or primary effects of the other components.",
         "severity": "high"
       },
       {
-        "issue": "No sample size or precision verification",
-        "detail": "Sample sizes could not be extracted from either abstract. Without n, one cannot assess whether results are underpowered, vulnerable to noise, or at risk from single-study statistical noise. The engine capped certainty 'below the top tier' specifically because precision cannot be confirmed.",
+        "issue": "Sample size and precision unverified across all outcomes",
+        "detail": "No sample sizes are extractable from any of the three abstracts provided. For the cognition study, the engine notes imprecision is unconfirmed and certainty is capped below the top tier. For animal studies, sample sizes are not reported in these records, preventing assessment of statistical power or risk of random error.",
+        "severity": "high"
+      },
+      {
+        "issue": "Extreme sparsity: no consistency across independent studies",
+        "detail": "Each outcome is represented by exactly one study. The engine explicitly notes that consistency cannot be assessed for cognition. With no replication or independent confirmation of any outcome, a single methodological flaw, measurement artifact, or chance finding cannot be distinguished from true effect.",
         "severity": "moderate"
       },
       {
-        "issue": "No consistency or heterogeneity assessment possible",
-        "detail": "With only one study per outcome, consistency cannot be assessed. A single positive result may represent publication bias, methodological artifact, or noise rather than a genuine signal.",
-        "severity": "moderate"
+        "issue": "Very recent and limited publication year range",
+        "detail": "Immune function evidence is from 2022, and cholesterol/cognition evidence is from 2024. The entire evidence base spans two years with no longitudinal track record or validation by independent research teams over time. Early-stage publications are at higher risk of publication bias or non-replication.",
+        "severity": "low"
       }
     ],
-    "mechanism_check": "The animal study suggests NF-kB suppression and epithelial cell protection as a mechanism for reducing inflammation. However, this is a molecular endpoint in animals, not a clinical outcome in humans. The leap from isolated cell/animal data to human cognition or clinical inflammation benefit is substantial and unsupported by the human evidence, which consists of a multi-ingredient formulation study whose design and power are unspecified.",
-    "strongest_counterargument": "A skeptic would note that one uncharacterized human trial using a multi-ingredient supplement cannot attribute effects to holy basil, and one animal mechanistic study does not establish clinical efficacy in humans. Both the cognition and inflammation grades rest on evidence so thin and indirect that they could easily reflect noise, publication bias, or confounding from co-ingredients rather than true activity of holy basil itself.",
-    "what_would_change_the_picture": "A well-powered, adequately designed randomized controlled trial isolating holy basil alone (not in combination) and measuring clinically relevant outcomes (e.g., validated cognition scales, inflammatory biomarkers or clinical symptoms in humans) with pre-registered analysis would be needed to move beyond preliminary. Replication in an independent cohort would then be necessary to rule out chance findings.",
+    "mechanism_check": "The 2022 animal study proposes that holy basil reduces NF-kB expression to protect epithelial cells—a plausible inflammatory pathway. However, in vitro or animal suppression of a transcription factor does not guarantee functional improvement in human immune responses or disease outcomes. The leap from molecular mechanism (NF-kB) to clinical immune competence is substantial and untested in humans. Similarly, the cognition study offers no visible mechanism, and the multi-ingredient design prevents mechanistic attribution to holy basil.",
+    "strongest_counterargument": "A skeptic would note that the entire evidence base for human benefit is one multi-ingredient study of unknown design and sample size, while immune function and lipid claims rest entirely on single animal experiments. Animal studies have poor predictive validity for human pharmacology (failure rates exceed 90% in drug development). Even if the animal data are real, they describe NF-kB suppression or lipid changes in rodents—not clinical outcomes in humans. Without human RCTs, these claims are conjecture dressed in preliminary data.",
+    "what_would_change_the_picture": "A minimum of 2–3 randomized controlled trials in humans with adequate sample size (≥50 per arm), clearly defined primary outcomes (e.g., validated immune measures, lipid panels, or cognitive tests), and holy basil as the single active ingredient (or pre-specified multi-ingredient trial with component analysis) would begin to address uncertainty. Replication of the cognition finding with holy basil alone would be especially valuable.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Una hierba aromática con compuestos que podrían ayudar a las respuestas frente al estrés e inflamación.",
+    "what_it_is": "La albahaca sagrada, también llamada Tulsi (*Ocimum sanctum*), es una planta originaria de India que se ha utilizado en la medicina tradicional durante siglos. Contiene aceites volátiles y otros compuestos activos, incluyendo eugenol y ácido rosmarínico — moléculas que interactúan con los sistemas de estrés e inmunidad del cuerpo. Las personas típicamente la consumen como té, polvo de hoja seca o en forma de cápsula como suplemento.",
+    "how_it_works_line": "Parece reducir las señales inflamatorias y puede ayudar a las células a resistir el daño relacionado con el estrés.",
+    "how_it_works": "La albahaca sagrada contiene compuestos que pueden reducir NF-κB — un 'interruptor maestro' celular clave que activa las respuestas inflamatorias e inmunitarias cuando el cuerpo percibe una amenaza. Cuando NF-κB está hiperativo, puede amplificar la inflamación crónica y el estrés oxidativo (daño causado por moléculas dañinas). Al disminuir la señalización de NF-κB, la albahaca sagrada puede ayudar a prevenir esa cascada. La hierba también contiene moléculas con propiedades antioxidantes — pueden neutralizar radicales libres dañinos antes de que dañen las células. Si estos mecanismos se traducen en beneficios medibles para la salud en personas aún no ha sido probado rigorosamente en la mayoría de las áreas.",
+    "safety_line": "Efectos secundarios leves reportados en ensayos limitados; los datos a largo plazo y en poblaciones específicas son escasos.",
+    "safety_detail": "Los estudios recuperados sobre cognición informaron que el suplemento (una fórmula con múltiples ingredientes que contiene albahaca sagrada) fue bien tolerado, pero los ensayos fueron pequeños y breves, lo que limita lo que podemos concluir sobre la seguridad durante meses o años. No se documentaron eventos adversos graves en los registros proporcionados, pero la ausencia de un daño reportado en un estudio pequeño no establece que un compuesto sea seguro.",
+    "safety_bullets": [
+      "Las interacciones con anticoagulantes o medicamentos para la diabetes son teóricamente posibles pero no han sido adecuadamente estudiadas — consulte con un clínico si toma estos fármacos.",
+      "Embarazo y lactancia: no ha sido probado en estas poblaciones; las incógnitas superan la tranquilidad.",
+      "El uso a largo plazo (más allá de semanas a pocos meses) no ha sido formalmente estudiado en los registros recuperados.",
+      "Los individuos con enfermedad hepática o renal no fueron incluidos en los ensayos; los efectos en estas poblaciones permanecen sin probar."
+    ],
+    "chem_meaning": "Los compuestos activos de la albahaca sagrada son moléculas pequeñas y volátiles (aceites) que se dispersan fácilmente en agua y atraviesan las membranas celulares, lo que explica por qué funciona bien como té. Este perfil químico la hace fácilmente absorbible pero también rápida de descomponer en el cuerpo, lo que significa que los efectos pueden ser transitorios a menos que se tome regularmente.",
+    "outcome_detail": [
+      {
+        "outcome": "immune function",
+        "grade": "Preliminar",
+        "what_studies_show": "Un estudio animal de 2022 encontró que la administración de albahaca sagrada redujo la expresión de NF-κB — un interruptor inflamatorio central — y protegió las células pulmonares del daño relacionado con la neumonía en un organismo modelo. Esto sugiere que la hierba puede disminuir una señal de inflamación inmunológica hiperactivada en tejido vivo.",
+        "why_this_grade": "La evidencia proviene de un único estudio animal y no ha sido probada en humanos. Los resultados en animales no predicen de forma confiable los resultados en humanos, por lo que la calificación es Preliminar.",
+        "outcome_key": "immune function",
+        "outcome_es": "función inmunológica"
+      },
+      {
+        "outcome": "cognition",
+        "grade": "Preliminar",
+        "what_studies_show": "Un estudio humano de 2024 probó un suplemento con múltiples ingredientes que contiene arroz, pupas de gusano de seda, jengibre y albahaca sagrada. Se informó que la fórmula mejoró la función cognitiva después del estrés en el grupo probado, y fue bien tolerada.",
+        "why_this_grade": "Solo un estudio humano aborda este resultado, y el suplemento contiene múltiples ingredientes — por lo que es poco claro cuál componente (si alguno) fue responsable. Los detalles del tamaño de muestra no pudieron verificarse del resumen, limitando la precisión. Un solo estudio no puede establecer consistencia entre ensayos independientes.",
+        "outcome_key": "cognition",
+        "outcome_es": "cognición"
+      },
+      {
+        "outcome": "cholesterol / lipids",
+        "grade": "Preliminar",
+        "what_studies_show": "Un estudio animal de 2024 encontró que la flor de albahaca sagrada, combinada con el fármaco fenofibrato, mejoró los perfiles de lípidos (niveles de colesterol y triglicéridos) en ratas con disfunción metabólica. Esto sugiere que la hierba puede apoyar el metabolismo de lípidos en organismos vivos.",
+        "why_this_grade": "La evidencia es solo animal y no ha sido probada en humanos. Los modelos animales de enfermedad metabólica no predicen de forma confiable los efectos en personas, por lo que la calificación es Preliminar.",
+        "outcome_key": "cholesterol / lipids",
+        "outcome_es": "colesterol / lípidos"
+      }
+    ],
+    "evidence_base": "Los registros recuperados incluyen un estudio humano (sobre cognición, una fórmula con múltiples ingredientes) y dos estudios animales (sobre función inmunológica y lípidos). Los tres registros son recientes (2022–2024). El ensayo humano no separó la contribución de la albahaca sagrada de otros ingredientes, y fue pequeño con tamaño de muestra no verificado. Los datos animales son prometedores para la comprensión mecanística pero no establecen eficacia en personas. La confianza es por lo tanto limitada; se necesitarían más ensayos humanos rigurosos para elevar cualquier resultado por encima de Preliminar.",
+    "open_questions": "El estudio humano utilizó un suplemento con múltiples ingredientes, por lo que no está claro si la albahaca sagrada sola impulsa el beneficio cognitivo observado. Ningún ensayo humano para la función inmunológica o lípidos fue encontrado en los registros — solo modelos animales. Ningún estudio en los datos proporcionados examinó la albahaca sagrada en adultos mayores, niños, individuos embarazadas o personas con enfermedad renal o hepática. La duración del beneficio (días, semanas, meses o más) permanece sin caracterizar en pruebas humanas. Si los efectos persisten con el uso continuado o se desvanecen con el tiempo, es desconocido.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "La base de evidencia completa consiste en un estudio animal por resultado sin datos humanos para función inmunológica o lípidos, y un único estudio humano sin clasificar de un suplemento multiingrediente para cognición—demasiado preliminar para extraer conclusiones confiables sobre eficacia clínica.",
+    "concerns": [
+      {
+        "issue": "Sin evidencia humana para 2 de 3 resultados",
+        "detail": "La función inmunológica y colesterol/lípidos están soportados cada uno por solo un estudio animal (2022 y 2024, respectivamente). Los modelos animales no se traducen de manera confiable a la fisiología humana o desenlaces clínicos. El motor explícitamente señala esta limitación de indirectitud para ambos. Sin ensayos humanos, las afirmaciones de eficacia para estos resultados descansan únicamente en datos preclínicos.",
+        "severity": "high"
+      },
+      {
+        "issue": "Confusión multiingrediente en ensayo de cognición",
+        "detail": "El único estudio humano (2024) sobre cognición probó una mezcla de arroz, pupas de gusano de seda, jengibre Y albahaca sagrada. El diseño del estudio está clasificado como 'Sin clasificar,' y el resumen no permite la extracción del tamaño de muestra. Es imposible atribuir ningún efecto observado a la albahaca sagrada sola en lugar de a efectos sinérgicos o primarios de los otros componentes.",
+        "severity": "high"
+      },
+      {
+        "issue": "Tamaño de muestra y precisión no verificados en todos los resultados",
+        "detail": "No hay tamaños de muestra extraíbles de ninguno de los tres resúmenes proporcionados. Para el estudio de cognición, el motor señala que la imprecisión no está confirmada y la certeza está limitada por debajo del nivel superior. Para estudios animales, los tamaños de muestra no se reportan en estos registros, impidiendo la evaluación del poder estadístico o riesgo de error aleatorio.",
+        "severity": "high"
+      },
+      {
+        "issue": "Extrema escasez: sin consistencia entre estudios independientes",
+        "detail": "Cada resultado está representado por exactamente un estudio. El motor explícitamente señala que la consistencia no puede evaluarse para cognición. Sin replicación o confirmación independiente de ningún resultado, un único defecto metodológico, artefacto de medición o hallazgo por azar no puede distinguirse de un efecto verdadero.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Muy reciente y rango limitado de año de publicación",
+        "detail": "La evidencia de función inmunológica es de 2022, y la evidencia de colesterol/cognición es de 2024. La base de evidencia completa abarca dos años sin historial longitudinal o validación por equipos de investigación independientes a lo largo del tiempo. Las publicaciones en etapa temprana tienen mayor riesgo de sesgo de publicación o no replicación.",
+        "severity": "low"
+      }
+    ],
+    "mechanism_check": "El estudio animal de 2022 propone que la albahaca sagrada reduce la expresión de NF-kB para proteger las células epiteliales—una vía inflamatoria plausible. Sin embargo, la supresión in vitro o animal de un factor de transcripción no garantiza mejora funcional en las respuestas inmunológicas humanas o desenlaces de enfermedad. El salto de mecanismo molecular (NF-kB) a competencia inmunológica clínica es sustancial e inprobado en humanos. De manera similar, el estudio de cognición no ofrece mecanismo visible, y el diseño multiingrediente impide atribución mecanística a la albahaca sagrada.",
+    "strongest_counterargument": "Un escéptico señalaría que la base de evidencia completa para beneficio humano es un estudio multiingrediente de diseño y tamaño de muestra desconocidos, mientras que las afirmaciones de función inmunológica y lípidos descansan enteramente en experimentos animales únicos. Los estudios animales tienen validez predictiva pobre para farmacología humana (las tasas de fracaso superan 90% en desarrollo de fármacos). Incluso si los datos animales son reales, describen supresión de NF-kB o cambios en lípidos en roedores—no desenlaces clínicos en humanos. Sin ensayos controlados aleatorios humanos, estas afirmaciones son conjetura disfrazada de datos preliminares.",
+    "what_would_change_the_picture": "Un mínimo de 2–3 ensayos controlados aleatorios en humanos con tamaño de muestra adecuado (≥50 por brazo), resultados primarios claramente definidos (p. ej., medidas inmunológicas validadas, paneles de lípidos, o pruebas cognitivas), y albahaca sagrada como el único ingrediente activo (o ensayo multiingrediente prespecificado con análisis de componentes) comenzaría a abordar la incertidumbre. La replicación del hallazgo de cognición con albahaca sagrada sola sería especialmente valiosa.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

@@ -163,25 +163,53 @@ def main():
     print(f"Pre-warming {len(items)} compounds — mode: {mode}")
     print(f"(Already-cached compounds are skipped; safe to stop and re-run.)\n")
 
-    done = skipped = failed = 0
-    for i, (name, cat) in enumerate(items, 1):
+    # PARALLEL across compounds. Each compound's PubMed + LLM calls are I/O-bound
+    # (network waits), so running several at once is a near-linear speedup. The
+    # PubMed throttle in pubmed.py is lock-guarded, so NCBI's rate limit is still
+    # respected; Haiku's limits comfortably handle a few concurrent streams.
+    # Tune with --workers N (default 4). Use 1 to force the old sequential mode.
+    workers = 4
+    if "--workers" in args:
+        workers = max(1, int(args[args.index("--workers") + 1]))
+
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    import threading
+    _lock = threading.Lock()
+    _counts = {"done": 0, "skipped": 0, "failed": 0}
+
+    def _bump(k):
+        with _lock:
+            _counts[k] += 1
+
+    def _work(item):
+        i, (name, cat) = item
         if cache.get(name):
-            skipped += 1
+            _bump("skipped")
             print(f"[{i}/{len(items)}] {name:28} — already cached, skip")
-            continue
+            return
         try:
             t0 = time.time()
             profile = run.research(name, cat, use_cache=True, verbose=False)
             dt = time.time() - t0
             tier = profile.get("tier", "?")
             n = profile.get("study_count", 0)
-            done += 1
+            _bump("done")
             print(f"[{i}/{len(items)}] {name:28} — {tier:11} ({n} studies, {dt:.0f}s)")
         except Exception as e:
-            failed += 1
-            print(f"[{i}/{len(items)}] {name:28} — FAILED: {type(e).__name__}")
-        time.sleep(0.3)  # be gentle to PubMed
+            _bump("failed")
+            print(f"[{i}/{len(items)}] {name:28} — FAILED: {type(e).__name__}: {e}")
 
+    if workers == 1:
+        for it in enumerate(items, 1):
+            _work(it)
+    else:
+        print(f"Running {workers} compounds in parallel.\n")
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = [pool.submit(_work, it) for it in enumerate(items, 1)]
+            for _ in as_completed(futures):
+                pass
+
+    done, skipped, failed = _counts["done"], _counts["skipped"], _counts["failed"]
     print(f"\nDone. generated={done}  skipped={skipped}  failed={failed}")
     print(f"Total cached now: {len(cache.list_cached())}")
 

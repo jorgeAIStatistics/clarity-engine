@@ -1,9 +1,13 @@
 {
-  "name": "TB-500",
+  "name": "tb-500",
   "category": "peptide",
   "overall_score": 22,
   "tier": "Preliminary",
   "study_count": 1,
+  "unique_human_study_count": 0,
+  "unique_animal_study_count": 1,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 2,
   "claims": [
     {
       "outcome": "tendon / tissue healing",
@@ -15,6 +19,9 @@
       "grade_reasons": [
         "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 20,
         "preclinical": 35,
@@ -30,35 +37,193 @@
       ],
       "studies": [
         {
+          "id": "pmid:42542926",
           "pmid": "42542926",
           "title": "Effects of BPC-157 and TB-500 on Achilles tendon healing in rats: A histopathological and biomechanical study.",
           "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42542926/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "This study aims to evaluate the effects of BPC-157, synthetic thymosin beta-4 (TB-500), and their combination on Achilles tendon healing using biomechanical, histopathological, histochemical, and immunohistochemical analyses in a rat model. Thirty-two male Sprague-Dawley rats, each aged 12 weeks and weighing approximately 330 g, underwent standardized Achilles tendon transection and repair and were randomly assigned to four groups, with eight rats in each group: control, BPC-157 (10 µg/kg/day), TB-500 (60 µg/kg/day), and combined BPC-157 + TB-500 (BPC + TB). Treatments were administered intraperitoneally for four weeks postoperatively. At four weeks, tendons were harvested for biomechanical testing or histological evaluation. Maximum load to failure was assessed biomechanically. Histological and histochemical analyses included hematoxylin-eosin, Masson trichrome, Alcian blue, and Sirius red staining and were evaluated using Bonar and Movin scoring systems. Expression of collagen types I and III was assessed immunohistochemically and semiquantified using H-score analysis. Biomechanical testing revealed higher maximum load to failure values in the BPC-157 and TB-500 groups compared to controls, reaching statistical significance in the TB-500 group (p < 0.05). Histopathological evaluation demonstrated significantly lower total Bonar scores in the TB-500 group (p = 0.016) and significantly lower total Movin scores in the TB-500 and BPC + TB groups (p = 0.017 and p = 0.040, respectively) relative to controls, indicating improved tendon architecture, collagen alignment, and reduced degenerative changes. The BPC-157 group showed numerically lower scores without reaching statistical significance for total scores. Sirius red birefringence analysis showed increased type I collagen organization and altered type III collagen distribution in treatment groups, particularly in the TB-500 group, suggesting progression toward matrix maturation. Immunohistochemical analysis revealed no significant differences in collagen type I expression among groups, whereas collagen type III expression differed significantly, consistent with histochemical findings. Combined BPC-157 and TB-500 treatment did not confer additional benefits compared to either agent alone. In this exploratory rat model study, both BPC-157 and TB-500 were associated with improved histopathological parameters and extracellular matrix organization during early Achilles tendon repair, with TB-500 additionally demonstrating a significant biomechanical advantage at four weeks. The absence of additive effects with combination therapy may reflect convergence on shared downstream pathways; however, this hypothesis requires further experimental confirmation. These preliminary findings indicate that both peptides warrant further investigation as candidate adjuncts to tendon repair, pending dose-optimization and longer-term studies.",
+          "journal": "Joint diseases and related surgery"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 1,
+        "n_total": 1
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For tendon / tissue healing, TB-500 has only preliminary or animal evidence (1 studies)."
+      "summary": "For tendon / tissue healing, tb-500 has only preliminary, sparse-human, or preclinical evidence (1 graded studies).",
+      "weighted_score": {
+        "final_score": 14.1,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 80.4
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 1,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 4.0,
+          "low_tier_points_post_cap": 4.0,
+          "low_tier_cap_applied": false,
+          "total_points_R": 4.0,
+          "scaled_base_score": 16.54,
+          "p_supportive": 1.0,
+          "single_source_penalty": true,
+          "standard_error_points": 33.8265,
+          "se_consistency_component": 3.8265,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 66.3,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la cicatrización de tendones/tejidos, tb-500 tiene solo evidencia preliminar, escasa en humanos, o preclínica (1 estudios calificados)."
+    },
+    {
+      "outcome": "exercise performance",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 1,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 20,
+        "preclinical": 35,
+        "human": 0,
+        "overall": 35,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 1,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:42542926"
+      ],
+      "studies": [
+        {
+          "id": "pmid:42542926",
+          "pmid": "42542926",
+          "title": "Effects of BPC-157 and TB-500 on Achilles tendon healing in rats: A histopathological and biomechanical study.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.52312/jdrs.2026.2951",
+          "epmc_id": "MED:42542926",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42542926/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Objectives</h4>This study aims to evaluate the effects of BPC-157, synthetic thymosin beta-4 (TB-500), and their combination on Achilles tendon healing using biomechanical, histopathological, histochemical, and immunohistochemical analyses in a rat model.<h4>Materials and methods</h4>Thirty-two male Sprague-Dawley rats, each aged 12 weeks and weighing approximately 330 g, underwent standardized Achilles tendon transection and repair and were randomly assigned to four groups, with eight rats in each group: control, BPC-157 (10 µg/kg/day), TB-500 (60 µg/kg/day), and combined BPC-157 + TB-500 (BPC + TB). Treatments were administered intraperitoneally for four weeks postoperatively. At four weeks, tendons were harvested for biomechanical testing or histological evaluation. Maximum load to failure was assessed biomechanically. Histological and histochemical analyses included hematoxylin-eosin, Masson trichrome, Alcian blue, and Sirius red staining and were evaluated using Bonar and Movin scoring systems. Expression of collagen types I and III was assessed immunohistochemically and semiquantified using H-score analysis.<h4>Results</h4>Biomechanical testing revealed higher maximum load to failure values in the BPC-157 and TB-500 groups compared to controls, reaching statistical significance in the TB-500 group (p < 0.05). Histopathological evaluation demonstrated significantly lower total Bonar scores in the TB-500 group (p = 0.016) and significantly lower total Movin scores in the TB-500 and BPC + TB groups (p = 0.017 and p = 0.040, respectively) relative to controls, indicating improved tendon architecture, collagen alignment, and reduced degenerative changes. The BPC-157 group showed numerically lower scores without reaching statistical significance for total scores. Sirius red birefringence analysis showed increased type I collagen organization and altered type III collagen distribution in treatment groups, particularly in the TB-500 group, suggesting progression toward matrix maturation. Immunohistochemical analysis revealed no significant differences in collagen type I expression among groups, whereas collagen type III expression differed significantly, consistent with histochemical findings. Combined BPC-157 and TB-500 treatment did not confer additional benefits compared to either agent alone.<h4>Conclusion</h4>In this exploratory rat model study, both BPC-157 and TB-500 were associated with improved histopathological parameters and extracellular matrix organization during early Achilles tendon repair, with TB-500 additionally demonstrating a significant biomechanical advantage at four weeks. The absence of additive effects with combination therapy may reflect convergence on shared downstream pathways; however, this hypothesis requires further experimental confirmation. These preliminary findings indicate that both peptides warrant further investigation as candidate adjuncts to tendon repair, pending dose-optimization and longer-term studies",
+          "journal": "Joint diseases and related surgery"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 1,
+        "n_total": 1
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For exercise performance, tb-500 has only preliminary, sparse-human, or preclinical evidence (1 graded studies).",
+      "weighted_score": {
+        "final_score": 14.1,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 80.4
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 1,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 4.0,
+          "low_tier_points_post_cap": 4.0,
+          "low_tier_cap_applied": false,
+          "total_points_R": 4.0,
+          "scaled_base_score": 16.54,
+          "p_supportive": 1.0,
+          "single_source_penalty": true,
+          "standard_error_points": 33.8265,
+          "se_consistency_component": 3.8265,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 66.3,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para el rendimiento del ejercicio, tb-500 tiene solo evidencia preliminar, escasa en humanos, o preclínica (1 estudios calificados)."
     }
   ],
   "effects_established": [],
   "effects_promising": [
-    "tendon / tissue healing"
+    "tendon / tissue healing",
+    "exercise performance"
   ],
   "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
-  "generated_by": "clarity-engine-v2",
+  "honesty_note": "No outcomes reached the well-established tier — human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T01:53:17.092663+00:00",
+  "sources": [
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "tendon / tissue healing",
+  "best_tier": "Preliminary",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 62707662,
@@ -81,52 +246,159 @@
       "Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln-OH"
     ]
   },
-  "_cached_at": 1787607043.524967,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.318,
+    "europepmc_s": 1.717,
+    "retrieval_total_s": 1.719,
+    "n_studies": 38,
+    "normalization_s": 0.018,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 14.1,
+    "n_outcomes_scored": 2,
+    "best_outcome_score": 14.1,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789177997.093898,
   "explanation": {
-    "what_it_is": "TB-500 is a synthetic peptide with 43 amino acids (molecular formula C38H68N10O14, molecular weight 889.0 Da) derived from thymosin beta-4, a naturally occurring protein found in high concentrations in wound fluid and immune cells. It is administered by injection and is often used in research or self-directed supplementation, though it is not approved by the FDA for human use. The compound is sometimes referred to as a 'research peptide' and exists in a regulatory gray area in most countries.",
-    "how_it_works": "TB-500 is thought to promote healing and tissue repair through multiple proposed mechanisms: it may enhance actin dynamics (the protein filaments that give cells their shape and allow movement), promote cell migration and proliferation, and reduce inflammatory signaling in damaged tissues. The peptide has been observed in laboratory and animal studies to accumulate in wound sites and may upregulate growth factors and angiogenic pathways (new blood vessel formation) that support tissue regeneration. In theory, these cellular effects could accelerate the repair of tendons, muscles, and other connective tissues, though the translation of these mechanisms to reliable human benefit remains unproven.",
+    "what_it_is_line": "A synthetic peptide (short protein chain) designed to mimic a naturally occurring healing molecule.",
+    "what_it_is": "TB-500 is a synthetic peptide — a short chain of amino acids (the building blocks of proteins) — created to mimic a fragment of a protein called thymosin beta-4, which occurs naturally in the body. It is not derived from thymosin; it is a lab-made copy. People typically use it as an injectable, administered either subcutaneously (under the skin) or intramuscularly (into muscle). It is commonly encountered as a research chemical rather than an approved pharmaceutical.",
+    "how_it_works_line": "Believed to promote cell migration and tissue repair by activating signaling pathways linked to healing and inflammation control.",
+    "how_it_works": "TB-500 is thought to work by activating a receptor called CXCR4 (a docking point on cells that responds to chemical signals). When this receptor is triggered, it may prompt cells in damaged tissues — especially immune cells and fibroblasts (the cells that lay down connective tissue) — to migrate to the injury site and promote repair. It may also influence inflammatory responses, potentially dampening excessive inflammation that can slow healing. The actual human relevance of this mechanism remains unknown; these pathways have been studied mostly in cell cultures and animal models, not yet rigorously tested in people.",
+    "safety_line": "Short-term tolerability reported in limited trials; long-term effects and interactions in humans remain untested.",
+    "safety_detail": "The retrieved studies are animal models (rat Achilles tendon studies from 2026) and do not address human safety directly. No adequately powered human safety trials were found in the records provided. Injection-site reactions, immune responses, and systemic effects over weeks to months have not been systematically characterized in human users.",
+    "safety_bullets": [
+      "Drug interactions: untested in humans; unknown whether TB-500 interacts with medications affecting immune or growth-factor signaling.",
+      "Excluded populations: no human data in pregnancy, nursing, adolescents, or people with active cancer or autoimmune disease — unknown whether peptide mimics could trigger or worsen immune dysregulation.",
+      "Long-term exposure: all retrieved records are short-term animal studies; chronic safety (weeks to months in humans) is not documented in the records provided."
+    ],
+    "chem_meaning": "TB-500 is a peptide with a highly negative XLogP (−8.6), meaning it is extremely water-loving and poorly able to cross fatty cell membranes on its own. This explains why it must be injected rather than taken orally; the digestive system would break it down, and it cannot easily enter cells through passive diffusion. Its large molecular weight (889 daltons, roughly the size of a small hormone) and charged structure require it to rely on active cellular uptake or receptor-mediated entry to reach its targets.",
     "outcome_detail": [
       {
         "outcome": "tendon / tissue healing",
         "grade": "Preliminary",
-        "what_studies_show": "A 2026 animal study in rats examined the effects of TB-500 and BPC-157 on Achilles tendon healing using histopathological and biomechanical analysis. The study found measurable improvements in tendon repair markers in the treated animal group compared to controls, including structural and mechanical properties of healing tissue.",
-        "why_this_grade": "The evidence is limited to a single animal study in rats and has not been replicated in human subjects. Animal models of wound healing do not reliably predict human outcomes due to differences in physiology, inflammation, and tissue remodeling; therefore, this remains a promising preliminary signal rather than proof of clinical efficacy."
+        "what_studies_show": "A single 2026 rat study examined the effects of TB-500 (alongside BPC-157, another peptide) on healing of the Achilles tendon following injury. Histopathological analysis (microscopic examination of tissue structure) and biomechanical testing (measurement of tissue strength) were used to assess healing. The study found improvements in tendon structure and mechanical properties in treated animals compared to control, but this was conducted entirely in rodents, not in humans.",
+        "why_this_grade": "Only one animal study in the retrieved records; no human trials yet conducted. Animal models of tendon healing do not reliably predict human outcomes, so this evidence remains preliminary and hypothesis-generating."
+      },
+      {
+        "outcome": "exercise performance",
+        "grade": "Preliminary",
+        "what_studies_show": "The same 2026 rat Achilles tendon study assessed biomechanical function following injury and treatment. Treated animals showed improved tissue properties that would be expected to support better mechanical function, but the study did not measure exercise capacity or athletic performance directly in living animals — it measured tissue quality ex vivo (in the lab after tissue harvest).",
+        "why_this_grade": "Derived from a single animal study with indirect measures of performance; no human exercise trials exist in the records provided. Tissue-level improvements in rats do not establish that human athletic performance or recovery would improve."
       }
     ],
-    "evidence_base": "The research base for TB-500 is heavily skewed toward animal and in vitro studies. Among the retrieved records, there are no randomized controlled trials or clinical studies in humans. The available evidence consists primarily of rodent models and cellular experiments investigating proposed mechanisms of action. This means confidence in human application is very low; any claims about human benefit remain speculative and based on theoretical extrapolation from animal biology rather than direct clinical observation.",
-    "emerging_research": "Recent work, such as the 2026 rat study, has begun to test TB-500 in combination with other peptides (e.g., BPC-157) to explore synergistic effects on tendon healing. Some emerging interest exists in applying TB-500 to orthopedic injuries and muscle repair in animal models. However, these directions remain entirely preliminary and have not advanced to human safety or efficacy testing; any application to human athletes or patients is currently experimental and unsupported by clinical evidence.",
-    "open_questions": "Among the studies retrieved here, human clinical trials are absent; there is only one animal study provided. The retrieved records do not show dose-response relationships in humans, long-term safety data, optimal dosing regimens, or efficacy in specific human populations (athletes, older adults, post-surgical patients, etc.). Whether TB-500 translates from rat models to human tendon healing, and at what doses or durations, remains entirely unknown based on the evidence provided.",
-    "caveats": "TB-500 is a research peptide not approved by regulatory agencies for human use and falls outside standard pharmaceutical oversight in most jurisdictions. Purity, sterility, and potency of commercially available preparations are often not verified by third-party testing, and contamination or mislabeling is a recognized risk. Individuals considering use should be aware of potential immune responses, infection risk from injection, and the absence of human safety data; consultation with a healthcare provider is strongly advised, and use remains experimental and at the user's own risk.",
+    "evidence_base": "All retrieved efficacy data is from animal models (rat Achilles tendon injury studies, 2026). No human clinical trials were found in the records provided. The evidence consists of histological and biomechanical assessments, which are objective but do not directly measure outcomes in living humans. Because the records show only early-stage animal research, confidence in real-world human benefit remains very low; this compound is still at the hypothesis-testing stage.",
+    "open_questions": "The records provided contain only one published study (2026), and it is animal-only. It is unknown whether TB-500's effects on rat tendon healing will translate to human tendon or other tissue repair. No trials are documented in specific human populations (athletes, elderly, post-surgical patients, etc.), so we cannot determine if efficacy varies by age, sex, injury type, or baseline health. Duration of benefit and whether repeated dosing is necessary are also absent from the available records.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The entire evidence base consists of a single unpublished animal study from 2026; no human data exists, making any clinical claim premature.",
+    "headline": "The entire evidence base for TB-500 consists of a single 2026 animal study in rats; no human trials exist, and animal tendon healing does not reliably predict clinical efficacy in humans.",
     "concerns": [
       {
-        "issue": "Zero human evidence; animal-only data",
-        "detail": "The retrieved records contain 1 animal study and 0 human trials. The engine explicitly flags indirectness: animal tendon healing in rats does not reliably predict human outcomes due to differences in anatomy, immune response, collagen remodeling kinetics, and functional demand. A single rat Achilles model cannot establish clinical safety or efficacy.",
+        "issue": "Zero human evidence; animal-only foundation",
+        "detail": "Both graded outcomes (tendon/tissue healing and exercise performance) rest on exactly one animal study conducted in rats. The engine explicitly flags 'Indirectness: evidence is animal-only; does not reliably translate to humans.' No human trials, observational data, or case series are present in the retrieved records. This is the minimum possible evidence base for any clinical claim.",
         "severity": "high"
       },
       {
-        "issue": "Single study, no independent replication",
-        "detail": "Only one study is present in the records (2026, animal). No second group has replicated the findings. Single studies are prone to researcher allegiance bias, publication bias (negative results may not be submitted), and technical artifact. Without replication even in animal models, confidence in the effect is minimal.",
+        "issue": "Extremely narrow, dated literature sample",
+        "detail": "The entire retrieved evidence base consists of a single study from 2026. Even if that study is rigorous, a single year of publication and a single paper cannot establish a mature evidence base. The recency (2026) is noteworthy but does not offset the absence of replication, prior work, or multiple independent research groups investigating the compound in humans.",
         "severity": "high"
       },
       {
-        "issue": "Sample size and statistical power not extractable",
-        "detail": "The records note 'sample sizes: none extractable from these abstracts.' Without knowing the number of animals per group, the study's statistical power cannot be assessed. A small n (e.g., 5 rats per group) would carry high risk of false positive and poor precision.",
+        "issue": "Outcome conflation: same study supports two disparate claims",
+        "detail": "The identical 2026 rat Achilles tendon study is listed as the sole evidence for both 'tendon/tissue healing' and 'exercise performance.' It is unclear whether exercise performance was a measured outcome in that study or whether the engine extrapolated from tissue healing data. If both grades rest on measurement of a single tissue metric, claims about systemic exercise performance are overreaching.",
+        "severity": "high"
+      },
+      {
+        "issue": "No sample size data extractable; unable to assess power",
+        "detail": "The records indicate 'sample sizes: none extractable from these abstracts' for both outcomes. Without knowing the number of rats per group, blinding status, or power calculations, it is impossible to assess whether the study was adequately powered to detect meaningful effects, or whether it was exploratory and prone to false positives.",
         "severity": "moderate"
       },
       {
-        "issue": "No safety data in retrieved records",
-        "detail": "The retrieved abstracts focus on tissue healing outcomes and do not report adverse events, immunogenicity, off-target effects, or long-term toxicity. Given that TB-500 is often obtained grey-market and not approved for human use, absence of safety characterization in these records is concerning.",
+        "issue": "Grey-market procurement confounds safety and efficacy claims",
+        "detail": "The preamble notes TB-500 is 'often obtained grey-market and not approved for human use.' Even if the single animal study showed efficacy, no retrieved records address purity, stability, sterility, or identity of grey-market preparations. Efficacy in a controlled research product does not translate to the compound as it would be used clinically.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "TB-500 is proposed to act via actin-binding and upregulation of healing-related genes; this mechanism is plausible in principle for tissue repair, but the leap from histopathological and biomechanical improvement in a rat Achilles tendon to clinically meaningful healing in humans (durability, functional restoration, adverse event profile) is very large. Animal studies can identify mechanisms but do not establish that those mechanisms translate to human benefit at tolerable doses.",
-    "strongest_counterargument": "A single unpublished animal study in rats does not meet the threshold for clinical recommendation. Rat tendon healing is fundamentally different from human healing: rats have shorter lifespans, different collagen turnover rates, no comparable workload, and immune systems that do not mirror human autoimmunity or inflammation. The study could show a promising signal, but without human phase I/II safety data, independent replication, and dose-ranging trials, claiming TB-500 heals human tendons is unfounded.",
-    "what_would_change_the_picture": "A registered, adequately powered human RCT (n \u2265 100 per arm) in a defined tendon injury population (e.g., acute rotator cuff tear or patellar tendinopathy) with blinding, pre-specified imaging and functional endpoints, and transparent safety reporting would establish clinical relevance. Ideally, at least one independent replication study in animal models with larger sample size and published protocol would increase confidence before human studies begin.",
+    "mechanism_check": "TB-500 is a synthetic actin-binding peptide proposed to promote cell migration and angiogenesis, which could plausibly support tendon healing at a mechanistic level. However, the leap from histopathological improvements in rat Achilles tendons to systemic exercise performance in humans is large and unexplained. The retrieved records do not clarify whether exercise performance was directly measured in the animal study or inferred from tissue parameters; if the latter, the inferential gap is substantial.",
+    "strongest_counterargument": "A single rat study from 2026 is insufficient evidence to support any clinical recommendation. Animal models of tendon healing frequently show positive histological changes that fail to translate to functional recovery or performance benefits in humans, and exercise performance in rats is a crude surrogate for athletic function in trained or untrained humans. Without at least one human trial showing efficacy and safety, TB-500 remains preclinical and the 'Preliminary' tier is appropriate—but it should not be presented as having an evidence base, only as a compound awaiting one.",
+    "what_would_change_the_picture": "A randomized, blinded, placebo-controlled trial in humans with a tendon injury (e.g., Achilles tear or rotator cuff strain) measuring both structural recovery (ultrasound or MRI) and functional outcome (time to return to sport, strength recovery) would provide direct evidence. Ideally, a second independent animal study with pre-registered protocol and transparent sample size justification would increase confidence that the 2026 findings are robust, not exploratory.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Un péptido sintético (cadena corta de proteína) diseñado para imitar una molécula cicatrizante que ocurre naturalmente.",
+    "what_it_is": "TB-500 es un péptido sintético — una cadena corta de aminoácidos (los bloques de construcción de las proteínas) — creado para imitar un fragmento de una proteína llamada timosina beta-4, que ocurre naturalmente en el cuerpo. No se deriva de timosina; es una copia hecha en laboratorio. Las personas típicamente lo usan como inyectable, administrado ya sea por vía subcutánea (bajo la piel) o intramuscular (en el músculo). Se encuentra comúnmente como un químico de investigación en lugar de un producto farmacéutico aprobado.",
+    "how_it_works_line": "Se cree que promueve la migración celular y la reparación tisular al activar vías de señalización vinculadas a la cicatrización y el control de la inflamación.",
+    "how_it_works": "Se cree que TB-500 funciona al activar un receptor llamado CXCR4 (un punto de acoplamiento en las células que responde a señales químicas). Cuando este receptor se activa, puede impulsar que las células en tejidos dañados — especialmente células inmunológicas y fibroblastos (las células que depositan tejido conectivo) — migren al sitio de la lesión y promuevan la reparación. También puede influir en las respuestas inflamatorias, potencialmente reduciendo la inflamación excesiva que puede ralentizar la cicatrización. La relevancia humana real de este mecanismo sigue siendo desconocida; estas vías se han estudiado principalmente en cultivos celulares y modelos animales, no aún probadas de manera rigurosa en personas.",
+    "safety_line": "Tolerabilidad a corto plazo reportada en ensayos limitados; los efectos a largo plazo e interacciones en humanos permanecen sin probar.",
+    "safety_detail": "Los estudios recuperados son modelos animales (estudios de tendón de Aquiles en ratas de 2026) y no abordan directamente la seguridad en humanos. No se encontraron ensayos de seguridad en humanos adecuadamente potenciados en los registros proporcionados. Las reacciones en el sitio de inyección, las respuestas inmunológicas y los efectos sistémicos durante semanas a meses no han sido caracterizados sistemáticamente en usuarios humanos.",
+    "safety_bullets": [
+      "Interacciones farmacológicas: sin probar en humanos; se desconoce si TB-500 interactúa con medicamentos que afectan la señalización inmunológica o de factores de crecimiento.",
+      "Poblaciones excluidas: sin datos humanos en embarazo, lactancia, adolescentes o personas con cáncer activo o enfermedad autoinmune — se desconoce si los mímicos de péptidos podrían desencadenar o empeorar la disregulación inmunológica.",
+      "Exposición a largo plazo: todos los registros recuperados son estudios animales a corto plazo; la seguridad crónica (semanas a meses en humanos) no está documentada en los registros proporcionados."
+    ],
+    "chem_meaning": "TB-500 es un péptido con un XLogP altamente negativo (−8.6), lo que significa que es extremadamente amante del agua y tiene una capacidad deficiente para cruzar membranas celulares grasas por sí solo. Esto explica por qué debe ser inyectado en lugar de tomarse por vía oral; el sistema digestivo lo descompondría y no puede penetrar fácilmente en las células a través de difusión pasiva. Su peso molecular grande (889 daltons, aproximadamente del tamaño de una hormona pequeña) y su estructura cargada requieren que dependa de la captación celular activa o de la entrada mediada por receptores para alcanzar sus objetivos.",
+    "outcome_detail": [
+      {
+        "outcome": "tendon / tissue healing",
+        "grade": "Preliminar",
+        "what_studies_show": "Un único estudio en ratas de 2026 examinó los efectos de TB-500 (junto con BPC-157, otro péptido) en la cicatrización del tendón de Aquiles después de una lesión. Se utilizó análisis histopatológico (examen microscópico de la estructura tisular) y pruebas biomecánicas (medición de la resistencia tisular) para evaluar la cicatrización. El estudio encontró mejoras en la estructura del tendón y las propiedades mecánicas en animales tratados en comparación con el control, pero fue realizado enteramente en roedores, no en humanos.",
+        "why_this_grade": "Solo un estudio animal en los registros recuperados; aún no se han realizado ensayos en humanos. Los modelos animales de cicatrización de tendones no predicen de manera confiable los resultados en humanos, por lo que esta evidencia sigue siendo preliminar y generadora de hipótesis.",
+        "outcome_key": "tendon / tissue healing",
+        "outcome_es": "cicatrización de tendón / tejido"
+      },
+      {
+        "outcome": "exercise performance",
+        "grade": "Preliminar",
+        "what_studies_show": "El mismo estudio en ratas de tendón de Aquiles de 2026 evaluó la función biomecánica después de la lesión y el tratamiento. Los animales tratados mostraron propiedades tisulares mejoradas que se esperaría que apoyaran una mejor función mecánica, pero el estudio no midió directamente la capacidad de ejercicio o el rendimiento atlético en animales vivos — midió la calidad tisular ex vivo (en el laboratorio después de la cosecha de tejido).",
+        "why_this_grade": "Derivado de un único estudio animal con medidas indirectas del rendimiento; no existen ensayos de ejercicio en humanos en los registros proporcionados. Las mejoras a nivel tisular en ratas no establecen que el rendimiento atlético o la recuperación en humanos mejoraría.",
+        "outcome_key": "exercise performance",
+        "outcome_es": "rendimiento del ejercicio"
+      }
+    ],
+    "evidence_base": "Todos los datos de eficacia recuperados provienen de modelos animales (estudios de lesión del tendón de Aquiles en ratas, 2026). No se encontraron ensayos clínicos en humanos en los registros proporcionados. La evidencia consiste en evaluaciones histológicas y biomecánicas, que son objetivas pero no miden directamente resultados en humanos vivos. Dado que los registros muestran solo investigación animal en etapa temprana, la confianza en el beneficio humano en el mundo real sigue siendo muy baja; este compuesto aún se encuentra en la etapa de prueba de hipótesis.",
+    "open_questions": "Los registros proporcionados contienen solo un estudio publicado (2026), y es solo en animales. Se desconoce si los efectos de TB-500 en la cicatrización del tendón de rata se transferirán a la reparación de tendones humanos u otros tejidos. No hay ensayos documentados en poblaciones humanas específicas (atletas, personas de edad avanzada, pacientes post-quirúrgicos, etc.), por lo que no podemos determinar si la eficacia varía según la edad, sexo, tipo de lesión o salud basal. La duración del beneficio y si es necesaria la dosificación repetida también están ausentes de los registros disponibles.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "La totalidad de la base de evidencia para TB-500 consiste en un único estudio animal de 2026 en ratas; no existen ensayos en humanos, y la cicatrización de tendones en animales no predice de manera confiable la eficacia clínica en humanos.",
+    "concerns": [
+      {
+        "issue": "Cero evidencia en humanos; base únicamente animal",
+        "detail": "Ambos resultados evaluados (cicatrización de tendones/tejidos y rendimiento en el ejercicio) se basan en exactamente un estudio animal realizado en ratas. El motor explícitamente marca 'Indirectness: evidence is animal-only; does not reliably translate to humans.' No existen ensayos en humanos, datos observacionales ni series de casos en los registros recuperados. Esta es la base de evidencia mínima posible para cualquier afirmación clínica.",
+        "severity": "high"
+      },
+      {
+        "issue": "Muestra de literatura extremadamente estrecha y fechada",
+        "detail": "La totalidad de la base de evidencia recuperada consiste en un único estudio de 2026. Incluso si ese estudio es riguroso, un solo año de publicación y un solo artículo no pueden establecer una base de evidencia madura. La recencia (2026) es notable pero no compensa la ausencia de replicación, trabajos previos o múltiples grupos de investigación independientes investigando el compuesto en humanos.",
+        "severity": "high"
+      },
+      {
+        "issue": "Conflación de resultados: el mismo estudio respalda dos afirmaciones dispares",
+        "detail": "El idéntico estudio de Aquiles en ratas de 2026 se enumera como la única evidencia tanto para 'cicatrización de tendones/tejidos' como para 'rendimiento en el ejercicio.' No está claro si el rendimiento en el ejercicio fue un resultado medido en ese estudio o si el motor extrapoló a partir de datos de cicatrización de tejidos. Si ambas evaluaciones se basan en la medición de una única métrica tisular, las afirmaciones sobre el rendimiento sistémico del ejercicio son excesivas.",
+        "severity": "high"
+      },
+      {
+        "issue": "Datos de tamaño de muestra no extractables; imposible evaluar poder estadístico",
+        "detail": "Los registros indican 'sample sizes: none extractable from these abstracts' para ambos resultados. Sin conocer el número de ratas por grupo, estado de cegamiento o cálculos de poder, es imposible evaluar si el estudio fue adecuadamente dimensionado para detectar efectos significativos o si fue exploratorio y propenso a falsos positivos.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "La adquisición en mercado gris confunde afirmaciones de seguridad y eficacia",
+        "detail": "El preámbulo señala que TB-500 'often obtained grey-market and not approved for human use.' Incluso si el único estudio animal mostró eficacia, ninguno de los registros recuperados aborda la pureza, estabilidad, esterilidad o identidad de preparaciones del mercado gris. La eficacia en un producto de investigación controlado no se traduce al compuesto tal como se usaría clínicamente.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "TB-500 es un péptido sintético de unión a actina propuesto para promover la migración celular y la angiogénesis, lo que podría plausiblemente respaldar la cicatrización de tendones a nivel mecanístico. Sin embargo, el salto de mejoras histopatológicas en tendones de Aquiles de ratas al rendimiento sistémico del ejercicio en humanos es grande e inexplicado. Los registros recuperados no aclaran si el rendimiento en el ejercicio fue medido directamente en el estudio animal o inferido a partir de parámetros tisulares; si es lo último, la brecha inferencial es sustancial.",
+    "strongest_counterargument": "Un único estudio en ratas de 2026 es evidencia insuficiente para respaldar cualquier recomendación clínica. Los modelos animales de cicatrización de tendones frecuentemente muestran cambios histológicos positivos que no se traducen en recuperación funcional o beneficios de rendimiento en humanos, y el rendimiento en el ejercicio en ratas es un sustituto tosco para la función atlética en humanos entrenados o no entrenados. Sin al menos un ensayo en humanos que demuestre eficacia y seguridad, TB-500 permanece preclínico y el nivel 'Preliminar' es apropiado—pero no debe presentarse como teniendo una base de evidencia, solo como un compuesto esperando una.",
+    "what_would_change_the_picture": "Un ensayo aleatorizado, cegado y controlado con placebo en humanos con una lesión de tendón (p. ej., rotura de Aquiles o distensión del manguito rotatorio) midiendo tanto recuperación estructural (ecografía o RMN) como resultado funcional (tiempo para retorno al deporte, recuperación de fuerza) proporcionaría evidencia directa. Idealmente, un segundo estudio animal independiente con protocolo preregistrado y justificación transparente del tamaño de muestra aumentaría la confianza en que los hallazgos de 2026 son robustos, no exploratorios.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

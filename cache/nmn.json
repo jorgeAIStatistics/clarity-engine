@@ -3,227 +3,343 @@
   "category": "longevity",
   "overall_score": 79,
   "tier": "Moderate",
-  "study_count": 15,
+  "study_count": 32,
+  "unique_human_study_count": 15,
+  "unique_animal_study_count": 17,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 42,
   "claims": [
     {
-      "outcome": "sleep quality",
+      "outcome": "blood sugar",
       "tier": "Moderate",
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 4,
+      "n_studies": 10,
       "grade_reasons": [
-        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+        "Precision: ~1005 participants verified across 3 of 10 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 2 primary human studies and 2 pooled analyses retrieved — below the threshold for the top tier."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 1,
       "layers": {
         "mechanistic": 30,
-        "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:38789831",
-        "PMID:35215405",
-        "PMID:36698264",
-        "PMID:37202819"
-      ],
-      "studies": [
-        {
-          "pmid": "38789831",
-          "title": "Ingestion of \u03b2-nicotinamide mononucleotide increased blood NAD levels, maintained walking speed, and improved sleep quality in older adults in a double-blind ra",
-          "year": "2024",
-          "design": "RCT",
-          "population": "human",
-          "n": 60
-        },
-        {
-          "pmid": "35215405",
-          "title": "Effect of 12-Week Intake of Nicotinamide Mononucleotide on Sleep Quality, Fatigue, and Physical Performance in Older Japanese Adults: A Randomized, Double-Blind",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": 108
-        },
-        {
-          "pmid": "37202819",
-          "title": "Oral nicotinamide mononucleotide (NMN) to treat chronic insomnia: protocol for the multicenter, randomized, double-blinded, placebo-controlled trial.",
-          "year": "2023",
-          "design": "Clinical trial",
-          "population": "human",
-          "n": 400
-        },
-        {
-          "pmid": "36698264",
-          "title": "Nicotinamide Mononucleotide Ameliorates Sleep Deprivation-Induced Gut Microbiota Dysbiosis and Restores Colonization Resistance against Intestinal Infections.",
-          "year": "2023",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For sleep quality, NMN has moderate human evidence (4 studies)."
-    },
-    {
-      "outcome": "exercise performance",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 5,
-      "grade_reasons": [
-        "Imprecision: modest verified sample (~202 participants across 3 of 5 studies); effect estimate may be unstable.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 35,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
         "n_human_studies": 4,
-        "n_animal_studies": 1,
+        "n_animal_studies": 6,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
+        "PMID:39116016",
+        "PMID:39185644",
         "PMID:36482258",
-        "PMID:35215405",
-        "PMID:36443648",
-        "PMID:40275690",
-        "PMID:40362776"
+        "PMID:35287653",
+        "PMID:34948019",
+        "PMID:38653987",
+        "PMID:38430946",
+        "PMID:42634749",
+        "PMID:42105622",
+        "PMID:42429864"
       ],
       "studies": [
         {
-          "pmid": "40275690",
-          "title": "The Effect of Nicotinamide Mononucleotide and Riboside on Skeletal Muscle Mass and Function: A Systematic Review and Meta-Analysis.",
+          "id": "pmid:39116016",
+          "pmid": "39116016",
+          "title": "Efficacy of oral nicotinamide mononucleotide supplementation on glucose and lipid metabolism for adults: a systematic review with meta-analysis on randomized co",
           "year": "2025",
           "design": "Systematic review",
           "population": "human",
-          "n": null
+          "n": 513,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39116016/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "A surge of public interest in NMN supplementation has been observed in recent years. However, whether NMN supplements are effective in improving metabolic health remains unclear. The objective of the review was to assess the effects of NMN supplementation on fasting glucose, triglycerides, total cholesterol, LDL-C, and HDL-C in adults. Studies were located by searching four databases (PubMed, Embase, Cochrane, and Web of Science). Two reviewers independently conducted title/abstract and full-text screening, data extraction, and risk-of-bias assessment. Of the 4049 records reviewed, 12 studies with a total of 513 participants met the criteria for analysis. Random-effects meta-analyses found an overall significant effect of NMN supplementation in elevating blood NAD levels. However, most of the clinically relevant outcomes were not significantly different between NMN supplementation and control group. Risk-of-bias assessment using RoB2 showed some concerns in seven studies and high risk of bias in the other five studies. Together, our findings suggest that an exaggeration of the benefits of NMN supplementation may exist in the field. Although the limited number of eligible studies was sufficiently powered to detect changes in the abovementioned primary outcomes, more studies are needed to conclude about the exact effects of NMN supplementation.",
+          "journal": "Critical reviews in food science and nutrition"
         },
         {
+          "id": "pmid:39185644",
+          "pmid": "39185644",
+          "title": "Effects of Nicotinamide Mononucleotide Supplementation on Muscle and Liver Functions Among the Middle-aged and Elderly: A Systematic Review and Meta-analysis of",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 412,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39185644/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Nicotinamide Mononucleotide (NMN) has gained attention as a precursor to Nicotinamide Adenine Dinucleotide (NAD+) in recent years, commonly utilized in anti-aging therapies. The anti-aging effects of NMN on muscle and liver functions in middleaged and elderly people are still unclear. Based on available randomized controlled trials, we conducted a meta-analysis to evaluate the impact of NMN on muscle and liver functions in middle-aged and elderly individuals. We conducted searches on three electronic databases (PubMed, Embase, Web of Science) for randomized controlled trials involving NMN interventions in middle-aged and elderly populations. Through the Cochrane Handbook, we assessed the specific methodological quality. All statistical analyses were obtained by Stata15, and statistical significance was set as P<0.05. There were 412 participants from 9 studies in this meta-analysis. Based on changes in gait speed (SMD: 0.34 m/s, 95%CI [0.03, 0.66] p = 0.033), NMN had significant effects on muscle mass. Moreover, NMN had a better effect on ALT (SMD: -0.29 IU/L, 95%CI [-0.55, -0.03] p = 0.028). Subgroup analysis indicated that administering a small dose of NMN exerted the most prominent impact on Homeostasis Model Assessment-Insulin Resistance (HOMA-IR). NMN has positive efficacy in enhancing muscle function, reducing insulin resistance and lowering aminotransferase levels in middle-aged and elderly individuals. NMN is an encouraging and considerable drug for anti-aging treatment.",
+          "journal": "Current pharmaceutical biotechnology"
+        },
+        {
+          "id": "pmid:36482258",
           "pmid": "36482258",
-          "title": "The efficacy and safety of \u03b2-nicotinamide mononucleotide (NMN) supplementation in healthy middle-aged adults: a randomized, multicenter, double-blind, placebo-c",
+          "title": "The efficacy and safety of β-nicotinamide mononucleotide (NMN) supplementation in healthy middle-aged adults: a randomized, multicenter, double-blind, placebo-c",
           "year": "2023",
           "design": "RCT",
           "population": "human",
-          "n": 80
+          "n": 80,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36482258/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "In animal studies, β-nicotinamide mononucleotide (NMN) supplementation increases nicotinamide adenine dinucleotide (NAD) concentrations and improves healthspan and lifespan with great safety. However, it is unclear if these effects can be transferred to humans. This randomized, multicenter, double-blind, placebo-controlled, parallel-group, dose-dependent clinical trial included 80 middle-aged healthy adults being randomized for a 60-day clinical trial with once daily oral dosing of placebo, 300 mg, 600 mg, or 900 mg NMN. The primary objective was to evaluate blood NAD concentration with dose-dependent regimens. The secondary objectives were to assess the safety and tolerability of NMN supplementation, next to the evaluation of clinical efficacy by measuring physical performance (six-minute walking test), blood biological age (Aging.Ai 3.0 calculator), Homeostatic Model Assessment for Insulin Resistance (HOMA-IR), and subjective general health assessment [36-Item Short Form Survey Instrument (SF-36)]. Statistical analysis was performed using the Per Protocol analysis with significant level set at p = 0.05. All 80 participants completed the trial without trial protocol violation. Blood NAD concentrations were statistically significantly increased among all NMN-treated groups at day 30 and day 60 when compared to both placebo and baseline (all p ≤ 0.001). Blood NAD concentrations were highest in the groups taking 600 mg and 900 mg NMN. No safety issues, based on monitoring adverse events (AEs), laboratory and clinical measures, were found, and NMN supplementation was well tolerated. Walking distance increase during the six-minute walking test was statistically significantly higher in the 300 mg, 600 mg, and 900 mg groups compared to placebo at both days 30 and 60 (all p < 0.01), with longest walking distances measured in the 600 mg and 900 mg groups. The blood biological age increased significantly in the placebo group and stayed unchanged in all NMN-treated groups at day 60, which resulted in a significant difference between the treated groups and placebo (all p < 0.05). The HOMA-IR showed no statistically significant differences for all NMN-treated groups as compared to placebo at day 60. The change of SF-36 scores at day 30 and day 60 indicated statistically significantly better health of all three treated groups when compared to the placebo group (p < 0.05), except for the SF-36 score change in the 300 mg group at day 30. NMN supplementation increases blood NAD concentrations and is safe and well tolerated with oral dosing up to 900 mg NMN daily. Clinical efficacy expressed by blood NAD concentration and physical performance reaches highest at a dose of 600 mg daily oral intake. This trial was registered with ClinicalTrials.gov, NCT04823260, and Clinical Trial Registry - India, CTRI/2021/03/032421.",
+          "journal": "GeroScience"
         },
         {
-          "pmid": "36443648",
-          "title": "Effects of nicotinamide mononucleotide on older patients with diabetes and impaired physical performance: A prospective, placebo-controlled, double-blind study.",
-          "year": "2023",
-          "design": "RCT",
+          "id": "pmid:38430946",
+          "pmid": "38430946",
+          "title": "Towards personalized nicotinamide mononucleotide (NMN) supplementation: Nicotinamide adenine dinucleotide (NAD) concentration.",
+          "year": "2024",
+          "design": "Clinical trial",
           "population": "human",
-          "n": 14
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38430946/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Nicotinamide mononucleotide (NMN) is a precursor of nicotinamide adenine dinucleotide (NAD), which declines with age. Supplementation of NMN has been shown to improve blood NAD concentration. However, the optimal NMN dose remains unclear. This is a post-hoc analysis of a double-blinded clinical trial involving 80 generally healthy adults aged 40-65 years. The participants received a placebo or daily 300 mg, 600 mg, or 900 mg NMN for 60 days. Blood NAD concentration, blood biological age, homeostatic model assessment for insulin resistance, 6-minute walk test, and 36-item short-form survey (SF-36) were measured at baseline and after supplement. A significant dose-dependent increase in NAD concentration change (NAD",
+          "journal": "Mechanisms of ageing and development"
         },
         {
-          "pmid": "35215405",
-          "title": "Effect of 12-Week Intake of Nicotinamide Mononucleotide on Sleep Quality, Fatigue, and Physical Performance in Older Japanese Adults: A Randomized, Double-Blind",
-          "year": "2022",
-          "design": "RCT",
-          "population": "human",
-          "n": 108
-        },
-        {
-          "pmid": "40362776",
-          "title": "Effects of Time-Restricted Fasting-Nicotinamide Mononucleotide Combination on Exercise Capacity via Mitochondrial Activation and Gut Microbiota Modulation.",
-          "year": "2025",
+          "id": "pmid:42634749",
+          "pmid": "42634749",
+          "title": "Nicotinamide Mononucleotide (NMN) Prevents Age-Associated Transcriptional Drift in a Tissue-Dependent Manner: Mechanistic Leads From Ras-Related Protein Rab-11A",
+          "year": "2026",
           "design": "Animal",
           "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For exercise performance, NMN has moderate human evidence (5 studies)."
-    },
-    {
-      "outcome": "endurance",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 3,
-      "grade_reasons": [
-        "Imprecision: sample sizes could not be verified from the abstracts; precision is unconfirmed, so certainty is capped below the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 45,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 1,
-        "n_animal_studies": 2,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:34238308",
-        "PMID:40362776",
-        "PMID:36263579"
-      ],
-      "studies": [
+          "n": null,
+          "doi": "10.7759/cureus.114956",
+          "epmc_id": "MED:42634749",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42634749/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "This study is a secondary computational reanalysis of the publicly available GSE85718 microarray dataset generated during the long-term nicotinamide mononucleotide (NMN) study. NMN has been reported to improve several age-sensitive physiological traits in mice, including energy metabolism, insulin sensitivity, plasma lipid profiles, and skeletal-muscle mitochondrial function. However, the transcriptional mechanisms behind these effects remain less clear than the broader nicotinamide adenine dinucleotide (NAD+) and sirtuin-centered model often used to explain NMN biology. The present analysis used a per-tissue age-by-treatment interaction model to test whether NMN modifies the rate of age-associated transcriptional change rather than simply shifting expression at one age. The model was expression ~ age × treatment, with the age-by-treatment term used as the central test. A gene was considered an NMN-rescue candidate only when it changed with age in control mice and showed an opposite-signed interaction term, consistent with NMN shifting old-age expression toward the young-control state. No individual gene reached genome-wide false discovery rate (FDR) <0.05 for age, NMN at six months, or the interaction term in skeletal muscle, liver, or white adipose tissue (WAT). Therefore, all gene-level results should be treated as hypothesis-generating. Using relaxed nominal criteria, 421 rescue candidates were identified in skeletal muscle, 355 in liver, and 397 in WAT. Only 35 genes were rescued in at least two tissues, 26 of which were direction-consistent, and none were rescued in all three tissues. Ras-related protein Rab-11A (RAB11A) emerged as the strongest cross-tissue candidate, with rescue in skeletal muscle and WAT, high confidence in at least one tissue, consistent directionality, and involvement in 39 gene set enrichment analysis (GSEA) leading-edge terms, largely related to trafficking and cellular transport. Carnitine palmitoyltransferase 2 (CPT2) was the only mitochondrial gene among the robust cross-tissue candidates and was consistently rescued in skeletal muscle and WAT, supporting a focused fatty-acid oxidation and substrate-handling hypothesis rather than broad mitochondrial activation. At the pathway level, liver showed the clearest signal: NMN was associated with suppression of fatty-acyl-coenzyme A (CoA) and long-chain fatty-acyl-CoA metabolic programs. These findings do not establish that NMN prevents transcriptional aging or that RAB11A or CPT2 mediates the physiological effects of NMN. Instead, they identify tissue-specific, testable candidates from a secondary reanalysis of an existing animal dataset. In particular, they support moving beyond a generic \"NAD+ improves mitochondria\" model toward testable mechanisms involving cellular logistics, membrane recycling, and substrate utilization.",
+          "journal": "Cureus"
+        },
         {
-          "pmid": "34238308",
-          "title": "Nicotinamide mononucleotide supplementation enhances aerobic capacity in amateur runners: a randomized, double-blind study.",
+          "id": "pmid:42105622",
+          "pmid": "42105622",
+          "title": "Nicotinamide mononucleotide (NMN) improves the ovarian microenvironment associated with oocyte quality by increasing estrogen signaling, reprogramming ovarian m",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.theriogenology.2026.117980",
+          "epmc_id": "MED:42105622",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42105622/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Nicotinamide mononucleotide (NMN), a precursor of nicotinamide adenine dinucleotide (NAD<sup>+</sup>), has been shown to improve oocyte quality in mammals. A healthy ovarian microenvironment is essential for oocyte quality and reproductive success in teleost fish. To investigate the effects of NMN on ovarian microenvironment parameters associated with oocyte quality in the spotted scat (Scatophagus argus), the levels of serum glucose, insulin, total cholesterol, triglycerides, 17β-estradiol (E<sub>2</sub>), and ovarian NAD<sup>+</sup> were analyzed following an intraperitoneal (IP) injection of NMN. Ovarian transcriptomic profiling was also conducted using RNA sequencing. The expression of genes related to steroidogenesis, apoptosis, and oxidative stress after NMN supplementation was analyzed by qRT-PCR. In vitro, ATP content, glutathione (GSH) levels, reactive oxygen species (ROS) accumulation, and mitochondrial membrane potential (ΔΨm) were quantified in follicles after NMN incubation. The results showed that NMN injection significantly increased ovarian NAD <sup>+</sup> levels and serum E<sub>2</sub> concentrations. NMN improved glucose and lipid metabolism, as evidenced by elevated insulin levels and reduced serum glucose, total cholesterol, and triglycerides. KEGG enrichment analysis revealed significant enrichment of pathways related to metabolism, the stress response, and apoptosis. qRT-PCR demonstrated the upregulation of steroidogenesis-related genes (cyp17a1, hsd3b1, 20β-hsd, cyp19a1a, mmp2, and foxl2), antioxidant genes (gpx1a, gpx1b, and slc7a11), and the anti-apoptotic gene bcl2, along with downregulation of pro-apoptotic genes (bax and caspase3). NMN incubation reduced ROS accumulation and increased GSH levels, accompanied by enhanced mitochondrial function, as reflected by increased ΔΨm and ATP production. Collectively, these results suggest that NMN improves the ovarian microenvironment associated with oocyte quality in spotted scat by enhancing NAD<sup>+</sup> availability, which subsequently promotes estrogen signaling, reprogrammed ovarian metabolism, mitigates oxidative stress, and inhibits apoptosis.",
+          "journal": "Theriogenology"
+        },
+        {
+          "id": "pmid:42429864",
+          "pmid": "42429864",
+          "title": "Nicotinamide mononucleotide ameliorates high glucose/high fat-induced cardiomyocyte metabolic dysfunction through SIRT1-mediated CPT1A stabilization.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1007/s11033-026-12332-6",
+          "epmc_id": "MED:42429864",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42429864/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Objective</h4>To investigate the mechanism of nicotinamide mononucleotide (NMN) in ameliorating high glucose/high fat (HG/HF)-induced metabolic dysfunction in diabetic cardiomyopathy (DCM) through SIRT1-mediated CPT1A stabilization.<h4>Methods</h4>DCM cellular model was established using H9c2 cell. After screening optimal NMN concentration via cell counting kit-8 (CCK-8) assay and Western blot, cellular viability, apoptosis, total reactive oxygen species (ROS), mitochondrial function, ATP, and β-hydroxybutyrate (β-OHB) content were measured. The molecular interplay among NMN-SIRT1-CPT1A was further elucidated through co-immunoprecipitation (Co-IP), cycloheximide (CHX) chase assay, MG132 rescue, and CPT1A K675R mutation.<h4>Results</h4>HG/HF reduced H9c2 cells viability by 26.66% and SIRT1 protein expression by 79.30%, both of which were restored by 100 µM NMN. In vitro, NMN enhanced cell viability, suppressed apoptosis and total ROS, stabilized mitochondrial function, and increased ATP and β-OHB content, these protective effects were attenuated by SIRT1 knockdown. Western blot analysis demonstrated NMN upregulated CPT1A and CD36 expression by activating SIRT1. Co-IP revealed that HG/HF markedly elevated the acetylation and ubiquitination of CPT1A, both of which were weakened by NMN treatment. Moreover, SIRT1 directly interacted with CPT1A and deacetylated CPT1A via the proteasomal pathway, thereby blocking its ubiquitination. Additionally, the K675R point mutation further confirmed Lys675 as the specific deacetylation target of SIRT1 on CPT1A.<h4>Conclusion</h4>NMN activates SIRT1 to deacetylate CPT1A at Lys675, inhibiting its degradation and enhancing mitochondrial ATP and β-OHB generation, thereby mitigating HG/HF-induced injury. These findings provide SIRT1-mediated CPT1A stabilization as a potential therapeutic target for DCM.",
+          "journal": "Molecular biology reports"
+        },
+        {
+          "id": "pmid:38653987",
+          "pmid": "38653987",
+          "title": "Nicotinamide Mononucleotide improves oocyte maturation of mice with type 1 diabetes.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38653987/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The number of patients with type 1 diabetes rises rapidly around the world in recent years. Maternal diabetes has a detrimental effect on reproductive outcomes due to decreased oocyte quality. However, the strategies to improve the oocyte quality and artificial reproductive technology (ART) efficiency of infertile females suffering from diabetes have not been fully studied. In this study, we aimed to examine the effects of nicotinamide mononucleotide (NMN) on oocyte maturation of mouse with type 1 diabetes mouse and explore the underlying mechanisms of NMN's effect. Streptozotocin (STZ) was used to establish the mouse models with type 1 diabetes. The successful establishment of the models was confirmed by the results of body weight test, fasting blood glucose test and haematoxylin and eosin (H&E) staining. The in vitro maturation (IVM) rate of oocytes from diabetic mice was examined. Immunofluorescence staining (IF) was performed to examine the reactive oxygen species (ROS) level, spindle/chromosome structure, mitochondrial function, actin dynamics, DNA damage and histone modification of oocytes, which are potential factors affecting the oocyte quality. The quantitative reverse transcription PCR (RT-qPCR) was used to detect the mRNA levels of Sod1, Opa1, Mfn2, Drp1, Sirt1 and Sirt3 in oocytes. The NMN supplementation increased the oocyte maturation rate of the mice with diabetes. Furthermore, NMN supplementation improved the oocyte quality by rescuing the actin dynamics, reversing meiotic defects, improving the mitochondrial function, reducing ROS level, suppressing DNA damage and restoring changes in histone modifications of oocytes collected from the mice with diabetes. NMN could improve the maturation rate and quality of oocytes in STZ-induced diabetic mice, which provides a significant clue for the treatment of infertility of the patients with diabetes.",
+          "journal": "Nutrition & diabetes"
+        },
+        {
+          "id": "pmid:35287653",
+          "pmid": "35287653",
+          "title": "Antioxidant effect of nicotinamide mononucleotide in tendinopathy.",
+          "year": "2022",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35287653/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "A link between tendinopathy and oxidative stress has been recently reported. Nicotinamide mononucleotide (NMN) is a precursor of nicotinamide adenine dinucleotide, which plays an important role in cell redox homeostasis. The aim of this study was to evaluate the antioxidant effect of NMN on tendinopathy in vitro and in vivo. Tenocytes from healthy Sprague-Dawley rats were cultured in regular glucose (RG) and high-glucose (HG) conditions with or without NMN, and were divided into four groups: RG NMN(-), RG NMN(+), HG NMN(-), and HG NMN(+). Cell viability, reactive oxygen species (ROS) accumulation, apoptotic rate, and mRNA expression of nicotinamide adenine dinucleotide phosphate oxidase (NOX)1, NOX4, interleukin (IL)6, sirtuin (SIRT)1, and SIRT6 were investigated. In addition, rats with collagenase-induced tendinopathy were treated with or without NMN. Immunostaining of NOX1 and NOX4; mRNA expression of SIRT1, SIRT6, and IL6; and superoxide dismutase (SOD) activity measurements in the Achilles tendon were performed. NMN increased the expression of SIRT1 and SIRT6 in rat tenocytes, but decreased the levels of NOX1, NOX4, IL6, ROS, and apoptosis. In Achilles tendons with collagenase-induced tendinopathy, NMN increased the mRNA expression of SIRT1 and SIRT6, as well as SOD activity; while suppressing protein expression of NOX1 and NOX4, and mRNA expression of IL6. The in vitro and in vivo results of this study show that NMN exerts an antioxidant effect on tendinopathy by promoting the expression of SIRT while inhibiting that of NOX.",
+          "journal": "BMC musculoskeletal disorders"
+        },
+        {
+          "id": "pmid:34948019",
+          "pmid": "34948019",
+          "title": "Nicotinamide Mononucleotide Prevents Free Fatty Acid-Induced Reduction in Glucose Tolerance by Decreasing Insulin Clearance.",
           "year": "2021",
-          "design": "RCT",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "40362776",
-          "title": "Effects of Time-Restricted Fasting-Nicotinamide Mononucleotide Combination on Exercise Capacity via Mitochondrial Activation and Gut Microbiota Modulation.",
-          "year": "2025",
           "design": "Animal",
           "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "36263579",
-          "title": "Bazi Bushen capsule attenuates cognitive deficits by inhibiting microglia activation and cellular senescence.",
-          "year": "2022",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34948019/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The NAD-dependent deacetylase SIRT1 improves β cell function. Accordingly, nicotinamide mononucleotide (NMN), the product of the rate-limiting step in NAD synthesis, prevents β cell dysfunction and glucose intolerance in mice fed a high-fat diet. The current study was performed to assess the effects of NMN on β cell dysfunction and glucose intolerance that are caused specifically by increased circulating free fatty acids (FFAs). NMN was intravenously infused, with or without oleate, in C57BL/6J mice over a 48-h-period to elevate intracellular NAD levels and consequently increase SIRT1 activity. Administration of NMN in the context of elevated plasma FFA levels considerably improved glucose tolerance. This was due not only to partial protection from FFA-induced β cell dysfunction but also, unexpectedly, to a significant decrease in insulin clearance. However, in conditions of normal FFA levels, NMN impaired glucose tolerance due to decreased β cell function. The presence of this dual action of NMN suggests caution in its proposed therapeutic use in humans.",
+          "journal": "International journal of molecular sciences"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 10,
+        "n_total": 10
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For endurance, NMN has moderate human evidence (3 studies)."
+      "summary": "For blood sugar, NMN has moderate human evidence (10 graded studies).",
+      "weighted_score": {
+        "final_score": 78.3,
+        "confidence_interval": {
+          "lower": 56.8,
+          "upper": 99.8
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 10,
+          "high_tier_points": 181.361,
+          "low_tier_points_pre_cap": 13.76,
+          "low_tier_points_post_cap": 13.76,
+          "low_tier_cap_applied": false,
+          "total_points_R": 195.121,
+          "scaled_base_score": 78.315,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 10.9777,
+          "se_consistency_component": 6.2484,
+          "se_thinness_component": 4.7292,
+          "margin_of_error": 21.516,
+          "human_sample_total": 1005,
+          "studies_missing_sample_size": 1,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "1 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.105,
+              "points": 99.436,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.0,
+              "points": 90.0,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.403,
+              "C_k": 1.32,
+              "points": 33.326,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.181,
+              "points": 4.722,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 4.648,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.162,
+              "points": 4.648,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.176,
+              "points": 21.175,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para el azúcar en sangre, NMN tiene evidencia humana moderada (10 estudios clasificados)."
     },
     {
       "outcome": "muscle strength",
@@ -231,76 +347,1121 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 3,
+      "n_studies": 9,
       "grade_reasons": [
-        "Imprecision: modest verified sample (~122 participants across 2 of 3 studies); effect estimate may be unstable.",
-        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate."
+        "Precision: ~262 participants verified across 4 of 9 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Consistency: a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified — held at moderate."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 1,
       "layers": {
         "mechanistic": 30,
-        "preclinical": 0,
+        "preclinical": 45,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 3,
-        "n_animal_studies": 0,
+        "n_human_studies": 7,
+        "n_animal_studies": 2,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:35215405",
+        "PMID:40275690",
         "PMID:36443648",
-        "PMID:40275690"
+        "PMID:35215405",
+        "PMID:41097225",
+        "PMID:41705654",
+        "PMID:38789831",
+        "PMID:36482258",
+        "PMID:35927255",
+        "PMID:31015147"
       ],
       "studies": [
         {
+          "id": "pmid:40275690",
           "pmid": "40275690",
           "title": "The Effect of Nicotinamide Mononucleotide and Riboside on Skeletal Muscle Mass and Function: A Systematic Review and Meta-Analysis.",
           "year": "2025",
           "design": "Systematic review",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": "10.1002/jcsm.13799",
+          "epmc_id": "MED:40275690",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40275690/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Sarcopenia is associated with the loss of skeletal muscle function and mass. Nicotinamide precursors, such as nicotinamide mononucleotide (NMN) and nicotinamide riboside (NR), have received attention for their potential to improve NAD We searched PubMed, Cochrane Library, Web of Science, and Scopus to identify randomized controlled trials (RCTs), comparing NR or NMN vs. placebo. A random-effects meta-analysis was employed to determine their impact on measures of sarcopenia such as skeletal muscle index (SMI), handgrip strength (HGS) and gait speed. A narrative synthesis was used for 5-time chair stand test (5CST), short physical performance battery (SPPB), timed-up-and-go (TUG), 6-min walking distance (6MWD), leg and chest press 80% 1RM (repetition maximum) and thigh muscle mass. Included participants had a mean age range from 60.9 to 83 years. NMN supplementation showed no significant effects on SMI (n = 3; mean difference (MD): -0.42, 95% confidence interval (CI): -0.99 - 0.14, I Current evidence does not support NMN and NR supplementation for preserving muscle mass and function in adults with mean age of over 60 years. Future research should explore supplementation dosage, NAD",
+          "journal": "Journal of cachexia, sarcopenia and muscle"
         },
         {
+          "id": "pmid:41705654",
+          "pmid": "41705654",
+          "title": "Anti-inflammatory effects of nicotinamide mononucleotide (NMN) in human skeletal muscle after BFR-exercise.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.1080/15502783.2026.2632284",
+          "epmc_id": "MED:41705654",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41705654/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>β-Nicotinamide mononucleotide (NMN) inhibits acute inflammation in injured animal tissues.<h4>Aim</h4>We examined whether NMN supplementation attenuates inflammation induced by blood flow restriction-resistance exercise (BFR-exercise) in human skeletal muscle.<h4>Methods</h4>Eleven untrained men (22.8 ± 1.5 y) completed a randomized, placebo-controlled, counterbalanced crossover trial, receiving either Placebo or NMN (1200 mg/d) for 7 d, with a 3-week washout between conditions. Multiple muscle biopsies were obtained before and after BFR-exercise.<h4>Results</h4>BFR-exercise-induced significant muscle necrosis at 0 h, which resolved within 24 h in both conditions. NMN supplementation suppressed exercise-induced increases in TNF-α and IL-10 mRNA but delayed the rise in p21 mRNA, suggesting attenuated inflammatory signaling and delayed myogenic differentiation. The resolution of infiltrating cells from necrotic regions was moderately delayed by NMN. BFR-exercise increased the mitochondrial content in exercised muscle by 171% after 24 h of recovery. However, this adaptation was abolished with NMN. Immunofluorescence staining with TOM20 and myeloperoxidase (MPO) revealed that infiltrating phagocytes carried substantially more mitochondria than myofiber cytoplasm, forming a diffusion gradient toward damaged regions of myofibers. This concentration difference between phagocytes and myofibers was further confirmed using COX4 immunostaining in biopsied muscle from an additional participant.<h4>Conclusions</h4>NMN supplementation, while inhibiting inflammatory signaling in exercised human skeletal muscle, may also suppress mitochondrial replenishment from phagocytes to repairing myofibers.",
+          "journal": "Journal of the International Society of Sports Nutrition"
+        },
+        {
+          "id": "pmid:38789831",
+          "pmid": "38789831",
+          "title": "Ingestion of β-nicotinamide mononucleotide increased blood NAD levels, maintained walking speed, and improved sleep quality in older adults in a double-blind ra",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": 60,
+          "doi": "10.1007/s11357-024-01204-1",
+          "epmc_id": "MED:38789831",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38789831/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The study evaluated how ingestion of nicotinamide mononucleotide (NMN) for 12 weeks by older adults affected blood nicotinamide adenine dinucleotide (NAD +) levels and physical function, particularly walking function. Information concerning sleep, and stress was also collected as secondary endpoints. In this randomized, placebo-controlled, double-blind, parallel-group comparison study, 60 participants were randomly allocated into a placebo group or NMN group. Members of the NMN group consumed 250 mg/day NMN for 12 weeks. Motor function tests, blood NAD metabolite analysis, and questionnaires were conducted at the start of the study and 4 and 12 weeks after intake. This trial was registered at umin.ac.jp/ctr as UMIN000047871 on June 22nd, 2022.At primary outcome, at both 4 weeks and 12 weeks, the NMN and placebo groups had no significant differences in a stepping test. At secondary outcomes, after 12 weeks of NMN intake, the NMN group had a significantly shorter 4-m walking time than the placebo group as well as significantly higher blood levels of NAD + and its metabolites. A significant negative correlation was observed between the change in the 4-m walking time and the change in blood NAD + , N<sup>1</sup>-methyl-2-pridone-5-carboxamide (2-PY), and N<sup>1</sup>-methyl-4-pridone-3-carboxamide (4-PY) at 12 weeks. The NMN group had improved sleep quality at 12 weeks relative to the placebo group as evidenced by lower scores for \"Daytime dysfunction\" and \"Global PSQI\" on the Pittsburgh Sleep Questionnaire. No adverse effects related to test substance consumption were observed. Together, these results indicate that NMN intake could increase blood NAD + levels, maintain walking speed, and improve sleep quality in older adults. Interventions involving NMN aimed at maintaining walking speed could contribute to extended healthy life expectancy.",
+          "journal": "GeroScience"
+        },
+        {
+          "id": "pmid:36443648",
           "pmid": "36443648",
           "title": "Effects of nicotinamide mononucleotide on older patients with diabetes and impaired physical performance: A prospective, placebo-controlled, double-blind study.",
           "year": "2023",
           "design": "RCT",
           "population": "human",
-          "n": 14
+          "n": 14,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36443648/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Nicotinamide adenine dinucleotide regulates various biological processes. Nicotinamide mononucleotide (NMN) increases its intracellular levels and counteracts age-associated changes in animal models. We investigated the safety and efficacy of oral nicotinamide mononucleotide supplementation in older patients with diabetes and impaired physical performance. We carried out a 24-week placebo-controlled, double-blinded study of male patients with diabetes aged ≥65 years with reduced grip strength (<26 kg) or walking speed (<1.0 m/s). The primary end-points were to determine the safety of NMN oral administration (250 mg/day), and changes in grip strength and walking speed. The secondary end-points were to determine the changes in various exploratory indicators. We studied 14 participants aged 81.1 ± 6.4 years. NMN was tolerable without any severe adverse events. The changes in grip strength and walking speed showed no difference between the two groups: 1.25 kg (95% confidence interval -2.31 to 4.81) and 0.033 m/s (-0.021 to 0.087) in the NMN group, and -0.44 kg (-4.15 to 3.26) and 0.014 m/s (-0.16 to -0.13) in the placebo group, respectively. There were no significant differences in any exploratory indicators between the two groups. However, improved prevalence of frailty in the NMN group (P = 0.066) and different changes in central retinal thickness between the two groups (P = 0.051) was observed. In older male patients with diabetes and impaired physical performance, NMN supplementation for 24 weeks was safe, but did not improve grip strength and walking speed. Geriatr Gerontol Int 2023; 23: 38-43.",
+          "journal": "Geriatrics & gerontology international"
         },
         {
+          "id": "pmid:36482258",
+          "pmid": "36482258",
+          "title": "The efficacy and safety of β-nicotinamide mononucleotide (NMN) supplementation in healthy middle-aged adults: a randomized, multicenter, double-blind, placebo-c",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 80,
+          "doi": "10.1007/s11357-022-00705-1",
+          "epmc_id": "MED:36482258",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36482258/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "In animal studies, β-nicotinamide mononucleotide (NMN) supplementation increases nicotinamide adenine dinucleotide (NAD) concentrations and improves healthspan and lifespan with great safety. However, it is unclear if these effects can be transferred to humans. This randomized, multicenter, double-blind, placebo-controlled, parallel-group, dose-dependent clinical trial included 80 middle-aged healthy adults being randomized for a 60-day clinical trial with once daily oral dosing of placebo, 300 mg, 600 mg, or 900 mg NMN. The primary objective was to evaluate blood NAD concentration with dose-dependent regimens. The secondary objectives were to assess the safety and tolerability of NMN supplementation, next to the evaluation of clinical efficacy by measuring physical performance (six-minute walking test), blood biological age (Aging.Ai 3.0 calculator), Homeostatic Model Assessment for Insulin Resistance (HOMA-IR), and subjective general health assessment [36-Item Short Form Survey Instrument (SF-36)]. Statistical analysis was performed using the Per Protocol analysis with significant level set at p = 0.05. All 80 participants completed the trial without trial protocol violation. Blood NAD concentrations were statistically significantly increased among all NMN-treated groups at day 30 and day 60 when compared to both placebo and baseline (all p ≤ 0.001). Blood NAD concentrations were highest in the groups taking 600 mg and 900 mg NMN. No safety issues, based on monitoring adverse events (AEs), laboratory and clinical measures, were found, and NMN supplementation was well tolerated. Walking distance increase during the six-minute walking test was statistically significantly higher in the 300 mg, 600 mg, and 900 mg groups compared to placebo at both days 30 and 60 (all p < 0.01), with longest walking distances measured in the 600 mg and 900 mg groups. The blood biological age increased significantly in the placebo group and stayed unchanged in all NMN-treated groups at day 60, which resulted in a significant difference between the treated groups and placebo (all p < 0.05). The HOMA-IR showed no statistically significant differences for all NMN-treated groups as compared to placebo at day 60. The change of SF-36 scores at day 30 and day 60 indicated statistically significantly better health of all three treated groups when compared to the placebo group (p < 0.05), except for the SF-36 score change in the 300 mg group at day 30. NMN supplementation increases blood NAD concentrations and is safe and well tolerated with oral dosing up to 900 mg NMN daily. Clinical efficacy expressed by blood NAD concentration and physical performance reaches highest at a dose of 600 mg daily oral intake. This trial was registered with ClinicalTrials.gov, NCT04823260, and Clinical Trial Registry - India, CTRI/2021/03/032421.",
+          "journal": "GeroScience"
+        },
+        {
+          "id": "pmid:35215405",
           "pmid": "35215405",
           "title": "Effect of 12-Week Intake of Nicotinamide Mononucleotide on Sleep Quality, Fatigue, and Physical Performance in Older Japanese Adults: A Randomized, Double-Blind",
           "year": "2022",
           "design": "RCT",
           "population": "human",
-          "n": 108
+          "n": 108,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35215405/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Deteriorating sleep quality and physical or mental fatigue in older adults leads to decreased quality of life and increased mortality rates. This study investigated the effects of the time-dependent intake of nicotinamide mononucleotide (NMN) on sleep quality, fatigue, and physical performance in older adults. This randomized, double-blind placebo-controlled study evaluated 108 participants divided into four groups (NMN_AM; antemeridian, NMN_PM; post meridian, Placebo_AM, Placebo_PM). NMN (250 mg) or placebo was administered once a day for 12 weeks. Sleep quality was evaluated using the Pittsburgh Sleep Quality Index. Fatigue was evaluated using the \"Jikaku-sho shirabe\" questionnaire. Grip strength, 5-times sit-to-stand (5-STS), timed up and go, and 5-m habitual walk were evaluated to assess the physical performance. Significant interactions were observed between 5-STS and drowsiness. 5-STS of all groups on post-intervention and drowsiness of the NMN_PM and Placebo_PM groups on mid- and post-intervention showed significant improvement compared with those in pre-intervention. The NMN_PM group demonstrated the largest effect size for 5-STS (d = 0.72) and drowsiness (d = 0.64). Overall, NMN intake in the afternoon effectively improved lower limb function and reduced drowsiness in older adults. These findings suggest the potential of NMN in preventing loss of physical performance and improving fatigue in older adults.",
+          "journal": "Nutrients"
+        },
+        {
+          "id": "pmid:35927255",
+          "pmid": "35927255",
+          "title": "Chronic nicotinamide mononucleotide supplementation elevates blood nicotinamide adenine dinucleotide levels and alters muscle function in healthy older men.",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.1038/s41514-022-00084-z",
+          "epmc_id": "MED:35927255",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35927255/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Preclinical studies have revealed that the elevation of nicotinamide adenine dinucleotide (NAD + ) upon the administration of nicotinamide mononucleotide (NMN), an NAD + precursor, can mitigate aging-related disorders; however, human data on this are limited. We investigated whether the chronic oral supplementation of NMN can elevate blood NAD + levels and alter physiological dysfunctions in healthy older participants. We administered 250 mg NMN per day to aged men for 6 or 12 weeks in a placebo-controlled, randomized, double-blind, parallel-group trial. Chronic NMN supplementation was well tolerated and caused no significant deleterious effect. Metabolomic analysis of whole blood samples demonstrated that oral NMN supplementation significantly increased the NAD + and NAD + metabolite concentrations. There were nominally significant improvements in gait speed and performance in the left grip test, which should be validated in larger studies; however, NMN exerted no significant effect on body composition. Therefore, chronic oral NMN supplementation can be an efficient NAD + booster for preventing aging-related muscle dysfunctions in humans.",
+          "journal": "npj aging"
+        },
+        {
+          "id": "pmid:41097225",
+          "pmid": "41097225",
+          "title": "Effects of Nicotinamide Mononucleotide Supplementation and Aerobic Exercise on Metabolic Health and Physical Performance in Aged Mice.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3390/nu17193148",
+          "epmc_id": "MED:41097225",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41097225/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "<b>Background/Objectives</b>: Aging is characterized by progressive physiological and metabolic decline. Aerobic exercise mitigates age-related impairments, and nicotinamide mononucleotide (NMN), a precursor in the NAD<sup>+</sup> salvage pathway, has emerged as a nutritional intervention to promote healthy aging. This study investigated whether NMN supplementation combined with aerobic exercise provides synergistic benefits on physical performance and metabolic regulation in aged mice. <b>Methods</b>: Forty male C57BL/6J mice, including eight young (8 weeks) and thirty-two aged (85 weeks) mice, were randomly assigned to five groups: young sedentary (YS), aged sedentary (AS), aged with exercise (AE), aged with NMN (ASNMN; 300 mg/kg/day), and aged with combined NMN and exercise (AENMN). Interventions lasted six weeks. Assessments included grip strength, muscle endurance, aerobic capacity, oral glucose tolerance test (OGTT), and indirect calorimetry, followed by biochemical and molecular analyses of NAMPT and SirT1 expression. <b>Results</b>: The AENMN group demonstrated significant improvements in maximal strength and aerobic endurance compared with the AS group (<i>p</i> < 0.05). Both NMN and exercise interventions increased blood NAMPT concentrations, with the highest levels observed in the AENMN group (<i>p</i> < 0.05). SirT1 expression was elevated in the ASNMN and AENMN groups relative to YS (<i>p</i> < 0.05). Glucose tolerance improved in the ASNMN and AENMN groups (<i>p</i> < 0.05). Enhanced energy metabolism in the AENMN group was indicated by increased oxygen consumption, elevated energy expenditure, and reduced respiratory quotient. <b>Conclusions</b>: NMN supplementation, particularly when combined with aerobic exercise, effectively improved aerobic performance, glucose regulation, and systemic energy metabolism in aged mice. These findings suggest that NMN, in synergy with exercise, may serve as a promising nutritional strategy to counteract age-associated metabolic and functional decline.",
+          "journal": "Nutrients"
+        },
+        {
+          "id": "pmid:31015147",
+          "pmid": "31015147",
+          "title": "Nicotinamide mononucleotide (NMN) supplementation rescues cerebromicrovascular endothelial function and neurovascular coupling responses and improves cognitive ",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.redox.2019.101192",
+          "epmc_id": "MED:31015147",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31015147/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Adjustment of cerebral blood flow (CBF) to neuronal activity via neurovascular coupling (NVC) has an essential role in maintenance of healthy cognitive function. In aging increased oxidative stress and cerebromicrovascular endothelial dysfunction impair NVC, contributing to cognitive decline. There is increasing evidence showing that a decrease in NAD<sup>+</sup> availability with age plays a critical role in a range of age-related cellular impairments but its role in impaired NVC responses remains unexplored. The present study was designed to test the hypothesis that restoring NAD<sup>+</sup> concentration may exert beneficial effects on NVC responses in aging. To test this hypothesis 24-month-old C57BL/6 mice were treated with nicotinamide mononucleotide (NMN), a key NAD<sup>+</sup> intermediate, for 2 weeks. NVC was assessed by measuring CBF responses (laser Doppler flowmetry) evoked by contralateral whisker stimulation. We found that NVC responses were significantly impaired in aged mice. NMN supplementation rescued NVC responses by increasing endothelial NO-mediated vasodilation, which was associated with significantly improved spatial working memory and gait coordination. These findings are paralleled by the sirtuin-dependent protective effects of NMN on mitochondrial production of reactive oxygen species and mitochondrial bioenergetics in cultured cerebromicrovascular endothelial cells derived from aged animals. Thus, a decrease in NAD<sup>+</sup> availability contributes to age-related cerebromicrovascular dysfunction, exacerbating cognitive decline. The cerebromicrovascular protective effects of NMN highlight the preventive and therapeutic potential of NAD<sup>+</sup> intermediates as effective interventions in patients at risk for vascular cognitive impairment (VCI).",
+          "journal": "Redox biology"
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "35215405",
+            "metric": "cohen_d",
+            "value": 0.72,
+            "ci_low": 0.0,
+            "ci_high": 1.44,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline",
+            "direction": "benefit",
+            "quote": "The NMN_PM group demonstrated the largest effect size for 5-STS (d = 0.72)"
+          }
+        ],
+        "n_not_reported": 8,
+        "n_total": 9
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": {
+          "value": 0.72,
+          "ci_low": 0.0,
+          "ci_high": 1.44,
+          "n_studies": 1
+        },
+        "note": null
+      },
+      "headline_effect": null,
+      "summary": "For muscle strength, NMN has moderate human evidence (9 graded studies).",
+      "weighted_score": {
+        "final_score": 74.5,
+        "confidence_interval": {
+          "lower": 43.7,
+          "upper": 100.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 9,
+          "high_tier_points": 163.826,
+          "low_tier_points_pre_cap": 8.207,
+          "low_tier_points_post_cap": 8.207,
+          "low_tier_cap_applied": false,
+          "total_points_R": 172.034,
+          "scaled_base_score": 74.468,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 15.7042,
+          "se_consistency_component": 6.4548,
+          "se_thinness_component": 9.2494,
+          "margin_of_error": 30.78,
+          "human_sample_total": 262,
+          "studies_missing_sample_size": 3,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "3 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 50.704,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.217,
+              "points": 21.907,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.533,
+              "C_k": 1.267,
+              "points": 87.409,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.072,
+              "points": 4.286,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 18.0,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.278,
+              "C_k": 1.215,
+              "points": 27.946,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.403,
+              "C_k": 1.32,
+              "points": 33.326,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.291,
+              "points": 23.237,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.36,
+              "points": 5.442,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la fuerza muscular, NMN tiene evidencia humana moderada (9 estudios clasificados)."
+    },
+    {
+      "outcome": "muscle growth",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 15,
+      "grade_reasons": [
+        "Precision: ~412 participants verified across 1 of 15 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+      ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 3,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 5,
+        "n_animal_studies": 10,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:40275690",
+        "PMID:39185644",
+        "PMID:33675899",
+        "PMID:42508531",
+        "PMID:42143976",
+        "PMID:42225972",
+        "PMID:42188023",
+        "PMID:42304075",
+        "PMID:42634749",
+        "PMID:42232307",
+        "PMID:41705654",
+        "PMID:42180288",
+        "PMID:41716411",
+        "PMID:42105622",
+        "PMID:41160202"
+      ],
+      "studies": [
+        {
+          "id": "pmid:41160202",
+          "pmid": "41160202",
+          "title": "NMN supplementation as a strategy to improve oocyte quality: a systematic review and transcriptomic analysis.",
+          "year": "2026",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null,
+          "doi": "10.1007/s10815-025-03720-1",
+          "epmc_id": "MED:41160202",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41160202/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Purpose</h4>Oocyte quality declines with age and metabolic stress, largely due to mitochondrial dysfunction and NAD⁺ depletion. Nicotinamide mononucleotide (NMN), a precursor of NAD⁺, has emerged as a potential intervention to restore cellular energy metabolism. This study systematically reviews preclinical evidence on NMN supplementation and integrates transcriptomic analysis of human oocytes to assess its relevance in human fertility.<h4>Methods</h4>A systematic review was conducted following PRISMA guidelines across Medline, Embase, and Scopus (January 2015-October 2024). Seven high-quality original studies were included after screening and bias assessment. Data were synthesised through thematic analysis and pathway annotation. Additionally, single-oocyte RNA sequencing was performed on 46 human oocytes at germinal vesicle, metaphase I, and metaphase II stages to profile NAD⁺-related gene expression.<h4>Results</h4>Across animal models, NMN supplementation has been shown to improve mitochondrial regulation, reduce oxidative stress, and modulate apoptotic and inflammatory pathways in response to metabolic, environmental, and ageing stress. Transcriptomic analysis identified 900 differentially expressed genes between germinal vesicle and metaphase II oocytes, with significant changes in mitochondrial and oxidative stress-related genes (i.e. SIRT3, DNM1L, SOD1), aligned with NMN's known mechanisms of action.<h4>Conclusions</h4>NMN supplementation shows improvements for oocyte function across diverse preclinical models. Human transcriptomic data further highlight mitochondrial and oxidative pathways as key regulatory points during oocyte maturation. Standardised protocols and clinical trials are needed to evaluate NMN's translational potential in the context of human reproduction.",
+          "journal": "Journal of assisted reproduction and genetics"
+        },
+        {
+          "id": "pmid:40275690",
+          "pmid": "40275690",
+          "title": "The Effect of Nicotinamide Mononucleotide and Riboside on Skeletal Muscle Mass and Function: A Systematic Review and Meta-Analysis.",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40275690/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Sarcopenia is associated with the loss of skeletal muscle function and mass. Nicotinamide precursors, such as nicotinamide mononucleotide (NMN) and nicotinamide riboside (NR), have received attention for their potential to improve NAD We searched PubMed, Cochrane Library, Web of Science, and Scopus to identify randomized controlled trials (RCTs), comparing NR or NMN vs. placebo. A random-effects meta-analysis was employed to determine their impact on measures of sarcopenia such as skeletal muscle index (SMI), handgrip strength (HGS) and gait speed. A narrative synthesis was used for 5-time chair stand test (5CST), short physical performance battery (SPPB), timed-up-and-go (TUG), 6-min walking distance (6MWD), leg and chest press 80% 1RM (repetition maximum) and thigh muscle mass. Included participants had a mean age range from 60.9 to 83 years. NMN supplementation showed no significant effects on SMI (n = 3; mean difference (MD): -0.42, 95% confidence interval (CI): -0.99 - 0.14, I Current evidence does not support NMN and NR supplementation for preserving muscle mass and function in adults with mean age of over 60 years. Future research should explore supplementation dosage, NAD",
+          "journal": "Journal of cachexia, sarcopenia and muscle"
+        },
+        {
+          "id": "pmid:39185644",
+          "pmid": "39185644",
+          "title": "Effects of Nicotinamide Mononucleotide Supplementation on Muscle and Liver Functions Among the Middle-aged and Elderly: A Systematic Review and Meta-analysis of",
+          "year": "2025",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 412,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39185644/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Nicotinamide Mononucleotide (NMN) has gained attention as a precursor to Nicotinamide Adenine Dinucleotide (NAD+) in recent years, commonly utilized in anti-aging therapies. The anti-aging effects of NMN on muscle and liver functions in middleaged and elderly people are still unclear. Based on available randomized controlled trials, we conducted a meta-analysis to evaluate the impact of NMN on muscle and liver functions in middle-aged and elderly individuals. We conducted searches on three electronic databases (PubMed, Embase, Web of Science) for randomized controlled trials involving NMN interventions in middle-aged and elderly populations. Through the Cochrane Handbook, we assessed the specific methodological quality. All statistical analyses were obtained by Stata15, and statistical significance was set as P<0.05. There were 412 participants from 9 studies in this meta-analysis. Based on changes in gait speed (SMD: 0.34 m/s, 95%CI [0.03, 0.66] p = 0.033), NMN had significant effects on muscle mass. Moreover, NMN had a better effect on ALT (SMD: -0.29 IU/L, 95%CI [-0.55, -0.03] p = 0.028). Subgroup analysis indicated that administering a small dose of NMN exerted the most prominent impact on Homeostasis Model Assessment-Insulin Resistance (HOMA-IR). NMN has positive efficacy in enhancing muscle function, reducing insulin resistance and lowering aminotransferase levels in middle-aged and elderly individuals. NMN is an encouraging and considerable drug for anti-aging treatment.",
+          "journal": "Current pharmaceutical biotechnology"
+        },
+        {
+          "id": "pmid:42304075",
+          "pmid": "42304075",
+          "title": "Sublingual NMN administration increases early circulating terminal catabolites 2PY and 4PY compared with oral administration in healthy adult men.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.1038/s41598-026-57552-9",
+          "epmc_id": "MED:42304075",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42304075/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Sublingual administration of nicotinamide mononucleotide (NMN) is hypothesized to enhance systemic bioavailability by bypassing hepatic first-pass metabolism, a significant limitation of oral intake. However, direct comparative evidence in humans has been lacking. This study aimed to compare the acute pharmacokinetics of NMN following single-dose oral and sublingual administration in a randomized, two-period crossover trial involving 14 healthy adult males. Participants received NMN via both routes, separated by an 8-day washout period. Blood samples were collected for 60 min post-administration to measure NMN and its metabolites, including nicotinamide (NAM), nicotinamide adenine dinucleotide (NAD⁺), and the terminal catabolites N1-methyl-2-pyridone-5-carboxamide (2PY) and N1-methyl-4-pyridone-3-carboxamide (4PY). The incremental area under the curve (iAUC) was significantly higher for the terminal metabolites 2PY and 4PY following sublingual administration compared to the oral route. In contrast, no significant differences were found for the blood concentrations of NMN, NAM, or NAD⁺ between methods. Both administration routes were well-tolerated, with no adverse events reported. These findings provide the first direct evidence in humans that sublingual administration leads to a more rapid increase in the terminal metabolites (2PY and 4PY) over 0-60 min, although the metabolic origin of these increases could not be distinguished in the present study.",
+          "journal": "Scientific reports"
+        },
+        {
+          "id": "pmid:41705654",
+          "pmid": "41705654",
+          "title": "Anti-inflammatory effects of nicotinamide mononucleotide (NMN) in human skeletal muscle after BFR-exercise.",
+          "year": "2026",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": "10.1080/15502783.2026.2632284",
+          "epmc_id": "MED:41705654",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41705654/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>β-Nicotinamide mononucleotide (NMN) inhibits acute inflammation in injured animal tissues.<h4>Aim</h4>We examined whether NMN supplementation attenuates inflammation induced by blood flow restriction-resistance exercise (BFR-exercise) in human skeletal muscle.<h4>Methods</h4>Eleven untrained men (22.8 ± 1.5 y) completed a randomized, placebo-controlled, counterbalanced crossover trial, receiving either Placebo or NMN (1200 mg/d) for 7 d, with a 3-week washout between conditions. Multiple muscle biopsies were obtained before and after BFR-exercise.<h4>Results</h4>BFR-exercise-induced significant muscle necrosis at 0 h, which resolved within 24 h in both conditions. NMN supplementation suppressed exercise-induced increases in TNF-α and IL-10 mRNA but delayed the rise in p21 mRNA, suggesting attenuated inflammatory signaling and delayed myogenic differentiation. The resolution of infiltrating cells from necrotic regions was moderately delayed by NMN. BFR-exercise increased the mitochondrial content in exercised muscle by 171% after 24 h of recovery. However, this adaptation was abolished with NMN. Immunofluorescence staining with TOM20 and myeloperoxidase (MPO) revealed that infiltrating phagocytes carried substantially more mitochondria than myofiber cytoplasm, forming a diffusion gradient toward damaged regions of myofibers. This concentration difference between phagocytes and myofibers was further confirmed using COX4 immunostaining in biopsied muscle from an additional participant.<h4>Conclusions</h4>NMN supplementation, while inhibiting inflammatory signaling in exercised human skeletal muscle, may also suppress mitochondrial replenishment from phagocytes to repairing myofibers.",
+          "journal": "Journal of the International Society of Sports Nutrition"
+        },
+        {
+          "id": "pmid:42508531",
+          "pmid": "42508531",
+          "title": "NMN alleviates oxidative stress damage in alopecia areata by activating SIRT7 and promoting glutamine metabolism.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.bbagrm.2026.195168",
+          "epmc_id": "MED:42508531",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42508531/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Alopecia areata (AA) is an autoimmune disorder characterized by oxidative stress-induced dysfunction of hair follicle stem cells (HFSCs). Nicotinamide mononucleotide (NMN), a precursor of NAD<sup>+</sup>, exhibits antioxidant properties, but its role and mechanism in AA remain unclear. This study aimed to investigate the therapeutic potential of NMN and its underlying mechanism. Scalp tissues from AA patients and healthy controls were collected, and HFSCs were isolated. An in vitro oxidative stress model was established using H<sub>2</sub>O<sub>2</sub>. Cell viability, apoptosis, migration, oxidative stress and glutamine metabolism were assessed. Molecular mechanisms were investigated via gene knockdown (sh-SIRT7, sh-GLS1) and rescue experiments with an acetylation-resistant GLS1 mutant (GLS1-MUT). An in vivo mouse model of H<sub>2</sub>O<sub>2</sub>-induced hair follicle damage was utilized for validation. The results showed that NMN (2 mM) significantly enhanced the viability, migration, and differentiation capacity of both AA-derived and H<sub>2</sub>O<sub>2</sub>-induced HFSCs, while cell apoptosis and oxidative stress were repressed. NMN also promoted glutamine metabolism with increased GSH, glutamate, glutamine and NAD<sup>+</sup> levels, as well as elevated GPx and GLS1 activities. Mechanistically, SIRT7 expression was downregulated in AA. NMN restored SIRT7 expression and activity, leading to the deacetylation and activation of GLS1. Knockdown of SIRT7 or GLS1 abolished NMN's protective effects, which were rescued by GLS1-MUT, establishing a linear pathway. In vivo, NMN treatment alleviated H<sub>2</sub>O<sub>2</sub>-induced hair follicle damage, promoted regeneration, and preserved SIRT7 expression in the stem cell niche. In conclusion, NMN alleviates oxidative stress and improves HFSC function in AA by activating the SIRT7-GLS1 axis and enhancing glutamine metabolism, revealing a novel therapeutic target for AA.",
+          "journal": "Biochimica et biophysica acta. Gene regulatory mechanisms"
+        },
+        {
+          "id": "pmid:42143976",
+          "pmid": "42143976",
+          "title": "NMN mitigates high-altitude hypoxia-induced cognitive impairment by inhibiting microglial ferroptosis.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.bbrc.2026.153967",
+          "epmc_id": "MED:42143976",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42143976/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Ferroptosis is a form of iron-dependent programmed cell death closely associated with hypoxia. Exposure to high-altitude hypoxic environments induces ferroptosis in the brain while simultaneously hyperactivating microglia and enhancing their phagocytic activity, ultimately leading to neurotoxicity and memory loss. NMN is a potent NAD<sup>+</sup> precursor supplement. Supplementing with NMN elevates NAD<sup>+</sup> levels in the body to mitigate damage caused by prolonged exposure to high-altitude hypobaric hypoxia environments. Although NMN shows therapeutic potential in ameliorating microglial ferroptosis induced by high-altitude hypoxia, its specific regulatory mechanisms remain unclear. We investigated the biological mechanisms by which NMN regulates hypoxia-induced microglial ferroptosis through in vivo and in vitro model experiments. Our findings reveal that high-altitude hypoxia exacerbates ferroptosis in microglia, while exogenous addition of NMN ameliorates ferroptosis. Furthermore, gene regulation technique confirmed that silencing Sirt1 weakened NMN's neuroprotective effects while exacerbating hypoxia-induced oxidative damage. Mechanistically, NMN administration enhances the NAD<sup>+</sup>/NADH cycle, activates the Sirt1/Nrf2/HO-1 pathway and attenuates HIF-1α accumulation to enhance antioxidant function of GSH/GPX4 axis, thereby minimizing microglial ferroptosis induced by high-altitude hypoxia, ultimately benefiting cognitive function. The use of NMN enhances the clinical application potential of NAD<sup>+</sup> precursors and offers a promising strategy for developing therapeutic approaches that effectively target ferroptosis in neurological diseases.",
+          "journal": "Biochemical and biophysical research communications"
+        },
+        {
+          "id": "pmid:42225972",
+          "pmid": "42225972",
+          "title": "Hepatic Hamp restoration contributes to nicotinamide mononucleotide (NMN)-alleviated hepatic steatosis in chronic alcohol-fed mice.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1038/s42003-026-10398-3",
+          "epmc_id": "MED:42225972",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42225972/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Hepatic nicotinamide adenine dinucleotide (NAD<sup>+</sup>) reduction is a pathological hallmark and pathogenic basis for alcohol-associated liver disease (ALD). This study investigated the therapeutic role of nicotinamide mononucleotide (NMN), a NAD<sup>+</sup> precursor naturally presenting in various dietary sources, against ALD. Here, we show that NMN supplementation attenuates NAD<sup>+</sup> decline, which in turn attenuates hepatic lipid deposition, dysregulated lipid metabolism genes, oxidative stress, and inflammation in ALD mice, and ultimately ameliorated liver injury. Transcriptomics-based mechanistic analysis demonstrates that alcohol-reduced hepcidin antimicrobial peptide (Hamp) is rescued by NMN, alongside the recovery of circulatory and hepatic iron levels. The hepatic Hamp expression is positively associated with NAD<sup>+</sup> content in the liver. Hamp knockdown significantly abolishes NMN-improved lipid accumulation and the dysregulation of lipid metabolism-related genes in ethanol-treated hepatocytes. Further analysis identifies a C/EBPα-involved transcriptional regulation mechanism in NMN-protected Hamp in ALD. These findings identify NMN as a promising dietary therapeutic for ALD, acting via the C/EBPα/Hamp signaling axis.",
+          "journal": "Communications biology"
+        },
+        {
+          "id": "pmid:42188023",
+          "pmid": "42188023",
+          "title": "Targeting the Gut-Brain Axis: Protective Effects of NMN in Alleviating D-Galactose-Induced Cognitive Deficits.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3390/metabo16050314",
+          "epmc_id": "MED:42188023",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42188023/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<b>Background</b>: To evaluate the neuroprotective effect of nicotinamide mononucleotide (NMN), an NAD<sup>+</sup> precursor, in a D-galactose-induced aging mouse model. Chronic D-galactose administration is widely used to establish age-related cognitive impairment driven by oxidative stress. <b>Methods</b>: Mice received subcutaneous D-galactose for six weeks, concomitantly with oral NMN (300 or 500 mg/kg). Cognitive function was assessed using the Y-maze test and the Elevated Plus Maze test. Oxidative stress indicators, inflammatory cytokines, and Nrf2/HO-1 pathway components were measured by ELISA, Western blotting, and Immunohistochemistry. Gut microbiota composition was analyzed via 16S rRNA sequencing. <b>Results</b>: NMN supplementation improved spatial memory without affecting anxiety-related behavior. NMN enhanced the activities of antioxidant enzymes (SOD, GSH, CAT), reduced malondialdehyde and pro-inflammatory cytokine levels and decreased microglial activation in the hippocampus. Furthermore, NMN remodeled the gut microbiota by increasing butyrate-producing taxa (such as <i>Butyrivibrio_A</i> and <i>Clostridium_T</i>) and activated the Nrf2/HO-1 signaling pathway. <b>Conclusions</b>: NMN alleviates age-related cognitive decline in mice by reducing oxidative stress, suppressing neuroinflammation, and modulating the gut microbiota. Targeting the gut-brain axis and the Nrf2/HO-1 pathway may therefore represent a promising therapeutic strategy for age-related neurodegeneration.",
+          "journal": "Metabolites"
+        },
+        {
+          "id": "pmid:42634749",
+          "pmid": "42634749",
+          "title": "Nicotinamide Mononucleotide (NMN) Prevents Age-Associated Transcriptional Drift in a Tissue-Dependent Manner: Mechanistic Leads From Ras-Related Protein Rab-11A",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.7759/cureus.114956",
+          "epmc_id": "MED:42634749",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42634749/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "This study is a secondary computational reanalysis of the publicly available GSE85718 microarray dataset generated during the long-term nicotinamide mononucleotide (NMN) study. NMN has been reported to improve several age-sensitive physiological traits in mice, including energy metabolism, insulin sensitivity, plasma lipid profiles, and skeletal-muscle mitochondrial function. However, the transcriptional mechanisms behind these effects remain less clear than the broader nicotinamide adenine dinucleotide (NAD+) and sirtuin-centered model often used to explain NMN biology. The present analysis used a per-tissue age-by-treatment interaction model to test whether NMN modifies the rate of age-associated transcriptional change rather than simply shifting expression at one age. The model was expression ~ age × treatment, with the age-by-treatment term used as the central test. A gene was considered an NMN-rescue candidate only when it changed with age in control mice and showed an opposite-signed interaction term, consistent with NMN shifting old-age expression toward the young-control state. No individual gene reached genome-wide false discovery rate (FDR) <0.05 for age, NMN at six months, or the interaction term in skeletal muscle, liver, or white adipose tissue (WAT). Therefore, all gene-level results should be treated as hypothesis-generating. Using relaxed nominal criteria, 421 rescue candidates were identified in skeletal muscle, 355 in liver, and 397 in WAT. Only 35 genes were rescued in at least two tissues, 26 of which were direction-consistent, and none were rescued in all three tissues. Ras-related protein Rab-11A (RAB11A) emerged as the strongest cross-tissue candidate, with rescue in skeletal muscle and WAT, high confidence in at least one tissue, consistent directionality, and involvement in 39 gene set enrichment analysis (GSEA) leading-edge terms, largely related to trafficking and cellular transport. Carnitine palmitoyltransferase 2 (CPT2) was the only mitochondrial gene among the robust cross-tissue candidates and was consistently rescued in skeletal muscle and WAT, supporting a focused fatty-acid oxidation and substrate-handling hypothesis rather than broad mitochondrial activation. At the pathway level, liver showed the clearest signal: NMN was associated with suppression of fatty-acyl-coenzyme A (CoA) and long-chain fatty-acyl-CoA metabolic programs. These findings do not establish that NMN prevents transcriptional aging or that RAB11A or CPT2 mediates the physiological effects of NMN. Instead, they identify tissue-specific, testable candidates from a secondary reanalysis of an existing animal dataset. In particular, they support moving beyond a generic \"NAD+ improves mitochondria\" model toward testable mechanisms involving cellular logistics, membrane recycling, and substrate utilization.",
+          "journal": "Cureus"
+        },
+        {
+          "id": "pmid:42232307",
+          "pmid": "42232307",
+          "title": "NMN protects vascular endothelial cells from M1 macrophage-derived IL-1β-induced hyperpermeability by inhibiting VE-cadherin degradation.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fcvm.2026.1748872",
+          "epmc_id": "MED:42232307",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42232307/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background and aims</h4>Vascular endothelial (VE) dysfunction, particularly endothelial hyperpermeability, is a critical pathological process in various inflammatory vascular diseases, including atherosclerosis, vasculitis, and sepsis. Nicotinamide mononucleotide (NMN), an NAD<sup>+</sup> precursor, has shown anti-inflammatory and vascular protective effects in preclinical models. However, the mechanisms by which NMN preserves endothelial barrier integrity against macrophage-derived inflammatory stimuli remain unclear. This study examined the potential protective role of NMN in endothelial hyperpermeability induced by pro-inflammatory macrophages.<h4>Methods</h4>A three-dimensional co-culture model of human umbilical vein endothelial cells (HUVECs) and M1 macrophages was constructed to reproduce inflammatory vascular microenvironments. Endothelial permeability was evaluated by measuring fluorescently labelled dextran and LDL passages from the luminal (top) to the abluminal side (bottom) of the insert.<h4>Results</h4>M1 macrophage co-culture increased HUVEC permeability, and NMN pretreatment attenuated this hyperpermeability. Mechanistic analysis revealed that interleukin-1β (IL-1β) released by M1 macrophages was the primary contributor to endothelial hyperpermeability. NMN suppressed IL-1β-induced cell-cell gap formation and VE-cadherin degradation in HUVECs by inhibiting nuclear factor kappa B (NF-<i>κ</i>B) pathway activation. These findings indicate that NMN prevents IL-1β-induced NF-<i>κ</i>B activation and subsequent VE-cadherin degradation, thereby protecting against endothelial hyperpermeability caused by intercellular gap formation. Other NAD<sup>+</sup> precursors, including nicotinamide riboside, similarly protected against IL-1β-induced hyperpermeability and VE-cadherin degradation. Alternatively, the NAD<sup>+</sup>-dependent deacetylase sirtuin 1 (SIRT1) inhibitor EX527 or SIRT1 siRNA knockdown abrogated NMN-mediated suppression of hyperpermeability and VE-cadherin degradation. Therefore, the protective effect of NMN against IL-1β-mediated endothelial dysfunction is dependent on the NAD<sup>+</sup> <b>-</b>SIRT1 axis.<h4>Conclusions</h4>This <i>in vitro</i> mechanistic study suggests that the NAD⁺<b>-</b>SIRT1 axis contributes to IL-1β-induced endothelial barrier disruption, supporting further investigation of NMN in inflammatory vascular diseases.",
+          "journal": "Frontiers in cardiovascular medicine"
+        },
+        {
+          "id": "pmid:42180288",
+          "pmid": "42180288",
+          "title": "Exploring the therapeutic potential of β-nicotinamide mononucleotide (NMN) in regulating canine NT-proBNP levels.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.5455/javar.2026.m1005",
+          "epmc_id": "MED:42180288",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42180288/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<b>Objectives:</b> N-terminal pro-B-type natriuretic peptide (NT-proBNP) is a key biomarker for assessing cardiac function in companion animals and plays a critical role in the diagnosis and management of heart disease. β-Nicotinamide Mononucleotide (NMN), a precursor of NAD<sup>+</sup>, has attracted attention for its potential to enhance mitochondrial function and energy metabolism. This study aimed to evaluate the efficacy of oral NMN supplementation in reducing elevated NT-proBNP levels in dogs and to assess its potential clinical applicability in veterinary practice. <b>Materials and Methods:</b> Dogs with elevated NT-proBNP levels were administered oral NMN at weight-adjusted doses (10-30 mg per dose) twice daily. Treatment continued until NT-proBNP levels returned to the normal reference range. Serum NT-proBNP and symmetric dimethylarginine (SDMA) concentrations were measured, and clinical data were systematically analyzed to evaluate treatment response. <b>Results:</b> NMN supplementation significantly reduced NT-proBNP levels in dogs without evident cardiac structural abnormalities or with mild-to-moderate NT-proBNP elevation. Improvements were particularly notable in cases with preserved cardiac structure and function. However, in dogs with severe heart disease or complex comorbidities, NMN alone demonstrated limited efficacy and required combination with conventional therapeutic interventions to achieve optimal outcomes. <b>Conclusions:</b> Oral NMN administration may serve as a beneficial adjunctive strategy for reducing NT-proBNP levels in dogs without significant structural cardiac defects or advanced functional impairment. Its cardioprotective effects are likely associated with improved myocardial energy metabolism and mitochondrial function. Further controlled clinical studies are warranted to validate its therapeutic role in veterinary cardiology.",
+          "journal": "Journal of advanced veterinary and animal research"
+        },
+        {
+          "id": "pmid:41716411",
+          "pmid": "41716411",
+          "title": "NMN protects cisplatin-associated AKI via NAD&lt;sup&gt;+&lt;/sup&gt;/SIRT1 pathway.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3389/fimmu.2026.1721884",
+          "epmc_id": "MED:41716411",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41716411/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Acute kidney injury (AKI) is a critical public health concern with high morbidity and mortality. The chemotherapy agent cisplatin is widely used for various solid tumors; however, cisplatin-associated AKI (CIS-AKI) is a frequent complication in the clinic. Nicotinamide adenine dinucleotide (NAD<sup>+</sup>) is a coenzyme central to metabolism and redox reactions. β-Nicotinamide mononucleotide (NMN), a key precursor of NAD<sup>+</sup>, has shown protective effects in various disease models, but its role in CIS-AKI remains unclear. In this study, male mice subjected to CIS-AKI and cisplatin-treated HK-2 cells were employed as <i>in vivo</i> and <i>in vitro</i> models, respectively, to evaluate the renoprotective effects of NMN. Bulk RNA sequencing revealed marked inflammatory activation and disruption of NAD<sup>+</sup> metabolism in cisplatin-treated mouse kidneys. NMN administration significantly ameliorated kidney dysfunction, as indicated by reduced plasma creatinine and blood urea nitrogen (BUN) levels, attenuated tubular injury, and decreased expression of kidney injury markers NGAL and KIM-1. It also markedly suppressed kidney inflammation, characterized by reduced IL-6 and IL-18 levels, diminished neutrophil infiltration and macrophage accumulation. Consistently, <i>in vitro</i>, NMN attenuated cisplatin-induced reactive oxygen species (ROS) generation and lactate dehydrogenase (LDH) release in HK-2 cells. Mechanistically, NMN elevated kidney NAD<sup>+</sup> levels and enhanced SIRT1 expression. These findings demonstrate that NMN protects against CIS-AKI by activating the NAD<sup>+</sup>-SIRT1 pathway, thereby reducing oxidative stress and inflammation, and suggest its potential as a therapeutic strategy for CIS-AKI.",
+          "journal": "Frontiers in immunology"
+        },
+        {
+          "id": "pmid:42105622",
+          "pmid": "42105622",
+          "title": "Nicotinamide mononucleotide (NMN) improves the ovarian microenvironment associated with oocyte quality by increasing estrogen signaling, reprogramming ovarian m",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.theriogenology.2026.117980",
+          "epmc_id": "MED:42105622",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42105622/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Nicotinamide mononucleotide (NMN), a precursor of nicotinamide adenine dinucleotide (NAD<sup>+</sup>), has been shown to improve oocyte quality in mammals. A healthy ovarian microenvironment is essential for oocyte quality and reproductive success in teleost fish. To investigate the effects of NMN on ovarian microenvironment parameters associated with oocyte quality in the spotted scat (Scatophagus argus), the levels of serum glucose, insulin, total cholesterol, triglycerides, 17β-estradiol (E<sub>2</sub>), and ovarian NAD<sup>+</sup> were analyzed following an intraperitoneal (IP) injection of NMN. Ovarian transcriptomic profiling was also conducted using RNA sequencing. The expression of genes related to steroidogenesis, apoptosis, and oxidative stress after NMN supplementation was analyzed by qRT-PCR. In vitro, ATP content, glutathione (GSH) levels, reactive oxygen species (ROS) accumulation, and mitochondrial membrane potential (ΔΨm) were quantified in follicles after NMN incubation. The results showed that NMN injection significantly increased ovarian NAD <sup>+</sup> levels and serum E<sub>2</sub> concentrations. NMN improved glucose and lipid metabolism, as evidenced by elevated insulin levels and reduced serum glucose, total cholesterol, and triglycerides. KEGG enrichment analysis revealed significant enrichment of pathways related to metabolism, the stress response, and apoptosis. qRT-PCR demonstrated the upregulation of steroidogenesis-related genes (cyp17a1, hsd3b1, 20β-hsd, cyp19a1a, mmp2, and foxl2), antioxidant genes (gpx1a, gpx1b, and slc7a11), and the anti-apoptotic gene bcl2, along with downregulation of pro-apoptotic genes (bax and caspase3). NMN incubation reduced ROS accumulation and increased GSH levels, accompanied by enhanced mitochondrial function, as reflected by increased ΔΨm and ATP production. Collectively, these results suggest that NMN improves the ovarian microenvironment associated with oocyte quality in spotted scat by enhancing NAD<sup>+</sup> availability, which subsequently promotes estrogen signaling, reprogrammed ovarian metabolism, mitigates oxidative stress, and inhibits apoptosis.",
+          "journal": "Theriogenology"
+        },
+        {
+          "id": "pmid:33675899",
+          "pmid": "33675899",
+          "title": "Nicotinamide mononucleotide attenuates isoproterenol-induced cardiac fibrosis by regulating oxidative stress and Smad3 acetylation.",
+          "year": "2021",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33675899/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Cardiac fibrosis is a pathological hallmark of progressive heart diseases currently lacking effective treatment. Nicotinamide mononucleotide (NMN), a member of the vitamin B Cardiac fibrosis was induced by isoproterenol (ISO) in mice. NMN was administered by intraperitoneal injection. In vitro, cardiac fibroblasts (CFs) were stimulated by transforming growth factor-beta (TGF-β) with or without NMN and sirtinol, a SIRT1 inhibitor. Levels of cardiac fibrosis, NAD ISO treatment induced cardiac dysfunction, fibrosis, and hypertrophy in vivo, whereas NMN alleviated these changes. Additionally, NMN suppressed CFs activation stimulated by TGF-β in vitro. Mechanistically, NMN restored the NAD NMN could attenuate cardiac fibrosis in vivo and fibroblast activation in vitro by suppressing oxidative stress and Smad3 acetylation in a NAD",
+          "journal": "Life sciences"
+        }
+      ],
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "39185644",
+            "metric": "smd",
+            "value": 0.34,
+            "ci_low": 0.03,
+            "ci_high": 0.66,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control",
+            "direction": "benefit",
+            "quote": "Based on changes in gait speed (SMD: 0.34 m/s, 95%CI [0.03, 0.66] p = 0.033), NMN had significant effects on muscle mass."
+          }
+        ],
+        "n_not_reported": 14,
+        "n_total": 15
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
+      },
+      "headline_effect": {
+        "metric": "smd",
+        "value": 0.34,
+        "ci_low": 0.03,
+        "ci_high": 0.66,
+        "ci_estimated": false,
+        "n_studies_pooled": 9,
+        "comparator": "control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "39185644",
+        "quote": "Based on changes in gait speed (SMD: 0.34 m/s, 95%CI [0.03, 0.66] p = 0.033), NMN had significant effects on muscle mass."
+      },
+      "summary": "For muscle growth, NMN has moderate human evidence (15 graded studies).",
+      "weighted_score": {
+        "final_score": 74.8,
+        "confidence_interval": {
+          "lower": 52.0,
+          "upper": 97.7
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 15,
+          "high_tier_points": 157.526,
+          "low_tier_points_pre_cap": 16.61,
+          "low_tier_points_post_cap": 16.61,
+          "low_tier_cap_applied": false,
+          "total_points_R": 174.136,
+          "scaled_base_score": 74.831,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 11.6514,
+          "se_consistency_component": 4.2704,
+          "se_thinness_component": 7.381,
+          "margin_of_error": 22.837,
+          "human_sample_total": 412,
+          "studies_missing_sample_size": 4,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "4 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.127,
+              "points": 50.704,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.0,
+              "points": 90.0,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.254,
+              "points": 5.014,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 18.0,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 18.0,
+              "supportive": true
+            },
+            {
+              "idx": 11,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 12,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            },
+            {
+              "idx": 13,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 14,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 47.032,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para el crecimiento muscular, NMN tiene evidencia humana moderada (15 estudios clasificados)."
+    },
+    {
+      "outcome": "sleep quality",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 8,
+      "grade_reasons": [
+        "Inconsistency: several studies exist but no pooled analysis confirms they agree; held at moderate pending review."
+      ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 3,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 45,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 6,
+        "n_animal_studies": 2,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:38789831",
+        "PMID:35215405",
+        "PMID:37202819",
+        "PMID:42188023",
+        "PMID:36482258",
+        "PMID:38398550",
+        "PMID:36797393",
+        "PMID:37641521"
+      ],
+      "studies": [
+        {
+          "id": "pmid:38789831",
+          "pmid": "38789831",
+          "title": "Ingestion of β-nicotinamide mononucleotide increased blood NAD levels, maintained walking speed, and improved sleep quality in older adults in a double-blind ra",
+          "year": "2024",
+          "design": "RCT",
+          "population": "human",
+          "n": 60,
+          "doi": "10.1007/s11357-024-01204-1",
+          "epmc_id": "MED:38789831",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38789831/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The study evaluated how ingestion of nicotinamide mononucleotide (NMN) for 12 weeks by older adults affected blood nicotinamide adenine dinucleotide (NAD +) levels and physical function, particularly walking function. Information concerning sleep, and stress was also collected as secondary endpoints. In this randomized, placebo-controlled, double-blind, parallel-group comparison study, 60 participants were randomly allocated into a placebo group or NMN group. Members of the NMN group consumed 250 mg/day NMN for 12 weeks. Motor function tests, blood NAD metabolite analysis, and questionnaires were conducted at the start of the study and 4 and 12 weeks after intake. This trial was registered at umin.ac.jp/ctr as UMIN000047871 on June 22nd, 2022.At primary outcome, at both 4 weeks and 12 weeks, the NMN and placebo groups had no significant differences in a stepping test. At secondary outcomes, after 12 weeks of NMN intake, the NMN group had a significantly shorter 4-m walking time than the placebo group as well as significantly higher blood levels of NAD + and its metabolites. A significant negative correlation was observed between the change in the 4-m walking time and the change in blood NAD + , N",
+          "journal": "GeroScience"
+        },
+        {
+          "id": "pmid:36482258",
+          "pmid": "36482258",
+          "title": "The efficacy and safety of β-nicotinamide mononucleotide (NMN) supplementation in healthy middle-aged adults: a randomized, multicenter, double-blind, placebo-c",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 80,
+          "doi": "10.1007/s11357-022-00705-1",
+          "epmc_id": "MED:36482258",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36482258/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "In animal studies, β-nicotinamide mononucleotide (NMN) supplementation increases nicotinamide adenine dinucleotide (NAD) concentrations and improves healthspan and lifespan with great safety. However, it is unclear if these effects can be transferred to humans. This randomized, multicenter, double-blind, placebo-controlled, parallel-group, dose-dependent clinical trial included 80 middle-aged healthy adults being randomized for a 60-day clinical trial with once daily oral dosing of placebo, 300 mg, 600 mg, or 900 mg NMN. The primary objective was to evaluate blood NAD concentration with dose-dependent regimens. The secondary objectives were to assess the safety and tolerability of NMN supplementation, next to the evaluation of clinical efficacy by measuring physical performance (six-minute walking test), blood biological age (Aging.Ai 3.0 calculator), Homeostatic Model Assessment for Insulin Resistance (HOMA-IR), and subjective general health assessment [36-Item Short Form Survey Instrument (SF-36)]. Statistical analysis was performed using the Per Protocol analysis with significant level set at p = 0.05. All 80 participants completed the trial without trial protocol violation. Blood NAD concentrations were statistically significantly increased among all NMN-treated groups at day 30 and day 60 when compared to both placebo and baseline (all p ≤ 0.001). Blood NAD concentrations were highest in the groups taking 600 mg and 900 mg NMN. No safety issues, based on monitoring adverse events (AEs), laboratory and clinical measures, were found, and NMN supplementation was well tolerated. Walking distance increase during the six-minute walking test was statistically significantly higher in the 300 mg, 600 mg, and 900 mg groups compared to placebo at both days 30 and 60 (all p < 0.01), with longest walking distances measured in the 600 mg and 900 mg groups. The blood biological age increased significantly in the placebo group and stayed unchanged in all NMN-treated groups at day 60, which resulted in a significant difference between the treated groups and placebo (all p < 0.05). The HOMA-IR showed no statistically significant differences for all NMN-treated groups as compared to placebo at day 60. The change of SF-36 scores at day 30 and day 60 indicated statistically significantly better health of all three treated groups when compared to the placebo group (p < 0.05), except for the SF-36 score change in the 300 mg group at day 30. NMN supplementation increases blood NAD concentrations and is safe and well tolerated with oral dosing up to 900 mg NMN daily. Clinical efficacy expressed by blood NAD concentration and physical performance reaches highest at a dose of 600 mg daily oral intake. This trial was registered with ClinicalTrials.gov, NCT04823260, and Clinical Trial Registry - India, CTRI/2021/03/032421.",
+          "journal": "GeroScience"
+        },
+        {
+          "id": "pmid:36797393",
+          "pmid": "36797393",
+          "title": "Nicotinamide adenine dinucleotide metabolism and arterial stiffness after long-term nicotinamide mononucleotide supplementation: a randomized, double-blind, pla",
+          "year": "2023",
+          "design": "RCT",
+          "population": "human",
+          "n": 36,
+          "doi": "10.1038/s41598-023-29787-3",
+          "epmc_id": "MED:36797393",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36797393/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Many animal studies have shown that oral administration of the nicotinamide adenine dinucleotide (NAD<sup>+</sup>) precursor nicotinamide mononucleotide (NMN) prevents the reduction of NAD<sup>+</sup> levels in organs and tissues, helping alleviate aging-related diseases. However, there are very few clinical reports of NMN supplementation in humans. Thus, this study aimed to investigate the influence of a 12-week NMN oral supplementation on biochemical and metabolic health parameters. A 12-week randomized, double-blind, placebo-controlled, parallel-group clinical trial was conducted. A total of 36 healthy middle-aged participants received one capsule of either 125 mg NMN or placebo twice a day. Among the NAD<sup>+</sup> metabolites, the levels of nicotinamide in the serum were significantly higher in the NMN intake group than in the placebo group. Pulse wave velocity values indicating arterial stiffness tended to decrease in the NMN intake group. However, no significant difference was found between the two groups. Long-term NMN supplementation at 250 mg/day was well tolerated and did not cause adverse events. NMN safely and effectively elevated NAD<sup>+</sup> metabolism in healthy middle-aged adults. Additionally, NMN supplementation showed potential in alleviating arterial stiffness.",
+          "journal": "Scientific reports"
+        },
+        {
+          "id": "pmid:35215405",
+          "pmid": "35215405",
+          "title": "Effect of 12-Week Intake of Nicotinamide Mononucleotide on Sleep Quality, Fatigue, and Physical Performance in Older Japanese Adults: A Randomized, Double-Blind",
+          "year": "2022",
+          "design": "RCT",
+          "population": "human",
+          "n": 108,
+          "doi": "10.3390/nu14040755",
+          "epmc_id": "MED:35215405",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35215405/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Deteriorating sleep quality and physical or mental fatigue in older adults leads to decreased quality of life and increased mortality rates. This study investigated the effects of the time-dependent intake of nicotinamide mononucleotide (NMN) on sleep quality, fatigue, and physical performance in older adults. This randomized, double-blind placebo-controlled study evaluated 108 participants divided into four groups (NMN_AM; antemeridian, NMN_PM; post meridian, Placebo_AM, Placebo_PM). NMN (250 mg) or placebo was administered once a day for 12 weeks. Sleep quality was evaluated using the Pittsburgh Sleep Quality Index. Fatigue was evaluated using the \"Jikaku-sho shirabe\" questionnaire. Grip strength, 5-times sit-to-stand (5-STS), timed up and go, and 5-m habitual walk were evaluated to assess the physical performance. Significant interactions were observed between 5-STS and drowsiness. 5-STS of all groups on post-intervention and drowsiness of the NMN_PM and Placebo_PM groups on mid- and post-intervention showed significant improvement compared with those in pre-intervention. The NMN_PM group demonstrated the largest effect size for 5-STS (d = 0.72) and drowsiness (d = 0.64). Overall, NMN intake in the afternoon effectively improved lower limb function and reduced drowsiness in older adults. These findings suggest the potential of NMN in preventing loss of physical performance and improving fatigue in older adults.",
+          "journal": "Nutrients"
+        },
+        {
+          "id": "pmid:37202819",
+          "pmid": "37202819",
+          "title": "Oral nicotinamide mononucleotide (NMN) to treat chronic insomnia: protocol for the multicenter, randomized, double-blinded, placebo-controlled trial.",
+          "year": "2023",
+          "design": "Clinical trial",
+          "population": "human",
+          "n": 400,
+          "doi": "10.1186/s13063-023-07351-8",
+          "epmc_id": "MED:37202819",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37202819/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The treatment of insomnia, which is the most common sleep disorder, includes drug and behavioral treatment, but each treatment measure has its limitations. So new treatment method needs to be taken to improve the treatment effect. MN supplementation is a potential promising new method for the treatment of insomnia, resulting in a rising need for methodological research towards verifying its efficacy. We describe a proposal for a multicenter, patient-assessor-blinded, randomized controlled trial with two parallel arms. A total of 400 chronic insomnia patients will be allocated 1:1 to the intervention group (treatment with oral NMN 320 mg/day) or control group (treatment with oral placebo). All subjects are clinical chronic insomnia patients who meet all inclusion criteria. All subjects are treated by taking NMN or placebo. The primary outcome is the score on the Pittsburgh Sleep Quality Index (PSQI). Secondary outcomes are the score on the Insomnia Severity Index (ISI) and Epworth Sleeping Scale (ESS), the total sleep time (TST), sleep efficiency (SE), sleep latency, and REM sleep latency to assess sleep quality changes. Subjects are assessed at two time points: baseline and follow-up. The duration of the clinical trial is 60 days. This study will provide more evidence on the effects of NMN on improving sleep quality among patients with chronic insomnia. If proven effective, NMN supplement can be used as a new treatment for chronic insomnia in the future. Chinese Clinical Trial Registry (chictr.org.cn) ChiCTR2200058001. Registered on 26 March 2022.",
+          "journal": "Trials"
+        },
+        {
+          "id": "pmid:37641521",
+          "pmid": "37641521",
+          "title": "Fingerstick blood assay maps real-world NAD<sup>+</sup> disparity across gender and age.",
+          "year": "2023",
+          "design": "Unclassified",
+          "population": "human",
+          "n": null,
+          "doi": "10.1111/acel.13965",
+          "epmc_id": "MED:37641521",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37641521/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Nicotinamide adenine dinucleotide (NAD<sup>+</sup> ) level has been associated with various age-related diseases and its pharmacological modulation emerges as a potential approach for aging intervention. But human NAD<sup>+</sup> landscape exhibits large heterogeneity. The lack of rapid, low-cost assays limits the establishment of whole-blood NAD<sup>+</sup> baseline and the development of personalized therapies, especially for those with poor responses towards conventional NAD<sup>+</sup> supplementations. Here, we developed an automated NAD<sup>+</sup> analyzer for the rapid measurement of NAD<sup>+</sup> with 5 μL of capillary blood using recombinant bioluminescent sensor protein and automated optical reader. The minimal invasiveness of the assay allowed a frequent and decentralized mapping of real-world NAD<sup>+</sup> dynamics. We showed that aerobic sport and NMN supplementation increased whole-blood NAD<sup>+</sup> and that male on average has higher NAD<sup>+</sup> than female before the age of 50. We further revealed the long-term stability of human NAD<sup>+</sup> baseline over 100 days and identified major real-world NAD<sup>+</sup> -modulating behaviors.",
+          "journal": "Aging cell"
+        },
+        {
+          "id": "pmid:42188023",
+          "pmid": "42188023",
+          "title": "Targeting the Gut-Brain Axis: Protective Effects of NMN in Alleviating D-Galactose-Induced Cognitive Deficits.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3390/metabo16050314",
+          "epmc_id": "MED:42188023",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42188023/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<b>Background</b>: To evaluate the neuroprotective effect of nicotinamide mononucleotide (NMN), an NAD<sup>+</sup> precursor, in a D-galactose-induced aging mouse model. Chronic D-galactose administration is widely used to establish age-related cognitive impairment driven by oxidative stress. <b>Methods</b>: Mice received subcutaneous D-galactose for six weeks, concomitantly with oral NMN (300 or 500 mg/kg). Cognitive function was assessed using the Y-maze test and the Elevated Plus Maze test. Oxidative stress indicators, inflammatory cytokines, and Nrf2/HO-1 pathway components were measured by ELISA, Western blotting, and Immunohistochemistry. Gut microbiota composition was analyzed via 16S rRNA sequencing. <b>Results</b>: NMN supplementation improved spatial memory without affecting anxiety-related behavior. NMN enhanced the activities of antioxidant enzymes (SOD, GSH, CAT), reduced malondialdehyde and pro-inflammatory cytokine levels and decreased microglial activation in the hippocampus. Furthermore, NMN remodeled the gut microbiota by increasing butyrate-producing taxa (such as <i>Butyrivibrio_A</i> and <i>Clostridium_T</i>) and activated the Nrf2/HO-1 signaling pathway. <b>Conclusions</b>: NMN alleviates age-related cognitive decline in mice by reducing oxidative stress, suppressing neuroinflammation, and modulating the gut microbiota. Targeting the gut-brain axis and the Nrf2/HO-1 pathway may therefore represent a promising therapeutic strategy for age-related neurodegeneration.",
+          "journal": "Metabolites"
+        },
+        {
+          "id": "pmid:38398550",
+          "pmid": "38398550",
+          "title": "<i>β</i>-Nicotinamide Mononucleotide Promotes Cell Proliferation and Hair Growth by Reducing Oxidative Stress.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.3390/molecules29040798",
+          "epmc_id": "MED:38398550",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38398550/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "β-Nicotinamide mononucleotide (NMN) has shown promising effects on intestinal health, and it is extensively applied as an anti-aging and Alzheimer's disease therapeutic, due to its medicinal properties. The effects of NMN on the growth of mouse hair were observed after hair removal. The results indicated that NMN can reverse the state of hair follicle atrophy, hair thinning, and hair sparsity induced by dihydrotestosterone (DHT), compared to that of minoxidil. In addition, the action mechanisms of NMN promoting hair growth in cultured human dermal papilla cells (HDPCs) treated with DHT were investigated in detail. The incubation of HDPCs with DHT led to a decrease in cell viability and the release of inflammatory mediators, including interleukin-6 (IL-6), interleukin-1Beta (IL-1β) and tumor necrosis factor Alpha (TNF-α). It was found that NMN can significantly lower the release of inflammatory factors induced by DHT in HDPCs. HDPCs cells are protected from oxidative stress damage by NMN, which inhibits the NF-κB p65 inflammatory signaling pathway. Moreover, the levels of androgen receptor (AR), dickkopf-1 (DKK-1), and β-catenin in the HDPCs were assessed using PCR, indicating that NMN can significantly enhance the expression of VEGF, reduced IL-6 levels and suppress the expression of AR and DKK-1, and notably increase β-catenin expression in DHT-induced HDPCs.",
+          "journal": "Molecules (Basel, Switzerland)"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 8,
+        "n_total": 8
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For muscle strength, NMN has moderate human evidence (3 studies)."
+      "summary": "For sleep quality, NMN has moderate human evidence (8 graded studies).",
+      "weighted_score": {
+        "final_score": 71.8,
+        "confidence_interval": {
+          "lower": 47.2,
+          "upper": 96.4
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 8,
+          "high_tier_points": 147.41,
+          "low_tier_points_pre_cap": 9.717,
+          "low_tier_points_post_cap": 9.717,
+          "low_tier_cap_applied": false,
+          "total_points_R": 157.126,
+          "scaled_base_score": 71.816,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 12.5443,
+          "se_consistency_component": 6.8131,
+          "se_thinness_component": 5.7312,
+          "margin_of_error": 24.587,
+          "human_sample_total": 684,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.278,
+              "C_k": 1.215,
+              "points": 27.946,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.533,
+              "C_k": 1.267,
+              "points": 87.409,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 2.0,
+              "C_k": 1.127,
+              "points": 40.564,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.403,
+              "C_k": 1.32,
+              "points": 33.326,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.207,
+              "points": 4.828,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.056,
+              "C_k": 1.248,
+              "points": 23.728,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.156,
+              "points": 4.625,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la calidad del sueño, NMN tiene evidencia humana moderada (8 estudios clasificados)."
     }
   ],
   "effects_established": [
-    "sleep quality",
-    "exercise performance",
-    "endurance",
-    "muscle strength"
+    "blood sugar",
+    "muscle strength",
+    "muscle growth",
+    "sleep quality"
   ],
   "effects_promising": [],
   "effects_emerging": [],
   "honesty_note": null,
-  "generated_by": "clarity-engine-v2",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T05:37:17.728749+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "blood sugar",
+  "best_tier": "Moderate",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Moderate"
+  ],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 14180,
@@ -323,75 +1484,187 @@
       "Alpha9"
     ]
   },
-  "_cached_at": 1787608152.468854,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.909,
+    "europepmc_s": 2.72,
+    "retrieval_total_s": 2.723,
+    "n_studies": 250,
+    "normalization_s": 0.082,
+    "grading_s": 0.002
+  },
+  "weighted_score": {
+    "score": 74.9,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 78.3,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789191437.7303371,
   "explanation": {
-    "what_it_is": "NMN (nicotinamide mononucleotide) is a nucleotide precursor with the molecular formula C11H15N2O8P and molecular weight 334.22 g/mol. It is a naturally occurring compound found in trace amounts in foods like cow's milk, beer, and whey protein, and serves as an immediate biosynthetic precursor to NAD+ (nicotinamide adenine dinucleotide). People typically take it orally as a powder or capsule supplement in doses ranging from 250 mg to 1000 mg daily.",
-    "how_it_works": "NMN crosses cell membranes and is rapidly converted to NAD+ inside cells through salvage pathways, particularly via the enzyme nicotinamide mononucleotide adenylyltransferase (NMNAT). NAD+ is a critical coenzyme in cellular energy metabolism, powering reactions that generate ATP (cellular fuel), and it also serves as a substrate for longevity-linked enzymes called sirtuins and PARPs, which regulate DNA repair, stress resistance, and mitochondrial health. By raising intracellular NAD+ levels, NMN is thought to restore energy-producing capacity in mitochondria, enhance cellular repair processes, and reduce age-related decline in tissues that demand high metabolic activity\u2014particularly skeletal muscle and the nervous system. This mechanism explains why NMN has been studied mainly in older adults and those with metabolic dysfunction.",
+    "what_it_is_line": "A vitamin B3 derivative that cells convert to NAD+, a crucial energy and repair molecule.",
+    "what_it_is": "NMN (nicotinamide mononucleotide) is a small compound your cells use to make NAD+, a molecule that powers energy production and cellular repair processes. It's a derivative of vitamin B3 (niacin). NMN is found in trace amounts in foods like cow's milk and beer, but supplement doses are much higher. People typically take it as an oral powder or capsule, though some research trials have tested sublingual (under-the-tongue) forms.",
+    "how_it_works_line": "Boosts NAD+, the fuel your cells burn to power energy production, DNA repair, and aging-related processes.",
+    "how_it_works": "Your cells constantly burn a molecule called NAD+ (nicotinamide adenine dinucleotide) — think of it as rechargeable battery fuel. As you age, NAD+ levels drop, which slows energy production and repair of damaged DNA. NMN is a building block your cells convert into NAD+. By raising NAD+ levels, NMN activates proteins called sirtuins and PARPs, which act like cellular maintenance crews: they repair DNA damage, manage inflammation, and support energy metabolism. In animal cells and tissues, this has been shown to improve muscle function, blood sugar control, and sleep patterns. Whether oral NMN supplements meaningfully raise NAD+ in older humans is still being tested — some studies show increases in blood NAD+ after ingestion, but the effect size and durability remain uncertain.",
+    "safety_line": "Short-term oral use appears tolerated; long-term safety and drug interactions remain largely untested.",
+    "safety_detail": "The human trials retrieved (mostly 4–12 weeks long) reported mild or no adverse events in healthy and middle-aged adults. However, these studies were small and short-duration. Long-term safety, effects in older adults or those with chronic disease, and potential interactions with medications have not been adequately studied in the retrieved literature.",
+    "safety_bullets": [
+      "Drug interactions: No interaction studies retrieved; unknown if NMN alters how common medications (statins, diabetes drugs, blood thinners) work.",
+      "Excluded populations: Pregnancy, children, and people with kidney or liver disease were not studied in retrieved trials.",
+      "Unknown at high doses: All retrieved human trials used modest doses (250–1000 mg/day) for short periods; effects of higher doses or years-long use are unknown."
+    ],
+    "chem_meaning": "NMN is a highly water-loving compound (XLogP −3.5), which means it dissolves readily in water but poorly in fats. This makes it unlikely to pass through the fatty cell membrane on its own — cells must actively pump it in. Oral NMN is thought to be absorbed through the intestine and transported to tissues via specific transporter proteins, though the efficiency and completeness of this process in humans remains unclear.",
     "outcome_detail": [
       {
-        "outcome": "sleep quality",
+        "outcome": "blood sugar",
         "grade": "Moderate",
-        "what_studies_show": "A 2024 RCT in 60 participants found that NMN ingestion increased blood NAD levels and improved walking speed; a 2022 RCT in 108 healthy adults examined the effect of 12-week NMN intake on sleep quality, fatigue, and physical performance; and a 2023 protocol for a large multicenter randomized trial (n=400) was registered to test oral NMN for chronic insomnia. A 2023 animal study showed NMN ameliorated sleep deprivation-induced gut dysbiosis. Collectively, these studies suggest NMN may improve sleep-related measures and may help maintain physical function during altered sleep, though human trials remain limited and findings are not yet pooled in a meta-analysis.",
-        "why_this_grade": "The grade of Moderate reflects that there are 3 human randomized trials and 1 animal study on record, but inconsistency across studies and the absence of a confirmed pooled analysis prevent a higher grade. The evidence is promising but not yet conclusive."
-      },
-      {
-        "outcome": "exercise performance",
-        "grade": "Moderate",
-        "what_studies_show": "A 2025 systematic review examined NMN and nicotinamide riboside effects on skeletal muscle mass and function; a 2023 RCT in 80 healthy middle-aged adults tested NMN efficacy and safety on performance measures; a 2023 RCT in 14 older patients with diabetes examined NMN effects on physical performance; and a 2022 RCT in 108 adults measured 12-week NMN intake on physical performance alongside sleep and fatigue. A 2025 animal study investigated NMN combined with time-restricted fasting on exercise capacity via mitochondrial pathways. Across the human trials shown, verified sample sizes total roughly 202 participants in 3 studies, and a single systematic review exists but has not been independently replicated.",
-        "why_this_grade": "Moderate grade is appropriate because 4 human studies and 1 animal study are available, but imprecision (modest sample sizes that limit the stability of effect estimates) and lack of independent replication of the systematic review conclusion prevent a higher tier."
-      },
-      {
-        "outcome": "endurance",
-        "grade": "Moderate",
-        "what_studies_show": "A 2021 RCT in amateur runners found that NMN supplementation enhanced aerobic capacity in a randomized, double-blind design. Two animal studies from 2025 and 2022 investigated NMN effects on exercise capacity\u2014one examining NMN combined with time-restricted fasting via mitochondrial mechanisms, and another (the Bazi Bushen capsule study) looking at effects on cellular senescence and microglia activation. Human evidence is limited to a single trial; the findings suggest aerobic benefit in runners, but sample size precision was not confirmed from the abstracts.",
-        "why_this_grade": "The grade reflects 1 human RCT and 2 animal studies, which provides preliminary support for endurance benefit. However, imprecision (unconfirmed sample sizes from abstracts) and reliance on a single human trial cap certainty at Moderate."
+        "what_studies_show": "Four human studies and six animal studies were retrieved. Two 2025 systematic reviews pooling data from multiple trials — one of 513 participants and one of 412 — both examined glucose and lipid effects. A 2023 RCT of 80 healthy middle-aged adults and a 2024 clinical trial also measured blood sugar responses. Animal studies (2026) showed NMN prevented age-related metabolic changes in tissues. The human evidence suggests modest improvements in glucose control or insulin sensitivity in middle-aged and older adults, though study designs, doses, and follow-up periods varied.",
+        "why_this_grade": "Moderate because four human trials exist with reasonable total participant numbers (>500 verified across systematic reviews), but most individual studies were small and of short duration (4–12 weeks). No large, independent confirmatory trial is reported in the retrieved records; the grade rests partly on meta-analyses of smaller RCTs rather than a landmark study."
       },
       {
         "outcome": "muscle strength",
         "grade": "Moderate",
-        "what_studies_show": "A 2025 systematic review examined NMN and nicotinamide riboside effects on skeletal muscle mass and function; a 2023 RCT in 14 older patients with diabetes assessed NMN effects on physical performance including strength measures; and a 2022 RCT in 108 adults measured physical performance (including strength-related outcomes) over 12 weeks of NMN intake. Across 2 of 3 studies, verified sample sizes total approximately 122 participants. The systematic review represents the only pooled analysis available, and it has not been independently replicated.",
-        "why_this_grade": "All 3 human studies shown have no animal evidence; the small sample sizes in 2 verified trials (14 and 108 participants) introduce imprecision that limits effect estimate stability, and the single systematic review lacks independent replication, warranting a Moderate grade."
+        "what_studies_show": "Seven human studies and two animal studies were retrieved. A 2025 systematic review specifically examined NMN's effect on skeletal muscle mass and function. Individual RCTs (2024, n=60; 2023, n=14 and n=80; 2022, n=108) tested walking speed, grip strength, or physical performance in older adults and those with diabetes. A 2026 RCT examined anti-inflammatory effects in muscle after exercise. Over ~262 participants with reported sample sizes across four studies, the trend favors NMN for maintaining or modestly improving walking speed and lower-limb function in aging populations.",
+        "why_this_grade": "Moderate because seven human RCTs exist with reasonably consistent direction (most show benefit or maintenance of strength), but the evidence rests on a single published meta-analysis/systematic review (2025) without independent replication in the retrieved records. Individual trial sizes are modest (14–108 participants); long-term follow-up beyond 12 weeks is sparse."
+      },
+      {
+        "outcome": "muscle growth",
+        "grade": "Moderate",
+        "what_studies_show": "Five human and ten animal studies were retrieved, with a pooled effect size of 0.34 [95% CI 0.03–0.66], indicating a small to modest benefit. A 2025 systematic review of NMN and related compounds (riboside) on skeletal muscle mass was the primary human source; it included pooled analyses of RCTs. A 2026 systematic review examined NMN for oocyte (egg cell) quality — a different tissue but mechanism-related. A 2025 systematic review of 412 middle-aged adults also captured muscle outcomes. Individual RCTs and animal studies (2026) examined muscle size and oxidative stress markers. Only one human study reported a large sample (412); most individual trials were smaller.",
+        "why_this_grade": "Moderate because human evidence exists (5 studies, ~412 in one systematic review) and a meta-analysis shows a positive pooled effect, but that analysis has not been independently replicated. Heterogeneity remains (some studies show bigger effects, others smaller), and most individual RCTs were brief (4–12 weeks). The grade is held at Moderate pending further consensus among trials."
+      },
+      {
+        "outcome": "sleep quality",
+        "grade": "Moderate",
+        "what_studies_show": "Six human and two animal studies were retrieved. A 2022 RCT of 108 people found NMN improved sleep quality and reduced fatigue over 12 weeks. A 2023 RCT of 80 healthy middle-aged adults, a 2024 RCT of 60 adults, and a 2023 clinical trial protocol of 400 participants (chronic insomnia, status unclear) tested sleep measures. A 2023 RCT of 36 participants measured NAD+ and arterial stiffness alongside sleep endpoints. Animal studies and a fingerstick blood assay study (2023) provided mechanistic or measurement data. Most human trials showed improvements in subjective sleep quality, though objective sleep architecture (EEG, sleep stages) was inconsistently measured.",
+        "why_this_grade": "Moderate because six human RCTs exist with generally favorable trends, but no meta-analysis has unified the results, and study designs vary widely (subjective vs. objective measures; doses 250–1000 mg; durations 4–12 weeks). Individual sample sizes are modest (36–108); the largest trial (n=400, 2023 protocol) appears to be prospective or ongoing. Consistency of effect is uncertain in the retrieved records."
       }
     ],
-    "evidence_base": "The research base for NMN is dominated by small to modest-sized randomized controlled trials in humans (typically 14\u2013108 participants per study) and supportive animal studies, with most recent publications from 2022\u20132025. A single systematic review on muscle effects exists but has not been independently verified. Overall, the evidence is encouraging and mechanistically plausible\u2014NMN does raise NAD+ levels as expected\u2014yet human trials remain relatively few in number, heterogeneous in design, and limited to relatively short intervention periods (typically 12 weeks). This means the field has enough human data to suggest a real effect on physical performance and sleep, but not enough to pin down effect sizes or long-term safety with high precision.",
-    "emerging_research": "Recent work (2024\u20132025) is exploring NMN in combination with other interventions, such as time-restricted fasting, to amplify effects on mitochondrial capacity and exercise performance. Studies are beginning to investigate mechanistic pathways beyond simple NAD+ repletion\u2014for example, effects on gut microbiota in sleep-deprived states and on cellular senescence markers in aging. These directions are early-stage and mostly appear in animal models or small human pilots, so they remain unproven in larger populations.",
-    "open_questions": "Among the retrieved studies, sleep quality trials remain limited and unpooled; none of the records shown follow participants beyond 12 weeks, so long-term durability of effects is unaddressed in this sample. Exercise performance and muscle strength studies tend to enroll older adults or those with metabolic disease (diabetes, sedentary lifestyle); trials in younger, highly trained, or completely healthy populations are sparse or absent from the records provided. The retrieved abstracts do not report sample sizes for the 2021 endurance trial in runners or clearly detail the performance measures used across all studies, limiting precision assessment. This sample of ~40 records per outcome represents only a portion of the total literature; research published in different databases or in languages other than English may exist but is not reflected here.",
-    "caveats": "NMN is orally bioavailable and generally well-tolerated in the short-term studies shown (up to 12 weeks), but long-term safety data in humans are limited. As a research supplement, purity and dose accuracy vary by manufacturer; third-party testing is advisable. NMN may interact with medications affecting NAD+ metabolism or sirtuins, and people with conditions affecting nucleotide metabolism (e.g., certain genetic disorders) should consult a healthcare provider before use. Pregnant or nursing individuals have not been studied and should avoid it pending evidence.",
+    "evidence_base": "The evidence is primarily human — 18 human studies and 20 animal studies across the four outcomes. Most human evidence consists of small-to-moderate RCTs (typically 4–12 weeks) published in 2022–2026, plus three systematic reviews/meta-analyses (2025–2026). Animal studies show consistent mechanistic support (NAD+ restoration, DNA repair, anti-inflammatory pathways) but do not predict human efficacy reliably. No large, multi-year randomized trials are evident in the retrieved records, limiting confidence in durability or long-term safety.",
+    "open_questions": "The retrieved studies concentrate on healthy, middle-aged, and older adults; few include younger people or those with specific diseases (beyond diabetes in two trials). Most human trials ran 4–12 weeks; whether benefits persist at 6 months or years is not clear in the records provided. Dose optimization (the 250–1000 mg range is tested, but no clear dose–response relationship emerges) and individual factors predicting responders vs. non-responders are not established. Whether the increase in blood NAD+ translates to functional improvements in tissues (muscle, brain, vascular) remains an open mechanistic question in humans.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "No pooled analyses exist for any claimed outcome; the entire moderate tier rests on small, non-replicated individual trials and a single 2025 systematic review, making effect estimates potentially unstable and prone to reversal.",
+    "headline": "The evidence base rests heavily on small, recent human RCTs (most under 110 participants) and animal studies; no outcome has independent replication of pooled findings, and sample sizes are largely unreported, making it impossible to verify whether the moderate grades reflect genuine consistency or selective reporting.",
     "concerns": [
       {
-        "issue": "Absence of pooled effect estimates across all outcomes",
-        "detail": "Despite 4 sleep quality studies, 5 exercise performance studies, 3 endurance studies, and 3 muscle strength studies, the engine explicitly notes 'pooled effect: none extractable' for every single outcome. The engine held sleep quality and exercise performance at 'Moderate' specifically because 'no pooled analysis confirms they agree,' yet graded them as if consensus existed. This is a logical inconsistency: without meta-analytic synthesis, individual trial heterogeneity cannot be assessed, and conflicting results within an outcome cannot be detected.",
+        "issue": "Severe underreporting of sample sizes",
+        "detail": "Across all four outcomes, the majority of abstracts do not report sample size. For blood sugar, only 3 of 10 studies report n; for muscle strength, 4 of 9; for muscle growth, only 1 of 15; for sleep quality, 5 of 8. This makes it impossible to assess the true precision of the evidence base or detect whether a single large study is driving pooled conclusions. The engine notes the true total is 'substantially larger' than verified, but cannot show it—a red flag for selection bias in the retrieved abstracts or opaque reporting by original authors.",
         "severity": "high"
       },
       {
-        "issue": "Dependence on single unreplicated systematic review",
-        "detail": "Both exercise performance and muscle strength outcomes lean on a 2025 systematic review as their primary evidence synthesis. The engine explicitly states 'a single meta-analysis / systematic review exists, but its conclusion is not independently replicated or verified \u2014 held at moderate.' This means the entire grade for two outcomes rests on one recent review that has no independent confirmation. A flawed methodology or selective inclusion in that review could shift both grades downward.",
+        "issue": "No independent replication of meta-analytic conclusions",
+        "detail": "Muscle strength and muscle growth each have systematic reviews, but the engine explicitly notes these conclusions are not independently replicated or verified. For muscle growth, a pooled SMD of 0.34 [0.03–0.66] exists, but this is drawn from studies that likely have overlapping or undisclosed participant counts. For blood sugar and sleep quality, no pooled effect could be extracted at all, yet both are graded Moderate—suggesting the grade reflects the presence of studies, not strength of evidence synthesis.",
         "severity": "high"
       },
       {
-        "issue": "Minimal verified sample sizes with high variability",
-        "detail": "Exercise performance (verified n=202 across 3 RCTs), muscle strength (verified n=122 across 2 RCTs), and endurance (sample sizes 'could not be verified from abstracts') all fall below thresholds typically needed for stable effect estimation. The exercise performance pool includes one n=14 trial, which alone could dominate or destabilize results. The engine flags these as 'Imprecision: effect estimate may be unstable' yet still assigns Moderate grade.",
+        "issue": "Predominance of animal studies weakens clinical claim",
+        "detail": "Blood sugar: 6 of 10 are animal; muscle growth: 10 of 15 are animal; sleep quality: 2 of 8 are animal. While animal studies can support mechanism, they do not establish clinical efficacy in humans. The human evidence for each outcome is thin: blood sugar has 2 primary RCTs and 2 systematic reviews (n=80 and n=513, but latter likely includes non-humans or overlapping data); muscle strength has 6 RCTs but most are very small (14, 60, 80, 108 participants). A single well-designed trial could substantially change conclusions.",
         "severity": "high"
       },
       {
-        "issue": "Endurance outcome has no human sample size data and only 1 human trial",
-        "detail": "The endurance outcome comprises 1 human RCT and 2 animal studies. The engine notes 'sample sizes could not be verified from the abstracts; precision is unconfirmed.' Without knowing the human trial's n, it is impossible to assess whether the effect is precisely estimated. Grading an outcome as Moderate when its sole human evidence is unquantifiable is methodologically unsound.",
-        "severity": "high"
+        "issue": "Recency clustering and lack of temporal depth",
+        "detail": "All outcomes are dominated by 2023–2026 publications; muscle strength alone cites one 2019 study, and blood sugar has one 2021 study. This clustering makes it impossible to assess whether the evidence base represents genuine accumulation of consistent findings or a recent surge in industry-sponsored or hypothesis-confirming research. No long-term follow-up data are visible in the records.",
+        "severity": "moderate"
       },
       {
-        "issue": "Very recent literature with no long-term follow-up data visible",
-        "detail": "All outcomes are drawn from studies conducted 2021\u20132025, with the sleep quality and exercise performance outcomes dominated by 2023\u20132024 publications. No study abstracts report follow-up duration or sustainability of effects beyond the intervention period. For a 'longevity' category compound, the absence of data on sustained benefit or long-term safety is a notable gap, though this may reflect the inherent recency of the literature rather than a flaw in trial design.",
+        "issue": "Heterogeneous outcome measures prevent meta-analysis",
+        "detail": "For blood sugar and sleep quality, the engine reports 'pooled effect: none extractable,' yet both are graded Moderate. This suggests studies used different instruments, dosages, or populations, yet the evidence base is still considered sufficient. Without visibility into why pooling failed, it is unclear whether the Moderate grade reflects genuine consensus or merely the existence of several small, incommensurable studies trending toward a hypothesis.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "NAD+ bioavailability is plausibly linked to mitochondrial function and cellular energy metabolism, which could theoretically support improvements in exercise performance and endurance. However, the leap from 'NMN increases blood NAD levels' (as observed in the 2024 trial) to 'this improves sleep quality, muscle strength, and endurance' is large and indirect. The retrieved abstracts do not show mechanistic confirmation (e.g., direct measurement of muscle NAD+ content, mitochondrial ATP production, or sleep architecture changes) linking the pharmacokinetic observation to the claimed clinical outcomes. The animal studies on gut microbiota dysbiosis and microglia activation suggest additional pathways, but these remain disconnected from the human performance and sleep data.",
-    "strongest_counterargument": "A skeptic would note that: (1) each outcome lacks independent meta-analytic validation\u2014the moderate grades are assigned in the absence of synthesized evidence; (2) the exercise performance and muscle strength conclusions depend entirely on a single 2025 systematic review that has not been peer-reviewed or replicated; (3) the verified human sample sizes are small (n\u2264202 for exercise, n\u2264122 for muscle strength), meaning a single large negative trial or methodological error could reverse the direction of effect. The skeptic would argue that 'Moderate' should be downgraded to 'Low' pending either a larger, well-powered trial or independent replication of the systematic review's findings.",
-    "what_would_change_the_picture": "An independent meta-analysis of the existing trials that quantifies pooled effect sizes and heterogeneity, combined with a large (n\u2265300) multi-center RCT specifically powered for one primary outcome (e.g., muscle strength in older adults or sleep architecture in chronic insomnia), would clarify whether the current moderate grades reflect genuine benefit or inflated estimates from small, heterogeneous studies. Additionally, measurement of tissue-level NAD+ content and direct biomarkers of the proposed mechanism in human participants would bridge the gap between pharmacokinetics and clinical outcomes.",
+    "mechanism_check": "NMN → increased NAD+ is biochemically established. The leap to clinical efficacy occurs at muscle strength, muscle growth, blood glucose control, and sleep quality. While NAD+-dependent pathways (SIRT proteins, mitochondrial function, circadian rhythm) are plausibly involved in these outcomes, the retrieved records show animal demonstrations of mechanism but do not explain why only small human RCTs exist if the mechanism is strong. The clinical trials are recent and small; if the mechanism were robust, larger, earlier, and more numerous human trials would be expected.",
+    "strongest_counterargument": "A skeptic would note that the human evidence consists almost entirely of small RCTs (most n<110) published in the last 3 years, with no pre-registered protocols or independent replications visible in the records. The one larger pooled analysis (n=412–513) appears to be a systematic review, not a new trial, and may aggregate heterogeneous or overlapping populations. Animal studies, however mechanistically elegant, have not reliably predicted human longevity or muscle outcomes in past supplement research. The absence of a single large, pre-registered, independent human trial for any outcome is conspicuous and suggests the field has not yet reached the threshold of genuine clinical confidence.",
+    "what_would_change_the_picture": "A large (n ≥ 300), pre-registered, multi-center, double-blind RCT with a neutral or skeptical sponsor, using a single validated outcome measure (e.g., DEXA for muscle mass, HbA1c for glucose control), run for ≥12 weeks with a pre-specified statistical plan, would definitively settle whether NMN has clinically meaningful effects. Independently published negative or null results from such a trial would also resolve uncertainty more efficiently than additional small trials.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Un derivado de la vitamina B3 que las células convierten en NAD+, una molécula crucial para la energía y la reparación celular.",
+    "what_it_is": "NMN (mononucleótido de nicotinamida) es un compuesto pequeño que tus células utilizan para producir NAD+, una molécula que impulsa la producción de energía y los procesos de reparación celular. Es un derivado de la vitamina B3 (niacina). El NMN se encuentra en cantidades mínimas en alimentos como la leche de vaca y la cerveza, pero las dosis de suplementos son mucho más altas. Las personas generalmente lo toman como polvo oral o cápsula, aunque algunos ensayos de investigación han probado formas sublinguales (debajo de la lengua).",
+    "how_it_works_line": "Aumenta el NAD+, el combustible que tus células queman para impulsar la producción de energía, la reparación del ADN y los procesos relacionados con el envejecimiento.",
+    "how_it_works": "Tus células constantemente queman una molécula llamada NAD+ (dinucleótido de nicotinamida y adenina) — piénsalo como combustible de batería recargable. Conforme envejeces, los niveles de NAD+ bajan, lo que ralentiza la producción de energía y la reparación del ADN dañado. NMN es un bloque de construcción que tus células convierten en NAD+. Al elevar los niveles de NAD+, NMN activa proteínas llamadas sirtuínas y PARPs, que actúan como equipos de mantenimiento celular: reparan el daño del ADN, manejan la inflamación y apoyan el metabolismo energético. En células y tejidos animales, se ha demostrado que esto mejora la función muscular, el control del azúcar en sangre y los patrones de sueño. Si los suplementos orales de NMN elevan significativamente el NAD+ en humanos mayores todavía se está probando — algunos estudios muestran aumentos en el NAD+ sanguíneo después de la ingesta, pero el tamaño del efecto y la durabilidad siguen siendo inciertos.",
+    "safety_line": "El uso oral a corto plazo parece bien tolerado; la seguridad a largo plazo y las interacciones farmacológicas permanecen en gran medida sin probar.",
+    "safety_detail": "Los ensayos en humanos recuperados (principalmente de 4 a 12 semanas) reportaron eventos adversos leves o ninguno en adultos sanos y de mediana edad. Sin embargo, estos estudios fueron pequeños y de corta duración. La seguridad a largo plazo, los efectos en adultos mayores o en personas con enfermedades crónicas, y las posibles interacciones con medicamentos no han sido adecuadamente estudiados en la literatura recuperada.",
+    "safety_bullets": [
+      "Interacciones farmacológicas: No se recuperaron estudios de interacción; se desconoce si NMN altera cómo funcionan los medicamentos comunes (estatinas, fármacos para la diabetes, anticoagulantes).",
+      "Poblaciones excluidas: El embarazo, los niños y las personas con enfermedad renal o hepática no fueron estudiados en los ensayos recuperados.",
+      "Desconocido a dosis altas: Todos los ensayos humanos recuperados utilizaron dosis modestas (250–1000 mg/día) durante períodos cortos; los efectos de dosis más altas o uso durante años son desconocidos."
+    ],
+    "chem_meaning": "NMN es un compuesto altamente hidrofílico (XLogP −3.5), lo que significa que se disuelve fácilmente en agua pero pobremente en grasas. Esto hace que sea improbable que atraviese la membrana celular grasa por sí solo — las células deben bombearlo activamente hacia adentro. Se cree que el NMN oral se absorbe a través del intestino y se transporta a los tejidos a través de proteínas transportadoras específicas, aunque la eficiencia y la completitud de este proceso en humanos sigue siendo poco clara.",
+    "outcome_detail": [
+      {
+        "outcome": "blood sugar",
+        "grade": "Moderada",
+        "what_studies_show": "Se recuperaron cuatro estudios en humanos y seis estudios en animales. Dos revisiones sistemáticas de 2025 que agrupan datos de múltiples ensayos — una de 513 participantes y otra de 412 — ambas examinaron glucosa y efectos lípidos. Un ECA de 2023 con 80 adultos sanos de mediana edad y un ensayo clínico de 2024 también midieron respuestas del azúcar en sangre. Los estudios en animales (2026) mostraron que NMN prevenía cambios metabólicos relacionados con la edad en tejidos. La evidencia en humanos sugiere mejoras modestas en el control de glucosa o la sensibilidad a la insulina en adultos de mediana edad y mayores, aunque los diseños de estudio, dosis y períodos de seguimiento variaron.",
+        "why_this_grade": "Moderada porque existen cuatro ensayos en humanos con números razonables de participantes totales (>500 verificados en revisiones sistemáticas), pero la mayoría de los estudios individuales fueron pequeños y de corta duración (4–12 semanas). No se reporta un ensayo confirmatorio grande e independiente en los registros recuperados; la calificación se basa en parte en metanálisis de ECA más pequeños en lugar de un estudio de referencia.",
+        "outcome_key": "blood sugar",
+        "outcome_es": "azúcar en sangre"
+      },
+      {
+        "outcome": "muscle strength",
+        "grade": "Moderada",
+        "what_studies_show": "Se recuperaron siete estudios en humanos y dos estudios en animales. Una revisión sistemática de 2025 examinó específicamente el efecto de NMN en la masa y función del músculo esquelético. ECA individuales (2024, n=60; 2023, n=14 y n=80; 2022, n=108) probaron velocidad de caminata, fuerza de agarre o desempeño físico en adultos mayores y aquellos con diabetes. Un ECA de 2026 examinó efectos antiinflamatorios en el músculo después del ejercicio. En aproximadamente 262 participantes con tamaños de muestra reportados en cuatro estudios, la tendencia favorece a NMN para mantener o mejorar modestamente la velocidad de caminata y la función de miembros inferiores en poblaciones envejecidas.",
+        "why_this_grade": "Moderada porque existen siete ECA en humanos con dirección razonablemente consistente (la mayoría muestran beneficio o mantenimiento de la fuerza), pero la evidencia se basa en una sola revisión metanalítica/sistemática publicada (2025) sin replicación independiente en los registros recuperados. Los tamaños de ensayos individuales son modestos (14–108 participantes); el seguimiento a largo plazo más allá de 12 semanas es escaso.",
+        "outcome_key": "muscle strength",
+        "outcome_es": "fuerza muscular"
+      },
+      {
+        "outcome": "muscle growth",
+        "grade": "Moderada",
+        "what_studies_show": "Se recuperaron cinco estudios en humanos y diez estudios en animales, con un tamaño de efecto agrupado de 0.34 [95% CI 0.03–0.66], indicando un beneficio pequeño a modesto. Una revisión sistemática de 2025 de NMN y compuestos relacionados (ribósido) sobre la masa del músculo esquelético fue la fuente humana principal; incluyó análisis agrupados de ECA. Una revisión sistemática de 2026 examinó NMN para la calidad de ovocitos (célula de óvulo) — un tejido diferente pero mecanismo relacionado. Una revisión sistemática de 2025 de 412 adultos de mediana edad también capturó resultados musculares. ECA individuales y estudios en animales (2026) examinaron tamaño muscular y marcadores de estrés oxidativo. Solo un estudio en humanos reportó una muestra grande (412); la mayoría de los ensayos individuales fueron más pequeños.",
+        "why_this_grade": "Moderada porque existe evidencia en humanos (5 estudios, ~412 en una revisión sistemática) y un metanálisis muestra un efecto agrupado positivo, pero ese análisis no ha sido replicado independientemente. La heterogeneidad persiste (algunos estudios muestran efectos mayores, otros menores), y la mayoría de ECA individuales fueron breves (4–12 semanas). La calificación se mantiene en Moderada pendiente de mayor consenso entre ensayos.",
+        "outcome_key": "muscle growth",
+        "outcome_es": "crecimiento muscular"
+      },
+      {
+        "outcome": "sleep quality",
+        "grade": "Moderada",
+        "what_studies_show": "Se recuperaron seis estudios en humanos y dos estudios en animales. Un ECA de 2022 de 108 personas encontró que NMN mejoró la calidad del sueño y redujo la fatiga durante 12 semanas. Un ECA de 2023 de 80 adultos sanos de mediana edad, un ECA de 2024 de 60 adultos y un protocolo de ensayo clínico de 2023 de 400 participantes (insomnio crónico, estado incierto) probaron medidas del sueño. Un ECA de 2023 de 36 participantes midió NAD+ y rigidez arterial junto con endpoints de sueño. Estudios en animales y un estudio de ensayo de sangre capilar (2023) proporcionaron datos mecanísticos o de medición. La mayoría de los ensayos en humanos mostraron mejoras en la calidad del sueño subjetiva, aunque la arquitectura del sueño objetivo (EEG, etapas del sueño) fue medida inconsistentemente.",
+        "why_this_grade": "Moderada porque existen seis ECA en humanos con tendencias generalmente favorables, pero ningún metanálisis ha unificado los resultados, y los diseños de estudio varían ampliamente (medidas subjetivas vs. objetivas; dosis 250–1000 mg; duraciones 4–12 semanas). Los tamaños de muestra individuales son modestos (36–108); el ensayo más grande (n=400, protocolo de 2023) parece ser prospectivo u en curso. La consistencia del efecto es incierta en los registros recuperados.",
+        "outcome_key": "sleep quality",
+        "outcome_es": "calidad del sueño"
+      }
+    ],
+    "evidence_base": "La evidencia es principalmente en humanos — 18 estudios en humanos y 20 estudios en animales en los cuatro resultados. La mayoría de la evidencia en humanos consiste en ECA pequeños a moderados (típicamente 4–12 semanas) publicados en 2022–2026, además de tres revisiones sistemáticas/metanálisis (2025–2026). Los estudios en animales muestran apoyo mecanístico consistente (restauración de NAD+, reparación del ADN, vías antiinflamatorias) pero no predicen la eficacia en humanos de manera confiable. No hay evidencia de ensayos grandes y multianual aleatorizados en los registros recuperados, lo que limita la confianza en la durabilidad o la seguridad a largo plazo.",
+    "open_questions": "Los estudios recuperados se concentran en adultos sanos, de mediana edad y mayores; pocos incluyen personas más jóvenes o aquellas con enfermedades específicas (más allá de diabetes en dos ensayos). La mayoría de ensayos en humanos duraron 4–12 semanas; si los beneficios persisten a los 6 meses o años no está claro en los registros proporcionados. La optimización de dosis (el rango de 250–1000 mg se prueba, pero no surge una relación clara dosis-respuesta) y los factores individuales que predicen respondedores vs. no respondedores no están establecidos. Si el aumento en el NAD+ sanguíneo se traduce en mejoras funcionales en tejidos (músculo, cerebro, vascular) sigue siendo una pregunta mecanística abierta en humanos.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "La base de evidencia se apoya en gran medida en RCTs humanos pequeños y recientes (la mayoría con menos de 110 participantes) y estudios en animales; ningún resultado tiene replicación independiente de hallazgos agrupados, y los tamaños de muestra están en gran parte no reportados, lo que hace imposible verificar si las calificaciones moderadas reflejan una consistencia genuina o un reporte selectivo.",
+    "concerns": [
+      {
+        "issue": "Falta grave de reporte de tamaños de muestra",
+        "detail": "En los cuatro resultados, la mayoría de los resúmenes no reportan el tamaño de muestra. Para glucosa en sangre, solo 3 de 10 estudios reportan n; para fuerza muscular, 4 de 9; para crecimiento muscular, solo 1 de 15; para calidad del sueño, 5 de 8. Esto hace imposible evaluar la verdadera precisión de la base de evidencia o detectar si un único estudio grande está impulsando las conclusiones agrupadas. El motor nota que el total verdadero es 'sustancialmente mayor' que lo verificado, pero no puede demostrarlo—una bandera roja para sesgo de selección en los resúmenes recuperados o reporte opaco por parte de los autores originales.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sin replicación independiente de conclusiones de metanálisis",
+        "detail": "Fuerza muscular y crecimiento muscular tienen cada uno revisiones sistemáticas, pero el motor explícitamente nota que estas conclusiones no están independientemente replicadas o verificadas. Para crecimiento muscular, existe un SMD agrupado de 0.34 [0.03–0.66], pero esto se extrae de estudios que probablemente tienen conteos de participantes superpuestos o no revelados. Para glucosa en sangre y calidad del sueño, no se pudo extraer efecto agrupado alguno, sin embargo ambos se califican como Moderados—sugiriendo que la calificación refleja la presencia de estudios, no la fortaleza de la síntesis de evidencia.",
+        "severity": "high"
+      },
+      {
+        "issue": "Predominancia de estudios en animales debilita la afirmación clínica",
+        "detail": "Glucosa en sangre: 6 de 10 son en animales; crecimiento muscular: 10 de 15 son en animales; calidad del sueño: 2 de 8 son en animales. Aunque los estudios en animales pueden apoyar el mecanismo, no establecen eficacia clínica en humanos. La evidencia humana para cada resultado es limitada: glucosa en sangre tiene 2 RCTs primarios y 2 revisiones sistemáticas (n=80 y n=513, pero la última probablemente incluye no humanos o datos superpuestos); fuerza muscular tiene 6 RCTs pero la mayoría son muy pequeños (14, 60, 80, 108 participantes). Un único ensayo bien diseñado podría cambiar sustancialmente las conclusiones.",
+        "severity": "high"
+      },
+      {
+        "issue": "Agrupamiento reciente y falta de profundidad temporal",
+        "detail": "Todos los resultados están dominados por publicaciones 2023–2026; fuerza muscular sola cita un estudio de 2019, y glucosa en sangre tiene un estudio de 2021. Este agrupamiento hace imposible evaluar si la base de evidencia representa una acumulación genuina de hallazgos consistentes o un aumento reciente en investigación patrocinada por la industria o que confirma hipótesis. No hay datos visibles de seguimiento a largo plazo en los registros.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Medidas de resultado heterogéneas impiden metanálisis",
+        "detail": "Para glucosa en sangre y calidad del sueño, el motor reporta 'efecto agrupado: ninguno extraíble', sin embargo ambos se califican como Moderados. Esto sugiere que los estudios utilizaron instrumentos, dosis o poblaciones diferentes, pero la base de evidencia aún se considera suficiente. Sin visibilidad en por qué el agrupamiento falló, no está claro si la calificación Moderada refleja un consenso genuino o meramente la existencia de varios estudios pequeños e inconmensurables tendiendo hacia una hipótesis.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "NMN → aumento de NAD+ está bioquímicamente establecido. El salto a eficacia clínica ocurre en fuerza muscular, crecimiento muscular, control de glucosa en sangre y calidad del sueño. Aunque las vías dependientes de NAD+ (proteínas SIRT, función mitocondrial, ritmo circadiano) están plausiblemente involucradas en estos resultados, los registros recuperados muestran demostraciones de mecanismo en animales pero no explican por qué solo existen RCTs humanos pequeños si el mecanismo es fuerte. Los ensayos clínicos son recientes y pequeños; si el mecanismo fuera robusto, se esperarían ensayos humanos más grandes, anteriores y más numerosos.",
+    "strongest_counterargument": "Un escéptico notaría que la evidencia humana consiste casi enteramente en RCTs pequeños (la mayoría n<110) publicados en los últimos 3 años, sin protocolos pre-registrados o replicaciones independientes visibles en los registros. El análisis agrupado más grande (n=412–513) parece ser una revisión sistemática, no un ensayo nuevo, y puede agregar poblaciones heterogéneas o superpuestas. Los estudios en animales, aunque mecanísticamente elegantes, no han predicho de manera confiable la longevidad humana o resultados musculares en investigación previa de suplementos. La ausencia de un único ensayo humano grande, pre-registrado e independiente para cualquier resultado es conspicua y sugiere que el campo aún no ha alcanzado el umbral de confianza clínica genuina.",
+    "what_would_change_the_picture": "Un RCT grande (n ≥ 300), pre-registrado, multicéntrico, doble ciego con un patrocinador neutral o escéptico, utilizando una medida de resultado única y validada (p.ej., DEXA para masa muscular, HbA1c para control de glucosa), realizado durante ≥12 semanas con un plan estadístico pre-especificado, definitivamente resolvería si NMN tiene efectos clínicamente significativos. Resultados negativos o nulos publicados independientemente de tal ensayo también resolverían la incertidumbre más eficientemente que ensayos pequeños adicionales.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

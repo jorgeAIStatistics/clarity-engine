@@ -15,6 +15,11 @@ import threading
 import requests
 import xml.etree.ElementTree as ET
 
+try:
+    import indications
+except Exception:
+    indications = None
+
 BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 API_KEY = os.environ.get("NCBI_API_KEY")  # optional; raises rate limit if present
 CONTACT = os.environ.get("CLARITY_CONTACT_EMAIL", "you@example.com")  # courtesy to NCBI
@@ -176,6 +181,9 @@ SEARCH_TERMS = {
     "testosterone": "testosterone therapy OR testosterone supplementation",
     "progesterone": "progesterone therapy",
     "oxytocin": "intranasal oxytocin",
+    # Bare "VIP" is highly ambiguous (care programs, regimens, generic prose).
+    # In Clarity it means vasoactive intestinal peptide/polypeptide.
+    "vip": '"vasoactive intestinal peptide" OR "vasoactive intestinal polypeptide"',
     "melatonin": "melatonin supplementation",
     "biotin": "biotin supplementation",
     "niacin": "niacin supplementation OR nicotinic acid supplementation",
@@ -197,8 +205,24 @@ SEARCH_TERMS = {
 
 
 def _query_for(topic):
-    """Map a catalog name to the term clinical trials actually use."""
+    """Map a catalog name to the terms clinical literature actually uses."""
     key = (topic or "").lower().strip()
+
+    # Vitamins are unusually alias-sensitive: B12 papers may say cobalamin,
+    # D3 may say cholecalciferol, etc. Search factual naming variants together
+    # so canonical indications are not missed simply because terminology changed.
+    if indications is not None:
+        try:
+            aliases = indications.search_aliases(topic)
+        except Exception:
+            aliases = []
+        if len(aliases) > 1:
+            parts = []
+            for term in aliases:
+                term = str(term).strip()
+                parts.append(f'"{term}"' if (" " in term or "-" in term) else term)
+            return f"({' OR '.join(parts)})"
+
     if key in SEARCH_TERMS:
         return f"({SEARCH_TERMS[key]})"
     # Multi-word names like "creatine monohydrate" also try their base form.

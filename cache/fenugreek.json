@@ -1,9 +1,13 @@
 {
   "name": "Fenugreek",
   "category": "herb",
-  "overall_score": 79,
+  "overall_score": 76,
   "tier": "Moderate",
-  "study_count": 24,
+  "study_count": 32,
+  "unique_human_study_count": 12,
+  "unique_animal_study_count": 20,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 46,
   "claims": [
     {
       "outcome": "blood sugar",
@@ -11,108 +15,517 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 8,
+      "n_studies": 15,
       "grade_reasons": [
-        "Limited human evidence: 0 primary human studies and 6 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~1648 participants verified across 4 of 15 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 1 primary human studies and 6 pooled analyses retrieved — below the threshold for the top tier."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
-        "preclinical": 45,
+        "preclinical": 55,
         "human": 70,
         "overall": 70,
         "ceiling": 70,
-        "n_human_studies": 6,
-        "n_animal_studies": 2,
+        "n_human_studies": 7,
+        "n_animal_studies": 8,
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
         "PMID:36837450",
-        "PMID:27496582",
+        "PMID:38846904",
+        "PMID:39286181",
+        "PMID:28986580",
+        "PMID:16176151",
         "PMID:36992660",
-        "PMID:37762302",
-        "PMID:24438170",
-        "PMID:36470549",
         "PMID:32768577",
-        "PMID:23467959"
+        "PMID:23467959",
+        "PMID:28433714",
+        "PMID:36470549",
+        "PMID:2194788",
+        "PMID:20100065",
+        "PMID:37762302",
+        "PMID:42618886",
+        "PMID:39885962"
       ],
       "studies": [
         {
+          "id": "pmid:38846904",
+          "pmid": "38846904",
+          "title": "Enhancing glycaemic control and promoting cardiovascular health: the therapeutic potential of",
+          "year": "2024",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38846904/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The antidiabetic potential of fenugreek has been highlighted in past literature, and various in-vitro and in-vivo studies have validated its glucose-lowering effects; however, very limited data are available on its effects on diabetic patients. An updated systematic review and meta-analysis of randomized control trials that assessed patients who were administered fenugreek. The PRISMA guidelines (Supplemental Digital Content 1, http://links.lww.com/MS9/A361) were followed when conducting this meta-analysis. PubMed, Scopus, Google Scholar and MEDLINE were searched from inception until June 2023, for randomized control trials that compared fenugreek with control in patients with type 2 diabetes mellitus (DM) and reported the following outcomes of interest: fasting blood glucose, glycated haemoglobin A1c (HbA1c) and postprandial glucose levels. The findings were presented as mean difference (MD) with 95% confidence intervals (CIs) and were pooled using a random effects model. Fenugreek significantly ( Among patients with type 2 DM, our comparisons demonstrated a reduction in FBS, HbA1c levels and postprandial glucose levels with the administration of fenugreek seed at 2-5 mg dose in powder form.",
+          "journal": "Annals of medicine and surgery (2012)"
+        },
+        {
+          "id": "pmid:39286181",
+          "pmid": "39286181",
+          "title": "Therapeutic effect of fenugreek supplementation on type 2 diabetes mellitus: A systematic review and meta-analysis of clinical trials.",
+          "year": "2024",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 19,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39286181/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Numerous clinical trials have investigated the effects of fenugreek, a traditional herbal medicine, on type 2 diabetes mellitus (T2DM). However, the results from these studies have been inconsistent. Therefore, we aimed to perform a meta-analysis on the effects of fenugreek supplementation on weight, body mass index (BMI), lipid profile, and glycemic indices in patients with T2DM. We searched PubMed, Scopus, Embase, ISI Web of Science, and Cochrane Library databases to identify clinical trial studies until October 2023. The data were analyzed using a random-effects model and presented as the weighted mean difference (WMD) along with the associated 95 % confidence interval (CI). A total of 19 studies were included in the meta-analysis. The results indicated a significant impact of fenugreek supplementation on lowering fasting plasma glucose (FPG) (WMD: 20.32 mg/dl; 95 % CI: 26.65 to -13.99), hemoglobin A1C (HbA1c) (WMD: 0.54 %; 95 % CI: 0.80 to -0.28), homeostatic model assessment of insulin resistance (HOMA-IR) (WMD: 0.36; 95 % CI: 0.67 to -0.05), total cholesterol (TC) (WMD: 33.10 mg/dL; 95 % CI: 64.31 to -1.88), low-density lipoprotein cholesterol (LDL-C) (WMD: 29.14 mg/dL; 95 % CI: 55.45 to -2.83), BMI (WMD: 0.73 kg/m2; 95 % CI: 1.40 to -0.07), and increasing the high-density lipoprotein cholesterol (HDL-C) (WMD: 5.68 mg/dL; 95 % CI: 3.51 to 7.85). However, the effect on fasting insulin, triglycerides, and weight was not significant. Fenugreek supplementation has been shown to improve FPG, HbA1C, HOMA-IR, TC, LDL-C, HDL-C, and BMI in patients with T2DM. The overall results suggest that fenugreek may have protective and therapeutic effects on T2DM parameters.",
+          "journal": "Heliyon"
+        },
+        {
+          "id": "pmid:36837450",
           "pmid": "36837450",
           "title": "Effect of Fenugreek on Hyperglycemia: A Systematic Review and Meta-Analysis.",
           "year": "2023",
           "design": "Meta-analysis",
           "population": "human",
-          "n": 894
+          "n": 894,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36837450/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Fenugreek is used for medicinal purposes in various traditions. Some studies have demonstrated that the seeds of this plant may have an anti-diabetic effect by lowering fasting blood sugar levels and improving glucose tolerance. We conducted a systematic review of the hypoglycemic effects of fenugreek. An electronic literature search was carried out in the PubMed, Google Scholar, Scopus, and Cochrane Library databases through 18 November 2022 to find trials that assessed fasting blood glucose, postprandial blood glucose, and HbA1c changes in participants treated with fenugreek and in the control group. The mean difference with 95% confidence intervals (CI) was calculated to represent the analysis. Fourteen trials, consisting of 894 participants, were included in the meta-analysis. The results showed a reduction in fasting blood glucose levels (MD: 3.70, 95% CI of -27.02, 19.62;",
+          "journal": "Medicina (Kaunas, Lithuania)"
         },
         {
+          "id": "pmid:36992660",
           "pmid": "36992660",
           "title": "Effect of saffron and fenugreek on lowering blood glucose: A systematic review with meta-analysis.",
           "year": "2023",
           "design": "Meta-analysis",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36992660/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Saffron and fenugreek have been shown to have an effect on lowering blood glucose; therefore, this study aims to evaluate the effects of using saffron and fenugreek on blood glucose control. PubMed, Cochrane Library, Scopus, and Web of Science databases were searched for relevant articles. Articles on the use of saffron or fenugreek to control blood glucose were selected in compliance with PRISMA guidelines. R software was used for statistical analysis. The mean difference (MD) and the standardized MD (SMD) were adopted, and subgroup analyses were performed according to patient's clinical condition. Nineteen studies comprised this meta-analysis. Overall, using fenugreek decreased fasting blood glucose (FBG) (SMD: -0.90; 95%CI: -1.43 to -0.38; I",
+          "journal": "Phytotherapy research : PTR"
         },
         {
-          "pmid": "27496582",
-          "title": "Effect of fenugreek on hyperglycaemia and hyperlipidemia in diabetes and prediabetes: A meta-analysis.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 10
-        },
-        {
-          "pmid": "24438170",
-          "title": "Effect of fenugreek (Trigonella foenum-graecum L.) intake on glycemia: a meta-analysis of clinical trials.",
-          "year": "2014",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 10
-        },
-        {
-          "pmid": "37762302",
-          "title": "The Effect of Fenugreek in Type 2 Diabetes and Prediabetes: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
-          "year": "2023",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 706
-        },
-        {
+          "id": "pmid:36470549",
           "pmid": "36470549",
           "title": "Effects of fenugreek supplementation on the components of metabolic syndrome: A systematic review and dose-response meta-analysis of randomized clinical trials.",
           "year": "2023",
           "design": "Systematic review",
           "population": "human",
-          "n": 29
+          "n": 29,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36470549/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Metabolic syndrome (MetS) is a cluster of metabolic disorders with a heavy disease burden. Fenugreek was reported to be effective in some components of MetS. Therefore, a comprehensive review and meta-analysis of randomized controlled trials was conducted to study the effects of fenugreek on MetS indices. From the beginning until August 2022, PubMed, Embase, Scopus, and Web of science were searched. Data were analyzed using the random-effect model, and presented as weighted mean difference (WMD) and associated 95 % confidence interval (CI). This meta-analysis comprised from a total of 29 eligible RCTs with 31 arms measuring fasting plasma glucose (FPG), Triglyceride (TG), high-density lipoprotein (HDL), waist circumference (WC), systolic blood pressure (SBP), and diastolic blood pressure (DBP). The results indicated significant improving effects of fenugreek on FPG (WMD: -16.75 mg/dL; 95 % CI: -23.36, -10.15; P < 0.001), TG (-20.12 mg/dL; 95 % CI: -34.238, -5.994; P < 0.001), HDL (WMD: 3.55 mg/dL; 95 % CI: 1.98, 5.12; P < 0.001), WC (WMD: -2.51; 95 % CI: -3.78, -1.24; P < 0.001) and SBP (WMD: -3.45 mmHg; 95 % CI: -6.38, -0.52; P = 0.021); However the effect on DBP (WMD: 3.17; 95 % CI: -5.40, 11.73; P = 0.469) and BMI (WMD: -0.40 kg/m2; 95 % CI: -1.114, 0.324; P = 0.281) was not significant. Administration of fenugreek can meaningfully reduce FPG, TG, WC, and SBP and increase HDL. The overall results support possible protective and therapeutic effects of fenugreek on MetS parameters.",
+          "journal": "Pharmacological research"
         },
         {
+          "id": "pmid:37762302",
+          "pmid": "37762302",
+          "title": "The Effect of Fenugreek in Type 2 Diabetes and Prediabetes: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+          "year": "2023",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 706,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37762302/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Fenugreek is a widely used herbal medicine as a complementary therapy for diabetes mellitus. Lots of clinical trials have proved its beneficial effect on glycemic control parameters and lipid profiles. Thus, we conducted a systematic review and meta-analysis to evaluate the effectiveness and safety of fenugreek as a treatment for type 2 diabetes mellitus. We searched PubMed, Embase, Cochrane, China Knowledge Resource Integrated Database (CNKI), Korean studies Information Service System (KISS), Research Information Sharing Service (RISS), and ScienceON to select RCTs which used fenugreek targeting hyperglycemia with a control group. We used either a random effect model or a fixed model in a meta-analysis of Fasting blood glucose (FBG), 2 h plasma glucose during a 75 g oral glucose tolerance test (OGTT) (2-hPG), homeostatic model assessment for insulin resistance (HOMA-IR), glycosylated hemoglobin (HbA1c)/total cholesterol (TC), triglyceride (TG), high density lipoprotein (HDL-C), low density lipoprotein (LDL-C), body mass index (BMI). After screening, a total of 10 studies (706 participants) remained. Fenugreek significantly reduced FBG, 2-hPG, and HbA1c, but it did not significantly decrease HOMA-IR. Moreover, it significantly improved TC, TG, and HDL-C, while there were no significant differences in LDL-C and BMI. Hepatic or renal toxicity was not observed, and there were no severe adverse events associated with fenugreek despite mild gastrointestinal side effects in some studies. In conclusion, fenugreek improves overall glycemic control parameters and lipid profile safely.",
+          "journal": "International journal of molecular sciences"
+        },
+        {
+          "id": "pmid:2194788",
+          "pmid": "2194788",
+          "title": "Effect of fenugreek seeds on blood glucose and serum lipids in type I diabetes.",
+          "year": "1990",
+          "design": "RCT",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2194788/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The effect of fenugreek seeds (Trigonella foenum graecum) on blood glucose and the serum lipid profile was evaluated in insulin-dependent (Type I) diabetic patients. Isocaloric diets with and without fenugreek were each given randomly for 10 d. Defatted fenugreek seed powder (100 g), divided into two equal doses, was incorporated into the diet and served during lunch and dinner. The fenugreek diet significantly reduced fasting blood sugar and improved the glucose tolerance test. There was a 54 per cent reduction in 24-h urinary glucose excretion. Serum total cholesterol, LDL and VLDL cholesterol and triglycerides were also significantly reduced. The HDL cholesterol fraction, however, remained unchanged. These results indicate the usefulness of fenugreek seeds in the management of diabetes.",
+          "journal": "European journal of clinical nutrition"
+        },
+        {
+          "id": "pmid:42618886",
+          "pmid": "42618886",
+          "title": "Combined Supplementation With Trigonella foenum-graecum and Nigella sativa Seed Powders Improves Glycemic Control, Dyslipidemia, and Organ Function in Alloxan-I",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1111/1750-3841.71339",
+          "epmc_id": "MED:42618886",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42618886/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Diabetes mellitus is characterized by persistent hyperglycemia accompanied by dyslipidemia, oxidative stress, and progressive hepatic, renal, and hematological disturbances. This study evaluated the compositional, antioxidant, and preclinical antidiabetic potential of Trigonella foenum-graecum (fenugreek) and Nigella sativa (black seed) powders, administered individually or combined, in alloxan-induced diabetic rats. Fenugreek powder contained high crude fiber (22.1%) and moderate protein (20.5%), whereas black seed powder showed high crude fat (38.9%) and appreciable protein (20.9%). Total phenolic content was substantially higher in black seed powder (185.3 mg ± 7.6 mg GAE/g) than in fenugreek powder (47.1 mg ± 2.0 mg GAE/g), although both exhibited comparable DPPH radical scavenging activity (63.8%-63.9%). Diabetic rats received fenugreek, black seed, or their combination (100 mg/kg body weight) for 28 days alongside healthy and untreated diabetic controls. All treatments improved glycemic status, with the combined treatment producing the greatest HbA1c reduction (8.9% to 5.1%) compared with fenugreek (6.4%), black seed (6.2%), and untreated diabetic rats (8.1%). Treatments also improved dyslipidemia, hematological indices, and hepatic and renal biomarkers, with the combined treatment consistently showing superior efficacy. These findings support fenugreek and black seed powders as bioactive-rich functional ingredients with complementary glucose-lowering and organ-protective effects, highlighting their promise as a multi-target dietary adjunct against diabetes. PRACTICAL APPLICATIONS: This study demonstrates that the combined use of Trigonella foenum-graecum (fenugreek) and Nigella sativa (black seed) powders has potential as a functional food ingredient or nutraceutical formulation for dietary management of diabetes. Their complementary bioactive composition improved glycemic control, lipid metabolism, and liver and kidney function in a preclinical model, supporting their application in developing value-added functional foods, health supplements, and plant-based therapeutic diets aimed at reducing diabetes-associated metabolic complications.",
+          "journal": "Journal of food science"
+        },
+        {
+          "id": "pmid:39885962",
+          "pmid": "39885962",
+          "title": "The Intricate Mechanisms of Functional Foods Oyster Mushroom and Fenugreek on Type 2 Diabetic Animal Model.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1155/jdr/6209785",
+          "epmc_id": "MED:39885962",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39885962/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Mushrooms and fenugreek are widely used to reduce hyperglycemia, and fenugreek is also used as a culinary ingredient to enhance flavor and aroma. This study is aimed at investigating the underlying mechanisms of the hypoglycemic effects of mushrooms and fenugreek in a Type 2 diabetic rat model. Adenosine monophosphate (AMP)-activated protein kinase (AMPK) functions to reduce hyperglycemia through insulin-independent pathways and protects beta-cells. Diabetic model rats were administered standard diets supplemented with 5% oyster mushroom powder (mushroom-treated (MT) group) and 5% fenugreek seed powder (fenugreek-treated (FT) group) for 8 weeks. The results showed improvements in both glycemic and lipid profiles, with both oyster mushroom and fenugreek enhancing the phosphorylation of AMPK in muscle tissue. However, no effect on insulin secretion was observed. These findings suggest that both substances reduce hyperglycemia through an insulin-independent pathway. In silico analysis of both mushroom and fenugreek seed extracts revealed bioactive compounds having a strong binding affinity to <i>α</i>-glucosidase, which suggests mushroom and fenugreek supplements might control postprandial blood glucose levels.",
+          "journal": "Journal of diabetes research"
+        },
+        {
+          "id": "pmid:32768577",
           "pmid": "32768577",
           "title": "Fenugreek attenuates obesity-induced inflammation and improves insulin resistance through downregulation of iRhom2/TACE.",
           "year": "2020",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32768577/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "We previously reported that fenugreek-derived 4-hydroxyisoleucine ameliorates insulin resistance via regulation of TNF-α converting enzyme (TACE) expression. In the present study, we further investigate the effects and mechanisms of fenugreek on obesity-induced inflammation and insulin signaling in the high-fat diet (HFD)-challenged obese mice. After 12 weeks of HFD intervention, mice were treated with the low or high dosages of fenugreek. Serum levels of glucose, insulin, lipid profile, inflammation cytokines, and adipokines were detected. Macrophage infiltration and adipose tissue morphology were observed. Western blot was conducted to investigate the expressions of inactive rhomboid 2 (iRhom2) and TACE as well as other signaling pathways in subcutaneous adipose tissue. We showed that fenugreek significantly suppressed body weight gain and fat accumulation in HFD-challenged obese mice. Meanwhile, fasting glucose, insulin, and HOMA-IR in fenugreek-treated mice were remarkably decreased, which were properly explained by fenugreek-induced activation of the insulin receptor signaling pathway. Moreover, the anti-inflammatory properties of fenugreek were shown by the decrease of systemic and local expressions of pro-inflammatory cytokines as well as reduced macrophage infiltration into adipose tissue. Additionally, fenugreek markedly deactivated NF-κB and JNK pathways. Finally, we demonstrated that fenugreek strikingly repressed the transcriptions and expressions of iRhom2 and TACE. Fenugreek shows an encouraging and promising property in ameliorating insulin resistance and suppressing inflammation in obesity, which might be realized by fenugreek-mediated inhibition of iRhom2/TACE axis-facilitated TNF-α release from adipocytes.",
+          "journal": "Life sciences"
         },
         {
+          "id": "pmid:28986580",
+          "pmid": "28986580",
+          "title": "Fenugreek supplementation during high-fat feeding improves specific markers of metabolic health.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28986580/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To assess the metabolically beneficial effects of fenugreek (Trigonella foenum-graecum), C57BL/6J mice were fed a low- or high-fat diet for 16 weeks with or without 2% (w/w) fenugreek supplementation. Body weight, body composition, energy expenditure, food intake, and insulin/glucose tolerance were measured regularly, and tissues were collected for histological and biochemical analysis after 16 weeks of diet exposure. Fenugreek did not alter body weight, fat mass, or food intake in either group, but did transiently improve glucose tolerance in high fat-fed mice. Fenugreek also significantly improved high-density lipoprotein to low-density lipoprotein ratios in high fat-fed mice without affecting circulating total cholesterol, triglycerides, or glycerol levels. Fenugreek decreased hepatic expression of fatty acid-binding protein 4 and increased subcutaneous inguinal adipose tissue expression of adiponectin, but did not prevent hepatic steatosis. Notably, fenugreek was not as effective at improving glucose tolerance as was four days of voluntary wheel running. Overall, our results demonstrate that fenugreek promotes metabolic resiliency via significant and selected effects on glucose regulation, hyperlipidemia, and adipose pathology; but may not be as effective as behavioral modifications at preventing the adverse metabolic consequences of a high fat diet.",
+          "journal": "Scientific reports"
+        },
+        {
+          "id": "pmid:28433714",
+          "pmid": "28433714",
+          "title": "Effects of dietary supplementation with fenugreek seeds, alone or in combination with probiotics, on gilthead seabream (Sparus aurata L.) skin mucosal immunity.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28433714/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Despite increasing interest in modulating the immune response of fish, providing a combination of probiotics and herbal immunostimulants in aquafeed has rarely has been studied. The effects on gilthead seabream (Sparus aurata L.) of the dietary administration of fenugreek (Trigonella foenum graecum) seeds alone (FE), or combined with one of the following probiotic strains: Bacillus licheniformis (FEBL), Lactobacillus plantarum (FELP) or Bacillus subtilis (FEBS) were evaluated. Fish were fed a control or one of the supplemented diets for 3 weeks. After 2 and 3 weeks of the feeding trial, the abundance of terminal carbohydrates, IgM levels, enzymatic activities (proteases, alkaline phosphatase, esterase and ceruloplasmin) and bactericidal activity were determined in skin mucus. Our results demonstrated that the dietary administration of FE in combination with L. plantarum, particularly, increased carbohydrate abundance, the activity of certain enzymes such as ceruloplasmin, and bactericidal activity against the pathogenic bacterium Photobacterium damselae and the non-pathogenic bacterium B. subtilis in skin mucus at the end of the trial. The carbohydrates most affected by the FELP diet were mannose/glucose, N-acetyl-d-galactosamine and N-acetyl-β-d-glucosamine. Interestingly, IgM levels were significantly higher in fish fed the FELP and FEBS diets whilst protease activity generally increased in all supplemented diets, which could suggests that the main effect in this activity was to the result of FE supplementation although that fact cannot be confirmed because the effects of probiotics addition alone were not studied. These results suggest that the combined dietary administration of fenugreek and L. plantarum will best enhance the skin mucosal immunity response of gilthead seabream.",
+          "journal": "Fish & shellfish immunology"
+        },
+        {
+          "id": "pmid:23467959",
           "pmid": "23467959",
           "title": "Hypoglycemic and antioxidative effects of fenugreek and termis seeds powder in streptozotocin-diabetic rats.",
           "year": "2013",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23467959/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Diabetes mellitus is a heterogeneous disease characterized by altered cellular metabolism. So, many traditional herbs are being used by diabetic patients to control this disease. In the present study, an attempt has been made to investigate the anti-diabetic and antioxidative effects of water suspension of Fenugreek (F), and Termis (T) seeds powder and their mixture (M) who were studied in Streptozotocin (STZ)-induced diabetic rats. Experimental diabetes was induced by injection a single dose of STZ (50 mg/kg, i.p.). Adult male albino rats were divided into five groups; normal control, diabetic control, diabetic-F supplement (1 g/kg b.wt.), diabetic-T supplement (1 g/kg b.wt.) and diabetic-M supplement 1 g/kg b.wt. of each seed powder concurrently for 30 days. Serum glucose, insulin, lipid profile, activities of serum marker enzymes of liver function as well as liver and muscle glycogen content were measured. The oxidative stress was assessed by blood reduced glutathione (GSH) content and enzyme activities of glutathione-S-transferase (GST) and catalase (CAT) in plasma. The increase in serum glucose, total lipid, triglycerides, total cholesterol, AST, ALT, ALP and decreased insulin, plasma, GSH, GST, CAT, as well as liver and muscle glycogen content were the salient features recorded in diabetic control rats. The F, T and M supplements significantly reverted the levels of the studied metabolites and enzymes activities to near normal control values. Co-administration of F and T seeds powder was considered as an effective agent in modulating the alterations in total lipid, AST, ALT, GSH and muscle glycogen. Our data suggest that F, T and M seeds powder supplementation may be beneficial for preventing diabetic complications in this animal model.",
+          "journal": "European review for medical and pharmacological sciences"
+        },
+        {
+          "id": "pmid:20100065",
+          "pmid": "20100065",
+          "title": "Immunomodulatory, beta-cell, and neuroprotective actions of fenugreek oil from alloxan-induced diabetes.",
+          "year": "2010",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20100065/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Immunological disorders and nephropathy are among the most frequent and serious complications of diabetes mellitus. This shows that fewer infiltrated inflammatory cells evidenced by reverted back to near the normal value of white blood cell, mean corpuscular volume, and lymphocytes counts as interleukin-6 in pancreas. Also, fenugreek oil significantly improved blood glucose levels, glucose intolerance, and insulin sensitivity compared to the diabetic group. The pancreatic islet and less beta-cells damage were observed after the administration of fenugreek oil to diabetic rats. Moreover, diabetic rats showed low activities of superoxide dismutase, catalase, glutathione peroxidase, and reduced glutathione content in kidney, which were restored to near normal levels by treatment with fenugreek oil. The increased levels of lipid peroxidation, creatinine, albumin, and urea in diabetic rats decreased significantly in diabetic rats treated with fenugreek oil. Diabetic rats treated with fenugreek oil restored almost a normal architecture of pancreas and kidney. In conclusion, this study reveals the efficacy of fenugreek oil in the amelioration of diabetes, hematological status, and renal toxicity which may be attributed to its immunomodulatory activity and insulin stimulation action along with its antioxidant potential.",
+          "journal": "Immunopharmacology and immunotoxicology"
+        },
+        {
+          "id": "pmid:16176151",
+          "pmid": "16176151",
+          "title": "Supplementation of fenugreek leaves reduces oxidative stress in streptozotocin-induced diabetic rats.",
+          "year": "2005",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16176151/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Trigonella foenum-graecum, commonly known as fenugreek, is a traditional medicinal plant of the Leguminoseae family in India. The antioxidant effect of fenugreek leaves was evaluated in the streptozotocin-induced diabetic rat model. The antioxidant effect was evaluated by estimating thiobarbituric acid-reactive substances and reduced glutathione and measuring the activities of catalase and superoxide dismutase in liver, heart, and kidney in diabetic rats. Fenugreek leaf powder supplementation significantly lowered lipid peroxidation and significantly increased the antioxidant system in diabetic rats. The effect at a dose of 1 g/kg of body weight of fenugreek leaf powder was similar to that of glibenclamide. Insulin restores all the parameters to near normal values. Thus, fenugreek leaf powder reduces oxidative stress in experimental diabetes.",
+          "journal": "Journal of medicinal food"
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "36837450",
+            "metric": "mean_diff",
+            "value": -3.7,
+            "ci_low": -27.02,
+            "ci_high": 19.62,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "control group",
+            "direction": "benefit",
+            "quote": "reduction in fasting blood glucose levels (MD: 3.70, 95% CI of -27.02, 19.62"
+          },
+          {
+            "pmid": "36992660",
+            "metric": "smd",
+            "value": -0.9,
+            "ci_low": -1.43,
+            "ci_high": -0.38,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "fenugreek vs control",
+            "direction": "benefit",
+            "quote": "using fenugreek decreased fasting blood glucose (FBG) (SMD: -0.90; 95%CI: -1.43 to -0.38"
+          },
+          {
+            "pmid": "42618886",
+            "metric": "mean_diff",
+            "value": 3.8,
+            "ci_low": 0.0,
+            "ci_high": 7.6,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs baseline (combined treatment)",
+            "direction": "benefit",
+            "quote": "the combined treatment producing the greatest HbA1c reduction (8.9% to 5.1%)"
+          }
+        ],
+        "n_not_reported": 12,
+        "n_total": 15
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
-      "headline_effect": null,
-      "summary": "For blood sugar, Fenugreek has moderate human evidence (8 studies)."
+      "headline_effect": {
+        "metric": "smd",
+        "value": -0.9,
+        "ci_low": -1.43,
+        "ci_high": -0.38,
+        "ci_estimated": false,
+        "n_studies_pooled": 19,
+        "comparator": "fenugreek vs control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "36992660",
+        "quote": "using fenugreek decreased fasting blood glucose (FBG) (SMD: -0.90; 95%CI: -1.43 to -0.38"
+      },
+      "summary": "For blood sugar, Fenugreek has moderate human evidence (15 graded studies).",
+      "weighted_score": {
+        "final_score": 89.4,
+        "confidence_interval": {
+          "lower": 72.2,
+          "upper": 100.0
+        },
+        "confidence_tier": "Gold Standard",
+        "direction": "null_result",
+        "breakdown": {
+          "n_studies": 15,
+          "high_tier_points": 255.192,
+          "low_tier_points_pre_cap": 16.675,
+          "low_tier_points_post_cap": 16.675,
+          "low_tier_cap_applied": false,
+          "total_points_R": 271.867,
+          "scaled_base_score": 89.426,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 8.7972,
+          "se_consistency_component": 5.1033,
+          "se_thinness_component": 3.6939,
+          "margin_of_error": 17.242,
+          "human_sample_total": 1648,
+          "studies_missing_sample_size": 3,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "3 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.212,
+              "points": 109.102,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 45.0,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.09,
+              "points": 49.064,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.204,
+              "points": 4.817,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.192,
+              "points": 4.767,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.135,
+              "points": 51.096,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.172,
+              "points": 4.688,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.217,
+              "points": 4.868,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.21,
+              "points": 4.839,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.172,
+              "points": 52.736,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.333,
+              "points": 24.001,
+              "supportive": true
+            },
+            {
+              "idx": 11,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.192,
+              "points": 4.767,
+              "supportive": true
+            },
+            {
+              "idx": 12,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.185,
+              "points": 106.611,
+              "supportive": true
+            },
+            {
+              "idx": 13,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 14,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.105,
+              "points": 4.419,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para el azúcar en sangre, Fenogreco tiene evidencia humana moderada (15 estudios clasificados)."
     },
     {
       "outcome": "testosterone / hormones",
@@ -120,194 +533,14 @@
       "certainty": "moderate",
       "score": 70,
       "has_human_evidence": true,
-      "n_studies": 3,
-      "grade_reasons": [
-        "Precision: ~449 participants verified across 1 of 3 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 0 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 35,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 2,
-        "n_animal_studies": 1,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:32048383",
-        "PMID:37253363",
-        "PMID:39941027"
-      ],
-      "studies": [
-        {
-          "pmid": "37253363",
-          "title": "The Anabolic Effect of Fenugreek: A Systematic Review with Meta-analysis.",
-          "year": "2023",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 449
-        },
-        {
-          "pmid": "32048383",
-          "title": "Effect of fenugreek extract supplement on testosterone levels in male: A meta-analysis of clinical trials.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "39941027",
-          "title": "Effect of Fenugreek Extract on Testosterone Propionate-Induced Benign Prostatic Hyperplasia.",
-          "year": "2025",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For testosterone / hormones, Fenugreek has moderate human evidence (3 studies)."
-    },
-    {
-      "outcome": "cholesterol / lipids",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
-      "n_studies": 9,
-      "grade_reasons": [
-        "Precision: ~1305 participants verified across 4 of 9 studies; most abstracts omit sample size, so the true total is substantially larger.",
-        "Limited human evidence: 0 primary human studies and 5 pooled analyses retrieved \u2014 below the threshold for the top tier."
-      ],
-      "layers": {
-        "mechanistic": 30,
-        "preclinical": 55,
-        "human": 70,
-        "overall": 70,
-        "ceiling": 70,
-        "n_human_studies": 5,
-        "n_animal_studies": 4,
-        "note": "Human evidence present: human certainty sets the overall score."
-      },
-      "study_ids": [
-        "PMID:27496582",
-        "PMID:32385866",
-        "PMID:37762302",
-        "PMID:36470549",
-        "PMID:42336947",
-        "PMID:32768577",
-        "PMID:32087319",
-        "PMID:23467959",
-        "PMID:39739074"
-      ],
-      "studies": [
-        {
-          "pmid": "32385866",
-          "title": "Effect of fenugreek consumption on serum lipid profile: A systematic review and meta-analysis.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": null
-        },
-        {
-          "pmid": "32087319",
-          "title": "Effect of fenugreek supplementation on blood lipids and body weight: A systematic review and meta-analysis of randomized controlled trials.",
-          "year": "2020",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 560
-        },
-        {
-          "pmid": "27496582",
-          "title": "Effect of fenugreek on hyperglycaemia and hyperlipidemia in diabetes and prediabetes: A meta-analysis.",
-          "year": "2016",
-          "design": "Meta-analysis",
-          "population": "human",
-          "n": 10
-        },
-        {
-          "pmid": "37762302",
-          "title": "The Effect of Fenugreek in Type 2 Diabetes and Prediabetes: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
-          "year": "2023",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 706
-        },
-        {
-          "pmid": "36470549",
-          "title": "Effects of fenugreek supplementation on the components of metabolic syndrome: A systematic review and dose-response meta-analysis of randomized clinical trials.",
-          "year": "2023",
-          "design": "Systematic review",
-          "population": "human",
-          "n": 29
-        },
-        {
-          "pmid": "39739074",
-          "title": "The Anti-hyperglycemic and Anti-hyperlipidemic Effects of Trigonella foenum-graecum L. Seeds on Fructose-induced Diabetic Wistar Rats.",
-          "year": "2024",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "32768577",
-          "title": "Fenugreek attenuates obesity-induced inflammation and improves insulin resistance through downregulation of iRhom2/TACE.",
-          "year": "2020",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "23467959",
-          "title": "Hypoglycemic and antioxidative effects of fenugreek and termis seeds powder in streptozotocin-diabetic rats.",
-          "year": "2013",
-          "design": "Animal",
-          "population": "animal",
-          "n": null
-        },
-        {
-          "pmid": "42336947",
-          "title": "Impact of dietary fenugreek sprouts and \u03b2-cyclodextrin on soft goat cheese.",
-          "year": "2026",
-          "design": "Unclassified",
-          "population": "animal",
-          "n": null
-        }
-      ],
-      "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
-      },
-      "pooled": {
-        "verified": null,
-        "exploratory": null,
-        "note": "extractor not run"
-      },
-      "headline_effect": null,
-      "summary": "For cholesterol / lipids, Fenugreek has moderate human evidence (9 studies)."
-    },
-    {
-      "outcome": "blood pressure",
-      "tier": "Moderate",
-      "certainty": "moderate",
-      "score": 70,
-      "has_human_evidence": true,
       "n_studies": 4,
       "grade_reasons": [
-        "Limited human evidence: 1 primary human studies and 2 pooled analyses retrieved \u2014 below the threshold for the top tier."
+        "Precision: ~449 participants verified across 1 of 4 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 0 primary human studies and 3 pooled analyses retrieved — below the threshold for the top tier."
       ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 30,
         "preclinical": 35,
@@ -319,139 +552,1266 @@
         "note": "Human evidence present: human certainty sets the overall score."
       },
       "study_ids": [
-        "PMID:36470549",
-        "PMID:36763260",
-        "PMID:36199177",
-        "PMID:32407268"
+        "PMID:32048383",
+        "PMID:37253363",
+        "PMID:32502006",
+        "PMID:39941027"
       ],
       "studies": [
         {
-          "pmid": "36763260",
-          "title": "The Effects of Fenugreek Seed Consumption on Blood Pressure: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+          "id": "pmid:37253363",
+          "pmid": "37253363",
+          "title": "The Anabolic Effect of Fenugreek: A Systematic Review with Meta-analysis.",
           "year": "2023",
           "design": "Meta-analysis",
           "population": "human",
-          "n": 373
+          "n": 449,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37253363/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The use of plant steroids to improve physical health and performance is becoming increasingly popular. One of these plant steroids is diosgenin, which is mainly available in fenugreek. As a result, some studies have been conducted to improve physical health. Fenugreek extracts are also becoming increasingly popular in the context of athletic performance. Based on these assumptions, a systematic review with meta-analysis was conducted to evaluate the promoting effects of fenugreek on strength performance, body composition, and hormone concentration. Four databases were screened according to Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines. The current version of ReviewManager (RevMan) was used for the statistical evaluation. Seven studies with 449 participants (378 male, 71 female) met the inclusion criteria. A small effect of fenugreek was detected for total testosterone (standard mean difference (SMD): 0.32; 95% confidence interval (CI): 0.09 0.55), free testosterone (SMD: 0.24; 95% CI: -0.04, 0.52), lean body mass (SMD: 0.19; 95% CI: -0.10, 0.49), fat mass (SMD: -0.19; 95% CI: -0.44, 0.05), and leg press performance (SMD: 0.22; 95% CI: -0.02, 0.47), in male athletes. The meta-analysis shows that chronic application of fenugreek has performance-enhancing and anabolic effects in male athletes, but no statements can be made for female athletes.",
+          "journal": "International journal of sports medicine"
         },
         {
+          "id": "pmid:32048383",
+          "pmid": "32048383",
+          "title": "Effect of fenugreek extract supplement on testosterone levels in male: A meta-analysis of clinical trials.",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32048383/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Different types of glycosides extract of fenugreek have shown androgenic and anabolic effect in male. The aim of the study was to evaluate the effect of fenugreek extract on total testosterone levels in male. Medline via PubMed, Scopus databases, Cochrane Library, Web of Science, and Google Scholar were searched up to November 2018 for randomized clinical trials comparing intake of fenugreek extract with control group. Data on change in serum total testosterone were pooled using random-effects models. A total of four trials were included. Fenugreek extract has a significant effect on total serum testosterone. Results from clinical trials suggest that fenugreek extract supplement has an effect on serum total testosterone levels in male.",
+          "journal": "Phytotherapy research : PTR"
+        },
+        {
+          "id": "pmid:32502006",
+          "pmid": "32502006",
+          "title": "Effect of Fenugreek on vasomotor symptoms in menopausal women: A protocol for systematic review and meta-analysis.",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32502006/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Vasomotor symptoms (hot flashes or night sweats) are closely related to the impaired quality of life in menopausal women. Fenugreek is the ripe seed of Trigonella foenum graecum Linn. In China, this plant is used to relieve menopausal symptoms in women. Although recent studies have shown that fenugreek may have a good effect on the menopausal symptoms, there is no meta-analysis to systematically evaluate its efficacy in improving menopausal vasomotor symptoms. Randomized controlled trials that met the inclusion criteria will be retrieved in 5 English online databases and 4 Chinese online databases. The primary outcomes are changes in frequency and intensity of vasomotor symptoms that measured by validated scales. The secondary outcomes will include quality of life, blood hormone parameters, blood biochemical parameters, and adverse events. Heterogeneity of data will be assessed by I and Cochrane Q statistics. Sensitivity analysis and subgroup analysis will be performed to explore the sources of heterogeneity. Egger test and Begg test will be used to assess the publication bias. Finally, we will evaluate the quality of evidence by the GRADE approach. All the data statistics will be performed using the STATA 15.0 software. All the results of will be published in a peer-reviewed journal. This meta-analysis will systematically evaluate the efficacy and safety of fenugreek in the treatment of menopausal vasomotor symptoms. 10.17605/OSF.IO/3BCY8.",
+          "journal": "Medicine"
+        },
+        {
+          "id": "pmid:39941027",
+          "pmid": "39941027",
+          "title": "Effect of Fenugreek Extract on Testosterone Propionate-Induced Benign Prostatic Hyperplasia.",
+          "year": "2025",
+          "design": "Unclassified",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39941027/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Benign prostatic hyperplasia (BPH) is a noncancerous urinary disorder that is common in older adult men; however, its underlying mechanisms remain unclear. Fenugreek has some biological effects, including hyperglycemia regulation, immune response modulation, and anti-cancer properties; In this study, we investigated the ameliorative effects of fenugreek seed extract (Forceterone",
+          "journal": "International journal of molecular sciences"
+        }
+      ],
+      "effects": {
+        "plottable": [
+          {
+            "pmid": "37253363",
+            "metric": "smd",
+            "value": 0.32,
+            "ci_low": 0.09,
+            "ci_high": 0.55,
+            "ci_estimated": false,
+            "converted": false,
+            "tier": "solid",
+            "status": "verified",
+            "comparator": "fenugreek vs control",
+            "direction": "benefit",
+            "quote": "A small effect of fenugreek was detected for total testosterone (standard mean difference (SMD): 0.32; 95% confidence interval (CI): 0.09 0.55)"
+          }
+        ],
+        "n_not_reported": 3,
+        "n_total": 4
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": {
+        "metric": "smd",
+        "value": 0.32,
+        "ci_low": 0.09,
+        "ci_high": 0.55,
+        "ci_estimated": false,
+        "n_studies_pooled": 7,
+        "comparator": "fenugreek vs control",
+        "direction": "benefit",
+        "status": "verified",
+        "source": "meta_analysis",
+        "pmid": "37253363",
+        "quote": "A small effect of fenugreek was detected for total testosterone (standard mean difference (SMD): 0.32; 95% confidence interval (CI): 0.09 0.55)"
+      },
+      "summary": "For testosterone / hormones, Fenugreek has moderate human evidence (4 graded studies).",
+      "weighted_score": {
+        "final_score": 72.3,
+        "confidence_interval": {
+          "lower": 36.9,
+          "upper": 100.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 4,
+          "high_tier_points": 155.515,
+          "low_tier_points_pre_cap": 4.181,
+          "low_tier_points_post_cap": 4.181,
+          "low_tier_cap_applied": false,
+          "total_points_R": 159.696,
+          "scaled_base_score": 72.284,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 18.0687,
+          "se_consistency_component": 10.9976,
+          "se_thinness_component": 7.0711,
+          "margin_of_error": 35.415,
+          "human_sample_total": 449,
+          "studies_missing_sample_size": 2,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "2 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.172,
+              "points": 52.736,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.09,
+              "points": 98.128,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.09,
+              "points": 49.064,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para testosterona / hormonas, Fenogreco tiene evidencia humana moderada (4 estudios clasificados)."
+    },
+    {
+      "outcome": "cholesterol / lipids",
+      "tier": "Moderate",
+      "certainty": "moderate",
+      "score": 70,
+      "has_human_evidence": true,
+      "n_studies": 12,
+      "grade_reasons": [
+        "Precision: ~1314 participants verified across 4 of 12 studies; most abstracts omit sample size, so the true total is substantially larger.",
+        "Limited human evidence: 1 primary human studies and 5 pooled analyses retrieved — below the threshold for the top tier."
+      ],
+      "direction_status": "assessed",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 70,
+        "overall": 70,
+        "ceiling": 70,
+        "n_human_studies": 6,
+        "n_animal_studies": 6,
+        "note": "Human evidence present: human certainty sets the overall score."
+      },
+      "study_ids": [
+        "PMID:39286181",
+        "PMID:28986580",
+        "PMID:32385866",
+        "PMID:42336947",
+        "PMID:32768577",
+        "PMID:23467959",
+        "PMID:36470549",
+        "PMID:2194788",
+        "PMID:30719662",
+        "PMID:32087319",
+        "PMID:37762302",
+        "PMID:42618886"
+      ],
+      "studies": [
+        {
+          "id": "pmid:39286181",
+          "pmid": "39286181",
+          "title": "Therapeutic effect of fenugreek supplementation on type 2 diabetes mellitus: A systematic review and meta-analysis of clinical trials.",
+          "year": "2024",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 19,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39286181/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Numerous clinical trials have investigated the effects of fenugreek, a traditional herbal medicine, on type 2 diabetes mellitus (T2DM). However, the results from these studies have been inconsistent. Therefore, we aimed to perform a meta-analysis on the effects of fenugreek supplementation on weight, body mass index (BMI), lipid profile, and glycemic indices in patients with T2DM. We searched PubMed, Scopus, Embase, ISI Web of Science, and Cochrane Library databases to identify clinical trial studies until October 2023. The data were analyzed using a random-effects model and presented as the weighted mean difference (WMD) along with the associated 95 % confidence interval (CI). A total of 19 studies were included in the meta-analysis. The results indicated a significant impact of fenugreek supplementation on lowering fasting plasma glucose (FPG) (WMD: 20.32 mg/dl; 95 % CI: 26.65 to -13.99), hemoglobin A1C (HbA1c) (WMD: 0.54 %; 95 % CI: 0.80 to -0.28), homeostatic model assessment of insulin resistance (HOMA-IR) (WMD: 0.36; 95 % CI: 0.67 to -0.05), total cholesterol (TC) (WMD: 33.10 mg/dL; 95 % CI: 64.31 to -1.88), low-density lipoprotein cholesterol (LDL-C) (WMD: 29.14 mg/dL; 95 % CI: 55.45 to -2.83), BMI (WMD: 0.73 kg/m2; 95 % CI: 1.40 to -0.07), and increasing the high-density lipoprotein cholesterol (HDL-C) (WMD: 5.68 mg/dL; 95 % CI: 3.51 to 7.85). However, the effect on fasting insulin, triglycerides, and weight was not significant. Fenugreek supplementation has been shown to improve FPG, HbA1C, HOMA-IR, TC, LDL-C, HDL-C, and BMI in patients with T2DM. The overall results suggest that fenugreek may have protective and therapeutic effects on T2DM parameters.",
+          "journal": "Heliyon"
+        },
+        {
+          "id": "pmid:32385866",
+          "pmid": "32385866",
+          "title": "Effect of fenugreek consumption on serum lipid profile: A systematic review and meta-analysis.",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32385866/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Various studies have shown that Trigonella foenum-graecum (fenugreek) supplementation has lipid-lowering activity. This meta-analysis was performed to evaluate the effect of fenugreek supplementation on human serum lipid profile. Data sources were PubMed, EMBASE, Scopus, and Coherence library which were searched systematically from January 2000 up to December 2019. Inclusion criteria were randomized clinical trial (RCT) study design, at least one of lipid profile components (triglyceride [TG], total cholesterol [TC], low-density lipoprotein cholesterol, and high-density lipoprotein cholesterol) levels measured before fenugreek use and one of the lipid components level reported as result. The pooled weighted mean difference (MD) and its 95% confidence interval (CI) were calculated and pooled using a random-effect model. Only articles published in English were considered. Fifteen RCTs involving 281 cases consumed fenugreek and 255 control cases in controlled group (11 articles) and 136 cases in uncontrolled group (4 articles) were analyzed in our study. Pooled data of indicated a significant impact of fenugreek supplementation on lowering TC (-1.13 [-1.88, -0.37]; p = .003), low-density lipoprotein (LDL) (-1.26 [-2.09, -0.43]; p = .003), and TG (-1.07 [-1.82, -0.33]; p = 0.005) and increasing the high-density lipoprotein (HDL) level (0.70 [0.07, 1.34]; p = .03) compared with the control group. There were no significant differences in TC, TG, and LDL between pre- and post-fenugreek studies in the noncontrolled studies however, the result of combination of four studies without control group showed a significant increase in mean HDL (0.81 [0.33,1.29]; p-value = .001). The results of subgroup analysis showed that the fenugreek reduced the TG and LDL and increases HDL levels in diabetic subjects more effectively. Fenugreek supplementation significantly improved lipid profile (LDL, TG, TC, and HDL). It could be considered as an effective lipid-lowering medicinal plant. Further high-quality studies are needed to firmly establish the clinical efficacy of the plant.",
+          "journal": "Phytotherapy research : PTR"
+        },
+        {
+          "id": "pmid:32087319",
+          "pmid": "32087319",
+          "title": "Effect of fenugreek supplementation on blood lipids and body weight: A systematic review and meta-analysis of randomized controlled trials.",
+          "year": "2020",
+          "design": "Meta-analysis",
+          "population": "human",
+          "n": 560,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32087319/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Fenugreek is a traditional herbal medicine that has been used for centuries to treat hyperglycemia, muscle spasms, gastritis, constipation, edema, and other metabolic disorders. Recently, lipid-lowering effects of fenugreek have been identified. The aim of this systematic review and meta-analysis was to determine and clarify the impact of fenugreek supplementation on anthropometric indices and serum lipid levels. We searched PubMed, Scopus, ISI Web of Science, Cochrane Library, and Google Scholar from inception to June 2019 using relevant keywords. All randomized controlled trials (RCTs) investigating the effects of fenugreek on anthropometric indices and plasma lipids in adults were included. A random-effects model was used for quantitative data synthesis. A sensitivity analysis was conducted using the leave-one-out method. A meta-analysis of 12 RCTs (14 arms) with 560 participants suggested a significant decrease in plasma concentrations of total cholesterol (WMD = -9.371 mg/dL; 95% CI: -15.419, -3.323, p = 0.002), triglycerides (WMD = -13.776 mg/dL; 95% CI: -26.636, -0.916, p = 0.036), and low density lipoprotein cholesterol (WMD = -6.590 mg/Dl; 95% CI: -13.042, -0.137, p = 0.045), as well as an increase in plasma high density lipoprotein cholesterol (WMD = 3.501 mg/dL; 95% CI: 1.309, 5.692, p = 0.002), while body weight (WMD = 0.223 kg; 95% CI: -0.509, 0.955, p = 0.551) and body mass index (WMD = 0.091 kg/m2; 95% CI: -0.244, 0.426, p = 0.596) were not altered. Fenugreek supplementation improved lipid parameters in adults. However, to confirm these results, more studies, particularly among hyperlipidemic patients, are needed.",
+          "journal": "Journal of ethnopharmacology"
+        },
+        {
+          "id": "pmid:36470549",
           "pmid": "36470549",
           "title": "Effects of fenugreek supplementation on the components of metabolic syndrome: A systematic review and dose-response meta-analysis of randomized clinical trials.",
           "year": "2023",
           "design": "Systematic review",
           "population": "human",
-          "n": 29
+          "n": 29,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36470549/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Metabolic syndrome (MetS) is a cluster of metabolic disorders with a heavy disease burden. Fenugreek was reported to be effective in some components of MetS. Therefore, a comprehensive review and meta-analysis of randomized controlled trials was conducted to study the effects of fenugreek on MetS indices. From the beginning until August 2022, PubMed, Embase, Scopus, and Web of science were searched. Data were analyzed using the random-effect model, and presented as weighted mean difference (WMD) and associated 95 % confidence interval (CI). This meta-analysis comprised from a total of 29 eligible RCTs with 31 arms measuring fasting plasma glucose (FPG), Triglyceride (TG), high-density lipoprotein (HDL), waist circumference (WC), systolic blood pressure (SBP), and diastolic blood pressure (DBP). The results indicated significant improving effects of fenugreek on FPG (WMD: -16.75 mg/dL; 95 % CI: -23.36, -10.15; P < 0.001), TG (-20.12 mg/dL; 95 % CI: -34.238, -5.994; P < 0.001), HDL (WMD: 3.55 mg/dL; 95 % CI: 1.98, 5.12; P < 0.001), WC (WMD: -2.51; 95 % CI: -3.78, -1.24; P < 0.001) and SBP (WMD: -3.45 mmHg; 95 % CI: -6.38, -0.52; P = 0.021); However the effect on DBP (WMD: 3.17; 95 % CI: -5.40, 11.73; P = 0.469) and BMI (WMD: -0.40 kg/m2; 95 % CI: -1.114, 0.324; P = 0.281) was not significant. Administration of fenugreek can meaningfully reduce FPG, TG, WC, and SBP and increase HDL. The overall results support possible protective and therapeutic effects of fenugreek on MetS parameters.",
+          "journal": "Pharmacological research"
         },
         {
-          "pmid": "36199177",
-          "title": "The effects of fenugreek seed extract supplementation in patients with Alzheimer's disease: A randomized, double-blind, placebo-controlled trial.",
+          "id": "pmid:37762302",
+          "pmid": "37762302",
+          "title": "The Effect of Fenugreek in Type 2 Diabetes and Prediabetes: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
           "year": "2023",
+          "design": "Systematic review",
+          "population": "human",
+          "n": 706,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37762302/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Fenugreek is a widely used herbal medicine as a complementary therapy for diabetes mellitus. Lots of clinical trials have proved its beneficial effect on glycemic control parameters and lipid profiles. Thus, we conducted a systematic review and meta-analysis to evaluate the effectiveness and safety of fenugreek as a treatment for type 2 diabetes mellitus. We searched PubMed, Embase, Cochrane, China Knowledge Resource Integrated Database (CNKI), Korean studies Information Service System (KISS), Research Information Sharing Service (RISS), and ScienceON to select RCTs which used fenugreek targeting hyperglycemia with a control group. We used either a random effect model or a fixed model in a meta-analysis of Fasting blood glucose (FBG), 2 h plasma glucose during a 75 g oral glucose tolerance test (OGTT) (2-hPG), homeostatic model assessment for insulin resistance (HOMA-IR), glycosylated hemoglobin (HbA1c)/total cholesterol (TC), triglyceride (TG), high density lipoprotein (HDL-C), low density lipoprotein (LDL-C), body mass index (BMI). After screening, a total of 10 studies (706 participants) remained. Fenugreek significantly reduced FBG, 2-hPG, and HbA1c, but it did not significantly decrease HOMA-IR. Moreover, it significantly improved TC, TG, and HDL-C, while there were no significant differences in LDL-C and BMI. Hepatic or renal toxicity was not observed, and there were no severe adverse events associated with fenugreek despite mild gastrointestinal side effects in some studies. In conclusion, fenugreek improves overall glycemic control parameters and lipid profile safely.",
+          "journal": "International journal of molecular sciences"
+        },
+        {
+          "id": "pmid:2194788",
+          "pmid": "2194788",
+          "title": "Effect of fenugreek seeds on blood glucose and serum lipids in type I diabetes.",
+          "year": "1990",
           "design": "RCT",
           "population": "human",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2194788/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The effect of fenugreek seeds (Trigonella foenum graecum) on blood glucose and the serum lipid profile was evaluated in insulin-dependent (Type I) diabetic patients. Isocaloric diets with and without fenugreek were each given randomly for 10 d. Defatted fenugreek seed powder (100 g), divided into two equal doses, was incorporated into the diet and served during lunch and dinner. The fenugreek diet significantly reduced fasting blood sugar and improved the glucose tolerance test. There was a 54 per cent reduction in 24-h urinary glucose excretion. Serum total cholesterol, LDL and VLDL cholesterol and triglycerides were also significantly reduced. The HDL cholesterol fraction, however, remained unchanged. These results indicate the usefulness of fenugreek seeds in the management of diabetes.",
+          "journal": "European journal of clinical nutrition"
         },
         {
-          "pmid": "32407268",
-          "title": "Effect of Nigella sativa and Fenugreek on the Pharmacokinetics and Pharmacodynamics of Amlodipine in Hypertensive Rats.",
+          "id": "pmid:42336947",
+          "pmid": "42336947",
+          "title": "Impact of dietary fenugreek sprouts and β-cyclodextrin on soft goat cheese.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42336947/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "This study investigated the combined effects of fenugreek sprout feeding and β-cyclodextrin (β-CD) treatment on traditional soft goat cheese. Thirty-nine Hassani goats were divided into: control (C), F15 (15 g fenugreek sprouts dry/head/day), and F30 (30 g/head/day). Milk was processed with or without 0.5% β-CD. Fenugreek supplementation significantly enhanced milk production, F30 showing an approximately 60.6% increase in daily milk yield and improved fat and protein contents compared to C. In the cheese, F30 increased protein by 2.87%, while the addition of 0.5% β-CD (CF30) further increased protein by 5.0%, reduced cholesterol and triglycerides by 33.6 and 49.1%, respectively. Fenugreek supplementation improved the lipid profile, reducing total saturated fatty acids by 8.8% and increasing polyunsaturated fatty acids by 264.7% in F30. Textural analysis during storage showed hardness increasing by up to 343.8% in CF15, while springiness and cohesiveness declined. Microstructural confirmed a more homogeneous protein network in β-CD-treated samples. Sensory evaluation highlighted F15 and CF15 as the most acceptable treatments (scores of 8.8 and 8.2, respectively), whereas F30 and CF30 showed reduced acceptability. These findings demonstrated that moderate fenugreek supplementation (15 g/head/day), with or without β-CD, improved the nutritional quality, lipid profile, and structural characteristics of traditional soft goat cheese.",
+          "journal": "Scientific reports"
+        },
+        {
+          "id": "pmid:42618886",
+          "pmid": "42618886",
+          "title": "Combined Supplementation With Trigonella foenum-graecum and Nigella sativa Seed Powders Improves Glycemic Control, Dyslipidemia, and Organ Function in Alloxan-I",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1111/1750-3841.71339",
+          "epmc_id": "MED:42618886",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42618886/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Diabetes mellitus is characterized by persistent hyperglycemia accompanied by dyslipidemia, oxidative stress, and progressive hepatic, renal, and hematological disturbances. This study evaluated the compositional, antioxidant, and preclinical antidiabetic potential of Trigonella foenum-graecum (fenugreek) and Nigella sativa (black seed) powders, administered individually or combined, in alloxan-induced diabetic rats. Fenugreek powder contained high crude fiber (22.1%) and moderate protein (20.5%), whereas black seed powder showed high crude fat (38.9%) and appreciable protein (20.9%). Total phenolic content was substantially higher in black seed powder (185.3 mg ± 7.6 mg GAE/g) than in fenugreek powder (47.1 mg ± 2.0 mg GAE/g), although both exhibited comparable DPPH radical scavenging activity (63.8%-63.9%). Diabetic rats received fenugreek, black seed, or their combination (100 mg/kg body weight) for 28 days alongside healthy and untreated diabetic controls. All treatments improved glycemic status, with the combined treatment producing the greatest HbA1c reduction (8.9% to 5.1%) compared with fenugreek (6.4%), black seed (6.2%), and untreated diabetic rats (8.1%). Treatments also improved dyslipidemia, hematological indices, and hepatic and renal biomarkers, with the combined treatment consistently showing superior efficacy. These findings support fenugreek and black seed powders as bioactive-rich functional ingredients with complementary glucose-lowering and organ-protective effects, highlighting their promise as a multi-target dietary adjunct against diabetes. PRACTICAL APPLICATIONS: This study demonstrates that the combined use of Trigonella foenum-graecum (fenugreek) and Nigella sativa (black seed) powders has potential as a functional food ingredient or nutraceutical formulation for dietary management of diabetes. Their complementary bioactive composition improved glycemic control, lipid metabolism, and liver and kidney function in a preclinical model, supporting their application in developing value-added functional foods, health supplements, and plant-based therapeutic diets aimed at reducing diabetes-associated metabolic complications.",
+          "journal": "Journal of food science"
+        },
+        {
+          "id": "pmid:32768577",
+          "pmid": "32768577",
+          "title": "Fenugreek attenuates obesity-induced inflammation and improves insulin resistance through downregulation of iRhom2/TACE.",
           "year": "2020",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32768577/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "We previously reported that fenugreek-derived 4-hydroxyisoleucine ameliorates insulin resistance via regulation of TNF-α converting enzyme (TACE) expression. In the present study, we further investigate the effects and mechanisms of fenugreek on obesity-induced inflammation and insulin signaling in the high-fat diet (HFD)-challenged obese mice. After 12 weeks of HFD intervention, mice were treated with the low or high dosages of fenugreek. Serum levels of glucose, insulin, lipid profile, inflammation cytokines, and adipokines were detected. Macrophage infiltration and adipose tissue morphology were observed. Western blot was conducted to investigate the expressions of inactive rhomboid 2 (iRhom2) and TACE as well as other signaling pathways in subcutaneous adipose tissue. We showed that fenugreek significantly suppressed body weight gain and fat accumulation in HFD-challenged obese mice. Meanwhile, fasting glucose, insulin, and HOMA-IR in fenugreek-treated mice were remarkably decreased, which were properly explained by fenugreek-induced activation of the insulin receptor signaling pathway. Moreover, the anti-inflammatory properties of fenugreek were shown by the decrease of systemic and local expressions of pro-inflammatory cytokines as well as reduced macrophage infiltration into adipose tissue. Additionally, fenugreek markedly deactivated NF-κB and JNK pathways. Finally, we demonstrated that fenugreek strikingly repressed the transcriptions and expressions of iRhom2 and TACE. Fenugreek shows an encouraging and promising property in ameliorating insulin resistance and suppressing inflammation in obesity, which might be realized by fenugreek-mediated inhibition of iRhom2/TACE axis-facilitated TNF-α release from adipocytes.",
+          "journal": "Life sciences"
+        },
+        {
+          "id": "pmid:30719662",
+          "pmid": "30719662",
+          "title": "Liver disorders related to exposure to gasoline fumes in male rats and role of fenugreek seed supplementation.",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30719662/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Progressive effects of inhalation of gasoline fumes on the liver and the protective potential with fenugreek seed supplementation were evaluated in adult male rats. Twenty-four rats were divided into four groups, unexposed control and fenugreek groups, as well as exposed groups to gasoline fumes for 6 h/6 days/week for 10 weeks, with and without supplementation of fenugreek seed powder in food (5%w/w). Exposure to gasoline fumes resulted in a significant elevation in serum alanine aminotransferase, aspartate aminotransferase, alkaline phosphatase, gamma-glutamyl transferase, total bilirubin, total cholesterol, total triglycerides, and low-density lipoprotein, along with a significant decrease in high-density lipoprotein, total protein, and albumin contents compared to the control. Meanwhile, liver oxidative stress markers, malondialdehyde, hydrogen peroxide, and nitric oxide, were highly detected with decreased antioxidants, superoxide dismutase and catalase. Also, levels of inflammatory markers, interleukin(IL)-1β and IL-6, were significantly elevated with fibrotic markers, transforming growth factor (TGFβ1), fibroblast growth factor (FGF1), and collagen I. Histopathological studies illustrated that rats exposed to gasoline fumes have degenerated hepatocytes with cellular infiltration and necrotic areas, along with remarkable deposition of collagen fibers, suggesting an incidence of liver fibrosis. Administration of fenugreek seeds, rich with antioxidant and anti-inflammatory components, during gasoline exposure showed significant amelioration through suppressing oxidative stress and inflammation.",
+          "journal": "Environmental science and pollution research international"
+        },
+        {
+          "id": "pmid:28986580",
+          "pmid": "28986580",
+          "title": "Fenugreek supplementation during high-fat feeding improves specific markers of metabolic health.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28986580/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "To assess the metabolically beneficial effects of fenugreek (Trigonella foenum-graecum), C57BL/6J mice were fed a low- or high-fat diet for 16 weeks with or without 2% (w/w) fenugreek supplementation. Body weight, body composition, energy expenditure, food intake, and insulin/glucose tolerance were measured regularly, and tissues were collected for histological and biochemical analysis after 16 weeks of diet exposure. Fenugreek did not alter body weight, fat mass, or food intake in either group, but did transiently improve glucose tolerance in high fat-fed mice. Fenugreek also significantly improved high-density lipoprotein to low-density lipoprotein ratios in high fat-fed mice without affecting circulating total cholesterol, triglycerides, or glycerol levels. Fenugreek decreased hepatic expression of fatty acid-binding protein 4 and increased subcutaneous inguinal adipose tissue expression of adiponectin, but did not prevent hepatic steatosis. Notably, fenugreek was not as effective at improving glucose tolerance as was four days of voluntary wheel running. Overall, our results demonstrate that fenugreek promotes metabolic resiliency via significant and selected effects on glucose regulation, hyperlipidemia, and adipose pathology; but may not be as effective as behavioral modifications at preventing the adverse metabolic consequences of a high fat diet.",
+          "journal": "Scientific reports"
+        },
+        {
+          "id": "pmid:23467959",
+          "pmid": "23467959",
+          "title": "Hypoglycemic and antioxidative effects of fenugreek and termis seeds powder in streptozotocin-diabetic rats.",
+          "year": "2013",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23467959/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Diabetes mellitus is a heterogeneous disease characterized by altered cellular metabolism. So, many traditional herbs are being used by diabetic patients to control this disease. In the present study, an attempt has been made to investigate the anti-diabetic and antioxidative effects of water suspension of Fenugreek (F), and Termis (T) seeds powder and their mixture (M) who were studied in Streptozotocin (STZ)-induced diabetic rats. Experimental diabetes was induced by injection a single dose of STZ (50 mg/kg, i.p.). Adult male albino rats were divided into five groups; normal control, diabetic control, diabetic-F supplement (1 g/kg b.wt.), diabetic-T supplement (1 g/kg b.wt.) and diabetic-M supplement 1 g/kg b.wt. of each seed powder concurrently for 30 days. Serum glucose, insulin, lipid profile, activities of serum marker enzymes of liver function as well as liver and muscle glycogen content were measured. The oxidative stress was assessed by blood reduced glutathione (GSH) content and enzyme activities of glutathione-S-transferase (GST) and catalase (CAT) in plasma. The increase in serum glucose, total lipid, triglycerides, total cholesterol, AST, ALT, ALP and decreased insulin, plasma, GSH, GST, CAT, as well as liver and muscle glycogen content were the salient features recorded in diabetic control rats. The F, T and M supplements significantly reverted the levels of the studied metabolites and enzymes activities to near normal control values. Co-administration of F and T seeds powder was considered as an effective agent in modulating the alterations in total lipid, AST, ALT, GSH and muscle glycogen. Our data suggest that F, T and M seeds powder supplementation may be beneficial for preventing diabetic complications in this animal model.",
+          "journal": "European review for medical and pharmacological sciences"
         }
       ],
       "effects": {
-        "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "plottable": [
+          {
+            "pmid": "42336947",
+            "metric": "mean_diff",
+            "value": -33.6,
+            "ci_low": -67.2,
+            "ci_high": 0.0,
+            "ci_estimated": true,
+            "converted": false,
+            "tier": "dashed",
+            "status": "derived",
+            "comparator": "vs control",
+            "direction": "benefit",
+            "quote": "reduced cholesterol and triglycerides by 33.6 and 49.1%, respectively"
+          }
+        ],
+        "n_not_reported": 11,
+        "n_total": 12
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "effects not poolable (mixed or unit-bearing metrics)"
       },
       "headline_effect": null,
-      "summary": "For blood pressure, Fenugreek has moderate human evidence (4 studies)."
+      "summary": "For cholesterol / lipids, Fenugreek has moderate human evidence (12 graded studies).",
+      "weighted_score": {
+        "final_score": 87.4,
+        "confidence_interval": {
+          "lower": 67.5,
+          "upper": 100.0
+        },
+        "confidence_tier": "Moderate-High",
+        "direction": "favors_treatment",
+        "breakdown": {
+          "n_studies": 12,
+          "high_tier_points": 242.683,
+          "low_tier_points_pre_cap": 14.261,
+          "low_tier_points_post_cap": 14.261,
+          "low_tier_cap_applied": false,
+          "total_points_R": 256.944,
+          "scaled_base_score": 87.43,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 10.1543,
+          "se_consistency_component": 6.0178,
+          "se_thinness_component": 4.1365,
+          "margin_of_error": 19.902,
+          "human_sample_total": 1314,
+          "studies_missing_sample_size": 2,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "2 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.09,
+              "points": 49.064,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.204,
+              "points": 4.817,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.232,
+              "points": 55.422,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.172,
+              "points": 4.688,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.217,
+              "points": 4.868,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 1.0,
+              "C_k": 1.172,
+              "points": 52.736,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Moderate",
+              "base_weight": 18.0,
+              "S_k": 1.0,
+              "C_k": 1.333,
+              "points": 24.001,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.15,
+              "points": 4.6,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.172,
+              "points": 105.473,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Strong",
+              "base_weight": 45.0,
+              "S_k": 2.0,
+              "C_k": 1.185,
+              "points": 106.611,
+              "supportive": true
+            },
+            {
+              "idx": 11,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para colesterol / lípidos, Fenogreco tiene evidencia humana moderada (12 estudios clasificados)."
+    },
+    {
+      "outcome": "inflammation",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 15,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 15,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:16176151",
+        "PMID:28199188",
+        "PMID:39121644",
+        "PMID:32768577",
+        "PMID:23467959",
+        "PMID:28269780",
+        "PMID:20100065",
+        "PMID:30719662",
+        "PMID:42690521",
+        "PMID:42510891",
+        "PMID:42716365",
+        "PMID:40524916",
+        "PMID:42618886",
+        "PMID:40125337",
+        "PMID:40042160"
+      ],
+      "studies": [
+        {
+          "id": "pmid:42690521",
+          "pmid": "42690521",
+          "title": "Ameliorative Role of fenugreek Oil Against Lead Acetate Trihydrate-Induced Hepatic, Renal and Testicular Injury in Wistar Albino Rats: Insights into Bcl-2 Expre",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": 40,
+          "doi": "10.1007/s12011-026-05321-0",
+          "epmc_id": "MED:42690521",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42690521/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Lead (Pb) is a prevalent environmental toxicant that induces multisystem toxicity, primarily through oxidative stress and apoptosis. Trigonella foenum-graecum L. (fenugreek) seed oil is enriched with bioactive phytoconstituents possessing potent antioxidant and anti-inflammatory properties. Therefore, this study was designed to investigate the protective effect of fenugreek oil against lead acetate trihydrate (PbAc)-induced hepatic, renal, and testicular histopathological damage in Wistar rats, with emphasis on the anti-apoptotic marker (Bcl-2). A total of 40 rats were randomly divided into four experimental groups (10 in each): a control group (CG), a Pb-intoxicated group (PbG) given 50 mg/kg of PbAc daily, a fenugreek oil-protected group (Pb + FOG) co-administered the same PbAc dose plus 250 mg/kg of fenugreek, and fenugreek oil-only group (FOG) receiving 250 mg/kg of fenugreek oil alone. All treatments were administered via oral gavage over a period of four weeks. Histopathological examination of the PbG revealed marked structural alterations in the hepatic tissue (necrosis, cytoplasmic vacuolation, and inflammatory cell infiltration), renal tissue (glomerular shrinkage and tubular degeneration), and testicular tissue (degeneration of the germinal epithelium and Leydig cells) compared to the CG. In contrast, co-administration of fenugreek seed oil in the Pb + FOG partially restored histological architecture of hepatic, renal and testicular tissues compared to the PbG. However, co-administration of fenugreek seed oil in the Pb + FOG significantly upregulated Bcl-2 mRNA expression compared to PbG (0.65 vs. 0.40; P < 0.01). Sequencing analysis of liver samples showed 97.81-100% nucleotide identity with the Bcl-2 mRNA reference sequence. Lead intoxication in the PbG significantly impaired serum biochemical parameters and elevated Na⁺, K⁺, and Pb levels compared to the CG and FOG. Conversely, co-administration of fenugreek seed oil in the Pb + FOG significantly reduced Pb concentration and restored Na⁺/K⁺ levels. In conclusion, concurrent administration of fenugreek seed oil may attenuate PbAc-induced hepatic, renal and testicular histopathological damage in rats. This protectivity effect was associated with the restoration of sodium/potassium balance, and upregulation of Bcl-2 expression. Nonetheless, further mechanistic studies, particularly addressing oxidative stress markers, are required.",
+          "journal": "Biological trace element research"
+        },
+        {
+          "id": "pmid:42510891",
+          "pmid": "42510891",
+          "title": "Fenugreek Seed Powder Attenuates Lead-Induced Hepatic Injury and Renal Dysfunction in Male Mice Co-Exposed to Escalating Lead Doses.",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": 10,
+          "doi": "10.3390/cimb48070650",
+          "epmc_id": "MED:42510891",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42510891/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Lead (Pb) induces oxidative stress, inflammation, and hepatorenal injury. We evaluated whether fenugreek (<i>Trigonella foenum-graecum</i>) seed powder (200 mg/kg) protects against subchronic Pb-acetate exposure in male albino mice. Sixty mice were randomized to six groups (n = 10): control (G1), fenugreek-only (G2), Pb 150 mg/kg (G3), and three co-exposure groups receiving fenugreek with Pb at 50, 100, and 150 mg/kg (G4-G6), gavaged daily for 8 weeks. LC-DAD-ESI-MS/MS of the seed batch tentatively identified 32 metabolites, dominated by flavonoid C-glycosides, luteolin dihydrogalloyl-glucosyl-pentosyl glucoside (15.90%), vicenin-3 (14.46%), vicenin-2 (9.66%), vicenin-1 (8.80%), kaempferol 7-O-rhamnosyl-glucoside (8.71%), with additional acylated phenolic conjugates. Pb exposure (G3) significantly reduced growth and intake, elevated serum ALT, AST, ALP, urea, and creatinine, raised blood Pb, and produced hepatic necrosis, vacuolation, and inflammation. Molecularly, Pb upregulated Nrf2, HO-1, SCD-1, TNF-α, and IL-6 and suppressed SOD-3. Fenugreek co-treatment attenuated all these changes across the three Pb doses, with greatest effect at the lowest Pb load (G4). Notably, fenugreek co-treatment reduced rather than further increased Nrf2 and HO-1 expression relative to Pb alone, a pattern most consistent with lowering the upstream oxidative stimulus rather than direct induction of these pathways. The seed's polyphenolic profile-rich in vicenin-type C-glycosides and luteolin and kaempferol derivatives-offers a plausible chemical basis for the antioxidant, anti-inflammatory, and modest Pb-lowering effects observed; however, because whole seed powder was administered and metabolite identifications are tentative, these structure-activity relationships are presented as hypotheses for future bioactivity-guided fractionation rather than as demonstrated mechanisms. These preclinical findings support further investigation of fenugreek as a candidate dietary adjunct against environmental Pb exposure, contingent on protein-level validation, pharmacokinetic characterization, benchmarking against a standard chelator, and bioactivity-guided fractionation.",
+          "journal": "Current issues in molecular biology"
+        },
+        {
+          "id": "pmid:42716365",
+          "pmid": "42716365",
+          "title": "Curative and Protective Effects of Fenugreek Seeds Extract-Loaded Zinc Oxide Nanoparticles Against Lung Damage and Intestinal Dysplasia Induced by Experimental ",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.exppara.2026.109198",
+          "epmc_id": "MED:42716365",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42716365/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Cryptosporidiosis is a global health concern that causes mortality and morbidity in children and immunocompromised patients. The currently available anticryptosporidial agent, nitazoxanide (NTZ), has limited efficacy in cases of low immunity. This study aimed to evaluate the curative and protective effects of fenugreek (FNK) extract- loaded zinc oxide nanoparticles (ZnO NPs) against lung damage and intestinal dysplasia induced by experimental cryptosporidiosis. Eighty mice were divided into eight groups (ten mice per subgroup): non-infected non-treated, infected non-treated, infected receiving ZnO NPs, infected receiving NTZ, infected receiving FNK extract, infected receiving FNK- loaded ZnO NPs, infected receiving NTZ- loaded ZnO NPs, and infected receiving both NTZ and FNK extract- loaded ZnO NPs. Assessment parameters included oocyst shedding counts, histopathological and cyclin D1 immunohistochemical analysis in intestinal and lung tissues, evaluation levels of serum IL-17 levels and tissue oxidative stress markers (MDA, NO, SOD, and CAT), and expression of apoptotic gene markers (BCL-2 and caspase-3). The results demonstrated that treatment with ZnO NPs loaded NTZ and FNK extract yielded the most significant reduction in oocyst shedding, along with marked improvement in lung damage and intestinal dysplasia. Furthermore, this treatment was associated with negative cyclin D1 expression, near-normal levels of IL-17 and oxidative stress markers, and normalized BCL-2 and caspase-3 expression. Thus, the curative and protective activity of NTZ in cryptosporidiosis was enhanced when combined with FNK extract and loaded onto ZnO NPs.",
+          "journal": "Experimental parasitology"
+        },
+        {
+          "id": "pmid:42618886",
+          "pmid": "42618886",
+          "title": "Combined Supplementation With Trigonella foenum-graecum and Nigella sativa Seed Powders Improves Glycemic Control, Dyslipidemia, and Organ Function in Alloxan-I",
+          "year": "2026",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1111/1750-3841.71339",
+          "epmc_id": "MED:42618886",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42618886/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Diabetes mellitus is characterized by persistent hyperglycemia accompanied by dyslipidemia, oxidative stress, and progressive hepatic, renal, and hematological disturbances. This study evaluated the compositional, antioxidant, and preclinical antidiabetic potential of Trigonella foenum-graecum (fenugreek) and Nigella sativa (black seed) powders, administered individually or combined, in alloxan-induced diabetic rats. Fenugreek powder contained high crude fiber (22.1%) and moderate protein (20.5%), whereas black seed powder showed high crude fat (38.9%) and appreciable protein (20.9%). Total phenolic content was substantially higher in black seed powder (185.3 mg ± 7.6 mg GAE/g) than in fenugreek powder (47.1 mg ± 2.0 mg GAE/g), although both exhibited comparable DPPH radical scavenging activity (63.8%-63.9%). Diabetic rats received fenugreek, black seed, or their combination (100 mg/kg body weight) for 28 days alongside healthy and untreated diabetic controls. All treatments improved glycemic status, with the combined treatment producing the greatest HbA1c reduction (8.9% to 5.1%) compared with fenugreek (6.4%), black seed (6.2%), and untreated diabetic rats (8.1%). Treatments also improved dyslipidemia, hematological indices, and hepatic and renal biomarkers, with the combined treatment consistently showing superior efficacy. These findings support fenugreek and black seed powders as bioactive-rich functional ingredients with complementary glucose-lowering and organ-protective effects, highlighting their promise as a multi-target dietary adjunct against diabetes. PRACTICAL APPLICATIONS: This study demonstrates that the combined use of Trigonella foenum-graecum (fenugreek) and Nigella sativa (black seed) powders has potential as a functional food ingredient or nutraceutical formulation for dietary management of diabetes. Their complementary bioactive composition improved glycemic control, lipid metabolism, and liver and kidney function in a preclinical model, supporting their application in developing value-added functional foods, health supplements, and plant-based therapeutic diets aimed at reducing diabetes-associated metabolic complications.",
+          "journal": "Journal of food science"
+        },
+        {
+          "id": "pmid:40524916",
+          "pmid": "40524916",
+          "title": "Fenugreek inhibits cathepsin G activity and suppresses the progression of malignant phenotypes in MCF-7 cells.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1016/j.bbrep.2025.102021",
+          "epmc_id": "MED:40524916",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40524916/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "Spices and herbs, which are derived from natural botanical sources, contain many bioactive compounds and play an important role in human health. The general and specific health benefits of these spices and herbs include anti-inflammatory, antioxidant, and anti-tumorigenic activities. Previously, we showed that cathepsin G, which is a neutrophil-derived serine protease localized in human breast cancer tissues, promotes cancer metastasis via induction of platelet-activating factor acetylhydrolase 1B2 (PAFAH1B2) expression in MCF-7 human breast cancer cells. Therefore, although regulation of cathepsin G activity is thought to be important in human breast cancer progression, no compounds that inhibit the activity have been identified for therapeutic purposes. In this study, we screened 50 spice and herb extracts. Peppermint, clove, Sichuan pepper, and fenugreek exhibited strong inhibitory effects on cathepsin G activity and suppressed cathepsin G-induced MCF-7 cell aggregation.; importantly, fenugreek suppressed the increase in PAFAH1B2 expression. The IC<sub>50</sub> of 37.38 μg/mL of fenugreek extract that showed inhibitory effect on cathepsin G-induced malignant progression was 5.87 times lower than the concentration that exerted cytotoxic effect. Interestingly, quercetin and trigonelline contained in fenugreek inhibited cathepsin G activity and suppressed the induction of cell aggregation and PAFAH1B2 expression in human breast cancer cells. These results suggest that quercetin and trigonelline are partly responsible for the inhibitory effect of fenugreek on cathepsin G-induced malignant progression of human breast cancer cells. Our findings provide a new breast cancer treatment strategy targeting cathepsin G, and fenugreek may have synergistic effects when combined with therapeutic drugs.",
+          "journal": "Biochemistry and biophysics reports"
+        },
+        {
+          "id": "pmid:40125337",
+          "pmid": "40125337",
+          "title": "Anti-inflammatory and antioxidant effects of fenugreek in preventing mice model of Alzheimer's disease.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1177/25424823241312970",
+          "epmc_id": "MED:40125337",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40125337/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<h4>Background</h4>Alzheimer's disease (AD) is a chronic neurodegenerative disease and the most prevalent form of dementia. Fenugreek seeds possess anti-inflammatory and antioxidant effects, making them valuable therapeutic agents in managing neurodegenerative diseases.<h4>Objective</h4>This study aimed to investigate the primary biological pathways and specific mechanisms underlying the protective effects of fenugreek in preventing mice of AD by employing bioinformatics and experimental verification.<h4>Methods</h4>We administered fenugreek extract as an intervention in mice model of AD and then assessed their cognitive ability and histopathological changes. We predicted the key target genes associated with fenugreek action on AD and the main biological pathways using the bioinformatics method. Furthermore, we observed the different expression of target genes by western blot (WB).<h4>Results</h4>The bioinformatics analysis revealed a strong correlation between fenugreek and AD. The behavioral experiments confirmed that fenugreek improved the behavioral and cognitive dysfunction in mice with AD. The histopathology revealed significant changes that fenugreek can inhabit Nissl bodies. Western blot experiments confirmed that fenugreek exerted statistically significant modulatory effects on the levels of inflammatory proteins [interleukin-6 (IL-6), IL-10, and IL-1β] and oxidative stress-related proteins (amyloid-β protein precursor, apolipoprotein E, and presenilin 1).<h4>Conclusions</h4>This study suggested that fenugreek might be involved in the AD pathway and effectively prevented the progression of AD through significant anti-inflammatory and antioxidant effects.",
+          "journal": "Journal of Alzheimer's disease reports"
+        },
+        {
+          "id": "pmid:40042160",
+          "pmid": "40042160",
+          "title": "Daily fenugreek intake does not attenuate abdominal aortic aneurysm growth in rats.",
+          "year": "2025",
+          "design": "Animal",
+          "population": "animal",
+          "n": 13,
+          "doi": "10.1024/0301-1526/a001185",
+          "epmc_id": "MED:40042160",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40042160/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "<i>Objective</i>: Abdominal aortic aneurysm (AAA) is a permanent local dilation of the abdominal aorta developed by chronic local inflammation and elastin degradation. Trigonella foenum-graecum (fenugreek) has been reported to have anti-inflammatory properties. We hypothesized that fenugreek supplementation can inhibit AAA growth. <i>Materials and methods</i>: AAA was induced in male Sprague-Dawley rats by intraluminal porcine pancreatic elastase infusion. The treatment by oral gavage was initiated post-operatively on day 1 and was administered daily (750 mg/kg/daily or 1500 mg/kg/daily or distilled water) for 27 days. AAA expansion was monitored weekly by ultrasound measurements in a blinded-to-treatment fashion; rats were euthanized 28 days after surgery. AAA cross-sections were examined histologically, where treatment allocation were blinded. <i>Results</i>: AAA developed in all three groups, yet there was no measured difference (p=0.104) in the maximal inner anterior-posterior abdominal aortic diameter on day 28 post-surgery between the control group (110% ± 70%, n=11), the low-dose fenugreek treatment group (LDF, 105% ± 68%, n=11), and the high-dose fenugreek treatment group (HDF, 153% ± 96%, n=13). Additionally, assessments of elastin structure in the AAA wall using Miller's stain revealed disorganized and ruptured fibers, but no significant differences in the severity of damage or elastin content among the groups were noted. No significant differences were observed in the presence of infiltrating neutrophils (as indicated by myeloperoxidase-positive cells), macrophage infiltration (% CD68-positive area), or area of vascular smooth muscle cells (a-SMA stained cells), or media thickness across control low-dose, and high-dose treatment groups. <i>Conclusions</i>: Daily fenugreek administrations did not halt AAA progression in either low-dose (750 mg/kg/daily) or high-dose (1500 mg/kg/daily) groups when compared to controls. These results did not show any beneficial effects of fenugreek supplementation in the aneurysm wall, and therefore, we can not recommend fenugreek supplementation as a treatment for patients with growing AAAs.",
+          "journal": "VASA. Zeitschrift fur Gefasskrankheiten"
+        },
+        {
+          "id": "pmid:39121644",
+          "pmid": "39121644",
+          "title": "Immune modulation and cecal microbiome changes in broilers fed with fenugreek seeds and Bacillus-based probiotics.",
+          "year": "2024",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39121644/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Intensive broiler production systems face challenges like enteric diseases, impacting global food security. Strategies to enhance broiler immunity and gut health, particularly amidst antibiotic growth promoter restrictions, are crucial. The present study investigated the combined effects of fenugreek seeds (FS) and Bacillus-based direct-fed microbials (DFM) on immune-related gene expression in the ileum and alteration of microbial population in the cecum of broiler. The study involved 160 Ross 308 broiler chicks, which were divided into four groups consisting of 5 replicates, each containing eight birds. The chicks were grown for a period of 42 d, during which they had ad libitum access to feed and water. Dietary treatments were: Control (basal diet), FS5 (basal + 5g/kg fenugreek seeds), FS5DFM (basal + 5g/kg fenugreek seeds + 0.1g/kg Bacillus-based DFM), and DFM (basal + 0.1g/kg Bacillus-based DFM). Ileum tissue and cecal contents were collected on d 42 for gene expression and gut microbiome analysis. Ileal gene expression analysis revealed the downregulation of IL-6, IL-8L2, CASP6, PTGS2, and IRF7 in both FSs and DFMs groups compared to the control, suggesting individual immunomodulatory effects. However, avian β-defensin genes exhibited complex regulation, highlighting the need for further investigation. Cecal microbiome diversity remained stable, with subtle shifts in specific taxa influenced by FSs and DFMs. Interestingly, the combination of the FSs and DFMs uniquely impacted specific taxa, including Clostridiales vadin BB60. These findings suggest that both FSs and DFMs demonstrated potential for improving broiler immunity through inflammation reduction. The combination of FSs and DFMs offers a synergistic effect in immune modulation and specific microbial modulation, warranting further investigation with pathogen challenge models for comprehensive understanding.",
+          "journal": "Poultry science"
+        },
+        {
+          "id": "pmid:32768577",
+          "pmid": "32768577",
+          "title": "Fenugreek attenuates obesity-induced inflammation and improves insulin resistance through downregulation of iRhom2/TACE.",
+          "year": "2020",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32768577/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "We previously reported that fenugreek-derived 4-hydroxyisoleucine ameliorates insulin resistance via regulation of TNF-α converting enzyme (TACE) expression. In the present study, we further investigate the effects and mechanisms of fenugreek on obesity-induced inflammation and insulin signaling in the high-fat diet (HFD)-challenged obese mice. After 12 weeks of HFD intervention, mice were treated with the low or high dosages of fenugreek. Serum levels of glucose, insulin, lipid profile, inflammation cytokines, and adipokines were detected. Macrophage infiltration and adipose tissue morphology were observed. Western blot was conducted to investigate the expressions of inactive rhomboid 2 (iRhom2) and TACE as well as other signaling pathways in subcutaneous adipose tissue. We showed that fenugreek significantly suppressed body weight gain and fat accumulation in HFD-challenged obese mice. Meanwhile, fasting glucose, insulin, and HOMA-IR in fenugreek-treated mice were remarkably decreased, which were properly explained by fenugreek-induced activation of the insulin receptor signaling pathway. Moreover, the anti-inflammatory properties of fenugreek were shown by the decrease of systemic and local expressions of pro-inflammatory cytokines as well as reduced macrophage infiltration into adipose tissue. Additionally, fenugreek markedly deactivated NF-κB and JNK pathways. Finally, we demonstrated that fenugreek strikingly repressed the transcriptions and expressions of iRhom2 and TACE. Fenugreek shows an encouraging and promising property in ameliorating insulin resistance and suppressing inflammation in obesity, which might be realized by fenugreek-mediated inhibition of iRhom2/TACE axis-facilitated TNF-α release from adipocytes.",
+          "journal": "Life sciences"
+        },
+        {
+          "id": "pmid:30719662",
+          "pmid": "30719662",
+          "title": "Liver disorders related to exposure to gasoline fumes in male rats and role of fenugreek seed supplementation.",
+          "year": "2019",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30719662/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Progressive effects of inhalation of gasoline fumes on the liver and the protective potential with fenugreek seed supplementation were evaluated in adult male rats. Twenty-four rats were divided into four groups, unexposed control and fenugreek groups, as well as exposed groups to gasoline fumes for 6 h/6 days/week for 10 weeks, with and without supplementation of fenugreek seed powder in food (5%w/w). Exposure to gasoline fumes resulted in a significant elevation in serum alanine aminotransferase, aspartate aminotransferase, alkaline phosphatase, gamma-glutamyl transferase, total bilirubin, total cholesterol, total triglycerides, and low-density lipoprotein, along with a significant decrease in high-density lipoprotein, total protein, and albumin contents compared to the control. Meanwhile, liver oxidative stress markers, malondialdehyde, hydrogen peroxide, and nitric oxide, were highly detected with decreased antioxidants, superoxide dismutase and catalase. Also, levels of inflammatory markers, interleukin(IL)-1β and IL-6, were significantly elevated with fibrotic markers, transforming growth factor (TGFβ1), fibroblast growth factor (FGF1), and collagen I. Histopathological studies illustrated that rats exposed to gasoline fumes have degenerated hepatocytes with cellular infiltration and necrotic areas, along with remarkable deposition of collagen fibers, suggesting an incidence of liver fibrosis. Administration of fenugreek seeds, rich with antioxidant and anti-inflammatory components, during gasoline exposure showed significant amelioration through suppressing oxidative stress and inflammation.",
+          "journal": "Environmental science and pollution research international"
+        },
+        {
+          "id": "pmid:28199188",
+          "pmid": "28199188",
+          "title": "Trigonella seed extract ameliorates inflammation via regulation of the inflammasome adaptor protein, ASC.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28199188/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Trigonella foenum-graecum (fenugreek) is an important medicinal plant, well known for its anti-inflammatory properties. However, the underlying cellular and molecular mechanisms of its action remain largely unknown. The apoptosis associated speck like protein containing a caspase recruitment domain (CARD) (ASC) is central to inflammatory and cell death pathways in innate and adaptive immunity. Here, we show that fenugreek seed extract provides cytoprotection to bacterial lipopolysaccharide (LPS) inflammed and nanosilica-treated fibroblasts via a reactive oxygen species independent pathway. All atom molecular dynamics simulations of ASC-ligand complex reveal that individual phytochemicals in fenugreek can bind to ASC via specific non-covalent interactions. These data show that a synergistic effect of fenugreek phytochemicals with the ASC protein alters its molecular properties resulting in altered cellular function. Such information is crucial to the development of targeted therapeutic interventions for inflammatory diseases.",
+          "journal": "Frontiers in bioscience (Elite edition)"
+        },
+        {
+          "id": "pmid:28269780",
+          "pmid": "28269780",
+          "title": "Fenugreek Seed Powder Attenuated Aluminum Chloride-Induced Tau Pathology, Oxidative Stress, and Inflammation in a Rat Model of Alzheimer's Disease.",
+          "year": "2017",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28269780/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Alzheimer's disease (AD) is a common neurodegenerative disorder that mainly affects the aged population and is characterized by the progressive loss of the hippocampal and cortical neurons, which results in memory and cognitive impairments. Trigonella foenum-graecum (fenugreek) has been reported to have hypoglycemic, hypocholesterolemic, hyperinsulinemic and anti-diabetic properties. Traditionally, it was used as a galactagogue and to treat anorexia, fever gastritis, gastric ulcers, and various nervous disorders. However, the neuroprotective effect of fenugreek seed powder against aluminum chloride (AlCl3) induced AD rats has not been analyzed. The result of the present study indicated that the chronic administration of AlCl3 induced significant learning and memory impairments, oxidative stress, and alterations in the protein immunocontent patterns of IDE and CDK5 (enzymes involved in the metabolism of tau and amyloid proteins), pTau, GFAP and Iba-1, IL-1β, IL-6, TNF-α, iNOS, NF-κB, COX-2, CDK5, BDNF, and STAT3. Our behavioral, biochemical, and molecular studies revealed that the co-administration of fenugreek seed powder significantly attenuated the AlCl3 induced memory deficits, amyloid and tau pathology, oxidative stress, and inflammation in AD rats could be due to the synergistic action of its active components.",
+          "journal": "Journal of Alzheimer's disease : JAD"
+        },
+        {
+          "id": "pmid:23467959",
+          "pmid": "23467959",
+          "title": "Hypoglycemic and antioxidative effects of fenugreek and termis seeds powder in streptozotocin-diabetic rats.",
+          "year": "2013",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23467959/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Diabetes mellitus is a heterogeneous disease characterized by altered cellular metabolism. So, many traditional herbs are being used by diabetic patients to control this disease. In the present study, an attempt has been made to investigate the anti-diabetic and antioxidative effects of water suspension of Fenugreek (F), and Termis (T) seeds powder and their mixture (M) who were studied in Streptozotocin (STZ)-induced diabetic rats. Experimental diabetes was induced by injection a single dose of STZ (50 mg/kg, i.p.). Adult male albino rats were divided into five groups; normal control, diabetic control, diabetic-F supplement (1 g/kg b.wt.), diabetic-T supplement (1 g/kg b.wt.) and diabetic-M supplement 1 g/kg b.wt. of each seed powder concurrently for 30 days. Serum glucose, insulin, lipid profile, activities of serum marker enzymes of liver function as well as liver and muscle glycogen content were measured. The oxidative stress was assessed by blood reduced glutathione (GSH) content and enzyme activities of glutathione-S-transferase (GST) and catalase (CAT) in plasma. The increase in serum glucose, total lipid, triglycerides, total cholesterol, AST, ALT, ALP and decreased insulin, plasma, GSH, GST, CAT, as well as liver and muscle glycogen content were the salient features recorded in diabetic control rats. The F, T and M supplements significantly reverted the levels of the studied metabolites and enzymes activities to near normal control values. Co-administration of F and T seeds powder was considered as an effective agent in modulating the alterations in total lipid, AST, ALT, GSH and muscle glycogen. Our data suggest that F, T and M seeds powder supplementation may be beneficial for preventing diabetic complications in this animal model.",
+          "journal": "European review for medical and pharmacological sciences"
+        },
+        {
+          "id": "pmid:20100065",
+          "pmid": "20100065",
+          "title": "Immunomodulatory, beta-cell, and neuroprotective actions of fenugreek oil from alloxan-induced diabetes.",
+          "year": "2010",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20100065/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Immunological disorders and nephropathy are among the most frequent and serious complications of diabetes mellitus. This shows that fewer infiltrated inflammatory cells evidenced by reverted back to near the normal value of white blood cell, mean corpuscular volume, and lymphocytes counts as interleukin-6 in pancreas. Also, fenugreek oil significantly improved blood glucose levels, glucose intolerance, and insulin sensitivity compared to the diabetic group. The pancreatic islet and less beta-cells damage were observed after the administration of fenugreek oil to diabetic rats. Moreover, diabetic rats showed low activities of superoxide dismutase, catalase, glutathione peroxidase, and reduced glutathione content in kidney, which were restored to near normal levels by treatment with fenugreek oil. The increased levels of lipid peroxidation, creatinine, albumin, and urea in diabetic rats decreased significantly in diabetic rats treated with fenugreek oil. Diabetic rats treated with fenugreek oil restored almost a normal architecture of pancreas and kidney. In conclusion, this study reveals the efficacy of fenugreek oil in the amelioration of diabetes, hematological status, and renal toxicity which may be attributed to its immunomodulatory activity and insulin stimulation action along with its antioxidant potential.",
+          "journal": "Immunopharmacology and immunotoxicology"
+        },
+        {
+          "id": "pmid:16176151",
+          "pmid": "16176151",
+          "title": "Supplementation of fenugreek leaves reduces oxidative stress in streptozotocin-induced diabetic rats.",
+          "year": "2005",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": null,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16176151/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "Trigonella foenum-graecum, commonly known as fenugreek, is a traditional medicinal plant of the Leguminoseae family in India. The antioxidant effect of fenugreek leaves was evaluated in the streptozotocin-induced diabetic rat model. The antioxidant effect was evaluated by estimating thiobarbituric acid-reactive substances and reduced glutathione and measuring the activities of catalase and superoxide dismutase in liver, heart, and kidney in diabetic rats. Fenugreek leaf powder supplementation significantly lowered lipid peroxidation and significantly increased the antioxidant system in diabetic rats. The effect at a dose of 1 g/kg of body weight of fenugreek leaf powder was similar to that of glibenclamide. Insulin restores all the parameters to near normal values. Thus, fenugreek leaf powder reduces oxidative stress in experimental diabetes.",
+          "journal": "Journal of medicinal food"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 15,
+        "n_total": 15
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For inflammation, Fenugreek has only preliminary, sparse-human, or preclinical evidence (15 graded studies).",
+      "weighted_score": {
+        "final_score": 32.2,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 94.6
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 15,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 21.131,
+          "low_tier_points_post_cap": 21.131,
+          "low_tier_cap_applied": false,
+          "total_points_R": 21.131,
+          "scaled_base_score": 32.188,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 31.8369,
+          "se_consistency_component": 1.8369,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 62.4,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 2,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 2 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.192,
+              "points": 4.767,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.117,
+              "points": 4.467,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.143,
+              "points": 4.573,
+              "supportive": true
+            },
+            {
+              "idx": 3,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.172,
+              "points": 4.688,
+              "supportive": true
+            },
+            {
+              "idx": 4,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.217,
+              "points": 4.868,
+              "supportive": true
+            },
+            {
+              "idx": 5,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.269,
+              "points": 5.075,
+              "supportive": true
+            },
+            {
+              "idx": 6,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.192,
+              "points": 4.767,
+              "supportive": true
+            },
+            {
+              "idx": 7,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.15,
+              "points": 4.6,
+              "supportive": true
+            },
+            {
+              "idx": 8,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 9,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 10,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 11,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            },
+            {
+              "idx": 12,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            },
+            {
+              "idx": 13,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.09,
+              "points": 4.361,
+              "supportive": true
+            },
+            {
+              "idx": 14,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.0,
+              "points": 4.0,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para la inflamación, Fenogreco tiene únicamente evidencia preliminar, escasa en humanos, o preclínica (15 estudios clasificados)."
     }
   ],
   "effects_established": [
     "blood sugar",
     "testosterone / hormones",
-    "cholesterol / lipids",
-    "blood pressure"
+    "cholesterol / lipids"
   ],
-  "effects_promising": [],
+  "effects_promising": [
+    "inflammation"
+  ],
   "effects_emerging": [],
   "honesty_note": null,
-  "generated_by": "clarity-engine-v2",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T00:34:29.580832+00:00",
+  "sources": [
+    "europe_pmc",
+    "pubmed"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "blood sugar",
+  "best_tier": "Moderate",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [
+    "Moderate"
+  ],
   "reviewed_by": "auto",
-  "_cached_at": 1787607823.0425029,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "pubmed_s": 1.87,
+    "europepmc_s": 4.667,
+    "retrieval_total_s": 4.668,
+    "n_studies": 250,
+    "normalization_s": 0.101,
+    "grading_s": 0.001
+  },
+  "weighted_score": {
+    "score": 77.8,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 89.4,
+    "fragmentation_penalty_applied": false,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789173269.5819762,
   "explanation": {
-    "what_it_is": "Fenugreek (Trigonella foenum-graecum L.) is a legume native to South Asia whose seeds are used as both a culinary spice and herbal supplement. The seeds contain proteins, fiber, alkaloids (including trigonelline), and saponins \u2014 compounds thought to mediate its metabolic effects. People typically consume fenugreek as a seed powder, extract capsule, or tea.",
-    "how_it_works": "Fenugreek's active constituents appear to work through several pathways. The soluble fiber and saponins may slow glucose absorption in the small intestine, blunting blood sugar spikes. Trigonelline and other alkaloids may enhance insulin secretion or improve insulin sensitivity in muscle and fat tissue. The seed also contains compounds that may influence cholesterol synthesis and lipid metabolism in the liver. At a hormonal level, some constituents \u2014 particularly furostanol saponins \u2014 have been shown *in animal models* to interact with androgen signaling, though the human mechanism remains unclear. These effects, if real in humans, would work slowly and modestly rather than acutely.",
+    "what_it_is_line": "Herb from fenugreek seeds, used in cooking and as a supplement powder or extract.",
+    "what_it_is": "Fenugreek is a plant (Trigonella foenum-graecum) whose seeds have been used for centuries in cooking and traditional medicine. The seeds contain a mix of compounds including alkaloids, flavonoids, and saponins — plant chemicals that may interact with your body. People typically take it as a powder (mixed into food or water), a capsule, or a concentrated extract.",
+    "how_it_works_line": "Appears to improve how your body handles blood sugar and may influence hormones, likely through several plant chemicals.",
+    "how_it_works": "Fenugreek contains compounds that seem to work in multiple ways. Some evidence suggests the seeds slow down how quickly your gut absorbs sugar after meals, which would keep your blood sugar from spiking as sharply. Other compounds may make your cells more sensitive to insulin — the hormone that tells cells to take up sugar from your blood — or may encourage your pancreas to release more insulin. The herb also contains plant chemicals (saponins and flavonoids) that act as antioxidants, meaning they neutralize harmful reactive molecules in your cells. How these mechanisms combine to produce an effect on blood sugar or hormones is not completely mapped out, but the observation that it works in multiple studies suggests the effect is real, even if we don't understand every step.",
+    "safety_line": "Reported well-tolerated in retrieved trials, though evidence is limited to short-term use and narrow populations.",
+    "safety_detail": "Trials in the records showed fenugreek was generally tolerated without serious adverse events over the study periods (typically weeks to a few months). However, most retrieved studies were short-term, and the data come from specific populations (mainly people with type 2 diabetes or healthy adult males); safety in other groups (children, pregnant people, those with kidney or liver disease) has not been adequately tested in the records provided.",
+    "safety_bullets": [
+      "Pregnancy/nursing: not tested in retrieved trials — unknown whether safe during pregnancy or breastfeeding.",
+      "Kidney or liver disease: excluded from most retrieved studies — tolerability and dose safety in these populations untested.",
+      "Drug interactions: potential interaction with diabetes medications and blood thinners not adequately characterized in records provided.",
+      "Long-term safety: retrieved evidence is from short-term interventions (weeks to ~3 months); effects of sustained use unknown."
+    ],
+    "chem_meaning": "Fenugreek seeds contain water-soluble compounds (saponins, alkaloids, fiber) and fat-soluble compounds (flavonoids, oils), so the herb can be extracted in water or alcohol. The mix of polar and nonpolar compounds means fenugreek extracts and powders likely work through multiple pathways in the body — some effects via the gut, others by crossing into the bloodstream to reach tissues.",
     "outcome_detail": [
       {
         "outcome": "blood sugar",
         "grade": "Moderate",
-        "what_studies_show": "Six meta-analyses and systematic reviews pooling human randomized trials (894 participants across the largest 2023 review) consistently found that fenugreek supplementation reduced fasting glucose and HbA1c in people with type 2 diabetes and prediabetes. A 2014 meta-analysis of 10 trials and a 2016 meta-analysis also reported similar benefits. Studies generally lasted weeks to a few months, and most used seed powder or extract at doses ranging from ~5\u201315 g daily. The effect size was modest \u2014 typically a reduction of 5\u201325 mg/dL in fasting glucose \u2014 and was most consistent in people already diagnosed with dysglycemia rather than healthy controls.",
-        "why_this_grade": "Evidence comes entirely from meta-analyses (no primary trials among the records retrieved), pooling data from multiple smaller studies in human subjects with metabolic disease. This breadth and consistency across reviews warrants 'Moderate' confidence, but the absence of large primary trials and the modest effect sizes prevent a 'Strong' rating."
+        "what_studies_show": "Multiple meta-analyses (2023–2024) pooling trials in people with type 2 diabetes and prediabetes show that fenugreek supplementation reduced blood glucose measures with a pooled effect size of −0.9 (95% CI −1.43 to −0.38). At least 4 systematic reviews with meta-analyses were retrieved, drawing on data from hundreds of participants across randomized trials. The effect was consistent enough that fenugreek appears to lower blood sugar in people who already have elevated levels. Doses and duration varied across studies but were typically in the range of weeks to a few months.",
+        "why_this_grade": "Evidence comes from multiple human meta-analyses and systematic reviews with pooled data, meeting criteria for Moderate. However, only 1 primary (original) trial was directly retrieved; most evidence comes from pooled analyses of older or smaller studies, and many abstracts did not report sample sizes, so precision and total sample are uncertain."
       },
       {
         "outcome": "testosterone / hormones",
         "grade": "Moderate",
-        "what_studies_show": "Two meta-analyses (2023 and 2020) examined fenugreek's effect on circulating testosterone in males, together capturing ~449 confirmed participants. Both reported modest increases in serum testosterone levels compared to placebo in men, with studies typically lasting 8\u201312 weeks. A 2025 animal study found that fenugreek extract reduced testosterone propionate-induced benign prostatic hyperplasia in rats. The human findings suggest effects are real but small \u2014 typically a relative increase rather than a large absolute change \u2014 and data remain limited to short-term observation in men.",
-        "why_this_grade": "Only two human meta-analyses are retrievable here (no primary trials), covering a smaller population than for blood sugar, and abstracts omit precise sample sizes in most individual trials, so true participant counts are uncertain. The animal work is supportive but not decisive for humans. This modest evidence base justifies 'Moderate,' not 'Strong.'"
+        "what_studies_show": "Three human meta-analyses (2020, 2023) and one animal study show a pooled effect on testosterone levels of +0.32 (95% CI 0.09 to 0.55) — a small but consistent increase in testosterone, mainly in males. One 2023 meta-analysis verified ~449 participants. A 2020 meta-analysis examined fenugreek extract's effect on testosterone in males specifically; a 2020 protocol reviewed vasomotor symptoms (hot flashes) in menopausal women, suggesting fenugreek may influence estrogen or related pathways. Animal data on benign prostatic hyperplasia (enlarged prostate) also suggest hormonal activity.",
+        "why_this_grade": "Moderate grade reflects human meta-analyses showing a consistent, albeit modest, effect in testosterone levels. However, all three human studies retrieved were meta-analyses or protocols (no primary trials directly retrieved), and the true participant count is uncertain because most abstracts omit sample size. The effect size is small and confidence interval approaches zero."
       },
       {
         "outcome": "cholesterol / lipids",
         "grade": "Moderate",
-        "what_studies_show": "Five human meta-analyses and systematic reviews (2020 and 2023) pooling randomized trials (560\u20131305 participants across studies) found that fenugreek supplementation reduced total cholesterol and LDL cholesterol and, in some analyses, increased HDL slightly or reduced triglycerides. A 2016 meta-analysis of 10 trials reported similar lipid-lowering trends in people with diabetes and prediabetes. Most trials lasted 8\u201324 weeks. The effect was modest \u2014 typically 10\u201330 mg/dL reductions in LDL \u2014 and appeared most pronounced in people with existing dyslipidemia. Four animal studies provided supporting mechanistic evidence.",
-        "why_this_grade": "Multiple human meta-analyses show consistent, albeit modest, reductions in serum lipids, earning 'Moderate.' However, all retrieved human evidence is from pooled analyses rather than primary trials, and sample sizes (though substantial) remain imprecise across abstracts, limiting confidence to this tier rather than 'Strong.'"
+        "what_studies_show": "Six human studies (1 RCT from 1990, and 5 meta-analyses/systematic reviews from 2020–2024) examined fenugreek's effect on blood cholesterol and triglycerides. A 2020 meta-analysis of ~560 participants and a 2023 systematic review of 706 participants focused on fenugreek supplementation and lipid profiles, with consistent findings suggesting reductions in total cholesterol and triglycerides. Studies were conducted mainly in people with type 2 diabetes and metabolic syndrome. Duration was typically weeks to months.",
+        "why_this_grade": "Moderate because evidence comes from multiple human meta-analyses and systematic reviews with substantial pooled participant data. However, only 1 primary RCT was directly retrieved (from 1990); most evidence is meta-analytic, and sample size precision is limited by missing data in abstracts."
       },
       {
-        "outcome": "blood pressure",
-        "grade": "Moderate",
-        "what_studies_show": "Three human studies \u2014 including one randomized controlled trial and two meta-analyses (373 participants in the largest 2023 review) \u2014 examined fenugreek's effect on blood pressure. Results showed modest reductions in both systolic and diastolic pressure in people with hypertension or metabolic syndrome, with effects typically appearing after 8\u201312 weeks of supplementation. A 2023 systematic review of metabolic syndrome noted blood pressure among multiple outcomes. One animal study examined fenugreek alongside nigella sativa in a hypertension model. Effect sizes were small \u2014 typically 3\u20138 mmHg reductions \u2014 and primarily observed in those with baseline elevations.",
-        "why_this_grade": "One primary RCT plus two meta-analyses provide more direct human evidence than for testosterone, but the total evidence base is still modest, with relatively few trials and small effect sizes. This warrants 'Moderate' rather than 'Strong.'"
+        "outcome": "inflammation",
+        "grade": "Preliminary",
+        "what_studies_show": "Fifteen animal studies (2025–2026) show that fenugreek seeds, powder, or extracts reduced markers of inflammation and oxidative stress (harmful reactive molecules) in mouse and rat models. Studies examined fenugreek in contexts such as lead toxicity, lung injury, liver and kidney damage, Alzheimer's-like disease, and cancer cell growth. Fenugreek suppressed inflammatory proteins and boosted antioxidant defenses in tissues. These are cell and animal findings only.",
+        "why_this_grade": "Preliminary: all 15 studies are animal or cell-based models; zero human evidence on inflammation was retrieved. Animal models can reveal biological activity but do not reliably predict human outcomes. Whether fenugreek's anti-inflammatory effects in rodents translate to measurable benefits in people is unknown."
       }
     ],
-    "evidence_base": "The research base for fenugreek consists predominantly of small-to-moderate randomized controlled trials, most published between 2014 and 2023, with data concentrated in meta-analyses and systematic reviews rather than large primary trials. The vast majority of evidence is human (randomized trials in people with type 2 diabetes, prediabetes, or metabolic syndrome), supported by mechanistic animal studies. Trial durations are typically 8\u201324 weeks, and study populations are largely non-Western (reflecting fenugreek's traditional use in South Asia). This pattern\u2014consistent direction of effect across reviews, modest absolute benefits, but limited size and duration of individual trials\u2014supports 'Moderate' confidence across outcomes.",
-    "emerging_research": "Recent 2023\u20132025 studies have explored fenugreek's potential in broader metabolic syndrome phenotypes (combining blood sugar, lipids, and blood pressure in single analyses) rather than single outcomes alone. A 2023 trial examined fenugreek seed extract in Alzheimer's disease patients, suggesting possible neuroprotective interest, though this direction remains very preliminary. Animal work continues to dissect active constituents\u2014particularly furostanol saponins for hormonal effects and polysaccharides for glycemic control\u2014but human translation remains limited.",
-    "open_questions": "Among the records retrieved here, no trials follow participants beyond 24 weeks, leaving long-term safety and durability of benefit unknown from these data. Trial sample sizes are generally modest (most under 100 participants per arm), and there is sparse data in people without metabolic disease (e.g., healthy individuals, athletes using it for hormonal support). The records provided represent only a sample (~40 abstracts per outcome); broader literature may address these gaps, but based on what is shown here, the evidence remains concentrated in short-term, disease-focused populations.",
-    "caveats": "Fenugreek is generally well tolerated at typical doses (5\u201315 g daily), but can cause gastrointestinal upset, flatulence, and maple-syrup-scented urine; people allergic to legumes should avoid it. As an herbal extract supplement, product quality and concentration vary widely \u2014 standardized extracts are more reliable than bulk powders. Because fenugreek may lower blood glucose and lipids, people on diabetes or statin medications should consult a clinician, as additive effects could increase hypoglycemia or drug interactions risk. For injectable peptides or research-grade forms, purity and sterility are unverified in unregulated settings.",
+    "evidence_base": "Evidence is predominantly human meta-analyses and systematic reviews for blood sugar, hormones, and cholesterol — outcomes graded Moderate. For inflammation, evidence is animal-only (graded Preliminary). Across all outcomes, very few primary human trials were directly retrieved; most human evidence is synthesized from older literature via meta-analysis. Studies are recent (2020–2024 for most human work) and draw on hundreds of participants pooled across trials, but individual trial details and true sample sizes are often unclear from the retrieved abstracts. This means the overall evidence base is reasonably substantial but relies heavily on summary-level data rather than direct access to trial reports.",
+    "open_questions": "The retrieved records show fenugreek tested mainly in adults with type 2 diabetes, prediabetes, or metabolic syndrome; adolescents, children, and people with other conditions (kidney disease, autoimmune disorders) are largely absent. Duration of most trials is weeks to a few months — long-term safety and efficacy beyond 3 months are not visible in the records provided. For inflammation, a striking gap: zero human trials were retrieved despite 15 animal studies, so it is unknown whether the anti-inflammatory findings in rodents apply to people. Finally, many abstracts omit sample sizes and detailed methodology, making it difficult to assess the robustness of individual trials contributing to the meta-analyses.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "The entire evidence base consists of meta-analyses and systematic reviews of primary trials; no raw primary human studies are visible in these records, making it impossible to assess study quality, heterogeneity, or detect publication bias directly.",
+    "headline": "The evidence base relies overwhelmingly on meta-analyses of small, heterogeneous trials with incomplete sample-size reporting, leaving true precision and consistency unclear; only 1 primary RCT for blood sugar and lipids, and zero for testosterone.",
     "concerns": [
       {
-        "issue": "Evidence base is entirely secondary analyses",
-        "detail": "Across all four outcomes, the engine explicitly notes '0 primary human studies' retrieved for blood sugar, testosterone, and cholesterol; only 1 RCT appears for blood pressure. The retrieved records show meta-analyses and systematic reviews (13 total) but no accessible primary trial data. This means the appraisal cannot examine study design quality, risk of bias in individual trials, or methodological heterogeneity that drives effect estimates.",
+        "issue": "Evidence chain is primarily secondary analysis",
+        "detail": "For blood sugar (7 human studies), only 1 is a primary RCT; the other 6 are meta-analyses or systematic reviews synthesizing smaller trials. For testosterone, all 3 human studies are meta-analyses with 0 primary RCTs. This means the conclusions rest on aggregating trials not designed to compare head-to-head, and meta-analysis results are sensitive to inclusion criteria, heterogeneity assessment, and publication bias—none of which appear evaluable from these abstracts. The engine explicitly noted that primary human evidence falls below top-tier threshold for all three outcomes.",
         "severity": "high"
       },
       {
-        "issue": "Sample sizes in meta-analyses are heavily skewed by a few large trials",
-        "detail": "For blood sugar: median reported n=29, but two meta-analyses pool up to 894 and 706 participants, suggesting 5\u20136 underlying trials are small and 1\u20132 are large. For cholesterol: median n=560 but ranges from 10 to 706. For testosterone: only 1 of 3 studies reports n (449), leaving 2 meta-analyses undescribed. A single large trial in any pooled analysis could dominate the effect; loss or exclusion of that trial would materially shift the result.",
+        "issue": "Sample size reporting is largely absent",
+        "detail": "Of 15 blood sugar studies, only 4 report n; of 4 testosterone studies, only 1; of 12 lipids studies, only 4. The engine notes 'most abstracts omit sample size, so the true total is substantially larger'—but this opacity makes it impossible to assess whether conclusions rest on large, well-powered trials or small underpowered ones. The largest visible n is 894 (one meta-analysis), but the majority of individual trials feeding the meta-analyses are invisible. A single large, well-designed trial with a null result could have been excluded or downweighted without visibility.",
         "severity": "high"
       },
       {
-        "issue": "No pooled effect sizes are extractable; magnitude of clinical benefit is unclear",
-        "detail": "The engine notes 'pooled effect: none extractable' for blood sugar, testosterone, and cholesterol. For blood pressure, only 373 participants from a single meta-analysis is reported. Without reported effect sizes (e.g., standardized mean difference, odds ratio, confidence intervals), readers cannot discern whether fenugreek produces a clinically meaningful benefit or a marginal one. A meta-analysis with a pooled SMD of 0.15 is substantially different from one with SMD 0.80, but both could yield a 'Moderate' grade if heterogeneity is acceptable.",
+        "issue": "Animal studies contaminate clinical outcome assessment",
+        "detail": "For blood sugar, 8 of 15 studies are animal; for lipids, 6 of 12 are animal. While animal mechanistic evidence is useful, the engine graded blood sugar and lipids as 'Moderate' (not higher), which likely reflects the mixed human/animal composition. The pooled effect for blood sugar (SMD −0.9) is a large effect, but without visibility into which trials contributed and whether animal studies were weighted similarly to human trials, it is unclear whether this reflects robust human efficacy or inflation from animal models that do not translate.",
         "severity": "high"
       },
       {
-        "issue": "Recency bias and missing report details in meta-analyses",
-        "detail": "Most retrieved records are from 2020\u20132026, with earlier work from 2013\u20132016. Four meta-analyses on blood sugar are published 2014\u20132023; overlapping reviews risk analyzing the same small primary trial set multiple times, inflating apparent robustness. Abstracts do not report I\u00b2 heterogeneity, publication bias assessment methods, or GRADE certainty ratings, all essential for interpreting meta-analytic quality.",
+        "issue": "Testosterone outcome evidence is minimal and recent",
+        "detail": "Only 4 studies total (3 human meta-analyses, 1 animal), all published 2020–2025, with only 1 reporting an n (449). A pooled SMD of 0.32 [0.09–0.55] is modest and the CI barely excludes zero. With such a thin literature, a single negative RCT or reanalysis excluding outliers could flip the conclusion. The 'Unclassified' study design is a red flag suggesting metadata issues in the retrieved record.",
+        "severity": "high"
+      },
+      {
+        "issue": "Heterogeneity and inconsistency not visible",
+        "detail": "No meta-analysis abstracts report I² or Q statistics, making it impossible to assess whether the pooled effects (e.g., blood sugar SMD −0.9) reflect consistent benefits or are driven by a few outlier trials. If heterogeneity is high (e.g., I² >70%), the SMD is not a reliable estimate of a typical effect. For lipids, 'pooled effect: none extractable,' which suggests the meta-analyses may not have combined results—raising the question of why they did not, and what the individual trial results actually showed.",
         "severity": "moderate"
       },
       {
-        "issue": "Animal and unclassified studies contaminate human evidence grades",
-        "detail": "Blood sugar grade is Moderate (8 studies total: 6 human, 2 animal). Cholesterol grade includes 9 studies (5 human, 4 animal). Testosterone grade includes 1 unclassified study of unknown relevance. Mixing animal mechanistic evidence with human efficacy trials inflates the appearance of a coherent evidence base, but animal models (e.g., streptozotocin-diabetic rodents) may not translate to clinical outcomes in heterogeneous human populations.",
+        "issue": "Inflation from inflammation outcome being animal-only",
+        "detail": "The inflammation outcome (Preliminary tier, 15 animal studies, median n=13) is acknowledged as indirectly translated to humans. However, several animal studies (2026, 2020) also appear in the blood sugar and lipids evidence lists, suggesting animal inflammation data may be indirectly inflating confidence in clinical lipids/glucose claims through mechanistic argument rather than direct human trial evidence.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The animal studies show fenugreek downregulates inflammatory markers and improves insulin resistance in rodent obesity and diabetes models, supporting a plausible metabolic mechanism. However, the leap from rodent insulin signaling to human blood glucose control, lipid changes, or testosterone elevation relies entirely on the (inaccessible) primary human trials pooled in the meta-analyses. The mechanism does not explain blood pressure reduction or testosterone effects clearly, suggesting either incomplete mechanistic data in these abstracts or an inferential gap between pharmacology and clinical efficacy.",
-    "strongest_counterargument": "A skeptic would note that meta-analyses of small, methodologically heterogeneous primary trials frequently overestimate treatment effects due to publication bias and selective outcome reporting. The median sample sizes reported (29\u2013560) are consistent with a body of literature prone to noise and inflated effect sizes. Most critically, the absence of any accessible primary trial data means the magnitude of benefit cannot be verified: the Moderate grade could reflect either genuine modest benefit or exaggerated pooled estimates from unpublished negative results and small positive outliers.",
-    "what_would_change_the_picture": "Publication of the full text primary trials (or their aggregate data) underlying at least one large meta-analysis, including detailed reporting of risk of bias, I\u00b2 heterogeneity, funnel plot asymmetry, and GRADE certainty of evidence. Alternatively, a large, adequately powered (n > 200) double-blind RCT with pre-registered outcomes and low risk of bias would provide direct evidence to compare against the meta-analytic estimate.",
+    "mechanism_check": "The mechanism (fenugreek seeds/extract → increased insulin sensitivity, reduced glucose absorption, anti-inflammatory effects) is plausible at the cellular level (supported by the animal literature), but there is a gap between animal demonstration of pathway modulation and clinical efficacy in humans. The pooled human effects (SMD −0.9 for glucose, SMD 0.32 for testosterone) are inferred from small, heterogeneous trials, most of which are not directly visible; the animal studies may show the mechanism works in principle, but cannot substitute for confirmation that it manifests in humans at clinically relevant doses. For testosterone specifically, the effect is small (SMD 0.32) and biological plausibility is less established than for glucose—the mechanism appears to rest on animal models and mechanistic reasoning rather than robust human dose–response data.",
+    "strongest_counterargument": "A skeptic would note that the entire human evidence base is dominated by recent meta-analyses (2020–2026) of small, older trials (the only primary RCT is from 1990), and meta-analyses can be biased by selective inclusion, failure to register protocols, and file-drawer effects. The fact that sample sizes are hidden from the abstract records suggests either poor reporting standards in the original trials or selective abstraction. For testosterone, the pooled effect is modest (SMD 0.32, CI 0.09–0.55) and rests on only 3 meta-analyses with inconsistent methods and at most one reporting a full sample size—easily explained by publication bias favoring positive studies. The lipids outcome explicitly states 'pooled effect: none extractable,' hinting that the meta-analyses did not reach consensus, yet it is still graded Moderate. Until direct-comparison RCTs in humans (not syntheses of older small trials) are published and preregistered, the efficacy claim rests on a shaky inferential foundation.",
+    "what_would_change_the_picture": "A pre-registered, adequately powered RCT (n ≥200) in a single disease population (e.g., type 2 diabetes or hypogonadism), with blinded allocation, published 2024 or later, comparing fenugreek to placebo and reporting prespecified primary and secondary outcomes with full heterogeneity and risk-of-bias assessment, would either confirm or falsify the pooled effects. Alternatively, a rigorous systematic review with explicit risk-of-bias downgrading and sensitivity analysis excluding small/old trials would clarify whether the moderate grade reflects true signal or meta-analytic artifact.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Hierba de las semillas de fenogreco, usada en la cocina y como polvo o extracto de suplemento.",
+    "what_it_is": "El fenogreco es una planta (Trigonella foenum-graecum) cuyas semillas se han utilizado durante siglos en la cocina y la medicina tradicional. Las semillas contienen una mezcla de compuestos que incluyen alcaloides, flavonoides y saponinas — sustancias químicas de plantas que pueden interactuar con tu cuerpo. Las personas típicamente lo toman como polvo (mezclado en alimentos o agua), cápsula, o extracto concentrado.",
+    "how_it_works_line": "Parece mejorar cómo tu cuerpo maneja el azúcar en sangre y puede influir en las hormonas, probablemente a través de varios compuestos de plantas.",
+    "how_it_works": "El fenogreco contiene compuestos que parecen funcionar de múltiples maneras. Algunas evidencias sugieren que las semillas ralentizan la velocidad a la que tu intestino absorbe azúcar después de las comidas, lo que evitaría que tu azúcar en sangre se dispare tan rápidamente. Otros compuestos pueden hacer que tus células sean más sensibles a la insulina — la hormona que indica a las células que absorban azúcar de tu sangre — o pueden alentar al páncreas a liberar más insulina. La hierba también contiene sustancias químicas de plantas (saponinas y flavonoides) que actúan como antioxidantes, es decir, neutralizan moléculas reactivas dañinas en tus células. Cómo estos mecanismos se combinan para producir un efecto en el azúcar en sangre o las hormonas no está completamente mapeado, pero la observación de que funciona en múltiples estudios sugiere que el efecto es real, incluso si no comprendemos cada paso.",
+    "safety_line": "Reportado como bien tolerado en ensayos recuperados, aunque la evidencia se limita al uso a corto plazo y poblaciones específicas.",
+    "safety_detail": "Los ensayos en los registros mostraron que el fenogreco fue generalmente tolerado sin eventos adversos graves durante los períodos de estudio (típicamente semanas a pocos meses). Sin embargo, la mayoría de los estudios recuperados fueron a corto plazo, y los datos provienen de poblaciones específicas (principalmente personas con diabetes tipo 2 u hombres adultos sanos); la seguridad en otros grupos (niños, personas embarazadas, aquellos con enfermedad renal o hepática) no ha sido adecuadamente probada en los registros proporcionados.",
+    "safety_bullets": [
+      "Embarazo/lactancia: no probado en ensayos recuperados — se desconoce si es seguro durante el embarazo o la lactancia.",
+      "Enfermedad renal o hepática: excluida de la mayoría de los estudios recuperados — la tolerabilidad y seguridad de la dosis en estas poblaciones no han sido probadas.",
+      "Interacciones farmacológicas: la posible interacción con medicamentos para la diabetes y anticoagulantes no está adecuadamente caracterizada en los registros proporcionados.",
+      "Seguridad a largo plazo: la evidencia recuperada proviene de intervenciones a corto plazo (semanas a ~3 meses); los efectos del uso sostenido son desconocidos."
+    ],
+    "chem_meaning": "Las semillas de fenogreco contienen compuestos solubles en agua (saponinas, alcaloides, fibra) y compuestos solubles en grasa (flavonoides, aceites), por lo que la hierba puede ser extraída en agua o alcohol. La mezcla de compuestos polares y no polares significa que los extractos y polvos de fenogreco probablemente funcionen a través de múltiples vías en el cuerpo — algunos efectos a través del intestino, otros atravesando el torrente sanguíneo para alcanzar los tejidos.",
+    "outcome_detail": [
+      {
+        "outcome": "blood sugar",
+        "grade": "Moderada",
+        "what_studies_show": "Múltiples metanálisis (2023–2024) que agrupan ensayos en personas con diabetes tipo 2 y prediabetes muestran que la suplementación con fenogreco redujo las medidas de glucosa en sangre con un tamaño de efecto agrupado de −0,9 (IC 95% −1,43 a −0,38). Al menos 4 revisiones sistemáticas con metanálisis fueron recuperadas, extrayendo datos de cientos de participantes en ensayos aleatorizados. El efecto fue lo suficientemente consistente como para que el fenogreco parezca reducir el azúcar en sangre en personas que ya tienen niveles elevados. Las dosis y duración variaron entre estudios pero fueron típicamente en el rango de semanas a pocos meses.",
+        "why_this_grade": "La evidencia proviene de múltiples metanálisis humanos y revisiones sistemáticas con datos agrupados, cumpliendo criterios para Moderada. Sin embargo, solo 1 ensayo primario (original) fue recuperado directamente; la mayoría de la evidencia proviene de análisis agrupados de estudios más antiguos o pequeños, y muchos resúmenes no reportaron tamaños de muestra, por lo que la precisión y muestra total son inciertos.",
+        "outcome_key": "blood sugar",
+        "outcome_es": "azúcar en sangre"
+      },
+      {
+        "outcome": "testosterone / hormones",
+        "grade": "Moderada",
+        "what_studies_show": "Tres metanálisis humanos (2020, 2023) y un estudio animal muestran un efecto agrupado en niveles de testosterona de +0,32 (IC 95% 0,09 a 0,55) — un aumento pequeño pero consistente en testosterona, principalmente en hombres. Un metanálisis de 2023 verificó ~449 participantes. Un metanálisis de 2020 examinó el efecto del extracto de fenogreco en la testosterona específicamente en hombres; un protocolo de 2020 revisó síntomas vasomotores (sofocos) en mujeres menopáusicas, sugiriendo que el fenogreco puede influir en el estrógeno u vías relacionadas. Los datos animales sobre hiperplasia prostática benigna (próstata agrandada) también sugieren actividad hormonal.",
+        "why_this_grade": "La calificación Moderada refleja metanálisis humanos que muestran un efecto consistente, aunque modesto, en los niveles de testosterona. Sin embargo, los tres estudios humanos recuperados fueron metanálisis o protocolos (ningún ensayo primario recuperado directamente), y el conteo verdadero de participantes es incierto porque la mayoría de los resúmenes omiten el tamaño de la muestra. El tamaño del efecto es pequeño e el intervalo de confianza se acerca a cero.",
+        "outcome_key": "testosterone / hormones",
+        "outcome_es": "testosterona / hormonas"
+      },
+      {
+        "outcome": "cholesterol / lipids",
+        "grade": "Moderada",
+        "what_studies_show": "Seis estudios humanos (1 ECA de 1990 y 5 metanálisis/revisiones sistemáticas de 2020–2024) examinaron el efecto del fenogreco en el colesterol en sangre y triglicéridos. Un metanálisis de 2020 de ~560 participantes y una revisión sistemática de 2023 de 706 participantes se enfocaron en la suplementación con fenogreco y perfiles de lípidos, con hallazgos consistentes que sugieren reducciones en colesterol total y triglicéridos. Los estudios fueron realizados principalmente en personas con diabetes tipo 2 y síndrome metabólico. La duración fue típicamente semanas a meses.",
+        "why_this_grade": "Moderada porque la evidencia proviene de múltiples metanálisis humanos y revisiones sistemáticas con sustanciales datos de participantes agrupados. Sin embargo, solo 1 ECA primario fue recuperado directamente (de 1990); la mayoría de la evidencia es metaanalítica, y la precisión del tamaño de muestra es limitada por datos faltantes en los resúmenes.",
+        "outcome_key": "cholesterol / lipids",
+        "outcome_es": "colesterol / lípidos"
+      },
+      {
+        "outcome": "inflammation",
+        "grade": "Preliminar",
+        "what_studies_show": "Quince estudios animales (2025–2026) muestran que las semillas, polvo o extractos de fenogreco redujeron marcadores de inflamación y estrés oxidativo (moléculas reactivas dañinas) en modelos de ratón y rata. Los estudios examinaron el fenogreco en contextos como toxicidad por plomo, lesión pulmonar, daño hepático y renal, enfermedad tipo Alzheimer y crecimiento de células cancerosas. El fenogreco suprimió proteínas inflamatorias e impulsó defensas antioxidantes en tejidos. Estos son hallazgos solo en células y animales.",
+        "why_this_grade": "Preliminar: los 15 estudios son modelos basados en animales o células; cero evidencia humana en inflamación fue recuperada. Los modelos animales pueden revelar actividad biológica pero no predicen de forma confiable resultados humanos. Si los efectos antiinflamatorios del fenogreco en roedores se traducen en beneficios medibles en personas es desconocido.",
+        "outcome_key": "inflammation",
+        "outcome_es": "inflamación"
+      }
+    ],
+    "evidence_base": "La evidencia es predominantemente metanálisis humanos y revisiones sistemáticas para azúcar en sangre, hormonas y colesterol — resultados calificados como Moderada. Para inflamación, la evidencia es solo animal (calificada como Preliminar). En todos los resultados, muy pocos ensayos primarios humanos fueron recuperados directamente; la mayoría de la evidencia humana es sintetizada de literatura más antigua a través de metanálisis. Los estudios son recientes (2020–2024 para la mayoría del trabajo humano) y extraen datos de cientos de participantes agrupados en ensayos, pero los detalles de los ensayos individuales y los tamaños de muestra verdaderos a menudo son poco claros a partir de los resúmenes recuperados. Esto significa que la base de evidencia general es razonablemente sustancial pero depende en gran medida de datos a nivel de resumen en lugar del acceso directo a reportes de ensayos.",
+    "open_questions": "Los registros recuperados muestran fenogreco probado principalmente en adultos con diabetes tipo 2, prediabetes o síndrome metabólico; adolescentes, niños y personas con otras condiciones (enfermedad renal, trastornos autoinmunes) están en gran medida ausentes. La duración de la mayoría de los ensayos es semanas a pocos meses — la seguridad y eficacia a largo plazo más allá de 3 meses no son visibles en los registros proporcionados. Para inflamación, una brecha sorprendente: cero ensayos humanos fueron recuperados a pesar de 15 estudios animales, por lo que se desconoce si los hallazgos antiinflamatorios en roedores aplican a personas. Finalmente, muchos resúmenes omiten tamaños de muestra y metodología detallada, dificultando la evaluación de la robustez de ensayos individuales que contribuyen a los metanálisis.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "La base de evidencia se basa abrumadoramente en metanálisis de ensayos pequeños y heterogéneos con notificación incompleta del tamaño de muestra, dejando la precisión y consistencia verdaderas sin claridad; solo 1 RCT primario para glucemia y lípidos, y cero para testosterona.",
+    "concerns": [
+      {
+        "issue": "La cadena de evidencia es principalmente análisis secundario",
+        "detail": "Para glucemia (7 estudios en humanos), solo 1 es un RCT primario; los otros 6 son metanálisis o revisiones sistemáticas que sintetizan ensayos más pequeños. Para testosterona, los 3 estudios en humanos son metanálisis con 0 RCTs primarios. Esto significa que las conclusiones descansan en agregar ensayos no diseñados para comparación directa, y los resultados del metanálisis son sensibles a los criterios de inclusión, evaluación de heterogeneidad y sesgo de publicación—ninguno de los cuales parece evaluable a partir de estos resúmenes. El motor explícitamente señaló que la evidencia humana primaria cae por debajo del umbral de nivel superior para los tres desenlaces.",
+        "severity": "high"
+      },
+      {
+        "issue": "La notificación del tamaño de muestra está en gran medida ausente",
+        "detail": "De 15 estudios de glucemia, solo 4 reportan n; de 4 estudios de testosterona, solo 1; de 12 estudios de lípidos, solo 4. El motor señala 'la mayoría de resúmenes omiten el tamaño de muestra, por lo que el total verdadero es sustancialmente mayor'—pero esta opacidad hace imposible evaluar si las conclusiones descansan en ensayos grandes bien potenciados o pequeños poco potenciados. La n más grande visible es 894 (un metanálisis), pero la mayoría de los ensayos individuales que alimentan los metanálisis son invisibles. Un único ensayo grande, bien diseñado con resultado nulo podría haber sido excluido o ponderado menos sin visibilidad.",
+        "severity": "high"
+      },
+      {
+        "issue": "Los estudios en animales contaminan la evaluación del desenlace clínico",
+        "detail": "Para glucemia, 8 de 15 estudios son en animales; para lípidos, 6 de 12 son en animales. Si bien la evidencia mecanística en animales es útil, el motor clasificó la glucemia y los lípidos como 'Moderada' (no superior), lo que probablemente refleja la composición mixta humano/animal. El efecto combinado para glucemia (SMD −0,9) es un efecto grande, pero sin visibilidad de qué ensayos contribuyeron y si los estudios en animales fueron ponderados similarmente a los ensayos en humanos, es poco claro si esto refleja eficacia humana robusta o inflación de modelos animales que no se traducen.",
+        "severity": "high"
+      },
+      {
+        "issue": "La evidencia del desenlace de testosterona es mínima y reciente",
+        "detail": "Solo 4 estudios totales (3 metanálisis humanos, 1 en animales), todos publicados 2020–2025, con solo 1 reportando una n (449). Un SMD combinado de 0,32 [0,09–0,55] es modesto y el IC apenas excluye cero. Con una literatura tan escasa, un único RCT negativo o reanálisis excluyendo valores atípicos podría cambiar la conclusión. El diseño de estudio 'No clasificado' es una bandera roja sugiriendo problemas de metadatos en el registro recuperado.",
+        "severity": "high"
+      },
+      {
+        "issue": "La heterogeneidad e inconsistencia no son visibles",
+        "detail": "Ningún resumen de metanálisis reporta I² o estadísticos Q, haciendo imposible evaluar si los efectos combinados (p. ej., glucemia SMD −0,9) reflejan beneficios consistentes o están impulsados por algunos ensayos atípicos. Si la heterogeneidad es alta (p. ej., I² >70%), el SMD no es una estimación confiable de un efecto típico. Para lípidos, 'efecto combinado: ninguno extraíble,' lo que sugiere que los metanálisis pueden no haber combinado resultados—planteando la pregunta de por qué no lo hicieron, y qué mostraron realmente los resultados de los ensayos individuales.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Inflación del desenlace de inflamación siendo solo en animales",
+        "detail": "El desenlace de inflamación (nivel Preliminar, 15 estudios en animales, mediana n=13) se reconoce como traducido indirectamente a humanos. Sin embargo, varios estudios en animales (2026, 2020) también aparecen en las listas de evidencia de glucemia y lípidos, sugiriendo que los datos de inflamación en animales pueden estar inflando indirectamente la confianza en reclamaciones clínicas de lípidos/glucosa a través del argumento mecanístico en lugar de evidencia directa de ensayos en humanos.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "El mecanismo (semillas/extracto de fenogreco → aumento de sensibilidad a la insulina, reducción de absorción de glucosa, efectos antiinflamatorios) es plausible a nivel celular (apoyado por la literatura en animales), pero hay una brecha entre la demostración en animales de modulación de vías y eficacia clínica en humanos. Los efectos humanos combinados (SMD −0,9 para glucosa, SMD 0,32 para testosterona) se infieren de ensayos pequeños y heterogéneos, la mayoría de los cuales no son directamente visibles; los estudios en animales pueden mostrar que el mecanismo funciona en principio, pero no pueden sustituir la confirmación de que se manifiesta en humanos a dosis clínicamente relevantes. Para testosterona específicamente, el efecto es pequeño (SMD 0,32) y la plausibilidad biológica está menos establecida que para glucosa—el mecanismo parece descansar en modelos en animales y razonamiento mecanístico en lugar de datos robustos de relación dosis-respuesta en humanos.",
+    "strongest_counterargument": "Un escéptico señalaría que toda la base de evidencia humana está dominada por metanálisis recientes (2020–2026) de ensayos pequeños y antiguos (el único RCT primario es de 1990), y los metanálisis pueden estar sesgados por inclusión selectiva, falta de registro de protocolos, y efectos de archivo. El hecho de que los tamaños de muestra estén ocultos en los registros de resúmenes sugiere estándares pobres de notificación en los ensayos originales o abstracción selectiva. Para testosterona, el efecto combinado es modesto (SMD 0,32, IC 0,09–0,55) y descansa en solo 3 metanálisis con métodos inconsistentes y a lo sumo uno reportando un tamaño de muestra completo—fácilmente explicado por sesgo de publicación favoreciendo estudios positivos. El desenlace de lípidos explícitamente declara 'efecto combinado: ninguno extraíble,' insinuando que los metanálisis no llegaron a consenso, sin embargo todavía se clasifica como Moderado. Hasta que RCTs de comparación directa en humanos (no síntesis de ensayos pequeños antiguos) sean publicados y preregistrados, la reclamación de eficacia descansa en una base inferencial frágil.",
+    "what_would_change_the_picture": "Un RCT preregistrado, adecuadamente potenciado (n ≥200) en una población de enfermedad única (p. ej., diabetes tipo 2 o hipogonadismo), con asignación cegada, publicado 2024 o posterior, comparando fenogreco con placebo y reportando desenlaces primarios y secundarios prespecificados con evaluación completa de heterogeneidad y riesgo de sesgo, confirmaría o falsaría los efectos combinados. Alternativamente, una revisión sistemática rigurosa con degradación explícita de riesgo de sesgo y análisis de sensibilidad excluyendo ensayos pequeños/antiguos aclararía si la clasificación moderada refleja señal verdadera o artefacto metaanalítico.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }

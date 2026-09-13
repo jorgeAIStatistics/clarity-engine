@@ -67,8 +67,15 @@ def grade_outcome(studies_for_outcome):
     presence of good evidence — so unmeasured precision caps at moderate rather
     than upgrading to high. This is the anti-hype core.
     """
+    # Public-grade policy: preprints are useful for discovery but are not
+    # peer-reviewed evidence and therefore cannot promote a published tier.
+    n_preprints = sum(1 for s in studies_for_outcome if s.get("is_preprint"))
+    if n_preprints:
+        studies_for_outcome = [s for s in studies_for_outcome if not s.get("is_preprint")]
+
     if not studies_for_outcome:
-        return _assess("very_low", ["No studies found for this outcome."], 0)
+        reason = "Only non-peer-reviewed preprints were found for this outcome." if n_preprints else "No studies found for this outcome."
+        return _assess("very_low", [reason], 0)
 
     # 1) Baseline by best available design ---------------------------------
     best_rank = max(s.get("design_rank", 0) for s in studies_for_outcome)
@@ -89,6 +96,8 @@ def grade_outcome(studies_for_outcome):
     have_precision_signal = len(measured_n) > 0
 
     reasons = []
+    if n_preprints:
+        reasons.append(f"Preprints excluded from tier calculation: {n_preprints} non-peer-reviewed record(s).")
     downgrades = 0
 
     def downgrade(msg):
@@ -266,10 +275,13 @@ def score_layers(studies_for_outcome, human_assessment):
 
     Returns a dict with per-layer scores and a gated `overall`.
     """
+    # Defense in depth: layer visuals use the same peer-reviewed evidence base
+    # as the published tier, so preprints cannot inflate the human/animal bars.
+    studies_for_outcome = [s for s in studies_for_outcome if not s.get("is_preprint")]
     if not studies_for_outcome:
         return {"mechanistic": 0, "preclinical": 0, "human": 0,
                 "overall": 0, "ceiling": 0,
-                "note": "No studies for this outcome."}
+                "note": "No peer-reviewed studies for this outcome."}
 
     human_studies = [s for s in studies_for_outcome if s.get("population") == "human"]
     animal_studies = [s for s in studies_for_outcome if s.get("population") == "animal"]

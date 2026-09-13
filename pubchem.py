@@ -113,7 +113,7 @@ def fetch(name):
     try:
         q = urllib.parse.quote(query)
         props = ("MolecularFormula,MolecularWeight,IUPACName,CanonicalSMILES,"
-                 "InChIKey,XLogP")
+                 "InChIKey,XLogP,TPSA,HBondDonorCount,HBondAcceptorCount")
         r = _get(f"{_BASE}/compound/name/{q}/property/{props}/JSON")
         if r:
             rows = r.json().get("PropertyTable", {}).get("Properties", [])
@@ -128,6 +128,9 @@ def fetch(name):
                     "smiles": p.get("CanonicalSMILES"),
                     "inchikey": p.get("InChIKey"),
                     "xlogp": p.get("XLogP"),
+                    "tpsa": p.get("TPSA"),
+                    "hbond_donors": p.get("HBondDonorCount"),
+                    "hbond_acceptors": p.get("HBondAcceptorCount"),
                     "image_url": (f"https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi"
                                   f"?cid={cid}&t=l") if cid else None,
                     "pubchem_url": (f"https://pubchem.ncbi.nlm.nih.gov/compound/{cid}"

@@ -13,10 +13,77 @@ just less fluent). Set LLM_API_KEY + LLM_MODEL to enable real prose.
 
 import os
 import json
+import re
+from datetime import datetime, timezone
 import grade as grade_mod
+
+ENGINE_VERSION = os.environ.get("CLARITY_ENGINE_VERSION", "2026.09-launch.2")
+PROFILE_SCHEMA_VERSION = 3
+RETRIEVAL_VERSION = "pubmed+europepmc-v2"
 
 LLM_API_KEY = os.environ.get("LLM_API_KEY")       # e.g. your Anthropic/OpenAI key
 LLM_MODEL = os.environ.get("LLM_MODEL", "")        # e.g. a cheap fast model id
+
+
+def _study_identity(study):
+    """Stable identity for compound-level deduplication across outcomes/sources."""
+    pmid = str(study.get("pmid") or "").strip()
+    if pmid:
+        return f"pmid:{pmid}"
+    doi = str(study.get("doi") or "").strip().lower()
+    if doi:
+        return f"doi:{doi}"
+    epmc = str(study.get("epmc_id") or "").strip().lower()
+    if epmc:
+        return f"epmc:{epmc}"
+    title = re.sub(r"[^a-z0-9]+", " ", str(study.get("title") or "").lower()).strip()
+    return f"title:{title}" if title else None
+
+
+def _unique_evidence_counts(claim_bundles):
+    """Count unique papers once across outcomes; outcome memberships remain separate."""
+    unique = {}
+    memberships = 0
+    for cb in claim_bundles:
+        for st in cb.get("studies") or []:
+            ident = _study_identity(st)
+            if not ident:
+                continue
+            memberships += 1
+            # Prefer a record with a known population if duplicate copies differ.
+            old = unique.get(ident)
+            if old is None or (old.get("population") in (None, "", "unknown") and st.get("population") not in (None, "", "unknown")):
+                unique[ident] = st
+    vals = list(unique.values())
+
+    def _pop(st):
+        return str(st.get("population") or "").strip().lower()
+
+    return {
+        "unique": len(vals),
+        "human": sum(1 for st in vals if _pop(st) == "human"),
+        "animal": sum(1 for st in vals if _pop(st) == "animal"),
+        "unlabelled": sum(1 for st in vals if _pop(st) not in ("human", "animal")),
+        "memberships": memberships,
+        "sources": sorted({str(st.get("retrieved_from") or st.get("source")) for st in vals if (st.get("retrieved_from") or st.get("source"))}),
+    }
+
+
+def _tier_metadata(claims, fallback_tier):
+    rank = {"Preliminary": 0, "Emerging": 1, "Moderate": 2, "Strong": 3}
+    human = [c for c in claims if (c.get("layers") or {}).get("n_human_studies", 0) > 0]
+    candidates = human or claims
+    best = max(candidates, key=lambda c: (rank.get(c.get("tier"), -1), (c.get("layers") or {}).get("human", 0), c.get("score", 0)), default=None)
+    tiers = sorted({c.get("tier") for c in human if c.get("tier") in rank}, key=lambda t: rank[t])
+    spread = (rank[tiers[-1]] - rank[tiers[0]]) if len(tiers) > 1 else 0
+    return {
+        "best_outcome": best.get("outcome") if best else None,
+        "best_tier": best.get("tier") if best else fallback_tier,
+        "human_outcome_tiers": tiers,
+        # A two-level spread is materially different; vitamins may override this
+        # in indications.catalog_meta for classic deficiency-vs-wellness contexts.
+        "outcome_dependent": spread >= 2,
+    }
 
 
 def _pick_headline_effect(pooled_from_meta):
@@ -64,16 +131,40 @@ def _study_records(studies):
     }
     recs = []
     for s in studies:
-        if not s.get("pmid"):
+        ident = _study_identity(s)
+        if not ident:
             continue
         n = s.get("sample_size")
+        pmid = str(s.get("pmid") or "").strip() or None
+        doi = str(s.get("doi") or "").strip() or None
+        epmc_id = str(s.get("epmc_id") or "").strip() or None
+        if pmid:
+            url = f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
+        elif epmc_id and ":" in epmc_id:
+            src, eid = epmc_id.split(":", 1)
+            url = f"https://europepmc.org/article/{src.upper()}/{eid}" if eid else None
+        elif doi:
+            url = f"https://doi.org/{doi}"
+        else:
+            url = None
         recs.append({
-            "pmid": str(s["pmid"]),
+            "id": ident,
+            "pmid": pmid,
             "title": (s.get("title") or "").strip()[:160],
             "year": s.get("year") or "",
             "design": _DESIGN_LABEL.get(s.get("design"), "Unclassified"),
-            "population": s.get("population") or "unknown",
+            "population": str(s.get("population") or "unknown").strip().lower(),
             "n": int(n) if isinstance(n, (int, float)) and n > 0 else None,
+            "doi": doi,
+            "epmc_id": epmc_id,
+            "url": url,
+            "source": s.get("retrieved_from"),
+            "is_preprint": bool(s.get("is_preprint")),
+            # Ask Clarity needs the actual study text to answer specific questions.
+            # Keep a bounded abstract in the profile so retrieval can be local and fast;
+            # never synthesize text here. Journal is useful context and also source-derived.
+            "abstract": (s.get("abstract") or "").strip()[:3000] or None,
+            "journal": (s.get("journal") or "").strip()[:180] or None,
         })
     _rank = {"Meta-analysis": 0, "Systematic review": 1, "RCT": 2, "Clinical trial": 3,
              "Observational": 4, "Case report": 5, "Animal": 6, "In vitro": 7, "Unclassified": 8}
@@ -125,10 +216,19 @@ def build_profile(topic, category, claim_bundles, overall):
     claims = []
     for cb in claim_bundles:
         g = cb["grade"]
-        # CITATION BINDING: only include PMIDs that actually exist for this claim.
-        pmids = [s["pmid"] for s in cb["studies"] if s.get("pmid")]
-        if not pmids:
-            continue  # anti-fabrication: no evidence -> claim dropped entirely
+        # CITATION BINDING: every study that contributes to a claim must carry
+        # a stable source identifier. Europe PMC can contain peer-reviewed papers
+        # without PMIDs, so DOI/EPMC identifiers are valid citation bindings too.
+        study_ids = []
+        for st in cb["studies"]:
+            if st.get("pmid"):
+                study_ids.append(f"PMID:{st['pmid']}")
+            elif st.get("doi"):
+                study_ids.append(f"DOI:{st['doi']}")
+            elif st.get("epmc_id"):
+                study_ids.append(f"EPMC:{st['epmc_id']}")
+        if not study_ids:
+            continue  # anti-fabrication: no source-bound evidence -> claim dropped
 
         # THREE-LAYER VIEW: mechanistic / preclinical / human, with the human
         # layer gating the overall so animal data can't inflate the headline.
@@ -142,6 +242,9 @@ def build_profile(topic, category, claim_bundles, overall):
             "has_human_evidence": g["has_human_evidence"],
             "n_studies": g["n_studies"],
             "grade_reasons": g["reasons"],
+            "direction_status": cb.get("direction_status", "not_assessed"),
+            "effect_extraction_status": cb.get("effect_extraction_status", "not_assessed"),
+            "preprints_excluded": int(cb.get("preprints_excluded", 0) or 0),
             "layers": {
                 "mechanistic": layers["mechanistic"],
                 "preclinical": layers["preclinical"],
@@ -152,7 +255,7 @@ def build_profile(topic, category, claim_bundles, overall):
                 "n_animal_studies": layers.get("n_animal_studies", 0),
                 "note": layers["note"],
             },
-            "study_ids": [f"PMID:{p}" for p in pmids],
+            "study_ids": study_ids,
             "studies": _study_records(cb["studies"]),
             "effects": _format_effects(cb.get("effects", [])),
             "pooled": cb.get("pooled", {"verified": None, "exploratory": None}),
@@ -168,14 +271,20 @@ def build_profile(topic, category, claim_bundles, overall):
                  if c not in established and c["layers"]["overall"] >= 35]
     emerging = [c for c in claims if c not in established and c not in promising]
 
-    total_studies = sum(c["n_studies"] for c in claims)
+    evidence_counts = _unique_evidence_counts(claims)
+    tier_meta = _tier_metadata(claims, tier)
 
     profile = {
         "name": topic,
         "category": category,
         "overall_score": score,
         "tier": tier,
-        "study_count": total_studies,
+        # Compound-level counts are UNIQUE papers, not the sum of outcome memberships.
+        "study_count": evidence_counts["unique"],
+        "unique_human_study_count": evidence_counts["human"],
+        "unique_animal_study_count": evidence_counts["animal"],
+        "unique_unlabelled_study_count": evidence_counts["unlabelled"],
+        "outcome_study_memberships": evidence_counts["memberships"],
         "claims": claims,
         "effects_established": [c["outcome"] for c in established],
         "effects_promising": [c["outcome"] for c in promising],
@@ -186,7 +295,17 @@ def build_profile(topic, category, claim_bundles, overall):
             "but this is not proof of a human effect."
             if not established else None
         ),
-        "generated_by": "clarity-engine-v2",
+        "generated_by": "clarity-engine",
+        "engine_version": ENGINE_VERSION,
+        "schema_version": PROFILE_SCHEMA_VERSION,
+        "retrieval_version": RETRIEVAL_VERSION,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "sources": evidence_counts["sources"] or ["pubmed", "europe_pmc"],
+        "overall_tier_basis": "best_human_supported_outcome",
+        "best_outcome": tier_meta["best_outcome"],
+        "best_tier": tier_meta["best_tier"],
+        "outcome_dependent": tier_meta["outcome_dependent"],
+        "human_outcome_tiers": tier_meta["human_outcome_tiers"],
         "reviewed_by": "auto",  # flip to "expert" after your review
     }
     # Grounded explanation (rich prose, efficacy tied to the grades). Cached by
@@ -201,6 +320,16 @@ def build_profile(topic, category, claim_bundles, overall):
             profile["chemistry"] = _chem
     except Exception as e:
         print(f"  [generate] pubchem lookup skipped: {type(e).__name__}")
+
+    # Curated, cited PK lives in one backend source of truth. Missing record means
+    # the UI omits PK rather than guessing from general model knowledge.
+    try:
+        import pharmacokinetics as _pk
+        _pk_record = _pk.get(topic)
+        if _pk_record:
+            profile["pharmacokinetics"] = _pk_record
+    except Exception as e:
+        print(f"  [generate] pharmacokinetics lookup skipped: {type(e).__name__}")
 
     # Skipped by default during catalog generation: these two calls are ~52% of
     # wall time and the add_explanations.py / add_appraisals.py passes produce
@@ -239,55 +368,18 @@ def build_profile(topic, category, claim_bundles, overall):
 
 
 def _write_prose(topic, claim_bundle):
-    """
-    Write a one-line, plain-language summary of ONE claim, grounded ONLY in the
-    provided studies. Uses the LLM if configured, else a safe template.
+    """Deterministic one-line claim summary derived only from the computed grade.
+
+    Richer prose is generated in the separate explanation/appraisal passes. Keeping
+    this core summary deterministic prevents a missing/misconfigured LLM provider
+    from ever putting placeholder or hallucinated text into a published profile.
     """
     g = claim_bundle["grade"]
     outcome = claim_bundle["outcome"]
-
-    if not (LLM_API_KEY and LLM_MODEL):
-        # Deterministic, honest fallback — no API needed.
-        strength = {
-            "Strong": "is well-supported by human trials",
-            "Moderate": "has moderate human evidence",
-            "Emerging": "shows early but unsettled evidence",
-            "Preliminary": "has only preliminary or animal evidence",
-        }.get(g["tier"], "has limited evidence")
-        return f"For {outcome}, {topic} {strength} ({g['n_studies']} studies)."
-
-    # --- Real LLM path (grounded prompt). Pseudocode-safe; wire to your provider. ---
-    evidence_blob = json.dumps([
-        {"pmid": s["pmid"], "title": s["title"], "design": s["design"],
-         "population": s["population"], "year": s["year"]}
-        for s in claim_bundle["studies"]
-    ], indent=2)
-
-    system = (
-        "You are a scientific summarizer. Write ONE plain-language sentence about "
-        "the effect of the topic on the given outcome. Use ONLY the provided studies. "
-        "Do NOT invent numbers, effects, or citations. If evidence is weak, say so plainly."
-    )
-    user = (
-        f"Topic: {topic}\nOutcome: {outcome}\n"
-        f"GRADE certainty: {g['certainty']} ({g['tier']})\n"
-        f"Studies (the ONLY allowed source):\n{evidence_blob}\n\n"
-        "Write the one-sentence summary."
-    )
-    return _call_llm(system, user)
-
-
-def _call_llm(system, user):
-    """
-    Isolated LLM call. Fill in for your provider. Example shape for Anthropic:
-
-        import anthropic
-        client = anthropic.Anthropic(api_key=LLM_API_KEY)
-        msg = client.messages.create(
-            model=LLM_MODEL, max_tokens=120,
-            system=system, messages=[{"role": "user", "content": user}])
-        return msg.content[0].text.strip()
-
-    Kept as a stub so the engine runs with zero paid dependencies by default.
-    """
-    return "[LLM prose would appear here — configure LLM_API_KEY + LLM_MODEL]"
+    strength = {
+        "Strong": "is well-supported by human trials",
+        "Moderate": "has moderate human evidence",
+        "Emerging": "shows early but unsettled human evidence",
+        "Preliminary": "has only preliminary, sparse-human, or preclinical evidence",
+    }.get(g.get("tier"), "has limited evidence")
+    return f"For {outcome}, {topic} {strength} ({g.get('n_studies', 0)} graded studies)."

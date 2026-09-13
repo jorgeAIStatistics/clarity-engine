@@ -3,7 +3,11 @@
   "category": "peptide",
   "overall_score": 22,
   "tier": "Preliminary",
-  "study_count": 4,
+  "study_count": 3,
+  "unique_human_study_count": 0,
+  "unique_animal_study_count": 3,
+  "unique_unlabelled_study_count": 0,
+  "outcome_study_memberships": 11,
   "claims": [
     {
       "outcome": "cognition",
@@ -11,45 +15,297 @@
       "certainty": "very_low",
       "score": 22,
       "has_human_evidence": false,
-      "n_studies": 1,
+      "n_studies": 3,
       "grade_reasons": [
         "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
+        "mechanistic": 30,
+        "preclinical": 55,
         "human": 0,
-        "overall": 35,
+        "overall": 55,
         "ceiling": 55,
         "n_human_studies": 0,
-        "n_animal_studies": 1,
+        "n_animal_studies": 3,
         "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:22567179"
+        "PMID:22567179",
+        "PMID:21978084",
+        "PMID:21809624"
       ],
       "studies": [
         {
+          "id": "pmid:22567179",
           "pmid": "22567179",
           "title": "Pinealon protects the rat offspring from prenatal hyperhomocysteinemia.",
           "year": "2012",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": "MED:22567179",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22567179/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The offspring of rats with experimental hyperhomocysteinemia caused by alimentary loading with dietary methionine within pregnancy has been studied. Using pinealon (Glu-Asp-Arg) under these conditions was found to result in the offspring cognitive function being improved significantly and their cerebellum neurons becoming more resistant to oxidative stress. This may be proved by the fact that the administration of pinealon to pregnant rats loaded with methionine improved their offspring spatial orientation and learning ability and decreased both reactive oxygen species accumulation and the number of necrotic cells in the population of the neurons isolated from the cerebellum of the offspring developed under the prenatal hyperhomocysteinemia. Our experiments allowed confirming the neuroprotective properties of pinealon, which is in agreement with the previous data obtained by us in vitro.",
+          "journal": "International journal of clinical and experimental medicine"
+        },
+        {
+          "id": "pmid:21978084",
+          "pmid": "21978084",
+          "title": "Pinealon increases cell viability by suppression of free radical levels and activating proliferative processes.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1089/rej.2011.1172",
+          "epmc_id": "MED:21978084",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21978084/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The synthetic tripeptide pinealon (Glu-Asp-Arg) demonstrates dose-dependent restriction of reactive oxygen species (ROS) accumulation in cerebellar granule cells, neutrophils, and pheochromocytoma (PC12) cells, induced by oxidative stress stimulated by receptor-dependent or -independent processes. At the same time, pinealon decreases necrotic cell death measured by the propidium iodide test. The protective effect of pinealon is accompanied with a delayed time course of ERK 1/2 activation and modification of the cell cycle. Because restriction of ROS accumulation and cell mortality is saturated at lower concentrations, whereas cell cycle modulation continues at higher concentrations of pinealon, one can conclude that besides its known antioxidant activity, pinealon is able to interact directly with the cell genome.",
+          "journal": "Rejuvenation research"
+        },
+        {
+          "id": "pmid:21809624",
+          "pmid": "21809624",
+          "title": "[Effects of introduction of short peptides before carotid artery occlusion on behaviour and caspase-3 activity in the brain of old rats].",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": "MED:21809624",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21809624/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The comparative research of effect of Pinealon and Cortexin on behavior and activity of caspase-3 in a brain of old rats in a model of carotid arteries occlusion was conducted. It is shown that introduction of short peptides promotes a survival rate of the animals that have modeled occlusion of carotid arteries. Under Pinealon before occlusion of carotid arteries, behavioral dream has been increased and a position-finding behavior, a motivational behavior and a motor performance have been reduced. The rats that were introduced Cortexin before carotid arteries occlusion demonstrated the raise of behavioral dream time. At introduction of Pinealon activity of caspase-3 moderately raises in false-operated animals and in a model of occlusion of carotid arteries.",
+          "journal": "Advances in gerontology = Uspekhi gerontologii"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 3,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For cognition, Pinealon has only preliminary or animal evidence (1 studies)."
+      "summary": "For cognition, Pinealon has only preliminary, sparse-human, or preclinical evidence (3 graded studies).",
+      "weighted_score": {
+        "final_score": 23.5,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 90.6
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 3,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 9.643,
+          "low_tier_points_post_cap": 9.643,
+          "low_tier_cap_applied": false,
+          "total_points_R": 9.643,
+          "scaled_base_score": 23.519,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 34.2072,
+          "se_consistency_component": 4.2072,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 67.046,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.181,
+              "points": 4.722,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.135,
+              "points": 4.542,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para cognición, Pinealon cuenta solo con evidencia preliminar, escasa en humanos, o preclínica (3 estudios calificados)."
+    },
+    {
+      "outcome": "mood / depression",
+      "tier": "Preliminary",
+      "certainty": "very_low",
+      "score": 22,
+      "has_human_evidence": false,
+      "n_studies": 3,
+      "grade_reasons": [
+        "Indirectness: evidence is animal-only; does not reliably translate to humans."
+      ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
+      "layers": {
+        "mechanistic": 30,
+        "preclinical": 55,
+        "human": 0,
+        "overall": 55,
+        "ceiling": 55,
+        "n_human_studies": 0,
+        "n_animal_studies": 3,
+        "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
+      },
+      "study_ids": [
+        "PMID:22567179",
+        "PMID:21978084",
+        "PMID:21809624"
+      ],
+      "studies": [
+        {
+          "id": "pmid:22567179",
+          "pmid": "22567179",
+          "title": "Pinealon protects the rat offspring from prenatal hyperhomocysteinemia.",
+          "year": "2012",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": "MED:22567179",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22567179/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The offspring of rats with experimental hyperhomocysteinemia caused by alimentary loading with dietary methionine within pregnancy has been studied. Using pinealon (Glu-Asp-Arg) under these conditions was found to result in the offspring cognitive function being improved significantly and their cerebellum neurons becoming more resistant to oxidative stress. This may be proved by the fact that the administration of pinealon to pregnant rats loaded with methionine improved their offspring spatial orientation and learning ability and decreased both reactive oxygen species accumulation and the number of necrotic cells in the population of the neurons isolated from the cerebellum of the offspring developed under the prenatal hyperhomocysteinemia. Our experiments allowed confirming the neuroprotective properties of pinealon, which is in agreement with the previous data obtained by us in vitro.",
+          "journal": "International journal of clinical and experimental medicine"
+        },
+        {
+          "id": "pmid:21978084",
+          "pmid": "21978084",
+          "title": "Pinealon increases cell viability by suppression of free radical levels and activating proliferative processes.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1089/rej.2011.1172",
+          "epmc_id": "MED:21978084",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21978084/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The synthetic tripeptide pinealon (Glu-Asp-Arg) demonstrates dose-dependent restriction of reactive oxygen species (ROS) accumulation in cerebellar granule cells, neutrophils, and pheochromocytoma (PC12) cells, induced by oxidative stress stimulated by receptor-dependent or -independent processes. At the same time, pinealon decreases necrotic cell death measured by the propidium iodide test. The protective effect of pinealon is accompanied with a delayed time course of ERK 1/2 activation and modification of the cell cycle. Because restriction of ROS accumulation and cell mortality is saturated at lower concentrations, whereas cell cycle modulation continues at higher concentrations of pinealon, one can conclude that besides its known antioxidant activity, pinealon is able to interact directly with the cell genome.",
+          "journal": "Rejuvenation research"
+        },
+        {
+          "id": "pmid:21809624",
+          "pmid": "21809624",
+          "title": "[Effects of introduction of short peptides before carotid artery occlusion on behaviour and caspase-3 activity in the brain of old rats].",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": "MED:21809624",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21809624/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The comparative research of effect of Pinealon and Cortexin on behavior and activity of caspase-3 in a brain of old rats in a model of carotid arteries occlusion was conducted. It is shown that introduction of short peptides promotes a survival rate of the animals that have modeled occlusion of carotid arteries. Under Pinealon before occlusion of carotid arteries, behavioral dream has been increased and a position-finding behavior, a motivational behavior and a motor performance have been reduced. The rats that were introduced Cortexin before carotid arteries occlusion demonstrated the raise of behavioral dream time. At introduction of Pinealon activity of caspase-3 moderately raises in false-operated animals and in a model of occlusion of carotid arteries.",
+          "journal": "Advances in gerontology = Uspekhi gerontologii"
+        }
+      ],
+      "effects": {
+        "plottable": [],
+        "n_not_reported": 3,
+        "n_total": 3
+      },
+      "pooled": {
+        "verified": null,
+        "exploratory": null,
+        "note": "no usable effects"
+      },
+      "headline_effect": null,
+      "summary": "For mood / depression, Pinealon has only preliminary, sparse-human, or preclinical evidence (3 graded studies).",
+      "weighted_score": {
+        "final_score": 23.5,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 90.6
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 3,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 9.643,
+          "low_tier_points_post_cap": 9.643,
+          "low_tier_cap_applied": false,
+          "total_points_R": 9.643,
+          "scaled_base_score": 23.519,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 34.2072,
+          "se_consistency_component": 4.2072,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 67.046,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.181,
+              "points": 4.722,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.135,
+              "points": 4.542,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para estado de ánimo / depresión, Pinealon cuenta solo con evidencia preliminar, escasa en humanos, o preclínica (3 estudios calificados)."
     },
     {
       "outcome": "stress / anxiety",
@@ -61,6 +317,9 @@
       "grade_reasons": [
         "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
         "mechanistic": 25,
         "preclinical": 45,
@@ -77,91 +336,272 @@
       ],
       "studies": [
         {
+          "id": "pmid:22567179",
           "pmid": "22567179",
           "title": "Pinealon protects the rat offspring from prenatal hyperhomocysteinemia.",
           "year": "2012",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": "MED:22567179",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22567179/",
+          "source": "europe_pmc,pubmed",
+          "is_preprint": false,
+          "abstract": "The offspring of rats with experimental hyperhomocysteinemia caused by alimentary loading with dietary methionine within pregnancy has been studied. Using pinealon (Glu-Asp-Arg) under these conditions was found to result in the offspring cognitive function being improved significantly and their cerebellum neurons becoming more resistant to oxidative stress. This may be proved by the fact that the administration of pinealon to pregnant rats loaded with methionine improved their offspring spatial orientation and learning ability and decreased both reactive oxygen species accumulation and the number of necrotic cells in the population of the neurons isolated from the cerebellum of the offspring developed under the prenatal hyperhomocysteinemia. Our experiments allowed confirming the neuroprotective properties of pinealon, which is in agreement with the previous data obtained by us in vitro.",
+          "journal": "International journal of clinical and experimental medicine"
         },
         {
+          "id": "pmid:21978084",
           "pmid": "21978084",
           "title": "Pinealon increases cell viability by suppression of free radical levels and activating proliferative processes.",
           "year": "2011",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": "10.1089/rej.2011.1172",
+          "epmc_id": "MED:21978084",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21978084/",
+          "source": "pubmed",
+          "is_preprint": false,
+          "abstract": "The synthetic tripeptide pinealon (Glu-Asp-Arg) demonstrates dose-dependent restriction of reactive oxygen species (ROS) accumulation in cerebellar granule cells, neutrophils, and pheochromocytoma (PC12) cells, induced by oxidative stress stimulated by receptor-dependent or -independent processes. At the same time, pinealon decreases necrotic cell death measured by the propidium iodide test. The protective effect of pinealon is accompanied with a delayed time course of ERK 1/2 activation and modification of the cell cycle. Because restriction of ROS accumulation and cell mortality is saturated at lower concentrations, whereas cell cycle modulation continues at higher concentrations of pinealon, one can conclude that besides its known antioxidant activity, pinealon is able to interact directly with the cell genome.",
+          "journal": "Rejuvenation research"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 2,
+        "n_total": 2
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For stress / anxiety, Pinealon has only preliminary or animal evidence (2 studies)."
+      "summary": "For stress / anxiety, Pinealon has only preliminary, sparse-human, or preclinical evidence (2 graded studies).",
+      "weighted_score": {
+        "final_score": 21.4,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 89.3
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 2,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 7.653,
+          "low_tier_points_post_cap": 7.653,
+          "low_tier_cap_applied": false,
+          "total_points_R": 7.653,
+          "scaled_base_score": 21.441,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 34.6422,
+          "se_consistency_component": 4.6422,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 67.899,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.135,
+              "points": 4.542,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.181,
+              "points": 4.722,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para estrés / ansiedad, Pinealon cuenta solo con evidencia preliminar, escasa en humanos, o preclínica (2 estudios calificados)."
     },
     {
-      "outcome": "neuroprotection",
+      "outcome": "neuroprotection / brain health",
       "tier": "Preliminary",
       "certainty": "very_low",
       "score": 22,
       "has_human_evidence": false,
-      "n_studies": 1,
+      "n_studies": 3,
       "grade_reasons": [
         "Indirectness: evidence is animal-only; does not reliably translate to humans."
       ],
+      "direction_status": "not_required",
+      "effect_extraction_status": "assessed",
+      "preprints_excluded": 0,
       "layers": {
-        "mechanistic": 20,
-        "preclinical": 35,
+        "mechanistic": 30,
+        "preclinical": 55,
         "human": 0,
-        "overall": 35,
+        "overall": 55,
         "ceiling": 55,
         "n_human_studies": 0,
-        "n_animal_studies": 1,
+        "n_animal_studies": 3,
         "note": "No human evidence: score is capped in the 'promising but unproven' range regardless of how strong the theory or animal data are."
       },
       "study_ids": [
-        "PMID:22567179"
+        "PMID:21809624",
+        "PMID:22567179",
+        "PMID:21978084"
       ],
       "studies": [
         {
+          "id": "pmid:22567179",
           "pmid": "22567179",
           "title": "Pinealon protects the rat offspring from prenatal hyperhomocysteinemia.",
           "year": "2012",
           "design": "Animal",
           "population": "animal",
-          "n": null
+          "n": null,
+          "doi": null,
+          "epmc_id": "MED:22567179",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22567179/",
+          "source": "europe_pmc,pubmed",
+          "is_preprint": false,
+          "abstract": "The offspring of rats with experimental hyperhomocysteinemia caused by alimentary loading with dietary methionine within pregnancy has been studied. Using pinealon (Glu-Asp-Arg) under these conditions was found to result in the offspring cognitive function being improved significantly and their cerebellum neurons becoming more resistant to oxidative stress. This may be proved by the fact that the administration of pinealon to pregnant rats loaded with methionine improved their offspring spatial orientation and learning ability and decreased both reactive oxygen species accumulation and the number of necrotic cells in the population of the neurons isolated from the cerebellum of the offspring developed under the prenatal hyperhomocysteinemia. Our experiments allowed confirming the neuroprotective properties of pinealon, which is in agreement with the previous data obtained by us in vitro.",
+          "journal": "International journal of clinical and experimental medicine"
+        },
+        {
+          "id": "pmid:21809624",
+          "pmid": "21809624",
+          "title": "[Effects of introduction of short peptides before carotid artery occlusion on behaviour and caspase-3 activity in the brain of old rats].",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": null,
+          "epmc_id": "MED:21809624",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21809624/",
+          "source": "europe_pmc,pubmed",
+          "is_preprint": false,
+          "abstract": "The comparative research of effect of Pinealon and Cortexin on behavior and activity of caspase-3 in a brain of old rats in a model of carotid arteries occlusion was conducted. It is shown that introduction of short peptides promotes a survival rate of the animals that have modeled occlusion of carotid arteries. Under Pinealon before occlusion of carotid arteries, behavioral dream has been increased and a position-finding behavior, a motivational behavior and a motor performance have been reduced. The rats that were introduced Cortexin before carotid arteries occlusion demonstrated the raise of behavioral dream time. At introduction of Pinealon activity of caspase-3 moderately raises in false-operated animals and in a model of occlusion of carotid arteries.",
+          "journal": "Advances in gerontology = Uspekhi gerontologii"
+        },
+        {
+          "id": "pmid:21978084",
+          "pmid": "21978084",
+          "title": "Pinealon increases cell viability by suppression of free radical levels and activating proliferative processes.",
+          "year": "2011",
+          "design": "Animal",
+          "population": "animal",
+          "n": null,
+          "doi": "10.1089/rej.2011.1172",
+          "epmc_id": "MED:21978084",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21978084/",
+          "source": "europe_pmc",
+          "is_preprint": false,
+          "abstract": "The synthetic tripeptide pinealon (Glu-Asp-Arg) demonstrates dose-dependent restriction of reactive oxygen species (ROS) accumulation in cerebellar granule cells, neutrophils, and pheochromocytoma (PC12) cells, induced by oxidative stress stimulated by receptor-dependent or -independent processes. At the same time, pinealon decreases necrotic cell death measured by the propidium iodide test. The protective effect of pinealon is accompanied with a delayed time course of ERK 1/2 activation and modification of the cell cycle. Because restriction of ROS accumulation and cell mortality is saturated at lower concentrations, whereas cell cycle modulation continues at higher concentrations of pinealon, one can conclude that besides its known antioxidant activity, pinealon is able to interact directly with the cell genome.",
+          "journal": "Rejuvenation research"
         }
       ],
       "effects": {
         "plottable": [],
-        "n_not_reported": 0,
-        "n_total": 0
+        "n_not_reported": 3,
+        "n_total": 3
       },
       "pooled": {
         "verified": null,
         "exploratory": null,
-        "note": "extractor not run"
+        "note": "no usable effects"
       },
       "headline_effect": null,
-      "summary": "For neuroprotection, Pinealon has only preliminary or animal evidence (1 studies)."
+      "summary": "For neuroprotection / brain health, Pinealon has only preliminary, sparse-human, or preclinical evidence (3 graded studies).",
+      "weighted_score": {
+        "final_score": 23.5,
+        "confidence_interval": {
+          "lower": 0.0,
+          "upper": 90.6
+        },
+        "confidence_tier": "Preliminary",
+        "direction": "unclear",
+        "breakdown": {
+          "n_studies": 3,
+          "high_tier_points": 0,
+          "low_tier_points_pre_cap": 9.643,
+          "low_tier_points_post_cap": 9.643,
+          "low_tier_cap_applied": false,
+          "total_points_R": 9.643,
+          "scaled_base_score": 23.519,
+          "p_supportive": 1.0,
+          "single_source_penalty": false,
+          "standard_error_points": 34.2072,
+          "se_consistency_component": 4.2072,
+          "se_thinness_component": 30.0,
+          "margin_of_error": 67.046,
+          "human_sample_total": 0,
+          "studies_missing_sample_size": 0,
+          "studies_missing_citations": 0,
+          "data_completeness_note": "0 human study(ies) used a default sample-size multiplier and 0 study(ies) used a default citation multiplier (data unavailable — treated as neutral, never penalised).",
+          "per_study": [
+            {
+              "idx": 0,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.045,
+              "points": 4.181,
+              "supportive": true
+            },
+            {
+              "idx": 1,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.181,
+              "points": 4.722,
+              "supportive": true
+            },
+            {
+              "idx": 2,
+              "tier": "Emerging",
+              "base_weight": 4.0,
+              "S_k": 1.0,
+              "C_k": 1.135,
+              "points": 4.542,
+              "supportive": true
+            }
+          ]
+        }
+      },
+      "summary_es": "Para neuroprotección / salud cerebral, Pinealon cuenta solo con evidencia preliminar, escasa en humanos, o preclínica (3 estudios calificados)."
     }
   ],
   "effects_established": [],
   "effects_promising": [
     "cognition",
+    "mood / depression",
     "stress / anxiety",
-    "neuroprotection"
+    "neuroprotection / brain health"
   ],
   "effects_emerging": [],
-  "honesty_note": "No outcomes reached the well-established tier \u2014 human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
-  "generated_by": "clarity-engine-v2",
+  "honesty_note": "No outcomes reached the well-established tier — human evidence is limited. Some outcomes show promising mechanistic or animal data (see 'promising'), but this is not proof of a human effect.",
+  "generated_by": "clarity-engine",
+  "engine_version": "2026.09-launch.2",
+  "schema_version": 3,
+  "retrieval_version": "pubmed+europepmc-v2",
+  "generated_at": "2026-09-12T05:46:26.079394+00:00",
+  "sources": [
+    "europe_pmc"
+  ],
+  "overall_tier_basis": "best_human_supported_outcome",
+  "best_outcome": "cognition",
+  "best_tier": "Preliminary",
+  "outcome_dependent": false,
+  "human_outcome_tiers": [],
   "reviewed_by": "auto",
   "chemistry": {
     "cid": 10273502,
@@ -184,69 +624,189 @@
       "175175-23-2"
     ]
   },
-  "_cached_at": 1787608712.233452,
+  "_timing": {
+    "n_api_requests": 2,
+    "cache_hit": false,
+    "europepmc_s": 1.186,
+    "pubmed_s": 1.396,
+    "retrieval_total_s": 1.397,
+    "n_studies": 23,
+    "normalization_s": 0.006,
+    "grading_s": 0.002
+  },
+  "weighted_score": {
+    "score": 20.7,
+    "n_outcomes_scored": 4,
+    "best_outcome_score": 23.5,
+    "fragmentation_penalty_applied": true,
+    "method": "score-weighted average (sum of squares / sum); broad-but-shallow penalty when >=4 outcomes and best <50; no compound-level CI by design"
+  },
+  "_cached_at": 1789191986.081574,
   "explanation": {
-    "what_it_is": "Pinealon is a tripeptide \u2014 a short chain of three amino acids (glutamic acid, aspartic acid, and arginine) linked together \u2014 with the molecular formula C\u2081\u2085H\u2082\u2086N\u2086O\u2088. It is typically administered by injection and is often used in research contexts. The compound was originally investigated as a potential pineal-gland-modulating agent, though direct effects on pineal function remain unclear.",
-    "how_it_works": "As a tripeptide, pinealon can cross the blood\u2013brain barrier and reach neural tissue. The three amino acids it contains \u2014 glutamate (excitatory), aspartate (excitatory), and arginine (involved in nitric oxide signaling and immune function) \u2014 have recognized roles in neuronal communication and cell protection. In animal studies, pinealon has been observed to reduce free-radical levels and influence cell survival pathways, mechanisms that would plausibly protect neurons against oxidative stress. However, how or why this tripeptide combination produces these effects in living systems, and whether the mechanism transfers to humans, is not yet established.",
+    "what_it_is_line": "A three-amino-acid peptide (Glu-Asp-Arg) originally studied in pineal gland research.",
+    "what_it_is": "Pinealon is a short peptide — a chain of just three amino acids (glutamic acid, aspartic acid, and arginine) linked together. Amino acids are the building blocks your cells use to make proteins. It was first identified in research on the pineal gland, a small gland in the brain that produces melatonin. Pinealon is sold as an injectable peptide, typically as a research chemical, and is not approved by the FDA or other major regulatory agencies.",
+    "how_it_works_line": "Appears to reduce oxidative stress and protect brain cells, but mechanism in humans is unknown.",
+    "how_it_works": "In animal studies, pinealon seems to work by fighting oxidative stress — the cellular damage that happens when unstable molecules called free radicals accumulate and damage cells. The studies retrieved suggest it does this by dampening free radical levels and activating cellular repair and growth processes. It may also affect caspase-3, an enzyme involved in cell death pathways, potentially preventing unwanted brain cell death during injury. However, exactly which receptors or pathways it engages in humans, and whether those animal findings translate to people, remains unknown — no human studies have been conducted.",
+    "safety_line": "No human trials completed; animal studies did not report major harms, but safety data is severely limited.",
+    "safety_detail": "The three animal studies retrieved did not describe serious adverse effects, but animal studies are short-term, involve small numbers of subjects (usually rodents), and do not always predict human tolerability. Pinealon has never been tested in humans, so its side effects, optimal dosing, and long-term safety in people are entirely unknown. Because it is an injectable peptide and a research chemical, it carries additional risks: purity, sterility, and concentration are not verified by regulatory agencies.",
+    "safety_bullets": [
+      "No human safety data exist — all evidence is from animals. Tolerability in humans is unknown.",
+      "Interactions with other drugs have not been tested. Use with medications, especially those affecting the brain or immune system, is untested.",
+      "Pregnancy, nursing, children, and adolescents: excluded from all retrieved studies. Effects in these groups are completely unknown.",
+      "Kidney or liver disease: not studied. Peptide handling by impaired organs is untested."
+    ],
+    "chem_meaning": "Pinealon is a very water-loving peptide (XLogP −6.1), meaning it dissolves easily in water but poorly in fats or the fatty membranes that surround cells and tissues. This makes it unlikely to cross the blood-brain barrier — the selective filter that protects the brain — on its own, which raises a question about how it reaches brain tissue if given by injection. Its small size (418 daltons) is an advantage for some biological activities, but the high water-loving character limits how far it can travel in the body.",
     "outcome_detail": [
       {
         "outcome": "cognition",
         "grade": "Preliminary",
-        "what_studies_show": "A single 2012 animal study found that pinealon protected rat offspring from cognitive effects associated with prenatal hyperhomocysteinemia (high maternal homocysteine). This was an animal model in rats, not a human trial.",
-        "why_this_grade": "Evidence comes from one animal study only, with no human trials. Animal models do not reliably predict human neurobiology, so this remains unproven in people."
+        "what_studies_show": "Three animal studies (2011–2012) found that pinealon improved cognitive-related outcomes in rats. One study showed it protected offspring from prenatal hyperhomocysteinemia (excess homocysteine, an amino acid linked to neurological harm). Another found it increased cell survival by reducing free radicals and activating repair processes. A third observed behavioral changes and reduced caspase-3 activity (a marker of cell death) after stroke-like injury in animals. All studies were conducted in rodents; no human trials were retrieved.",
+        "why_this_grade": "Evidence is animal-only and does not reliably predict human cognitive effects. Animal cognitive tests (e.g., maze tasks in rats) do not always translate to human cognition, and the mechanisms observed in rodent brains may not be active or relevant in humans."
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Preliminary",
+        "what_studies_show": "The same three animal studies (2011–2012) that examined cognition also looked at mood-like behaviors in rats. Pinealon appeared to reduce depression-like or stress-like behaviors in rats exposed to prenatal stress or injury models, and to promote cell survival under damaging conditions. No human mood or depression trials were retrieved.",
+        "why_this_grade": "All evidence is from animal behavioral models. Rodent depression-like behaviors (measured by tests like forced swim) are crude proxies for human depression and do not establish efficacy in people. No human data exist."
       },
       {
         "outcome": "stress / anxiety",
         "grade": "Preliminary",
-        "what_studies_show": "Two animal studies (2011 and 2012) suggested pinealon may reduce anxiety-like behaviors and cellular stress in rats. A 2011 study noted that pinealon increased cell viability by suppressing free-radical levels and activating proliferative processes; a 2012 study found protective effects in offspring exposed to prenatal hyperhomocysteinemia. Both were conducted in rodents.",
-        "why_this_grade": "All available evidence is from animal studies; no human trials have been conducted. Animal behavior models and cellular responses do not reliably translate to human anxiety or stress responses."
+        "what_studies_show": "Two animal studies (2011–2012) reported that pinealon reduced stress or anxiety-like behaviors in rats — one in offspring exposed to prenatal stress (hyperhomocysteinemia) and another examining free radical suppression and cell viability. Neither human anxiety nor stress trials were retrieved.",
+        "why_this_grade": "Evidence is limited to two animal studies using rodent anxiety/stress models, which are not reliable proxies for human anxiety disorders. No human efficacy data exist."
       },
       {
-        "outcome": "neuroprotection",
+        "outcome": "neuroprotection / brain health",
         "grade": "Preliminary",
-        "what_studies_show": "A single 2012 animal study in rats found that pinealon protected neural tissue and offspring from prenatal hyperhomocysteinemia-induced damage, consistent with a neuroprotective mechanism.",
-        "why_this_grade": "Only one animal study is available; no human data exist. Animal models of neuroprotection often fail to translate clinically."
+        "what_studies_show": "Three animal studies (2011–2012) found that pinealon protected rat brain cells or offspring brain development from damage caused by hyperhomocysteinemia, free radical stress, or stroke-like injury. Studies reported reduced cell death (caspase-3 suppression), enhanced cell survival, and protective effects against prenatal and acute insults. All studies were in rodents; no human neuroprotection or brain health trials were retrieved.",
+        "why_this_grade": "Animal neuroprotection studies, while promising for hypothesis generation, do not establish human benefit. Rodent injury models (ischemic stroke, oxidative stress) often do not translate to human therapeutic efficacy. No human studies have tested whether these protective effects occur in people."
       }
     ],
-    "evidence_base": "The research base for pinealon is very limited, consisting of only animal studies (rodent models) from 2011\u20132012. No human trials have been published in the retrieved records. The studies focused on prenatal/maternal exposure models and cellular stress responses, using standard animal neurobiology and immunology methods. This narrow and aged evidence base means confidence in any human effect is minimal; the field appears not to have advanced significantly with recent clinical work.",
-    "emerging_research": "Among the records retrieved, there is no evidence of recent studies (post-2012) or emerging directions in pinealon research. Without newer publications, it is not possible to identify active research momentum or novel applications under investigation.",
-    "open_questions": "Among the studies provided, none examined pinealon in human subjects. The retrieved animal work also does not establish optimal dosing, long-term safety, or whether effects depend on the timing of exposure (e.g., prenatal vs. adult). Because these records represent only a sample of available literature (approximately 40 per outcome), gaps may exist elsewhere; however, based on what is shown here, human efficacy and safety remain entirely uncharacterized.",
-    "caveats": "Pinealon is an injectable peptide and is often classified as a research chemical; it is not approved by major regulatory agencies (FDA, EMA) for clinical use in humans, and manufacturing quality/purity standards are not guaranteed across suppliers. No human safety data exist in the retrieved records. Anyone considering use should be aware that efficacy is unproven in people and that animal-to-human translation is unreliable. Medical supervision is strongly advised if used experimentally.",
+    "evidence_base": "All evidence is animal-based: three studies from 2011–2012, all conducted in rats, examining cognition, mood, stress, and neuroprotection. No human trials have been conducted. The animal work is mechanistic and preliminary; it offers biological plausibility but cannot demonstrate efficacy, safety, or optimal dosing in humans. The recency (over a decade old) and limited scope (rodent-only, small sample sizes typical of animal research) mean confidence in human applicability is very low.",
+    "open_questions": "The records contain no human data, so tolerability and efficacy in any human population remain entirely unknown. It is unclear whether pinealon, despite being water-loving, reaches the brain in sufficient concentrations to produce the effects seen in rodent studies. Animal studies typically last weeks; long-term effects in humans have not been explored. Mechanisms of action in human neurons, the relevance of rat behavioral outcomes to human mood or cognition, and the optimal dose and route for humans all remain open questions.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   },
   "appraisal": {
-    "headline": "All evidence for pinealon is animal-only (rats), no human trials exist, and the entire retrieved literature consists of 2 studies from 2011\u20132012 with sample sizes that cannot be determined from available abstracts.",
+    "headline": "No human data exists for Pinealon: all evidence is from rodent studies conducted 12+ years ago, and the compound remains unapproved for human use.",
     "concerns": [
       {
-        "issue": "Zero human evidence",
-        "detail": "All three tracked outcomes (cognition, stress/anxiety, neuroprotection) rest exclusively on animal studies. The records show 0 human trials across all outcomes. Rats and humans differ substantially in pharmacokinetics, metabolic capacity, blood\u2013brain barrier permeability, and stress responses, making rodent efficacy a poor predictor of human benefit.",
+        "issue": "Zero human clinical trials",
+        "detail": "Across all four outcomes (cognition, mood, stress, neuroprotection), the evidence base contains 0 human studies and 11 total animal studies. Every grade is built on rodent data alone, which has a well-documented poor translation rate to human efficacy in neuropharmacology. This is not a limitation of trial quality—it is the absence of the minimum evidence type needed to support human use.",
         "severity": "high"
       },
       {
-        "issue": "Minimal literature base with unclear scope",
-        "detail": "Only 2 unique studies are represented across all outcomes (one study appears in multiple outcome categories). The retrieved evidence spans just 2011\u20132012, offering no replication attempts or recent validation. Sample sizes are not extractable from the abstracts provided, preventing assessment of statistical power or confidence in any observed effects.",
+        "issue": "No recent evidence; 12-year evidence lag",
+        "detail": "All retrieved studies are from 2011–2012. The absence of human trials or follow-up animal work since 2012 raises the question of whether this compound was abandoned in formal research or failed to progress. No information about current clinical development status is visible in these records.",
         "severity": "high"
       },
       {
-        "issue": "Single study with overlapping claims",
-        "detail": "The 2012 rat study 'Pinealon protects the rat offspring from prenatal hyperhomocysteinemia' appears across cognition, stress/anxiety, and neuroprotection outcomes, suggesting it may be counted multiple times. This inflates the apparent evidence base for disparate outcomes when only one experiment may underlie multiple claims.",
+        "issue": "Sample sizes completely unreportable",
+        "detail": "The abstracts provided do not include extractable sample size data for any of the 3 animal studies cited. Without knowing whether studies enrolled 5 rats or 50, the precision and replicability of the effect estimates cannot be assessed. In rodent neuroscience, underpowered small studies are common and often do not replicate.",
         "severity": "high"
       },
       {
-        "issue": "Limited mechanistic mapping to clinical claims",
-        "detail": "The 2011 study mentions 'suppression of free radical levels and activating proliferative' (title truncated), a cellular mechanism. Reduced oxidative stress in vitro or in rat tissue does not establish that systemic pinealon administration improves cognition or anxiety in humans, requiring multiple untested biological steps.",
+        "issue": "Outcome overlap obscures evidence base",
+        "detail": "The same 3 studies appear across multiple outcomes (cognition, mood, neuroprotection). The 2012 hyperhomocysteinemia study and the 2011 free radical study both appear under cognition, mood, AND neuroprotection. This creates an illusion of a broader evidence base—in fact, only ~3 unique experiments are represented, not 11. The true n of independent evidence is much smaller than the grade composition suggests.",
         "severity": "moderate"
       },
       {
-        "issue": "Grey-market status and uncontrolled use",
-        "detail": "The records note pinealon is 'injectable peptide, often obtained grey-market and not approved for human use.' This means no regulatory toxicology, pharmacokinetics, or safety data are part of the clinical record. Efficacy cannot be meaningfully separated from safety risk in an unapproved, uncontrolled context.",
+        "issue": "No pooled effect reported; heterogeneous mechanisms inferred",
+        "detail": "The records show no meta-analytic synthesis and each study appears to measure different outcomes (offspring protection, free radical suppression, caspase modulation, behavior post-stroke). Without a unified quantitative summary, it is unclear whether these represent consistent drug action or disparate findings cherry-picked to support different labels.",
         "severity": "moderate"
       }
     ],
-    "mechanism_check": "The retrieved abstracts suggest pinealon reduces free radical damage and supports cell viability in rodent models. This cellular neuroprotection is biologically plausible. However, there is a large inferential leap from 'oxidative stress suppression in rat prenatal tissue' to 'human cognitive or anxiety benefit': the studies do not measure cognition or anxiety in animals, do not report human pharmacokinetics, and do not establish that the peptide crosses the human blood\u2013brain barrier or reaches effective concentrations in human neural tissue.",
-    "strongest_counterargument": "A skeptic would note that (1) two rat studies from 2011\u20132012 with unknown sample sizes represent the entire evidence base, (2) no human trial has ever been conducted despite over a decade of availability, and (3) the fact that pinealon remains grey-market and unapproved suggests neither efficacy nor safety has been sufficiently demonstrated to warrant regulatory approval. The absence of human evidence, combined with the long absence of follow-up research, suggests either the compound did not progress because it failed to show benefit in human trials, or it was never tested in humans at all.",
-    "what_would_change_the_picture": "A prospective, randomized, double-blind, placebo-controlled trial in humans (n \u2265 60 per arm) measuring cognition (via standardized neuropsych batteries) or anxiety (via validated scales) would directly address the animal\u2013human translation gap. Pharmacokinetic and safety data from human volunteers, plus mechanistic studies confirming blood\u2013brain barrier penetration, would establish plausibility.",
+    "mechanism_check": "The proposed mechanisms (free radical suppression, caspase inhibition, cell viability enhancement) are plausible for neuroprotection in vitro and in rodent injury models, but they do not automatically predict benefit in human cognition, mood, or anxiety. The leap from rodent stroke models or prenatal hyperhomocysteinemia (specific injury states) to systemic cognition or stress reduction in humans is large and unsupported. No pharmacokinetic, blood–brain barrier penetration, or human metabolic data are visible in these records to bridge that gap.",
+    "strongest_counterargument": "A skeptic would note that Pinealon has no human safety or efficacy data after 12+ years of silence in the literature, yet is being marketed grey-market to consumers. The animal evidence is small, old, heterogeneous, and confined to specific injury models—not to healthy or diseased humans. The leap from rat hyperhomocysteinemia or stroke to 'cognition enhancement' in humans is a classic preclinical overreach. The prudent position is that this compound is unproven in humans and carries unknown risks.",
+    "what_would_change_the_picture": "A Phase II randomized controlled trial in humans (n ≥ 100) using a validated cognitive or mood outcome measure, with pre-registered analysis, adequate safety monitoring, and transparent reporting of pharmacokinetics would be the minimum. Replication of the animal findings in recent rodent work would also strengthen confidence that the 2011–2012 results are robust and not selective reporting.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "explanation_es": {
+    "what_it_is_line": "Un péptido de tres aminoácidos (Glu-Asp-Arg) estudiado originalmente en investigación de la glándula pineal.",
+    "what_it_is": "Pinealon es un péptido corto — una cadena de solo tres aminoácidos (ácido glutámico, ácido aspártico y arginina) unidos entre sí. Los aminoácidos son los bloques de construcción que utilizan las células para hacer proteínas. Fue identificado por primera vez en investigaciones sobre la glándula pineal, una pequeña glándula en el cerebro que produce melatonina. Pinealon se vende como un péptido inyectable, típicamente como sustancia química de investigación, y no está aprobado por la FDA ni otras agencias regulatorias principales.",
+    "how_it_works_line": "Parece reducir el estrés oxidativo y proteger las células cerebrales, pero el mecanismo en humanos es desconocido.",
+    "how_it_works": "En estudios en animales, pinealon parece funcionar combatiendo el estrés oxidativo — el daño celular que ocurre cuando moléculas inestables llamadas radicales libres se acumulan y dañan las células. Los estudios recuperados sugieren que lo hace disminuyendo los niveles de radicales libres y activando procesos de reparación y crecimiento celular. También puede afectar la caspasa-3, una enzima implicada en vías de muerte celular, potencialmente previniendo la muerte no deseada de células cerebrales durante lesiones. Sin embargo, exactamente qué receptores o vías activa en humanos, y si esos hallazgos en animales se traducen a personas, sigue siendo desconocido — no se han realizado estudios en humanos.",
+    "safety_line": "Sin ensayos completados en humanos; estudios en animales no reportaron daños mayores, pero los datos de seguridad son severamente limitados.",
+    "safety_detail": "Los tres estudios en animales recuperados no describieron efectos adversos graves, pero los estudios en animales son a corto plazo, involucran números pequeños de sujetos (usualmente roedores), y no siempre predicen la tolerabilidad en humanos. Pinealon nunca ha sido probado en humanos, por lo que sus efectos secundarios, dosificación óptima, y seguridad a largo plazo en personas son completamente desconocidos. Porque es un péptido inyectable y una sustancia química de investigación, conlleva riesgos adicionales: la pureza, esterilidad, y concentración no son verificadas por agencias regulatorias.",
+    "safety_bullets": [
+      "No existen datos de seguridad en humanos — toda la evidencia proviene de animales. La tolerabilidad en humanos es desconocida.",
+      "Las interacciones con otros fármacos no han sido probadas. El uso con medicamentos, especialmente aquellos que afectan el cerebro o sistema inmunológico, no ha sido probado.",
+      "Embarazo, lactancia, niños y adolescentes: excluidos de todos los estudios recuperados. Los efectos en estos grupos son completamente desconocidos.",
+      "Enfermedad renal o hepática: no estudiada. El manejo del péptido por órganos dañados no ha sido probado."
+    ],
+    "chem_meaning": "Pinealon es un péptido muy hidrofílico (XLogP −6.1), lo que significa que se disuelve fácilmente en agua pero pobremente en grasas o membranas lipídicas que rodean las células y tejidos. Esto hace improbable que cruce la barrera hematoencefálica — el filtro selectivo que protege el cerebro — por sí solo, lo cual plantea una pregunta sobre cómo llega al tejido cerebral si se administra por inyección. Su pequeño tamaño (418 daltons) es una ventaja para algunas actividades biológicas, pero el alto carácter hidrofílico limita cuán lejos puede viajar en el cuerpo.",
+    "outcome_detail": [
+      {
+        "outcome": "cognition",
+        "grade": "Preliminar",
+        "what_studies_show": "Tres estudios en animales (2011–2012) encontraron que pinealon mejoró resultados relacionados con cognición en ratas. Un estudio mostró que protegió a la descendencia de hiperhomocisteinemia prenatal (exceso de homocisteína, un aminoácido vinculado a daño neurológico). Otro encontró que aumentó la supervivencia celular al reducir radicales libres y activar procesos de reparación. Un tercero observó cambios de comportamiento y actividad reducida de caspasa-3 (un marcador de muerte celular) después de lesión tipo accidente cerebrovascular en animales. Todos los estudios fueron realizados en roedores; no se recuperaron ensayos en humanos.",
+        "why_this_grade": "La evidencia es solo en animales y no predice de manera confiable los efectos cognitivos en humanos. Las pruebas cognitivas en animales (p. ej., tareas de laberinto en ratas) no siempre se traducen a cognición humana, y los mecanismos observados en cerebros de roedores pueden no estar activos o ser relevantes en humanos.",
+        "outcome_key": "cognition",
+        "outcome_es": "cognición"
+      },
+      {
+        "outcome": "mood / depression",
+        "grade": "Preliminar",
+        "what_studies_show": "Los mismos tres estudios en animales (2011–2012) que examinaron cognición también investigaron comportamientos tipo estado de ánimo en ratas. Pinealon pareció reducir comportamientos tipo depresión o estrés en ratas expuestas a estrés prenatal o modelos de lesión, y promover supervivencia celular bajo condiciones dañinas. No se recuperaron ensayos humanos de estado de ánimo o depresión.",
+        "why_this_grade": "Toda la evidencia proviene de modelos de comportamiento animal. Los comportamientos tipo depresión en roedores (medidos por pruebas como nado forzado) son aproximaciones burdas para la depresión humana y no establecen eficacia en personas. No existen datos humanos.",
+        "outcome_key": "mood / depression",
+        "outcome_es": "estado de ánimo / depresión"
+      },
+      {
+        "outcome": "stress / anxiety",
+        "grade": "Preliminar",
+        "what_studies_show": "Dos estudios en animales (2011–2012) reportaron que pinealon redujo comportamientos tipo estrés o ansiedad en ratas — uno en descendencia expuesta a estrés prenatal (hiperhomocisteinemia) y otro examinando supresión de radicales libres y viabilidad celular. Ninguno de los ensayos en ansiedad o estrés humano fue recuperado.",
+        "why_this_grade": "La evidencia se limita a dos estudios en animales usando modelos de ansiedad/estrés en roedores, que no son aproximaciones confiables para trastornos de ansiedad humanos. No existen datos de eficacia en humanos.",
+        "outcome_key": "stress / anxiety",
+        "outcome_es": "estrés / ansiedad"
+      },
+      {
+        "outcome": "neuroprotection / brain health",
+        "grade": "Preliminar",
+        "what_studies_show": "Tres estudios en animales (2011–2012) encontraron que pinealon protegió células cerebrales de rata o desarrollo cerebral de la descendencia del daño causado por hiperhomocisteinemia, estrés por radicales libres, o lesión tipo accidente cerebrovascular. Los estudios reportaron reducción de muerte celular (supresión de caspasa-3), supervivencia celular mejorada, y efectos protectores contra insultos prenatales y agudos. Todos los estudios fueron en roedores; no se recuperaron ensayos humanos de neuroprotección o salud cerebral.",
+        "why_this_grade": "Los estudios de neuroprotección en animales, aunque prometedores para generación de hipótesis, no establecen beneficio en humanos. Los modelos de lesión en roedores (accidente cerebrovascular isquémico, estrés oxidativo) frecuentemente no se traducen a eficacia terapéutica humana. No se han realizado estudios en humanos para probar si estos efectos protectores ocurren en personas.",
+        "outcome_key": "neuroprotection / brain health",
+        "outcome_es": "neuroprotección / salud cerebral"
+      }
+    ],
+    "evidence_base": "Toda la evidencia es basada en animales: tres estudios de 2011–2012, todos realizados en ratas, examinando cognición, estado de ánimo, estrés, y neuroprotección. No se han realizado ensayos en humanos. El trabajo en animales es mecanístico y preliminar; ofrece plausibilidad biológica pero no puede demostrar eficacia, seguridad, o dosificación óptima en humanos. La recencia (más de una década atrás) y alcance limitado (solo roedores, tamaños de muestra pequeños típicos de investigación en animales) significan que la confianza en aplicabilidad humana es muy baja.",
+    "open_questions": "Los registros no contienen datos humanos, por lo que la tolerabilidad y eficacia en cualquier población humana siguen siendo completamente desconocidas. No está claro si pinealon, a pesar de ser hidrofílico, alcanza el cerebro en concentraciones suficientes para producir los efectos observados en estudios en roedores. Los estudios en animales típicamente duran semanas; los efectos a largo plazo en humanos no han sido explorados. Los mecanismos de acción en neuronas humanas, la relevancia de resultados de comportamiento en ratas para estado de ánimo o cognición humana, y la dosis y vía óptimas para humanos todos siguen siendo preguntas abiertas.",
+    "_generated": true,
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "appraisal_es": {
+    "headline": "No existen datos en humanos para Pinealón: toda la evidencia proviene de estudios en roedores realizados hace más de 12 años, y el compuesto sigue sin aprobación para uso humano.",
+    "concerns": [
+      {
+        "issue": "Cero ensayos clínicos en humanos",
+        "detail": "En los cuatro resultados (cognición, estado de ánimo, estrés, neuroprotección), la base de evidencia contiene 0 estudios en humanos y 11 estudios totales en animales. Cada calificación se basa únicamente en datos en roedores, que tienen una tasa de traducción deficiente y bien documentada a la eficacia humana en neurofarmacología. Esta no es una limitación de la calidad del ensayo, sino la ausencia del tipo mínimo de evidencia necesaria para respaldar el uso en humanos.",
+        "severity": "high"
+      },
+      {
+        "issue": "Sin evidencia reciente; retraso de 12 años en la evidencia",
+        "detail": "Todos los estudios recuperados son de 2011–2012. La ausencia de ensayos en humanos o trabajos de seguimiento en animales desde 2012 plantea la pregunta de si este compuesto fue abandonado en investigación formal o no logró progresar. No hay información visible sobre el estado actual del desarrollo clínico en estos registros.",
+        "severity": "high"
+      },
+      {
+        "issue": "Tamaños de muestra completamente no reportables",
+        "detail": "Los resúmenes proporcionados no incluyen datos de tamaño de muestra extractables para ninguno de los 3 estudios en animales citados. Sin saber si los estudios inscribieron 5 ratas o 50, la precisión y replicabilidad de las estimaciones de efecto no se pueden evaluar. En neurociencia en roedores, los estudios pequeños con falta de potencia son comunes y a menudo no se replican.",
+        "severity": "high"
+      },
+      {
+        "issue": "La superposición de resultados oscurece la base de evidencia",
+        "detail": "Los mismos 3 estudios aparecen en múltiples resultados (cognición, estado de ánimo, neuroprotección). El estudio de hiperhomocisteinemia de 2012 y el estudio de radicales libres de 2011 aparecen bajo cognición, estado de ánimo Y neuroprotección. Esto crea una ilusión de una base de evidencia más amplia, cuando en realidad solo ~3 experimentos únicos están representados, no 11. El verdadero número de evidencia independiente es mucho menor de lo que la composición de la calificación sugiere.",
+        "severity": "moderate"
+      },
+      {
+        "issue": "Sin efecto agrupado reportado; mecanismos heterogéneos inferidos",
+        "detail": "Los registros no muestran síntesis metaanalítica y cada estudio parece medir resultados diferentes (protección de la descendencia, supresión de radicales libres, modulación de caspasas, comportamiento post-ictus). Sin un resumen cuantitativo unificado, no está claro si estos representan una acción farmacológica consistente o hallazgos dispares seleccionados para respaldar diferentes etiquetas.",
+        "severity": "moderate"
+      }
+    ],
+    "mechanism_check": "Los mecanismos propuestos (supresión de radicales libres, inhibición de caspasas, mejora de la viabilidad celular) son plausibles para neuroprotección in vitro y en modelos de lesión en roedores, pero no predicen automáticamente beneficio en cognición humana, estado de ánimo o ansiedad. El salto de modelos de ictus en roedores o hiperhomocisteinemia prenatal (estados de lesión específicos) a reducción sistémica de cognición o estrés en humanos es grande y no respaldado. No hay datos de farmacocinética, penetración de la barrera hematoencefálica o metabolismo humano visibles en estos registros para cerrar esa brecha.",
+    "strongest_counterargument": "Un escéptico observaría que Pinealón no tiene datos de seguridad o eficacia en humanos después de más de 12 años de silencio en la literatura, pero se comercializa en el mercado gris a consumidores. La evidencia en animales es pequeña, antigua, heterogénea y se limita a modelos específicos de lesión, no a humanos sanos o enfermos. El salto de hiperhomocisteinemia o ictus en ratas a 'mejora de la cognición' en humanos es un clásico exceso preclínico. La posición prudente es que este compuesto no está probado en humanos y conlleva riesgos desconocidos.",
+    "what_would_change_the_picture": "Un ensayo controlado aleatorizado de Fase II en humanos (n ≥ 100) utilizando una medida de resultado cognitivo o del estado de ánimo validada, con análisis preregistrado, monitoreo de seguridad adecuado e informe transparente de farmacocinética sería el mínimo. La replicación de los hallazgos en animales en trabajo reciente en roedores también fortalecería la confianza de que los resultados de 2011–2012 son sólidos y no un informe selectivo.",
     "_generated": true,
     "_model": "claude-haiku-4-5-20251001"
   }
