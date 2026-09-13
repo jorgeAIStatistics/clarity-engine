@@ -6,10 +6,49 @@
   "max_records": 300,
   "max_llm_calls": 20,
   "max_llm_calls_per_day": 100,
-  "sources": ["pubmed", "europe_pmc", "clinical_trials"],
+  "sources": [
+    "pubmed",
+    "europe_pmc",
+    "clinical_trials"
+  ],
   "targets": {
-    "entity:egfr-osimertinib": {"priority": 10, "interval_days": 1},
-    "entity:psa-screening": {"priority": 5, "interval_days": 3},
-    "compound:creatine-monohydrate": {"aliases": ["creatine"], "priority": 5}
+    "entity:egfr-osimertinib": {
+      "priority": 10,
+      "interval_days": 1
+    },
+    "entity:psa-screening": {
+      "priority": 5,
+      "interval_days": 3
+    },
+    "compound:creatine-monohydrate": {
+      "aliases": [
+        "creatine"
+      ],
+      "priority": 5
+    },
+    "entity:apob": {
+      "priority": 15,
+      "interval_days": 3
+    },
+    "entity:hba1c-diagnosis": {
+      "priority": 15,
+      "interval_days": 3
+    },
+    "entity:ldl-c": {
+      "priority": 15,
+      "interval_days": 3
+    },
+    "entity:vitamin-d": {
+      "priority": 15,
+      "interval_days": 3
+    },
+    "entity:colonoscopy": {
+      "priority": 15,
+      "interval_days": 3
+    },
+    "entity:msi-pembrolizumab": {
+      "priority": 15,
+      "interval_days": 3
+    }
   }
 }

@@ -8,4 +8,10 @@ from .service import CATALOG, validate_catalog
 
 if __name__=='__main__':
     validate_catalog(CATALOG)
+    from .provenance import validate_enrichment
+    validate_enrichment(CATALOG,json.loads(Path(__file__).with_name("source_snapshot.json").read_text()))
     Path(sys.argv[1]).write_text(json.dumps(CATALOG,indent=2,ensure_ascii=False)+'\n')
+
+    destination=Path(sys.argv[1])
+    destination.with_name('catalog-index.json').write_text(json.dumps({'entities':[{k:e.get(k) for k in ('id','name','aliases','summary','entity_type')} for e in CATALOG['entities']]},ensure_ascii=False,separators=(',',':'))+'\n')
+    destination.with_name('frameworks.json').write_text(json.dumps({'frameworks':CATALOG['frameworks']},ensure_ascii=False,separators=(',',':'))+'\n')

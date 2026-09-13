@@ -15,7 +15,7 @@ from .profile import layer_for
 
 VERSION='evidence-matcher-v1'
 STOP=set('the a an and or of to in for with by as is was were be been on from at this that we our study studies patients results methods abstract introduction'.split())
-CONCEPTS=[('apob','apolipoprotein b'),('hba1c','glycated hemoglobin','glycated haemoglobin','hemoglobin a1c'),('ldl c','ldl cholesterol','low density lipoprotein cholesterol'),('egfr','epidermal growth factor receptor'),('hs crp','high sensitivity c reactive protein'),('psa','prostate specific antigen'),('rct','randomized controlled trial','randomised controlled trial')]
+CONCEPTS=[('apob','apolipoprotein b'),('hba1c','glycated hemoglobin','glycated haemoglobin','hemoglobin a1c'),('ldl c','ldl cholesterol','low density lipoprotein cholesterol'),('non hdl c','non hdl cholesterol'),('cystatin c','cystatin c based egfr'),('hs crp','high sensitivity c reactive protein'),('psa','prostate specific antigen'),('rct','randomized controlled trial','randomised controlled trial')]
 
 def normalize(text):return re.sub(r'[^a-z0-9]+',' ',str(text).lower()).strip()
 def tokens(text):return set(normalize(text).split())-STOP
@@ -26,6 +26,9 @@ def expanded_tokens(text):
     for aliases in CONCEPTS:
         if any(' '+normalize(alias)+' ' in normalized for alias in aliases):
             for alias in aliases:result.update(tokens(alias))
+    if ' egfr ' in normalized:
+        if result & {'kidney','renal','creatinine','cystatin','glomerular'}:result.update(tokens('estimated glomerular filtration rate'))
+        elif result & {'cancer','nsclc','mutation','mutated','osimertinib','tumor'}:result.update(tokens('epidermal growth factor receptor'))
     return result
 
 def documents(profiles):
@@ -55,7 +58,7 @@ def documents(profiles):
                 abstract=html.unescape(re.sub(r'</?(?:h[1-6]|p|div|span|b|i|em|strong|sup|sub|br)\b[^>]*>', ' ',abstract,flags=re.I)).strip()
                 studies[identity]={'id':identity,'title':title,'url':url,'pmid':pmid,'design':source.get('design') or source.get('study_type'),
                     'population':source.get('population'),'n':source.get('n'),'layer':layer_for(source),'entity_ids':[],
-                    '_text':abstract,'_tokens':tokens(title+' '+abstract), 'agreement':'not_assessed'}
+                    '_text':abstract,'_tokens':tokens(title+' '+abstract), 'agreement':'not_assessed','review_status':source.get('review_status','not_recorded')}
             if key not in studies[identity]['entity_ids']:studies[identity]['entity_ids'].append(key)
     counts=Counter(entity_id for s in studies.values() for entity_id in s['entity_ids'])
     for entity in entities:entity['study_count']=counts[entity['id']]

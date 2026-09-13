@@ -94,3 +94,5 @@ def assessment_framework(entity_type):
 
 
 validate_catalog(CATALOG)
+from .provenance import validate_enrichment
+validate_enrichment(CATALOG,json.loads(Path(__file__).with_name("source_snapshot.json").read_text()))

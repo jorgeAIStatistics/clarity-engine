@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "catalog_version": "2026-09-13.beta.1",
+  "catalog_version": "2026-09-13-source-enrichment-v1",
   "frameworks": {
     "intervention": {
       "question": "Does this intervention help?",
@@ -111,16 +111,135 @@
           "assessment": "Not yet assessed"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:38700053",
+          "pmid": "38700053",
+          "doi": "10.1093/eurheartj/ehae258",
+          "title": "Discordance among apoB, non-high-density lipoprotein cholesterol, and triglycerides: implications for cardiovascular prevention.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38700053/",
+          "year": "2024",
+          "design": "Prospective cohort",
+          "population": "Human; 293,876 UK Biobank adults without cardiovascular disease",
+          "n": 293876,
+          "exposure": "Residual ApoB after adjustment for non-HDL-C and HDL-C",
+          "comparator": "Adjusted proportional hazards model",
+          "abstract": "Background and aims Despite growing evidence that apolipoprotein B (apoB) is the most accurate marker of atherosclerotic cardiovascular disease (ASCVD) risk, its adoption in clinical practice has been low. This investigation sought to determine whether low-density lipoprotein cholesterol (LDL-C), non-high-density lipoprotein cholesterol (HDL-C), and triglycerides are sufficient for routine cardiovascular care. Methods A sample of 293 876 UK Biobank adults (age: 40-73 years, 42% men), free of cardiovascular disease, with a median follow-up for new-onset ASCVD of 11 years was included. Distribution of apoB at pre-specified levels of LDL-C, non-HDL-C, and triglycerides was examined graphically, and 10-year ASCVD event rates were compared for high vs. low apoB. Residuals of apoB were constructed after regressing apoB on LDL-C, non-HDL-C, and log-transformed triglycerides and used as predictors in a proportional hazards regression model for new-onset ASCVD adjusted for standard risk factors, including HDL-C. Results ApoB was highly correlated with LDL-C and non-HDL-C (Pearson's r = .96, P < .001 for both) but less so with log triglycerides (r = .42, P < .001). However, apoB ranges necessary to capture 95% of all observations at pre-specified levels of LDL-C, non-HDL-C, or triglycerides were wide, spanning 85.8-108.8 md/dL when LDL-C 130 mg/dL, 88.3-112.4 mg/dL when non-HDL-C 160 mg/dL, and 67.8-147.4 md/dL when triglycerides 115 mg/dL. At these levels (±10 mg/dL), 10-year ASCVD rates for apoB above mean + 1 SD vs. below mean - 1 SD were 7.3 vs. 4.0 for LDL-C, 6.4 vs. 4.6 for non-HDL-C, and 7.0 vs. 4.6 for triglycerides (all P < .001). With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15). None of the residuals of LDL-C, non-HDL-C, or of log triglycerides remained significant when apoB was included in the model. Conclusions High variability of apoB at individual levels of LDL-C, non-HDL-C, and triglycerides coupled with meaningful differences in 10-year ASCVD rates and significant residual information contained in apoB for prediction of new-onset ASCVD events demonstrate that LDL-C, non-HDL-C, and triglycerides are not adequate proxies for apoB in clinical care.",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 1.04,
+                "lower": 1.03,
+                "upper": 1.06,
+                "confidence_level": 95,
+                "units": "model-specific residual ApoB",
+                "origin": "reported"
+              },
+              "quote": "With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15).",
+              "source_span": {
+                "text": "With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15).",
+                "start": 1658,
+                "end": 2072,
+                "source_id": "pmid:38700053",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15).",
+          "population_span": {
+            "text": "A sample of 293 876 UK Biobank adults (age: 40-73 years, 42% men), free of cardiovascular disease, with a median follow-up for new-onset ASCVD of 11 years was included.",
+            "start": 422,
+            "end": 590,
+            "source_id": "pmid:38700053",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "A sample of 293 876 UK Biobank adults (age: 40-73 years, 42% men), free of cardiovascular disease, with a median follow-up for new-onset ASCVD of 11 years was included.",
+            "start": 422,
+            "end": 590,
+            "source_id": "pmid:38700053",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "8b6aa6dfcb64bedb8fd1e05c2ff649d66a5f34bbbd3677559d89847a113b9610"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "UK-Biobank-apoB-2024"
+        },
+        {
+          "id": "pmid:39256087",
+          "pmid": "39256087",
+          "doi": "10.1016/j.jacl.2024.08.013",
+          "title": "Role of apolipoprotein B in the clinical management of cardiovascular risk in adults: An Expert Clinical Consensus from the National Lipid Association.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39256087/",
+          "year": "2024",
+          "design": "Expert clinical consensus guideline",
+          "population": "Human; Lipid risk assessment; expert consensus",
+          "n": null,
+          "exposure": "ApoB alongside a lipid profile",
+          "comparator": "Not a randomized comparison",
+          "abstract": "This National Lipid Association (NLA) Expert Clinical Consensus provides an overview of the physiologic and clinical considerations regarding the role of apolipoprotein B (apoB) measurement to guide clinical care based on the available scientific evidence and expert opinion. ApoB represents the total concentration of atherogenic lipoprotein particles in the circulation and more accurately reflects the atherogenic burden of lipoproteins when compared to low-density lipoprotein cholesterol (LDL-C). ApoB is a validated clinical measurement that augments the information found in a standard lipoprotein lipid panel; therefore, there is clinical value in using apoB in conjunction with a standard lipoprotein lipid profile when assessing risk and managing lipid-lowering therapy (LLT). ApoB has been shown to be superior to LDL-C in risk assessment both before and during treatment with LLT. In individuals, there can be discordance between levels of LDL-C and apoB, as well as LDL-C and non-high-density lipoprotein cholesterol (non-HDL-C), despite high levels of population-wide correlation. When there is discordance between LDL-C and apoB, or LDL-C and non-HDL-C, atherosclerotic cardiovascular disease risk generally aligns better with apoB or non-HDL-C. Additionally, apoB can be used in tandem with standard lipoprotein lipid measurements to diagnose distinct lipoprotein phenotypes. ApoB testing can inform clinical prognosis and care, as well as enable family cascade screening, when an inherited lipoprotein syndrome is identified. The NLA and other organizations will continue to educate clinicians about the role of apoB measurement in improving clinical risk assessment and dyslipidemia management. An urgent need exists to improve access and reimbursement for apoB testing.",
+          "findings": [],
+          "quote": "This National Lipid Association (NLA) Expert Clinical Consensus provides an overview of the physiologic and clinical considerations regarding the role of apolipoprotein B (apoB) measurement to guide clinical care based on the available scientific evidence and expert opinion.",
+          "population_span": {
+            "text": "This National Lipid Association (NLA) Expert Clinical Consensus provides an overview of the physiologic and clinical considerations regarding the role of apolipoprotein B (apoB) measurement to guide clinical care based on the available scientific evidence and expert opinion.",
+            "start": 0,
+            "end": 275,
+            "source_id": "pmid:39256087",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "This National Lipid Association (NLA) Expert Clinical Consensus provides an overview of the physiologic and clinical considerations regarding the role of apolipoprotein B (apoB) measurement to guide clinical care based on the available scientific evidence and expert opinion.",
+            "start": 0,
+            "end": 275,
+            "source_id": "pmid:39256087",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "a9f2f8399155203806de0a5a7aac926fa7b5a27e55ed1b7220e91c9145449cfe"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": null
+        }
+      ],
       "sources": [
         {
           "title": "Apolipoprotein B — MedlinePlus",
           "url": "https://www.medlineplus.gov/ency/article/003502.htm",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Discordance among apoB, non-high-density lipoprotein cholesterol, and triglycerides: implications for cardiovascular prevention.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38700053/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Role of apolipoprotein B in the clinical management of cardiovascular risk in adults: An Expert Clinical Consensus from the National Lipid Association.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39256087/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Analytical validity": {
           "rating": "Not yet assessed",
@@ -149,7 +268,8 @@
       },
       "related": [
         "ldl-c",
-        "cac"
+        "cac",
+        "non-hdl-c"
       ],
       "changing_marker": "Changes in the marker and changes in cardiovascular events are separate endpoints. Assess intervention trials before attributing clinical benefit to marker reduction.",
       "measurement": {
@@ -162,6 +282,23 @@
       "influences": [
         "Genetic background and the overall lipoprotein profile",
         "Current lipid-lowering treatment and the clinical reason for testing"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": [
+        {
+          "name": "Fish oil",
+          "path": "/compound/fish-oil",
+          "relationship": "Related research topic; not evidence of clinical benefit"
+        }
       ]
     },
     {
@@ -193,18 +330,255 @@
           "name": "Cardiovascular events",
           "question_type": "association",
           "assessment": "Not yet assessed"
+        },
+        {
+          "name": "All-cause mortality",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:38700053",
+          "pmid": "38700053",
+          "doi": "10.1093/eurheartj/ehae258",
+          "title": "Discordance among apoB, non-high-density lipoprotein cholesterol, and triglycerides: implications for cardiovascular prevention.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38700053/",
+          "year": "2024",
+          "design": "Prospective cohort",
+          "population": "Human; 293,876 UK Biobank adults without cardiovascular disease",
+          "n": 293876,
+          "exposure": "Residual ApoB after adjustment for non-HDL-C and HDL-C",
+          "comparator": "Adjusted proportional hazards model",
+          "abstract": "Background and aims Despite growing evidence that apolipoprotein B (apoB) is the most accurate marker of atherosclerotic cardiovascular disease (ASCVD) risk, its adoption in clinical practice has been low. This investigation sought to determine whether low-density lipoprotein cholesterol (LDL-C), non-high-density lipoprotein cholesterol (HDL-C), and triglycerides are sufficient for routine cardiovascular care. Methods A sample of 293 876 UK Biobank adults (age: 40-73 years, 42% men), free of cardiovascular disease, with a median follow-up for new-onset ASCVD of 11 years was included. Distribution of apoB at pre-specified levels of LDL-C, non-HDL-C, and triglycerides was examined graphically, and 10-year ASCVD event rates were compared for high vs. low apoB. Residuals of apoB were constructed after regressing apoB on LDL-C, non-HDL-C, and log-transformed triglycerides and used as predictors in a proportional hazards regression model for new-onset ASCVD adjusted for standard risk factors, including HDL-C. Results ApoB was highly correlated with LDL-C and non-HDL-C (Pearson's r = .96, P < .001 for both) but less so with log triglycerides (r = .42, P < .001). However, apoB ranges necessary to capture 95% of all observations at pre-specified levels of LDL-C, non-HDL-C, or triglycerides were wide, spanning 85.8-108.8 md/dL when LDL-C 130 mg/dL, 88.3-112.4 mg/dL when non-HDL-C 160 mg/dL, and 67.8-147.4 md/dL when triglycerides 115 mg/dL. At these levels (±10 mg/dL), 10-year ASCVD rates for apoB above mean + 1 SD vs. below mean - 1 SD were 7.3 vs. 4.0 for LDL-C, 6.4 vs. 4.6 for non-HDL-C, and 7.0 vs. 4.6 for triglycerides (all P < .001). With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15). None of the residuals of LDL-C, non-HDL-C, or of log triglycerides remained significant when apoB was included in the model. Conclusions High variability of apoB at individual levels of LDL-C, non-HDL-C, and triglycerides coupled with meaningful differences in 10-year ASCVD rates and significant residual information contained in apoB for prediction of new-onset ASCVD events demonstrate that LDL-C, non-HDL-C, and triglycerides are not adequate proxies for apoB in clinical care.",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 1.04,
+                "lower": 1.03,
+                "upper": 1.06,
+                "confidence_level": 95,
+                "units": "model-specific residual ApoB",
+                "origin": "reported"
+              },
+              "quote": "With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15).",
+              "source_span": {
+                "text": "With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15).",
+                "start": 1658,
+                "end": 2072,
+                "source_id": "pmid:38700053",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15).",
+          "population_span": {
+            "text": "A sample of 293 876 UK Biobank adults (age: 40-73 years, 42% men), free of cardiovascular disease, with a median follow-up for new-onset ASCVD of 11 years was included.",
+            "start": 422,
+            "end": 590,
+            "source_id": "pmid:38700053",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "A sample of 293 876 UK Biobank adults (age: 40-73 years, 42% men), free of cardiovascular disease, with a median follow-up for new-onset ASCVD of 11 years was included.",
+            "start": 422,
+            "end": 590,
+            "source_id": "pmid:38700053",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "8b6aa6dfcb64bedb8fd1e05c2ff649d66a5f34bbbd3677559d89847a113b9610"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "UK-Biobank-apoB-2024"
+        },
+        {
+          "id": "pmid:21067804",
+          "pmid": "21067804",
+          "doi": "10.1016/s0140-6736(10)61350-5",
+          "title": "Efficacy and safety of more intensive lowering of LDL cholesterol: a meta-analysis of data from 170,000 participants in 26 randomised trials.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21067804/",
+          "year": "2010",
+          "design": "Individual participant data meta-analysis",
+          "population": "Human; Participants in 26 statin trials",
+          "n": null,
+          "exposure": "Statin-associated LDL-C reduction per 1 mmol/L",
+          "comparator": "Less intensive statin or control",
+          "abstract": "Background Lowering of LDL cholesterol with standard statin regimens reduces the risk of occlusive vascular events in a wide range of individuals. We aimed to assess the safety and efficacy of more intensive lowering of LDL cholesterol with statin therapy. Methods We undertook meta-analyses of individual participant data from randomised trials involving at least 1000 participants and at least 2 years' treatment duration of more versus less intensive statin regimens (five trials; 39 612 individuals; median follow-up 5·1 years) and of statin versus control (21 trials; 129 526 individuals; median follow-up 4·8 years). For each type of trial, we calculated not only the average risk reduction, but also the average risk reduction per 1·0 mmol/L LDL cholesterol reduction at 1 year after randomisation. Findings In the trials of more versus less intensive statin therapy, the weighted mean further reduction in LDL cholesterol at 1 year was 0·51 mmol/L. Compared with less intensive regimens, more intensive regimens produced a highly significant 15% (95% CI 11-18; p<0·0001) further reduction in major vascular events, consisting of separately significant reductions in coronary death or non-fatal myocardial infarction of 13% (95% CI 7-19; p<0·0001), in coronary revascularisation of 19% (95% CI 15-24; p<0·0001), and in ischaemic stroke of 16% (95% CI 5-26; p=0·005). Per 1·0 mmol/L reduction in LDL cholesterol, these further reductions in risk were similar to the proportional reductions in the trials of statin versus control. When both types of trial were combined, similar proportional reductions in major vascular events per 1·0 mmol/L LDL cholesterol reduction were found in all types of patient studied (rate ratio [RR] 0·78, 95% CI 0·76-0·80; p<0·0001), including those with LDL cholesterol lower than 2 mmol/L on the less intensive or control regimen. Across all 26 trials, all-cause mortality was reduced by 10% per 1·0 mmol/L LDL reduction (RR 0·90, 95% CI 0·87-0·93; p<0·0001), largely reflecting significant reductions in deaths due to coronary heart disease (RR 0·80, 99% CI 0·74-0·87; p<0·0001) and other cardiac causes (RR 0·89, 99% CI 0·81-0·98; p=0·002), with no significant effect on deaths due to stroke (RR 0·96, 95% CI 0·84-1·09; p=0·5) or other vascular causes (RR 0·98, 99% CI 0·81-1·18; p=0·8). No significant effects were observed on deaths due to cancer or other non-vascular causes (RR 0·97, 95% CI 0·92-1·03; p=0·3) or on cancer incidence (RR 1·00, 95% CI 0·96-1·04; p=0·9), even at low LDL cholesterol concentrations. Interpretation Further reductions in LDL cholesterol safely produce definite further reductions in the incidence of heart attack, of revascularisation, and of ischaemic stroke, with each 1·0 mmol/L reduction reducing the annual rate of these major vascular events by just over a fifth. There was no evidence of any threshold within the cholesterol range studied, suggesting that reduction of LDL cholesterol by 2-3 mmol/L would reduce risk by about 40-50%. Funding UK Medical Research Council, British Heart Foundation, European Community Biomed Programme, Australian National Health and Medical Research Council, and National Heart Foundation.",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "rate ratio",
+                "estimate": 0.78,
+                "lower": 0.76,
+                "upper": 0.8,
+                "confidence_level": 95,
+                "units": "per 1 mmol/L LDL-C reduction",
+                "origin": "reported"
+              },
+              "quote": "When both types of trial were combined, similar proportional reductions in major vascular events per 1·0 mmol/L LDL cholesterol reduction were found in all types of patient studied (rate ratio [RR] 0·78, 95% CI 0·76-0·80; p<0·0001), including those with LDL cholesterol lower than 2 mmol/L on the less intensive or control regimen.",
+              "source_span": {
+                "text": "When both types of trial were combined, similar proportional reductions in major vascular events per 1·0 mmol/L LDL cholesterol reduction were found in all types of patient studied (rate ratio [RR] 0·78, 95% CI 0·76-0·80; p<0·0001), including those with LDL cholesterol lower than 2 mmol/L on the less intensive or control regimen.",
+                "start": 1536,
+                "end": 1867,
+                "source_id": "pmid:21067804",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "All-cause mortality",
+              "effect": {
+                "measure": "rate ratio",
+                "estimate": 0.9,
+                "lower": 0.87,
+                "upper": 0.93,
+                "confidence_level": 95,
+                "units": "per 1 mmol/L LDL-C reduction",
+                "origin": "reported"
+              },
+              "quote": "Across all 26 trials, all-cause mortality was reduced by 10% per 1·0 mmol/L LDL reduction (RR 0·90, 95% CI 0·87-0·93; p<0·0001), largely reflecting significant reductions in deaths due to coronary heart disease (RR 0·80, 99% CI 0·74-0·87; p<0·0001) and other cardiac causes (RR 0·89, 99% CI 0·81-0·98; p=0·002), with no significant effect on deaths due to stroke (RR 0·96, 95% CI 0·84-1·09; p=0·5) or other vascular causes (RR 0·98, 99% CI 0·81-1·18; p=0·8).",
+              "source_span": {
+                "text": "Across all 26 trials, all-cause mortality was reduced by 10% per 1·0 mmol/L LDL reduction (RR 0·90, 95% CI 0·87-0·93; p<0·0001), largely reflecting significant reductions in deaths due to coronary heart disease (RR 0·80, 99% CI 0·74-0·87; p<0·0001) and other cardiac causes (RR 0·89, 99% CI 0·81-0·98; p=0·002), with no significant effect on deaths due to stroke (RR 0·96, 95% CI 0·84-1·09; p=0·5) or other vascular causes (RR 0·98, 99% CI 0·81-1·18; p=0·8).",
+                "start": 1868,
+                "end": 2326,
+                "source_id": "pmid:21067804",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "When both types of trial were combined, similar proportional reductions in major vascular events per 1·0 mmol/L LDL cholesterol reduction were found in all types of patient studied (rate ratio [RR] 0·78, 95% CI 0·76-0·80; p<0·0001), including those with LDL cholesterol lower than 2 mmol/L on the less intensive or control regimen.",
+          "population_span": {
+            "text": "We undertook meta-analyses of individual participant data from randomised trials involving at least 1000 participants and at least 2 years' treatment duration of more versus less intensive statin regimens (five trials; 39 612 individuals; median follow-up 5·1 years) and of statin versus control (21 trials; 129 526 individuals; median follow-up 4·8 years).",
+            "start": 265,
+            "end": 622,
+            "source_id": "pmid:21067804",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "We undertook meta-analyses of individual participant data from randomised trials involving at least 1000 participants and at least 2 years' treatment duration of more versus less intensive statin regimens (five trials; 39 612 individuals; median follow-up 5·1 years) and of statin versus control (21 trials; 129 526 individuals; median follow-up 4·8 years).",
+            "start": 265,
+            "end": 622,
+            "source_id": "pmid:21067804",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "9ad3b7954b5ab54e4eb7353caa4775471287a84c69694c60f2df3dde1a27b214"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "CTT-2010"
+        },
+        {
+          "id": "pmid:18997196",
+          "pmid": "18997196",
+          "doi": "10.1056/nejmoa0807646",
+          "title": "Rosuvastatin to prevent vascular events in men and women with elevated C-reactive protein.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18997196/",
+          "year": "2008",
+          "design": "Randomized controlled trial",
+          "population": "Human; Adults with LDL-C <130 mg/dL and hsCRP ≥2 mg/L",
+          "n": 17802,
+          "exposure": "Rosuvastatin 20 mg daily",
+          "comparator": "Placebo",
+          "abstract": "Background Increased levels of the inflammatory biomarker high-sensitivity C-reactive protein predict cardiovascular events. Since statins lower levels of high-sensitivity C-reactive protein as well as cholesterol, we hypothesized that people with elevated high-sensitivity C-reactive protein levels but without hyperlipidemia might benefit from statin treatment. Methods We randomly assigned 17,802 apparently healthy men and women with low-density lipoprotein (LDL) cholesterol levels of less than 130 mg per deciliter (3.4 mmol per liter) and high-sensitivity C-reactive protein levels of 2.0 mg per liter or higher to rosuvastatin, 20 mg daily, or placebo and followed them for the occurrence of the combined primary end point of myocardial infarction, stroke, arterial revascularization, hospitalization for unstable angina, or death from cardiovascular causes. Results The trial was stopped after a median follow-up of 1.9 years (maximum, 5.0). Rosuvastatin reduced LDL cholesterol levels by 50% and high-sensitivity C-reactive protein levels by 37%. The rates of the primary end point were 0.77 and 1.36 per 100 person-years of follow-up in the rosuvastatin and placebo groups, respectively (hazard ratio for rosuvastatin, 0.56; 95% confidence interval [CI], 0.46 to 0.69; P<0.00001), with corresponding rates of 0.17 and 0.37 for myocardial infarction (hazard ratio, 0.46; 95% CI, 0.30 to 0.70; P=0.0002), 0.18 and 0.34 for stroke (hazard ratio, 0.52; 95% CI, 0.34 to 0.79; P=0.002), 0.41 and 0.77 for revascularization or unstable angina (hazard ratio, 0.53; 95% CI, 0.40 to 0.70; P<0.00001), 0.45 and 0.85 for the combined end point of myocardial infarction, stroke, or death from cardiovascular causes (hazard ratio, 0.53; 95% CI, 0.40 to 0.69; P<0.00001), and 1.00 and 1.25 for death from any cause (hazard ratio, 0.80; 95% CI, 0.67 to 0.97; P=0.02). Consistent effects were observed in all subgroups evaluated. The rosuvastatin group did not have a significant increase in myopathy or cancer but did have a higher incidence of physician-reported diabetes. Conclusions In this trial of apparently healthy persons without hyperlipidemia but with elevated high-sensitivity C-reactive protein levels, rosuvastatin significantly reduced the incidence of major cardiovascular events. (ClinicalTrials.gov number, NCT00239681.)",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.56,
+                "lower": 0.46,
+                "upper": 0.69,
+                "confidence_level": 95,
+                "units": "rosuvastatin versus placebo",
+                "origin": "reported"
+              },
+              "quote": "The rates of the primary end point were 0.77 and 1.36 per 100 person-years of follow-up in the rosuvastatin and placebo groups, respectively (hazard ratio for rosuvastatin, 0.56; 95% confidence interval [CI], 0.46 to 0.69; P<0.00001)",
+              "source_span": {
+                "text": "The rates of the primary end point were 0.77 and 1.36 per 100 person-years of follow-up in the rosuvastatin and placebo groups, respectively (hazard ratio for rosuvastatin, 0.56; 95% confidence interval [CI], 0.46 to 0.69; P<0.00001)",
+                "start": 1057,
+                "end": 1290,
+                "source_id": "pmid:18997196",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The rates of the primary end point were 0.77 and 1.36 per 100 person-years of follow-up in the rosuvastatin and placebo groups, respectively (hazard ratio for rosuvastatin, 0.56; 95% confidence interval [CI], 0.46 to 0.69; P<0.00001)",
+          "population_span": {
+            "text": "We randomly assigned 17,802 apparently healthy men and women with low-density lipoprotein (LDL) cholesterol levels of less than 130 mg per deciliter (3.4 mmol per liter) and high-sensitivity C-reactive protein levels of 2.0 mg per liter or higher to rosuvastatin, 20 mg daily, or placebo and followed them for the occurrence of the combined primary end point of myocardial infarction, stroke, arterial revascularization, hospitalization for unstable angina, or death from cardiovascular causes.",
+            "start": 372,
+            "end": 866,
+            "source_id": "pmid:18997196",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "The trial was stopped after a median follow-up of 1.9 years (maximum, 5.0).",
+            "start": 875,
+            "end": 950,
+            "source_id": "pmid:18997196",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "93e3b635107a6f78d304b65385514e6a6536dfdfea918666c084ca79d796d2f9"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "JUPITER"
+        }
+      ],
       "sources": [
         {
           "title": "Cholesterol — MedlinePlus",
           "url": "https://medlineplus.gov/cholesterol.html",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Discordance among apoB, non-high-density lipoprotein cholesterol, and triglycerides: implications for cardiovascular prevention.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38700053/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Efficacy and safety of more intensive lowering of LDL cholesterol: a meta-analysis of data from 170,000 participants in 26 randomised trials.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21067804/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Rosuvastatin to prevent vascular events in men and women with elevated C-reactive protein.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18997196/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Analytical validity": {
           "rating": "Not yet assessed",
@@ -232,7 +606,8 @@
         }
       },
       "related": [
-        "apob"
+        "apob",
+        "non-hdl-c"
       ],
       "changing_marker": "Evaluate clinical outcomes from the specific lipid-lowering intervention; do not infer the size of benefit from a laboratory change alone.",
       "measurement": {
@@ -246,6 +621,23 @@
       "influences": [
         "Diet and other cardiovascular risk factors",
         "Lipid-lowering medications and inherited lipid disorders"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": [
+        {
+          "name": "Fish oil",
+          "path": "/compound/fish-oil",
+          "relationship": "Related research topic; not evidence of clinical benefit"
+        }
       ]
     },
     {
@@ -277,18 +669,120 @@
           "name": "Glycemic control",
           "question_type": "association",
           "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Sensitivity for diabetes",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Specificity for diabetes",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:33216783",
+          "pmid": "33216783",
+          "doi": "10.1371/journal.pone.0242415",
+          "title": "Diagnostic accuracy of tests for type 2 diabetes and prediabetes: A systematic review and meta-analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33216783/",
+          "year": "2020",
+          "design": "Systematic review and meta-analysis",
+          "population": "Human; Previously undiagnosed adults; 17 studies for HbA1c 6.5%",
+          "n": null,
+          "exposure": "Venous HbA1c at 6.5% threshold",
+          "comparator": "75-g OGTT / 2-hour post-load glucose",
+          "abstract": "Aim This systematic review aimed to ascertain the diagnostic accuracy (sensitivity and specificity) of screening tests for early detection of type 2 diabetes and prediabetes in previously undiagnosed adults. Methods This systematic review included published studies that included one or more index tests (random and fasting tests, HbA1c) for glucose detection, with 75-gram Oral Glucose Tolerance Test (or 2-hour post load glucose) as a reference standard (PROSPERO ID CRD42018102477). Seven databases were searched electronically (from their inception up to March 9, 2020) accompanied with bibliographic and website searches. Records were manually screened and full text were selected based on inclusion and exclusion criteria. Subsequently, data extraction was done using standardized form and quality assessment of studies using QUADAS-2 tool. Meta-analysis was done using bivariate model using Stata 14.0. Optimal cut offs in terms of sensitivity and specificity for the tests were analysed using R software. Results Of 7,151 records assessed by title and abstract, a total of 37 peer reviewed articles were included in this systematic review. The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively. However, the optimal cut-off for diagnosing diabetes in previously undiagnosed adults with HbA1c was estimated as 6.03% with pooled sensitivity of 73.9% (95% CI: 68-79.1%) and specificity of 87.2% (95% CI: 82-91%). The optimal cut-off for Fasting Plasma Glucose (FPG) was estimated as 104 milligram/dL (mg/dL) with a sensitivity of 82.3% (95% CI: 74.6-88.1%) and specificity of 89.4% (95% CI: 85.2-92.5%). Conclusion Our findings suggest that at present recommended threshold of 6.5%, HbA1c is more specific and less sensitive in diagnosing the newly detected diabetes in undiagnosed population from community settings. Lowering of thresholds for HbA1c and FPG to 6.03% and 104 mg/dL for early detection in previously undiagnosed persons for screening purposes may be considered.",
+          "findings": [
+            {
+              "outcome": "Sensitivity for diabetes",
+              "effect": {
+                "measure": "sensitivity",
+                "estimate": 50,
+                "lower": 42,
+                "upper": 59,
+                "confidence_level": 95,
+                "units": "percent",
+                "origin": "reported"
+              },
+              "quote": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+              "source_span": {
+                "text": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+                "start": 1148,
+                "end": 1434,
+                "source_id": "pmid:33216783",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Specificity for diabetes",
+              "effect": {
+                "measure": "specificity",
+                "estimate": 97.3,
+                "lower": 95.3,
+                "upper": 98.4,
+                "confidence_level": 95,
+                "units": "percent",
+                "origin": "reported"
+              },
+              "quote": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+              "source_span": {
+                "text": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+                "start": 1148,
+                "end": 1434,
+                "source_id": "pmid:33216783",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+          "population_span": {
+            "text": "This systematic review included published studies that included one or more index tests (random and fasting tests, HbA1c) for glucose detection, with 75-gram Oral Glucose Tolerance Test (or 2-hour post load glucose) as a reference standard (PROSPERO ID CRD42018102477).",
+            "start": 216,
+            "end": 485,
+            "source_id": "pmid:33216783",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "This systematic review included published studies that included one or more index tests (random and fasting tests, HbA1c) for glucose detection, with 75-gram Oral Glucose Tolerance Test (or 2-hour post load glucose) as a reference standard (PROSPERO ID CRD42018102477).",
+            "start": 216,
+            "end": 485,
+            "source_id": "pmid:33216783",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "31b8fa7750f375b4f144adb8c1088a3e807f2306c50c253770da2a9dd8113c6d"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "HbA1c-accuracy-2020"
+        }
+      ],
       "sources": [
         {
           "title": "The A1C Test & Diabetes — NIDDK",
           "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Diagnostic accuracy of tests for type 2 diabetes and prediabetes: A systematic review and meta-analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33216783/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Analytical validity": {
           "rating": "Not yet assessed",
@@ -330,6 +824,23 @@
       "influences": [
         "Recent average glucose exposure",
         "Red-cell turnover and hemoglobin variants"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": [
+        {
+          "name": "Berberine",
+          "path": "/compound/berberine",
+          "relationship": "Related research topic; not evidence of clinical benefit"
+        }
       ]
     },
     {
@@ -361,18 +872,94 @@
           "name": "Cardiovascular risk",
           "question_type": "association",
           "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Cardiovascular events",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:18997196",
+          "pmid": "18997196",
+          "doi": "10.1056/nejmoa0807646",
+          "title": "Rosuvastatin to prevent vascular events in men and women with elevated C-reactive protein.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18997196/",
+          "year": "2008",
+          "design": "Randomized controlled trial",
+          "population": "Human; Adults with LDL-C <130 mg/dL and hsCRP ≥2 mg/L",
+          "n": 17802,
+          "exposure": "Rosuvastatin 20 mg daily",
+          "comparator": "Placebo",
+          "abstract": "Background Increased levels of the inflammatory biomarker high-sensitivity C-reactive protein predict cardiovascular events. Since statins lower levels of high-sensitivity C-reactive protein as well as cholesterol, we hypothesized that people with elevated high-sensitivity C-reactive protein levels but without hyperlipidemia might benefit from statin treatment. Methods We randomly assigned 17,802 apparently healthy men and women with low-density lipoprotein (LDL) cholesterol levels of less than 130 mg per deciliter (3.4 mmol per liter) and high-sensitivity C-reactive protein levels of 2.0 mg per liter or higher to rosuvastatin, 20 mg daily, or placebo and followed them for the occurrence of the combined primary end point of myocardial infarction, stroke, arterial revascularization, hospitalization for unstable angina, or death from cardiovascular causes. Results The trial was stopped after a median follow-up of 1.9 years (maximum, 5.0). Rosuvastatin reduced LDL cholesterol levels by 50% and high-sensitivity C-reactive protein levels by 37%. The rates of the primary end point were 0.77 and 1.36 per 100 person-years of follow-up in the rosuvastatin and placebo groups, respectively (hazard ratio for rosuvastatin, 0.56; 95% confidence interval [CI], 0.46 to 0.69; P<0.00001), with corresponding rates of 0.17 and 0.37 for myocardial infarction (hazard ratio, 0.46; 95% CI, 0.30 to 0.70; P=0.0002), 0.18 and 0.34 for stroke (hazard ratio, 0.52; 95% CI, 0.34 to 0.79; P=0.002), 0.41 and 0.77 for revascularization or unstable angina (hazard ratio, 0.53; 95% CI, 0.40 to 0.70; P<0.00001), 0.45 and 0.85 for the combined end point of myocardial infarction, stroke, or death from cardiovascular causes (hazard ratio, 0.53; 95% CI, 0.40 to 0.69; P<0.00001), and 1.00 and 1.25 for death from any cause (hazard ratio, 0.80; 95% CI, 0.67 to 0.97; P=0.02). Consistent effects were observed in all subgroups evaluated. The rosuvastatin group did not have a significant increase in myopathy or cancer but did have a higher incidence of physician-reported diabetes. Conclusions In this trial of apparently healthy persons without hyperlipidemia but with elevated high-sensitivity C-reactive protein levels, rosuvastatin significantly reduced the incidence of major cardiovascular events. (ClinicalTrials.gov number, NCT00239681.)",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.56,
+                "lower": 0.46,
+                "upper": 0.69,
+                "confidence_level": 95,
+                "units": "rosuvastatin versus placebo",
+                "origin": "reported"
+              },
+              "quote": "The rates of the primary end point were 0.77 and 1.36 per 100 person-years of follow-up in the rosuvastatin and placebo groups, respectively (hazard ratio for rosuvastatin, 0.56; 95% confidence interval [CI], 0.46 to 0.69; P<0.00001)",
+              "source_span": {
+                "text": "The rates of the primary end point were 0.77 and 1.36 per 100 person-years of follow-up in the rosuvastatin and placebo groups, respectively (hazard ratio for rosuvastatin, 0.56; 95% confidence interval [CI], 0.46 to 0.69; P<0.00001)",
+                "start": 1057,
+                "end": 1290,
+                "source_id": "pmid:18997196",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The rates of the primary end point were 0.77 and 1.36 per 100 person-years of follow-up in the rosuvastatin and placebo groups, respectively (hazard ratio for rosuvastatin, 0.56; 95% confidence interval [CI], 0.46 to 0.69; P<0.00001)",
+          "population_span": {
+            "text": "We randomly assigned 17,802 apparently healthy men and women with low-density lipoprotein (LDL) cholesterol levels of less than 130 mg per deciliter (3.4 mmol per liter) and high-sensitivity C-reactive protein levels of 2.0 mg per liter or higher to rosuvastatin, 20 mg daily, or placebo and followed them for the occurrence of the combined primary end point of myocardial infarction, stroke, arterial revascularization, hospitalization for unstable angina, or death from cardiovascular causes.",
+            "start": 372,
+            "end": 866,
+            "source_id": "pmid:18997196",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "The trial was stopped after a median follow-up of 1.9 years (maximum, 5.0).",
+            "start": 875,
+            "end": 950,
+            "source_id": "pmid:18997196",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "93e3b635107a6f78d304b65385514e6a6536dfdfea918666c084ca79d796d2f9"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "JUPITER"
+        }
+      ],
       "sources": [
         {
           "title": "C-Reactive Protein Test — MedlinePlus",
           "url": "https://medlineplus.gov/lab-tests/c-reactive-protein-crp-test/",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Rosuvastatin to prevent vascular events in men and women with elevated C-reactive protein.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18997196/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Analytical validity": {
           "rating": "Not yet assessed",
@@ -413,6 +1000,16 @@
       "influences": [
         "Infection or other inflammatory activity",
         "Whether the assay is CRP or high-sensitivity CRP"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
       ]
     },
     {
@@ -592,18 +1189,94 @@
           "name": "Bone health",
           "question_type": "association",
           "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Total fractures",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:35939577",
+          "pmid": "35939577",
+          "doi": "10.1056/nejmoa2202106",
+          "title": "Supplemental Vitamin D and Incident Fractures in Midlife and Older Adults.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35939577/",
+          "year": "2022",
+          "design": "Randomized controlled trial",
+          "population": "Human; Men ≥50 and women ≥55; not selected for vitamin D deficiency",
+          "n": 25871,
+          "exposure": "Vitamin D3 2,000 IU daily",
+          "comparator": "Placebo",
+          "abstract": "Background Vitamin D supplements are widely recommended for bone health in the general population, but data on whether they prevent fractures have been inconsistent. Methods In an ancillary study of the Vitamin D and Omega-3 Trial (VITAL), we tested whether supplemental vitamin D 3 would result in a lower risk of fractures than placebo. VITAL was a two-by-two factorial, randomized, controlled trial that investigated whether supplemental vitamin D 3 (2000 IU per day), n-3 fatty acids (1 g per day), or both would prevent cancer and cardiovascular disease in men 50 years of age or older and women 55 years of age or older in the United States. Participants were not recruited on the basis of vitamin D deficiency, low bone mass, or osteoporosis. Incident fractures were reported by participants on annual questionnaires and adjudicated by centralized medical-record review. The primary end points were incident total, nonvertebral, and hip fractures. Proportional-hazards models were used to estimate the treatment effect in intention-to-treat analyses. Results Among 25,871 participants (50.6% women [13,085 of 25,871] and 20.2% Black [5106 of 25,304]), we confirmed 1991 incident fractures in 1551 participants over a median follow-up of 5.3 years. Supplemental vitamin D 3 , as compared with placebo, did not have a significant effect on total fractures (which occurred in 769 of 12,927 participants in the vitamin D group and in 782 of 12,944 participants in the placebo group; hazard ratio, 0.98; 95% confidence interval [CI], 0.89 to 1.08; P = 0.70), nonvertebral fractures (hazard ratio, 0.97; 95% CI, 0.87 to 1.07; P = 0.50), or hip fractures (hazard ratio, 1.01; 95% CI, 0.70 to 1.47; P = 0.96). There was no modification of the treatment effect according to baseline characteristics, including age, sex, race or ethnic group, body-mass index, or serum 25-hydroxyvitamin D levels. There were no substantial between-group differences in adverse events as assessed in the parent trial. Conclusions Vitamin D 3 supplementation did not result in a significantly lower risk of fractures than placebo among generally healthy midlife and older adults who were not selected for vitamin D deficiency, low bone mass, or osteoporosis. (Funded by the National Institute of Arthritis and Musculoskeletal and Skin Diseases; VITAL ClinicalTrials.gov number, NCT01704859.).",
+          "findings": [
+            {
+              "outcome": "Total fractures",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.98,
+                "lower": 0.89,
+                "upper": 1.08,
+                "confidence_level": 95,
+                "units": "vitamin D versus placebo",
+                "origin": "reported"
+              },
+              "quote": "Supplemental vitamin D 3 , as compared with placebo, did not have a significant effect on total fractures (which occurred in 769 of 12,927 participants in the vitamin D group and in 782 of 12,944 participants in the placebo group; hazard ratio, 0.98; 95% confidence interval [CI], 0.89 to 1.08; P = 0.70), nonvertebral fractures (hazard ratio, 0.97; 95% CI, 0.87 to 1.07; P = 0.50), or hip fractures (hazard ratio, 1.01; 95% CI, 0.70 to 1.47; P = 0.96).",
+              "source_span": {
+                "text": "Supplemental vitamin D 3 , as compared with placebo, did not have a significant effect on total fractures (which occurred in 769 of 12,927 participants in the vitamin D group and in 782 of 12,944 participants in the placebo group; hazard ratio, 0.98; 95% confidence interval [CI], 0.89 to 1.08; P = 0.70), nonvertebral fractures (hazard ratio, 0.97; 95% CI, 0.87 to 1.07; P = 0.50), or hip fractures (hazard ratio, 1.01; 95% CI, 0.70 to 1.47; P = 0.96).",
+                "start": 1255,
+                "end": 1708,
+                "source_id": "pmid:35939577",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "Supplemental vitamin D 3 , as compared with placebo, did not have a significant effect on total fractures (which occurred in 769 of 12,927 participants in the vitamin D group and in 782 of 12,944 participants in the placebo group; hazard ratio, 0.98; 95% confidence interval [CI], 0.89 to 1.08; P = 0.70), nonvertebral fractures (hazard ratio, 0.97; 95% CI, 0.87 to 1.07; P = 0.50), or hip fractures (hazard ratio, 1.01; 95% CI, 0.70 to 1.47; P = 0.96).",
+          "population_span": {
+            "text": "VITAL was a two-by-two factorial, randomized, controlled trial that investigated whether supplemental vitamin D 3 (2000 IU per day), n-3 fatty acids (1 g per day), or both would prevent cancer and cardiovascular disease in men 50 years of age or older and women 55 years of age or older in the United States.",
+            "start": 339,
+            "end": 647,
+            "source_id": "pmid:35939577",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Participants were not recruited on the basis of vitamin D deficiency, low bone mass, or osteoporosis.",
+            "start": 648,
+            "end": 749,
+            "source_id": "pmid:35939577",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "94d3c3a819b39d3019cc9df0c7640a7566a97bce372405a6e3ac07c705a6f4f9"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "VITAL"
+        }
+      ],
       "sources": [
         {
           "title": "Vitamin D Test — MedlinePlus",
           "url": "https://medlineplus.gov/lab-tests/vitamin-d-test/",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Supplemental Vitamin D and Incident Fractures in Midlife and Older Adults.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35939577/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Analytical validity": {
           "rating": "Not yet assessed",
@@ -640,6 +1313,49 @@
       "influences": [
         "Vitamin D intake and supplementation",
         "The clinical reason for assessing vitamin D status"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": [
+        {
+          "name": "Vitamin D3",
+          "path": "/compound/vitamin-d3",
+          "relationship": "Related research topic; not evidence of clinical benefit"
+        },
+        {
+          "name": "Calcium",
+          "path": "/compound/calcium",
+          "relationship": "Related research topic; not evidence of clinical benefit"
+        }
+      ],
+      "figures": [
+        {
+          "type": "forest",
+          "measure": "hr",
+          "title": "VITAL: reported outcome estimates",
+          "caption": "Automated extraction from the cited abstract; human appraisal pending. Each row is a separate endpoint. No pooling; a confidence interval crossing 1 includes the null.",
+          "x_label": "hazard ratio",
+          "y_label": "Outcome",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/35939577/",
+          "source_title": "Supplemental Vitamin D and Incident Fractures in Midlife and Older Adults.",
+          "illustrative": false,
+          "rows": [
+            {
+              "label": "Total fractures",
+              "estimate": 0.98,
+              "lower": 0.89,
+              "upper": 1.08
+            }
+          ]
+        }
       ]
     },
     {
@@ -670,18 +1386,120 @@
           "name": "Chronic kidney disease",
           "question_type": "association",
           "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Mortality risk reclassification",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Kidney failure risk reclassification",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:24004120",
+          "pmid": "24004120",
+          "doi": "10.1056/nejmoa1214234",
+          "title": "Cystatin C versus creatinine in determining risk based on kidney function.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24004120/",
+          "year": "2013",
+          "design": "Cohort meta-analysis",
+          "population": "Human; 11 general-population and 5 CKD cohorts",
+          "n": null,
+          "exposure": "Cystatin C-based eGFR",
+          "comparator": "Creatinine-based eGFR",
+          "abstract": "Background Adding the measurement of cystatin C to that of serum creatinine to determine the estimated glomerular filtration rate (eGFR) improves accuracy, but the effect on detection, staging, and risk classification of chronic kidney disease across diverse populations has not been determined. Methods We performed a meta-analysis of 11 general-population studies (with 90,750 participants) and 5 studies of cohorts with chronic kidney disease (2960 participants) for whom standardized measurements of serum creatinine and cystatin C were available. We compared the association of the eGFR, as calculated by the measurement of creatinine or cystatin C alone or in combination with creatinine, with the rates of death (13,202 deaths in 15 cohorts), death from cardiovascular causes (3471 in 12 cohorts), and end-stage renal disease (1654 cases in 7 cohorts) and assessed improvement in reclassification with the use of cystatin C. Results In the general-population cohorts, the prevalence of an eGFR of less than 60 ml per minute per 1.73 m(2) of body-surface area was higher with the cystatin C-based eGFR than with the creatinine-based eGFR (13.7% vs. 9.7%). Across all eGFR categories, the reclassification of the eGFR to a higher value with the measurement of cystatin C, as compared with creatinine, was associated with a reduced risk of all three study outcomes, and reclassification to a lower eGFR was associated with an increased risk. The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease. Results were generally similar for the five cohorts with chronic kidney disease and when both creatinine and cystatin C were used to calculate the eGFR. Conclusions The use of cystatin C alone or in combination with creatinine strengthens the association between the eGFR and the risks of death and end-stage renal disease across diverse populations. (Funded by the National Kidney Foundation and others.).",
+          "findings": [
+            {
+              "outcome": "Mortality risk reclassification",
+              "effect": {
+                "measure": "net reclassification improvement",
+                "estimate": 0.23,
+                "lower": 0.18,
+                "upper": 0.28,
+                "confidence_level": 95,
+                "units": "index; not a risk ratio",
+                "origin": "reported"
+              },
+              "quote": "The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease.",
+              "source_span": {
+                "text": "The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease.",
+                "start": 1446,
+                "end": 1672,
+                "source_id": "pmid:24004120",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Kidney failure risk reclassification",
+              "effect": {
+                "measure": "net reclassification improvement",
+                "estimate": 0.1,
+                "lower": 0.0,
+                "upper": 0.21,
+                "confidence_level": 95,
+                "units": "index; not a risk ratio",
+                "origin": "reported"
+              },
+              "quote": "The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease.",
+              "source_span": {
+                "text": "The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease.",
+                "start": 1446,
+                "end": 1672,
+                "source_id": "pmid:24004120",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease.",
+          "population_span": {
+            "text": "We performed a meta-analysis of 11 general-population studies (with 90,750 participants) and 5 studies of cohorts with chronic kidney disease (2960 participants) for whom standardized measurements of serum creatinine and cystatin C were available.",
+            "start": 304,
+            "end": 551,
+            "source_id": "pmid:24004120",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "We performed a meta-analysis of 11 general-population studies (with 90,750 participants) and 5 studies of cohorts with chronic kidney disease (2960 participants) for whom standardized measurements of serum creatinine and cystatin C were available.",
+            "start": 304,
+            "end": 551,
+            "source_id": "pmid:24004120",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "284a598e01bdcac8d0242b76f89b0ce0dce83003c94cf543441ff5e3bfae852c"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "CKD-PC-2013"
+        }
+      ],
       "sources": [
         {
           "title": "GFR Test — MedlinePlus",
           "url": "https://medlineplus.gov/lab-tests/glomerular-filtration-rate-gfr-test/",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Cystatin C versus creatinine in determining risk based on kidney function.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24004120/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Analytical validity": {
           "rating": "Not yet assessed",
@@ -708,7 +1526,9 @@
           "rationale": "A structured study-level appraisal has not yet been completed."
         }
       },
-      "related": [],
+      "related": [
+        "cystatin-c"
+      ],
       "changing_marker": "A laboratory change must be interpreted alongside kidney outcomes and the clinical setting.",
       "measurement": {
         "units": "Creatinine: mg/dL; eGFR: mL/min/1.73 m²",
@@ -721,6 +1541,23 @@
       "influences": [
         "Muscle mass and creatinine production",
         "Changes over time and other markers of kidney disease"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": [
+        {
+          "name": "Creatine",
+          "path": "/compound/creatine",
+          "relationship": "Related research topic; not evidence of clinical benefit"
+        }
       ]
     },
     {
@@ -827,18 +1664,120 @@
           "name": "Disease monitoring",
           "question_type": "association",
           "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Disease-specific mortality",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Number needed to screen",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:30824296",
+          "pmid": "30824296",
+          "doi": "10.1016/j.eururo.2019.02.009",
+          "title": "A 16-yr Follow-up of the European Randomized study of Screening for Prostate Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30824296/",
+          "year": "2019",
+          "design": "Randomized screening trial",
+          "population": "Human; Core group of men aged 55–69",
+          "n": 162389,
+          "exposure": "Invitation to repeated PSA screening",
+          "comparator": "Control group",
+          "abstract": "Background The European Randomized study of Screening for Prostate Cancer (ERSPC) has previously demonstrated that prostate-specific antigen (PSA) screening decreases prostate cancer (PCa) mortality. Objective To determine whether PSA screening decreases PCa mortality for up to 16yr and to assess results following adjustment for nonparticipation and the number of screening rounds attended. Design, setting, and participants This multicentre population-based randomised screening trial was conducted in eight European countries. Report includes 182160 men, followed up until 2014 (maximum of 16yr), with a predefined core age group of 162389 men (55-69yr), selected from population registry. Outcome measurements and statistical analysis The outcome was PCa mortality, also assessed with adjustment for nonparticipation and the number of screening rounds attended. Results and limitations The rate ratio of PCa mortality was 0.80 (95% confidence interval [CI] 0.72-0.89, p<0.001) at 16yr. The difference in absolute PCa mortality increased from 0.14% at 13yr to 0.18% at 16yr. The number of men needed to be invited for screening to prevent one PCa death was 570 at 16yr compared with 742 at 13yr. The number needed to diagnose was reduced to 18 from 26 at 13yr. Men with PCa detected during the first round had a higher prevalence of PSA >20ng/ml (9.9% compared with 4.1% in the second round, p<0.001) and higher PCa mortality (hazard ratio=1.86, p<0.001) than those detected subsequently. Conclusions Findings corroborate earlier results that PSA screening significantly reduces PCa mortality, showing larger absolute benefit with longer follow-up and a reduction in excess incidence. Repeated screening may be important to reduce PCa mortality on a population level. Patient summary In this report, we looked at the outcomes from prostate cancer in a large European population. We found that repeated screening reduces the risk of dying from prostate cancer.",
+          "findings": [
+            {
+              "outcome": "Disease-specific mortality",
+              "effect": {
+                "measure": "rate ratio",
+                "estimate": 0.8,
+                "lower": 0.72,
+                "upper": 0.89,
+                "confidence_level": 95,
+                "units": "16-year follow-up",
+                "origin": "reported"
+              },
+              "quote": "The rate ratio of PCa mortality was 0.80 (95% confidence interval [CI] 0.72-0.89, p<0.001) at 16yr.",
+              "source_span": {
+                "text": "The rate ratio of PCa mortality was 0.80 (95% confidence interval [CI] 0.72-0.89, p<0.001) at 16yr.",
+                "start": 891,
+                "end": 990,
+                "source_id": "pmid:30824296",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Number needed to screen",
+              "effect": {
+                "measure": "number needed to invite",
+                "estimate": 570,
+                "lower": null,
+                "upper": null,
+                "confidence_level": null,
+                "units": "men invited over 16 years",
+                "origin": "reported"
+              },
+              "quote": "The number of men needed to be invited for screening to prevent one PCa death was 570 at 16yr compared with 742 at 13yr.",
+              "source_span": {
+                "text": "The number of men needed to be invited for screening to prevent one PCa death was 570 at 16yr compared with 742 at 13yr.",
+                "start": 1079,
+                "end": 1199,
+                "source_id": "pmid:30824296",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The rate ratio of PCa mortality was 0.80 (95% confidence interval [CI] 0.72-0.89, p<0.001) at 16yr.",
+          "population_span": {
+            "text": "Report includes 182160 men, followed up until 2014 (maximum of 16yr), with a predefined core age group of 162389 men (55-69yr), selected from population registry.",
+            "start": 531,
+            "end": 693,
+            "source_id": "pmid:30824296",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Report includes 182160 men, followed up until 2014 (maximum of 16yr), with a predefined core age group of 162389 men (55-69yr), selected from population registry.",
+            "start": 531,
+            "end": 693,
+            "source_id": "pmid:30824296",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "be5e88d09a621ca83fa6934c3ab4ec9ecaee43635d4c69de4b996309769f5577"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ERSPC-16y"
+        }
+      ],
       "sources": [
         {
           "title": "Prostate-Specific Antigen Test — NCI",
           "url": "https://www.cancer.gov/types/prostate/psa-fact-sheet",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "A 16-yr Follow-up of the European Randomized study of Screening for Prostate Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30824296/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Analytical validity": {
           "rating": "Not yet assessed",
@@ -877,6 +1816,16 @@
       "influences": [
         "Benign prostate enlargement or inflammation",
         "Prior prostate treatment and changes over time"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
       ]
     },
     {
@@ -894,17 +1843,120 @@
       "population": "People being evaluated for the stated clinical question.",
       "exposure": "HbA1c for diabetes diagnosis",
       "comparator": null,
-      "outcomes": [],
-      "studies": [],
+      "outcomes": [
+        {
+          "name": "Sensitivity for diabetes",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Specificity for diabetes",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "pmid:33216783",
+          "pmid": "33216783",
+          "doi": "10.1371/journal.pone.0242415",
+          "title": "Diagnostic accuracy of tests for type 2 diabetes and prediabetes: A systematic review and meta-analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33216783/",
+          "year": "2020",
+          "design": "Systematic review and meta-analysis",
+          "population": "Human; Previously undiagnosed adults; 17 studies for HbA1c 6.5%",
+          "n": null,
+          "exposure": "Venous HbA1c at 6.5% threshold",
+          "comparator": "75-g OGTT / 2-hour post-load glucose",
+          "abstract": "Aim This systematic review aimed to ascertain the diagnostic accuracy (sensitivity and specificity) of screening tests for early detection of type 2 diabetes and prediabetes in previously undiagnosed adults. Methods This systematic review included published studies that included one or more index tests (random and fasting tests, HbA1c) for glucose detection, with 75-gram Oral Glucose Tolerance Test (or 2-hour post load glucose) as a reference standard (PROSPERO ID CRD42018102477). Seven databases were searched electronically (from their inception up to March 9, 2020) accompanied with bibliographic and website searches. Records were manually screened and full text were selected based on inclusion and exclusion criteria. Subsequently, data extraction was done using standardized form and quality assessment of studies using QUADAS-2 tool. Meta-analysis was done using bivariate model using Stata 14.0. Optimal cut offs in terms of sensitivity and specificity for the tests were analysed using R software. Results Of 7,151 records assessed by title and abstract, a total of 37 peer reviewed articles were included in this systematic review. The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively. However, the optimal cut-off for diagnosing diabetes in previously undiagnosed adults with HbA1c was estimated as 6.03% with pooled sensitivity of 73.9% (95% CI: 68-79.1%) and specificity of 87.2% (95% CI: 82-91%). The optimal cut-off for Fasting Plasma Glucose (FPG) was estimated as 104 milligram/dL (mg/dL) with a sensitivity of 82.3% (95% CI: 74.6-88.1%) and specificity of 89.4% (95% CI: 85.2-92.5%). Conclusion Our findings suggest that at present recommended threshold of 6.5%, HbA1c is more specific and less sensitive in diagnosing the newly detected diabetes in undiagnosed population from community settings. Lowering of thresholds for HbA1c and FPG to 6.03% and 104 mg/dL for early detection in previously undiagnosed persons for screening purposes may be considered.",
+          "findings": [
+            {
+              "outcome": "Sensitivity for diabetes",
+              "effect": {
+                "measure": "sensitivity",
+                "estimate": 50,
+                "lower": 42,
+                "upper": 59,
+                "confidence_level": 95,
+                "units": "percent",
+                "origin": "reported"
+              },
+              "quote": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+              "source_span": {
+                "text": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+                "start": 1148,
+                "end": 1434,
+                "source_id": "pmid:33216783",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Specificity for diabetes",
+              "effect": {
+                "measure": "specificity",
+                "estimate": 97.3,
+                "lower": 95.3,
+                "upper": 98.4,
+                "confidence_level": 95,
+                "units": "percent",
+                "origin": "reported"
+              },
+              "quote": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+              "source_span": {
+                "text": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+                "start": 1148,
+                "end": 1434,
+                "source_id": "pmid:33216783",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The pooled sensitivity, specificity, positive (LR+) and negative likelihood ratio (LR-) for diagnosing diabetes with HbA1c (6.5%; venous sample; n = 17 studies) were 50% (95% CI: 42-59%), 97.3% (95% CI: 95.3-98.4), 18.32 (95% CI: 11.06-30.53) and 0.51 (95% CI: 0.43-0.60), respectively.",
+          "population_span": {
+            "text": "This systematic review included published studies that included one or more index tests (random and fasting tests, HbA1c) for glucose detection, with 75-gram Oral Glucose Tolerance Test (or 2-hour post load glucose) as a reference standard (PROSPERO ID CRD42018102477).",
+            "start": 216,
+            "end": 485,
+            "source_id": "pmid:33216783",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "This systematic review included published studies that included one or more index tests (random and fasting tests, HbA1c) for glucose detection, with 75-gram Oral Glucose Tolerance Test (or 2-hour post load glucose) as a reference standard (PROSPERO ID CRD42018102477).",
+            "start": 216,
+            "end": 485,
+            "source_id": "pmid:33216783",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "31b8fa7750f375b4f144adb8c1088a3e807f2306c50c253770da2a9dd8113c6d"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "HbA1c-accuracy-2020"
+        }
+      ],
       "sources": [
         {
           "title": "The A1C Test & Diabetes — NIDDK",
           "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Diagnostic accuracy of tests for type 2 diabetes and prediabetes: A systematic review and meta-analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33216783/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Reference standard": {
           "rating": "Not yet assessed",
@@ -937,7 +1989,17 @@
         "reference_standard": null,
         "note": "No pooled accuracy estimate is asserted. Accuracy depends on the threshold, reference standard, and population."
       },
-      "aliases": []
+      "aliases": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ]
     },
     {
       "id": "cac",
@@ -954,17 +2016,94 @@
       "population": "People being evaluated for the stated clinical question.",
       "exposure": "Coronary artery calcium scoring",
       "comparator": null,
-      "outcomes": [],
-      "studies": [],
+      "outcomes": [
+        {
+          "name": "Coronary events",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "pmid:18367736",
+          "pmid": "18367736",
+          "doi": "10.1056/nejmoa072100",
+          "title": "Coronary calcium as a predictor of coronary events in four racial or ethnic groups.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18367736/",
+          "year": "2008",
+          "design": "Prospective cohort",
+          "population": "Human; Adults initially free of clinical cardiovascular disease",
+          "n": 6722,
+          "exposure": "Coronary calcium score 101–300",
+          "comparator": "Calcium score zero",
+          "abstract": "Background In white populations, computed tomographic measurements of coronary-artery calcium predict coronary heart disease independently of traditional coronary risk factors. However, it is not known whether coronary-artery calcium predicts coronary heart disease in other racial or ethnic groups. Methods We collected data on risk factors and performed scanning for coronary calcium in a population-based sample of 6722 men and women, of whom 38.6% were white, 27.6% were black, 21.9% were Hispanic, and 11.9% were Chinese. The study subjects had no clinical cardiovascular disease at entry and were followed for a median of 3.8 years. Results There were 162 coronary events, of which 89 were major events (myocardial infarction or death from coronary heart disease). In comparison with participants with no coronary calcium, the adjusted risk of a coronary event was increased by a factor of 7.73 among participants with coronary calcium scores between 101 and 300 and by a factor of 9.67 among participants with scores above 300 (P<0.001 for both comparisons). Among the four racial and ethnic groups, a doubling of the calcium score increased the risk of a major coronary event by 15 to 35% and the risk of any coronary event by 18 to 39%. The areas under the receiver-operating-characteristic curves for the prediction of both major coronary events and any coronary event were higher when the calcium score was added to the standard risk factors. Conclusions The coronary calcium score is a strong predictor of incident coronary heart disease and provides predictive information beyond that provided by standard risk factors in four major racial and ethnic groups in the United States. No major differences among racial and ethnic groups in the predictive value of calcium scores were detected.",
+          "findings": [
+            {
+              "outcome": "Coronary events",
+              "effect": {
+                "measure": "adjusted relative risk",
+                "estimate": 7.73,
+                "lower": null,
+                "upper": null,
+                "confidence_level": null,
+                "units": "CAC 101–300 versus zero",
+                "origin": "reported"
+              },
+              "quote": "In comparison with participants with no coronary calcium, the adjusted risk of a coronary event was increased by a factor of 7.73 among participants with coronary calcium scores between 101 and 300 and by a factor of 9.67 among participants with scores above 300 (P<0.001 for both comparisons).",
+              "source_span": {
+                "text": "In comparison with participants with no coronary calcium, the adjusted risk of a coronary event was increased by a factor of 7.73 among participants with coronary calcium scores between 101 and 300 and by a factor of 9.67 among participants with scores above 300 (P<0.001 for both comparisons).",
+                "start": 771,
+                "end": 1065,
+                "source_id": "pmid:18367736",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "In comparison with participants with no coronary calcium, the adjusted risk of a coronary event was increased by a factor of 7.73 among participants with coronary calcium scores between 101 and 300 and by a factor of 9.67 among participants with scores above 300 (P<0.001 for both comparisons).",
+          "population_span": {
+            "text": "We collected data on risk factors and performed scanning for coronary calcium in a population-based sample of 6722 men and women, of whom 38.6% were white, 27.6% were black, 21.9% were Hispanic, and 11.9% were Chinese.",
+            "start": 308,
+            "end": 526,
+            "source_id": "pmid:18367736",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "We collected data on risk factors and performed scanning for coronary calcium in a population-based sample of 6722 men and women, of whom 38.6% were white, 27.6% were black, 21.9% were Hispanic, and 11.9% were Chinese.",
+            "start": 308,
+            "end": 526,
+            "source_id": "pmid:18367736",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "3b097b2c81e79500ab3f76ae3f817162f4f240fec119d9b92049557014302fed"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "MESA-2008"
+        }
+      ],
       "sources": [
         {
           "title": "Heart Tests — NHLBI",
           "url": "https://www.nhlbi.nih.gov/health/heart-tests",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Coronary calcium as a predictor of coronary events in four racial or ethnic groups.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18367736/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Reference standard": {
           "rating": "Not yet assessed",
@@ -997,7 +2136,17 @@
         "reference_standard": null,
         "note": "No pooled accuracy estimate is asserted. Accuracy depends on the threshold, reference standard, and population."
       },
-      "aliases": []
+      "aliases": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ]
     },
     {
       "id": "psa-screening",
@@ -1056,16 +2205,108 @@
           "assessment": "Not yet assessed"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:30824296",
+          "pmid": "30824296",
+          "doi": "10.1016/j.eururo.2019.02.009",
+          "title": "A 16-yr Follow-up of the European Randomized study of Screening for Prostate Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30824296/",
+          "year": "2019",
+          "design": "Randomized screening trial",
+          "population": "Human; Core group of men aged 55–69",
+          "n": 162389,
+          "exposure": "Invitation to repeated PSA screening",
+          "comparator": "Control group",
+          "abstract": "Background The European Randomized study of Screening for Prostate Cancer (ERSPC) has previously demonstrated that prostate-specific antigen (PSA) screening decreases prostate cancer (PCa) mortality. Objective To determine whether PSA screening decreases PCa mortality for up to 16yr and to assess results following adjustment for nonparticipation and the number of screening rounds attended. Design, setting, and participants This multicentre population-based randomised screening trial was conducted in eight European countries. Report includes 182160 men, followed up until 2014 (maximum of 16yr), with a predefined core age group of 162389 men (55-69yr), selected from population registry. Outcome measurements and statistical analysis The outcome was PCa mortality, also assessed with adjustment for nonparticipation and the number of screening rounds attended. Results and limitations The rate ratio of PCa mortality was 0.80 (95% confidence interval [CI] 0.72-0.89, p<0.001) at 16yr. The difference in absolute PCa mortality increased from 0.14% at 13yr to 0.18% at 16yr. The number of men needed to be invited for screening to prevent one PCa death was 570 at 16yr compared with 742 at 13yr. The number needed to diagnose was reduced to 18 from 26 at 13yr. Men with PCa detected during the first round had a higher prevalence of PSA >20ng/ml (9.9% compared with 4.1% in the second round, p<0.001) and higher PCa mortality (hazard ratio=1.86, p<0.001) than those detected subsequently. Conclusions Findings corroborate earlier results that PSA screening significantly reduces PCa mortality, showing larger absolute benefit with longer follow-up and a reduction in excess incidence. Repeated screening may be important to reduce PCa mortality on a population level. Patient summary In this report, we looked at the outcomes from prostate cancer in a large European population. We found that repeated screening reduces the risk of dying from prostate cancer.",
+          "findings": [
+            {
+              "outcome": "Disease-specific mortality",
+              "effect": {
+                "measure": "rate ratio",
+                "estimate": 0.8,
+                "lower": 0.72,
+                "upper": 0.89,
+                "confidence_level": 95,
+                "units": "16-year follow-up",
+                "origin": "reported"
+              },
+              "quote": "The rate ratio of PCa mortality was 0.80 (95% confidence interval [CI] 0.72-0.89, p<0.001) at 16yr.",
+              "source_span": {
+                "text": "The rate ratio of PCa mortality was 0.80 (95% confidence interval [CI] 0.72-0.89, p<0.001) at 16yr.",
+                "start": 891,
+                "end": 990,
+                "source_id": "pmid:30824296",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Number needed to screen",
+              "effect": {
+                "measure": "number needed to invite",
+                "estimate": 570,
+                "lower": null,
+                "upper": null,
+                "confidence_level": null,
+                "units": "men invited over 16 years",
+                "origin": "reported"
+              },
+              "quote": "The number of men needed to be invited for screening to prevent one PCa death was 570 at 16yr compared with 742 at 13yr.",
+              "source_span": {
+                "text": "The number of men needed to be invited for screening to prevent one PCa death was 570 at 16yr compared with 742 at 13yr.",
+                "start": 1079,
+                "end": 1199,
+                "source_id": "pmid:30824296",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The rate ratio of PCa mortality was 0.80 (95% confidence interval [CI] 0.72-0.89, p<0.001) at 16yr.",
+          "population_span": {
+            "text": "Report includes 182160 men, followed up until 2014 (maximum of 16yr), with a predefined core age group of 162389 men (55-69yr), selected from population registry.",
+            "start": 531,
+            "end": 693,
+            "source_id": "pmid:30824296",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Report includes 182160 men, followed up until 2014 (maximum of 16yr), with a predefined core age group of 162389 men (55-69yr), selected from population registry.",
+            "start": 531,
+            "end": 693,
+            "source_id": "pmid:30824296",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "be5e88d09a621ca83fa6934c3ab4ec9ecaee43635d4c69de4b996309769f5577"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "ERSPC-16y"
+        }
+      ],
       "sources": [
         {
           "title": "Prostate-Specific Antigen Test — NCI",
           "url": "https://www.cancer.gov/types/prostate/psa-fact-sheet",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "A 16-yr Follow-up of the European Randomized study of Screening for Prostate Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30824296/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Disease-specific mortality": {
           "rating": "Not yet assessed",
@@ -1117,7 +2358,17 @@
         "Overdiagnosis",
         "Overtreatment"
       ],
-      "aliases": []
+      "aliases": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ]
     },
     {
       "id": "mammography",
@@ -1292,18 +2543,120 @@
           "name": "Number needed to screen",
           "question_type": "screening_utility",
           "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Sensitivity for colorectal cancer",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Specificity for colorectal cancer",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:24658694",
+          "pmid": "24658694",
+          "doi": "10.7326/m13-1484",
+          "title": "Accuracy of fecal immunochemical tests for colorectal cancer: systematic review and meta-analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24658694/",
+          "year": "2014",
+          "design": "Systematic review and meta-analysis",
+          "population": "Human; Asymptomatic average-risk adults; 19 studies",
+          "n": null,
+          "exposure": "Fecal immunochemical tests; thresholds vary",
+          "comparator": "Study-specific reference standards",
+          "abstract": "Background Performance characteristics of fecal immunochemical tests (FITs) to screen for colorectal cancer (CRC) have been inconsistent. Purpose To synthesize data about the diagnostic accuracy of FITs for CRC and identify factors affecting its performance characteristics. Data sources Online databases, including MEDLINE and EMBASE, and bibliographies of included studies from 1996 to 2013. Study selection All studies evaluating the diagnostic accuracy of FITs for CRC in asymptomatic, average-risk adults. Data extraction Two reviewers independently extracted data and critiqued study quality. Data synthesis Nineteen eligible studies were included and meta-analyzed. The pooled sensitivity, specificity, positive likelihood ratio, and negative likelihood ratio of FITs for CRC were 0.79 (95% CI, 0.69 to 0.86), 0.94 (CI, 0.92 to 0.95), 13.10 (CI, 10.49 to 16.35), 0.23 (CI, 0.15 to 0.33), respectively, with an overall diagnostic accuracy of 95% (CI, 93% to 97%). There was substantial heterogeneity between studies in both the pooled sensitivity and specificity estimates. Stratifying by cutoff value for a positive test result or removal of discontinued FIT brands resulted in homogeneous sensitivity estimates. Sensitivity for CRC improved with lower assay cutoff values for a positive test result (for example, 0.89 [CI, 0.80 to 0.95] at a cutoff value less than 20 µg/g vs. 0.70 [CI, 0.55 to 0.81] at cutoff values of 20 to 50 µg/g) but with a corresponding decrease in specificity. A single-sample FIT had similar sensitivity and specificity as several samples, independent of FIT brand. Limitations Only English-language articles were included. Lack of data prevented complete subgroup analyses by FIT brand. Conclusion Fecal immunochemical tests are moderately sensitive, are highly specific, and have high overall diagnostic accuracy for detecting CRC. Diagnostic performance of FITs depends on the cutoff value for a positive test result. Primary funding source National Institute of Diabetes and Digestive and Kidney Diseases and National Cancer Institute.",
+          "findings": [
+            {
+              "outcome": "Sensitivity for colorectal cancer",
+              "effect": {
+                "measure": "sensitivity",
+                "estimate": 0.79,
+                "lower": 0.69,
+                "upper": 0.86,
+                "confidence_level": 95,
+                "units": "proportion",
+                "origin": "reported"
+              },
+              "quote": "The pooled sensitivity, specificity, positive likelihood ratio, and negative likelihood ratio of FITs for CRC were 0.79 (95% CI, 0.69 to 0.86), 0.94 (CI, 0.92 to 0.95), 13.10 (CI, 10.49 to 16.35), 0.23 (CI, 0.15 to 0.33), respectively,",
+              "source_span": {
+                "text": "The pooled sensitivity, specificity, positive likelihood ratio, and negative likelihood ratio of FITs for CRC were 0.79 (95% CI, 0.69 to 0.86), 0.94 (CI, 0.92 to 0.95), 13.10 (CI, 10.49 to 16.35), 0.23 (CI, 0.15 to 0.33), respectively,",
+                "start": 673,
+                "end": 908,
+                "source_id": "pmid:24658694",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Specificity for colorectal cancer",
+              "effect": {
+                "measure": "specificity",
+                "estimate": 0.94,
+                "lower": 0.92,
+                "upper": 0.95,
+                "confidence_level": 95,
+                "units": "proportion",
+                "origin": "reported"
+              },
+              "quote": "The pooled sensitivity, specificity, positive likelihood ratio, and negative likelihood ratio of FITs for CRC were 0.79 (95% CI, 0.69 to 0.86), 0.94 (CI, 0.92 to 0.95), 13.10 (CI, 10.49 to 16.35), 0.23 (CI, 0.15 to 0.33), respectively,",
+              "source_span": {
+                "text": "The pooled sensitivity, specificity, positive likelihood ratio, and negative likelihood ratio of FITs for CRC were 0.79 (95% CI, 0.69 to 0.86), 0.94 (CI, 0.92 to 0.95), 13.10 (CI, 10.49 to 16.35), 0.23 (CI, 0.15 to 0.33), respectively,",
+                "start": 673,
+                "end": 908,
+                "source_id": "pmid:24658694",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The pooled sensitivity, specificity, positive likelihood ratio, and negative likelihood ratio of FITs for CRC were 0.79 (95% CI, 0.69 to 0.86), 0.94 (CI, 0.92 to 0.95), 13.10 (CI, 10.49 to 16.35), 0.23 (CI, 0.15 to 0.33), respectively,",
+          "population_span": {
+            "text": "All studies evaluating the diagnostic accuracy of FITs for CRC in asymptomatic, average-risk adults.",
+            "start": 410,
+            "end": 510,
+            "source_id": "pmid:24658694",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "There was substantial heterogeneity between studies in both the pooled sensitivity and specificity estimates.",
+            "start": 970,
+            "end": 1079,
+            "source_id": "pmid:24658694",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "10a677696d7097c652a090e69bced4d60ff992c957c474416d269536936acbfb"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "FIT-accuracy-2014"
+        }
+      ],
       "sources": [
         {
           "title": "Colorectal Screening Tests — NCI",
           "url": "https://www.cancer.gov/types/colorectal/screening-fact-sheet",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Accuracy of fecal immunochemical tests for colorectal cancer: systematic review and meta-analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24658694/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Disease-specific mortality": {
           "rating": "Not yet assessed",
@@ -1339,7 +2692,8 @@
         }
       },
       "related": [
-        "colonoscopy"
+        "colonoscopy",
+        "msi-pembrolizumab"
       ],
       "test_performance": {
         "sensitivity": null,
@@ -1354,7 +2708,17 @@
         "False negatives",
         "Harms of follow-up colonoscopy"
       ],
-      "aliases": []
+      "aliases": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ]
     },
     {
       "id": "colonoscopy",
@@ -1411,18 +2775,136 @@
           "name": "Number needed to screen",
           "question_type": "screening_utility",
           "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Colorectal cancer incidence",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:36214590",
+          "pmid": "36214590",
+          "doi": "10.1056/nejmoa2208375",
+          "title": "Effect of Colonoscopy Screening on Risks of Colorectal Cancer and Related Death.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36214590/",
+          "year": "2022",
+          "design": "Randomized screening trial",
+          "population": "Human; Adults aged 55–64; follow-up in Poland, Norway and Sweden",
+          "n": 84585,
+          "exposure": "Invitation to one screening colonoscopy",
+          "comparator": "No invitation / usual care",
+          "abstract": "Background Although colonoscopy is widely used as a screening test to detect colorectal cancer, its effect on the risks of colorectal cancer and related death is unclear. Methods We performed a pragmatic, randomized trial involving presumptively healthy men and women 55 to 64 years of age drawn from population registries in Poland, Norway, Sweden, and the Netherlands between 2009 and 2014. The participants were randomly assigned in a 1:2 ratio either to receive an invitation to undergo a single screening colonoscopy (the invited group) or to receive no invitation or screening (the usual-care group). The primary end points were the risks of colorectal cancer and related death, and the secondary end point was death from any cause. Results Follow-up data were available for 84,585 participants in Poland, Norway, and Sweden - 28,220 in the invited group, 11,843 of whom (42.0%) underwent screening, and 56,365 in the usual-care group. A total of 15 participants had major bleeding after polyp removal. No perforations or screening-related deaths occurred within 30 days after colonoscopy. During a median follow-up of 10 years, 259 cases of colorectal cancer were diagnosed in the invited group as compared with 622 cases in the usual-care group. In intention-to-screen analyses, the risk of colorectal cancer at 10 years was 0.98% in the invited group and 1.20% in the usual-care group, a risk reduction of 18% (risk ratio, 0.82; 95% confidence interval [CI], 0.70 to 0.93). The risk of death from colorectal cancer was 0.28% in the invited group and 0.31% in the usual-care group (risk ratio, 0.90; 95% CI, 0.64 to 1.16). The number needed to invite to undergo screening to prevent one case of colorectal cancer was 455 (95% CI, 270 to 1429). The risk of death from any cause was 11.03% in the invited group and 11.04% in the usual-care group (risk ratio, 0.99; 95% CI, 0.96 to 1.04). Conclusions In this randomized trial, the risk of colorectal cancer at 10 years was lower among participants who were invited to undergo screening colonoscopy than among those who were assigned to no screening. (Funded by the Research Council of Norway and others; NordICC ClinicalTrials.gov number, NCT00883792.).",
+          "findings": [
+            {
+              "outcome": "Colorectal cancer incidence",
+              "effect": {
+                "measure": "risk ratio",
+                "estimate": 0.82,
+                "lower": 0.7,
+                "upper": 0.93,
+                "confidence_level": 95,
+                "units": "10-year intention-to-screen",
+                "origin": "reported"
+              },
+              "quote": "In intention-to-screen analyses, the risk of colorectal cancer at 10 years was 0.98% in the invited group and 1.20% in the usual-care group, a risk reduction of 18% (risk ratio, 0.82; 95% confidence interval [CI], 0.70 to 0.93).",
+              "source_span": {
+                "text": "In intention-to-screen analyses, the risk of colorectal cancer at 10 years was 0.98% in the invited group and 1.20% in the usual-care group, a risk reduction of 18% (risk ratio, 0.82; 95% confidence interval [CI], 0.70 to 0.93).",
+                "start": 1254,
+                "end": 1482,
+                "source_id": "pmid:36214590",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Disease-specific mortality",
+              "effect": {
+                "measure": "risk ratio",
+                "estimate": 0.9,
+                "lower": 0.64,
+                "upper": 1.16,
+                "confidence_level": 95,
+                "units": "10-year intention-to-screen",
+                "origin": "reported"
+              },
+              "quote": "The risk of death from colorectal cancer was 0.28% in the invited group and 0.31% in the usual-care group (risk ratio, 0.90; 95% CI, 0.64 to 1.16).",
+              "source_span": {
+                "text": "The risk of death from colorectal cancer was 0.28% in the invited group and 0.31% in the usual-care group (risk ratio, 0.90; 95% CI, 0.64 to 1.16).",
+                "start": 1483,
+                "end": 1630,
+                "source_id": "pmid:36214590",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "All-cause mortality",
+              "effect": {
+                "measure": "risk ratio",
+                "estimate": 0.99,
+                "lower": 0.96,
+                "upper": 1.04,
+                "confidence_level": 95,
+                "units": "10-year intention-to-screen",
+                "origin": "reported"
+              },
+              "quote": "The risk of death from any cause was 11.03% in the invited group and 11.04% in the usual-care group (risk ratio, 0.99; 95% CI, 0.96 to 1.04).",
+              "source_span": {
+                "text": "The risk of death from any cause was 11.03% in the invited group and 11.04% in the usual-care group (risk ratio, 0.99; 95% CI, 0.96 to 1.04).",
+                "start": 1752,
+                "end": 1893,
+                "source_id": "pmid:36214590",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "In intention-to-screen analyses, the risk of colorectal cancer at 10 years was 0.98% in the invited group and 1.20% in the usual-care group, a risk reduction of 18% (risk ratio, 0.82; 95% confidence interval [CI], 0.70 to 0.93).",
+          "population_span": {
+            "text": "We performed a pragmatic, randomized trial involving presumptively healthy men and women 55 to 64 years of age drawn from population registries in Poland, Norway, Sweden, and the Netherlands between 2009 and 2014.",
+            "start": 179,
+            "end": 392,
+            "source_id": "pmid:36214590",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Follow-up data were available for 84,585 participants in Poland, Norway, and Sweden - 28,220 in the invited group, 11,843 of whom (42.0%) underwent screening, and 56,365 in the usual-care group.",
+            "start": 747,
+            "end": 941,
+            "source_id": "pmid:36214590",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "961ca46226c8ef5b795e668815c9d0d5e5da300246ca78d1925ec214eb5451ae"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "NordICC"
+        }
+      ],
       "sources": [
         {
           "title": "Colorectal Screening Tests — NCI",
           "url": "https://www.cancer.gov/types/colorectal/screening-fact-sheet",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Effect of Colonoscopy Screening on Risks of Colorectal Cancer and Related Death.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36214590/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Disease-specific mortality": {
           "rating": "Not yet assessed",
@@ -1458,7 +2940,8 @@
         }
       },
       "related": [
-        "fit"
+        "fit",
+        "msi-pembrolizumab"
       ],
       "test_performance": {
         "sensitivity": null,
@@ -1473,7 +2956,50 @@
         "Perforation",
         "Sedation-related complications"
       ],
-      "aliases": []
+      "aliases": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "figures": [
+        {
+          "type": "forest",
+          "measure": "rr",
+          "title": "NordICC: reported outcome estimates",
+          "caption": "Automated extraction from the cited abstract; human appraisal pending. Each row is a separate endpoint. No pooling; a confidence interval crossing 1 includes the null.",
+          "x_label": "risk ratio",
+          "y_label": "Outcome",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/36214590/",
+          "source_title": "Effect of Colonoscopy Screening on Risks of Colorectal Cancer and Related Death.",
+          "illustrative": false,
+          "rows": [
+            {
+              "label": "Colorectal cancer incidence",
+              "estimate": 0.82,
+              "lower": 0.7,
+              "upper": 0.93
+            },
+            {
+              "label": "Disease-specific mortality",
+              "estimate": 0.9,
+              "lower": 0.64,
+              "upper": 1.16
+            },
+            {
+              "label": "All-cause mortality",
+              "estimate": 0.99,
+              "lower": 0.96,
+              "upper": 1.04
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "her2-trastuzumab",
@@ -1504,7 +3030,72 @@
           "assessment": "Study-specific summary; full appraisal pending"
         }
       ],
-      "studies": [],
+      "studies": [
+        {
+          "id": "pmid:16236737",
+          "pmid": "16236737",
+          "doi": "10.1056/nejmoa052306",
+          "title": "Trastuzumab after adjuvant chemotherapy in HER2-positive breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16236737/",
+          "year": "2005",
+          "design": "Randomized controlled trial",
+          "population": "Human; Women with HER2-positive early breast cancer after chemotherapy",
+          "n": null,
+          "exposure": "Trastuzumab every three weeks for one year",
+          "comparator": "Observation",
+          "abstract": "Background Trastuzumab, a recombinant monoclonal antibody against HER2, has clinical activity in advanced breast cancer that overexpresses HER2. We investigated its efficacy and safety after excision of early-stage breast cancer and completion of chemotherapy. Methods This international, multicenter, randomized trial compared one or two years of trastuzumab given every three weeks with observation in patients with HER2-positive and either node-negative or node-positive breast cancer who had completed locoregional therapy and at least four cycles of neoadjuvant or adjuvant chemotherapy. Results Data were available for 1694 women randomly assigned to two years of treatment with trastuzumab, 1694 women assigned to one year of trastuzumab, and 1693 women assigned to observation. We report here the results only of treatment with trastuzumab for one year or observation. At the first planned interim analysis (median follow-up of one year), 347 events (recurrence of breast cancer, contralateral breast cancer, second nonbreast malignant disease, or death) were observed: 127 events in the trastuzumab group and 220 in the observation group. The unadjusted hazard ratio for an event in the trastuzumab group, as compared with the observation group, was 0.54 (95 percent confidence interval, 0.43 to 0.67; P<0.0001 by the log-rank test, crossing the interim analysis boundary), representing an absolute benefit in terms of disease-free survival at two years of 8.4 percentage points. Overall survival in the two groups was not significantly different (29 deaths with trastuzumab vs. 37 with observation). Severe cardiotoxicity developed in 0.5 percent of the women who were treated with trastuzumab. Conclusions One year of treatment with trastuzumab after adjuvant chemotherapy significantly improves disease-free survival among women with HER2-positive breast cancer. (ClinicalTrials.gov number, NCT00045032.)",
+          "findings": [
+            {
+              "outcome": "Disease-free survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.54,
+                "lower": 0.43,
+                "upper": 0.67,
+                "confidence_level": 95,
+                "units": "one-year trastuzumab versus observation",
+                "origin": "reported"
+              },
+              "quote": "The unadjusted hazard ratio for an event in the trastuzumab group, as compared with the observation group, was 0.54 (95 percent confidence interval, 0.43 to 0.67; P<0.0001 by the log-rank test, crossing the interim analysis boundary), representing an absolute benefit in terms of disease-free survival at two years of 8.4 percentage points.",
+              "source_span": {
+                "text": "The unadjusted hazard ratio for an event in the trastuzumab group, as compared with the observation group, was 0.54 (95 percent confidence interval, 0.43 to 0.67; P<0.0001 by the log-rank test, crossing the interim analysis boundary), representing an absolute benefit in terms of disease-free survival at two years of 8.4 percentage points.",
+                "start": 1148,
+                "end": 1488,
+                "source_id": "pmid:16236737",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The unadjusted hazard ratio for an event in the trastuzumab group, as compared with the observation group, was 0.54 (95 percent confidence interval, 0.43 to 0.67; P<0.0001 by the log-rank test, crossing the interim analysis boundary), representing an absolute benefit in terms of disease-free survival at two years of 8.4 percentage points.",
+          "population_span": {
+            "text": "This international, multicenter, randomized trial compared one or two years of trastuzumab given every three weeks with observation in patients with HER2-positive and either node-negative or node-positive breast cancer who had completed locoregional therapy and at least four cycles of neoadjuvant or adjuvant chemotherapy.",
+            "start": 269,
+            "end": 592,
+            "source_id": "pmid:16236737",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "At the first planned interim analysis (median follow-up of one year), 347 events (recurrence of breast cancer, contralateral breast cancer, second nonbreast malignant disease, or death) were observed: 127 events in the trastuzumab group and 220 in the observation group.",
+            "start": 877,
+            "end": 1147,
+            "source_id": "pmid:16236737",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "0f164db8d2d37de840f0a3ba41c020f9b65aadc7b2565a2d3d26c1eeae321fd9"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "HERA"
+        }
+      ],
       "sources": [
         {
           "title": "HERA follow-up — NCI",
@@ -1517,9 +3108,15 @@
           "url": "https://www.cancer.gov/about-cancer/treatment/types/biomarker-testing-cancer-treatment",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Trastuzumab after adjuvant chemotherapy in HER2-positive breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16236737/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Assay validity": {
           "rating": "Not yet assessed",
@@ -1554,7 +3151,38 @@
         "treatment_line": "Adjuvant"
       },
       "study_note": "The NCI summary reports recurrence benefit at four years but no statistically significant overall-survival difference at that analysis. Longer follow-up must be assessed separately.",
-      "aliases": []
+      "aliases": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "figures": [
+        {
+          "type": "forest",
+          "measure": "hr",
+          "title": "HERA: reported outcome estimates",
+          "caption": "Automated extraction from the cited abstract; human appraisal pending. Each row is a separate endpoint. No pooling; a confidence interval crossing 1 includes the null.",
+          "x_label": "hazard ratio",
+          "y_label": "Outcome",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/16236737/",
+          "source_title": "Trastuzumab after adjuvant chemotherapy in HER2-positive breast cancer.",
+          "illustrative": false,
+          "rows": [
+            {
+              "label": "Disease-free survival",
+              "estimate": 0.54,
+              "lower": 0.43,
+              "upper": 0.67
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "egfr-osimertinib",
@@ -1587,24 +3215,147 @@
       ],
       "studies": [
         {
-          "id": "FLAURA-OS",
-          "title": "Overall Survival with Osimertinib in Untreated, EGFR-Mutated Advanced NSCLC",
-          "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa1913662",
+          "id": "pmid:29151359",
+          "pmid": "29151359",
+          "doi": "10.1056/nejmoa1713137",
+          "title": "Osimertinib in Untreated EGFR-Mutated Advanced Non-Small-Cell Lung Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29151359/",
+          "year": "2018",
           "design": "Randomized controlled trial",
+          "population": "Human; Previously untreated advanced EGFR exon 19 deletion or L858R NSCLC",
           "n": 556,
+          "exposure": "Osimertinib 80 mg daily",
+          "comparator": "Gefitinib 250 mg or erlotinib 150 mg daily",
+          "abstract": "Background Osimertinib is an oral, third-generation, irreversible epidermal growth factor receptor tyrosine kinase inhibitor (EGFR-TKI) that selectively inhibits both EGFR-TKI-sensitizing and EGFR T790M resistance mutations. We compared osimertinib with standard EGFR-TKIs in patients with previously untreated, EGFR mutation-positive advanced non-small-cell lung cancer (NSCLC). Methods In this double-blind, phase 3 trial, we randomly assigned 556 patients with previously untreated, EGFR mutation-positive (exon 19 deletion or L858R) advanced NSCLC in a 1:1 ratio to receive either osimertinib (at a dose of 80 mg once daily) or a standard EGFR-TKI (gefitinib at a dose of 250 mg once daily or erlotinib at a dose of 150 mg once daily). The primary end point was investigator-assessed progression-free survival. Results The median progression-free survival was significantly longer with osimertinib than with standard EGFR-TKIs (18.9 months vs. 10.2 months; hazard ratio for disease progression or death, 0.46; 95% confidence interval [CI], 0.37 to 0.57; P<0.001). The objective response rate was similar in the two groups: 80% with osimertinib and 76% with standard EGFR-TKIs (odds ratio, 1.27; 95% CI, 0.85 to 1.90; P=0.24). The median duration of response was 17.2 months (95% CI, 13.8 to 22.0) with osimertinib versus 8.5 months (95% CI, 7.3 to 9.8) with standard EGFR-TKIs. Data on overall survival were immature at the interim analysis (25% maturity). The survival rate at 18 months was 83% (95% CI, 78 to 87) with osimertinib and 71% (95% CI, 65 to 76) with standard EGFR-TKIs (hazard ratio for death, 0.63; 95% CI, 0.45 to 0.88; P=0.007 [nonsignificant in the interim analysis]). Adverse events of grade 3 or higher were less frequent with osimertinib than with standard EGFR-TKIs (34% vs. 45%). Conclusions Osimertinib showed efficacy superior to that of standard EGFR-TKIs in the first-line treatment of EGFR mutation-positive advanced NSCLC, with a similar safety profile and lower rates of serious adverse events. (Funded by AstraZeneca; FLAURA ClinicalTrials.gov number, NCT02296125 .).",
+          "findings": [
+            {
+              "outcome": "Progression-free survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.46,
+                "lower": 0.37,
+                "upper": 0.57,
+                "confidence_level": 95,
+                "units": "progression or death",
+                "origin": "reported"
+              },
+              "quote": "The median progression-free survival was significantly longer with osimertinib than with standard EGFR-TKIs (18.9 months vs. 10.2 months; hazard ratio for disease progression or death, 0.46; 95% confidence interval [CI], 0.37 to 0.57; P<0.001).",
+              "source_span": {
+                "text": "The median progression-free survival was significantly longer with osimertinib than with standard EGFR-TKIs (18.9 months vs. 10.2 months; hazard ratio for disease progression or death, 0.46; 95% confidence interval [CI], 0.37 to 0.57; P<0.001).",
+                "start": 823,
+                "end": 1067,
+                "source_id": "pmid:29151359",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The median progression-free survival was significantly longer with osimertinib than with standard EGFR-TKIs (18.9 months vs. 10.2 months; hazard ratio for disease progression or death, 0.46; 95% confidence interval [CI], 0.37 to 0.57; P<0.001).",
+          "population_span": {
+            "text": "In this double-blind, phase 3 trial, we randomly assigned 556 patients with previously untreated, EGFR mutation-positive (exon 19 deletion or L858R) advanced NSCLC in a 1:1 ratio to receive either osimertinib (at a dose of 80 mg once daily) or a standard EGFR-TKI (gefitinib at a dose of 250 mg once daily or erlotinib at a dose of 150 mg once daily).",
+            "start": 388,
+            "end": 739,
+            "source_id": "pmid:29151359",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Data on overall survival were immature at the interim analysis (25% maturity).",
+            "start": 1382,
+            "end": 1460,
+            "source_id": "pmid:29151359",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "3371bcc7b5fe668a0f6beae315a20fa315fc11e54063c565b81925759fa286ec"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "FLAURA"
+        },
+        {
+          "id": "pmid:31751012",
+          "pmid": "31751012",
+          "doi": "10.1056/nejmoa1913662",
+          "title": "Overall Survival with Osimertinib in Untreated, EGFR -Mutated Advanced NSCLC.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31751012/",
+          "year": "2020",
+          "design": "Randomized controlled trial",
+          "population": "Human; Previously untreated advanced EGFR exon 19 deletion or L858R NSCLC",
+          "n": 556,
+          "exposure": "Osimertinib 80 mg daily",
+          "comparator": "Gefitinib 250 mg or erlotinib 150 mg daily",
+          "abstract": "Background Osimertinib is a third-generation, irreversible tyrosine kinase inhibitor of the epidermal growth factor receptor (EGFR-TKI) that selectively inhibits both EGFR-TKI-sensitizing and EGFR T790M resistance mutations. A phase 3 trial compared first-line osimertinib with other EGFR-TKIs in patients with EGFR mutation-positive advanced non-small-cell lung cancer (NSCLC). The trial showed longer progression-free survival with osimertinib than with the comparator EGFR-TKIs (hazard ratio for disease progression or death, 0.46). Data from the final analysis of overall survival have not been reported. Methods In this trial, we randomly assigned 556 patients with previously untreated advanced NSCLC with an EGFR mutation (exon 19 deletion or L858R allele) in a 1:1 ratio to receive either osimertinib (80 mg once daily) or one of two other EGFR-TKIs (gefitinib at a dose of 250 mg once daily or erlotinib at a dose of 150 mg once daily, with patients receiving these drugs combined in a single comparator group). Overall survival was a secondary end point. Results The median overall survival was 38.6 months (95% confidence interval [CI], 34.5 to 41.8) in the osimertinib group and 31.8 months (95% CI, 26.6 to 36.0) in the comparator group (hazard ratio for death, 0.80; 95.05% CI, 0.64 to 1.00; P = 0.046). At 3 years, 79 of 279 patients (28%) in the osimertinib group and 26 of 277 (9%) in the comparator group were continuing to receive a trial regimen; the median exposure was 20.7 months and 11.5 months, respectively. Adverse events of grade 3 or higher were reported in 42% of the patients in the osimertinib group and in 47% of those in the comparator group. Conclusions Among patients with previously untreated advanced NSCLC with an EGFR mutation, those who received osimertinib had longer overall survival than those who received a comparator EGFR-TKI. The safety profile for osimertinib was similar to that of the comparator EGFR-TKIs, despite a longer duration of exposure in the osimertinib group. (Funded by AstraZeneca; FLAURA ClinicalTrials.gov number, NCT02296125.).",
+          "findings": [
+            {
+              "outcome": "Overall survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.8,
+                "lower": 0.64,
+                "upper": 1.0,
+                "confidence_level": 95.05,
+                "units": "death",
+                "origin": "reported"
+              },
+              "quote": "The median overall survival was 38.6 months (95% confidence interval [CI], 34.5 to 41.8) in the osimertinib group and 31.8 months (95% CI, 26.6 to 36.0) in the comparator group (hazard ratio for death, 0.80; 95.05% CI, 0.64 to 1.00; P = 0.046).",
+              "source_span": {
+                "text": "The median overall survival was 38.6 months (95% confidence interval [CI], 34.5 to 41.8) in the osimertinib group and 31.8 months (95% CI, 26.6 to 36.0) in the comparator group (hazard ratio for death, 0.80; 95.05% CI, 0.64 to 1.00; P = 0.046).",
+                "start": 1073,
+                "end": 1317,
+                "source_id": "pmid:31751012",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The median overall survival was 38.6 months (95% confidence interval [CI], 34.5 to 41.8) in the osimertinib group and 31.8 months (95% CI, 26.6 to 36.0) in the comparator group (hazard ratio for death, 0.80; 95.05% CI, 0.64 to 1.00; P = 0.046).",
+          "population_span": {
+            "text": "In this trial, we randomly assigned 556 patients with previously untreated advanced NSCLC with an EGFR mutation (exon 19 deletion or L858R allele) in a 1:1 ratio to receive either osimertinib (80 mg once daily) or one of two other EGFR-TKIs (gefitinib at a dose of 250 mg once daily or erlotinib at a dose of 150 mg once daily, with patients receiving these drugs combined in a single comparator group).",
+            "start": 617,
+            "end": 1020,
+            "source_id": "pmid:31751012",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Overall survival was a secondary end point.",
+            "start": 1021,
+            "end": 1064,
+            "source_id": "pmid:31751012",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "7cab404dccf29e9e9a81d745e9184fb1367b63207901d33936d37df23544a8e9"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "FLAURA",
           "outcome": "Overall survival",
           "effect": {
             "measure": "hazard ratio",
             "estimate": 0.8,
             "lower": 0.64,
             "upper": 1.0,
-            "confidence_level": 95.05
+            "confidence_level": 95.05,
+            "units": "death",
+            "origin": "reported"
           },
           "median_months": {
             "intervention": 38.6,
             "comparator": 31.8
           },
-          "note": "Published 2019. Biomarker-selected trial; not a biomarker-positive versus biomarker-negative treatment interaction test."
+          "note": "FLAURA overall-survival report; overlaps the progression-free survival publication from the same trial."
         }
       ],
       "sources": [
@@ -1619,9 +3370,21 @@
           "url": "https://www.cancer.gov/about-cancer/treatment/types/biomarker-testing-cancer-treatment",
           "accessed": "2026-09-13",
           "kind": "reference"
+        },
+        {
+          "title": "Osimertinib in Untreated EGFR-Mutated Advanced Non-Small-Cell Lung Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29151359/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        },
+        {
+          "title": "Overall Survival with Osimertinib in Untreated, EGFR -Mutated Advanced NSCLC.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31751012/",
+          "accessed": "2026-09-13",
+          "kind": "study"
         }
       ],
-      "review_status": "reference_summary",
+      "review_status": "automated_appraisal",
       "assessments": {
         "Assay validity": {
           "rating": "Not yet assessed",
@@ -1660,10 +3423,10 @@
           "type": "forest",
           "measure": "hr",
           "title": "FLAURA: overall survival effect",
-          "caption": "Hazard ratio for death with a 95.05% confidence interval. This is the overall biomarker-selected trial estimate, not a subgroup interaction analysis.",
+          "caption": "Hazard ratio for death with a 95.05% confidence interval. This is the overall biomarker-selected trial estimate, not a subgroup interaction analysis. Automated source extraction; human appraisal pending.",
           "x_label": "Hazard ratio",
           "y_label": "Trial population",
-          "source_url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa1913662",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31751012/",
           "source_title": "Overall Survival with Osimertinib in Untreated, EGFR-Mutated Advanced NSCLC",
           "illustrative": false,
           "rows": [
@@ -1676,7 +3439,529 @@
           ]
         }
       ],
-      "aliases": []
+      "aliases": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ]
+    },
+    {
+      "id": "non-hdl-c",
+      "name": "Non-HDL cholesterol",
+      "entity_type": "biomarker",
+      "category": "Lipids",
+      "summary": "Non-HDL cholesterol and ApoB are compared as cardiovascular risk markers in a UK Biobank discordance study.",
+      "roles": [
+        "risk",
+        "treatment target",
+        "monitoring"
+      ],
+      "conditions": [
+        "Cardiovascular"
+      ],
+      "context": "Observational prediction and intervention effects are separate questions. The selected study is not a trial of a non-HDL target.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "Non-HDL cholesterol",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Cardiovascular events",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "pmid:38700053",
+          "pmid": "38700053",
+          "doi": "10.1093/eurheartj/ehae258",
+          "title": "Discordance among apoB, non-high-density lipoprotein cholesterol, and triglycerides: implications for cardiovascular prevention.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38700053/",
+          "year": "2024",
+          "design": "Prospective cohort",
+          "population": "Human; 293,876 UK Biobank adults without cardiovascular disease",
+          "n": 293876,
+          "exposure": "Residual ApoB after adjustment for non-HDL-C and HDL-C",
+          "comparator": "Adjusted proportional hazards model",
+          "abstract": "Background and aims Despite growing evidence that apolipoprotein B (apoB) is the most accurate marker of atherosclerotic cardiovascular disease (ASCVD) risk, its adoption in clinical practice has been low. This investigation sought to determine whether low-density lipoprotein cholesterol (LDL-C), non-high-density lipoprotein cholesterol (HDL-C), and triglycerides are sufficient for routine cardiovascular care. Methods A sample of 293 876 UK Biobank adults (age: 40-73 years, 42% men), free of cardiovascular disease, with a median follow-up for new-onset ASCVD of 11 years was included. Distribution of apoB at pre-specified levels of LDL-C, non-HDL-C, and triglycerides was examined graphically, and 10-year ASCVD event rates were compared for high vs. low apoB. Residuals of apoB were constructed after regressing apoB on LDL-C, non-HDL-C, and log-transformed triglycerides and used as predictors in a proportional hazards regression model for new-onset ASCVD adjusted for standard risk factors, including HDL-C. Results ApoB was highly correlated with LDL-C and non-HDL-C (Pearson's r = .96, P < .001 for both) but less so with log triglycerides (r = .42, P < .001). However, apoB ranges necessary to capture 95% of all observations at pre-specified levels of LDL-C, non-HDL-C, or triglycerides were wide, spanning 85.8-108.8 md/dL when LDL-C 130 mg/dL, 88.3-112.4 mg/dL when non-HDL-C 160 mg/dL, and 67.8-147.4 md/dL when triglycerides 115 mg/dL. At these levels (±10 mg/dL), 10-year ASCVD rates for apoB above mean + 1 SD vs. below mean - 1 SD were 7.3 vs. 4.0 for LDL-C, 6.4 vs. 4.6 for non-HDL-C, and 7.0 vs. 4.6 for triglycerides (all P < .001). With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15). None of the residuals of LDL-C, non-HDL-C, or of log triglycerides remained significant when apoB was included in the model. Conclusions High variability of apoB at individual levels of LDL-C, non-HDL-C, and triglycerides coupled with meaningful differences in 10-year ASCVD rates and significant residual information contained in apoB for prediction of new-onset ASCVD events demonstrate that LDL-C, non-HDL-C, and triglycerides are not adequate proxies for apoB in clinical care.",
+          "findings": [
+            {
+              "outcome": "Cardiovascular events",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 1.04,
+                "lower": 1.03,
+                "upper": 1.06,
+                "confidence_level": 95,
+                "units": "model-specific residual ApoB",
+                "origin": "reported"
+              },
+              "quote": "With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15).",
+              "source_span": {
+                "text": "With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15).",
+                "start": 1658,
+                "end": 2072,
+                "source_id": "pmid:38700053",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "With 19 982 new-onset ASCVD events on follow-up, in the adjusted model, residual apoB remained statistically significant after accounting for LDL-C and HDL-C (hazard ratio 1.06, 95% confidence interval 1.0-1.07), after accounting for non-HDL-C and HDL-C (hazard ratio 1.04, 95% confidence interval 1.03-1.06), and after accounting for triglycerides and HDL-C (hazard ratio 1.13, 95% confidence interval 1.12-1.15).",
+          "population_span": {
+            "text": "A sample of 293 876 UK Biobank adults (age: 40-73 years, 42% men), free of cardiovascular disease, with a median follow-up for new-onset ASCVD of 11 years was included.",
+            "start": 422,
+            "end": 590,
+            "source_id": "pmid:38700053",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "A sample of 293 876 UK Biobank adults (age: 40-73 years, 42% men), free of cardiovascular disease, with a median follow-up for new-onset ASCVD of 11 years was included.",
+            "start": 422,
+            "end": 590,
+            "source_id": "pmid:38700053",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "8b6aa6dfcb64bedb8fd1e05c2ff649d66a5f34bbbd3677559d89847a113b9610"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "UK-Biobank-apoB-2024"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Discordance among apoB, non-high-density lipoprotein cholesterol, and triglycerides: implications for cardiovascular prevention.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38700053/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "apob",
+        "ldl-c",
+        "cac"
+      ],
+      "changing_marker": "Marker associations do not establish the benefit of targeting a marker.",
+      "measurement": {
+        "units": "mg/dL",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [
+        "non HDL C",
+        "non-HDL-C"
+      ],
+      "influences": [
+        "Genetic background and the overall lipoprotein profile",
+        "Current lipid-lowering treatment and the clinical reason for testing"
+      ],
+      "figures": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ]
+    },
+    {
+      "id": "cystatin-c",
+      "name": "Cystatin C",
+      "entity_type": "biomarker",
+      "category": "Kidney",
+      "summary": "Cystatin C and creatinine are compared for kidney-function estimation and risk classification in a cohort meta-analysis.",
+      "roles": [
+        "diagnostic",
+        "monitoring"
+      ],
+      "conditions": [
+        "Kidney"
+      ],
+      "context": "Cohort associations and reclassification statistics are not evidence that testing itself improves outcomes.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "Cystatin C-based eGFR",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Mortality risk reclassification",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        },
+        {
+          "name": "Kidney failure risk reclassification",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "pmid:24004120",
+          "pmid": "24004120",
+          "doi": "10.1056/nejmoa1214234",
+          "title": "Cystatin C versus creatinine in determining risk based on kidney function.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24004120/",
+          "year": "2013",
+          "design": "Cohort meta-analysis",
+          "population": "Human; 11 general-population and 5 CKD cohorts",
+          "n": null,
+          "exposure": "Cystatin C-based eGFR",
+          "comparator": "Creatinine-based eGFR",
+          "abstract": "Background Adding the measurement of cystatin C to that of serum creatinine to determine the estimated glomerular filtration rate (eGFR) improves accuracy, but the effect on detection, staging, and risk classification of chronic kidney disease across diverse populations has not been determined. Methods We performed a meta-analysis of 11 general-population studies (with 90,750 participants) and 5 studies of cohorts with chronic kidney disease (2960 participants) for whom standardized measurements of serum creatinine and cystatin C were available. We compared the association of the eGFR, as calculated by the measurement of creatinine or cystatin C alone or in combination with creatinine, with the rates of death (13,202 deaths in 15 cohorts), death from cardiovascular causes (3471 in 12 cohorts), and end-stage renal disease (1654 cases in 7 cohorts) and assessed improvement in reclassification with the use of cystatin C. Results In the general-population cohorts, the prevalence of an eGFR of less than 60 ml per minute per 1.73 m(2) of body-surface area was higher with the cystatin C-based eGFR than with the creatinine-based eGFR (13.7% vs. 9.7%). Across all eGFR categories, the reclassification of the eGFR to a higher value with the measurement of cystatin C, as compared with creatinine, was associated with a reduced risk of all three study outcomes, and reclassification to a lower eGFR was associated with an increased risk. The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease. Results were generally similar for the five cohorts with chronic kidney disease and when both creatinine and cystatin C were used to calculate the eGFR. Conclusions The use of cystatin C alone or in combination with creatinine strengthens the association between the eGFR and the risks of death and end-stage renal disease across diverse populations. (Funded by the National Kidney Foundation and others.).",
+          "findings": [
+            {
+              "outcome": "Mortality risk reclassification",
+              "effect": {
+                "measure": "net reclassification improvement",
+                "estimate": 0.23,
+                "lower": 0.18,
+                "upper": 0.28,
+                "confidence_level": 95,
+                "units": "index; not a risk ratio",
+                "origin": "reported"
+              },
+              "quote": "The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease.",
+              "source_span": {
+                "text": "The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease.",
+                "start": 1446,
+                "end": 1672,
+                "source_id": "pmid:24004120",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            },
+            {
+              "outcome": "Kidney failure risk reclassification",
+              "effect": {
+                "measure": "net reclassification improvement",
+                "estimate": 0.1,
+                "lower": 0.0,
+                "upper": 0.21,
+                "confidence_level": 95,
+                "units": "index; not a risk ratio",
+                "origin": "reported"
+              },
+              "quote": "The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease.",
+              "source_span": {
+                "text": "The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease.",
+                "start": 1446,
+                "end": 1672,
+                "source_id": "pmid:24004120",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "The net reclassification improvement with the measurement of cystatin C, as compared with creatinine, was 0.23 (95% confidence interval [CI], 0.18 to 0.28) for death and 0.10 (95% CI, 0.00 to 0.21) for end-stage renal disease.",
+          "population_span": {
+            "text": "We performed a meta-analysis of 11 general-population studies (with 90,750 participants) and 5 studies of cohorts with chronic kidney disease (2960 participants) for whom standardized measurements of serum creatinine and cystatin C were available.",
+            "start": 304,
+            "end": 551,
+            "source_id": "pmid:24004120",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "We performed a meta-analysis of 11 general-population studies (with 90,750 participants) and 5 studies of cohorts with chronic kidney disease (2960 participants) for whom standardized measurements of serum creatinine and cystatin C were available.",
+            "start": 304,
+            "end": 551,
+            "source_id": "pmid:24004120",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "284a598e01bdcac8d0242b76f89b0ce0dce83003c94cf543441ff5e3bfae852c"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "CKD-PC-2013"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cystatin C versus creatinine in determining risk based on kidney function.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24004120/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "creatinine-egfr"
+      ],
+      "changing_marker": "Risk reclassification does not establish that changing this marker changes outcomes.",
+      "measurement": {
+        "units": "mg/L (cystatin C); mL/min/1.73 m² (eGFR)",
+        "reference_range": "Use the laboratory-specific assay and applicable estimation equation."
+      },
+      "aliases": [
+        "Cystatin C-based eGFR"
+      ],
+      "influences": [
+        "Interpret the assay and estimating equation together; source review is incomplete."
+      ],
+      "figures": [],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ],
+      "related_interventions": [
+        {
+          "name": "Creatine",
+          "path": "/compound/creatine",
+          "relationship": "Related research topic; not evidence of clinical benefit"
+        }
+      ]
+    },
+    {
+      "id": "msi-pembrolizumab",
+      "name": "MSI-H / dMMR colorectal cancer × pembrolizumab",
+      "entity_type": "precision_oncology",
+      "category": "Immunotherapy",
+      "summary": "KEYNOTE-177 compares first-line pembrolizumab with chemotherapy in metastatic MSI-H / dMMR colorectal cancer.",
+      "roles": [
+        "predictive"
+      ],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "This biomarker-selected trial does not compare treatment effects in biomarker-positive and biomarker-negative populations. The initial report does not establish mature overall survival.",
+      "evidence_question": "Does this biological feature change prognosis or treatment response?",
+      "population": "Human adults with previously untreated metastatic MSI-H / dMMR colorectal cancer",
+      "exposure": "Pembrolizumab 200 mg every 3 weeks",
+      "comparator": "5-fluorouracil-based chemotherapy",
+      "outcomes": [
+        {
+          "name": "Progression-free survival",
+          "question_type": "study_specific",
+          "assessment": "Automated extraction; appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "pmid:33264544",
+          "pmid": "33264544",
+          "doi": "10.1056/nejmoa2017699",
+          "title": "Pembrolizumab in Microsatellite-Instability-High Advanced Colorectal Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33264544/",
+          "year": "2020",
+          "design": "Randomized controlled trial",
+          "population": "Human; Previously untreated metastatic MSI-H / dMMR colorectal cancer",
+          "n": 307,
+          "exposure": "Pembrolizumab 200 mg every 3 weeks",
+          "comparator": "5-fluorouracil chemotherapy with or without biologic therapy",
+          "abstract": "Background Programmed death 1 (PD-1) blockade has clinical benefit in microsatellite-instability-high (MSI-H) or mismatch-repair-deficient (dMMR) tumors after previous therapy. The efficacy of PD-1 blockade as compared with chemotherapy as first-line therapy for MSI-H-dMMR advanced or metastatic colorectal cancer is unknown. Methods In this phase 3, open-label trial, 307 patients with metastatic MSI-H-dMMR colorectal cancer who had not previously received treatment were randomly assigned, in a 1:1 ratio, to receive pembrolizumab at a dose of 200 mg every 3 weeks or chemotherapy (5-fluorouracil-based therapy with or without bevacizumab or cetuximab) every 2 weeks. Patients receiving chemotherapy could cross over to pembrolizumab therapy after disease progression. The two primary end points were progression-free survival and overall survival. Results At the second interim analysis, after a median follow-up (from randomization to data cutoff) of 32.4 months (range, 24.0 to 48.3), pembrolizumab was superior to chemotherapy with respect to progression-free survival (median, 16.5 vs. 8.2 months; hazard ratio, 0.60; 95% confidence interval [CI], 0.45 to 0.80; P = 0.0002). The estimated restricted mean survival after 24 months of follow-up was 13.7 months (range, 12.0 to 15.4) as compared with 10.8 months (range, 9.4 to 12.2). As of the data cutoff date, 56 patients in the pembrolizumab group and 69 in the chemotherapy group had died. Data on overall survival were still evolving (66% of required events had occurred) and remain blinded until the final analysis. An overall response (complete or partial response), as evaluated with Response Evaluation Criteria in Solid Tumors (RECIST), version 1.1, was observed in 43.8% of the patients in the pembrolizumab group and 33.1% in the chemotherapy group. Among patients with an overall response, 83% in the pembrolizumab group, as compared with 35% of patients in the chemotherapy group, had ongoing responses at 24 months. Treatment-related adverse events of grade 3 or higher occurred in 22% of the patients in the pembrolizumab group, as compared with 66% (including one patient who died) in the chemotherapy group. Conclusions Pembrolizumab led to significantly longer progression-free survival than chemotherapy when received as first-line therapy for MSI-H-dMMR metastatic colorectal cancer, with fewer treatment-related adverse events. (Funded by Merck Sharp and Dohme and by Stand Up to Cancer; KEYNOTE-177 ClinicalTrials.gov number, NCT02563002.).",
+          "findings": [
+            {
+              "outcome": "Progression-free survival",
+              "effect": {
+                "measure": "hazard ratio",
+                "estimate": 0.6,
+                "lower": 0.45,
+                "upper": 0.8,
+                "confidence_level": 95,
+                "units": "progression or death",
+                "origin": "reported"
+              },
+              "quote": "At the second interim analysis, after a median follow-up (from randomization to data cutoff) of 32.4 months (range, 24.0 to 48.3), pembrolizumab was superior to chemotherapy with respect to progression-free survival (median, 16.5 vs. 8.2 months; hazard ratio, 0.60; 95% confidence interval [CI], 0.45 to 0.80; P = 0.0002).",
+              "source_span": {
+                "text": "At the second interim analysis, after a median follow-up (from randomization to data cutoff) of 32.4 months (range, 24.0 to 48.3), pembrolizumab was superior to chemotherapy with respect to progression-free survival (median, 16.5 vs. 8.2 months; hazard ratio, 0.60; 95% confidence interval [CI], 0.45 to 0.80; P = 0.0002).",
+                "start": 861,
+                "end": 1183,
+                "source_id": "pmid:33264544",
+                "basis": "normalized abstract"
+              },
+              "review_status": "automated_appraisal"
+            }
+          ],
+          "quote": "At the second interim analysis, after a median follow-up (from randomization to data cutoff) of 32.4 months (range, 24.0 to 48.3), pembrolizumab was superior to chemotherapy with respect to progression-free survival (median, 16.5 vs. 8.2 months; hazard ratio, 0.60; 95% confidence interval [CI], 0.45 to 0.80; P = 0.0002).",
+          "population_span": {
+            "text": "In this phase 3, open-label trial, 307 patients with metastatic MSI-H-dMMR colorectal cancer who had not previously received treatment were randomly assigned, in a 1:1 ratio, to receive pembrolizumab at a dose of 200 mg every 3 weeks or chemotherapy (5-fluorouracil-based therapy with or without bevacizumab or cetuximab) every 2 weeks.",
+            "start": 335,
+            "end": 671,
+            "source_id": "pmid:33264544",
+            "basis": "normalized abstract"
+          },
+          "scope_passage": {
+            "text": "Data on overall survival were still evolving (66% of required events had occurred) and remain blinded until the final analysis.",
+            "start": 1451,
+            "end": 1578,
+            "source_id": "pmid:33264544",
+            "basis": "normalized abstract"
+          },
+          "review_status": "automated_appraisal",
+          "extraction": {
+            "method": "source-constrained structured extraction; deterministic span validation",
+            "version": "selected-enrichment-v1",
+            "extracted_at": "2026-09-13",
+            "human_verified": false,
+            "source_sha256": "d5b1fbf827735d706f8a6ed2d99addac752d8e307b0cb3a08abd65694392f731"
+          },
+          "limitations": [
+            "Selected abstract-based record; full-text risk-of-bias and applicability appraisal are pending."
+          ],
+          "cohort_id": "KEYNOTE-177"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Pembrolizumab in Microsatellite-Instability-High Advanced Colorectal Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33264544/",
+          "accessed": "2026-09-13",
+          "kind": "study"
+        }
+      ],
+      "review_status": "automated_appraisal",
+      "assessments": {
+        "Assay validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Prognostic evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Treatment interaction": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical benefit": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Applicability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "fit",
+        "colonoscopy"
+      ],
+      "disease_context": {
+        "cancer_type": "Colorectal cancer",
+        "stage": "Metastatic",
+        "molecular_subtype": "MSI-H / dMMR",
+        "biomarker": "Microsatellite instability / mismatch-repair deficiency",
+        "therapy": "Pembrolizumab",
+        "treatment_line": "First line"
+      },
+      "figures": [
+        {
+          "type": "forest",
+          "measure": "hr",
+          "title": "KEYNOTE-177: reported outcome estimates",
+          "caption": "Automated extraction from the cited abstract; human appraisal pending. Each row is a separate endpoint. No pooling; a confidence interval crossing 1 includes the null.",
+          "x_label": "hazard ratio",
+          "y_label": "Outcome",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/33264544/",
+          "source_title": "Pembrolizumab in Microsatellite-Instability-High Advanced Colorectal Cancer.",
+          "illustrative": false,
+          "rows": [
+            {
+              "label": "Progression-free survival",
+              "estimate": 0.6,
+              "lower": 0.45,
+              "upper": 0.8
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "MSI-H",
+        "dMMR",
+        "KEYNOTE-177"
+      ],
+      "last_enriched_at": "2026-09-13",
+      "enrichment_scope": "Selected source records added; not a completed systematic search or human appraisal.",
+      "updates": [
+        {
+          "date": "2026-09-13",
+          "kind": "source_enrichment",
+          "text": "Added quote-backed study records and reported estimates. Evidence grades unchanged.",
+          "review_status": "automated_appraisal"
+        }
+      ]
     }
   ]
 }
