@@ -1,0 +1,1681 @@
+{
+  "schema_version": 1,
+  "catalog_version": "2026-09-13.beta.1",
+  "frameworks": {
+    "intervention": {
+      "question": "Does this intervention help?",
+      "dimensions": [
+        "Efficacy",
+        "Safety",
+        "Applicability"
+      ],
+      "method": "Existing intervention evidence grader; human, animal, and mechanistic evidence remain separate."
+    },
+    "biomarker": {
+      "question": "What does this number mean?",
+      "dimensions": [
+        "Analytical validity",
+        "Biological variability",
+        "Association strength",
+        "Predictive value",
+        "Causal evidence",
+        "Clinical utility"
+      ],
+      "method": "Assess each dimension independently. Association, incremental prediction, causality, and benefit from changing a marker require different evidence."
+    },
+    "diagnostic": {
+      "question": "How accurately does this test identify disease?",
+      "dimensions": [
+        "Reference standard",
+        "Sensitivity",
+        "Specificity",
+        "Applicability",
+        "Risk of bias"
+      ],
+      "method": "Assess test accuracy against an explicit reference standard at a specified threshold in a defined population. Predictive values depend on pre-test probability."
+    },
+    "screening": {
+      "question": "Does testing people before symptoms improve outcomes?",
+      "dimensions": [
+        "Disease-specific mortality",
+        "All-cause mortality",
+        "Stage at diagnosis",
+        "Overdiagnosis",
+        "False positives",
+        "Unnecessary procedures",
+        "Psychological harms",
+        "Number needed to screen"
+      ],
+      "method": "Evaluate comparative downstream outcomes over a stated time horizon. Detection accuracy and stage shift alone do not establish a mortality benefit."
+    },
+    "precision_oncology": {
+      "question": "Does this biological feature change prognosis or treatment response?",
+      "dimensions": [
+        "Assay validity",
+        "Prognostic evidence",
+        "Treatment interaction",
+        "Clinical benefit",
+        "Applicability"
+      ],
+      "method": "Keep cancer type, stage, molecular subtype, biomarker, treatment line, comparator, and outcome together. Benefit in a selected subgroup does not by itself establish a biomarker-by-treatment interaction."
+    }
+  },
+  "roles": {
+    "diagnostic": "Helps identify disease.",
+    "prognostic": "Predicts the course of disease independently of a particular treatment.",
+    "predictive": "Identifies differences in the effect of a particular treatment.",
+    "monitoring": "Tracks disease status or response over time.",
+    "pharmacodynamic": "Shows biological activity after exposure to a treatment.",
+    "risk": "Indicates the likelihood of developing an outcome.",
+    "treatment target": "A measurement used to guide the intensity or goal of treatment."
+  },
+  "entities": [
+    {
+      "id": "apob",
+      "name": "ApoB",
+      "entity_type": "biomarker",
+      "category": "Lipids",
+      "summary": "A blood measurement of apolipoprotein B, a protein carried by atherogenic lipoproteins. It helps characterize particle burden.",
+      "roles": [
+        "risk",
+        "treatment target",
+        "monitoring"
+      ],
+      "conditions": [
+        "Cardiovascular"
+      ],
+      "context": "Interpret alongside the lipid profile, metabolic context, treatment, and baseline cardiovascular risk.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "ApoB",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Cardiovascular events",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Coronary artery disease",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Stroke",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "All-cause mortality",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Apolipoprotein B — MedlinePlus",
+          "url": "https://www.medlineplus.gov/ency/article/003502.htm",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "ldl-c",
+        "cac"
+      ],
+      "changing_marker": "Changes in the marker and changes in cardiovascular events are separate endpoints. Assess intervention trials before attributing clinical benefit to marker reduction.",
+      "measurement": {
+        "units": "mg/dL",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [
+        "Apolipoprotein B"
+      ],
+      "influences": [
+        "Genetic background and the overall lipoprotein profile",
+        "Current lipid-lowering treatment and the clinical reason for testing"
+      ]
+    },
+    {
+      "id": "ldl-c",
+      "name": "LDL-C",
+      "entity_type": "biomarker",
+      "category": "Lipids",
+      "summary": "The amount of cholesterol carried in low-density lipoproteins.",
+      "roles": [
+        "risk",
+        "treatment target",
+        "monitoring"
+      ],
+      "conditions": [
+        "Cardiovascular"
+      ],
+      "context": "LDL-C measures cholesterol content; it is not the same measurement as ApoB particle burden.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "LDL-C",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Coronary artery disease",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Cardiovascular events",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Cholesterol — MedlinePlus",
+          "url": "https://medlineplus.gov/cholesterol.html",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "apob"
+      ],
+      "changing_marker": "Evaluate clinical outcomes from the specific lipid-lowering intervention; do not infer the size of benefit from a laboratory change alone.",
+      "measurement": {
+        "units": "mg/dL or mmol/L",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [
+        "LDL",
+        "LDL cholesterol"
+      ],
+      "influences": [
+        "Diet and other cardiovascular risk factors",
+        "Lipid-lowering medications and inherited lipid disorders"
+      ]
+    },
+    {
+      "id": "hba1c",
+      "name": "HbA1c",
+      "entity_type": "biomarker",
+      "category": "Metabolism",
+      "summary": "Glycated hemoglobin reflects average blood glucose over roughly the preceding three months.",
+      "roles": [
+        "diagnostic",
+        "monitoring",
+        "treatment target"
+      ],
+      "conditions": [
+        "Metabolic"
+      ],
+      "context": "Anemia, altered red-cell turnover, hemoglobin variants, and pregnancy can affect interpretation. Confirmation may be needed for diagnosis.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "HbA1c",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Diabetes diagnosis",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Glycemic control",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "The A1C Test & Diabetes — NIDDK",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "hba1c-diagnosis"
+      ],
+      "changing_marker": "HbA1c can guide diabetes care, but treatment benefits and harms must be assessed using patient outcomes and the particular intervention.",
+      "measurement": {
+        "units": "% or mmol/mol",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [
+        "A1c",
+        "Hemoglobin A1c"
+      ],
+      "influences": [
+        "Recent average glucose exposure",
+        "Red-cell turnover and hemoglobin variants"
+      ]
+    },
+    {
+      "id": "crp",
+      "name": "CRP / hs-CRP",
+      "entity_type": "biomarker",
+      "category": "Inflammation",
+      "summary": "C-reactive protein is a marker of inflammation. High-sensitivity assays measure lower concentrations.",
+      "roles": [
+        "risk",
+        "monitoring"
+      ],
+      "conditions": [
+        "Cardiovascular",
+        "Inflammatory"
+      ],
+      "context": "An elevated value does not locate the cause of inflammation. Infection and other inflammatory conditions affect results.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "CRP / hs-CRP",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Inflammatory activity",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Cardiovascular risk",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "C-Reactive Protein Test — MedlinePlus",
+          "url": "https://medlineplus.gov/lab-tests/c-reactive-protein-crp-test/",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [],
+      "changing_marker": "A reduction in inflammation markers is not, by itself, proof of improved clinical outcomes.",
+      "measurement": {
+        "units": "mg/L",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [
+        "CRP",
+        "hs-CRP",
+        "hsCRP"
+      ],
+      "influences": [
+        "Infection or other inflammatory activity",
+        "Whether the assay is CRP or high-sensitivity CRP"
+      ]
+    },
+    {
+      "id": "testosterone",
+      "name": "Testosterone",
+      "entity_type": "biomarker",
+      "category": "Hormones",
+      "summary": "Measures a sex hormone involved in reproductive function and other biological processes.",
+      "roles": [
+        "diagnostic",
+        "monitoring"
+      ],
+      "conditions": [
+        "Endocrine"
+      ],
+      "context": "Interpret with symptoms, age, sex, collection time, and assay method. Total and free testosterone answer different measurement questions.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "Testosterone",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Hypogonadism evaluation",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Testosterone Levels Test — MedlinePlus",
+          "url": "https://medlineplus.gov/lab-tests/testosterone-levels-test/",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [],
+      "changing_marker": "Treatment evidence must specify the diagnosed condition and patient population; raising a value does not establish general health benefit.",
+      "measurement": {
+        "units": "ng/dL or nmol/L",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [],
+      "influences": [
+        "Time of sample collection",
+        "Age, symptoms, and whether total or free testosterone was measured"
+      ]
+    },
+    {
+      "id": "igf-1",
+      "name": "IGF-1",
+      "entity_type": "biomarker",
+      "category": "Hormones",
+      "summary": "Insulin-like growth factor 1 helps evaluate growth-hormone activity.",
+      "roles": [
+        "diagnostic",
+        "monitoring"
+      ],
+      "conditions": [
+        "Endocrine"
+      ],
+      "context": "Age and clinical context matter. Endocrine evaluation should not be repurposed as a generic longevity score.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "IGF-1",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Growth-hormone disorders",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "IGF-1 Test — MedlinePlus",
+          "url": "https://medlineplus.gov/lab-tests/igf-1-insulin-like-growth-factor-1-test/",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [],
+      "changing_marker": "Changing IGF-1 does not by itself demonstrate longer life or improved health.",
+      "measurement": {
+        "units": "ng/mL",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [
+        "IGF1"
+      ],
+      "influences": [
+        "Age and growth-hormone activity",
+        "The endocrine condition being investigated"
+      ]
+    },
+    {
+      "id": "vitamin-d",
+      "name": "Vitamin D",
+      "entity_type": "biomarker",
+      "category": "Metabolism",
+      "summary": "Blood testing typically measures 25-hydroxyvitamin D to assess vitamin D status.",
+      "roles": [
+        "diagnostic",
+        "monitoring"
+      ],
+      "conditions": [
+        "Metabolic",
+        "Bone health"
+      ],
+      "context": "Interpret using the assay, clinical indication, and relevant bone or mineral disorder.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "Vitamin D",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Vitamin D deficiency",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Bone health",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Vitamin D Test — MedlinePlus",
+          "url": "https://medlineplus.gov/lab-tests/vitamin-d-test/",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [],
+      "changing_marker": "Correcting deficiency and supplementing an unselected population are distinct intervention questions.",
+      "measurement": {
+        "units": "ng/mL or nmol/L",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [],
+      "influences": [
+        "Vitamin D intake and supplementation",
+        "The clinical reason for assessing vitamin D status"
+      ]
+    },
+    {
+      "id": "creatinine-egfr",
+      "name": "Creatinine / eGFR",
+      "entity_type": "biomarker",
+      "category": "Kidney",
+      "summary": "Creatinine is a blood measurement used in equations that estimate kidney filtration.",
+      "roles": [
+        "diagnostic",
+        "monitoring"
+      ],
+      "conditions": [
+        "Kidney"
+      ],
+      "context": "eGFR is an estimate, not a directly measured filtration rate. Consider muscle mass, changes over time, and other kidney findings.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "Creatinine / eGFR",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Kidney function",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Chronic kidney disease",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "GFR Test — MedlinePlus",
+          "url": "https://medlineplus.gov/lab-tests/glomerular-filtration-rate-gfr-test/",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [],
+      "changing_marker": "A laboratory change must be interpreted alongside kidney outcomes and the clinical setting.",
+      "measurement": {
+        "units": "Creatinine: mg/dL; eGFR: mL/min/1.73 m²",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [
+        "Creatinine",
+        "eGFR"
+      ],
+      "influences": [
+        "Muscle mass and creatinine production",
+        "Changes over time and other markers of kidney disease"
+      ]
+    },
+    {
+      "id": "alt-ast",
+      "name": "ALT / AST",
+      "entity_type": "biomarker",
+      "category": "Liver",
+      "summary": "Enzymes measured in blood as part of an evaluation for tissue or liver injury.",
+      "roles": [
+        "diagnostic",
+        "monitoring"
+      ],
+      "conditions": [
+        "Liver"
+      ],
+      "context": "The pattern of results and other tests matter; an enzyme level does not establish the underlying cause.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "ALT / AST",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Liver injury evaluation",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Liver Function Tests — MedlinePlus",
+          "url": "https://www.medlineplus.gov/lab-tests/liver-function-tests/",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [],
+      "changing_marker": "Lower enzyme values do not independently establish that an intervention prevents liver disease complications.",
+      "measurement": {
+        "units": "U/L",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [
+        "ALT",
+        "AST"
+      ],
+      "influences": [
+        "The source of tissue injury",
+        "The pattern across other liver-panel measurements"
+      ]
+    },
+    {
+      "id": "psa",
+      "name": "PSA",
+      "entity_type": "biomarker",
+      "category": "Cancer markers",
+      "summary": "Prostate-specific antigen is a protein measured in blood during prostate evaluation and monitoring.",
+      "roles": [
+        "risk",
+        "monitoring"
+      ],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "Benign conditions can raise PSA. An elevated result is not a diagnosis of cancer.",
+      "evidence_question": "What does this number mean?",
+      "population": "See the population and limitations in the linked sources.",
+      "exposure": "PSA",
+      "comparator": null,
+      "outcomes": [
+        {
+          "name": "Prostate cancer evaluation",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Disease monitoring",
+          "question_type": "association",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Prostate-Specific Antigen Test — NCI",
+          "url": "https://www.cancer.gov/types/prostate/psa-fact-sheet",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Analytical validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Biological variability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Association strength": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Predictive value": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Causal evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical utility": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "psa-screening"
+      ],
+      "changing_marker": "Detection and monitoring are different from proving that population screening improves survival.",
+      "measurement": {
+        "units": "ng/mL",
+        "reference_range": "Use the reporting laboratory’s interval and the applicable clinical context; a reference interval is not necessarily a treatment target."
+      },
+      "aliases": [],
+      "influences": [
+        "Benign prostate enlargement or inflammation",
+        "Prior prostate treatment and changes over time"
+      ]
+    },
+    {
+      "id": "hba1c-diagnosis",
+      "name": "HbA1c for diabetes diagnosis",
+      "entity_type": "diagnostic",
+      "category": "Laboratory test",
+      "summary": "A diagnostic use of glycated hemoglobin, distinct from ongoing glucose monitoring.",
+      "roles": [],
+      "conditions": [
+        "Metabolic"
+      ],
+      "context": "Interpret accuracy in the intended population against a defined diabetes reference standard. Results may require confirmation.",
+      "evidence_question": "How accurately does this test identify disease?",
+      "population": "People being evaluated for the stated clinical question.",
+      "exposure": "HbA1c for diabetes diagnosis",
+      "comparator": null,
+      "outcomes": [],
+      "studies": [],
+      "sources": [
+        {
+          "title": "The A1C Test & Diabetes — NIDDK",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Reference standard": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Sensitivity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Specificity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Applicability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Risk of bias": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "hba1c"
+      ],
+      "test_performance": {
+        "sensitivity": null,
+        "specificity": null,
+        "threshold": null,
+        "reference_standard": null,
+        "note": "No pooled accuracy estimate is asserted. Accuracy depends on the threshold, reference standard, and population."
+      },
+      "aliases": []
+    },
+    {
+      "id": "cac",
+      "name": "Coronary artery calcium scoring",
+      "entity_type": "diagnostic",
+      "category": "Imaging",
+      "summary": "CT imaging quantifies coronary calcification to inform assessment of coronary disease risk.",
+      "roles": [],
+      "conditions": [
+        "Cardiovascular"
+      ],
+      "context": "Risk stratification is distinct from diagnosis of a flow-limiting blockage. A zero score does not exclude all coronary disease.",
+      "evidence_question": "How accurately does this test identify disease?",
+      "population": "People being evaluated for the stated clinical question.",
+      "exposure": "Coronary artery calcium scoring",
+      "comparator": null,
+      "outcomes": [],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Heart Tests — NHLBI",
+          "url": "https://www.nhlbi.nih.gov/health/heart-tests",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Reference standard": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Sensitivity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Specificity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Applicability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Risk of bias": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "apob"
+      ],
+      "test_performance": {
+        "sensitivity": null,
+        "specificity": null,
+        "threshold": null,
+        "reference_standard": null,
+        "note": "No pooled accuracy estimate is asserted. Accuracy depends on the threshold, reference standard, and population."
+      },
+      "aliases": []
+    },
+    {
+      "id": "psa-screening",
+      "name": "PSA screening",
+      "entity_type": "screening",
+      "category": "Laboratory test",
+      "summary": "Testing people without symptoms raises a separate question about benefits and harms of a screening program.",
+      "roles": [],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "Balance prostate-cancer mortality outcomes with false positives, biopsies, overdiagnosis, and overtreatment.",
+      "evidence_question": "Does testing people before symptoms improve outcomes?",
+      "population": "People without symptoms in a specified age and risk group.",
+      "exposure": "PSA screening",
+      "comparator": "No screening or an alternative screening program.",
+      "outcomes": [
+        {
+          "name": "Disease-specific mortality",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "All-cause mortality",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Stage at diagnosis",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Overdiagnosis",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "False positives",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Unnecessary procedures",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Psychological harms",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Number needed to screen",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Prostate-Specific Antigen Test — NCI",
+          "url": "https://www.cancer.gov/types/prostate/psa-fact-sheet",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Disease-specific mortality": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "All-cause mortality": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Stage at diagnosis": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Overdiagnosis": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "False positives": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Unnecessary procedures": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Psychological harms": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Number needed to screen": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "psa"
+      ],
+      "test_performance": {
+        "sensitivity": null,
+        "specificity": null,
+        "threshold": null,
+        "reference_standard": null,
+        "note": "No pooled accuracy estimate is asserted. Accuracy depends on the threshold, reference standard, and population."
+      },
+      "time_horizon": null,
+      "harms": [
+        "False positives",
+        "Biopsies",
+        "Overdiagnosis",
+        "Overtreatment"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "mammography",
+      "name": "Mammography screening",
+      "entity_type": "screening",
+      "category": "Imaging",
+      "summary": "Breast imaging used in a screening program to detect cancer before symptoms.",
+      "roles": [],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "Benefits and harms depend on age, risk, breast density, screening interval, and follow-up.",
+      "evidence_question": "Does testing people before symptoms improve outcomes?",
+      "population": "People without symptoms in a specified age and risk group.",
+      "exposure": "Mammography screening",
+      "comparator": "No screening or an alternative screening program.",
+      "outcomes": [
+        {
+          "name": "Disease-specific mortality",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "All-cause mortality",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Stage at diagnosis",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Overdiagnosis",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "False positives",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Unnecessary procedures",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Psychological harms",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Number needed to screen",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Mammograms — NCI",
+          "url": "https://www.cancer.gov/types/breast/screening/mammograms",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Disease-specific mortality": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "All-cause mortality": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Stage at diagnosis": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Overdiagnosis": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "False positives": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Unnecessary procedures": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Psychological harms": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Number needed to screen": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [],
+      "test_performance": {
+        "sensitivity": null,
+        "specificity": null,
+        "threshold": null,
+        "reference_standard": null,
+        "note": "No pooled accuracy estimate is asserted. Accuracy depends on the threshold, reference standard, and population."
+      },
+      "time_horizon": null,
+      "harms": [
+        "False positives",
+        "Additional imaging or biopsies",
+        "Overdiagnosis",
+        "Radiation exposure"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "fit",
+      "name": "FIT colorectal screening",
+      "entity_type": "screening",
+      "category": "Stool test",
+      "summary": "Fecal immunochemical testing detects blood in stool as part of a colorectal screening pathway.",
+      "roles": [],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "A positive stool test needs follow-up colonoscopy. Program effectiveness depends on repeat testing and follow-up.",
+      "evidence_question": "Does testing people before symptoms improve outcomes?",
+      "population": "People without symptoms in a specified age and risk group.",
+      "exposure": "FIT colorectal screening",
+      "comparator": "No screening or an alternative screening program.",
+      "outcomes": [
+        {
+          "name": "Disease-specific mortality",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "All-cause mortality",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Stage at diagnosis",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Overdiagnosis",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "False positives",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Unnecessary procedures",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Psychological harms",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Number needed to screen",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Colorectal Screening Tests — NCI",
+          "url": "https://www.cancer.gov/types/colorectal/screening-fact-sheet",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Disease-specific mortality": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "All-cause mortality": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Stage at diagnosis": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Overdiagnosis": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "False positives": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Unnecessary procedures": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Psychological harms": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Number needed to screen": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "colonoscopy"
+      ],
+      "test_performance": {
+        "sensitivity": null,
+        "specificity": null,
+        "threshold": null,
+        "reference_standard": null,
+        "note": "No pooled accuracy estimate is asserted. Accuracy depends on the threshold, reference standard, and population."
+      },
+      "time_horizon": null,
+      "harms": [
+        "False positives",
+        "False negatives",
+        "Harms of follow-up colonoscopy"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "colonoscopy",
+      "name": "Colonoscopy screening",
+      "entity_type": "screening",
+      "category": "Procedure",
+      "summary": "A procedure that examines the colon and can remove polyps within a colorectal screening program.",
+      "roles": [],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "Consider procedure quality, follow-up, bleeding, perforation, and the population studied.",
+      "evidence_question": "Does testing people before symptoms improve outcomes?",
+      "population": "People without symptoms in a specified age and risk group.",
+      "exposure": "Colonoscopy screening",
+      "comparator": "No screening or an alternative screening program.",
+      "outcomes": [
+        {
+          "name": "Disease-specific mortality",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "All-cause mortality",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Stage at diagnosis",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Overdiagnosis",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "False positives",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Unnecessary procedures",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Psychological harms",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        },
+        {
+          "name": "Number needed to screen",
+          "question_type": "screening_utility",
+          "assessment": "Not yet assessed"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "Colorectal Screening Tests — NCI",
+          "url": "https://www.cancer.gov/types/colorectal/screening-fact-sheet",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Disease-specific mortality": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "All-cause mortality": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Stage at diagnosis": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Overdiagnosis": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "False positives": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Unnecessary procedures": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Psychological harms": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Number needed to screen": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "fit"
+      ],
+      "test_performance": {
+        "sensitivity": null,
+        "specificity": null,
+        "threshold": null,
+        "reference_standard": null,
+        "note": "No pooled accuracy estimate is asserted. Accuracy depends on the threshold, reference standard, and population."
+      },
+      "time_horizon": null,
+      "harms": [
+        "Bleeding",
+        "Perforation",
+        "Sedation-related complications"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "her2-trastuzumab",
+      "name": "HER2-positive breast cancer × trastuzumab",
+      "entity_type": "precision_oncology",
+      "category": "Targeted therapies",
+      "summary": "The HERA trial evaluates treatment following chemotherapy in HER2-positive early breast cancer. Recurrence and overall survival require separate interpretation.",
+      "roles": [
+        "predictive"
+      ],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "This is a trial-specific evidence relationship, not an individualized treatment recommendation or a complete account of current treatment options.",
+      "evidence_question": "Does this biological feature change prognosis or treatment response?",
+      "population": "Early-stage; adjuvant setting Breast cancer, HER2-positive",
+      "exposure": "Trastuzumab after chemotherapy",
+      "comparator": "Observation after chemotherapy",
+      "outcomes": [
+        {
+          "name": "Disease-free survival",
+          "question_type": "treatment_response",
+          "assessment": "Study-specific summary; full appraisal pending"
+        },
+        {
+          "name": "Overall survival",
+          "question_type": "treatment_response",
+          "assessment": "Study-specific summary; full appraisal pending"
+        }
+      ],
+      "studies": [],
+      "sources": [
+        {
+          "title": "HERA follow-up — NCI",
+          "url": "https://www.cancer.gov/types/breast/research/trastuzumab-after-chemo",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        },
+        {
+          "title": "Biomarker Testing for Cancer Treatment — NCI",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/biomarker-testing-cancer-treatment",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Assay validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Prognostic evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Treatment interaction": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical benefit": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Applicability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "egfr-osimertinib"
+      ],
+      "disease_context": {
+        "cancer_type": "Breast cancer",
+        "stage": "Early-stage; adjuvant setting",
+        "molecular_subtype": "HER2-positive",
+        "biomarker": "HER2 overexpression / amplification",
+        "therapy": "Trastuzumab after chemotherapy",
+        "treatment_line": "Adjuvant"
+      },
+      "study_note": "The NCI summary reports recurrence benefit at four years but no statistically significant overall-survival difference at that analysis. Longer follow-up must be assessed separately.",
+      "aliases": []
+    },
+    {
+      "id": "egfr-osimertinib",
+      "name": "EGFR-mutated NSCLC × osimertinib",
+      "entity_type": "precision_oncology",
+      "category": "Targeted therapies",
+      "summary": "FLAURA compares first-line osimertinib with earlier EGFR inhibitors in advanced, EGFR-mutated non-small cell lung cancer.",
+      "roles": [
+        "predictive"
+      ],
+      "conditions": [
+        "Cancer"
+      ],
+      "context": "This is a trial-specific evidence relationship, not an individualized treatment recommendation or a complete account of current treatment options.",
+      "evidence_question": "Does this biological feature change prognosis or treatment response?",
+      "population": "Advanced; previously untreated Non-small cell lung cancer, EGFR exon 19 deletion or L858R",
+      "exposure": "Osimertinib",
+      "comparator": "Erlotinib or gefitinib",
+      "outcomes": [
+        {
+          "name": "Progression-free survival",
+          "question_type": "treatment_response",
+          "assessment": "Study-specific summary; full appraisal pending"
+        },
+        {
+          "name": "Overall survival",
+          "question_type": "treatment_response",
+          "assessment": "Study-specific summary; full appraisal pending"
+        }
+      ],
+      "studies": [
+        {
+          "id": "FLAURA-OS",
+          "title": "Overall Survival with Osimertinib in Untreated, EGFR-Mutated Advanced NSCLC",
+          "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa1913662",
+          "design": "Randomized controlled trial",
+          "n": 556,
+          "outcome": "Overall survival",
+          "effect": {
+            "measure": "hazard ratio",
+            "estimate": 0.8,
+            "lower": 0.64,
+            "upper": 1.0,
+            "confidence_level": 95.05
+          },
+          "median_months": {
+            "intervention": 38.6,
+            "comparator": 31.8
+          },
+          "note": "Published 2019. Biomarker-selected trial; not a biomarker-positive versus biomarker-negative treatment interaction test."
+        }
+      ],
+      "sources": [
+        {
+          "title": "FLAURA survival results — NCI",
+          "url": "https://www.cancer.gov/news-events/cancer-currents-blog/2019/osimertinib-lung-cancer-improves-survival-flaura",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        },
+        {
+          "title": "Biomarker Testing for Cancer Treatment — NCI",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/biomarker-testing-cancer-treatment",
+          "accessed": "2026-09-13",
+          "kind": "reference"
+        }
+      ],
+      "review_status": "reference_summary",
+      "assessments": {
+        "Assay validity": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Prognostic evidence": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Treatment interaction": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Clinical benefit": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        },
+        "Applicability": {
+          "rating": "Not yet assessed",
+          "rationale": "A structured study-level appraisal has not yet been completed."
+        }
+      },
+      "related": [
+        "her2-trastuzumab"
+      ],
+      "disease_context": {
+        "cancer_type": "Non-small cell lung cancer",
+        "stage": "Advanced; previously untreated",
+        "molecular_subtype": "EGFR exon 19 deletion or L858R",
+        "biomarker": "EGFR exon 19 deletion / L858R",
+        "therapy": "Osimertinib",
+        "treatment_line": "First line"
+      },
+      "figures": [
+        {
+          "type": "forest",
+          "title": "FLAURA: overall survival effect",
+          "caption": "Hazard ratio for death with a 95.05% confidence interval. This is the overall biomarker-selected trial estimate, not a subgroup interaction analysis.",
+          "x_label": "Hazard ratio",
+          "y_label": "Trial population",
+          "source_url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa1913662",
+          "source_title": "Overall Survival with Osimertinib in Untreated, EGFR-Mutated Advanced NSCLC",
+          "illustrative": false,
+          "rows": [
+            {
+              "label": "FLAURA overall",
+              "estimate": 0.8,
+              "lower": 0.64,
+              "upper": 1.0
+            }
+          ]
+        }
+      ],
+      "aliases": []
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "initial_lookback_days": 30,
+  "overlap_days": 7,
+  "interval_days": 7,
+  "max_targets": 25,
+  "max_records": 300,
+  "max_llm_calls": 20,
+  "max_llm_calls_per_day": 100,
+  "sources": ["pubmed", "europe_pmc", "clinical_trials"],
+  "targets": {
+    "entity:egfr-osimertinib": {"priority": 10, "interval_days": 1},
+    "entity:psa-screening": {"priority": 5, "interval_days": 3},
+    "compound:creatine-monohydrate": {"aliases": ["creatine"], "priority": 5}
+  }
+}

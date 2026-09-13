@@ -1,0 +1,22 @@
+# Optional standalone Render worker blueprint. Deploy alongside the existing API.
+# DATABASE_URL must point to the SAME PostgreSQL database as the API service.
+# Adding this file does not activate a service or spend AI tokens.
+services:
+  - type: worker
+    name: clarity-living-research
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m living_research --config living_research/config.example.json watch --llm
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CLARITY_RESEARCH_MODEL
+        sync: false
+      - key: CLARITY_CONTACT_EMAIL
+        sync: false
+      - key: NCBI_API_KEY
+        sync: false
+      - key: PYTHONUNBUFFERED
+        value: "1"

@@ -10,7 +10,12 @@ import ask_engine
 import indications
 import generate
 
+from evidence.routes import blueprint as evidence_blueprint
+from living_research.routes import blueprint as living_research_blueprint
+
 app = Flask(__name__)
+app.register_blueprint(evidence_blueprint)
+app.register_blueprint(living_research_blueprint)
 app.config["MAX_CONTENT_LENGTH"] = 64 * 1024
 
 # Production CORS is explicit. Set CLARITY_ALLOWED_ORIGINS to the comma-separated
@@ -171,13 +176,15 @@ def catalog():
 
 @app.get("/api/profile")
 def profile():
+    from evidence.profile import profile_contract
+    from evidence.analysis import analyse_profile
     topic=(request.args.get("topic") or "").strip(); category=(request.args.get("category") or "supplement").strip()
     ip=_client_ip()
     if not _valid_topic(topic): return jsonify({"error":"invalid topic"}),400
     topic,category,note=_resolve(topic,category)
     p=cache.get(topic)
     if p and _profile_current(p):
-        return jsonify({"profile":p,"source":"cache","alias_note":note})
+        return jsonify({"profile":{**p,"evidence_profile":profile_contract(p),'analysis':analyse_profile(p)},"source":"cache","alias_note":note})
     # A stale profile is never served as current evidence, but it is deliberately
     # kept until the fresh replacement succeeds (run.research overwrites it).
     # Public launch defaults to an audited, pre-generated catalog. This prevents
@@ -190,7 +197,7 @@ def profile():
     if not _generation_budget_ok(): return jsonify({"error":"daily research limit reached; try again tomorrow","hint":"already-researched compounds are still available"}),503
     try:
         _count_generation(); result=run.research(topic,category,use_cache=True,verbose=False)
-        return jsonify({"profile":result,"source":"generated","alias_note":note})
+        return jsonify({"profile":{**result,"evidence_profile":profile_contract(result),'analysis':analyse_profile(result)},"source":"generated","alias_note":note})
     except Exception as e:
         return jsonify({"error":"generation failed","detail":type(e).__name__}),500
 

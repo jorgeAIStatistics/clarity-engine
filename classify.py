@@ -185,7 +185,13 @@ def classify(study):
         "practice guideline", "patient education handout", "personal narrative",
     }
     has_non_study = any(t in _NON_STUDY_TYPES for t in types_lower)
-    is_narrative_review = has_non_study and not is_high_tier_review
+    is_protocol = ('clinical trial protocol' in types_lower or bool(re.search(
+        r'\b(?:study protocol|trial protocol|protocol for (?:a|an|the) .{0,40}trial)\b',
+        study.get('title',''), re.I)))
+    # Protocols describe planned methods, not completed efficacy results. Reuse
+    # the established non-primary-evidence gate to exclude them from grading.
+    is_narrative_review = (has_non_study and not is_high_tier_review) or is_protocol
+    study['is_protocol'] = is_protocol
 
     design = "unknown"
     for t in types_lower:
