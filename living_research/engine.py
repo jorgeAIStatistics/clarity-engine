@@ -8,6 +8,7 @@ from .providers import PubMed, EuropePMC, ClinicalTrials, IncompleteSearch, dige
 from .extraction import Extractor, VERSION, source_text
 from .triage import classify
 from .synthesis import build_synthesis
+from .priority import priority_score
 
 DEFAULTS={'initial_lookback_days':30,'overlap_days':7,'interval_days':7,'max_targets':25,'max_records':300,'max_llm_calls':20,'max_llm_calls_per_day':100,'sources':['pubmed','europe_pmc','clinical_trials']}
 PROVIDERS={'pubmed':PubMed,'europe_pmc':EuropePMC,'clinical_trials':ClinicalTrials}
@@ -43,7 +44,7 @@ def sync_targets(store,targets,config):
     for target in targets:
         current=store.get('target',target['id'],{})
         override=overrides.get(target['id'],{})
-        merged={**current,**target,'next_due':current.get('next_due',0),'enabled':override.get('enabled',True),'priority':override.get('priority',0),'interval_days':override.get('interval_days',config['interval_days']),**{k:v for k,v in override.items() if k in ('aliases','term_groups')}}
+        merged={**current,**target,'next_due':current.get('next_due',0),'enabled':override.get('enabled',True),'priority':override.get('priority',0),'interval_days':override.get('interval_days',config['interval_days']),**{k:v for k,v in override.items() if k in ('aliases','term_groups','monthly_views')}}
         scope=digest({k:merged.get(k) for k in ('name','entity_type','population','disease_context','aliases','term_groups')})
         if current.get('scope_hash')!=scope:merged['next_due']=0
         merged['scope_hash']=scope
@@ -105,7 +106,7 @@ class Monitor:
         try:
             sync_targets(self.store,targets if targets is not None else discover_targets(),self.config)
             due=[t for t in self.store.all('target') if t['enabled'] and (t['id'] in only if only else t['next_due']<=time.time())]
-            due.sort(key=lambda t:(t['next_due'],-t['priority'],t['id']))
+            due.sort(key=lambda t:(-priority_score(t,time.time()),t['next_due'],t['id']))
             for target in due[:self.config['max_targets']]:
                 self.store.renew(run_id)
                 records=[];searches=[];failed=False
@@ -132,7 +133,7 @@ class Monitor:
                     run['proposals']+=proposals
                 for audit in searches:
                     if audit['complete']:self.store.put('cursor',target['id']+'|'+audit['source'],{'until':until,'scope_hash':target['scope_hash']})
-                target.update(last_attempt=now_iso(),last_status='partial_failure' if failed else 'checked',next_due=time.time()+(3600 if failed else target['interval_days']*86400))
+                target.update(recent_publications=len(deduplicate(records)),last_attempt=now_iso(),last_status='partial_failure' if failed else 'checked',next_due=time.time()+(3600 if failed else target['interval_days']*86400))
                 if not failed:target['last_checked']=now_iso()
                 self.store.put('target',target['id'],target)
                 self.store.put('search',run_id+'|'+target['id'],{'run_id':run_id,'target_id':target['id'],'executed_at':now_iso(),'searches':searches,'retrieved':len(records),'unique':len(deduplicate(records))})

@@ -57,3 +57,17 @@ def assessment(entity_id):
     item=get_entity(entity_id)
     if item is None: return jsonify(error='Entity not found'),404
     return jsonify(grade_entity(item,item['assessments']))
+
+@blueprint.post('/api/evidence/match')
+def evidence_match():
+    body=request.get_json(silent=True)
+    if not isinstance(body,dict) or set(body)!={'text'}:return jsonify(error='Provide a text field.'),400
+    from .matcher import match, library_index
+    # Validate before any index construction; the bounded query is never logged.
+    text=body['text']
+    if not isinstance(text,str) or not 20<=len(text.strip())<=12000:return jsonify(error='Enter between 20 and 12,000 characters.'),400
+    try:
+        result=match(text,library_index(int(time.time()//3600)))
+        response=jsonify(result);response.headers['Cache-Control']='no-store';return response
+    except ValueError as error:return jsonify(error=str(error)),400
+    except Exception:return jsonify(error='Library matching is temporarily unavailable. Please try again.'),503

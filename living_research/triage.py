@@ -7,6 +7,7 @@ def classify(paper,target):
     text=' '.join([paper.get('title',''),paper.get('abstract',''),*paper.get('publication_types',[])]).lower()
     types=' '.join(paper.get('publication_types',[])).lower()
     if paper.get('nct_id'):kind='trial_registration'
+    elif re.search(r'\b(protocol|study protocol)\b',paper.get('title','').lower()):kind='study_protocol'
     elif 'guideline' in types:kind='guideline'
     elif 'meta-analysis' in types or 'systematic review' in types:kind='evidence_synthesis'
     elif 'randomized controlled trial' in types:kind='randomized_trial'

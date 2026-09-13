@@ -83,7 +83,7 @@ python3 -m living_research --config living_research/config.example.json watch --
 
 The worker checks for due work hourly. Most subjects become due every seven days;
 priority subjects in the example config are checked daily or every three days.
-Up to 25 due subjects are processed per run, oldest-due first. The two budgets are
+Up to 25 due subjects are processed per run, ranked by overdue age, configured importance, operator-supplied aggregate monthly views, and observed recent publication volume. The two budgets are
 independent: monitoring can continue while the AI extraction queue waits for the
 next budget window. Increase target throughput as the catalog grows.
 

@@ -36,3 +36,13 @@ class SynthesisTests(unittest.TestCase):
         self.assertNotIn('--llm',commands({'DATABASE_URL':'postgresql://db'})[1])
         self.assertIn('--llm',commands({'DATABASE_URL':'postgresql://db','ANTHROPIC_API_KEY':'present'})[1])
         self.assertEqual(len(commands({'DATABASE_URL':'postgresql://db','CLARITY_RESEARCH_ENABLED':'0'})),1)
+    def test_priority_ages_and_bounds_traffic(self):
+        from living_research.priority import priority_score
+        self.assertGreater(priority_score({'next_due':1},864001),priority_score({'next_due':864001},864001))
+        self.assertEqual(priority_score({'monthly_views':float('nan')},0),priority_score({},0))
+        self.assertLess(priority_score({'monthly_views':1e20,'recent_publications':1e20},0),100)
+    def test_protocol_does_not_get_trial_priority(self):
+        from living_research.triage import classify
+        result=classify({'title':'Study protocol for a randomized trial','publication_types':['Randomized Controlled Trial']},{})
+        self.assertEqual(result['study_type_candidate'],'study_protocol')
+        self.assertFalse(result['synthesis_eligible'])

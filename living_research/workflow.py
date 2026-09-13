@@ -3,6 +3,7 @@ import uuid
 from functools import wraps
 from .providers import identities
 from .engine import now_iso
+from .synthesis import build_synthesis
 
 
 def exclusive(function):
@@ -60,6 +61,7 @@ def rebase(store,proposal_id):
     current=store.get('published',p['target_id'],{'version':0,'updates':[]})
     p.update(baseline_version=current['version'],status='review_ready')
     p.pop('review',None)
+    p['synthesis']=build_synthesis(p,current)
     p['diff']['before']=next((u for u in current['updates'] if u['paper_id']==p['paper_id']),None)
     store.put('proposal',proposal_id,p)
     return p
