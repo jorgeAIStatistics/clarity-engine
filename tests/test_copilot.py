@@ -33,6 +33,9 @@ class CopilotTests(unittest.TestCase):
  def test_mapped_table_uses_same_question_pipeline(self):
   r=match('topic: ApoB; outcome: cardiovascular events; context: adults\ntopic: HbA1c; outcome: diabetes diagnosis; context: prospective cohort',self.index)
   self.assertTrue(r['copilot']['question']['outcomes']);self.assertTrue(r['copilot']['groups'])
+ def test_cardiovascular_question_prioritizes_coronary_over_diabetes(self):
+  group=next(g for g in self.result['copilot']['groups'] if g['id']=='association')
+  self.assertTrue('Coronary' in group['findings'][1]['outcome'])
  def test_no_agreement_verdict(self):
   self.assertEqual(self.result['agreement_assessment']['supporting'],[]);self.assertEqual(self.result['agreement_assessment']['contradicting'],[])
 

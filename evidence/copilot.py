@@ -59,6 +59,7 @@ def landscape(text,entities,studies,all_entities):
     if f.get('quote') and f.get('effect'):
      findings.append({'study_id':s['id'],'outcome':f['outcome'],'effect':f['effect'],'quote':f['quote'],'population':f.get('population') or s.get('population'),'exposure':f.get('exposure') or s.get('exposure'),'comparator':f.get('comparator') or s.get('comparator'),'cohort':s.get('cohort_id'),'review_status':s['review_status']})
   endpoint_terms=set(re.findall(r'[a-z]{4,}', ' '.join(question['outcomes']).lower()))
+  if 'cardiovascular' in endpoint_terms:endpoint_terms.update({'coronary','stroke','cvd'})
   findings.sort(key=lambda f:len(endpoint_terms & set(re.findall(r'[a-z]{4,}',f['outcome'].lower()))),reverse=True)
   ids=[s['id'] for s in records]
   groups.append({'id':angle,'label':spec['label'],'requested':angle in requested,'question':spec['question'],'study_ids':ids,
