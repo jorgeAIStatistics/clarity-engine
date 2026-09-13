@@ -13,7 +13,7 @@ from functools import lru_cache
 from .service import CATALOG
 from .profile import layer_for
 
-VERSION='evidence-matcher-v2-tabular'
+VERSION='evidence-matcher-v2.1-tabular'
 STOP=set('the a an and or of to in for with by as is was were be been on from at this that we our study studies patients results methods abstract introduction'.split())
 CONCEPTS=[('apob','apolipoprotein b'),('hba1c','glycated hemoglobin','glycated haemoglobin','hemoglobin a1c'),('ldl c','ldl cholesterol','low density lipoprotein cholesterol'),('non hdl c','non hdl cholesterol'),('cystatin c','cystatin c based egfr'),('hs crp','high sensitivity c reactive protein'),('psa','prostate specific antigen'),('rct','randomized controlled trial','randomised controlled trial')]
 
@@ -81,8 +81,7 @@ def _library_index(bucket):
     import cache
     profiles=list(CATALOG['entities'])
     seen=set()
-    for key in cache.list_cached():
-        p=cache.get(key,max_age_days=100000)
+    for key,p in cache.profile_snapshot().items():
         if isinstance(p,dict) and p.get('name') and p.get('claims') and p['name'] not in seen:
             from .enrichment import enriched_profile
             profiles.append(enriched_profile(p));seen.add(p['name'])

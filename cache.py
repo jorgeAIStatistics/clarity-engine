@@ -114,3 +114,25 @@ def list_cached():
     if not os.path.isdir(CACHE_DIR):
         return []
     return sorted(fn[:-5] for fn in os.listdir(CACHE_DIR) if fn.endswith(".json"))
+
+
+def profile_snapshot():
+    """Index all stored profiles without a database round trip per cached slug.
+
+    The caller assesses freshness; indexing includes old profiles with explicit
+    refresh status. A failed database read falls back to local files once.
+    """
+    database=_db()
+    if database:
+        result=database.profile_snapshot()
+        if result:return result
+    result={}
+    if os.path.isdir(CACHE_DIR):
+        for filename in sorted(os.listdir(CACHE_DIR)):
+            if not filename.endswith('.json'):continue
+            try:
+                with open(os.path.join(CACHE_DIR,filename),encoding='utf-8') as source:
+                    profile=json.load(source)
+                if isinstance(profile,dict):result[filename[:-5]]=profile
+            except (OSError,ValueError):continue
+    return result

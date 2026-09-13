@@ -12,8 +12,7 @@ def build_library():
     import generate
     from .enrichment import OVERLAYS
     entries={};audit=[]
-    for key in cache.list_cached():
-        p=cache.get(key,max_age_days=100000)
+    for key,p in cache.profile_snapshot().items():
         if not isinstance(p,dict) or not p.get('name') or not p.get('claims'):continue
         slug=cache._slug(p['name'])
         analysis=analyse_profile(p)
