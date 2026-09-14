@@ -106,6 +106,9 @@ class Monitor:
         self.store.put('run',run_id,run)
         try:
             sync_targets(self.store,targets if targets is not None else discover_targets(),self.config)
+            if self.config.get('automated_visual_publication', True):
+                from .automatic import reconcile
+                run['visual_releases']=reconcile(self.store)
             due=[t for t in self.store.all('target') if t['enabled'] and (t['id'] in only if only else t['next_due']<=time.time())]
             from evidence.feedback import improvement_signals
             signals=improvement_signals(self.store)
@@ -195,6 +198,9 @@ class Monitor:
         proposal['triage']=classify(paper,target)
         proposal['queue']={**assign_bin(proposal),'assigned_at':now_iso()}
         self.store.put('proposal',proposal_id,proposal)
+        if self.config.get('automated_visual_publication', True):
+            from .automatic import auto_publish
+            auto_publish(self.store, proposal)
         return 1
     def extract(self,proposal):
         try:
@@ -220,3 +226,6 @@ class Monitor:
             if proposal['extraction_attempts']>=3:proposal['status']='extraction_failed'
             proposal['extraction']={'status':proposal['status'],'error':type(error).__name__}
         self.store.put('proposal',proposal['id'],proposal)
+        if self.config.get('automated_visual_publication', True):
+            from .automatic import auto_publish
+            auto_publish(self.store, proposal)

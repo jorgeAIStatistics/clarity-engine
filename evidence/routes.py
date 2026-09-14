@@ -6,6 +6,52 @@ import time
 
 blueprint=Blueprint('evidence',__name__)
 
+@lru_cache(maxsize=1)
+def _visual_snapshot():
+    from .visual_report import build_reports
+    return build_reports()
+
+@blueprint.get('/api/visual-evidence/<path:target_id>')
+def visual_evidence(target_id):
+    if not target_id.startswith(('entity:','compound:')) or len(target_id)>160:
+        return jsonify(error='Invalid profile'),400
+    import copy
+    from .visual_report import report, digest, VERSION
+    base=copy.deepcopy(_visual_snapshot()['profiles'].get(target_id))
+    store=None
+    try:
+        from living_research.store import Store
+        from living_research.automatic import current_releases
+        store=Store()
+        additions=current_releases(store,target_id)
+        if additions and base is None:base=report(target_id,additions[0]['report']['name'],[])
+        if base:
+            # Observed changes invalidate bundled numeric rows as well as live releases.
+            import hashlib, re
+            invalid=set()
+            for row in base['records']:
+                alias=store.get('alias','pmid:'+row['pmid'],{})
+                observed=store.get('paper',alias.get('paper_id',''),{}).get('paper',{})
+                if observed and (observed.get('corrections') or re.search(r'retract|expression of concern',observed.get('title',''),re.I) or (observed.get('abstract') and hashlib.sha256(observed['abstract'].encode()).hexdigest()!=row['sourceHash'])):
+                    invalid.add(row['pmid'])
+            rows={r['id']:r for r in base['records'] if r['pmid'] not in invalid}
+            if invalid:base.pop('relationship',None)
+            studies={s['id']:s for s in base['studies']}
+            for item in additions:
+                for row in item['report']['records']:rows[row['id']]=row
+                for study in item['report']['studies']:studies[study['id']]=study
+            base['records']=list(rows.values());base['studies']=list(studies.values())
+            base['sourceDate']=max((r.get('extractedAt') or '' for r in base['records']),default=None)
+            base.pop('hash',None);base['hash']=digest(base)
+    except Exception:
+        # A durable selected-source snapshot remains usable during storage outages.
+        pass
+    finally:
+        if store:store.close()
+    response=jsonify(version=VERSION,report=base)
+    response.headers['Cache-Control']='public, max-age=60'
+    return response
+
 @blueprint.get('/api/library')
 def library():
     try:return jsonify(_library_snapshot(int(time.time()//300)))

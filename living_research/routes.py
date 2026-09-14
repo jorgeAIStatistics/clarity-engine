@@ -31,7 +31,8 @@ def research_status():
         active=bool(worker) and age<max(900,worker.get('poll_seconds',3600)*2)
         return jsonify(version='layered-synthesis-v1',scheduler='active' if active else 'not_running',
             heartbeat=worker.get('heartbeat'),llm_enabled=worker.get('llm_enabled',False),
-            last_run_status=worker.get('last_run_status'),publication_policy='human_review_required')
+            last_run_status=worker.get('last_run_status'),publication_policy='automated_source_validation',
+            visual_releases=len(store.all('visual_release')))
     except Exception:
         return jsonify(scheduler='unavailable'),503
     finally:

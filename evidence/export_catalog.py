@@ -18,3 +18,9 @@ if __name__=='__main__':
 
     from .enrichment import OVERLAYS
     (destination.parent.parent.parent/'public'/'intervention-enrichment.json').write_text(json.dumps(OVERLAYS,ensure_ascii=False,separators=(',',':'))+'\n')
+    from .visual_report import build_reports
+    import os
+    public=destination.parent.parent.parent/'public'/'visual-evidence.json'
+    temporary=public.with_suffix('.tmp')
+    temporary.write_text(json.dumps(build_reports(),ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\n')
+    os.replace(temporary,public)
