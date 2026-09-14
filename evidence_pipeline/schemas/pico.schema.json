@@ -1,0 +1,1658 @@
+{
+  "$defs": {
+    "Arm": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "population_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Population Id",
+          "type": "string"
+        },
+        "exposure_ids": {
+          "items": {
+            "maxLength": 160,
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Exposure Ids",
+          "type": "array"
+        },
+        "sample_sizes": {
+          "items": {
+            "$ref": "#/$defs/SampleSize"
+          },
+          "title": "Sample Sizes",
+          "type": "array"
+        },
+        "period": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "population_id",
+        "exposure_ids",
+        "sample_sizes",
+        "period"
+      ],
+      "title": "Arm",
+      "type": "object"
+    },
+    "ArmResult": {
+      "additionalProperties": false,
+      "properties": {
+        "arm_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Arm Id",
+          "type": "string"
+        },
+        "n_analyzed": {
+          "$ref": "#/$defs/Reported_Annotated_int__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0_____"
+        },
+        "events": {
+          "$ref": "#/$defs/Reported_Annotated_int__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0_____"
+        },
+        "mean": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata___PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "sd": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0____PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "median": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata___PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "person_time": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Quantity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "arm_id",
+        "n_analyzed",
+        "events",
+        "mean",
+        "sd",
+        "median",
+        "person_time"
+      ],
+      "title": "ArmResult",
+      "type": "object"
+    },
+    "Demographic": {
+      "additionalProperties": false,
+      "properties": {
+        "characteristic": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "category": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "statistic": {
+          "enum": [
+            "mean",
+            "median",
+            "minimum",
+            "maximum",
+            "sd",
+            "iqr_lower",
+            "iqr_upper",
+            "count",
+            "percent",
+            "proportion",
+            "reported_label"
+          ],
+          "title": "Statistic",
+          "type": "string"
+        },
+        "numeric_value": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata___PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "unit": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "denominator": {
+          "$ref": "#/$defs/Reported_Annotated_int__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0_____"
+        }
+      },
+      "required": [
+        "characteristic",
+        "category",
+        "statistic",
+        "numeric_value",
+        "unit",
+        "denominator"
+      ],
+      "title": "Demographic",
+      "type": "object"
+    },
+    "Dosing": {
+      "additionalProperties": false,
+      "properties": {
+        "dose": {
+          "$ref": "#/$defs/Quantity"
+        },
+        "dose_basis": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "route": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "frequency": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "duration": {
+          "$ref": "#/$defs/Quantity"
+        },
+        "titration": {
+          "items": {
+            "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+          },
+          "title": "Titration",
+          "type": "array"
+        }
+      },
+      "required": [
+        "dose",
+        "dose_basis",
+        "route",
+        "frequency",
+        "duration",
+        "titration"
+      ],
+      "title": "Dosing",
+      "type": "object"
+    },
+    "EvidenceSpan": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "section": {
+          "enum": [
+            "title",
+            "abstract",
+            "methods",
+            "results",
+            "table",
+            "figure",
+            "supplement",
+            "dataset",
+            "other"
+          ],
+          "title": "Section",
+          "type": "string"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "exclusiveMinimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "quote": {
+          "maxLength": 12000,
+          "minLength": 1,
+          "title": "Quote",
+          "type": "string"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Page"
+        },
+        "table_or_figure": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Table Or Figure"
+        },
+        "row": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Row"
+        },
+        "column": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Column"
+        }
+      },
+      "required": [
+        "source_id",
+        "section",
+        "start",
+        "end",
+        "quote",
+        "page",
+        "table_or_figure",
+        "row",
+        "column"
+      ],
+      "title": "EvidenceSpan",
+      "type": "object"
+    },
+    "Exposure": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "drug",
+            "supplement",
+            "biomarker",
+            "procedure",
+            "screening",
+            "behavioral",
+            "placebo",
+            "usual_care",
+            "no_intervention",
+            "other",
+            "not_reported"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "name": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "formulation": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "dosing": {
+          "items": {
+            "$ref": "#/$defs/Dosing"
+          },
+          "title": "Dosing",
+          "type": "array"
+        },
+        "assay": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "measurement_unit": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "reference_category": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "increment": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Quantity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "name",
+        "formulation",
+        "dosing",
+        "assay",
+        "measurement_unit",
+        "reference_category",
+        "increment"
+      ],
+      "title": "Exposure",
+      "type": "object"
+    },
+    "Interval": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "confidence",
+            "credible",
+            "prediction"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "lower": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata___PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "upper": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata___PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "level_percent": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Gt_gt_0___Lt_lt_100____PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "sidedness": {
+          "enum": [
+            "two_sided",
+            "lower_one_sided",
+            "upper_one_sided",
+            "not_reported"
+          ],
+          "title": "Sidedness",
+          "type": "string"
+        },
+        "method": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        }
+      },
+      "required": [
+        "kind",
+        "lower",
+        "upper",
+        "level_percent",
+        "sidedness",
+        "method"
+      ],
+      "title": "Interval",
+      "type": "object"
+    },
+    "MethodologyFact": {
+      "additionalProperties": false,
+      "properties": {
+        "domain": {
+          "enum": [
+            "randomization",
+            "allocation_concealment",
+            "blinding",
+            "attrition",
+            "missing_data",
+            "outcome_measurement",
+            "selective_reporting",
+            "registration",
+            "funding",
+            "conflicts_of_interest",
+            "crossover",
+            "clustering",
+            "other"
+          ],
+          "title": "Domain",
+          "type": "string"
+        },
+        "fact": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        }
+      },
+      "required": [
+        "domain",
+        "fact"
+      ],
+      "title": "MethodologyFact",
+      "type": "object"
+    },
+    "OutcomeDefinition": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "definition": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "components": {
+          "items": {
+            "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+          },
+          "title": "Components",
+          "type": "array"
+        },
+        "instrument": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "unit": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "role": {
+          "enum": [
+            "primary",
+            "secondary",
+            "exploratory",
+            "safety",
+            "not_reported"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "role_evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Role Evidence",
+          "type": "array"
+        },
+        "favorable_direction": {
+          "enum": [
+            "higher",
+            "lower",
+            "context_dependent",
+            "not_reported"
+          ],
+          "title": "Favorable Direction",
+          "type": "string"
+        },
+        "direction_evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Direction Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "definition",
+        "components",
+        "instrument",
+        "unit",
+        "role",
+        "role_evidence",
+        "favorable_direction",
+        "direction_evidence"
+      ],
+      "title": "OutcomeDefinition",
+      "type": "object"
+    },
+    "PValue": {
+      "additionalProperties": false,
+      "properties": {
+        "comparator": {
+          "enum": [
+            "eq",
+            "lt",
+            "le",
+            "gt",
+            "ge",
+            "not_reported"
+          ],
+          "title": "Comparator",
+          "type": "string"
+        },
+        "value": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0___Le_le_1____PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "test": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "sidedness": {
+          "enum": [
+            "one_sided",
+            "two_sided",
+            "not_reported"
+          ],
+          "title": "Sidedness",
+          "type": "string"
+        },
+        "multiplicity": {
+          "enum": [
+            "adjusted",
+            "unadjusted",
+            "not_reported"
+          ],
+          "title": "Multiplicity",
+          "type": "string"
+        },
+        "adjustment_method": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "reported_alpha": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0___Le_le_1____PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "comparator",
+        "value",
+        "test",
+        "sidedness",
+        "multiplicity",
+        "adjustment_method",
+        "reported_alpha",
+        "evidence"
+      ],
+      "title": "PValue",
+      "type": "object"
+    },
+    "Population": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "parent_population_id": {
+          "anyOf": [
+            {
+              "maxLength": 160,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Population Id"
+        },
+        "label": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "species": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "conditions": {
+          "items": {
+            "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+          },
+          "title": "Conditions",
+          "type": "array"
+        },
+        "inclusion_criteria": {
+          "items": {
+            "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+          },
+          "title": "Inclusion Criteria",
+          "type": "array"
+        },
+        "exclusion_criteria": {
+          "items": {
+            "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+          },
+          "title": "Exclusion Criteria",
+          "type": "array"
+        },
+        "settings": {
+          "items": {
+            "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+          },
+          "title": "Settings",
+          "type": "array"
+        },
+        "countries": {
+          "items": {
+            "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+          },
+          "title": "Countries",
+          "type": "array"
+        },
+        "sample_sizes": {
+          "items": {
+            "$ref": "#/$defs/SampleSize"
+          },
+          "title": "Sample Sizes",
+          "type": "array"
+        },
+        "demographics": {
+          "items": {
+            "$ref": "#/$defs/Demographic"
+          },
+          "title": "Demographics",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "parent_population_id",
+        "label",
+        "species",
+        "conditions",
+        "inclusion_criteria",
+        "exclusion_criteria",
+        "settings",
+        "countries",
+        "sample_sizes",
+        "demographics"
+      ],
+      "title": "Population",
+      "type": "object"
+    },
+    "Quantity": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata___PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "unit": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        }
+      },
+      "required": [
+        "amount",
+        "unit"
+      ],
+      "title": "Quantity",
+      "type": "object"
+    },
+    "ReportedSynthesis": {
+      "additionalProperties": false,
+      "properties": {
+        "result_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Result Id",
+          "type": "string"
+        },
+        "included_studies": {
+          "$ref": "#/$defs/Reported_Annotated_int__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0_____"
+        },
+        "participants": {
+          "$ref": "#/$defs/Reported_Annotated_int__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0_____"
+        },
+        "model": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "i_squared_percent": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0___Le_le_100____PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "tau_squared": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0____PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "cochran_q": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0____PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "q_degrees_freedom": {
+          "$ref": "#/$defs/Reported_Annotated_int__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0_____"
+        },
+        "heterogeneity_p": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PValue"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "included_source_identifiers": {
+          "items": {
+            "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+          },
+          "title": "Included Source Identifiers",
+          "type": "array"
+        }
+      },
+      "required": [
+        "result_id",
+        "included_studies",
+        "participants",
+        "model",
+        "i_squared_percent",
+        "tau_squared",
+        "cochran_q",
+        "q_degrees_freedom",
+        "heterogeneity_p",
+        "included_source_identifiers"
+      ],
+      "title": "ReportedSynthesis",
+      "type": "object"
+    },
+    "Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0___Le_le_100____PydanticGeneralMetadata_allow_inf_nan_False_____": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "raw": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Raw"
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "not_reported",
+                "not_applicable",
+                "ambiguous",
+                "not_reached"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Missing Reason"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "extraction_confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Extraction Confidence"
+        }
+      },
+      "required": [
+        "value",
+        "raw",
+        "missing_reason",
+        "evidence",
+        "extraction_confidence"
+      ],
+      "title": "Reported[Annotated[float, FieldInfo(annotation=NoneType, required=True, metadata=[Ge(ge=0), Le(le=100), _PydanticGeneralMetadata(allow_inf_nan=False)])]]",
+      "type": "object"
+    },
+    "Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0___Le_le_1____PydanticGeneralMetadata_allow_inf_nan_False_____": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "raw": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Raw"
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "not_reported",
+                "not_applicable",
+                "ambiguous",
+                "not_reached"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Missing Reason"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "extraction_confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Extraction Confidence"
+        }
+      },
+      "required": [
+        "value",
+        "raw",
+        "missing_reason",
+        "evidence",
+        "extraction_confidence"
+      ],
+      "title": "Reported[Annotated[float, FieldInfo(annotation=NoneType, required=True, metadata=[Ge(ge=0), Le(le=1), _PydanticGeneralMetadata(allow_inf_nan=False)])]]",
+      "type": "object"
+    },
+    "Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0____PydanticGeneralMetadata_allow_inf_nan_False_____": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "raw": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Raw"
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "not_reported",
+                "not_applicable",
+                "ambiguous",
+                "not_reached"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Missing Reason"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "extraction_confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Extraction Confidence"
+        }
+      },
+      "required": [
+        "value",
+        "raw",
+        "missing_reason",
+        "evidence",
+        "extraction_confidence"
+      ],
+      "title": "Reported[Annotated[float, FieldInfo(annotation=NoneType, required=True, metadata=[Ge(ge=0), _PydanticGeneralMetadata(allow_inf_nan=False)])]]",
+      "type": "object"
+    },
+    "Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Gt_gt_0___Lt_lt_100____PydanticGeneralMetadata_allow_inf_nan_False_____": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "exclusiveMaximum": 100,
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "raw": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Raw"
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "not_reported",
+                "not_applicable",
+                "ambiguous",
+                "not_reached"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Missing Reason"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "extraction_confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Extraction Confidence"
+        }
+      },
+      "required": [
+        "value",
+        "raw",
+        "missing_reason",
+        "evidence",
+        "extraction_confidence"
+      ],
+      "title": "Reported[Annotated[float, FieldInfo(annotation=NoneType, required=True, metadata=[Gt(gt=0), Lt(lt=100), _PydanticGeneralMetadata(allow_inf_nan=False)])]]",
+      "type": "object"
+    },
+    "Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata___PydanticGeneralMetadata_allow_inf_nan_False_____": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "raw": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Raw"
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "not_reported",
+                "not_applicable",
+                "ambiguous",
+                "not_reached"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Missing Reason"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "extraction_confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Extraction Confidence"
+        }
+      },
+      "required": [
+        "value",
+        "raw",
+        "missing_reason",
+        "evidence",
+        "extraction_confidence"
+      ],
+      "title": "Reported[Annotated[float, FieldInfo(annotation=NoneType, required=True, metadata=[_PydanticGeneralMetadata(allow_inf_nan=False)])]]",
+      "type": "object"
+    },
+    "Reported_Annotated_int__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0_____": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "raw": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Raw"
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "not_reported",
+                "not_applicable",
+                "ambiguous",
+                "not_reached"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Missing Reason"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "extraction_confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Extraction Confidence"
+        }
+      },
+      "required": [
+        "value",
+        "raw",
+        "missing_reason",
+        "evidence",
+        "extraction_confidence"
+      ],
+      "title": "Reported[Annotated[int, FieldInfo(annotation=NoneType, required=True, metadata=[Ge(ge=0)])]]",
+      "type": "object"
+    },
+    "Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "raw": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Raw"
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "not_reported",
+                "not_applicable",
+                "ambiguous",
+                "not_reached"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Missing Reason"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "extraction_confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Extraction Confidence"
+        }
+      },
+      "required": [
+        "value",
+        "raw",
+        "missing_reason",
+        "evidence",
+        "extraction_confidence"
+      ],
+      "title": "Reported[Annotated[str, FieldInfo(annotation=NoneType, required=True, metadata=[MinLen(min_length=1), MaxLen(max_length=2000)])]]",
+      "type": "object"
+    },
+    "SampleSize": {
+      "additionalProperties": false,
+      "properties": {
+        "count": {
+          "$ref": "#/$defs/Reported_Annotated_int__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0_____"
+        },
+        "basis": {
+          "enum": [
+            "screened",
+            "enrolled",
+            "randomized",
+            "analyzed",
+            "completed",
+            "events",
+            "clusters",
+            "studies",
+            "not_reported"
+          ],
+          "title": "Basis",
+          "type": "string"
+        },
+        "unit": {
+          "enum": [
+            "participants",
+            "clusters",
+            "studies",
+            "specimens",
+            "observations",
+            "not_reported"
+          ],
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "count",
+        "basis",
+        "unit"
+      ],
+      "title": "SampleSize",
+      "type": "object"
+    },
+    "StatisticalResult": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "outcome_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Outcome Id",
+          "type": "string"
+        },
+        "population_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Population Id",
+          "type": "string"
+        },
+        "index_arm_id": {
+          "anyOf": [
+            {
+              "maxLength": 160,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Index Arm Id"
+        },
+        "reference_arm_id": {
+          "anyOf": [
+            {
+              "maxLength": 160,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Reference Arm Id"
+        },
+        "contrast": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "timepoint": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Quantity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "followup": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Quantity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "analysis_set": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "subgroup": {
+          "items": {
+            "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+          },
+          "title": "Subgroup",
+          "type": "array"
+        },
+        "metric": {
+          "enum": [
+            "hazard_ratio",
+            "risk_ratio",
+            "odds_ratio",
+            "rate_ratio",
+            "mean_difference",
+            "standardized_mean_difference",
+            "risk_difference",
+            "regression_coefficient",
+            "correlation",
+            "sensitivity",
+            "specificity",
+            "auc",
+            "c_index",
+            "c_index_change",
+            "nri",
+            "partial_eta_squared",
+            "mean",
+            "median",
+            "proportion",
+            "percent",
+            "event_count",
+            "other"
+          ],
+          "title": "Metric",
+          "type": "string"
+        },
+        "metric_evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Metric Evidence",
+          "type": "array"
+        },
+        "estimate": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata___PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "unit": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "scale": {
+          "enum": [
+            "natural",
+            "log",
+            "log10",
+            "not_reported"
+          ],
+          "title": "Scale",
+          "type": "string"
+        },
+        "intervals": {
+          "items": {
+            "$ref": "#/$defs/Interval"
+          },
+          "title": "Intervals",
+          "type": "array"
+        },
+        "p_values": {
+          "items": {
+            "$ref": "#/$defs/PValue"
+          },
+          "title": "P Values",
+          "type": "array"
+        },
+        "standard_error": {
+          "$ref": "#/$defs/Reported_Annotated_float__FieldInfo_annotation_NoneType__required_True__metadata__Ge_ge_0____PydanticGeneralMetadata_allow_inf_nan_False_____"
+        },
+        "adjusted": {
+          "enum": [
+            "adjusted",
+            "unadjusted",
+            "not_reported"
+          ],
+          "title": "Adjusted",
+          "type": "string"
+        },
+        "covariates": {
+          "items": {
+            "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+          },
+          "title": "Covariates",
+          "type": "array"
+        },
+        "model": {
+          "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+        },
+        "arm_results": {
+          "items": {
+            "$ref": "#/$defs/ArmResult"
+          },
+          "title": "Arm Results",
+          "type": "array"
+        },
+        "estimate_origin": {
+          "const": "reported",
+          "title": "Estimate Origin",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "outcome_id",
+        "population_id",
+        "index_arm_id",
+        "reference_arm_id",
+        "contrast",
+        "timepoint",
+        "followup",
+        "analysis_set",
+        "subgroup",
+        "metric",
+        "metric_evidence",
+        "estimate",
+        "unit",
+        "scale",
+        "intervals",
+        "p_values",
+        "standard_error",
+        "adjusted",
+        "covariates",
+        "model",
+        "arm_results",
+        "estimate_origin"
+      ],
+      "title": "StatisticalResult",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "clarity-pico-1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "document_kind": {
+      "enum": [
+        "results_report",
+        "protocol",
+        "aggregate_dataset",
+        "not_determined"
+      ],
+      "title": "Document Kind",
+      "type": "string"
+    },
+    "study_design": {
+      "enum": [
+        "rct_parallel",
+        "rct_crossover",
+        "rct_cluster",
+        "meta_analysis",
+        "systematic_review",
+        "observational",
+        "diagnostic_accuracy",
+        "other",
+        "not_determined"
+      ],
+      "title": "Study Design",
+      "type": "string"
+    },
+    "design_evidence": {
+      "items": {
+        "$ref": "#/$defs/EvidenceSpan"
+      },
+      "title": "Design Evidence",
+      "type": "array"
+    },
+    "study_identifiers": {
+      "items": {
+        "$ref": "#/$defs/Reported_Annotated_str__FieldInfo_annotation_NoneType__required_True__metadata__MinLen_min_length_1___MaxLen_max_length_2000_____"
+      },
+      "title": "Study Identifiers",
+      "type": "array"
+    },
+    "populations": {
+      "items": {
+        "$ref": "#/$defs/Population"
+      },
+      "title": "Populations",
+      "type": "array"
+    },
+    "exposures": {
+      "items": {
+        "$ref": "#/$defs/Exposure"
+      },
+      "title": "Exposures",
+      "type": "array"
+    },
+    "arms": {
+      "items": {
+        "$ref": "#/$defs/Arm"
+      },
+      "title": "Arms",
+      "type": "array"
+    },
+    "outcomes": {
+      "items": {
+        "$ref": "#/$defs/OutcomeDefinition"
+      },
+      "title": "Outcomes",
+      "type": "array"
+    },
+    "results": {
+      "items": {
+        "$ref": "#/$defs/StatisticalResult"
+      },
+      "title": "Results",
+      "type": "array"
+    },
+    "reported_syntheses": {
+      "items": {
+        "$ref": "#/$defs/ReportedSynthesis"
+      },
+      "title": "Reported Syntheses",
+      "type": "array"
+    },
+    "methodology_facts": {
+      "items": {
+        "$ref": "#/$defs/MethodologyFact"
+      },
+      "title": "Methodology Facts",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "document_kind",
+    "study_design",
+    "design_evidence",
+    "study_identifiers",
+    "populations",
+    "exposures",
+    "arms",
+    "outcomes",
+    "results",
+    "reported_syntheses",
+    "methodology_facts"
+  ],
+  "title": "PICOExtraction",
+  "type": "object"
+}
