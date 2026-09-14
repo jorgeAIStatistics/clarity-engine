@@ -21,10 +21,16 @@ def identities(record):
     if not ids and record.get('source_id'): ids.append(f'{record["source"]}:{record["source_id"]}')
     return ids
 
+def _quote(term): return '"'+re.sub(r'["\[\]{}()]',' ',term).strip()+'"'
+def _term_groups(target): return target.get('term_groups') or [[target['name'],*target.get('aliases',[])]]
+
 def query_for(target):
-    def quote(term): return '"'+re.sub(r'["\[\]{}()]',' ',term).strip()+'"'
-    groups=target.get('term_groups') or [[target['name'],*target.get('aliases',[])]]
-    return ' AND '.join('('+' OR '.join(quote(term) for term in group if term)+')' for group in groups)
+    return ' AND '.join('('+' OR '.join(_quote(term) for term in group if term)+')' for group in _term_groups(target))
+
+def europe_pmc_query_for(target):
+    """Title/abstract only. Europe PMC's default search also matches full text, e.g. "creatine kinase"
+    in methods sections, which returned 11,923 creatine records in 30 days versus 1,340 in titles/abstracts."""
+    return ' AND '.join('('+' OR '.join(f'TITLE:{_quote(term)} OR ABSTRACT:{_quote(term)}' for term in group if term)+')' for group in _term_groups(target))
 
 class HTTP:
     def __init__(self): self.session=requests.Session();self.last=0
@@ -55,13 +61,18 @@ class PubMed:
         if result.get('errorlist'): raise RetrievalError('PubMed rejected the query')
         count=int(result['count']);ids=result['idlist']
         if count>limit or len(ids)!=count:raise IncompleteSearch('PubMed window exceeds the configured record cap; narrow the date window')
-        records=[]
+        records=[];books=set()
         for offset in range(0,len(ids),100):
             batch=ids[offset:offset+100]
             xml=self.http.get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi',dict(db='pubmed',id=','.join(batch),retmode='xml',**auth)).text
-            records.extend(self.parse(xml))
-        if {r['pmid'] for r in records}!=set(ids):raise RetrievalError('PubMed fetch omitted records')
-        return records,{'query':query,'date_field':'mdat','since':since,'until':until,'count':count,'complete':True}
+            records.extend(self.parse(xml));books|=self.book_pmids(xml)
+        # Every PMID must be accounted for: parsed as a study record or identified as a Bookshelf chapter.
+        if {r['pmid'] for r in records}|books!=set(ids):raise RetrievalError('PubMed fetch omitted records')
+        return records,{'query':query,'date_field':'mdat','since':since,'until':until,'count':count,'book_chapters_excluded':len(books),'complete':True}
+    @staticmethod
+    def book_pmids(xml):
+        """Bookshelf chapters (GeneReviews, LiverTox, StatPearls) are reference texts, not study reports."""
+        return {n.findtext('./BookDocument/PMID') for n in ET.fromstring(xml).findall('.//PubmedBookArticle')}-{None}
     @staticmethod
     def parse(xml):
         root=ET.fromstring(xml);out=[]
@@ -77,8 +88,10 @@ class EuropePMC:
     name='europe_pmc'
     def __init__(self,http=None):self.http=http or HTTP()
     def search(self,target,since,until,limit=300):
-        # Broad update-date search catches newly indexed and changed records.
-        query=f'{query_for(target)} AND UPDATE_DATE:[{since} TO {until}]'
+        # First index date, not UPDATE_DATE: bulk re-stamping put 4,458 creatine records on a single day,
+        # above any per-day cap, so the window could never complete. Changes to MEDLINE records, including
+        # retractions and corrections, are still caught by PubMed's modification-date search.
+        query=f'{europe_pmc_query_for(target)} AND FIRST_IDATE:[{since} TO {until}]'
         cursor='*';records=[];seen=set()
         while True:
             data=self.http.get('https://www.ebi.ac.uk/europepmc/webservices/rest/search',dict(query=query,format='json',resultType='core',pageSize=min(100,limit),cursorMark=cursor)).json()
@@ -97,7 +110,7 @@ class EuropePMC:
             next_cursor=data.get('nextCursorMark')
             if not page or not next_cursor or next_cursor==cursor:raise RetrievalError('Europe PMC pagination incomplete')
             cursor=next_cursor
-        return records,dict(query=query,date_field='UPDATE_DATE',since=since,until=until,count=count,complete=True)
+        return records,dict(query=query,date_field='FIRST_IDATE',since=since,until=until,count=count,complete=True)
 
 class ClinicalTrials:
     name='clinical_trials'

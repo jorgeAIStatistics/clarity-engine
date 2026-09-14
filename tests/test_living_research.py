@@ -5,7 +5,7 @@ from tempfile import TemporaryDirectory
 from types import SimpleNamespace
 from unittest.mock import patch
 from living_research.store import Store
-from living_research.providers import PubMed, identities, IncompleteSearch
+from living_research.providers import PubMed, EuropePMC, identities, IncompleteSearch, RetrievalError
 from living_research.engine import Monitor, discover_targets, deduplicate, retrieve_window
 from living_research.extraction import validate_extraction, Extractor as AIExtractor
 from living_research.workflow import review, publish, rebase
@@ -148,5 +148,29 @@ class LivingResearchTests(unittest.TestCase):
                 return [since],{'complete':True,'since':since,'until':until}
         records,audit=retrieve_window(Busy(),TARGET,'2026-09-01','2026-09-03',1)
         self.assertEqual(records,['2026-09-01','2026-09-02','2026-09-03']);self.assertTrue(audit['complete'])
+    def test_pubmed_book_chapters_are_accounted_for_not_ingested(self):
+        class FakeHTTP:
+            def get(self,url,params):
+                if 'esearch' in url:return SimpleNamespace(json=lambda:{'esearchresult':{'count':'2','idlist':['111','20301298']}})
+                return SimpleNamespace(text='<PubmedArticleSet><PubmedArticle><MedlineCitation><PMID>111</PMID><Article><ArticleTitle>LDL-C trial</ArticleTitle></Article></MedlineCitation></PubmedArticle><PubmedBookArticle><BookDocument><PMID>20301298</PMID><Book><BookTitle>GeneReviews</BookTitle></Book></BookDocument></PubmedBookArticle></PubmedArticleSet>')
+        records,audit=PubMed(FakeHTTP()).search(TARGET,'2026-09-01','2026-09-02')
+        self.assertEqual([r['pmid'] for r in records],['111'])
+        self.assertEqual(audit['book_chapters_excluded'],1);self.assertTrue(audit['complete'])
+    def test_pubmed_still_fails_when_a_study_record_is_missing(self):
+        class FakeHTTP:
+            def get(self,url,params):
+                if 'esearch' in url:return SimpleNamespace(json=lambda:{'esearchresult':{'count':'2','idlist':['111','222']}})
+                return SimpleNamespace(text='<PubmedArticleSet><PubmedArticle><MedlineCitation><PMID>111</PMID></MedlineCitation></PubmedArticle></PubmedArticleSet>')
+        with self.assertRaises(RetrievalError):PubMed(FakeHTTP()).search(TARGET,'2026-09-01','2026-09-02')
+    def test_europe_pmc_searches_title_abstract_by_first_index_date(self):
+        seen=[]
+        class FakeHTTP:
+            def get(self,url,params):
+                seen.append(params);return SimpleNamespace(json=lambda:{'hitCount':0,'resultList':{'result':[]}})
+        records,audit=EuropePMC(FakeHTTP()).search(TARGET,'2026-09-01','2026-09-02')
+        query=seen[0]['query']
+        self.assertIn('(TITLE:"ApoB" OR ABSTRACT:"ApoB" OR TITLE:"apolipoprotein B" OR ABSTRACT:"apolipoprotein B")',query)
+        self.assertIn('FIRST_IDATE:[2026-09-01 TO 2026-09-02]',query);self.assertNotIn('UPDATE_DATE',query)
+        self.assertEqual((records,audit['date_field'],audit['complete']),([],'FIRST_IDATE',True))
 
 if __name__=='__main__':unittest.main()
