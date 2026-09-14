@@ -74,6 +74,17 @@ def documents(profiles):
                     if key not in existing['entity_ids']:existing['entity_ids'].append(key)
                 else:record['findings'].append({**finding,'entity_ids':[key],'population':source.get('population'),'exposure':source.get('exposure'),'comparator':source.get('comparator')})
             if key not in record['entity_ids']:record['entity_ids'].append(key)
+    try:
+        from evidence_pipeline.publication import matcher_records
+        for source in matcher_records():
+            if source['id'] not in studies:
+                studies[source['id']] = source
+            else:
+                for target in source['entity_ids']:
+                    if target not in studies[source['id']]['entity_ids']:
+                        studies[source['id']]['entity_ids'].append(target)
+    except Exception:
+        pass  # Existing literature remains searchable during pipeline outages.
     counts=Counter(entity_id for s in studies.values() for entity_id in s['entity_ids'])
     by_id={e['id']:e for e in entities}
     for entity in entities:

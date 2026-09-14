@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import os
 from datetime import date
 from pathlib import Path
 from .common import PipelineError
@@ -9,6 +10,7 @@ from .config import Settings
 from .state import State
 from .retrieval.europe_pmc import Target, EuropePMC
 from .extraction.providers import StructuredProvider
+from .extraction.core import SpanProvider
 from .extraction.service import Extractor
 from .graph.ingestion import Neo4jIngestor
 from .runner import Pipeline
@@ -23,8 +25,16 @@ def main(argv=None):
     parser.add_argument("--since", type=date.fromisoformat)
     parser.add_argument("--until", type=date.fromisoformat)
     parser.add_argument("--with-graph", action="store_true")
+    parser.add_argument(
+        "--env-file", help="Explicit dotenv file; overrides process values"
+    )
+    parser.add_argument(
+        "--existing-only",
+        action="store_true",
+        help="Process cached candidates without new retrieval",
+    )
     args = parser.parse_args(argv)
-    settings = Settings.from_env()
+    settings = Settings.from_env(args.env_file)
     state = State(settings.state_path)
     retriever = provider = driver = None
     try:
@@ -36,6 +46,7 @@ def main(argv=None):
                         "candidates": len(state.all("candidate")),
                         "validated_extractions": len(state.all("extraction")),
                         "jobs": state.all("job"),
+                        "activation": state.get("activation", "daily-worker"),
                     }
                 )
             )
@@ -54,7 +65,11 @@ def main(argv=None):
         targets = [Target.model_validate(t) for t in config["targets"]]
         retriever = EuropePMC()
         if args.command == "run":
-            provider = StructuredProvider(
+            mode = os.getenv("PIPELINE_EXTRACTION_MODE", "structured")
+            if mode not in {"structured", "spans"}:
+                raise PipelineError("unsupported_extraction_mode")
+            adapter = SpanProvider if mode == "spans" else StructuredProvider
+            provider = adapter(
                 settings.provider, settings.model, settings.api_key
             )
             extractor = Extractor(provider, state, settings.daily_calls)
@@ -66,6 +81,7 @@ def main(argv=None):
             args.until,
             config.get("graph_bindings", []),
             retrieval_only=args.command == "retrieve",
+            existing_only=args.existing_only,
         )
         print(json.dumps(result))
         if result["status"] != "completed":

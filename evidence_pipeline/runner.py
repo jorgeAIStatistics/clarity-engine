@@ -36,7 +36,15 @@ class Pipeline:
         self.graph = graph
         self.max_calls = max_calls
 
-    def run(self, targets, since=None, until=None, mapping=(), retrieval_only=False):
+    def run(
+        self,
+        targets,
+        since=None,
+        until=None,
+        mapping=(),
+        retrieval_only=False,
+        existing_only=False,
+    ):
         run_id = str(uuid4())
         until = until or date.today()
         calls = 0
@@ -53,7 +61,7 @@ class Pipeline:
         self.state.put("run", run_id, run)
         heartbeat = lambda: self.state.renew("pipeline", run_id)
         try:
-            for target in targets:
+            for target in [] if existing_only else targets:
                 scope = digest(target.model_dump())
                 checkpoint = self.state.get("checkpoint", scope)
                 # Finish a partially retrieved fixed window before opening a new one.
@@ -119,6 +127,26 @@ class Pipeline:
                         "attempts": 0,
                         "status": "ready",
                     }
+                    # Reuse a validated artifact for the same immutable document
+                    # after model changes; a new source hash still needs extraction.
+                    if not job.get("extraction_key"):
+                        source = candidate["document"]
+                        from .extraction.service import SCHEMA_HASH
+
+                        cached = [
+                            r
+                            for r in self.state.all("extraction")
+                            if r["envelope"].get("schema_sha256") == SCHEMA_HASH
+                            and len(r["envelope"].get("sources", [])) == 1
+                            and r["envelope"]["sources"][0]["id"] == source["id"]
+                            and r["envelope"]["sources"][0]["sha256"]
+                            == source["sha256"]
+                        ]
+                        if cached:
+                            saved = max(
+                                cached, key=lambda r: r["envelope"]["extracted_at"]
+                            )
+                            job.update(extraction_key=saved["id"], status="validated")
                     mapping_hash = digest(mapping)
                     if (
                         job["status"] == "ingested"
@@ -156,10 +184,15 @@ class Pipeline:
                                 ],
                                 run_id,
                             )
+                            # A suspended host may resume after its lease expired.
+                            # The immutable extraction cache is safe to retain, but
+                            # an expired owner must not publish jobs or graph writes.
+                            heartbeat()
                             job.update(extraction_key=key, status="validated")
                             run["extractions"] += 1
                             self.state.put("job", job_key, job)
                         if self.graph:
+                            heartbeat()
                             bindings = resolve_bindings(env.extraction, mapping)
                             result = self.graph.ingest(env, bindings)
                             job.update(
@@ -173,6 +206,26 @@ class Pipeline:
                         code = (
                             str(e) if isinstance(e, PipelineError) else type(e).__name__
                         )
+                        if code == "pipeline_lease_lost":
+                            run["errors"].append({"stage": "lease", "code": code})
+                            break
+                        if code in {
+                            "extraction_provider_http_400",
+                            "extraction_provider_http_401",
+                            "extraction_provider_http_403",
+                            "extraction_provider_http_404",
+                            "extraction_provider_http_429",
+                        }:
+                            # Configuration/rate-limit failures affect the whole run,
+                            # not this paper. Do not burn every candidate's retries.
+                            job.update(
+                                status="ready",
+                                attempts=max(0, job["attempts"] - 1),
+                                code=code,
+                            )
+                            self.state.put("job", job_key, job)
+                            run["errors"].append({"stage": "provider", "code": code})
+                            break
                         if code == "daily_extraction_budget_exhausted":
                             job.update(
                                 status="ready", attempts=max(0, job["attempts"] - 1)

@@ -48,6 +48,12 @@ def visual_evidence(target_id):
         pass
     finally:
         if store:store.close()
+    try:
+        from evidence_pipeline.publication import augment_report
+        base = augment_report(base, target_id)
+    except Exception:
+        # Preserve the published snapshot if the independent pipeline is unavailable.
+        pass
     response=jsonify(version=VERSION,report=base)
     response.headers['Cache-Control']='public, max-age=60'
     return response

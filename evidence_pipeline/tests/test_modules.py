@@ -524,3 +524,49 @@ class RunnerTests(unittest.TestCase):
         self.assertEqual(run["status"], "partial_failure")
         self.assertEqual(state.get("checkpoint", scope)["until"], "2026-01-01")
         state.close()
+
+    def test_existing_only_never_queries_retrieval(self):
+        class Forbidden:
+            def retrieve(self, *args):
+                raise AssertionError("Unexpected retrieval")
+
+        state = State(":memory:")
+        try:
+            result = Pipeline(state, Forbidden(), Extractor(StubProvider(), state)).run(
+                [Target(id="t", terms=["Drug A"])], existing_only=True
+            )
+            self.assertEqual(result["windows"], [])
+            self.assertEqual(result["status"], "completed")
+        finally:
+            state.close()
+
+    def test_systemic_provider_failure_preserves_candidate_retries(self):
+        class BrokenProvider(StubProvider):
+            def extract(self, *args):
+                self.calls += 1
+                raise PipelineError("extraction_provider_http_401")
+
+        state = State(":memory:")
+        try:
+            for ident in ("a", "b"):
+                state.put(
+                    "candidate",
+                    ident,
+                    {
+                        "id": ident,
+                        "target_ids": ["t"],
+                        "document": SourceDocument.model_validate(source()).model_dump(
+                            mode="json"
+                        ),
+                    },
+                )
+            provider = BrokenProvider()
+            result = Pipeline(state, None, Extractor(provider, state), max_calls=3).run(
+                [Target(id="t", terms=["Drug A"])], existing_only=True
+            )
+            self.assertEqual(provider.calls, 1)
+            self.assertEqual(result["status"], "partial_failure")
+            self.assertEqual(state.all("job")[0]["attempts"], 0)
+            self.assertEqual(state.all("job")[0]["status"], "ready")
+        finally:
+            state.close()

@@ -12,6 +12,7 @@ from datetime import datetime
 from typing import Annotated, Generic, Literal, TypeVar
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
+from .numeric_tokens import parse_numeric_token, parse_count_token
 
 Text = Annotated[str, Field(min_length=1, max_length=2000)]
 ID = Annotated[str, Field(min_length=1, max_length=160)]
@@ -80,13 +81,11 @@ class Reported(StrictModel, Generic[T]):
                 raise ValueError("Text facts must copy the exact source wording")
             if isinstance(self.value, (int, float)):
                 try:
-                    token = self.raw.replace("−", "-").replace("·", ".")
-                    if not re.fullmatch(
-                        r"[+-]?(?:(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?",
-                        token,
-                    ):
-                        raise ValueError("Unsupported numeric token")
-                    parsed = float(token.replace(",", ""))
+                    parsed = (
+                        parse_count_token(self.raw)
+                        if isinstance(self.value, int)
+                        else parse_numeric_token(self.raw)
+                    )
                 except ValueError:
                     raise ValueError(
                         "Numeric raw token must be a number; keep units in separate fields"
@@ -263,6 +262,10 @@ class Interval(StrictModel):
 
     @model_validator(mode="after")
     def bounds(self):
+        if self.method.value and re.search(
+            r"\b(?:IQR|interquartile)\b", self.method.value, re.IGNORECASE
+        ):
+            raise ValueError("An interquartile range is not an uncertainty interval")
         lo, hi = self.lower.value, self.upper.value
         if lo is not None and hi is not None and lo > hi:
             raise ValueError("Reversed interval")

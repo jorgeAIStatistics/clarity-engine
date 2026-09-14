@@ -18,10 +18,24 @@ def commands(env):
         worker = [sys.executable, '-m', 'living_research', '--config', 'living_research/config.example.json', 'watch']
         if env.get('ANTHROPIC_API_KEY'): worker.append('--llm')
         result.append(worker)
+    if env.get('CLARITY_PICO_ENABLED') == '1':
+        if not database.startswith(('postgres://', 'postgresql://')):
+            raise RuntimeError('PICO worker requires persistent PostgreSQL')
+        result.append([sys.executable, '-m', 'evidence_pipeline.worker'])
     return result
 
 
 def main():
+    from pathlib import Path
+    config = Path('/etc/secrets/pico.env')
+    if config.exists():
+        from dotenv import load_dotenv
+        load_dotenv(config, override=True)
+    database = os.getenv('DATABASE_URL', '')
+    if database.startswith(('postgres://', 'postgresql://')):
+        os.environ.setdefault('PIPELINE_DATABASE_URL', database)
+        from evidence_pipeline.bootstrap import bootstrap
+        print(f'PICO seed records imported: {bootstrap(os.environ["PIPELINE_DATABASE_URL"])}', flush=True)
     children = []
     stopping = False
     def stop(*_):

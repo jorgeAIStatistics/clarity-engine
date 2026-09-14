@@ -39,8 +39,9 @@ Python 3.12; run its build and integration checks in the deployment environment.
 No dependencies are added to the existing Flask requirements file.
 
 Configure environment variables using `evidence_pipeline/.env.example` as a
-reference. Local commands read process environment; Compose reads the package's
-`.env` file. Do not commit credentials. Required for extraction:
+reference. Local commands read process environment, or an explicitly selected
+`--env-file ../.env` (which overrides stale process values). The worker accepts
+`PIPELINE_ENV_FILE` for the same purpose. Compose reads the package's `.env` file. Do not commit credentials. Required for extraction:
 
 - `EXTRACTION_PROVIDER`: `anthropic` or `openai`.
 - `EXTRACTION_MODEL`: explicit model supporting the selected structured format.
@@ -49,11 +50,12 @@ reference. Local commands read process environment; Compose reads the package's
 - `PIPELINE_RUN_CALLS`: default 3, conservatively counts extraction requests.
 
 A failed/uncertain provider request consumes its reserved daily call. There are
-no hidden model retries or prose fallbacks. Persistent extraction failures stop after three
+no hidden model retries or prose fallbacks. Provider-wide configuration/auth/rate
+errors stop the batch without consuming every candidate's retry allowance. Persistent extraction failures stop after three
 job attempts; graph failures retain their validated extraction for replay. inspect the durable job/attempt codes before retrying. Calls and
 input/output limits bound cost, not an exact currency amount.
 
-Required for graph ingestion: `NEO4J_URI`, `NEO4J_USERNAME`, `NEO4J_PASSWORD`,
+Required for graph ingestion: `NEO4J_URI`, `NEO4J_USERNAME` (or `NEO4J_USER`), `NEO4J_PASSWORD`,
 `NEO4J_DATABASE` (default `neo4j`). Use a secured Neo4j endpoint and a dedicated
 account. Initial constraint creation requires schema privileges. Existing domain
 nodes must have stable `id` properties; this pipeline never creates them from
@@ -75,6 +77,8 @@ python -m evidence_pipeline.cli run --targets evidence_pipeline/targets.example.
 python -m evidence_pipeline.cli graph-init
 python -m evidence_pipeline.cli run --targets evidence_pipeline/targets.example.json --with-graph
 python -m evidence_pipeline.cli status
+# Process already retrieved papers without widening the search window:
+python -m evidence_pipeline.cli run --existing-only --env-file ../.env --with-graph
 ```
 
 Without explicit dates, the runner starts with a 30-day window, then uses the
@@ -89,6 +93,36 @@ State defaults to `research_state/pico.sqlite3`. One local persistent disk must
 be shared by API and worker. SQLite is for a single-host deployment, not multiple
 replicas on network storage. Preserve this volume. A PostgreSQL state adapter is
 needed before horizontally scaling this service.
+
+## Anthropic transport and audit
+
+The full nested approved PICO schema exceeds Anthropic's grammar compilation
+limit. The adapter uses a smaller **strict field-table transport**: typed object
+records, shared literal facts, and exact source passages. It expands these into
+the unchanged approved Pydantic model, then runs every source/hash/reference and
+statistical-bound validator. Transport compliance alone never accepts an extract.
+
+Numeric values are parsed from literal raw tokens; no units or effects are
+converted. Unicode offsets are located in the immutable document from exact
+quotes and explicit occurrence indices. Missing fields are explicitly declared,
+with schema-directed null/list normalization. Literal English cardinal numbers
+up to 99 can be transcribed without calculating new values; their exact original
+wording is retained. Explicit object references can restore omitted root indexes,
+but cannot create a new scientific entity. Public-paper provider output is retained in local state for
+audit, including rejected DTOs; it is never used as an accepted graph artifact.
+The transport version participates in the cache key. Extraction confidence is
+model-reported and uncalibrated. Abstract passage locations do not supply page or
+table coordinates that the source does not contain.
+
+Unsupported fields and invalid statistical subrecords are quarantined with an
+exclusion ledger in durable state. The remaining DTO must still pass all approved
+validators and minimum source-grounded PICO eligibility; an empty shell cannot
+be accepted. A PICO record with source-backed sample size can be accepted without
+quantitative outcomes when the source does not report them. Empty result
+placeholders are removed, never counted as effect estimates. The original model
+response remains immutable. Up to two schema-constrained repair calls are allowed
+per failed source/model/prompt artifact, with each response, patch and error kept.
+A cached response can be revalidated after a decoder fix without another API call.
 
 ## Graph design
 
@@ -192,11 +226,33 @@ limits and graph failure recovery without a second model call. Graph query tests
 use a transaction double; execute the optional live graph test only against a
 dedicated test database with configured credentials.
 
-Verified during implementation: real Europe PMC retrieval stored 12 public
-publication candidates with abstracts for the example targets/window. Local
-Anthropic authentication returned HTTP 401; no live extraction was accepted.
-No Neo4j instance was configured, so a real graph transaction and container
-startup have not been verified here.
+Activation check, 2026-09-14: workspace root credentials are configured and both
+Anthropic and Neo4j authenticate successfully with TLS verification enabled.
+All **12 retrieved publications are accepted and ingested**. Neo4j readback
+verified 12 Study nodes, 59 statistical result records, 23 interval nodes and
+117 source passages; all passages matched the stored immutable source text.
+Outcome definitions without numeric results are not counted as estimates.
+
+The final two publications were recovered through the token-span adapter:
+`PIPELINE_EXTRACTION_MODE=spans`, Anthropic `claude-sonnet-5`. The model selects
+integer token ranges; the server copies literal source bytes and validates the
+approved PICO contract. Invalid observations are quarantined with an audit entry.
+No source-validation rule was disabled. Earlier rejected provider outputs remain
+in local audit state. Structural validation does not certify statistical interpretation.
+
+Production loads `/etc/secrets/pico.env` and uses the existing PostgreSQL connection
+for namespaced `clarity_pico_*` tables. The versioned, credential-free deployment
+seed imports accepted records only when absent; existing durable records are
+preserved. `/api/pico/studies` and `/api/pico/studies/<pmid>` expose source-bound
+records, including a JSON download. The visual report adapter applies the stricter
+plot release contract, so ingested estimates are not automatically chart points.
+
+The data activation block can be cleared after all 12 graph writes are verified.
+The daily process is separately opt-in with `CLARITY_PICO_ENABLED=1` and requires
+PostgreSQL plus a host that does not sleep. A free Render web service is not a
+reliable daily scheduler. Bounded calls and persisted next-run time prevent
+restarts from bypassing budgets. Domain graph bindings are not configured: source
+local Exposure/Population nodes are preserved without inferred causal edges.
 
 Structural/source validation is not scientific appraisal. An exact number can
 still be attached to the wrong outcome, subgroup or comparator by an extractor.

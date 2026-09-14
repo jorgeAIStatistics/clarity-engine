@@ -14,6 +14,8 @@ from evidence.routes import blueprint as evidence_blueprint
 from living_research.routes import blueprint as living_research_blueprint
 
 app = Flask(__name__)
+from evidence_pipeline.public_routes import blueprint as pico_blueprint
+app.register_blueprint(pico_blueprint)
 app.register_blueprint(evidence_blueprint)
 app.register_blueprint(living_research_blueprint)
 app.config["MAX_CONTENT_LENGTH"] = 64 * 1024

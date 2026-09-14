@@ -15,6 +15,10 @@ raw tokens exclude units, percent signs and comparison operators; retain those
 in their named fields and source evidence. Preserve reported units, scale,
 confidence level, adjustment and timepoint. Never convert units or calculate
 an effect, interval, SD, SE, p-value, I², denominator or significance flag.
+Interquartile ranges (IQR), standard deviations, and minimum–maximum ranges are
+not confidence/credible/prediction intervals. Never place an IQR in intervals.
+Retain reported medians in arm_results and their source quotes instead. Do not
+convert number words or ordinal timepoints into numeric tokens from other contexts.
 
 Allocate local IDs only. Reuse IDs consistently within the output. Results must
 reference the exact outcome, population and contrast. Keep multiple follow-ups,
