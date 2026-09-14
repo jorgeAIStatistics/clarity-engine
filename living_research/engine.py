@@ -9,6 +9,7 @@ from .extraction import Extractor, VERSION, source_text
 from .triage import classify
 from .synthesis import build_synthesis
 from .priority import priority_score
+from .backlog import assign_bin, queue_sort_key
 
 DEFAULTS={'initial_lookback_days':30,'overlap_days':7,'interval_days':7,'max_targets':25,'max_records':300,'max_llm_calls':20,'max_llm_calls_per_day':100,'sources':['pubmed','europe_pmc','clinical_trials']}
 PROVIDERS={'pubmed':PubMed,'europe_pmc':EuropePMC,'clinical_trials':ClinicalTrials}
@@ -145,8 +146,9 @@ class Monitor:
                 run['targets'].append(target['id'])
             # Retry unfinished LLM work independently of retrieval checkpoints.
             queue=self.store.find('proposal',status='awaiting_extraction',oldest=True) if getattr(self.extractor,'enabled',True) else []
-            # Aging adds one point per day, so lower-impact work eventually rises.
-            queue.sort(key=lambda p:-(p.get('triage',{}).get('impact_score',0)+max(0,(datetime.now(timezone.utc)-datetime.fromisoformat(p['created_at'])).total_seconds()/86400)))
+            # Integrity and flagship work first (backlog bins); within a bin, impact plus one point per day of age.
+            queue_now=datetime.now(timezone.utc)
+            queue.sort(key=lambda p:queue_sort_key(p,queue_now))
             for proposal in queue:
                 current_target=self.store.get('target',proposal['target_id'],{})
                 if not current_target.get('enabled',False):continue
@@ -187,10 +189,11 @@ class Monitor:
         baseline=self.store.get('published',target['id'],{'version':0,'updates':[]})
         old_proposals=[p for key in set(existing+[paper_id]) for p in self.store.find('proposal',paper_id=key,target_id=target['id'])]
         for old in old_proposals:
-            if old['target_id']==target['id'] and old['paper_id'] in set(existing+[paper_id]) and old['status'] in ('awaiting_extraction','review_ready','approved'):
+            if old['target_id']==target['id'] and old['paper_id'] in set(existing+[paper_id]) and old['status'] in ('awaiting_extraction','review_ready','approved','deferred'):
                 old['status']='superseded';self.store.put('proposal',old['id'],old)
         proposal={'id':proposal_id,'target_id':target['id'],'target':target,'paper_id':paper_id,'paper':paper,'source_versions':versions,'fingerprint':fingerprint,'scope_hash':target['scope_hash'],'status':'awaiting_extraction','created_at':now_iso(),'baseline_version':baseline['version'],'flags':flags_for(paper),'affected_dimensions':assessment_framework(target['entity_type'])['dimensions'],'diff':{'operation':'add_or_update_publication','before':next((u for u in baseline['updates'] if u['paper_id']==paper_id),None),'after':paper},'clinical_grade_change':None,'review_required':True}
         proposal['triage']=classify(paper,target)
+        proposal['queue']={**assign_bin(proposal),'assigned_at':now_iso()}
         self.store.put('proposal',proposal_id,proposal)
         return 1
     def extract(self,proposal):

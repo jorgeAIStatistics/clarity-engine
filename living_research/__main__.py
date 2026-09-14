@@ -27,6 +27,14 @@ def main():
         p=commands.add_parser(action);p.add_argument('id');p.add_argument('--reviewer',required=True);p.add_argument('--note',required=True)
     for action in ('publish','rebase'):
         commands.add_parser(action).add_argument('id')
+    backlog=commands.add_parser('backlog',help='Triage the review queue into priority bins; read-only unless apply')
+    backlog_commands=backlog.add_subparsers(dest='backlog_command',required=True)
+    backlog_commands.add_parser('report',help='Count pending proposals by bin and target; changes nothing').add_argument('--top',type=int,default=15)
+    backlog_apply=backlog_commands.add_parser('apply',help='Store bin labels on pending proposals')
+    backlog_apply.add_argument('--defer-out-of-scope',action='store_true',help='Also move bin 4 proposals to a reversible deferred status')
+    backlog_apply.add_argument('--reviewer');backlog_apply.add_argument('--note')
+    backlog_restore=backlog_commands.add_parser('restore',help='Return deferred proposals to their previous status')
+    backlog_restore.add_argument('--target');backlog_restore.add_argument('--reviewer',required=True);backlog_restore.add_argument('--note',required=True)
     args=parser.parse_args()
     config={**DEFAULTS,**(json.loads(args.config.read_text()) if args.config else {})}
     for key in ('initial_lookback_days','overlap_days','interval_days','max_targets','max_records','max_llm_calls','max_llm_calls_per_day'):
@@ -60,6 +68,11 @@ def main():
         elif args.command in ('approve','reject'):print(json.dumps(review(store,args.id,args.reviewer,args.note,args.command=='approve'),indent=2))
         elif args.command=='publish':print(json.dumps(publish(store,args.id),indent=2))
         elif args.command=='rebase':print(json.dumps(rebase(store,args.id),indent=2))
+        elif args.command=='backlog':
+            from .backlog import triage_backlog, restore_deferred, summarize
+            if args.backlog_command=='report':print(json.dumps(summarize(triage_backlog(store),args.top),indent=2))
+            elif args.backlog_command=='apply':print(json.dumps(summarize(triage_backlog(store,apply=True,defer=args.defer_out_of_scope,actor=args.reviewer,note=args.note)),indent=2))
+            else:print(json.dumps(restore_deferred(store,args.reviewer,args.note,args.target),indent=2))
     finally:store.close()
 
 if __name__=='__main__':main()

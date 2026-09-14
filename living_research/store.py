@@ -47,6 +47,11 @@ class Store:
         state="payload::jsonb->>'status'" if self.pg else "json_extract(payload, '$.status')"
         row=self.execute(f"SELECT COUNT(*) AS n FROM clarity_research_records WHERE kind='proposal' AND {target}=? AND {state} IN ('awaiting_extraction','review_ready','approved','extraction_failed')",(target_id,)).fetchone()
         return row['n']
+    def deferred_count(self,target_id):
+        target="payload::jsonb->>'target_id'" if self.pg else "json_extract(payload, '$.target_id')"
+        state="payload::jsonb->>'status'" if self.pg else "json_extract(payload, '$.status')"
+        row=self.execute(f"SELECT COUNT(*) AS n FROM clarity_research_records WHERE kind='proposal' AND {target}=? AND {state}='deferred'",(target_id,)).fetchone()
+        return row['n']
     def acquire(self, owner):
         now=time.time()
         return self.execute("INSERT INTO clarity_research_leases(id,owner,expires) VALUES('monitor',?,?) ON CONFLICT(id) DO UPDATE SET owner=excluded.owner,expires=excluded.expires WHERE clarity_research_leases.expires<?",(owner,now+600,now)).rowcount==1
