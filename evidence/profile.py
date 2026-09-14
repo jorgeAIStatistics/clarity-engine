@@ -3,23 +3,36 @@
 This adapter never regrades evidence or interprets missing metadata as a negative
 finding. Generation timestamps are not substituted for search coverage dates.
 """
+import json
 import re
+from pathlib import Path
 from .service import assessment_framework
 
 LAYERS=('mechanism','preclinical','observational','interventional','guidelines','synthesis','protocol','unclassified')
 
+# One versioned rule table is shared with clarity-web (python3 -m evidence.export_layers).
+LAYER_RULES=json.loads(Path(__file__).with_name('layers.json').read_text())
+
+def _compile(condition):
+    return {'flag':condition['flag']} if 'flag' in condition else {'field':condition['field'],'pattern':re.compile(condition['pattern'])}
+
+_RULES=[{'layer':rule['layer'],'any':[_compile(c) for c in rule['any']] if 'any' in rule else None,
+         'none':[_compile(c) for c in rule['none']] if 'none' in rule else None} for rule in LAYER_RULES['rules']]
+
+def _field(study,name):
+    if name=='population_design':return _field(study,'population')+' '+_field(study,'design')
+    value=(study.get('design') or study.get('study_type')) if name=='design' else study.get(name)
+    return str(value or '').lower()
+
+def _matches(study,condition):
+    if 'flag' in condition:return bool(study.get(condition['flag']))
+    return condition['pattern'].search(_field(study,condition['field'])) is not None
+
 def layer_for(study):
-    design=str(study.get('design') or study.get('study_type') or '').lower()
-    population=str(study.get('population') or '').lower()
-    if study.get('is_protocol') or re.search(r'\b(?:study protocol|trial protocol|protocol for (?:a|an|the) .{0,40}trial)\b',str(study.get('title','')).lower()) or 'protocol' in design:return 'protocol'
-    if re.search(r'guideline|practice recommendation|regulatory',design):return 'guidelines'
-    if re.search(r'animal|mouse|mice|rat\b|preclinical',population) or 'animal' in design:return 'preclinical'
-    if re.search(r'in.?vitro|cell[- ](?:line|culture|based)|mechanis',population+' '+design):return 'mechanism'
-    if re.search(r'meta.analysis|systematic review',design):return 'synthesis'
-    if 'human' not in population:return 'unclassified'
-    if re.search(r'random|rct|clinical trial|intervention',design):return 'interventional'
-    if re.search(r'observ|cohort|case.control|cross.section',design):return 'observational'
-    return 'unclassified'
+    for rule in _RULES:
+        hit=any(_matches(study,c) for c in rule['any']) if rule['any'] is not None else not any(_matches(study,c) for c in rule['none'])
+        if hit:return rule['layer']
+    return LAYER_RULES['default']
 
 def profile_contract(profile,entity_type='intervention'):
     compound=entity_type=='intervention'

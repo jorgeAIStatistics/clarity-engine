@@ -257,14 +257,17 @@ def apply_direction(claim, direction_rec):
     claim["direction"] = d
     claim["direction_quote"] = direction_rec.get("quote")
     if direction_rec.get("metric"):
+        # An interval the source did not report is never stored as if it were.
+        estimated = bool(direction_rec.get("is_estimated"))
         claim["headline_effect"] = {
             "metric": direction_rec["metric"], "value": direction_rec["value"],
-            "ci_low": direction_rec["ci_low"], "ci_high": direction_rec["ci_high"],
+            "ci_low": None if estimated else direction_rec["ci_low"],
+            "ci_high": None if estimated else direction_rec["ci_high"],
             "n_studies_pooled": direction_rec["n_studies_pooled"],
             "comparator": direction_rec["comparator"],
             "direction": d,
-            "ci_estimated": direction_rec["is_estimated"],
-            "crosses_null": direction_rec["crosses_null"],
+            "ci_estimated": estimated,
+            "crosses_null": None if estimated else direction_rec["crosses_null"],
             "quote": direction_rec["quote"],
         }
 

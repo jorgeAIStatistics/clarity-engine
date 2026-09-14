@@ -214,16 +214,12 @@ def validate(obj, abstract):
     else:
         status, tier = "derived", "dashed"
 
-    # If CI missing, estimate a rough one so the mark can be drawn — but DASHED,
-    # and flagged, so it never masquerades as reported precision.
-    ci_estimated = False
+    # A missing interval stays missing. Without n or SE no interval can be computed,
+    # and a placeholder would be drawn, pooled and read as reported precision. The
+    # flag is kept so every consumer continues to withhold the estimate.
+    ci_estimated = not has_ci
     if not has_ci:
-        # Without n or SE we cannot compute a real CI. We draw a WIDE placeholder
-        # interval and flag it — its width honestly signals "we don't know".
-        null = _METRICS[metric]["null"]
-        span = abs(value - null) if value != null else 0.5
-        ci_low, ci_high = value - span, value + span
-        ci_estimated = True
+        ci_low, ci_high = None, None
 
     return {
         "metric": metric,
@@ -313,6 +309,9 @@ def pool(effects):
             return None
         num = den = 0.0
         for e in subset:
+            # Inverse-variance weights need a reported interval; unreported ones are skipped.
+            if not isinstance(e.get("ci_low"), (int, float)) or not isinstance(e.get("ci_high"), (int, float)):
+                continue
             d = to_d(e)
             se = (e["ci_high"] - e["ci_low"]) / (2 * 1.96)
             if se <= 0:

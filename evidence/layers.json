@@ -1,0 +1,53 @@
+{
+  "version": "layers-v1-2026-09-13",
+  "description": "Ordered evidence-layer rules shared by clarity-engine (evidence/profile.py) and clarity-web (src/platform/layers.generated.js). The first matching rule wins. Text fields are lower-cased before matching. Patterns use the regex subset common to Python re and JavaScript RegExp. Export with: python3 -m evidence.export_layers ../clarity-web/src/platform/layers.generated.js",
+  "fields": {
+    "design": "design, falling back to study_type",
+    "population_design": "population + ' ' + design"
+  },
+  "rules": [
+    {"layer": "protocol", "any": [
+      {"flag": "is_protocol"},
+      {"field": "title", "pattern": "\\b(?:study protocol|trial protocol|protocol for (?:a|an|the) .{0,40}trial)\\b"},
+      {"field": "design", "pattern": "protocol"}
+    ]},
+    {"layer": "guidelines", "any": [
+      {"field": "design", "pattern": "guideline|practice recommendation|regulatory"}
+    ]},
+    {"layer": "preclinical", "any": [
+      {"field": "population", "pattern": "animal|mouse|mice|rat\\b|preclinical"},
+      {"field": "design", "pattern": "animal"}
+    ]},
+    {"layer": "mechanism", "any": [
+      {"field": "population_design", "pattern": "in.?vitro|cell[- ](?:line|culture|based)|mechanis"}
+    ]},
+    {"layer": "synthesis", "any": [
+      {"field": "design", "pattern": "meta.analysis|systematic review"}
+    ]},
+    {"layer": "unclassified", "none": [
+      {"field": "population", "pattern": "human"}
+    ]},
+    {"layer": "interventional", "any": [
+      {"field": "design", "pattern": "random|rct|clinical trial|intervention"}
+    ]},
+    {"layer": "observational", "any": [
+      {"field": "design", "pattern": "observ|cohort|case.control|cross.section"}
+    ]}
+  ],
+  "default": "unclassified",
+  "cases": [
+    {"study": {"design": "RCT", "population": "animal"}, "layer": "preclinical"},
+    {"study": {"design": "RCT"}, "layer": "unclassified"},
+    {"study": {"design": "RCT", "population": "human"}, "layer": "interventional"},
+    {"study": {"design": "Meta-analysis", "population": "human"}, "layer": "synthesis"},
+    {"study": {"title": "Creatine: study protocol for a randomized trial", "design": "RCT", "population": "human"}, "layer": "protocol"},
+    {"study": {"is_protocol": true, "design": "RCT", "population": "human"}, "layer": "protocol"},
+    {"study": {"population": "Human non-small-cell lung cancer", "design": "Randomized controlled trial"}, "layer": "interventional"},
+    {"study": {"design": "Observational", "population": "human"}, "layer": "observational"},
+    {"study": {"design": "Prospective cohort", "population": "Human; 293,876 UK Biobank adults"}, "layer": "observational"},
+    {"study": {"design": "Clinical practice guideline"}, "layer": "guidelines"},
+    {"study": {"design": "In vitro", "population": "cell"}, "layer": "mechanism"},
+    {"study": {"design": "Case report", "population": "human"}, "layer": "unclassified"},
+    {"study": {"study_type": "Animal"}, "layer": "preclinical"}
+  ]
+}
