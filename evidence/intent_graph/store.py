@@ -55,3 +55,24 @@ def link_envelope(extraction_id,envelope,nodes):
         for n in hits:
             s.run('MATCH (s:Study)-[:HAS_EXTRACTION]->(x:Extraction {id:$extraction}), (e:Entity {id:$entity}) MERGE (s)-[r:MENTIONS_ENTITY]->(e) SET r.method="exact_alias_in_source",r.source_hash=$hash,r.review_state="automated"',extraction=extraction_id,entity=n['id'],hash=source.sha256).consume()
     return len(hits)
+
+
+def graph_stats(entity_id=''):
+    """Aggregate counts from the graph this process reads. No credentials or question text."""
+    import re
+    with session() as s:
+        one=lambda query,**kw: s.run(query,**kw).single()[0]
+        data=dict(version='graph-stats-v1',
+            entities=one('MATCH (e:Entity) WHERE e.ephemeral=false RETURN count(e)'),
+            biomarkers=one('MATCH (e:Entity:Biomarker) WHERE e.ephemeral=false RETURN count(e)'),
+            biomarkers_with_aliases=one('MATCH (e:Entity:Biomarker) WHERE e.ephemeral=false AND size(e.aliases)>=2 RETURN count(e)'),
+            temporary_entities=one('MATCH (e:Entity {ephemeral:true}) RETURN count(e)'),
+            studies=one('MATCH (s:Study) RETURN count(s)'),
+            matcher_records=one('MATCH (r:MatcherRecord) RETURN count(r)'),
+            entity_links=one('MATCH ()-[m:MENTIONS_ENTITY]->() RETURN count(m)'),
+            findings=one('MATCH (f:Finding) RETURN count(f)'),
+            findings_by_type={r['type']:r['n'] for r in s.run('MATCH (f:Finding) RETURN f.observation_type AS type,count(f) AS n ORDER BY type')})
+        if re.fullmatch(r'[a-z_]+:[a-z0-9-]{1,60}',entity_id or ''):
+            row=s.run('MATCH (e:Entity {id:$id}) OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding) WITH e,collect(f{.observation_type,.measure,.value_raw,.threshold,.lower,.upper,.passage,.source_id}) AS found OPTIONAL MATCH (e)<-[:MENTIONS_ENTITY]-(st:Study) RETURN e.name AS name,e.aliases AS aliases,e.meaning_type AS meaning_type,found,count(DISTINCT st) AS studies',id=entity_id).single()
+            data['entity']=dict(id=entity_id,name=row['name'],aliases=row['aliases'],studies=row['studies'],meaning_type=row['meaning_type'],findings=row['found']) if row else None
+    return data

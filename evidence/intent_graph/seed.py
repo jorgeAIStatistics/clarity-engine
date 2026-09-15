@@ -19,7 +19,9 @@ def main():
     from evidence.profile import layer_for
     from evidence.copilot import record_angles
     state=State(Settings.from_env().state_path)
+    observations=[]
     try:
+        observations=state.all('observation_extraction')
         for candidate in state.all('candidate'):
             if candidate['study_id'] in by_id:continue
             if not any(t.startswith('biomarker:') for t in candidate.get('target_ids',[])):continue
@@ -44,6 +46,12 @@ def main():
         finding=dict(plot_eligible=True,outcome=r['outcome'],quote=r['quote'],entity_ids=[],population=r['context'].get('population'),exposure=r['context'].get('exposure'),comparator=r['context'].get('comparator'),timepoint=r['context'].get('timepoint') or r['context'].get('duration'),effect=dict(measure=r['metric'],estimate=r['point'],lower=r['lower'],upper=r['upper'],confidence_level=r['intervalLevel'],units=r.get('unit'),origin='reported'))
         # Existing source text must contain the figure's exact quote.
         if r['quote'] in doc['_text'] and finding not in doc['findings']:doc['findings'].append(finding)
+    from .findings import apply_observations,matcher_document,publish
+    for record in observations:
+        doc=by_id.get(record['study_id'])
+        if doc:apply_observations(doc,record)
+        else:
+            doc=matcher_document(record);records.append(doc);by_id[doc['id']]=doc
     total=0
     with store.session() as s:
         for record in records:
@@ -59,5 +67,6 @@ def main():
                 if record.get('layer') in store.LAYERS:
                     s.run('MATCH (e:Entity {id:$entity})-[:HAS_LAYER]->(l:LayerAssessment {layer:$layer}) SET l.status="INDEXED",l.review_state="automated"',entity=n['id'],layer=record['layer']).consume()
             total+=1
-    print(json.dumps({'biomarkers':sum(n['type']=='biomarker' for n in nodes),'source_records':total}))
+        for record in observations:publish(record,nodes,s)
+    print(json.dumps({'biomarkers':sum(n['type']=='biomarker' for n in nodes),'source_records':total,'observation_records':len(observations)}))
 if __name__=='__main__':main()

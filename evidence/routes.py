@@ -144,6 +144,13 @@ def evidence_match():
     except ValueError as error:return jsonify(error=str(error)),400
     except Exception:return jsonify(error='Library matching is temporarily unavailable. Please try again.'),503
 
+@blueprint.get('/api/evidence/graph/stats')
+def graph_stats():
+    from .intent_graph.store import graph_stats as stats
+    try:data=stats(request.args.get('entity','')[:80])
+    except Exception:return jsonify(error='Graph statistics are unavailable.'),503
+    response=jsonify(data);response.headers['Cache-Control']='public, max-age=60';return response
+
 @blueprint.post('/api/evidence/match/feedback')
 def matcher_feedback():
     from .feedback import record_feedback
