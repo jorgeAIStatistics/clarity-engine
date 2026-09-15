@@ -55,3 +55,18 @@ class RuleFallbackTests(unittest.TestCase):
         response=app.test_client().post('/api/evidence/match',json={'text':IL18,'workspace':True})
         self.assertEqual(response.status_code,200)
         self.assertEqual(response.json['parse']['mode'],'rules')
+
+
+class MapConcurrencyTests(unittest.TestCase):
+    def test_extra_maps_get_a_json_busy_response(self):
+        from app import app
+        from evidence import routes
+        held=[routes.MAP_SLOTS.acquire(blocking=False) for _ in range(4)]
+        try:
+            response=app.test_client().post('/api/evidence/match',json={'text':IL18,'workspace':True})
+            self.assertEqual(response.status_code,503)
+            self.assertEqual(response.json['code'],'busy')
+            self.assertEqual(response.headers['Retry-After'],'30')
+        finally:
+            for acquired in held:
+                if acquired:routes.MAP_SLOTS.release()

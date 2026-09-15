@@ -2,9 +2,20 @@ from flask import Blueprint, jsonify, request
 from .service import CATALOG, list_entities, get_entity, diagnostic_metrics, screening_metrics
 from .profile import profile_contract
 from functools import lru_cache
+import os
+import threading
 import time
 
 blueprint=Blueprint('evidence',__name__)
+
+# Each map holds a server thread through a Claude parse and graph queries. Extra maps are refused
+# at once with a JSON busy response, which keeps CORS headers, instead of failing at the proxy.
+MAP_SLOTS=threading.BoundedSemaphore(max(1,min(4,int(os.getenv('CLARITY_MAP_CONCURRENCY','2')))))
+
+def map_busy():
+    response=jsonify(error='The evidence map is busy with other questions. Try again in about a minute.',code='busy')
+    response.status_code=503;response.headers['Retry-After']='30';response.headers['Cache-Control']='no-store'
+    return response
 
 @lru_cache(maxsize=1)
 def _visual_snapshot():
@@ -122,7 +133,9 @@ def evidence_match():
     try:
         if body.get('workspace'):
             from .intent_graph.service import run
-            result=run(text)
+            if not MAP_SLOTS.acquire(blocking=False):return map_busy()
+            try:result=run(text)
+            finally:MAP_SLOTS.release()
         else:
             result=match(text,library_index(int(time.time()//3600)),study_limit=12)
         from .feedback import token_for
