@@ -3,6 +3,7 @@ from .service import CATALOG, list_entities, get_entity, diagnostic_metrics, scr
 from .profile import profile_contract
 from functools import lru_cache
 import os
+import re
 import threading
 import time
 
@@ -150,6 +151,15 @@ def graph_stats():
     try:data=stats(request.args.get('entity','')[:80])
     except Exception:return jsonify(error='Graph statistics are unavailable.'),503
     response=jsonify(data);response.headers['Cache-Control']='public, max-age=60';return response
+
+@blueprint.get('/api/evidence/graph/entity/<path:entity_id>')
+def graph_entity(entity_id):
+    if not re.fullmatch(r'[a-z_]+:[a-z0-9-]{1,80}',entity_id):return jsonify(error='Unknown graph profile.'),404
+    from .intent_graph.store import graph_entity as load
+    try:data=load(entity_id)
+    except Exception:return jsonify(error='Graph profiles are unavailable.'),503
+    if data is None:return jsonify(error='Unknown graph profile.'),404
+    response=jsonify(data);response.headers['Cache-Control']='public, max-age=120';return response
 
 @blueprint.post('/api/evidence/match/feedback')
 def matcher_feedback():

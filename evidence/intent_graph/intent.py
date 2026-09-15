@@ -9,7 +9,7 @@ from evidence_pipeline.extraction.providers import wire_schema
 class EntityIntent(BaseModel):
     model_config = ConfigDict(extra='forbid')
     name: str = Field(min_length=1, max_length=160)
-    type: Literal['biomarker','compound','test','condition','precision_context']
+    type: Literal['biomarker','compound','test','condition','precision_context','gene','protein','variant','pathway','assay','metabolite']
     synonyms: list[str] = Field(max_length=12)
     question_span: str = Field(min_length=1, max_length=300)
 
@@ -32,7 +32,7 @@ A title calling something a potential biomarker for an outcome asks ASSOCIATION;
 personalized management asks clinical_utility as an additional question. Trial
 enrichment asks enrichment; progression/prognosis asks prediction. Association and
 clinical utility are separate, and neither proves the other. Do not assume mechanism.
-Represent radiotherapy as precision_context, not a test. Represent eGFR as a
+Represent radiotherapy as precision_context, not a test. Use gene for a gene named as a gene and variant for a named mutation (e.g. EGFR L858R, EGFR mutation). Represent eGFR as a
 biomarker. Outcomes are short literal endpoint phrases (e.g. radiotherapy-related
 pain), never sentences about association or utility. Do not add related endpoints
 such as mortality or CKD progression unless literally requested. Do not put outcomes
@@ -83,13 +83,22 @@ def alias_present(alias,text):
         return bool(re.search(r'(?<!\w)'+re.escape(alias)+r'(?!\w)',text))
     return (' '+norm(alias)+' ') in (' '+norm(text)+' ')
 
+# A parsed type may resolve to a molecularly compatible registry type (a "biomarker" span can be a gene or variant).
+COMPATIBLE={'biomarker':{'biomarker','gene','protein','variant','metabolite','assay'},'gene':{'gene','biomarker','protein'},'protein':{'protein','biomarker','gene'},
+    'variant':{'variant','biomarker','precision_context','gene'},'precision_context':{'precision_context','variant'},'test':{'test','assay'},'assay':{'assay','test','biomarker'},'metabolite':{'metabolite','biomarker'}}
+
+def compatible(parsed_type,registry_type):
+    return registry_type in COMPATIBLE.get(parsed_type,{parsed_type})
+
 def resolve_alias(entity, nodes):
     # Match the actual span before any model-suggested synonyms. Model synonyms
     # cannot turn "breast cancer" into BRCA or an unmentioned therapy.
     span=entity.question_span
-    hits=[n for n in nodes if n['type']==entity.type and any(norm(a)==norm(span) for a in n['aliases'])]
+    hits=[n for n in nodes if compatible(entity.type,n['type']) and any(norm(a)==norm(span) for a in n['aliases'])]
     if not hits:
-        hits=[n for n in nodes if n['type']==entity.type and any(alias_present(a,span) for a in n['aliases'])]
+        scored=[(max(len(norm(a)) for a in n['aliases'] if alias_present(a,span)),n) for n in nodes if compatible(entity.type,n['type']) and any(alias_present(a,span) for a in n['aliases'])]
+        best=max((length for length,_ in scored),default=0)
+        hits=[n for length,n in scored if length==best]
     if len(hits)>1:
         exact_case=[n for n in hits if span in n['aliases']]
         hits=exact_case or hits

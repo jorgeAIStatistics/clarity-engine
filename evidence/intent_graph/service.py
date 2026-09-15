@@ -8,6 +8,8 @@ from .intent import parse_intent,alias_present
 from . import store
 from evidence.matcher import tokens,match,research_input_error
 
+ANCHOR_TYPES=('biomarker','compound','test','gene','protein','variant','metabolite','assay')
+
 def plain(text):
     # Lower-case ordinary capitalized words from titles; acronyms such as IL-18, ALS or HbA1c keep their case.
     return re.sub(r'\b[A-Z][a-z]+\b',lambda m:m.group().lower(),text)
@@ -38,12 +40,14 @@ def graph_records(nodes):
     result=[]
     for row in records:
         doc=json.loads(row['payload']);doc['entity_ids']=row['entities'];doc['_tokens']=tokens(doc.get('title','')+' '+doc.get('_text',''))
-        for finding in doc.get('findings',[]):finding['entity_ids']=row['entities']
+        for finding in doc.get('findings',[]):
+            # A typed finding keeps the entities named in its own marker span; legacy findings follow the record.
+            finding['entity_ids']=[i for i in finding.get('entity_ids',[]) if i in row['entities']] if finding.get('finding_id') else row['entities']
         result.append(doc)
     return result
 
 def constrained(text,intent,nodes,records):
-    anchors=[n for n in nodes if n['type'] in ('biomarker','compound','test')]
+    anchors=[n for n in nodes if n['type'] in ANCHOR_TYPES]
     conditions=[n for n in nodes if n['type']=='condition']
     def mentioned(n,source):return any(alias_present(a,source) for a in n['aliases'])
     keep=[]
@@ -86,6 +90,19 @@ def constrained(text,intent,nodes,records):
     result['query_stored']=False
     return result
 
+def attach_graph(result,qid):
+    """Layer rollups and cell findings from the question's MENTIONS subgraph, never from graph neighbours."""
+    coverage,found=store.question_payload(qid)
+    cells=result['layer_coverage']['entities']
+    for row in coverage:
+        cell=cells.get(row['entity_id'],{}).get('cells',{}).get(row['layer'])
+        if cell is not None:
+            cell.update(n_findings=row['n_findings'],graph_direction=row['direction'],graph_review_state=row['review_state'],sentences=json.loads(row['sentences']) if row['sentences'] else [])
+    result['graph_findings']=[dict(r['finding'],entity_id=r['entity_id'],layer=r['layer'],quote=r['quote'],study_id=r['study_id'],pmid=r['pmid'],title=r['title']) for r in found]
+    result['question_id']=qid
+    result['question_storage']=dict(parsed_fields_days=7,raw_text=os.getenv('CLARITY_STORE_QUESTION_TEXT')=='1')
+    return result
+
 def run(text):
     if research_input_error(text):raise ValueError(research_input_error(text))
     try:
@@ -94,8 +111,8 @@ def run(text):
         from .budget import reserve
         reserve()
         intent=parse_intent(text)
-        nodes=store.resolve(intent,text)
-        result=constrained(text,intent,nodes,graph_records(nodes))
+        nodes,qid=store.resolve(intent,text,store_question_text=os.getenv('CLARITY_STORE_QUESTION_TEXT')=='1')
+        result=attach_graph(constrained(text,intent,nodes,graph_records(nodes)),qid)
         result['parse']=dict(mode='claude',graph='neo4j')
         return result
     except Exception as error:

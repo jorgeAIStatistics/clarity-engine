@@ -49,7 +49,8 @@ def tried_sources(state,node):
             by_pmid[source.pmid]=(candidate['study_id'],source,candidate.get('metadata') or {})
     return [by_pmid[p] for p in order if p in by_pmid]
 
-def observations_main(names,attempts=2,search=False):
+def observations_main(names,attempts=2,search=False,replay=False):
+    from evidence_pipeline.extraction.observations import redecode
     registry=json.loads(Path(__file__).with_name('registry.json').read_text())
     settings=Settings.from_env();reports=[]
     for name in names:
@@ -57,22 +58,55 @@ def observations_main(names,attempts=2,search=False):
         state=State(settings.state_path);provider=None
         report=dict(id=node['id'],name=name,mode='observations',at=now().isoformat(),attempts=[],status='no_supported_observations')
         try:
-            sources=(search_sources(node) if search else tried_sources(state,node)) or search_sources(node)
-            provider=ObservationProvider('anthropic',os.getenv('CLARITY_ENRICH_MODEL','claude-sonnet-5'),os.environ['ANTHROPIC_API_KEY'],max_output_tokens=14000)
-            extractor=ObservationExtractor(provider,state,daily_calls=120)
-            for identity,source,metadata in sources[:max(1,attempts)]:
-                attempt=dict(pmid=source.pmid,study_id=identity)
-                try:
-                    key,record=extractor.extract(source,run_id='biomarker-observations-pass-v1')
-                    record=dict(record,study_id=identity,year=metadata.get('pubYear'),target_ids=[node['id']])
-                    state.put('observation_extraction',key,record)
-                    with store.session() as session:linked=findings.publish(record,registry,session)
-                    attempt.update(status='published',design=record['design']['study_design'],entity_links=linked,findings=[findings.summary(f) for f in record['findings']],excluded=record['excluded'])
-                    report['attempts'].append(attempt);report['status']='published';break
-                except Exception as error:
-                    code=str(error) if re.fullmatch(r'[a-z0-9_]{3,80}',str(error)) else None
-                    attempt.update(status='failed',error=type(error).__name__,**({'error_code':code} if code else {}))
-                    report['attempts'].append(attempt)
+            with store.session() as session:
+                if replay:
+                    # Re-read saved provider bytes with the current decoder: no API call.
+                    records=[r for r in state.all('observation_extraction') if node['id'] in r.get('target_ids',[]) and not r.get('superseded_by')]
+                    attempts_by_key={a['cache_key']:a for a in state.all('observation_attempt') if a.get('status')=='validated'}
+                    for record in records:
+                        # A replay record points at its saved output directly; an original one through its attempt.
+                        attempt=attempts_by_key.get(record['id'])
+                        output_id=record.get('redecoded_from') or (attempt['id'] if attempt else None)
+                        output=state.get('observation_output',output_id) if output_id else None
+                        if not output:continue
+                        fresh=redecode(output,record['source']);fresh.update(study_id=record['study_id'],year=record.get('year'),target_ids=record['target_ids'])
+                        state.put('observation_extraction',fresh['id'],fresh)
+                        if fresh['id']!=record['id']:state.put('observation_extraction',record['id'],{**record,'superseded_by':fresh['id']})
+                        linked=findings.publish(fresh,registry,session)
+                        report['attempts'].append(dict(pmid=fresh['source'].get('pmid'),status='replayed',design=fresh['design']['study_design'],entity_links=linked,dead_letters=fresh['dead_letters'],findings=[findings.summary(f,registry) for f in fresh['findings']]))
+                        report['status']='published' if fresh['findings'] else report['status']
+                    # Earlier failed attempts for this marker become typed dead-letters.
+                    prior=state.get('biomarker_observations',node['id']) or {}
+                    failed=[a for a in state.all('observation_attempt') if a.get('status')=='failed']
+                    legacy=[a for a in failed if not a.get('source_id')]
+                    for index,attempt in enumerate([a for a in prior.get('attempts',[]) if a.get('status')=='failed']):
+                        match=next((a for a in failed if a.get('pmid')==attempt.get('pmid')),legacy[index] if len(legacy)==len([x for x in prior.get('attempts',[]) if x.get('status')=='failed']) else None)
+                        dead=match.get('dead_letters') or ({'no_observations_reported':1} if match and not match.get('excluded') else {}) if match else {}
+                        if match and not match.get('dead_letters') and match.get('excluded'):
+                            from evidence_pipeline.extraction.observations import DEAD_LETTER
+                            dead=dict(__import__('collections').Counter(DEAD_LETTER.get(e.get('reason'),'rejected_other') for e in match['excluded'] if e.get('reason')))
+                        identifier=findings.dead_letter(session,node['id'],attempt.get('pmid'),attempt.get('study_id'),attempt.get('error_code') or 'extraction_failed',dead,(match or {}).get('excluded',[]),now().isoformat())
+                        report['attempts'].append(dict(pmid=attempt.get('pmid'),status='dead_letter',dead_letter=identifier,code=attempt.get('error_code'),dead_letters=dead))
+                else:
+                    sources=(search_sources(node) if search else tried_sources(state,node)) or search_sources(node)
+                    provider=ObservationProvider('anthropic',os.getenv('CLARITY_ENRICH_MODEL','claude-sonnet-5'),os.environ['ANTHROPIC_API_KEY'],max_output_tokens=14000)
+                    extractor=ObservationExtractor(provider,state,daily_calls=120)
+                    for identity,source,metadata in sources[:max(1,attempts)]:
+                        attempt=dict(pmid=source.pmid,study_id=identity)
+                        try:
+                            key,record=extractor.extract(source,run_id='biomarker-observations-pass-v2')
+                            record=dict(record,study_id=identity,year=metadata.get('pubYear'),target_ids=[node['id']])
+                            state.put('observation_extraction',key,record)
+                            linked=findings.publish(record,registry,session)
+                            attempt.update(status='published',design=record['design']['study_design'],entity_links=linked,dead_letters=record['dead_letters'],findings=[findings.summary(f,registry) for f in record['findings']])
+                            report['attempts'].append(attempt)
+                            if node['id'] in linked:report['status']='published';break
+                        except Exception as error:
+                            code=str(error) if re.fullmatch(r'[a-z0-9_]{3,80}',str(error)) else type(error).__name__
+                            dead=getattr(provider,'dead_letters',{}) or {}
+                            identifier=findings.dead_letter(session,node['id'],source.pmid,identity,code,dead,getattr(provider,'decode_audit',[]),now().isoformat())
+                            attempt.update(status='dead_letter',code=code,dead_letters=dead,dead_letter=identifier)
+                            report['attempts'].append(attempt)
         finally:
             state.put('biomarker_observations',node['id'],report);state.close()
             if provider:provider.close()
@@ -86,8 +120,9 @@ def main(argv=None):
     parser.add_argument('--observations',nargs='+',metavar='MARKER',help='Extract biomarker observations for these registry names')
     parser.add_argument('--attempts',type=int,default=2,help='Abstracts to try per marker in observation mode')
     parser.add_argument('--search',action='store_true',help='Search new abstracts instead of re-reading tried ones')
+    parser.add_argument('--replay',action='store_true',help='Re-decode saved provider outputs and record dead-letters; no API calls')
     args=parser.parse_args(argv)
-    if args.observations:return observations_main(args.observations,args.attempts,args.search)
+    if args.observations:return observations_main(args.observations,args.attempts,args.search,args.replay)
     nodes=json.loads(Path(__file__).with_name('registry.json').read_text())
     chosen=[next(n for n in nodes if n['name']==name) for name in TOP]
     settings=Settings.from_env()

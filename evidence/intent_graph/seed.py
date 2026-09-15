@@ -4,6 +4,15 @@ from pathlib import Path
 from . import store
 from .intent import alias_present
 
+def latest_observations(records):
+    """One current finding record per study: superseded records and older replays are skipped."""
+    current={}
+    for record in records:
+        if record.get('superseded_by') or not record.get('study_id'):continue
+        old=current.get(record['study_id'])
+        if not old or str(record.get('extracted_at'))>str(old.get('extracted_at')):current[record['study_id']]=record
+    return list(current.values())
+
 def main():
     from evidence.matcher import documents
     from evidence.service import CATALOG
@@ -21,7 +30,7 @@ def main():
     state=State(Settings.from_env().state_path)
     observations=[]
     try:
-        observations=state.all('observation_extraction')
+        observations=latest_observations(state.all('observation_extraction'))
         for candidate in state.all('candidate'):
             if candidate['study_id'] in by_id:continue
             if not any(t.startswith('biomarker:') for t in candidate.get('target_ids',[])):continue
@@ -46,12 +55,12 @@ def main():
         finding=dict(plot_eligible=True,outcome=r['outcome'],quote=r['quote'],entity_ids=[],population=r['context'].get('population'),exposure=r['context'].get('exposure'),comparator=r['context'].get('comparator'),timepoint=r['context'].get('timepoint') or r['context'].get('duration'),effect=dict(measure=r['metric'],estimate=r['point'],lower=r['lower'],upper=r['upper'],confidence_level=r['intervalLevel'],units=r.get('unit'),origin='reported'))
         # Existing source text must contain the figure's exact quote.
         if r['quote'] in doc['_text'] and finding not in doc['findings']:doc['findings'].append(finding)
-    from .findings import apply_observations,matcher_document,publish
+    from .findings import apply_observations,matcher_document,publish,refresh_layers
     for record in observations:
         doc=by_id.get(record['study_id'])
-        if doc:apply_observations(doc,record)
+        if doc:apply_observations(doc,record,nodes)
         else:
-            doc=matcher_document(record);records.append(doc);by_id[doc['id']]=doc
+            doc=matcher_document(record,nodes);records.append(doc);by_id[doc['id']]=doc
     total=0
     with store.session() as s:
         for record in records:
@@ -65,8 +74,10 @@ def main():
             for n in hits:
                 s.run('MATCH (s:Study {id:$study}),(e:Entity {id:$entity}) MERGE (s)-[r:MENTIONS_ENTITY]->(e) SET r.review_state="automated",r.method="exact_alias_in_source"',study=record['id'],entity=n['id']).consume()
                 if record.get('layer') in store.LAYERS:
-                    s.run('MATCH (e:Entity {id:$entity})-[:HAS_LAYER]->(l:LayerAssessment {layer:$layer}) SET l.status="INDEXED",l.review_state="automated"',entity=n['id'],layer=record['layer']).consume()
+                    s.run("MATCH (e:Entity {id:$entity})-[:HAS_LAYER]->(l:LayerAssessment {layer:$layer}) SET l.status='INDEXED',l.review_state=CASE WHEN l.review_state='reviewed' THEN 'reviewed' ELSE 'automated' END",entity=n['id'],layer=record['layer']).consume()
             total+=1
         for record in observations:publish(record,nodes,s)
-    print(json.dumps({'biomarkers':sum(n['type']=='biomarker' for n in nodes),'source_records':total,'observation_records':len(observations)}))
+        # Every registry entity gets a meaning sentence per layer, or an honest gap sentence.
+        for n in nodes:refresh_layers(s,n['id'])
+    print(json.dumps({'entities':len(nodes),'biomarkers':sum(n['type']=='biomarker' for n in nodes),'source_records':total,'observation_records':len(observations)}))
 if __name__=='__main__':main()

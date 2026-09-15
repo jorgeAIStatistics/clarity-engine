@@ -8,6 +8,30 @@ from .analysis import analyse_profile
 
 PATHS={'biomarker':'biomarkers','diagnostic':'diagnostics','screening':'screening','precision_oncology':'precision-medicine'}
 
+def graph_entries(existing):
+    """Biomarkers published to Neo4j that the curated catalog does not already profile."""
+    import re
+    from .intent_graph.intent import norm
+    known={norm(name) for row in existing for name in [row['name'],*row.get('aliases',[])]}
+    try:
+        from .intent_graph.store import graph_library
+        graph=graph_library()
+    except Exception:
+        return []
+    rows=[]
+    for g in graph:
+        if g.get('kind')!='Biomarker' and g.get('type')!='biomarker':continue
+        if any(norm(name) in known for name in [g['name'],*(g.get('aliases') or [])]):continue
+        slug=g['id'].split(':',1)[1]
+        if not re.fullmatch(r'[a-z0-9-]{1,80}',slug):continue
+        sentences=[s for layer in g.get('sentences') or [] for s in (json.loads(layer) if layer else []) if not s.startswith('No indexed')]
+        summary=sentences[0] if sentences else f"{g['name']}: aliases and five evidence layers are indexed in the graph; no typed findings are extracted yet."
+        rows.append({'id':'graph:'+g['id'],'name':g['name'],'entity_type':'biomarker','category':'Molecular marker','aliases':g.get('aliases') or [],'path':'/biomarkers/'+slug,
+            'outcomes':[],'conditions':[],'review_status':'automated_appraisal','available':True,'generated_at':None,'last_enriched_at':(g.get('last_extracted_at') or '')[:10] or None,
+            'summary':summary,'coverage':{'linked_studies':g.get('studies',0),'outcomes':0,'quantified_outcomes':g.get('findings',0)},'maturity':'Graph profile · automated',
+            'quantified_outcome_names':[],'graph_layers':g.get('layers',[])})
+    return rows
+
 def build_library():
     import generate
     from .enrichment import OVERLAYS
@@ -32,6 +56,7 @@ def build_library():
         row={'id':'entity:'+e['id'],'name':e['name'],'entity_type':e['entity_type'],'category':e['category'],'aliases':e.get('aliases',[]),'path':f'/{PATHS[e["entity_type"]]}/{e["id"]}','outcomes':[o['name'] for o in e['outcomes']],'conditions':e.get('conditions',[]),'review_status':e['review_status'],'available':True,'generated_at':None,'last_enriched_at':e.get('last_enriched_at'),'summary':e['summary'],'coverage':{'linked_studies':len({s.get('pmid') or s.get('id') or s.get('url') for s in e['studies']}),'outcomes':len(e['outcomes']),'quantified_outcomes':len({f['outcome'] for s in e['studies'] for f in (s.get('findings') or ([s] if s.get('effect') else [])) if f.get('effect')})},'maturity':'Human evidence indexed' if e['studies'] and e['review_status']!='reviewed' else 'Appraisal incomplete' if e['review_status']!='reviewed' else 'Reviewed by dimension'}
         row['quantified_outcome_names']=list(dict.fromkeys(f['outcome'] for s in e['studies'] for f in (s.get('findings') or ([s] if s.get('effect') else [])) if f.get('effect')))
         entries[row['id']]=row
+    for row in graph_entries(entries.values()):entries[row['id']]=row
     rows=sorted(entries.values(),key=lambda r:r['name'].casefold())
     return {'schema_version':1,'generated_at':datetime.now(timezone.utc).isoformat(),'coverage_statement':'Complete inventory of stored Clarity profiles; not an exhaustive catalog of medicine or a completed systematic review.','entries':rows,'counts':{typ:sum(e['entity_type']==typ for e in rows) for typ in ['intervention',*PATHS]},'audit':audit}
 
