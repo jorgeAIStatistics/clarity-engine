@@ -38,7 +38,13 @@ def main():
                 if source and any(alias_present(a,source.text) for a in node['aliases']):candidates.append((record,identity,source))
             if not candidates:status['status']='no_eligible_abstract';return status
             if os.getenv('CLARITY_RETRY_ENRICHMENT') == '1' and prior:
-                candidates=[c for c in candidates if c[2].pmid!=prior.get('pmid')]
+                # Skip every abstract already attempted, not only the most recent one.
+                tried,attempt=set(),prior
+                while attempt:
+                    if attempt.get('pmid'):tried.add(attempt['pmid'])
+                    attempt=attempt.get('previous_attempt')
+                candidates=[c for c in candidates if c[2].pmid not in tried]
+                status['skipped_pmids']=sorted(tried)
                 status['previous_attempt']=prior
                 if not candidates:status['status']='no_alternative_abstract';return status
             candidates.sort(key=lambda c: len(re.findall(r'(?i)confidence interval|95\s*%|hazard ratio|odds ratio|p\s*[<=>]|sensitivity|specificity',c[2].text)),reverse=True)
@@ -56,7 +62,9 @@ def main():
                 session.run('MATCH (e:Entity {id:$id}) SET e.last_extracted_at=$at,e.extraction_state="source_validated",e.meaning=$meaning,e.meaning_source_id=$source,e.meaning_source_hash=$hash',id=node['id'],at=now().isoformat(),meaning=next((span.quote for r in envelope.extraction.results for span in r.estimate.evidence),''),source=source.id,hash=source.sha256).consume()
             return status
         except Exception as error:
-            status.update(status='extraction_or_search_failed',error=type(error).__name__)
+            # Pipeline errors carry short codes (never source text or credentials); keep them for diagnosis.
+            code=str(error) if re.fullmatch(r'[a-z0-9_]{3,80}',str(error)) else None
+            status.update(status='extraction_or_search_failed',error=type(error).__name__,**({'error_code':code} if code else {}))
             return status
         finally:
             state.put('biomarker_enrichment',node['id'],status);state.close()
