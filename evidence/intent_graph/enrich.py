@@ -13,6 +13,15 @@ from evidence_pipeline.common import now
 from . import store
 from .intent import alias_present
 
+# Where a marker is studied as a biomarker. A broad cancer filter returns expression or staining papers
+# with no source-bound results for markers used across many tumour types.
+SEARCH_CONTEXT={
+    'IL-18':'(breast AND (radiotherapy OR radiation) AND pain)',
+    'NfL':'(ALS OR "amyotrophic lateral sclerosis")',
+    'EGFR':'("non-small cell lung" OR NSCLC) AND (mutation OR mutant OR osimertinib OR "tyrosine kinase inhibitor") AND ("progression-free survival" OR "overall survival" OR "hazard ratio" OR "response rate")',
+    'Chromogranin A':'("neuroendocrine tumor" OR "neuroendocrine tumour" OR "neuroendocrine neoplasm" OR "neuroendocrine carcinoma") AND (sensitivity OR specificity OR "hazard ratio" OR prognos* OR diagnos*)',
+}
+
 TOP=['HER2','ER','PR','Ki-67','BRCA1','BRCA2','PD-L1','TMB','MSI','MMR','ctDNA','CA 15-3','CA 27.29','CEA','CA-125','CA19-9','PSA','AFP','β-hCG','Thyroglobulin','Calcitonin','Chromogranin A','LDH','ALP','HE4','EGFR','ALK','KRAS','NRAS','BRAF','IL-18','NfL']
 
 def main():
@@ -26,7 +35,7 @@ def main():
         status=dict(id=node['id'],name=node['name'],at=now().isoformat(),status='searching')
         try:
             terms=[a for a in node['aliases'] if len(a)>3][:3] or [node['name']]
-            context='(breast AND (radiotherapy OR radiation) AND pain)' if node['name']=='IL-18' else '(ALS OR "amyotrophic lateral sclerosis")' if node['name']=='NfL' else '(cancer OR carcinoma OR tumor OR neoplasm)'
+            context=SEARCH_CONTEXT.get(node['name'],'(cancer OR carcinoma OR tumor OR neoplasm)')
             query='('+' OR '.join('(TITLE:"'+a.replace('"','')+'" OR ABSTRACT:"'+a.replace('"','')+'")' for a in terms)+') AND '+context+' AND HAS_ABSTRACT:y AND SRC:MED'
             status['query']=query
             with httpx.Client(timeout=40) as client:
