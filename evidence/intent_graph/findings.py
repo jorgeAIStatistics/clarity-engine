@@ -49,6 +49,7 @@ def observation_layer(design, findings):
 
 # A drug class built on a marker name (EGFR-TKI, anti-HER2 therapy) is a treatment, not the marker.
 THERAPY_AFTER = re.compile(r'[-\s]*(?:TKIs?\b|tyrosine[-\s]kinase[-\s]inhibitors?|inhibitors?\b|inhibition\b|antagonists?\b|blockers?\b|blockade\b|targeted\b|directed\b|antibod(?:y|ies)\b|therap(?:y|ies)\b)', re.I)
+PANEL = re.compile(r',|\+|\band\b|\bplus\b', re.I)
 ANTI_BEFORE = re.compile(r'\banti[-\s]?$', re.I)
 
 
@@ -63,6 +64,9 @@ def linked_entities(finding, nodes):
     """Entities named in the finding's own marker span. The longest alias wins, so 'EGFR mutation'
     links the variant rather than the gene, and a sentence that merely mentions EGFR-TKI links nothing."""
     marker = finding.get('marker') or ''
+    # A panel (synaptophysin and chromogranin A, CgA + INSM1) is not attributed to any single marker.
+    if PANEL.search(marker):
+        return []
     hits = []
     for n in nodes:
         matched = [a for a in n['aliases'] if alias_present(a, marker) and names_marker(a, marker)]

@@ -131,6 +131,9 @@ class GraphLinkingTests(unittest.TestCase):
         self.assertEqual(ids('anti-HER2 therapy'),[])
         self.assertEqual(ids('EGFR-mutant'),['variant:egfr-activating-mutation'])
         self.assertEqual(ids('HER2-positive status'),['biomarker:her2'])
+        self.assertEqual(ids('synaptophysin and chromogranin A'),[])
+        self.assertEqual(ids('synaptophysin, chromogranin A and INSM1'),[])
+        self.assertEqual(ids('chromogranin A'),['biomarker:chromogranin-a'])
 
     def test_matcher_document_layers_and_sentences(self):
         record=self.record(SENSITIVITY,AUC)
