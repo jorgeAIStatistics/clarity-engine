@@ -46,3 +46,42 @@ class ResearchScopeTests(unittest.TestCase):
         self.assertNotEqual(result['entities'][0]['id'],'entity:creatinine-egfr')
         self.assertEqual(result['entities'][0]['entity_type'],'precision_oncology')
         self.assertTrue(any('hazard ratio' in s['passage']['text'].lower() for s in result['studies']))
+
+class LayerCoverageTests(unittest.TestCase):
+    def setUp(self):
+        abstract='Higher ApoB was associated with events (hazard ratio 1.20, 95% CI 1.10-1.30).'
+        trial='Treatment lowered events (hazard ratio 0.85, 95% CI 0.78-0.93).'
+        null='Walking distance did not differ (mean difference -0.5, 95% CI -1.2 to 0.2).'
+        def finding(outcome,measure,estimate,lower,upper,quote):
+            return {'outcome':outcome,'effect':{'measure':measure,'estimate':estimate,'lower':lower,'upper':upper,'origin':'reported'},'quote':quote}
+        studies=[
+            {'pmid':'11','year':'2021','title':'ApoB cohort','abstract':abstract,'design':'Prospective cohort','population':'Human; adults','findings':[finding('Cardiovascular events','hazard ratio',1.2,1.1,1.3,abstract)]},
+            {'pmid':'12','year':'2023','title':'ApoB lowering trial','abstract':trial,'design':'Randomized controlled trial','population':'Human; adults','review_status':'reviewed','findings':[finding('Cardiovascular events','hazard ratio',0.85,0.78,0.93,trial)]},
+            {'pmid':'17','year':'2019','title':'Second trial','abstract':null,'design':'Randomized controlled trial','population':'Human; adults','findings':[finding('Walking distance','mean difference',-0.5,-1.2,0.2,null)]},
+            {'pmid':'13','year':'2020','title':'ApoB in mice','abstract':'Mice.','design':'Animal study','population':'mice'},
+            {'pmid':'14','year':'2022','title':'ApoB meta-analysis','abstract':'Pooled.','design':'Systematic review and meta-analysis','population':'Human'},
+            {'pmid':'15','year':'2024','title':'Lipid guideline','abstract':'Guidance.','design':'Clinical practice guideline','population':'Human'},
+            {'pmid':'16','year':'2025','title':'Planned ApoB trial','abstract':'Protocol.','design':'Trial protocol','population':'Human'},
+        ]
+        self.index=documents([{'id':'apob','entity_type':'biomarker','name':'ApoB','aliases':['apolipoprotein B'],'summary':'Atherogenic particles','outcomes':[{'name':'Cardiovascular events'}],'studies':studies},
+                              {'id':'psa','entity_type':'biomarker','name':'PSA','aliases':[],'outcomes':[],'studies':[{'pmid':'18','title':'PSA cohort','abstract':'PSA.','design':'Prospective cohort','population':'Human'}]}])
+
+    def test_counts_every_linked_record_by_layer(self):
+        result=match('ApoB and cardiovascular events in adults',self.index,study_limit=1)
+        coverage=result['layer_coverage']['entities']['entity:apob'];cells=coverage['cells']
+        self.assertEqual(len(result['studies']),1)  # coverage is not limited to retrieved records
+        self.assertEqual({k:v['count'] for k,v in cells.items()},{'mechanism':0,'preclinical':1,'observational':1,'interventional':2,'guidelines':1})
+        self.assertEqual(coverage['syntheses'],1);self.assertEqual(coverage['excluded'],1)
+        self.assertEqual(cells['interventional']['reviewed'],1)
+        self.assertEqual(cells['observational']['directions'],{'below':0,'above':1,'includes':0})
+        self.assertEqual(cells['interventional']['directions'],{'below':1,'above':0,'includes':1})
+        ids={s['id'] for s in self.index[1]}
+        for cell in cells.values():
+            self.assertTrue(all(example['id'] in ids for example in cell['examples']))
+        self.assertNotIn('entity:psa',result['layer_coverage']['entities'])
+
+    def test_interval_side_needs_a_no_difference_value(self):
+        from evidence.matcher import interval_side
+        self.assertEqual(interval_side({'measure':'C-index change','lower':0.0,'upper':0.0008}),'includes')
+        self.assertIsNone(interval_side({'measure':'Sensitivity','lower':0.4,'upper':0.6}))
+        self.assertIsNone(interval_side({'measure':'hazard ratio','lower':None,'upper':1.2}))

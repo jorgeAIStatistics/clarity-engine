@@ -63,7 +63,7 @@ def documents(profiles):
             if identity not in studies:
                 title=source.get('title','');abstract=source.get('abstract') or source.get('quote') or ''
                 abstract=html.unescape(re.sub(r'</?(?:h[1-6]|p|div|span|b|i|em|strong|sup|sub|br)\b[^>]*>', ' ',abstract,flags=re.I)).strip()
-                studies[identity]={'id':identity,'title':title,'url':url,'pmid':pmid,'design':source.get('design') or source.get('study_type'),
+                studies[identity]={'id':identity,'title':title,'url':url,'pmid':pmid,'year':source.get('year'),'design':source.get('design') or source.get('study_type'),
                     'population':source.get('population'),'n':source.get('n'),'layer':layer_for(source),'findings':[],'exposure':source.get('exposure'),'comparator':source.get('comparator'),'cohort_id':source.get('cohort_id'),'entity_ids':[],
                     '_passages':[f['quote'] for f in source.get('findings',[]) if f.get('quote') and f['quote'] in abstract], '_text':abstract,'_tokens':tokens(title+' '+abstract), 'agreement':'not_assessed','review_status':source.get('review_status','not_recorded')}
             record=studies[identity]
@@ -120,6 +120,44 @@ def passage(text,query):
     if not best:return None
     start=best.start();end=min(best.end(),start+500)
     return {'text':text[start:end],'start':start,'end':end,'basis':'retained source text with presentation markup removed and HTML entities decoded','truncated':end<best.end()}
+
+EVIDENCE_LAYERS=('mechanism','preclinical','observational','interventional','guidelines')
+RATIO_MEASURE=re.compile(r'hazard ratio|odds ratio|risk ratio|rate ratio|relative risk|\b(?:a?hr|a?or|a?rr|irr)\b',re.I)
+DIFFERENCE_MEASURE=re.compile(r'difference|change|\b(?:w?md|smd)\b',re.I)
+
+def interval_side(effect):
+    """Where a reported interval sits relative to its measure's no-difference value.
+
+    Ratios use 1 and differences use 0. Accuracy and discrimination levels have no
+    no-difference value, so they carry no side. This is not a benefit or harm judgment."""
+    measure=str((effect or {}).get('measure',''))
+    null=1 if RATIO_MEASURE.search(measure) else 0 if DIFFERENCE_MEASURE.search(measure) else None
+    low,high=(effect or {}).get('lower'),(effect or {}).get('upper')
+    if null is None or not all(isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v) for v in (low,high)):return None
+    return 'below' if high<null else 'above' if low>null else 'includes'
+
+def layer_coverage(entity_ids,studies,examples=6):
+    """Five-layer coverage for each matched profile over every linked record in the index.
+
+    Counts describe what the library holds, not certainty. Published syntheses are counted
+    separately because they re-analyse primary studies; protocols and unclassified records are excluded."""
+    output={}
+    for entity_id in entity_ids:
+        linked=[s for s in studies if entity_id in s.get('entity_ids',[])]
+        cells={}
+        for layer in EVIDENCE_LAYERS:
+            records=[s for s in linked if s.get('layer')==layer]
+            sides={'below':0,'above':0,'includes':0}
+            for s in records:
+                for f in s.get('findings',[]):
+                    side=interval_side(f.get('effect')) if entity_id in f.get('entity_ids',[entity_id]) else None
+                    if side:sides[side]+=1
+            year=lambda s:int(str(s.get('year'))[:4]) if str(s.get('year'))[:4].isdigit() else 0
+            records.sort(key=lambda s:(-len(s.get('findings',[])),-year(s),s['id']))
+            cells[layer]={'count':len(records),'reviewed':sum(s.get('review_status')=='reviewed' for s in records),'directions':sides,
+                'examples':[{'id':s['id'],'title':s.get('title'),'year':s.get('year'),'design':s.get('design'),'url':s.get('url'),'quantified':bool(s.get('findings'))} for s in records[:examples]]}
+        output[entity_id]={'cells':cells,'syntheses':sum(s.get('layer')=='synthesis' for s in linked),'excluded':sum(s.get('layer') in ('protocol','unclassified') for s in linked)}
+    return {'layers':list(EVIDENCE_LAYERS),'basis':'All records linked to each matched profile in the retained Clarity index, not only the records retrieved for this question. Counts show coverage, not certainty; directions place reported intervals relative to each measure\'s no-difference value.','entities':output}
 
 def match(text,index,limit=8,study_limit=12):
     study_limit=max(1,min(48,int(study_limit)))
@@ -202,6 +240,6 @@ def match(text,index,limit=8,study_limit=12):
         angle_labels=list(dict.fromkeys(a['label'] for a in copilot['groups'] if any(a['id'] in s.get('angles',[]) for s in linked)))
         entity['why']=('Named in your question. ' if entity['matched_aliases'] else 'Connected through the catalog graph. ')+(('Retrieved records cover '+', '.join(angle_labels[:3]).lower()+'.') if angle_labels else 'No classified source angle in this retrieval; inspect the profile for context.')
     return {'copilot':copilot,'version':VERSION,'method':'Explicit question fields, evidence-angle classification, linked-entity constraints, population cues and lexical relevance with angle diversity; deterministic and provisional. No embedding model or LLM calls.',
-        'coverage':{'entities':len(entities),'studies':len(studies)},'entities':public_entities,
+        'coverage':{'entities':len(entities),'studies':len(studies)},'entities':public_entities,'layer_coverage':layer_coverage([e['id'] for e in public_entities],studies),
         'studies':results,'gaps':gaps,'related_questions':[f'Which populations and outcomes have been studied for {e["name"]}?' for _,e,_ in selected[:3]],
         'agreement_assessment':{'status':'requires_review','supporting':[],'contradicting':[],'note':'Interpretation remains provisional; no automatic agreement judgment is made.'},'query_stored':False}
