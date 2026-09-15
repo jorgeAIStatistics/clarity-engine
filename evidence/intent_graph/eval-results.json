@@ -1,0 +1,1295 @@
+{
+  "version": "question-intent-v1",
+  "cases": 20,
+  "precision": 1.0,
+  "recall": 1.0,
+  "true_positives": 46,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "results": [
+    {
+      "question": "Interleukin-18 as a Potential Biomarker for Radiotherapy-Related Pain in Breast Cancer: Implications for Personalized Pain Management",
+      "expected": [
+        "biomarker:il-18",
+        "condition:breast-cancer",
+        "precision_context:radiotherapy"
+      ],
+      "matched": [
+        "biomarker:il-18",
+        "condition:breast-cancer",
+        "precision_context:radiotherapy"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "Interleukin-18",
+            "type": "biomarker",
+            "synonyms": [
+              "IL-18",
+              "IL18",
+              "interleukin 18"
+            ],
+            "question_span": "Interleukin-18"
+          },
+          {
+            "name": "breast cancer",
+            "type": "condition",
+            "synonyms": [
+              "breast carcinoma",
+              "breast neoplasm",
+              "mammary cancer"
+            ],
+            "question_span": "Breast Cancer"
+          },
+          {
+            "name": "radiotherapy",
+            "type": "precision_context",
+            "synonyms": [
+              "radiation therapy",
+              "RT",
+              "radiation treatment",
+              "XRT"
+            ],
+            "question_span": "Radiotherapy"
+          }
+        ],
+        "outcomes": [
+          "radiotherapy-related pain"
+        ],
+        "population": null,
+        "setting_exposure": [
+          "radiotherapy"
+        ],
+        "intents": [
+          "association",
+          "clinical_utility"
+        ],
+        "explicitly_not_in_question": [
+          "mortality",
+          "cancer survival",
+          "CKD progression",
+          "pain-free survival",
+          "tumor response",
+          "overall survival",
+          "patients undergoing radiotherapy"
+        ]
+      }
+    },
+    {
+      "question": "plasma NfL / ALS progression / trial enrichment",
+      "expected": [
+        "biomarker:nfl",
+        "condition:als"
+      ],
+      "matched": [
+        "biomarker:nfl",
+        "condition:als"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "plasma neurofilament light chain",
+            "type": "biomarker",
+            "synonyms": [
+              "NfL",
+              "plasma NfL",
+              "neurofilament light",
+              "neurofilament light polypeptide",
+              "NFL"
+            ],
+            "question_span": "plasma NfL"
+          },
+          {
+            "name": "amyotrophic lateral sclerosis",
+            "type": "condition",
+            "synonyms": [
+              "ALS",
+              "Lou Gehrig's disease",
+              "motor neuron disease",
+              "MND"
+            ],
+            "question_span": "ALS"
+          }
+        ],
+        "outcomes": [
+          "ALS progression"
+        ],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "enrichment",
+          "prediction"
+        ],
+        "explicitly_not_in_question": [
+          "survival",
+          "mortality",
+          "diagnosis",
+          "CSF NfL",
+          "treatment response",
+          "FVC",
+          "ALSFRS-R"
+        ]
+      }
+    },
+    {
+      "question": "Does ApoB add information beyond LDL-C for predicting cardiovascular events in adults without cardiovascular disease, and is there evidence that acting on ApoB improves outcomes (clinical utility)? What do guidelines say?",
+      "expected": [
+        "biomarker:apob",
+        "biomarker:ldl-c"
+      ],
+      "matched": [
+        "biomarker:apob",
+        "biomarker:ldl-c"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "Apolipoprotein B",
+            "type": "biomarker",
+            "synonyms": [
+              "ApoB",
+              "Apolipoprotein B-100",
+              "ApoB-100"
+            ],
+            "question_span": "ApoB"
+          },
+          {
+            "name": "LDL cholesterol",
+            "type": "biomarker",
+            "synonyms": [
+              "LDL-C",
+              "low-density lipoprotein cholesterol",
+              "low-density lipoprotein"
+            ],
+            "question_span": "LDL-C"
+          }
+        ],
+        "outcomes": [
+          "cardiovascular events"
+        ],
+        "population": "adults without cardiovascular disease",
+        "setting_exposure": [],
+        "intents": [
+          "association",
+          "prediction",
+          "clinical_utility",
+          "guideline"
+        ],
+        "explicitly_not_in_question": [
+          "secondary prevention",
+          "triglycerides",
+          "HDL-C",
+          "non-HDL-C",
+          "LDL particle number",
+          "statin therapy",
+          "mortality",
+          "all-cause death",
+          "diabetes",
+          "CKD"
+        ]
+      }
+    },
+    {
+      "question": "Is IL18 associated with pain after radiation therapy in breast cancer?",
+      "expected": [
+        "biomarker:il-18",
+        "condition:breast-cancer",
+        "precision_context:radiotherapy"
+      ],
+      "matched": [
+        "biomarker:il-18",
+        "condition:breast-cancer",
+        "precision_context:radiotherapy"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "IL18",
+            "type": "biomarker",
+            "synonyms": [
+              "interleukin-18",
+              "interleukin 18",
+              "IL-18"
+            ],
+            "question_span": "IL18"
+          },
+          {
+            "name": "radiation therapy",
+            "type": "precision_context",
+            "synonyms": [
+              "radiotherapy",
+              "RT",
+              "radiation treatment",
+              "XRT"
+            ],
+            "question_span": "radiation therapy"
+          },
+          {
+            "name": "breast cancer",
+            "type": "condition",
+            "synonyms": [
+              "breast carcinoma",
+              "breast neoplasm",
+              "mammary cancer"
+            ],
+            "question_span": "breast cancer"
+          }
+        ],
+        "outcomes": [
+          "pain after radiation therapy"
+        ],
+        "population": null,
+        "setting_exposure": [
+          "radiation therapy"
+        ],
+        "intents": [
+          "association"
+        ],
+        "explicitly_not_in_question": [
+          "mortality",
+          "survival",
+          "cancer recurrence",
+          "CKD progression",
+          "tumor response",
+          "quality of life"
+        ]
+      }
+    },
+    {
+      "question": "Does neurofilament light chain predict ALS progression?",
+      "expected": [
+        "biomarker:nfl",
+        "condition:als"
+      ],
+      "matched": [
+        "biomarker:nfl",
+        "condition:als"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "neurofilament light chain",
+            "type": "biomarker",
+            "synonyms": [
+              "NfL",
+              "NFL",
+              "neurofilament light",
+              "NF-L"
+            ],
+            "question_span": "neurofilament light chain"
+          },
+          {
+            "name": "amyotrophic lateral sclerosis",
+            "type": "condition",
+            "synonyms": [
+              "ALS",
+              "Lou Gehrig's disease",
+              "motor neuron disease"
+            ],
+            "question_span": "ALS"
+          }
+        ],
+        "outcomes": [
+          "ALS progression"
+        ],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "prediction"
+        ],
+        "explicitly_not_in_question": [
+          "survival",
+          "mortality",
+          "diagnosis",
+          "treatment response",
+          "CSF neurofilament heavy chain"
+        ]
+      }
+    },
+    {
+      "question": "HER2 expression in breast cancer and response to trastuzumab",
+      "expected": [
+        "biomarker:her2",
+        "compound:trastuzumab",
+        "condition:breast-cancer"
+      ],
+      "matched": [
+        "biomarker:her2",
+        "compound:trastuzumab",
+        "condition:breast-cancer"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "HER2 expression",
+            "type": "biomarker",
+            "synonyms": [
+              "HER2",
+              "human epidermal growth factor receptor 2",
+              "ERBB2 expression",
+              "HER-2 expression"
+            ],
+            "question_span": "HER2 expression"
+          },
+          {
+            "name": "breast cancer",
+            "type": "condition",
+            "synonyms": [
+              "breast carcinoma",
+              "breast neoplasm",
+              "mammary cancer"
+            ],
+            "question_span": "breast cancer"
+          },
+          {
+            "name": "trastuzumab",
+            "type": "compound",
+            "synonyms": [
+              "Herceptin",
+              "anti-HER2 monoclonal antibody",
+              "trastuzumab therapy"
+            ],
+            "question_span": "trastuzumab"
+          }
+        ],
+        "outcomes": [
+          "response to trastuzumab"
+        ],
+        "population": null,
+        "setting_exposure": [
+          "trastuzumab"
+        ],
+        "intents": [
+          "association"
+        ],
+        "explicitly_not_in_question": [
+          "overall survival",
+          "progression-free survival",
+          "HER2 amplification by FISH",
+          "pathological complete response",
+          "mortality",
+          "resistance mechanisms"
+        ]
+      }
+    },
+    {
+      "question": "BRCA1 and BRCA2 variants in breast cancer treated with olaparib",
+      "expected": [
+        "biomarker:brca1",
+        "biomarker:brca2",
+        "compound:olaparib",
+        "condition:breast-cancer"
+      ],
+      "matched": [
+        "biomarker:brca1",
+        "biomarker:brca2",
+        "compound:olaparib",
+        "condition:breast-cancer"
+      ],
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "BRCA1",
+            "type": "biomarker",
+            "synonyms": [
+              "BRCA1 variant",
+              "BRCA1 mutation",
+              "BRCA1 pathogenic variant",
+              "breast cancer gene 1"
+            ],
+            "question_span": "BRCA1"
+          },
+          {
+            "name": "BRCA2",
+            "type": "biomarker",
+            "synonyms": [
+              "BRCA2 variant",
+              "BRCA2 mutation",
+              "BRCA2 pathogenic variant",
+              "breast cancer gene 2"
+            ],
+            "question_span": "BRCA2"
+          },
+          {
+            "name": "breast cancer",
+            "type": "condition",
+            "synonyms": [
+              "breast carcinoma",
+              "breast neoplasm",
+              "mammary cancer"
+            ],
+            "question_span": "breast cancer"
+          },
+          {
+            "name": "olaparib",
+            "type": "compound",
+            "synonyms": [
+              "Lynparza",
+              "AZD2281",
+              "PARP inhibitor olaparib"
+            ],
+            "question_span": "olaparib"
+          }
+        ],
+        "outcomes": [],
+        "population": null,
+        "setting_exposure": [
+          "olaparib"
+        ],
+        "intents": [
+          "association",
+          "clinical_utility"
+        ],
+        "explicitly_not_in_question": [
+          "PALB2",
+          "ATM",
+          "HER2",
+          "BRCA1/2 wild-type",
+          "overall survival",
+          "mortality",
+          "chemotherapy",
+          "platinum-based therapy",
+          "germline vs somatic distinction"
+        ]
+      }
+    },
+    {
+      "question": "PD-L1 and tumor mutational burden as predictors of response in cancer",
+      "expected": [
+        "biomarker:pd-l1",
+        "biomarker:tmb"
+      ],
+      "matched": [
+        "biomarker:pd-l1",
+        "biomarker:tmb"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "PD-L1",
+            "type": "biomarker",
+            "synonyms": [
+              "programmed death-ligand 1",
+              "CD274",
+              "B7-H1"
+            ],
+            "question_span": "PD-L1"
+          },
+          {
+            "name": "tumor mutational burden",
+            "type": "biomarker",
+            "synonyms": [
+              "TMB",
+              "tumour mutational burden",
+              "somatic mutation burden",
+              "mutation load",
+              "tumor mutation burden"
+            ],
+            "question_span": "tumor mutational burden"
+          }
+        ],
+        "outcomes": [
+          "response"
+        ],
+        "population": null,
+        "setting_exposure": [
+          "cancer"
+        ],
+        "intents": [
+          "prediction"
+        ],
+        "explicitly_not_in_question": [
+          "overall survival",
+          "progression-free survival",
+          "mortality",
+          "immunotherapy",
+          "checkpoint inhibitor",
+          "specific cancer type"
+        ]
+      }
+    },
+    {
+      "question": "Does ctDNA predict breast cancer recurrence?",
+      "expected": [
+        "biomarker:ctdna",
+        "condition:breast-cancer"
+      ],
+      "matched": [
+        "biomarker:ctdna",
+        "condition:breast-cancer"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "circulating tumor DNA",
+            "type": "biomarker",
+            "synonyms": [
+              "ctDNA",
+              "circulating tumour DNA",
+              "cell-free tumor DNA",
+              "cfDNA tumor fraction"
+            ],
+            "question_span": "ctDNA"
+          },
+          {
+            "name": "breast cancer",
+            "type": "condition",
+            "synonyms": [
+              "breast carcinoma",
+              "breast neoplasm",
+              "mammary cancer",
+              "mammary carcinoma"
+            ],
+            "question_span": "breast cancer"
+          }
+        ],
+        "outcomes": [
+          "breast cancer recurrence"
+        ],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "prediction"
+        ],
+        "explicitly_not_in_question": [
+          "overall survival",
+          "progression-free survival",
+          "mortality",
+          "metastasis",
+          "treatment response",
+          "ctDNA as therapy target"
+        ]
+      }
+    },
+    {
+      "question": "CA 15-3 and CEA for monitoring breast cancer",
+      "expected": [
+        "biomarker:ca-15-3",
+        "biomarker:cea",
+        "condition:breast-cancer"
+      ],
+      "matched": [
+        "biomarker:ca-15-3",
+        "biomarker:cea",
+        "condition:breast-cancer"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "CA 15-3",
+            "type": "biomarker",
+            "synonyms": [
+              "Cancer Antigen 15-3",
+              "CA15-3",
+              "MUC1"
+            ],
+            "question_span": "CA 15-3"
+          },
+          {
+            "name": "CEA",
+            "type": "biomarker",
+            "synonyms": [
+              "Carcinoembryonic Antigen",
+              "carcinoembryonic antigen"
+            ],
+            "question_span": "CEA"
+          },
+          {
+            "name": "breast cancer",
+            "type": "condition",
+            "synonyms": [
+              "breast carcinoma",
+              "breast neoplasm",
+              "mammary cancer"
+            ],
+            "question_span": "breast cancer"
+          }
+        ],
+        "outcomes": [],
+        "population": null,
+        "setting_exposure": [
+          "monitoring"
+        ],
+        "intents": [
+          "clinical_utility"
+        ],
+        "explicitly_not_in_question": [
+          "diagnosis",
+          "screening",
+          "prognosis",
+          "survival",
+          "staging",
+          "HER2",
+          "CA 27-29"
+        ]
+      }
+    },
+    {
+      "question": "CA-125 versus HE4 for prediction of ovarian cancer",
+      "expected": [
+        "biomarker:ca-125",
+        "biomarker:he4"
+      ],
+      "matched": [
+        "biomarker:ca-125",
+        "biomarker:he4"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "CA-125",
+            "type": "biomarker",
+            "synonyms": [
+              "cancer antigen 125",
+              "carbohydrate antigen 125",
+              "MUC16"
+            ],
+            "question_span": "CA-125"
+          },
+          {
+            "name": "HE4",
+            "type": "biomarker",
+            "synonyms": [
+              "human epididymis protein 4",
+              "WFDC2"
+            ],
+            "question_span": "HE4"
+          },
+          {
+            "name": "ovarian cancer",
+            "type": "condition",
+            "synonyms": [
+              "ovarian carcinoma",
+              "ovarian malignancy",
+              "cancer of the ovary"
+            ],
+            "question_span": "ovarian cancer"
+          }
+        ],
+        "outcomes": [
+          "prediction of ovarian cancer"
+        ],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "prediction"
+        ],
+        "explicitly_not_in_question": [
+          "ROMA score",
+          "transvaginal ultrasound",
+          "mortality",
+          "survival",
+          "treatment response",
+          "CA-125 combined with HE4"
+        ]
+      }
+    },
+    {
+      "question": "PSA concentration and screening for prostate cancer",
+      "expected": [
+        "biomarker:psa"
+      ],
+      "matched": [
+        "biomarker:psa"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "PSA concentration",
+            "type": "biomarker",
+            "synonyms": [
+              "prostate-specific antigen concentration",
+              "PSA level",
+              "PSA"
+            ],
+            "question_span": "PSA concentration"
+          },
+          {
+            "name": "prostate cancer",
+            "type": "condition",
+            "synonyms": [
+              "prostate carcinoma",
+              "prostatic cancer",
+              "CaP",
+              "PCa"
+            ],
+            "question_span": "prostate cancer"
+          },
+          {
+            "name": "screening",
+            "type": "test",
+            "synonyms": [
+              "cancer screening",
+              "prostate cancer screening",
+              "PSA screening"
+            ],
+            "question_span": "screening"
+          }
+        ],
+        "outcomes": [],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "association",
+          "clinical_utility"
+        ],
+        "explicitly_not_in_question": [
+          "mortality",
+          "treatment outcome",
+          "biopsy",
+          "Gleason score",
+          "staging",
+          "prognosis"
+        ]
+      }
+    },
+    {
+      "question": "EGFR mutations and prognosis in lung cancer",
+      "expected": [
+        "biomarker:egfr"
+      ],
+      "matched": [
+        "biomarker:egfr"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "EGFR mutation",
+            "type": "biomarker",
+            "synonyms": [
+              "EGFR mutation",
+              "epidermal growth factor receptor mutation",
+              "EGFR mutational status"
+            ],
+            "question_span": "EGFR mutations"
+          },
+          {
+            "name": "lung cancer",
+            "type": "condition",
+            "synonyms": [
+              "lung cancer",
+              "lung carcinoma",
+              "pulmonary cancer",
+              "lung neoplasm"
+            ],
+            "question_span": "lung cancer"
+          }
+        ],
+        "outcomes": [
+          "prognosis"
+        ],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "prediction"
+        ],
+        "explicitly_not_in_question": [
+          "EGFR-targeted therapy",
+          "erlotinib",
+          "gefitinib",
+          "osimertinib",
+          "overall survival",
+          "progression-free survival",
+          "KRAS mutation",
+          "ALK rearrangement"
+        ]
+      }
+    },
+    {
+      "question": "eGFR and cystatin C as predictors of kidney function decline",
+      "expected": [
+        "biomarker:cystatin-c",
+        "biomarker:renal-egfr"
+      ],
+      "matched": [
+        "biomarker:cystatin-c",
+        "biomarker:renal-egfr"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "estimated Glomerular Filtration Rate",
+            "type": "biomarker",
+            "synonyms": [
+              "eGFR",
+              "estimated GFR",
+              "glomerular filtration rate"
+            ],
+            "question_span": "eGFR"
+          },
+          {
+            "name": "cystatin C",
+            "type": "biomarker",
+            "synonyms": [
+              "cystatin-C",
+              "CysC",
+              "cystatin C serum"
+            ],
+            "question_span": "cystatin C"
+          }
+        ],
+        "outcomes": [
+          "kidney function decline"
+        ],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "prediction"
+        ],
+        "explicitly_not_in_question": [
+          "CKD progression",
+          "mortality",
+          "ESRD",
+          "dialysis",
+          "proteinuria",
+          "albuminuria"
+        ]
+      }
+    },
+    {
+      "question": "Ki-67 and ER expression in breast cancer",
+      "expected": [
+        "biomarker:er",
+        "biomarker:ki-67",
+        "condition:breast-cancer"
+      ],
+      "matched": [
+        "biomarker:er",
+        "biomarker:ki-67",
+        "condition:breast-cancer"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "Ki-67",
+            "type": "biomarker",
+            "synonyms": [
+              "Ki67",
+              "MKI67",
+              "Ki-67 proliferation index",
+              "Ki-67 labeling index"
+            ],
+            "question_span": "Ki-67"
+          },
+          {
+            "name": "estrogen receptor (ER)",
+            "type": "biomarker",
+            "synonyms": [
+              "ER",
+              "estrogen receptor",
+              "ESR1",
+              "oestrogen receptor"
+            ],
+            "question_span": "ER"
+          },
+          {
+            "name": "breast cancer",
+            "type": "condition",
+            "synonyms": [
+              "breast carcinoma",
+              "breast neoplasm",
+              "mammary cancer",
+              "breast tumor"
+            ],
+            "question_span": "breast cancer"
+          }
+        ],
+        "outcomes": [
+          "ER expression"
+        ],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "association"
+        ],
+        "explicitly_not_in_question": [
+          "HER2",
+          "PR",
+          "progesterone receptor",
+          "survival",
+          "mortality",
+          "treatment response",
+          "chemotherapy",
+          "prognosis",
+          "luminal subtype"
+        ]
+      }
+    },
+    {
+      "question": "IL-6 and CRP as biomarkers of pain after radiotherapy",
+      "expected": [
+        "biomarker:crp",
+        "biomarker:il-6",
+        "precision_context:radiotherapy"
+      ],
+      "matched": [
+        "biomarker:crp",
+        "biomarker:il-6",
+        "precision_context:radiotherapy"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "Interleukin-6",
+            "type": "biomarker",
+            "synonyms": [
+              "IL-6",
+              "interleukin 6",
+              "IL6"
+            ],
+            "question_span": "IL-6"
+          },
+          {
+            "name": "C-reactive protein",
+            "type": "biomarker",
+            "synonyms": [
+              "CRP",
+              "C reactive protein",
+              "hsCRP",
+              "high-sensitivity CRP"
+            ],
+            "question_span": "CRP"
+          },
+          {
+            "name": "radiotherapy",
+            "type": "precision_context",
+            "synonyms": [
+              "radiation therapy",
+              "RT",
+              "radiation treatment",
+              "XRT",
+              "irradiation"
+            ],
+            "question_span": "radiotherapy"
+          }
+        ],
+        "outcomes": [
+          "pain after radiotherapy"
+        ],
+        "population": null,
+        "setting_exposure": [
+          "radiotherapy"
+        ],
+        "intents": [
+          "association"
+        ],
+        "explicitly_not_in_question": [
+          "cancer survival",
+          "mortality",
+          "tumor response",
+          "inflammation as outcome",
+          "clinical utility",
+          "pain management"
+        ]
+      }
+    },
+    {
+      "question": "Lp(a) and non-HDL-C for cardiovascular risk prediction",
+      "expected": [
+        "biomarker:lp-a",
+        "biomarker:non-hdl-c"
+      ],
+      "matched": [
+        "biomarker:lp-a",
+        "biomarker:non-hdl-c"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "Lipoprotein(a)",
+            "type": "biomarker",
+            "synonyms": [
+              "Lp(a)",
+              "lipoprotein a",
+              "Lp a"
+            ],
+            "question_span": "Lp(a)"
+          },
+          {
+            "name": "Non-HDL cholesterol",
+            "type": "biomarker",
+            "synonyms": [
+              "non-HDL-C",
+              "non-HDL cholesterol",
+              "non-high-density lipoprotein cholesterol"
+            ],
+            "question_span": "non-HDL-C"
+          }
+        ],
+        "outcomes": [
+          "cardiovascular risk prediction"
+        ],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "prediction"
+        ],
+        "explicitly_not_in_question": [
+          "LDL-C",
+          "HDL-C",
+          "triglycerides",
+          "apolipoprotein B",
+          "statin therapy",
+          "PCSK9 inhibitors",
+          "mortality",
+          "all-cause mortality",
+          "stroke",
+          "myocardial infarction"
+        ]
+      }
+    },
+    {
+      "question": "GFAP and p-tau217 for prediction of cognitive decline",
+      "expected": [
+        "biomarker:gfap",
+        "biomarker:p-tau217"
+      ],
+      "matched": [
+        "biomarker:gfap",
+        "biomarker:p-tau217"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "Glial Fibrillary Acidic Protein",
+            "type": "biomarker",
+            "synonyms": [
+              "GFAP",
+              "glial fibrillary acidic protein"
+            ],
+            "question_span": "GFAP"
+          },
+          {
+            "name": "Phosphorylated tau 217",
+            "type": "biomarker",
+            "synonyms": [
+              "p-tau217",
+              "phosphorylated tau 217",
+              "phospho-tau 217",
+              "pTau217"
+            ],
+            "question_span": "p-tau217"
+          }
+        ],
+        "outcomes": [
+          "cognitive decline"
+        ],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "prediction"
+        ],
+        "explicitly_not_in_question": [
+          "Alzheimer's disease diagnosis",
+          "dementia",
+          "MCI conversion",
+          "mortality",
+          "amyloid PET",
+          "tau PET",
+          "neurodegeneration"
+        ]
+      }
+    },
+    {
+      "question": "MGMT methylation and IDH1 mutation in glioma prognosis",
+      "expected": [
+        "biomarker:idh1",
+        "biomarker:mgmt"
+      ],
+      "matched": [
+        "biomarker:idh1",
+        "biomarker:mgmt"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "MGMT methylation",
+            "type": "biomarker",
+            "synonyms": [
+              "MGMT promoter methylation",
+              "O6-methylguanine-DNA methyltransferase methylation",
+              "MGMT promoter hypermethylation"
+            ],
+            "question_span": "MGMT methylation"
+          },
+          {
+            "name": "IDH1 mutation",
+            "type": "biomarker",
+            "synonyms": [
+              "IDH1 mutant",
+              "isocitrate dehydrogenase 1 mutation",
+              "IDH1 variant"
+            ],
+            "question_span": "IDH1 mutation"
+          },
+          {
+            "name": "glioma",
+            "type": "condition",
+            "synonyms": [
+              "gliomas",
+              "brain glioma",
+              "glial tumor",
+              "glial neoplasm"
+            ],
+            "question_span": "glioma"
+          }
+        ],
+        "outcomes": [
+          "prognosis"
+        ],
+        "population": null,
+        "setting_exposure": [],
+        "intents": [
+          "association",
+          "prediction"
+        ],
+        "explicitly_not_in_question": [
+          "IDH2 mutation",
+          "TERT promoter mutation",
+          "1p/19q codeletion",
+          "treatment response",
+          "overall survival as explicit endpoint",
+          "progression-free survival as explicit endpoint",
+          "glioblastoma specifically",
+          "temozolomide",
+          "radiotherapy"
+        ]
+      }
+    },
+    {
+      "question": "Nectin-4 and Trop-2 expression in cancer treatment response",
+      "expected": [
+        "biomarker:nectin-4",
+        "biomarker:trop-2"
+      ],
+      "matched": [
+        "biomarker:nectin-4",
+        "biomarker:trop-2"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "forbidden": [],
+      "intent": {
+        "entities": [
+          {
+            "name": "Nectin-4",
+            "type": "biomarker",
+            "synonyms": [
+              "PVRL4",
+              "nectin cell adhesion molecule 4",
+              "NECTIN4"
+            ],
+            "question_span": "Nectin-4"
+          },
+          {
+            "name": "Trop-2",
+            "type": "biomarker",
+            "synonyms": [
+              "TACSTD2",
+              "tumor-associated calcium signal transducer 2",
+              "TROP2"
+            ],
+            "question_span": "Trop-2"
+          }
+        ],
+        "outcomes": [
+          "cancer treatment response"
+        ],
+        "population": null,
+        "setting_exposure": [
+          "cancer treatment"
+        ],
+        "intents": [
+          "association"
+        ],
+        "explicitly_not_in_question": [
+          "overall survival",
+          "progression-free survival",
+          "mortality",
+          "specific cancer type",
+          "specific treatment agent",
+          "enfortumab vedotin",
+          "sacituzumab govitecan",
+          "antibody-drug conjugate"
+        ]
+      }
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import re
 from collections import Counter
 
 ANGLES={
- 'association':{'label':'Association & risk','pattern':r'associat|correlat|risk|prognos','question':'How does the marker relate to the outcome?','guidance':'Compare adjustment sets, baseline disease and follow-up. An association estimate does not identify an effective management strategy.'},
+ 'association':{'label':'Association & risk','pattern':r'associat|correlat|risk|prognos|biomarker','question':'How does the marker relate to the outcome?','guidance':'Compare adjustment sets, baseline disease and follow-up. An association estimate does not identify an effective management strategy.'},
  'incremental':{'label':'Discordance & incremental value','pattern':r'discordan|incremental|reclassif|predict|discriminat|added value','question':'Does the marker add information beyond the existing model?','guidance':'Read the comparator model and C-index or reclassification metric before comparing estimates. Check external validation and calibration.'},
  'utility':{'label':'Clinical utility & management','pattern':r'clinical utility|clinical benefit|decision|management|actionab|screening benefit','question':'Does acting on this information improve outcomes?','guidance':'Look for a comparison of marker-guided management strategies. A drug trial in a marker-selected group answers a different question.'},
  'treatment':{'label':'Intervention outcomes','pattern':r'interven|treatment|therap|efficacy|dose|survival|random','question':'Which interventions and endpoints have been compared?','guidance':'Check treatment setting, dose, comparator, endpoint and crossover. Keep follow-up reports from the same trial together.'},
@@ -28,7 +28,7 @@ def understand(text,entities):
  return {'population':population,'outcomes':outcomes,'context':mapped,'focus':[{'id':a,'label':ANGLES[a]['label']} for a in requested],
          'primary_concepts':[{'id':e['id'],'name':e['name'],'path':e['path']} for e in entities if e.get('matched_aliases')],
          'secondary_concepts':[{'id':e['id'],'name':e['name'],'path':e['path']} for e in entities if not e.get('matched_aliases')],
-         'status':'automated_interpretation','restatement':('Examine '+', '.join(e['name'] for e in entities if e.get('matched_aliases'))+' in '+(', '.join(population) or 'a population to specify')+' for '+(', '.join(outcomes) or 'an endpoint to specify')+'. Focus: '+', '.join(ANGLES[a]['label'].lower() for a in requested)+'.') if any(e.get('matched_aliases') for e in entities) else 'Explore the submitted research description; named concepts need confirmation.',
+         'status':'automated_interpretation','restatement':(' × '.join([e['name'] for e in entities if e.get('matched_aliases')]+outcomes[:2])+'. '+('Population: '+', '.join(population) if population else 'Population not specified')+'. Focus: '+', '.join(ANGLES[a]['label'].lower() for a in requested)+'.') if any(e.get('matched_aliases') for e in entities) else 'No named entity was recognized in your text; the records shown match its wording only.',
          'note':'A structured reading of your text, not a validated study protocol. Edit the input if the scope is incomplete.'}
 
 def record_angles(study):

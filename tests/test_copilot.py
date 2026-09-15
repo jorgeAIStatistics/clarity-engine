@@ -93,9 +93,10 @@ class WorkspaceRouteTests(unittest.TestCase):
  def test_workspace_flag_is_strict_and_uses_larger_bounded_window(self):
   from app import app
   client=app.test_client()
-  with patch('evidence.matcher.library_index',return_value=documents(CATALOG['entities'])):
+  with patch('evidence.intent_graph.service.run',return_value=match(QUESTION,documents(CATALOG['entities']),study_limit=48)) as graph_run:
    response=client.post('/api/evidence/match',json={'text':QUESTION,'workspace':True})
    self.assertEqual(response.status_code,200)
+   graph_run.assert_called_once_with(QUESTION)
    self.assertLessEqual(len(response.json['studies']),48)
    self.assertEqual(client.post('/api/evidence/match',json={'text':QUESTION,'workspace':'yes'}).status_code,400)
    self.assertEqual(client.post('/api/evidence/match',json={'text':QUESTION,'workspace':True,'private_file':'no'}).status_code,400)

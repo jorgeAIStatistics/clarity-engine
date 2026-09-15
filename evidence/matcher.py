@@ -181,7 +181,7 @@ def match(text,index,limit=8,study_limit=12):
         if normalize(' '.join(exact))=='egfr' and ((e['id']=='entity:creatinine-egfr' and oncology and not renal) or (e['entity_type']=='precision_oncology' and renal and not oncology)):exact=[]
         overlap=e['_tokens']&informative
         # Broad health words alone cannot create an entity match.
-        value=score(e)+(10 if exact else 0) if exact or len(overlap)>=2 else 0
+        value=score(e)+10 if exact else 0
         if e['id']=='entity:creatinine-egfr' and oncology and not renal and not exact:value=0
         if value>0:entity_matches.append((value,e,exact))
     entity_matches.sort(key=lambda r:(-r[0],r[1]['name']))

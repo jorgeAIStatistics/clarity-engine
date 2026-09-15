@@ -120,7 +120,11 @@ def evidence_match():
     if not isinstance(text,str) or not 20<=len(text.strip())<=12000:return jsonify(error='Enter between 20 and 12,000 characters.'),400
     if research_input_error(text):return jsonify(error=research_input_error(text)),400
     try:
-        result=match(text,library_index(int(time.time()//3600)),study_limit=48 if body.get('workspace') else 12)
+        if body.get('workspace'):
+            from .intent_graph.service import run
+            result=run(text)
+        else:
+            result=match(text,library_index(int(time.time()//3600)),study_limit=12)
         from .feedback import token_for
         result['feedback_token']=token_for(result)
         response=jsonify(result);response.headers['Cache-Control']='no-store';return response

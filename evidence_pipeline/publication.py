@@ -110,6 +110,10 @@ def source_summary(item):
         if env.extraction.study_design.startswith("rct_")
         else "synthesis"
         if env.extraction.study_design == "meta_analysis"
+        else "observational"
+        if env.extraction.study_design in ("observational", "diagnostic_accuracy")
+        else "synthesis"
+        if env.extraction.study_design == "systematic_review"
         else "unclassified",
         "targets": item["targets"],
         "extractionId": item["id"],
