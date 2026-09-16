@@ -251,6 +251,18 @@ def matcher_record(record, nodes, session):
                 study=record['study_id'], record='matcher:' + record['study_id'], payload=payload, text=doc['_text'], hash=hashlib.sha256(doc['_text'].encode()).hexdigest()).consume()
 
 
+def unlinked_target(record, linked, target_id):
+    """The abstract yielded findings, but none of them names the marker we went looking for.
+
+    That is a real outcome and not a failure of extraction: the paper measured something else.
+    Returns the markers it did name, so the dead-letter can say what was there instead.
+    """
+    if target_id in linked:
+        return None
+    markers = [f.get('marker') for f in record.get('findings', []) if f.get('marker')]
+    return sorted({m for m in markers if m})[:6]
+
+
 def dead_letter(session, entity_id, pmid, study_id, code, dead_letters, excluded, at):
     """A typed record of why an extraction produced no findings, attached to the marker it targeted."""
     identifier = 'deadletter:' + hashlib.sha256(f'{entity_id}|{study_id}'.encode()).hexdigest()[:24]

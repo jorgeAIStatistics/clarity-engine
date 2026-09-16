@@ -202,6 +202,13 @@ class GraphLinkingTests(unittest.TestCase):
         self.assertIn('median 61,425 pg/mL',synthesize('IL-18','observational',[{'kind':'association','measure':'median','estimate':61425.0,'unit':'pg/mL','target':'active disease'}])[0])
         self.assertIn('sensitivity 71% at a cut-off of 45,000 pg/mL',synthesize('IL-18','observational',[{'kind':'classification','measure':'sensitivity','estimate':71.0,'unit':'%','cutoff':45000.0,'cutoff_unit':'pg/mL','target':'x'}])[0])
 
+    def test_a_paper_that_measured_something_else_is_named_as_such(self):
+        from evidence.intent_graph.findings import unlinked_target
+        record={'findings':[{'marker':'11C-PiB'},{'marker':'18F-flutemetamol'},{'marker':'11C-PiB'}]}
+        self.assertEqual(unlinked_target(record,[],'test:amyloid-pet'),['11C-PiB','18F-flutemetamol'])
+        self.assertIsNone(unlinked_target(record,['test:amyloid-pet'],'test:amyloid-pet'))
+        self.assertEqual(unlinked_target({'findings':[]},[],'test:amyloid-pet'),[])
+
     def test_registry_molecular_identity(self):
         by={n['id']:n for n in REGISTRY}
         self.assertEqual(by['variant:egfr-l858r']['variant_of'],'gene:egfr')

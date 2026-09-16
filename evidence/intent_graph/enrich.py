@@ -99,6 +99,12 @@ def observations_main(names,attempts=2,search=False,replay=False):
                             state.put('observation_extraction',key,record)
                             linked=findings.publish(record,registry,session)
                             attempt.update(status='published',design=record['design']['study_design'],entity_links=linked,dead_letters=record['dead_letters'],findings=[findings.summary(f,registry) for f in record['findings']])
+                            others=findings.unlinked_target(record,linked,node['id'])
+                            if others:
+                                # The paper reported numbers, but about other markers. Say so on this page.
+                                attempt.update(status='findings_about_other_markers',other_markers=others)
+                                findings.dead_letter(session,node['id'],source.pmid,identity,'findings_about_other_markers',
+                                                     {'findings_about_other_markers':len(others)},[{'marker':m} for m in others],now().isoformat())
                             report['attempts'].append(attempt)
                             if node['id'] in linked:report['status']='published';break
                         except Exception as error:
