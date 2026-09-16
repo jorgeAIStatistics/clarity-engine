@@ -135,6 +135,13 @@ def layer_direction(findings):
     return sides.pop() if len(sides) == 1 else 'mixed'
 
 
+def amount(value, unit=None):
+    """A number as a reader expects it: thousands grouped, and a unit spaced unless it is a percent sign."""
+    text = f'{value:,.10g}' if abs(value) >= 10000 else f'{value:g}'
+    unit = (unit or '').strip()
+    return text + (unit if unit in ('%', '‰') else f' {unit}' if unit else '')
+
+
 def value_words(f):
     label = MEASURE_LABEL.get(f.get('measure'), 'reported measure')
     if f.get('measure') == 'recommendation':
@@ -143,11 +150,11 @@ def value_words(f):
         return f'a p value of {f["p_value"]:g}'
     if f.get('estimate') is None:
         return label
-    text = f'{label} {f["estimate"]:g}{f.get("unit") or ""}'
+    text = f'{label} {amount(f["estimate"], f.get("unit"))}'
     if f.get('lower') is not None:
-        text += f' ({f["lower"]:g} to {f["upper"]:g})'
+        text += f' ({amount(f["lower"])} to {amount(f["upper"])})'
     if f.get('cutoff') is not None:
-        text += f' at a cut-off of {f["cutoff"]:g}{(" " + f["cutoff_unit"]) if f.get("cutoff_unit") else ""}'
+        text += f' at a cut-off of {amount(f["cutoff"], f.get("cutoff_unit"))}'
     return text
 
 

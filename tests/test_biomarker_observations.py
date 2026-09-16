@@ -198,6 +198,9 @@ class GraphLinkingTests(unittest.TestCase):
         self.assertEqual(observation_layer('not_determined',[dict(record['findings'][0],population='nude mice')]),'preclinical')
         self.assertTrue(synthesize('CA-125','guidelines',[])[0].startswith('No indexed guideline findings for CA-125 yet.'))
         self.assertIn('classification',synthesize('Chromogranin A','observational',[{'kind':'classification','measure':'sensitivity','estimate':71.0,'target':'neuroendocrine neoplasms','cutoff':100.0,'cutoff_unit':'ng/mL'}])[0])
+        # Large values are grouped and units spaced: "median 61,425 pg/mL", never "61425pg/mL".
+        self.assertIn('median 61,425 pg/mL',synthesize('IL-18','observational',[{'kind':'association','measure':'median','estimate':61425.0,'unit':'pg/mL','target':'active disease'}])[0])
+        self.assertIn('sensitivity 71% at a cut-off of 45,000 pg/mL',synthesize('IL-18','observational',[{'kind':'classification','measure':'sensitivity','estimate':71.0,'unit':'%','cutoff':45000.0,'cutoff_unit':'pg/mL','target':'x'}])[0])
 
     def test_registry_molecular_identity(self):
         by={n['id']:n for n in REGISTRY}
