@@ -99,3 +99,29 @@ def score(model, rows) -> list[float]: ...
 
 Candidate GNN stacks, used only after the baseline: Neo4j GDS (GraphSAGE / HinSAGE) if GDS is
 available on the database, otherwise PyTorch Geometric heterogeneous GraphSAGE in this package.
+
+## Gap ranker — baseline fitted, and not adopted (`ml/gap_ranker.py`)
+
+Label: the outcome of an enrichment attempt already made — a typed finding (1) or a dead-letter (0).
+Features are restricted to what was knowable before that attempt (publications, aliases, demand,
+kind, curated identity). Finding counts are excluded on purpose: they are the label in disguise,
+and `tests/test_gap_ranker.py` asserts they cannot reach the model.
+
+| | value |
+|---|---|
+| Labelled attempts | 22 (17 produced a finding, 5 dead-lettered) |
+| Leave-one-out accuracy | 0.727 |
+| Majority class | 0.773 |
+| Leave-one-out AUC | 0.624 |
+| Adopted as the ranking | **no** |
+
+The model does not beat the majority class on 22 attempts, so the shipped queue is
+ranked by the need rule in `evidence/intent_graph/jobs.py` and the model's probability is shown
+beside it for comparison only.
+
+The rule is deliberately *not* scored against this label: it ranks need — an empty page scores
+high — while the model predicts whether an attempt would succeed. An AUC between them would be
+inverted by construction, so no head-to-head number is published.
+
+Predictions are written as `(:Prediction {task:'gap', score, model, version, review_state})-[:ABOUT]->(:Entity)`.
+The current queue is in `docs/enrich-queue.md` and `ml/exports/<date>/gap_queue.json`.

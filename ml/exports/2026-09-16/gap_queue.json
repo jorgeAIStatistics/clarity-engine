@@ -1,0 +1,224 @@
+{
+ "version": "gap-baseline-v1",
+ "at": "2026-09-16T19:52:36.490588+00:00",
+ "entities": 174,
+ "model": {
+  "attempts": 22,
+  "successes": 17,
+  "failures": 5,
+  "status": "fitted",
+  "loo_accuracy": 0.7272727272727273,
+  "majority_class_accuracy": 0.7727272727272727,
+  "loo_auc": 0.6235294117647059,
+  "comparison": "The rule ranks need, not success probability, so it is not scored against this label. The honest comparison for this model is the majority class.",
+  "useful": false,
+  "coefficients": {
+   "studies": 0.366,
+   "aliases": 0.39,
+   "asked": -0.523,
+   "has_identity": 0.813,
+   "kind_biomarker": 1.127,
+   "kind_test": -0.034,
+   "kind_precisioncontext": -1.101,
+   "kind_variant": 0.007,
+   "kind_gene": 0.0
+  }
+ },
+ "queue": [
+  {
+   "id": "biomarker:apob",
+   "name": "ApoB",
+   "kind": "Biomarker",
+   "score": 9.25,
+   "model": "rule-need-v1",
+   "studies": 5,
+   "asked": 3,
+   "reasons": [
+    "5 linked publications but no typed finding",
+    "asked in 3 recent questions",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.3233,
+   "baseline_adopted": false
+  },
+  {
+   "id": "biomarker:ldl-c",
+   "name": "LDL-C",
+   "kind": "Biomarker",
+   "score": 9.25,
+   "model": "rule-need-v1",
+   "studies": 9,
+   "asked": 3,
+   "reasons": [
+    "9 linked publications but no typed finding",
+    "asked in 3 recent questions",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.7528,
+   "baseline_adopted": false
+  },
+  {
+   "id": "precision_context:alk-alectinib-lung",
+   "name": "ALK-positive NSCLC \u00d7 alectinib",
+   "kind": "PrecisionContext",
+   "score": 4.5,
+   "model": "rule-need-v1",
+   "studies": 0,
+   "asked": 0,
+   "reasons": [
+    "thin domain: precision pair",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.1168,
+   "baseline_adopted": false
+  },
+  {
+   "id": "test:amyloid-pet",
+   "name": "amyloid PET imaging",
+   "kind": "Test",
+   "score": 4.5,
+   "model": "rule-need-v1",
+   "studies": 0,
+   "asked": 0,
+   "reasons": [
+    "thin domain: test",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.2774,
+   "baseline_adopted": false
+  },
+  {
+   "id": "precision_context:braf-v600-dabrafenib-trametinib",
+   "name": "BRAF V600E melanoma \u00d7 dabrafenib and trametinib",
+   "kind": "PrecisionContext",
+   "score": 4.5,
+   "model": "rule-need-v1",
+   "studies": 0,
+   "asked": 0,
+   "reasons": [
+    "thin domain: precision pair",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.1168,
+   "baseline_adopted": false
+  },
+  {
+   "id": "precision_context:brca-olaparib-ovarian",
+   "name": "BRCA-mutated ovarian cancer \u00d7 olaparib maintenance",
+   "kind": "PrecisionContext",
+   "score": 4.5,
+   "model": "rule-need-v1",
+   "studies": 0,
+   "asked": 0,
+   "reasons": [
+    "thin domain: precision pair",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.0822,
+   "baseline_adopted": false
+  },
+  {
+   "id": "test:ct-colonography",
+   "name": "CT colonography",
+   "kind": "Test",
+   "score": 4.5,
+   "model": "rule-need-v1",
+   "studies": 0,
+   "asked": 0,
+   "reasons": [
+    "thin domain: test",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.2064,
+   "baseline_adopted": false
+  },
+  {
+   "id": "test:ctdna-liquid-biopsy",
+   "name": "ctDNA liquid biopsy",
+   "kind": "Test",
+   "score": 4.5,
+   "model": "rule-need-v1",
+   "studies": 0,
+   "asked": 0,
+   "reasons": [
+    "thin domain: test",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.2064,
+   "baseline_adopted": false
+  },
+  {
+   "id": "test:d-dimer-pulmonary-embolism",
+   "name": "D-dimer for pulmonary embolism",
+   "kind": "Test",
+   "score": 4.5,
+   "model": "rule-need-v1",
+   "studies": 0,
+   "asked": 0,
+   "reasons": [
+    "thin domain: test",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.2064,
+   "baseline_adopted": false
+  },
+  {
+   "id": "precision_context:egfr-exon20-amivantamab",
+   "name": "EGFR exon 20 insertion NSCLC \u00d7 amivantamab",
+   "kind": "PrecisionContext",
+   "score": 4.5,
+   "model": "rule-need-v1",
+   "studies": 0,
+   "asked": 0,
+   "reasons": [
+    "thin domain: precision pair",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.0822,
+   "baseline_adopted": false
+  },
+  {
+   "id": "test:fecal-calprotectin",
+   "name": "faecal calprotectin testing",
+   "kind": "Test",
+   "score": 4.5,
+   "model": "rule-need-v1",
+   "studies": 0,
+   "asked": 0,
+   "reasons": [
+    "thin domain: test",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.2774,
+   "baseline_adopted": false
+  },
+  {
+   "id": "precision_context:her2-low-trastuzumab-deruxtecan",
+   "name": "HER2-low breast cancer \u00d7 trastuzumab deruxtecan",
+   "kind": "PrecisionContext",
+   "score": 4.5,
+   "model": "rule-need-v1",
+   "studies": 0,
+   "asked": 0,
+   "reasons": [
+    "thin domain: precision pair",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.1168,
+   "baseline_adopted": false
+  }
+ ],
+ "note": "Suggested extraction targets for the library, ranked by need. Not a clinical score and not about any person."
+}
