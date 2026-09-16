@@ -11,6 +11,7 @@ PATHS={'biomarker':'biomarkers','diagnostic':'diagnostics','screening':'screenin
 def graph_entries(existing):
     """Biomarkers published to Neo4j that the curated catalog does not already profile."""
     import re
+    from collections import Counter
     from .intent_graph.intent import norm
     # A curated profile hides a graph row of the same name. Aliases only hide plain biomarkers:
     # a catalog entry for EGFR-mutant disease must not swallow the EGFR variant entity.
@@ -48,7 +49,9 @@ def graph_entries(existing):
         rows[slug]={'id':'graph:'+g['id'],'name':g['name'],'entity_type':entity_type,'category':category,'aliases':g.get('aliases') or [],'path':prefix+slug,
             'outcomes':[],'conditions':[],'review_status':'automated_appraisal','available':True,'generated_at':None,'last_enriched_at':(g.get('last_extracted_at') or '')[:10] or None,
             'summary':summary,'coverage':{'linked_studies':g.get('studies',0),'outcomes':0,'quantified_outcomes':g.get('findings',0)},'maturity':'Graph profile · automated',
-            'quantified_outcome_names':[],'graph_layers':g.get('layers',[])}
+            'quantified_outcome_names':[],'graph_layers':g.get('layers',[]),
+            'finding_kinds':{k:v for k,v in sorted(Counter(k for k in (g.get('kinds') or []) if k).items())},
+            'utility_indexed':bool(g.get('utility_findings'))}
     return list(rows.values())
 
 def build_library():

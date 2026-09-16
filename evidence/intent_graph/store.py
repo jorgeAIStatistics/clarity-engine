@@ -160,6 +160,9 @@ def graph_library():
     with session() as s:
         return s.run("MATCH (e:Entity) WHERE coalesce(e.ephemeral,false)=false AND (e.kind IN ['Biomarker','Gene','Variant','Protein','Test','Assay','PrecisionContext'] OR e.type IN ['biomarker','gene','variant','protein','test','assay','precision_context']) "
                      'OPTIONAL MATCH (e)-[:HAS_LAYER]->(l:LayerAssessment) '
-                     'WITH e, sum(coalesce(l.n_findings,0)) AS findings, collect(CASE WHEN coalesce(l.n_findings,0)>0 THEN l.layer END) AS layers, collect(l.sentences) AS sentences '
+                     'WITH e, sum(coalesce(l.n_findings,0)) AS findings, collect(CASE WHEN coalesce(l.n_findings,0)>0 THEN l.layer END) AS layers, collect(l.sentences) AS sentences, '
+                     "     sum(CASE WHEN l.layer IN ['interventional','guidelines'] THEN coalesce(l.n_findings,0) ELSE 0 END) AS utility_findings "
+                     'OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding) '
+                     'WITH e, findings, layers, sentences, utility_findings, collect(coalesce(f.kind, f.observation_type)) AS kinds '
                      'OPTIONAL MATCH (e)<-[:MENTIONS_ENTITY]-(st:Study) '
-                     'RETURN e.id AS id, e.name AS name, e.kind AS kind, e.type AS type, e.aliases AS aliases, e.last_extracted_at AS last_extracted_at, findings, layers, sentences, count(DISTINCT st) AS studies').data()
+                     'RETURN e.id AS id, e.name AS name, e.kind AS kind, e.type AS type, e.aliases AS aliases, e.last_extracted_at AS last_extracted_at, findings, layers, sentences, kinds, utility_findings, count(DISTINCT st) AS studies').data()

@@ -81,7 +81,7 @@ class LiveCypherTests(unittest.TestCase):
 class LibraryAndRouteTests(unittest.TestCase):
     def test_library_adds_graph_biomarkers_missing_from_the_catalog(self):
         from evidence.library import graph_entries
-        graph=[dict(id='biomarker:ca-125',name='CA-125',kind='Biomarker',type='biomarker',aliases=['CA-125','CA125'],last_extracted_at='2026-09-14T10:00:00',findings=3,layers=['observational'],sentences=[json.dumps(['Automated reading: 3 classification findings for CA-125 and ovarian cancer (AUC 0.8). Not expert-reviewed.'])],studies=4),
+        graph=[dict(id='biomarker:ca-125',name='CA-125',kind='Biomarker',type='biomarker',aliases=['CA-125','CA125'],last_extracted_at='2026-09-14T10:00:00',findings=3,layers=['observational'],kinds=['classification','classification','discrimination'],utility_findings=0,sentences=[json.dumps(['Automated reading: 3 classification findings for CA-125 and ovarian cancer (AUC 0.8). Not expert-reviewed.'])],studies=4),
                dict(id='biomarker:apob',name='ApoB',kind='Biomarker',type='biomarker',aliases=['ApoB'],last_extracted_at=None,findings=0,layers=[],sentences=[],studies=2)]
         with patch('evidence.intent_graph.store.graph_library',return_value=graph):
             rows=graph_entries([{'name':'ApoB','aliases':['Apolipoprotein B']}])
@@ -100,6 +100,7 @@ class LibraryAndRouteTests(unittest.TestCase):
         self.assertEqual(sorted((r['entity_type'],r['path']) for r in routed),
                          [('diagnostic','/diagnostics/amyloid-pet'),('precision_oncology','/precision-medicine/ret-selpercatinib'),('screening','/screening/low-dose-ct-lung-screening')])
         self.assertEqual((rows[0]['coverage'],rows[0]['maturity']),({'linked_studies':4,'outcomes':0,'quantified_outcomes':3},'Graph profile · automated'))
+        self.assertEqual((rows[0]['finding_kinds'],rows[0]['utility_indexed']),({'classification':2,'discrimination':1},False))
         self.assertTrue(rows[0]['summary'].startswith('Automated reading'))
     def test_api_responses_are_never_shared_cached_and_failures_are_never_cached(self):
         from app import app
