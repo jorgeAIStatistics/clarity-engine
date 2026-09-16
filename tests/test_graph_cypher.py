@@ -85,6 +85,13 @@ class LibraryAndRouteTests(unittest.TestCase):
         with patch('evidence.intent_graph.store.graph_library',return_value=[*graph,variant]):
             widened=graph_entries([{'name':'ApoB','aliases':['Apolipoprotein B']},{'name':'EGFR-mutant NSCLC','aliases':['EGFR mutation']}])
         self.assertEqual(sorted((r['category'],r['path']) for r in widened),[('Molecular marker','/biomarkers/ca-125'),('Variant','/biomarkers/egfr-activating-mutation')])
+        others=[dict(id='test:amyloid-pet',name='amyloid PET imaging',kind='Test',type='test',aliases=['amyloid PET'],last_extracted_at=None,findings=0,layers=[],sentences=[],studies=0),
+                dict(id='test:low-dose-ct-lung-screening',name='low-dose CT lung cancer screening',kind='Test',type='test',aliases=['LDCT screening'],last_extracted_at=None,findings=0,layers=[],sentences=[],studies=0),
+                dict(id='precision_context:ret-selpercatinib',name='RET-altered cancer × selpercatinib',kind='PrecisionContext',type='precision_context',aliases=['selpercatinib'],last_extracted_at=None,findings=1,layers=['interventional'],sentences=[],studies=2)]
+        with patch('evidence.intent_graph.store.graph_library',return_value=others):
+            routed=graph_entries([])
+        self.assertEqual(sorted((r['entity_type'],r['path']) for r in routed),
+                         [('diagnostic','/diagnostics/amyloid-pet'),('precision_oncology','/precision-medicine/ret-selpercatinib'),('screening','/screening/low-dose-ct-lung-screening')])
         self.assertEqual((rows[0]['coverage'],rows[0]['maturity']),({'linked_studies':4,'outcomes':0,'quantified_outcomes':3},'Graph profile · automated'))
         self.assertTrue(rows[0]['summary'].startswith('Automated reading'))
     def test_graph_entity_route(self):

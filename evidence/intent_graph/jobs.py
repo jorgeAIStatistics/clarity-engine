@@ -25,7 +25,8 @@ WITH e, sum(CASE WHEN l.layer IN $utility THEN coalesce(l.n_findings,0) ELSE 0 E
 OPTIONAL MATCH (q:Question)-[:MENTIONS]->(e)
 WITH e, utility_findings, findings, count(DISTINCT q) AS asked
 OPTIONAL MATCH (d:DeadLetter)-[:ABOUT]->(e)
-RETURN e.id AS id, e.name AS name, coalesce(e.kind, e.type) AS kind, utility_findings, findings, asked, count(d) AS dead_letters
+OPTIONAL MATCH (e)<-[:MENTIONS_ENTITY]-(st:Study)
+RETURN e.id AS id, e.name AS name, coalesce(e.kind, e.type) AS kind, utility_findings, findings, asked, count(DISTINCT d) AS dead_letters, count(DISTINCT st) AS studies
 """
 MISSES_QUERY = """
 MATCH (q:Question)-[:MENTIONS]->(t:Entity {ephemeral:true})
@@ -49,6 +50,13 @@ def rank_gaps(rows, misses=(), limit=20):
     ranked = []
     for r in rows:
         score, reasons = 2.0 * r['asked'], []
+        # Precision pairs and tests are the thin domains; an empty one is worth more than another empty marker.
+        if r['kind'] in ('PrecisionContext', 'Test', 'Assay') and not r['findings']:
+            score += 2.0
+            reasons.append('thin domain: ' + ('precision pair' if r['kind'] == 'PrecisionContext' else 'test'))
+        elif r['kind'] == 'Biomarker' and not r['findings'] and r.get('studies'):
+            score += 0.75
+            reasons.append(f"{r['studies']} linked publications but no typed finding")
         if r['asked']:
             reasons.append('asked in ' + _plural(r['asked'], 'question'))
         if not r['utility_findings']:

@@ -36,11 +36,21 @@ class JobQueueTests(unittest.TestCase):
         self.assertEqual([j['entity_id'] for j in pending(self.state,2)],['biomarker:b','biomarker:c'])
 
 class GapRankerTests(unittest.TestCase):
+    def test_thin_domains_and_indexed_but_unmined_markers_rank_above_empty_names(self):
+        rows=[dict(id='precision_context:ret-selpercatinib',name='RET × selpercatinib',kind='PrecisionContext',utility_findings=0,findings=0,asked=0,dead_letters=0,studies=0),
+              dict(id='test:amyloid-pet',name='amyloid PET',kind='Test',utility_findings=0,findings=0,asked=0,dead_letters=0,studies=0),
+              dict(id='biomarker:ca-125',name='CA-125',kind='Biomarker',utility_findings=0,findings=0,asked=0,dead_letters=0,studies=3),
+              dict(id='biomarker:quiet',name='Quiet marker',kind='Biomarker',utility_findings=0,findings=0,asked=0,dead_letters=0,studies=0)]
+        ranked=rank_gaps(rows)
+        self.assertEqual([r['name'] for r in ranked],['amyloid PET','RET × selpercatinib','CA-125','Quiet marker'])
+        self.assertIn('thin domain: precision pair',[x for r in ranked for x in r['reasons']])
+        self.assertIn('3 linked publications but no typed finding',ranked[2]['reasons'])
+
     def test_asked_entities_with_empty_utility_layers_rank_first(self):
-        rows=[dict(id='biomarker:apob',name='ApoB',kind='Biomarker',utility_findings=0,findings=4,asked=0,dead_letters=0),
-              dict(id='biomarker:il-18',name='IL-18',kind='Biomarker',utility_findings=0,findings=0,asked=3,dead_letters=0),
-              dict(id='biomarker:ldl-c',name='LDL-C',kind='Biomarker',utility_findings=2,findings=9,asked=1,dead_letters=0),
-              dict(id='biomarker:chromogranin-a',name='Chromogranin A',kind='Biomarker',utility_findings=0,findings=0,asked=0,dead_letters=6)]
+        rows=[dict(id='biomarker:apob',name='ApoB',kind='Biomarker',utility_findings=0,findings=4,asked=0,dead_letters=0,studies=0),
+              dict(id='biomarker:il-18',name='IL-18',kind='Biomarker',utility_findings=0,findings=0,asked=3,dead_letters=0,studies=0),
+              dict(id='biomarker:ldl-c',name='LDL-C',kind='Biomarker',utility_findings=2,findings=9,asked=1,dead_letters=0,studies=0),
+              dict(id='biomarker:chromogranin-a',name='Chromogranin A',kind='Biomarker',utility_findings=0,findings=0,asked=0,dead_letters=6,studies=0)]
         ranked=rank_gaps(rows,[dict(name='Galectin-3',type='biomarker',asked=2)])
         self.assertEqual([r['name'] for r in ranked],['IL-18','Galectin-3','LDL-C','ApoB','Chromogranin A'])
         self.assertEqual(ranked[0]['reasons'],['asked in 3 recent questions','no interventional or guideline findings','no typed findings in any layer'])

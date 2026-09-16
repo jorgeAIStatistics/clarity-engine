@@ -425,7 +425,8 @@
   "type": "biomarker",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "encoded_by": "gene:braf"
  },
  {
   "id": "biomarker:pik3ca",
@@ -1521,6 +1522,781 @@
    "neuroendocrine carcinoma"
   ],
   "type": "condition",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "gene:kras",
+  "name": "KRAS gene",
+  "aliases": [
+   "KRAS gene"
+  ],
+  "type": "gene",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "gene:braf",
+  "name": "BRAF gene",
+  "aliases": [
+   "BRAF gene"
+  ],
+  "type": "gene",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "gene:pik3ca",
+  "name": "PIK3CA gene",
+  "aliases": [
+   "PIK3CA gene"
+  ],
+  "type": "gene",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "gene:ntrk1",
+  "name": "NTRK1 gene",
+  "aliases": [
+   "NTRK1 gene",
+   "NTRK gene"
+  ],
+  "type": "gene",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "gene:ret",
+  "name": "RET gene",
+  "aliases": [
+   "RET gene"
+  ],
+  "type": "gene",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "gene:ros1",
+  "name": "ROS1 gene",
+  "aliases": [
+   "ROS1 gene"
+  ],
+  "type": "gene",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "gene:alk",
+  "name": "ALK gene",
+  "aliases": [
+   "ALK gene"
+  ],
+  "type": "gene",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "variant:kras-g12c",
+  "name": "KRAS G12C",
+  "aliases": [
+   "KRAS G12C",
+   "KRAS p.G12C",
+   "G12C"
+  ],
+  "type": "variant",
+  "variant_of": "gene:kras",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "variant:braf-v600e",
+  "name": "BRAF V600E",
+  "aliases": [
+   "BRAF V600E",
+   "V600E",
+   "BRAF V600"
+  ],
+  "type": "variant",
+  "variant_of": "gene:braf",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "variant:pik3ca-mutation",
+  "name": "PIK3CA mutation",
+  "aliases": [
+   "PIK3CA mutation",
+   "PIK3CA-mutated",
+   "PIK3CA mutations"
+  ],
+  "type": "variant",
+  "variant_of": "gene:pik3ca",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "variant:egfr-exon20-insertion",
+  "name": "EGFR exon 20 insertion",
+  "aliases": [
+   "EGFR exon 20 insertion",
+   "exon 20 insertion",
+   "ex20ins"
+  ],
+  "type": "variant",
+  "variant_of": "gene:egfr",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "variant:ntrk-fusion",
+  "name": "NTRK fusion",
+  "aliases": [
+   "NTRK fusion",
+   "NTRK gene fusion",
+   "TRK fusion"
+  ],
+  "type": "variant",
+  "variant_of": "gene:ntrk1",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "variant:ret-fusion",
+  "name": "RET fusion",
+  "aliases": [
+   "RET fusion",
+   "RET rearrangement",
+   "RET-altered"
+  ],
+  "type": "variant",
+  "variant_of": "gene:ret",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "variant:ros1-fusion",
+  "name": "ROS1 fusion",
+  "aliases": [
+   "ROS1 fusion",
+   "ROS1 rearrangement",
+   "ROS1-positive"
+  ],
+  "type": "variant",
+  "variant_of": "gene:ros1",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "variant:alk-rearrangement",
+  "name": "ALK rearrangement",
+  "aliases": [
+   "ALK rearrangement",
+   "ALK fusion",
+   "ALK-positive"
+  ],
+  "type": "variant",
+  "variant_of": "gene:alk",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:sotorasib",
+  "name": "sotorasib",
+  "aliases": [
+   "sotorasib"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:adagrasib",
+  "name": "adagrasib",
+  "aliases": [
+   "adagrasib"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:larotrectinib",
+  "name": "larotrectinib",
+  "aliases": [
+   "larotrectinib"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:selpercatinib",
+  "name": "selpercatinib",
+  "aliases": [
+   "selpercatinib"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:alpelisib",
+  "name": "alpelisib",
+  "aliases": [
+   "alpelisib"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:dabrafenib",
+  "name": "dabrafenib",
+  "aliases": [
+   "dabrafenib"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:trametinib",
+  "name": "trametinib",
+  "aliases": [
+   "trametinib"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:entrectinib",
+  "name": "entrectinib",
+  "aliases": [
+   "entrectinib"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:pembrolizumab",
+  "name": "pembrolizumab",
+  "aliases": [
+   "pembrolizumab"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:amivantamab",
+  "name": "amivantamab",
+  "aliases": [
+   "amivantamab"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:osimertinib",
+  "name": "osimertinib",
+  "aliases": [
+   "osimertinib"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:alectinib",
+  "name": "alectinib",
+  "aliases": [
+   "alectinib"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "compound:trastuzumab-deruxtecan",
+  "name": "trastuzumab deruxtecan",
+  "aliases": [
+   "trastuzumab deruxtecan",
+   "T-DXd"
+  ],
+  "type": "compound",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "condition:colorectal-cancer",
+  "name": "colorectal cancer",
+  "aliases": [
+   "colorectal cancer",
+   "colon cancer",
+   "rectal cancer"
+  ],
+  "type": "condition",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "condition:melanoma",
+  "name": "melanoma",
+  "aliases": [
+   "melanoma",
+   "cutaneous melanoma"
+  ],
+  "type": "condition",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "condition:ovarian-cancer",
+  "name": "ovarian cancer",
+  "aliases": [
+   "ovarian cancer",
+   "ovarian carcinoma"
+  ],
+  "type": "condition",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "condition:thyroid-cancer",
+  "name": "thyroid cancer",
+  "aliases": [
+   "thyroid cancer",
+   "medullary thyroid carcinoma"
+  ],
+  "type": "condition",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:kras-g12c-sotorasib",
+  "name": "KRAS G12C NSCLC × sotorasib",
+  "aliases": [
+   "KRAS G12C NSCLC",
+   "KRAS G12C-mutated non-small cell lung cancer",
+   "sotorasib",
+   "adagrasib"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "variant:kras-g12c",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:sotorasib",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "condition:nsclc",
+    "reason": "same_population"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:ntrk-larotrectinib",
+  "name": "NTRK fusion cancer × larotrectinib",
+  "aliases": [
+   "NTRK fusion cancer",
+   "TRK fusion cancer",
+   "larotrectinib"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "variant:ntrk-fusion",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:larotrectinib",
+    "reason": "modifies_treatment"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:ret-selpercatinib",
+  "name": "RET-altered cancer × selpercatinib",
+  "aliases": [
+   "RET-altered cancer",
+   "RET fusion-positive cancer",
+   "selpercatinib"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "variant:ret-fusion",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:selpercatinib",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "condition:thyroid-cancer",
+    "reason": "same_population"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:pik3ca-alpelisib",
+  "name": "PIK3CA-mutated breast cancer × alpelisib",
+  "aliases": [
+   "PIK3CA-mutated breast cancer",
+   "alpelisib"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "variant:pik3ca-mutation",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:alpelisib",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "condition:breast-cancer",
+    "reason": "same_population"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:braf-v600-dabrafenib-trametinib",
+  "name": "BRAF V600E melanoma × dabrafenib and trametinib",
+  "aliases": [
+   "BRAF V600E melanoma",
+   "BRAF-mutated melanoma",
+   "dabrafenib plus trametinib"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "variant:braf-v600e",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:dabrafenib",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "condition:melanoma",
+    "reason": "same_population"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:ros1-entrectinib",
+  "name": "ROS1 fusion NSCLC × entrectinib",
+  "aliases": [
+   "ROS1 fusion NSCLC",
+   "ROS1-positive lung cancer",
+   "entrectinib"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "variant:ros1-fusion",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:entrectinib",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "condition:nsclc",
+    "reason": "same_population"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:pdl1-pembrolizumab-nsclc",
+  "name": "PD-L1 high NSCLC × pembrolizumab",
+  "aliases": [
+   "PD-L1 high NSCLC",
+   "PD-L1 TPS",
+   "pembrolizumab monotherapy"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "biomarker:pd-l1",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:pembrolizumab",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "condition:nsclc",
+    "reason": "same_population"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:her2-low-trastuzumab-deruxtecan",
+  "name": "HER2-low breast cancer × trastuzumab deruxtecan",
+  "aliases": [
+   "HER2-low breast cancer",
+   "HER2-low",
+   "trastuzumab deruxtecan"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "biomarker:her2",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:trastuzumab-deruxtecan",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "condition:breast-cancer",
+    "reason": "same_population"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:egfr-exon20-amivantamab",
+  "name": "EGFR exon 20 insertion NSCLC × amivantamab",
+  "aliases": [
+   "EGFR exon 20 insertion NSCLC",
+   "amivantamab"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "variant:egfr-exon20-insertion",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:amivantamab",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "condition:nsclc",
+    "reason": "same_population"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:alk-alectinib-lung",
+  "name": "ALK-positive NSCLC × alectinib",
+  "aliases": [
+   "ALK-positive NSCLC",
+   "ALK-rearranged lung cancer",
+   "alectinib"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "variant:alk-rearrangement",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:alectinib",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "condition:nsclc",
+    "reason": "same_population"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "precision_context:brca-olaparib-ovarian",
+  "name": "BRCA-mutated ovarian cancer × olaparib maintenance",
+  "aliases": [
+   "BRCA-mutated ovarian cancer",
+   "olaparib maintenance"
+  ],
+  "type": "precision_context",
+  "related": [
+   {
+    "id": "gene:brca1",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "compound:olaparib",
+    "reason": "modifies_treatment"
+   },
+   {
+    "id": "condition:ovarian-cancer",
+    "reason": "same_population"
+   }
+  ],
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "test:low-dose-ct-lung-screening",
+  "name": "low-dose CT lung cancer screening",
+  "aliases": [
+   "low-dose CT lung cancer screening",
+   "low-dose CT screening",
+   "LDCT screening"
+  ],
+  "type": "test",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "test:hpv-cervical-screening",
+  "name": "HPV cervical screening",
+  "aliases": [
+   "HPV cervical screening",
+   "HPV testing",
+   "cervical cytology screening"
+  ],
+  "type": "test",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "test:d-dimer-pulmonary-embolism",
+  "name": "D-dimer for pulmonary embolism",
+  "aliases": [
+   "D-dimer for pulmonary embolism",
+   "D-dimer testing"
+  ],
+  "type": "test",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "test:fecal-calprotectin",
+  "name": "faecal calprotectin testing",
+  "aliases": [
+   "faecal calprotectin testing",
+   "fecal calprotectin testing",
+   "calprotectin test"
+  ],
+  "type": "test",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "test:ct-colonography",
+  "name": "CT colonography",
+  "aliases": [
+   "CT colonography",
+   "virtual colonoscopy"
+  ],
+  "type": "test",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "test:amyloid-pet",
+  "name": "amyloid PET imaging",
+  "aliases": [
+   "amyloid PET imaging",
+   "amyloid PET",
+   "PET amyloid scan"
+  ],
+  "type": "test",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "test:ctdna-liquid-biopsy",
+  "name": "ctDNA liquid biopsy",
+  "aliases": [
+   "ctDNA liquid biopsy",
+   "liquid biopsy testing"
+  ],
+  "type": "test",
+  "review_state": "automated",
+  "ephemeral": false,
+  "registry_version": "biomarkers-v2"
+ },
+ {
+  "id": "test:natriuretic-peptide-heart-failure",
+  "name": "natriuretic peptide testing for heart failure",
+  "aliases": [
+   "natriuretic peptide testing",
+   "NT-proBNP testing",
+   "BNP testing"
+  ],
+  "type": "test",
   "review_state": "automated",
   "ephemeral": false,
   "registry_version": "biomarkers-v2"
