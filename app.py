@@ -64,6 +64,10 @@ def _security_headers(resp):
     resp.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
     if request.path.startswith("/api/ask"):
         resp.headers["Cache-Control"] = "no-store"
+    # A failure must never be cached: during a deploy the engine answers 502/503, and a stored
+    # copy would keep a page blank for the whole max-age after the engine is healthy again.
+    if request.path.startswith("/api/") and resp.status_code >= 400:
+        resp.headers["Cache-Control"] = "no-store"
     return resp
 
 

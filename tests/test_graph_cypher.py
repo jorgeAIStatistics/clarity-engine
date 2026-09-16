@@ -101,6 +101,23 @@ class LibraryAndRouteTests(unittest.TestCase):
                          [('diagnostic','/diagnostics/amyloid-pet'),('precision_oncology','/precision-medicine/ret-selpercatinib'),('screening','/screening/low-dose-ct-lung-screening')])
         self.assertEqual((rows[0]['coverage'],rows[0]['maturity']),({'linked_studies':4,'outcomes':0,'quantified_outcomes':3},'Graph profile · automated'))
         self.assertTrue(rows[0]['summary'].startswith('Automated reading'))
+    def test_api_responses_are_never_shared_cached_and_failures_are_never_cached(self):
+        from app import app
+        client=app.test_client()
+        with patch('evidence.intent_graph.store.graph_entity',return_value={'version':'graph-entity-v1','entity':{'id':'biomarker:ca-125'}}):
+            ok=client.get('/api/evidence/graph/entity/biomarker:ca-125',headers={'Origin':'https://clarityevidence.com'})
+        # The body carries one origin's CORS header, so only that browser may cache it.
+        self.assertEqual(ok.headers['Cache-Control'],'private, max-age=60')
+        with patch('evidence.intent_graph.store.graph_entity',return_value=None):
+            missing=client.get('/api/evidence/graph/entity/biomarker:nothing')
+        with patch('evidence.intent_graph.store.graph_entity',side_effect=RuntimeError('neo4j_unavailable')):
+            broken=client.get('/api/evidence/graph/entity/biomarker:ca-125')
+        self.assertEqual((missing.status_code,missing.headers['Cache-Control']),(404,'no-store'))
+        self.assertEqual((broken.status_code,broken.headers['Cache-Control']),(503,'no-store'))
+        with patch('evidence.intent_graph.store.graph_stats',return_value={'entities':1}):
+            stats=client.get('/api/evidence/graph/stats')
+        self.assertNotIn('public',stats.headers['Cache-Control'])
+
     def test_graph_entity_route(self):
         from app import app
         client=app.test_client()

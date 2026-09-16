@@ -67,7 +67,7 @@ def visual_evidence(target_id):
         # Preserve the published snapshot if the independent pipeline is unavailable.
         pass
     response=jsonify(version=VERSION,report=base)
-    response.headers['Cache-Control']='public, max-age=60'
+    response.headers['Cache-Control']='private, max-age=60'
     return response
 
 @blueprint.get('/api/library')
@@ -150,7 +150,7 @@ def graph_stats():
     from .intent_graph.store import graph_stats as stats
     try:data=stats(request.args.get('entity','')[:80])
     except Exception:return jsonify(error='Graph statistics are unavailable.'),503
-    response=jsonify(data);response.headers['Cache-Control']='public, max-age=60';return response
+    response=jsonify(data);response.headers['Cache-Control']='private, max-age=60';return response
 
 @blueprint.get('/api/evidence/graph/entity/<path:entity_id>')
 def graph_entity(entity_id):
@@ -159,7 +159,7 @@ def graph_entity(entity_id):
     try:data=load(entity_id)
     except Exception:return jsonify(error='Graph profiles are unavailable.'),503
     if data is None:return jsonify(error='Unknown graph profile.'),404
-    response=jsonify(data);response.headers['Cache-Control']='public, max-age=120';return response
+    response=jsonify(data);response.headers['Cache-Control']='private, max-age=60';return response
 
 @blueprint.post('/api/evidence/match/feedback')
 def matcher_feedback():
