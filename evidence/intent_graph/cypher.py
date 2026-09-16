@@ -17,7 +17,7 @@ KIND = {
 }
 RELATION_REASONS = {"same_outcome", "same_population", "predicts", "measures", "modifies_treatment", "same_gene", "same_pathway"}
 # Curated identity, not findings: what the object is, where it is measured, and one background note.
-IDENTITY_FIELDS = ("entity_class", "specimen", "pathway_note", "measured_by_methods", "identity_sentence")
+IDENTITY_FIELDS = ("entity_class", "specimen", "pathway_note", "assay_hint", "identity_sentence")
 EXTERNAL_IDS = ("hgnc", "uniprot", "ensembl", "mondo", "chebi", "ncit")
 KEEP_REVIEWED = "CASE WHEN {v}.review_state='reviewed' THEN 'reviewed' ELSE coalesce($review,'automated') END"
 
