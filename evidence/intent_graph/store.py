@@ -157,7 +157,7 @@ def graph_entity(entity_id, open_session=None):
 def graph_library():
     """Library feed: registry biomarkers with layer rollups and study counts."""
     with session() as s:
-        return s.run("MATCH (e:Entity) WHERE coalesce(e.ephemeral,false)=false AND (e.kind='Biomarker' OR e.type='biomarker') "
+        return s.run("MATCH (e:Entity) WHERE coalesce(e.ephemeral,false)=false AND (e.kind IN ['Biomarker','Gene','Variant','Protein'] OR e.type IN ['biomarker','gene','variant','protein']) "
                      'OPTIONAL MATCH (e)-[:HAS_LAYER]->(l:LayerAssessment) '
                      'WITH e, sum(coalesce(l.n_findings,0)) AS findings, collect(CASE WHEN coalesce(l.n_findings,0)>0 THEN l.layer END) AS layers, collect(l.sentences) AS sentences '
                      'OPTIONAL MATCH (e)<-[:MENTIONS_ENTITY]-(st:Study) '

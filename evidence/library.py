@@ -18,19 +18,25 @@ def graph_entries(existing):
         graph=graph_library()
     except Exception:
         return []
-    rows=[]
+    # Genes and variants share the biomarker address space; a biomarker wins a shared slug.
+    kinds={'Biomarker':('Molecular marker',0),'Gene':('Gene',1),'Variant':('Variant',2),'Protein':('Protein',3)}
+    rows,by_slug={},{}
     for g in graph:
-        if g.get('kind')!='Biomarker' and g.get('type')!='biomarker':continue
+        kind=g.get('kind') or {'biomarker':'Biomarker','gene':'Gene','variant':'Variant','protein':'Protein'}.get(g.get('type'),'')
+        if kind not in kinds:continue
+        category,rank=kinds[kind]
         if any(norm(name) in known for name in [g['name'],*(g.get('aliases') or [])]):continue
         slug=g['id'].split(':',1)[1]
         if not re.fullmatch(r'[a-z0-9-]{1,80}',slug):continue
+        if slug in by_slug and by_slug[slug]<=rank:continue
+        by_slug[slug]=rank
         sentences=[s for layer in g.get('sentences') or [] for s in (json.loads(layer) if layer else []) if not s.startswith('No indexed')]
         summary=sentences[0] if sentences else f"{g['name']}: aliases and five evidence layers are indexed in the graph; no typed findings are extracted yet."
-        rows.append({'id':'graph:'+g['id'],'name':g['name'],'entity_type':'biomarker','category':'Molecular marker','aliases':g.get('aliases') or [],'path':'/biomarkers/'+slug,
+        rows[slug]={'id':'graph:'+g['id'],'name':g['name'],'entity_type':'biomarker','category':category,'aliases':g.get('aliases') or [],'path':'/biomarkers/'+slug,
             'outcomes':[],'conditions':[],'review_status':'automated_appraisal','available':True,'generated_at':None,'last_enriched_at':(g.get('last_extracted_at') or '')[:10] or None,
             'summary':summary,'coverage':{'linked_studies':g.get('studies',0),'outcomes':0,'quantified_outcomes':g.get('findings',0)},'maturity':'Graph profile · automated',
-            'quantified_outcome_names':[],'graph_layers':g.get('layers',[])})
-    return rows
+            'quantified_outcome_names':[],'graph_layers':g.get('layers',[])}
+    return list(rows.values())
 
 def build_library():
     import generate
