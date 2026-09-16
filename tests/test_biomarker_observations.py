@@ -90,6 +90,27 @@ AUCONLY=("SYNTHETIC TEST ONLY. Model discrimination\n\n"
      "The model achieved an area under the ROC curve of 0.78 for recurrence.")
 A=Tokens(AUCONLY);AUC_SOURCE=source(AUCONLY,'3')
 
+GROUPED=("SYNTHETIC TEST ONLY. Median IL-18 in Still's disease\n\n"
+     "Median baseline IL-18 levels were higher in active disease at 61,425 pg/mL (interquartile range 16,194-235,746) in 40 patients.")
+G=Tokens(GROUPED);GROUPED_SOURCE=source(GROUPED,'4')
+
+class GroupedNumberTests(unittest.TestCase):
+    def observation_on(self, token_index):
+        return observation(observation_type='association',measure='median',marker=G.at('IL',1,2),target=G.at('active',0,2),
+                           measure_quote=G.at('Median',1),value=token_index,unit=G.at('pg',0,3))
+
+    def test_a_span_on_either_half_reads_the_whole_grouped_number(self):
+        first=decode_observations(payload(self.observation_on(G.at('61'))),GROUPED_SOURCE)
+        self.assertEqual((first['findings'][0]['value'],first['findings'][0]['value_raw']),(61425.0,'61,425'))
+        second=decode_observations(payload(self.observation_on(G.at('425'))),GROUPED_SOURCE)
+        self.assertEqual(second['findings'][0]['value'],61425.0)
+
+    def test_an_ordinary_number_and_a_range_are_untouched(self):
+        plain=decode_observations(payload(dict(self.observation_on(G.at('40')),unit=NONE)),GROUPED_SOURCE)
+        self.assertEqual(plain['findings'][0]['value'],40.0)
+        auc=decode_observations(payload(AUC),CGA_SOURCE)['findings'][0]
+        self.assertEqual((auc['value'],auc['lower'],auc['upper']),(0.82,0.76,0.88))
+
 class SpanAndKindRecoveryTests(unittest.TestCase):
     def test_an_unusable_design_span_costs_the_design_not_the_findings(self):
         body=payload(SENSITIVITY,design='observational')

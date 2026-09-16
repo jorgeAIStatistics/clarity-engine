@@ -18,6 +18,13 @@ class StaticCypherTests(unittest.TestCase):
         self.assertIn('a.norm_name = $norm',cypher.RESOLVE_SPAN)
         self.assertIn("Finding {kind:'classification'}",cypher.CLASSIFICATION_FINDINGS)
 
+    def test_identity_fields_are_written_only_when_curated(self):
+        node=dict(id='biomarker:il-18',name='IL-18',aliases=['IL-18'],type='biomarker',entity_class='Cytokine (IL-1 family protein)',specimen='Serum or plasma',pathway_note='Background note.')
+        identity=next(p for q,p in cypher.entity_statements(node) if 'e.entity_class=' in q)
+        self.assertEqual((identity['entity_class'],identity['specimen'],identity['pathway_note']),('Cytokine (IL-1 family protein)','Serum or plasma','Background note.'))
+        bare=dict(id='biomarker:x',name='X',aliases=['X'],type='biomarker')
+        self.assertFalse(any('entity_class' in q for q,_ in cypher.entity_statements(bare)))
+
     def test_question_node_keeps_parsed_fields_not_raw_text_by_default(self):
         qid,statements=cypher.question_statements(IL18,{'entities':['IL-18']},['biomarker:il-18'])
         merged=next(p for q,p in statements if q.startswith('MERGE (q:Question'))

@@ -16,6 +16,8 @@ KIND = {
     "assay": "Assay", "metabolite": "Metabolite",
 }
 RELATION_REASONS = {"same_outcome", "same_population", "predicts", "measures", "modifies_treatment", "same_gene", "same_pathway"}
+# Curated identity, not findings: what the object is, where it is measured, and one background note.
+IDENTITY_FIELDS = ("entity_class", "specimen", "pathway_note", "measured_by_methods")
 EXTERNAL_IDS = ("hgnc", "uniprot", "ensembl", "mondo", "chebi", "ncit")
 KEEP_REVIEWED = "CASE WHEN {v}.review_state='reviewed' THEN 'reviewed' ELSE coalesce($review,'automated') END"
 
@@ -64,6 +66,9 @@ def entity_statements(node, registry_version="biomarkers-v2"):
         "e.ephemeral=false, e.registry_version=$version, e.review_state=" + KEEP_REVIEWED.format(v="e"),
         dict(id=node["id"], name=node["name"], aliases=node["aliases"], type=node["type"], kind=kind, version=registry_version, review=review),
     )]
+    identity = {k: node[k] for k in IDENTITY_FIELDS if node.get(k)}
+    if identity:
+        out.append(("MATCH (e:Entity {id:$id}) SET " + ", ".join(f"e.{k}=${k}" for k in identity), dict(id=node["id"], **identity)))
     ids = {k: node.get("external_ids", {}).get(k) for k in EXTERNAL_IDS if node.get("external_ids", {}).get(k)}
     if ids:
         out.append(("MATCH (e:Entity {id:$id}) SET " + ", ".join(f"e.{k}=${k}" for k in ids), dict(id=node["id"], **ids)))

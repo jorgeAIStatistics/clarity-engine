@@ -162,6 +162,14 @@ def _literal(fact, text, tokens, bounds):
     # "0.76-0.88" tokenizes the hyphen as a sign; a range hyphen after a digit is not negative.
     if text[start] in "-−" and start > 0 and text[start - 1].isdigit():
         start += 1
+    # "61,425" tokenizes as 61 , 425. A span on the first group must read the whole number,
+    # otherwise a median of 61,425 pg/mL is stored as 61.
+    while re.fullmatch(r"[-+−]?\d[\d,]*", text[start:end]) and re.match(r",\d{3}(?!\d)", text[end:end + 5]):
+        end += 4
+    if start > 0 and text[start - 1] == "," and start > 1 and text[start - 2].isdigit() and re.fullmatch(r"\d{3}(?:[.·]\d+)?", text[start:end]):
+        start -= 2
+        while start > 0 and (text[start - 1].isdigit() or (text[start - 1] == "," and start > 1 and text[start - 2].isdigit())):
+            start -= 1
     left = max(b for b in bounds if b <= start)
     right = min(b for b in bounds if b >= end)
     return {"raw": text[start:end], "start": start, "end": end, "passage": (left, right), "confidence": fact.confidence}
