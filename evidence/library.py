@@ -12,7 +12,11 @@ def graph_entries(existing):
     """Biomarkers published to Neo4j that the curated catalog does not already profile."""
     import re
     from .intent_graph.intent import norm
-    known={norm(name) for row in existing for name in [row['name'],*row.get('aliases',[])]}
+    # A curated profile hides a graph row of the same name. Aliases only hide plain biomarkers:
+    # a catalog entry for EGFR-mutant disease must not swallow the EGFR variant entity.
+    existing=list(existing)
+    known={norm(row['name']) for row in existing}
+    known_aliases=known | {norm(a) for row in existing for a in row.get('aliases',[])}
     try:
         from .intent_graph.store import graph_library
         graph=graph_library()
@@ -25,7 +29,8 @@ def graph_entries(existing):
         kind=g.get('kind') or {'biomarker':'Biomarker','gene':'Gene','variant':'Variant','protein':'Protein'}.get(g.get('type'),'')
         if kind not in kinds:continue
         category,rank=kinds[kind]
-        if any(norm(name) in known for name in [g['name'],*(g.get('aliases') or [])]):continue
+        hidden=known_aliases if kind=='Biomarker' else known
+        if any(norm(name) in hidden for name in [g['name'],*(g.get('aliases') or [])] if kind=='Biomarker' or name==g['name']):continue
         slug=g['id'].split(':',1)[1]
         if not re.fullmatch(r'[a-z0-9-]{1,80}',slug):continue
         if slug in by_slug and by_slug[slug]<=rank:continue

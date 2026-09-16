@@ -80,8 +80,10 @@ class LibraryAndRouteTests(unittest.TestCase):
             rows=graph_entries([{'name':'ApoB','aliases':['Apolipoprotein B']}])
         self.assertEqual([r['path'] for r in rows],['/biomarkers/ca-125'])
         variant=dict(id='variant:egfr-activating-mutation',name='EGFR activating mutation',kind='Variant',type='variant',aliases=['EGFR mutation'],last_extracted_at=None,findings=2,layers=['observational'],sentences=[],studies=8)
+        # A curated precision-oncology profile carrying the alias "EGFR mutation" is a different
+        # object from the variant entity, so it must not hide it from the index.
         with patch('evidence.intent_graph.store.graph_library',return_value=[*graph,variant]):
-            widened=graph_entries([{'name':'ApoB','aliases':['Apolipoprotein B']}])
+            widened=graph_entries([{'name':'ApoB','aliases':['Apolipoprotein B']},{'name':'EGFR-mutant NSCLC','aliases':['EGFR mutation']}])
         self.assertEqual(sorted((r['category'],r['path']) for r in widened),[('Molecular marker','/biomarkers/ca-125'),('Variant','/biomarkers/egfr-activating-mutation')])
         self.assertEqual((rows[0]['coverage'],rows[0]['maturity']),({'linked_studies':4,'outcomes':0,'quantified_outcomes':3},'Graph profile · automated'))
         self.assertTrue(rows[0]['summary'].startswith('Automated reading'))
