@@ -67,7 +67,10 @@ def constrained(text,intent,nodes,records):
     for n in nodes:
         spans=[e.question_span for e in intent.entities if store.resolve_alias(e,[n])]
         aliases=list(dict.fromkeys(n['aliases']+spans))
-        entities.append(dict(id=n['id'],name=n['name'],entity_type=n['type'],path=None,
+        # Curated identity travels with the entity so the briefing can speak the profile's language.
+        from .cypher import IDENTITY_FIELDS
+        entities.append(dict(id=n['id'],name=n['name'],entity_type=n['type'],kind=n.get('kind'),path=None,
+            identity={k:n[k] for k in IDENTITY_FIELDS if n.get(k)},
             aliases=aliases,outcomes=intent.outcomes,_tokens=tokens(' '.join(aliases)),_text=' '.join(aliases),
             related_ids=[],study_count=sum(n['id'] in r['entity_ids'] for r in keep),review_status='automated',maturity='Graph coverage',ephemeral=n.get('ephemeral',False)))
     result=match(text,(entities,keep),limit=16,study_limit=48)
