@@ -188,7 +188,12 @@ def decode_observations(raw, source):
     bounds = _bounds(text)
     audit, findings, seen = [], [], set()
     design = parsed.study_design
-    design_span = _literal(parsed.design_quote, text, tokens, bounds)
+    # A bad design span costs the design, never the findings in the abstract.
+    try:
+        design_span = _literal(parsed.design_quote, text, tokens, bounds)
+    except PipelineError as error:
+        audit.append({"reason": str(error), "field": "design_quote"})
+        design_span = None
     if design != "not_determined" and design_span is None:
         audit.append({"reason": "design_without_evidence", "study_design": design})
         design = "not_determined"
@@ -221,7 +226,13 @@ def decode_observations(raw, source):
             if not re.search(MEASURE_WORDS[measure], spans["measure_quote"]["raw"] if spans["measure_quote"] else passage, re.I):
                 raise PipelineError("measure_not_supported_by_passage")
             if not re.search(KIND_WORDS[kind], support, re.I):
-                raise PipelineError("kind_not_supported_by_passage")
+                # An AUC or C-index sentence is discrimination, whatever the model called it, but only
+                # when the passage itself talks about discrimination.
+                if kind == "classification" and measure in ("auc", "c_index") and re.search(KIND_WORDS["discrimination"], support, re.I):
+                    audit.append({"observation": index, "normalized": "classification_to_discrimination"})
+                    kind = "discrimination"
+                else:
+                    raise PipelineError("kind_not_supported_by_passage")
             numbers = {name: _number(spans[name], name) for name in ("value", "lower", "upper", "level", "threshold", "n", "p_value") if spans[name]}
             if (spans["lower"] is None) != (spans["upper"] is None):
                 raise PipelineError("interval_requires_both_bounds")
@@ -299,6 +310,8 @@ class ObservationProvider(SpanProvider):
     system_instructions = INSTRUCTIONS
 
     def decode_payload(self, raw, sources):
+        # This audit describes this payload only; a reused provider must never carry the last one's.
+        self.decode_audit, self.dead_letters = [], {}
         decoded = decode_observations(raw, sources[0])
         self.decode_audit = decoded["audit"]
         self.dead_letters = decoded["dead_letters"]

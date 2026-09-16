@@ -86,6 +86,38 @@ class FindingKindTests(unittest.TestCase):
         record=redecode({'id':'attempt-1','raw_payload':legacy},CGA_SOURCE.model_dump(mode='json'))
         self.assertEqual((record['findings'][0]['kind'],record['findings'][0]['assay'],record['redecoded_from']),('classification',None,'attempt-1'))
 
+AUCONLY=("SYNTHETIC TEST ONLY. Model discrimination\n\n"
+     "The model achieved an area under the ROC curve of 0.78 for recurrence.")
+A=Tokens(AUCONLY);AUC_SOURCE=source(AUCONLY,'3')
+
+class SpanAndKindRecoveryTests(unittest.TestCase):
+    def test_an_unusable_design_span_costs_the_design_not_the_findings(self):
+        body=payload(SENSITIVITY,design='observational')
+        body['design_quote']={'first_token':9999,'last_token':9999,'confidence':0.9}
+        decoded=decode_observations(body,CGA_SOURCE)
+        self.assertEqual([f['kind'] for f in decoded['findings']],['classification'])
+        self.assertEqual(decoded['design']['study_design'],'not_determined')
+        self.assertIn({'reason':'span_token_bounds_invalid','field':'design_quote'},decoded['audit'])
+        self.assertEqual(decoded['dead_letters'],{})
+
+    def test_an_auc_called_classification_becomes_discrimination_when_the_passage_supports_it(self):
+        auc=observation(observation_type='classification',measure='auc',marker=A.at('model'),target=A.at('recurrence'),measure_quote=A.at('area',0,5),value=A.at('0.78'))
+        decoded=decode_observations(payload(auc),AUC_SOURCE)
+        self.assertEqual([f['kind'] for f in decoded['findings']],['discrimination'])
+        self.assertEqual([a.get('normalized') for a in decoded['audit']],['classification_to_discrimination'])
+        # A cut-off sentence stays classification; the normalization is not a catch-all.
+        cutoff=observation(observation_type='classification',measure='sensitivity',marker=A.at('model'),target=A.at('recurrence'),measure_quote=A.at('area',0,5),value=A.at('0.78'))
+        self.assertEqual(decode_observations(payload(cutoff),AUC_SOURCE)['dead_letters'],{'rejected_unsupported_passage':1})
+
+    def test_a_reused_provider_never_reports_the_previous_sources_rejections(self):
+        provider=ObservationProvider('anthropic','test-model','test-key')
+        with self.assertRaises(PipelineError):
+            provider.decode_payload(payload(dict(SENSITIVITY,value=NONE)),[CGA_SOURCE])
+        self.assertEqual(provider.dead_letters,{'rejected_missing_fields':1})
+        provider.decode_payload(payload(SENSITIVITY),[CGA_SOURCE])
+        self.assertEqual((provider.dead_letters,provider.decode_audit),({},[]))
+        provider.close()
+
 class ExtractorTests(unittest.TestCase):
     def test_extractor_budgets_caches_and_remembers_the_source(self):
         with tempfile.TemporaryDirectory() as folder:
