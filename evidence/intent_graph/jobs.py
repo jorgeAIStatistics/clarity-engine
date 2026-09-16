@@ -49,6 +49,9 @@ def rank_gaps(rows, misses=(), limit=20):
     beyond two so a marker that keeps failing yields to others. Matcher misses need aliases first."""
     ranked = []
     for r in rows:
+        # Conditions and drugs are context for a finding, never the marker a finding is about.
+        if r['kind'] in ('Condition', 'Compound'):
+            continue
         score, reasons = 2.0 * r['asked'], []
         # Precision pairs and tests are the thin domains; an empty one is worth more than another empty marker.
         if r['kind'] in ('PrecisionContext', 'Test', 'Assay') and not r['findings']:

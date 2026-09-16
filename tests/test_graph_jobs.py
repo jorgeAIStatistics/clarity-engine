@@ -41,7 +41,10 @@ class GapRankerTests(unittest.TestCase):
               dict(id='test:amyloid-pet',name='amyloid PET',kind='Test',utility_findings=0,findings=0,asked=0,dead_letters=0,studies=0),
               dict(id='biomarker:ca-125',name='CA-125',kind='Biomarker',utility_findings=0,findings=0,asked=0,dead_letters=0,studies=3),
               dict(id='biomarker:quiet',name='Quiet marker',kind='Biomarker',utility_findings=0,findings=0,asked=0,dead_letters=0,studies=0)]
+        rows.append(dict(id='condition:breast-cancer',name='breast cancer',kind='Condition',utility_findings=0,findings=0,asked=4,dead_letters=0,studies=9))
+        rows.append(dict(id='compound:olaparib',name='olaparib',kind='Compound',utility_findings=0,findings=0,asked=2,dead_letters=0,studies=3))
         ranked=rank_gaps(rows)
+        # A condition or a drug is never an enrichment target, however often it is asked about.
         self.assertEqual([r['name'] for r in ranked],['amyloid PET','RET × selpercatinib','CA-125','Quiet marker'])
         self.assertIn('thin domain: precision pair',[x for r in ranked for x in r['reasons']])
         self.assertIn('3 linked publications but no typed finding',ranked[2]['reasons'])
