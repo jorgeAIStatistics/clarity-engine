@@ -8,9 +8,46 @@ No graph neural network ships until two gates pass:
 2. **Baseline first.** A logistic regression on layer counts and alias overlap is trained and
    scored on the gold set. A GNN ships only if it beats that baseline there.
 
-At the time of writing the graph has 123 registry entities (106 biomarkers), so both tasks below
-are scaffolding only. The gap ranker in `evidence/intent_graph/jobs.py` is the non-learned baseline
-for "what to enrich next" that any link-prediction model must beat.
+## Graph size on 2026-09-16 — the gate does not pass
+
+| | count | required |
+|---|---|---|
+| Entities (non-temporary) | 174 | 200 |
+| Typed findings | 78 | 200 |
+
+Findings by kind: association 16, classification 24, discrimination 25, effect 1, guideline 1, prognosis 11.
+Aliases 390, MENTIONS 258, typed relations 47.
+
+**No GNN is trained.** Both gates fail, and a heterogeneous link-prediction model fitted on 78
+findings would be a demonstration, not a result. `python -m ml.export` refreshes the numbers.
+
+## Entity linker (shipped as offline tooling, `ml/linker.py`)
+
+Character n-gram TF-IDF over alias strings with cosine retrieval, then a hard filter. It is a
+lexical vector space — nothing is trained, no API is called — and it is described that way on
+purpose.
+
+| | gold precision | gold recall | hijacks | spelling/spacing cases |
+|---|---|---|---|---|
+| Exact alias matching (live path) | 1.0 | 1.0 | 0 | 8/10 |
+| This linker | 1.000 | 1.000 | 0 | 10/10 |
+
+Gold set: 23 questions. The linker earns its place on variation exact matching misses
+("Interleukin 18 levels", "CA 125", "NT pro BNP", "p-tau 181"), not on the gold set, where the
+live path is already perfect.
+
+Three rules keep retrieval from becoming injection, and each one was added because the evaluation
+caught the failure:
+
+1. **Case is identity for an acronym.** The first version attached the EGFR receptor to a question
+   about eGFR (kidney function), because normalising lowercased both.
+2. **A shared word must be distinctive.** Sharing "mutation", "cancer" or "screening" attached
+   unrelated entities; which words are distinctive is read off the registry, not hand-listed.
+3. **Similarity alone attaches nothing.** One name must be the start of the other, and only a name
+   actually written in the question may suppress another entity — as whole words, so "ER" is not
+   swallowed by "breast canc-er".
+
+Tests: `tests/test_linker.py` (skipped where scikit-learn is absent).
 
 ## Tasks
 

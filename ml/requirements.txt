@@ -1,0 +1,4 @@
+# Offline modelling only. These are deliberately NOT in the service requirements: nothing in ml/
+# is imported by the Flask app, so the deployment never carries scikit-learn.
+numpy>=2.0
+scikit-learn>=1.5
