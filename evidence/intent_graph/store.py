@@ -50,6 +50,8 @@ def resolve(intent, text, store_question_text=False):
     """Question spans → Entity nodes via EntityAlias, temporary nodes on a miss, and Question MENTIONS edges."""
     with session() as s:
         s.run('MATCH (e:Entity {ephemeral:true}) WHERE e.expires_at < $now OPTIONAL MATCH (e)-[:HAS_LAYER]->(l:LayerAssessment) DETACH DELETE e,l', now=datetime.now(timezone.utc).isoformat()).consume()
+        # A suggested design lives exactly as long as the question that prompted it.
+        s.run('MATCH (n:NextStep) WHERE n.expires_at < $now DETACH DELETE n', now=datetime.now(timezone.utc).isoformat()).consume()
         nodes = [dict(r['e']) for r in s.run('MATCH (e:Entity) WHERE coalesce(e.ephemeral,false)=false RETURN e')]
         intent.entities = complete_entities(intent, text, nodes).entities
         resolved = []
@@ -71,6 +73,16 @@ def resolve(intent, text, store_question_text=False):
         qid, statements = cypher.question_statements(text, intent.model_dump(), [n['id'] for n in resolved], store_text=store_question_text)
         cypher.run_all(s, statements)
         return resolved, qid
+
+
+def save_next_step(question_id, payload):
+    """Store a suggested study design against its question. Refused when the question has expired."""
+    with session() as s:
+        if not s.run('MATCH (q:Question {id:$id}) RETURN q.id AS id', id=question_id).single():
+            return None
+        step_id, statements = cypher.next_step_statements(question_id, payload)
+        cypher.run_all(s, statements)
+        return step_id
 
 
 def question_payload(qid):

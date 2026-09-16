@@ -116,6 +116,30 @@ def question_statements(text, intent, entity_ids, store_text=False, days=7):
     return qid, out
 
 
+# A next step is a research design the map suggested, kept with the question that prompted it and
+# expiring with it. It is a design to argue with, never advice about a person.
+NEXT_STEP_FIELDS = ("title", "design", "population", "outcome", "comparator", "why", "rung")
+
+
+def next_step_statements(question_id, payload, days=7):
+    step_id = "nextstep:" + hashlib.sha256((question_id + "|" + str(payload.get("title", ""))).encode()).hexdigest()[:24]
+    fields = {k: str(payload.get(k) or "")[:400] for k in NEXT_STEP_FIELDS}
+    expiry = (datetime.now(timezone.utc) + timedelta(days=days)).isoformat()
+    statements = [(
+        "MATCH (q:Question {id:$question}) MERGE (s:NextStep {id:$id}) "
+        "SET s.title=$title, s.design=$design, s.population=$population, s.outcome=$outcome, "
+        "s.comparator=$comparator, s.why=$why, s.rung=$rung, s.at=$at, s.expires_at=$expiry, s.review_state='automated' "
+        "MERGE (s)-[:FOR]->(q)",
+        dict(question=question_id, id=step_id, at=datetime.now(timezone.utc).isoformat(), expiry=expiry, **fields),
+    )]
+    for entity_id in list(payload.get("entity_ids") or [])[:8]:
+        statements.append((
+            "MATCH (s:NextStep {id:$id}), (e:Entity {id:$entity}) MERGE (s)-[:ABOUT]->(e)",
+            dict(id=step_id, entity=entity_id),
+        ))
+    return step_id, statements
+
+
 def run_all(session, statements):
     for query, parameters in statements:
         session.run(query, **parameters).consume()

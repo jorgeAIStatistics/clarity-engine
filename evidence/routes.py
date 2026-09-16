@@ -161,6 +161,21 @@ def graph_entity(entity_id):
     if data is None:return jsonify(error='Unknown graph profile.'),404
     response=jsonify(data);response.headers['Cache-Control']='private, max-age=60';return response
 
+@blueprint.post('/api/evidence/graph/next-step')
+def graph_next_step():
+    body=request.get_json(silent=True)
+    if not isinstance(body,dict):return jsonify(error='Send a next-step object.'),400
+    question=str(body.get('question_id') or '')
+    if not re.fullmatch(r'question:[0-9a-f]{8,64}',question):return jsonify(error='A stored question id is required.'),400
+    payload={k:(str(body.get(k) or '')[:400]) for k in ('title','design','population','outcome','comparator','why','rung')}
+    if not payload['title'] or not payload['design']:return jsonify(error='A next step needs a title and a design.'),400
+    entities=[e for e in (body.get('entity_ids') or []) if isinstance(e,str) and re.fullmatch(r'[a-z_]+:[a-z0-9-]{1,80}',e)][:8]
+    from .intent_graph.store import save_next_step
+    try:step=save_next_step(question,{**payload,'entity_ids':entities})
+    except Exception:return jsonify(error='The next step could not be stored.'),503
+    if not step:return jsonify(error='That question is no longer stored, so a next step cannot be attached to it.'),404
+    response=jsonify(stored=True,id=step,expires_in_days=7);response.headers['Cache-Control']='no-store';return response
+
 @blueprint.post('/api/evidence/match/feedback')
 def matcher_feedback():
     from .feedback import record_feedback

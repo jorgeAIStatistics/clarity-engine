@@ -119,6 +119,29 @@ class LibraryAndRouteTests(unittest.TestCase):
             stats=client.get('/api/evidence/graph/stats')
         self.assertNotIn('public',stats.headers['Cache-Control'])
 
+    def test_a_next_step_is_stored_against_its_question_and_expires_with_it(self):
+        from app import app
+        from evidence.intent_graph import cypher
+        client=app.test_client()
+        step={'question_id':'question:'+'a'*24,'title':'Test whether ApoB-guided care changes events','design':'Randomized comparison',
+              'population':'adults without ASCVD','outcome':'cardiovascular events','comparator':'LDL-C-guided care',
+              'why':'the utility rung is empty','rung':'utility','entity_ids':['biomarker:apob','not an id']}
+        with patch('evidence.intent_graph.store.save_next_step',return_value='nextstep:abc') as save:
+            ok=client.post('/api/evidence/graph/next-step',json=step)
+        self.assertEqual((ok.status_code,ok.json['stored'],ok.headers['Cache-Control']),(200,True,'no-store'))
+        self.assertEqual(save.call_args[0][1]['entity_ids'],['biomarker:apob'],'ids that are not ids are dropped')
+        with patch('evidence.intent_graph.store.save_next_step',return_value=None):
+            gone=client.post('/api/evidence/graph/next-step',json=step)
+        self.assertEqual(gone.status_code,404)
+        self.assertEqual(client.post('/api/evidence/graph/next-step',json={**step,'question_id':'nope'}).status_code,400)
+        self.assertEqual(client.post('/api/evidence/graph/next-step',json={**step,'design':''}).status_code,400)
+        # The design lives exactly as long as the question, and carries its review state.
+        _,statements=cypher.next_step_statements('question:'+'a'*24,step)
+        merge=next(p for q,p in statements if 'MERGE (s:NextStep' in q)
+        self.assertTrue(any("review_state='automated'" in q for q,_ in statements))
+        self.assertIn('expires_at',[k for q,_ in statements for k in ('expires_at',) if 'expires_at' in q])
+        self.assertEqual(merge['title'],step['title'])
+
     def test_graph_entity_route(self):
         from app import app
         client=app.test_client()
