@@ -230,5 +230,37 @@
    "biomarker:her2",
    "test:mammography"
   ]
+ },
+ {
+  "question": "EGFR protein expression by immunohistochemistry in colorectal cancer",
+  "expected": [
+   "biomarker:egfr",
+   "condition:colorectal-cancer"
+  ],
+  "forbidden": [
+   "gene:egfr",
+   "variant:egfr-activating-mutation",
+   "biomarker:renal-egfr"
+  ]
+ },
+ {
+  "question": "EGFR gene amplification in glioblastoma",
+  "expected": [
+   "gene:egfr"
+  ],
+  "forbidden": [
+   "biomarker:egfr",
+   "variant:egfr-activating-mutation",
+   "biomarker:renal-egfr"
+  ]
+ },
+ {
+  "question": "IL18 gene polymorphism and inflammatory bowel disease",
+  "expected": [
+   "gene:il18"
+  ],
+  "forbidden": [
+   "biomarker:il-18"
+  ]
  }
 ]

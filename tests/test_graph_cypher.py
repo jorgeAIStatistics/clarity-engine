@@ -45,8 +45,18 @@ class GoldLinkingTests(unittest.TestCase):
     def test_gold_precision_and_recall(self):
         from evidence.intent_graph.evaluate import load,mentions
         report=mentions(*load())
-        self.assertGreaterEqual(report['cases'],23)
+        self.assertGreaterEqual(report['cases'],26)
         self.assertEqual((report['precision'],report['recall'],report['forbidden'],report['mismatches']),(1.0,1.0,[],[]))
+
+    def test_one_acronym_three_objects_stay_apart(self):
+        """EGFR the protein, EGFR the gene and an EGFR variant are asked for by name in the gold set."""
+        from evidence.intent_graph.evaluate import load
+        cases,_=load()
+        wanted={'biomarker:egfr','gene:egfr','variant:egfr-activating-mutation','gene:il18'}
+        asked={e for c in cases for e in c['expected']}
+        self.assertEqual(wanted-asked,set(),'a gold case naming each object was removed')
+        egfr=[c for c in cases if c['expected']==['gene:egfr']]
+        self.assertTrue(egfr and 'biomarker:egfr' in egfr[0]['forbidden'],'the gene case must forbid the protein')
 
 @unittest.skipUnless(os.environ.get('CLARITY_GRAPH_TESTS')=='1','live Neo4j Cypher fixtures need CLARITY_GRAPH_TESTS=1')
 class LiveCypherTests(unittest.TestCase):

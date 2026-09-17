@@ -48,10 +48,33 @@ CELL_FINDINGS = """MATCH (q:Question {id:$qid})-[:MENTIONS]->(e:Entity)-[:HAS_LA
 OPTIONAL MATCH (f)-[:EVIDENCED_BY]->(p:SourcePassage)
 OPTIONAL MATCH (s:Study)-[:REPORTS]->(f)
 RETURN e.id AS entity_id, l.layer AS layer, f{.id, .kind, .measure, .estimate, .lower, .upper, .level, .unit, .cutoff, .cutoff_unit,
-       .assay, .population, .setting, .target, .statement, .p_value, .review_state} AS finding,
+       .assay, .population, .setting, .target, .statement, .p_value, .synthesis, .review_state} AS finding,
        p.quote AS quote, s.id AS study_id, s.pmid AS pmid, s.title AS title
 ORDER BY entity_id, layer
 LIMIT 400"""
+
+# Catalog ordering and gap features count findings over (:Finding)-[:ABOUT]->(:Entity), the edge the
+# publisher always writes, rather than over HAS_LAYER->SUPPORTED_BY, which is a rollup that a stale
+# refresh can leave behind. On the live graph the two disagreed: 56 ABOUT edges against 50 rollup
+# edges, the six missing ones being a meta-analysis whose findings had been dropped entirely.
+# Ephemeral nodes are the throwaway spans of an unresolved question and are never catalog rows.
+CATALOG_SORT = """MATCH (e:Entity)
+WHERE coalesce(e.ephemeral, false) = false AND coalesce(e.kind, e.type) IN $kinds
+OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding)
+RETURN e.id AS id, e.name AS name, coalesce(e.kind, e.type) AS kind, count(DISTINCT f) AS n
+ORDER BY n DESC, e.name"""
+
+# No finding in this library has kind 'utility': the kind is reserved for a study that measured what
+# testing changed, and none has been extracted. Counting it alone would report zero everywhere and
+# say nothing, so the utility rung is also counted the way the product defines it — a finding on the
+# interventional or guidelines layer — and the two counts are returned separately, never merged.
+GAP_FEATURES = """MATCH (e:Entity)
+WHERE coalesce(e.ephemeral, false) = false
+OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding)
+RETURN e.id AS id, e.name AS name, coalesce(e.kind, e.type) AS kind,
+       count(DISTINCT f) AS n_findings,
+       sum(CASE WHEN f.kind = 'utility' THEN 1 ELSE 0 END) AS n_utility_kind,
+       sum(CASE WHEN f.layer IN ['interventional', 'guidelines'] THEN 1 ELSE 0 END) AS n_utility_layer"""
 
 CLASSIFICATION_FINDINGS = """MATCH (e:Entity {name:$name})-[:HAS_LAYER]->(l)-[:SUPPORTED_BY]->(f:Finding {kind:'classification'})
 RETURN f.measure AS measure, f.estimate AS estimate, f.cutoff AS cutoff, f.assay AS assay, f.population AS population"""

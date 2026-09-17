@@ -62,9 +62,19 @@ def present(alias, span):
     return re.search(rf"(?<![A-Za-z0-9]){re.escape(target)}(?![A-Za-z0-9])", haystack) is not None or target == haystack
 
 
+def word_parts(text):
+    """Words with their internal punctuation squeezed, so IL-18 is one word and not two.
+
+    norm() splits IL-18 into "il 18", which then sits inside nothing: the containment test below
+    could not see that the IL-18 protein is named inside "IL18 gene", and both were attached.
+    Squeezing per word keeps the guard that matters — "ER" is still not inside "breast cancer".
+    """
+    return [squeeze(w).lower() for w in re.split(r"\s+", str(text).strip()) if squeeze(w)]
+
+
 def inside(short, long):
     """Is one name a run of whole words inside the other? Substrings do not count."""
-    a, b = norm(short).split(), norm(long).split()
+    a, b = word_parts(short), word_parts(long)
     if not a or len(a) >= len(b):
         return False
     return any(b[i:i + len(a)] == a for i in range(len(b) - len(a) + 1))
@@ -151,13 +161,22 @@ def spans_of(question, nodes):
 
 
 def resolve_question(index, question, nodes):
+    # Keep the BEST evidence for each entity, not the last window that happened to match it. A
+    # literal alias written in the span beats a prefix or vector match, and a longer written alias
+    # beats a shorter one. Keeping the last hit let "IL18 gene polymorphism and" overwrite the
+    # literal "IL18 gene", which disarmed the suppression rule below and attached the IL-18 protein
+    # to a question about the IL18 gene.
     found, literal = {}, {}
+    strength = {}
     for span in spans_of(question, nodes):
         hit = index.best(span)
         if hit:
             entity_id, alias, reason = hit
-            found[entity_id] = span
-            literal[entity_id] = reason == "alias_in_span"
+            score = (reason == "alias_in_span", len(str(alias)))
+            if score >= strength.get(entity_id, (False, -1)):
+                found[entity_id] = span
+                literal[entity_id] = reason == "alias_in_span"
+                strength[entity_id] = score
     # "EGFR" inside "EGFR mutation" is the gene inside the variant: keep the more specific entity.
     # Only an entity whose own matched alias is contained in another's is dropped, so a drug named
     # beside a marker ("response to trastuzumab") keeps both.

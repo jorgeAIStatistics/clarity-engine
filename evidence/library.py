@@ -51,7 +51,7 @@ def graph_entries(existing):
             'summary':summary,'coverage':{'linked_studies':g.get('studies',0),'outcomes':0,'quantified_outcomes':g.get('findings',0)},'maturity':'Graph profile · automated',
             'quantified_outcome_names':[],'graph_layers':g.get('layers',[]),
             'finding_kinds':{k:v for k,v in sorted(Counter(k for k in (g.get('kinds') or []) if k).items())},
-            'utility_indexed':bool(g.get('utility_findings'))}
+            'utility_indexed':bool(g.get('utility_findings')),'trial_findings':g.get('trial_findings') or 0}
     return list(rows.values())
 
 def build_library():

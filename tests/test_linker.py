@@ -23,7 +23,15 @@ class LinkerTests(unittest.TestCase):
     def test_gold_set_is_perfect_and_free_of_hijacks(self):
         gold = self.report['gold']
         self.assertEqual((gold['precision'], gold['recall'], gold['hijacks']), (1.0, 1.0, []))
-        self.assertGreaterEqual(gold['cases'], 23)
+        self.assertGreaterEqual(gold['cases'], 26)
+
+    def test_a_gene_question_does_not_attach_the_protein_it_encodes(self):
+        """The strongest match for an entity must win, or a weak later window disarms suppression."""
+        from ml.linker import resolve_question, inside
+        got = resolve_question(self.index, 'IL18 gene polymorphism and inflammatory bowel disease', self.nodes)
+        self.assertEqual(got, {'gene:il18'})
+        self.assertTrue(inside('IL-18', 'IL18 gene'), 'punctuation is not identity inside a name')
+        self.assertFalse(inside('ER', 'breast cancer'), 'but a substring is still not a word')
 
     def test_it_beats_exact_matching_on_spelling_and_spacing(self):
         robustness = self.report['robustness']

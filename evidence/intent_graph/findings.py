@@ -13,7 +13,27 @@ from collections import defaultdict
 from .intent import alias_present, norm
 from .cypher import LAYERS, KEEP_REVIEWED
 
-LAYER_BY_DESIGN = {'rct_parallel': 'interventional', 'rct_crossover': 'interventional', 'rct_cluster': 'interventional', 'meta_analysis': 'synthesis', 'systematic_review': 'synthesis', 'observational': 'observational', 'diagnostic_accuracy': 'observational'}
+LAYER_BY_DESIGN = {'rct_parallel': 'interventional', 'rct_crossover': 'interventional', 'rct_cluster': 'interventional', 'observational': 'observational', 'diagnostic_accuracy': 'observational'}
+# A synthesis is not a sixth layer: it pools studies that each sit on one. Its layer is therefore
+# read from what the abstract says was pooled, and the finding carries synthesis=True so a page can
+# say the estimate is pooled and that reviews are not independent replication. Before this,
+# meta-analyses and systematic reviews were labelled 'synthesis', which is not one of the five
+# LAYERS, so every finding from one was dropped from the rollups without a word.
+SYNTHESIS_DESIGNS = {'meta_analysis', 'systematic_review'}
+POOLING = re.compile(r'meta-?analys|pooled|systematic review|studies were included|trials were included|eligible studies', re.I)
+TRIAL = re.compile(r'\b(?:randomi[sz]ed|randomi[sz]ation|placebo-controlled|phase [123]\b|clinical trials?|RCTs?)\b', re.I)
+
+
+def pooled_trials(text):
+    """True when one sentence says both that studies were pooled and that they were trials.
+
+    Read over the whole abstract, because a results sentence rarely repeats the design: the phrase
+    that settles it ("we searched ... randomised controlled trials") sits in the methods. Requiring
+    both words in the SAME sentence is what keeps a background mention of trials from promoting a
+    meta-analysis of cohorts, which is how the live pair of abstracts divides: a network
+    meta-analysis of RET trials reads as interventional, a meta-analysis of PET accuracy studies
+    stays observational."""
+    return any(POOLING.search(part) and TRIAL.search(part) for part in re.split(r'(?<=[.;])\s+', text or ''))
 DESIGN_LABEL = {'rct_parallel': 'Randomized controlled trial', 'rct_crossover': 'Randomized crossover trial', 'rct_cluster': 'Cluster randomized trial', 'meta_analysis': 'Meta-analysis', 'systematic_review': 'Systematic review', 'observational': 'Observational study', 'diagnostic_accuracy': 'Diagnostic accuracy study', 'other': 'Other design', 'not_determined': 'Design not determined'}
 MEASURE_LABEL = {'hazard_ratio': 'hazard ratio', 'odds_ratio': 'odds ratio', 'risk_ratio': 'risk ratio', 'rate_ratio': 'rate ratio', 'mean_difference': 'mean difference', 'standardized_mean_difference': 'standardized mean difference', 'risk_difference': 'risk difference', 'correlation': 'correlation', 'auc': 'AUC', 'c_index': 'C-index', 'delta_c_index': 'C-index change', 'sensitivity': 'sensitivity', 'specificity': 'specificity', 'ppv': 'positive predictive value', 'npv': 'negative predictive value', 'accuracy': 'accuracy', 'likelihood_ratio_positive': 'positive likelihood ratio', 'likelihood_ratio_negative': 'negative likelihood ratio', 'cutoff': 'cut-off', 'median': 'median', 'mean': 'mean', 'proportion': 'proportion', 'percent': 'percent', 'p_value': 'p value', 'recommendation': 'recommendation', 'other': 'reported measure'}
 LAYER_WORDS = {'mechanism': 'mechanism or cell', 'preclinical': 'animal or laboratory', 'observational': 'human observational', 'interventional': 'human trial', 'guidelines': 'guideline'}
@@ -28,8 +48,8 @@ def finding_kind(f):
     return f.get('kind') or f.get('observation_type')
 
 
-def finding_layer(design, finding):
-    """Layer from a written design; otherwise from what the finding itself reports."""
+def finding_layer(design, finding, source_text=''):
+    """The layer a finding sits on. Always one of LAYERS, so no finding can fall out of a rollup."""
     if design in LAYER_BY_DESIGN:
         return LAYER_BY_DESIGN[design]
     if finding_kind(finding) == 'guideline':
@@ -39,6 +59,9 @@ def finding_layer(design, finding):
         return 'mechanism'
     if ANIMAL.search(context):
         return 'preclinical'
+    # A pooled result belongs to the kind of study it pooled, which only the abstract can say.
+    if design in SYNTHESIS_DESIGNS and pooled_trials(source_text or context):
+        return 'interventional'
     return 'observational'
 
 
@@ -191,21 +214,24 @@ def statements(record, nodes):
     linked = defaultdict(list)
     for f in record['findings']:
         passage_id = 'passage:' + hashlib.sha256(f"{source['sha256']}|{f['passage']['start']}|{f['passage']['end']}".encode()).hexdigest()[:24]
+        # The layer is stored on the finding as well as on the SUPPORTED_BY edge, so a rollup that
+        # has not been refreshed can never make a published finding look layerless.
+        layer = finding_layer(design, f, source['text'])
         out.append((
             'MATCH (s:Study {id:$study}) MERGE (f:Finding {id:$id}) SET f.kind=$kind, f.observation_type=$kind, f.measure=$measure, f.estimate=$estimate, f.estimate_raw=$estimate_raw, '
             'f.lower=$lower, f.upper=$upper, f.level=$level, f.unit=$unit, f.cutoff=$cutoff, f.cutoff_unit=$cutoff_unit, f.assay=$assay, f.population=$population, f.setting=$setting, '
             'f.target=$target, f.comparator=$comparator, f.statement=$statement, f.marker=$marker, f.n=$n, f.p_value=$p_value, f.p_operator=$p_operator, f.source_id=$source, '
-            'f.source_sha256=$hash, f.extraction_version=$version, f.extracted_at=$at, f.review_state=' + KEEP_REVIEWED.format(v='f') + ' MERGE (s)-[:REPORTS]->(f) '
+            'f.source_sha256=$hash, f.extraction_version=$version, f.extracted_at=$at, f.layer=$layer, f.synthesis=$synthesis, f.review_state=' + KEEP_REVIEWED.format(v='f') + ' MERGE (s)-[:REPORTS]->(f) '
             'MERGE (p:SourcePassage {id:$passage_id}) SET p.quote=$quote, p.locator=$locator MERGE (f)-[:EVIDENCED_BY]->(p)',
             dict(study=record['study_id'], id=f['id'], kind=finding_kind(f), measure=f['measure'], estimate=f['value'], estimate_raw=f['value_raw'], lower=f['lower'], upper=f['upper'],
                  level=f['level'], unit=f['unit'], cutoff=f['threshold'], cutoff_unit=f['threshold_unit'], assay=f.get('assay'), population=f['population'], setting=f.get('setting'),
                  target=f['target'], comparator=f['comparator'], statement=f['statement'], marker=f['marker'], n=f['n'], p_value=f['p_value'], p_operator=f['p_operator'],
                  source=source['id'], hash=source['sha256'], version=record['version'], at=record['extracted_at'], review='automated', passage_id=passage_id, quote=f['passage']['text'],
+                 layer=layer, synthesis=design in SYNTHESIS_DESIGNS,
                  locator=json.dumps({'source_id': source['id'], 'start': f['passage']['start'], 'end': f['passage']['end'], 'unit': 'unicode_code_point'})),
         ))
         if f.get('target'):
             out.append(('MATCH (f:Finding {id:$id}) MERGE (o:Outcome {id:$outcome}) SET o.name=coalesce(o.name,$name) MERGE (f)-[:FOR_OUTCOME]->(o)', dict(id=f['id'], outcome='outcome:' + norm(f['target']), name=f['target'])))
-        layer = finding_layer(design, f)
         for n in linked_entities(f, nodes):
             linked[n['id']].append(f)
             out.append(('MATCH (f:Finding {id:$finding}), (e:Entity {id:$entity}), (s:Study {id:$study}) MERGE (f)-[:ABOUT]->(e) MERGE (s)-[r:MENTIONS_ENTITY]->(e) SET r.review_state="automated", r.method="exact_alias_in_finding"',

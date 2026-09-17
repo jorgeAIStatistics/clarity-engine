@@ -148,8 +148,8 @@ def graph_entity(entity_id, open_session=None):
         layers = s.run('MATCH (e:Entity {id:$id})-[:HAS_LAYER]->(l:LayerAssessment) RETURN l.layer AS layer, coalesce(l.n_findings,0) AS n_findings, l.direction AS direction, l.sentences AS sentences, l.status AS status, l.review_state AS review_state', id=entity_id).data()
         found = s.run('MATCH (e:Entity {id:$id})<-[:ABOUT]-(f:Finding) OPTIONAL MATCH (f)-[:EVIDENCED_BY]->(p:SourcePassage) OPTIONAL MATCH (st:Study)-[:REPORTS]->(f) '
                       'OPTIONAL MATCH (e)-[:HAS_LAYER]->(l:LayerAssessment)-[:SUPPORTED_BY]->(f) '
-                      'RETURN f{.id, .kind, .measure, .estimate, .lower, .upper, .level, .unit, .cutoff, .cutoff_unit, .assay, .population, .setting, .target, .comparator, .statement, .p_value, .p_operator, .marker, .review_state} AS finding, '
-                      'p.quote AS quote, p.locator AS locator, st.id AS study_id, st.pmid AS pmid, st.title AS title, st.year AS year, l.layer AS layer ORDER BY st.year DESC LIMIT 200', id=entity_id).data()
+                      'RETURN f{.id, .kind, .measure, .estimate, .lower, .upper, .level, .unit, .cutoff, .cutoff_unit, .assay, .population, .setting, .target, .comparator, .statement, .p_value, .p_operator, .marker, .synthesis, .review_state} AS finding, '
+                      'p.quote AS quote, p.locator AS locator, st.id AS study_id, st.pmid AS pmid, st.title AS title, st.year AS year, coalesce(l.layer, f.layer) AS layer ORDER BY st.year DESC LIMIT 200', id=entity_id).data()
         related = s.run('MATCH (e:Entity {id:$id})-[r:ENCODED_BY|VARIANT_OF|IN_PATHWAY|MEASURED_BY|RELATED_TO]-(o:Entity) WHERE coalesce(o.ephemeral,false)=false '
                         'RETURN type(r) AS edge, r.reason AS reason, o.id AS id, o.name AS name, coalesce(o.kind,o.type) AS kind, startNode(r)=e AS outgoing LIMIT 40', id=entity_id).data()
         studies = s.run('MATCH (e:Entity {id:$id})<-[:MENTIONS_ENTITY]-(st:Study) RETURN count(DISTINCT st) AS n', id=entity_id).single()['n']
@@ -172,9 +172,13 @@ def graph_library():
     with session() as s:
         return s.run("MATCH (e:Entity) WHERE coalesce(e.ephemeral,false)=false AND (e.kind IN ['Biomarker','Gene','Variant','Protein','Test','Assay','PrecisionContext'] OR e.type IN ['biomarker','gene','variant','protein','test','assay','precision_context']) "
                      'OPTIONAL MATCH (e)-[:HAS_LAYER]->(l:LayerAssessment) '
-                     'WITH e, sum(coalesce(l.n_findings,0)) AS findings, collect(CASE WHEN coalesce(l.n_findings,0)>0 THEN l.layer END) AS layers, collect(l.sentences) AS sentences, '
-                     "     sum(CASE WHEN l.layer IN ['interventional','guidelines'] THEN coalesce(l.n_findings,0) ELSE 0 END) AS utility_findings "
+                     'WITH e, sum(coalesce(l.n_findings,0)) AS findings, collect(CASE WHEN coalesce(l.n_findings,0)>0 THEN l.layer END) AS layers, collect(l.sentences) AS sentences '
                      'OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding) '
-                     'WITH e, findings, layers, sentences, utility_findings, collect(coalesce(f.kind, f.observation_type)) AS kinds '
+                     # Utility is a kind, never a layer. A trial of a drug is interventional evidence about the
+                     # drug; only a finding that measured what testing changed is clinical utility, and counting
+                     # the layer instead would let a drug's safety odds ratio fill the utility rung.
+                     'WITH e, findings, layers, sentences, collect(coalesce(f.kind, f.observation_type)) AS kinds, '
+                     "     sum(CASE WHEN coalesce(f.kind, f.observation_type)='utility' THEN 1 ELSE 0 END) AS utility_findings, "
+                     "     sum(CASE WHEN f.layer IN ['interventional','guidelines'] THEN 1 ELSE 0 END) AS trial_findings "
                      'OPTIONAL MATCH (e)<-[:MENTIONS_ENTITY]-(st:Study) '
-                     'RETURN e.id AS id, e.name AS name, e.kind AS kind, e.type AS type, e.aliases AS aliases, e.last_extracted_at AS last_extracted_at, findings, layers, sentences, kinds, utility_findings, count(DISTINCT st) AS studies').data()
+                     'RETURN e.id AS id, e.name AS name, e.kind AS kind, e.type AS type, e.aliases AS aliases, e.last_extracted_at AS last_extracted_at, findings, layers, sentences, kinds, utility_findings, trial_findings, count(DISTINCT st) AS studies').data()
