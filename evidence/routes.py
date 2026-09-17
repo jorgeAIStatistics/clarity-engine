@@ -2,6 +2,8 @@ from flask import Blueprint, jsonify, request
 from .service import CATALOG, list_entities, get_entity, diagnostic_metrics, screening_metrics
 from .profile import profile_contract
 from functools import lru_cache
+import json
+import logging
 import os
 import re
 import threading
@@ -145,21 +147,51 @@ def evidence_match():
     except ValueError as error:return jsonify(error=str(error)),400
     except Exception:return jsonify(error='Library matching is temporarily unavailable. Please try again.'),503
 
+LOG=logging.getLogger(__name__)
+
+def graph_log(route,entity_id,cache_hit,upstream_ms,outcome):
+    """One structured line per graph read: enough to see a cold engine without a vendor agent."""
+    from flask import g
+    LOG.info(json.dumps({'event':'graph_read','request_id':getattr(g,'request_id',''),'route':route,
+                         'entity_id':entity_id,'cache_hit':cache_hit,'upstream_ms':upstream_ms,'outcome':outcome}))
+
 @blueprint.get('/api/evidence/graph/stats')
 def graph_stats():
     from .intent_graph.store import graph_stats as stats
+    started=time.perf_counter()
     try:data=stats(request.args.get('entity','')[:80])
-    except Exception:return jsonify(error='Graph statistics are unavailable.'),503
+    except Exception:
+        graph_log('stats','',False,round((time.perf_counter()-started)*1000),'unavailable')
+        return jsonify(error='Graph statistics are unavailable.'),503
+    graph_log('stats','',False,round((time.perf_counter()-started)*1000),'graph')
     response=jsonify(data);response.headers['Cache-Control']='private, max-age=60';return response
 
 @blueprint.get('/api/evidence/graph/entity/<path:entity_id>')
 def graph_entity(entity_id):
+    """Live graph first; the published snapshot when the read fails, and it says which it served."""
     if not re.fullmatch(r'[a-z_]+:[a-z0-9-]{1,80}',entity_id):return jsonify(error='Unknown graph profile.'),404
     from .intent_graph.store import graph_entity as load
+    from .intent_graph import snapshot
+    started=time.perf_counter();data=None;failed=False
     try:data=load(entity_id)
-    except Exception:return jsonify(error='Graph profiles are unavailable.'),503
-    if data is None:return jsonify(error='Unknown graph profile.'),404
-    response=jsonify(data);response.headers['Cache-Control']='private, max-age=60';return response
+    except Exception:failed=True
+    upstream_ms=round((time.perf_counter()-started)*1000)
+    # A live read that answers "no such entity" is an answer; only a failure falls back.
+    if failed:data=snapshot.entity(entity_id)
+    if data is None:
+        graph_log('entity',entity_id,False,upstream_ms,'unavailable' if failed else 'not_found')
+        if failed:
+            response=jsonify(error='The evidence graph is unavailable and this profile is not in the published snapshot.',code='graph_unavailable')
+            response.status_code=503;response.headers['Retry-After']='10';return response
+        return jsonify(error='Unknown graph profile.'),404
+    served='snapshot' if failed else 'graph'
+    graph_log('entity',entity_id,failed,upstream_ms,served)
+    payload=dict(data,served_from=served)
+    if failed:payload['published_at']=snapshot.published_at()
+    response=jsonify(payload)
+    # A snapshot may be stale, so it is never cached as long as a live read.
+    response.headers['Cache-Control']='private, max-age=60' if served=='graph' else 'private, max-age=15'
+    return response
 
 @blueprint.post('/api/evidence/graph/next-step')
 def graph_next_step():

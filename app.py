@@ -1,7 +1,7 @@
 """Clarity Engine HTTP API — cache-first profiles + fast grounded Ask Clarity."""
-import os, time, threading
+import os, time, threading, uuid
 from collections import defaultdict
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, g
 from flask_cors import CORS
 
 import run
@@ -56,8 +56,17 @@ def _profile_current(profile):
             and int(profile.get("schema_version") or 0) >= generate.PROFILE_SCHEMA_VERSION)
 
 
+@app.before_request
+def _request_id():
+    # One id per request so a graph read can be traced from the log line to the response header.
+    from flask import g
+    g.request_id = uuid.uuid4().hex[:12]
+
+
 @app.after_request
 def _security_headers(resp):
+    if getattr(g, "request_id", None):
+        resp.headers.setdefault("X-Request-Id", g.request_id)
     resp.headers.setdefault("X-Content-Type-Options", "nosniff")
     resp.headers.setdefault("X-Frame-Options", "DENY")
     resp.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")

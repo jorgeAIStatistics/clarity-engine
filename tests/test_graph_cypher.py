@@ -121,9 +121,15 @@ class LibraryAndRouteTests(unittest.TestCase):
         self.assertEqual(ok.headers['Cache-Control'],'private, max-age=60')
         with patch('evidence.intent_graph.store.graph_entity',return_value=None):
             missing=client.get('/api/evidence/graph/entity/biomarker:nothing')
+        # An unreachable graph now serves the published snapshot for a profile it holds, so the
+        # page renders instead of blanking; a profile the snapshot does not hold still fails loudly,
+        # and that failure is never cached, or a deploy would keep the page blank for its max-age.
         with patch('evidence.intent_graph.store.graph_entity',side_effect=RuntimeError('neo4j_unavailable')):
-            broken=client.get('/api/evidence/graph/entity/biomarker:ca-125')
+            snapshotted=client.get('/api/evidence/graph/entity/biomarker:ca-125')
+            broken=client.get('/api/evidence/graph/entity/biomarker:no-such-marker')
         self.assertEqual((missing.status_code,missing.headers['Cache-Control']),(404,'no-store'))
+        self.assertEqual((snapshotted.status_code,snapshotted.json['served_from']),(200,'snapshot'))
+        self.assertEqual(snapshotted.headers['Cache-Control'],'private, max-age=15','a snapshot is cached shorter than a live read')
         self.assertEqual((broken.status_code,broken.headers['Cache-Control']),(503,'no-store'))
         with patch('evidence.intent_graph.store.graph_stats',return_value={'entities':1}):
             stats=client.get('/api/evidence/graph/stats')
@@ -161,4 +167,5 @@ class LibraryAndRouteTests(unittest.TestCase):
             self.assertEqual(client.get('/api/evidence/graph/entity/biomarker:nothing').status_code,404)
         self.assertEqual(client.get('/api/evidence/graph/entity/DROP TABLE').status_code,404)
         with patch('evidence.intent_graph.store.graph_entity',side_effect=RuntimeError('neo4j_configuration_missing')):
-            self.assertEqual(client.get('/api/evidence/graph/entity/biomarker:ca-125').status_code,503)
+            self.assertEqual(client.get('/api/evidence/graph/entity/biomarker:no-such-marker').status_code,503)
+            self.assertEqual(client.get('/api/evidence/graph/entity/biomarker:ca-125').json['served_from'],'snapshot')

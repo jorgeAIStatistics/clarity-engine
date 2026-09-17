@@ -22,7 +22,11 @@ def graph_entries(existing):
         from .intent_graph.store import graph_library
         graph=graph_library()
     except Exception:
-        return []
+        # Without this the index silently shrinks to its fourteen curated profiles whenever the
+        # graph is unreachable, which reads as "the library is small", not "a read failed".
+        from .intent_graph import snapshot
+        graph=snapshot.library()
+        if not graph:return []
     # Genes and variants share the biomarker address space; a biomarker wins a shared slug.
     kinds={'Biomarker':('Molecular marker',0),'Gene':('Gene',1),'Variant':('Variant',2),'Protein':('Protein',3),
            'Test':('Test',0),'Assay':('Assay',1),'PrecisionContext':('Marker × treatment',0)}
