@@ -66,7 +66,7 @@ biomarker:mlh1,MLH1,Biomarker,automated,2,,,,,,0,0,2,0
 biomarker:mmr,MMR,Biomarker,automated,2,,,,,,0,0,5,0
 biomarker:msh2,MSH2,Biomarker,automated,2,,,,,,0,0,2,0
 biomarker:msh6,MSH6,Biomarker,automated,2,,,,,,0,0,2,0
-biomarker:msi,MSI,Biomarker,automated,2,,,,,,0,0,4,1
+biomarker:msi,MSI,Biomarker,automated,2,,,,,,1,0,5,2
 biomarker:myc,MYC,Biomarker,automated,2,,,,,,0,0,0,0
 biomarker:nectin-4,Nectin-4,Biomarker,automated,3,,,,,,0,0,0,0
 biomarker:nfl,NfL,Biomarker,automated,5,Structural protein (neurofilament light chain),"Serum, plasma or CSF",HGNC:7739,P07196,ENSG00000277586,4,0,2,0
@@ -79,14 +79,14 @@ biomarker:ntrk,NTRK,Biomarker,automated,2,,,,,,0,0,0,0
 biomarker:p-tau181,p-tau181,Biomarker,automated,2,Phosphorylated protein isoform,Plasma or CSF,HGNC:6893,P10636,ENSG00000186868,1,0,1,0
 biomarker:p-tau217,p-tau217,Biomarker,automated,2,,,,,,0,0,0,0
 biomarker:palb2,PALB2,Biomarker,automated,2,,,,,,0,0,0,0
-biomarker:pd-l1,PD-L1,Biomarker,automated,3,"Immune-checkpoint ligand (CD274 protein), reported as expression scored on tissue rather than a concentration",Tumour tissue,HGNC:17635,Q9NZQ7,ENSG00000120217,1,0,8,1
+biomarker:pd-l1,PD-L1,Biomarker,automated,3,"Immune-checkpoint ligand (CD274 protein), reported as expression scored on tissue rather than a concentration",Tumour tissue,HGNC:17635,Q9NZQ7,ENSG00000120217,5,4,9,1
 biomarker:pdgfra,PDGFRA,Biomarker,automated,2,,,,,,0,0,0,0
 biomarker:pik3ca,PIK3CA,Biomarker,automated,2,,,,,,0,0,1,0
 biomarker:pms2,PMS2,Biomarker,automated,2,,,,,,0,0,2,0
 biomarker:pold1,POLD1,Biomarker,automated,2,,,,,,0,0,0,0
 biomarker:pole,POLE,Biomarker,automated,2,,,,,,0,0,1,0
 biomarker:pr,PR,Biomarker,automated,2,,,,,,0,0,2,0
-biomarker:psa,PSA,Biomarker,automated,2,Serine protease (kallikrein-related peptidase 3),Serum,HGNC:6364,P07288,ENSG00000142515,3,0,6,1
+biomarker:psa,PSA,Biomarker,automated,2,Serine protease (kallikrein-related peptidase 3),Serum,HGNC:6364,P07288,ENSG00000142515,3,0,6,2
 biomarker:pten,PTEN,Biomarker,automated,2,,,,,,0,0,0,0
 biomarker:rb1,RB1,Biomarker,automated,2,,,,,,0,0,0,0
 biomarker:renal-egfr,eGFR,Biomarker,automated,2,,,,,,0,0,1,0
@@ -131,7 +131,7 @@ condition:thyroid-cancer,thyroid cancer,Condition,automated,2,,,,,,0,0,3,0
 gene:alk,ALK gene,Gene,automated,1,Protein-coding gene — ALK receptor tyrosine kinase,,HGNC:427,Q9UM73,ENSG00000171094,0,0,0,0
 gene:braf,BRAF gene,Gene,automated,1,"Protein-coding gene — B-Raf proto-oncogene, serine/threonine kinase",,HGNC:1097,P15056,ENSG00000157764,0,0,0,0
 gene:brca1,BRCA1,Gene,automated,2,Protein-coding gene — BRCA1 DNA repair associated,,HGNC:1100,P38398,ENSG00000012048,0,0,3,0
-gene:brca2,BRCA2,Gene,automated,2,Protein-coding gene — BRCA2 DNA repair associated,,HGNC:1101,P51587,ENSG00000139618,0,0,2,0
+gene:brca2,BRCA2,Gene,automated,2,Protein-coding gene — BRCA2 DNA repair associated,,HGNC:1101,P51587,ENSG00000139618,1,0,3,0
 gene:egfr,EGFR gene,Gene,automated,1,Protein-coding gene — epidermal growth factor receptor,,HGNC:3236,P00533,ENSG00000146648,0,0,1,0
 gene:il18,IL18 gene,Gene,automated,1,Protein-coding gene — interleukin 18,,HGNC:5986,Q14116,ENSG00000150782,0,0,0,0
 gene:kras,KRAS gene,Gene,automated,1,"Protein-coding gene — KRas proto-oncogene, GTPase",,HGNC:6407,P01116,ENSG00000133703,0,0,0,0
@@ -143,23 +143,23 @@ precision_context:alk-alectinib-lung,ALK-positive NSCLC × alectinib,PrecisionCo
 precision_context:braf-v600-dabrafenib-trametinib,BRAF V600E melanoma × dabrafenib and trametinib,PrecisionContext,automated,3,Marker-and-treatment pair,,,,,0,0,0,1
 precision_context:brca-olaparib-ovarian,BRCA-mutated ovarian cancer × olaparib maintenance,PrecisionContext,automated,2,Marker-and-treatment pair,,,,,0,0,0,1
 precision_context:egfr-exon20-amivantamab,EGFR exon 20 insertion NSCLC × amivantamab,PrecisionContext,automated,2,Marker-and-treatment pair,,,,,0,0,0,0
-precision_context:her2-low-trastuzumab-deruxtecan,HER2-low breast cancer × trastuzumab deruxtecan,PrecisionContext,automated,3,Marker-and-treatment pair,,,,,0,0,2,0
+precision_context:her2-low-trastuzumab-deruxtecan,HER2-low breast cancer × trastuzumab deruxtecan,PrecisionContext,automated,3,Marker-and-treatment pair,,,,,0,0,2,1
 precision_context:kras-g12c-sotorasib,KRAS G12C NSCLC × sotorasib,PrecisionContext,automated,4,Marker-and-treatment pair,,,,,0,0,0,1
 precision_context:ntrk-larotrectinib,NTRK fusion cancer × larotrectinib,PrecisionContext,automated,3,Marker-and-treatment pair,,,,,0,0,0,1
-precision_context:pdl1-pembrolizumab-nsclc,PD-L1 high NSCLC × pembrolizumab,PrecisionContext,automated,3,Marker-and-treatment pair,,,,,0,0,0,0
+precision_context:pdl1-pembrolizumab-nsclc,PD-L1 high NSCLC × pembrolizumab,PrecisionContext,automated,3,Marker-and-treatment pair,,,,,2,0,1,0
 precision_context:pik3ca-alpelisib,PIK3CA-mutated breast cancer × alpelisib,PrecisionContext,automated,2,Marker-and-treatment pair,,,,,0,0,0,0
 precision_context:radiotherapy,radiotherapy,PrecisionContext,automated,2,Treatment setting,,,,,0,0,7,1
 precision_context:ret-selpercatinib,RET-altered cancer × selpercatinib,PrecisionContext,automated,3,Variant × drug × condition,"Tumour tissue or plasma, by sequencing",HGNC:9967,P07949,ENSG00000165731,3,3,1,0
-precision_context:ros1-entrectinib,ROS1 fusion NSCLC × entrectinib,PrecisionContext,automated,3,Marker-and-treatment pair,,,,,0,0,0,0
+precision_context:ros1-entrectinib,ROS1 fusion NSCLC × entrectinib,PrecisionContext,automated,3,Marker-and-treatment pair,,,,,0,0,0,1
 test:amyloid-pet,amyloid PET imaging,Test,automated,3,Test or screening programme,,,,,0,0,1,1
 test:ct-colonography,CT colonography,Test,automated,2,Test or screening programme,,,,,0,0,0,1
 test:ctdna-liquid-biopsy,ctDNA liquid biopsy,Test,automated,2,Test or screening programme,,,,,0,0,1,0
-test:d-dimer-pulmonary-embolism,D-dimer for pulmonary embolism,Test,automated,2,Test or screening programme,,,,,0,0,0,0
-test:fecal-calprotectin,faecal calprotectin testing,Test,automated,3,Test or screening programme,,,,,0,0,0,0
-test:hpv-cervical-screening,HPV cervical screening,Test,automated,3,Test or screening programme,,,,,0,0,0,0
+test:d-dimer-pulmonary-embolism,D-dimer for pulmonary embolism,Test,automated,2,Test or screening programme,,,,,0,0,0,1
+test:fecal-calprotectin,faecal calprotectin testing,Test,automated,3,Test or screening programme,,,,,0,0,0,1
+test:hpv-cervical-screening,HPV cervical screening,Test,automated,3,Test or screening programme,,,,,2,0,1,0
 test:low-dose-ct-lung-screening,low-dose CT lung cancer screening,Test,automated,3,Test or screening programme,,,,,0,0,0,0
 test:mammography,mammography,Test,automated,2,Test or screening programme,,,,,0,0,0,1
-test:natriuretic-peptide-heart-failure,natriuretic peptide testing for heart failure,Test,automated,3,Test or screening programme,,,,,0,0,0,0
+test:natriuretic-peptide-heart-failure,natriuretic peptide testing for heart failure,Test,automated,3,Test or screening programme,,,,,0,0,0,1
 test:roma,ROMA,Test,automated,2,Multi-marker risk algorithm,Serum (CA-125 and HE4 with menopausal status),,,,3,0,2,0
 variant:alk-rearrangement,ALK rearrangement,Variant,automated,3,Gene rearrangement producing a fusion kinase,Tumour tissue or plasma circulating tumour DNA,HGNC:427,Q9UM73,ENSG00000171094,0,0,5,0
 variant:braf-v600e,BRAF V600E,Variant,automated,3,Somatic point mutation at codon 600,Tumour tissue or plasma circulating tumour DNA,HGNC:1097,P15056,ENSG00000157764,0,0,1,0

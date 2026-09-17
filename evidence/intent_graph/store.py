@@ -153,14 +153,18 @@ def graph_entity(entity_id, open_session=None):
         related = s.run('MATCH (e:Entity {id:$id})-[r:ENCODED_BY|VARIANT_OF|IN_PATHWAY|MEASURED_BY|RELATED_TO]-(o:Entity) WHERE coalesce(o.ephemeral,false)=false '
                         'RETURN type(r) AS edge, r.reason AS reason, o.id AS id, o.name AS name, coalesce(o.kind,o.type) AS kind, startNode(r)=e AS outgoing LIMIT 40', id=entity_id).data()
         studies = s.run('MATCH (e:Entity {id:$id})<-[:MENTIONS_ENTITY]-(st:Study) RETURN count(DISTINCT st) AS n', id=entity_id).single()['n']
-        dead = s.run('MATCH (d:DeadLetter)-[:ABOUT]->(e:Entity {id:$id}) RETURN d.pmid AS pmid, d.code AS code, d.reasons AS reasons, d.at AS at ORDER BY d.at DESC LIMIT 10', id=entity_id).data()
+        dead = s.run('MATCH (d:DeadLetter)-[:ABOUT]->(e:Entity {id:$id}) RETURN d.pmid AS pmid, d.code AS code, d.reasons AS reasons, d.excluded AS excluded, d.at AS at ORDER BY d.at DESC LIMIT 10', id=entity_id).data()
         return dict(version='graph-entity-v1',
                     entity=dict(id=e['id'], name=e['name'], kind=e.get('kind') or cypher.KIND.get(e.get('type'), 'Biomarker'), type=e.get('type'), aliases=e.get('aliases', []), review_state=e.get('review_state'),
                                 last_extracted_at=e.get('last_extracted_at'), external_ids={k: e[k] for k in cypher.EXTERNAL_IDS if e.get(k)},
                                 identity={k: e[k] for k in cypher.IDENTITY_FIELDS if e.get(k)}),
                     layers=[dict(l, sentences=json.loads(l['sentences']) if l['sentences'] else []) for l in sorted(layers, key=lambda l: LAYERS.index(l['layer']) if l['layer'] in LAYERS else 9)],
                     findings=found, related=related, studies=studies,
-                    dead_letters=[dict(d, reasons=json.loads(d['reasons']) if d['reasons'] else {}) for d in dead])
+                    dead_letters=[dict(d, reasons=json.loads(d['reasons']) if d['reasons'] else {},
+                                       # The markers a rejected paper did measure: without them "findings about other
+                                       # markers" is unreadable, and the reader cannot judge the call for themselves.
+                                       excluded=[x.get('marker') for x in (json.loads(d['excluded']) if d['excluded'] else []) if isinstance(x, dict) and x.get('marker')][:6])
+                                  for d in dead])
     if open_session is not None:
         return load(open_session)
     with session() as s:

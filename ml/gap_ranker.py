@@ -32,18 +32,22 @@ FEATURES = ["studies", "aliases", "asked", "has_identity", *[f"kind_{k.lower()}"
 # Findings are counted over (:Finding)-[:ABOUT]->(:Entity), the edge the publisher always writes,
 # not over the HAS_LAYER rollup: the two disagreed on the live graph, and an entity that looked
 # empty because a rollup was stale would be ranked as a gap and extracted a second time.
-# The utility rung is a KIND, not a layer — a trial of a drug is not evidence that measuring helps.
+# Two different counts, kept apart on purpose. utility_findings is the LAYER count, and the need
+# rule's own wording ("no interventional or guideline findings") describes exactly that. The utility
+# RUNG is a kind: a trial of a drug is not evidence that measuring the marker helps, so a pair with
+# three interventional findings and no utility finding must still read as an empty utility rung.
 ROWS = """
 MATCH (e:Entity) WHERE coalesce(e.ephemeral,false)=false
 OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding)
 WITH e, count(DISTINCT f) AS findings,
-     sum(CASE WHEN coalesce(f.kind, f.observation_type)='utility' THEN 1 ELSE 0 END) AS utility_findings
+     sum(CASE WHEN f.layer IN ['interventional','guidelines'] THEN 1 ELSE 0 END) AS utility_findings,
+     sum(CASE WHEN coalesce(f.kind, f.observation_type)='utility' THEN 1 ELSE 0 END) AS utility_kind_findings
 OPTIONAL MATCH (e)<-[:MENTIONS_ENTITY]-(s:Study)
 OPTIONAL MATCH (q:Question)-[:MENTIONS]->(e)
 OPTIONAL MATCH (e)<-[:ABOUT]-(d:DeadLetter)
 RETURN e.id AS id, e.name AS name, coalesce(e.kind, e.type) AS kind,
        size(coalesce(e.aliases,[])) AS aliases, e.entity_class AS entity_class,
-       findings, utility_findings, count(DISTINCT s) AS studies, count(DISTINCT q) AS asked,
+       findings, utility_findings, utility_kind_findings, count(DISTINCT s) AS studies, count(DISTINCT q) AS asked,
        count(DISTINCT d) AS dead_letters
 """
 

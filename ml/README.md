@@ -32,9 +32,18 @@ purpose.
 | Exact alias matching (live path) | 1.0 | 1.0 | 0 | 8/10 |
 | This linker | 1.000 | 1.000 | 0 | 10/10 |
 
-Gold set: 23 questions. The linker earns its place on variation exact matching misses
+Gold set: 26 questions. The linker earns its place on variation exact matching misses
 ("Interleukin 18 levels", "CA 125", "NT pro BNP", "p-tau 181"), not on the gold set, where the
 live path is already perfect.
+
+Three gold cases were added to keep one acronym's three objects apart — the EGFR protein, the EGFR
+gene and an EGFR activating variant — and a fourth for the IL18 gene against the IL-18 protein. That
+last case failed the moment it was written: the linker attached the protein to a question about the
+gene. It kept the *last* window that matched an entity rather than the strongest, so a weak prefix
+match on "IL18 gene polymorphism and" overwrote the literal "IL18 gene" and disarmed the suppression
+rule below. It now keeps the best evidence per entity, and containment is compared per word with
+punctuation squeezed, so "IL-18" is one word inside "IL18 gene" while "ER" is still not a word
+inside "breast cancer".
 
 Three rules keep retrieval from becoming injection, and each one was added because the evaluation
 caught the failure:
@@ -100,24 +109,31 @@ def score(model, rows) -> list[float]: ...
 Candidate GNN stacks, used only after the baseline: Neo4j GDS (GraphSAGE / HinSAGE) if GDS is
 available on the database, otherwise PyTorch Geometric heterogeneous GraphSAGE in this package.
 
-## Gap ranker — baseline fitted, and not adopted (`ml/gap_ranker.py`)
+## Gap ranker — a baseline that is allowed to break ties, and nothing more (`ml/gap_ranker.py`)
 
 Label: the outcome of an enrichment attempt already made — a typed finding (1) or a dead-letter (0).
 Features are restricted to what was knowable before that attempt (publications, aliases, demand,
 kind, curated identity). Finding counts are excluded on purpose: they are the label in disguise,
 and `tests/test_gap_ranker.py` asserts they cannot reach the model.
 
-| | value |
-|---|---|
-| Labelled attempts | 22 (17 produced a finding, 5 dead-lettered) |
-| Leave-one-out accuracy | 0.727 |
-| Majority class | 0.773 |
-| Leave-one-out AUC | 0.624 |
-| Adopted as the ranking | **no** |
+| | 22 attempts (2026-09-16) | 32 attempts (2026-09-17) |
+|---|---|---|
+| Labelled attempts | 22 (17 found, 5 dead-lettered) | 32 (21 found, 11 dead-lettered) |
+| Leave-one-out accuracy | 0.727 | 0.750 |
+| Majority class | 0.773 | 0.656 |
+| Leave-one-out AUC | 0.624 | 0.706 |
+| Sets the ranking | **no** | **no** |
+| Breaks ties within a need score | no | **yes** |
 
-The model does not beat the majority class on 22 attempts, so the shipped queue is
-ranked by the need rule in `evidence/intent_graph/jobs.py` and the model's probability is shown
-beside it for comparison only.
+On 32 attempts the baseline beats the majority class for the first time. It still does not become
+the ranking, and that is a design choice rather than a threshold: this model predicts which attempt
+will *succeed*, so ranking by it would put the easy targets first and starve the gaps the library
+actually has. Need stays the ranking, and the model is allowed to order entities the need rule
+scores equally — which is exactly where "which of these is likeliest to return a finding" is the
+open question. `tests/test_gap_ranker.py` asserts it can do that and no more.
+
+An accuracy from 32 leave-one-out folds has a wide interval. Treat the comparison as a sanity check
+that the features carry signal, not as a measurement of how well the model works.
 
 The rule is deliberately *not* scored against this label: it ranks need — an empty page scores
 high — while the model predicts whether an attempt would succeed. An AUC between them would be

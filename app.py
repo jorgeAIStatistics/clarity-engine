@@ -1,5 +1,5 @@
 """Clarity Engine HTTP API — cache-first profiles + fast grounded Ask Clarity."""
-import os, time, threading, uuid
+import logging, os, sys, time, threading, uuid
 from collections import defaultdict
 from flask import Flask, request, jsonify, g
 from flask_cors import CORS
@@ -54,6 +54,19 @@ def _profile_current(profile):
         return False
     return (profile.get("engine_version") == generate.ENGINE_VERSION
             and int(profile.get("schema_version") or 0) >= generate.PROFILE_SCHEMA_VERSION)
+
+
+# The graph read lines are the whole of this service's observability, so they have to actually
+# reach stdout: at INFO they are dropped by the default configuration, and the log would have been
+# invisible in production while still passing its unit test. One handler, the message and nothing
+# else, not propagated, so this stays a structured stream rather than joining the request noise.
+_graph_logger = logging.getLogger("evidence")
+if not _graph_logger.handlers:
+    _handler = logging.StreamHandler(sys.stdout)
+    _handler.setFormatter(logging.Formatter("%(message)s"))
+    _graph_logger.addHandler(_handler)
+_graph_logger.setLevel(logging.INFO)
+_graph_logger.propagate = False
 
 
 @app.before_request
