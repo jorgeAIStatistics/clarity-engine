@@ -124,4 +124,4 @@ high — while the model predicts whether an attempt would succeed. An AUC betwe
 inverted by construction, so no head-to-head number is published.
 
 Predictions are written as `(:Prediction {task:'gap', score, model, version, review_state})-[:ABOUT]->(:Entity)`.
-The current queue is in `docs/enrich-queue.md` and `ml/exports/<date>/gap_queue.json`.
+The current queue is in `docs/gap-queue.md` and `ml/exports/<date>/gap_queue.json`.

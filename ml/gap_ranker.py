@@ -29,11 +29,15 @@ VERSION = "gap-baseline-v1"
 KINDS = ["Biomarker", "Test", "PrecisionContext", "Variant", "Gene"]
 FEATURES = ["studies", "aliases", "asked", "has_identity", *[f"kind_{k.lower()}" for k in KINDS]]
 
+# Findings are counted over (:Finding)-[:ABOUT]->(:Entity), the edge the publisher always writes,
+# not over the HAS_LAYER rollup: the two disagreed on the live graph, and an entity that looked
+# empty because a rollup was stale would be ranked as a gap and extracted a second time.
+# The utility rung is a KIND, not a layer — a trial of a drug is not evidence that measuring helps.
 ROWS = """
 MATCH (e:Entity) WHERE coalesce(e.ephemeral,false)=false
-OPTIONAL MATCH (e)-[:HAS_LAYER]->(l:LayerAssessment)
-WITH e, sum(coalesce(l.n_findings,0)) AS findings,
-     sum(CASE WHEN l.layer IN ['interventional','guidelines'] THEN coalesce(l.n_findings,0) ELSE 0 END) AS utility_findings
+OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding)
+WITH e, count(DISTINCT f) AS findings,
+     sum(CASE WHEN coalesce(f.kind, f.observation_type)='utility' THEN 1 ELSE 0 END) AS utility_findings
 OPTIONAL MATCH (e)<-[:MENTIONS_ENTITY]-(s:Study)
 OPTIONAL MATCH (q:Question)-[:MENTIONS]->(e)
 OPTIONAL MATCH (e)<-[:ABOUT]-(d:DeadLetter)
@@ -85,17 +89,25 @@ def fit_and_score(rows):
     # success label would invert it by construction, so no head-to-head number is reported.
     report["comparison"] = ("The rule ranks need, not success probability, so it is not scored against this label. "
                             "The honest comparison for this model is the majority class.")
+    # Beating the majority class on a few dozen leave-one-out folds is weak evidence, so this gate
+    # only ever earns the model a tie-break, never the ranking itself.
     report["useful"] = bool(report["loo_accuracy"] > majority and (report["loo_auc"] or 0) > 0.7)
+    report["caveat"] = (f"Leave-one-out over {len(y)} attempts. The interval on an accuracy from this many folds is wide; "
+                        "treat the comparison as a sanity check, not a measurement.")
     model = LogisticRegression(max_iter=2000, class_weight="balanced").fit(X, y)
     report["coefficients"] = {name: round(float(w), 3) for name, w in zip(FEATURES, model.coef_[0])}
     return model, report
 
 
-def queue(rows, model, report, limit=12):
+def queue(rows, model, report, limit=20):
     """Entities never attempted, ranked by the rule that encodes need.
 
-    The learned baseline rides along as an annotation only. It is adopted as the ranking just when
-    it beats the majority class, which on this label set it does not.
+    Need stays the ranking, because a model that predicts which attempt will SUCCEED would rank the
+    easy targets first and starve the gaps the library actually has. When the baseline beats the
+    majority class it is used for one thing only: breaking ties between entities the rule scores
+    equally, where "which of these is likeliest to return a finding" is exactly the open question.
+    Every row carries the probability and whether it was allowed to matter, so the ordering can be
+    read back.
     """
     # A condition or a drug is context for a finding, never a marker to extract findings about.
     fresh = [r for r in rows if label(r) is None and r["kind"] not in ("Condition", "Compound")]
@@ -112,7 +124,9 @@ def queue(rows, model, report, limit=12):
         ranked.append({"id": gap["id"], "name": gap["name"], "kind": row["kind"], "score": gap["score"],
                        "model": "rule-need-v1", "studies": row["studies"], "asked": row["asked"],
                        "reasons": gap["reasons"], "baseline_probability": probability.get(gap["id"]),
-                       "baseline_adopted": bool(report.get("useful"))})
+                       "baseline_breaks_ties": bool(report.get("useful"))})
+    if report.get("useful"):
+        ranked.sort(key=lambda r: (-r["score"], -(r["baseline_probability"] or 0.0), r["name"].casefold()))
     return ranked[:limit]
 
 
@@ -131,7 +145,7 @@ def store_predictions(ranked):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--write", action="store_true", help="store Predictions in Neo4j")
-    parser.add_argument("--limit", type=int, default=12)
+    parser.add_argument("--limit", type=int, default=20)
     args = parser.parse_args(argv)
     with store.session() as session:
         rows = session.run(ROWS).data()
@@ -142,14 +156,22 @@ def main(argv=None):
               "note": "Suggested extraction targets for the library, ranked by need. Not a clinical score and not about any person."}
     lines = ["# Suggested extraction queue", "",
              f"Generated {output['at'][:19]}Z by `python -m ml.gap_ranker`. Ranked by need: publications indexed but no typed finding, thin domains, and questions asked recently.",
-             "", f"The learned baseline ({VERSION}) is **{'adopted' if report.get('useful') else 'not adopted'}**: leave-one-out accuracy "
-             f"{report.get('loo_accuracy', float('nan')):.3f} against a majority class of {report.get('majority_class_accuracy', float('nan')):.3f} on {report.get('attempts')} attempts. "
-             "Its probability is shown for comparison only.", "",
+             "", f"The learned baseline ({VERSION}) "
+             + (f"**breaks ties** between entities the rule scores equally: leave-one-out accuracy "
+                f"{report.get('loo_accuracy', float('nan')):.3f} against a majority class of "
+                f"{report.get('majority_class_accuracy', float('nan')):.3f} on {report.get('attempts')} attempts "
+                f"(AUC {report.get('loo_auc') or float('nan'):.3f}). It never sets the ranking: need does, because a model that "
+                "predicts which attempt will succeed would rank the easy targets first and starve the real gaps."
+                if report.get("useful") else
+                f"is **not used**: leave-one-out accuracy {report.get('loo_accuracy', float('nan')):.3f} does not beat a majority "
+                f"class of {report.get('majority_class_accuracy', float('nan')):.3f} on {report.get('attempts')} attempts. "
+                "Its probability is shown for comparison only."),
+             "", report.get("caveat", ""), "",
              "| # | Entity | Kind | Need | Publications | Baseline p | Why |", "|---|---|---|---|---|---|---|"]
     for n, row in enumerate(ranked, 1):
         lines.append(f"| {n} | {row['name']} | {row['kind']} | {row['score']} | {row['studies']} | "
                      f"{row['baseline_probability'] if row['baseline_probability'] is not None else '—'} | {'; '.join(row['reasons'])} |")
-    Path(__file__).resolve().parents[1].joinpath("docs", "enrich-queue.md").write_text("\n".join(lines) + "\n")
+    Path(__file__).resolve().parents[1].joinpath("docs", "gap-queue.md").write_text("\n".join(lines) + "\n")
     folder = Path(__file__).resolve().parent / "exports" / date.today().isoformat()
     folder.mkdir(parents=True, exist_ok=True)
     (folder / "gap_queue.json").write_text(json.dumps(output, indent=1) + "\n")

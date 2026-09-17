@@ -45,4 +45,24 @@ class GapRankerTests(unittest.TestCase):
         self.assertNotIn('breast cancer', names)
         self.assertNotIn('olaparib', names)
         self.assertIn('CEA', names)
-        self.assertTrue(all(r['reasons'] and r['baseline_adopted'] is False for r in ranked))
+        self.assertTrue(all(r['reasons'] and r['baseline_breaks_ties'] is False for r in ranked))
+
+    def test_the_baseline_only_ever_breaks_a_tie(self):
+        from ml.gap_ranker import queue
+        """Need is the ranking. A model that predicts which attempt succeeds would rank the easy
+        targets first and starve the gaps, so it is allowed to order equals and nothing more."""
+        rows = [self.row(id='biomarker:a', name='Aaa', studies=0), self.row(id='biomarker:b', name='Bbb', studies=0)]
+
+        import numpy as np
+
+        class Likely:
+            """Says the second entity is the likelier attempt, and nothing about the first."""
+            def predict_proba(self, X):
+                return np.array([[0.1, 0.9] if i else [0.9, 0.1] for i in range(len(X))])
+
+        tied = queue(rows, Likely(), {'useful': True}, limit=10)
+        self.assertEqual([r['name'] for r in tied], ['Bbb', 'Aaa'], 'the likelier of two equals goes first')
+        self.assertEqual([r['score'] for r in tied][0], tied[1]['score'], 'and only because they tie on need')
+        self.assertTrue(all(r['model'] == 'rule-need-v1' for r in tied), 'the stored ranking is still the rule')
+        ignored = queue(rows, Likely(), {'useful': False}, limit=10)
+        self.assertEqual([r['name'] for r in ignored], ['Aaa', 'Bbb'], 'an unproven baseline changes nothing')

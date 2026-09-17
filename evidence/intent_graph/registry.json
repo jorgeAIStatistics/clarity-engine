@@ -57,7 +57,14 @@
   "type": "biomarker",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Apolipoprotein: the structural protein carried by every atherogenic lipoprotein particle, one per particle",
+  "specimen": "Serum or plasma",
+  "external_ids": {
+   "hgnc": "HGNC:603",
+   "ensembl": "ENSG00000084674",
+   "uniprot": "P04114"
+  }
  },
  {
   "id": "biomarker:ldl-c",
@@ -70,7 +77,9 @@
   "type": "biomarker",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Calculated lipid fraction: the cholesterol mass carried in LDL particles, not a protein and not a particle count",
+  "specimen": "Serum or plasma"
  },
  {
   "id": "biomarker:non-hdl-c",
@@ -168,7 +177,9 @@
    "hgnc": "HGNC:17635",
    "ensembl": "ENSG00000120217",
    "uniprot": "Q9NZQ7"
-  }
+  },
+  "entity_class": "Immune-checkpoint ligand (CD274 protein), reported as expression scored on tissue rather than a concentration",
+  "specimen": "Tumour tissue"
  },
  {
   "id": "biomarker:tmb",
@@ -182,8 +193,8 @@
   "review_state": "automated",
   "ephemeral": false,
   "registry_version": "biomarkers-v2",
-  "entity_class": "Genomic summary measure",
-  "specimen": "Tumour tissue or plasma, by sequencing",
+  "entity_class": "Genomic summary measure: mutations per megabase across a sequenced panel",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
   "pathway_note": "Tumour mutational burden counts somatic mutations per megabase as a proxy for neoantigen load. Panel size, filtering and cut-offs differ between assays, so values are not portable.",
   "assay_hint": "Next-generation sequencing panel"
  },
@@ -222,7 +233,9 @@
   "type": "biomarker",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Cell-free tumour DNA: an analyte carrying many genes, not a single gene product",
+  "specimen": "Plasma"
  },
  {
   "id": "biomarker:ca-15-3",
@@ -292,7 +305,7 @@
   "review_state": "automated",
   "ephemeral": false,
   "registry_version": "biomarkers-v2",
-  "entity_class": "Carbohydrate antigen (sialyl-Lewis-a glycan)",
+  "entity_class": "Carbohydrate antigen (sialyl-Lewis a epitope), not a single gene product",
   "specimen": "Serum",
   "pathway_note": "CA19-9 is a glycan shed by ductal epithelium. Lewis-negative people cannot express it, and cholestasis raises it without tumour.",
   "assay_hint": "Immunoassay"
@@ -312,7 +325,9 @@
    "hgnc": "HGNC:6364",
    "ensembl": "ENSG00000142515",
    "uniprot": "P07288"
-  }
+  },
+  "entity_class": "Serine protease (kallikrein-related peptidase 3)",
+  "specimen": "Serum"
  },
  {
   "id": "biomarker:afp",
@@ -1523,7 +1538,8 @@
    "hgnc": "HGNC:1100",
    "ensembl": "ENSG00000012048",
    "uniprot": "P38398"
-  }
+  },
+  "entity_class": "Protein-coding gene — BRCA1 DNA repair associated"
  },
  {
   "id": "gene:brca2",
@@ -1540,7 +1556,8 @@
    "hgnc": "HGNC:1101",
    "ensembl": "ENSG00000139618",
    "uniprot": "P51587"
-  }
+  },
+  "entity_class": "Protein-coding gene — BRCA2 DNA repair associated"
  },
  {
   "id": "gene:egfr",
@@ -1556,7 +1573,8 @@
    "hgnc": "HGNC:3236",
    "ensembl": "ENSG00000146648",
    "uniprot": "P00533"
-  }
+  },
+  "entity_class": "Protein-coding gene — epidermal growth factor receptor"
  },
  {
   "id": "gene:il18",
@@ -1572,7 +1590,8 @@
    "hgnc": "HGNC:5986",
    "ensembl": "ENSG00000150782",
    "uniprot": "Q14116"
-  }
+  },
+  "entity_class": "Protein-coding gene — interleukin 18"
  },
  {
   "id": "variant:egfr-activating-mutation",
@@ -1616,7 +1635,14 @@
   "variant_of": "gene:egfr",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Somatic point mutation in the kinase domain (exon 21)",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:3236",
+   "ensembl": "ENSG00000146648",
+   "uniprot": "P00533"
+  }
  },
  {
   "id": "variant:egfr-exon19-deletion",
@@ -1632,7 +1658,14 @@
   "variant_of": "gene:egfr",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Somatic in-frame deletion in the kinase domain (exon 19)",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:3236",
+   "ensembl": "ENSG00000146648",
+   "uniprot": "P00533"
+  }
  },
  {
   "id": "variant:egfr-t790m",
@@ -1645,7 +1678,14 @@
   "variant_of": "gene:egfr",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Somatic point mutation at the gatekeeper residue (exon 20)",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:3236",
+   "ensembl": "ENSG00000146648",
+   "uniprot": "P00533"
+  }
  },
  {
   "id": "condition:nsclc",
@@ -1691,7 +1731,8 @@
    "hgnc": "HGNC:6407",
    "ensembl": "ENSG00000133703",
    "uniprot": "P01116"
-  }
+  },
+  "entity_class": "Protein-coding gene — KRas proto-oncogene, GTPase"
  },
  {
   "id": "gene:braf",
@@ -1707,7 +1748,8 @@
    "hgnc": "HGNC:1097",
    "ensembl": "ENSG00000157764",
    "uniprot": "P15056"
-  }
+  },
+  "entity_class": "Protein-coding gene — B-Raf proto-oncogene, serine/threonine kinase"
  },
  {
   "id": "gene:pik3ca",
@@ -1723,7 +1765,8 @@
    "hgnc": "HGNC:8975",
    "ensembl": "ENSG00000121879",
    "uniprot": "P42336"
-  }
+  },
+  "entity_class": "Protein-coding gene — phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha"
  },
  {
   "id": "gene:ntrk1",
@@ -1740,7 +1783,8 @@
    "hgnc": "HGNC:8031",
    "ensembl": "ENSG00000198400",
    "uniprot": "P04629"
-  }
+  },
+  "entity_class": "Protein-coding gene — neurotrophic receptor tyrosine kinase 1"
  },
  {
   "id": "gene:ret",
@@ -1756,7 +1800,8 @@
    "hgnc": "HGNC:9967",
    "ensembl": "ENSG00000165731",
    "uniprot": "P07949"
-  }
+  },
+  "entity_class": "Protein-coding gene — ret proto-oncogene"
  },
  {
   "id": "gene:ros1",
@@ -1772,7 +1817,8 @@
    "hgnc": "HGNC:10261",
    "ensembl": "ENSG00000047936",
    "uniprot": "P08922"
-  }
+  },
+  "entity_class": "Protein-coding gene — ROS proto-oncogene 1, receptor tyrosine kinase"
  },
  {
   "id": "gene:alk",
@@ -1788,7 +1834,8 @@
    "hgnc": "HGNC:427",
    "ensembl": "ENSG00000171094",
    "uniprot": "Q9UM73"
-  }
+  },
+  "entity_class": "Protein-coding gene — ALK receptor tyrosine kinase"
  },
  {
   "id": "variant:kras-g12c",
@@ -1802,7 +1849,14 @@
   "variant_of": "gene:kras",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Somatic point mutation at codon 12",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:6407",
+   "ensembl": "ENSG00000133703",
+   "uniprot": "P01116"
+  }
  },
  {
   "id": "variant:braf-v600e",
@@ -1816,7 +1870,14 @@
   "variant_of": "gene:braf",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Somatic point mutation at codon 600",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:1097",
+   "ensembl": "ENSG00000157764",
+   "uniprot": "P15056"
+  }
  },
  {
   "id": "variant:pik3ca-mutation",
@@ -1830,7 +1891,14 @@
   "variant_of": "gene:pik3ca",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Somatic activating mutation",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:8975",
+   "ensembl": "ENSG00000121879",
+   "uniprot": "P42336"
+  }
  },
  {
   "id": "variant:egfr-exon20-insertion",
@@ -1844,7 +1912,14 @@
   "variant_of": "gene:egfr",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Somatic in-frame insertion (exon 20)",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:3236",
+   "ensembl": "ENSG00000146648",
+   "uniprot": "P00533"
+  }
  },
  {
   "id": "variant:ntrk-fusion",
@@ -1858,7 +1933,14 @@
   "variant_of": "gene:ntrk1",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Gene fusion from a chromosomal rearrangement",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:8031",
+   "ensembl": "ENSG00000198400",
+   "uniprot": "P04629"
+  }
  },
  {
   "id": "variant:ret-fusion",
@@ -1872,7 +1954,14 @@
   "variant_of": "gene:ret",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Gene fusion from a chromosomal rearrangement",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:9967",
+   "ensembl": "ENSG00000165731",
+   "uniprot": "P07949"
+  }
  },
  {
   "id": "variant:ros1-fusion",
@@ -1886,7 +1975,14 @@
   "variant_of": "gene:ros1",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Gene fusion from a chromosomal rearrangement",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:10261",
+   "ensembl": "ENSG00000047936",
+   "uniprot": "P08922"
+  }
  },
  {
   "id": "variant:alk-rearrangement",
@@ -1900,7 +1996,14 @@
   "variant_of": "gene:alk",
   "review_state": "automated",
   "ephemeral": false,
-  "registry_version": "biomarkers-v2"
+  "registry_version": "biomarkers-v2",
+  "entity_class": "Gene rearrangement producing a fusion kinase",
+  "specimen": "Tumour tissue or plasma circulating tumour DNA",
+  "external_ids": {
+   "hgnc": "HGNC:427",
+   "ensembl": "ENSG00000171094",
+   "uniprot": "Q9UM73"
+  }
  },
  {
   "id": "compound:sotorasib",
