@@ -150,6 +150,12 @@ def graph_entity(entity_id, open_session=None):
                       'OPTIONAL MATCH (e)-[:HAS_LAYER]->(l:LayerAssessment)-[:SUPPORTED_BY]->(f) '
                       'RETURN f{.id, .kind, .measure, .estimate, .lower, .upper, .level, .unit, .cutoff, .cutoff_unit, .assay, .population, .setting, .target, .comparator, .statement, .p_value, .p_operator, .marker, .n, .synthesis, .provenance, .review_state} AS finding, '
                       'p.quote AS quote, p.locator AS locator, st.id AS study_id, st.pmid AS pmid, st.title AS title, st.year AS year, coalesce(l.layer, f.layer) AS layer ORDER BY st.year DESC LIMIT 200', id=entity_id).data()
+        # Numbers other papers reported, quoted inside a paper that named this entity. They are not
+        # evidence about it and are never merged into findings; the page shows them folded away.
+        quoted = s.run('MATCH (e:Entity {id:$id})<-[:QUOTES]-(f:Finding) OPTIONAL MATCH (f)-[:EVIDENCED_BY]->(p:SourcePassage) '
+                       'OPTIONAL MATCH (st:Study)-[:REPORTS]->(f) '
+                       'RETURN f{.id, .kind, .measure, .estimate, .lower, .upper, .level, .unit, .target, .population, .marker, .provenance} AS finding, '
+                       'p.quote AS quote, st.pmid AS pmid, st.title AS title, st.year AS year LIMIT 50', id=entity_id).data()
         related = s.run('MATCH (e:Entity {id:$id})-[r:ENCODED_BY|VARIANT_OF|IN_PATHWAY|MEASURED_BY|RELATED_TO]-(o:Entity) WHERE coalesce(o.ephemeral,false)=false '
                         'RETURN type(r) AS edge, r.reason AS reason, o.id AS id, o.name AS name, coalesce(o.kind,o.type) AS kind, startNode(r)=e AS outgoing LIMIT 40', id=entity_id).data()
         studies = s.run('MATCH (e:Entity {id:$id})<-[:MENTIONS_ENTITY]-(st:Study) RETURN count(DISTINCT st) AS n', id=entity_id).single()['n']
@@ -160,7 +166,7 @@ def graph_entity(entity_id, open_session=None):
                                 identity={k: e[k] for k in cypher.IDENTITY_FIELDS if e.get(k)},
                                 locus={k: e[k] for k in cypher.LOCUS_FIELDS if e.get(k) is not None} or None),
                     layers=[dict(l, sentences=json.loads(l['sentences']) if l['sentences'] else []) for l in sorted(layers, key=lambda l: LAYERS.index(l['layer']) if l['layer'] in LAYERS else 9)],
-                    findings=found, related=related, studies=studies,
+                    findings=found, quoted=quoted, related=related, studies=studies,
                     dead_letters=[dict(d, reasons=json.loads(d['reasons']) if d['reasons'] else {},
                                        # The markers a rejected paper did measure: without them "findings about other
                                        # markers" is unreadable, and the reader cannot judge the call for themselves.

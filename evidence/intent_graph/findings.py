@@ -230,7 +230,7 @@ def statements(record, nodes):
         # Re-publishing replaces automated findings and links for this study; reviewed findings are untouched.
         ("MATCH (s:Study {id:$study})-[:REPORTS|REPORTS_FINDING]->(f:Finding) WHERE coalesce(f.review_state,'automated')<>'reviewed' AND NOT f.id IN $ids DETACH DELETE f", dict(study=record['study_id'], ids=ids)),
         ("MATCH (s:Study {id:$study})-[old:REPORTS_FINDING]->(:Finding) DELETE old", dict(study=record['study_id'])),
-        ("MATCH (s:Study {id:$study})-[:REPORTS]->(f:Finding)-[r:ABOUT|FOR_OUTCOME]->() WHERE coalesce(f.review_state,'automated')<>'reviewed' DELETE r", dict(study=record['study_id'])),
+        ("MATCH (s:Study {id:$study})-[:REPORTS]->(f:Finding)-[r:ABOUT|FOR_OUTCOME|QUOTES]->() WHERE coalesce(f.review_state,'automated')<>'reviewed' DELETE r", dict(study=record['study_id'])),
         ("MATCH (s:Study {id:$study})-[:REPORTS]->(f:Finding)<-[r:SUPPORTED_BY]-(:LayerAssessment) WHERE coalesce(f.review_state,'automated')<>'reviewed' DELETE r", dict(study=record['study_id'])),
     ]
     linked = defaultdict(list)
@@ -254,10 +254,15 @@ def statements(record, nodes):
         ))
         if f.get('target'):
             out.append(('MATCH (f:Finding {id:$id}) MERGE (o:Outcome {id:$outcome}) SET o.name=coalesce(o.name,$name) MERGE (f)-[:FOR_OUTCOME]->(o)', dict(id=f['id'], outcome='outcome:' + norm(f['target']), name=f['target'])))
-        # A number this paper quoted from another paper is stored with its passage, and linked to
-        # nothing. It is not a finding about any marker this study measured, and an entity edge is
-        # exactly what would make it read as one on that marker's page.
+        # A number this paper quoted from another paper is not a finding about anything this study
+        # measured, so it gets no ABOUT edge, no MENTIONS_ENTITY and no rollup — none of the edges
+        # that would make it count as evidence. It does get QUOTES, which says only "this paper
+        # quoted a number about X". That is what lets a page show it in a fold marked not counted;
+        # without any edge at all the record exists and no reader can ever see it.
         if (f.get('provenance') or 'unclear') == 'cited':
+            for n in linked_entities(f, nodes):
+                out.append(('MATCH (f:Finding {id:$finding}), (e:Entity {id:$entity}) MERGE (f)-[:QUOTES]->(e)',
+                            dict(finding=f['id'], entity=n['id'])))
             continue
         for n in linked_entities(f, nodes):
             linked[n['id']].append(f)

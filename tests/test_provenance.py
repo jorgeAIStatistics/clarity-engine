@@ -58,10 +58,30 @@ class ProvenanceTests(unittest.TestCase):
         node = next(p for q, p in written if 'MERGE (f:Finding' in q)
         self.assertEqual(node['provenance'], 'cited')
 
+        # QUOTES is the one edge it may have: "this paper quoted a number about EGFR", which is what
+        # lets a page fold it away as not counted. Without any edge the record exists and no reader
+        # can ever see it. It carries no weight — nothing counts QUOTES.
+        quotes = [p for q, p in written if 'MERGE (f)-[:QUOTES]' in q]
+        self.assertEqual([p['entity'] for p in quotes], ['biomarker:egfr'])
+
         # The same finding, said in this paper's own voice, does link.
         own = dict(finding, provenance='primary')
         _, links = statements(dict(record, findings=[own]), REGISTRY)
         self.assertEqual(links, ['biomarker:egfr'])
+
+    def test_a_quoted_number_is_counted_nowhere(self):
+        """QUOTES exists so a reader can see the quotation, not so anything can tally it."""
+        from evidence.intent_graph import cypher, store
+        import inspect
+        # The rollup, the catalog feed and the gap ranker all count ABOUT or HAS_LAYER, never QUOTES.
+        self.assertNotIn('QUOTES', cypher.CATALOG_SORT)
+        self.assertNotIn('QUOTES', cypher.GAP_FEATURES)
+        self.assertNotIn('QUOTES', cypher.CELL_FINDINGS)
+        self.assertNotIn('QUOTES', inspect.getsource(store.graph_library))
+        # And the profile keeps them out of findings entirely, in their own list.
+        profile = inspect.getsource(store.graph_entity)
+        self.assertIn('quoted=quoted', profile)
+        self.assertIn('<-[:QUOTES]-', profile)
 
     def test_an_unclear_finding_still_links_because_most_abstracts_never_say(self):
         """Excluding unclear would empty the library: nearly every abstract states a result flatly."""
