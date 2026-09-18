@@ -149,6 +149,24 @@ def evidence_match():
 
 LOG=logging.getLogger(__name__)
 
+# A cold Neo4j connection costs about 3.3 seconds against 0.45 warm. Failing over only when the
+# read ERRORS leaves that first reader watching a spinner, which is the whole complaint. So the live
+# read gets a deadline instead: past it the published snapshot is served and the thread is left
+# running, because the connection it is opening is what makes the next request fast.
+GRAPH_DEADLINE=float(os.getenv('CLARITY_GRAPH_DEADLINE','2.0'))
+
+def read_within_deadline(load,entity_id,deadline=None):
+    """(data, outcome) where outcome is graph, slow or failed. Never raises, never waits past the deadline."""
+    box={}
+    def run():
+        try:box['data']=load(entity_id)
+        except Exception as error:box['error']=error
+    worker=threading.Thread(target=run,daemon=True)
+    worker.start();worker.join(GRAPH_DEADLINE if deadline is None else deadline)
+    if worker.is_alive():return None,'slow'
+    if 'error' in box:return None,'failed'
+    return box.get('data'),'graph'
+
 def graph_log(route,entity_id,cache_hit,upstream_ms,outcome):
     """One structured line per graph read: enough to see a cold engine without a vendor agent."""
     from flask import g
@@ -172,22 +190,22 @@ def graph_entity(entity_id):
     if not re.fullmatch(r'[a-z_]+:[a-z0-9-]{1,80}',entity_id):return jsonify(error='Unknown graph profile.'),404
     from .intent_graph.store import graph_entity as load
     from .intent_graph import snapshot
-    started=time.perf_counter();data=None;failed=False
-    try:data=load(entity_id)
-    except Exception:failed=True
+    started=time.perf_counter()
+    data,outcome=read_within_deadline(load,entity_id)
     upstream_ms=round((time.perf_counter()-started)*1000)
-    # A live read that answers "no such entity" is an answer; only a failure falls back.
-    if failed:data=snapshot.entity(entity_id)
+    # A live read that answers "no such entity" is an answer; only a slow or failed one falls back.
+    fell_back=outcome in ('slow','failed')
+    if fell_back:data=snapshot.entity(entity_id)
     if data is None:
-        graph_log('entity',entity_id,False,upstream_ms,'unavailable' if failed else 'not_found')
-        if failed:
+        graph_log('entity',entity_id,False,upstream_ms,'unavailable' if fell_back else 'not_found')
+        if fell_back:
             response=jsonify(error='The evidence graph is unavailable and this profile is not in the published snapshot.',code='graph_unavailable')
             response.status_code=503;response.headers['Retry-After']='10';return response
         return jsonify(error='Unknown graph profile.'),404
-    served='snapshot' if failed else 'graph'
-    graph_log('entity',entity_id,failed,upstream_ms,served)
+    served='snapshot' if fell_back else 'graph'
+    graph_log('entity',entity_id,fell_back,upstream_ms,outcome)
     payload=dict(data,served_from=served)
-    if failed:payload['published_at']=snapshot.published_at()
+    if fell_back:payload.update(published_at=snapshot.published_at(),fallback_reason=outcome)
     response=jsonify(payload)
     # A snapshot may be stale, so it is never cached as long as a live read.
     response.headers['Cache-Control']='private, max-age=60' if served=='graph' else 'private, max-age=15'

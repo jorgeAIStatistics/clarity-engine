@@ -68,6 +68,33 @@ class SnapshotFallbackTests(unittest.TestCase):
         self.assertGreaterEqual(len(rows), 80)
         self.assertTrue(any(r['name'] == 'IL-18' for r in rows))
 
+    def test_a_slow_read_falls_back_instead_of_making_the_reader_wait(self):
+        """A cold Neo4j connection costs seconds. Waiting for it is the spinner the brief names."""
+        import time as clock
+        from evidence import routes
+
+        def crawl(entity_id):
+            clock.sleep(5)
+            return {'never': 'returned in time'}
+
+        started = clock.perf_counter()
+        with patch('evidence.intent_graph.store.graph_entity', side_effect=crawl), \
+                patch.object(routes, 'GRAPH_DEADLINE', 0.2):
+            response = client().get('/api/evidence/graph/entity/biomarker:il-18')
+        waited = clock.perf_counter() - started
+        self.assertLess(waited, 2.0, 'the reader waited for the slow read anyway')
+        body = response.get_json()
+        self.assertEqual((response.status_code, body['served_from'], body['fallback_reason']), (200, 'snapshot', 'slow'))
+        self.assertTrue(body['findings'])
+
+    def test_the_deadline_does_not_steal_a_read_that_arrives_in_time(self):
+        from evidence import routes
+        with patch('evidence.intent_graph.store.graph_entity', return_value={'version': 'graph-entity-v1', 'entity': {'id': 'biomarker:il-18'}, 'findings': []}), \
+                patch.object(routes, 'GRAPH_DEADLINE', 5):
+            body = client().get('/api/evidence/graph/entity/biomarker:il-18').get_json()
+        self.assertEqual(body['served_from'], 'graph')
+        self.assertNotIn('fallback_reason', body)
+
     def test_a_graph_read_writes_one_structured_line(self):
         with patch('evidence.intent_graph.store.graph_entity', side_effect=Unreachable('asleep')), \
                 self.assertLogs('evidence.routes', level='INFO') as logged:
