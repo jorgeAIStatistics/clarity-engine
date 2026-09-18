@@ -89,9 +89,10 @@ def build_library():
         row={'id':'entity:'+e['id'],'name':e['name'],'entity_type':e['entity_type'],'category':e['category'],'aliases':e.get('aliases',[]),'path':f'/{PATHS[e["entity_type"]]}/{e["id"]}','outcomes':[o['name'] for o in e['outcomes']],'conditions':e.get('conditions',[]),'review_status':e['review_status'],'available':True,'generated_at':None,'last_enriched_at':e.get('last_enriched_at'),'summary':e['summary'],'coverage':{'linked_studies':len({s.get('pmid') or s.get('id') or s.get('url') for s in e['studies']}),'outcomes':len(e['outcomes']),'quantified_outcomes':len({f['outcome'] for s in e['studies'] for f in (s.get('findings') or ([s] if s.get('effect') else [])) if f.get('effect')})},'maturity':'Human evidence indexed' if e['studies'] and e['review_status']!='reviewed' else 'Appraisal incomplete' if e['review_status']!='reviewed' else 'Reviewed by dimension'}
         row['quantified_outcome_names']=list(dict.fromkeys(f['outcome'] for s in e['studies'] for f in (s.get('findings') or ([s] if s.get('effect') else [])) if f.get('effect')))
         entries[row['id']]=row
-    for row in graph_entries(entries.values()):entries[row['id']]=row
+    graph=graph_entries(entries.values())
+    for row in graph:entries[row['id']]=row
     rows=sorted(entries.values(),key=lambda r:r['name'].casefold())
-    return {'schema_version':1,'generated_at':datetime.now(timezone.utc).isoformat(),'coverage_statement':'Complete inventory of stored Clarity profiles; not an exhaustive catalog of medicine or a completed systematic review.','entries':rows,'counts':{typ:sum(e['entity_type']==typ for e in rows) for typ in ['intervention',*PATHS]},'audit':audit}
+    return {'schema_version':1,'generated_at':datetime.now(timezone.utc).isoformat(),'coverage_statement':'Complete inventory of stored Clarity profiles; not an exhaustive catalog of medicine or a completed systematic review.','entries':rows,'counts':{typ:sum(e['entity_type']==typ for e in rows) for typ in ['intervention',*PATHS]},'graph_rows':len(graph),'audit':audit}
 
 if __name__=='__main__':
     import argparse

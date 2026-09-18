@@ -74,8 +74,14 @@ def visual_evidence(target_id):
 
 @blueprint.get('/api/library')
 def library():
-    try:return jsonify(_library_snapshot(int(time.time()//300)))
+    try:data=_library_snapshot(int(time.time()//300))
     except Exception:return jsonify(error='Library unavailable'),503
+    # A library with no graph rows is what a cold or unreachable Neo4j produces. Caching that for
+    # the rest of the five-minute bucket is how the index came to read "14 profiles" with nothing
+    # saying a read had failed, so it is served once and never kept.
+    if not data.get('graph_rows'):
+        _library_snapshot.cache_clear()
+    response=jsonify(data);response.headers['Cache-Control']='private, max-age=60';return response
 
 @lru_cache(maxsize=1)
 def _library_snapshot(bucket):
