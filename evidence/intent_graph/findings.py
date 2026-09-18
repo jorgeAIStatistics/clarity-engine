@@ -74,6 +74,23 @@ def observation_layer(design, findings):
 THERAPY_AFTER = re.compile(r'[-\s]*(?:TKIs?\b|tyrosine[-\s]kinase[-\s]inhibitors?|inhibitors?\b|inhibition\b|antagonists?\b|blockers?\b|blockade\b|targeted\b|directed\b|antibod(?:y|ies)\b|therap(?:y|ies)\b)', re.I)
 PANEL = re.compile(r',|\+|\band\b|\bplus\b', re.I)
 ANTI_BEFORE = re.compile(r'\banti[-\s]?$', re.I)
+# A marker named only to say the population LACKS it defines who was studied, not what was measured.
+# A review reporting response rates in "patients without EGFR, ALK, or ROS1 alterations" published
+# three risk ratios onto the EGFR page, where they read as findings about measuring EGFR. They are
+# the opposite: EGFR is the exclusion criterion.
+# Within the same clause, not merely somewhere earlier: a sentence break ends the negation's reach,
+# and "no" is left out because it is too common a word to carry this weight on its own.
+EXCLUDED_BEFORE = re.compile(r'\b(?:without|lacking|negative for|absence of|free of|devoid of|excluding)\b[^.;]{0,90}$', re.I)
+EXCLUDED_AFTER = re.compile(r'^[-\s]*(?:negative|wild[-\s]?type|non[-\s]?mutated|unaltered)\b', re.I)
+
+
+def excluded_by_population(alias, population):
+    """Is this marker named in the population only to say the population does not have it?"""
+    spans = list(re.finditer(re.escape(alias), population or '', re.I))
+    if not spans:
+        return False
+    return all(EXCLUDED_BEFORE.search(population[:m.start()]) or EXCLUDED_AFTER.match(population[m.end():])
+               for m in spans)
 
 
 def names_marker(alias, marker):
@@ -90,9 +107,14 @@ def linked_entities(finding, nodes):
     # A panel (synaptophysin and chromogranin A, CgA + INSM1) is not attributed to any single marker.
     if PANEL.search(marker):
         return []
+    population = finding.get('population') or ''
     hits = []
     for n in nodes:
         matched = [a for a in n['aliases'] if alias_present(a, marker) and names_marker(a, marker)]
+        # Only when the marker span adds nothing of its own: if the span names the marker and the
+        # population merely repeats it under a negation, the population wins and nothing is linked.
+        if matched and all(excluded_by_population(a, population) for a in matched):
+            continue
         if matched:
             hits.append((max(len(norm(a)) for a in matched), n))
     if not hits:

@@ -13,12 +13,13 @@ No graph neural network ships until two gates pass:
 | | count | required |
 |---|---|---|
 | Entities (non-temporary) | 174 | 200 |
-| Typed findings | 106 | 200 |
+| Typed findings | 129 | 200 |
 
-Findings by kind: association 18, classification 35, discrimination 32, effect 3, guideline 2, prognosis 16.
-Aliases 390, MENTIONS 322, typed relations 47, questions 13.
+Aliases 390, MENTIONS 327, typed relations 47, questions 13. Twenty-three of those findings were
+recovered from provider output already paid for, by fixing a decoder that refused a confidence
+level written "95%" — see the observations decoder, not this package.
 
-**No GNN is trained.** Both gates fail, and a heterogeneous link-prediction model fitted on 106
+**No GNN is trained.** Both gates fail, and a heterogeneous link-prediction model fitted on 129
 findings would be a demonstration, not a result. `python -m ml.export` refreshes the numbers and
 writes the gate as `passes: false` into the dated manifest, so the claim is checkable rather than
 asserted here.

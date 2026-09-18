@@ -176,8 +176,16 @@ def _literal(fact, text, tokens, bounds):
 
 
 def _number(span, field):
+    raw = span["raw"]
+    # A confidence level is a percentage by definition and abstracts write it "95% CI". The span the
+    # model returns often covers both the number and the sign, and refusing it threw away the whole
+    # finding: four sound AUC and hazard-ratio rows from one abstract, and the same wherever the
+    # interval happened to be spanned that way. Only the level is read this way — a VALUE keeps its
+    # unit in its own span, so nothing here lets "71%" pass as a bare 71.
+    if field == "level":
+        raw = re.sub(r"\s*%\s*$", "", raw.strip())
     try:
-        return parse_count_token(span["raw"]) if field == "n" else parse_numeric_token(span["raw"])
+        return parse_count_token(raw) if field == "n" else parse_numeric_token(raw)
     except (ValueError, TypeError):
         raise PipelineError("observation_numeric_token_invalid")
 

@@ -105,6 +105,32 @@ class GroupedNumberTests(unittest.TestCase):
         second=decode_observations(payload(self.observation_on(G.at('425'))),GROUPED_SOURCE)
         self.assertEqual(second['findings'][0]['value'],61425.0)
 
+    def test_a_confidence_level_may_carry_its_percent_sign(self):
+        """"(95% CI: 0.754-0.915)" spans two tokens, and refusing the sign threw the finding away.
+
+        Four sound AUC and hazard-ratio rows from one CEA abstract were discarded this way, and the
+        same happened wherever the model happened to span the level as "95 %" rather than "95".
+        """
+        text=("SYNTHETIC TEST ONLY. Combined model in resected disease\n\n"
+              "A combined model achieved an AUC of 0.836 (95% CI: 0.754-0.915) in the validation cohort.")
+        T=Tokens(text);src=source(text,'42726133')
+        obs=observation(observation_type='discrimination',measure='auc',marker=T.at('model',1),target=T.at('validation',0,2),
+                        measure_quote=T.at('AUC'),value=T.at('0.836'),lower=T.at('0.754'),upper=T.at('-0.915'),
+                        level=T.at('95',0,2))
+        decoded=decode_observations(payload(obs),src)
+        self.assertEqual(decoded['dead_letters'],{},f"rejected: {decoded['excluded'] if 'excluded' in decoded else decoded['audit']}")
+        self.assertEqual(len(decoded['findings']),1)
+        found=decoded['findings'][0]
+        self.assertEqual((found['value'],found['lower'],found['upper'],found['level']),(0.836,0.754,0.915,95.0))
+        # Only the level is read this way. A VALUE keeps its unit in its own span, so a percent sign
+        # inside a value span is still refused rather than silently becoming a bare number.
+        from evidence_pipeline.extraction.observations import _number
+        from evidence_pipeline.common import PipelineError
+        self.assertEqual(_number({'raw':'95%'},'level'),95.0)
+        self.assertEqual(_number({'raw':'95 %'},'level'),95.0)
+        self.assertEqual(_number({'raw':'95'},'level'),95.0)
+        with self.assertRaises(PipelineError):_number({'raw':'71%'},'value')
+
     def test_an_ordinary_number_and_a_range_are_untouched(self):
         plain=decode_observations(payload(dict(self.observation_on(G.at('40')),unit=NONE)),GROUPED_SOURCE)
         self.assertEqual(plain['findings'][0]['value'],40.0)
@@ -177,6 +203,22 @@ class GraphLinkingTests(unittest.TestCase):
         for other in ('biomarker:her2','gene:brca1','test:mammography','biomarker:egfr'):self.assertNotIn('"'+other+'"',text)
         self.assertTrue(any("CASE WHEN f.review_state='reviewed'" in q for q,_ in cypher))
         self.assertTrue(any('SUPPORTED_BY' in q for q,_ in cypher) and any('EVIDENCED_BY' in q for q,_ in cypher) and any('FOR_OUTCOME' in q for q,_ in cypher))
+
+    def test_a_marker_named_as_an_exclusion_criterion_is_not_the_marker(self):
+        """A review reporting response rates in "patients without EGFR, ALK, or ROS1 alterations"
+        put three risk ratios on the EGFR page, where they read as findings about measuring EGFR.
+        They are the opposite: EGFR is who was kept OUT of the study."""
+        ids=lambda marker,population:[n['id'] for n in linked_entities({'marker':marker,'population':population},REGISTRY)]
+        excluded='patients without epidermal growth factor receptor (EGFR), anaplastic lymphoma kinase (ALK), or ROS proto-oncogene 1 (ROS1) alterations'
+        self.assertEqual(ids('EGFR',excluded),[])
+        self.assertEqual(ids('EGFR','EGFR-negative patients'),[])
+        # A population the marker actually describes still links, and so does one that never mentions it.
+        self.assertEqual(ids('EGFR','EGFR-positive patients'),['biomarker:egfr'])
+        self.assertEqual(ids('EGFR','patients with advanced NSCLC'),['biomarker:egfr'])
+        # The negation reaches to the end of its clause and no further.
+        self.assertEqual(ids('EGFR','no prior therapy. EGFR-mutant patients'),['biomarker:egfr'])
+        # Excluding one marker says nothing about a different one named in the span.
+        self.assertEqual(ids('EGFR mutation','patients without ALK alterations'),['variant:egfr-activating-mutation'])
 
     def test_drug_classes_built_on_a_marker_name_do_not_link_it(self):
         ids=lambda marker:[n['id'] for n in linked_entities({'marker':marker},REGISTRY)]

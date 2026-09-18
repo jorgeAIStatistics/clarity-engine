@@ -1,247 +1,31 @@
 {
  "version": "gap-baseline-v1",
- "at": "2026-09-18T19:34:58.464895+00:00",
+ "at": "2026-09-18T19:48:06.349993+00:00",
  "entities": 174,
  "model": {
-  "attempts": 40,
-  "successes": 25,
-  "failures": 15,
+  "attempts": 51,
+  "successes": 29,
+  "failures": 22,
   "status": "fitted",
-  "loo_accuracy": 0.775,
-  "majority_class_accuracy": 0.625,
-  "loo_auc": 0.8133333333333335,
+  "loo_accuracy": 0.803921568627451,
+  "majority_class_accuracy": 0.5686274509803921,
+  "loo_auc": 0.7492163009404389,
   "comparison": "The rule ranks need, not success probability, so it is not scored against this label. The honest comparison for this model is the majority class.",
   "useful": true,
-  "caveat": "Leave-one-out over 40 attempts. The interval on an accuracy from this many folds is wide; treat the comparison as a sanity check, not a measurement.",
+  "caveat": "Leave-one-out over 51 attempts. The interval on an accuracy from this many folds is wide; treat the comparison as a sanity check, not a measurement.",
   "coefficients": {
-   "studies": 0.232,
-   "aliases": -0.007,
-   "asked": -0.911,
-   "has_identity": -0.43,
-   "kind_biomarker": 1.42,
-   "kind_test": -0.907,
-   "kind_precisioncontext": -1.207,
-   "kind_variant": 0.123,
-   "kind_gene": 0.26
+   "studies": 0.107,
+   "aliases": 0.182,
+   "asked": -0.528,
+   "has_identity": 0.715,
+   "kind_biomarker": 1.067,
+   "kind_test": -1.065,
+   "kind_precisioncontext": -1.281,
+   "kind_variant": 0.096,
+   "kind_gene": 0.55
   }
  },
  "queue": [
-  {
-   "id": "test:ctdna-liquid-biopsy",
-   "name": "ctDNA liquid biopsy",
-   "kind": "Test",
-   "score": 4.5,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 1,
-   "asked": 0,
-   "reasons": [
-    "thin domain: test",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.2892,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "test:low-dose-ct-lung-screening",
-   "name": "low-dose CT lung cancer screening",
-   "kind": "Test",
-   "score": 4.5,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 0,
-   "asked": 0,
-   "reasons": [
-    "thin domain: test",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.2426,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "precision_context:egfr-exon20-amivantamab",
-   "name": "EGFR exon 20 insertion NSCLC \u00d7 amivantamab",
-   "kind": "PrecisionContext",
-   "score": 4.5,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 0,
-   "asked": 0,
-   "reasons": [
-    "thin domain: precision pair",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.1929,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "precision_context:pik3ca-alpelisib",
-   "name": "PIK3CA-mutated breast cancer \u00d7 alpelisib",
-   "kind": "PrecisionContext",
-   "score": 4.5,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 0,
-   "asked": 0,
-   "reasons": [
-    "thin domain: precision pair",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.1929,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:egfr",
-   "name": "EGFR",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 16,
-   "asked": 0,
-   "reasons": [
-    "16 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.9952,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:her2",
-   "name": "HER2",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 12,
-   "asked": 0,
-   "reasons": [
-    "12 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.988,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:alk",
-   "name": "ALK",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 7,
-   "asked": 0,
-   "reasons": [
-    "7 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.9628,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:cea",
-   "name": "CEA",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 6,
-   "asked": 0,
-   "reasons": [
-    "6 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.9535,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:mmr",
-   "name": "MMR",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 5,
-   "asked": 0,
-   "reasons": [
-    "5 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.942,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:tp53",
-   "name": "TP53",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 5,
-   "asked": 0,
-   "reasons": [
-    "5 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.942,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:kras",
-   "name": "KRAS",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 4,
-   "asked": 0,
-   "reasons": [
-    "4 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.9279,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:ldh",
-   "name": "LDH",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 4,
-   "asked": 0,
-   "reasons": [
-    "4 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.9279,
-   "baseline_breaks_ties": true
-  },
   {
    "id": "biomarker:lp-a",
    "name": "Lp(a)",
@@ -257,61 +41,7 @@
     "no interventional or guideline findings",
     "no typed findings in any layer"
    ],
-   "baseline_probability": 0.9275,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:ca-15-3",
-   "name": "CA 15-3",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 3,
-   "asked": 0,
-   "reasons": [
-    "3 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.9108,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:ca-27-29",
-   "name": "CA 27.29",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 3,
-   "asked": 0,
-   "reasons": [
-    "3 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.9108,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:non-hdl-c",
-   "name": "non-HDL-C",
-   "kind": "Biomarker",
-   "score": 3.25,
-   "n_findings": 0,
-   "n_utility": 0,
-   "model": "rule-need-v1",
-   "studies": 3,
-   "asked": 0,
-   "reasons": [
-    "3 linked publications but no typed finding",
-    "no interventional or guideline findings",
-    "no typed findings in any layer"
-   ],
-   "baseline_probability": 0.9108,
+   "baseline_probability": 0.6937,
    "baseline_breaks_ties": true
   },
   {
@@ -329,7 +59,7 @@
     "no interventional or guideline findings",
     "no typed findings in any layer"
    ],
-   "baseline_probability": 0.9102,
+   "baseline_probability": 0.6706,
    "baseline_breaks_ties": true
   },
   {
@@ -347,7 +77,187 @@
     "no interventional or guideline findings",
     "no typed findings in any layer"
    ],
-   "baseline_probability": 0.9102,
+   "baseline_probability": 0.6706,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:il-1",
+   "name": "IL-1\u03b2",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 1,
+   "asked": 0,
+   "reasons": [
+    "1 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6636,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:kras",
+   "name": "KRAS",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 4,
+   "asked": 0,
+   "reasons": [
+    "4 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6538,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:ldh",
+   "name": "LDH",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 4,
+   "asked": 0,
+   "reasons": [
+    "4 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6538,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:ki-67",
+   "name": "Ki-67",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 2,
+   "asked": 0,
+   "reasons": [
+    "2 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6466,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:tnf",
+   "name": "TNF-\u03b1",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 2,
+   "asked": 0,
+   "reasons": [
+    "2 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6466,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:vitamin-d",
+   "name": "Vitamin D",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 2,
+   "asked": 0,
+   "reasons": [
+    "2 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6466,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:ca-15-3",
+   "name": "CA 15-3",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 3,
+   "asked": 0,
+   "reasons": [
+    "3 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6292,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:ca-27-29",
+   "name": "CA 27.29",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 3,
+   "asked": 0,
+   "reasons": [
+    "3 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6292,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:non-hdl-c",
+   "name": "non-HDL-C",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 3,
+   "asked": 0,
+   "reasons": [
+    "3 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6292,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:hcg",
+   "name": "\u03b2-hCG",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 1,
+   "asked": 0,
+   "reasons": [
+    "1 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6218,
    "baseline_breaks_ties": true
   },
   {
@@ -365,7 +275,7 @@
     "no interventional or guideline findings",
     "no typed findings in any layer"
    ],
-   "baseline_probability": 0.89,
+   "baseline_probability": 0.6039,
    "baseline_breaks_ties": true
   },
   {
@@ -383,7 +293,97 @@
     "no interventional or guideline findings",
     "no typed findings in any layer"
    ],
-   "baseline_probability": 0.89,
+   "baseline_probability": 0.6039,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:msh6",
+   "name": "MSH6",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 2,
+   "asked": 0,
+   "reasons": [
+    "2 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6039,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:pms2",
+   "name": "PMS2",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 2,
+   "asked": 0,
+   "reasons": [
+    "2 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6039,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:pr",
+   "name": "PR",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 2,
+   "asked": 0,
+   "reasons": [
+    "2 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.6039,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:calcitonin",
+   "name": "Calcitonin",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 1,
+   "asked": 0,
+   "reasons": [
+    "1 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.5781,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:crp",
+   "name": "CRP",
+   "kind": "Biomarker",
+   "score": 3.25,
+   "n_findings": 0,
+   "n_utility": 0,
+   "model": "rule-need-v1",
+   "studies": 1,
+   "asked": 0,
+   "reasons": [
+    "1 linked publications but no typed finding",
+    "no interventional or guideline findings",
+    "no typed findings in any layer"
+   ],
+   "baseline_probability": 0.5781,
    "baseline_breaks_ties": true
   }
  ],
