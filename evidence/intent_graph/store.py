@@ -148,7 +148,7 @@ def graph_entity(entity_id, open_session=None):
         layers = s.run('MATCH (e:Entity {id:$id})-[:HAS_LAYER]->(l:LayerAssessment) RETURN l.layer AS layer, coalesce(l.n_findings,0) AS n_findings, l.direction AS direction, l.sentences AS sentences, l.status AS status, l.review_state AS review_state', id=entity_id).data()
         found = s.run('MATCH (e:Entity {id:$id})<-[:ABOUT]-(f:Finding) OPTIONAL MATCH (f)-[:EVIDENCED_BY]->(p:SourcePassage) OPTIONAL MATCH (st:Study)-[:REPORTS]->(f) '
                       'OPTIONAL MATCH (e)-[:HAS_LAYER]->(l:LayerAssessment)-[:SUPPORTED_BY]->(f) '
-                      'RETURN f{.id, .kind, .measure, .estimate, .lower, .upper, .level, .unit, .cutoff, .cutoff_unit, .assay, .population, .setting, .target, .comparator, .statement, .p_value, .p_operator, .marker, .synthesis, .review_state} AS finding, '
+                      'RETURN f{.id, .kind, .measure, .estimate, .lower, .upper, .level, .unit, .cutoff, .cutoff_unit, .assay, .population, .setting, .target, .comparator, .statement, .p_value, .p_operator, .marker, .n, .synthesis, .review_state} AS finding, '
                       'p.quote AS quote, p.locator AS locator, st.id AS study_id, st.pmid AS pmid, st.title AS title, st.year AS year, coalesce(l.layer, f.layer) AS layer ORDER BY st.year DESC LIMIT 200', id=entity_id).data()
         related = s.run('MATCH (e:Entity {id:$id})-[r:ENCODED_BY|VARIANT_OF|IN_PATHWAY|MEASURED_BY|RELATED_TO]-(o:Entity) WHERE coalesce(o.ephemeral,false)=false '
                         'RETURN type(r) AS edge, r.reason AS reason, o.id AS id, o.name AS name, coalesce(o.kind,o.type) AS kind, startNode(r)=e AS outgoing LIMIT 40', id=entity_id).data()

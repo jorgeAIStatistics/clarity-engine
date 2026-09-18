@@ -145,3 +145,53 @@ class PublishRoundTripTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class PublishedFieldsReachThePageTests(unittest.TestCase):
+    """Whatever the publisher writes onto a Finding must come back out of the profile route.
+
+    This is the shape of a bug that has now happened twice: a field is added to the write and the
+    read projection is not updated, so the value sits in Neo4j and no page, table or export can see
+    it. `n` was stored on every finding for weeks and appeared in neither. A round trip against a
+    live database catches it too, but only when one is configured, and CI has none.
+    """
+
+    # Written deliberately and deliberately not returned: provenance the page does not render, and
+    # one duplicate of kind kept for older readers.
+    INTERNAL = {'observation_type', 'estimate_raw', 'source_id', 'source_sha256',
+                'extraction_version', 'extracted_at', 'review'}
+
+    def published_fields(self):
+        import re
+        written, _ = statements(record(), REGISTRY)
+        query = next(q for q, _ in written if 'MERGE (f:Finding' in q)
+        return {name for name in re.findall(r'\bf\.(\w+)=\$', query)}
+
+    def projected_fields(self):
+        import inspect
+        import re
+        from evidence.intent_graph import store
+        source = inspect.getsource(store.graph_entity)
+        block = re.search(r'RETURN f\{([^}]*)\}', source)
+        self.assertIsNotNone(block, 'the profile projection could not be found')
+        return {name for name in re.findall(r'\.(\w+)', block.group(1))}, source
+
+    def test_every_published_field_is_returned_by_the_profile_route(self):
+        published = self.published_fields()
+        self.assertIn('n', published, 'sample size must still be published')
+        projected, source = self.projected_fields()
+        # layer is returned as its own column rather than inside the projection, so it is checked
+        # separately instead of being waved through.
+        self.assertIn('coalesce(l.layer, f.layer) AS layer', source)
+        missing = published - projected - self.INTERNAL - {'layer'}
+        self.assertEqual(missing, set(), f'published onto the Finding but never read back: {sorted(missing)}')
+
+    def test_the_heatmap_projection_does_not_drift_from_the_profile_one(self):
+        projected, _ = self.projected_fields()
+        import re
+        block = re.search(r'RETURN e\.id AS entity_id, l\.layer AS layer, f\{(.*?)\}', cypher.CELL_FINDINGS, re.S)
+        cell = {name for name in re.findall(r'\.(\w+)', block.group(1))}
+        # The drawer reads fewer fields than the profile, but never a field the profile lacks.
+        self.assertEqual(cell - projected, set(), 'the question drawer reads a field the profile does not')
+        for needed in ('kind', 'measure', 'estimate', 'n', 'review_state'):
+            self.assertIn(needed, cell, f'the drawer cannot describe a finding without {needed}')
