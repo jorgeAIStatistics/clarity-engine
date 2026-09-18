@@ -18,7 +18,10 @@ KIND = {
 RELATION_REASONS = {"same_outcome", "same_population", "predicts", "measures", "modifies_treatment", "same_gene", "same_pathway"}
 # Curated identity, not findings: what the object is, where it is measured, and one background note.
 IDENTITY_FIELDS = ("entity_class", "specimen", "pathway_note", "assay_hint", "identity_sentence")
-EXTERNAL_IDS = ("hgnc", "uniprot", "ensembl", "mondo", "chebi", "ncit")
+EXTERNAL_IDS = ("hgnc", "uniprot", "ensembl", "ensembl_protein", "mondo", "chebi", "ncit")
+# Where the gene sits, on a named assembly. Flat properties because Neo4j stores no nested map,
+# and an assembly is stored with them because a coordinate without one is not a location.
+LOCUS_FIELDS = ("assembly", "chrom", "start_bp", "end_bp", "gene_symbol")
 KEEP_REVIEWED = "CASE WHEN {v}.review_state='reviewed' THEN 'reviewed' ELSE coalesce($review,'automated') END"
 
 
@@ -95,6 +98,13 @@ def entity_statements(node, registry_version="biomarkers-v2"):
     ids = {k: node.get("external_ids", {}).get(k) for k in EXTERNAL_IDS if node.get("external_ids", {}).get(k)}
     if ids:
         out.append(("MATCH (e:Entity {id:$id}) SET " + ", ".join(f"e.{k}=${k}" for k in ids), dict(id=node["id"], **ids)))
+    locus = node.get("locus") or {}
+    place = {k: v for k, v in (("assembly", locus.get("assembly")), ("chrom", locus.get("chrom")),
+                               ("start_bp", locus.get("start")), ("end_bp", locus.get("end")),
+                               ("gene_symbol", locus.get("symbol"))) if v is not None}
+    # A coordinate is only written with the assembly it was read on; without one it is not a place.
+    if place.get("assembly") and place.get("chrom"):
+        out.append(("MATCH (e:Entity {id:$id}) SET " + ", ".join(f"e.{k}=${k}" for k in place), dict(id=node["id"], **place)))
     for alias in dict.fromkeys(node["aliases"]):
         alias_id = "alias:" + hashlib.sha256((node["id"] + "|" + norm_name(alias)).encode()).hexdigest()[:24]
         out.append((

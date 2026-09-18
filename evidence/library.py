@@ -46,7 +46,14 @@ def graph_entries(existing):
         # A screening test answers a different question from a diagnostic one; keep the two indexes apart.
         if entity_type=='diagnostic' and any('screening' in str(name).lower() for name in [g['name'],*(g.get('aliases') or [])]):
             entity_type,prefix='screening','/screening/'
-        if slug in by_slug and by_slug[slug]<=rank:continue
+        # A gene and the protein it encodes share a name, and the protein wins the plain address.
+        # The gene used to be dropped outright, so seven genes carrying HGNC, Ensembl, UniProt and a
+        # locus had no page at all and the protein's "encoded by" link pointed back at itself.
+        # The loser takes a suffixed address instead, so both objects exist.
+        if slug in by_slug and by_slug[slug]<=rank:
+            suffix={'Gene':'-gene','Variant':'-variant','Protein':'-protein'}.get(kind)
+            if not suffix or slug+suffix in by_slug:continue
+            slug=slug+suffix
         by_slug[slug]=rank
         sentences=[s for layer in g.get('sentences') or [] for s in (json.loads(layer) if layer else []) if not s.startswith('No indexed')]
         summary=sentences[0] if sentences else f"{g['name']}: aliases and five evidence layers are indexed in the graph; no typed findings are extracted yet."
