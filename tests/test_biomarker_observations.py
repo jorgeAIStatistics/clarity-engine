@@ -209,6 +209,23 @@ class GraphLinkingTests(unittest.TestCase):
         self.assertIsNone(unlinked_target(record,['test:amyloid-pet'],'test:amyloid-pet'))
         self.assertEqual(unlinked_target({'findings':[]},[],'test:amyloid-pet'),[])
 
+    def test_a_marker_and_treatment_pair_is_described_to_a_person(self):
+        """Q1 leads with the identity sentence, and the Class row must not be the schema formula.
+
+        RET x selpercatinib read "Variant x drug x condition" while every other pair read
+        "Marker-and-treatment pair": a reader met the data model instead of the biology.
+        """
+        pairs=[n for n in REGISTRY if n['type']=='precision_context' and n['id']!='precision_context:radiotherapy']
+        self.assertGreaterEqual(len(pairs),10)
+        for node in pairs:
+            with self.subTest(node['id']):
+                self.assertTrue(node.get('identity_sentence'),'a pair with no sentence falls back to its class')
+                self.assertEqual(node.get('entity_class'),'Marker-and-treatment pair')
+                self.assertNotIn('\u00d7',node.get('entity_class',''),'a class is not a schema formula')
+        ret=next(n for n in pairs if n['id']=='precision_context:ret-selpercatinib')
+        self.assertIn('selpercatinib',ret['identity_sentence'])
+        self.assertIn('RET fusion',ret['identity_sentence'])
+
     def test_registry_molecular_identity(self):
         by={n['id']:n for n in REGISTRY}
         self.assertEqual(by['variant:egfr-l858r']['variant_of'],'gene:egfr')
