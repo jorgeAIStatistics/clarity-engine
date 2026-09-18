@@ -72,19 +72,34 @@ def visual_evidence(target_id):
     response.headers['Cache-Control']='private, max-age=60'
     return response
 
+# Building the catalog takes about thirteen seconds on a cold process — longer than the browser
+# waits before giving up, which is how the index came to show fourteen curated profiles as though
+# they were the library. The build gets a deadline, and past it the published catalog is served.
+LIBRARY_DEADLINE=float(os.getenv('CLARITY_LIBRARY_DEADLINE','3.0'))
+
 @blueprint.get('/api/library')
 def library():
-    try:data=_library_snapshot(int(time.time()//300))
-    except Exception:return jsonify(error='Library unavailable'),503
-    # A library with no graph rows is what a cold or unreachable Neo4j produces. Caching that for
-    # the rest of the five-minute bucket is how the index came to read "14 profiles" with nothing
-    # saying a read had failed, so it is served once and never kept.
-    short=not data.get('graph_rows')
-    if short:
-        _library_snapshot.cache_clear()
-    response=jsonify(data)
-    # A short answer is a failed read wearing a 200, so it is not cached in the browser either —
-    # evicting it server-side while a viewer holds it for a minute fixes nothing they can see.
+    from .intent_graph import snapshot
+    started=time.perf_counter();bucket=int(time.time()//300)
+    data,outcome=read_within_deadline(lambda _:_library_snapshot(bucket),bucket,LIBRARY_DEADLINE)
+    upstream_ms=round((time.perf_counter()-started)*1000)
+    # A build with no graph rows is a cold or unreachable Neo4j wearing a 200. It is never cached,
+    # and it is never preferred over a published catalog that actually holds the graph.
+    short=bool(data) and not data.get('graph_rows')
+    if short:_library_snapshot.cache_clear()
+    if data is None or short:
+        published=snapshot.catalog()
+        if published is not None:
+            graph_log('library','',True,upstream_ms,outcome if data is None else 'short')
+            response=jsonify(published)
+            response.headers['Cache-Control']='private, max-age=15'
+            return response
+    if data is None:
+        graph_log('library','',False,upstream_ms,'unavailable')
+        response=jsonify(error='Library unavailable',code='library_unavailable');response.status_code=503
+        response.headers['Retry-After']='10';return response
+    graph_log('library','',False,upstream_ms,'short' if short else 'graph')
+    response=jsonify(dict(data,served_from='graph'))
     response.headers['Cache-Control']='no-store' if short else 'private, max-age=60'
     return response
 

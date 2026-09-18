@@ -31,11 +31,16 @@ class SynthesisTests(unittest.TestCase):
         span=fact['source_span']
         self.assertEqual(source_text(paper)[span['start']:span['end']],fact['quote'])
     def test_production_requires_durable_state(self):
-        self.assertEqual(len(commands({})),1)
-        self.assertEqual(len(commands({'DATABASE_URL':'postgresql://db'})),2)
-        self.assertNotIn('--llm',commands({'DATABASE_URL':'postgresql://db'})[1])
-        self.assertIn('--llm',commands({'DATABASE_URL':'postgresql://db','ANTHROPIC_API_KEY':'present'})[1])
-        self.assertEqual(len(commands({'DATABASE_URL':'postgresql://db','CLARITY_RESEARCH_ENABLED':'0'})),1)
+        # The invariant is which workers start, not how many children exist: a counted assertion
+        # broke the moment an unrelated child (the cache warmer) was supervised alongside them.
+        def workers(env):
+            return [c for c in commands(env) if not any('evidence.warm' in part for part in c)]
+        self.assertEqual(len(workers({})),1,'without PostgreSQL only the API runs')
+        self.assertEqual(len(workers({'DATABASE_URL':'postgresql://db'})),2)
+        self.assertNotIn('--llm',workers({'DATABASE_URL':'postgresql://db'})[1])
+        self.assertIn('--llm',workers({'DATABASE_URL':'postgresql://db','ANTHROPIC_API_KEY':'present'})[1])
+        self.assertEqual(len(workers({'DATABASE_URL':'postgresql://db','CLARITY_RESEARCH_ENABLED':'0'})),1)
+        self.assertTrue(any('evidence.warm' in part for c in commands({}) for part in c),'the warmer needs no database')
     def test_priority_ages_and_bounds_traffic(self):
         from living_research.priority import priority_score
         self.assertGreater(priority_score({'next_due':1},864001),priority_score({'next_due':864001},864001))

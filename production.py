@@ -18,6 +18,10 @@ def commands(env):
         worker = [sys.executable, '-m', 'living_research', '--config', 'living_research/config.example.json', 'watch']
         if env.get('ANTHROPIC_API_KEY'): worker.append('--llm')
         result.append(worker)
+    # Keeps the Neo4j connection and the catalog cache warm from inside the box. Off with
+    # CLARITY_WARM_ENABLED=0; interval in seconds with CLARITY_WARM_INTERVAL.
+    if env.get('CLARITY_WARM_ENABLED', '1') == '1':
+        result.append([sys.executable, '-m', 'evidence.warm', f"http://127.0.0.1:{env.get('PORT', '8000')}"])
     if env.get('CLARITY_PICO_ENABLED') == '1':
         if not database.startswith(('postgres://', 'postgresql://')):
             raise RuntimeError('PICO worker requires persistent PostgreSQL')

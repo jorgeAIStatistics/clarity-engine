@@ -109,3 +109,63 @@ class SnapshotFallbackTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class LibrarySnapshotTests(unittest.TestCase):
+    """The catalog must never present its fourteen curated profiles as the whole library.
+
+    Building it takes about thirteen seconds on a cold process, which is longer than the browser
+    waits, so the index gave up and rendered the curated rows alone — a confident, wrong answer with
+    nothing on the page saying a read had failed.
+    """
+
+    def setUp(self):
+        if not snapshot.catalog():
+            self.skipTest('no published catalog in this checkout')
+
+    def test_the_published_catalog_holds_the_whole_library(self):
+        published = snapshot.catalog()
+        self.assertGreaterEqual(published['graph_rows'], 115)
+        self.assertGreaterEqual(len(published['entries']), 300)
+        self.assertEqual(published['served_from'], 'snapshot')
+        self.assertTrue(published['published_at'], 'a published catalog without its date is not publishable')
+        kinds = {e['entity_type'] for e in published['entries'] if str(e['id']).startswith('graph:')}
+        self.assertTrue({'biomarker', 'precision_oncology'} <= kinds)
+
+    def test_a_slow_build_serves_the_published_catalog_instead_of_making_the_reader_wait(self):
+        import time as clock
+        from evidence import routes
+
+        def crawl(bucket):
+            clock.sleep(5)
+            return {'entries': [], 'graph_rows': 0}
+
+        started = clock.perf_counter()
+        with patch.object(routes, '_library_snapshot', crawl), patch.object(routes, 'LIBRARY_DEADLINE', 0.2):
+            response = client().get('/api/library')
+        self.assertLess(clock.perf_counter() - started, 2.0, 'the reader waited for the slow build anyway')
+        body = response.get_json()
+        self.assertEqual((response.status_code, body['served_from']), (200, 'snapshot'))
+        self.assertGreaterEqual(body['graph_rows'], 115)
+        self.assertEqual(response.headers['Cache-Control'], 'private, max-age=15')
+
+    def test_a_build_with_no_graph_rows_loses_to_a_published_catalog_that_has_them(self):
+        """Fourteen curated profiles are never the answer when 115 graph rows are published."""
+        from evidence import routes
+        # The real one is lru_cached and the route evicts it, so the stand-in carries that too.
+        short = lambda bucket: {'entries': [{'id': 'entity:x', 'entity_type': 'biomarker'}], 'graph_rows': 0, 'counts': {'biomarker': 14}}
+        short.cache_clear = lambda: None
+        with patch.object(routes, '_library_snapshot', short):
+            response = client().get('/api/library')
+        body = response.get_json()
+        self.assertEqual(body['served_from'], 'snapshot')
+        self.assertGreaterEqual(body['counts']['biomarker'], 115)
+
+    def test_a_failed_build_with_nothing_published_still_fails_loudly(self):
+        from evidence import routes
+        with patch.object(routes, '_library_snapshot', lambda bucket: (_ for _ in ()).throw(Unreachable('asleep'))), \
+                patch.object(snapshot, 'catalog', lambda: None):
+            response = client().get('/api/library')
+        self.assertEqual(response.status_code, 503)
+        self.assertEqual(response.get_json()['code'], 'library_unavailable')
+        self.assertEqual(response.headers['Cache-Control'], 'no-store')

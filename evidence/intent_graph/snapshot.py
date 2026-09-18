@@ -23,8 +23,14 @@ _memory = {'loaded': False, 'data': None}
 
 
 def build():
-    """Every entity profile the website can route to, plus the library feed, read once."""
+    """Every entity profile the website can route to, the library feed, and the built catalog.
+
+    The catalog is the whole /api/library payload, not just its graph rows: building it takes about
+    thirteen seconds on a cold process, which is longer than the browser waits, and a page that
+    gives up shows fourteen curated profiles as though that were the library.
+    """
     from . import store
+    from evidence.library import build_library
     with store.session() as session:
         rows = store.graph_library()
         entities = {}
@@ -32,8 +38,9 @@ def build():
             payload = store.graph_entity(row['id'], session)
             if payload is not None:
                 entities[row['id']] = payload
+    catalog = build_library()
     return {'version': VERSION, 'generated_at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
-            'entities': entities, 'library': rows}
+            'entities': entities, 'library': rows, 'catalog': catalog}
 
 
 def write(path=None):
@@ -70,6 +77,15 @@ def library():
     return (data or {}).get('library') or []
 
 
+def catalog():
+    """The last published /api/library payload, or None. Never returned without its date."""
+    data = load()
+    published = (data or {}).get('catalog')
+    if not published or not published.get('entries'):
+        return None
+    return dict(published, served_from='snapshot', published_at=(data or {}).get('generated_at'))
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write', action='store_true', help='rebuild the published snapshot')
@@ -77,6 +93,8 @@ def main(argv=None):
     data = write() if args.write else (load() or {})
     print(json.dumps({'version': data.get('version'), 'generated_at': data.get('generated_at'),
                       'entities': len(data.get('entities') or {}), 'library_rows': len(data.get('library') or []),
+                      'catalog_entries': len((data.get('catalog') or {}).get('entries') or []),
+                      'catalog_graph_rows': (data.get('catalog') or {}).get('graph_rows'),
                       'path': str(PATH), 'bytes': PATH.stat().st_size if PATH.exists() else 0}, indent=1))
     return data
 
