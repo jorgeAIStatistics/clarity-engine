@@ -79,9 +79,14 @@ def library():
     # A library with no graph rows is what a cold or unreachable Neo4j produces. Caching that for
     # the rest of the five-minute bucket is how the index came to read "14 profiles" with nothing
     # saying a read had failed, so it is served once and never kept.
-    if not data.get('graph_rows'):
+    short=not data.get('graph_rows')
+    if short:
         _library_snapshot.cache_clear()
-    response=jsonify(data);response.headers['Cache-Control']='private, max-age=60';return response
+    response=jsonify(data)
+    # A short answer is a failed read wearing a 200, so it is not cached in the browser either —
+    # evicting it server-side while a viewer holds it for a minute fixes nothing they can see.
+    response.headers['Cache-Control']='no-store' if short else 'private, max-age=60'
+    return response
 
 @lru_cache(maxsize=1)
 def _library_snapshot(bucket):
