@@ -8,18 +8,20 @@ No graph neural network ships until two gates pass:
 2. **Baseline first.** A logistic regression on layer counts and alias overlap is trained and
    scored on the gold set. A GNN ships only if it beats that baseline there.
 
-## Graph size on 2026-09-16 — the gate does not pass
+## Graph size on 2026-09-18 — the gate does not pass
 
 | | count | required |
 |---|---|---|
 | Entities (non-temporary) | 174 | 200 |
-| Typed findings | 78 | 200 |
+| Typed findings | 106 | 200 |
 
-Findings by kind: association 16, classification 24, discrimination 25, effect 1, guideline 1, prognosis 11.
-Aliases 390, MENTIONS 258, typed relations 47.
+Findings by kind: association 18, classification 35, discrimination 32, effect 3, guideline 2, prognosis 16.
+Aliases 390, MENTIONS 322, typed relations 47, questions 13.
 
-**No GNN is trained.** Both gates fail, and a heterogeneous link-prediction model fitted on 78
-findings would be a demonstration, not a result. `python -m ml.export` refreshes the numbers.
+**No GNN is trained.** Both gates fail, and a heterogeneous link-prediction model fitted on 106
+findings would be a demonstration, not a result. `python -m ml.export` refreshes the numbers and
+writes the gate as `passes: false` into the dated manifest, so the claim is checkable rather than
+asserted here.
 
 ## Entity linker (shipped as offline tooling, `ml/linker.py`)
 
@@ -27,10 +29,15 @@ Character n-gram TF-IDF over alias strings with cosine retrieval, then a hard fi
 lexical vector space — nothing is trained, no API is called — and it is described that way on
 purpose.
 
+Run on 2026-09-18, 26 gold cases:
+
 | | gold precision | gold recall | hijacks | spelling/spacing cases |
 |---|---|---|---|---|
 | Exact alias matching (live path) | 1.0 | 1.0 | 0 | 8/10 |
 | This linker | 1.000 | 1.000 | 0 | 10/10 |
+
+The deterministic MENTIONS path scores the same 26 cases at precision 1.0 / recall 1.0 with no
+forbidden attachment, and that one runs in CI with no third-party package installed.
 
 Gold set: 26 questions. The linker earns its place on variation exact matching misses
 ("Interleukin 18 levels", "CA 125", "NT pro BNP", "p-tau 181"), not on the gold set, where the

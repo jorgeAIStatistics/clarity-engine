@@ -126,6 +126,7 @@ def queue(rows, model, report, limit=20):
             continue
         row = by_id[gap["id"]]
         ranked.append({"id": gap["id"], "name": gap["name"], "kind": row["kind"], "score": gap["score"],
+                       "n_findings": row["findings"], "n_utility": row["utility_kind_findings"],
                        "model": "rule-need-v1", "studies": row["studies"], "asked": row["asked"],
                        "reasons": gap["reasons"], "baseline_probability": probability.get(gap["id"]),
                        "baseline_breaks_ties": bool(report.get("useful"))})
@@ -171,9 +172,14 @@ def main(argv=None):
                 f"class of {report.get('majority_class_accuracy', float('nan')):.3f} on {report.get('attempts')} attempts. "
                 "Its probability is shown for comparison only."),
              "", report.get("caveat", ""), "",
-             "| # | Entity | Kind | Need | Publications | Baseline p | Why |", "|---|---|---|---|---|---|---|"]
+             "n_findings and n_utility are the counts the ranker read, so a row can be checked against the "
+             "graph without rerunning anything. n_utility is the utility KIND, not the interventional layer: "
+             "a trial of a drug is not evidence that measuring the marker helps.", "",
+             "| # | id | name | n_findings | n_utility | n_pubs | need | baseline p | reason |",
+             "|---|---|---|---|---|---|---|---|---|"]
     for n, row in enumerate(ranked, 1):
-        lines.append(f"| {n} | {row['name']} | {row['kind']} | {row['score']} | {row['studies']} | "
+        lines.append(f"| {n} | `{row['id']}` | {row['name']} | {row['n_findings']} | {row['n_utility']} | "
+                     f"{row['studies']} | {row['score']} | "
                      f"{row['baseline_probability'] if row['baseline_probability'] is not None else '—'} | {'; '.join(row['reasons'])} |")
     Path(__file__).resolve().parents[1].joinpath("docs", "gap-queue.md").write_text("\n".join(lines) + "\n")
     folder = Path(__file__).resolve().parent / "exports" / date.today().isoformat()
