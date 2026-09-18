@@ -6,8 +6,12 @@ from importlib.util import find_spec
 @unittest.skipUnless(find_spec('sklearn'), 'the ranker is offline tooling; scikit-learn is not a web dependency')
 class GapRankerTests(unittest.TestCase):
     def row(self, **kw):
+        # Mirrors ml.gap_ranker.ROWS: utility_findings is the interventional/guidelines LAYER count
+        # the need rule words its reasons from, utility_kind_findings the utility KIND the queue
+        # reports. Keeping both is the point — they answer different questions.
         base = dict(id='biomarker:x', name='X', kind='Biomarker', aliases=3, entity_class=None,
-                    findings=0, utility_findings=0, studies=0, asked=0, dead_letters=0)
+                    findings=0, utility_findings=0, utility_kind_findings=0,
+                    studies=0, asked=0, dead_letters=0)
         return {**base, **kw}
 
     def test_features_cannot_see_the_label(self):

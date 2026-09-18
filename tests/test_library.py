@@ -38,3 +38,27 @@ class LibraryTests(unittest.TestCase):
              patch('evidence.intent_graph.store.graph_library', side_effect=Unreachable('asleep')):
             result = build_library()
         self.assertGreater(result['counts']['biomarker'], 90, 'the published snapshot keeps the shelf stocked')
+
+    def test_every_routable_entity_gets_an_address(self):
+        """A gene and the protein it encodes share a name; neither may lose its page to the other.
+
+        The first fix only covered the gene arriving second. When the protein arrived second it
+        overwrote the gene's row outright, which is why RET still had no page after the other six
+        genes were given suffixed addresses.
+        """
+        from evidence.library import graph_entries
+        from evidence.intent_graph import snapshot
+        feed = snapshot.library()
+        if not feed:
+            self.skipTest('no published snapshot in this checkout')
+        rows = graph_entries([])
+        routed = {r['id'].split('graph:', 1)[1] for r in rows}
+        routable = {'Biomarker', 'Gene', 'Variant', 'Protein', 'Test', 'Assay', 'PrecisionContext'}
+        missing = [g['id'] for g in feed if g.get('kind') in routable and g['id'] not in routed]
+        self.assertEqual(missing, [], 'these entities exist in the graph and no URL reaches them')
+
+        paths = {r['path'] for r in rows}
+        self.assertEqual(len(paths), len(rows), 'two entities share one address')
+        for gene in ('egfr', 'ret', 'braf', 'kras', 'alk', 'ros1', 'pik3ca'):
+            self.assertIn(f'/biomarkers/{gene}-gene', paths, f'{gene} gene lost its page to the protein')
+            self.assertIn(f'/biomarkers/{gene}', paths, f'{gene} the protein lost its plain address')

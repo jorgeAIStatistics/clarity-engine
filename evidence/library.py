@@ -47,14 +47,27 @@ def graph_entries(existing):
         if entity_type=='diagnostic' and any('screening' in str(name).lower() for name in [g['name'],*(g.get('aliases') or [])]):
             entity_type,prefix='screening','/screening/'
         # A gene and the protein it encodes share a name, and the protein wins the plain address.
-        # The gene used to be dropped outright, so seven genes carrying HGNC, Ensembl, UniProt and a
-        # locus had no page at all and the protein's "encoded by" link pointed back at itself.
-        # The loser takes a suffixed address instead, so both objects exist.
-        if slug in by_slug and by_slug[slug]<=rank:
-            suffix={'Gene':'-gene','Variant':'-variant','Protein':'-protein'}.get(kind)
-            if not suffix or slug+suffix in by_slug:continue
-            slug=slug+suffix
-        by_slug[slug]=rank
+        # The loser takes a suffixed one so both objects keep a page: dropping it left genes
+        # carrying HGNC, Ensembl, UniProt and a locus with nowhere to show them, and made the
+        # protein's own "encoded by" link point back at the page it was already on.
+        # Both arrival orders have to be handled. When the protein comes second it displaces the
+        # gene, and the gene has to be MOVED aside rather than overwritten — which is how RET kept
+        # losing its page after the other six were fixed.
+        suffixes={'Gene':'-gene','Variant':'-variant','Protein':'-protein'}
+        if slug in by_slug:
+            held_rank,held_kind=by_slug[slug]
+            if held_rank<=rank:
+                suffix=suffixes.get(kind)
+                if not suffix or slug+suffix in by_slug:continue
+                slug=slug+suffix
+            else:
+                suffix=suffixes.get(held_kind)
+                if suffix and slug+suffix not in by_slug and slug in rows:
+                    moved=dict(rows[slug]);moved_slug=slug+suffix
+                    moved['path']=moved['path'].rsplit('/',1)[0]+'/'+moved_slug
+                    rows[moved_slug]=moved;by_slug[moved_slug]=(held_rank,held_kind)
+                rows.pop(slug,None)
+        by_slug[slug]=(rank,kind)
         sentences=[s for layer in g.get('sentences') or [] for s in (json.loads(layer) if layer else []) if not s.startswith('No indexed')]
         summary=sentences[0] if sentences else f"{g['name']}: aliases and five evidence layers are indexed in the graph; no typed findings are extracted yet."
         rows[slug]={'id':'graph:'+g['id'],'name':g['name'],'entity_type':entity_type,'category':category,'aliases':g.get('aliases') or [],'path':prefix+slug,
