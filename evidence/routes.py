@@ -76,12 +76,28 @@ def visual_evidence(target_id):
 # waits before giving up, which is how the index came to show fourteen curated profiles as though
 # they were the library. The build gets a deadline, and past it the published catalog is served.
 LIBRARY_DEADLINE=float(os.getenv('CLARITY_LIBRARY_DEADLINE','3.0'))
+# One build at a time. Without this every reader who arrives during a cold thirteen-second build
+# starts another one and then waits the full deadline before being handed the snapshot anyway:
+# four concurrent builds and four three-second waits, measured on production. While a build is in
+# flight the published catalog goes out immediately instead.
+LIBRARY_BUILD=threading.Lock()
 
 @blueprint.get('/api/library')
 def library():
     from .intent_graph import snapshot
     started=time.perf_counter();bucket=int(time.time()//300)
-    data,outcome=read_within_deadline(lambda _:_library_snapshot(bucket),bucket,LIBRARY_DEADLINE)
+    # The lock is held by the BUILD, not by the request: the request stops waiting at the deadline
+    # while the build runs on to populate the cache, so releasing on the deadline would let the next
+    # reader start a second build of the same thing.
+    if LIBRARY_BUILD.locked():
+        published=snapshot.catalog()
+        if published is not None:
+            graph_log('library','',True,0,'building')
+            response=jsonify(published);response.headers['Cache-Control']='private, max-age=15';return response
+    def build(_):
+        with LIBRARY_BUILD:
+            return _library_snapshot(bucket)
+    data,outcome=read_within_deadline(build,bucket,LIBRARY_DEADLINE)
     upstream_ms=round((time.perf_counter()-started)*1000)
     # A build with no graph rows is a cold or unreachable Neo4j wearing a 200. It is never cached,
     # and it is never preferred over a published catalog that actually holds the graph.

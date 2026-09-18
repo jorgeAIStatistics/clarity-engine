@@ -169,3 +169,44 @@ class LibrarySnapshotTests(unittest.TestCase):
         self.assertEqual(response.status_code, 503)
         self.assertEqual(response.get_json()['code'], 'library_unavailable')
         self.assertEqual(response.headers['Cache-Control'], 'no-store')
+
+
+class LibraryStampedeTests(unittest.TestCase):
+    """One cold build, not one per reader.
+
+    Measured on production: four readers arriving during a cold thirteen-second build each started
+    another build and each waited the full deadline before being handed the snapshot anyway.
+    """
+
+    def setUp(self):
+        if not snapshot.catalog():
+            self.skipTest('no published catalog in this checkout')
+
+    def test_readers_during_a_build_are_served_at_once_and_start_nothing(self):
+        import threading
+        import time as clock
+        from evidence import routes
+
+        builds = []
+
+        def slow(bucket):
+            builds.append(bucket)
+            clock.sleep(2)
+            return {'entries': [], 'graph_rows': 0}
+
+        # A fresh lock, because another test's deliberately slow build may still be holding the
+        # real one — which is itself the behaviour under test, just not this test's subject.
+        with patch.object(routes, '_library_snapshot', slow), patch.object(routes, 'LIBRARY_DEADLINE', 0.3), \
+                patch.object(routes, 'LIBRARY_BUILD', threading.Lock()):
+            first = threading.Thread(target=lambda: client().get('/api/library'))
+            first.start()
+            clock.sleep(0.6)  # the build is now in flight and the first reader has its snapshot
+            started = clock.perf_counter()
+            second = client().get('/api/library')
+            waited = clock.perf_counter() - started
+            first.join(timeout=5)
+
+        self.assertEqual(second.status_code, 200)
+        self.assertEqual(second.get_json()['served_from'], 'snapshot')
+        self.assertLess(waited, 0.25, 'a reader waited on a build already running')
+        self.assertEqual(len(builds), 1, f'{len(builds)} builds started for one cold cache')
