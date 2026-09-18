@@ -175,6 +175,41 @@ def _literal(fact, text, tokens, bounds):
     return {"raw": text[start:end], "start": start, "end": end, "passage": (left, right), "confidence": fact.confidence}
 
 
+# Whose result is this? A review's discussion quotes other papers' numbers, and those are not
+# findings about anything the review measured. An EGFR page briefly carried three risk ratios this
+# way: they belonged to Gogishvili, Baramidze and a third author, quoted inside someone else's
+# review. The sentence holding the number is what gets read, because that is the scope in which an
+# attribution binds.
+CITED = re.compile(r"""
+      \b[A-Z][A-Za-z'\u2019\-]+\s+et\s+al\b                       # Smith et al — a capital is the name
+    | \b[A-Z][A-Za-z'\u2019\-]+\s*[\[(]\s*(?:19|20)\d{2}\s*[\])]  # Smith (2024) / Smith [2024]
+    | (?i:\b(?:previously|prior|priorly|earlier|formerly)\s+(?:reported|published|shown|described|found|observed))
+    | (?i:\b(?:reported|published|described|observed|found)\s+by\b)
+    | (?i:\b(?:previous|prior|earlier|separate|another|published|other)\s+
+          (?:stud(?:y|ies)|trials?|analys(?:i|e)s|reports?|cohorts?|series|meta-?analys(?:i|e)s)\b)
+    | (?i:\baccording\s+to\s+(?:a|an|the)?\s*(?:previous|prior|earlier)?\s*(?:study|trial|report|analysis))
+    | \[\s*\d{1,3}\s*\]                                          # a bracketed reference marker
+""", re.X)
+# This paper speaking about its own sample.
+PRIMARY = re.compile(r"\b(?:we|our|us)\b|\bthis\s+(?:study|analysis|trial|cohort|review|series)\b"
+                     r"|\b(?:the\s+)?present\s+(?:study|analysis|trial|cohort)\b|\bherein\b", re.I)
+
+
+def provenance_of(passage):
+    """primary, cited or unclear for one passage. Never primary by default.
+
+    A sentence that both cites and speaks for itself ("we found X, as Smith et al. reported") is
+    unclear rather than cited: dropping it would lose a real result, and calling it primary would
+    claim more than the sentence supports.
+    """
+    cited, primary = bool(CITED.search(passage or "")), bool(PRIMARY.search(passage or ""))
+    if cited and not primary:
+        return "cited"
+    if primary and not cited:
+        return "primary"
+    return "unclear"
+
+
 def _number(span, field):
     raw = span["raw"]
     # A confidence level is a percentage by definition and abstracts write it "95% CI". The span the
@@ -277,6 +312,7 @@ def decode_observations(raw, source):
         raw_of = lambda name: spans[name]["raw"] if spans[name] else None
         finding = {
             "kind": kind,
+            "provenance": provenance_of(passage),
             "observation_type": kind,
             "measure": measure,
             "marker": raw_of("marker"),

@@ -51,7 +51,7 @@ CELL_FINDINGS = """MATCH (q:Question {id:$qid})-[:MENTIONS]->(e:Entity)-[:HAS_LA
 OPTIONAL MATCH (f)-[:EVIDENCED_BY]->(p:SourcePassage)
 OPTIONAL MATCH (s:Study)-[:REPORTS]->(f)
 RETURN e.id AS entity_id, l.layer AS layer, f{.id, .kind, .measure, .estimate, .lower, .upper, .level, .unit, .cutoff, .cutoff_unit,
-       .assay, .population, .setting, .target, .statement, .p_value, .n, .synthesis, .review_state} AS finding,
+       .assay, .population, .setting, .target, .statement, .p_value, .n, .synthesis, .provenance, .review_state} AS finding,
        p.quote AS quote, s.id AS study_id, s.pmid AS pmid, s.title AS title
 ORDER BY entity_id, layer
 LIMIT 400"""

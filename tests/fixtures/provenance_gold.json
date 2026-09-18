@@ -1,0 +1,25 @@
+{
+  "note": "Passages taken verbatim from abstracts already extracted, with the provenance each must be given. The cited rows are the failure that prompted this: a review's discussion quoted three other papers' risk ratios and they attached to the EGFR page as if EGFR had been measured.",
+  "cases": [
+    {"pmid": "42444950", "expect": "cited", "why": "a review quoting three other papers' risk ratios in its discussion",
+     "passage": "The RR reported by Gogishvili et al. [2022] at 1.9 [95% confidence interval (CI): 1.39-2.62], Baramidze et al. [2024] at 2.11 (95% CI: 1.45-3.06), and"},
+    {"pmid": "42726133", "expect": "unclear", "why": "this paper's own model, stated without a first-person marker",
+     "passage": "A combined model incorporating post-NAT carcinoembryonic antigen, ECV and SMI achieved an AUC of 0.836 (95% CI: 0.754-0.915) and 0.784 (95% CI: 0.583-0.947) in the training and validation cohorts"},
+    {"pmid": "41562542", "expect": "unclear", "why": "this paper's own cohort, stated without a first-person marker",
+     "passage": "HER2 expression inversely correlated with pCR rates across the entire cohort (odds ratio, 0.75; 95% confidence interval [CI], 0.58-0.98; p for trend ="},
+    {"pmid": "42723745", "expect": "unclear", "why": "this paper's own ROC analysis",
+     "passage": "The sensitivity for diagnosing positive EGFR in peripheral blood was 84.8%, and the specificity was 73.1%. "},
+    {"pmid": "41399151", "expect": "unclear", "why": "this paper's own discrimination estimate",
+     "passage": "Baseline IL-18 >45,000 pg/mL predicted active disease at 12 months (area under the curve [AUC] 0.78)"},
+    {"expect": "primary", "why": "first person binds the number to this paper's sample",
+     "passage": "In our cohort of 412 adults the hazard ratio was 1.42 (95% CI 1.10 to 1.83)."},
+    {"expect": "primary", "why": "names itself as the study reporting the number",
+     "passage": "This study enrolled 158 patients and the area under the curve was 0.865."},
+    {"expect": "cited", "why": "attributed to earlier work without naming an author",
+     "passage": "A previous study reported a sensitivity of 81% for the same assay."},
+    {"expect": "cited", "why": "a bracketed reference marker attributes the number elsewhere",
+     "passage": "Sensitivity was 92% in an external validation set [14]."},
+    {"expect": "unclear", "why": "cites while also speaking for itself: dropping it loses a real result, calling it primary claims too much",
+     "passage": "We found a hazard ratio of 1.2, consistent with Smith et al."}
+  ]
+}

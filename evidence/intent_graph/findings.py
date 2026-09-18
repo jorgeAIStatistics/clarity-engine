@@ -243,17 +243,22 @@ def statements(record, nodes):
             'MATCH (s:Study {id:$study}) MERGE (f:Finding {id:$id}) SET f.kind=$kind, f.observation_type=$kind, f.measure=$measure, f.estimate=$estimate, f.estimate_raw=$estimate_raw, '
             'f.lower=$lower, f.upper=$upper, f.level=$level, f.unit=$unit, f.cutoff=$cutoff, f.cutoff_unit=$cutoff_unit, f.assay=$assay, f.population=$population, f.setting=$setting, '
             'f.target=$target, f.comparator=$comparator, f.statement=$statement, f.marker=$marker, f.n=$n, f.p_value=$p_value, f.p_operator=$p_operator, f.source_id=$source, '
-            'f.source_sha256=$hash, f.extraction_version=$version, f.extracted_at=$at, f.layer=$layer, f.synthesis=$synthesis, f.review_state=' + KEEP_REVIEWED.format(v='f') + ' MERGE (s)-[:REPORTS]->(f) '
+            'f.source_sha256=$hash, f.extraction_version=$version, f.extracted_at=$at, f.layer=$layer, f.synthesis=$synthesis, f.provenance=$provenance, f.review_state=' + KEEP_REVIEWED.format(v='f') + ' MERGE (s)-[:REPORTS]->(f) '
             'MERGE (p:SourcePassage {id:$passage_id}) SET p.quote=$quote, p.locator=$locator MERGE (f)-[:EVIDENCED_BY]->(p)',
             dict(study=record['study_id'], id=f['id'], kind=finding_kind(f), measure=f['measure'], estimate=f['value'], estimate_raw=f['value_raw'], lower=f['lower'], upper=f['upper'],
                  level=f['level'], unit=f['unit'], cutoff=f['threshold'], cutoff_unit=f['threshold_unit'], assay=f.get('assay'), population=f['population'], setting=f.get('setting'),
                  target=f['target'], comparator=f['comparator'], statement=f['statement'], marker=f['marker'], n=f['n'], p_value=f['p_value'], p_operator=f['p_operator'],
                  source=source['id'], hash=source['sha256'], version=record['version'], at=record['extracted_at'], review='automated', passage_id=passage_id, quote=f['passage']['text'],
-                 layer=layer, synthesis=design in SYNTHESIS_DESIGNS,
+                 layer=layer, synthesis=design in SYNTHESIS_DESIGNS, provenance=f.get('provenance') or 'unclear',
                  locator=json.dumps({'source_id': source['id'], 'start': f['passage']['start'], 'end': f['passage']['end'], 'unit': 'unicode_code_point'})),
         ))
         if f.get('target'):
             out.append(('MATCH (f:Finding {id:$id}) MERGE (o:Outcome {id:$outcome}) SET o.name=coalesce(o.name,$name) MERGE (f)-[:FOR_OUTCOME]->(o)', dict(id=f['id'], outcome='outcome:' + norm(f['target']), name=f['target'])))
+        # A number this paper quoted from another paper is stored with its passage, and linked to
+        # nothing. It is not a finding about any marker this study measured, and an entity edge is
+        # exactly what would make it read as one on that marker's page.
+        if (f.get('provenance') or 'unclear') == 'cited':
+            continue
         for n in linked_entities(f, nodes):
             linked[n['id']].append(f)
             out.append(('MATCH (f:Finding {id:$finding}), (e:Entity {id:$entity}), (s:Study {id:$study}) MERGE (f)-[:ABOUT]->(e) MERGE (s)-[r:MENTIONS_ENTITY]->(e) SET r.review_state="automated", r.method="exact_alias_in_finding"',
