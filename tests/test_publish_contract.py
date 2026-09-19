@@ -109,8 +109,10 @@ class LayerContractTests(unittest.TestCase):
         for query in (cypher.CATALOG_SORT, cypher.GAP_FEATURES):
             self.assertIn('<-[:ABOUT]-(f:Finding)', query)
             self.assertIn('coalesce(e.ephemeral, false) = false', query)
-        self.assertIn('n_utility_kind', cypher.GAP_FEATURES)
-        self.assertIn('n_utility_layer', cypher.GAP_FEATURES)
+        # Utility is the KIND. The interventional/guidelines layer is counted too, under a name that
+        # cannot be mistaken for it: a drug trial is evidence about the drug, not about measuring.
+        self.assertIn("= 'utility' THEN 1 ELSE 0 END) AS n_utility", cypher.GAP_FEATURES)
+        self.assertIn('AS n_trial_layer', cypher.GAP_FEATURES)
 
 
 @unittest.skipUnless(os.environ.get('CLARITY_GRAPH_TESTS') == '1', 'publish roundtrip needs CLARITY_GRAPH_TESTS=1')

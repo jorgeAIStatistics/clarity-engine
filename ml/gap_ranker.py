@@ -23,7 +23,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import LeaveOneOut
 from sklearn.metrics import roc_auc_score
 
-from evidence.intent_graph import store, jobs
+from evidence.intent_graph import cypher, store
 
 VERSION = "gap-baseline-v1"
 KINDS = ["Biomarker", "Test", "PrecisionContext", "Variant", "Gene"]
@@ -36,31 +36,48 @@ FEATURES = ["studies", "aliases", "asked", "has_identity", *[f"kind_{k.lower()}"
 # rule's own wording ("no interventional or guideline findings") describes exactly that. The utility
 # RUNG is a kind: a trial of a drug is not evidence that measuring the marker helps, so a pair with
 # three interventional findings and no utility finding must still read as an empty utility rung.
-ROWS = """
-MATCH (e:Entity) WHERE coalesce(e.ephemeral,false)=false
-OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding)
-WITH e, count(DISTINCT f) AS findings,
-     sum(CASE WHEN f.layer IN ['interventional','guidelines'] THEN 1 ELSE 0 END) AS utility_findings,
-     sum(CASE WHEN coalesce(f.kind, f.observation_type)='utility' THEN 1 ELSE 0 END) AS utility_kind_findings
-OPTIONAL MATCH (e)<-[:MENTIONS_ENTITY]-(s:Study)
-OPTIONAL MATCH (q:Question)-[:MENTIONS]->(e)
-OPTIONAL MATCH (e)<-[:ABOUT]-(d:DeadLetter)
-RETURN e.id AS id, e.name AS name, coalesce(e.kind, e.type) AS kind,
-       size(coalesce(e.aliases,[])) AS aliases, e.entity_class AS entity_class,
-       findings, utility_findings, utility_kind_findings, count(DISTINCT s) AS studies, count(DISTINCT q) AS asked,
-       count(DISTINCT d) AS dead_letters
-"""
+# One definition, shared with the exporter, so a queue row can be checked against a dated export.
+ROWS = cypher.GAP_FEATURES
+
+
+def need(row):
+    """Publications or demand high, linked findings low, and the utility rung empty.
+
+    n_cited is not depth. A number this entity was only quoted in tells us nothing has been
+    measured about it here, so it must not make an entity look already covered.
+    """
+    if row["n_utility"] > 0:
+        return 0.0          # the rung this queue exists to fill is filled; spend the call elsewhere
+    reach = row["n_pubs"] + 3 * row["matcher_demand"]
+    return round(reach / (1.0 + row["n_findings_linked"]), 3)
+
+
+def reasons(row):
+    out = []
+    if row["n_pubs"] and not row["n_findings_linked"]:
+        out.append(f"{row['n_pubs']} publications indexed, no linked finding")
+    elif row["n_pubs"]:
+        out.append(f"{row['n_pubs']} publications against {row['n_findings_linked']} linked findings")
+    if row["matcher_demand"]:
+        out.append(f"asked in {row['matcher_demand']} recent question(s)")
+    if row["n_cited"]:
+        out.append(f"{row['n_cited']} quoted from other papers, which is not depth")
+    if not row["n_utility"]:
+        out.append("no utility finding")
+    if not row["has_ids"]:
+        out.append("no external identifier")
+    return out
 
 
 def features(row):
     kinds = {f"kind_{k.lower()}": 1.0 if row["kind"] == k else 0.0 for k in KINDS}
-    return [float(row["studies"]), float(row["aliases"]), float(row["asked"]), 1.0 if row["entity_class"] else 0.0,
+    return [float(row["n_pubs"]), float(row["aliases"]), float(row["matcher_demand"]), 1.0 if row["entity_class"] else 0.0,
             *[kinds[f"kind_{k.lower()}"] for k in KINDS]]
 
 
 def label(row):
     """1 when an attempt produced a typed finding, 0 when every attempt dead-lettered, else unknown."""
-    if row["findings"] > 0:
+    if row["n_findings_linked"] > 0:
         return 1
     if row["dead_letters"] > 0:
         return 0
@@ -121,14 +138,16 @@ def queue(rows, model, report, limit=20):
         scores = model.predict_proba(np.array([features(r) for r in fresh], dtype=float))[:, 1]
         probability = {r["id"]: round(float(s), 4) for r, s in zip(fresh, scores)}
     ranked = []
-    for gap in jobs.rank_gaps(fresh, limit=10_000):
-        if gap["kind"] != "entity" or gap["id"] not in by_id:
+    for row in sorted(fresh, key=lambda r: (-need(r), r["name"].casefold())):
+        score = need(row)
+        if score <= 0:
             continue
-        row = by_id[gap["id"]]
-        ranked.append({"id": gap["id"], "name": gap["name"], "kind": row["kind"], "score": gap["score"],
-                       "n_findings": row["findings"], "n_utility": row["utility_kind_findings"],
-                       "model": "rule-need-v1", "studies": row["studies"], "asked": row["asked"],
-                       "reasons": gap["reasons"], "baseline_probability": probability.get(gap["id"]),
+        ranked.append({"id": row["id"], "name": row["name"], "kind": row["kind"], "score": score,
+                       "model": "rule-need-v2", "n_findings": row["n_findings_linked"],
+                       "n_primary": row["n_primary"], "n_cited": row["n_cited"],
+                       "n_utility": row["n_utility"], "studies": row["n_pubs"],
+                       "asked": row["matcher_demand"], "has_ids": row["has_ids"],
+                       "reasons": reasons(row), "baseline_probability": probability.get(row["id"]),
                        "baseline_breaks_ties": bool(report.get("useful"))})
     if report.get("useful"):
         ranked.sort(key=lambda r: (-r["score"], -(r["baseline_probability"] or 0.0), r["name"].casefold()))
@@ -175,11 +194,11 @@ def main(argv=None):
              "n_findings and n_utility are the counts the ranker read, so a row can be checked against the "
              "graph without rerunning anything. n_utility is the utility KIND, not the interventional layer: "
              "a trial of a drug is not evidence that measuring the marker helps.", "",
-             "| # | id | name | n_findings | n_utility | n_pubs | need | baseline p | reason |",
-             "|---|---|---|---|---|---|---|---|---|"]
+             "| # | id | name | n_linked | n_primary | n_cited | n_utility | n_pubs | demand | need | baseline p | reason |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for n, row in enumerate(ranked, 1):
-        lines.append(f"| {n} | `{row['id']}` | {row['name']} | {row['n_findings']} | {row['n_utility']} | "
-                     f"{row['studies']} | {row['score']} | "
+        lines.append(f"| {n} | `{row['id']}` | {row['name']} | {row['n_findings']} | {row['n_primary']} | "
+                     f"{row['n_cited']} | {row['n_utility']} | {row['studies']} | {row['asked']} | {row['score']} | "
                      f"{row['baseline_probability'] if row['baseline_probability'] is not None else '—'} | {'; '.join(row['reasons'])} |")
     Path(__file__).resolve().parents[1].joinpath("docs", "gap-queue.md").write_text("\n".join(lines) + "\n")
     folder = Path(__file__).resolve().parent / "exports" / date.today().isoformat()

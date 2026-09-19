@@ -1,0 +1,38 @@
+{
+ "version": "clarity-graph-export-v1",
+ "exported_at": "2026-09-19T19:25:55.783106+00:00",
+ "counts": {
+  "entities": 174,
+  "aliases": 390,
+  "findings": 129,
+  "quoted": 3,
+  "dead_letters": 33,
+  "mentions": 327,
+  "relations": 47,
+  "questions": 13
+ },
+ "findings_by_kind": {
+  "association": 21,
+  "classification": 39,
+  "discrimination": 36,
+  "effect": 8,
+  "guideline": 3,
+  "prognosis": 22
+ },
+ "findings_by_provenance": {
+  "cited": 3,
+  "primary": 3,
+  "unclear": 123
+ },
+ "gnn_gate": {
+  "entities_required": 200,
+  "linked_findings_required": 200,
+  "entities": 174,
+  "findings_total": 129,
+  "linked_findings": 74,
+  "baseline_exists": true,
+  "split_plan": "by paper and by entity, so a GNN cannot be scored on findings from a study it trained on",
+  "passes": false
+ },
+ "note": "Aggregate published findings only. No patient-level data. review_state and provenance travel with every row."
+}

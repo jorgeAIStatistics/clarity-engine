@@ -75,8 +75,20 @@ class ProvenanceTests(unittest.TestCase):
         import inspect
         # The rollup, the catalog feed and the gap ranker all count ABOUT or HAS_LAYER, never QUOTES.
         self.assertNotIn('QUOTES', cypher.CATALOG_SORT)
-        self.assertNotIn('QUOTES', cypher.GAP_FEATURES)
         self.assertNotIn('QUOTES', cypher.CELL_FINDINGS)
+        # The gap features DO read QUOTES, into n_cited and nowhere else, so a queue can say "this
+        # was only quoted" out loud. It must never reach the depth count the ranking divides by.
+        self.assertIn('count(DISTINCT c) AS n_cited', cypher.GAP_FEATURES)
+        self.assertIn('count(DISTINCT f) AS n_findings_linked', cypher.GAP_FEATURES)
+        # And the need rule treats a quoted number as no depth at all: two entities identical but
+        # for n_cited must score the same, or a quotation would make an entity look covered.
+        from ml import gap_ranker
+        base = dict(id='biomarker:x', name='X', kind='Biomarker', aliases=2, entity_class=None,
+                    n_findings_linked=0, n_primary=0, n_cited=0, n_unclear=0, n_utility=0,
+                    n_discrimination=0, n_classification=0, n_trial_layer=0,
+                    n_pubs=6, matcher_demand=0, dead_letters=0, has_ids=True)
+        self.assertEqual(gap_ranker.need(base), gap_ranker.need({**base, 'n_cited': 9}))
+        self.assertGreater(gap_ranker.need(base), gap_ranker.need({**base, 'n_findings_linked': 4}))
         self.assertNotIn('QUOTES', inspect.getsource(store.graph_library))
         # And the profile keeps them out of findings entirely, in their own list.
         profile = inspect.getsource(store.graph_entity)

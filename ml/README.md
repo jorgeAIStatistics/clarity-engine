@@ -8,21 +8,29 @@ No graph neural network ships until two gates pass:
 2. **Baseline first.** A logistic regression on layer counts and alias overlap is trained and
    scored on the gold set. A GNN ships only if it beats that baseline there.
 
-## Graph size on 2026-09-18 — the gate does not pass
+## Graph size on 2026-09-19 — the gate does not pass
 
 | | count | required |
 |---|---|---|
 | Entities (non-temporary) | 174 | 200 |
-| Typed findings | 129 | 200 |
+| **Linked** findings | **74** | 200 |
+| Findings stored in total | 129 | — |
+| Baseline exists | yes | yes |
 
-Aliases 390, MENTIONS 327, typed relations 47, questions 13. Twenty-three of those findings were
-recovered from provider output already paid for, by fixing a decoder that refused a confidence
-level written "95%" — see the observations decoder, not this package.
+The gate counts LINKED findings, not stored ones. 129 is every row the decoder kept; 74 of those
+carry an ABOUT edge to an entity. The difference is findings whose marker span named nothing in the
+registry, plus three that a paper quoted from other papers and which are deliberately linked to
+nothing. Counting the larger number would let the gate pass on evidence the graph does not hold.
 
-**No GNN is trained.** Both gates fail, and a heterogeneous link-prediction model fitted on 129
-findings would be a demonstration, not a result. `python -m ml.export` refreshes the numbers and
-writes the gate as `passes: false` into the dated manifest, so the claim is checkable rather than
-asserted here.
+Findings by kind: association 21, classification 39, discrimination 36, effect 8, guideline 3,
+prognosis 22. By provenance: primary 3, cited 3, unclear 123.
+Aliases 390, MENTIONS 327, typed relations 47, dead-letters 33, questions 13.
+
+**No GNN is trained**, and `ml/gnn` is a stub that raises if called. When the gate passes, the
+comparison is fixed in advance: a held-out RELATED_TO edge or "utility-evidence likely vs
+association-only", split by paper AND by entity so a model cannot be scored on findings from a
+study it trained on, against `ml/gap_ranker.py` on the same split. It ships only if it beats that
+baseline. `python -m ml.export` rewrites these numbers and the gate into the dated manifest.
 
 ## Entity linker (shipped as offline tooling, `ml/linker.py`)
 

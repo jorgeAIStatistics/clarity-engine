@@ -67,17 +67,41 @@ OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding)
 RETURN e.id AS id, e.name AS name, coalesce(e.kind, e.type) AS kind, count(DISTINCT f) AS n
 ORDER BY n DESC, e.name"""
 
-# No finding in this library has kind 'utility': the kind is reserved for a study that measured what
-# testing changed, and none has been extracted. Counting it alone would report zero everywhere and
-# say nothing, so the utility rung is also counted the way the product defines it — a finding on the
-# interventional or guidelines layer — and the two counts are returned separately, never merged.
+# One definition of an entity's graph features, shared by the exporter and the gap ranker so a
+# queue row can be checked against a dated export without rerunning anything.
+#
+# Two counts are deliberately kept apart. n_utility is the utility KIND: a study that measured what
+# testing changed. It is not "a trial exists" — a drug trial is interventional evidence about the
+# drug, and counting the layer would let a safety odds ratio fill the utility rung. n_cited counts
+# findings this entity is only QUOTED in; they carry no ABOUT edge and are not depth, so nothing
+# that ranks need may read them as evidence already held.
 GAP_FEATURES = """MATCH (e:Entity)
 WHERE coalesce(e.ephemeral, false) = false
 OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding)
+WITH e, count(DISTINCT f) AS n_findings_linked,
+     sum(CASE WHEN coalesce(f.provenance,'unclear') = 'primary' THEN 1 ELSE 0 END) AS n_primary,
+     sum(CASE WHEN coalesce(f.provenance,'unclear') = 'unclear' THEN 1 ELSE 0 END) AS n_unclear,
+     sum(CASE WHEN coalesce(f.kind, f.observation_type) = 'utility' THEN 1 ELSE 0 END) AS n_utility,
+     sum(CASE WHEN coalesce(f.kind, f.observation_type) = 'discrimination' THEN 1 ELSE 0 END) AS n_discrimination,
+     sum(CASE WHEN coalesce(f.kind, f.observation_type) = 'classification' THEN 1 ELSE 0 END) AS n_classification,
+     sum(CASE WHEN f.layer IN ['interventional','guidelines'] THEN 1 ELSE 0 END) AS n_trial_layer
+OPTIONAL MATCH (e)<-[:QUOTES]-(c:Finding)
+WITH e, n_findings_linked, n_primary, n_unclear, n_utility, n_discrimination, n_classification,
+     n_trial_layer, count(DISTINCT c) AS n_cited
+OPTIONAL MATCH (e)<-[:MENTIONS_ENTITY]-(s:Study)
+WITH e, n_findings_linked, n_primary, n_unclear, n_utility, n_discrimination, n_classification,
+     n_trial_layer, n_cited, count(DISTINCT s) AS n_pubs
+OPTIONAL MATCH (q:Question)-[:MENTIONS]->(e)
+WITH e, n_findings_linked, n_primary, n_unclear, n_utility, n_discrimination, n_classification,
+     n_trial_layer, n_cited, n_pubs, count(DISTINCT q) AS matcher_demand
+OPTIONAL MATCH (e)<-[:ABOUT]-(d:DeadLetter)
 RETURN e.id AS id, e.name AS name, coalesce(e.kind, e.type) AS kind,
-       count(DISTINCT f) AS n_findings,
-       sum(CASE WHEN f.kind = 'utility' THEN 1 ELSE 0 END) AS n_utility_kind,
-       sum(CASE WHEN f.layer IN ['interventional', 'guidelines'] THEN 1 ELSE 0 END) AS n_utility_layer"""
+       size(coalesce(e.aliases, [])) AS aliases, e.entity_class AS entity_class,
+       n_findings_linked, n_primary, n_cited, n_unclear, n_utility,
+       n_discrimination, n_classification, n_trial_layer, n_pubs, matcher_demand,
+       count(DISTINCT d) AS dead_letters,
+       (e.hgnc IS NOT NULL OR e.uniprot IS NOT NULL OR e.ensembl IS NOT NULL) AS has_ids
+ORDER BY id"""
 
 CLASSIFICATION_FINDINGS = """MATCH (e:Entity {name:$name})-[:HAS_LAYER]->(l)-[:SUPPORTED_BY]->(f:Finding {kind:'classification'})
 RETURN f.measure AS measure, f.estimate AS estimate, f.cutoff AS cutoff, f.assay AS assay, f.population AS population"""
