@@ -13,18 +13,18 @@ No graph neural network ships until two gates pass:
 | | count | required |
 |---|---|---|
 | Entities (non-temporary) | 174 | 200 |
-| **Linked** findings | **74** | 200 |
-| Findings stored in total | 129 | — |
+| **Linked** findings | **95** | 200 |
+| Findings stored in total | 154 | — |
 | Baseline exists | yes | yes |
 
-The gate counts LINKED findings, not stored ones. 129 is every row the decoder kept; 74 of those
+The gate counts LINKED findings, not stored ones. 154 is every row the decoder kept; 95 of those
 carry an ABOUT edge to an entity. The difference is findings whose marker span named nothing in the
 registry, plus three that a paper quoted from other papers and which are deliberately linked to
 nothing. Counting the larger number would let the gate pass on evidence the graph does not hold.
 
-Findings by kind: association 21, classification 39, discrimination 36, effect 8, guideline 3,
-prognosis 22. By provenance: primary 3, cited 3, unclear 123.
-Aliases 390, MENTIONS 327, typed relations 47, dead-letters 33, questions 13.
+Findings by kind: association 22, classification 40, discrimination 40, effect 19, guideline 3,
+prognosis 30. By provenance: primary 5, cited 3, unclear 146.
+Aliases 390, MENTIONS 336, typed relations 47, dead-letters 35, questions 13.
 
 **No GNN is trained**, and `ml/gnn` is a stub that raises if called. When the gate passes, the
 comparison is fixed in advance: a held-out RELATED_TO edge or "utility-evidence likely vs

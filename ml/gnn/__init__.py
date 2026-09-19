@@ -4,7 +4,7 @@ The gate is in ml/export.py and its result is written into every dated manifest,
 checkable rather than asserted. On 2026-09-19 it reads:
 
     entities             174 / 200
-    linked findings       74 / 200   <- not 129: that total counts findings with no entity edge
+    linked findings       95 / 200   <- not 154: that total counts findings with no entity edge
     baseline exists      yes (ml/gap_ranker.py + docs/gap-queue.md)
     passes               false
 
@@ -24,6 +24,6 @@ GATE = {"entities_required": 200, "linked_findings_required": 200}
 
 def train(*_args, **_kwargs):
     raise RuntimeError(
-        "The GNN gate has not passed: 174 entities and 74 linked findings against 200 and 200. "
+        "The GNN gate has not passed: 174 entities and 95 linked findings against 200 and 200. "
         "Run `python -m ml.export` and read gnn_gate in the dated manifest."
     )

@@ -1,196 +1,31 @@
 {
  "version": "gap-baseline-v1",
- "at": "2026-09-19T19:26:37.749398+00:00",
+ "at": "2026-09-19T19:36:55.859352+00:00",
  "entities": 174,
  "model": {
-  "attempts": 51,
-  "successes": 29,
-  "failures": 22,
+  "attempts": 59,
+  "successes": 36,
+  "failures": 23,
   "status": "fitted",
-  "loo_accuracy": 0.803921568627451,
-  "majority_class_accuracy": 0.5686274509803921,
-  "loo_auc": 0.7492163009404389,
+  "loo_accuracy": 0.8135593220338984,
+  "majority_class_accuracy": 0.6101694915254238,
+  "loo_auc": 0.8067632850241546,
   "comparison": "The rule ranks need, not success probability, so it is not scored against this label. The honest comparison for this model is the majority class.",
   "useful": true,
-  "caveat": "Leave-one-out over 51 attempts. The interval on an accuracy from this many folds is wide; treat the comparison as a sanity check, not a measurement.",
+  "caveat": "Leave-one-out over 59 attempts. The interval on an accuracy from this many folds is wide; treat the comparison as a sanity check, not a measurement.",
   "coefficients": {
-   "studies": 0.107,
-   "aliases": 0.182,
-   "asked": -0.528,
-   "has_identity": 0.715,
-   "kind_biomarker": 1.067,
-   "kind_test": -1.065,
-   "kind_precisioncontext": -1.281,
-   "kind_variant": 0.096,
-   "kind_gene": 0.55
+   "studies": 0.188,
+   "aliases": 0.327,
+   "asked": -0.718,
+   "has_identity": 1.073,
+   "kind_biomarker": 1.293,
+   "kind_test": -0.942,
+   "kind_precisioncontext": -1.219,
+   "kind_variant": -0.256,
+   "kind_gene": 0.566
   }
  },
  "queue": [
-  {
-   "id": "variant:alk-rearrangement",
-   "name": "ALK rearrangement",
-   "kind": "Variant",
-   "score": 5.0,
-   "model": "rule-need-v2",
-   "n_findings": 0,
-   "n_primary": 0,
-   "n_cited": 0,
-   "n_utility": 0,
-   "studies": 5,
-   "asked": 0,
-   "has_ids": true,
-   "reasons": [
-    "5 publications indexed, no linked finding",
-    "no utility finding"
-   ],
-   "baseline_probability": 0.6612,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:lp-a",
-   "name": "Lp(a)",
-   "kind": "Biomarker",
-   "score": 4.0,
-   "model": "rule-need-v2",
-   "n_findings": 0,
-   "n_primary": 0,
-   "n_cited": 0,
-   "n_utility": 0,
-   "studies": 4,
-   "asked": 0,
-   "has_ids": false,
-   "reasons": [
-    "4 publications indexed, no linked finding",
-    "no utility finding",
-    "no external identifier"
-   ],
-   "baseline_probability": 0.6937,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "variant:egfr-l858r",
-   "name": "EGFR L858R",
-   "kind": "Variant",
-   "score": 4.0,
-   "model": "rule-need-v2",
-   "n_findings": 0,
-   "n_primary": 0,
-   "n_cited": 0,
-   "n_utility": 0,
-   "studies": 4,
-   "asked": 0,
-   "has_ids": true,
-   "reasons": [
-    "4 publications indexed, no linked finding",
-    "no utility finding"
-   ],
-   "baseline_probability": 0.6779,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:kras",
-   "name": "KRAS",
-   "kind": "Biomarker",
-   "score": 4.0,
-   "model": "rule-need-v2",
-   "n_findings": 0,
-   "n_primary": 0,
-   "n_cited": 0,
-   "n_utility": 0,
-   "studies": 4,
-   "asked": 0,
-   "has_ids": false,
-   "reasons": [
-    "4 publications indexed, no linked finding",
-    "no utility finding",
-    "no external identifier"
-   ],
-   "baseline_probability": 0.6538,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:ldh",
-   "name": "LDH",
-   "kind": "Biomarker",
-   "score": 4.0,
-   "model": "rule-need-v2",
-   "n_findings": 0,
-   "n_primary": 0,
-   "n_cited": 0,
-   "n_utility": 0,
-   "studies": 4,
-   "asked": 0,
-   "has_ids": false,
-   "reasons": [
-    "4 publications indexed, no linked finding",
-    "no utility finding",
-    "no external identifier"
-   ],
-   "baseline_probability": 0.6538,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "variant:egfr-exon19-deletion",
-   "name": "EGFR exon 19 deletion",
-   "kind": "Variant",
-   "score": 3.0,
-   "model": "rule-need-v2",
-   "n_findings": 0,
-   "n_primary": 0,
-   "n_cited": 0,
-   "n_utility": 0,
-   "studies": 3,
-   "asked": 0,
-   "has_ids": true,
-   "reasons": [
-    "3 publications indexed, no linked finding",
-    "no utility finding"
-   ],
-   "baseline_probability": 0.6941,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:er",
-   "name": "ER",
-   "kind": "Biomarker",
-   "score": 3.0,
-   "model": "rule-need-v2",
-   "n_findings": 0,
-   "n_primary": 0,
-   "n_cited": 0,
-   "n_utility": 0,
-   "studies": 3,
-   "asked": 0,
-   "has_ids": false,
-   "reasons": [
-    "3 publications indexed, no linked finding",
-    "no utility finding",
-    "no external identifier"
-   ],
-   "baseline_probability": 0.6706,
-   "baseline_breaks_ties": true
-  },
-  {
-   "id": "biomarker:hba1c",
-   "name": "HbA1c",
-   "kind": "Biomarker",
-   "score": 3.0,
-   "model": "rule-need-v2",
-   "n_findings": 0,
-   "n_primary": 0,
-   "n_cited": 0,
-   "n_utility": 0,
-   "studies": 3,
-   "asked": 0,
-   "has_ids": false,
-   "reasons": [
-    "3 publications indexed, no linked finding",
-    "no utility finding",
-    "no external identifier"
-   ],
-   "baseline_probability": 0.6706,
-   "baseline_breaks_ties": true
-  },
   {
    "id": "biomarker:ca-15-3",
    "name": "CA 15-3",
@@ -209,7 +44,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6292,
+   "baseline_probability": 0.5469,
    "baseline_breaks_ties": true
   },
   {
@@ -230,7 +65,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6292,
+   "baseline_probability": 0.5469,
    "baseline_breaks_ties": true
   },
   {
@@ -251,7 +86,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6292,
+   "baseline_probability": 0.5469,
    "baseline_breaks_ties": true
   },
   {
@@ -272,7 +107,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6466,
+   "baseline_probability": 0.5811,
    "baseline_breaks_ties": true
   },
   {
@@ -293,7 +128,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6466,
+   "baseline_probability": 0.5811,
    "baseline_breaks_ties": true
   },
   {
@@ -314,7 +149,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6466,
+   "baseline_probability": 0.5811,
    "baseline_breaks_ties": true
   },
   {
@@ -335,7 +170,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6039,
+   "baseline_probability": 0.5002,
    "baseline_breaks_ties": true
   },
   {
@@ -356,7 +191,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6039,
+   "baseline_probability": 0.5002,
    "baseline_breaks_ties": true
   },
   {
@@ -377,7 +212,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6039,
+   "baseline_probability": 0.5002,
    "baseline_breaks_ties": true
   },
   {
@@ -398,7 +233,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6039,
+   "baseline_probability": 0.5002,
    "baseline_breaks_ties": true
   },
   {
@@ -419,7 +254,7 @@
     "no utility finding",
     "no external identifier"
    ],
-   "baseline_probability": 0.6039,
+   "baseline_probability": 0.5002,
    "baseline_breaks_ties": true
   },
   {
@@ -439,7 +274,174 @@
     "2 publications indexed, no linked finding",
     "no utility finding"
    ],
-   "baseline_probability": 0.5414,
+   "baseline_probability": 0.3834,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:il-1",
+   "name": "IL-1\u03b2",
+   "kind": "Biomarker",
+   "score": 1.0,
+   "model": "rule-need-v2",
+   "n_findings": 0,
+   "n_primary": 0,
+   "n_cited": 0,
+   "n_utility": 0,
+   "studies": 1,
+   "asked": 0,
+   "has_ids": false,
+   "reasons": [
+    "1 publications indexed, no linked finding",
+    "no utility finding",
+    "no external identifier"
+   ],
+   "baseline_probability": 0.6145,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:hcg",
+   "name": "\u03b2-hCG",
+   "kind": "Biomarker",
+   "score": 1.0,
+   "model": "rule-need-v2",
+   "n_findings": 0,
+   "n_primary": 0,
+   "n_cited": 0,
+   "n_utility": 0,
+   "studies": 1,
+   "asked": 0,
+   "has_ids": false,
+   "reasons": [
+    "1 publications indexed, no linked finding",
+    "no utility finding",
+    "no external identifier"
+   ],
+   "baseline_probability": 0.5349,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "gene:egfr",
+   "name": "EGFR gene",
+   "kind": "Gene",
+   "score": 1.0,
+   "model": "rule-need-v2",
+   "n_findings": 0,
+   "n_primary": 0,
+   "n_cited": 0,
+   "n_utility": 0,
+   "studies": 1,
+   "asked": 0,
+   "has_ids": true,
+   "reasons": [
+    "1 publications indexed, no linked finding",
+    "no utility finding"
+   ],
+   "baseline_probability": 0.4582,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:calcitonin",
+   "name": "Calcitonin",
+   "kind": "Biomarker",
+   "score": 1.0,
+   "model": "rule-need-v2",
+   "n_findings": 0,
+   "n_primary": 0,
+   "n_cited": 0,
+   "n_utility": 0,
+   "studies": 1,
+   "asked": 0,
+   "has_ids": false,
+   "reasons": [
+    "1 publications indexed, no linked finding",
+    "no utility finding",
+    "no external identifier"
+   ],
+   "baseline_probability": 0.4534,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:crp",
+   "name": "CRP",
+   "kind": "Biomarker",
+   "score": 1.0,
+   "model": "rule-need-v2",
+   "n_findings": 0,
+   "n_primary": 0,
+   "n_cited": 0,
+   "n_utility": 0,
+   "studies": 1,
+   "asked": 0,
+   "has_ids": false,
+   "reasons": [
+    "1 publications indexed, no linked finding",
+    "no utility finding",
+    "no external identifier"
+   ],
+   "baseline_probability": 0.4534,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:cystatin-c",
+   "name": "Cystatin C",
+   "kind": "Biomarker",
+   "score": 1.0,
+   "model": "rule-need-v2",
+   "n_findings": 0,
+   "n_primary": 0,
+   "n_cited": 0,
+   "n_utility": 0,
+   "studies": 1,
+   "asked": 0,
+   "has_ids": false,
+   "reasons": [
+    "1 publications indexed, no linked finding",
+    "no utility finding",
+    "no external identifier"
+   ],
+   "baseline_probability": 0.4534,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:renal-egfr",
+   "name": "eGFR",
+   "kind": "Biomarker",
+   "score": 1.0,
+   "model": "rule-need-v2",
+   "n_findings": 0,
+   "n_primary": 0,
+   "n_cited": 0,
+   "n_utility": 0,
+   "studies": 1,
+   "asked": 0,
+   "has_ids": false,
+   "reasons": [
+    "1 publications indexed, no linked finding",
+    "no utility finding",
+    "no external identifier"
+   ],
+   "baseline_probability": 0.4534,
+   "baseline_breaks_ties": true
+  },
+  {
+   "id": "biomarker:esr1",
+   "name": "ESR1",
+   "kind": "Biomarker",
+   "score": 1.0,
+   "model": "rule-need-v2",
+   "n_findings": 0,
+   "n_primary": 0,
+   "n_cited": 0,
+   "n_utility": 0,
+   "studies": 1,
+   "asked": 0,
+   "has_ids": false,
+   "reasons": [
+    "1 publications indexed, no linked finding",
+    "no utility finding",
+    "no external identifier"
+   ],
+   "baseline_probability": 0.4534,
    "baseline_breaks_ties": true
   }
  ],
