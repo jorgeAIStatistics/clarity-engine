@@ -79,8 +79,8 @@ GAP_FEATURES = """MATCH (e:Entity)
 WHERE coalesce(e.ephemeral, false) = false
 OPTIONAL MATCH (e)<-[:ABOUT]-(f:Finding)
 WITH e, count(DISTINCT f) AS n_findings_linked,
-     sum(CASE WHEN coalesce(f.provenance,'unclear') = 'primary' THEN 1 ELSE 0 END) AS n_primary,
-     sum(CASE WHEN coalesce(f.provenance,'unclear') = 'unclear' THEN 1 ELSE 0 END) AS n_unclear,
+     sum(CASE WHEN f IS NOT NULL AND coalesce(f.provenance,'unclear') = 'primary' THEN 1 ELSE 0 END) AS n_primary,
+     sum(CASE WHEN f IS NOT NULL AND coalesce(f.provenance,'unclear') = 'unclear' THEN 1 ELSE 0 END) AS n_unclear,
      sum(CASE WHEN coalesce(f.kind, f.observation_type) = 'utility' THEN 1 ELSE 0 END) AS n_utility,
      sum(CASE WHEN coalesce(f.kind, f.observation_type) = 'discrimination' THEN 1 ELSE 0 END) AS n_discrimination,
      sum(CASE WHEN coalesce(f.kind, f.observation_type) = 'classification' THEN 1 ELSE 0 END) AS n_classification,

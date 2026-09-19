@@ -144,7 +144,7 @@ def queue(rows, model, report, limit=20):
             continue
         ranked.append({"id": row["id"], "name": row["name"], "kind": row["kind"], "score": score,
                        "model": "rule-need-v2", "n_findings": row["n_findings_linked"],
-                       "n_primary": row["n_primary"], "n_cited": row["n_cited"],
+                       "n_primary": row["n_primary"], "n_cited": row["n_cited"], "n_unclear": row["n_unclear"],
                        "n_utility": row["n_utility"], "studies": row["n_pubs"],
                        "asked": row["matcher_demand"], "has_ids": row["has_ids"],
                        "reasons": reasons(row), "baseline_probability": probability.get(row["id"]),
@@ -194,11 +194,11 @@ def main(argv=None):
              "n_findings and n_utility are the counts the ranker read, so a row can be checked against the "
              "graph without rerunning anything. n_utility is the utility KIND, not the interventional layer: "
              "a trial of a drug is not evidence that measuring the marker helps.", "",
-             "| # | id | name | n_linked | n_primary | n_cited | n_utility | n_pubs | demand | need | baseline p | reason |",
-             "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+             "| # | id | name | n_linked | n_primary | n_cited | n_unclear | n_utility | n_pubs | demand | need | baseline p | reason |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for n, row in enumerate(ranked, 1):
         lines.append(f"| {n} | `{row['id']}` | {row['name']} | {row['n_findings']} | {row['n_primary']} | "
-                     f"{row['n_cited']} | {row['n_utility']} | {row['studies']} | {row['asked']} | {row['score']} | "
+                     f"{row['n_cited']} | {row['n_unclear']} | {row['n_utility']} | {row['studies']} | {row['asked']} | {row['score']} | "
                      f"{row['baseline_probability'] if row['baseline_probability'] is not None else '—'} | {'; '.join(row['reasons'])} |")
     Path(__file__).resolve().parents[1].joinpath("docs", "gap-queue.md").write_text("\n".join(lines) + "\n")
     folder = Path(__file__).resolve().parent / "exports" / date.today().isoformat()

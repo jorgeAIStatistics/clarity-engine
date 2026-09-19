@@ -113,6 +113,11 @@ class LayerContractTests(unittest.TestCase):
         # cannot be mistaken for it: a drug trial is evidence about the drug, not about measuring.
         self.assertIn("= 'utility' THEN 1 ELSE 0 END) AS n_utility", cypher.GAP_FEATURES)
         self.assertIn('AS n_trial_layer', cypher.GAP_FEATURES)
+        # OPTIONAL MATCH leaves f null when an entity has no findings, and coalesce(null,'unclear')
+        # then reads as unclear — which credited every empty entity with one finding it never had.
+        for counter in ('n_primary', 'n_unclear'):
+            clause = next(line for line in cypher.GAP_FEATURES.splitlines() if f'AS {counter}' in line)
+            self.assertIn('f IS NOT NULL', clause, f'{counter} counts a null row as a finding')
 
 
 @unittest.skipUnless(os.environ.get('CLARITY_GRAPH_TESTS') == '1', 'publish roundtrip needs CLARITY_GRAPH_TESTS=1')
