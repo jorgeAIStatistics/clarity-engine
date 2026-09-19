@@ -86,10 +86,47 @@ def catalog():
     return dict(published, served_from='snapshot', published_at=(data or {}).get('generated_at'))
 
 
+# The profiles worth shipping inside the web bundle. A cold engine is one thing; a container that
+# is not running at all answers nothing, and no server-side snapshot can help then. These few are
+# the pages a visitor is most likely to land on first.
+BUNDLED = ('biomarker:il-18', 'biomarker:ca-125', 'biomarker:nfl', 'biomarker:psa', 'biomarker:apob',
+           'variant:egfr-activating-mutation', 'precision_context:ret-selpercatinib')
+
+
+def bundle(target):
+    """Write the two files clarity-web serves when the API cannot be reached at all.
+
+    library.json is the whole catalog, so the index never falls back to its fourteen curated rows.
+    graph-profiles.json holds a handful of profiles, so a first landing is a page and not a
+    skeleton. Both carry published_at, and the site labels them as published copies.
+    """
+    data = load() or {}
+    catalog = data.get('catalog') or {}
+    if not catalog.get('entries'):
+        raise SystemExit('no published catalog to bundle; run --write first')
+    target = Path(target)
+    target.mkdir(parents=True, exist_ok=True)
+    stamped = dict(catalog, served_from='snapshot', published_at=data.get('generated_at'))
+    (target / 'library.json').write_text(json.dumps(stamped, ensure_ascii=False, separators=(',', ':')) + '\n')
+    profiles = {k: v for k, v in (data.get('entities') or {}).items() if k in BUNDLED}
+    (target / 'graph-profiles.json').write_text(json.dumps(
+        {'version': VERSION, 'published_at': data.get('generated_at'), 'entities': profiles},
+        ensure_ascii=False, separators=(',', ':')) + '\n')
+    return {'library_entries': len(stamped['entries']), 'library_graph_rows': stamped.get('graph_rows'),
+            'profiles': sorted(profiles), 'published_at': data.get('generated_at'),
+            'bytes': {f.name: f.stat().st_size for f in (target / 'library.json', target / 'graph-profiles.json')}}
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write', action='store_true', help='rebuild the published snapshot')
+    parser.add_argument('--bundle', metavar='DIR', help="write library.json and graph-profiles.json for the web bundle")
     args = parser.parse_args(argv)
+    if args.bundle:
+        if args.write:
+            write()
+        print(json.dumps(bundle(args.bundle), indent=1))
+        return None
     data = write() if args.write else (load() or {})
     print(json.dumps({'version': data.get('version'), 'generated_at': data.get('generated_at'),
                       'entities': len(data.get('entities') or {}), 'library_rows': len(data.get('library') or []),

@@ -42,18 +42,29 @@ def sweep(base):
     return {path: ping(base, path) for path in PATHS}
 
 
+def run_once(base):
+    """One sweep, logged. Returns True when every path answered under 400, False otherwise.
+
+    It never raises. A warmer that dies takes the supervisor's other children with it, and a 503
+    from a restarting API is the ordinary case this exists for, not a reason to stop.
+    """
+    try:
+        results = sweep(base)
+    except Exception as error:
+        print(json.dumps({'event': 'warm_failed', 'error': type(error).__name__}), flush=True)
+        return False
+    healthy = all(isinstance(status, int) and status < 400 for status, _ in results.values())
+    print(json.dumps({'event': 'warm_sweep', 'base': base, 'healthy': healthy,
+                      'results': {p: {'status': s, 'ms': ms} for p, (s, ms) in results.items()}}), flush=True)
+    return healthy
+
+
 def main(argv=None):
     base = (argv or sys.argv[1:] or [f"http://127.0.0.1:{os.getenv('PORT', '8000')}"])[0].rstrip('/')
     # The API needs to be listening before the first sweep means anything.
     time.sleep(min(30, INTERVAL))
     while True:
-        try:
-            results = sweep(base)
-            print(json.dumps({'event': 'warm_sweep', 'base': base,
-                              'results': {p: {'status': s, 'ms': ms} for p, (s, ms) in results.items()}}), flush=True)
-        except Exception as error:
-            # A warmer that dies takes the supervisor's children with it. It never exits.
-            print(json.dumps({'event': 'warm_failed', 'error': type(error).__name__}), flush=True)
+        run_once(base)
         time.sleep(INTERVAL)
 
 
