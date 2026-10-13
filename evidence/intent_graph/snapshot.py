@@ -77,6 +77,11 @@ def library():
     return (data or {}).get('library') or []
 
 
+def published_at():
+    """When the snapshot on disk was written. A page that falls back to it has to say this date."""
+    return (load() or {}).get('generated_at')
+
+
 def catalog():
     """The last published /api/library payload, or None. Never returned without its date."""
     data = load()

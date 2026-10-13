@@ -18,6 +18,10 @@ def graph_entries(existing):
     existing=list(existing)
     known={norm(row['name']) for row in existing}
     known_aliases=known | {norm(a) for row in existing for a in row.get('aliases',[])}
+    # Where the rows came from is recorded the moment it is known, not on the way out: an empty
+    # snapshot returns early, and a caller that cannot see the origin of an empty list will read the
+    # previous call's answer.
+    graph_entries.origin='graph';graph_entries.published_at=None
     try:
         from .intent_graph.store import graph_library
         graph=graph_library()
@@ -26,6 +30,7 @@ def graph_entries(existing):
         # graph is unreachable, which reads as "the library is small", not "a read failed".
         from .intent_graph import snapshot
         graph=snapshot.library()
+        graph_entries.origin='snapshot';graph_entries.published_at=snapshot.published_at()
         if not graph:return []
     # Genes and variants share the biomarker address space; a biomarker wins a shared slug.
     kinds={'Biomarker':('Molecular marker',0),'Gene':('Gene',1),'Variant':('Variant',2),'Protein':('Protein',3),
@@ -103,9 +108,14 @@ def build_library():
         row['quantified_outcome_names']=list(dict.fromkeys(f['outcome'] for s in e['studies'] for f in (s.get('findings') or ([s] if s.get('effect') else [])) if f.get('effect')))
         entries[row['id']]=row
     graph=graph_entries(entries.values())
+    graph_origin=getattr(graph_entries,'origin','graph')
+    graph_published=getattr(graph_entries,'published_at',None)
     for row in graph:entries[row['id']]=row
     rows=sorted(entries.values(),key=lambda r:r['name'].casefold())
-    return {'schema_version':1,'generated_at':datetime.now(timezone.utc).isoformat(),'coverage_statement':'Complete inventory of stored Clarity profiles; not an exhaustive catalog of medicine or a completed systematic review.','entries':rows,'counts':{typ:sum(e['entity_type']==typ for e in rows) for typ in ['intervention',*PATHS]},'graph_rows':len(graph),'audit':audit}
+    return {'schema_version':1,'generated_at':datetime.now(timezone.utc).isoformat(),'coverage_statement':'Complete inventory of stored Clarity profiles; not an exhaustive catalog of medicine or a completed systematic review.','entries':rows,'counts':{typ:sum(e['entity_type']==typ for e in rows) for typ in ['intervention',*PATHS]},'graph_rows':len(graph),
+            # Whether those rows came from Neo4j or from the published snapshot on disk. A page that
+            # cannot tell the two apart will present a file as the live graph.
+            'graph_source':graph_origin,'graph_published_at':graph_published,'audit':audit}
 
 if __name__=='__main__':
     import argparse

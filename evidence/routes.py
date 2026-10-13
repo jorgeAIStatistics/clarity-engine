@@ -114,8 +114,14 @@ def library():
         graph_log('library','',False,upstream_ms,'unavailable')
         response=jsonify(error='Library unavailable',code='library_unavailable');response.status_code=503
         response.headers['Retry-After']='10';return response
-    graph_log('library','',False,upstream_ms,'short' if short else 'graph')
-    response=jsonify(dict(data,served_from='graph'))
+    # served_from says where the GRAPH ROWS came from, not where the request was answered. Stamping
+    # 'graph' on a build whose rows were read off the snapshot file is how a 24-day-old copy came to
+    # be presented as the live graph, with no freshness notice anywhere on the page.
+    origin=data.get('graph_source') or 'graph'
+    graph_log('library','',False,upstream_ms,'short' if short else origin)
+    payload=dict(data,served_from=origin)
+    if origin=='snapshot' and data.get('graph_published_at'):payload['published_at']=data['graph_published_at']
+    response=jsonify(payload)
     response.headers['Cache-Control']='no-store' if short else 'private, max-age=60'
     return response
 
