@@ -115,3 +115,9 @@ python run.py "ashwagandha" herb --fresh # --fresh ignores cache & regenerates
 **Peptide honesty:** for peptides with little human data, the engine correctly produces a low score and an honest "emerging/animal-only" profile. That's the feature, not a bug — it's the anti-hype brand. It cannot manufacture depth where the science is sparse, and it shouldn't.
 
 **Still LLM-free:** prose comes from honest templates. When you're ready to add richer writing, wire an LLM into `generate.py`'s `_call_llm()` — but it only ever writes over facts the engine already extracted and graded, which is what prevents fabrication.
+
+## Ownership and permissions
+
+Maintained by **Jorge Rodriguez** ([@jorgeAIStatistics](https://github.com/jorgeAIStatistics)).
+See [COPYRIGHT.md](COPYRIGHT.md) for ownership and third-party attribution scope,
+and [LICENSE](LICENSE) for permissions. Source-visible for portfolio review; reuse rights are reserved.
